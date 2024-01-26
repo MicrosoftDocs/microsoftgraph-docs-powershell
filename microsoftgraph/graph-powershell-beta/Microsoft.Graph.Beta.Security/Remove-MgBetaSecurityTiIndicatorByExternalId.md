@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatorbyexternalid
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Remove-MgBetaSecurityTiIndicatorByExternalId
@@ -29,12 +28,10 @@ Remove-MgBetaSecurityTiIndicatorByExternalId
 ## DESCRIPTION
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-deletetiindicatorsbyexternalid-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSecurityTiIndicatorByExternalId Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
@@ -44,8 +41,6 @@ $params = @{
 }
 Remove-MgBetaSecurityTiIndicatorByExternalId -BodyParameter $params
 ```
-This example shows how to use the Remove-MgBetaSecurityTiIndicatorByExternalId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -148,5 +143,4 @@ BODYPARAMETER \<IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicator
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatorbyexternalid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatorbyexternalid)
-
 

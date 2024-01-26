@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Get-MgBetaSearchBookmark
@@ -35,24 +34,19 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSearchBookmark Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark -BookmarkId $bookmarkId
 ```
-This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSearchBookmark Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark
 ```
-This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -277,5 +271,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark)
-
 

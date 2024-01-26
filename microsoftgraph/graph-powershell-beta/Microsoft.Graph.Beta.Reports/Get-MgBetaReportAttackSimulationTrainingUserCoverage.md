@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationtrainingusercoverage
@@ -21,13 +21,12 @@ Get-MgBetaReportAttackSimulationTrainingUserCoverage [-Count] [-Filter <String>]
 Invoke function getAttackSimulationTrainingUserCoverage
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaReportAttackSimulationTrainingUserCoverage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAttackSimulationTrainingUserCoverage
 ```
-This example shows how to use the Get-MgBetaReportAttackSimulationTrainingUserCoverage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,5 +118,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationtrainingusercoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationtrainingusercoverage)
-
 

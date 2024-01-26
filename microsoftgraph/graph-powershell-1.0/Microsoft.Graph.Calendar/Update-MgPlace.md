@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 schema: 2.0.0
-ms.prod: calendar
 ---
 
 # Update-MgPlace
@@ -11,9 +10,6 @@ ms.prod: calendar
 ## SYNOPSIS
 Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
 Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -68,11 +62,6 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -318,8 +307,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace)
-
 

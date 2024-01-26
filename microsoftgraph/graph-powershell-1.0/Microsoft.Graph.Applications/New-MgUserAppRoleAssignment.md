@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # New-MgUserAppRoleAssignment
@@ -11,9 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,19 +45,17 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-approleassignments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Assign a user an application role
 
-```powershell
+### EXAMPLE 1
+```
 New-MgUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -ResourceId '0873169c-9595-4664-9d02-499b49846ff1'  `
   -AppRoleID '00000000-0000-0000-0000-000000000000' |
   Format-List Id, AppRoleId, CreationTime, PrincipalDisplayName, 
   PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
+```
 
 Id                   : 01B8ir38J0eoiYqyMt_qAWev_PSoYDBGmcqI9E2dyKI
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -70,9 +64,6 @@ PrincipalId          : 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-analytics
 ResourceId           : 0873169c-9595-4664-9d02-499b49846ff1
-```
-
-This commands assigns the specified user a role in the specified application resource.
 
 ## PARAMETERS
 
@@ -389,8 +380,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail
@@ -12,9 +12,6 @@ Collection of \[thumbnailSet\]\[\] objects associated with the item.
 For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,28 +41,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId
 
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Files
-
-Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop" 
-
 ```
-This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
 
+Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop"
 
 ## PARAMETERS
 
@@ -323,8 +312,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail)
-
 

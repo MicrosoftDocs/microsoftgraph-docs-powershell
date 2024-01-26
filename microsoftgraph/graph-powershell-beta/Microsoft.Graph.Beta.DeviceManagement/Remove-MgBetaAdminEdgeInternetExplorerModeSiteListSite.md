@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
-ms.prod: browser-management
 ---
 
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
 Delete a browserSite from a browserSiteList.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,8 +27,17 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sites-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -300,9 +305,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Remove-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite)
-
-
 

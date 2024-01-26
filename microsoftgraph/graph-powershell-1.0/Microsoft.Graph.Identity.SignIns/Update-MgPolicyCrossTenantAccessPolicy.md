@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
 Update the properties of a cross-tenant access policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,14 +30,12 @@ Update-MgPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenan
 ## DESCRIPTION
 Update the properties of a cross-tenant access policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicy-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	allowedCloudEndpoints = @(
@@ -50,11 +44,6 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
-```
-This example shows how to use the Update-MgPolicyCrossTenantAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -380,8 +369,6 @@ Read-only.
 Key.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy)
-
 

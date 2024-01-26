@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationClassAssignment
@@ -12,9 +11,6 @@ ms.prod: education
 Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,17 +61,15 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-assignments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
-	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
+	dueDateTime = \[System.DateTime\]::Parse("2022-09-16T00:00:00Z")
 	displayName = "Reading test 09.14"
 	instructions = @{
 		contentType = "text"
@@ -93,11 +87,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationClassAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -853,8 +842,6 @@ If the value is null, the student uploaded the resource.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignment)
-
 

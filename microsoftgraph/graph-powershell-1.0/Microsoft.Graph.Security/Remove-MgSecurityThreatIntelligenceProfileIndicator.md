@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligenceprofileindicator
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property intelligenceProfileIndicators for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdent
 
 ## DESCRIPTION
 Delete navigation property intelligenceProfileIndicators for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -194,9 +203,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligenceprofileindicator)
-
-
 

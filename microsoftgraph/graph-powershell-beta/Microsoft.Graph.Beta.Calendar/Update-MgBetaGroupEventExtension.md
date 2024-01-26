@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupeventextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensions in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupEventExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEventExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ Update-MgBetaGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the navigation property extensions in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -214,9 +227,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Update-MgGroupEventExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEventExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupeventextension)
-
-
 

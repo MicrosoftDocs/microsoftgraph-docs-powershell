@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Close an eDiscovery case.
 For details, see Close a case.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ Close an eDiscovery case.
 For details, see Close a case.
 
 ## EXAMPLES
-### Example 1: Using the Close-MgSecurityCaseEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Close-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Close-MgSecurityCaseEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -190,8 +186,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase)
-
 

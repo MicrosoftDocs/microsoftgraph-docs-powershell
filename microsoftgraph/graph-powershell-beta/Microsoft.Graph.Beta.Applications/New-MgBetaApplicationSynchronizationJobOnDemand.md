@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaApplicationSynchronizationJobOnDemand
@@ -12,9 +11,6 @@ ms.prod: applications
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJobOnDemand?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,8 +47,21 @@ Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -262,9 +271,6 @@ Can be one of the following: user for synchronizing between Active Directory and
 Worker for synchronization a user between Workday and either Active Directory or Azure AD.Group for synchronizing a group between Microsoft Entra ID and a third-party application.
 
 ## RELATED LINKS
-[New-MgApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJobOnDemand?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand)
-
-
 

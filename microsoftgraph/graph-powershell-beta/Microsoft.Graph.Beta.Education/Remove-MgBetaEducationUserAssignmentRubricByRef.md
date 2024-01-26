@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentrubricbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationUserAssignmentRubricByRef
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentRubricByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,8 +29,21 @@ Remove-MgBetaEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delete-rubric-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -180,9 +189,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentRubricByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentrubricbyref)
-
-
 

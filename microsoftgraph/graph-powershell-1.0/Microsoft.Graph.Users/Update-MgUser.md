@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgUser
 
 ## SYNOPSIS
 Update the properties of a user object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -155,13 +151,11 @@ Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
 Update the properties of a user object.
 
 ## EXAMPLES
-### Example 1: Update a user's display name
 
-```powershell
+### EXAMPLE 1
+```
 Update-MgUser -UserId '2a1fa0b8-87d6-4f39-be8d-68d0db617b02' -DisplayName 'Kristi Laar'
 ```
-
-This example updates the specified user's display name.
 
 ## PARAMETERS
 
@@ -2441,9 +2435,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -7440,9 +7434,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13357,9 +13351,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -17933,9 +17927,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -22757,9 +22751,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -26706,9 +26700,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -32325,9 +32319,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -37452,9 +37446,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -41610,9 +41604,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -42585,8 +42579,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser)
-
 

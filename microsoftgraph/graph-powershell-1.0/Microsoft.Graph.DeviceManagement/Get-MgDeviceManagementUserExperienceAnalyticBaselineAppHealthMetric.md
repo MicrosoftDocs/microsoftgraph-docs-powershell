@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselineapphealthmetric
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The scores and insights for the application health metrics.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric -InputObject
 
 ## DESCRIPTION
 The scores and insights for the application health metrics.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -165,9 +174,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsMalwareInformationId \<String\>\]: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselineapphealthmetric](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselineapphealthmetric)
-
-
 

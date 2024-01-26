@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Set-MgEducationClassAssignmentSubmissionUpResourceFolder
@@ -13,9 +12,6 @@ Trigger the creation of the SharePoint resource folder where all file-based reso
 Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,37 +33,31 @@ Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
 $params = @{
 }
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
-This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Education
 $params = @{
 }
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
-This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Education
 $params = @{
 }
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
-This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -192,8 +182,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder)
-
 

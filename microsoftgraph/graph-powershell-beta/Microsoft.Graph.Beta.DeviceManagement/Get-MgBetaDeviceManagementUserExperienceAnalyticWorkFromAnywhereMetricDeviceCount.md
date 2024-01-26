@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremetricdevicecount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCoun
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,9 +260,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremetricdevicecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremetricdevicecount)
-
-
 

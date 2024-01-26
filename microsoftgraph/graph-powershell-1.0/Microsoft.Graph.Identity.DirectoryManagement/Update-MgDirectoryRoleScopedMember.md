@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolescopedmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property scopedMembers in directoryRoles
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
 
 ## DESCRIPTION
 Update the navigation property scopedMembers in directoryRoles
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -279,9 +292,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Id \<String\>\]: Unique identifier for the identity.
 
 ## RELATED LINKS
-[Update-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolescopedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolescopedmember)
-
-
 

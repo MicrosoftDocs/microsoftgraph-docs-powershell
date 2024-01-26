@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyclaimmappingpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyClaimMappingPolicy
 
 ## SYNOPSIS
 Update the properties of a claimsMappingPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,25 +43,18 @@ Update-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> -BodyP
 ## DESCRIPTION
 Update the properties of a claimsMappingPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "UpdateClaimsPolicy"
 }
 
 Update-MgPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId -BodyParameter $params
-```
-This example shows how to use the Update-MgPolicyClaimMappingPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -355,8 +344,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyclaimmappingpolicy)
-
 

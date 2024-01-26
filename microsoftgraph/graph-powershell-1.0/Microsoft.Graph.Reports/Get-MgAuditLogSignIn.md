@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogSignIn
@@ -11,9 +10,6 @@ ms.prod: identity-and-access-reports
 ## SYNOPSIS
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,28 +37,20 @@ Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 ## EXAMPLES
-### Example 1: List all sign-ins
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgAuditLogSignIn
 
+### EXAMPLE 2
 ```
-This example will list all sign-ins
-
-### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'
-
-```powershell
-
 Import-Module Microsoft.Graph.Reports
-
-Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10 
-
 ```
-This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'graph'
 
+Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10
 
 ## PARAMETERS
 
@@ -286,8 +274,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin)
-
 

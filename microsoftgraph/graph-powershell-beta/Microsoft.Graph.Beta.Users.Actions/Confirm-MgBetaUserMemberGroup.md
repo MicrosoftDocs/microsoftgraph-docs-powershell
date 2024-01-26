@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Confirm-MgBetaUserMemberGroup
@@ -14,9 +13,6 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,12 +49,10 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Confirm-MgBetaUserMemberGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	GroupIds = @(
@@ -69,8 +63,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Confirm-MgBetaUserMemberGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -245,8 +237,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermembergroup)
-
 

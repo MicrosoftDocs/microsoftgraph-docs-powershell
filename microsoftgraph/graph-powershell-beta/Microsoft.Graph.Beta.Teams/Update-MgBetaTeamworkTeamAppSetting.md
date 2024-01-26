@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a teamsAppSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,11 +29,11 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 Update the properties of a teamsAppSettings object.
 
 ## EXAMPLES
-### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -45,14 +42,10 @@ $params = @{
 
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will enable installation of apps that require resource-specific consent in chats/meetings.
-
-### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -60,10 +53,6 @@ $params = @{
 }
 
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
-
-```
-This example will allow teams users to request admins for access to certain teams apps.
-
 
 ## PARAMETERS
 
@@ -222,8 +211,6 @@ True indicates that Teams apps that are allowed in the tenant and require resour
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
 ## RELATED LINKS
-[Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to transcripts for communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingTranscript?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ New-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicationsIde
 
 ## DESCRIPTION
 Create new navigation property to transcripts for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -326,9 +335,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgBetaCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingTranscript?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupset
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sets for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,17 +48,13 @@ New-MgBetaSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IM
 Create new navigation property to sets for sites
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
-```
-This example shows how to use the New-MgBetaBetaSiteTermStoreGroupSet Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -649,8 +642,6 @@ Read-only.
   \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
 
 ## RELATED LINKS
-[New-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupset)
-
 

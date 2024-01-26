@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdeviceconfigurationdeviceactivity
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Metadata for the device configuration device activity report
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportDeviceConfigurationDeviceActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDeviceConfigurationDeviceActivity?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -21,6 +18,22 @@ Get-MgBetaReportDeviceConfigurationDeviceActivity -OutFile <String> [-PassThru] 
 
 ## DESCRIPTION
 Metadata for the device configuration device activity report
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,9 +78,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgReportDeviceConfigurationDeviceActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDeviceConfigurationDeviceActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdeviceconfigurationdeviceactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdeviceconfigurationdeviceactivity)
-
-
 

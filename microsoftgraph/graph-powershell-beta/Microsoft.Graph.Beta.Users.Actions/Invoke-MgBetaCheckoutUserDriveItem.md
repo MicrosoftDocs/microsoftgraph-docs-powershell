@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaCheckoutUserDriveItem
 
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Invoke-MgBetaCheckoutUserDriveItem -InputObject <IUsersActionsIdentity> [-PassTh
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkout-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
-```
-This example shows how to use the Invoke-MgBetaCheckoutUserDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -214,8 +203,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveitem)
-
 

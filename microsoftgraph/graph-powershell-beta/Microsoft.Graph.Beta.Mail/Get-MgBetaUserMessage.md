@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage
 schema: 2.0.0
-ms.prod: non-product-specific
 ---
 
 # Get-MgBetaUserMessage
@@ -12,9 +11,6 @@ ms.prod: non-product-specific
 The messages in a mailbox or folder.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,66 +39,46 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Get a specific message
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get all mentions in a specific message
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -ExpandProperty "mentions"
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get message body in text format
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -Property "subject,body,bodyPreview,uniqueBody"
+
+### EXAMPLE 4
 ```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Get Internet message headers
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -Property "internetMessageHeaders"
+
+### EXAMPLE 5
 ```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Get MIME content
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessageContent -UserId $userId -MessageId $messageId -OutFile $outFileId
-```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -346,8 +322,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage)
-
 

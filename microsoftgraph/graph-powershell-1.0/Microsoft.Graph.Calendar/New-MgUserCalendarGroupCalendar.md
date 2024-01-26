@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroupcalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserCalendarGroupCalendar
 
 ## SYNOPSIS
 Use this API to create a new calendar in a calendar group for a user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,14 +53,12 @@ New-MgUserCalendarGroupCalendar -InputObject <ICalendarIdentity> -BodyParameter 
 ## DESCRIPTION
 Use this API to create a new calendar in a calendar group for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-post-calendars-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	name = "Marketing calendar"
@@ -72,11 +66,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
-```
-This example shows how to use the New-MgUserCalendarGroupCalendar Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1250,8 +1239,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[New-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroupcalendar)
-
 

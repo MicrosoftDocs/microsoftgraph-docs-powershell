@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserCalendarEvent
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,10 +74,11 @@ Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
 ## EXAMPLES
-### Example 1: Create an event in a specific calendar
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -114,15 +111,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create and enable an event as an online meeting
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -156,11 +149,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-```
-This example shows how to use the New-MgUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1916,8 +1904,6 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowidentityprovider
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgIdentityB2XUserFlowIdentityProvider
@@ -11,9 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Delete an identity provider from a b2xIdentityUserFlow object.
 For self-service sign-up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,8 +29,17 @@ Remove-MgIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIdent
 Delete an identity provider from a b2xIdentityUserFlow object.
 For self-service sign-up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-delete-identityproviders-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -218,9 +223,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProvider?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowidentityprovider)
-
-
 

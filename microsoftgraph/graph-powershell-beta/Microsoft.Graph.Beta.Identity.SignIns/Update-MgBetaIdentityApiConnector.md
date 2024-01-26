@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
 Update the properties of an identityApiConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,14 +41,12 @@ Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of an identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "New Test API"
@@ -65,15 +59,11 @@ $params = @{
 }
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaIdentityApiConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Changing API connector to use client certificate authentication
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	authenticationConfiguration = @{
@@ -84,11 +74,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaIdentityApiConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -351,8 +336,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector)
-
 

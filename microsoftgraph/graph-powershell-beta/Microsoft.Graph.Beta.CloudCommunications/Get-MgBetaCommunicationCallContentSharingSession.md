@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallContentSharingSession
 
 ## SYNOPSIS
 Retrieve the properties of a contentSharingSession object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Retrieve the properties of a contentSharingSession object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentsharingsession-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaCommunicationCallContentSharingSession -CallId $callId
-
-```
-This example shows how to use the Get-MgBetaCommunicationCallContentSharingSession Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,8 +279,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession)
-
 

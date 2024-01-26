@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchnoncustodialsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource
 
 ## SYNOPSIS
 Remove an ediscoveryNoncustodialDataSource object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,8 +28,17 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource -InputObject <ISecur
 ## DESCRIPTION
 Remove an ediscoveryNoncustodialDataSource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-delete-noncustodialsources-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -229,9 +234,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchnoncustodialsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchnoncustodialsource)
-
-
 

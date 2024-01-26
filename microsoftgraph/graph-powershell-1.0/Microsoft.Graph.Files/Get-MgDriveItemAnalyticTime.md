@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemAnalyticTime
 
 ## SYNOPSIS
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticTime?view=graph-powershell-beta)
+Get \[itemAnalytics\]\[\] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
 
 ## SYNTAX
 
@@ -29,10 +25,19 @@ Get-MgDriveItemAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+Get \[itemAnalytics\]\[\] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemanalytics-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -154,9 +159,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticTime?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime)
-
-
 

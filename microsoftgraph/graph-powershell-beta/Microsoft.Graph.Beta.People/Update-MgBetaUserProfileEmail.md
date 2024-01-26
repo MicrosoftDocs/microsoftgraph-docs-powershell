@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileEmail
@@ -48,12 +47,10 @@ Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the properties of an itemEmail object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itememail-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileEmail Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	DisplayName = "Business Email"
@@ -61,8 +58,6 @@ $params = @{
 }
 Update-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileEmail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -466,5 +461,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
-
 

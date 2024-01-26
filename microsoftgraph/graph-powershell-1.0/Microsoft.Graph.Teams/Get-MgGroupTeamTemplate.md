@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtemplate
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The template this team was created from.
 See available templates.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Get-MgGroupTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 The template this team was created from.
 See available templates.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -145,9 +158,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtemplate)
-
-
 

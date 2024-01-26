@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
@@ -35,24 +34,19 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 ## DESCRIPTION
 Read the properties and relationships of a noncustodialDataSource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -NoncustodialDataSourceId $noncustodialDataSourceId
 ```
-This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId
 ```
-This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -290,5 +284,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource)
-
 

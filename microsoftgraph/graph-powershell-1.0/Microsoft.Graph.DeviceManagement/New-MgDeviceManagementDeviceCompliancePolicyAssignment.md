@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementDeviceCompliancePolicyAssignment
 
 ## SYNOPSIS
 Create a new deviceCompliancePolicyAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +40,22 @@ New-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Create a new deviceCompliancePolicyAssignment object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -251,9 +263,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsMalwareInformationId \<String\>\]: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment)
-
-
 

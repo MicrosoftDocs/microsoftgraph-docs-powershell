@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaSnoozeGroupEventReminder
 
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,14 +41,12 @@ Invoke-MgBetaSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	NewReminderTime = @{
@@ -63,11 +57,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaSnoozeGroupEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -290,8 +279,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder)
-
 

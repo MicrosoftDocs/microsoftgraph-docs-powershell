@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Set-MgBetaUserPresenceStatusMessage
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceStatusMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,8 +43,17 @@ Set-MgBetaUserPresenceStatusMessage -InputObject <IUsersActionsIdentity>
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -265,9 +270,6 @@ See below for possible values.
   \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
-[Set-MgUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceStatusMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage)
-
-
 

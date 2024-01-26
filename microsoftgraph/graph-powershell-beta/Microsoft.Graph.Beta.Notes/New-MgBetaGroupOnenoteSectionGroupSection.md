@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotesectiongroupsection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgBetaGroupOnenoteSectionGroupSection
 
 ## SYNOPSIS
 Create a new section in the specified section group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteSectionGroupSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,10 +47,17 @@ New-MgBetaGroupOnenoteSectionGroupSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section in the specified section group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-post-sections-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -871,8 +874,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgGroupOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteSectionGroupSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotesectiongroupsection)
-
 

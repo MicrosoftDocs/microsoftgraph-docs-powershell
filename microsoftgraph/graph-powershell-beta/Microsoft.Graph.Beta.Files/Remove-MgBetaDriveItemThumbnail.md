@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemthumbnail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property thumbnails for drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemThumbnail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaDriveItemThumbnail -InputObject <IFilesIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete navigation property thumbnails for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -196,9 +209,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemthumbnail)
-
-
 

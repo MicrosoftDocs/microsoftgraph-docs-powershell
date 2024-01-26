@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementacceptance
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to acceptances for agreements
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementAcceptance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,22 @@ New-MgBetaAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Create new navigation property to acceptances for agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -517,9 +530,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementAcceptance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementacceptance)
-
-
 

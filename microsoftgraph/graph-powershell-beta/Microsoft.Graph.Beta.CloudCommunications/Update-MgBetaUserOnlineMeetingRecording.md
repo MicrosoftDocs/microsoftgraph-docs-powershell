@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingrecording
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property recordings in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Update-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdenti
 
 ## DESCRIPTION
 Update the navigation property recordings in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -362,9 +371,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingrecording)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowLanguage
@@ -43,31 +42,25 @@ Note: To retrieve a language supported for customization, you must first enable 
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId
 ```
-This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 ```
-This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -Filter "isEnabled eq true" 
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -Filter "isEnabled eq true"
+```
 
 ## PARAMETERS
 
@@ -365,5 +358,4 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage)
-
 

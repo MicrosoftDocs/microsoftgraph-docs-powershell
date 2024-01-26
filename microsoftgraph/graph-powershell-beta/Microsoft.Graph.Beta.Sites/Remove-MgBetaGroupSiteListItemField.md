@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitemfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaGroupSiteListItemField -InputObject <ISitesIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete navigation property fields for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -238,9 +251,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitemfield)
-
-
 

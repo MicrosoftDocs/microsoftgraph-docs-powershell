@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteSection
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a onenoteSection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,22 +34,15 @@ Get-MgUserOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a onenoteSection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSection -UserId $userId
-
-```
-This example shows how to use the Get-MgUserOnenoteSection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -281,8 +270,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitebypath
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getByPath
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteByPath](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteByPath?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,6 +24,22 @@ Get-MgBetaGroupSiteByPath -InputObject <IGroupsIdentity> [<CommonParameters>]
 
 ## DESCRIPTION
 Invoke function getByPath
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -154,9 +167,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteByPath](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteByPath?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitebypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitebypath)
-
-
 

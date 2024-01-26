@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint
@@ -42,6 +42,22 @@ Update-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the navigation property endpoints in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -356,6 +372,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint)
-
-
 

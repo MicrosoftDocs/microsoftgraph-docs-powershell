@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property messages for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-IfM
 
 ## DESCRIPTION
 Delete navigation property messages for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -197,9 +210,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessage)
-
-
 

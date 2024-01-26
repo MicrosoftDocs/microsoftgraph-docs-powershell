@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareroot
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get root from shares
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareRoot](/powershell/module/Microsoft.Graph.Files/Get-MgShareRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaShareRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Get root from shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -135,9 +148,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareRoot](/powershell/module/Microsoft.Graph.Files/Get-MgShareRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareroot)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDelta?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,22 @@ Get-MgBetaSiteDelta [-Filter <String>] [-Property <String[]>] [-Search <String>]
 
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,9 +185,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgSiteDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta)
-
-
 

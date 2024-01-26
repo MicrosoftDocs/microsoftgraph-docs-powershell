@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyeffectiverule
@@ -11,9 +11,6 @@ schema: 2.0.0
 The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules.
 For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,13 +40,12 @@ For example, if there is a tenant-wide policy to enforce enabling an approval ru
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyRoleManagementPolicyEffectiveRule Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 ```
-This example shows how to use the Get-MgBetaPolicyRoleManagementPolicyEffectiveRule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -345,8 +341,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyeffectiverule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyeffectiverule)
-
 

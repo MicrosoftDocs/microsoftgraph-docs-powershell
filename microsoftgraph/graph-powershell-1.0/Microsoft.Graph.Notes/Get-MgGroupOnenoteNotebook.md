@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteNotebook
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,10 +34,17 @@ Get-MgGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-get-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -269,8 +272,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebook)
-
 

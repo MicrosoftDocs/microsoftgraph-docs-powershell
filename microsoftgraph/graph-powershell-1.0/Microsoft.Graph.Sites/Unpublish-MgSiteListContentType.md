@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Unpublish-MgSiteListContentType
 
 ## SYNOPSIS
 Unpublish a \[contentType\]\[\] from a content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Unpublish-MgSiteListContentType -InputObject <ISitesIdentity> [-PassThru] [-What
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Unpublish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-```
-This example shows how to use the Unpublish-MgSiteListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -212,8 +201,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype)
-
 

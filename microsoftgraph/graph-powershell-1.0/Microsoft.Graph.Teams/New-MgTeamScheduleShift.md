@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleShift
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,15 +45,12 @@ New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-shifts-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -66,14 +59,14 @@ $params = @{
 	sharedShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
+				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:15:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -82,14 +75,14 @@ $params = @{
 	draftShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
+				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:30:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -98,10 +91,6 @@ $params = @{
 }
 
 New-MgTeamScheduleShift -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -453,8 +442,6 @@ Required.
   \[Notes \<String\>\]: The shift notes for the shiftItem.
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift)
-
 

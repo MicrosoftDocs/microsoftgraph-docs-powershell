@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The localized version of the terms of use agreement files attached to the agreement.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [-Exp
 The localized version of the terms of use agreement files attached to the agreement.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgAgreementFileLocalization -AgreementId $agreementId
-
-```
-This example shows how to use the Get-MgAgreementFileLocalization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -335,8 +328,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization)
-
 

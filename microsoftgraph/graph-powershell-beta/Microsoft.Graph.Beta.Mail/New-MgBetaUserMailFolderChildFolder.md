@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserMailFolderChildFolder
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to create a new child mailFolder.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,14 +55,12 @@ New-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter 
 Use this API to create a new child mailFolder.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-childfolders-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	displayName = "displayName-value"
@@ -75,11 +69,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMailFolderChildFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1033,8 +1022,6 @@ Read-only.
   \[BinaryData \<Byte\[\]\>\]:
 
 ## RELATED LINKS
-[New-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder)
-
 

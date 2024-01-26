@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileAccount
@@ -50,12 +49,10 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 ## DESCRIPTION
 Update the properties of an userAccountInformation object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/useraccountinformation-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileAccount Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	CountryCode = "NO"
@@ -63,8 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileAccount -UserId $userId -UserAccountInformationId $userAccountInformationId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileAccount Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -499,5 +494,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount)
-
 

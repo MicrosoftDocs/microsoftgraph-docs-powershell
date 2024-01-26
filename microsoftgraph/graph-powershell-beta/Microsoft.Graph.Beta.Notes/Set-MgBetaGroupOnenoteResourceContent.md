@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenoteresourcecontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update content for the navigation property resources in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgGroupOnenoteResourceContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Set-MgBetaGroupOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stre
 
 ## DESCRIPTION
 Update content for the navigation property resources in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -169,9 +182,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgGroupOnenoteResourceContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenoteresourcecontent)
-
-
 

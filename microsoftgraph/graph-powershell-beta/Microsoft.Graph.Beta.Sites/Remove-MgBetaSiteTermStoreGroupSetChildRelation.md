@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoregroupsetchildrelation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property relations for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroupSetChildRelation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,6 +39,18 @@ Remove-MgBetaSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-
 
 ## DESCRIPTION
 Delete navigation property relations for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -281,9 +290,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroupSetChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoregroupsetchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoregroupsetchildrelation)
-
-
 

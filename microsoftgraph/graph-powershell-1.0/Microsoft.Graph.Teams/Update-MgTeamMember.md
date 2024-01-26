@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamMember
 
 ## SYNOPSIS
 Update the role of a conversationMember in a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,15 +41,12 @@ Update-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Update the role of a conversationMember in a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -63,10 +56,6 @@ $params = @{
 }
 
 Update-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgTeamMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -308,8 +297,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember)
-
 

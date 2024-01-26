@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalyticitemactivitystatactivity
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property activities for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgBetaSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> 
 
 ## DESCRIPTION
 Delete navigation property activities for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -223,9 +232,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalyticitemactivitystatactivity)
-
-
 

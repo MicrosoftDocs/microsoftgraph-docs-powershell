@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenissuancepolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
 Delete a tokenIssuancePolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-IfM
 ## DESCRIPTION
 Delete a tokenIssuancePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Remove-MgPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId
-```
-This example shows how to use the Remove-MgPolicyTokenIssuancePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -214,8 +203,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenissuancepolicy)
-
 

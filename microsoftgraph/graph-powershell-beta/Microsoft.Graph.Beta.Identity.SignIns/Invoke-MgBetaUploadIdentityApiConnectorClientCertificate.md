@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityapiconnectorclientcertificate
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgBetaUploadIdentityApiConnectorClientCertificate
@@ -12,9 +11,6 @@ ms.prod: identity-and-sign-in
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityApiConnectorClientCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,12 +47,10 @@ Upload a PKCS 12 format key (.pfx) to an API connector's authentication configur
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-uploadclientcertificate-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaUploadIdentityApiConnectorClientCertificate Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
@@ -64,8 +58,6 @@ $params = @{
 }
 Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaUploadIdentityApiConnectorClientCertificate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -293,8 +285,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Invoke-MgUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityApiConnectorClientCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityapiconnectorclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityapiconnectorclientcertificate)
-
 

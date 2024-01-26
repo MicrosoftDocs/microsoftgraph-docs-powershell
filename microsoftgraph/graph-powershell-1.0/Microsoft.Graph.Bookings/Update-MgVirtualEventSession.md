@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sessions in solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,6 +56,18 @@ Update-MgVirtualEventSession -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the navigation property sessions in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -719,9 +728,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[Update-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession)
-
-
 

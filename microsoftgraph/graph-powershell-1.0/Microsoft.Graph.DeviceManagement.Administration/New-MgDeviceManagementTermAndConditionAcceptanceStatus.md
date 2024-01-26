@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## SYNOPSIS
 Create a new termsAndConditionsAcceptanceStatus object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +42,18 @@ New-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Create a new termsAndConditionsAcceptanceStatus object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -339,9 +347,6 @@ This is shown to the user on prompts to accept the T&C policy.
 Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus)
-
-
 

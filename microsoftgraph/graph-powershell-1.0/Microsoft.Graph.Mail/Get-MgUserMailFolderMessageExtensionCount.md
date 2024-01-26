@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextensioncount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageExtensionCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageExtensionCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,18 @@ Get-MgUserMailFolderMessageExtensionCount -InputObject <IMailIdentity> [-Filter 
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -133,9 +142,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMailFolderMessageExtensionCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextensioncount)
-
-
 

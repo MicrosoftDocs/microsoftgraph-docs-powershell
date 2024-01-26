@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdeviceconfigurationdevicesettingstatesummary
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property deviceSettingStateSummaries for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary
 
 ## DESCRIPTION
 Delete navigation property deviceSettingStateSummaries for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -298,9 +311,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdeviceconfigurationdevicesettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdeviceconfigurationdevicesettingstatesummary)
-
-
 

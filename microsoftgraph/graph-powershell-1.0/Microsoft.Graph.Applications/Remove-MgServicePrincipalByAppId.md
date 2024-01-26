@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalbyappid
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgServicePrincipalByAppId
 
 ## SYNOPSIS
 Delete a servicePrincipal object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,8 +27,17 @@ Remove-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -168,9 +173,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalbyappid)
-
-
 

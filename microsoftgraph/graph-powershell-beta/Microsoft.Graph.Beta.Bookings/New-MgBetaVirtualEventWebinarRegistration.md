@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to registrations for solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ New-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to registrations for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -652,9 +661,6 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
 ## RELATED LINKS
-[New-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
-
-
 

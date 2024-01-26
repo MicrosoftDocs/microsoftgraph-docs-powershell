@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectiongroupsectionparentsectiongroup
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The section group that contains the section.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +29,18 @@ Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup -InputOb
 ## DESCRIPTION
 The section group that contains the section.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -225,9 +234,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectiongroupsectionparentsectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectiongroupsectionparentsectiongroup)
-
-
 

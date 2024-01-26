@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileNote
@@ -28,17 +27,13 @@ Remove-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Deletes a personAnnotation object from a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personannotation-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserProfileNote Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId
 ```
-This example shows how to use the Remove-MgBetaUserProfileNote Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,5 +186,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreport
@@ -12,9 +12,6 @@ The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContactDirectReport](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDirectReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,17 +41,13 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContactDirectReport -OrgContactId $orgContactId
-
-```
-This example shows how to use the Get-MgBetaContactDirectReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -332,8 +325,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContactDirectReport](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDirectReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreport)
-
 

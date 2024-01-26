@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventinstance
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgAcceptUserEventInstance
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,14 +42,12 @@ Invoke-MgAcceptUserEventInstance -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	Comment = "comment-value"
@@ -62,11 +56,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgAcceptUserEventInstance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -291,8 +280,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventinstance)
-
 

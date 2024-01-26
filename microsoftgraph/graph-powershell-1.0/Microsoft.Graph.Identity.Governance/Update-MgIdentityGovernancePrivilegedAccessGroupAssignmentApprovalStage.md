@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
@@ -47,8 +46,17 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -411,6 +419,4 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage)
-
-
 

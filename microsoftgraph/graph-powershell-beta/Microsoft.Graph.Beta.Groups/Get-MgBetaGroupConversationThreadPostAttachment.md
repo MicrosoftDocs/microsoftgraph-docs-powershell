@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostattachment
@@ -12,9 +12,6 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -339,8 +346,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostattachment)
-
 

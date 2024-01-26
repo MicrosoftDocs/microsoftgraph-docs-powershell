@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbackgroundimage
@@ -11,9 +11,6 @@ schema: 2.0.0
 Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image will reduce bandwidth requirements and make the page load faster.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationBackgroundImage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,17 +33,13 @@ The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 19
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgOrganizationBrandingLocalization -OrganizationId $organizationId
-```
-This example shows how to use the Set-MgOrganizationBrandingLocalizationBackgroundImage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -217,8 +210,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaOrganizationBrandingLocalizationBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationBackgroundImage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbackgroundimage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbackgroundimage)
-
 

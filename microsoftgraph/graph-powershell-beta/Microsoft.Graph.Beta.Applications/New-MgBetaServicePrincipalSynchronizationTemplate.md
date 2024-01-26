@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplate
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to templates for servicePrincipals
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
 
 ## DESCRIPTION
 Create new navigation property to templates for servicePrincipals
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -621,9 +634,6 @@ Must match one of the directory definitions in synchronizationSchema.
   \[Version \<String\>\]: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[New-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplate)
-
-
 

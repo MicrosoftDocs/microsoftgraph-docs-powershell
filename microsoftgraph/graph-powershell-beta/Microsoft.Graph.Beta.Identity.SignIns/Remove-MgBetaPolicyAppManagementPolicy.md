@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaPolicyAppManagementPolicy
 
 ## SYNOPSIS
 Delete an appManagementPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete an appManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Remove-MgBetaPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId
-```
-This example shows how to use the Remove-MgBetaPolicyAppManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -236,8 +225,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy)
-
 

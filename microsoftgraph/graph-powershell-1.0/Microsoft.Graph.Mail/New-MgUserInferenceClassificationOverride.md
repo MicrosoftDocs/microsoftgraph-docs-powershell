@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride
 schema: 2.0.0
-ms.prod: mail
 ---
 
 # New-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
 Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classifiedas specified in the override.
+Future messages from that SMTP address will be consistently classified\nas specified in the override.
 Note
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,17 +42,15 @@ New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classifiedas specified in the override.
+Future messages from that SMTP address will be consistently classified\nas specified in the override.
 Note
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	classifyAs = "focused"
@@ -68,11 +62,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserInferenceClassificationOverride Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -258,8 +247,6 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
   \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
-
 

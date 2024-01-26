@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementcomanageddevicecloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaBulkRestoreDeviceManagementComanagedDeviceCloudPc
@@ -30,8 +29,21 @@ Invoke-MgBetaBulkRestoreDeviceManagementComanagedDeviceCloudPc
 ## DESCRIPTION
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulkrestorecloudpc-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -166,6 +178,4 @@ BODYPARAMETER \<IPaths1Rxaz9ODevicemanagementComanageddevicesMicrosoftGraphBulkr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementcomanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementcomanageddevicecloudpc)
-
-
 

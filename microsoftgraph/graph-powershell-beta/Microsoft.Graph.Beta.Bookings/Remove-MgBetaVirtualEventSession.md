@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventsession
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property sessions for solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgBetaVirtualEventSession -InputObject <IBookingsIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete navigation property sessions for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -177,9 +186,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventsession)
-
-
 

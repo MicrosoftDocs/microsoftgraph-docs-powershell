@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgBetaSitePermission
 
 ## SYNOPSIS
 Create a new permission object on a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,14 +50,12 @@ New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-permissions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	roles = @(
@@ -78,11 +72,6 @@ $params = @{
 }
 
 New-MgBetaSitePermission -SiteId $siteId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaSitePermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -673,8 +662,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission)
-
 

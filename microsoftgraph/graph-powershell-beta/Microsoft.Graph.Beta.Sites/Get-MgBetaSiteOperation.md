@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteOperation
 
 ## SYNOPSIS
 Read the properties of a richLongRunningOperation object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,8 +34,17 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Read the properties of a richLongRunningOperation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/richlongrunningoperation-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -309,9 +314,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation)
-
-
 

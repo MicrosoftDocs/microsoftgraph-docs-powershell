@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
 Delete a namedLocation object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,15 +28,13 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 Delete a namedLocation object.
 
 ## EXAMPLES
-### Example 1: Remove a named location
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-
-Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
 ```
 
-This example removed the named location specified by `$namedLocationId`.
+Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
 
 ## PARAMETERS
 
@@ -231,8 +225,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Test-MgBetaInformationProtectionPolicyLabelRemoval
@@ -32,12 +31,10 @@ Test-MgBetaInformationProtectionPolicyLabelRemoval
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-evaluateremoval-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ContentInfo = @{
@@ -93,8 +90,6 @@ $params = @{
 }
 Test-MgBetaInformationProtectionPolicyLabelRemoval -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -241,5 +236,4 @@ The message appears in administrative logs.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval)
-
 

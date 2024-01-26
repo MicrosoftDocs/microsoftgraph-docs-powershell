@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The main logo for the application.
 Not nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The main logo for the application.
 Not nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -133,9 +146,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationLogo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo)
-
-
 

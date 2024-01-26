@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamChannel
@@ -13,9 +12,6 @@ Create a new channel in a team, as specified in the request body.
 When you create a channel, the maximum length of the channel's displayName is 50 characters.
 This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,11 +56,11 @@ This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 
 ## EXAMPLES
-### Example 1: Create a standard channel
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "Architecture Discussion"
@@ -74,14 +70,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a standard channel
-
-### Example 2: Create private channel on behalf of user
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -101,32 +93,24 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create private channel on behalf of user
-
-### Example 3: Create a channel in migration mode
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
 	displayName = "Import_150958_99z"
 	description = "Import_150958_99z"
-	createdDateTime = [System.DateTime]::Parse("2020-03-14T11:22:17.067Z")
+	createdDateTime = \[System.DateTime\]::Parse("2020-03-14T11:22:17.067Z")
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a channel in migration mode
-
-### Example 4: Create private channel on behalf of user using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -146,14 +130,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create private channel on behalf of user using user principal name
-
-### Example 5: Create a shared channel on behalf of a user
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "My First Shared Channel"
@@ -171,10 +151,6 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
-```
-This example will create a shared channel on behalf of a user
-
 
 ## PARAMETERS
 
@@ -4498,9 +4474,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9103,9 +9079,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13593,9 +13569,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14490,8 +14466,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannel)
-
 

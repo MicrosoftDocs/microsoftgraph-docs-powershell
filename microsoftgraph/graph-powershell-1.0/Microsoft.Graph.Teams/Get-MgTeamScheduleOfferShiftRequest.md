@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleOfferShiftRequest
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an offerShiftRequest object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties and relationships of an offerShiftRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/offershiftrequest-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamScheduleOfferShiftRequest -TeamId $teamId
-
-```
-This example shows how to use the Get-MgTeamScheduleOfferShiftRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -303,8 +292,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest)
-
 

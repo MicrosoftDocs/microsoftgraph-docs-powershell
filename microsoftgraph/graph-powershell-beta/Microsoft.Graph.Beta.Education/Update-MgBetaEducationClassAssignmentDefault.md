@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationClassAssignmentDefault
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,14 +43,12 @@ Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	addedStudentAction = "assignIfOpen"
@@ -63,11 +57,6 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentDefault Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -289,8 +278,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault)
-
 

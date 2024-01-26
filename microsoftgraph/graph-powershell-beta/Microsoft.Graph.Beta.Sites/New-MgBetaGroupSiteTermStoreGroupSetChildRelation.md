@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupsetchildrelation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to relations for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChildRelation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,6 +74,18 @@ New-MgBetaGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to relations for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -605,9 +614,6 @@ Read-only.
   \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
 
 ## RELATED LINKS
-[New-MgGroupSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupsetchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupsetchildrelation)
-
-
 

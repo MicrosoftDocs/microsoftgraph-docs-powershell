@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventinstanceextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensions in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEventInstanceExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ Update-MgBetaUserEventInstanceExtension -InputObject <ICalendarIdentity> -BodyPa
 
 ## DESCRIPTION
 Update the navigation property extensions in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -229,9 +242,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Update-MgUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEventInstanceExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventinstanceextension)
-
-
 

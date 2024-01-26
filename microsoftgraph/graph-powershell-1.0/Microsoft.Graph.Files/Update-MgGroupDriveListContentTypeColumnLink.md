@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumnlink
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property columnLinks in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,6 +39,22 @@ Update-MgGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property columnLinks in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -263,9 +276,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumnlink)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassschool
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 All schools that this class is associated with.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,17 +37,13 @@ All schools that this class is associated with.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassSchool -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgEducationClassSchool Cmdlet.
-
 
 ## PARAMETERS
 
@@ -280,8 +273,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassschool)
-
 

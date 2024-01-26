@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermailboxsetting
@@ -12,9 +12,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailboxSetting](/powershell/module/Microsoft.Graph.Users/Get-MgUserMailboxSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,6 +32,18 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -139,9 +148,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailboxSetting](/powershell/module/Microsoft.Graph.Users/Get-MgUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermailboxsetting)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Copy-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
 Copy a mailfolder and its contents to another mailfolder.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,14 +41,12 @@ Copy-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a mailfolder and its contents to another mailfolder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-copy-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	DestinationId = "destinationId-value"
@@ -60,11 +54,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Copy-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the Copy-MgUserMailFolderChildFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -258,8 +247,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfolder)
-
 

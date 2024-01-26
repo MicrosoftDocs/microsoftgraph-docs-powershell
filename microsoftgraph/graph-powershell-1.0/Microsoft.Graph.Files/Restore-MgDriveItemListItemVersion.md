@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Restore-MgDriveItemListItemVersion
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,8 +29,21 @@ Restore-MgDriveItemListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-W
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -187,9 +196,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion)
-
-
 

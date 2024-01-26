@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property languages in identity
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the navigation property languages in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -335,9 +348,6 @@ This collection only allows you to modify the content of the page, any other mod
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguage)
-
-
 

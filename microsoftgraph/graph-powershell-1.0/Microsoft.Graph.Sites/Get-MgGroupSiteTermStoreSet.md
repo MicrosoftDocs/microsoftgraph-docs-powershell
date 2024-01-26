@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoreset
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteTermStoreSet
 
 ## SYNOPSIS
 Read the properties and relationships of a set object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,8 +53,21 @@ Get-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Read the properties and relationships of a set object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -345,9 +354,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoreset)
-
-
 

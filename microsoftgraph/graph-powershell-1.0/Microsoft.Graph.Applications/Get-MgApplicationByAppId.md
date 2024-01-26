@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgApplicationByAppId
 
 ## SYNOPSIS
 Get the properties and relationships of an application object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByAppId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,8 +27,17 @@ Get-MgApplicationByAppId -InputObject <IApplicationsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get the properties and relationships of an application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -137,9 +142,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByAppId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid)
-
-
 

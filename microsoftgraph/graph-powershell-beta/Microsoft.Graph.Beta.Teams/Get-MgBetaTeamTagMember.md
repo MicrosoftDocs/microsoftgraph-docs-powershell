@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a member of a standard tag in a team.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTagMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgBetaTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 Get the properties and relationships of a member of a standard tag in a team.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
-
-```
-This example shows how to use the Get-MgBetaTeamTagMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -321,8 +314,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTagMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmember)
-
 

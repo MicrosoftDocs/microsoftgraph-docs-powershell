@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecolumnlink
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of columns that are required by this content type.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,22 @@ Get-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 The collection of columns that are required by this content type.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -293,9 +306,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecolumnlink)
-
-
 

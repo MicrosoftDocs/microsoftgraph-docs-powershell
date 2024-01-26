@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaDevice
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,32 +35,21 @@ Get-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a device
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDevice -DeviceId $deviceId
 
+### EXAMPLE 2
 ```
-This example will get a device
-
-### Example 2: Get a device and return only its id and extensionAttributes properties
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes" 
-
 ```
-This example will get a device and return only its id and extensionattributes properties
 
+Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes"
 
 ## PARAMETERS
 
@@ -327,8 +312,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevice)
-
 

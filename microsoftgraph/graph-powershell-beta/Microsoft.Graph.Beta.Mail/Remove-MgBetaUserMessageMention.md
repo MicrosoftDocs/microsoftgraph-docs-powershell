@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserMessageMention
@@ -30,18 +29,14 @@ Remove-MgBetaUserMessageMention -InputObject <IMailIdentity> [-IfMatch <String>]
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 For example, you can delete a specific @-mention of the specified user in the message.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserMessageMention Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
 ```
-This example shows how to use the Remove-MgBetaUserMessageMention Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -197,5 +192,4 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention)
-
 

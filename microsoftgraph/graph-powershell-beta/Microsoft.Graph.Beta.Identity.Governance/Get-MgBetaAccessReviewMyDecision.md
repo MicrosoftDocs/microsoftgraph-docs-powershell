@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewmydecision
@@ -35,13 +35,12 @@ Get-MgBetaAccessReviewMyDecision -InputObject <IIdentityGovernanceIdentity> [-Ex
 The collection of decisions for the caller, if the caller is a reviewer.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAccessReviewMyDecision Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReviewMyDecision -AccessReviewId $accessReviewId
 ```
-This example shows how to use the Get-MgBetaAccessReviewMyDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -361,5 +360,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewmydecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewmydecision)
-
 

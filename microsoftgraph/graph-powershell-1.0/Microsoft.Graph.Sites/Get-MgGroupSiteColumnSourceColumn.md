@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumnsourcecolumn
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The source column for the content type column.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumnSourceColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgGroupSiteColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 The source column for the content type column.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -179,9 +188,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumnSourceColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumnsourcecolumn)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of messages in the mailFolder.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,18 +35,14 @@ Get-MgUserMailFolderMessage -InputObject <IMailIdentity> [-ExpandProperty <Strin
 The collection of messages in the mailFolder.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId
-```
-This example shows how to use the Get-MgUserMailFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -291,8 +284,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessage)
-
 

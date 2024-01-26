@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer
@@ -35,13 +35,12 @@ Get-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity> [-Expa
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAccessReviewReviewer Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId
 ```
-This example shows how to use the Get-MgBetaAccessReviewReviewer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -361,5 +360,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getAllMessages
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaAllUserChatMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Get-MgAllUserChatMessage -InputObject <IUsersFunctionsIdentity> [-Count] [-Filte
 
 ## DESCRIPTION
 Invoke function getAllMessages
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -228,9 +241,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaAllUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaAllUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage)
-
-
 

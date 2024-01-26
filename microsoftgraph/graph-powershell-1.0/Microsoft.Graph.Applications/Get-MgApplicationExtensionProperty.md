@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Get-MgApplicationExtensionProperty
 
 ## SYNOPSIS
 Read a directory extension definition represented by an extensionProperty object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 ## DESCRIPTION
 Read a directory extension definition represented by an extensionProperty object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgApplicationExtensionProperty -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -293,8 +282,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)
-
 

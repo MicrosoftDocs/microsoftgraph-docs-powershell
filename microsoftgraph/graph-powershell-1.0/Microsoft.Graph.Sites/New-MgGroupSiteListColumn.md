@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgGroupSiteListColumn
 
 ## SYNOPSIS
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,8 +60,21 @@ New-MgGroupSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-post-columns-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1233,9 +1242,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcolumn)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Restart-MgDeviceManagementManagedDeviceNow
 
 ## SYNOPSIS
 Reboot device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Restart-MgDeviceManagementManagedDeviceNow -InputObject <IDeviceManagementAction
 
 ## DESCRIPTION
 Reboot device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,9 +152,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow)
-
-
 

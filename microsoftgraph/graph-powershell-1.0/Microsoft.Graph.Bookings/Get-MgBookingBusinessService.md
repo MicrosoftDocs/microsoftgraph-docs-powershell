@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessService
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingservice-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 Get-MgBookingBusinessService -BookingBusinessId $bookingBusinessId
-
-```
-This example shows how to use the Get-MgBookingBusinessService Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,8 +275,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice)
-
 

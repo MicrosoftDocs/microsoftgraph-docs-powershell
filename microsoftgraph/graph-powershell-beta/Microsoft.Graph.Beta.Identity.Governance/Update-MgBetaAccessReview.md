@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreview
@@ -60,16 +60,15 @@ To stop an already-started one-time review, or an already-started instance of a 
 To apply the decisions to the target group or app access rights, use the apply API.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaAccessReview Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "TestReview new name"
 }
 Update-MgBetaAccessReview -AccessReviewId $accessReviewId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaAccessReview Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -796,5 +795,4 @@ Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreview)
-
 

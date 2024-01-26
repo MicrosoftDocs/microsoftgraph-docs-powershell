@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyinclude
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,11 +37,12 @@ Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-### Example 1: Get a permission grant policy include by ID 
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant" 
-Get-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl  
+Get-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl
+```
 
 CertifiedClientApplicationsOnly             : False
 ClientApplicationIds                        : {all}
@@ -56,10 +54,7 @@ PermissionClassification                    : all
 PermissionType                              : application
 Permissions                                 : {all}
 ResourceApplication                         : any
-AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
-```
-
-This command retrieves a specified permission grant policy include configuration in Azure AD.
+AdditionalProperties                        : {\[scopeSensitivityLabels, System.Collections.Generic.Dictionary\`2\[System.String,System.Object\]\]}
 
 ## PARAMETERS
 
@@ -355,8 +350,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyinclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyinclude)
-
 

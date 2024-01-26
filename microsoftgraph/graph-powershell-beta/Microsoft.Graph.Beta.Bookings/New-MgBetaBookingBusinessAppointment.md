@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessAppointment
 
 ## SYNOPSIS
 Create a new bookingAppointment for the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -115,12 +111,10 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusinessAppointment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
@@ -268,8 +262,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1174,8 +1166,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment)
-
 

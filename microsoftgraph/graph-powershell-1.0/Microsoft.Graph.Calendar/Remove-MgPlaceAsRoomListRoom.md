@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property rooms for places
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete navigation property rooms for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -168,9 +177,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom)
-
-
 

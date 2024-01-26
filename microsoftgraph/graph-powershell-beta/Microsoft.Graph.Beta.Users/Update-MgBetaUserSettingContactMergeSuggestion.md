@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserSettingContactMergeSuggestion
@@ -40,12 +39,10 @@ Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a contactMergeSuggestions object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	IsEnabled = $false
@@ -53,8 +50,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserSettingContactMergeSuggestion -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -233,5 +228,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion)
-
 

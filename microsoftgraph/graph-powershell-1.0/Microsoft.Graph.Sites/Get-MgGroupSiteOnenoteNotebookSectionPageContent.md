@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectionpagecontent
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenoteNotebookSectionPageContent
 
 ## SYNOPSIS
 The page's HTML content.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,8 +27,17 @@ Get-MgGroupSiteOnenoteNotebookSectionPageContent -InputObject <ISitesIdentity> -
 ## DESCRIPTION
 The page's HTML content.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -213,9 +218,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectionpagecontent)
-
-
 

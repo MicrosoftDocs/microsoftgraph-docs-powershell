@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgCheckoutGroupDriveItem
 
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCheckoutGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Invoke-MgCheckoutGroupDriveItem -InputObject <IGroupsIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkout-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
-```
-This example shows how to use the Invoke-MgCheckoutGroupDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -209,8 +198,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCheckoutGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveitem)
-
 

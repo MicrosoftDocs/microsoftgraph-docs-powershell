@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgBetaPlannerPlan
 
 ## SYNOPSIS
 Create a new plannerPlan.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,15 +31,12 @@ New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Co
 ## DESCRIPTION
 Create a new plannerPlan.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-plans-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	container = @{
@@ -53,10 +46,6 @@ $params = @{
 }
 
 New-MgBetaPlannerPlan -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1088,8 +1077,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
-
 

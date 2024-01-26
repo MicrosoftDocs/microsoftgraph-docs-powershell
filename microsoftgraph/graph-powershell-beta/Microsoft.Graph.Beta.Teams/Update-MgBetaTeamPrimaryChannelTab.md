@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property tabs in teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the navigation property tabs in teams
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -475,9 +488,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab)
-
-
 

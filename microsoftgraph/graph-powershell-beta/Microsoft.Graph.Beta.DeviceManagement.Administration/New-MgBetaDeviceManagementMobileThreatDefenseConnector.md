@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementmobilethreatdefenseconnector
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,22 @@ New-MgBetaDeviceManagementMobileThreatDefenseConnector
 
 ## DESCRIPTION
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -462,9 +475,6 @@ When FALSE, Intune will not use device risk details sent over this connector dur
 Existing devices that are not compliant due to risk levels obtained from this connector will also become compliant.
 
 ## RELATED LINKS
-[New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementmobilethreatdefenseconnector)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallsession
@@ -62,6 +62,18 @@ Update-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the navigation property sessions in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1207,6 +1219,4 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallsession)
-
-
 

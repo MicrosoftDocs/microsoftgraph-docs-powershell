@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential
@@ -41,6 +40,18 @@ Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IAppli
 
 ## DESCRIPTION
 Delete single sign-on credentials using a password for a user or group.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -223,6 +234,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential)
-
-
 

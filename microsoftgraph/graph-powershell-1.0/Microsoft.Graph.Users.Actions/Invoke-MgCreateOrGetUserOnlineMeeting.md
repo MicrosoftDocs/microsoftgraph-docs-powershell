@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgCreateOrGetUserOnlineMeeting
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCreateOrGetUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,8 +48,9 @@ Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
@@ -76,8 +73,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -365,8 +360,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Organizer \<IMicrosoftGraphMeetingParticipantInfo\>\]: meetingParticipantInfo
 
 ## RELATED LINKS
-[Invoke-MgBetaCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCreateOrGetUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamScheduleTimeOffRequest
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a timeoffrequest object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,10 +33,17 @@ Get-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeoffrequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-get-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -276,8 +279,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequest)
-
 

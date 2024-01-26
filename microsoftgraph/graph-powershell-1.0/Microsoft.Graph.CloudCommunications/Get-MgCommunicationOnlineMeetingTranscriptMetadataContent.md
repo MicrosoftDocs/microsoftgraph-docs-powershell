@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscriptmetadatacontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgCommunicationOnlineMeetingTranscriptMetadataContent
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,8 +29,17 @@ Get-MgCommunicationOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCo
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -146,9 +151,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscriptmetadatacontent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscriptmetadatacontent)
-
-
 

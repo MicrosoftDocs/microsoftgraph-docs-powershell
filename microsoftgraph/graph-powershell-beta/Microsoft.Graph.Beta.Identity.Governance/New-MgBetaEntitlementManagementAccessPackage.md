@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackage
@@ -12,9 +11,6 @@ ms.prod: governance
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 After the access package is created, you can then create accessPackageAssignmentPolicies which specify how users are assigned to the access package.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,15 +38,13 @@ Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 After the access package is created, you can then create accessPackageAssignmentPolicies which specify how users are assigned to the access package.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an access package
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 New-MgBetaEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign' | Format-list
+```
 
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
@@ -68,10 +62,7 @@ IsHidden                        : False
 IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 10/13/2021 9:08:02 AM
-AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
-```
-
-This example creates an access package with he defined display name under the specified catalog. The $allowedRequestors variable should contain the **id** of the requestor.
+AdditionalProperties            : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity\]}
 
 ## PARAMETERS
 
@@ -1275,10 +1266,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -1553,10 +1544,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -7540,9 +7531,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
           \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -9011,10 +9002,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -9289,10 +9280,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -15276,9 +15267,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
           \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -16784,10 +16775,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -17062,10 +17053,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -23049,9 +23040,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
         \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -24451,10 +24442,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -24729,10 +24720,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -30716,9 +30707,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
         \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -32117,10 +32108,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -32395,10 +32386,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -38382,9 +38373,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
         \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -39529,10 +39520,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -39807,10 +39798,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -45794,9 +45785,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -46241,8 +46232,6 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
-[New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage)
-
 

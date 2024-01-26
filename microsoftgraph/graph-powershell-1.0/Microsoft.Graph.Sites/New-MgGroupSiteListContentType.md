@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to contentTypes for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,6 +52,22 @@ New-MgGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1791,9 +1804,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcontenttype)
-
-
 

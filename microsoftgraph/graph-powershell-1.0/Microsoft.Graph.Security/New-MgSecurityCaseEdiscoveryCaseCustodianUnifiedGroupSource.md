@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 
 ## SYNOPSIS
 Create a new unifiedGroupSource object associated with an eDiscovery custodian.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,15 +44,12 @@ New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecur
 ## DESCRIPTION
 Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-post-unifiedgroupsources-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create unifiedGroupSource with group SMTP address
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	group = @{
@@ -67,14 +60,10 @@ $params = @{
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create unifiedgroupsource with group smtp address
-
-### Example 2: Create unifiedGroupSource with group@odata.bind
-
-```powershell
-
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	"group@odata.bind" = "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610"
@@ -82,10 +71,6 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
-```
-This example will create unifiedgroupsource with group@odata.bind
-
 
 ## PARAMETERS
 
@@ -4637,9 +4622,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9225,9 +9210,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9548,8 +9533,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianunifiedgroupsource)
-
 

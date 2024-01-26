@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
 Update the properties of a complianceManagementPartner object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +50,22 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Update the properties of a complianceManagementPartner object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -366,9 +378,6 @@ MACOSENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignmen
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
-
-
 

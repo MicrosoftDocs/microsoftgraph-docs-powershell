@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejobtask
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A list of printTasks that were triggered by this print job.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 
 ## DESCRIPTION
 A list of printTasks that were triggered by this print job.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -282,9 +291,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintShareJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejobtask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejobtask)
-
-
 

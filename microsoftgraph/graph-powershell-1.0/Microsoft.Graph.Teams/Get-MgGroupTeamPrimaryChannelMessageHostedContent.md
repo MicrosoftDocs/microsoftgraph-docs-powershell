@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +47,16 @@ Get-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> 
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -347,8 +353,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagehostedcontent)
-
 

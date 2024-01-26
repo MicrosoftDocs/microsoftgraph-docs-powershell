@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopyfromcontenttypehub
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaGroupSiteContentTypeCopyFromContentTypeHub
@@ -13,9 +12,6 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,10 +47,17 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopyfromcontenttypehub-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -249,8 +252,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopyfromcontenttypehub)
-
 

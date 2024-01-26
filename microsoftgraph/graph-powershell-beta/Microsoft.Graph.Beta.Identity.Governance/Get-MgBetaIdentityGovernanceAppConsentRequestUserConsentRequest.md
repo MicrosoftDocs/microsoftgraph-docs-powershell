@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest
 
 ## SYNOPSIS
 Read the properties and relationships of a userConsentRequest object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <II
 ## DESCRIPTION
 Read the properties and relationships of a userConsentRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId
-
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -370,8 +359,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
-
 

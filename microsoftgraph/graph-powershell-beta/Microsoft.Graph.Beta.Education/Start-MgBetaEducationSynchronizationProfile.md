@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Start-MgBetaEducationSynchronizationProfile
@@ -36,17 +35,13 @@ Otherwise, the response contains errors and warnings.
 If the response contains errors, the synchronization won't start.
 If the response contains only warnings, synchronization starts.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-start-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Start-MgBetaEducationSynchronizationProfile Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
 Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-This example shows how to use the Start-MgBetaEducationSynchronizationProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -149,5 +144,4 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile)
-
 

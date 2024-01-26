@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationappmanagementpolicybyref
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaApplicationAppManagementPolicyByRef
@@ -12,9 +11,6 @@ ms.prod: identity-and-sign-in
 Assign an appManagementPolicy policy object to an application or service principal object.
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,21 +44,17 @@ The application or service principal adopts this policy over the tenant-wide ten
 Only one policy object can be assigned to an application or service principal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 
 New-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaApplicationAppManagementPolicyByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -245,8 +237,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationappmanagementpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationappmanagementpolicybyref)
-
 

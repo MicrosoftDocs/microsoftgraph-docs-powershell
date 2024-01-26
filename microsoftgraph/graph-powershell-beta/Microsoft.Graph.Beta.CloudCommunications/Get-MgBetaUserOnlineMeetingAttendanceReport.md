@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereport
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The attendance reports of an online meeting.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,18 +49,14 @@ The attendance reports of an online meeting.
 Read-only.
 
 ## EXAMPLES
-### Example 1: List attendance reports for an online meeting
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingAttendanceReport -UserId $userId -OnlineMeetingId $onlineMeetingId
-
-```
-This example will list attendance reports for an online meeting
-
 
 ## PARAMETERS
 
@@ -315,8 +308,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereport)
-
 

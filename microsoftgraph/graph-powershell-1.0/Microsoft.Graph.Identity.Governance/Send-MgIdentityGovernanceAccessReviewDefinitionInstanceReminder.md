@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder
 
 ## SYNOPSIS
 Send a reminder to the reviewers of an active accessReviewInstance.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +27,13 @@ Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -InputObject <II
 ## DESCRIPTION
 Send a reminder to the reviewers of an active accessReviewInstance.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
 Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
-This example shows how to use the Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -223,8 +215,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder)
-
 

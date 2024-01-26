@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessagereplyhostedcontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to hostedContents for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,39 +44,27 @@ New-MgGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> -B
 Create new navigation property to hostedContents for groups
 
 ## EXAMPLES
-### Example 1: List hosted content for a channel message
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgGroupTeamChannelMessageReplyHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List hosted content for reply to a channel message
-
-```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgGroupTeamChannelMessageReplyHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: List hosted content for message in a chat
-
-```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-```
-This example shows how to use the New-MgGroupTeamChannelMessageReplyHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -320,8 +305,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessagereplyhostedcontent)
-
 

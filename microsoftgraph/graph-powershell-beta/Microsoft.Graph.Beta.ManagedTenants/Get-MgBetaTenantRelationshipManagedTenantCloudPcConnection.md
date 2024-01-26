@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection
 schema: 2.0.0
-ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection
@@ -35,24 +34,19 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IManage
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcConnection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcconnection-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnectionId $cloudPcConnectionId
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -296,5 +290,4 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection)
-
 

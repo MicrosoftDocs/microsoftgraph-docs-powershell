@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipal
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to riskyServicePrincipals for identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,17 +31,13 @@ New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrinc
 Create new navigation property to riskyServicePrincipals for identityProtection
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaRiskyServicePrincipal
-```
-This example shows how to use the New-MgBetaBetaRiskyServicePrincipal Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -380,8 +373,6 @@ Read-only.
   \[ServicePrincipalId \<String\>\]: The identifier of the service principal.
 
 ## RELATED LINKS
-[New-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipal)
-
 

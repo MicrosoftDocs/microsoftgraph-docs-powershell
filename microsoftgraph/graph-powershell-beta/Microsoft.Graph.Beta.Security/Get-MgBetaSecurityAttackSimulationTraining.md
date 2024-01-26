@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents details about attack simulation trainings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Ex
 
 ## DESCRIPTION
 Represents details about attack simulation trainings.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -317,9 +326,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining)
-
-
 

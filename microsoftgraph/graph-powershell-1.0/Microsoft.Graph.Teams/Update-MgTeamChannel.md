@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamChannel
 
 ## SYNOPSIS
 Update the properties of the specified channel.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,17 +50,13 @@ Update-MgTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 Update the properties of the specified channel.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Update-MgTeamChannel -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Update-MgTeamChannel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -4403,9 +4395,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9008,9 +9000,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13498,9 +13490,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14395,8 +14387,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[Update-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel)
-
 

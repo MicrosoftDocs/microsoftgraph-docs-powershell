@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetrelationset
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The \[set\] in which the relation is relevant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetRelationSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgBetaSiteTermStoreSetRelationSet -InputObject <ISitesIdentity> [-ExpandProp
 
 ## DESCRIPTION
 The \[set\] in which the relation is relevant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -192,9 +201,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetRelationSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetrelationset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetrelationset)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstance
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
@@ -12,9 +11,6 @@ ms.prod: governance
 Retrieve an accessReviewInstance object using the identifier of an accessReviewInstance and its parent accessReviewScheduleDefinition.
 This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,21 +39,14 @@ Retrieve an accessReviewInstance object using the identifier of an accessReviewI
 This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -Top 100 -Skip 0 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
+Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -Top 100 -Skip 0
 
 ## PARAMETERS
 
@@ -375,8 +364,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstance)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Remove-MgBetaApplicationExtensionProperty
@@ -11,9 +10,6 @@ ms.prod: extensions
 ## SYNOPSIS
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,21 +29,14 @@ Remove-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/extensionproperty-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Remove-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
-```
-This example shows how to use the Remove-MgBetaApplicationExtensionProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -207,8 +196,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationextensionproperty)
-
 

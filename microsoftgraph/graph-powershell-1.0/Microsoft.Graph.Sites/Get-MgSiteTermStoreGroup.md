@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroup
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreGroup
 
 ## SYNOPSIS
 Read the properties and relationships of a term store group object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,32 +53,21 @@ Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a termStore group
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgSiteTermStoreGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get a site collection termStore group and its parent site ID
-
-```powershell
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId"
-```
-This example shows how to use the Get-MgSiteTermStoreGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -354,8 +339,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroup)
-
 

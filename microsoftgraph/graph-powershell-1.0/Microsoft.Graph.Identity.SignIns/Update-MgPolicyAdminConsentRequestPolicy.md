@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
 Update the properties of an adminConsentRequestPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,8 +29,21 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
 ## DESCRIPTION
 Update the properties of an adminConsentRequestPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminconsentrequestpolicy-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -261,9 +270,6 @@ Possible value: decisions.
 Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy)
-
-
 

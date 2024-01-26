@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Invoke-MgRetryUserServiceProvisioning
 
 ## SYNOPSIS
 Retry the user service provisioning.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +25,18 @@ Invoke-MgRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity> [-Pas
 
 ## DESCRIPTION
 Retry the user service provisioning.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -156,9 +164,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning)
-
-
 

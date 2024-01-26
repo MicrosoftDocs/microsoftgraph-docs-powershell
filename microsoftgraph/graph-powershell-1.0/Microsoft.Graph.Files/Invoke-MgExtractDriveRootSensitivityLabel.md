@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriverootsensitivitylabel
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveRootSensitivityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,18 @@ Invoke-MgExtractDriveRootSensitivityLabel -InputObject <IFilesIdentity> [-WhatIf
 
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -135,9 +144,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveRootSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriverootsensitivitylabel)
-
-
 

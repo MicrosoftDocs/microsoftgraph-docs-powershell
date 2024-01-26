@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
-ms.prod: browser-management
 ---
 
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
 Delete a browserSharedCookie from a browserSiteList.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,8 +27,17 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 ## DESCRIPTION
 Delete a browserSharedCookie from a browserSiteList.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -300,9 +305,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
-
-
 

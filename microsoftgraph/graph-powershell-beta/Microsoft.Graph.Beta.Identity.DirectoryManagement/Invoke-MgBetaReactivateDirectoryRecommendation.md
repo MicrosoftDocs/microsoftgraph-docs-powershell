@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Invoke-MgBetaReactivateDirectoryRecommendation
@@ -32,8 +31,21 @@ Reactivate a completed, dismissed, or postponed recommendation object.
 This action updates the status of the recommendation to active.
 This method only works when the status of the recommendation is completedByUser, dismissed, or postponed.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-reactivate-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -162,6 +174,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation)
-
-
 

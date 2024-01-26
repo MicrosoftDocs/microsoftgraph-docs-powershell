@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilewebaccount
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileWebAccount
@@ -50,12 +49,10 @@ Update-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of a webAccount object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/webaccount-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileWebAccount Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	WebUrl = "https://github.com/innocenty.popov"
@@ -63,8 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileWebAccount Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -537,5 +532,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilewebaccount)
-
 

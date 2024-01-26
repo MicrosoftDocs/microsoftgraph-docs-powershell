@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingcategory
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to gradingCategories for education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ New-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 
 ## DESCRIPTION
 Create new navigation property to gradingCategories for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -228,9 +237,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingcategory)
-
-
 

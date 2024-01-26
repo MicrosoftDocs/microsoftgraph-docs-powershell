@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeviceenrollmentconfiguration
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property deviceEnrollmentConfigurations in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDevice
 
 ## DESCRIPTION
 Update the navigation property deviceEnrollmentConfigurations in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -377,9 +386,6 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
   \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeviceenrollmentconfiguration)
-
-
 

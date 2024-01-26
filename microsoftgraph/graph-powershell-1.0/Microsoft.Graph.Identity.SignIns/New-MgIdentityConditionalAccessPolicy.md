@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,10 +32,11 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
 Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
-### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -77,15 +74,11 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Block access to Exchange Online from non-trusted regions
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -119,15 +112,11 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Use all conditions and controls
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -230,15 +219,11 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Require MFA to Exchange Online from non-compliant devices
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-compliant devices."
@@ -264,11 +249,6 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -738,8 +718,6 @@ SESSIONCONTROLS \<IMicrosoftGraphConditionalAccessSessionControls\>: conditional
     \[Value \<Int32?\>\]: The number of days or hours.
 
 ## RELATED LINKS
-[New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy)
-
 

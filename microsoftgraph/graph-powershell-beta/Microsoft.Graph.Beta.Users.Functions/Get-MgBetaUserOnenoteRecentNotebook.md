@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getRecentNotebooks
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserOnenoteRecentNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Cou
 
 ## DESCRIPTION
 Invoke function getRecentNotebooks
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -208,9 +221,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserOnenoteRecentNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook)
-
-
 

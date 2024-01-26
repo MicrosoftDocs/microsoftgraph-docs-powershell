@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Grant-MgBetaDriveItemPermission
 
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,8 +42,21 @@ Grant-MgBetaDriveItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a \[permission\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -263,9 +272,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission)
-
-
 

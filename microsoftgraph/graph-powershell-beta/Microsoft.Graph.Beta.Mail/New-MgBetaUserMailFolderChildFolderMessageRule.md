@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserMailFolderChildFolderMessageRule
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,8 +47,21 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-messagerules-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -510,9 +519,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostparenthostpair
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostParentHostPair](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostParentHostPair?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaSecurityThreatIntelligenceHostParentHostPair -InputObject <ISecurityId
 
 ## DESCRIPTION
 The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -332,9 +341,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceHostParentHostPair](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostParentHostPair?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostparenthostpair](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostparenthostpair)
-
-
 

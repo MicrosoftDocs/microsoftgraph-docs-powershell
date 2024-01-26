@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementremoteassistancepartner
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Remove-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
 Deletes a remoteAssistancePartner.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,17 +28,13 @@ Remove-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagement
 Deletes a remoteAssistancePartner.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Administration
+```
 
 Remove-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId
-```
-This example shows how to use the Remove-MgDeviceManagementRemoteAssistancePartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -171,8 +163,6 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
   \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementremoteassistancepartner)
-
 

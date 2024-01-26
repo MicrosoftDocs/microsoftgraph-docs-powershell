@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace
 schema: 2.0.0
-ms.prod: calendar
 ---
 
 # Update-MgBetaPlace
@@ -11,9 +10,6 @@ ms.prod: calendar
 ## SYNOPSIS
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ Update-MgBetaPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -68,15 +62,11 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.workspace"
@@ -88,11 +78,6 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -344,8 +329,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Update-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace)
-
 

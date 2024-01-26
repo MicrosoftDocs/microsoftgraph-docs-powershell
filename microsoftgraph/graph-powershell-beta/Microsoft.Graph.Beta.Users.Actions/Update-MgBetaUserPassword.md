@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Update-MgBetaUserPassword
@@ -11,9 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,12 +43,10 @@ Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
 Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-changepassword-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserPassword Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	CurrentPassword = "xWwvJ]6NMw+bWH-d"
@@ -61,8 +55,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserPassword -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -268,8 +260,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationClassAssignmentSubmissionOutcome
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,29 +45,23 @@ Update-MgBetaEducationClassAssignmentSubmissionOutcome -InputObject <IEducationI
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationoutcome-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update a feedback outcome
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackOutcome"
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Update a points outcome
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationPointsOutcome"
@@ -82,15 +72,11 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Update a rubric outcome
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationRubricOutcome"
@@ -101,11 +87,6 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -363,8 +344,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome)
-
 

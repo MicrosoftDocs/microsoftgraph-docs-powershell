@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoffreason
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns 404 Not found.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns 404 Not found.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -373,9 +386,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoffreason)
-
-
 

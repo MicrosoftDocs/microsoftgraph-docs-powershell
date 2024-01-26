@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecolumn
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of column definitions reusable across lists under this site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,12 @@ Get-MgBetaSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSiteColumn Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteColumn -SiteId $siteId
 ```
-This example shows how to use the Get-MgBetaSiteColumn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -314,8 +310,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecolumn)
-
 

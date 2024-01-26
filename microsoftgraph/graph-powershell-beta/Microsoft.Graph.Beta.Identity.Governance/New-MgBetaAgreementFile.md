@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfile
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgBetaAgreementFile
 
 ## SYNOPSIS
 Create a new localized agreement file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,8 +43,17 @@ New-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create a new localized agreement file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-post-files-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -498,9 +503,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfile)
-
-
 

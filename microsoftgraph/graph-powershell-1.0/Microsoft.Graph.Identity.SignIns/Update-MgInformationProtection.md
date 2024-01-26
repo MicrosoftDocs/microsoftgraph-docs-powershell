@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update informationProtection
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtect
 
 ## DESCRIPTION
 Update informationProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -236,9 +249,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[Status \<String\>\]: threatAssessmentStatus
 
 ## RELATED LINKS
-[Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection)
-
-
 

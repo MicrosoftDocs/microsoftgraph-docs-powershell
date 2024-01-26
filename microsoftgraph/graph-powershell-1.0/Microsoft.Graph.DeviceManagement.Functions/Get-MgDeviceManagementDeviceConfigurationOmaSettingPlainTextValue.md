@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getOmaSettingPlainTextValue
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
 
 ## DESCRIPTION
 Invoke function getOmaSettingPlainTextValue
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -102,9 +115,6 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[SummarizeBy \<UserExperienceAnalyticsSummarizedBy?\>\]: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue)
-
-
 

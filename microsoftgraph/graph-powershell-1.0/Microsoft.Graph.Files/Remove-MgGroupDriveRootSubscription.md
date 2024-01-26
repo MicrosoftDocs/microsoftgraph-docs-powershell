@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootsubscription
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property subscriptions for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgGroupDriveRootSubscription -InputObject <IFilesIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete navigation property subscriptions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -196,9 +209,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootsubscription)
-
-
 

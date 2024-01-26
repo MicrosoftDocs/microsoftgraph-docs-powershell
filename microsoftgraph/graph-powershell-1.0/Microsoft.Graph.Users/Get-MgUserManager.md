@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserManager
@@ -11,9 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,21 +28,16 @@ Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-manager-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a user's manager
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgUserManager -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 e1428c8c-4219-4beb-b5cb-765c2590278b
-```
-
-The commands gets the manager of the specified user.
 
 ## PARAMETERS
 
@@ -142,8 +133,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
-
 

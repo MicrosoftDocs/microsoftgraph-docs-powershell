@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Classes for which the user is a teacher.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeTaughtClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,16 @@ Get-MgEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandProperty 
 Classes for which the user is a teacher.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -252,8 +259,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeTaughtClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass)
-
 

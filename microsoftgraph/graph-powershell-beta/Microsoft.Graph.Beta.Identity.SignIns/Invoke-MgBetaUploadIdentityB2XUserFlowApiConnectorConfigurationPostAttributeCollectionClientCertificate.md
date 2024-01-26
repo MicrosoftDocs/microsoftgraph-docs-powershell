@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate
@@ -12,9 +11,6 @@ ms.prod: identity-and-sign-in
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,8 +49,17 @@ Upload a PKCS 12 format key (.pfx) to an API connector's authentication configur
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-uploadclientcertificate-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -282,9 +287,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate)
-
-
 

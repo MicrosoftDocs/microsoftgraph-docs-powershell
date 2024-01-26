@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
 Create a new mobileAppCategory object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,18 @@ New-MgDeviceAppManagementMobileAppCategory -BodyParameter <IMicrosoftGraphMobile
 
 ## DESCRIPTION
 Create a new mobileAppCategory object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -164,9 +172,6 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: The date and time the mobileAppCategory was last modified.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
-
-
 

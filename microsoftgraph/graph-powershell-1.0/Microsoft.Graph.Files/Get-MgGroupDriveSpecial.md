@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivespecial
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveSpecial
@@ -14,9 +13,6 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveSpecial?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,8 +42,21 @@ If a special folder is renamed or moved to another location within the drive, th
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-get-specialfolder-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -305,9 +314,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveSpecial?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivespecial](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivespecial)
-
-
 

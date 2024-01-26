@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to versions for shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,22 @@ New-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to versions for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -364,9 +377,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebaccountcount
@@ -26,6 +26,18 @@ Get-MgBetaUserProfileWebAccountCount -InputObject <IPeopleIdentity> [-Filter <St
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -132,6 +144,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebaccountcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebaccountcount)
-
-
 

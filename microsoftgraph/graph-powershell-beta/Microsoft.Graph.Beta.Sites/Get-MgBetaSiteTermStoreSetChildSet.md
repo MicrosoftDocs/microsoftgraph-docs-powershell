@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildset
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The \[set\] in which the term is created.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetChildSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,18 @@ Get-MgBetaSiteTermStoreSetChildSet -InputObject <ISitesIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 The \[set\] in which the term is created.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -219,9 +228,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetChildSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildset)
-
-
 

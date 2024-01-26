@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemdocumentsetversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a document set version.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Restore-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Restore a document set version.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -232,9 +245,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Restore-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemdocumentsetversion)
-
-
 

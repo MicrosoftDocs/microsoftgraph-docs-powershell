@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getSharePointSiteUsageDetail
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,6 +36,22 @@ Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <
 
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageDetail
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -156,9 +169,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportSharePointSiteUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail)
-
-
 

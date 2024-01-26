@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFavorite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,13 +28,12 @@ Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaGroupFavorite Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Remove-MgBetaGroupFavorite -GroupId $groupId
 ```
-This example shows how to use the Remove-MgBetaGroupFavorite Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -181,8 +177,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFavorite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
-
 

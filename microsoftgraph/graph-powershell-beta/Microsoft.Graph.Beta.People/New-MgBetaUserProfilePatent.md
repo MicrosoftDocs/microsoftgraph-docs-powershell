@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfilePatent
@@ -48,12 +47,10 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new itemPatent object within a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-patents-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfilePatent Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Description = "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel."
@@ -65,8 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePatent -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfilePatent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -519,5 +514,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent)
-
 

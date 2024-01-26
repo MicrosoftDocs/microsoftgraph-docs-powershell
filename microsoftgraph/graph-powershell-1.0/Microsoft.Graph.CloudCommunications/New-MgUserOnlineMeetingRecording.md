@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingrecording
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to recordings for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingRecording?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ New-MgUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to recordings for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -323,9 +332,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgBetaUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingRecording?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingrecording)
-
-
 

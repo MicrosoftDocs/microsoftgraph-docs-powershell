@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpost
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgForwardGroupConversationThreadPost
 
 ## SYNOPSIS
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPost?view=graph-powershell-beta)
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ## SYNTAX
 
@@ -48,16 +44,14 @@ Invoke-MgForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-forward-permissions.md)]
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	Comment = "comment-value"
@@ -72,11 +66,6 @@ $params = @{
 }
 
 Invoke-MgForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgForwardGroupConversationThreadPost Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -333,8 +322,6 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[Invoke-MgBetaForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpost)
-
 

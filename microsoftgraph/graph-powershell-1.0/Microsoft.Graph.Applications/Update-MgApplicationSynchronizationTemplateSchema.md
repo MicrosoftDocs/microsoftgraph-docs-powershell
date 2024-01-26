@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplateschema
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property schema in applications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIde
 
 ## DESCRIPTION
 Update the navigation property schema in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -534,9 +543,6 @@ Must match one of the directory definitions in synchronizationSchema.
 Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
-[Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplateschema)
-
-
 

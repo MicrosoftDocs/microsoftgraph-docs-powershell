@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgUnfollowDriveItem
 
 ## SYNOPSIS
 Unfollow a driveItem.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,8 +26,21 @@ Invoke-MgUnfollowDriveItem -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 ## DESCRIPTION
 Unfollow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -169,9 +178,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem)
-
-
 

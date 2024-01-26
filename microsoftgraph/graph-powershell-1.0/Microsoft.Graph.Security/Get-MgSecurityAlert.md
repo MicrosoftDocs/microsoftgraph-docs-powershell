@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgSecurityAlert
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an alert object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,21 +33,14 @@ Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the properties and relationships of an alert object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 Get-MgSecurityAlert
-
-```
-This example shows how to use the Get-MgSecurityAlert Cmdlet.
-
 
 ## PARAMETERS
 
@@ -307,8 +296,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert)
-
 

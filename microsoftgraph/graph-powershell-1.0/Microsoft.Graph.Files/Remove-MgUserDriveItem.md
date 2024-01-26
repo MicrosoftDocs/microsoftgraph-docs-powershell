@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Remove-MgUserDriveItem
 
 ## SYNOPSIS
-Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItem?view=graph-powershell-beta)
+Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 
 ## SYNTAX
 
@@ -29,10 +25,23 @@ Remove-MgUserDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -200,9 +209,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitem)
-
-
 

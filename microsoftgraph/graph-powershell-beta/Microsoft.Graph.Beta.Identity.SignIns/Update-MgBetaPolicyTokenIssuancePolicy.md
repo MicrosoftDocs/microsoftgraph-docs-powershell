@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
 Update the properties of a tokenIssuancePolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,14 +43,12 @@ Update-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -
 ## DESCRIPTION
 Update the properties of a tokenIssuancePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	definition = @(
@@ -65,11 +59,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyTokenIssuancePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -381,8 +370,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy)
-
 

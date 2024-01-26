@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamworkDeletedTeamChannelMessage
 
 ## SYNOPSIS
 Send a new chatMessage in the specified channel.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,6 +56,18 @@ New-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Send a new chatMessage in the specified channel.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -977,9 +985,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[New-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessage)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Remove-MgBetaSecurityLabelRetentionLabel
@@ -28,17 +27,13 @@ Remove-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete a retentionLabel object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionlabel-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSecurityLabelRetentionLabel Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
 ```
-This example shows how to use the Remove-MgBetaSecurityLabelRetentionLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -232,5 +227,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel)
-
 

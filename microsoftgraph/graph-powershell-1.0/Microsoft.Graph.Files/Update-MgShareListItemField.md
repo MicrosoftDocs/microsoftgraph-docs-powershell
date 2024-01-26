@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemfield
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgShareListItemField
 
 ## SYNOPSIS
 Update the properties on a \[listItem\]\[\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,8 +63,21 @@ Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -238,9 +247,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemfield)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianindex
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Trigger an indexOperation to make a custodian and associated sources searchable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,13 +28,12 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentit
 Trigger an indexOperation to make a custodian and associated sources searchable.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -203,8 +199,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianindex](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianindex)
-
 

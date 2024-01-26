@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCase
@@ -28,17 +27,13 @@ Remove-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-IfMat
 ## DESCRIPTION
 Delete a case object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
 ```
-This example shows how to use the Remove-MgBetaComplianceEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -171,5 +166,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteonenotepagecontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action onenotePatchContent
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteOnenotePageContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgBetaSiteOnenotePageContent -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Invoke action onenotePatchContent
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -275,9 +288,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteonenotepagecontent)
-
-
 

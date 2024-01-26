@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootActivityByInterval?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Get-MgUserDriveRootActivityByInterval -InputObject <IUsersFunctionsIdentity> [-C
 
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -288,9 +301,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval)
-
-
 

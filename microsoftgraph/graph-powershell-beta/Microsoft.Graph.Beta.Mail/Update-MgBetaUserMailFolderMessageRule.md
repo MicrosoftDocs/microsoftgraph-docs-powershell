@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessagerule
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserMailFolderMessageRule
 
 ## SYNOPSIS
 Change writable properties on a messageRule object and save the changes.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Change writable properties on a messageRule object and save the changes.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	displayName = "Important from partner"
@@ -67,11 +61,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserMailFolderMessageRule Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -529,8 +518,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessagerule)
-
 

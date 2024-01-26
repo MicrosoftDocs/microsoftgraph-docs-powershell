@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessageextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Remove-MgBetaUserMessageExtension
@@ -11,9 +10,6 @@ ms.prod: extensions
 ## SYNOPSIS
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 For the list of resources that support open extensions, see the table in the Permissions section.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessageExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,18 +30,14 @@ Delete an open extension (openTypeExtension object) from the specified instance 
 For the list of resources that support open extensions, see the table in the Permissions section.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -ExtensionId $extensionId
-```
-This example shows how to use the Remove-MgBetaUserMessageExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -199,8 +191,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessageExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessageextension)
-
 

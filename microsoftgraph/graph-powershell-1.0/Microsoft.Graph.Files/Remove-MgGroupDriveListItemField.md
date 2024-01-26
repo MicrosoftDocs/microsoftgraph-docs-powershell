@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgGroupDriveListItemField -InputObject <IFilesIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete navigation property fields for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -196,9 +209,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemfield)
-
-
 

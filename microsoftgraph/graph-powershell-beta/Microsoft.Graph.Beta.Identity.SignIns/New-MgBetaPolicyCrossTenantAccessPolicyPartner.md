@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
 Create a new partner configuration in a cross-tenant access policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,14 +37,12 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner
 ## DESCRIPTION
 Create a new partner configuration in a cross-tenant access policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-post-partners-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	tenantId = "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
@@ -77,11 +71,6 @@ $params = @{
 }
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartner -BodyParameter $params
-```
-This example shows how to use the New-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -473,8 +462,6 @@ Office365 - Includes the applications mentioned as part of the Office365 suite.
 For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 ## RELATED LINKS
-[New-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner)
-
 

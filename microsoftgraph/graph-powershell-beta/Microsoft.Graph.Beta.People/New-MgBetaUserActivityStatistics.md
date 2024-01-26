@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauseractivitystatistics
@@ -40,6 +40,18 @@ New-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Create new navigation property to activityStatistics for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -288,6 +300,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauseractivitystatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauseractivitystatistics)
-
-
 

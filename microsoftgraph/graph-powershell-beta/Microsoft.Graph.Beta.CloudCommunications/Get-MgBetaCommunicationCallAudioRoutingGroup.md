@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroup
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an audioRoutingGroup object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Retrieve the properties and relationships of an audioRoutingGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId
-
-```
-This example shows how to use the Get-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -289,8 +278,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroup)
-
 

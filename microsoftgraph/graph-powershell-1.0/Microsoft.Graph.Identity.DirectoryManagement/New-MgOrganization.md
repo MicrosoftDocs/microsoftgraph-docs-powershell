@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to organization
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,17 +37,13 @@ New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization> [-WhatIf] [-Conf
 Add new entity to organization
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgOrganization
-```
-This example shows how to use the New-MgOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1047,8 +1040,6 @@ Not nullable.
   \[Type \<String\>\]: For example, Managed.
 
 ## RELATED LINKS
-[New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization)
-
 

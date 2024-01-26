@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaIdentityB2CUserFlow
@@ -50,12 +49,10 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of a b2cIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaIdentityB2CUserFlow Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	IsLanguageCustomizationEnabled = $true
@@ -63,8 +60,6 @@ $params = @{
 }
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -578,5 +573,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2cauthenticationmethodpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyB2CAuthenticationMethodPolicy
@@ -21,17 +20,13 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Read the properties of a b2cAuthenticationMethodsPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cauthenticationmethodspolicy-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyB2CAuthenticationMethodPolicy
 ```
-This example shows how to use the Get-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -78,5 +73,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2cauthenticationmethodpolicy)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemthumbnail
@@ -12,9 +12,6 @@ Collection of \[thumbnailSet\]\[\] objects associated with the item.
 For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,6 +39,22 @@ Collection of \[thumbnailSet\]\[\] objects associated with the item.
 For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -314,9 +327,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemthumbnail)
-
-
 

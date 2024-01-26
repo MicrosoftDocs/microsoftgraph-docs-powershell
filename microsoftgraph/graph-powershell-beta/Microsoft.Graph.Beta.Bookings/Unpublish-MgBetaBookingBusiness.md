@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Unpublish-MgBetaBookingBusiness
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +41,13 @@ Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-W
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-unpublish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Unpublish-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Unpublish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-This example shows how to use the Unpublish-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -174,8 +166,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
-
 

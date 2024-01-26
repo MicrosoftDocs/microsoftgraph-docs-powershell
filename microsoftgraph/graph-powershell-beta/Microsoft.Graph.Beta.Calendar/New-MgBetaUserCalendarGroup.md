@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendargroup
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserCalendarGroup
 
 ## SYNOPSIS
 Use this API to create a new CalendarGroup.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,14 +41,12 @@ New-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Use this API to create a new CalendarGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-calendargroups-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	name = "Personal events"
@@ -60,11 +54,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserCalendarGroup -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserCalendarGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -776,8 +765,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[New-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendargroup)
-
 

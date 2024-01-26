@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblewith
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The access packages that are incompatible with this package.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,17 +37,13 @@ The access packages that are incompatible with this package.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith Cmdlet.
-
 
 ## PARAMETERS
 
@@ -368,8 +361,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblewith](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblewith)
-
 

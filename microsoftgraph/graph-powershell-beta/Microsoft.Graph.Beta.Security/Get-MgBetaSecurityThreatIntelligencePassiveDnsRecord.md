@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecord
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord
 
 ## SYNOPSIS
 Read the properties and relationships of a passiveDnsRecord object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,8 +34,17 @@ Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIden
 ## DESCRIPTION
 Read the properties and relationships of a passiveDnsRecord object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-passivednsrecord-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -321,9 +326,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecord)
-
-
 

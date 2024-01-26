@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,18 @@ Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 
 ## DESCRIPTION
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -262,9 +271,6 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
   \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail)
-
-
 

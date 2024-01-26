@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguseronlinemeetingrecordingcontent
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The content of the recording.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingRecordingContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Set-MgUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 The content of the recording.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -191,9 +200,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingRecordingContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguseronlinemeetingrecordingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguseronlinemeetingrecordingcontent)
-
-
 

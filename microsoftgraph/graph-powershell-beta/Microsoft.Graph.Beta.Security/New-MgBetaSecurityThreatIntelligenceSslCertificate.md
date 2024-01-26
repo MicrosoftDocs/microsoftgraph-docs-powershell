@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesslcertificate
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sslCertificates for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ New-MgBetaSecurityThreatIntelligenceSslCertificate -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create new navigation property to sslCertificates for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -888,9 +897,6 @@ It's a free-format string value, for example, 'United States'.
   \[Surname \<String\>\]: If the entity is a person, this is the person's surname (last name).
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesslcertificate)
-
-
 

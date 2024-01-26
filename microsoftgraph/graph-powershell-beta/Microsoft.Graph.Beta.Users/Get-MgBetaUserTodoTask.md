@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserTodoTask
 
 ## SYNOPSIS
 Read the properties and relationships of a todoTask object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,8 +34,17 @@ Get-MgBetaUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Read the properties and relationships of a todoTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -295,9 +300,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask)
-
-
 

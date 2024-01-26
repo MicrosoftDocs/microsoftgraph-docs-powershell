@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createLink
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteListItemLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ New-MgSiteListItemLink -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Invoke action createLink
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -372,9 +381,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgBetaSiteListItemLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink)
-
-
 

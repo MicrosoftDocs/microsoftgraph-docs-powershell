@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopy
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgDriveListContentTypeCopy
 
 ## SYNOPSIS
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,10 +41,17 @@ Add-MgDriveListContentTypeCopy -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -207,8 +210,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopy)
-
 

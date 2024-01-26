@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add (pin) a tab to the specified chat.
-The corresponding app must already be installed in the chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgChatTab?view=graph-powershell-1.0)
+\nThe corresponding app must already be installed in the chat.
 
 ## SYNTAX
 
@@ -46,14 +43,14 @@ New-MgBetaChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 
 ## DESCRIPTION
 Add (pin) a tab to the specified chat.
-The corresponding app must already be installed in the chat.
+\nThe corresponding app must already be installed in the chat.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -67,10 +64,6 @@ $params = @{
 }
 
 New-MgBetaChatTab -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaChatTab Cmdlet.
-
 
 ## PARAMETERS
 
@@ -486,8 +479,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab)
-
 

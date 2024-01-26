@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementIssue
@@ -12,9 +11,6 @@ ms.prod: service-communications
 Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,21 +38,14 @@ Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealthissue-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+```
 
 Get-MgServiceAnnouncementIssue
-
-```
-This example shows how to use the Get-MgServiceAnnouncementIssue Cmdlet.
-
 
 ## PARAMETERS
 
@@ -264,8 +253,6 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
   \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue)
-
 

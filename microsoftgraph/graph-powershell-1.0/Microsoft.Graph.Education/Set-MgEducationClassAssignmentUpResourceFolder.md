@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentupresourcefolder
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Set-MgEducationClassAssignmentUpResourceFolder
@@ -12,9 +11,6 @@ ms.prod: education
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,19 +31,15 @@ Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-setupresourcesfolder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Set-MgEducationClassAssignmentUpResourceFolder Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
 $params = @{
 }
 Set-MgEducationClassAssignmentUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 ```
-This example shows how to use the Set-MgEducationClassAssignmentUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -157,8 +149,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentupresourcefolder)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskchecklistitem
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
 Delete a checklistItem object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,22 +28,15 @@ Remove-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMat
 ## DESCRIPTION
 Delete a checklistItem object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId
-```
-This example shows how to use the Remove-MgBetaUserTodoListTaskChecklistItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -228,8 +217,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskchecklistitem)
-
 

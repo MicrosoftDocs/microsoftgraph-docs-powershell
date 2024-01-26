@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileAccount
@@ -49,12 +48,10 @@ New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 ## DESCRIPTION
 Create a new userAccountInformation object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-accounts-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfileAccount Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	AllowedAudiences = "organization"
@@ -63,8 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAccount -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfileAccount Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -484,5 +479,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount)
-
 

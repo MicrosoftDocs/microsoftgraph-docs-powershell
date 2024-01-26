@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun
 schema: 2.0.0
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataRun
@@ -35,8 +34,17 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of an industryDataRun object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -261,6 +269,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun)
-
-
 

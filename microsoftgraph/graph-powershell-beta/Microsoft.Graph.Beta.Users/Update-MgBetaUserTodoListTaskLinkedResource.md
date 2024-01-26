@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
 Update the properties of a linkedResource object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,14 +43,12 @@ Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a linkedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.linkedResource"
@@ -65,11 +59,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserTodoListTaskLinkedResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -337,8 +326,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource)
-
 

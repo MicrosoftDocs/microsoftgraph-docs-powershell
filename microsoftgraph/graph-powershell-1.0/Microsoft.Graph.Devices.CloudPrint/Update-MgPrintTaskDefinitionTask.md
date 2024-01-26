@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Update-MgPrintTaskDefinitionTask
@@ -11,9 +10,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Update a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ Update-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity>
 Update a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printtaskdefinition-update-task-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 $params = @{
 	status = @{
@@ -66,11 +60,6 @@ $params = @{
 }
 
 Update-MgPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId -PrintTaskId $printTaskId -BodyParameter $params
-```
-This example shows how to use the Update-MgPrintTaskDefinitionTask Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -394,8 +383,6 @@ Read-only.
   \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
-[Update-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask)
-
 

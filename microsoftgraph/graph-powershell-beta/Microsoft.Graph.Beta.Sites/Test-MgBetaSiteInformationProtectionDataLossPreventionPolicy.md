@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy
@@ -44,6 +44,18 @@ Test-MgBetaSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISite
 
 ## DESCRIPTION
 Invoke action evaluate
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -297,6 +309,4 @@ NOTIFICATIONINFO \<IMicrosoftGraphDlpNotification\>: dlpNotification
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy)
-
-
 

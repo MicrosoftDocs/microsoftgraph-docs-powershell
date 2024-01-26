@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgBetaUserDeviceRegisteredOwnerByRef
@@ -40,8 +39,21 @@ New-MgBetaUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesId
 ## DESCRIPTION
 Add a user as a registered owner of the device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredowners-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -218,6 +230,4 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Test-MgBetaInformationProtectionPolicyLabelClassificationResult
@@ -36,12 +35,10 @@ This API is useful when a label should be set automatically based on classificat
 To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-evaluateclassificationresults-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ContentInfo = @{
@@ -62,8 +59,6 @@ $params = @{
 }
 Test-MgBetaInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -208,5 +203,4 @@ CONTENTINFO \<IMicrosoftGraphContentInfo\>: contentInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult)
-
 

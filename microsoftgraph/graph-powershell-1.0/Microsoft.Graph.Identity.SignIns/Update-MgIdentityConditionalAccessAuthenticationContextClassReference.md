@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgIdentityConditionalAccessAuthenticationContextClassReference
@@ -11,9 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,14 +44,12 @@ Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcontextclassreference-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Contoso medium"
@@ -64,11 +58,6 @@ $params = @{
 }
 
 Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
-```
-This example shows how to use the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -324,8 +313,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationcontextclassreference)
-
 

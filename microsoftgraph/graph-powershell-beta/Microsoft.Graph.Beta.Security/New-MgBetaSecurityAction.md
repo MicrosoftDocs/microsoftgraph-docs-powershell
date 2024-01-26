@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityAction
@@ -32,12 +31,10 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-WhatIf
 ## DESCRIPTION
 Create a new securityAction object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityactions-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityAction Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Name = "BlockIp"
@@ -55,8 +52,6 @@ $params = @{
 }
 New-MgBetaSecurityAction -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSecurityAction Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -460,5 +455,4 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
-
 

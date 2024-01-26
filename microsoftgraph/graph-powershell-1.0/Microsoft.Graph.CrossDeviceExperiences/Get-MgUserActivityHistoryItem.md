@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitem
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,22 @@ Get-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-E
 ## DESCRIPTION
 Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -274,9 +287,6 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitem)
-
-
 

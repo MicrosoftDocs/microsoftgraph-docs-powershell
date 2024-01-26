@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupConversationThreadPost
 
 ## SYNOPSIS
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent \nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,13 +47,20 @@ Get-MgBetaGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent \nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-get-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -336,8 +339,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost)
-
 

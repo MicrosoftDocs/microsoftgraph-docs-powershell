@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord
@@ -11,9 +11,6 @@ schema: 2.0.0
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,17 +39,13 @@ Read-only, Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgDomainServiceConfigurationRecord -DomainId $domainId
-```
-This example shows how to use the Get-MgDomainServiceConfigurationRecord Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -295,8 +288,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord)
-
 

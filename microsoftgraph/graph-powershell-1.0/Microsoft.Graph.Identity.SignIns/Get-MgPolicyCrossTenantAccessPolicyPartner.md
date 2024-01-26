@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicypartner
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
 Read the properties and relationships of a partner-specific configuration.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,32 +34,21 @@ Get-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Read the properties and relationships of a partner-specific configuration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationpartner-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: List all partner configurations within a cross-tenant access policy
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgPolicyCrossTenantAccessPolicyPartner
 
+### EXAMPLE 2
 ```
-This example will list all partner configurations within a cross-tenant access policy
-
-### Example 2: List the user synchronization policy for all partner configurations
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization" 
-
 ```
-This example will list the user synchronization policy for all partner configurations
 
+Get-MgPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization"
 
 ## PARAMETERS
 
@@ -322,8 +307,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicypartner)
-
 

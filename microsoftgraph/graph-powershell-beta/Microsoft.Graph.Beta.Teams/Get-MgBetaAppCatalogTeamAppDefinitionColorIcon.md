@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionColorIcon
@@ -28,24 +27,19 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 Retrieve a Teams app icon associated with a specific definition of an app.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappicon-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -184,5 +178,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon)
-
 

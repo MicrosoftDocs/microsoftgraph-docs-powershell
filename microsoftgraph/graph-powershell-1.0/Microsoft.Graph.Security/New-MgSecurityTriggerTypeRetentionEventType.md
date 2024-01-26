@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgSecurityTriggerTypeRetentionEventType
 
 ## SYNOPSIS
 Create a new retentionEventType object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,8 +29,17 @@ New-MgSecurityTriggerTypeRetentionEventType -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create a new retentionEventType object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-post-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -266,9 +271,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype)
-
-
 

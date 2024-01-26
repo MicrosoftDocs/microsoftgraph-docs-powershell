@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupmember
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,17 +37,13 @@ A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 Remove-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -IdentityId $identityId
-```
-This example shows how to use the Get-MgExternalConnectionGroupMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -290,8 +283,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupmember)
-
 

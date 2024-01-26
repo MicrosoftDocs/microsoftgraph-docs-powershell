@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationClass
@@ -13,9 +12,6 @@ Retrieve a class from the system.
 A class is a universal group with a special property that indicates to the system that the group is a class.
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,21 +40,14 @@ A class is a universal group with a special property that indicates to the syste
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClass
-
-```
-This example shows how to use the Get-MgEducationClass Cmdlet.
-
 
 ## PARAMETERS
 
@@ -273,8 +262,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclass)
-
 

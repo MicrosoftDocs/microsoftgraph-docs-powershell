@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethod
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationEmailMethod
 
 ## SYNOPSIS
 Retrieve a user's single email Authentication Method object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,22 +34,15 @@ Get-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Retrieve a user's single email Authentication Method object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationEmailMethod -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserAuthenticationEmailMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -349,8 +338,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethod)
-
 

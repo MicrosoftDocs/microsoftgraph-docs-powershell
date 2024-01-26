@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberofasgroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOfAsGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaGroupTransitiveMemberOfAsGroup -InputObject <IGroupsIdentity> [-Expand
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -315,9 +324,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOfAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberofasgroup)
-
-
 

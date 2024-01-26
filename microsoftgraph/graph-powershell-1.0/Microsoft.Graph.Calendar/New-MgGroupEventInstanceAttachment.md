@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgGroupEventInstanceAttachment
 
 ## SYNOPSIS
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventInstanceAttachment?view=graph-powershell-beta)
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## SYNTAX
 
@@ -45,10 +41,23 @@ New-MgGroupEventInstanceAttachment -InputObject <ICalendarIdentity> -BodyParamet
 
 ## DESCRIPTION
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-post-attachments-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -308,9 +317,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventInstanceAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment)
-
-
 

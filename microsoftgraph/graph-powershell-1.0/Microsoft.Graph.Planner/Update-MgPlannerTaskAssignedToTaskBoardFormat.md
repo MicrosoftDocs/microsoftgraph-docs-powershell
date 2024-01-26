@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskassignedtotaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgPlannerTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
 Update the navigation property assignedToTaskBoardFormat in planner
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,14 +41,12 @@ Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -I
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in planner
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	orderHintsByAssignee = @{
@@ -61,11 +55,6 @@ $params = @{
 }
 
 Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-```
-This example shows how to use the Update-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -257,8 +246,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskassignedtotaskboardformat)
-
 

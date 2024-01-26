@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Remove-MgBetaCommunicationCall
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,21 +29,14 @@ Remove-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-IfM
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Remove-MgBetaCommunicationCall -CallId $callId
-```
-This example shows how to use the Remove-MgBetaCommunicationCall Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -179,8 +168,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall)
-
 

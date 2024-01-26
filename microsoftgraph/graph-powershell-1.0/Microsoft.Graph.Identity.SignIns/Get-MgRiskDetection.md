@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetection
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgRiskDetection
 
 ## SYNOPSIS
 Read the properties and relationships of a riskDetection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskDetection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Read the properties and relationships of a riskDetection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskdetection-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgRiskDetection -RiskDetectionId $riskDetectionId
-```
-This example shows how to use the Get-MgRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -311,8 +300,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskDetection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetection)
-
 

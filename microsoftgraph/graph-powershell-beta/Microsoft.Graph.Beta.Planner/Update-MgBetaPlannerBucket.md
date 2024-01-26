@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgBetaPlannerBucket
 
 ## SYNOPSIS
 Update the navigation property buckets in planner
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,25 +44,18 @@ Update-MgBetaPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property buckets in planner
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	name = "Development"
 }
 
 Update-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-```
-This example shows how to use the Update-MgBetaPlannerBucket Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -725,8 +714,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[Update-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerBucket?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerbucket)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontract
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete entity from contracts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaContract?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Remove-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch 
 Delete entity from contracts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContract -ContractId $contractId
-```
-This example shows how to use the Remove-MgContract Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -179,8 +172,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaContract?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontract)
-
 

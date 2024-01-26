@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property assignments in education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,22 @@ Update-MgBetaEducationUserAssignment -InputObject <IEducationIdentity>
 
 ## DESCRIPTION
 Update the navigation property assignments in education
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -829,9 +842,6 @@ If the value is null, the student uploaded the resource.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[Update-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment)
-
-
 

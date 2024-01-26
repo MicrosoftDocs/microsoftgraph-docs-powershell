@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroup
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfileConnectorGroup
@@ -36,24 +35,19 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ## DESCRIPTION
 Retrieve the properties of a connectorGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
 ```
-This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId
 ```
-This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -305,5 +299,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroup)
-
 

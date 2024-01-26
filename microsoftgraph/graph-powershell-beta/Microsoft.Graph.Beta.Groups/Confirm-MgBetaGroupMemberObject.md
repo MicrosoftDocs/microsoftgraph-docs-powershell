@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmemberobject
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action checkMemberObjects
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupMemberObject](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupMemberObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Confirm-MgBetaGroupMemberObject -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action checkMemberObjects
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -222,9 +235,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Confirm-MgGroupMemberObject](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmemberobject)
-
-
 

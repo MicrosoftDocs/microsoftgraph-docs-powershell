@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupevent
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Remove-MgGroupEvent
 
 ## SYNOPSIS
 Delete an event object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-event-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 Remove-MgGroupEvent -GroupId $groupId -EventId $eventId
-```
-This example shows how to use the Remove-MgGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -185,8 +174,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupevent)
-
 

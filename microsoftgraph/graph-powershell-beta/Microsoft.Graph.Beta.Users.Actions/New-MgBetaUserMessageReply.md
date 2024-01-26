@@ -1,23 +1,19 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereply
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserMessageReply
 
 ## SYNOPSIS
 Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.- You can update the draft later to add reply content to the body or change other message properties.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\n- You can update the draft later to add reply content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,18 +45,16 @@ New-MgBetaUserMessageReply -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.- You can update the draft later to add reply content to the body or change other message properties.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\n- You can update the draft later to add reply content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreply-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserMessageReply Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Message = @{
@@ -84,8 +78,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserMessageReply Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -516,8 +508,6 @@ Read-only.
   \[WebLink \<String\>\]:
 
 ## RELATED LINKS
-[New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereply)
-
 

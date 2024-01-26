@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist
 schema: 2.0.0
-ms.prod: browser-management
 ---
 
 # Update-MgBetaAdminEdgeInternetExplorerModeSiteList
 
 ## SYNOPSIS
 Update the properties of a browserSiteList object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,8 +47,17 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 ## DESCRIPTION
 Update the properties of a browserSiteList object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -640,9 +645,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[WebUrl \<String\>\]: The URL of the site.
 
 ## RELATED LINKS
-[Update-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist)
-
-
 

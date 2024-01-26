@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamapp
@@ -11,9 +11,6 @@ schema: 2.0.0
 Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,17 +32,13 @@ To delete an app, the distributionMethod property for the app must be set to org
 You can also use this API to remove a submitted app from the review process.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Remove-MgBetaAppCatalogTeamApp -TeamsAppId $teamsAppId
-
-```
-This example shows how to use the Remove-MgBetaAppCatalogTeamApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -198,8 +191,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamapp)
-
 

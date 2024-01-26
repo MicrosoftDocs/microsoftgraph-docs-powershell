@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteList
 
 ## SYNOPSIS
 Get the list of richLongRunningOperations associated with a list.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,43 +34,28 @@ Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Get the list of richLongRunningOperations associated with a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-operations-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteList -SiteId $siteId -ListId $listId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaSiteList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteList -SiteId $siteId -ListId $listId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgBetaSiteList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)"
-```
-This example shows how to use the Get-MgBetaSiteList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -344,8 +325,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationUserAssignmentSubmissionOutcome
@@ -13,9 +12,6 @@ Create a new feedback resource for a submission.
 Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or is not in that folder, the POST request will fail.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,10 +49,17 @@ Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationfeedbackresourceoutcome-post-outcomes-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -299,8 +302,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome)
-
 

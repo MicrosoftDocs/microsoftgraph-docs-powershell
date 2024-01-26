@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgDismissGroupCalendarEventReminder
 
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaDismissGroupCalendarEventReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,22 +27,15 @@ Invoke-MgDismissGroupCalendarEventReminder -InputObject <IGroupsIdentity> [-Pass
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
-```
-This example shows how to use the Invoke-MgDismissGroupCalendarEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -195,8 +184,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaDismissGroupCalendarEventReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder)
-
 

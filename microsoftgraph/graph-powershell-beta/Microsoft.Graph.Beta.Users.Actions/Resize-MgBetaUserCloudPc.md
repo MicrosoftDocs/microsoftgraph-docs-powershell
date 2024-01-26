@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc
@@ -40,6 +40,18 @@ Resize-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action resize
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -246,6 +258,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc)
-
-
 

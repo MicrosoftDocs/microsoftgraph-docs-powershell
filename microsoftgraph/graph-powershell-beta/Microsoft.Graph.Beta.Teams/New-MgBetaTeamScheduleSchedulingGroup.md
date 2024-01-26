@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new schedulingGroup.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,11 +42,11 @@ New-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Create a new schedulingGroup.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "Cashiers"
@@ -61,10 +58,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleSchedulingGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -360,8 +353,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup)
-
 

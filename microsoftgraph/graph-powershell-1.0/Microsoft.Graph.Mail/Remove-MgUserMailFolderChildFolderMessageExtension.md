@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessageextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Remove-MgUserMailFolderChildFolderMessageExtension
@@ -11,9 +10,6 @@ ms.prod: extensions
 ## SYNOPSIS
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 For the list of resources that support open extensions, see the table in the Permissions section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +29,22 @@ Remove-MgUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity> 
 ## DESCRIPTION
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 For the list of resources that support open extensions, see the table in the Permissions section.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -214,9 +226,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessageextension)
-
-
 

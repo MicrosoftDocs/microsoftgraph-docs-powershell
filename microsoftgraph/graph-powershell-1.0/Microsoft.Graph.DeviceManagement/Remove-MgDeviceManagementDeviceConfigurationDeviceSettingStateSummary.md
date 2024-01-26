@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary
 
 ## SYNOPSIS
 Deletes a settingStateDeviceSummary.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +27,22 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObje
 
 ## DESCRIPTION
 Deletes a settingStateDeviceSummary.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,9 +225,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsMalwareInformationId \<String\>\]: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary)
-
-
 

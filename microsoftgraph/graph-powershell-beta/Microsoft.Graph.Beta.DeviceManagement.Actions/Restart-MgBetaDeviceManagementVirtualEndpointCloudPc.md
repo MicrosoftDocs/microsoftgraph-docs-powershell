@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Restart-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -28,17 +27,13 @@ Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 ## DESCRIPTION
 Reboot a specific Cloud PC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Restart-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
 ```
-This example shows how to use the Restart-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,5 +186,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementvirtualendpointcloudpc)
-
 

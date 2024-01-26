@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteaminstalledapp
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the app installed in the specified team.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,16 @@ Get-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <
 Retrieve the app installed in the specified team.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -295,8 +302,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteaminstalledapp)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -117,9 +130,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner)
-
-
 

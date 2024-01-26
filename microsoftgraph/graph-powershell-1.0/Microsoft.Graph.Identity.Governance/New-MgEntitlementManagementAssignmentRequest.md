@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAssignmentRequest
@@ -36,14 +35,12 @@ New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAcce
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Admin requests a direct assignment for a user already in the directory
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	requestType = "adminAdd"
@@ -55,15 +52,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Remove an assignment
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	requestType = "adminRemove"
@@ -73,15 +66,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Request an assignment
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	requestType = "userAdd"
@@ -91,15 +80,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Request an assignment by providing answers to questions
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -130,15 +115,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Request an update to answers for an assignment
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -169,11 +150,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -4949,9 +4925,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9751,9 +9727,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14580,9 +14556,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -15017,5 +14993,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamphoto
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property photo in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ Update-MgGroupTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the navigation property photo in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -245,9 +258,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamphoto)
-
-
 

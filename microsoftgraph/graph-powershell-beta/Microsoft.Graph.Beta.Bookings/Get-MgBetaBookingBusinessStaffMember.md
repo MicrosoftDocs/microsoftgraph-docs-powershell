@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmember
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusinessStaffMember
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,24 +53,19 @@ Get-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingstaffmember-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId
 ```
-This example shows how to use the Get-MgBetaBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId
 ```
-This example shows how to use the Get-MgBetaBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -313,8 +304,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmember)
-
 

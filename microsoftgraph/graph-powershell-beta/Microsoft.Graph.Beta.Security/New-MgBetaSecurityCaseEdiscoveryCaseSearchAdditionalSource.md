@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource
 
 ## SYNOPSIS
 Create a new additional source associated with an eDiscovery search.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,8 +43,21 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecuri
 ## DESCRIPTION
 Create a new additional source associated with an eDiscovery search.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-post-additionalsources-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -365,9 +374,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource)
-
-
 

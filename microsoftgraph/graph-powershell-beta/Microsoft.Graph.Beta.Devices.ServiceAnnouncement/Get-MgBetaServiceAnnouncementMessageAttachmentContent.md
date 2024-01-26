@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementMessageAttachmentContent
 
 ## SYNOPSIS
 The attachment content.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,10 +27,17 @@ Get-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 ## DESCRIPTION
 The attachment content.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-list-attachments-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -136,8 +139,6 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
   \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent)
-
 

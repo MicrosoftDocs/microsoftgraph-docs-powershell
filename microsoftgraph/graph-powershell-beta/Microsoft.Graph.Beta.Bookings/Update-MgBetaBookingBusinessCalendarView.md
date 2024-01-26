@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property calendarView in bookingBusinesses
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -113,6 +110,22 @@ Update-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the navigation property calendarView in bookingBusinesses
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1032,9 +1045,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview)
-
-
 

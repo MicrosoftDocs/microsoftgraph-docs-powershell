@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaselegalhold
@@ -35,20 +35,18 @@ Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity> [
 Returns a list of case eDiscoveryHoldPolicy objects for this case.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId
 ```
-This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -347,5 +345,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaselegalhold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaselegalhold)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
 Create a new mdmWindowsInformationProtectionPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +47,18 @@ New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -BodyParameter <H
 
 ## DESCRIPTION
 Create a new mdmWindowsInformationProtectionPolicy object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -718,9 +726,6 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS \<IMicrosoftGraphWindowsInformationProtectionReso
   \[Resources \<String\[\]\>\]: Collection of resources
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy)
-
-
 

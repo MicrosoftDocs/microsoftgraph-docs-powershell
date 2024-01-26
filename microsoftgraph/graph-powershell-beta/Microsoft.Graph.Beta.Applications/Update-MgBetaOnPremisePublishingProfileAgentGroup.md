@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaOnPremisePublishingProfileAgentGroup
@@ -46,20 +45,16 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 ## DESCRIPTION
 Update the properties of an onPremisesAgentGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	DisplayName = "Group New Name"
 }
 Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -425,5 +420,4 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup)
-
 

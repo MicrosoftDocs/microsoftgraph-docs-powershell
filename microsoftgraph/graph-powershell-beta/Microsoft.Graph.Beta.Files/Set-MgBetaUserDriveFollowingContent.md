@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivefollowingcontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveFollowingContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Set-MgBetaUserDriveFollowingContent -InputObject <IFilesIdentity> [-Data <Stream
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -199,9 +212,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveFollowingContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivefollowingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivefollowingcontent)
-
-
 

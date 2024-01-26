@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamchannelmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Add-MgBetaTeamChannelMember
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,10 +43,17 @@ Add-MgBetaTeamChannelMember -InputObject <ITeamsIdentity>
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationmembers-add-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -262,8 +265,6 @@ An Out-of-tenant external member is assigned the owner role.
 This property is settable only for members of a chat.
 
 ## RELATED LINKS
-[Add-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamchannelmember)
-
 

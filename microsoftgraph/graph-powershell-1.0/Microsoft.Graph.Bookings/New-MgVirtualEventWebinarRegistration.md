@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to registrations for solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ New-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to registrations for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -357,9 +366,6 @@ Only appears when answerInputType is multiChoice.
 Appears when answerInputType is text, multilineText or singleChoice.
 
 ## RELATED LINKS
-[New-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
-
-
 

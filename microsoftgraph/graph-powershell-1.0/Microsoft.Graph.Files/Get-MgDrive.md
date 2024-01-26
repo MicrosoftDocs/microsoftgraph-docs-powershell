@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrive
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get entity from drives by key
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,13 +34,12 @@ Get-MgDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Propert
 Get entity from drives by key
 
 ## EXAMPLES
-### Example 1: Using the Get-MgDrive Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
 Get-MgDrive -DriveId $driveId
 ```
-This example shows how to use the Get-MgDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -271,8 +267,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrive)
-
 

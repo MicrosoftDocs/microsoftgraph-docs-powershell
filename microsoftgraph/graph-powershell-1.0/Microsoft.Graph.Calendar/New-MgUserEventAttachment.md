@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserEventAttachment
 
 ## SYNOPSIS
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachment?view=graph-powershell-beta)
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## SYNTAX
 
@@ -45,16 +41,14 @@ New-MgUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-post-attachments-permissions.md)]
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
@@ -64,15 +58,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
@@ -85,11 +75,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the New-MgUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -334,8 +319,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventattachment)
-
 

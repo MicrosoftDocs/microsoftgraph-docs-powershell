@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 ## DESCRIPTION
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-delegatedpermissionclassifications-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Remove-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
-```
-This example shows how to use the Remove-MgServicePrincipalDelegatedPermissionClassification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -196,8 +185,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification)
-
 

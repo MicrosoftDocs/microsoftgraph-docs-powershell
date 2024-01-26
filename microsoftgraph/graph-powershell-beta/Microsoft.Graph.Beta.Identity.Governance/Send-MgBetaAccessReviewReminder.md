@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewreminder
@@ -29,13 +29,12 @@ In the Microsoft Entra access reviews feature, send a reminder to the reviewers 
 The target object can be either a one-time access review, or an instance of a recurring access review.
 
 ## EXAMPLES
-### Example 1: Using the Send-MgBetaAccessReviewReminder Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Send-MgBetaAccessReviewReminder -AccessReviewId $accessReviewId
 ```
-This example shows how to use the Send-MgBetaAccessReviewReminder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -235,5 +234,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewreminder)
-
 

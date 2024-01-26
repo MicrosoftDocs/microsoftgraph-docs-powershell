@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfiguration
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
 Create a new iosMobileAppConfiguration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +33,18 @@ New-MgDeviceAppManagementMobileAppConfiguration
 
 ## DESCRIPTION
 Create a new iosMobileAppConfiguration object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -410,9 +418,6 @@ Read-only.
   \[SuccessCount \<Int32?\>\]: Number of succeeded Users
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfiguration)
-
-
 

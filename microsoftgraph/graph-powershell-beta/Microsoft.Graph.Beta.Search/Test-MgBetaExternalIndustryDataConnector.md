@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/test-mgbetaexternalindustrydataconnector
@@ -26,6 +26,18 @@ Test-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-PassTh
 
 ## DESCRIPTION
 Perform validations applicable for the specific instance of the data connector.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -145,6 +157,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/test-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/test-mgbetaexternalindustrydataconnector)
-
-
 

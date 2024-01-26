@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveRoot
 
 ## SYNOPSIS
-Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,24 +25,17 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgDriveRoot -DriveId $driveId
-```
-This example shows how to use the Get-MgDriveRoot Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -153,8 +142,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot)
-
 

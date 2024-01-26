@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolder
@@ -12,9 +11,6 @@ ms.prod: outlook
 The user's mail folders.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,34 +38,23 @@ The user's mail folders.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a mail folder
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
+### EXAMPLE 2
 ```
-This example will get a mail folder
-
-### Example 2: Get a mail search folder
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-
-```
-This example will get a mail search folder
-
 
 ## PARAMETERS
 
@@ -298,8 +283,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder)
-
 
