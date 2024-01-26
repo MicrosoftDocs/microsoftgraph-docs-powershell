@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluser
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgBetaEducationSchoolUser
@@ -20,6 +21,9 @@ Get-MgBetaEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve a list of users at a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-users-permissions.md)]
 
 ## EXAMPLES
 

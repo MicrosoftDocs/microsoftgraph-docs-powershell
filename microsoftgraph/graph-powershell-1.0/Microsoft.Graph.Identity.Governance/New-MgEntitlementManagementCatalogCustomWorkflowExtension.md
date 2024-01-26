@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgEntitlementManagementCatalogCustomWorkflowExtension
@@ -46,6 +47,9 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ## DESCRIPTION
 Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAssignmentWorkflowExtension object and add it to an existing accessPackageCatalog object.
 You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-post-accesspackagecustomworkflowextensions-permissions.md)]
 
 ## EXAMPLES
 

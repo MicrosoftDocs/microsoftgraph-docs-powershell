@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgUserDriveListItem
@@ -26,6 +27,9 @@ Remove-MgUserDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 
 ## DESCRIPTION
 Removes an item from a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delete-permissions.md)]
 
 ## EXAMPLES
 

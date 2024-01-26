@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserContactFolder
@@ -46,6 +47,9 @@ Update-MgUserContactFolder -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 Update the properties of contactfolder object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappchat
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgUserTeamworkInstalledAppChat
@@ -26,6 +27,9 @@ Get-MgUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the chat of the specified user and Teams app.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userscopeteamsappinstallation-get-chat-permissions.md)]
 
 ## EXAMPLES
 

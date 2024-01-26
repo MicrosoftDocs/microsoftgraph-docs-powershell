@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgDevice
@@ -60,6 +61,9 @@ Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-update-permissions.md)]
 
 ## EXAMPLES
 

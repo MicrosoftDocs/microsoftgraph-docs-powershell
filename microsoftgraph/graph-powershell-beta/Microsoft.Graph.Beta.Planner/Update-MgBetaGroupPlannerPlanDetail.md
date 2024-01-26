@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgBetaGroupPlannerPlanDetail
@@ -42,6 +43,9 @@ Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <St
 
 ## DESCRIPTION
 Update the navigation property details in groups
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplandetails-update-permissions.md)]
 
 ## EXAMPLES
 

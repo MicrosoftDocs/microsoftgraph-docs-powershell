@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgPlannerBucket
@@ -40,6 +41,9 @@ Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
 
 ## DESCRIPTION
 Update the navigation property buckets in planner
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-update-permissions.md)]
 
 ## EXAMPLES
 

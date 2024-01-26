@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteNotebookSection
@@ -20,6 +21,9 @@ Get-MgUserOnenoteNotebookSection -NotebookId <String> -UserId <String> [-ExpandP
 
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sections-permissions.md)]
 
 ## EXAMPLES
 

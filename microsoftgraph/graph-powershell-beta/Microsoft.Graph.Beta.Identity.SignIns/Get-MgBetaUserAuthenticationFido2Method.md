@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationFido2Method
@@ -33,6 +34,9 @@ Get-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> 
 
 ## DESCRIPTION
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/fido2authenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydevicelocalcredential
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryDeviceLocalCredential
@@ -32,6 +33,9 @@ Get-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagementI
 
 ## DESCRIPTION
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/devicelocalcredentialinfo-get-permissions.md)]
 
 ## EXAMPLES
 

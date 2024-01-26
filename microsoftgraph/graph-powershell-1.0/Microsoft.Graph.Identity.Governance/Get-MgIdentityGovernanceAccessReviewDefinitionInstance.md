@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstance
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAccessReviewDefinitionInstance
@@ -34,6 +35,9 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGo
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstance object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupOwner
@@ -28,6 +29,9 @@ Nullable.
 If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-owners-permissions.md)]
 
 ## EXAMPLES
 

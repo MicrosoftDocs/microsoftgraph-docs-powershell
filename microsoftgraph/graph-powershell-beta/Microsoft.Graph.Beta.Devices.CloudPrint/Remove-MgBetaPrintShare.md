@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintshare
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Remove-MgBetaPrintShare
@@ -30,6 +31,9 @@ Remove-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 Delete a printer share (unshare the associated printer).
 This action can't be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-delete-permissions.md)]
 
 ## EXAMPLES
 

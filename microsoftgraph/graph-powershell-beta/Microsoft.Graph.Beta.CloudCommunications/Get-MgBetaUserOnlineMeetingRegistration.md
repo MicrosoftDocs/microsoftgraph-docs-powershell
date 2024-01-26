@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingregistration
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingRegistration
@@ -26,6 +27,9 @@ Get-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdenti
 
 ## DESCRIPTION
 Get the externalMeetingRegistration details associated with an onlineMeeting.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalmeetingregistration-get-permissions.md)]
 
 ## EXAMPLES
 

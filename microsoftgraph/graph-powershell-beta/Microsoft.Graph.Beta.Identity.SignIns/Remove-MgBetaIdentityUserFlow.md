@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityuserflow
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaIdentityUserFlow
@@ -26,6 +27,9 @@ Remove-MgBetaIdentityUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete an existing userFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-delete-permissions.md)]
 
 ## EXAMPLES
 

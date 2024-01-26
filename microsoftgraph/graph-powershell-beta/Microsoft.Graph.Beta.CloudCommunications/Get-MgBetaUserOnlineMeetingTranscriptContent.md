@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaUserOnlineMeetingTranscriptContent
@@ -28,6 +29,9 @@ Get-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 The content of the transcript.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserTodoListTaskLinkedResource
@@ -44,6 +45,9 @@ New-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 Create a linkedResource object to associate a specified task with an item in a partner application.
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a task.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-linkedresources-permissions.md)]
 
 ## EXAMPLES
 

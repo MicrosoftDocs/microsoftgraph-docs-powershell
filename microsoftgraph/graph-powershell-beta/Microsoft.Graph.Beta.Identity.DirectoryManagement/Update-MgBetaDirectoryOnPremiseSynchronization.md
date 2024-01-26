@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryonpremisesynchronization
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgBetaDirectoryOnPremiseSynchronization
@@ -44,6 +45,9 @@ Update-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 
 ## DESCRIPTION
 Update the properties of an onPremisesDirectorySynchronization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesdirectorysynchronization-update-permissions.md)]
 
 ## EXAMPLES
 

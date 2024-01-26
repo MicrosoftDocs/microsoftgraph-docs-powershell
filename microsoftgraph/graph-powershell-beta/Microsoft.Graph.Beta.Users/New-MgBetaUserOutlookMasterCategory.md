@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlookmastercategory
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookMasterCategory
@@ -38,6 +39,9 @@ New-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Create an outlookCategory object in the user's master list of categories.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-mastercategories-permissions.md)]
 
 ## EXAMPLES
 

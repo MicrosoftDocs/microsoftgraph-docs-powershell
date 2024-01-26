@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetauserevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserEvent
@@ -28,6 +29,9 @@ Remove-MgBetaUserEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Pa
 ## DESCRIPTION
 Removes the specified event from the containing calendar.
 If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-delete-permissions.md)]
 
 ## EXAMPLES
 

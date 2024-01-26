@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotesection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgBetaUserOnenoteSection
@@ -33,6 +34,9 @@ Get-MgBetaUserOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a section object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource
@@ -33,6 +34,9 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
 
 ## DESCRIPTION
 Read the properties and relationships of a userSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-usersource-get-permissions.md)]
 
 ## EXAMPLES
 

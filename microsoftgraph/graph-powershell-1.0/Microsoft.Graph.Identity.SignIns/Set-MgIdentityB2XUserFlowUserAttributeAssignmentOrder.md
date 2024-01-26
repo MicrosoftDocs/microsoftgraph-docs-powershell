@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowuserattributeassignmentorder
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder
@@ -42,6 +43,9 @@ Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-setorder-permissions.md)]
 
 ## EXAMPLES
 

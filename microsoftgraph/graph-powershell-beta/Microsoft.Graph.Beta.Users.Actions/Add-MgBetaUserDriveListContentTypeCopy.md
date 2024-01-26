@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopy
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaUserDriveListContentTypeCopy
@@ -40,6 +41,9 @@ Add-MgBetaUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 

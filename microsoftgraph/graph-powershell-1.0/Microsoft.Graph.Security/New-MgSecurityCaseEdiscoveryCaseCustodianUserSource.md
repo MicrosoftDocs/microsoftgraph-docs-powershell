@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseCustodianUserSource
@@ -42,6 +43,9 @@ New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdent
 
 ## DESCRIPTION
 Create a new userSource object associated with an eDiscovery custodian.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-post-usersources-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskchecklistitem
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserTodoListTaskChecklistItem
@@ -40,6 +41,9 @@ New-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Create a new checklistItem object as a subtask in a bigger todoTask.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-checklistitems-permissions.md)]
 
 ## EXAMPLES
 

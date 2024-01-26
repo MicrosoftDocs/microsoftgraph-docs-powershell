@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamTag
@@ -41,6 +42,9 @@ Update-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 
 ## DESCRIPTION
 Update the properties of a tag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-update-permissions.md)]
 
 ## EXAMPLES
 

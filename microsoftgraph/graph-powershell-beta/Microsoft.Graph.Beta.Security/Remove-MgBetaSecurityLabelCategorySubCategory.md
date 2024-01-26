@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcategorysubcategory
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Remove-MgBetaSecurityLabelCategorySubCategory
@@ -26,6 +27,9 @@ Remove-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Delete a subCategoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-categorytemplate-delete-subcategories-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgdatapolicyoperation
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgDataPolicyOperation
@@ -33,6 +34,9 @@ Get-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties of a dataPolicyOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/datapolicyoperation-get-permissions.md)]
 
 ## EXAMPLES
 

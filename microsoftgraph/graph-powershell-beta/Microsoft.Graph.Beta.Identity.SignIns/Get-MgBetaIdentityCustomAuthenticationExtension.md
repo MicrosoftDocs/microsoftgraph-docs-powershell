@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityCustomAuthenticationExtension
@@ -35,6 +36,9 @@ Get-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventlistener-get-permissions.md)]
 
 ## EXAMPLES
 

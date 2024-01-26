@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgBetaDriveRoot
@@ -25,6 +26,9 @@ Get-MgBetaDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]
 
 ## EXAMPLES
 

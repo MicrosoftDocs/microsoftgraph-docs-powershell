@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusiness
@@ -98,6 +99,9 @@ Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the properties of a bookingBusiness object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-update-permissions.md)]
 
 ## EXAMPLES
 

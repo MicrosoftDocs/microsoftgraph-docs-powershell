@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserContactFolderChildFolder
@@ -48,6 +49,9 @@ New-MgBetaUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Create a new contactFolder as a child of a specified folder.
 You can also create a new contactFolder under the user's default contact folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-childfolders-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgBetaEducationClass
@@ -58,6 +59,9 @@ Update-MgBetaEducationClass -InputObject <IEducationIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the properties of a class.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-update-permissions.md)]
 
 ## EXAMPLES
 

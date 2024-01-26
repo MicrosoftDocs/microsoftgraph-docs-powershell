@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgBetaPlannerPlanBucket
@@ -20,6 +21,9 @@ Get-MgBetaPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-list-buckets-permissions.md)]
 
 ## EXAMPLES
 

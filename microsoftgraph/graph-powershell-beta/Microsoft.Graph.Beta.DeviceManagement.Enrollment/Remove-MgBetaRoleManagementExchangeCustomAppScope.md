@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Remove-MgBetaRoleManagementExchangeCustomAppScope
@@ -28,6 +29,9 @@ Remove-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Delete a customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-delete-permissions.md)]
 
 ## EXAMPLES
 

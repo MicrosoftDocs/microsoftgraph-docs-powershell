@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitempermission
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Update-MgBetaGroupDriveItemPermission
@@ -52,6 +53,9 @@ Update-MgBetaGroupDriveItemPermission -InputObject <IFilesIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-update-permissions.md)]
 
 ## EXAMPLES
 

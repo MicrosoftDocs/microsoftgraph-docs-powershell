@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunitscopedrolemember
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # New-MgBetaDirectoryAdministrativeUnitScopedRoleMember
@@ -42,6 +43,9 @@ New-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDir
 ## DESCRIPTION
 Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaPolicyTokenIssuancePolicy
@@ -26,6 +27,9 @@ Remove-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [
 
 ## DESCRIPTION
 Delete a tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Test-MgBetaServicePrincipalSynchronizationJobCredential
@@ -45,6 +46,9 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicati
 
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-validatecredentials-permissions.md)]
 
 ## EXAMPLES
 

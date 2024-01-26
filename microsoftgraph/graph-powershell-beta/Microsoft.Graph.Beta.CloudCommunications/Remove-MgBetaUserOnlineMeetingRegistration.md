@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistration
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Remove-MgBetaUserOnlineMeetingRegistration
@@ -26,6 +27,9 @@ Remove-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIde
 
 ## DESCRIPTION
 Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-delete-permissions.md)]
 
 ## EXAMPLES
 
