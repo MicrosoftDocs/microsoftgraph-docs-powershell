@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession
@@ -273,4 +273,5 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession)
+
 

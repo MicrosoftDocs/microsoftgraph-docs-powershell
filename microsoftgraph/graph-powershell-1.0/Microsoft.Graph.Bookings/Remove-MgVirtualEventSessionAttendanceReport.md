@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventsessionattendancereport
@@ -198,4 +198,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventsessionattendancereport)
+
 

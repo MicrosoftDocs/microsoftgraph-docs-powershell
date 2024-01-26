@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission
@@ -248,4 +248,5 @@ security groups).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission)
+
 

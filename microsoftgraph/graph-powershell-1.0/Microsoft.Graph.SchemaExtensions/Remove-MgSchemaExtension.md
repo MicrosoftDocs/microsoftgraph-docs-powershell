@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
@@ -155,4 +155,5 @@ INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension)
+
 

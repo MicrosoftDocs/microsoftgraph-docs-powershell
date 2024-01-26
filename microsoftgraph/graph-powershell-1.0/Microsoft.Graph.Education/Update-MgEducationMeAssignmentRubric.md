@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric
@@ -397,4 +397,5 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric)
+
 

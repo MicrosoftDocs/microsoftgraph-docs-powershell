@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualevent
@@ -92,4 +92,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualevent)
+
 

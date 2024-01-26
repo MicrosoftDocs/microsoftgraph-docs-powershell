@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification
@@ -493,4 +493,5 @@ Optional when source is entityUrl; required when source is text.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification)
+
 

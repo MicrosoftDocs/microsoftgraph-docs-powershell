@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy
@@ -142,4 +142,5 @@ BODYPARAMETER \<IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy)
+
 

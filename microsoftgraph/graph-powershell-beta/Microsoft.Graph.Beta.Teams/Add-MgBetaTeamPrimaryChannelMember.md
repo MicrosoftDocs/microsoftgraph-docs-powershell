@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychannelmember
@@ -252,4 +252,5 @@ This property is settable only for members of a chat.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychannelmember)
+
 

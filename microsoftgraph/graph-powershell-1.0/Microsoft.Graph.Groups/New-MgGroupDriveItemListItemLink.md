@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlistitemlink
@@ -380,4 +380,5 @@ security groups).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlistitemlink)
+
 

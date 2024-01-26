@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Groups
 Module Guid: f649f9ce-177f-4d86-80c3-5bcb120aa9cc
 Download Help Link: {{ Update Download Link }}
@@ -1144,4 +1144,5 @@ Locale: en-US
 
 ### [Update-MgBetaGroupThreadPostInReplyToExtension](Update-MgBetaGroupThreadPostInReplyToExtension.md)
 {{ Fill in the Description }}
+
 

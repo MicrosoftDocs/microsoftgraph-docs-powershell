@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: f70ed487-0599-49d9-8341-505163fa40dc
 Download Help Link: {{ Update Download Link }}
@@ -145,4 +145,5 @@ Locale: en-US
 
 ### [Test-MgUserDriveListContentTypePublished](Test-MgUserDriveListContentTypePublished.md)
 {{ Fill in the Description }}
+
 

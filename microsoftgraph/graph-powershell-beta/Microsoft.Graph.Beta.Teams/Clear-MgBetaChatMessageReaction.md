@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetachatmessagereaction
@@ -261,4 +261,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetachatmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetachatmessagereaction)
+
 

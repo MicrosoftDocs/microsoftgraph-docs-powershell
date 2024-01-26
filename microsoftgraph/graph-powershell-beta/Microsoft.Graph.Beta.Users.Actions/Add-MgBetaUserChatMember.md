@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember
@@ -268,4 +268,5 @@ This property is settable only for members of a chat.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember)
+
 

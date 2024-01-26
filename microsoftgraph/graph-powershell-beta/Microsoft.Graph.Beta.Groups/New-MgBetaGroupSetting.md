@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting
@@ -307,4 +307,5 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
+
 

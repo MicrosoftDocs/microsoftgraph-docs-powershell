@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineuserevent
@@ -326,4 +326,5 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineuserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineuserevent)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 50bc9e18-e281-4208-8913-c9e1bef6083d
 Download Help Link: {{ Update Download Link }}
@@ -1015,4 +1015,5 @@ Locale: en-US
 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
 {{ Fill in the Description }}
+
 

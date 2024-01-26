@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent
@@ -8,8 +8,8 @@ schema: 2.0.0
 # Invoke-MgForwardGroupCalendarEvent
 
 ## SYNOPSIS
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
@@ -43,8 +43,8 @@ Invoke-MgForwardGroupCalendarEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
@@ -296,4 +296,5 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemversion
@@ -379,4 +379,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemversion)
+
 

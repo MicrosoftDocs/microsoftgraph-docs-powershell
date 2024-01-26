@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent
@@ -1826,4 +1826,5 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent)
+
 

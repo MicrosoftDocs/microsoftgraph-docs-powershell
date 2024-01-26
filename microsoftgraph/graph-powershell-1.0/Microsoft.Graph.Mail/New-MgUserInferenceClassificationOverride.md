@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classified\nas specified in the override.
+Future messages from that SMTP address will be consistently classifiedas specified in the override.
 Note
 
 ## SYNTAX
@@ -42,7 +42,7 @@ New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classified\nas specified in the override.
+Future messages from that SMTP address will be consistently classifiedas specified in the override.
 Note
 
 ## EXAMPLES
@@ -249,4 +249,5 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
+
 

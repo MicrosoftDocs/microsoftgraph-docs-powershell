@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord
@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 ## SYNTAX
 
@@ -35,8 +35,8 @@ Get-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
 
@@ -332,4 +332,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord)
+
 
