@@ -3,7 +3,7 @@ title: "Assign Microsoft Entra roles in Privileged Identity Management using Mic
 description: "Learn how to create eligible and active role assignments in Microsoft Entra Privileged Identity Management using Microsoft Graph PowerShell"
 
 ms.topic: tutorial
-ms.date: 31/01/2024
+ms.date: 01/31/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru

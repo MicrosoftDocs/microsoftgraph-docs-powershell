@@ -2,7 +2,7 @@
 title: "Grant and revoke delegated permissions programmatically in Microsoft Entra ID"
 description: "Learn how to grant and revoke delegated permissions programmatically in Microsoft Entra ID using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 31/01/2024
+ms.date: 01/31/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
