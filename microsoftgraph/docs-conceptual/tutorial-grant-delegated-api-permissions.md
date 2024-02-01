@@ -2,7 +2,7 @@
 title: "Grant and revoke delegated permissions programmatically in Microsoft Entra ID"
 description: "Learn how to grant and revoke delegated permissions programmatically in Microsoft Entra ID using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 03/17/2023
+ms.date: 01/31/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -82,7 +82,7 @@ The first step in granting consent is to [create the service principal for the a
 
 ### Register an application with Microsoft Entra ID
 
-If the application is not available, register an application with Microsoft Entra ID.
+If the application isn't available, register an application with Microsoft Entra ID.
 
 ```powershell
 New-MgApplication -DisplayName 'My application' | 
@@ -115,13 +115,13 @@ SignInAudience : AzureADandPersonalMicrosoftAccount
 
 To create a delegated permission grant, you'll need the following information:
 
-1. **ClientId** - object Id of the client service principal to be authorized to act on behalf of the user. In this case, the service principal we created in step 2.
+1. **ClientId** - object ID of the client service principal to be authorized to act on behalf of the user. In this case, the service principal we created in step 2.
 1. **ConsentType** - `AllPrincipals` to authorize all users in the tenant or `Principal` for a single user.
-1. **PrincipalId** - `Null` for *AllPrincipals* consents or Id of the user for *Principal* consents.
-1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
+1. **PrincipalId** - `Null` for *AllPrincipals* consents or ID of the user for *Principal* consents.
+1. **ResourceId** - object ID of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object Id of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
+In this example, the object ID of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
 $params = @{
@@ -175,7 +175,7 @@ Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadD
 
 ### Step 5: Revoke delegated permissions granted to an enterprise application
 
-If a service principal has been granted multiple delegated permission grants, you can choose to revok either specific gants or all grants.
+If a service principal has been granted multiple delegated permission grants, you can choose to revoke either specific grants or all grants.
 
 - To revoke one or more grants, update  oauthPermissionGrant object and specify only the delegated permissions to retain in the **scope** parameter. For example, to revoke the `User.read.All` permission, run:
 
@@ -193,7 +193,7 @@ Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadD
 Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw'
 ```
 
-When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
+When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens won't be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
 
 ## See also
 
