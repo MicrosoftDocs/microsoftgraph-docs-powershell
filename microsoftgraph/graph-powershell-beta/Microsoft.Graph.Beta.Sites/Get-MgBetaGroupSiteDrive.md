@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of drives (document libraries) under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -333,6 +336,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitedrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitedrive)
 

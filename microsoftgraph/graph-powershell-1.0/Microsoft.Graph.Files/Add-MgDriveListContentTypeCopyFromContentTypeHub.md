@@ -14,6 +14,9 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -220,6 +223,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgBetaDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub)
 

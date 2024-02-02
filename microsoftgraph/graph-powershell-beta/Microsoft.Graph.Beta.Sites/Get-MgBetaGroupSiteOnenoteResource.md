@@ -13,6 +13,9 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -335,6 +338,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource)
 

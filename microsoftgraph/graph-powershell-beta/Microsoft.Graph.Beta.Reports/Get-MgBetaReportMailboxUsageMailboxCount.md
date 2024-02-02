@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getMailboxUsageMailboxCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportMailboxUsageMailboxCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMailboxUsageMailboxCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -165,6 +168,7 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
+[Get-MgReportMailboxUsageMailboxCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMailboxUsageMailboxCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmailboxusagemailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmailboxusagemailboxcount)
 

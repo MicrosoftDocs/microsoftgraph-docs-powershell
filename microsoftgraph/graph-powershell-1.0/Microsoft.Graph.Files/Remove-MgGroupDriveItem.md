@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -213,6 +216,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitem)
 

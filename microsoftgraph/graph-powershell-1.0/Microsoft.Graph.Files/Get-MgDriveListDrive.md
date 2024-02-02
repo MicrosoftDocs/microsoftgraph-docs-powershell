@@ -11,6 +11,9 @@ schema: 2.0.0
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -149,6 +152,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistdrive)
 

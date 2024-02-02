@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -74,6 +77,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount)
 

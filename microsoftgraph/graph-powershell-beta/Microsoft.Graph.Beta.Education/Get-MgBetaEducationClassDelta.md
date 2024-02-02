@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -177,6 +180,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgEducationClassDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassdelta)
 

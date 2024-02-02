@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the organization resource.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -313,6 +316,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationextension)
 

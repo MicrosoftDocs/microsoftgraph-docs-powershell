@@ -13,6 +13,9 @@ To move a DriveItem to a new parent item, your app requests to update the parent
 This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29356,6 +29359,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitem)
 

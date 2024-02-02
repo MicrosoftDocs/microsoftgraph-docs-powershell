@@ -11,6 +11,9 @@ ms.prod: compliance
 ## SYNOPSIS
 Update the properties of a subjectRightsRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Update-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -30480,6 +30483,7 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[Update-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Update-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequest)
 

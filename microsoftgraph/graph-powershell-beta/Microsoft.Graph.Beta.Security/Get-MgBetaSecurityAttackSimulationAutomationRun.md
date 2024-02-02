@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of simulation automation runs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -338,6 +341,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationrun)
 

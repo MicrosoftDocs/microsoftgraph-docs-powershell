@@ -13,6 +13,9 @@ For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -312,6 +315,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootthumbnail)
 

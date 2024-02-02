@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to versions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -352,6 +355,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemversion)
 

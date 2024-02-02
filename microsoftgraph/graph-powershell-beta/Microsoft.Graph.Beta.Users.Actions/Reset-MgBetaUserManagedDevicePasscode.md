@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset passcode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reset (Default)
@@ -195,6 +198,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Reset-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetausermanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetausermanageddevicepasscode)
 
