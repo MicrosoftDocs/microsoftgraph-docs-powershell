@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshare
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Update-MgBetaPrintShare
@@ -54,6 +55,9 @@ Update-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> -BodyParameter
 Update the properties of a printer share.
 This method can be used to swap printers.
 For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-update-permissions.md)]
 
 ## EXAMPLES
 

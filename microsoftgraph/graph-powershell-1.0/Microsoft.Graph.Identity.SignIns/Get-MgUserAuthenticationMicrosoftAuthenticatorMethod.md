@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationmicrosoftauthenticatormethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationMicrosoftAuthenticatorMethod
@@ -33,6 +34,9 @@ Get-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserOutlookMasterCategory
@@ -38,6 +39,9 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create an outlookCategory object in the user's master list of categories.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookuser-post-mastercategories-permissions.md)]
 
 ## EXAMPLES
 

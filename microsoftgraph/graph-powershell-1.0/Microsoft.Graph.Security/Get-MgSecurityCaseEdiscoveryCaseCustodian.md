@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodian
@@ -33,6 +34,9 @@ Get-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryCustodian object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-get-permissions.md)]
 
 ## EXAMPLES
 

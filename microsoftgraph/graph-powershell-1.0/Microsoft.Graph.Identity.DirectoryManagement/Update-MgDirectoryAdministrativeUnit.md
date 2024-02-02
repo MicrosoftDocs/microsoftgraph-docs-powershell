@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgDirectoryAdministrativeUnit
@@ -44,6 +45,9 @@ Update-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 
 ## DESCRIPTION
 Update the properties of an administrativeUnit object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-update-permissions.md)]
 
 ## EXAMPLES
 

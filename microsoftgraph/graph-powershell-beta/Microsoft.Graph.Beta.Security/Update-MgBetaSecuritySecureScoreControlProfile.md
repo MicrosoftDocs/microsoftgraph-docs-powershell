@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Update-MgBetaSecuritySecureScoreControlProfile
@@ -50,6 +51,9 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securescorecontrolprofiles-update-permissions.md)]
 
 ## EXAMPLES
 

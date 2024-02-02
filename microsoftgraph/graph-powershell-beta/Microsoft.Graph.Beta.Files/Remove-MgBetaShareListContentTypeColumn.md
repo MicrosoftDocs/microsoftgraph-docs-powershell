@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgBetaShareListContentTypeColumn
@@ -26,6 +27,9 @@ Remove-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## EXAMPLES
 

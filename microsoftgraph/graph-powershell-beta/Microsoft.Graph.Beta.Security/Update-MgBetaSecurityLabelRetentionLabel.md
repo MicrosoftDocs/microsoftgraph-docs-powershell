@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Update-MgBetaSecurityLabelRetentionLabel
@@ -55,6 +56,9 @@ Update-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a retentionLabel object.
 To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionlabel-update-permissions.md)]
 
 ## EXAMPLES
 

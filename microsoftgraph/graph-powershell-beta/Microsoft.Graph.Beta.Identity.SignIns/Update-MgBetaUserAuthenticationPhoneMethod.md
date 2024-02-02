@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationphonemethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaUserAuthenticationPhoneMethod
@@ -46,6 +47,9 @@ Update the phone number associated with a phone authentication method.
 You can't change a phone's type.
 To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system attempts to register the number for use in that system.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/phoneauthenticationmethod-update-permissions.md)]
 
 ## EXAMPLES
 

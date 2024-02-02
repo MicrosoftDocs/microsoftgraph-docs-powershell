@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgUserPlannerTask
@@ -20,6 +21,9 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-tasks-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # New-MgBetaDevice
@@ -39,6 +40,9 @@ New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<C
 
 ## DESCRIPTION
 Create a new device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-devices-permissions.md)]
 
 ## EXAMPLES
 

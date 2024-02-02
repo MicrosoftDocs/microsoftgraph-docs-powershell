@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.prod: people
 ---
 
 # New-MgBetaAdminPeopleProfileCardProperty
@@ -31,6 +32,9 @@ New-MgBetaAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileC
 Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
 ## EXAMPLES
 

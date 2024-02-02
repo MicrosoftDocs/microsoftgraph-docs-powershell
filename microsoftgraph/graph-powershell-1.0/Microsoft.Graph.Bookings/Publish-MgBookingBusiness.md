@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Publish-MgBookingBusiness
@@ -27,6 +28,9 @@ Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf]
 ## DESCRIPTION
 Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-publish-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityProvider
@@ -30,6 +31,9 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Wh
 Create an identity provider object that is of the type specified in the request body.
 Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-identityproviders-permissions.md)]
 
 ## EXAMPLES
 

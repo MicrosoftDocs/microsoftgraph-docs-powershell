@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRootAnalyticTime
@@ -26,6 +27,9 @@ Get-MgUserDriveRootAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemanalytics-get-permissions.md)]
 
 ## EXAMPLES
 

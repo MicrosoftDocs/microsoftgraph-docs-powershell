@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistcontenttypecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Update-MgBetaGroupDriveListContentTypeColumn
@@ -60,6 +61,9 @@ Update-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
 
 ## EXAMPLES
 

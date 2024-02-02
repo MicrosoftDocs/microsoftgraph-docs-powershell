@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe
 schema: 2.0.0
+ms.prod: identity-and-access-reports
 ---
 
 # Confirm-MgBetaAuditLogSignInSafe
@@ -31,6 +32,9 @@ Confirm-MgBetaAuditLogSignInSafe
 Allow admins to mark an event in Microsoft Entra sign-in logs as safe.
 Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmsafe-permissions.md)]
 
 ## EXAMPLES
 

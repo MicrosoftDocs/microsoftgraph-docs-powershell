@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Add-MgApplicationKey
@@ -50,6 +51,9 @@ This method, along with removeKey can be used by an application to automate roll
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addkey-permissions.md)]
 
 ## EXAMPLES
 

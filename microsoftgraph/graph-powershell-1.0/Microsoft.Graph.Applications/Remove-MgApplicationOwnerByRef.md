@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerbyref
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgApplicationOwnerByRef
@@ -28,6 +29,9 @@ Remove-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-Id <String
 ## DESCRIPTION
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-owners-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryRoleMember
@@ -28,6 +29,9 @@ HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-list-members-permissions.md)]
 
 ## EXAMPLES
 

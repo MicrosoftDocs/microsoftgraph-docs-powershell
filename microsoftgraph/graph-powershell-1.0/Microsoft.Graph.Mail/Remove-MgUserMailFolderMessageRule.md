@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagerule
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserMailFolderMessageRule
@@ -26,6 +27,9 @@ Remove-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete the specified messageRule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-delete-permissions.md)]
 
 ## EXAMPLES
 

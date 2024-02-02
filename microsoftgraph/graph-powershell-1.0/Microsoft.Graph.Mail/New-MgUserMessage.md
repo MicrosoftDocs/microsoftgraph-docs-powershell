@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserMessage
@@ -76,6 +77,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-messages-permissions.md)]
 
 ## EXAMPLES
 

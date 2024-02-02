@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgGroupDriveListColumn
@@ -58,6 +59,9 @@ New-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-post-columns-permissions.md)]
 
 ## EXAMPLES
 

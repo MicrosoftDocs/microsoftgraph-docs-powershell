@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserContact
@@ -64,6 +65,9 @@ New-MgBetaUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-contacts-permissions.md)]
 
 ## EXAMPLES
 

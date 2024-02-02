@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallparticipantholdmusic
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Stop-MgBetaCommunicationCallParticipantHoldMusic
@@ -40,6 +41,9 @@ Stop-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicati
 
 ## DESCRIPTION
 Reincorporate a participant previously put on hold to the call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-stopholdmusic-permissions.md)]
 
 ## EXAMPLES
 

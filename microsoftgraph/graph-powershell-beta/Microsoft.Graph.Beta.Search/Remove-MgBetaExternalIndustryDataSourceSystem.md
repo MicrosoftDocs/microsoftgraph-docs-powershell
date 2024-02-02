@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem
 schema: 2.0.0
+ms.prod: industry-data-etl
 ---
 
 # Remove-MgBetaExternalIndustryDataSourceSystem
@@ -26,6 +27,9 @@ Remove-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-I
 
 ## DESCRIPTION
 Delete a sourceSystemDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-delete-permissions.md)]
 
 ## EXAMPLES
 

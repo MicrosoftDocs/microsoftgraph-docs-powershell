@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityB2XUserFlowUserAttributeAssignment
@@ -44,6 +45,9 @@ New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-post-userattributeassignments-permissions.md)]
 
 ## EXAMPLES
 

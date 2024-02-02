@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserEvent
@@ -37,6 +38,9 @@ Get-MgUserEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-
 Get the properties and relationships of the specified event object.
 Currently, this operation returns event bodies in only HTML format.
 There are two scenarios where an app can get an event in another user's calendar: Since the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-get-permissions.md)]
 
 ## EXAMPLES
 

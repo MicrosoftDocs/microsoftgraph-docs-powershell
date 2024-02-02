@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Remove-MgGroupAppRoleAssignment
@@ -26,6 +27,9 @@ Remove-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Deletes an appRoleAssignment that a group has been granted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/join-mgbetauserdrivelistcontenttypewithhubsite
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Join-MgBetaUserDriveListContentTypeWithHubSite
@@ -42,6 +43,9 @@ Join-MgBetaUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdenti
 
 ## DESCRIPTION
 Associate a \[content type\]\[contentType\] with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # New-MgBookingBusinessCustomQuestion
@@ -40,6 +41,9 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customquestions-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Find-MgBetaUserMeetingTime
@@ -54,6 +55,9 @@ If findMeetingTimes cannot return any meeting suggestions, the response would in
 Based on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-findmeetingtimes-permissions.md)]
 
 ## EXAMPLES
 

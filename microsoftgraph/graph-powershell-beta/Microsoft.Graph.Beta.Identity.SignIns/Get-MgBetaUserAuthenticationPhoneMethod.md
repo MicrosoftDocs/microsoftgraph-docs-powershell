@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationphonemethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationPhoneMethod
@@ -35,6 +36,9 @@ Get-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Retrieve a single phoneAuthenticationMethod object.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/phoneauthenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 

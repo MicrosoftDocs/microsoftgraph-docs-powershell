@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Restart-MgApplicationSynchronizationJob
@@ -44,6 +45,9 @@ Restart-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
 
 ## EXAMPLES
 

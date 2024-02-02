@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/add-mgbetacommunicationcalllargegalleryview
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Add-MgBetaCommunicationCallLargeGalleryView
@@ -42,6 +43,9 @@ Add-MgBetaCommunicationCallLargeGalleryView -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Add the large gallery view to a call.
 For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-addlargegalleryview-permissions.md)]
 
 ## EXAMPLES
 

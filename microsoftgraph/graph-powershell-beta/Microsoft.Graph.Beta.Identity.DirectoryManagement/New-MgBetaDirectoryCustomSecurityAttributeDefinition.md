@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # New-MgBetaDirectoryCustomSecurityAttributeDefinition
@@ -28,6 +29,9 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinition
 
 ## DESCRIPTION
 Create a new customSecurityAttributeDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]
 
 ## EXAMPLES
 

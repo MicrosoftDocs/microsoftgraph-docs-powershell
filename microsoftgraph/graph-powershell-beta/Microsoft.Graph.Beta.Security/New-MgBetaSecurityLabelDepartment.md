@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgBetaSecurityLabelDepartment
@@ -25,6 +26,9 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-WhatIf] [-Confirm
 
 ## DESCRIPTION
 Create a new departmentTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-departments-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowcustomtaskextension
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
@@ -33,6 +34,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <IIden
 
 ## DESCRIPTION
 Read the properties and relationships of a customTaskExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-customtaskextension-get-permissions.md)]
 
 ## EXAMPLES
 

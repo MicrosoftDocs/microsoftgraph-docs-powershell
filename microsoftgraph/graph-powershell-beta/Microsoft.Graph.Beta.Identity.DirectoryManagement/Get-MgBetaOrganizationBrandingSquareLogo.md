@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingsquarelogo
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaOrganizationBrandingSquareLogo
@@ -30,6 +31,9 @@ Get-MgBetaOrganizationBrandingSquareLogo -InputObject <IIdentityDirectoryManagem
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-get-permissions.md)]
 
 ## EXAMPLES
 

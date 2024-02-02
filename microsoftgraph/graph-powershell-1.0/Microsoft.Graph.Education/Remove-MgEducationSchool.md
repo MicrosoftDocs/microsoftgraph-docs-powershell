@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Remove-MgEducationSchool
@@ -26,6 +27,9 @@ Remove-MgEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-permissions.md)]
 
 ## EXAMPLES
 

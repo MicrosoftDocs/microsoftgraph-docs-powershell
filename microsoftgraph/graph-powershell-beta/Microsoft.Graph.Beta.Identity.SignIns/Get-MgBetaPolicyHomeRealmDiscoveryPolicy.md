@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyHomeRealmDiscoveryPolicy
@@ -33,6 +34,9 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-get-permissions.md)]
 
 ## EXAMPLES
 

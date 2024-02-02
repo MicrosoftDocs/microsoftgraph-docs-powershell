@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgBetaServicePrincipalDelegatedPermissionClassification
@@ -40,6 +41,9 @@ New-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAppli
 
 ## DESCRIPTION
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-delegatedpermissionclassifications-permissions.md)]
 
 ## EXAMPLES
 

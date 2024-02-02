@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaPolicyAuthenticationStrengthPolicy
@@ -50,6 +51,9 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
 Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

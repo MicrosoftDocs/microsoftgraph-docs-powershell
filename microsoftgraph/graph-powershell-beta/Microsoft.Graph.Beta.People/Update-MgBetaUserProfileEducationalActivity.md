@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileeducationalactivity
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfileEducationalActivity
@@ -48,6 +49,9 @@ Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Update the properties of an educationalActivity object within a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationalactivity-update-permissions.md)]
 
 ## EXAMPLES
 

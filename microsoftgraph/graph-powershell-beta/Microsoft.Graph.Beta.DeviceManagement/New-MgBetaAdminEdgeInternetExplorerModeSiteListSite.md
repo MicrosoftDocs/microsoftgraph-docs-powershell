@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
+ms.prod: browser-management
 ---
 
 # New-MgBetaAdminEdgeInternetExplorerModeSiteListSite
@@ -50,6 +51,9 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Create a new browserSite object in a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-post-sites-permissions.md)]
 
 ## EXAMPLES
 

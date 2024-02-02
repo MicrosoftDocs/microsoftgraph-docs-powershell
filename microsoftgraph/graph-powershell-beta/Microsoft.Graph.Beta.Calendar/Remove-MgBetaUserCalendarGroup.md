@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendargroup
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserCalendarGroup
@@ -26,6 +27,9 @@ Remove-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a calendar group other than the default calendar group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-delete-permissions.md)]
 
 ## EXAMPLES
 

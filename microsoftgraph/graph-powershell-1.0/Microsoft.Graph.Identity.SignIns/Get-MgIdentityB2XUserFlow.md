@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflow
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlow
@@ -33,6 +34,9 @@ Get-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-get-permissions.md)]
 
 ## EXAMPLES
 

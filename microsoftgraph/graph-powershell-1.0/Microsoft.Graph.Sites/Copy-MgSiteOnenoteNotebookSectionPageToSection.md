@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectionpagetosection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Copy-MgSiteOnenoteNotebookSectionPageToSection
@@ -45,6 +46,9 @@ Copy-MgSiteOnenoteNotebookSectionPageToSection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-copytosection-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationphonemethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationPhoneMethod
@@ -35,6 +36,9 @@ Get-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve a single phoneAuthenticationMethod object for a user.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 
