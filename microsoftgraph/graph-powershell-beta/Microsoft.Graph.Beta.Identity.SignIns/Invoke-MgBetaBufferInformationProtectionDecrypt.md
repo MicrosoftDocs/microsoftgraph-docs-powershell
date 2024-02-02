@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectiondecrypt
@@ -192,4 +192,5 @@ BODY \<IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostRequestbo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectiondecrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectiondecrypt)
+
 

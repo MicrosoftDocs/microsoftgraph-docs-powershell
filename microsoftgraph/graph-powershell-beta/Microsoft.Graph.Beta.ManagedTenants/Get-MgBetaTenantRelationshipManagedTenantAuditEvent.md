@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent
@@ -284,4 +284,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent)
+
 

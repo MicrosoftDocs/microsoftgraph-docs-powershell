@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolder
@@ -1008,4 +1008,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolder)
+
 

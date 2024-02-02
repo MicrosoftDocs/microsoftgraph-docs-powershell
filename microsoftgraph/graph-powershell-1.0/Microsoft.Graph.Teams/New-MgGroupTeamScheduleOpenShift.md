@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift
@@ -390,4 +390,5 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift)
+
 

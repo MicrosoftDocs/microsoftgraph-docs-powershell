@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity
@@ -600,4 +600,5 @@ Short text description of the user's unique activity (for example, document name
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity)
+
 

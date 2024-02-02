@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride
@@ -11,7 +11,7 @@ schema: 2.0.0
 Change the classifyAs field of a focused Inbox override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 Change the classifyAs field of a focused Inbox override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 
 ## EXAMPLES
 
@@ -264,4 +264,5 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
+
 

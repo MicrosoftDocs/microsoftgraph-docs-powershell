@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementcompliancepolicyscheduledaction
@@ -277,4 +277,5 @@ This collection can contain a maximum of 100 elements.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementcompliancepolicyscheduledaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementcompliancepolicyscheduledaction)
+
 

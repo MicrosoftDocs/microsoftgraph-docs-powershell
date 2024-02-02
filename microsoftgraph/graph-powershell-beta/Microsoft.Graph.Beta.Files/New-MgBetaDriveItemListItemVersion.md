@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemversion
@@ -354,4 +354,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemversion)
+
 

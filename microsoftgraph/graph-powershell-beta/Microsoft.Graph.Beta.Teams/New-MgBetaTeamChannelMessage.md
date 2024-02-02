@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage
@@ -121,8 +121,8 @@ $params = @{
   "title": "This is an example of posting a card",
   "subtitle": "\<h3\>This is the subtitle\</h3\>",
   "text": "Here is some body text.
-\<br\>\r\nAnd a \<a href=\"http://microsoft.com/\"\>hyperlink\</a\>.
-\<br\>\r\nAnd below that is some buttons:",
+\<br\>\rAnd a \<a href=\"http://microsoft.com/\"\>hyperlink\</a\>.
+\<br\>\rAnd below that is some buttons:",
   "buttons": \[
     {
       "type": "messageBack",
@@ -384,8 +384,8 @@ $params = @{
   "title": "This is an example of posting a card",
   "subtitle": "\<h3\>This is the subtitle\</h3\>",
   "text": "Here is some body text.
-\<br\>\r\nAnd a \<a href=\"http://microsoft.com/\"\>hyperlink\</a\>.
-\<br\>\r\nAnd below that is some buttons:",
+\<br\>\rAnd a \<a href=\"http://microsoft.com/\"\>hyperlink\</a\>.
+\<br\>\rAnd below that is some buttons:",
   "buttons": \[
     {
       "type": "messageBack",
@@ -1410,4 +1410,5 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage)
+
 

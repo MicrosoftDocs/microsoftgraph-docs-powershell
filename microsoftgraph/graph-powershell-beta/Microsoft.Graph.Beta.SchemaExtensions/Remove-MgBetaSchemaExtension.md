@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension
@@ -155,4 +155,5 @@ INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension)
+
 

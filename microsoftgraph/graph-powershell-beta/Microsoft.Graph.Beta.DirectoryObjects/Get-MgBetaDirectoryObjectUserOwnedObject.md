@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject
@@ -163,4 +163,5 @@ BODYPARAMETER \<IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPos
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject)
+
 

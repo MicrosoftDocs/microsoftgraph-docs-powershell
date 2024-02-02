@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile
@@ -559,4 +559,5 @@ GROUPPOLICYUPLOADEDLANGUAGEFILES \<IMicrosoftGraphGroupPolicyUploadedLanguageFil
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile)
+
 

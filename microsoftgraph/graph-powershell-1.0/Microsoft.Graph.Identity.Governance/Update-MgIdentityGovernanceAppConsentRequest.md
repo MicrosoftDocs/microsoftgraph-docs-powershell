@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequest
@@ -440,4 +440,5 @@ Supports $filter (eq only) and $orderby.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequest)
+
 

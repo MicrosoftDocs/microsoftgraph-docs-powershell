@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextensioncount
@@ -76,4 +76,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextensioncount)
+
 

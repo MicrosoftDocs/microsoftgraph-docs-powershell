@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint
@@ -243,4 +243,5 @@ For a list of possible values, see SPRegionalSettings.TimeZones property.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue
@@ -631,4 +631,5 @@ The default value is empty.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue)
+
 

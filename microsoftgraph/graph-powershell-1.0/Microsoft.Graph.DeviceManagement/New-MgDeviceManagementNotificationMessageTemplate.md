@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate
@@ -272,4 +272,5 @@ To unset, set this property to true on another Localized Notification Message.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate)
+
 

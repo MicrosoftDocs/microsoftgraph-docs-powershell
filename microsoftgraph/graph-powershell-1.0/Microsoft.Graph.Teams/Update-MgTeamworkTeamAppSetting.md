@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
@@ -180,4 +180,5 @@ False blocks the installation of any Teams app that requires resource-specific p
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
+
 

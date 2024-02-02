@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy
@@ -309,4 +309,5 @@ NOTIFICATIONINFO \<IMicrosoftGraphDlpNotification\>: dlpNotification
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentterm
@@ -204,4 +204,5 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentterm)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemcreatedbyuser
@@ -178,4 +178,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemcreatedbyuser)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfigurationassignmentcount
@@ -126,4 +126,5 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfigurationassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfigurationassignmentcount)
+
 

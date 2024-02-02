@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient
@@ -319,4 +319,5 @@ Optional when source is entityUrl; required when source is text.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient)
+
 

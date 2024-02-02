@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachmentcount
@@ -147,4 +147,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachmentcount)
+
 

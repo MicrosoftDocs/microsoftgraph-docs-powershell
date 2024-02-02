@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticmetrichistory
@@ -300,4 +300,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticmetrichistory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticmetrichistory)
+
 

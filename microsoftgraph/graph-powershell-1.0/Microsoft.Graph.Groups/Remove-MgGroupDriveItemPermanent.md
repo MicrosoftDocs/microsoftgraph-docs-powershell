@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriveitempermanent
@@ -203,4 +203,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriveitempermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriveitempermanent)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation
@@ -300,4 +300,5 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation)
+
 

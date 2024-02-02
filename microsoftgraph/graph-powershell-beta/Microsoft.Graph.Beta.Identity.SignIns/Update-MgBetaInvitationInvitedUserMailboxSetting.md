@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitationinvitedusermailboxsetting
@@ -476,4 +476,5 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitationinvitedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitationinvitedusermailboxsetting)
+
 

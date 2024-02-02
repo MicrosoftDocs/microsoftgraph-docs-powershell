@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota
@@ -143,4 +143,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
+
 

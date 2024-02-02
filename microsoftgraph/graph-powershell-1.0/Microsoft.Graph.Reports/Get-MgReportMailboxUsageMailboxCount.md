@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount
@@ -145,4 +145,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount)
+
 

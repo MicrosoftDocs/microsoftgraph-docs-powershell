@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 Module Guid: a4787a14-44bc-45c7-910b-13749e92ed7a
 Download Help Link: {{ Update Download Link }}
@@ -121,4 +121,5 @@ Locale: en-US
 
 ### [Update-MgServiceAnnouncementMessageAttachment](Update-MgServiceAnnouncementMessageAttachment.md)
 {{ Fill in the Description }}
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationjobschemadirectory
@@ -184,4 +184,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationjobschemadirectory)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus
@@ -367,4 +367,5 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus)
+
 

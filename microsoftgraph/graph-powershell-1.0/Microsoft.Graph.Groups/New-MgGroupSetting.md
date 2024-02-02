@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting
@@ -298,4 +298,5 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting)
+
 

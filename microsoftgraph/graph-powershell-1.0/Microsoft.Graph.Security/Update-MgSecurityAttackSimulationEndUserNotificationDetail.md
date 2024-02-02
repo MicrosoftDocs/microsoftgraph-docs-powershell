@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail
@@ -371,4 +371,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail)
+
 

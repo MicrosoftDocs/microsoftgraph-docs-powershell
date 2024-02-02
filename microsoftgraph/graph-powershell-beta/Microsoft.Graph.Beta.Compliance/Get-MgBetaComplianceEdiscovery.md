@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscovery
@@ -80,4 +80,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscovery)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy
@@ -349,4 +349,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy)
+
 

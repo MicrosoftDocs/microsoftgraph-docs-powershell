@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration
@@ -368,4 +368,5 @@ Appears when answerInputType is text, multilineText or singleChoice.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
+
 

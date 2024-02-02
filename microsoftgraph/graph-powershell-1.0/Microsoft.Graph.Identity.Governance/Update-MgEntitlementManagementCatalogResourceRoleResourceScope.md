@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescope
@@ -538,4 +538,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescope)
+
 

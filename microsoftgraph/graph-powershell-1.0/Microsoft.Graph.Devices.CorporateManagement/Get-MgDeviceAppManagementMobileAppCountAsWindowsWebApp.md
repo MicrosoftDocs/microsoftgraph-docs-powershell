@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountaswindowswebapp
@@ -77,4 +77,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountaswindowswebapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountaswindowswebapp)
+
 

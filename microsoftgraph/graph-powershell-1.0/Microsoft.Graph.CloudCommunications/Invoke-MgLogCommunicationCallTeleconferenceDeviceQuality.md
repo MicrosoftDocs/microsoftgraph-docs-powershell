@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
@@ -337,4 +337,5 @@ The CVI partner needs to copy over Call.MyParticipantId to this property.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality)
+
 

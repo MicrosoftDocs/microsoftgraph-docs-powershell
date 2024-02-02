@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsessionattendancereport
@@ -329,4 +329,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsessionattendancereport)
+
 

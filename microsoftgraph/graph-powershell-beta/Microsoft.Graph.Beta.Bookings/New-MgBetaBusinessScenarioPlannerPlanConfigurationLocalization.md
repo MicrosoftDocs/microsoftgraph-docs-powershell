@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization
@@ -265,4 +265,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization)
+
 

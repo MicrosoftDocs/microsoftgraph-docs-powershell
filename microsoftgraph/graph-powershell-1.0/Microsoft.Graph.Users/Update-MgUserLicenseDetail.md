@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail
@@ -296,4 +296,5 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail)
+
 

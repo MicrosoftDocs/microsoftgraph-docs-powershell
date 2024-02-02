@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveroot
@@ -185,4 +185,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveroot)
+
 

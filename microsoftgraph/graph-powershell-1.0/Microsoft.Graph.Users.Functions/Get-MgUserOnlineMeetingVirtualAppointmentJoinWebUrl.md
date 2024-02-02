@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl
@@ -132,4 +132,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusersponsor
@@ -344,4 +344,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusersponsor)
+
 

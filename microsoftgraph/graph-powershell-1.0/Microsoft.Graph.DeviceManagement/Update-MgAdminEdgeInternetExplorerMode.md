@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode
@@ -293,4 +293,5 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)
+
 

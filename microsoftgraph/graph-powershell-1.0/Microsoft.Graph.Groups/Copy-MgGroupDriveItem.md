@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem
@@ -327,4 +327,5 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem)
+
 

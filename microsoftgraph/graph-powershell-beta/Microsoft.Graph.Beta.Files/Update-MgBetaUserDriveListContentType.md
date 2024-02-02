@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttype
@@ -1792,4 +1792,5 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttype)
+
 

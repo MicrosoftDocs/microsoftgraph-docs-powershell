@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistoperation
@@ -465,4 +465,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistoperation)
+
 

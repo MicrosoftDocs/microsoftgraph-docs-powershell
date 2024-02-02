@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgGroupEventInstanceAttachment -InputObject <ICalendarIdentity> -BodyParamet
 
 ## DESCRIPTION
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 
 ## EXAMPLES
 
@@ -319,4 +319,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment)
+
 

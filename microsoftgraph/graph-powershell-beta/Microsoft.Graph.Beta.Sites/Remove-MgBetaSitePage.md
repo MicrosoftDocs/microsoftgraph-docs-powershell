@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepage
@@ -223,4 +223,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepage)
+
 

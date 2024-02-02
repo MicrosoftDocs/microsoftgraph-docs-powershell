@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku
@@ -346,4 +346,5 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku)
+
 

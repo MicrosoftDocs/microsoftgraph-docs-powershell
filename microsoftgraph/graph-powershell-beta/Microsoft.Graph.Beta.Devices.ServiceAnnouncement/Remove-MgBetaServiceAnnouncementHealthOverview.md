@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementhealthoverview
@@ -161,4 +161,5 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementhealthoverview)
+
 

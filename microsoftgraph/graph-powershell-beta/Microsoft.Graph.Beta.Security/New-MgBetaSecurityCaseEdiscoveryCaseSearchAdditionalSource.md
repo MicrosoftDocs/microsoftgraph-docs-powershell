@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource
@@ -376,4 +376,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource)
+
 

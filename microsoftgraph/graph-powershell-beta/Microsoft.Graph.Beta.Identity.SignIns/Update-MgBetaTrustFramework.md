@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework
@@ -227,4 +227,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework)
+
 

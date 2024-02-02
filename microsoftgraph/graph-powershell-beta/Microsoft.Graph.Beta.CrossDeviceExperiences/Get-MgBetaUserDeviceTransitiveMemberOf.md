@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof
@@ -312,4 +312,5 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof)
+
 

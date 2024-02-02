@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention
@@ -401,4 +401,5 @@ MENTIONED \<IMicrosoftGraphEmailAddress\>: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention)
+
 

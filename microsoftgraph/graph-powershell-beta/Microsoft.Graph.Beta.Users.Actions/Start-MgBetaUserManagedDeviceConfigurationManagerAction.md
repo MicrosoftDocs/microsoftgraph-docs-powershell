@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausermanageddeviceconfigurationmanageraction
@@ -271,4 +271,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausermanageddeviceconfigurationmanageraction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausermanageddeviceconfigurationmanageraction)
+
 

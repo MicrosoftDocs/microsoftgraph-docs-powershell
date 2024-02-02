@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontactextension
@@ -237,4 +237,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontactextension)
+
 
