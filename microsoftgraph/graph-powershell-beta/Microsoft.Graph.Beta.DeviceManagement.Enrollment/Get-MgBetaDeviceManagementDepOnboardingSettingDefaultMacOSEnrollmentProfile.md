@@ -28,18 +28,6 @@ Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile
 ## DESCRIPTION
 Default MacOs Enrollment Profile
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -150,5 +138,6 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeponboardingsettingdefaultmacosenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeponboardingsettingdefaultmacosenrollmentprofile)
+
 
 

@@ -36,22 +36,6 @@ Get-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail
 ## DESCRIPTION
 Managed device mobile app configuration states for this device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -410,5 +394,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcomanageddeviceassignmentfilterevaluationstatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcomanageddeviceassignmentfilterevaluationstatusdetail)
+
 
 

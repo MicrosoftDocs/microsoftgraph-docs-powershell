@@ -50,22 +50,6 @@ An attachment can be one of the following types: All these types of attachment r
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-post-attachments-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,5 +311,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [New-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment)
+
 
 

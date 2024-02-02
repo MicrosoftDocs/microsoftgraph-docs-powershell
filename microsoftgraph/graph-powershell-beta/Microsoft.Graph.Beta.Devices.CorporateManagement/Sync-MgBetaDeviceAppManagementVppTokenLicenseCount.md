@@ -19,18 +19,6 @@ Sync-MgBetaDeviceAppManagementVppTokenLicenseCount [-PassThru] [-WhatIf] [-Confi
 ## DESCRIPTION
 Invoke action syncLicenseCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -PassThru
@@ -92,5 +80,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicensecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicensecount)
+
 
 

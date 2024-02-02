@@ -30,18 +30,6 @@ Get-MgBetaCommunicationCallAudioRoutingGroupCount -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallId
@@ -144,5 +132,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgCommunicationCallAudioRoutingGroupCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroupCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroupcount)
+
 
 

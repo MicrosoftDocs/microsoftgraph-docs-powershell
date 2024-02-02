@@ -54,22 +54,6 @@ Update-MgSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property permission in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -623,5 +607,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharepermission)
+
 
 

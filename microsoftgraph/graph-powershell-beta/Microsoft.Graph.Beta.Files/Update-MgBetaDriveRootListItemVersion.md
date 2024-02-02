@@ -46,22 +46,6 @@ Update-MgBetaDriveRootListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,5 +342,6 @@ Read-only.
 [Update-MgDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitemversion)
+
 
 

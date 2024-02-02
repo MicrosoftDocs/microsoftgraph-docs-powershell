@@ -30,18 +30,6 @@ Get-MgUserDriveRootAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get lastSevenDays from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -165,5 +153,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticlastsevenday)
+
 
 

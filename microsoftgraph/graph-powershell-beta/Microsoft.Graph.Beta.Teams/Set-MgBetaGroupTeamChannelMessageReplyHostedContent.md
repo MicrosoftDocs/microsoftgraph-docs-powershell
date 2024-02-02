@@ -31,18 +31,6 @@ Set-MgBetaGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -275,5 +263,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Set-MgGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelmessagereplyhostedcontent)
+
 
 

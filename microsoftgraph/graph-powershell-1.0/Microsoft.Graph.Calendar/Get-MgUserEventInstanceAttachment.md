@@ -43,22 +43,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -305,5 +289,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachment)
+
 
 

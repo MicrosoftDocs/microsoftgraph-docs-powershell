@@ -48,18 +48,6 @@ New-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBoo
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,5 +360,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [New-MgVirtualEventSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventSessionAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsessionattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsessionattendancereportattendancerecord)
+
 
 

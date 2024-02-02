@@ -32,22 +32,6 @@ Get-MgBetaGroupDriveListContentTypeCompatibleHubContentType -InputObject <IGroup
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -267,5 +251,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupDriveListContentTypeCompatibleHubContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdrivelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdrivelistcontenttypecompatiblehubcontenttype)
+
 
 

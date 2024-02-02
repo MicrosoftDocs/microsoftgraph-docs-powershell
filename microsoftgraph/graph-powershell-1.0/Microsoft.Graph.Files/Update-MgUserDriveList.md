@@ -58,22 +58,6 @@ Update-MgUserDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property list in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24015,5 +23999,6 @@ See the possible resource path values for each supported resource.
 [Update-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelist)
+
 
 

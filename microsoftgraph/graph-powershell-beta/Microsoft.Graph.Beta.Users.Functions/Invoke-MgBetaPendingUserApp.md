@@ -27,22 +27,6 @@ Invoke-MgBetaPendingUserApp -InputObject <IUsersFunctionsIdentity> [-Count] [-Fi
 ## DESCRIPTION
 Retrieves the list of devices with failed or pending apps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -208,5 +192,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapendinguserapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapendinguserapp)
+
 
 

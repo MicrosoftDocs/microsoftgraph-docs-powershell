@@ -33,22 +33,6 @@ New-MgBetaDirectoryRecommendation -BodyParameter <Hashtable> [-WhatIf] [-Confirm
 ## DESCRIPTION
 Create new navigation property to recommendations for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionSteps
@@ -502,5 +486,6 @@ For example, this property is set to the applicationId if the resourceType is an
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)
+
 
 

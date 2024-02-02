@@ -27,18 +27,6 @@ Remove-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -InputObject <IMa
 ## DESCRIPTION
 Delete navigation property deviceHealthStatuses for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceHealthStatusId
@@ -191,5 +179,6 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantdevicehealthstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)
+
 
 

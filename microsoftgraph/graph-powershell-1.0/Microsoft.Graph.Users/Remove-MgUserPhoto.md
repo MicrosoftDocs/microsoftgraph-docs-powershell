@@ -26,18 +26,6 @@ Remove-MgUserPhoto -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru]
 ## DESCRIPTION
 Delete navigation property photo for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -165,5 +153,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphoto)
+
 
 

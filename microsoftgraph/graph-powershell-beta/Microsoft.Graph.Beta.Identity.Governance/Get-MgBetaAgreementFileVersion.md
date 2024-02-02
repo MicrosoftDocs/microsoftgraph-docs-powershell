@@ -39,18 +39,6 @@ Get-MgBetaAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> [-Expa
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -385,5 +373,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfileversion)
+
 
 

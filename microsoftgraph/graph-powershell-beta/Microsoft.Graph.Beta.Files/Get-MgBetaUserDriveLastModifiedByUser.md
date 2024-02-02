@@ -42,18 +42,6 @@ Get-MgBetaUserDriveLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get lastModifiedByUser from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -177,5 +165,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveLastModifiedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelastmodifiedbyuser)
+
 
 

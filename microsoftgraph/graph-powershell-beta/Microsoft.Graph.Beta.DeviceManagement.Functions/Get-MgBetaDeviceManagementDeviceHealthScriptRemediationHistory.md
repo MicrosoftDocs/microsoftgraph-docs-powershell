@@ -27,22 +27,6 @@ Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory
 ## DESCRIPTION
 Function to get the number of remediations by a device health scripts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceHealthScriptId
@@ -126,5 +110,6 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdevicehealthscriptremediationhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdevicehealthscriptremediationhistory)
+
 
 

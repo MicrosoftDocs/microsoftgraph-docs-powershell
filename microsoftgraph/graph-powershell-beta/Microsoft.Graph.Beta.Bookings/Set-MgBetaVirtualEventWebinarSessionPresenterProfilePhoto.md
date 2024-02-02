@@ -28,18 +28,6 @@ Set-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto -InputObject <IBooking
 ## DESCRIPTION
 Update profilePhoto for the navigation property presenters in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -222,5 +210,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventwebinarsessionpresenterprofilephoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventwebinarsessionpresenterprofilephoto)
+
 
 

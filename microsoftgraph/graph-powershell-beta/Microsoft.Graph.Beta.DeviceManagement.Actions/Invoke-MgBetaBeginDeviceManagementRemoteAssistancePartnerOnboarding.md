@@ -32,22 +32,6 @@ Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -200,5 +184,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabegindevicemanagementremoteassistancepartneronboarding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabegindevicemanagementremoteassistancepartneronboarding)
+
 
 

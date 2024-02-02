@@ -31,22 +31,6 @@ Disable-MgUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity> [-PassT
 ## DESCRIPTION
 Disable lost mode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -191,5 +175,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mgusermanageddevicelostmode](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mgusermanageddevicelostmode)
+
 
 

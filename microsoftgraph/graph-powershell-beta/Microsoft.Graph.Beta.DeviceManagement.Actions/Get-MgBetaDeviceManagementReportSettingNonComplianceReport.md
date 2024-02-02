@@ -33,22 +33,6 @@ Get-MgBetaDeviceManagementReportSettingNonComplianceReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getSettingNonComplianceReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,5 +293,6 @@ BODYPARAMETER \<IPaths19Wsha2DevicemanagementReportsMicrosoftGraphGetsettingnonc
 [Get-MgDeviceManagementReportSettingNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportSettingNonComplianceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportsettingnoncompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportsettingnoncompliancereport)
+
 
 

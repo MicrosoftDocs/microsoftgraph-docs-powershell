@@ -49,22 +49,6 @@ New-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to acceptances for agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -503,5 +487,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [New-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementacceptance)
+
 
 

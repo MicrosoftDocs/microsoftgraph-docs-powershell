@@ -31,18 +31,6 @@ Get-MgUserTodoTaskDelta -InputObject <IUsersFunctionsIdentity> [-Filter <String>
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -289,5 +277,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgBetaUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserTodoTaskDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta)
+
 
 

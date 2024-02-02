@@ -30,18 +30,6 @@ Get-MgContactTransitiveMemberOfCount -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -166,5 +154,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaContactTransitiveMemberOfCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberofcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberofcount)
+
 
 

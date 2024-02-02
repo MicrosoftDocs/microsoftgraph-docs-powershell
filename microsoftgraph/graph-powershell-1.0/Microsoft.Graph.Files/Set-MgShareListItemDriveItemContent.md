@@ -42,22 +42,6 @@ Set-MgShareListItemDriveItemContent -InputObject <IFilesIdentity> [-Data <Stream
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -215,5 +199,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Set-MgBetaShareListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareListItemDriveItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharelistitemdriveitemcontent)
+
 
 

@@ -46,18 +46,6 @@ Update-MgDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property analytics in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18566,5 +18554,6 @@ Read-only.
 [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic)
+
 
 

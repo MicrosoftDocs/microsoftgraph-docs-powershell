@@ -37,18 +37,6 @@ Get-MgBetaGroupMemberOfAsAdministrativeUnit -InputObject <IGroupsIdentity> [-Exp
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -330,5 +318,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOfAsAdministrativeUnit?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasadministrativeunit)
+
 
 

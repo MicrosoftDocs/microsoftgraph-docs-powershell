@@ -52,18 +52,6 @@ New-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to jobs for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcknowledgedDateTime
@@ -683,5 +671,6 @@ Read-only.
 [New-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejob)
+
 
 

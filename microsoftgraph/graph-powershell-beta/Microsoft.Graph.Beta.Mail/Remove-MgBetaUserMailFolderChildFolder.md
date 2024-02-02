@@ -30,22 +30,6 @@ Remove-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property childFolders for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -201,5 +185,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Remove-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolder)
+
 
 

@@ -47,22 +47,6 @@ Update-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property urlThreats in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -509,5 +493,6 @@ RESULT \<IMicrosoftGraphSecuritySubmissionResult\>: submissionResult
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionurlthreat)
+
 
 

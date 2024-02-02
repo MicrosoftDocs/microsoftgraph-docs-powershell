@@ -48,18 +48,6 @@ Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp
 ## DESCRIPTION
 Invoke action targetApps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -307,5 +295,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetatargetdeviceappmanagementmanagedappregistrationappliedpolicyapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetatargetdeviceappmanagementmanagedappregistrationappliedpolicyapp)
+
 
 

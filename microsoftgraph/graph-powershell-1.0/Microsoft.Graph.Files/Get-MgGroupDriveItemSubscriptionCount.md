@@ -30,18 +30,6 @@ Get-MgGroupDriveItemSubscriptionCount -InputObject <IFilesIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -180,5 +168,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveItemSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscriptionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemsubscriptioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemsubscriptioncount)
+
 
 

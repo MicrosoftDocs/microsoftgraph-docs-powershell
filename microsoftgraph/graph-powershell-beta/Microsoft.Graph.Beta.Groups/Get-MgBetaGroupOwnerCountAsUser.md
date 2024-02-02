@@ -30,18 +30,6 @@ Get-MgBetaGroupOwnerCountAsUser -InputObject <IGroupsIdentity> [-Filter <String>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -187,5 +175,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerCountAsUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasuser)
+
 
 

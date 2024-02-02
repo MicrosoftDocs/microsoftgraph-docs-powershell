@@ -54,18 +54,6 @@ Update-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManageme
 ## DESCRIPTION
 Update the navigation property vppTokens in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -561,5 +549,6 @@ TOKENACTIONRESULTS \<IMicrosoftGraphVppTokenActionResult\[\]\>: The collection o
 [Update-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken)
+
 
 

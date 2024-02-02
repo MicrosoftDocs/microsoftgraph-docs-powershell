@@ -30,22 +30,6 @@ Remove-MgShareListSubscription -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property subscriptions for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,5 +184,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistsubscription)
+
 
 

@@ -57,22 +57,6 @@ Update-MgBetaDeviceManagementConfigurationSetting -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Update the navigation property configurationSettings in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessTypes
@@ -668,5 +652,6 @@ Applicable for reusable setting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationsetting)
+
 
 

@@ -66,22 +66,6 @@ Create a column for a \[site\]\[site\] with a request that specifies a \[columnD
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-columns-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1236,5 +1220,6 @@ For examples, see Examples of common formulas in lists.
 [New-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecolumn)
+
 
 

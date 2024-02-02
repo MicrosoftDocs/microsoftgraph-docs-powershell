@@ -30,18 +30,6 @@ Remove-MgBetaSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Delete navigation property activities for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -238,5 +226,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalyticitemactivitystatactivity)
+
 
 

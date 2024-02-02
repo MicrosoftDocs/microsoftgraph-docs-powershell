@@ -35,18 +35,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,5 +327,6 @@ Possible values are: manufacturer, model, osVersion, application or driver.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview)
+
 
 

@@ -37,18 +37,6 @@ Get-MgBetaGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Get itemActivityStats from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -308,5 +296,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalyticitemactivitystat)
+
 
 

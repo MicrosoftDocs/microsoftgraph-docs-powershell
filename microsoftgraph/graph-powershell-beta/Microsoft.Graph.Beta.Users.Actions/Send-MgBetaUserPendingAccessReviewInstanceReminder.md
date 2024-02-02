@@ -31,22 +31,6 @@ Send a reminder to the reviewers of a currently active accessReviewInstance.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -201,5 +185,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserpendingaccessreviewinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserpendingaccessreviewinstancereminder)
+
 
 

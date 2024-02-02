@@ -42,22 +42,6 @@ Get-MgBetaReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getSharePointActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -199,5 +183,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSharePointActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointActivityUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivityuserdetail)
+
 
 

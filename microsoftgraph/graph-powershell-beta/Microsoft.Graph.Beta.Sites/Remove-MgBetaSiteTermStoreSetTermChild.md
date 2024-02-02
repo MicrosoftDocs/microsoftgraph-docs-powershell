@@ -30,22 +30,6 @@ Remove-MgBetaSiteTermStoreSetTermChild -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property children for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -257,5 +241,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetTermChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresettermchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresettermchild)
+
 
 
