@@ -41,9 +41,9 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
+### Example 1: Create an access package policy
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $allowedRequestors = @(@{
   "@odata.type" = '#microsoft.graph.singleUser'
@@ -51,7 +51,6 @@ $allowedRequestors = @(@{
   "id"= 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
   "description" = 'Requestor1'
   })
-```
 
 $requestorSettings =@{
   "scopeType" = 'SpecificDirectorySubjects'
@@ -64,7 +63,7 @@ $requestApprovalSettings = @{
   "isApprovalRequiredForExtension" =$false
   "isRequestorJustificationRequired"= $false
   "approvalMode"= 'NoApproval'
-  "approvalStages"= '\[\]'
+  "approvalStages"= '[]'
   }
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -DisplayName 'Specific users' -Description 'Specific users can request assignment'  -DurationInDays 30 -RequestorSettings $requestorSettings -RequestApprovalSettings $requestApprovalSettings
@@ -86,7 +85,11 @@ ModifiedDateTime        : 11/8/2021 7:16:07 AM
 Questions               : {}
 RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprovalSettings
 RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
-AdditionalProperties    : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity\]}
+AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity]}
+```
+
+This example shows a request to create an access package assignment policy. In this policy no approval is required, and there are no access reviews.
+
 
 ## PARAMETERS
 

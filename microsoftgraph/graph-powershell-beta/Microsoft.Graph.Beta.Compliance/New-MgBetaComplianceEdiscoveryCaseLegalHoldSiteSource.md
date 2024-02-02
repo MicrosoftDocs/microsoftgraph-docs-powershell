@@ -48,9 +48,8 @@ Adds a siteSource to a legalHold object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-post-sitesources-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	Site = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

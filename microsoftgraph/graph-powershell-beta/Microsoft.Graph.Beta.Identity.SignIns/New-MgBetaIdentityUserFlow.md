@@ -32,9 +32,8 @@ Create a new userFlow object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-post-userflows-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "Pol1"
@@ -43,6 +42,8 @@ $params = @{
 }
 New-MgBetaIdentityUserFlow -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaIdentityUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -42,13 +42,17 @@ Retrieve the properties and relationships of a plannerBucket object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerBucket
+
+```
+This example shows how to use the Get-MgPlannerBucket Cmdlet.
+
 
 ## PARAMETERS
 

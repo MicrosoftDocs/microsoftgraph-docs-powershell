@@ -42,13 +42,17 @@ Retrieve the properties of a contentSharingSession object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentsharingsession-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallContentSharingSession -CallId $callId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallContentSharingSession Cmdlet.
+
 
 ## PARAMETERS
 

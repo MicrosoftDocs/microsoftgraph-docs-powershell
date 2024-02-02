@@ -47,18 +47,22 @@ Update-MgBetaChatInstalledApp -InputObject <ITeamsIdentity>
 Upgrade an app installation within a chat.
 
 ## EXAMPLES
+### Example 1: Upgrade the teams app installed in chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Update-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
-### EXAMPLE 2
 ```
+This example will upgrade the teams app installed in chat
+
+### Example 2: Upgrade app installed in a chat and consent to the resource specific permissions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	consentedPermissionSet = @{
@@ -76,6 +80,10 @@ $params = @{
 }
 
 Update-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -BodyParameter $params
+
+```
+This example will upgrade app installed in a chat and consent to the resource specific permissions
+
 
 ## PARAMETERS
 

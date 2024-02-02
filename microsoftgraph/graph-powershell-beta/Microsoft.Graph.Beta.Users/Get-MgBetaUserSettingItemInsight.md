@@ -32,13 +32,14 @@ Get the user-customizable privacy settings for itemInsights and meeting hours in
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserSettingItemInsight Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingItemInsight -UserId $userId
 ```
+This example shows how to use the Get-MgBetaUserSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

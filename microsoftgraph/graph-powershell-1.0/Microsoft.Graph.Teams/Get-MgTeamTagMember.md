@@ -42,13 +42,17 @@ Get the properties and relationships of a member of a standard tag in a team.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId
+
+```
+This example shows how to use the Get-MgTeamTagMember Cmdlet.
+
 
 ## PARAMETERS
 

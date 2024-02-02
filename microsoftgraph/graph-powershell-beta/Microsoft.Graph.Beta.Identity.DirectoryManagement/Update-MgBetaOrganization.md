@@ -83,11 +83,10 @@ The ID is also known as the tenantId of the organization.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organization-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	marketingNotificationEmails = @(
@@ -109,6 +108,11 @@ $params = @{
 }
 
 Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

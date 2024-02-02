@@ -51,13 +51,17 @@ New-MgBetaRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity>
 Create new navigation property to history for identityProtection
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaRiskyServicePrincipalHistory -RiskyServicePrincipalId $riskyServicePrincipalId
+```
+This example shows how to use the New-MgBetaBetaRiskyServicePrincipalHistory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

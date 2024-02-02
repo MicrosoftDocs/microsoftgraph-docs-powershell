@@ -50,11 +50,10 @@ You can't modify the displayName propertyonce you have created the category.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 $params = @{
 	color = "preset15"
@@ -62,6 +61,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

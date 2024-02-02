@@ -42,13 +42,17 @@ Read the properties and relationships of an educationSchool object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchool
+
+```
+This example shows how to use the Get-MgEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

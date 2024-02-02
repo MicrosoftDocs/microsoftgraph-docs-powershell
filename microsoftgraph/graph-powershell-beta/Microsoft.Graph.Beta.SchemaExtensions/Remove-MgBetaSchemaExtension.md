@@ -39,13 +39,17 @@ Deleting a schema extension definition does not affect accessing custom data tha
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 Remove-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
+```
+This example shows how to use the Remove-MgBetaSchemaExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

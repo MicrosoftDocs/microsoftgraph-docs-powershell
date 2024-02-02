@@ -35,13 +35,17 @@ Delete a b2xIdentityUserFlow object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityB2XUserFlow -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+```
+This example shows how to use the Remove-MgIdentityB2XUserFlow Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

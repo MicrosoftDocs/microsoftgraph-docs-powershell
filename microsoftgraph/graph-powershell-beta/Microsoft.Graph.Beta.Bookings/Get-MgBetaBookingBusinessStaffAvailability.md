@@ -51,20 +51,31 @@ Get the availability information of staff members of a Microsoft Bookings calend
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-getstaffavailability-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Bookings
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	staffIds = @(
+		"311a5454-08b2-4560-ba1c-f715e938cb79"
+	)
+	startDateTime = @{
+		dateTime = "2022-01-25T00:00:00"
+		timeZone = "India Standard Time"
+	}
+	endDateTime = @{
+		dateTime = "2022-01-26T17:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+}
 
-{{ Add output here }}
+Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaBookingBusinessStaffAvailability Cmdlet.
+
 
 ## PARAMETERS
 
