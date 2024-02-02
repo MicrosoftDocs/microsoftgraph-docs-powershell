@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
 Retrieve the schema for a given synchronization job or template.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,31 +27,25 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsId
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -184,8 +174,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema)
-
 

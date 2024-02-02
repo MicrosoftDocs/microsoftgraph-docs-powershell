@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallaudioroutinggroup
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Remove-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
 Delete the specified audioRoutingGroup.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,8 +27,21 @@ Remove-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Delete the specified audioRoutingGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -175,9 +184,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallaudioroutinggroup)
-
-
 

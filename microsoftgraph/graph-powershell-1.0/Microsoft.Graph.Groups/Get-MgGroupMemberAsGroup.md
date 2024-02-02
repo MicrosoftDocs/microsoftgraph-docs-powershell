@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasgroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgGroupMemberAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -305,9 +314,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupMemberAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasgroup)
-
-
 

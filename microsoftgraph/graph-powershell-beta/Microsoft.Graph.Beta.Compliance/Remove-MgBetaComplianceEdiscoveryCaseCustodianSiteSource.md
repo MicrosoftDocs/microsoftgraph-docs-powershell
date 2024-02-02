@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodiansitesource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource
@@ -28,17 +27,13 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplian
 ## DESCRIPTION
 Delete a siteSource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sitesource-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -CaseId $caseId -CustodianId $custodianId -SiteSourceId $siteSourceId
 ```
-This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -201,5 +196,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodiansitesource)
-
 

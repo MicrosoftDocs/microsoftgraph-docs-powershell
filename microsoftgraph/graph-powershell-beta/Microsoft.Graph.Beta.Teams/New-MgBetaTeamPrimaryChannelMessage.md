@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Send a new chatMessage in the specified channel or a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,6 +60,16 @@ New-MgBetaTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter
 Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1015,8 +1022,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[New-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessage)
-
 

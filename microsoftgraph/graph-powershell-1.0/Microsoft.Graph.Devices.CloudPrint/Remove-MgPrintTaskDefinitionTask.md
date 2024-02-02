@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinitiontask
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property tasks for print
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-IfM
 
 ## DESCRIPTION
 Delete navigation property tasks for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -170,9 +183,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinitiontask)
-
-
 

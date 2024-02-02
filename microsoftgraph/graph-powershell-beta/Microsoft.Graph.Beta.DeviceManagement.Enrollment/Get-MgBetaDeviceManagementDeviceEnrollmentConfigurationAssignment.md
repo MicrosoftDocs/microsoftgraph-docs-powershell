@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeviceenrollmentconfigurationassignment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of group assignments for the device configuration profile
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,18 @@ Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 ## DESCRIPTION
 The list of group assignments for the device configuration profile
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -283,9 +292,6 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
   \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeviceenrollmentconfigurationassignment)
-
-
 

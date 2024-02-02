@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Education
 Module Guid: c413b855-1538-4f43-80a9-cb453e059e8a
 Download Help Link: {{ Update Download Link }}
@@ -769,5 +769,4 @@ Locale: en-US
 
 ### [Update-MgEducationUserRubric](Update-MgEducationUserRubric.md)
 {{ Fill in the Description }}
-
 

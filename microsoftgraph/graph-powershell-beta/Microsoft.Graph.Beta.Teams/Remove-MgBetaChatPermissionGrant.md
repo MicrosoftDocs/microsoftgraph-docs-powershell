@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatpermissiongrant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property permissionGrants for chats
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatPermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaChatPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete navigation property permissionGrants for chats
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -196,9 +209,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatpermissiongrant)
-
-
 

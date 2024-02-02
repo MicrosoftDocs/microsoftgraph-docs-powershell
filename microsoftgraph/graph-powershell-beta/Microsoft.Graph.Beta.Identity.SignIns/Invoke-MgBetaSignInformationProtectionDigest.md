@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetasigninformationprotectiondigest
@@ -27,6 +27,22 @@ Invoke-MgBetaSignInformationProtectionDigest
 
 ## DESCRIPTION
 Invoke action signDigest
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -129,6 +145,4 @@ BODY \<IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyC
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetasigninformationprotectiondigest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetasigninformationprotectiondigest)
-
-
 

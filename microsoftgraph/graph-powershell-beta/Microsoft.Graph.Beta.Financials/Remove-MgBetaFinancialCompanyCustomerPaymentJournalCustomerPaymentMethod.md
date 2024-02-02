@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentmethod
@@ -27,6 +27,22 @@ Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentMethod -InputO
 
 ## DESCRIPTION
 Delete navigation property paymentMethod for financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -208,6 +224,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentmethod)
-
-
 

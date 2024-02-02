@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObject
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a directoryObject object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryObject object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Get-MgDirectoryObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -273,8 +262,6 @@ INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject)
-
 

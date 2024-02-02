@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeeting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property onlineMeetings in communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,22 @@ Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdenti
 
 ## DESCRIPTION
 Update the navigation property onlineMeetings in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1300,9 +1313,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[Update-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeeting)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property definitions in identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,18 @@ Set-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovern
 
 ## DESCRIPTION
 Update the navigation property definitions in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1340,9 +1349,6 @@ The stageId is used in dependsOn property to indicate the stage relationship.
 Required.
 
 ## RELATED LINKS
-[Set-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition)
-
-
 

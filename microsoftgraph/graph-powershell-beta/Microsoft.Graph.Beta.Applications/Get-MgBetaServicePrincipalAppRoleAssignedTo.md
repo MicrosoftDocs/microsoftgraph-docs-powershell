@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalAppRoleAssignedTo Cmdlet.
-
 
 ## PARAMETERS
 
@@ -298,8 +291,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto)
-
 

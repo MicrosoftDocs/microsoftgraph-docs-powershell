@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteresource
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to resources for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ New-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to resources for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -293,9 +302,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteresource)
-
-
 

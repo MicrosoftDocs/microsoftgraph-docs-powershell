@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
@@ -9,11 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,14 +46,15 @@ New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	topic = "New Conversation Thread Topic"
@@ -79,11 +77,6 @@ $params = @{
 }
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -559,8 +552,6 @@ Returned only on $select.
     \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
-
 

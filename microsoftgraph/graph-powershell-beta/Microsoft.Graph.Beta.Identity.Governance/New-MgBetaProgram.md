@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram
@@ -27,8 +27,9 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm] [
 In the Microsoft Entra access reviews feature, create a new program object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaProgram Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "testprogram3"
@@ -36,8 +37,6 @@ $params = @{
 }
 New-MgBetaProgram -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaProgram Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -260,5 +259,4 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram)
-
 

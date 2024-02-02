@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Remove-MgBetaSiteContentTypeColumn
 
 ## SYNOPSIS
 Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Remove-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
-```
-This example shows how to use the Remove-MgBetaSiteContentTypeColumn Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -240,8 +229,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationuserstatus
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementMobileAppConfigurationUserStatus
 
 ## SYNOPSIS
 Create a new managedDeviceMobileAppConfigurationUserStatus object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +44,18 @@ New-MgDeviceAppManagementMobileAppConfigurationUserStatus -InputObject <IDevices
 
 ## DESCRIPTION
 Create a new managedDeviceMobileAppConfigurationUserStatus object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -299,9 +307,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationuserstatus)
-
-
 

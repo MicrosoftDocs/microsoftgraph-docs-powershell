@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetauserplannerplantocontainer
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Move-MgBetaUserPlannerPlanToContainer
@@ -45,8 +44,17 @@ Move-MgBetaUserPlannerPlanToContainer -InputObject <IUsersActionsIdentity>
 Move a planner plan object from one planner plan container to another.
 Planner plans can only be moved from a user container to a group container.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-movetocontainer-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -253,6 +261,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetauserplannerplantocontainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetauserplannerplantocontainer)
-
-
 

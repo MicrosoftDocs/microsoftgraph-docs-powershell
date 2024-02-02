@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementexchangeconnector
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action sync
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Sync-MgBetaDeviceManagementExchangeConnector -InputObject <IDeviceManagementActi
 
 ## DESCRIPTION
 Invoke action sync
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -246,9 +259,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Sync-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementexchangeconnector)
-
-
 

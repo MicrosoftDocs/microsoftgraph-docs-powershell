@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,6 +31,22 @@ Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-WhatIf] [-Confirm
 
 ## DESCRIPTION
 Update directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -527,9 +540,6 @@ This flag should be enabled again after any soft matching has been completed and
     \[UserWritebackEnabled \<Boolean?\>\]: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
-[Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
-
-
 

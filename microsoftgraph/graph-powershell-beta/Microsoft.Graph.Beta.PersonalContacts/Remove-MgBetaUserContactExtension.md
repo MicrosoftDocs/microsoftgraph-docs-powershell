@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property extensions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> [-IfM
 
 ## DESCRIPTION
 Delete navigation property extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -177,9 +190,6 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactextension)
-
-
 

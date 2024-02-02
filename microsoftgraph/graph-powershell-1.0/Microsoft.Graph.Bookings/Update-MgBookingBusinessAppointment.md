@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Update-MgBookingBusinessAppointment
 
 ## SYNOPSIS
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,8 +53,21 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -682,9 +691,6 @@ STARTDATETIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversion
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion
 
 ## SYNOPSIS
 Read the properties and relationships of a workflowVersion object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,32 +34,21 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -InputObject <IIdentityGove
 ## DESCRIPTION
 Read the properties and relationships of a workflowVersion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflowversion-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a workflow version
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber
 
+### EXAMPLE 2
 ```
-This example will get a workflow version
-
-### Example 2: Get specific properties of a version of a workflow
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks" 
-
 ```
-This example will get specific properties of a version of a workflow
 
+Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks"
 
 ## PARAMETERS
 
@@ -381,8 +366,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceLifecycleWorkflowVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversion)
-
 

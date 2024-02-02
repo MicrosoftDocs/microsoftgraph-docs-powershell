@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistcontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Update-MgBetaSiteListContentTypeColumn
 
 ## SYNOPSIS
 Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,8 +60,21 @@ Update-MgBetaSiteListContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1261,9 +1270,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[Update-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistcontenttypecolumn)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment
@@ -29,17 +28,13 @@ Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentityS
 ## DESCRIPTION
 Delete an identityUserFlowAttributeAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 ```
-This example shows how to use the Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -247,5 +242,4 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment)
-
 

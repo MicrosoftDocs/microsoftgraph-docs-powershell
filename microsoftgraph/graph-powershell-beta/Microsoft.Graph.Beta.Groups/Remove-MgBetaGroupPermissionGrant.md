@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property permissionGrants for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete navigation property permissionGrants for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -202,9 +215,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant)
-
-
 

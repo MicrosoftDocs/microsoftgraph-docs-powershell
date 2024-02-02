@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventsessionattendancereport
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The attendance reports of an online meeting.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventSessionAttendanceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,18 @@ Get-MgVirtualEventSessionAttendanceReport -InputObject <IBookingsIdentity> [-Exp
 ## DESCRIPTION
 The attendance reports of an online meeting.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -286,9 +295,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBetaVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventSessionAttendanceReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventsessionattendancereport)
-
-
 

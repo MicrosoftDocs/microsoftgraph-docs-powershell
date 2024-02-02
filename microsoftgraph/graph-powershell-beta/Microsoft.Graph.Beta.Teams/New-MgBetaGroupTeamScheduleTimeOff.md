@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter 
 Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -380,8 +387,6 @@ SHAREDTIMEOFF \<IMicrosoftGraphTimeOffItem\>: timeOffItem
 Required.
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff)
-
 

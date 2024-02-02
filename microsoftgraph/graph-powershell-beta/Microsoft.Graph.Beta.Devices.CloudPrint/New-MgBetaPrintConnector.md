@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to connectors for print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,17 +30,13 @@ New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf
 Create new navigation property to connectors for print
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 Get-MgBetaPrintConnector
-```
-This example shows how to use the New-MgBetaBetaPrintConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -332,8 +325,6 @@ The elements should be in hierarchical order.
   \[Subunit \<String\[\]\>\]:
 
 ## RELATED LINKS
-[New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector)
-
 

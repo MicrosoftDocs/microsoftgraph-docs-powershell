@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteampermissiongrant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to permissionGrants for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +41,18 @@ New-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to permissionGrants for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -322,9 +331,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteampermissiongrant)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property roleManagementPolicyAssignments in policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgBetaPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignIns
 
 ## DESCRIPTION
 Update the navigation property roleManagementPolicyAssignments in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -449,9 +462,6 @@ One of Directory, DirectoryRole, Group.
 Required.
 
 ## RELATED LINKS
-[Update-MgPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment)
-
-
 

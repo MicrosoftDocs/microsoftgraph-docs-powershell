@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign
@@ -40,6 +40,18 @@ Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdenti
 
 ## DESCRIPTION
 Un-assigns the tenant tag from the specified managed tenants.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -239,6 +251,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign)
-
-
 

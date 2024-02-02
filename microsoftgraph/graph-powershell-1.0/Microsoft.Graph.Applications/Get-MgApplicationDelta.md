@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,13 +21,12 @@ Get-MgApplicationDelta [-Filter <String>] [-Property <String[]>] [-Search <Strin
 Invoke function delta
 
 ## EXAMPLES
-### Example 1: Using the Get-MgApplicationDelta Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
 Get-MgApplicationDelta
 ```
-This example shows how to use the Get-MgApplicationDelta Cmdlet.
-To learn about permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#applicationreadall).
 
 ## PARAMETERS
 
@@ -181,8 +177,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaApplicationDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta)
-
 

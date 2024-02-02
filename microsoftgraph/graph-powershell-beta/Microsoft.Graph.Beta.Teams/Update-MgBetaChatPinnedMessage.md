@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatpinnedmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property pinnedMessages in chats
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,6 +39,22 @@ Update-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property pinnedMessages in chats
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -511,9 +524,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatpinnedmessage)
-
-
 

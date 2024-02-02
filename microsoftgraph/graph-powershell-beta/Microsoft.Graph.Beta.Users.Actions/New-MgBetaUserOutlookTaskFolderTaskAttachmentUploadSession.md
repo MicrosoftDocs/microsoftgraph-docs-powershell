@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauseroutlooktaskfoldertaskattachmentuploadsession
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookTaskFolderTaskAttachmentUploadSession
@@ -59,8 +58,21 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attachment-createuploadsession-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -296,6 +308,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauseroutlooktaskfoldertaskattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauseroutlooktaskfoldertaskattachmentuploadsession)
-
-
 

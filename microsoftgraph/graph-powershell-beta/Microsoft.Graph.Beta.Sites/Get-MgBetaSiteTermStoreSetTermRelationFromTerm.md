@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermrelationfromterm
@@ -11,9 +11,6 @@ schema: 2.0.0
 The from \[term\] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the \[set\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermRelationFromTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ Get-MgBetaSiteTermStoreSetTermRelationFromTerm -InputObject <ISitesIdentity> [-E
 The from \[term\] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the \[set\].
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -211,9 +220,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetTermRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermRelationFromTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermrelationfromterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermrelationfromterm)
-
-
 

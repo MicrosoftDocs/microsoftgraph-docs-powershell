@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianlastindexoperation
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
 
 ## SYNOPSIS
 Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <ISecur
 ## DESCRIPTION
 Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-lastindexoperation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
-```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -195,8 +184,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianlastindexoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianlastindexoperation)
-
 

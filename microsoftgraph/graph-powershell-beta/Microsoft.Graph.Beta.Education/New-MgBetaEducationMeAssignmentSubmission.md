@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to submissions for education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,28 +50,20 @@ New-MgBetaEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
 Create new navigation property to submissions for education
 
 ## EXAMPLES
-### Example 1: Get submissions
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaBetaEducationMeAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get submissions with $expand options
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
-```
-This example shows how to use the New-MgBetaBetaEducationMeAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -545,8 +534,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission)
-
 

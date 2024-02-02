@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceWhoisRecord
 
 ## SYNOPSIS
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-1.0)
+Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
+\n- Specify an id value to get the corresponding whoisRecord.
 
 ## SYNTAX
 
@@ -39,11 +35,20 @@ Get-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
+\n- Specify an id value to get the corresponding whoisRecord.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-whoisrecord-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -325,9 +330,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedefaultdrive
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The default drive (document library) for this site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDefaultDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,13 +28,12 @@ Get-MgSiteDefaultDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 The default drive (document library) for this site.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgSiteDefaultDrive Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteDefaultDrive -SiteId $siteId
 ```
-This example shows how to use the Get-MgSiteDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -158,8 +154,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDefaultDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedefaultdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedefaultdrive)
-
 

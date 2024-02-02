@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
-ms.prod: business-scenarios
 ---
 
 # Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
@@ -44,8 +43,17 @@ Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ## DESCRIPTION
 Update the properties of a plannerPlanConfigurationLocalization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfigurationlocalization-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -274,6 +282,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The values of the columns set on this list item.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,10 +28,11 @@ Get-MgBetaSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 The values of the columns set on this list item.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	Color = "Fuchsia"
@@ -42,11 +40,6 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaBetaSiteListItemField Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -210,8 +203,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield)
-
 

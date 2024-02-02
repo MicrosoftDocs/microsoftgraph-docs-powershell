@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property operations in sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgSiteListOperation -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update the navigation property operations in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -434,9 +447,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistoperation)
-
-
 

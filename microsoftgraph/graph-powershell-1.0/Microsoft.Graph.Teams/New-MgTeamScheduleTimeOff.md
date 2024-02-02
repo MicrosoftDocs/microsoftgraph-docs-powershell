@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,37 +41,30 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timesoff-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 	sharedTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "white"
 	}
 	draftTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "pink"
 	}
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
-
 
 ## PARAMETERS
 
@@ -355,8 +344,6 @@ SHAREDTIMEOFF \<IMicrosoftGraphTimeOffItem\>: timeOffItem
 Required.
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff)
-
 

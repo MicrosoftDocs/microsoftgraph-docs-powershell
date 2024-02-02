@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfoldermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Copy-MgBetaUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
 Copy a message to a folder within the user's mailbox.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,14 +43,12 @@ Copy-MgBetaUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-copy-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	DestinationId = "destinationId-value"
@@ -62,11 +56,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Copy-MgBetaUserMailFolderChildFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -286,8 +275,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfoldermessage)
-
 

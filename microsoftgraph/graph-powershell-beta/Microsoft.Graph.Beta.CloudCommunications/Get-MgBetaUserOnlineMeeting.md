@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,18 +35,14 @@ Get-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Expand
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'" 
-
-```
-This example shows how to use the Get-MgBetaUserOnlineMeeting Cmdlet.
-
+Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
 
 ## PARAMETERS
 
@@ -286,8 +279,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting)
-
 

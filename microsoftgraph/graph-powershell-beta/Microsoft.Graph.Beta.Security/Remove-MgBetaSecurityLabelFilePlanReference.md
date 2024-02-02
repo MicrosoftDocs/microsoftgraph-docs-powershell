@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelfileplanreference
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Remove-MgBetaSecurityLabelFilePlanReference
@@ -28,8 +27,17 @@ Remove-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete a filePlanReferenceTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-delete-fileplanreferences-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -223,6 +231,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelfileplanreference)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchcustodiansource
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Custodian sources that are included in the eDiscovery search.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,17 +36,13 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurit
 Custodian sources that are included in the eDiscovery search.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
-```
-This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -361,8 +354,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchcustodiansource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchcustodiansource)
-
 

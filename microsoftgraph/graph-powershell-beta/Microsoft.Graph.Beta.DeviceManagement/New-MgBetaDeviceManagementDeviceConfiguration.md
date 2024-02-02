@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfiguration
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to deviceConfigurations for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ New-MgBetaDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDev
 
 ## DESCRIPTION
 Create new navigation property to deviceConfigurations for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -676,9 +689,6 @@ Read-only.
   \[SuccessCount \<Int32?\>\]: Number of succeeded Users
 
 ## RELATED LINKS
-[New-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfiguration)
-
-
 

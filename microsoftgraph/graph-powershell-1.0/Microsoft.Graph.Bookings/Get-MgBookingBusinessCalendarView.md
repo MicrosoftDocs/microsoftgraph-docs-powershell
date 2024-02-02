@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview
@@ -11,9 +11,6 @@ schema: 2.0.0
 The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,17 +39,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Bookings
-
-Get-MgBookingBusinessCalendarView -BookingBusinessId $bookingBusinessId -Start "2018-04-30T00:00:00Z" -End "2018-05-10T00:00:00Z" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBookingBusinessCalendarView Cmdlet.
+Import-Module Microsoft.Graph.Bookings
+```
 
+Get-MgBookingBusinessCalendarView -BookingBusinessId $bookingBusinessId -Start "2018-04-30T00:00:00Z" -End "2018-05-10T00:00:00Z"
 
 ## PARAMETERS
 
@@ -318,8 +311,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
 Get the bot associated with a specific definition of the  TeamsApp.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the bot associated with a specific definition of the  TeamsApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkbot-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
-```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionBot Cmdlet.
-
 
 ## PARAMETERS
 
@@ -182,8 +171,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot)
-
 

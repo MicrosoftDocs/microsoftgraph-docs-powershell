@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Remove-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
 Delete the specified bookingCustomer object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,17 +39,13 @@ Remove-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete the specified bookingCustomer object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaBookingBusinessCustomer Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Remove-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId
 ```
-This example shows how to use the Remove-MgBetaBookingBusinessCustomer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -202,8 +194,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer)
-
 

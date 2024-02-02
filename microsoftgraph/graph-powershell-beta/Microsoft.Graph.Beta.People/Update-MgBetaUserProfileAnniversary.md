@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileanniversary
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileAnniversary
@@ -47,12 +46,10 @@ Update-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity>
 ## DESCRIPTION
 Update the properties of a personAnniversary object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personanniversary-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileAnniversary Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	AllowedAudiences = "contacts"
@@ -60,8 +57,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileAnniversary -UserId $userId -PersonAnnualEventId $personAnnualEventId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileAnniversary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -465,5 +460,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileanniversary)
-
 

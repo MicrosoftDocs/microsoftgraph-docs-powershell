@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/join-mguserdrivelistcontenttypewithhubsite
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Join-MgUserDriveListContentTypeWithHubSite
 
 ## SYNOPSIS
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Join-MgBetaUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Join-MgBetaUserDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,8 +43,21 @@ Join-MgUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -273,9 +282,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Join-MgBetaUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Join-MgBetaUserDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/join-mguserdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/join-mguserdrivelistcontenttypewithhubsite)
-
-
 

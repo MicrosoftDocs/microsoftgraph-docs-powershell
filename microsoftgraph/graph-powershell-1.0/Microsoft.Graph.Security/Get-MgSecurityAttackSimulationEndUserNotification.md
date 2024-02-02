@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents an end user's notification for an attack simulation training.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Represents an end user's notification for an attack simulation training.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -291,9 +300,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification)
-
-
 

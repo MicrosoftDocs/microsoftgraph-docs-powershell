@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,18 @@ New-MgBetaSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create new navigation property to operations for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -416,9 +425,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteoperation)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserchatinstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgBetaUserChatInstalledApp
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserChatInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,17 +44,13 @@ Update-MgBetaUserChatInstalledApp -InputObject <IUsersActionsIdentity>
 Upgrade an app installation within a chat.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Update-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
-```
-This example shows how to use the Update-MgBetaUserChatInstalledApp Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -289,8 +281,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserchatinstalledapp)
-
 

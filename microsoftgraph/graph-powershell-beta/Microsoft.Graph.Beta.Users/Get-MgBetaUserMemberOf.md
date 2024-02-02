@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberof
@@ -12,9 +12,6 @@ The groups, directory roles, and administrative units that the user is a member 
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,17 +41,13 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 Get-MgBetaUserMemberOf -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -311,8 +304,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberof)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
 Create a new schedulingGroup.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,15 +41,12 @@ New-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Create a new schedulingGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-schedulinggroups-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "Cashiers"
@@ -65,10 +58,6 @@ $params = @{
 }
 
 New-MgTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleSchedulingGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -310,8 +299,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup)
-
 

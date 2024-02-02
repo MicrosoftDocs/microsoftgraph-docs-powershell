@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
-ms.prod: partner-customer-administration
 ---
 
 # Get-MgTenantRelationshipDelegatedAdminRelationship
 
 ## SYNOPSIS
 Read the properties of a delegatedAdminRelationship object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,8 +34,17 @@ Get-MgTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPartne
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationship object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -249,9 +254,6 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
   \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Get-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationship)
-
-
 

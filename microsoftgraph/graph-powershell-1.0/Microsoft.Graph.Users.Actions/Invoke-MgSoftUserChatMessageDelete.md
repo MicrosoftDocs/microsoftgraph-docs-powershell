@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsoftuserchatmessagedelete
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Invoke-MgSoftUserChatMessageDelete
 
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageDelete?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,8 +27,21 @@ Invoke-MgSoftUserChatMessageDelete -InputObject <IUsersActionsIdentity> [-PassTh
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-softdelete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -190,9 +199,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsoftuserchatmessagedelete](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsoftuserchatmessagedelete)
-
-
 

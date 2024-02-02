@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Complete-MgBetaUserOutlookTaskFolderTask
@@ -38,8 +37,21 @@ The time portion of completedDateTime is set to midnight UTC by default.
 By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-complete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -195,6 +207,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask)
-
-
 

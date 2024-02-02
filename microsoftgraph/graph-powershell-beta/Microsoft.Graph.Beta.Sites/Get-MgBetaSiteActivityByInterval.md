@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteactivitybyinterval
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteActivityByInterval](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteActivityByInterval?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Get-MgBetaSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter
 
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -284,9 +297,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteActivityByInterval](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteActivityByInterval?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteactivitybyinterval)
-
-
 

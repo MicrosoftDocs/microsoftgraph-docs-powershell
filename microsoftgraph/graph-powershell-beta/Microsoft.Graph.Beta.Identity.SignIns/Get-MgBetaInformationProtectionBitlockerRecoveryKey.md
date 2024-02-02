@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaInformationProtectionBitlockerRecoveryKey
@@ -14,9 +13,6 @@ By default, this operation does not return the key property that represents the 
 To include the key property in the response, use the $select OData query parameter.
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,32 +42,21 @@ To include the key property in the response, use the $select OData query paramet
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get the BitLocker key by specifying the key **id**
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId
 
+### EXAMPLE 2
 ```
-This example will get the bitlocker key by specifying the key **id**
-
-### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key" 
-
 ```
-This example will get the bitlocker key with the **key** property by specifying the key **id**
 
+Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key"
 
 ## PARAMETERS
 
@@ -352,8 +337,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey)
-
 

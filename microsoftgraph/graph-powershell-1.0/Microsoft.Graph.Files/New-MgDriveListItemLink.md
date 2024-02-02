@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemlink
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createLink
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ New-MgDriveListItemLink -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action createLink
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -343,9 +352,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgBetaDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemlink)
-
-
 

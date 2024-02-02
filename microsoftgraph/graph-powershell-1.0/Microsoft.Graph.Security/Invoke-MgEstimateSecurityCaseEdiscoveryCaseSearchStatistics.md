@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgestimatesecuritycaseediscoverycasesearchstatistics
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 ```
-This example shows how to use the Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -205,8 +201,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgestimatesecuritycaseediscoverycasesearchstatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgestimatesecuritycaseediscoverycasesearchstatistics)
-
 

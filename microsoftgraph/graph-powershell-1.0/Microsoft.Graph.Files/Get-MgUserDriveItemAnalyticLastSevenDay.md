@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemanalyticlastsevenday
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastSevenDays from users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgUserDriveItemAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Get lastSevenDays from users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -165,9 +174,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemanalyticlastsevenday)
-
-
 

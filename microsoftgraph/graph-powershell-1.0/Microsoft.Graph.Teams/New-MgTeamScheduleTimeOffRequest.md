@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffrequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to timeOffRequests for teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,17 +44,13 @@ New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> -BodyParameter <I
 Create new navigation property to timeOffRequests for teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
-```
-This example shows how to use the New-MgTeamScheduleTimeOffRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -379,8 +372,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffrequest)
-
 

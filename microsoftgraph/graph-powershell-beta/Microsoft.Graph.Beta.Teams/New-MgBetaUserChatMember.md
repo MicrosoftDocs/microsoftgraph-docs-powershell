@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a conversationMember to a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,16 @@ New-MgBetaUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Add a conversationMember to a chat.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -293,8 +300,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember)
-
 

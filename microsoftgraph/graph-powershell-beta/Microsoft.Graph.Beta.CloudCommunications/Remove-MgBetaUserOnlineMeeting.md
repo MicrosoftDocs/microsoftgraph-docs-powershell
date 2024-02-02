@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Remove-MgBetaUserOnlineMeeting
 
 ## SYNOPSIS
 Delete an onlineMeeting object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,18 +28,14 @@ Remove-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfM
 Delete an onlineMeeting object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
-```
-This example shows how to use the Remove-MgBetaUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -190,8 +182,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting)
-
 

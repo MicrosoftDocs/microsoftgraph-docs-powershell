@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property parentGroup in sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetParentGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Update-MgBetaSiteTermStoreSetParentGroup -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update the navigation property parentGroup in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -434,9 +443,6 @@ Read-only.
   \[Terms \<IMicrosoftGraphTermStoreTerm\[\]\>\]: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetParentGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroup)
-
-
 

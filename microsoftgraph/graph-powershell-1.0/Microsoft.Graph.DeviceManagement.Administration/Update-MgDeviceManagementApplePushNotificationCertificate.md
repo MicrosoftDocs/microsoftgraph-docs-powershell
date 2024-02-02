@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
 Update the properties of a applePushNotificationCertificate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,22 @@ Update-MgDeviceManagementApplePushNotificationCertificate
 
 ## DESCRIPTION
 Update the properties of a applePushNotificationCertificate object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -246,9 +258,6 @@ Read-only.
   \[TopicIdentifier \<String\>\]: Topic Id.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property threads in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgGroupConversationThread -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Update the navigation property threads in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -552,9 +565,6 @@ Returned only on $select.
     \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread)
-
-
 

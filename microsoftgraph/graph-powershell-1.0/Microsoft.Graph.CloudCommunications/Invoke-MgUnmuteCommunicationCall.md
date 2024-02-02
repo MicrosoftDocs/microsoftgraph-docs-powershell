@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgunmutecommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgUnmuteCommunicationCall
@@ -12,9 +11,6 @@ ms.prod: cloud-communications
 Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaUnmuteCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,25 +45,18 @@ Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-unmute-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgUnmuteCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgUnmuteCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -216,8 +205,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaUnmuteCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgunmutecommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgunmutecommunicationcall)
-
 

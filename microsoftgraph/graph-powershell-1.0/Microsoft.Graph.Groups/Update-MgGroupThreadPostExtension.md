@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,10 +42,11 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	"@odata.type" = "Microsoft.OutlookServices.OpenTypeExtension"
@@ -64,11 +62,6 @@ $params = @{
 }
 
 Update-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
-```
-This example shows how to use the Update-MgGroupThreadPostExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -279,8 +272,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Update-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdocumentsetversion
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,8 +35,21 @@ Get-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -355,9 +364,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdocumentsetversion)
-
-
 

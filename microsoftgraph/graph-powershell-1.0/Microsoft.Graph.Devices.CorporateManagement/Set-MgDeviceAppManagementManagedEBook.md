@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Set-MgDeviceAppManagementManagedEBook
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +42,18 @@ Set-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementI
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -243,9 +251,6 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook)
-
-
 

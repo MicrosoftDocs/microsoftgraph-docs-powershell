@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausertodolistdelta
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoListDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoListDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Get-MgBetaUserTodoListDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Str
 
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -270,9 +283,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserTodoListDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoListDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausertodolistdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausertodolistdelta)
-
-
 

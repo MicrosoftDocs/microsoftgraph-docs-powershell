@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupAcceptedSender
@@ -12,9 +11,6 @@ ms.prod: groups
 Get a list of users or groups that are in the accepted-senders list for this group.
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSender?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,21 +24,14 @@ Get a list of users or groups that are in the accepted-senders list for this gro
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-acceptedsenders-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Get-MgBetaGroupAcceptedSender -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupAcceptedSender Cmdlet.
-
 
 ## PARAMETERS
 
@@ -193,8 +182,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupAcceptedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender)
-
 

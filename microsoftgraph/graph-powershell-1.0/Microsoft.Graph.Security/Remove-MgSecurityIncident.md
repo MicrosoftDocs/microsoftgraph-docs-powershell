@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property incidents for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgSecurityIncident -InputObject <ISecurityIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete navigation property incidents for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -194,9 +203,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident)
-
-
 

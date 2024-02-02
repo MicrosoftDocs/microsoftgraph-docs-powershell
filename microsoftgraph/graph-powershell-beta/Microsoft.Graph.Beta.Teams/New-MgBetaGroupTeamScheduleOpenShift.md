@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleopenshift
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create an instance of an openshift object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ New-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParamete
 Create an instance of an openshift object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -435,8 +442,6 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleopenshift)
-
 

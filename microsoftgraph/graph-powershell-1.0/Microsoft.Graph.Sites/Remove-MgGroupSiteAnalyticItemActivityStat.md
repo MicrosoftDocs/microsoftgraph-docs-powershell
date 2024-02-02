@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteanalyticitemactivitystat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property itemActivityStats for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete navigation property itemActivityStats for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -210,9 +219,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteanalyticitemactivitystat)
-
-
 

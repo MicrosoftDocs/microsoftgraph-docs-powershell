@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointAuditEvent
@@ -35,24 +34,19 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -InputObject <IDeviceManagem
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcAuditEvent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcauditevent-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -CloudPcAuditEventId $cloudPcAuditEventId
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointAuditEvent
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -315,5 +309,4 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgGroupPlannerPlanDetail
 
 ## SYNOPSIS
 Update the navigation property details in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,10 +41,17 @@ Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String
 ## DESCRIPTION
 Update the navigation property details in groups
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplandetails-update-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -308,8 +311,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplannerplandetail)
-
 

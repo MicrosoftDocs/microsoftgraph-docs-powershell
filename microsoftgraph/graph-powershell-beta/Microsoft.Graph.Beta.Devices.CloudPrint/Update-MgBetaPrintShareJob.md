@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejob
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property jobs in print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,18 @@ Update-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the navigation property jobs in print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -683,9 +692,6 @@ Read-only.
     \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
-[Update-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejob)
-
-
 

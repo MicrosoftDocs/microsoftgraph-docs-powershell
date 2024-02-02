@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionsubmittedresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationMeAssignmentSubmissionSubmittedResource
@@ -13,9 +12,6 @@ Retrieve a submitted resource.
 Only teachers, students, and applications with application permissions can perform this operation.
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
 Teachers can leave notes in some resources.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,10 +42,17 @@ Only teachers, students, and applications with application permissions can perfo
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
 Teachers can leave notes in some resources.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmittedsubmissionresource-get-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -294,8 +297,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionsubmittedresource)
-
 

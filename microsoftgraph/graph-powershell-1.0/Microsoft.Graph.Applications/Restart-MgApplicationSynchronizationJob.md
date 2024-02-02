@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Restart-MgApplicationSynchronizationJob
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restart-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,8 +45,17 @@ Restart-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -244,9 +249,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restart-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob)
-
-
 

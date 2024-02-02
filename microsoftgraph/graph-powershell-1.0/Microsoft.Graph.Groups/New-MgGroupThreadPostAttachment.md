@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to attachments for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ New-MgGroupThreadPostAttachment -InputObject <IGroupsIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Create new navigation property to attachments for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -326,9 +339,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachment)
-
-
 

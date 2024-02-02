@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowidentityproviderbyref
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef
@@ -31,17 +30,13 @@ Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySig
 Delete an identity provider from a b2cIdentityUserFlow object.
 For more information about identity providers available for user flows, see the identityProviders API reference.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-delete-identityproviders-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2cIdentityUserFlowId $b2cIdentityUserFlowId -IdentityProviderId $identityProviderId
 ```
-This example shows how to use the Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -264,5 +259,4 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowidentityproviderbyref)
-
 

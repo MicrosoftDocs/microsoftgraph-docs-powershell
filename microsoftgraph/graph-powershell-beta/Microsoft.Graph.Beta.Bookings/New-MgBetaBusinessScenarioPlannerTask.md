@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannertask
 schema: 2.0.0
-ms.prod: business-scenarios
 ---
 
 # New-MgBetaBusinessScenarioPlannerTask
@@ -72,8 +71,17 @@ New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new businessScenarioTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-post-tasks-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1143,6 +1151,4 @@ TARGET \<IMicrosoftGraphBusinessScenarioTaskTargetBase\>: businessScenarioTaskTa
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannertask)
-
-
 

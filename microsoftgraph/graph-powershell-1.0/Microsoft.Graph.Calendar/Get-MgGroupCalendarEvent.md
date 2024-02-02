@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarevent
@@ -11,9 +11,6 @@ schema: 2.0.0
 The events in the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,6 +37,18 @@ Get-MgGroupCalendarEvent -InputObject <ICalendarIdentity> [-ExpandProperty <Stri
 The events in the calendar.
 Navigation property.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -254,9 +263,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarevent)
-
-
 

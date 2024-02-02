@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershare
@@ -12,9 +12,6 @@ The list of printerShares that are associated with the printer.
 Currently, only one printerShare can be associated with the printer.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterShare?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,17 +41,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 Get-MgPrintPrinterShare -PrinterId $printerId
-
-```
-This example shows how to use the Get-MgPrintPrinterShare Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,8 +279,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintPrinterShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterShare?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershare)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsource
@@ -36,13 +36,12 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject 
 Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -295,5 +294,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsource)
-
 

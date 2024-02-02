@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of associatedTeamInfo objects that a user is associated with.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,14 @@ Get-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty 
 The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserTeamworkAssociatedTeam -UserId $userId
-
-```
-This example shows how to use the Get-MgUserTeamworkAssociatedTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -313,8 +306,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam)
-
 

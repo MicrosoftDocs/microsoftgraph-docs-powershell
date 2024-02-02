@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupsitepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Grant-MgBetaGroupSitePermission
 
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,14 +42,12 @@ Grant-MgBetaGroupSitePermission -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a \[permission\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 $params = @{
 	Recipients = @(
@@ -70,11 +64,6 @@ $params = @{
 }
 
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-```
-This example shows how to use the Grant-MgBetaGroupSitePermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -311,8 +300,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupsitepermission)
-
 

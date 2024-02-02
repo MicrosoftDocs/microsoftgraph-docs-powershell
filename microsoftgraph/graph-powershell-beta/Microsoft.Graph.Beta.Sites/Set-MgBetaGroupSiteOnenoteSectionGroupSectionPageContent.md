@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectiongroupsectionpagecontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The page's HTML content.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgGroupSiteOnenoteSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteSectionGroupSectionPageContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Set-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent -InputObject <ISitesIde
 
 ## DESCRIPTION
 The page's HTML content.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -257,9 +266,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Set-MgGroupSiteOnenoteSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteSectionGroupSectionPageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectiongroupsectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectiongroupsectionpagecontent)
-
-
 

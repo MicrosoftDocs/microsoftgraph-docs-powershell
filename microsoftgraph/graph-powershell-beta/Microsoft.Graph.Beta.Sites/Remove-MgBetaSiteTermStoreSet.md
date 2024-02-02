@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoreset
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Remove-MgBetaSiteTermStoreSet
 
 ## SYNOPSIS
 Delete a set object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgBetaSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete a set object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-set-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Remove-MgBetaSiteTermStoreSet -SiteId $siteId -SetId $setId
-```
-This example shows how to use the Remove-MgBetaSiteTermStoreSet Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -225,8 +214,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoreset)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -35,31 +34,25 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPC object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult" 
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
-```powershell
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult"
+```
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -322,5 +315,4 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc)
-
 

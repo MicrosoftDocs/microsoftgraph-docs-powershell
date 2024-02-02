@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgBetaDevice
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,29 +69,23 @@ Update-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update the accountEnabled property of a device
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	accountEnabled = $false
 }
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2:  Write extensionAttributes on a device
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	extensionAttributes = @{
@@ -104,11 +94,6 @@ $params = @{
 }
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1328,8 +1313,6 @@ Read-only.
   \[State \<String\>\]: usageRightState
 
 ## RELATED LINKS
-[Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get itemActivityStats from sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Get itemActivityStats from sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -305,9 +314,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystat)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationclassassignmentsubmission
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Invoke-MgReturnEducationClassAssignmentSubmission
@@ -12,9 +11,6 @@ ms.prod: education
 Make the grade and feedback associated with this submission available to the student.
 This action changes the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,21 +31,14 @@ Make the grade and feedback associated with this submission available to the stu
 This action changes the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-return-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Invoke-MgReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
-```
-This example shows how to use the Invoke-MgReturnEducationClassAssignmentSubmission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -174,8 +163,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgBetaReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationclassassignmentsubmission)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeeting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to onlineMeetings for communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,65 +41,45 @@ New-MgCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeeting> [
 Create new navigation property to onlineMeetings for communications
 
 ## EXAMPLES
-### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgCommunicationOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Retrieve an online meeting by meeting ID
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgCommunicationOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Retrieve an online meeting by joinWebUrl
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeeting -UserId $userId -Filter "JoinWebUrl eq 'https://teams.microsoft.com/l/meetup-join/19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2/0?context"
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgCommunicationOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Retrieve an online meeting by joinMeetingId
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
+
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgCommunicationOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Fetch attendee report of a Teams live event
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
-```
-This example shows how to use the New-MgCommunicationOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -958,8 +935,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeeting)
-
 

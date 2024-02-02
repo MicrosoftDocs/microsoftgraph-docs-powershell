@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getEmailAppUsageVersionsUserCounts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageVersionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageVersionUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFi
 
 ## DESCRIPTION
 Invoke function getEmailAppUsageVersionsUserCounts
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -130,9 +143,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportEmailAppUsageVersionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageVersionUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount)
-
-
 

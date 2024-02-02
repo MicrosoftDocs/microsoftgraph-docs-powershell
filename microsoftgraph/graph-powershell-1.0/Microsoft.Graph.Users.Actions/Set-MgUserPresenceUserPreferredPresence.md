@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Set-MgUserPresenceUserPreferredPresence
@@ -15,9 +14,6 @@ Preferred presence takes effect only when at least one presence session exists f
 Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,12 +53,10 @@ Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Availability = "DoNotDisturb"
@@ -71,8 +65,6 @@ $params = @{
 }
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -283,8 +275,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence)
-
 

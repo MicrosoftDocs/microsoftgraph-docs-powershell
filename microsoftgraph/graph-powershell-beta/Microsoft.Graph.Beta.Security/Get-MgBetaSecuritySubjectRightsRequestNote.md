@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestnote
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List of notes associated with the request.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,16 @@ Get-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-Ex
 List of notes associated with the request.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -334,8 +341,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestnote)
-
 

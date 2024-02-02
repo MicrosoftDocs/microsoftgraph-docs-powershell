@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentapprovalstep
@@ -47,13 +47,12 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep
 Apply approve or deny decision on an approvalStep object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep -ApprovalId $approvalId -ApprovalStepId $approvalStepId
 ```
-This example shows how to use the Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -449,5 +448,4 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentapprovalstep)
-
 

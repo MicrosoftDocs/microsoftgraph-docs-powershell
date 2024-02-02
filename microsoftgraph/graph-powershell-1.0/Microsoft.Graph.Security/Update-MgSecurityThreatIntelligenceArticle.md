@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property articles in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ Update-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property articles in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -419,9 +428,6 @@ SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
   \[Format \<String\>\]: contentFormat
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle)
-
-
 

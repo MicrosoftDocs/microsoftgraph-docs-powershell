@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Publish-MgBetaDriveListContentType
 
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in a content type hub site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgDriveListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,8 +27,21 @@ Publish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [-W
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -170,9 +179,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingcategory
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get gradingCategories from education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducationIde
 
 ## DESCRIPTION
 Get gradingCategories from education
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -265,9 +274,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingcategory)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource
@@ -12,9 +12,6 @@ The image and other file resources in OneNote pages.
 Getting a resources collection isn't supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,6 +39,18 @@ The image and other file resources in OneNote pages.
 Getting a resources collection isn't supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -326,9 +335,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource)
-
-
 

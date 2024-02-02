@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemfield
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgGroupSiteListItemField
 
 ## SYNOPSIS
 Update the properties on a \[listItem\]\[\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,8 +39,21 @@ Update-MgGroupSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -258,9 +267,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemfield)
-
-
 

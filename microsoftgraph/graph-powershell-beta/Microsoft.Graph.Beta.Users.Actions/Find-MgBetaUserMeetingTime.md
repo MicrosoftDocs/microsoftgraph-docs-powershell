@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Find-MgBetaUserMeetingTime
@@ -11,12 +10,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.
-Based on this value, you can better adjust the parameters and call findMeetingTimes again.
+\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,16 +51,14 @@ Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.
-Based on this value, you can better adjust the parameters and call findMeetingTimes again.
+\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-findmeetingtimes-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Find-MgBetaUserMeetingTime Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Attendees = @(
@@ -109,8 +103,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Find-MgBetaUserMeetingTime -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Find-MgBetaUserMeetingTime Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -502,8 +494,6 @@ See below for possible values.
     \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
 ## RELATED LINKS
-[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingcountinsight
@@ -25,6 +25,18 @@ Get-MgUserTrendingCountInsight -InputObject <IPeopleIdentity> [-Filter <String>]
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,6 +126,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingcountinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingcountinsight)
-
-
 

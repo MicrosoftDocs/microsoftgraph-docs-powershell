@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaPlannerRosterMember
@@ -35,24 +34,19 @@ Get-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Read the properties and relationships of a plannerRosterMember object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerrostermember-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPlannerRosterMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
 ```
-This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPlannerRosterMember Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId
 ```
-This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -281,5 +275,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember)
-
 

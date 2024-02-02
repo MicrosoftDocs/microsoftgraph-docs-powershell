@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamTag
 
 ## SYNOPSIS
 Create a standard tag for members in a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,15 +41,12 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 ## DESCRIPTION
 Create a standard tag for members in a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "Finance"
@@ -68,10 +61,6 @@ $params = @{
 }
 
 New-MgTeamTag -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamTag Cmdlet.
-
 
 ## PARAMETERS
 
@@ -363,8 +352,6 @@ Read-only.
   \[UserId \<String\>\]: The user ID of the member.
 
 ## RELATED LINKS
-[New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag)
-
 

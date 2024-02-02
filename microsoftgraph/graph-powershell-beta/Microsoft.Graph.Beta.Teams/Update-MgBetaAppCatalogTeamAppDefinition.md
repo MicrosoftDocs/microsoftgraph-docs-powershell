@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition
@@ -8,12 +8,9 @@ schema: 2.0.0
 # Update-MgBetaAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,11 +49,21 @@ Update-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -566,8 +573,6 @@ Content type, such as image/png, image/jpg.
   \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
 
 ## RELATED LINKS
-[Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
-
 

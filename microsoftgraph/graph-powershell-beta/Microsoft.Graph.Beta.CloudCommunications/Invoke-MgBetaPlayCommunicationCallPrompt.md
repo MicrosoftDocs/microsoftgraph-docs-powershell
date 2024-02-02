@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaplaycommunicationcallprompt
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaPlayCommunicationCallPrompt
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgPlayCommunicationCallPrompt?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,15 +45,12 @@ Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdent
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-playprompt-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -75,10 +68,6 @@ $params = @{
 }
 
 Invoke-MgBetaPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaPlayCommunicationCallPrompt Cmdlet.
-
 
 ## PARAMETERS
 
@@ -263,8 +252,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgPlayCommunicationCallPrompt?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaplaycommunicationcallprompt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaplaycommunicationcallprompt)
-
 

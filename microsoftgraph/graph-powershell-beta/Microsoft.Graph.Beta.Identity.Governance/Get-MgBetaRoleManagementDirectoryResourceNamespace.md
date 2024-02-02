@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaRoleManagementDirectoryResourceNamespace
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,8 +34,17 @@ Get-MgBetaRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGovern
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -342,9 +347,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace)
-
-
 

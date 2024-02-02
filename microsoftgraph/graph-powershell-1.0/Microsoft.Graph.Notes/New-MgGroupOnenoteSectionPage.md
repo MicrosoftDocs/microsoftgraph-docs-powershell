@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectionpage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteSectionPage
 
 ## SYNOPSIS
 Create a new page in the specified section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,8 +45,21 @@ New-MgGroupOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new page in the specified section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-post-pages-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -823,9 +832,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectionpage)
-
-
 

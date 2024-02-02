@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementwindowsautopilotdeviceidentity
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagementWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
 Read properties and relationships of the windowsAutopilotDeviceIdentity object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +33,18 @@ Get-MgDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Read properties and relationships of the windowsAutopilotDeviceIdentity object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -244,9 +252,6 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementwindowsautopilotdeviceidentity)
-
-
 

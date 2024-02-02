@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to resourceNamespaces for roleManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ New-MgRoleManagementEntitlementManagementResourceNamespace
 
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -183,9 +192,6 @@ Read-only.
   \[ResourceScopeId \<String\>\]:
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace)
-
-
 

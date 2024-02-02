@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcalendarschedule
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaGroupCalendarSchedule
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,10 +43,17 @@ Get-MgBetaGroupCalendarSchedule -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -299,8 +302,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Get-MgGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcalendarschedule)
-
 

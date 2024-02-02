@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgDeviceByDeviceId
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,8 +62,17 @@ Update-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity>
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -895,9 +900,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid)
-
-
 

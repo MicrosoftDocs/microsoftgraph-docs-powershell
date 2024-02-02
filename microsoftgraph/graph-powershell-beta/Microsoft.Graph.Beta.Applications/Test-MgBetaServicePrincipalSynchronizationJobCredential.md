@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Test-MgBetaServicePrincipalSynchronizationJobCredential
 
 ## SYNOPSIS
 Validate that the credentials are valid in the tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,8 +46,17 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicati
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-validatecredentials-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -302,9 +307,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a connectedOrganization object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,21 +52,14 @@ Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectedOrganization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementConnectedOrganization
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -403,8 +392,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization)
-
 

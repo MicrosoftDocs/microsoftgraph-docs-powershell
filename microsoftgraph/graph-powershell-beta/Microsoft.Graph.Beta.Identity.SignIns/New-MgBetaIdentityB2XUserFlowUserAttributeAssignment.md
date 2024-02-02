@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityB2XUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ## DESCRIPTION
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-post-userattributeassignments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	isOptional = $false
@@ -71,11 +65,6 @@ $params = @{
 }
 
 New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -422,8 +411,6 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
   \[Value \<String\>\]: The value that is set when this item is selected.
 
 ## RELATED LINKS
-[New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment)
-
 

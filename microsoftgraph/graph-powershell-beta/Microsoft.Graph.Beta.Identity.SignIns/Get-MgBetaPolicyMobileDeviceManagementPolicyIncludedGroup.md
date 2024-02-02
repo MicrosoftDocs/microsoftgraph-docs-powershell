@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup
@@ -22,17 +21,13 @@ Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPol
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-includedgroups-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
-This example shows how to use the Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -215,5 +210,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroup)
-
 

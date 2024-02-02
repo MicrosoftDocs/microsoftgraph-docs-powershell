@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccess
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property conditionalAccess for identity
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccess?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Remove-MgBetaIdentityConditionalAccess [-IfMatch <String>] [-PassThru] [-WhatIf]
 
 ## DESCRIPTION
 Delete navigation property conditionalAccess for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -97,9 +106,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccess?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccess)
-
-
 

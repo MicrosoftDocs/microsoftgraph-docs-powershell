@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Add-MgGroupFavorite
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-addfavorite-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Add-MgGroupFavorite -GroupId $groupId
-
-```
-This example shows how to use the Add-MgGroupFavorite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -179,8 +168,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite)
-
 

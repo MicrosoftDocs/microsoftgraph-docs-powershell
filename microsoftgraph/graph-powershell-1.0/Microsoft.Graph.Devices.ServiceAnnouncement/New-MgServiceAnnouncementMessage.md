@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to messages for admin
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,17 +32,13 @@ New-MgServiceAnnouncementMessage -BodyParameter <IMicrosoftGraphServiceUpdateMes
 Create new navigation property to messages for admin
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+```
 
 Get-MgServiceAnnouncementMessage
-```
-This example shows how to use the New-MgServiceAnnouncementMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -453,8 +446,6 @@ VIEWPOINT \<IMicrosoftGraphServiceUpdateMessageViewpoint\>: serviceUpdateMessage
   \[IsRead \<Boolean?\>\]: Indicates whether the user read the message.
 
 ## RELATED LINKS
-[New-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage)
-
 

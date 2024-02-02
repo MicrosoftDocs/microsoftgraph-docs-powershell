@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contentTypes in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,6 +52,22 @@ Update-MgGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the navigation property contentTypes in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1806,9 +1819,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttype)
-
-
 

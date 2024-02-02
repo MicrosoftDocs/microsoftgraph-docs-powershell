@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to alerts for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,17 +44,13 @@ New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm] [
 Create new navigation property to alerts for security
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 Get-MgSecurityAlert
-```
-This example shows how to use the New-MgSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1167,8 +1160,6 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
   \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert)
-
 

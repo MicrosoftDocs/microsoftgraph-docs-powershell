@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingfavicon
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingFavicon
 
 ## SYNOPSIS
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,8 +26,17 @@ Get-MgOrganizationBrandingFavicon -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -138,9 +143,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingfavicon](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingfavicon)
-
-
 

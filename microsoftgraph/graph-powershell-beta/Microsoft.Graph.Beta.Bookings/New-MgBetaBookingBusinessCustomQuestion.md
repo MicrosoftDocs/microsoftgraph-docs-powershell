@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomquestion
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessCustomQuestion
 
 ## SYNOPSIS
 Create a new bookingCustomQuestion object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,8 +67,21 @@ New-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-customquestions-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -309,9 +318,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[New-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomquestion)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property schedule in teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,6 +54,18 @@ Set-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the navigation property schedule in teams
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -885,9 +894,6 @@ Required.
 Required.
 
 ## RELATED LINKS
-[Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
-
-
 

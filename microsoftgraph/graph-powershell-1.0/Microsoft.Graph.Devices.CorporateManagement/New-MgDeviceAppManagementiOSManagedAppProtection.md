@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementiOSManagedAppProtection
 
 ## SYNOPSIS
 Create a new iosManagedAppProtection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +43,18 @@ New-MgDeviceAppManagementiOSManagedAppProtection -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new iosManagedAppProtection object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -855,9 +863,6 @@ Read-only.
   \[Version \<String\>\]: Version of the entity.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)
-
-
 

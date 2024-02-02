@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumn
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteExternalColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,22 @@ Get-MgBetaSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -305,9 +318,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteExternalColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumn)
-
-
 

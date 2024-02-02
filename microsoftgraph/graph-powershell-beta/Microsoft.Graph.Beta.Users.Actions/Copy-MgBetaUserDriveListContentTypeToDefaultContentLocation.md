@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation
@@ -11,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,14 +46,12 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -InputObject <IUsers
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	SourceFile = @{
@@ -70,11 +64,6 @@ $params = @{
 }
 
 Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-```
-This example shows how to use the Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -367,8 +356,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgUserDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation)
-
 

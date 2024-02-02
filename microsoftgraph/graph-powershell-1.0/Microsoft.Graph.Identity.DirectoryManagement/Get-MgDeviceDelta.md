@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceDelta?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,22 @@ Get-MgDeviceDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [
 
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,9 +185,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta)
-
-
 

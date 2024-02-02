@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaorganizationmembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Confirm-MgBetaOrganizationMemberGroup
@@ -14,9 +13,6 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgOrganizationMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,10 +49,17 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -234,8 +237,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgOrganizationMemberGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaorganizationmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaorganizationmembergroup)
-
 

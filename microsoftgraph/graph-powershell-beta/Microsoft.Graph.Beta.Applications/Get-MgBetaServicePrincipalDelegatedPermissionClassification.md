@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelegatedpermissionclassification
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,17 +37,13 @@ The permission classifications for delegated permissions exposed by the app that
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
-
 
 ## PARAMETERS
 
@@ -300,8 +293,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelegatedpermissionclassification)
-
 

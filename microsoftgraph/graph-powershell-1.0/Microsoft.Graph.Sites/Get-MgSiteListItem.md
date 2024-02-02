@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgSiteListItem
 
 ## SYNOPSIS
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId -ExpandProperty "fields"
-```
-This example shows how to use the Get-MgSiteListItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -324,8 +313,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
-
 

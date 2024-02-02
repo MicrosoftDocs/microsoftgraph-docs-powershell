@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkworkforceintegration
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a workforceintegration object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,11 +46,11 @@ Update-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
 Update the properties of a workforceintegration object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "displayName-value"
@@ -68,10 +65,6 @@ $params = @{
 }
 
 Update-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTeamworkWorkforceIntegration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -454,8 +447,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkworkforceintegration)
-
 

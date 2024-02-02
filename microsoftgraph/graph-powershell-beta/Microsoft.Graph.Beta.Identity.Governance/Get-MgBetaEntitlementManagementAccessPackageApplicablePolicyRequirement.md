@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageapplicablepolicyrequirement
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
@@ -11,9 +10,6 @@ ms.prod: governance
 ## SYNOPSIS
 In Microsoft Entra entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,21 +29,14 @@ Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
 In Microsoft Entra entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -230,8 +219,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageapplicablepolicyrequirement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageapplicablepolicyrequirement)
-
 

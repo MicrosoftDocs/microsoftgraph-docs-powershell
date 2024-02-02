@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageassignmentapprovalstage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage
@@ -37,21 +36,14 @@ Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject <II
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
-
-```
-This example shows how to use the Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -340,5 +332,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageassignmentapprovalstage)
-
 

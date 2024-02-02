@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new chat object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,11 +35,11 @@ New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<Commo
 Create a new chat object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -66,14 +63,10 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -105,14 +98,10 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -141,14 +130,10 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -179,10 +164,6 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1331,8 +1312,6 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat)
-
 

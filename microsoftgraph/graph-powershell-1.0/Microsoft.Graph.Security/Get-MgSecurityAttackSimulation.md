@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get attackSimulation from security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,17 +40,13 @@ Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]
 Get attackSimulation from security
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 Get-MgSecurityAttackSimulation
-
-```
-This example shows how to use the Get-MgSecurityAttackSimulation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -310,8 +303,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulation)
-
 

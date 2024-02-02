@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascheduledevicemanagementdevicecompliancepolicyactionforrule
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action scheduleActionsForRules
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,22 @@ Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule
 
 ## DESCRIPTION
 Invoke action scheduleActionsForRules
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -278,9 +291,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascheduledevicemanagementdevicecompliancepolicyactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascheduledevicemanagementdevicecompliancepolicyactionforrule)
-
-
 

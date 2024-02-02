@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgUserOnenoteNotebookSection
 
 ## SYNOPSIS
 Create a new onenoteSection in the specified notebook.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,15 +47,12 @@ New-MgUserOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 $params = @{
 	displayName = "Section name"
@@ -67,10 +60,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
-
-```
-This example shows how to use the New-MgUserOnenoteNotebookSection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -988,8 +977,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection)
-
 

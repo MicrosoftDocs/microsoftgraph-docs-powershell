@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
 Create a new featureRolloutPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,14 +29,12 @@ New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPo
 ## DESCRIPTION
 Create a new featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicies-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "PassthroughAuthentication rollout policy"
@@ -51,11 +45,6 @@ $params = @{
 }
 
 New-MgPolicyFeatureRolloutPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgPolicyFeatureRolloutPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -268,8 +257,6 @@ Always null when the object hasn't been deleted.
   \[IsEnabled \<Boolean?\>\]: Indicates whether the feature rollout is enabled.
 
 ## RELATED LINKS
-[New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy)
-
 

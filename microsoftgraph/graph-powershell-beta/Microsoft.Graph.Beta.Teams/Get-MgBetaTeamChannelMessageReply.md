@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereply
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
-### Example 1: Get reply to a message in a channel
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
-
-```
-This example will get reply to a message in a channel
-
 
 ## PARAMETERS
 
@@ -336,8 +329,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereply)
-
 

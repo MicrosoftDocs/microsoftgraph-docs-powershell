@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaBulkUserCloudPcResize
@@ -46,8 +45,17 @@ Perform a bulk resize action to resize a group of cloudPCs that have successfull
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-bulkresize-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -240,6 +248,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize)
-
-
 

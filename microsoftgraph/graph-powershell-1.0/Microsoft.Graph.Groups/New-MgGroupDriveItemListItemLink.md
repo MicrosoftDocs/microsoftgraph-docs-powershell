@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlistitemlink
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createLink
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemListItemLink](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemListItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ New-MgGroupDriveItemListItemLink -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action createLink
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -369,9 +378,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveItemListItemLink](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlistitemlink)
-
-
 

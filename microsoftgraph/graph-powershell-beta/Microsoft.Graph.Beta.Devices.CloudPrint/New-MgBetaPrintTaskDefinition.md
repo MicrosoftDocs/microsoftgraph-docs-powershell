@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition
 schema: 2.0.0
-ms.prod: universal-print
 ---
 
 # New-MgBetaPrintTaskDefinition
@@ -11,9 +10,6 @@ ms.prod: universal-print
 ## SYNOPSIS
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,15 +30,12 @@ New-MgBetaPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-post-taskdefinitions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 $params = @{
 	displayName = "Test TaskDefinitionName"
@@ -52,10 +45,6 @@ $params = @{
 }
 
 New-MgBetaPrintTaskDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPrintTaskDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -273,8 +262,6 @@ Read-only.
     \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
-[New-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition)
-
 

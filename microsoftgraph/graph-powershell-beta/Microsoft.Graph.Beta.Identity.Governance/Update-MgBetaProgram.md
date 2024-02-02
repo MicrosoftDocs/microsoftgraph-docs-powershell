@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram
@@ -42,16 +42,15 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 In the Microsoft Entra access reviews feature, update an existing program object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaProgram Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "testprogram3 new name"
 }
 Update-MgBetaProgram -ProgramId $programId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaProgram Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -407,5 +406,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram)
-
 

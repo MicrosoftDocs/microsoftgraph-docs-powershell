@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicyapplyto
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,10 +40,17 @@ New-MgPolicyFeatureRolloutPolicyApplyTo -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-post-appliesto-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -257,8 +260,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicyapplyto)
-
 

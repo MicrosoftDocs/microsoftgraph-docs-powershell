@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserOutlookTask
@@ -28,18 +27,14 @@ Remove-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete the specified Outlook task in the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserOutlookTask Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 ```
-This example shows how to use the Remove-MgBetaUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -192,5 +187,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask)
-
 

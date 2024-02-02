@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsetterm
 schema: 2.0.0
-ms.prod: Sharepoint
 ---
 
 # Remove-MgBetaGroupSiteTermStoreSetParentGroupSetTerm
 
 ## SYNOPSIS
 Delete a term object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,8 +27,17 @@ Remove-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -257,9 +262,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsetterm)
-
-
 

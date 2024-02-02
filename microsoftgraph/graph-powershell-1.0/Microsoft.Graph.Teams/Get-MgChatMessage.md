@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMessage
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,17 +41,13 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
-### Example 1: Get a message in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
-
-```
-This example will get a message in a chat
-
 
 ## PARAMETERS
 
@@ -336,8 +328,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessage)
-
 

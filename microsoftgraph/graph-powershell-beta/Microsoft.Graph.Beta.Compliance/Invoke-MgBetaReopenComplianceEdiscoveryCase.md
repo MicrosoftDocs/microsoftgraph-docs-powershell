@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase
@@ -30,13 +30,12 @@ Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReopenComplianceEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaReopenComplianceEdiscoveryCase -CaseId $caseId
 ```
-This example shows how to use the Invoke-MgBetaReopenComplianceEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -154,5 +153,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase)
-
 

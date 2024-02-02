@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelemail
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamChannelEmail
@@ -13,9 +12,6 @@ Provision an email address for a channel.
 Microsoft Teams doesn't automatically provision an email address for a channel by default.
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,21 +31,14 @@ Microsoft Teams doesn't automatically provision an email address for a channel b
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-provisionemail-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 New-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the New-MgTeamChannelEmail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -180,8 +169,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelemail)
-
 

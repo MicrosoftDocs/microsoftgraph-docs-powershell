@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastSevenDays from sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgSiteAnalyticLastSevenDay -InputObject <ISitesIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get lastSevenDays from sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -149,9 +158,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday)
-
-
 

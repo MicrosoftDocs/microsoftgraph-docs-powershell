@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationSchool
 
 ## SYNOPSIS
 Create a new educationSchool object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,15 +31,12 @@ New-MgEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-WhatIf] 
 ## DESCRIPTION
 Create a new educationSchool object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationSchool"
@@ -69,10 +62,6 @@ $params = @{
 }
 
 New-MgEducationSchool -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationSchool Cmdlet.
-
 
 ## PARAMETERS
 
@@ -4971,9 +4960,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9812,9 +9801,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14708,9 +14697,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -15111,8 +15100,6 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
-[New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool)
-
 

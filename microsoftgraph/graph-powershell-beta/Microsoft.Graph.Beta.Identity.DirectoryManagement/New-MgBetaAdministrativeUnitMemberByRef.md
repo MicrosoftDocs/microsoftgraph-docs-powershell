@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmemberbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgBetaAdministrativeUnitMemberByRef
@@ -40,20 +39,16 @@ New-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Create new navigation property ref to members for administrativeUnits
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaAdministrativeUnitMemberByRef Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/groups/{id}"
 }
 New-MgBetaAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaAdministrativeUnitMemberByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -250,5 +245,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmemberbyref)
-
 

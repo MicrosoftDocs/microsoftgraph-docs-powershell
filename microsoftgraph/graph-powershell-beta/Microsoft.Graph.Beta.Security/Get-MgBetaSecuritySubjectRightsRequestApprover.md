@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprover
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get approvers from security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestApprover?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaSecuritySubjectRightsRequestApprover -InputObject <ISecurityIdentity> 
 
 ## DESCRIPTION
 Get approvers from security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -332,9 +341,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestApprover?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprover](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprover)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowshelloforbusinessmethod
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationWindowsHelloForBusinessMethod
 
 ## SYNOPSIS
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,8 +35,17 @@ Get-MgUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentitySig
 ## DESCRIPTION
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowshelloforbusinessauthenticationmethod-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -314,9 +319,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowshelloforbusinessmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowshelloforbusinessmethod)
-
-
 

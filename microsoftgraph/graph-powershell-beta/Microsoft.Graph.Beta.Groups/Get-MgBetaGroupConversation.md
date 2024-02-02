@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversation
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupConversation
 
 ## SYNOPSIS
 Get a conversation object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,21 +33,14 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>
 ## DESCRIPTION
 Get a conversation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-conversation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Get-MgBetaGroupConversation -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupConversation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -300,8 +289,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversation)
-
 

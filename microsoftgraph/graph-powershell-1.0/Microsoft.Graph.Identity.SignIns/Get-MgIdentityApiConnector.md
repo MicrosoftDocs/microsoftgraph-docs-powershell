@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityapiconnector
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityApiConnector
 
 ## SYNOPSIS
 Read the properties of an identityApiConnector object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Read the properties of an identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgIdentityApiConnector
-
-```
-This example shows how to use the Get-MgIdentityApiConnector Cmdlet.
-
 
 ## PARAMETERS
 
@@ -311,8 +300,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityapiconnector)
-
 

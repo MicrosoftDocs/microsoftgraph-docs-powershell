@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property riskyServicePrincipals in identityProtection
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ Update-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the navigation property riskyServicePrincipals in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -451,9 +460,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal)
-
-
 

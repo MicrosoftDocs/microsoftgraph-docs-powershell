@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete conversationThread.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 Delete conversationThread.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Remove-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
-```
-This example shows how to use the Remove-MgBetaGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -215,8 +208,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
-
 

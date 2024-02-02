@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusiness
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingBusiness object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusiness?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,31 +53,25 @@ Get-MgBetaBookingBusiness [-ExpandProperty <String[]>] [-Property <String[]>] [-
 ## DESCRIPTION
 Get the properties and relationships of a bookingBusiness object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-This example shows how to use the Get-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness
 ```
-This example shows how to use the Get-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaBookingBusiness Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Bookings
-Get-MgBetaBookingBusiness -Query "Adventure" 
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Bookings
+Get-MgBetaBookingBusiness -Query "Adventure"
+```
 
 ## PARAMETERS
 
@@ -305,8 +295,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusiness)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to rooms for places
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +48,18 @@ New-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Create new navigation property to rooms for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -504,9 +513,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom)
-
-
 

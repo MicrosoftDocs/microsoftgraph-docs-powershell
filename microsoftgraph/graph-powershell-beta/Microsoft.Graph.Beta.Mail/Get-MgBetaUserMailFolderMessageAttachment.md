@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolderMessageAttachment
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +37,16 @@ Read the properties, relationships, or raw contents of an attachment that is att
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -254,8 +260,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageattachment)
-
 

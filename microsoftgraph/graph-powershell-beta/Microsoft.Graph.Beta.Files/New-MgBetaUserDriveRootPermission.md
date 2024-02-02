@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootpermission
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to permissions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +50,22 @@ New-MgBetaUserDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Create new navigation property to permissions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -631,9 +644,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootpermission)
-
-
 

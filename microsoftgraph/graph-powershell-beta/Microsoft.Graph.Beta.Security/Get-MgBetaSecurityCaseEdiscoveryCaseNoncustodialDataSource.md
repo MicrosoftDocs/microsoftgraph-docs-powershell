@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasenoncustodialdatasource
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,27 +36,24 @@ Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecuri
 Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"  -OutFile $outFileId
 ```
-This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource" 
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
 Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource" 
+Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource"
 ```
-This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"
+```
 
 ## PARAMETERS
 
@@ -356,8 +350,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasenoncustodialdatasource)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostporthost
@@ -11,9 +11,6 @@ schema: 2.0.0
 The host related to this hostPort.
 This is a reverse navigation property.
 When you navigate to hostPorts from a host, assume that this is a return reference.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPortHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPortHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ Get-MgSecurityThreatIntelligenceHostPortHost -InputObject <ISecurityIdentity> [-
 The host related to this hostPort.
 This is a reverse navigation property.
 When you navigate to hostPorts from a host, assume that this is a return reference.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -167,9 +176,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceHostPortHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPortHost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostporthost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostporthost)
-
-
 

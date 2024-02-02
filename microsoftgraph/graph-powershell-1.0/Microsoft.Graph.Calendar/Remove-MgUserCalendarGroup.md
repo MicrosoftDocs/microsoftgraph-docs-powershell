@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserCalendarGroup
 
 ## SYNOPSIS
 Delete a calendar group other than the default calendar group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,22 +27,15 @@ Remove-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete a calendar group other than the default calendar group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
-```
-This example shows how to use the Remove-MgUserCalendarGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -186,8 +175,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup)
-
 

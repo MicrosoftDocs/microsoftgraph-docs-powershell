@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to extensions for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/New-MgGroupExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,6 +37,22 @@ New-MgBetaGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtabl
 
 ## DESCRIPTION
 Create new navigation property to extensions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -215,9 +228,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/New-MgGroupExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension)
-
-
 

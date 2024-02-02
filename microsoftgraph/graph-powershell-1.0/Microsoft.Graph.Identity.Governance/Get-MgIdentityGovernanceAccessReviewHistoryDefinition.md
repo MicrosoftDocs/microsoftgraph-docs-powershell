@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAccessReviewHistoryDefinition
@@ -12,9 +11,6 @@ ms.prod: governance
 Retrieve an accessReviewHistoryDefinition object by its identifier.
 All the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,21 +38,14 @@ Retrieve an accessReviewHistoryDefinition object by its identifier.
 All the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewhistorydefinition-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
-```
-This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -328,8 +317,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewhistorydefinition)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgBetaGroupEvent
 
 ## SYNOPSIS
 Use this API to create a new event.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,14 +71,12 @@ New-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Use this API to create a new event.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-events-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -113,11 +107,6 @@ $params = @{
 }
 
 New-MgBetaGroupEvent -GroupId $groupId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -2192,8 +2181,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent)
-
 

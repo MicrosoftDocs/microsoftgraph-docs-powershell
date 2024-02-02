@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,11 +37,12 @@ Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-### Example 1: Get a permission grant policy exclude by ID
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant" 
-Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl  
+Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl
+```
 
 CertifiedClientApplicationsOnly             : False
 ClientApplicationIds                        : {all}
@@ -56,7 +54,7 @@ PermissionClassification                    : all
 PermissionType                              : application
 Permissions                                 : {all}
 ResourceApplication                         : 00000003-0000-0000-c000-000000000000
-AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
+AdditionalProperties                        : {\[scopeSensitivityLabels, System.Collections.Generic.Dictionary\`2\[System.String,System.Object\]\]}
 
 CertifiedClientApplicationsOnly             : False
 ClientApplicationIds                        : {all}
@@ -68,11 +66,7 @@ PermissionClassification                    : all
 PermissionType                              : application
 Permissions                                 : {all}
 ResourceApplication                         : 00000002-0000-0000-c000-000000000000
-AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
-```
-
-This command retrieves a specified permission grant policy exclude configuration in Azure AD.
-
+AdditionalProperties                        : {\[scopeSensitivityLabels, System.Collections.Generic.Dictionary\`2\[System.String,System.Object\]\]}
 
 ## PARAMETERS
 
@@ -368,8 +362,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude)
-
 

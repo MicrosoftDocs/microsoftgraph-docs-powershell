@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicevendorcurrency
@@ -26,6 +26,22 @@ Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorCurrency -InputObject <IFinanc
 
 ## DESCRIPTION
 Delete navigation property currency for financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -192,6 +208,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicevendorcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicevendorcurrency)
-
-
 

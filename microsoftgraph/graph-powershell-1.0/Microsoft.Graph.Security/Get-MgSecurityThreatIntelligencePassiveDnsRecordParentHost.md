@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordparenthost
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The parent host related to this passiveDnsRecord entry.
 Generally, this is the value that you can search to discover this passiveDnsRecord value.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordParentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordParentHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecordParentHost -InputObject <ISecuri
 ## DESCRIPTION
 The parent host related to this passiveDnsRecord entry.
 Generally, this is the value that you can search to discover this passiveDnsRecord value.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -165,9 +174,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordParentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordParentHost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordparenthost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordparenthost)
-
-
 

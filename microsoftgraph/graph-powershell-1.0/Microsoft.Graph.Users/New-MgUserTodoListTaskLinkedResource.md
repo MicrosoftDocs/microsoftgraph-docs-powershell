@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserTodoListTaskLinkedResource
@@ -12,9 +11,6 @@ ms.prod: outlook
 Create a linkedResource object to associate a specified task with an item in a partner application.
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a task.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ Create a linkedResource object to associate a specified task with an item in a p
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a task.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-linkedresources-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	webUrl = "https://microsoft.com"
@@ -67,11 +61,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
-```
-This example shows how to use the New-MgUserTodoListTaskLinkedResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -315,8 +304,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource)
-
 

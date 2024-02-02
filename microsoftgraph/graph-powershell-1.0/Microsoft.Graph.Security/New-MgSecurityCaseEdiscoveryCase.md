@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCase
 
 ## SYNOPSIS
 Create a new ediscoveryCase object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,15 +36,12 @@ New-MgSecurityCaseEdiscoveryCase -BodyParameter <IMicrosoftGraphSecurityEdiscove
 ## DESCRIPTION
 Create a new ediscoveryCase object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-post-ediscoverycases-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	displayName = "CONTOSO LITIGATION-005"
@@ -57,10 +50,6 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityCaseEdiscoveryCase Cmdlet.
-
 
 ## PARAMETERS
 
@@ -4948,9 +4937,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9718,9 +9707,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10077,8 +10066,6 @@ Read-only.
   \[Parent \<IMicrosoftGraphSecurityEdiscoveryReviewTag\>\]: ediscoveryReviewTag
 
 ## RELATED LINKS
-[New-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase)
-
 

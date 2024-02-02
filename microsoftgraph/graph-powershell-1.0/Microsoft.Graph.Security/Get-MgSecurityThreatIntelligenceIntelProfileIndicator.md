@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceintelprofileindicator
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Includes an assemblage of high-fidelity network indicators of compromise.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,18 @@ Get-MgSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -307,9 +316,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceintelprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceintelprofileindicator)
-
-
 

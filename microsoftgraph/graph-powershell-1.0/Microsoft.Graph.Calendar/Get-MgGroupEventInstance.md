@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstance
@@ -13,9 +13,6 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -292,8 +299,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstance)
-
 

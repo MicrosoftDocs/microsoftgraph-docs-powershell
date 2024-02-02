@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaSitePermission
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a permission object on a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permission-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId
-```
-This example shows how to use the Get-MgBetaSitePermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -322,8 +311,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission)
-
 

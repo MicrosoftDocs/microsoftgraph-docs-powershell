@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendation
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Invoke-MgBetaDismissDirectoryRecommendation
@@ -42,8 +41,21 @@ Invoke-MgBetaDismissDirectoryRecommendation -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its status to dismissed .
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-dismiss-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -223,6 +235,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendation)
-
-
 

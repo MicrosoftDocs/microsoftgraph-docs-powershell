@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatmessagereply
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property replies in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,6 +58,22 @@ Update-MgBetaUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the navigation property replies in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1070,9 +1083,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatmessagereply)
-
-
 

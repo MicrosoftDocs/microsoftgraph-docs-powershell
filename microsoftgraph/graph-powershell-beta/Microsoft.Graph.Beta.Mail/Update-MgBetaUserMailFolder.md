@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserMailFolder
 
 ## SYNOPSIS
 Update the properties of mailFolder object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,14 +53,12 @@ Update-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the properties of mailFolder object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	displayName = "displayName-value"
@@ -72,11 +66,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1030,8 +1019,6 @@ Read-only.
   \[BinaryData \<Byte\[\]\>\]:
 
 ## RELATED LINKS
-[Update-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolder)
-
 

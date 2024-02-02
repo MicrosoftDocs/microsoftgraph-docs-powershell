@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionaddtoreviewsetoperation
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation
@@ -28,17 +27,13 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -Input
 ## DESCRIPTION
 Get the last addToReviewSetOperation object associated with a source collection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-addtoreviewsetoperation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -155,5 +150,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionaddtoreviewsetoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionaddtoreviewsetoperation)
-
 

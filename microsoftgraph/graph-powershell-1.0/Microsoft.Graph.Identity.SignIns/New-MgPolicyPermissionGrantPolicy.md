@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyPermissionGrantPolicy
@@ -12,9 +11,6 @@ ms.prod: identity-and-sign-in
 Creates a permissionGrantPolicy.
 A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
 After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,15 +33,13 @@ Creates a permissionGrantPolicy.
 A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
 After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-post-permissiongrantpolicies-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create a permission grant policy
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
-New-MgPolicyPermissionGrantPolicy -Id "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant" -DisplayName "Sample app permissions" | fl 
+New-MgPolicyPermissionGrantPolicy -Id "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant" -DisplayName "Sample app permissions" | fl
+```
 
 DeletedDateTime      :
 Description          : Permissions for sample app in test tenant
@@ -53,11 +47,7 @@ DisplayName          : Sample app permissions
 Excludes             :
 Id                   : testtenant-sampleapp-permissions
 Includes             :
-AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies/$entity]}
-```
-
-This command creates a new permission grant policy in Azure AD.  Specific include and exclude configurations can be created using the `New-MgPolicyPermissionGrantPolicyInclude` and `New-MgPolicyPermissionGrantPolicyExclude` cmdlets.
-
+AdditionalProperties : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies/$entity\]}
 
 ## PARAMETERS
 
@@ -321,8 +311,6 @@ Default is the single value all.
 Default is any.
 
 ## RELATED LINKS
-[New-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy)
-
 

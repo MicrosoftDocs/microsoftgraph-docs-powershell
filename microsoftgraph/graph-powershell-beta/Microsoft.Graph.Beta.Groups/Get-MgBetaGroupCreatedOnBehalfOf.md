@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof
@@ -11,9 +11,6 @@ schema: 2.0.0
 The user (or application) that created the group.
 Note: This isn't set if the user is an administrator.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCreatedOnBehalfOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,22 @@ Get-MgBetaGroupCreatedOnBehalfOf -InputObject <IGroupsIdentity> [-ExpandProperty
 The user (or application) that created the group.
 Note: This isn't set if the user is an administrator.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -160,9 +173,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCreatedOnBehalfOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof)
-
-
 

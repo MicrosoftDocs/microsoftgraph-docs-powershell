@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Remove-MgGroupTeamChannelTab
 
 ## SYNOPSIS
 Removes (unpins) a tab from the specified channel within a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,16 @@ Remove-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 Removes (unpins) a tab from the specified channel within a team.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -207,8 +213,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab)
-
 

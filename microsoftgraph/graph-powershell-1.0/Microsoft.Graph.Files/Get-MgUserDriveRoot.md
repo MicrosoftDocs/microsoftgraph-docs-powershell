@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRoot
 
 ## SYNOPSIS
-Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,11 +26,24 @@ Get-MgUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -156,9 +165,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot)
-
-
 

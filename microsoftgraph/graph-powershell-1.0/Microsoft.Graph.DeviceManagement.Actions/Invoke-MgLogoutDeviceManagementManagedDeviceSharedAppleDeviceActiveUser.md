@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser
 
 ## SYNOPSIS
 Logout shared Apple device active user
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser
 
 ## DESCRIPTION
 Logout shared Apple device active user
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,9 +152,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
-
-
 

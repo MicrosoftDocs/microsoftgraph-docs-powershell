@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action restoreVersion
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Restore-MgBetaSiteListItemVersion -InputObject <ISitesIdentity> [-PassThru] [-Wh
 Invoke action restoreVersion
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-```
-This example shows how to use the Restore-MgBetaSiteListItemVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -236,8 +229,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Restore-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemversion)
-
 

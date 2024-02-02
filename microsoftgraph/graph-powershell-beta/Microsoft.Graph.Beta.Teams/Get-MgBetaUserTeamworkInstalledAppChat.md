@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappchat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the chat of the specified user and Teams app.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Get-MgBetaUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPro
 Retrieve the chat of the specified user and Teams app.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
-
-```
-This example shows how to use the Get-MgBetaUserTeamworkInstalledAppChat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -178,8 +171,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappchat)
-
 

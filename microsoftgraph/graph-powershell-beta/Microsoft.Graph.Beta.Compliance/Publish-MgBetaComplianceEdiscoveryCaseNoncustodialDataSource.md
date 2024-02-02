@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasenoncustodialdatasource
@@ -28,13 +28,12 @@ Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComp
 Releases the non-custodial data source from the case.
 
 ## EXAMPLES
-### Example 1: Using the Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -NoncustodialDataSourceId $noncustodialDataSourceId
 ```
-This example shows how to use the Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -167,5 +166,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasenoncustodialdatasource)
-
 

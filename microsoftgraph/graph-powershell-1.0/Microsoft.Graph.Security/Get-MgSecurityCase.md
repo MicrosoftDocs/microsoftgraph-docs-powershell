@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycase
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get cases from security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCase?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -21,6 +18,22 @@ Get-MgSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonP
 
 ## DESCRIPTION
 Get cases from security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,9 +78,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycase)
-
-
 

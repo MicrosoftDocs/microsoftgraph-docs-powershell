@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnote
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List of notes associated with the request.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-E
 
 ## DESCRIPTION
 List of notes associated with the request.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,9 +280,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
   \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnote)
-
-
 

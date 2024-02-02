@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant
@@ -11,9 +11,6 @@ schema: 2.0.0
 Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,17 +39,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgServicePrincipalOauth2PermissionGrant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -293,8 +286,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant)
-
 

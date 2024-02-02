@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Get-MgShareSharedDriveItemSharedDriveItem
@@ -11,9 +10,6 @@ ms.prod: files
 ## SYNOPSIS
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,21 +36,14 @@ Get-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-Expand
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shares-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
-```
-This example shows how to use the Get-MgShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -282,8 +271,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaSitePage
@@ -35,24 +34,19 @@ Get-MgBetaSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/basesitepage-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSitePage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId
 ```
-This example shows how to use the Get-MgBetaSitePage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSitePage Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSitePage -SiteId $siteId
 ```
-This example shows how to use the Get-MgBetaSitePage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -324,5 +318,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage)
-
 

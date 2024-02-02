@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,8 +41,17 @@ Update-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -277,9 +282,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty)
-
-
 

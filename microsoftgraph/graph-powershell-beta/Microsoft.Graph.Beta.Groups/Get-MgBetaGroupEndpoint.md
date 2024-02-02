@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupEndpoint
@@ -35,24 +34,19 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific endpoint object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/endpoint-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupEndpoint Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupEndpoint -GroupId $groupId -EndpointId $endpointId
 ```
-This example shows how to use the Get-MgBetaGroupEndpoint Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaGroupEndpoint Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupEndpoint -GroupId $groupId
 ```
-This example shows how to use the Get-MgBetaGroupEndpoint Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -318,5 +312,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to deviceLocalCredentials for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ New-MgDirectoryDeviceLocalCredential -BodyParameter <IMicrosoftGraphDeviceLocalC
 
 ## DESCRIPTION
 Create new navigation property to deviceLocalCredentials for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -211,9 +220,6 @@ Read-only.
   \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.
 
 ## RELATED LINKS
-[New-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential)
-
-
 

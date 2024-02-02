@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/reset-mgbetadevicemanagementmanageddevicepasscode
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reset passcode
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Reset-MgDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Reset-MgDeviceManagementManagedDevicePasscode?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Reset-MgBetaDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagemen
 
 ## DESCRIPTION
 Reset passcode
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -179,9 +192,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Reset-MgDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Reset-MgDeviceManagementManagedDevicePasscode?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/reset-mgbetadevicemanagementmanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/reset-mgbetadevicemanagementmanageddevicepasscode)
-
-
 

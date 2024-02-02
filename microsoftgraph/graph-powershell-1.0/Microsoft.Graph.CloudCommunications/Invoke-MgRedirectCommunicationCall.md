@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgRedirectCommunicationCall
@@ -13,9 +12,6 @@ Redirect an incoming call that hasn't been answered or rejected yet.
 The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRedirectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRedirectCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,15 +50,12 @@ The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-redirect-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	targets = @(
@@ -81,10 +74,6 @@ $params = @{
 }
 
 Invoke-MgRedirectCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgRedirectCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -321,8 +310,6 @@ The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgBetaRedirectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRedirectCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationUserAssignmentResource
@@ -12,9 +11,6 @@ ms.prod: education
 Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,8 +32,21 @@ Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,9 +207,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentresource)
-
-
 

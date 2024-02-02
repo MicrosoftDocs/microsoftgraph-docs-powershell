@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Update-MgBetaUserSettingRegionalAndLanguageSetting
@@ -49,12 +48,10 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update some or all of the properties of a regionalAndLanguageSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/regionalandlanguagesettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	AuthoringLanguages = @(
@@ -72,8 +69,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -438,5 +433,4 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgSecurityAlertV2
 
 ## SYNOPSIS
 Update the properties of an alert object in an organization based on the specified alert id property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,8 +58,17 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -783,9 +788,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2)
-
-
 

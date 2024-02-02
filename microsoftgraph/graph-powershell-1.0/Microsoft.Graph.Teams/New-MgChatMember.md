@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgChatMember
 
 ## SYNOPSIS
 Add a conversationMember to a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,20 +40,17 @@ New-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ## DESCRIPTION
 Add a conversationMember to a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
-	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
+	visibleHistoryStartDateTime = \[System.DateTime\]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
 		"owner"
 	)
@@ -65,19 +58,15 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgChatMember Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
-	visibleHistoryStartDateTime = [System.DateTime]::Parse("0001-01-01T00:00:00Z")
+	visibleHistoryStartDateTime = \[System.DateTime\]::Parse("0001-01-01T00:00:00Z")
 	roles = @(
 		"owner"
 	)
@@ -85,19 +74,15 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgChatMember Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/jacob@contoso.com"
-	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
+	visibleHistoryStartDateTime = \[System.DateTime\]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
 		"owner"
 	)
@@ -105,14 +90,10 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgChatMember Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -124,14 +105,10 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgChatMember Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -143,10 +120,6 @@ $params = @{
 }
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the New-MgChatMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -373,8 +346,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmember)
-
 

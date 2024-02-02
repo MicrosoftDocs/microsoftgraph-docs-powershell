@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaDismissGroupCalendarEventReminder
 
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,22 +27,15 @@ Invoke-MgBetaDismissGroupCalendarEventReminder -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-```
-This example shows how to use the Invoke-MgBetaDismissGroupCalendarEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -205,8 +194,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder)
-
 

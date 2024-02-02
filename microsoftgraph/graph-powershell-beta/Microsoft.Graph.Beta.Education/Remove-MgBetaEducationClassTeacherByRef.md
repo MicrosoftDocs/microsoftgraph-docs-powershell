@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationClassTeacherByRef
 
 ## SYNOPSIS
 Remove a teacher from an educationClass.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassTeacherByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,8 +27,21 @@ Remove-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> [-Id <
 ## DESCRIPTION
 Remove a teacher from an educationClass.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-teachers-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -193,9 +202,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassTeacherByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref)
-
-
 

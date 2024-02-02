@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
 Create a new identityApiConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,14 +27,12 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 ## DESCRIPTION
 Create a new identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-create-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an API connector with basic authentication
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Test API"
@@ -51,15 +45,11 @@ $params = @{
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an API connector with client certificate authentication
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Test API"
@@ -72,11 +62,6 @@ $params = @{
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -228,8 +213,6 @@ Read-only.
   \[TargetUrl \<String\>\]: The URL of the API endpoint to call.
 
 ## RELATED LINKS
-[New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
-
 

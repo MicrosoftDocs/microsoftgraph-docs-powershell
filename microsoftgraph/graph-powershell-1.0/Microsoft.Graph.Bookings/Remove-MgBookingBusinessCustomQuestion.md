@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Remove-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
 Delete a bookingCustomQuestion object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete a bookingCustomQuestion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 Remove-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
-```
-This example shows how to use the Remove-MgBookingBusinessCustomQuestion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -189,8 +178,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion)
-
 

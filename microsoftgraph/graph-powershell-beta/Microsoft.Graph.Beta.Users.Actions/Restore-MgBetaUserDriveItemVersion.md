@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemversion
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Restore-MgBetaUserDriveItemVersion
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveItemVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,21 +29,14 @@ Restore-MgBetaUserDriveItemVersion -InputObject <IUsersActionsIdentity> [-PassTh
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-restore-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Restore-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
-```
-This example shows how to use the Restore-MgBetaUserDriveItemVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -231,8 +220,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgUserDriveItemVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemversion)
-
 

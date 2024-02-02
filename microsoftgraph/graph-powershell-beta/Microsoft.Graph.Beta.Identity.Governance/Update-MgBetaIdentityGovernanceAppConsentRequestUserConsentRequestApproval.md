@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapproval
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property approval in identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval
 
 ## DESCRIPTION
 Update the navigation property approval in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -360,9 +373,6 @@ Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapproval)
-
-
 

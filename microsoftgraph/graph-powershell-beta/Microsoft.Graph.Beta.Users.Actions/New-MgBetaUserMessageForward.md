@@ -1,24 +1,20 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessageforward
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserMessageForward
 
 ## SYNOPSIS
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.- Update the draft later to add content to the body or change other message properties.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,19 +48,17 @@ New-MgBetaUserMessageForward -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.- Update the draft later to add content to the body or change other message properties.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createforward-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserMessageForward Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Message = @{
@@ -83,8 +77,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageForward -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserMessageForward Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -538,8 +530,6 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessageforward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessageforward)
-
 

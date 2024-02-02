@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitemdocumentsetversion
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Remove-MgUserDriveListItemDocumentSetVersion
 
 ## SYNOPSIS
 Delete a version of a document set in a list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,8 +28,21 @@ Remove-MgUserDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete a version of a document set in a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -216,9 +225,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitemdocumentsetversion)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaFollowGroupDriveItem
 
 ## SYNOPSIS
 Follow a driveItem.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,8 +26,21 @@ Invoke-MgBetaFollowGroupDriveItem -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 ## DESCRIPTION
 Follow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -190,9 +199,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveitem)
-
-
 

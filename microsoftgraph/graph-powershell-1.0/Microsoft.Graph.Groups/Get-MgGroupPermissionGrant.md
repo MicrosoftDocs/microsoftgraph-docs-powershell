@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get permissionGrants from groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 Get permissionGrants from groups
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupPermissionGrant -GroupId $groupId
-```
-This example shows how to use the Get-MgGroupPermissionGrant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -302,8 +295,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant)
-
 

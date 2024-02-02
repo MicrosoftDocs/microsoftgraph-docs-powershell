@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprintersharejob
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Stop-MgBetaPrintPrinterShareJob
@@ -30,8 +29,17 @@ Stop-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Pass
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printjob-cancel-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -160,6 +168,4 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprintersharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprintersharejob)
-
-
 

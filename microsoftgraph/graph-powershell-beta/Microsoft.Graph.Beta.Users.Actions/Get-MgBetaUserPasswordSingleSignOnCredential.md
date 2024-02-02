@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential
@@ -25,6 +25,18 @@ Get-MgBetaUserPasswordSingleSignOnCredential -InputObject <IUsersActionsIdentity
 
 ## DESCRIPTION
 Invoke action getPasswordSingleSignOnCredentials
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -150,6 +162,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential)
-
-
 

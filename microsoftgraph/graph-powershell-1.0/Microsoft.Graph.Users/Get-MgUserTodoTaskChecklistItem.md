@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserTodoTaskChecklistItem
 
 ## SYNOPSIS
 Read the properties and relationships of a checklistItem object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskChecklistItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,8 +34,17 @@ Get-MgUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Read the properties and relationships of a checklistItem object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -301,9 +306,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskChecklistItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem)
-
-
 

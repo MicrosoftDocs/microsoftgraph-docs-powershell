@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 Retrieve the existing synchronization job and its properties.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,24 +34,19 @@ Get-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Retrieve the existing synchronization job and its properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaServicePrincipalSynchronizationJob Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJob Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaServicePrincipalSynchronizationJob Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJob Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -305,8 +296,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjob)
-
 

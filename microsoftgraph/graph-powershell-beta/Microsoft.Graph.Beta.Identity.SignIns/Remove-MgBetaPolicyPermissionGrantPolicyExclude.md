@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaPolicyPermissionGrantPolicyExclude
 
 ## SYNOPSIS
 Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,19 +27,13 @@ Remove-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-delete-excludes-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Remove a permission grant policy exclude
 
-```powershell
-Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
-Remove-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "60ba4fac-d39e-47b3-bd99-4394cb88a2f8" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"  
+### EXAMPLE 1
 ```
-
-This command deletes the specified exclude configuration from the specific permission grant policy in Azure AD.
-
+Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Remove-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "60ba4fac-d39e-47b3-bd99-4394cb88a2f8" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
+```
 
 ## PARAMETERS
 
@@ -249,8 +239,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude)
-
 

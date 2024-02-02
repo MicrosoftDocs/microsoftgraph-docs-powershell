@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,10 +42,11 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.outlookServices.openTypeExtension"
@@ -64,11 +62,6 @@ $params = @{
 }
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaGroupThreadPostExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -289,8 +282,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClassAssignmentSetting
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,25 +29,18 @@ Get-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Ex
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentsettings-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	submissionAnimationDisabled = $true
 }
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaBetaEducationClassAssignmentSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -151,8 +140,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting)
-
 

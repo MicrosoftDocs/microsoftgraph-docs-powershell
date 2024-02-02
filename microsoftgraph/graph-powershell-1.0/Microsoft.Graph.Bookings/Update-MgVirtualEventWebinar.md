@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property webinars in solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +48,18 @@ Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the navigation property webinars in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -653,9 +662,6 @@ STARTDATETIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar)
-
-
 

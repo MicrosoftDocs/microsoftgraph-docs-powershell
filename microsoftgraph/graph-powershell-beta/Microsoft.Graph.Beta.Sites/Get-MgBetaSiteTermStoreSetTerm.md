@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetterm
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaSiteTermStoreSetTerm
 
 ## SYNOPSIS
 Read the properties and relationships of a term object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,8 +34,21 @@ Get-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Read the properties and relationships of a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -324,9 +333,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetterm)
-
-
 

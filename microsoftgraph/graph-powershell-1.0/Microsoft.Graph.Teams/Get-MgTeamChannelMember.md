@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamChannelMember
 
 ## SYNOPSIS
 Get a conversationMember from a channel.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get a conversationMember from a channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Get-MgTeamChannelMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -318,8 +307,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmember)
-
 

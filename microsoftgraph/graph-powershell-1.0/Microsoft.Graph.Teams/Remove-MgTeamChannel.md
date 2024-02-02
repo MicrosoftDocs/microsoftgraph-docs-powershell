@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Remove-MgTeamChannel
 
 ## SYNOPSIS
 Delete the channel.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,17 +28,13 @@ Remove-MgTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThr
 Delete the channel.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Remove-MgTeamChannel -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Remove-MgTeamChannel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -203,8 +195,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannel)
-
 

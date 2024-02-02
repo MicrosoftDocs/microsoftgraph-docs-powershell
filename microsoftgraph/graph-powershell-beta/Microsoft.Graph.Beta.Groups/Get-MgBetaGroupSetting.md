@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsetting
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,22 @@ Get-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -301,9 +314,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsetting)
-
-
 

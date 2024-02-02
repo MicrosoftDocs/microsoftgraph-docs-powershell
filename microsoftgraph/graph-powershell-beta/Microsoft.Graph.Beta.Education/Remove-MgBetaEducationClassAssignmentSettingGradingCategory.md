@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingcategory
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property gradingCategories for education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEduca
 
 ## DESCRIPTION
 Delete navigation property gradingCategories for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -174,9 +183,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingcategory)
-
-
 

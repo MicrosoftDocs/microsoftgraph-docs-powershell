@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an openShiftChangeRequest object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgBetaTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-Exp
 Retrieve the properties and relationships of an openShiftChangeRequest object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamScheduleOpenShiftChangeRequest -TeamId $teamId
-
-```
-This example shows how to use the Get-MgBetaTeamScheduleOpenShiftChangeRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -306,8 +299,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequest)
-
 

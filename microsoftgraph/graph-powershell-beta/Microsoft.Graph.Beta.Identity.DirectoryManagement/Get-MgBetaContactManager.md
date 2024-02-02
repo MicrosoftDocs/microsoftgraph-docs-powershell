@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaContactManager
 
 ## SYNOPSIS
 Get the contact's manager
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 ## DESCRIPTION
 Get the contact's manager
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContactManager -OrgContactId $orgContactId
-
-```
-This example shows how to use the Get-MgBetaContactManager Cmdlet.
-
 
 ## PARAMETERS
 
@@ -171,8 +160,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager)
-
 

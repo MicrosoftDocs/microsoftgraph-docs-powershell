@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolderchildfoldermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Move-MgUserMailFolderChildFolderMessage
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,14 +45,12 @@ Move-MgUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-move-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	DestinationId = "deleteditems"
@@ -64,11 +58,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Move-MgUserMailFolderChildFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -277,8 +266,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Move-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolderchildfoldermessage)
-
 

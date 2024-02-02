@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewdecision
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Add-MgBetaAccessReviewDecision
@@ -45,17 +44,13 @@ You should expect to see denied users, if any, being removed from the resource g
 A configured auto applying review, or selecting Apply doesn't have an effect on a group that originates in an on-premises directory or a dynamic group.
 If you want to change a group that originates on-premises, download the results and apply those changes to the representation of the group in that directory.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-apply-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Add-MgBetaAccessReviewDecision Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Add-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
 ```
-This example shows how to use the Add-MgBetaAccessReviewDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -255,5 +250,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewdecision)
-
 

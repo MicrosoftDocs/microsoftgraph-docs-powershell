@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamworkTeamAppSetting
 
 ## SYNOPSIS
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,13 +27,12 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 ## DESCRIPTION
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsappsettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -45,8 +40,6 @@ $params = @{
 }
 
 Update-MgTeamworkTeamAppSetting -BodyParameter $params
-```
-This example updates the tenant-wide teamsAppSettings for all Teams apps in the tenant
 
 ## PARAMETERS
 
@@ -185,8 +178,6 @@ True indicates that Teams apps that are allowed in the tenant and require resour
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
 ## RELATED LINKS
-[Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
-
 

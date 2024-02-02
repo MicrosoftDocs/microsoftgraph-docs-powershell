@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitemlink
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgBetaDriveListItemLink
 
 ## SYNOPSIS
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDriveListItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveListItemLink?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,11 +46,24 @@ New-MgBetaDriveListItemLink -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-createlink-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -351,9 +360,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgDriveListItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveListItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitemlink)
-
-
 

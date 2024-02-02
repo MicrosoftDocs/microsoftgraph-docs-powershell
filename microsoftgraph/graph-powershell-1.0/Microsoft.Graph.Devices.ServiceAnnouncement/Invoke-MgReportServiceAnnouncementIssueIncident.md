@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function incidentReport
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,13 +28,12 @@ Invoke-MgReportServiceAnnouncementIssueIncident -InputObject <IDevicesServiceAnn
 Invoke function incidentReport
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
 ```
-This example shows how to use the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,8 +120,6 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
   \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident)
-
 

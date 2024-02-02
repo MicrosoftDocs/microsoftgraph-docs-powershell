@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolebyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryRoleById
@@ -12,9 +11,6 @@ ms.prod: directory-management
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,14 +32,12 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	Ids = @(
@@ -60,11 +54,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
-```
-This example shows how to use the Get-MgDirectoryRoleById Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -181,8 +170,6 @@ BODYPARAMETER \<IPaths1Ig9RahDirectoryrolesMicrosoftGraphGetbyidsPostRequestbody
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryRoleById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolebyid)
-
 

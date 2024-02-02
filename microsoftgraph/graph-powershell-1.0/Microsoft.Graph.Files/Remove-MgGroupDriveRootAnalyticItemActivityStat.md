@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootanalyticitemactivitystat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property itemActivityStats for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity> [-
 
 ## DESCRIPTION
 Delete navigation property itemActivityStats for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -196,9 +205,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootanalyticitemactivitystat)
-
-
 

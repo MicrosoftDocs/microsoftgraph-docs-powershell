@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverviewissue
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to issues for admin
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ New-MgBetaServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAn
 
 ## DESCRIPTION
 Create new navigation property to issues for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -438,9 +451,6 @@ POSTS \<IMicrosoftGraphServiceHealthIssuePost\[\]\>: Collection of historical po
   \[PostType \<String\>\]: postType
 
 ## RELATED LINKS
-[New-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverviewissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverviewissue)
-
-
 

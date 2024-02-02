@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfoldermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Copy-MgUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
 Copy a message to a folder within the user's mailbox.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,14 +43,12 @@ Copy-MgUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-copy-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	DestinationId = "destinationId-value"
@@ -62,11 +56,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Copy-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Copy-MgUserMailFolderChildFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -275,8 +264,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfoldermessage)
-
 

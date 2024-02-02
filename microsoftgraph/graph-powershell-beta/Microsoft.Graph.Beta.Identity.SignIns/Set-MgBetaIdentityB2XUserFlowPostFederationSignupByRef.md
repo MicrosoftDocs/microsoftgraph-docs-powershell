@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowpostfederationsignupbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the ref of navigation property postFederationSignup in identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySi
 
 ## DESCRIPTION
 Update the ref of navigation property postFederationSignup in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -287,9 +296,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowpostfederationsignupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowpostfederationsignupbyref)
-
-
 

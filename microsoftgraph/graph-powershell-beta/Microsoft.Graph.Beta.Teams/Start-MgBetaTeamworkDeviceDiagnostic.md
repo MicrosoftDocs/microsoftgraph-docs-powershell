@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic
@@ -30,13 +30,12 @@ Run and generate diagnostic logs for the specified Microsoft Teams-enabled devic
 This API triggers a long-running operation used to generate logs for a device.
 
 ## EXAMPLES
-### Example 1: Using the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Start-MgBetaTeamworkDeviceDiagnostic -TeamworkDeviceId $teamworkDeviceId
 ```
-This example shows how to use the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,5 +175,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic)
-
 

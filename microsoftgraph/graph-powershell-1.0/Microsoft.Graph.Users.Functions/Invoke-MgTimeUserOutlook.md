@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgtimeuseroutlook
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function supportedTimeZones
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaTimeUserOutlook](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaTimeUserOutlook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,14 +40,13 @@ Invoke-MgTimeUserOutlook -InputObject <IUsersFunctionsIdentity> [-Count] [-Filte
 Invoke function supportedTimeZones
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgTimeUserOutlook Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.
 Invoke-MgTimeUserOutlook -UserId $userId
 ```
-This example shows how to use the Invoke-MgTimeUserOutlook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -219,8 +215,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaTimeUserOutlook](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaTimeUserOutlook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgtimeuseroutlook](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgtimeuseroutlook)
-
 

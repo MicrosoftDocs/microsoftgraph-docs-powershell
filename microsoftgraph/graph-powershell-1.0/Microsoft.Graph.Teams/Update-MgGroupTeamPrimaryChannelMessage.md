@@ -1,23 +1,19 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgGroupTeamPrimaryChannelMessage
 
 ## SYNOPSIS
 Update a chatMessage object.
-With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,13 +61,23 @@ Update-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update a chatMessage object.
-With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -989,8 +995,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessage)
-
 

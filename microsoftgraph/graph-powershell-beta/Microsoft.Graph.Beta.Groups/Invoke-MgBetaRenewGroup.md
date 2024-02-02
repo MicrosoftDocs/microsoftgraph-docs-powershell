@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgroup
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgBetaRenewGroup
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRenewGroup](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRenewGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +27,13 @@ Invoke-MgBetaRenewGroup -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-C
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-renew-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRenewGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Invoke-MgBetaRenewGroup -GroupId $groupId
 ```
-This example shows how to use the Invoke-MgBetaRenewGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -185,8 +177,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgRenewGroup](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRenewGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgroup)
-
 

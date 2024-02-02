@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The group's profile photo.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhoto?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +42,13 @@ Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<Com
 The group's profile photo.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Get-MgBetaGroupPhoto -GroupId $groupId
-```
-This example shows how to use the Get-MgBetaBetaGroupPhoto Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -289,8 +282,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto)
-
 

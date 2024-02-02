@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectioncustodiansource
@@ -35,13 +35,12 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -InputObject <
 Custodian sources that are included in the sourceCollection.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -294,5 +293,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectioncustodiansource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectioncustodiansource)
-
 

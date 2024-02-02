@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotesection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sections for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,18 +48,14 @@ New-MgBetaSiteOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicr
 Create new navigation property to sections for sites
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteSection -UserId $userId
-```
-This example shows how to use the New-MgBetaBetaSiteOnenoteSection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -864,8 +857,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotesection)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumnposition
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Column order information in a content type.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,22 @@ Get-MgBetaGroupSiteListContentTypeColumnPosition -InputObject <ISitesIdentity> [
 
 ## DESCRIPTION
 Column order information in a content type.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -352,9 +365,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumnposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumnposition)
-
-
 
