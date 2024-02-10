@@ -30,7 +30,7 @@ resources:
 
    - repository: microsoft-graph-docs
      type: github
-     endpoint: microsoftgraph (22)
+     endpoint: timayabi2020
      name: microsoftgraph/microsoft-graph-docs
      ref: main
 
