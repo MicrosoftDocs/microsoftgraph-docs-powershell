@@ -30,7 +30,7 @@ resources:
 
    - repository: microsoft-graph-docs
      type: github
-     endpoint: MicrosoftDocs
+     endpoint: microsoftgraph (22)
      name: microsoftgraph/microsoft-graph-docs
      ref: main
 
