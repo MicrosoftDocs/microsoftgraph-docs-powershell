@@ -1,46 +1,54 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalappmanagementpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupapplicationbyuniquename
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Remove-MgServicePrincipalAppManagementPolicy
+# Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName
 
 ## SYNOPSIS
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
+Get applications from onPremisesPublishingProfiles
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 ```
-Remove-MgServicePrincipalAppManagementPolicy -AppManagementPolicyId <String> -ServicePrincipalId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName -ConnectorGroupId <String>
+ -OnPremisesPublishingProfileId <String> -UniqueName <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 ```
-Remove-MgServicePrincipalAppManagementPolicy -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName -InputObject <IApplicationsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+Get applications from onPremisesPublishingProfiles
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
-### -AppManagementPolicyId
-The unique identifier of appManagementPolicy
+### -ConnectorGroupId
+The unique identifier of connectorGroup
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -50,18 +58,33 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: String
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -71,7 +94,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -81,27 +104,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ServicePrincipalId
-The unique identifier of servicePrincipal
+### -OnPremisesPublishingProfileId
+The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -111,13 +119,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
 ```yaml
-Type: SwitchParameter
+Type: ActionPreference
 Parameter Sets: (All)
-Aliases: cf
+Aliases: proga
 
 Required: False
 Position: Named
@@ -126,16 +134,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: SwitchParameter
+Type: String[]
 Parameter Sets: (All)
-Aliases: wi
+Aliases: Select
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UniqueName
+Alternate key of application
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -147,10 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -164,6 +187,8 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[ApplicationId \<String\>\]: The unique identifier of application
   \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
   \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConnectorGroupId \<String\>\]: The unique identifier of connectorGroup
+  \[ConnectorId \<String\>\]: The unique identifier of connector
   \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
   \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
@@ -172,19 +197,23 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
   \[GroupId \<String\>\]: The unique identifier of group
   \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
   \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OnPremisesAgentGroupId \<String\>\]: The unique identifier of onPremisesAgentGroup
+  \[OnPremisesAgentGroupId1 \<String\>\]: The unique identifier of onPremisesAgentGroup
+  \[OnPremisesAgentId \<String\>\]: The unique identifier of onPremisesAgent
+  \[OnPremisesPublishingProfileId \<String\>\]: The unique identifier of onPremisesPublishingProfile
+  \[PublishedResourceId \<String\>\]: The unique identifier of publishedResource
   \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
   \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
   \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
   \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UniqueName \<String\>\]: Alternate key of application
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalappmanagementpolicy)
-
-
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupapplicationbyuniquename)
 
