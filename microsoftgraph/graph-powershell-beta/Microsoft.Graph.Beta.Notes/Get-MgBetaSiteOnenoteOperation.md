@@ -42,8 +42,6 @@ If the status is failed, the error and @api.diagnostics properties provide error
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenoteoperation-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

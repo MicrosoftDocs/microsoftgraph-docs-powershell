@@ -34,8 +34,6 @@ Delete a shift from the schedule.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

@@ -28,8 +28,6 @@ Retrieve a list of page objects from the specified section.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

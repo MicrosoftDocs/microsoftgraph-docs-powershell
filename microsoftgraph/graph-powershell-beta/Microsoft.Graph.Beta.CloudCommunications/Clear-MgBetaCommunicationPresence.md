@@ -53,8 +53,6 @@ Read more about presence sessions and their time-out and expiration.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearpresence-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

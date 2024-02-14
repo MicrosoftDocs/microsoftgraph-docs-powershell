@@ -27,8 +27,6 @@ Users in the accepted senders list can post to conversations of the group (ident
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-acceptedsenders-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

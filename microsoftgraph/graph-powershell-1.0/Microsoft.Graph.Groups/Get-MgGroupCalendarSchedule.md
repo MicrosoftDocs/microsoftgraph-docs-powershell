@@ -50,8 +50,6 @@ Get the free/busy availability information for a collection of users, distributi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -27,8 +27,6 @@ Retrieve a list of users who have been granted access to submit print jobs to th
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-list-allowedusers-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

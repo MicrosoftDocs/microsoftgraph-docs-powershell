@@ -34,8 +34,6 @@ Optionally, you can expand the manager's chain up to the root node.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-manager-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

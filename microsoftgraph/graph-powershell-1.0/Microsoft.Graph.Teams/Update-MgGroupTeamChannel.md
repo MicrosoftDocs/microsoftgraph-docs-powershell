@@ -53,8 +53,6 @@ Update-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of the specified channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

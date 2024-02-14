@@ -46,8 +46,6 @@ New-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Create an instance of an openshift object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

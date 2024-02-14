@@ -45,8 +45,6 @@ New-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create a new timeOffReason.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

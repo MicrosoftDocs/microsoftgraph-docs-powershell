@@ -37,8 +37,6 @@ Get-MgBetaGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get a conversationMember from a channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

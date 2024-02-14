@@ -48,8 +48,6 @@ Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[l
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

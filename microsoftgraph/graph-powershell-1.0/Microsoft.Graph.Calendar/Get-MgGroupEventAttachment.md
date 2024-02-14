@@ -43,8 +43,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

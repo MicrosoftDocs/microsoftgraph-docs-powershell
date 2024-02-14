@@ -31,8 +31,6 @@ Remove-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 ## DESCRIPTION
 Delete the channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

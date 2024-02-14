@@ -36,8 +36,6 @@ Every team must include at least one timeOffReason.
 This method does not remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

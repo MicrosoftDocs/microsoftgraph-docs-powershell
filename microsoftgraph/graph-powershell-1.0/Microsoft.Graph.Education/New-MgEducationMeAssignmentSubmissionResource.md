@@ -56,8 +56,6 @@ If the file doesn't exist or is not in that folder, the POST request will fail.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-post-resources-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -52,8 +52,6 @@ You can create the following types of assignment resources: Every resource has a
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-post-resource-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

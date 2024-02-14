@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref
@@ -46,17 +46,21 @@ Assign a tokenLifetimePolicy to an application.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
 }
 
 New-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -BodyParameter $params
+```
+This example shows how to use the New-MgApplicationTokenLifetimePolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

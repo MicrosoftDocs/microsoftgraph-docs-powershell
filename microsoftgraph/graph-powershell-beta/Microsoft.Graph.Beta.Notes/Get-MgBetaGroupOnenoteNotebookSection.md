@@ -28,8 +28,6 @@ Retrieve a list of section objects from the specified notebook.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-list-sections-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

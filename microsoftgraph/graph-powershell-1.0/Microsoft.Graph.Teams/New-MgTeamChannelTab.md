@@ -47,8 +47,6 @@ New-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

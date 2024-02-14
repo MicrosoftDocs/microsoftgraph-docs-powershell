@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup
@@ -48,9 +48,8 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 Create a new connectorGroup.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Name = "name-value"
@@ -58,15 +57,18 @@ $params = @{
 }
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Name = "Connector Group Demo"
 }
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

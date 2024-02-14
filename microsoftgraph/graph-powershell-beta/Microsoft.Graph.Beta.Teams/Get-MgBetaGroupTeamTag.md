@@ -37,8 +37,6 @@ Get-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Read the properties and relationships of a tag object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

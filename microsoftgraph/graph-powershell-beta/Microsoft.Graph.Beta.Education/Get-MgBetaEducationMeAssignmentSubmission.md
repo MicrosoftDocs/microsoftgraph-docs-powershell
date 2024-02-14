@@ -61,8 +61,6 @@ For details, see the examples section.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

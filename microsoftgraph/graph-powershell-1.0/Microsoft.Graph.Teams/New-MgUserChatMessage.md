@@ -66,8 +66,6 @@ This API can't create a new chat; you must use the list chats method to retrieve
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-messages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

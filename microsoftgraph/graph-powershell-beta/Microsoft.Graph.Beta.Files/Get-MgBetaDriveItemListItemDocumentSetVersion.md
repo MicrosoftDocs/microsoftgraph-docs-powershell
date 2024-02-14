@@ -41,8 +41,6 @@ Read the properties and relationships of a documentSetVersion object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

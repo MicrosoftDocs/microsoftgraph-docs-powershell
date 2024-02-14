@@ -51,7 +51,7 @@ Only teachers, students, and applications with application permissions can perfo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationcategory-get-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get assignment categories
 
 ```powershell
 
@@ -60,7 +60,29 @@ Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId
 
 ```
-This example shows how to use the Get-MgEducationClassAssignmentCategory Cmdlet.
+This example will get assignment categories
+
+### Example 2: Using `$filter` to get assignment categories
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -Filter "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'" 
+
+```
+This example shows using `$filter` to get assignment categories
+
+### Example 3: Using `$orderby` to get assignment categories
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -Sort "displayName" 
+
+```
+This example shows using `$orderby` to get assignment categories
 
 
 ## PARAMETERS

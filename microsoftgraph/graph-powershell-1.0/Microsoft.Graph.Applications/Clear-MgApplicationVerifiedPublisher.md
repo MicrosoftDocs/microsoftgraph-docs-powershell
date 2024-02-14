@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher
@@ -30,13 +30,17 @@ Unset the verifiedPublisher previously set on an application, removing all verif
 For more information, see Publisher verification.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Clear-MgApplicationVerifiedPublisher -ApplicationId $applicationId
+
+```
+This example shows how to use the Clear-MgApplicationVerifiedPublisher Cmdlet.
+
 
 ## PARAMETERS
 

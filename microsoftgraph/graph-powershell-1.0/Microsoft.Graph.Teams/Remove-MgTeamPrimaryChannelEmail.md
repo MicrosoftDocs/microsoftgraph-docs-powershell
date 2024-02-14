@@ -35,8 +35,6 @@ You can remove an email address only if it was provisioned using the provisionEm
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-removeemail-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

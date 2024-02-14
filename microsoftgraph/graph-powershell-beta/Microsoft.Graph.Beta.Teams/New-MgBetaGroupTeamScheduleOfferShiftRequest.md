@@ -48,8 +48,6 @@ New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create an instance of an offerShiftRequest.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

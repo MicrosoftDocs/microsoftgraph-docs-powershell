@@ -37,8 +37,6 @@ Get-MgBetaGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

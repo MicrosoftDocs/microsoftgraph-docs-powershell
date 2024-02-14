@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelegatedpermissionclassification
@@ -40,13 +40,17 @@ The permission classifications for delegated permissions exposed by the app that
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
+
 
 ## PARAMETERS
 

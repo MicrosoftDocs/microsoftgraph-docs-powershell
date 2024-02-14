@@ -22,8 +22,6 @@ Get-MgBetaDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [
 ## DESCRIPTION
 Get deviceManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

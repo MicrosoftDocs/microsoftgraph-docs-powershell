@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto
@@ -39,13 +39,17 @@ App role assignments for this app or service, granted to users, groups, and othe
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalAppRoleAssignedTo Cmdlet.
+
 
 ## PARAMETERS
 

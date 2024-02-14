@@ -33,8 +33,6 @@ Remove-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdenti
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

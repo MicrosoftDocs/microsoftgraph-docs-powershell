@@ -37,8 +37,6 @@ Get-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Prope
 ## DESCRIPTION
 Retrieve the properties and relationships of a schedulingGroup by ID.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

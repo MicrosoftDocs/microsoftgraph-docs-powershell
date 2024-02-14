@@ -73,8 +73,6 @@ Add a contact to the root Contacts folder or to the contacts endpoint of another
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-contacts-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -37,8 +37,6 @@ Get-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Propert
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOffReason object by ID.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

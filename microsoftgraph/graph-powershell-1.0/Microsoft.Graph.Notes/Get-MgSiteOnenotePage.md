@@ -43,8 +43,6 @@ Getting page information Access a page's metadata by page identifier: Getting pa
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -41,8 +41,6 @@ Retrieve a conversationMember from a chat.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-members-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

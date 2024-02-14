@@ -52,8 +52,6 @@ Create an instance of a swapShiftsChangeRequest object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/swapshiftschangerequest-post-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

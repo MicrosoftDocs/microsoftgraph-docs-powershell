@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta
@@ -22,12 +22,13 @@ Get-MgBetaServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 Invoke function delta
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaServicePrincipalDelta Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalDelta
 ```
+This example shows how to use the Get-MgBetaServicePrincipalDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

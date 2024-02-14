@@ -51,8 +51,6 @@ Get-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <
 A collection of all the pinned messages in the chat.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

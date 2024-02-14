@@ -44,8 +44,6 @@ New-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Add a new conversation member to a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

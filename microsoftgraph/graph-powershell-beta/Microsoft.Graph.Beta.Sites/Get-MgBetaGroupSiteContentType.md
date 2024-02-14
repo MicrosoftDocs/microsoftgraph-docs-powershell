@@ -41,8 +41,6 @@ Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

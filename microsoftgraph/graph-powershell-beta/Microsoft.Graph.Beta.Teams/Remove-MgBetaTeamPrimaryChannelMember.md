@@ -32,8 +32,6 @@ Remove-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <S
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ConversationMemberId

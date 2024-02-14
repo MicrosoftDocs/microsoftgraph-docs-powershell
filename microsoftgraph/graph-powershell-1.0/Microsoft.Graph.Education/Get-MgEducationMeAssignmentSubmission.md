@@ -57,8 +57,6 @@ Students will not see the grade or feedback until the assignment has been releas
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

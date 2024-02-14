@@ -53,8 +53,6 @@ Retrieving the content of the transcript returns the stream of text associated w
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calltranscript-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

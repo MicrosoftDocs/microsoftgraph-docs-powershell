@@ -44,8 +44,6 @@ Get-MgBetaContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

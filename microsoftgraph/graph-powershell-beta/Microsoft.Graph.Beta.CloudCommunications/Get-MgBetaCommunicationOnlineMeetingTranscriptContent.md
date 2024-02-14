@@ -36,8 +36,6 @@ Read-only.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CallTranscriptId

@@ -39,8 +39,6 @@ Get-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <
 A collection of all the tabs in the channel.
 A navigation property.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

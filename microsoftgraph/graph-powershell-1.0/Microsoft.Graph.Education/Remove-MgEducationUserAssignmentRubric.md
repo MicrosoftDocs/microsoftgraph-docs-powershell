@@ -36,8 +36,6 @@ This method doesn't delete the rubric itself and can only be performed by teache
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-rubric-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

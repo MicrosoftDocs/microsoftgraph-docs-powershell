@@ -61,8 +61,6 @@ New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Send a new chatMessage in the specified channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

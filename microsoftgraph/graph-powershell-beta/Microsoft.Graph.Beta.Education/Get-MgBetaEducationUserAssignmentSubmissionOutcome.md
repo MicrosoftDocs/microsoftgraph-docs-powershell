@@ -39,8 +39,6 @@ Get-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ## DESCRIPTION
 Get outcomes from education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -49,8 +49,6 @@ Update-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

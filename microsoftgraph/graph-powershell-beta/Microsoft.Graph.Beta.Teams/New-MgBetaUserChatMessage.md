@@ -64,8 +64,6 @@ New-MgBetaUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 Send a new chatMessage in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before creating a chat message.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

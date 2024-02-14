@@ -41,8 +41,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

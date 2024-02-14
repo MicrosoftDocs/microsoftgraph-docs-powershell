@@ -37,8 +37,6 @@ Get-MgBetaGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 List of channels shared with the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

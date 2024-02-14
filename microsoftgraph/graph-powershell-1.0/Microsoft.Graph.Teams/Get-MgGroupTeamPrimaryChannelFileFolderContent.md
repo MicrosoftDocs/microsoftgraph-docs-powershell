@@ -31,8 +31,6 @@ Get-MgGroupTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> -Ou
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

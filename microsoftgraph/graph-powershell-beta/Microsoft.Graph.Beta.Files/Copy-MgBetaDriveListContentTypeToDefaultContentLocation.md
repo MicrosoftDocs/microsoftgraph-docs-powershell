@@ -52,8 +52,6 @@ The file can then be added as a default file or template via a POST operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

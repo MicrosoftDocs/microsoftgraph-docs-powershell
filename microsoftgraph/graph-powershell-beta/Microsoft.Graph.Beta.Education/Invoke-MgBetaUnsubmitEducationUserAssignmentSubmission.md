@@ -44,8 +44,6 @@ A teacher can also unsubmit a student's assignment on their behalf.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-unsubmit-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

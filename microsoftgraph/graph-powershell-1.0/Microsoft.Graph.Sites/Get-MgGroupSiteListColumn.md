@@ -37,8 +37,6 @@ Get-MgGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

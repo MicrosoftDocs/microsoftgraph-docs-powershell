@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetauserapproleassignment
@@ -30,13 +30,15 @@ Remove-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatc
 Delete an appRoleAssignment that has been granted to a user.
 
 ## EXAMPLES
+### Example 1: Remove a user's application role assignment
 
-### EXAMPLE 1
-```
+```powershell
 Remove-MgBetaUserAppRoleAssignment ` 
 -AppRoleAssignmentID '01B8ir38J0eoiYqyMt_qAVDX9vgSB6xDur4zn5zOluM' ` 
 -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
+
+This example removes the specified application role from the specified user.
 
 ## PARAMETERS
 

@@ -57,8 +57,6 @@ Since the post resource supports extensions, you can also use the GET operation 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

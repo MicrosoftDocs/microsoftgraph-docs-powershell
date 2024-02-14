@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalhomerealmdiscoverypolicybyref
@@ -44,17 +44,21 @@ New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicati
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde"
 }
 
 New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

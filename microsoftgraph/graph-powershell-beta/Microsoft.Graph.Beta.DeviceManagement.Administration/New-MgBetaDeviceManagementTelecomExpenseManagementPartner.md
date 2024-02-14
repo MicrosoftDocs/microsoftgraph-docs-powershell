@@ -31,8 +31,6 @@ New-MgBetaDeviceManagementTelecomExpenseManagementPartner
 ## DESCRIPTION
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

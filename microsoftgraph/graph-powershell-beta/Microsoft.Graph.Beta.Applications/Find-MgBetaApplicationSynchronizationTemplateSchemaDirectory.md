@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationtemplateschemadirectory
@@ -29,16 +29,6 @@ Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAppl
 Discover the latest schema definition for provisioning to an application.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 

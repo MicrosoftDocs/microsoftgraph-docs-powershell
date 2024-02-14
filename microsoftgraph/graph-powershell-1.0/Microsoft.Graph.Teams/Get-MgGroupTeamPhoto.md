@@ -36,8 +36,6 @@ The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 
 Photos can be any dimension if they're stored in Microsoft Entra ID.
 You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.If the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

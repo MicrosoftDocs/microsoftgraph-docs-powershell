@@ -46,8 +46,6 @@ To update the properties of a published assignment, see update an assignment.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-publish-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

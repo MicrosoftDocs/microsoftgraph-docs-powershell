@@ -43,8 +43,6 @@ Only teachers and students can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationrubric-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

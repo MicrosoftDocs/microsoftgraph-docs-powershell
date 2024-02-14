@@ -37,8 +37,6 @@ Get-MgBetaAllGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -42,8 +42,6 @@ Clients can also inspect the configuration of the schedule.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -36,8 +36,6 @@ Existing shift instances assigned to the scheduling group remain part of the gro
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedulinggroup-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

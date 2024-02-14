@@ -37,8 +37,6 @@ Get-MgBetaGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the properties and relationships of a member of a standard tag in a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

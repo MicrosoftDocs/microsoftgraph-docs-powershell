@@ -61,8 +61,6 @@ New-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Send a new chatMessage in the specified channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

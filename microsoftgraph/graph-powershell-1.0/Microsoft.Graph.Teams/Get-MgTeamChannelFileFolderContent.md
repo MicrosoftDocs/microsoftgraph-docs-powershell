@@ -31,8 +31,6 @@ Get-MgTeamChannelFileFolderContent -InputObject <ITeamsIdentity> -OutFile <Strin
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

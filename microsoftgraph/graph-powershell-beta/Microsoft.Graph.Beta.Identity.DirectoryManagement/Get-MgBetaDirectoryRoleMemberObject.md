@@ -44,8 +44,6 @@ Get-MgBetaDirectoryRoleMemberObject -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

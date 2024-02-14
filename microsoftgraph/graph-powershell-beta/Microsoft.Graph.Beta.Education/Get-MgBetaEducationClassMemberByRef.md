@@ -30,8 +30,6 @@ Note that if the delegated token is used, members can only be seen by other memb
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-members-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

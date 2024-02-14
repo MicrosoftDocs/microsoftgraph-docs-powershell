@@ -52,8 +52,6 @@ You can add an attachment to an existing message by posting to its attachments c
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-post-attachments-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

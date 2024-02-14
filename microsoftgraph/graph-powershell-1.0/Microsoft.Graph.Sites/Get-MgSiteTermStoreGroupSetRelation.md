@@ -56,8 +56,6 @@ Get-MgSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

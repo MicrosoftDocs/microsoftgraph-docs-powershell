@@ -48,8 +48,6 @@ This API cannot create a new chat; you must use the list chats method to retriev
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-pinnedmessages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

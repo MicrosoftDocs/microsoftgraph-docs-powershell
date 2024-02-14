@@ -62,8 +62,6 @@ New-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

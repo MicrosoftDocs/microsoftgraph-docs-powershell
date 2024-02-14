@@ -34,8 +34,6 @@ Only teachers, students, and applications with application permissions can perfo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-rubric-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

@@ -30,8 +30,6 @@ Remove-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete an openShift object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

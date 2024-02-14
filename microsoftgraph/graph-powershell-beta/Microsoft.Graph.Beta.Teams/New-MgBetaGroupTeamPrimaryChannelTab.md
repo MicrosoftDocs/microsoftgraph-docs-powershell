@@ -46,8 +46,6 @@ New-MgBetaGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to tabs for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,8 +48,6 @@ Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-post-appliesto-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

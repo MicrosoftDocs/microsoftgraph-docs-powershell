@@ -30,8 +30,6 @@ Delegated tokens must be members of the class to get the teacher list.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-teachers-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

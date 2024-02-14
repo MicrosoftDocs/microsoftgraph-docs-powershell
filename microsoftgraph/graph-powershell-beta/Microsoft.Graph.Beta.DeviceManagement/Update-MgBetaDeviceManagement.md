@@ -91,21 +91,6 @@ Update-MgBetaDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [
 Update the properties of a deviceManagement object.
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.DeviceManagement
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.deviceManagement"
-}
-
-Update-MgBetaDeviceManagement -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaDeviceManagement Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

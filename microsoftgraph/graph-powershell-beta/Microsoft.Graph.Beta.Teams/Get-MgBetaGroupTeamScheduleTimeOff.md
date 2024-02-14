@@ -36,8 +36,6 @@ Get-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <Str
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOff object by ID.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

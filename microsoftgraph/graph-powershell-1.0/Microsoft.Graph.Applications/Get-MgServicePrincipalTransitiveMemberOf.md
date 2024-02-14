@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltransitivememberof
@@ -38,13 +38,17 @@ Get-MgServicePrincipalTransitiveMemberOf -InputObject <IApplicationsIdentity> [-
 Get transitiveMemberOf from servicePrincipals
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 

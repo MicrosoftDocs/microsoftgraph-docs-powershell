@@ -39,8 +39,6 @@ You can add members to the team after the request returns a successful response.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-completemigration-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

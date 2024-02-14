@@ -38,8 +38,6 @@ To remove the email address of a channel, use the removeEmail method.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-provisionemail-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

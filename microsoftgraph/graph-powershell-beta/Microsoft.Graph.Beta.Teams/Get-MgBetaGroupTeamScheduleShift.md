@@ -36,8 +36,6 @@ Get-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <Strin
 ## DESCRIPTION
 Retrieve the properties and relationships of a shift object by ID.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

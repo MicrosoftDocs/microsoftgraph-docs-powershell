@@ -38,8 +38,6 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

@@ -41,8 +41,6 @@ Get-MgUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity> [-
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

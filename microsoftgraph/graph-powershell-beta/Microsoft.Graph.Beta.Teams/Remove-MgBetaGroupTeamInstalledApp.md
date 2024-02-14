@@ -30,8 +30,6 @@ Remove-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Uninstalls an app from the specified team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicybyref
@@ -44,13 +44,17 @@ Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplic
 Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
+```
+This example shows how to use the Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

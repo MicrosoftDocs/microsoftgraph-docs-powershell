@@ -54,8 +54,6 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-copynotebook-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

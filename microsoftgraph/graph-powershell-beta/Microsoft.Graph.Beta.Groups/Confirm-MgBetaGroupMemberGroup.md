@@ -56,8 +56,6 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,8 +31,6 @@ Remove-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

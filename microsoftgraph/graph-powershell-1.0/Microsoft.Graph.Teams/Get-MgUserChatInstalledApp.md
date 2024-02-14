@@ -38,8 +38,6 @@ Get-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get an app installed in a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

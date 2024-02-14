@@ -38,8 +38,6 @@ Get-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

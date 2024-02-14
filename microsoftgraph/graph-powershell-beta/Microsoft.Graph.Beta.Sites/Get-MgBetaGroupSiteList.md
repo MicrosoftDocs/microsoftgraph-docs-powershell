@@ -41,8 +41,6 @@ Get the list of richLongRunningOperations associated with a list.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-operations-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

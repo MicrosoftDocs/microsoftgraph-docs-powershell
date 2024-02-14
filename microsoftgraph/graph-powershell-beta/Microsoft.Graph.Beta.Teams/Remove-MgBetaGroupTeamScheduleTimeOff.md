@@ -30,8 +30,6 @@ Remove-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a timeOff instance from a schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

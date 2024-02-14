@@ -30,11 +30,6 @@ New-MgDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate
 ## DESCRIPTION
 Add new entity to directoryRoleTemplates
 
-## EXAMPLES
-
-
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties

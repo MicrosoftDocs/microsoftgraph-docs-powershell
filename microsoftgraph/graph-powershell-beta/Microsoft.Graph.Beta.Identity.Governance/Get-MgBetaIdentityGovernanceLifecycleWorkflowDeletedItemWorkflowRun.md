@@ -41,8 +41,6 @@ Read the properties and relationships of a run object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-run-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

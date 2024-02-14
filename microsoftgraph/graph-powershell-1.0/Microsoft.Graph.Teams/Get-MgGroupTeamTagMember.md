@@ -41,8 +41,6 @@ Get the properties and relationships of a member of a standard tag in a team.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -34,8 +34,6 @@ Retrieve the properties and relationships of a plannerPlanDetails object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplandetails-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

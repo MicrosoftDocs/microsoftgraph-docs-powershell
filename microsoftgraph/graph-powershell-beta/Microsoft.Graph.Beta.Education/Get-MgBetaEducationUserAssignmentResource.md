@@ -44,8 +44,6 @@ Only teachers, students, and applications with application permissions can perfo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -42,8 +42,6 @@ Read the properties and relationships of a workflowVersion object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflowversion-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

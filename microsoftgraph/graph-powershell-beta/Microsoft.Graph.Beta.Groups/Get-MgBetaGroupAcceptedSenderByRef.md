@@ -31,8 +31,6 @@ Make sure you do not specify the same user or group in the accepted senders and 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-acceptedsenders-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

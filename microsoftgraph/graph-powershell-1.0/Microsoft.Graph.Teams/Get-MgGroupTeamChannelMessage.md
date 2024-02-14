@@ -38,8 +38,6 @@ Get-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

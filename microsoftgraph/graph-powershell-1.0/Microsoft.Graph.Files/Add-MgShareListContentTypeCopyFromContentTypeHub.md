@@ -54,8 +54,6 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopyfromcontenttypehub-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

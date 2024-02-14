@@ -51,8 +51,6 @@ The response provides details about which memberships could and couldn't be crea
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationmembers-add-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

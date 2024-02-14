@@ -34,8 +34,6 @@ The zip file that contains all attachments for a message.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncement-list-messages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

@@ -40,8 +40,6 @@ timeOffItem instances that have been assigned this reason remain assigned to thi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

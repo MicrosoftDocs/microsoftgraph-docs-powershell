@@ -35,8 +35,6 @@ Get media content for the navigation property overridesPages from identity
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

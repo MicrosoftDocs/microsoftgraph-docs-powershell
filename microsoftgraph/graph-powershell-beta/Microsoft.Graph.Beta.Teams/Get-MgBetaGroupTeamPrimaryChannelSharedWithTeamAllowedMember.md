@@ -38,8 +38,6 @@ Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMember -InputObject <ITeam
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

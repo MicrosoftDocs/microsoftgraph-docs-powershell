@@ -31,8 +31,6 @@ Remove-MgBetaDeviceManagementTelecomExpenseManagementPartner
 ## DESCRIPTION
 Delete navigation property telecomExpenseManagementPartners for deviceManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -IfMatch

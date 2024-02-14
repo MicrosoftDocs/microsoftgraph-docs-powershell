@@ -39,8 +39,6 @@ Get-MgEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 Schools to which the user belongs.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

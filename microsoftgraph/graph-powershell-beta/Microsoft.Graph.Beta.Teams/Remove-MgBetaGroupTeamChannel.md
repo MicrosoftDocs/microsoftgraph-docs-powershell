@@ -30,8 +30,6 @@ Remove-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete the channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

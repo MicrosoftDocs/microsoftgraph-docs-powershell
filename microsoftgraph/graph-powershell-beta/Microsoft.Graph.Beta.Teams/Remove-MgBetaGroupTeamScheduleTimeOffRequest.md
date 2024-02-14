@@ -30,8 +30,6 @@ Remove-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfM
 ## DESCRIPTION
 Delete a timeOffRequest object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

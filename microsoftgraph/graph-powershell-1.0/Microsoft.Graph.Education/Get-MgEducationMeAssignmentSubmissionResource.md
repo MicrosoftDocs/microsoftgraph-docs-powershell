@@ -48,8 +48,6 @@ This resource is wrapped with a possible pointer back to the assignment resource
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmissionresource-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

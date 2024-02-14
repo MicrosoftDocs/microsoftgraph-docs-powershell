@@ -46,8 +46,6 @@ Update-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of a teamworkTag object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -28,8 +28,6 @@ Retrieve a list of section groups from the specified notebook.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sectiongroups-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

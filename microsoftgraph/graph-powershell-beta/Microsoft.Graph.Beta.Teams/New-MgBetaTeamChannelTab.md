@@ -46,8 +46,6 @@ New-MgBetaTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to tabs for teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

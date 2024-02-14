@@ -48,8 +48,6 @@ New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <I
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
