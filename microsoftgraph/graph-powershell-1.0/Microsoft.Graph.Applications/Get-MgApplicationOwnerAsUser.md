@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasuser
@@ -36,18 +36,6 @@ Get-MgApplicationOwnerAsUser -InputObject <IApplicationsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -337,4 +325,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasuser)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint
@@ -42,22 +42,6 @@ New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParamet
 
 ## DESCRIPTION
 Create new navigation property to endpoints for servicePrincipals
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -347,4 +331,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint)
+
 

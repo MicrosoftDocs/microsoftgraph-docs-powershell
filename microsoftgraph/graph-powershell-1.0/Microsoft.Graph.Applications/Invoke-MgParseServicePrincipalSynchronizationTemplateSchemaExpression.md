@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression
@@ -49,18 +49,6 @@ Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression -InputObje
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -421,4 +409,5 @@ Not nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression)
+
 

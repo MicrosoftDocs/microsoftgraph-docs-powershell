@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationtemplateschemadirectory
@@ -45,18 +45,6 @@ New-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplicati
 
 ## DESCRIPTION
 Create new navigation property to directories for applications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -446,4 +434,5 @@ Not nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationtemplateschemadirectory)
+
 

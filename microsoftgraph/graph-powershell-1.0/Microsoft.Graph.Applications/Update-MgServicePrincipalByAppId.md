@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid
@@ -97,18 +97,6 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update entity in servicePrincipals by appId
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -2557,4 +2545,5 @@ VERIFIEDPUBLISHER \<IMicrosoftGraphVerifiedPublisher\>: verifiedPublisher
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
+
 

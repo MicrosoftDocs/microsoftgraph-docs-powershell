@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand
@@ -44,18 +44,6 @@ New-MgApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -289,4 +277,5 @@ Worker for synchronization a user between Workday and either Active Directory or
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicy
@@ -35,22 +35,6 @@ Get-MgApplicationHomeRealmDiscoveryPolicy -InputObject <IApplicationsIdentity> [
 
 ## DESCRIPTION
 Get homeRealmDiscoveryPolicies from applications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -324,4 +308,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicy)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgapplicationsynchronizationjob
@@ -29,18 +29,6 @@ Suspend-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-H
 ## DESCRIPTION
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -209,4 +197,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgapplicationsynchronizationjob)
+
 
