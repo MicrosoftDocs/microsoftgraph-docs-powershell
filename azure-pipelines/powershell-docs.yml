@@ -64,13 +64,13 @@ jobs:
   #     pwsh: true
   #     filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
 
-  - task: PowerShell@2
-    displayName: 'Update metadata header'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Update metadata header'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
 
   # - task: PublishBuildArtifacts@1
   #   displayName: 'Publish Examples to be reviewed as artifact'
@@ -79,13 +79,13 @@ jobs:
   #     ArtifactName: 'MissingExternalDocs'
   #     publishLocation: 'Container'
 
-  # - task: PowerShell@2
-  #   displayName: 'Update Links'
-  #   continueOnError: false
-  #   inputs:
-  #     targetType: 'filePath'
-  #     pwsh: true
-  #     filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
+  - task: PowerShell@2
+    displayName: 'Update Links'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
   
   - task: PowerShell@2
     displayName: 'Repair Examples and Descriptions and Title'
