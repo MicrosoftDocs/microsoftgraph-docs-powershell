@@ -87,7 +87,7 @@ function Update-Files{
       Add-Back-Ticks -FilePath $filePath
       #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
-      #CleanupFile -File $filePath
+      CleanupFile -File $filePath
     }
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message

@@ -272,123 +272,125 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVAILABILITY \<IMicrosoftGraphShiftAvailability\[\]\>: Availability of the user to be scheduled for work and its recurrence pattern.
-  \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
+AVAILABILITY <IMicrosoftGraphShiftAvailability- `[]`>: Availability of the user to be scheduled for work and its recurrence pattern.
+  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-      \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
+      - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
 If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
-      \[FirstDayOfWeek \<String\>\]: dayOfWeek
-      \[Index \<String\>\]: weekIndex
-      \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+      - `[FirstDayOfWeek <String>]`: dayOfWeek
+      - `[Index <String>]`: weekIndex
+      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      \[Month \<Int32?\>\]: The month in which the event occurs. 
+      - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
-      \[Type \<String\>\]: recurrencePatternType
-    \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
+      - `[Type <String>]`: recurrencePatternType
+    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-      \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
+      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-      \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
+      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-      \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
+      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-      \[Type \<String\>\]: recurrenceRangeType
-  \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
-    \[EndTime \<String\>\]: End time for the time range.
-    \[StartTime \<String\>\]: Start time for the time range.
-  \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
+      - `[Type <String>]`: recurrenceRangeType
+  - `[TimeSlots <IMicrosoftGraphTimeRange- `[]`>]`: The time slot(s) preferred by the user.
+    - `[EndTime <String>]`: End time for the time range.
+    - `[StartTime <String>]`: Start time for the time range.
+  - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
-BODYPARAMETER \<IMicrosoftGraphShiftPreferences\>: shiftPreferences
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+BODYPARAMETER `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Availability \<IMicrosoftGraphShiftAvailability\[\]\>\]: Availability of the user to be scheduled for work and its recurrence pattern.
-    \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
+  - `[Availability <IMicrosoftGraphShiftAvailability- `[]`>]`: Availability of the user to be scheduled for work and its recurrence pattern.
+    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-        \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
+        - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
 If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
-        \[FirstDayOfWeek \<String\>\]: dayOfWeek
-        \[Index \<String\>\]: weekIndex
-        \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+        - `[FirstDayOfWeek <String>]`: dayOfWeek
+        - `[Index <String>]`: weekIndex
+        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        \[Month \<Int32?\>\]: The month in which the event occurs. 
+        - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
-        \[Type \<String\>\]: recurrencePatternType
-      \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
+        - `[Type <String>]`: recurrencePatternType
+      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-        \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
+        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-        \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
+        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-        \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
+        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-        \[Type \<String\>\]: recurrenceRangeType
-    \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
-      \[EndTime \<String\>\]: End time for the time range.
-      \[StartTime \<String\>\]: Start time for the time range.
-    \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
+        - `[Type <String>]`: recurrenceRangeType
+    - `[TimeSlots <IMicrosoftGraphTimeRange- `[]`>]`: The time slot(s) preferred by the user.
+      - `[EndTime <String>]`: End time for the time range.
+      - `[StartTime <String>]`: Start time for the time range.
+    - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference)
+
+
 

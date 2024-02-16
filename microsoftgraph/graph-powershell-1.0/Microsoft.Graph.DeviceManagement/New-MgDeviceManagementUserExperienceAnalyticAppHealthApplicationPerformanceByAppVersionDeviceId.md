@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthapplicationperformancebyappversiondeviceid
@@ -299,23 +299,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId\>: The user experience analytics application performance entity contains application performance by application version device id.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId>`: The user experience analytics application performance entity contains application performance by application version device id.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppCrashCount \<Int32?\>\]: The number of crashes for the app.
+  - `[AppCrashCount <Int32?>]`: The number of crashes for the app.
 Valid values -2147483648 to 2147483647
-  \[AppDisplayName \<String\>\]: The friendly name of the application.
-  \[AppName \<String\>\]: The name of the application.
-  \[AppPublisher \<String\>\]: The publisher of the application.
-  \[AppVersion \<String\>\]: The version of the application.
-  \[DeviceDisplayName \<String\>\]: The name of the device.
+  - `[AppDisplayName <String>]`: The friendly name of the application.
+  - `[AppName <String>]`: The name of the application.
+  - `[AppPublisher <String>]`: The publisher of the application.
+  - `[AppVersion <String>]`: The version of the application.
+  - `[DeviceDisplayName <String>]`: The name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[DeviceId \<String\>\]: The Intune device id of the device.
+  - `[DeviceId <String>]`: The Intune device id of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[ProcessedDateTime \<DateTime?\>\]: The date and time when the statistics were last computed.
+  - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed.
 The value cannot be modified and is automatically populated when the statistics are computed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'.
@@ -325,4 +325,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthapplicationperformancebyappversiondeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthapplicationperformancebyappversiondeviceid)
+
+
 
