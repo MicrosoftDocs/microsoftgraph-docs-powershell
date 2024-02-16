@@ -37,18 +37,6 @@ Get-MgUserOwnedObjectAsApplication -InputObject <IUsersIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,6 +316,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasapplication)
+
 
 
 

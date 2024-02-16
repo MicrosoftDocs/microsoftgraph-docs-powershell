@@ -89,18 +89,6 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the properties of an application object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddIns
@@ -2371,6 +2359,7 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid)
+
 
 
 

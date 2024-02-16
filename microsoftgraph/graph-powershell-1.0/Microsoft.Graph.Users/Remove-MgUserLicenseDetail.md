@@ -28,22 +28,6 @@ Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-H
 ## DESCRIPTION
 Delete navigation property licenseDetails for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -217,6 +201,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserlicensedetail)
+
 
 
 

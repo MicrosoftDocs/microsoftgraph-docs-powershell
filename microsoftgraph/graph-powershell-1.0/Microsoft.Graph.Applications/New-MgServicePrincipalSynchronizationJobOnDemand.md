@@ -45,18 +45,6 @@ New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIden
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,6 +277,7 @@ Worker for synchronization a user between Workday and either Active Directory or
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand)
+
 
 
 
