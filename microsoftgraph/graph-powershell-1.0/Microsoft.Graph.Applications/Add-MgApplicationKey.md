@@ -290,12 +290,12 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>`: .
   `[(Any) <Object>]`: This indicates any property can be added to this object.
-  \[KeyCredential \<IMicrosoftGraphKeyCredential\>\]: keyCredential
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CustomKeyIdentifier \<Byte\[\]\>\]: A 40-character binary type that can be used to identify the credential.
+  `[KeyCredential <IMicrosoftGraphKeyCredential>]`: keyCredential
+    `[(Any) <Object>]`: This indicates any property can be added to this object.
+    `[CustomKeyIdentifier <Byte`[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-    \[DisplayName \<String\>\]: Friendly name for the key.
+    `[DisplayName <String>]`: Friendly name for the key.
 Optional.
     \[EndDateTime \<DateTime?\>\]: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
