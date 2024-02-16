@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportcountasorgcontact
@@ -26,18 +26,6 @@ Get-MgBetaUserDirectReportCountAsOrgContact -InputObject <IUsersIdentity> [-Filt
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -192,4 +180,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportcountasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportcountasorgcontact)
+
 

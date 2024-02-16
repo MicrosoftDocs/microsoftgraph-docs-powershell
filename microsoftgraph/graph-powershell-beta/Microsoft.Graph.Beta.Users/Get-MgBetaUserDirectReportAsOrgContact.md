@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportasorgcontact
@@ -36,18 +36,6 @@ Get-MgBetaUserDirectReportAsOrgContact -InputObject <IUsersIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -338,4 +326,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportasorgcontact)
+
 

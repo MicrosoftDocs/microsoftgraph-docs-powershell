@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver
@@ -36,22 +36,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject 
 
 ## DESCRIPTION
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -442,4 +426,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
@@ -48,22 +48,6 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the navigation property settings in users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -566,4 +550,5 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)
+
 

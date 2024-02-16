@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersetting
@@ -26,22 +26,6 @@ Remove-MgBetaUserSetting -InputObject <IUsersIdentity> [-IfMatch <String>] [-Hea
 
 ## DESCRIPTION
 Delete navigation property settings for users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -211,4 +195,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersetting)
+
 

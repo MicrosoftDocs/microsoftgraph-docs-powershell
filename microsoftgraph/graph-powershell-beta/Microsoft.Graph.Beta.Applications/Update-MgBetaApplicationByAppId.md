@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid
@@ -93,18 +93,6 @@ Update-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the properties of an application object.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -3486,4 +3474,5 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid)
+
 

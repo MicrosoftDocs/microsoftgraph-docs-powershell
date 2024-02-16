@@ -7,8 +7,8 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
-    #$graphMapping.Add("beta", "beta")
+    #$graphMapping.Add("v1.0", "v1.0")
+    $graphMapping.Add("beta", "beta")
    
     return $graphMapping
 }

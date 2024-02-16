@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistextension
@@ -37,22 +37,6 @@ Get-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The collection of open extensions defined for the task list.
 Nullable.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -343,4 +327,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistextension)
+
 

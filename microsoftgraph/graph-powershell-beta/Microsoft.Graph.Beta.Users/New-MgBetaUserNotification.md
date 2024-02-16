@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausernotification
@@ -43,22 +43,6 @@ New-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to notifications for users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -405,4 +389,5 @@ By default, all push endpoint types (Windows, iOS, Android and WebPush) are enab
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausernotification)
+
 

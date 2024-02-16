@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand
@@ -46,22 +46,6 @@ New-MgBetaApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdent
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -304,4 +288,5 @@ Worker for synchronization a user between Workday and either Active Directory or
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand)
+
 

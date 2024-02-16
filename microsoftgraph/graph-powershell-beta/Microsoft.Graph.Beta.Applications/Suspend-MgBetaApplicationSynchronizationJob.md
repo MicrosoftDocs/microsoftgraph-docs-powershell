@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob
@@ -29,22 +29,6 @@ Suspend-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -222,4 +206,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob)
+
 
