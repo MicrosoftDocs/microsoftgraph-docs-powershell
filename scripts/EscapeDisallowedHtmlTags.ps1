@@ -7,7 +7,7 @@ Param(
 function Get-GraphMapping {
     $graphMapping = @{}
     $graphMapping.Add("v1.0", "graph-powershell-1.0")
-    $graphMapping.Add("beta", "graph-powershell-beta")
+    #$graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
 
@@ -23,10 +23,10 @@ function Escape-Angle-Brackets {
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Escaped disallowed html tags" 	
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Escaped disallowed html tags" 	
 }
 function Get-FilesByProfile{
  Param(
@@ -63,6 +63,7 @@ function Get-Files{
     $moduleImportName = "$ModulePrefix.$ModuleName"
     $moduleDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\$GraphProfilePath\$moduleImportName"
     Update-Files -ModuleDocsPath $moduleDocsPath -GraphProfile $GraphProfile -ModuleName $ModuleName
+     
 }
 
 if (-not (Test-Path $ModuleMappingConfigPath)) {
@@ -83,9 +84,10 @@ function Update-Files{
     )
 	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-      Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+      #Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
+      CleanupFile -File $filePath
     }
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
@@ -303,21 +305,21 @@ function CleanupFile {
         Write-Host "`nError Item Name: "$_.Exception.ItemName
     }
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-    $currentBranch = git rev-parse --abbrev-ref HEAD
-    if($currentBranch -ne $proposedBranch){
-        git checkout $proposedBranch
-     }
-     git checkout $proposedBranch
-}
-Set-Location ..\microsoftgraph-docs-powershell
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#     $currentBranch = git rev-parse --abbrev-ref HEAD
+#     if($currentBranch -ne $proposedBranch){
+#         git checkout $proposedBranch
+#      }
+#      git checkout $proposedBranch
+# }
+# Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

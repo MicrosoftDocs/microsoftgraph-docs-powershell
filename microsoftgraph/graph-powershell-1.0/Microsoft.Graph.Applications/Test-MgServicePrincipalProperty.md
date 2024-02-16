@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty
@@ -259,4 +259,5 @@ BODYPARAMETER \<IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPos
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty)
+
 
