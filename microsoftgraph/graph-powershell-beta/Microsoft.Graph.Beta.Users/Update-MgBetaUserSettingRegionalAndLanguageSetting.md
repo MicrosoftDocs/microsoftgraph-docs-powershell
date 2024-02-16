@@ -346,121 +346,121 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORINGLANGUAGES \<IMicrosoftGraphLocaleInfo\[\]\>: Prioritized list of languages the user reads and authors in.Returned by default.
+AUTHORINGLANGUAGES <IMicrosoftGraphLocaleInfo- `[]`>: Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
-  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-BODYPARAMETER \<IMicrosoftGraphRegionalAndLanguageSettings\>: regionalAndLanguageSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthoringLanguages \<IMicrosoftGraphLocaleInfo\[\]\>\]: Prioritized list of languages the user reads and authors in.Returned by default.
+  - `[AuthoringLanguages <IMicrosoftGraphLocaleInfo- `[]`>]`: Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
-    \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-    \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-  \[DefaultDisplayLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[DefaultRegionalFormat \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[DefaultSpeechInputLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[DefaultTranslationLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[RegionalFormatOverrides \<IMicrosoftGraphRegionalFormatOverrides\>\]: regionalFormatOverrides
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Calendar \<String\>\]: The calendar to use, e.g., Gregorian Calendar.Returned by default.
-    \[FirstDayOfWeek \<String\>\]: The first day of the week to use, e.g., Sunday.Returned by default.
-    \[LongDateFormat \<String\>\]: The long date time format to be used for displaying dates.Returned by default.
-    \[LongTimeFormat \<String\>\]: The long time format to be used for displaying time.Returned by default.
-    \[ShortDateFormat \<String\>\]: The short date time format to be used for displaying dates.Returned by default.
-    \[ShortTimeFormat \<String\>\]: The short time format to be used for displaying time.Returned by default.
-    \[TimeZone \<String\>\]: The timezone to be used for displaying time.Returned by default.
-  \[TranslationPreferences \<IMicrosoftGraphTranslationPreferences\>\]: translationPreferences
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[LanguageOverrides \<IMicrosoftGraphTranslationLanguageOverride\[\]\>\]: Translation override behavior for languages, if any.Returned by default.
-      \[LanguageTag \<String\>\]: The language to apply the override.Returned by default.
+  - `[DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]`: regionalFormatOverrides
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Calendar <String>]`: The calendar to use, e.g., Gregorian Calendar.Returned by default.
+    - `[FirstDayOfWeek <String>]`: The first day of the week to use, e.g., Sunday.Returned by default.
+    - `[LongDateFormat <String>]`: The long date time format to be used for displaying dates.Returned by default.
+    - `[LongTimeFormat <String>]`: The long time format to be used for displaying time.Returned by default.
+    - `[ShortDateFormat <String>]`: The short date time format to be used for displaying dates.Returned by default.
+    - `[ShortTimeFormat <String>]`: The short time format to be used for displaying time.Returned by default.
+    - `[TimeZone <String>]`: The timezone to be used for displaying time.Returned by default.
+  - `[TranslationPreferences <IMicrosoftGraphTranslationPreferences>]`: translationPreferences
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LanguageOverrides <IMicrosoftGraphTranslationLanguageOverride- `[]`>]`: Translation override behavior for languages, if any.Returned by default.
+      - `[LanguageTag <String>]`: The language to apply the override.Returned by default.
 Not nullable.
-      \[TranslationBehavior \<String\>\]: translationBehavior
-    \[TranslationBehavior \<String\>\]: translationBehavior
-    \[UntranslatedLanguages \<String\[\]\>\]: The list of languages the user does not need translated.
+      - `[TranslationBehavior <String>]`: translationBehavior
+    - `[TranslationBehavior <String>]`: translationBehavior
+    - `[UntranslatedLanguages <String- `[]`>]`: The list of languages the user does not need translated.
 This is computed from the authoringLanguages collection in regionalAndLanguageSettings, and the languageOverrides collection in translationPreferences.
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
 Read only.
 
-DEFAULTDISPLAYLANGUAGE \<IMicrosoftGraphLocaleInfo\>: localeInfo
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+DEFAULTDISPLAYLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTREGIONALFORMAT \<IMicrosoftGraphLocaleInfo\>: localeInfo
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+DEFAULTREGIONALFORMAT `<IMicrosoftGraphLocaleInfo>`: localeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTSPEECHINPUTLANGUAGE \<IMicrosoftGraphLocaleInfo\>: localeInfo
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+DEFAULTSPEECHINPUTLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTTRANSLATIONLANGUAGE \<IMicrosoftGraphLocaleInfo\>: localeInfo
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+DEFAULTTRANSLATIONLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AppId \<String\>\]: Alternate key of servicePrincipal
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[NotificationId \<String\>\]: The unique identifier of notification
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
-  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
-  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
-  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[TrendingId \<String\>\]: The unique identifier of trending
-  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of servicePrincipal
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[NotificationId <String>]`: The unique identifier of notification
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
+  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
+  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
+  - `[UserId <String>]`: The unique identifier of user
 
-REGIONALFORMATOVERRIDES \<IMicrosoftGraphRegionalFormatOverrides\>: regionalFormatOverrides
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Calendar \<String\>\]: The calendar to use, e.g., Gregorian Calendar.Returned by default.
-  \[FirstDayOfWeek \<String\>\]: The first day of the week to use, e.g., Sunday.Returned by default.
-  \[LongDateFormat \<String\>\]: The long date time format to be used for displaying dates.Returned by default.
-  \[LongTimeFormat \<String\>\]: The long time format to be used for displaying time.Returned by default.
-  \[ShortDateFormat \<String\>\]: The short date time format to be used for displaying dates.Returned by default.
-  \[ShortTimeFormat \<String\>\]: The short time format to be used for displaying time.Returned by default.
-  \[TimeZone \<String\>\]: The timezone to be used for displaying time.Returned by default.
+REGIONALFORMATOVERRIDES `<IMicrosoftGraphRegionalFormatOverrides>`: regionalFormatOverrides
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Calendar <String>]`: The calendar to use, e.g., Gregorian Calendar.Returned by default.
+  - `[FirstDayOfWeek <String>]`: The first day of the week to use, e.g., Sunday.Returned by default.
+  - `[LongDateFormat <String>]`: The long date time format to be used for displaying dates.Returned by default.
+  - `[LongTimeFormat <String>]`: The long time format to be used for displaying time.Returned by default.
+  - `[ShortDateFormat <String>]`: The short date time format to be used for displaying dates.Returned by default.
+  - `[ShortTimeFormat <String>]`: The short time format to be used for displaying time.Returned by default.
+  - `[TimeZone <String>]`: The timezone to be used for displaying time.Returned by default.
 
-TRANSLATIONPREFERENCES \<IMicrosoftGraphTranslationPreferences\>: translationPreferences
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[LanguageOverrides \<IMicrosoftGraphTranslationLanguageOverride\[\]\>\]: Translation override behavior for languages, if any.Returned by default.
-    \[LanguageTag \<String\>\]: The language to apply the override.Returned by default.
+TRANSLATIONPREFERENCES `<IMicrosoftGraphTranslationPreferences>`: translationPreferences
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LanguageOverrides <IMicrosoftGraphTranslationLanguageOverride- `[]`>]`: Translation override behavior for languages, if any.Returned by default.
+    - `[LanguageTag <String>]`: The language to apply the override.Returned by default.
 Not nullable.
-    \[TranslationBehavior \<String\>\]: translationBehavior
-  \[TranslationBehavior \<String\>\]: translationBehavior
-  \[UntranslatedLanguages \<String\[\]\>\]: The list of languages the user does not need translated.
+    - `[TranslationBehavior <String>]`: translationBehavior
+  - `[TranslationBehavior <String>]`: translationBehavior
+  - `[UntranslatedLanguages <String- `[]`>]`: The list of languages the user does not need translated.
 This is computed from the authoringLanguages collection in regionalAndLanguageSettings, and the languageOverrides collection in translationPreferences.
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
@@ -470,4 +470,7 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
+
+
+
 

@@ -247,20 +247,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsImpactingProcess\>: The user experience analytics top impacting process entity.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsImpactingProcess>`: The user experience analytics top impacting process entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Category \<String\>\]: The category of impacting process.
-  \[Description \<String\>\]: The description of process.
-  \[DeviceId \<String\>\]: The unique identifier of the impacted device.
-  \[ImpactValue \<Double?\>\]: The impact value of the process.
+  - `[Category <String>]`: The category of impacting process.
+  - `[Description <String>]`: The description of process.
+  - `[DeviceId <String>]`: The unique identifier of the impacted device.
+  - `[ImpactValue <Double?>]`: The impact value of the process.
 Valid values 0 to 1.79769313486232E+308
-  \[ProcessName \<String\>\]: The process name.
-  \[Publisher \<String\>\]: The publisher of the process.
+  - `[ProcessName <String>]`: The process name.
+  - `[Publisher <String>]`: The publisher of the process.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess)
+
+
+
 
 

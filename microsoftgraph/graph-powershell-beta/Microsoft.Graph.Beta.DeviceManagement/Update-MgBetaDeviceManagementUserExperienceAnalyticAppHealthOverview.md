@@ -190,43 +190,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsCategory\>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Insights \<IMicrosoftGraphUserExperienceAnalyticsInsight\[\]\>\]: The insights for the category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>]`: The insights for the category.
 Read-only.
-    \[InsightId \<String\>\]: The unique identifier of the user experience analytics insight.
-    \[Severity \<UserExperienceAnalyticsInsightSeverity?\>\]: Indicates severity of insights.
+    - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
 Possible values are: None, Informational, Warning, Error.
-    \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of the user experience analytics metric.
-    \[Values \<IMicrosoftGraphUserExperienceAnalyticsInsightValue\[\]\>\]: The value of the user experience analytics insight.
-  \[MetricValues \<IMicrosoftGraphUserExperienceAnalyticsMetric\[\]\>\]: The metric values for the user experience analytics category.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
+    - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric- `[]`>]`: The metric values for the user experience analytics category.
 Read-only.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Unit \<String\>\]: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric.
 Examples: none, percentage, count, seconds, score.
-    \[Value \<Double?\>\]: The value of the user experience analytics metric.
+    - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-INSIGHTS \<IMicrosoftGraphUserExperienceAnalyticsInsight\[\]\>: The insights for the category.
+INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>: The insights for the category.
 Read-only.
-  \[InsightId \<String\>\]: The unique identifier of the user experience analytics insight.
-  \[Severity \<UserExperienceAnalyticsInsightSeverity?\>\]: Indicates severity of insights.
+  - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+  - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
 Possible values are: None, Informational, Warning, Error.
-  \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of the user experience analytics metric.
-  \[Values \<IMicrosoftGraphUserExperienceAnalyticsInsightValue\[\]\>\]: The value of the user experience analytics insight.
+  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
+  - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
-METRICVALUES \<IMicrosoftGraphUserExperienceAnalyticsMetric\[\]\>: The metric values for the user experience analytics category.
+METRICVALUES <IMicrosoftGraphUserExperienceAnalyticsMetric- `[]`>: The metric values for the user experience analytics category.
 Read-only.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Unit \<String\>\]: The unit of the user experience analytics metric.
+  - `[Unit <String>]`: The unit of the user experience analytics metric.
 Examples: none, percentage, count, seconds, score.
-  \[Value \<Double?\>\]: The value of the user experience analytics metric.
+  - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticapphealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticapphealthoverview)
+
+
+
 
 
