@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicy
@@ -23,13 +23,17 @@ Get-MgApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandProperty <S
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationTokenIssuancePolicy -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationTokenIssuancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

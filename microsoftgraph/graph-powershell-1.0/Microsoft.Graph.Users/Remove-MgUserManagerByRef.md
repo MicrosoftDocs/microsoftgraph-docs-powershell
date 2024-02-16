@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref
@@ -28,11 +28,13 @@ Remove-MgUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] [-He
 Remove a user's manager.
 
 ## EXAMPLES
+### Example 1: Remove the manager of a user
 
-### EXAMPLE 1
-```
+```powershell
 Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
+
+This command removes the manager of the specified user.
 
 ## PARAMETERS
 

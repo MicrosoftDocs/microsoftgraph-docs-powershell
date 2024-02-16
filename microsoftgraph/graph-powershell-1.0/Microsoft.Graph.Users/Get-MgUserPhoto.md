@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto
@@ -53,15 +53,17 @@ Photos can be any dimension if they're stored in Microsoft Entra ID.
 You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.\nIf the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
 
 ## EXAMPLES
+### Example 1: Get a user's photo properties
 
-### EXAMPLE 1
-```
+```powershell
 Get-MgUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
-```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
+```
+
+This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 

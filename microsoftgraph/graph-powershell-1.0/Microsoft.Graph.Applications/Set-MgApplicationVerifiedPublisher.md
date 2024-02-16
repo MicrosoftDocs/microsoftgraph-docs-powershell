@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher
@@ -48,15 +48,16 @@ Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Set-MgApplicationVerifiedPublisher Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
 	VerifiedPublisherId = "1234567"
 }
 Set-MgApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
 ```
+This example shows how to use the Set-MgApplicationVerifiedPublisher Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

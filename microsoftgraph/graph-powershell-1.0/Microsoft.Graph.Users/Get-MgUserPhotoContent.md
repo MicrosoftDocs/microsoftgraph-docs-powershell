@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent
@@ -40,14 +40,18 @@ Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-Headers
 Get media content for the navigation property photo from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPhotoContent -UserId $userId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgUserPhotoContent Cmdlet.
+
 
 ## PARAMETERS
 

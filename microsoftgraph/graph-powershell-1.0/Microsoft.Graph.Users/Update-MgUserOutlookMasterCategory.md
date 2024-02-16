@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory
@@ -46,11 +46,10 @@ Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName property\nonce you have created the category.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 $params = @{
 	color = "preset15"
@@ -58,6 +57,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement
@@ -21,13 +21,17 @@ Get-MgDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [-Hea
 Read properties and relationships of the deviceManagement object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagement
+
+```
+This example shows how to use the Get-MgDeviceManagement Cmdlet.
+
 
 ## PARAMETERS
 

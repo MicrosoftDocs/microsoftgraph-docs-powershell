@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolist
@@ -28,14 +28,18 @@ Remove-MgUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-Header
 Deletes a todoTaskList object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
+```
+This example shows how to use the Remove-MgUserTodoList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

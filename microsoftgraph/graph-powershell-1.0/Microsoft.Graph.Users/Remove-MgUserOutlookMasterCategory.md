@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguseroutlookmastercategory
@@ -29,14 +29,18 @@ Remove-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <Stri
 Delete the specified outlookCategory object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
+```
+This example shows how to use the Remove-MgUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

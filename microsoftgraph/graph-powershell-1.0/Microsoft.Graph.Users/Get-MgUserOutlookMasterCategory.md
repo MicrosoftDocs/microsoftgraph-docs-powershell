@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory
@@ -35,14 +35,18 @@ Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String
 Get the properties and relationships of the specified outlookCategory object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOutlookMasterCategory -UserId $userId
+
+```
+This example shows how to use the Get-MgUserOutlookMasterCategory Cmdlet.
+
 
 ## PARAMETERS
 

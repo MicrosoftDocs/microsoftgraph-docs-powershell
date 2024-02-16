@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
@@ -28,13 +28,17 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 Get-MgUserSettingShiftPreference -UserId $userId
+
+```
+This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
+
 
 ## PARAMETERS
 

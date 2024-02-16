@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatesummary
@@ -21,13 +21,17 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty 
 Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
