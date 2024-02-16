@@ -84,10 +84,11 @@ function Update-Files{
     )
 	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-      Add-Back-Ticks -FilePath $filePath
-      #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+      #Add-Back-Ticks -FilePath $filePath
+      Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
-      CleanupFile -File $filePath
+      #CleanupFile -File $filePath
+      CleanUpParameters -FilePath $filePath
     }
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
@@ -125,17 +126,40 @@ function Add-Back-Ticks{
                     $R = $T.Replace("<","``<").Replace(">",">``")
                     $FinalOutput = $FinalOutput.Replace($T, $R)
                 }
-                # $T = $Matches[0]
-                # Write-Host "Regex "$T
-                # $R = $T.Replace("<","``<").Replace(">",">``")
-                # $FinalOutput = $FinalOutput.Replace($T, $R)
             }
-            #$FinalOutput = $FinalOutput.Replace(".",".\")
             $text = $text.Replace($Extracted, $FinalOutput)
-              $text | Out-File $FilePath -Encoding UTF8
-             # Write-Host "Regex "$FinalOutput
+              $text | Out-File $FilePath -Encoding UTF8    
+         }
+	}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
 
-            
+	}
+    
+}
+
+function CleanUpParameters{
+    param (
+        [ValidateNotNullOrEmpty()]
+        [string] $FilePath
+    )
+	try{
+        $SearchBlock = "## PARAMETERS(?s).*## NOTES"
+        $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
+        $Re = [regex]::new($SearchBlock, $option)
+        $DestinationContent = Get-Content -Encoding UTF8 -Raw $FilePath
+        $text = $DestinationContent.ToString()
+        if($DestinationContent -match $Re){
+            $ExtractedContent = $Matches[0]
+            $MatchingLines = $Re.Matches($ExtractedContent)
+            foreach($Match in $MatchingLines){
+                $Extracted = $Match.Value
+                $FinalOutput = $Extracted.Replace("\<","``<").Replace("\>",">``")
+                $text = $text.Replace($Extracted, $FinalOutput)
+            }
+              $text | Out-File $FilePath -Encoding UTF8  
          }
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message

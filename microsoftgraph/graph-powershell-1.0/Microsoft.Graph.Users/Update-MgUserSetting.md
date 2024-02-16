@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of the userSettings object.
-\nUsers in the same organization can have different settings based on their preference or on the organization policies.
-\nTo get the user current settings, see current user settings.
+Users in the same organization can have different settings based on their preference or on the organization policies.
+To get the user current settings, see current user settings.
 
 ## SYNTAX
 
@@ -44,8 +44,8 @@ Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the properties of the userSettings object.
-\nUsers in the same organization can have different settings based on their preference or on the organization policies.
-\nTo get the user current settings, see current user settings.
+Users in the same organization can have different settings based on their preference or on the organization policies.
+To get the user current settings, see current user settings.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -409,6 +409,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
+
+
 
 
 
