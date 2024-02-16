@@ -84,10 +84,10 @@ function Update-Files{
     )
 	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-      #Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+      Add-Back-Ticks -FilePath $filePath
       #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
-      CleanupFile -File $filePath
+      #CleanupFile -File $filePath
     }
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
@@ -289,6 +289,6 @@ function CleanupFile {
 # }
 # Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-#Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
-Add-Back-Ticks -FilePath "C:\Projects\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Applications\Add-MgApplicationPassword.md"
+Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
+#Add-Back-Ticks -FilePath "C:\Projects\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Applications\Add-MgApplicationKey.md"
 Write-Host -ForegroundColor Green "-------------Done-------------"

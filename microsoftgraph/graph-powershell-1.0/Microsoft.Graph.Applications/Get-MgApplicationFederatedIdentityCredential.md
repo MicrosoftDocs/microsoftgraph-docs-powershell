@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential
@@ -37,17 +37,13 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 Read the properties and relationships of a federatedIdentityCredential object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationFederatedIdentityCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -321,5 +317,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
-
 

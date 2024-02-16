@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicy
@@ -37,17 +37,20 @@ Get-MgServicePrincipalTokenLifetimePolicy -InputObject <IApplicationsIdentity> [
 The tokenLifetimePolicies assigned to this service principal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Applications
-
-Get-MgServicePrincipalTokenLifetimePolicy -ServicePrincipalId $servicePrincipalId
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgServicePrincipalTokenLifetimePolicy Cmdlet.
+{{ Add code here }}
+```
 
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -321,5 +324,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicy)
-
 

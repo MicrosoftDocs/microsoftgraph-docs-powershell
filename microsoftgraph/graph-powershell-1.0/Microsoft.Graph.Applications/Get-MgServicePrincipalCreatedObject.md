@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject
@@ -41,13 +41,12 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgServicePrincipalCreatedObject Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
 Get-MgServicePrincipalCreatedObject -ServicePrincipalId $servicePrincipalId
 ```
-This example shows how to use the Get-MgServicePrincipalCreatedObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -321,5 +320,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject)
-
 
