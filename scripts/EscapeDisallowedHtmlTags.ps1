@@ -84,10 +84,8 @@ function Update-Files{
     )
 	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-      #Add-Back-Ticks -FilePath $filePath
+      Add-Back-Ticks -FilePath $filePath
       Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
-      #Start-Sleep -Seconds 5
-      #CleanupFile -File $filePath
       CleanUpParameters -FilePath $filePath
     }
 	}catch{
@@ -101,15 +99,10 @@ function Add-Back-Ticks{
     param (
         [ValidateNotNullOrEmpty()]
         [string] $FilePath
-        # [string] $ModuleDocsPath,
-        # [ValidateSet("beta", "v1.0")]
-        # [string] $GraphProfile = "v1.0",
-        # [ValidateNotNullOrEmpty()]
-        # [string] $ModuleName = "Users"
     )
 	try{
         $SearchBlock = "## NOTES(?s).*## RELATED LINKS"
-        $SearchBlock2 = "[A-Z]+ \<\w+\>:"
+        $SearchBlock2 = "[A-Za-z]+ \<\w+\>:"
         $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
         $Re = [regex]::new($SearchBlock, $option)
         $Re2 = [regex]::new($SearchBlock2, $option)

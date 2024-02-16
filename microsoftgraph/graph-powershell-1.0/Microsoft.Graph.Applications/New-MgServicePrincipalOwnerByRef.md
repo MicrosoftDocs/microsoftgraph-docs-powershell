@@ -233,7 +233,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IReferenceCreate>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  OdataId <String>: The entity reference URL of the resource.
+  OdataId `<String>`: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
@@ -263,7 +263,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)
-
 
 
 
