@@ -99,57 +99,44 @@ function Update-Files{
 function Add-Back-Ticks{
     param (
         [ValidateNotNullOrEmpty()]
-        [string] $FilePath,
-        [string] $ModuleDocsPath,
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModuleName = "Users"
+        [string] $FilePath
+        # [string] $ModuleDocsPath,
+        # [ValidateSet("beta", "v1.0")]
+        # [string] $GraphProfile = "v1.0",
+        # [ValidateNotNullOrEmpty()]
+        # [string] $ModuleName = "Users"
     )
-    $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
-    $findStart='<'
-    $replaceStart = '`<'
-
-    $findEnd='>'
-    $replaceEnd = '>`'
 	try{
-    $text = Get-Content -Path $FilePath
-    foreach($content in $text){
-       if($content -match "(.*?)>+:"){
-         if($content -match "[[+*?]"){
-			  if($content -match "\[]>+:"){
-			  }else{
-            $content = $content -replace '[[+*?]','\$&'
-			  }
-        } 
-            $splitted = $content.Split(" ")
-			$org = $splitted[1]
-            if($org -match "\[]>"){
-                if($org -match "\\"){
-                }else{
-				$org = $org -replace '[[+*?]','\$&'
+        $SearchBlock = "## NOTES(?s).*## RELATED LINKS"
+        $SearchBlock2 = "[A-Z]+ \<\w+\>:"
+        $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
+        $Re = [regex]::new($SearchBlock, $option)
+        $Re2 = [regex]::new($SearchBlock2, $option)
+        $DestinationContent = Get-Content -Encoding UTF8 -Raw $FilePath
+        $text = $DestinationContent.ToString()
+        if($DestinationContent -match $Re){
+            $Extracted = $Matches[0]
+            $FinalOutput = $Extracted.Replace("\<","<").Replace("\>",">").Replace("\[","- ``[").Replace("\]","]``")
+           
+            if($FinalOutput -match $Re2){
+                $MatchingLines = $Re2.Matches($FinalOutput)
+                foreach($Match in $MatchingLines){
+                    $T = $Match.Value
+                    $R = $T.Replace("<","``<").Replace(">",">``")
+                    $FinalOutput = $FinalOutput.Replace($T, $R)
                 }
-			}
-			$furtherSplitted = $splitted.Split(":")
-			if($furtherSplitted[1] -contains '`'){
-			}else{
-				if($furtherSplitted[1].endswith('>')){
-                    if($furtherSplitted[1] -match "\[]>"){
-                        if($furtherSplitted[1] -match "\\"){
-                        }else{
-						$furtherSplitted[1] = $furtherSplitted[1] -replace '[[+*?]','\$&'
-                        }	
-					}
-				$concat = '`'+$furtherSplitted[1]+'`'
-				$replace = $org -replace $furtherSplitted[1],$concat
-				$text = $text -replace $org,$replace
-				}
+                # $T = $Matches[0]
+                # Write-Host "Regex "$T
+                # $R = $T.Replace("<","``<").Replace(">",">``")
+                # $FinalOutput = $FinalOutput.Replace($T, $R)
             }
-       } 
-    }
-    $text > $tempFilePath
-    Remove-Item -Path $FilePath
-    Move-Item -Path $tempFilePath -Destination $FilePath
+            #$FinalOutput = $FinalOutput.Replace(".",".\")
+            $text = $text.Replace($Extracted, $FinalOutput)
+              $text | Out-File $FilePath -Encoding UTF8
+             # Write-Host "Regex "$FinalOutput
+
+            
+         }
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -157,37 +144,18 @@ function Add-Back-Ticks{
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 
 	}
-    Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+    
 }
+
+
 function Refine_File{
     param (
         [ValidateNotNullOrEmpty()]
-        [string] $FilePath,
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModuleName = "Users"
+        [string] $FilePath
     )
-    $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
-
-    $replace = ""
-	try{
-    $text = Get-Content -Path $FilePath
-    foreach($content in $text){
-       if($content -match "\]>``+:"){
-        $text = $text -replace [regex]::Escape("\"), $replace
-       } 
-    }
-    $text > $tempFilePath
-    Remove-Item -Path $FilePath
-    Move-Item -Path $tempFilePath -Destination $FilePath
-	}catch{
-	Write-Host "`nError Message: " $_.Exception.Message
-	Write-Host "`nError in Line: " $_.InvocationInfo.Line
-	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-	Write-Host "`nError Item Name: "$_.Exception.ItemName
-	}
-    Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+    
+    $SearchBlock = "^\\<\\w+\\>"
+    Write-Host "File " $FilePath
 }
 
 function Special-Escape{
@@ -321,5 +289,6 @@ function CleanupFile {
 # }
 # Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
+#Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
+Add-Back-Ticks -FilePath "C:\Projects\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Applications\Add-MgApplicationPassword.md"
 Write-Host -ForegroundColor Green "-------------Done-------------"
