@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance
@@ -18,18 +18,19 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanc
  -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String> [-AdditionalProperties <Hashtable>]
  [-BatteryAgeInDays <Int32>]
  [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
- [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
- [-EstimatedRuntimeInMinutes <Int32>] [-FullBatteryDrainCount <Int32>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
- [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceBatteryTags <String[]>]
+ [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
+ [-FullBatteryDrainCount <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,22 +38,39 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanc
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
  [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
- [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
- [-EstimatedRuntimeInMinutes <Int32>] [-FullBatteryDrainCount <Int32>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
- [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceBatteryTags <String[]>]
+ [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
+ [-FullBatteryDrainCount <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthDevicePerformance in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -122,7 +140,7 @@ Accept wildcard characters: False
 
 ### -DeviceBatteryCount
 Number of batteries in a user device.
-Valid values 1 to 2147483647
+Valid values 0 to 2147483647
 
 ```yaml
 Type: Int32
@@ -149,6 +167,23 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceBatteryTags
+Tags for computed information on how battery on the device is behaving.
+E.g.
+newbattery, batterycapacityred, designcapacityzero, etc.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -213,6 +248,21 @@ Required: False
 Position: Named
 Default value: 0
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -310,6 +360,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsBatteryHealthDevicePerformanceId
 The unique identifier of userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -363,6 +428,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
@@ -387,10 +453,13 @@ Valid values 0 to 2147483647
 Unit in percentage and values range from 0-100.
 Valid values 0 to 2147483647
   \[DeviceBatteryCount \<Int32?\>\]: Number of batteries in a user device.
-Valid values 1 to 2147483647
+Valid values 0 to 2147483647
   \[DeviceBatteryHealthScore \<Int32?\>\]: A weighted average of a device's maximum capacity score and runtime estimate score.
 Values range from 0-100.
 Valid values 0 to 2147483647
+  \[DeviceBatteryTags \<String\[\]\>\]: Tags for computed information on how battery on the device is behaving.
+E.g.
+newbattery, batterycapacityred, designcapacityzero, etc.
   \[DeviceId \<String\>\]: The unique identifier of the device, Intune DeviceID.
   \[DeviceName \<String\>\]: Device friendly name.
   \[EstimatedRuntimeInMinutes \<Int32?\>\]: The estimated runtime of the device when the battery is fully charged.
@@ -557,6 +626,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaApplicationOwnerByRef
@@ -11,50 +10,49 @@ ms.prod: applications
 ## SYNOPSIS
 Use this API to add an owner to an application by posting to the owners collection.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaApplicationOwnerByRef -ApplicationId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaApplicationOwnerByRef -ApplicationId <String> -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaApplicationOwnerByRef -ApplicationId <String> -BodyParameter <IReferenceCreate>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter <IReferenceCreate>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Use this API to add an owner to an application by posting to the owners collection.
 
 ## EXAMPLES
-### Example 1: Add an owner to an application
 
-```powershell
- $NewOwner = @{
-  "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"
-  }
-
-New-MgBetaApplicationOwnerByRef -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' -BodyParameter $NewOwner
+### EXAMPLE 1
+```
+$NewOwner = @{
+ "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"
+ }
 ```
 
-In this example, the first command defines the value for the $NewOwner variable. The second command adds the new owner to the specified application.
+New-MgBetaApplicationOwnerByRef -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' -BodyParameter $NewOwner
 
 ## PARAMETERS
 
@@ -98,6 +96,21 @@ Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -151,6 +164,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -189,6 +217,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IReferenceCreate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
@@ -237,8 +266,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref)
-
 

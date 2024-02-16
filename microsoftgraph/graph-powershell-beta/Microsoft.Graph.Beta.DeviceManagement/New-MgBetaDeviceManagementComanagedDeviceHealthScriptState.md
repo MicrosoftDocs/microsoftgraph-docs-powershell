@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicehealthscriptstate
@@ -21,13 +21,15 @@ New-MgBetaDeviceManagementComanagedDeviceHealthScriptState -ManagedDeviceId <Str
  [-PolicyId <String>] [-PolicyName <String>] [-PostRemediationDetectionScriptError <String>]
  [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
  [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
- [-RemediationState <RemediationState>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RemediationState <RemediationState>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementComanagedDeviceHealthScriptState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,17 +41,31 @@ New-MgBetaDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDevice
  [-PolicyId <String>] [-PolicyName <String>] [-PostRemediationDetectionScriptError <String>]
  [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
  [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
- [-RemediationState <RemediationState>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RemediationState <RemediationState>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceHealthScriptStates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -156,6 +172,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -340,6 +371,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RemediationScriptError
 Error output of the remediation script
 
@@ -423,6 +469,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
@@ -597,6 +644,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicehealthscriptstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicehealthscriptstate)
-
-
 

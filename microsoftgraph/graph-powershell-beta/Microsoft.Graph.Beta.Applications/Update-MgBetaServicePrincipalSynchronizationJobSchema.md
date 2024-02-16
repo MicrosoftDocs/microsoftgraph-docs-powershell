@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaServicePrincipalSynchronizationJobSchema
@@ -14,9 +13,6 @@ This method fully replaces the current schema with the one provided in the reque
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -24,29 +20,30 @@ You must be the owner of the application.
 Update-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>]
  [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId <String>
- -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,8 +52,21 @@ This method fully replaces the current schema with the one provided in the reque
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -107,6 +117,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -136,6 +161,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -238,6 +278,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
@@ -563,9 +604,6 @@ Must match one of the directory definitions in synchronizationSchema.
 Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
-[Update-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema)
-
-
 

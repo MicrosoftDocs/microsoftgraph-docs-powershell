@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsprotectionstate
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property windowsProtectionState in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,14 +22,15 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceI
  [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
  [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
  [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
- [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,18 +43,31 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <I
  [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
  [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
  [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
- [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -181,6 +192,21 @@ Required: False
 Position: Named
 Default value: False
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -368,6 +394,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -QuickScanOverdue
 When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue.
 Defaults to setting on client device.
@@ -501,6 +542,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
@@ -713,9 +755,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsprotectionstate)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplication
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaApplication
 
 ## SYNOPSIS
 Update the properties of an application object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgApplication](/powershell/module/Microsoft.Graph.Applications/Update-MgApplication?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,13 +41,14 @@ Update-MgBetaApplication -ApplicationId <String> [-AdditionalProperties <Hashtab
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>] [-UniqueName <String>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
- [-Windows <IMicrosoftGraphWindowsApplication>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Windows <IMicrosoftGraphWindowsApplication>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaApplication -ApplicationId <String> -BodyParameter <IMicrosoftGraphApplication> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaApplication -ApplicationId <String> -BodyParameter <IMicrosoftGraphApplication>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -83,31 +80,27 @@ Update-MgBetaApplication -InputObject <IApplicationsIdentity> [-AdditionalProper
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>] [-UniqueName <String>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
- [-Windows <IMicrosoftGraphWindowsApplication>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Windows <IMicrosoftGraphWindowsApplication>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphApplication>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update an application
 
-```powershell
+### EXAMPLE 1
+```
 Update-MgBetaApplication `
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
   -DisplayName 'Testing App'
 ```
-
-This example updates the specified application's display name.
 
 ## PARAMETERS
 
@@ -445,6 +438,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HomeRealmDiscoveryPolicies
 .
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
@@ -689,6 +697,21 @@ To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a 
 Type: IMicrosoftGraphPasswordCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -1042,6 +1065,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication
@@ -1079,10 +1103,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1149,10 +1173,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -1198,10 +1222,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1271,10 +1295,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[AuthenticationBehaviors \<IMicrosoftGraphAuthenticationBehaviors\>\]: authenticationBehaviors
@@ -1997,10 +2021,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -2070,10 +2094,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     \[AuthenticationBehaviors \<IMicrosoftGraphAuthenticationBehaviors\>\]: authenticationBehaviors
@@ -3444,8 +3468,6 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
-[Update-MgApplication](/powershell/module/Microsoft.Graph.Applications/Update-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplication)
-
 

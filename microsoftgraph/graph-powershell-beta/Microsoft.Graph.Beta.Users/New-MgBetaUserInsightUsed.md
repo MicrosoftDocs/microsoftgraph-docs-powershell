@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused
@@ -17,13 +17,14 @@ Create new navigation property to used for users
 New-MgBetaUserInsightUsed -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastUsed <IMicrosoftGraphUsageDetails>] [-Resource <IMicrosoftGraphEntity>]
  [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserInsightUsed -UserId <String> -BodyParameter <IMicrosoftGraphUsedInsight> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserInsightUsed -UserId <String> -BodyParameter <IMicrosoftGraphUsedInsight> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -31,17 +32,30 @@ New-MgBetaUserInsightUsed -UserId <String> -BodyParameter <IMicrosoftGraphUsedIn
 New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastUsed <IMicrosoftGraphUsageDetails>] [-Resource <IMicrosoftGraphEntity>]
  [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUsedInsight> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUsedInsight>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to used for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -70,6 +84,21 @@ Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -116,6 +145,21 @@ To construct, see NOTES section for LASTUSED properties and create a hash table.
 Type: IMicrosoftGraphUsageDetails
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -225,6 +269,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsedInsight
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsedInsight
@@ -275,6 +320,7 @@ Can be used for filtering for a specific file based on a specific type.
 See the Type property values section, for supported types.
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -340,6 +386,4 @@ See the Type property values section, for supported types.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto
@@ -11,35 +11,37 @@ schema: 2.0.0
 The user's profile photo.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserPhoto -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -UserId <String> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### List
 ```
 Get-MgBetaUserPhoto -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgBetaUserPhoto -UserId <String> -ProfilePhotoId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -UserId <String> -ProfilePhotoId <String> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,17 +49,15 @@ The user's profile photo.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Get a user's photo properties
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
+```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
-```
-
-This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 
@@ -107,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -147,6 +162,21 @@ Parameter Sets: Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -234,6 +264,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfilePhoto
@@ -244,6 +275,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -268,8 +300,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto)
-
 

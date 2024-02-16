@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookTaskGroup
@@ -17,37 +16,37 @@ Create an Outlook task group in the user's mailbox.
 ```
 New-MgBetaUserOutlookTaskGroup -UserId <String> [-AdditionalProperties <Hashtable>] [-ChangeKey <String>]
  [-GroupKey <String>] [-Id <String>] [-IsDefaultGroup] [-Name <String>]
- [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserOutlookTaskGroup -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTaskGroup> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskGroup -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTaskGroup>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-ChangeKey <String>] [-GroupKey <String>] [-Id <String>] [-IsDefaultGroup] [-Name <String>]
- [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTaskGroup>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an Outlook task group in the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-taskgroups-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserOutlookTaskGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	Name = "Leisure tasks"
@@ -55,8 +54,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskGroup -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserOutlookTaskGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -121,6 +118,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -175,6 +187,21 @@ The name of the task group.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -254,6 +281,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTaskGroup
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTaskGroup
@@ -378,6 +406,7 @@ Nullable.
       \[Subject \<String\>\]: 
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -510,5 +539,4 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup)
-
 

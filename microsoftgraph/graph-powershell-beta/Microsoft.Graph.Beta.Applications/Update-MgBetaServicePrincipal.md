@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaServicePrincipal
 
 ## SYNOPSIS
 Update the properties of servicePrincipal object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,13 +45,14 @@ Update-MgBetaServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-A
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipal -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -91,34 +88,31 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnab
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipal> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServicePrincipal> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update the properties of a service principal
 
-```powershell
+### EXAMPLE 1
+```
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
-
-Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
 ```
 
-This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
+Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
 
 ## PARAMETERS
 
@@ -553,6 +547,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Homepage
 Home page or landing page of the application.
 
@@ -891,6 +900,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublishedPermissionScopes
 The delegated permissions exposed by the application.
 For more information see the oauth2PermissionScopes property on the application entity's api property.
@@ -1213,6 +1237,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipal
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipal
@@ -1227,8 +1252,8 @@ For example, applications that can render file streams may set the addIns proper
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
   \[Id \<String\>\]: 
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: 
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
   \[Type \<String\>\]: 
 
 APPMANAGEMENTPOLICIES \<IMicrosoftGraphAppManagementPolicy\[\]\>: The appManagementPolicy applied to this service principal.
@@ -1333,10 +1358,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -1354,8 +1379,8 @@ For example, applications that can render file streams may set the addIns proper
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
     \[Id \<String\>\]: 
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: 
-      \[Key \<String\>\]: Key.
-      \[Value \<String\>\]: Value.
+      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+      \[Value \<String\>\]: Contains the corresponding value for the specified key.
     \[Type \<String\>\]: 
   \[AlternativeNames \<String\[\]\>\]: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1447,10 +1472,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -1725,10 +1750,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -2368,10 +2393,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -2697,8 +2722,6 @@ VERIFIEDPUBLISHER \<IMicrosoftGraphVerifiedPublisher\>: verifiedPublisher
   \[VerifiedPublisherId \<String\>\]: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
-[Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)
-
 

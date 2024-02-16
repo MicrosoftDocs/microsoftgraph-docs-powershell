@@ -1,18 +1,17 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookTask
 
 ## SYNOPSIS
 Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+\nYou can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone \ndifferent than UTC.
 
 ## SYNTAX
 
@@ -27,14 +26,14 @@ New-MgBetaUserOutlookTask -UserId <String> [-AdditionalProperties <Hashtable>] [
  [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserOutlookTask -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserOutlookTask -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,28 +47,26 @@ New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-AdditionalProperties <
  [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTask> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTask>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-tasks-permissions.md)]
+\nYou can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone \ndifferent than UTC.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserOutlookTask Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	Subject = "Shop for children's weekend"
@@ -85,8 +82,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTask -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -264,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -382,6 +392,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -554,6 +579,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
@@ -686,6 +712,7 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -773,5 +800,4 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticresourceperformance
@@ -16,42 +16,63 @@ Update the navigation property userExperienceAnalyticsResourcePerformance in dev
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
  -UserExperienceAnalyticsResourcePerformanceId <String> [-AdditionalProperties <Hashtable>]
- [-AverageSpikeTimeScore <Int32>] [-CpuSpikeTimePercentage <Double>]
- [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
- [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
- [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AverageSpikeTimeScore <Int32>] [-CpuClockSpeedInMHz <Double>] [-CpuDisplayName <String>]
+ [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>]
+ [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>]
+ [-DiskType <DiskType>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-MachineType <UserExperienceAnalyticsMachineType>] [-Manufacturer <String>] [-Model <String>]
+ [-RamSpikeTimePercentage <Double>] [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>]
+ [-TotalProcessorCoreCount <Int32>] [-TotalRamInMb <Double>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
  -UserExperienceAnalyticsResourcePerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AverageSpikeTimeScore <Int32>] [-CpuSpikeTimePercentage <Double>]
- [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
- [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
- [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AverageSpikeTimeScore <Int32>] [-CpuClockSpeedInMHz <Double>]
+ [-CpuDisplayName <String>] [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>]
+ [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>]
+ [-DeviceResourcePerformanceScore <Int32>] [-DiskType <DiskType>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-MachineType <UserExperienceAnalyticsMachineType>] [-Manufacturer <String>] [-Model <String>]
+ [-RamSpikeTimePercentage <Double>] [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>]
+ [-TotalProcessorCoreCount <Int32>] [-TotalRamInMb <Double>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsResourcePerformance in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -99,6 +120,37 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CpuClockSpeedInMHz
+The clock speed of the processor, in MHz.
+Valid values 0 to 1000000
+
+```yaml
+Type: Double
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CpuDisplayName
+The name of the processor on the device, For example, 11th Gen Intel(R) Core(TM) i7.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -211,6 +263,51 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DiskType
+diskType
+
+```yaml
+Type: DiskType
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -HealthStatus
+userExperienceAnalyticsHealthState
+
+```yaml
+Type: UserExperienceAnalyticsHealthState
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -243,6 +340,22 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MachineType
+Indicates if machine is physical or virtual.
+Possible values are: physical or virtual
+
+```yaml
+Type: UserExperienceAnalyticsMachineType
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Manufacturer
 The user experience analytics device manufacturer.
 
@@ -265,6 +378,21 @@ The user experience analytics device model.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -311,6 +439,38 @@ Valid values 0 to 100
 
 ```yaml
 Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TotalProcessorCoreCount
+The count of cores of the processor of device.
+Valid values 0 to 512
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TotalRamInMb
+The total RAM of the device, in MB.
+Valid values 0 to 1000000
+
+```yaml
+Type: Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -374,6 +534,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
@@ -389,6 +550,9 @@ BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsResourcePerformance\>: The
 Read-only.
   \[AverageSpikeTimeScore \<Int32?\>\]: AverageSpikeTimeScore of a device or a model type.
 Valid values 0 to 100
+  \[CpuClockSpeedInMHz \<Double?\>\]: The clock speed of the processor, in MHz.
+Valid values 0 to 1000000
+  \[CpuDisplayName \<String\>\]: The name of the processor on the device, For example, 11th Gen Intel(R) Core(TM) i7.
   \[CpuSpikeTimePercentage \<Double?\>\]: CPU spike time in percentage.
 Valid values 0 to 100
   \[CpuSpikeTimePercentageThreshold \<Double?\>\]: Threshold of cpuSpikeTimeScore.
@@ -400,6 +564,10 @@ Valid values 0 to 100
   \[DeviceName \<String\>\]: The name of the device.
   \[DeviceResourcePerformanceScore \<Int32?\>\]: Resource performance score of a specific device.
 Valid values 0 to 100
+  \[DiskType \<DiskType?\>\]: diskType
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[MachineType \<UserExperienceAnalyticsMachineType?\>\]: Indicates if machine is physical or virtual.
+Possible values are: physical or virtual
   \[Manufacturer \<String\>\]: The user experience analytics device manufacturer.
   \[Model \<String\>\]: The user experience analytics device model.
   \[RamSpikeTimePercentage \<Double?\>\]: RAM spike time in percentage.
@@ -408,6 +576,10 @@ Valid values 0 to 100
 Valid values 0 to 100
   \[RamSpikeTimeScore \<Int32?\>\]: The user experience analytics device RAM spike time score.
 Valid values 0 to 100
+  \[TotalProcessorCoreCount \<Int32?\>\]: The count of cores of the processor of device.
+Valid values 0 to 512
+  \[TotalRamInMb \<Double?\>\]: The total RAM of the device, in MB.
+Valid values 0 to 1000000
 
 INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[AdvancedThreatProtectionOnboardingDeviceSettingStateId \<String\>\]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
@@ -553,6 +725,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticresourceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticresourceperformance)
-
-
 

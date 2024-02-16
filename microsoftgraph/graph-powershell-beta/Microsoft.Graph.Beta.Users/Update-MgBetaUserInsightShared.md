@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared
@@ -18,13 +18,15 @@ Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String> [-Addi
  [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
- [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSharedInsight> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedInsight> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,17 +35,30 @@ Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalPropert
  [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
- [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphSharedInsight>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property shared in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -72,6 +87,21 @@ Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -134,6 +164,21 @@ To construct, see NOTES section for LASTSHAREDMETHOD properties and create a has
 Type: IMicrosoftGraphEntity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -274,6 +319,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
@@ -330,6 +376,7 @@ See the Type property values section, for supported types.
   \[SharingHistory \<IMicrosoftGraphSharingDetail\[\]\>\]: 
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -426,6 +473,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared)
-
-
 

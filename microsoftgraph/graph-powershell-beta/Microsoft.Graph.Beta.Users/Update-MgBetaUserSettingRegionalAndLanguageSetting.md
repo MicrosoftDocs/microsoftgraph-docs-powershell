@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Update-MgBetaUserSettingRegionalAndLanguageSetting
@@ -20,13 +19,15 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String> [-Additional
  [-DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>] [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
  [-DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>] [-Id <String>]
  [-RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]
- [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String>
- -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,24 +38,24 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
  [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
  [-DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>] [-Id <String>]
  [-RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]
- [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update some or all of the properties of a regionalAndLanguageSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/regionalandlanguagesettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	AuthoringLanguages = @(
@@ -72,8 +73,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -189,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -218,6 +232,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -306,6 +335,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
@@ -388,6 +418,7 @@ For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -438,5 +469,4 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
-
 

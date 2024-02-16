@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter
@@ -18,15 +18,15 @@ Update-MgBetaDeviceManagementAssignmentFilter -DeviceAndAppManagementAssignmentF
  [-AdditionalProperties <Hashtable>] [-AssignmentFilterManagementType <AssignmentFilterManagementType>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Payloads <IMicrosoftGraphPayloadByFilter[]>]
- [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementAssignmentFilter -DeviceAndAppManagementAssignmentFilterId <String>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,19 +35,35 @@ Update-MgBetaDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIde
  [-AdditionalProperties <Hashtable>] [-AssignmentFilterManagementType <AssignmentFilterManagementType>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Payloads <IMicrosoftGraphPayloadByFilter[]>]
- [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property assignmentFilters in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -160,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -240,6 +271,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTags
 Indicates role scope tags assigned for the assignment filter.
 
@@ -308,6 +354,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
@@ -490,6 +537,4 @@ PAYLOADS \<IMicrosoftGraphPayloadByFilter\[\]\>: Indicates associated assignment
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter)
-
-
 

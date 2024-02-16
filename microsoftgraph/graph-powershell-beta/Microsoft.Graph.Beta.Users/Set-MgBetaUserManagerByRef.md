@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Set-MgBetaUserManagerByRef
@@ -11,55 +10,48 @@ ms.prod: users
 ## SYNOPSIS
 Assign a user's manager.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
 ```
 Set-MgBetaUserManagerByRef -UserId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgBetaUserManagerByRef -UserId <String> -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgBetaUserManagerByRef -UserId <String> -BodyParameter <IReferenceUpdate> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceUpdate> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceUpdate>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Assign a user's manager.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-manager-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update a user's manager
 
-```powershell
+### EXAMPLE 1
+```
 $NewManager = @{
   "@odata.id"="https://graph.microsoft.com/v1.0/users/075b32dd-edb7-47cf-89ef-f3f733683a3f"
   }
-
-Set-MgBetaUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
 ```
 
-In this example, the first command defines the new manager using the $NewManager variable with id `075b32dd-edb7-47cf-89ef-f3f733683a3f`.
-The second command sets the manager for user defined by the UserId as the value provided on the $NewManager variable.
-
+Set-MgBetaUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
 
 ## PARAMETERS
 
@@ -88,6 +80,21 @@ Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -156,6 +163,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -209,6 +231,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IReferenceUpdate
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
@@ -225,6 +248,7 @@ For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
   \[OdataType \<String\>\]: 
 
 INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
   \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
   \[AttachmentId \<String\>\]: The unique identifier of attachment
   \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
@@ -249,8 +273,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
-
 

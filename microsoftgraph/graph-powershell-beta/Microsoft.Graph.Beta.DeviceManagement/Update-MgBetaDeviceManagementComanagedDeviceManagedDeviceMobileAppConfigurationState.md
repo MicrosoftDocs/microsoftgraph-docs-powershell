@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicemanageddevicemobileappconfigurationstate
@@ -18,15 +18,16 @@ Update-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationS
  -ManagedDeviceMobileAppConfigurationStateId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String>
  -ManagedDeviceMobileAppConfigurationStateId <String>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,19 +36,36 @@ Update-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationS
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -94,6 +112,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -166,6 +199,21 @@ Supported platform types for policies.
 Type: PolicyPlatformType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -303,6 +351,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
@@ -328,8 +377,8 @@ Read-only.
     \[SettingInstanceId \<String\>\]: SettingInstanceId
     \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
     \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-      \[DisplayName \<String\>\]: Not yet documented
-      \[Id \<String\>\]: Not yet documented
+      \[DisplayName \<String\>\]: 
+      \[Id \<String\>\]: 
       \[SourceType \<String\>\]: settingSourceType
     \[State \<String\>\]: complianceStatus
     \[UserEmail \<String\>\]: UserEmail
@@ -491,8 +540,8 @@ SETTINGSTATES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState\[
   \[SettingInstanceId \<String\>\]: SettingInstanceId
   \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
   \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-    \[DisplayName \<String\>\]: Not yet documented
-    \[Id \<String\>\]: Not yet documented
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
     \[SourceType \<String\>\]: settingSourceType
   \[State \<String\>\]: complianceStatus
   \[UserEmail \<String\>\]: UserEmail
@@ -503,6 +552,4 @@ SETTINGSTATES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState\[
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicemanageddevicemobileappconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicemanageddevicemobileappconfigurationstate)
-
-
 

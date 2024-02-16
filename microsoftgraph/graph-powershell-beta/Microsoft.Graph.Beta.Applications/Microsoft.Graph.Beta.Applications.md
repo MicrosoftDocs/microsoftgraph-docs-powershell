@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: fae868a9-cfb4-4875-82ce-3954ba828375
 Download Help Link: {{ Update Download Link }}
@@ -264,6 +264,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByAppId](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByAppId.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationCount](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationCount.md)
@@ -875,9 +881,6 @@ Locale: en-US
 ### [Remove-MgBetaServicePrincipal](Remove-MgBetaServicePrincipal.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaServicePrincipalAppManagementPolicy](Remove-MgBetaServicePrincipalAppManagementPolicy.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaServicePrincipalAppRoleAssignedTo](Remove-MgBetaServicePrincipalAppRoleAssignedTo.md)
 {{ Fill in the Description }}
 
@@ -1117,5 +1120,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

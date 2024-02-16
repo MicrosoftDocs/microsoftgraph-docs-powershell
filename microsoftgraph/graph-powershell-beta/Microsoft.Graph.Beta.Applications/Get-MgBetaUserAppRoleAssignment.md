@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment
@@ -11,28 +11,28 @@ schema: 2.0.0
 Represents the app roles a user has been granted for an application.
 Supports $expand.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgUserAppRoleAssignment?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaUserAppRoleAssignment -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-ConsistencyLevel <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaUserAppRoleAssignment -AppRoleAssignmentId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [-ConsistencyLevel <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [-ConsistencyLevel <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,11 +40,12 @@ Represents the app roles a user has been granted for an application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get assigned app roles
 
-```powershell
- Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
-  Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+### EXAMPLE 1
+```
+Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
+ Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+```
 
 Id                   : QQxVaKMYXkmqHc9ijBcbSFkvIqIpOSdOjXRyNBWe_zE
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -59,9 +60,6 @@ PrincipalDisplayName : MOD Administrator
 PrincipalId          : 529827aa-d058-4821-a012-4de3ce093955
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-worker-mfa
-```
-
-This command gets all the application roles that the selected user has been assigned.
 
 ## PARAMETERS
 
@@ -157,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -184,6 +197,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -284,6 +312,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
@@ -327,8 +356,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,17 +21,34 @@ New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
  [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -177,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -History
 Intune Mobile Application Troubleshooting History Item
 To construct, see NOTES section for HISTORY properties and create a hash table.
@@ -216,6 +245,21 @@ Device identifier created or collected by Intune.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -292,6 +336,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
@@ -324,14 +369,14 @@ BODYPARAMETER \<IMicrosoftGraphMobileAppTroubleshootingEvent\>: Event representi
 It is an Optional field
   \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Context \<String\>\]: Not yet documented
-    \[Failure \<String\>\]: Not yet documented
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
     \[FailureDetails \<String\>\]: The detailed description of what went wrong.
     \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
     \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
       \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      \[Text \<String\>\]: Not yet documented
+      \[Text \<String\>\]: 
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AppLogCollectionRequests \<IMicrosoftGraphAppLogCollectionRequest\[\]\>\]: The collection property of AppLogUploadRequest.
@@ -353,30 +398,27 @@ HISTORY \<IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[\]\>: Intune Mobil
   \[OccurrenceDateTime \<DateTime?\>\]: Time when the history item occurred.
   \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Context \<String\>\]: Not yet documented
-    \[Failure \<String\>\]: Not yet documented
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
     \[FailureDetails \<String\>\]: The detailed description of what went wrong.
     \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
     \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
       \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      \[Text \<String\>\]: Not yet documented
+      \[Text \<String\>\]: 
 
 TROUBLESHOOTINGERRORDETAILS \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>: Object containing detailed information about the error and its remediation.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Context \<String\>\]: Not yet documented
-  \[Failure \<String\>\]: Not yet documented
+  \[Context \<String\>\]: 
+  \[Failure \<String\>\]: 
   \[FailureDetails \<String\>\]: The detailed description of what went wrong.
   \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
   \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
     \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-    \[Text \<String\>\]: Not yet documented
+    \[Text \<String\>\]:
 
 ## RELATED LINKS
-[New-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)
-
-
 

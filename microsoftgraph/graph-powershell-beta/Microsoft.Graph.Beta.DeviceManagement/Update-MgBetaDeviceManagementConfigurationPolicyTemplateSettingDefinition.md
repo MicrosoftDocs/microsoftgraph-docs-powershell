@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinition
@@ -26,7 +26,8 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,8 +36,8 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -DeviceManagementConfigurationPolicyTemplateId <String>
  -DeviceManagementConfigurationSettingDefinitionId <String>
  -DeviceManagementConfigurationSettingTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,19 +51,36 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property settingDefinitions in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -233,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HelpText
 Help text of the item
 
@@ -348,6 +381,21 @@ Offset CSP Path from Base
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -485,6 +533,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
@@ -528,7 +577,7 @@ A MinDeviceOccurrence of 0 means setting is optional
   \[OffsetUri \<String\>\]: Offset CSP Path from Base
   \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
     \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
   \[RootDefinitionId \<String\>\]: Root setting definition if the setting is a child setting.
   \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
   \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
@@ -684,11 +733,9 @@ A MinDeviceOccurrence of 0 means setting is optional
 
 REFERREDSETTINGINFORMATIONLIST \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>: List of referred setting information.
   \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinition)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddeviceconfigurationstate
@@ -18,13 +18,15 @@ New-MgBetaDeviceManagementComanagedDeviceConfigurationState -ManagedDeviceId <St
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementComanagedDeviceConfigurationState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,17 +35,35 @@ New-MgBetaDeviceManagementComanagedDeviceConfigurationState -InputObject <IDevic
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementComanagedDeviceConfigurationState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationStates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -90,6 +110,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -147,6 +182,21 @@ Supported platform types for policies.
 Type: PolicyPlatformType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -284,6 +334,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
@@ -309,8 +360,8 @@ Read-only.
     \[SettingInstanceId \<String\>\]: SettingInstanceId
     \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
     \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-      \[DisplayName \<String\>\]: Not yet documented
-      \[Id \<String\>\]: Not yet documented
+      \[DisplayName \<String\>\]: 
+      \[Id \<String\>\]: 
       \[SourceType \<String\>\]: settingSourceType
     \[State \<String\>\]: complianceStatus
     \[UserEmail \<String\>\]: UserEmail
@@ -472,8 +523,8 @@ SETTINGSTATES \<IMicrosoftGraphDeviceConfigurationSettingState\[\]\>: .
   \[SettingInstanceId \<String\>\]: SettingInstanceId
   \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
   \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-    \[DisplayName \<String\>\]: Not yet documented
-    \[Id \<String\>\]: Not yet documented
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
     \[SourceType \<String\>\]: settingSourceType
   \[State \<String\>\]: complianceStatus
   \[UserEmail \<String\>\]: UserEmail
@@ -484,6 +535,4 @@ SETTINGSTATES \<IMicrosoftGraphDeviceConfigurationSettingState\[\]\>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddeviceconfigurationstate)
-
-
 

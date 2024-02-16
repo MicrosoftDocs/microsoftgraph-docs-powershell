@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users
 Module Guid: 83531713-d218-476b-a4f0-53a357475dfb
 Download Help Link: {{ Update Download Link }}
@@ -15,6 +15,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserAppRoleAssignedResource](Get-MgBetaUserAppRoleAssignedResource.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserAppRoleAssignedResourceByAppId](Get-MgBetaUserAppRoleAssignedResourceByAppId.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserAppRoleAssignedResourceCount](Get-MgBetaUserAppRoleAssignedResourceCount.md)
@@ -464,9 +467,6 @@ Locale: en-US
 ### [Remove-MgBetaUserLicenseDetail](Remove-MgBetaUserLicenseDetail.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaUserManager](Remove-MgBetaUserManager.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaUserManagerByRef](Remove-MgBetaUserManagerByRef.md)
 {{ Fill in the Description }}
 
@@ -516,9 +516,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserSettingShiftPreference](Remove-MgBetaUserSettingShiftPreference.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaUserSponsor](Remove-MgBetaUserSponsor.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserTodoList](Remove-MgBetaUserTodoList.md)
@@ -640,5 +637,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
 {{ Fill in the Description }}
-
 

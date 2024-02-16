@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintent
@@ -23,13 +23,15 @@ Update-MgBetaDeviceManagementIntent -DeviceManagementIntentId <String> [-Additio
  [-IsAssigned] [-IsMigratingToConfigurationPolicy] [-LastModifiedDateTime <DateTime>]
  [-RoleScopeTagIds <String[]>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-TemplateId <String>] [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]
- [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementIntent -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,17 +45,35 @@ Update-MgBetaDeviceManagementIntent -InputObject <IDeviceManagementIdentity>
  [-IsAssigned] [-IsMigratingToConfigurationPolicy] [-LastModifiedDateTime <DateTime>]
  [-RoleScopeTagIds <String[]>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-TemplateId <String>] [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]
- [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementIntent -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property intents in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -282,6 +317,21 @@ When the intent was last modified
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -406,6 +456,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
@@ -743,6 +794,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintent)
-
-
 
