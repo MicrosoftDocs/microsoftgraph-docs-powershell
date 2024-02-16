@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplication
@@ -94,13 +94,15 @@ Update-MgBetaApplication -InputObject <IApplicationsIdentity> -BodyParameter <IM
 Update the properties of an application object.
 
 ## EXAMPLES
+### Example 1: Update an application
 
-### EXAMPLE 1
-```
+```powershell
 Update-MgBetaApplication `
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
   -DisplayName 'Testing App'
 ```
+
+This example updates the specified application's display name.
 
 ## PARAMETERS
 

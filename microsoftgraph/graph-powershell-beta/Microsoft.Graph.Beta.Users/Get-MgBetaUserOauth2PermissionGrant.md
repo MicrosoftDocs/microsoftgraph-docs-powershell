@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant
@@ -37,13 +37,17 @@ Get-MgBetaUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProper
 Get oauth2PermissionGrants from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Get-MgBetaUserOauth2PermissionGrant -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserOauth2PermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

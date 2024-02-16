@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate
@@ -58,18 +58,22 @@ The startDateTime is set to the same time the certificate is created using the a
 The endDateTime can be up to three years after the certificate is created.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	displayName = "CN=customDisplayName"
-	endDateTime = \[System.DateTime\]::Parse("2024-01-25T00:00:00Z")
+	endDateTime = [System.DateTime]::Parse("2024-01-25T00:00:00Z")
 }
 
 Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet.
+
 
 ## PARAMETERS
 

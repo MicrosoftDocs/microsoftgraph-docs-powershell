@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaserviceprincipalsynchronizationjob
@@ -50,9 +50,8 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Restart-MgBetaServicePrincipalSynchronizationJob Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Criteria = @{
@@ -61,6 +60,8 @@ $params = @{
 }
 Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
+This example shows how to use the Restart-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
