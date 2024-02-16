@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Remove-MgUserAppRoleAssignment
@@ -11,39 +10,33 @@ ms.prod: users
 ## SYNOPSIS
 Delete an appRoleAssignment that has been granted to a user.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserAppRoleAssignment -AppRoleAssignmentId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserAppRoleAssignment -AppRoleAssignmentId <String> -UserId <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete an appRoleAssignment that has been granted to a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-approleassignments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Remove a user's application role assignment
 
-```powershell
+### EXAMPLE 1
+```
 Remove-MgUserAppRoleAssignment ` 
 -AppRoleAssignmentID '01B8ir38J0eoiYqyMt_qAVDX9vgSB6xDur4zn5zOluM' ` 
 -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
-
-This example removes the specified application role from the specified user.
 
 ## PARAMETERS
 
@@ -59,6 +52,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -104,6 +112,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,6 +183,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
@@ -194,8 +218,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment)
-
 

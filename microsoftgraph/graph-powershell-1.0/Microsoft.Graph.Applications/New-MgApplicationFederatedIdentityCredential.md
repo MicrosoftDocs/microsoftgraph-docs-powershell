@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgApplicationFederatedIdentityCredential
@@ -13,35 +12,36 @@ Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgApplicationFederatedIdentityCredential -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-Audiences <String[]>] [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name <String>]
- [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Subject <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgApplicationFederatedIdentityCredential -ApplicationId <String>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
- [-Issuer <String>] [-Name <String>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,15 +49,12 @@ Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	name = "testing02"
@@ -69,10 +66,6 @@ $params = @{
 }
 
 New-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgApplicationFederatedIdentityCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -159,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -228,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Subject
 Required.
 The identifier of the external software workload within the external identity provider.
@@ -287,6 +310,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
@@ -351,8 +375,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential)
-
 

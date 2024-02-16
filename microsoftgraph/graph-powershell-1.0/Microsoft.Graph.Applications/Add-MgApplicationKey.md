@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgApplicationKey
@@ -15,37 +14,36 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
 Add-MgApplicationKey -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-KeyCredential <IMicrosoftGraphKeyCredential>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
- [-Proof <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Proof <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgApplicationKey -ApplicationId <String>
  -BodyParameter <IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
 Add-MgApplicationKey -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-KeyCredential <IMicrosoftGraphKeyCredential>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
- [-Proof <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Proof <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgApplicationKey -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,21 +53,18 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addkey-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Add a new key credential to an application
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "AsymmetricX509Cert"
 		usage = "Verify"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = $null
 	proof = "eyJ0eXAiOiJ..."
@@ -77,20 +72,16 @@ $params = @{
 
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add a new key credential to an application
-
-### Example 2: Add a key credential and an associated password for the key
-
-```powershell
-
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "X509CertAndPassword"
 		usage = "Sign"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = @{
 		secretText = "MKTr0w1..."
@@ -99,10 +90,6 @@ $params = @{
 }
 
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example will add a key credential and an associated password for the key
-
 
 ## PARAMETERS
 
@@ -152,6 +139,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -192,6 +194,21 @@ To construct, see NOTES section for PASSWORDCREDENTIAL properties and create a h
 Type: IMicrosoftGraphPasswordCredential
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -253,6 +270,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential
@@ -367,8 +385,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
-[Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgApplicationAppManagementPolicyByRef
@@ -13,39 +12,52 @@ Assign an appManagementPolicy policy object to an application or service princip
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgApplicationAppManagementPolicyByRef -ApplicationId <String> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgApplicationAppManagementPolicyByRef -ApplicationId <String> -BodyParameter <IReferenceCreate> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationAppManagementPolicyByRef -ApplicationId <String> -BodyParameter <IReferenceCreate>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
- -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IReferenceCreate> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Assign an appManagementPolicy policy object to an application or service principal object.
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -89,6 +101,21 @@ Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -142,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -180,6 +222,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IReferenceCreate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
@@ -219,9 +262,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronization
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property synchronization in servicePrincipals
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -20,13 +17,15 @@ Update the navigation property synchronization in servicePrincipals
 Set-MgServicePrincipalSynchronization -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgServicePrincipalSynchronization -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphSynchronization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronization> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -34,17 +33,31 @@ Set-MgServicePrincipalSynchronization -ServicePrincipalId <String>
 Set-MgServicePrincipalSynchronization -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronization> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property synchronization in servicePrincipals
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,6 +86,21 @@ Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -119,6 +147,21 @@ To construct, see NOTES section for JOBS properties and create a hash table.
 Type: IMicrosoftGraphSynchronizationJob[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -212,6 +255,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
@@ -866,9 +910,6 @@ Must match one of the directory definitions in synchronizationSchema.
     \[Version \<String\>\]: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronization)
-
-
 

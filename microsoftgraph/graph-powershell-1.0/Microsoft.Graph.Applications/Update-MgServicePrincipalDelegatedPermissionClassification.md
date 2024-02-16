@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipaldelegatedpermissionclassification
@@ -10,40 +10,56 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgServicePrincipalDelegatedPermissionClassification -DelegatedPermissionClassificationId <String>
  -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>]
- [-PermissionId <String>] [-PermissionName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PermissionId <String>] [-PermissionName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServicePrincipalDelegatedPermissionClassification -DelegatedPermissionClassificationId <String>
- -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>] [-PermissionId <String>]
- [-PermissionName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PermissionName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -105,6 +121,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -173,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalId
 The unique identifier of servicePrincipal
 
@@ -226,6 +272,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification
@@ -271,9 +318,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipaldelegatedpermissionclassification)
-
-
 

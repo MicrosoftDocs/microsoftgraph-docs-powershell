@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # New-MgUserAppRoleAssignment
@@ -12,9 +11,6 @@ ms.prod: users
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,13 +18,13 @@ To grant an app role assignment to a user, you need three identifiers:
 New-MgUserAppRoleAssignment -UserId <String> [-AdditionalProperties <Hashtable>] [-AppRoleId <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Id <String>] [-PrincipalDisplayName <String>]
  [-PrincipalId <String>] [-PrincipalType <String>] [-ResourceDisplayName <String>] [-ResourceId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserAppRoleAssignment -UserId <String> -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserAppRoleAssignment -UserId <String> -BodyParameter <IMicrosoftGraphAppRoleAssignment>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,32 +32,32 @@ New-MgUserAppRoleAssignment -UserId <String> -BodyParameter <IMicrosoftGraphAppR
 New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-AppRoleId <String>] [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Id <String>]
  [-PrincipalDisplayName <String>] [-PrincipalId <String>] [-PrincipalType <String>]
- [-ResourceDisplayName <String>] [-ResourceId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceDisplayName <String>] [-ResourceId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-approleassignments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Assign a user an application role
 
-```powershell
+### EXAMPLE 1
+```
 New-MgUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -ResourceId '0873169c-9595-4664-9d02-499b49846ff1'  `
   -AppRoleID '00000000-0000-0000-0000-000000000000' |
   Format-List Id, AppRoleId, CreationTime, PrincipalDisplayName, 
   PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
+```
 
 Id                   : 01B8ir38J0eoiYqyMt_qAWev_PSoYDBGmcqI9E2dyKI
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -70,9 +66,6 @@ PrincipalId          : 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-analytics
 ResourceId           : 0873169c-9595-4664-9d02-499b49846ff1
-```
-
-This commands assigns the specified user a role in the specified application resource.
 
 ## PARAMETERS
 
@@ -159,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -234,6 +242,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -327,6 +350,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
@@ -389,8 +413,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
-
 

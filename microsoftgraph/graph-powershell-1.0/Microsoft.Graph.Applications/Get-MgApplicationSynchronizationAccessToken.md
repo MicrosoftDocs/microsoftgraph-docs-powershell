@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgApplicationSynchronizationAccessToken
@@ -11,44 +10,53 @@ ms.prod: applications
 ## SYNOPSIS
 Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationAccessToken?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AcquireExpanded (Default)
 ```
 Get-MgApplicationSynchronizationAccessToken -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Acquire
 ```
 Get-MgApplicationSynchronizationAccessToken -ApplicationId <String>
  -BodyParameter <IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AcquireViaIdentityExpanded
 ```
 Get-MgApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AcquireViaIdentity
 ```
 Get-MgApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,6 +122,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -141,6 +164,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -183,6 +221,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
@@ -227,9 +266,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationAccessToken?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken)
-
-
 

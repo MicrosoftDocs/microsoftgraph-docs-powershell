@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgServicePrincipalPassword
@@ -16,41 +15,40 @@ Add a strong password or secret to a servicePrincipal object.
 ### AddExpanded (Default)
 ```
 Add-MgServicePrincipalPassword -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
- [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgServicePrincipalPassword -ServicePrincipalId <String>
  -BodyParameter <IPathsIeboplServiceprincipalsServiceprincipalIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
 Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsIeboplServiceprincipalsServiceprincipalIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add a strong password or secret to a servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addpassword-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	passwordCredential = @{
@@ -59,10 +57,6 @@ $params = @{
 }
 
 Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
-
 
 ## PARAMETERS
 
@@ -97,6 +91,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -121,6 +130,21 @@ To construct, see NOTES section for PASSWORDCREDENTIAL properties and create a h
 Type: IMicrosoftGraphPasswordCredential
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -182,6 +206,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPathsIeboplServiceprincipalsServiceprincipalIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordCredential
@@ -258,5 +283,4 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
-
 

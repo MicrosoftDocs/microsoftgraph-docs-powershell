@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjobschemadirectory
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property directories in applications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,15 @@ Update the navigation property directories in applications
 Update-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <String> -DirectoryDefinitionId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Discoverabilities <String>]
  [-DiscoveryDateTime <DateTime>] [-Id <String>] [-Name <String>] [-Objects <IMicrosoftGraphObjectDefinition[]>]
- [-ReadOnly] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReadOnly] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <String> -DirectoryDefinitionId <String>
- -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,17 +33,30 @@ Update-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <String> -D
 Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Discoverabilities <String>] [-DiscoveryDateTime <DateTime>]
  [-Id <String>] [-Name <String>] [-Objects <IMicrosoftGraphObjectDefinition[]>] [-ReadOnly] [-Version <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property directories in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -141,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -198,6 +224,21 @@ To construct, see NOTES section for OBJECTS properties and create a hash table.
 Type: IMicrosoftGraphObjectDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -290,6 +331,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
@@ -417,9 +459,6 @@ Not nullable.
   \[SupportedApis \<String\[\]\>\]: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
-[Update-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjobschemadirectory)
-
-
 

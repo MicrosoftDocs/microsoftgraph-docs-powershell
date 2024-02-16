@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
 Module Guid: 467f54f2-44a8-4993-8e75-b96c3e443098
 Download Help Link: {{ Update Download Link }}
@@ -659,9 +659,6 @@ Locale: en-US
 ### [Remove-MgServicePrincipal](Remove-MgServicePrincipal.md)
 {{ Fill in the Description }}
 
-### [Remove-MgServicePrincipalAppManagementPolicy](Remove-MgServicePrincipalAppManagementPolicy.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgServicePrincipalAppRoleAssignedTo](Remove-MgServicePrincipalAppRoleAssignedTo.md)
 {{ Fill in the Description }}
 
@@ -847,5 +844,4 @@ Locale: en-US
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

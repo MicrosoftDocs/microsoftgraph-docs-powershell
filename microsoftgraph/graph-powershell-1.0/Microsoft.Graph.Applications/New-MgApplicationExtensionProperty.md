@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgApplicationExtensionProperty
@@ -11,51 +10,46 @@ ms.prod: extensions
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgApplicationExtensionProperty -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
- [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgApplicationExtensionProperty -ApplicationId <String> -BodyParameter <IMicrosoftGraphExtensionProperty>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
- [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphExtensionProperty> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExtensionProperty> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new directory extension definition, represented by an extensionProperty object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-extensionproperty-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	name = "jobGroup"
@@ -67,10 +61,6 @@ $params = @{
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -171,6 +161,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -254,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetObjects
 Following values are supported.
 Not nullable.
@@ -309,6 +329,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
@@ -369,8 +390,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty)
-
 

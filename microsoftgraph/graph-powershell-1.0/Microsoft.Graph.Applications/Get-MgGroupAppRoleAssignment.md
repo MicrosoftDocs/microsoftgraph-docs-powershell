@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment
@@ -11,28 +11,28 @@ schema: 2.0.0
 Represents the app roles a group has been granted for an application.
 Supports $expand.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgGroupAppRoleAssignment -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-ConsistencyLevel <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgGroupAppRoleAssignment -AppRoleAssignmentId <String> -GroupId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [-ConsistencyLevel <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [-ConsistencyLevel <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,11 +40,12 @@ Represents the app roles a group has been granted for an application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get appRoleAssignments granted to a group
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgGroupAppRoleAssignment -GroupId '2692d278-8323-4094-b286-e0ffce5e54a5' |
   Format-List
+```
 
 AppRoleId            : 00000000-0000-0000-0000-000000000000
 CreatedDateTime      : 7/29/2021 10:08:49 AM
@@ -56,9 +57,6 @@ PrincipalType        : Group
 ResourceDisplayName  : Common Data Service
 ResourceId           : 93af1c70-e87f-45df-8780-8af2d7afd05e
 AdditionalProperties : {}
-```
-
-This example get all app role assignments granted to the specified group.
 
 ## PARAMETERS
 
@@ -169,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -196,6 +209,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -281,6 +309,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
@@ -315,8 +344,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment)
-
 

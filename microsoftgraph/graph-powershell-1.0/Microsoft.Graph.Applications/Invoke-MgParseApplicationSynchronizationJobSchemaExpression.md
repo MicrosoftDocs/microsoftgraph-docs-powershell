@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationjobschemaexpression
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Invoke-MgParseApplicationSynchronizationJobSchemaExpression
@@ -12,9 +11,6 @@ ms.prod: applications
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ParseExpanded (Default)
@@ -22,7 +18,8 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Parse
@@ -30,7 +27,7 @@ Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <Stri
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
  -SynchronizationJobId <String>
  -BodyParameter <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
@@ -38,22 +35,32 @@ Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <Stri
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ParseViaIdentity
 ```
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -118,6 +125,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -131,6 +153,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -219,6 +256,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
@@ -381,9 +419,6 @@ Not nullable.
     \[Key \<String\>\]: Key.
 
 ## RELATED LINKS
-[Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationjobschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationjobschemaexpression)
-
-
 
