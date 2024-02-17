@@ -15,8 +15,8 @@ Create new navigation property to notificationMessageTemplates for deviceManagem
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementNotificationMessageTemplate [-AdditionalProperties <Hashtable>]
- [-BrandingOptions <NotificationTemplateBrandingOptions>] [-DefaultLocale <String>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-BrandingOptions <NotificationTemplateBrandingOptions>] [-DefaultLocale <String>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -84,6 +84,21 @@ Accept wildcard characters: False
 
 ### -DefaultLocale
 The default locale to fallback onto when the requested locale is not available.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Description
+Display name for the Notification Message Template.
 
 ```yaml
 Type: String
@@ -245,6 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -260,6 +276,7 @@ Read-only.
   - `[BrandingOptions <NotificationTemplateBrandingOptions?>]`: Branding Options for the Message Template.
 Branding is defined in the Intune Admin Console.
   - `[DefaultLocale <String>]`: The default locale to fallback onto when the requested locale is not available.
+  - `[Description <String>]`: Display name for the Notification Message Template.
   - `[DisplayName <String>]`: Display name for the Notification Message Template.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage- `[]`>]`: The list of localized messages for this Notification Message Template.

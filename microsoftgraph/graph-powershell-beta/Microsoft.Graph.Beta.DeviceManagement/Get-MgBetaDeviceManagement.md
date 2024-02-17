@@ -93,6 +93,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagement
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS

@@ -355,6 +355,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScript
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1831,7 +1832,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
               - `[Manufacturer <String>]`: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
               - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -1840,7 +1841,7 @@ Read-only.
 Nullable.
 Supports $expand.
               - `[Model <String>]`: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
               - `[Name <String>]`: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
               - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
@@ -1891,7 +1892,7 @@ Supports $expand.
               - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
               - `[UsageRights <IMicrosoftGraphUsageRight- `[]`>]`: Represents the usage rights a device has been granted.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -5315,9 +5316,9 @@ Maximum length: 1024 characters.
               - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
             - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
             - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-            - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+            - `[InternalId <String>]`: A unique ID for the team used in a few places such as the audit log/Office 365 Management Activity API.
             - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
-            - `[IsMembershipLimitedToOwners <Boolean?>]`: If set to true, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.
+            - `[IsMembershipLimitedToOwners <Boolean?>]`: If set to true, the team is currently in the owner-only team membership state and inaccessible by other team members, such as students.
             - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
@@ -5337,8 +5338,8 @@ Maximum length: 1024 characters.
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: The async operations that ran or are running on this team.
             - `[Owners <IMicrosoftGraphUser- `[]`>]`: The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
-When using user delegated permissions, no owner can be specified (the current user is the owner).
-Owner must be specified as an object ID (GUID), not a UPN.
+When using user-delegated permissions, no owner can be specified (the current user is the owner).
+The owner must be specified as an object ID (GUID), not a UPN.
             - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps to access the team.
             - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
             - `[PrimaryChannel <IMicrosoftGraphChannel>]`: channel
@@ -5415,14 +5416,16 @@ Required.
                 - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
                 - `[SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>]`: schedulingGroupInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Code <String>]`: 
-                  - `[DisplayName <String>]`: 
-                  - `[SchedulingGroupId <String>]`: 
+                  - `[Code <String>]`: The code for the schedulingGroup.
+                  - `[DisplayName <String>]`: The display name for the schedulingGroup.
+Required.
+                  - `[SchedulingGroupId <String>]`: ID of the schedulingGroup.
                 - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
                 - `[TeamInfo <IMicrosoftGraphShiftsTeamInfo>]`: shiftsTeamInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: 
-                  - `[TeamId <String>]`: 
+                  - `[DisplayName <String>]`: The display name for the team.
+Required.
+                  - `[TeamId <String>]`: ID of the team.
               - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
               - `[ProvisionStatus <String>]`: operationStatus
               - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
@@ -5460,8 +5463,16 @@ Required.
 Required.
                 - `[UserInfo <IMicrosoftGraphShiftsUserInfo>]`: shiftsUserInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: 
-                  - `[UserId <String>]`: 
+                  - `[DisplayName <String>]`: The display name for the user.
+Required.
+                  - `[UserId <String>]`: ID of the user.
+              - `[ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Description <String>]`: 
+                - `[DisplayName <String>]`: 
+                - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: 
+                  - `[AllowedResourceActions <String- `[]`>]`: 
               - `[StartDayOfWeek <String>]`: dayOfWeek
               - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
                 - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
@@ -5596,8 +5607,8 @@ Read-only.
               - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
             - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
             - `[Visibility <String>]`: teamVisibilityType
-            - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+            - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
           - `[Theme <String>]`: Specifies a Microsoft 365 group's color theme.
 Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
@@ -9308,7 +9319,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
             - `[Manufacturer <String>]`: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
             - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -9317,7 +9328,7 @@ Read-only.
 Nullable.
 Supports $expand.
             - `[Model <String>]`: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
             - `[Name <String>]`: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
             - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
@@ -9368,7 +9379,7 @@ Supports $expand.
             - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
             - `[UsageRights <IMicrosoftGraphUsageRight- `[]`>]`: Represents the usage rights a device has been granted.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -12795,9 +12806,9 @@ Maximum length: 1024 characters.
             - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
           - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
           - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-          - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+          - `[InternalId <String>]`: A unique ID for the team used in a few places such as the audit log/Office 365 Management Activity API.
           - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
-          - `[IsMembershipLimitedToOwners <Boolean?>]`: If set to true, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.
+          - `[IsMembershipLimitedToOwners <Boolean?>]`: If set to true, the team is currently in the owner-only team membership state and inaccessible by other team members, such as students.
           - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
@@ -12817,8 +12828,8 @@ Maximum length: 1024 characters.
           - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: The async operations that ran or are running on this team.
           - `[Owners <IMicrosoftGraphUser- `[]`>]`: The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
-When using user delegated permissions, no owner can be specified (the current user is the owner).
-Owner must be specified as an object ID (GUID), not a UPN.
+When using user-delegated permissions, no owner can be specified (the current user is the owner).
+The owner must be specified as an object ID (GUID), not a UPN.
           - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps to access the team.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[PrimaryChannel <IMicrosoftGraphChannel>]`: channel
@@ -12895,14 +12906,16 @@ Required.
               - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
               - `[SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>]`: schedulingGroupInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Code <String>]`: 
-                - `[DisplayName <String>]`: 
-                - `[SchedulingGroupId <String>]`: 
+                - `[Code <String>]`: The code for the schedulingGroup.
+                - `[DisplayName <String>]`: The display name for the schedulingGroup.
+Required.
+                - `[SchedulingGroupId <String>]`: ID of the schedulingGroup.
               - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
               - `[TeamInfo <IMicrosoftGraphShiftsTeamInfo>]`: shiftsTeamInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: 
-                - `[TeamId <String>]`: 
+                - `[DisplayName <String>]`: The display name for the team.
+Required.
+                - `[TeamId <String>]`: ID of the team.
             - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
             - `[ProvisionStatus <String>]`: operationStatus
             - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
@@ -12940,8 +12953,16 @@ Required.
 Required.
               - `[UserInfo <IMicrosoftGraphShiftsUserInfo>]`: shiftsUserInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: 
-                - `[UserId <String>]`: 
+                - `[DisplayName <String>]`: The display name for the user.
+Required.
+                - `[UserId <String>]`: ID of the user.
+            - `[ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Description <String>]`: 
+              - `[DisplayName <String>]`: 
+              - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: 
+                - `[AllowedResourceActions <String- `[]`>]`: 
             - `[StartDayOfWeek <String>]`: dayOfWeek
             - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
               - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
@@ -13076,8 +13097,8 @@ Read-only.
             - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
           - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
           - `[Visibility <String>]`: teamVisibilityType
-          - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+          - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
         - `[Theme <String>]`: Specifies a Microsoft 365 group's color theme.
 Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
@@ -16779,7 +16800,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
               - `[Manufacturer <String>]`: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
               - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -16788,7 +16809,7 @@ Read-only.
 Nullable.
 Supports $expand.
               - `[Model <String>]`: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
               - `[Name <String>]`: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
               - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
@@ -16839,7 +16860,7 @@ Supports $expand.
               - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
               - `[UsageRights <IMicrosoftGraphUsageRight- `[]`>]`: Represents the usage rights a device has been granted.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -20266,9 +20287,9 @@ Maximum length: 1024 characters.
               - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
             - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
             - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-            - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+            - `[InternalId <String>]`: A unique ID for the team used in a few places such as the audit log/Office 365 Management Activity API.
             - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
-            - `[IsMembershipLimitedToOwners <Boolean?>]`: If set to true, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.
+            - `[IsMembershipLimitedToOwners <Boolean?>]`: If set to true, the team is currently in the owner-only team membership state and inaccessible by other team members, such as students.
             - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
@@ -20288,8 +20309,8 @@ Maximum length: 1024 characters.
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: The async operations that ran or are running on this team.
             - `[Owners <IMicrosoftGraphUser- `[]`>]`: The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
-When using user delegated permissions, no owner can be specified (the current user is the owner).
-Owner must be specified as an object ID (GUID), not a UPN.
+When using user-delegated permissions, no owner can be specified (the current user is the owner).
+The owner must be specified as an object ID (GUID), not a UPN.
             - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps to access the team.
             - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
             - `[PrimaryChannel <IMicrosoftGraphChannel>]`: channel
@@ -20366,14 +20387,16 @@ Required.
                 - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
                 - `[SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>]`: schedulingGroupInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Code <String>]`: 
-                  - `[DisplayName <String>]`: 
-                  - `[SchedulingGroupId <String>]`: 
+                  - `[Code <String>]`: The code for the schedulingGroup.
+                  - `[DisplayName <String>]`: The display name for the schedulingGroup.
+Required.
+                  - `[SchedulingGroupId <String>]`: ID of the schedulingGroup.
                 - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
                 - `[TeamInfo <IMicrosoftGraphShiftsTeamInfo>]`: shiftsTeamInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: 
-                  - `[TeamId <String>]`: 
+                  - `[DisplayName <String>]`: The display name for the team.
+Required.
+                  - `[TeamId <String>]`: ID of the team.
               - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
               - `[ProvisionStatus <String>]`: operationStatus
               - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
@@ -20411,8 +20434,16 @@ Required.
 Required.
                 - `[UserInfo <IMicrosoftGraphShiftsUserInfo>]`: shiftsUserInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: 
-                  - `[UserId <String>]`: 
+                  - `[DisplayName <String>]`: The display name for the user.
+Required.
+                  - `[UserId <String>]`: ID of the user.
+              - `[ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Description <String>]`: 
+                - `[DisplayName <String>]`: 
+                - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: 
+                  - `[AllowedResourceActions <String- `[]`>]`: 
               - `[StartDayOfWeek <String>]`: dayOfWeek
               - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
                 - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
@@ -20547,8 +20578,8 @@ Read-only.
               - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
             - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
             - `[Visibility <String>]`: teamVisibilityType
-            - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+            - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
           - `[Theme <String>]`: Specifies a Microsoft 365 group's color theme.
 Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
