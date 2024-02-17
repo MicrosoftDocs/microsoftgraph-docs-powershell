@@ -8,7 +8,7 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    #$graphMapping.Add("v1.0", "graph-powershell-1.0")
+    $graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -53,10 +53,10 @@ function Generate-GraphHelp {
         Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate
         Generate-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate  
     }
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Updated markdown help" 
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updated markdown help" 
 }
 
 function Get-FolderByProfile {
@@ -135,22 +135,22 @@ function Generate-GraphModuleHelp {
         Write-Host "`nError Item Name: "$_.Exception.ItemName
     }
 }
-# Set-Location microsoftgraph-docs-powershell
-# $date = Get-Date -Format "dd-MM-yyyy"
-# $proposedBranch = "weekly_v2_docs_update_$date"
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }
-# else {
-#     Write-Host "Branch already exists"
-#     git checkout $proposedBranch
-# }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_v2_docs_update_$date"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}
+else {
+    Write-Host "Branch already exists"
+    git checkout $proposedBranch
+}
 # Install PlatyPS
 if (!(Get-Module -Name PlatyPS -ListAvailable)) {
     Install-Module PlatyPS -Force
 }
-#Import-Module PlatyPS -Force -Scope Global
+Import-Module PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
 $ErrorActionPreference = 'Continue'
 $LASTEXITCODE = $null
@@ -164,7 +164,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-#Set-Location ..\microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Generate-GraphHelp -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
