@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeBase](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -247,6 +250,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteContentTypeBase](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypebase)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Calls the OneNote service for notebook related operations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteGetByPathOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -205,6 +208,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteGetByPathOnenote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsitegetbypathonenote)
 

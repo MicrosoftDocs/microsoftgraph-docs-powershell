@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function summarizeDevicePerformanceDevices
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Summarize (Default)
@@ -281,6 +284,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice)
 

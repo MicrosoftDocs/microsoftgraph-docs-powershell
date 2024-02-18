@@ -14,6 +14,9 @@ This operation returns by default only a subset of all the available properties,
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -199,6 +202,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename)
 

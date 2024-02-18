@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Bypass activation lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Skip-MgBetaUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Skip-MgBetaUserManagedDeviceActivationLock?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Bypass (Default)
@@ -218,6 +221,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Skip-MgBetaUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Skip-MgBetaUserManagedDeviceActivationLock?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock)
 

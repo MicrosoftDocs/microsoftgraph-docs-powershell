@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterOperators
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -288,6 +291,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationjobschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationjobschemaoperator)
 

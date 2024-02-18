@@ -11,6 +11,9 @@ ms.prod: compliance
 ## SYNOPSIS
 Create a new authoredNote object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -383,6 +386,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[New-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote)
 

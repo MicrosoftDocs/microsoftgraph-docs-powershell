@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14120,6 +14123,7 @@ Read-only.
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint)
 

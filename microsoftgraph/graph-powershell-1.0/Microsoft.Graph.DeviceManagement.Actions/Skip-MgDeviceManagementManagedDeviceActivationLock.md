@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Bypass activation lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Bypass (Default)
@@ -186,6 +189,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/skip-mgdevicemanagementmanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/skip-mgdevicemanagementmanageddeviceactivationlock)
 

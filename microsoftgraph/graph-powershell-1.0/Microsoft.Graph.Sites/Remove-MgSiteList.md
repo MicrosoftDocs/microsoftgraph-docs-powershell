@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property lists for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelist)
 

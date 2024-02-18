@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentTypes in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1808,6 +1811,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttype)
 

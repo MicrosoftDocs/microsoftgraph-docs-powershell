@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addActivities
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Add-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -283,6 +286,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Add-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Add-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity)
 

@@ -11,6 +11,9 @@ ms.prod: browser-management
 ## SYNOPSIS
 Create a new browserSiteList object to support Internet Explorer mode.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -492,6 +495,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[WebUrl <String>]`: The URL of the site.
 
 ## RELATED LINKS
+[New-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist)
 

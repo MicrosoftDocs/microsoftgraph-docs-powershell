@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to manifests for reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -360,6 +363,7 @@ By default, the data in the file is partitioned by the number of line items.
   - `[SchemaVersion <String>]`: The version of the manifest schema.
 
 ## RELATED LINKS
+[New-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest)
 

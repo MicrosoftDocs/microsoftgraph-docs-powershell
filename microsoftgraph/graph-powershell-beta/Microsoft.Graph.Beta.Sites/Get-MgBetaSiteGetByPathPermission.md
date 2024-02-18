@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the permission resources from the permissions navigation property on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -284,6 +287,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathpermission)
 

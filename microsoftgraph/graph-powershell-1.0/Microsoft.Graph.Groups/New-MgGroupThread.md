@@ -12,6 +12,9 @@ Start a new group conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -586,6 +589,7 @@ Returned only on $select.
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
 

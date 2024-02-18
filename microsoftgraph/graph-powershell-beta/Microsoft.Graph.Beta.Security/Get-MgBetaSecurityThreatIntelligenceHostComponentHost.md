@@ -12,6 +12,9 @@ The host related to this component.
 This is a reverse navigation property.
 When you navigate to components from a host, this should be assumed to be a return reference.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -236,6 +239,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcomponenthost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcomponenthost)
 

@@ -12,6 +12,9 @@ For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveList](/powershell/module/Microsoft.Graph.Files/Get-MgDriveList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -184,6 +187,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveList](/powershell/module/Microsoft.Graph.Files/Get-MgDriveList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelist)
 

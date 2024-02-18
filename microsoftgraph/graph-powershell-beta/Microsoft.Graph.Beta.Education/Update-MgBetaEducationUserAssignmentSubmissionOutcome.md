@@ -12,6 +12,9 @@ ms.prod: education
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -353,6 +356,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionoutcome)
 

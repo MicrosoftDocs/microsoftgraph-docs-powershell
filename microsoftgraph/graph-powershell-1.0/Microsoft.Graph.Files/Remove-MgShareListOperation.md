@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -227,6 +230,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistoperation)
 

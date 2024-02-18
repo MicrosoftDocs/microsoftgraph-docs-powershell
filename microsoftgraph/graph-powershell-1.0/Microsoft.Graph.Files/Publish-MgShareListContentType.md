@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in the content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaShareListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -215,6 +218,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Publish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaShareListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Classes for which the user is a teacher.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeTaughtClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,6 +296,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeTaughtClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass)
 

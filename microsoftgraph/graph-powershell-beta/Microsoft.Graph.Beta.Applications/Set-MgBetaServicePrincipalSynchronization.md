@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property synchronization in servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -940,6 +943,7 @@ Must match one of the directory definitions in synchronizationSchema.
     - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
+[Set-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronization)
 

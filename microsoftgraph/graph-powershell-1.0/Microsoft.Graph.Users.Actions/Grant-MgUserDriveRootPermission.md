@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Grant-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Grant-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -322,6 +325,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Grant-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriverootpermission)
 

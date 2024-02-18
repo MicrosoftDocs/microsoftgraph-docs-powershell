@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -111,6 +114,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternal)
 

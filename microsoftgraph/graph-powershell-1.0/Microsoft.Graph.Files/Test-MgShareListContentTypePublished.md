@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function isPublished
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaShareListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaShareListContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -165,6 +168,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaShareListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaShareListContentTypePublished?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished)
 

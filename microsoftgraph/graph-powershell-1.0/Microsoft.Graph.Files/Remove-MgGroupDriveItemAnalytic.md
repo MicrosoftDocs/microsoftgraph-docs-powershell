@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property analytics for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -238,6 +241,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemanalytic)
 

@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Lock-MgBetaUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Lock-MgBetaUserManagedDeviceRemote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Lock (Default)
@@ -218,6 +221,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Lock-MgBetaUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Lock-MgBetaUserManagedDeviceRemote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote)
 

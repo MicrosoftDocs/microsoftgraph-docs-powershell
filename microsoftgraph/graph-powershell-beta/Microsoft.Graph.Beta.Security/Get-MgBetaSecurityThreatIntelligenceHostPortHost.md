@@ -12,6 +12,9 @@ The host related to this hostPort.
 This is a reverse navigation property.
 When you navigate to hostPorts from a host, assume that this is a return reference.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPortHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPortHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -235,6 +238,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostPortHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPortHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostporthost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostporthost)
 

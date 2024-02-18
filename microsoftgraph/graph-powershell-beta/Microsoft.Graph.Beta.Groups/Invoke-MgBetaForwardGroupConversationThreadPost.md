@@ -12,6 +12,9 @@ ms.prod: groups
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -373,6 +376,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[Invoke-MgForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost)
 

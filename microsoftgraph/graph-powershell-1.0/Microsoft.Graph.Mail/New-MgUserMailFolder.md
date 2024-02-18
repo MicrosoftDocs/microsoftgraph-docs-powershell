@@ -12,6 +12,9 @@ ms.prod: outlook
 Use this API to create a new mail folder in the root folder of the user's mailbox.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -896,6 +899,7 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
 

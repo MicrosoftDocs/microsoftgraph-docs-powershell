@@ -11,6 +11,9 @@ schema: 2.0.0
 Used to address any item contained in this site.
 This collection can't be enumerated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -356,6 +359,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitem)
 

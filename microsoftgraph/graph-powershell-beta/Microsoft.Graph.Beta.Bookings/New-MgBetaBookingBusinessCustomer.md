@@ -11,6 +11,9 @@ ms.prod: bookings
 ## SYNOPSIS
 Create a new bookingCustomer object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -430,6 +433,7 @@ PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer,
   - `[Type <String>]`: phoneType
 
 ## RELATED LINKS
+[New-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subjectRightsRequests for privacy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequest)
 

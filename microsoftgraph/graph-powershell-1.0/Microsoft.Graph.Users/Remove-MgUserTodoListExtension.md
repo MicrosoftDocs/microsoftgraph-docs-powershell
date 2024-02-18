@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -231,6 +234,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolistextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolistextension)
 

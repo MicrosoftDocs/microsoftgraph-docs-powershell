@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createLink
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItemLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -386,6 +389,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[New-MgBetaDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemlink)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property analytics in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteGetByPathAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -30204,6 +30207,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteGetByPathAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathanalytic)
 

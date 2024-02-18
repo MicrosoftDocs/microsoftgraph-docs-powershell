@@ -18,6 +18,9 @@ After the POST clone returns, you need to GET the operation returned by the Loca
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CloneExpanded (Default)
@@ -371,6 +374,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam)
 

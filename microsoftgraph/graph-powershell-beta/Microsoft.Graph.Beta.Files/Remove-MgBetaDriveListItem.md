@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Removes an item from a \[list\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -230,6 +233,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrivelistitem)
 

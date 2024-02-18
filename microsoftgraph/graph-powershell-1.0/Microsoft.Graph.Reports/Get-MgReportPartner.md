@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents billing details for a Microsoft direct partner.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPartner](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -107,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaReportPartner](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartner)
 

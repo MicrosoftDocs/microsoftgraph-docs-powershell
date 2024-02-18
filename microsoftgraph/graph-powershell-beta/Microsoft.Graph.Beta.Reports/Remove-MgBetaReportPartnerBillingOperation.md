@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -228,6 +231,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
+[Remove-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingoperation)
 

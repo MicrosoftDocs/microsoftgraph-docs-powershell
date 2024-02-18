@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property whoisHistoryRecords in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1317,6 +1320,7 @@ No format is guaranteed.
 No format is guaranteed.
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoishistoryrecord)
 

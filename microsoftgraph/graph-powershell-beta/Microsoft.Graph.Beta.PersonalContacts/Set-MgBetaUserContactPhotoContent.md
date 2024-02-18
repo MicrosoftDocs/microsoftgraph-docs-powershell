@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Set-MgUserContactPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -243,6 +246,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Set-MgUserContactPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/set-mgbetausercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/set-mgbetausercontactphotocontent)
 

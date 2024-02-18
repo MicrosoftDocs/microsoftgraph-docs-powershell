@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDownloadUrl
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Create (Default)
@@ -214,6 +217,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl)
 

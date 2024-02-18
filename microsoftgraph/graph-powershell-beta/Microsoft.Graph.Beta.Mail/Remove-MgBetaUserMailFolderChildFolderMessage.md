@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property messages for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -244,6 +247,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessage)
 

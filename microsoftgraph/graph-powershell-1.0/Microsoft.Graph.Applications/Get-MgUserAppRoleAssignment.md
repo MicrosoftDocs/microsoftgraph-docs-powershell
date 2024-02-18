@@ -11,6 +11,9 @@ schema: 2.0.0
 Represents the app roles a user has been granted for an application.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -349,6 +352,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment)
 

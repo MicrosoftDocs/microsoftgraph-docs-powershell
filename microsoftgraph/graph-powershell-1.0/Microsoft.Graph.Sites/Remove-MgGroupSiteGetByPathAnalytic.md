@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property analytics for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteGetByPathAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -281,6 +284,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteGetByPathAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitegetbypathanalytic)
 

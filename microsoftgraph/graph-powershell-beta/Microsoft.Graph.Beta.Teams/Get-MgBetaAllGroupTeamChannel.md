@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of channels either hosted in or shared with the team (incoming channels).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgAllGroupTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -337,6 +340,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgAllGroupTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallgroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallgroupteamchannel)
 

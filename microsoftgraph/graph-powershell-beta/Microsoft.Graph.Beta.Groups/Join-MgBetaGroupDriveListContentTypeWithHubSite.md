@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Associate a \[content type\]\[contentType\] with a list of hub sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -339,6 +342,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Join-MgGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupdrivelistcontenttypewithhubsite)
 

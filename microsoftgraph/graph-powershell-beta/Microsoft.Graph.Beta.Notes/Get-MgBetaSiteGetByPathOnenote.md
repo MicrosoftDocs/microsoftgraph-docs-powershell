@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get onenote from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteGetByPathOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -205,6 +208,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasitegetbypathonenote)
 

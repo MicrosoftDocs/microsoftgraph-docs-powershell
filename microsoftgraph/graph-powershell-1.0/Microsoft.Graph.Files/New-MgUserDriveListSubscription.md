@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to subscriptions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -587,6 +590,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistsubscription)
 

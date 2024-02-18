@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieves the list of devices with failed apps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceWithAppFailure?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceWithAppFailure?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicewithappfailure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicewithappfailure)
 

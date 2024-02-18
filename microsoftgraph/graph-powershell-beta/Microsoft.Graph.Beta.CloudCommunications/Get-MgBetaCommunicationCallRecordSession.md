@@ -13,6 +13,9 @@ Peer-to-peer calls typically only have one session, whereas group calls typicall
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -327,6 +330,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession)
 

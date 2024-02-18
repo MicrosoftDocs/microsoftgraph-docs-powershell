@@ -12,6 +12,9 @@ ms.prod: education
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentRubric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -442,6 +445,7 @@ QUALITIES <IMicrosoftGraphRubricQuality- `[]`>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
+[Update-MgEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentRubric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentrubric)
 

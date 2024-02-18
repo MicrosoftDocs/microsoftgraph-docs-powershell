@@ -11,6 +11,9 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerplan object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan)
 

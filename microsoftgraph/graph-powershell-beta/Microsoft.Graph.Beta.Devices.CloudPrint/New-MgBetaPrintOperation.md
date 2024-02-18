@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -222,6 +225,7 @@ Read-only.
   - `[State <String>]`: printOperationProcessingState
 
 ## RELATED LINKS
+[New-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintoperation)
 

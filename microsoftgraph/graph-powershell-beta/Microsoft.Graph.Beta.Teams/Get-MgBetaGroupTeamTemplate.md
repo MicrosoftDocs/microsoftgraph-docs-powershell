@@ -11,6 +11,9 @@ schema: 2.0.0
 The template this team was created from.
 See available templates.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -199,6 +202,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplate)
 

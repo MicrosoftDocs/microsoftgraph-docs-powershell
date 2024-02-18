@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgShareContentTypeBase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -191,6 +194,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgShareContentTypeBase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecontenttypebase)
 

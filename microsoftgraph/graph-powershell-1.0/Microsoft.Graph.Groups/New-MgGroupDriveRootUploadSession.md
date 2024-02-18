@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createUploadSession
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveRootUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -307,6 +310,7 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveRootUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession)
 

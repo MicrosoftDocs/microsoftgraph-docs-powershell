@@ -16,6 +16,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageReplyAll?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -561,6 +564,7 @@ Read-only.
   - `[WebLink <String>]`:
 
 ## RELATED LINKS
+[New-MgUserMailFolderChildFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageReplyAll?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessagereplyall)
 

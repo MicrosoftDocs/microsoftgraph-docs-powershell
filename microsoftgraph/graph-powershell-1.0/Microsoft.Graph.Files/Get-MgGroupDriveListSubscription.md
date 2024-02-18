@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -340,6 +343,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistsubscription)
 

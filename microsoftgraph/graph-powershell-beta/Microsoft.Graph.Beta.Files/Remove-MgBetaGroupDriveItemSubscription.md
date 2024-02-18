@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subscriptions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -258,6 +261,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemsubscription)
 

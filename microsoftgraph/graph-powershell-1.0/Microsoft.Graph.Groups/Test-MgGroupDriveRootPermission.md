@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validatePermission
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -309,6 +312,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Test-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdriverootpermission)
 

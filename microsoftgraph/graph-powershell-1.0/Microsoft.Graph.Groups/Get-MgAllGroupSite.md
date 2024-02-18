@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAllSites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaAllGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -281,6 +284,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaAllGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaAllGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite)
 

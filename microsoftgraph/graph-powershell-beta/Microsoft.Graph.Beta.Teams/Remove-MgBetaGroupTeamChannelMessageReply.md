@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property replies for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -275,6 +278,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelmessagereply)
 

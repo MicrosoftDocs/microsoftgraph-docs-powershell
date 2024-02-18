@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function recent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgRecentDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recent (Default)
@@ -272,6 +275,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgRecentDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgRecentDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive)
 

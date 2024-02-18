@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property appRoleAssignments in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -426,6 +429,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mguserapproleassignment)
 

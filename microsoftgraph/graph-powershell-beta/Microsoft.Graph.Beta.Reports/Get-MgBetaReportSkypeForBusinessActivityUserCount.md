@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSkypeForBusinessActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessActivityUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -200,6 +203,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
+[Get-MgReportSkypeForBusinessActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessActivityUserCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityusercount)
 

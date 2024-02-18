@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -111,6 +114,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationroot)
 

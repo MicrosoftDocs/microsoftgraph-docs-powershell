@@ -11,6 +11,9 @@ schema: 2.0.0
 Identity of the user who created the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -178,6 +181,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcreatedbyuser)
 

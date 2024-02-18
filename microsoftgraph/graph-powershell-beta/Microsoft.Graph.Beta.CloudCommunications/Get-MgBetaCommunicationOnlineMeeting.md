@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get onlineMeetings from communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -526,6 +529,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`:
 
 ## RELATED LINKS
+[Get-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting)
 

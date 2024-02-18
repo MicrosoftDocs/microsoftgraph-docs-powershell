@@ -13,6 +13,9 @@ Get an open extension (openTypeExtension object) identified by name or fully qua
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -316,6 +319,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventextension)
 

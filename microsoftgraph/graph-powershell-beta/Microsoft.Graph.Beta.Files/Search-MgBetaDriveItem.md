@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function search
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Search-MgDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Search (Default)
@@ -303,6 +306,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Search-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Search-MgDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem)
 

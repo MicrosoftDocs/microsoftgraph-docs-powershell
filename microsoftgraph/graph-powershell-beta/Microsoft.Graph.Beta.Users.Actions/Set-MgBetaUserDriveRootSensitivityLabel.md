@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assignSensitivityLabel
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserDriveRootSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -331,6 +334,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdriverootsensitivitylabel)
 

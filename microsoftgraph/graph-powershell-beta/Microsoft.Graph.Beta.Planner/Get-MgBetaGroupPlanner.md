@@ -12,6 +12,9 @@ Selective Planner services available to the group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlanner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -168,6 +171,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlanner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplanner)
 

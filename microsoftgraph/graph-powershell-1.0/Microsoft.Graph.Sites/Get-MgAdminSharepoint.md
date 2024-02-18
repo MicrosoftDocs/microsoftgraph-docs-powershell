@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get sharepoint from admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -107,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint)
 

@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Follow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Follow (Default)
@@ -200,6 +203,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFollowDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveitem)
 

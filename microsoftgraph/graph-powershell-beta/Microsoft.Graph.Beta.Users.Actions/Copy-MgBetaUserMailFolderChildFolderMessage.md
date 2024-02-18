@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Copy a message to a folder within the user's mailbox.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -313,6 +316,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Copy-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfoldermessage)
 

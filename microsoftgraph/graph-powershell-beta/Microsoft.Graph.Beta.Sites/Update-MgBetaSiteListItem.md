@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property items in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45516,6 +45519,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitem)
 

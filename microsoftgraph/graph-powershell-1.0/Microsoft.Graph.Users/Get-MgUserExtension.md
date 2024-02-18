@@ -13,6 +13,9 @@ Read-only.
 Supports $expand.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -319,6 +322,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextension)
 

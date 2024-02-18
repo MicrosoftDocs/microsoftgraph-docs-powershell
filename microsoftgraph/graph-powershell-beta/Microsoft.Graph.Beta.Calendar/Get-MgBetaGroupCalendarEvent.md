@@ -12,6 +12,9 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -297,6 +300,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+[Get-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent)
 

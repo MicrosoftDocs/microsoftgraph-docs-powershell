@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -295,6 +298,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+[New-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation)
 

@@ -13,6 +13,9 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -188,6 +191,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteresource)
 

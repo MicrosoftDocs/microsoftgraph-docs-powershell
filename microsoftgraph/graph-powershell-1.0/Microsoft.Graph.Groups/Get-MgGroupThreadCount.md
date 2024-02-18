@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupThreadCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -174,6 +177,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupThreadCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount)
 

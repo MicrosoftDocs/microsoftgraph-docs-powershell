@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -366,6 +369,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumn)
 

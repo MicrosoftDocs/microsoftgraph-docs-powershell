@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property thumbnails for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -257,6 +260,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemthumbnail)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -398,6 +401,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemversion)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The app that is installed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamInstalledAppTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -213,6 +216,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamInstalledAppTeamApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateaminstalledappteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateaminstalledappteamapp)
 

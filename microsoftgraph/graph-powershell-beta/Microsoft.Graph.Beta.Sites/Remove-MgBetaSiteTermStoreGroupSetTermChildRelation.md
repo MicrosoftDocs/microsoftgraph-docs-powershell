@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property relations for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -312,6 +315,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoregroupsettermchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoregroupsettermchildrelation)
 

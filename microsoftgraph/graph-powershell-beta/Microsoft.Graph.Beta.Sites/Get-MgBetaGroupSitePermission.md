@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the properties and relationships of a permission object on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -368,6 +371,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepermission)
 

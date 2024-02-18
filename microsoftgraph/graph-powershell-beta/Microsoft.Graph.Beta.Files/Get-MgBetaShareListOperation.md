@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of long-running operations on the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgShareListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -325,6 +328,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgShareListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistoperation)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of columns that are required by this content type
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -340,6 +343,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeColumnLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnlink)
 

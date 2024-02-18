@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to managedDevices for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23587,6 +23590,7 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
+[New-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevice)
 

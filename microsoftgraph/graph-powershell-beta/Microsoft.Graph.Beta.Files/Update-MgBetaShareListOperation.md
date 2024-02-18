@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgShareListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -452,6 +455,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgShareListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistoperation)
 

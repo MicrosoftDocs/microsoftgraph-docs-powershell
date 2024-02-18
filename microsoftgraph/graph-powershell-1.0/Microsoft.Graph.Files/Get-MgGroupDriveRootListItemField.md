@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -195,6 +198,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemfield)
 

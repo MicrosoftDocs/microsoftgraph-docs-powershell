@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a ListItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -359,6 +362,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemversion)
 

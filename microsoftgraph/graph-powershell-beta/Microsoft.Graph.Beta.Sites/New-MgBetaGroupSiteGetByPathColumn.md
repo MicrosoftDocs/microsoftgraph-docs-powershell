@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1352,6 +1355,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcolumn)
 

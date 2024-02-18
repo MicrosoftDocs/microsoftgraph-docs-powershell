@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property extensions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThreadPostExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -280,6 +283,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThreadPostExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostextension)
 

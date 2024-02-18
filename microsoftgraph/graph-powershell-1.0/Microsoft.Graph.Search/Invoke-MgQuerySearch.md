@@ -12,6 +12,9 @@ ms.prod: search
 Runs the query specified in the request body.
 Search results are provided in the response.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)
@@ -415,6 +418,7 @@ Optional.
 Required.
 
 ## RELATED LINKS
+[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
 

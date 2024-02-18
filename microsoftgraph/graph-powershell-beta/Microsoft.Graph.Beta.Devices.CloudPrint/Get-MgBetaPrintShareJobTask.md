@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A list of printTasks that were triggered by this print job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -325,6 +328,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejobtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejobtask)
 

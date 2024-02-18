@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update conversation thread
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -586,6 +589,7 @@ Returned only on $select.
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
 

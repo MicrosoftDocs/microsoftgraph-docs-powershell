@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property thumbnails for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -227,6 +230,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootthumbnail)
 

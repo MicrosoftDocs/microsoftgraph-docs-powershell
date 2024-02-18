@@ -11,6 +11,9 @@ schema: 2.0.0
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -193,6 +196,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootRetentionLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootretentionlabel)
 

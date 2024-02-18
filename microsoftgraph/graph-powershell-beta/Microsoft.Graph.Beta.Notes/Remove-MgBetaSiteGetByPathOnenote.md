@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property onenote for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteGetByPathOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -237,6 +240,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasitegetbypathonenote)
 

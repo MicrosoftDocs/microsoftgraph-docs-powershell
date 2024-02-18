@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -334,6 +337,7 @@ Must not exceed 3850 characters in length.
 Required.
 
 ## RELATED LINKS
+[New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant)
 

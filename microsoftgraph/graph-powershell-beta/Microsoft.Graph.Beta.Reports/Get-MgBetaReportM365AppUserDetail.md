@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getM365AppUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -227,6 +230,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
+[Get-MgReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appuserdetail)
 

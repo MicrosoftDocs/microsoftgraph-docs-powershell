@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -495,6 +498,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistoperation)
 

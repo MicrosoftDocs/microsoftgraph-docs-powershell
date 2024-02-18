@@ -11,6 +11,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Delete a OneNote page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenotePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -270,6 +273,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotepage)
 

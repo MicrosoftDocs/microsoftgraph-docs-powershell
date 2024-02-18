@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function recent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentGroupDrive](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRecentGroupDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recent (Default)
@@ -309,6 +312,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgRecentGroupDrive](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRecentGroupDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive)
 

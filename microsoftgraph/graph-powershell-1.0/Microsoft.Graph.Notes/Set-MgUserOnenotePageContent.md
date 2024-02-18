@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -234,6 +237,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenotepagecontent)
 

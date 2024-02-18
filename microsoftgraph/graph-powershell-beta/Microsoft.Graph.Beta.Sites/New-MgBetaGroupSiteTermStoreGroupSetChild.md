@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create a new term object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -728,6 +731,7 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
+[New-MgGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupsetchild)
 

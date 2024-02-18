@@ -12,6 +12,9 @@ For drives in SharePoint, the associated document library list item.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -184,6 +187,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitem)
 

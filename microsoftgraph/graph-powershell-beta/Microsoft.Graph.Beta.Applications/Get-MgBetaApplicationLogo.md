@@ -11,6 +11,9 @@ schema: 2.0.0
 The main logo for the application.
 Not nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationLogo](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationLogo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -189,6 +192,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationLogo](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationLogo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationlogo)
 
