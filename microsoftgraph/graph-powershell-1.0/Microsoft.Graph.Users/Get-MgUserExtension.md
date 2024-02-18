@@ -43,22 +43,6 @@ Read-only.
 Supports $expand.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -325,6 +309,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextension)
+
 
 
 

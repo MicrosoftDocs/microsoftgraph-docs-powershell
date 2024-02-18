@@ -31,22 +31,6 @@ Update-MgBetaSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerT
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -238,6 +222,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype)
+
 
 
 

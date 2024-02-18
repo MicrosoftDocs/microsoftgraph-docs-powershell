@@ -31,18 +31,6 @@ Update-MgIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAcc
 ## DESCRIPTION
 Update the navigation property conditionalAccess in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -735,6 +723,7 @@ Possible values: AND, OR.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccess)
+
 
 
 

@@ -31,22 +31,6 @@ New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-Headers <I
 ## DESCRIPTION
 Create new navigation property to operations for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -228,6 +212,7 @@ Read-only.
 [New-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation)
+
 
 
 

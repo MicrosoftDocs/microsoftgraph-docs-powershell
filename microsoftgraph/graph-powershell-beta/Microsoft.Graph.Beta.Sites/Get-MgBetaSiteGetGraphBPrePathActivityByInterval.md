@@ -34,18 +34,6 @@ Get-MgBetaSiteGetGraphBPrePathActivityByInterval -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -364,6 +352,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteGetGraphBPrePathActivityByInterval](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetGraphBPrePathActivityByInterval?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetgraphbprepathactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetgraphbprepathactivitybyinterval)
+
 
 
 

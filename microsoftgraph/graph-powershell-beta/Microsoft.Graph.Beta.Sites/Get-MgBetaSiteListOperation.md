@@ -39,22 +39,6 @@ Get-MgBetaSiteListOperation -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The collection of long-running operations on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -374,6 +358,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistoperation)
+
 
 
 

@@ -48,18 +48,6 @@ Clear-MgChatMessageReplyReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,6 +293,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Clear-MgBetaChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaChatMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgchatmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgchatmessagereplyreaction)
+
 
 
 

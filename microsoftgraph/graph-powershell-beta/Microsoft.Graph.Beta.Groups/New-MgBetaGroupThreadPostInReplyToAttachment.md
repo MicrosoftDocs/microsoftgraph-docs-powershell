@@ -48,22 +48,6 @@ New-MgBetaGroupThreadPostInReplyToAttachment -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -394,6 +378,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [New-MgGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostInReplyToAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostinreplytoattachment)
+
 
 
 

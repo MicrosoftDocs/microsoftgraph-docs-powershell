@@ -48,22 +48,6 @@ Update-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Update the navigation property scopedRoleMemberOf in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,6 +341,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetauserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetauserscopedrolememberof)
+
 
 
 

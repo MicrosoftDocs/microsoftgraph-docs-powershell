@@ -61,22 +61,6 @@ Update-MgBetaGroupDriveItemListItem -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property listItem in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -45494,6 +45478,7 @@ Read-only.
 [Update-MgGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitem)
+
 
 
 

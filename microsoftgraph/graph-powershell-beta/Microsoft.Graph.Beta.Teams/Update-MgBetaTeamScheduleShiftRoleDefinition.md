@@ -45,18 +45,6 @@ Update-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property shiftsRoleDefinitions in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,6 +323,7 @@ SHIFTSROLEPERMISSIONS <IMicrosoftGraphShiftsRolePermission- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition)
+
 
 
 

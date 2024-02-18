@@ -30,18 +30,6 @@ Get-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdent
 The settings and preferences for to the sign-in experience of a user.
 Use this property to configure the user's default multifactor authentication (MFA) method.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -234,6 +222,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference)
+
 
 
 

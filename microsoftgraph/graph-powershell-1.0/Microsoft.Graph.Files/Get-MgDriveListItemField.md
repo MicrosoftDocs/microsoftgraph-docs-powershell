@@ -30,22 +30,6 @@ Get-MgDriveListItemField -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -201,6 +185,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemfield)
+
 
 
 

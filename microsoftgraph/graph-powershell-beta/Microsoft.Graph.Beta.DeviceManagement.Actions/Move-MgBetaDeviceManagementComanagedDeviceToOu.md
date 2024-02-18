@@ -30,22 +30,6 @@ Move-MgBetaDeviceManagementComanagedDeviceToOu
 ## DESCRIPTION
 Invoke action moveDevicesToOU
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -210,6 +194,7 @@ BODYPARAMETER `<IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovede
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementcomanageddevicetoou](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementcomanageddevicetoou)
+
 
 
 

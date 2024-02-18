@@ -42,22 +42,6 @@ Get-MgBetaReportYammerDeviceUsageUserDetail -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Invoke function getYammerDeviceUsageUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -233,6 +217,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammerdeviceusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammerdeviceusageuserdetail)
+
 
 
 

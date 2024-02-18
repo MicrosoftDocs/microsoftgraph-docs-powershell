@@ -53,22 +53,6 @@ New-MgGroupDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to subscriptions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -594,6 +578,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [New-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistsubscription)
+
 
 
 

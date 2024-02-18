@@ -31,22 +31,6 @@ Remove-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Remove a conversationMember from a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationMemberId
@@ -250,6 +234,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteammember)
+
 
 
 

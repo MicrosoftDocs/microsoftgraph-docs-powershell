@@ -23,22 +23,6 @@ Remove-MgSecurityCase [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru]
 ## DESCRIPTION
 Delete navigation property cases for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -148,6 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase)
+
 
 
 

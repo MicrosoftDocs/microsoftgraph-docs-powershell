@@ -31,18 +31,6 @@ Update-MgReportPartnerBillingUsage -BodyParameter <IMicrosoftGraphPartnersBillin
 ## DESCRIPTION
 Update the navigation property usage in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -217,6 +205,7 @@ Read-only.
 [Update-MgBetaReportPartnerBillingUsage](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportPartnerBillingUsage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusage)
+
 
 
 

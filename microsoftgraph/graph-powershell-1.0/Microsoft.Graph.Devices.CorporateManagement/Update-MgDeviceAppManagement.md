@@ -47,18 +47,6 @@ Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
 ## DESCRIPTION
 Update the properties of a deviceAppManagement object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1654,6 +1642,7 @@ The largest number you can configure must be less than the number configured in 
 [Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaDeviceManagementReportWindowsQualityUpdateAlertPerPolicyPerDeviceRepor
 ## DESCRIPTION
 Invoke action getWindowsQualityUpdateAlertsPerPolicyPerDeviceReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,6 +323,7 @@ BODYPARAMETER `<IPaths1Tgit55DevicemanagementReportsMicrosoftGraphGetwindowsqual
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsqualityupdatealertperpolicyperdevicereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsqualityupdatealertperpolicyperdevicereport)
+
 
 
 

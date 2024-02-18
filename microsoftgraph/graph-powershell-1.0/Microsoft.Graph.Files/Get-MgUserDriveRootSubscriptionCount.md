@@ -30,18 +30,6 @@ Get-MgUserDriveRootSubscriptionCount -InputObject <IFilesIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -197,6 +185,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaUserDriveRootSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootSubscriptionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootsubscriptioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootsubscriptioncount)
+
 
 
 

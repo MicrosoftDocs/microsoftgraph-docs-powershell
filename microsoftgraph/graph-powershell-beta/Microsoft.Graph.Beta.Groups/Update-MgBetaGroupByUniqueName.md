@@ -109,18 +109,6 @@ Update-MgBetaGroupByUniqueName -InputObject <IGroupsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of a group object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedSenders
@@ -40669,6 +40657,7 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 [Update-MgGroupByUniqueName](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupByUniqueName?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename)
+
 
 
 

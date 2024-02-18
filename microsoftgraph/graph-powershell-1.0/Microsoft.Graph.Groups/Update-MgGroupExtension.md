@@ -43,22 +43,6 @@ Update-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,6 +259,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Update-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupextension)
+
 
 
 

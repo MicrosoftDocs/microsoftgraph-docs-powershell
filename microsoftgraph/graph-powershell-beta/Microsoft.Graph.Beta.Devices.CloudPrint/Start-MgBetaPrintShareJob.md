@@ -30,18 +30,6 @@ Start-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-Headers <I
 ## DESCRIPTION
 Invoke action start
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -187,6 +175,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Start-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Start-MgPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/start-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/start-mgbetaprintsharejob)
+
 
 
 

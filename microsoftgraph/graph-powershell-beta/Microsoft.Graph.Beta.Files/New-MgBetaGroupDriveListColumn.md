@@ -69,22 +69,6 @@ Create a column for a \[list\]\[list\] with a request that specifies a \[columnD
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-post-columns-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1257,6 +1241,7 @@ For examples, see Examples of common formulas in lists
 [New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcolumn)
+
 
 
 

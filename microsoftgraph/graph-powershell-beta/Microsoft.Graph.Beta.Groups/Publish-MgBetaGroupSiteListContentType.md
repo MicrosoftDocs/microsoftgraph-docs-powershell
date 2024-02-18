@@ -31,22 +31,6 @@ Publish-MgBetaGroupSiteListContentType -InputObject <IGroupsIdentity> [-Headers 
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -270,6 +254,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Publish-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitelistcontenttype)
+
 
 
 

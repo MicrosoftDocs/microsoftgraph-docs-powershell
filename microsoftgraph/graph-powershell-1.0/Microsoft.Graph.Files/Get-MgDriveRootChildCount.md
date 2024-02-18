@@ -30,18 +30,6 @@ Get-MgDriveRootChildCount -InputObject <IFilesIdentity> [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -182,6 +170,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaDriveRootChildCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootChildCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcount)
+
 
 
 

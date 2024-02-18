@@ -38,18 +38,6 @@ After that time, they're permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +222,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Remove-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
+
 
 
 

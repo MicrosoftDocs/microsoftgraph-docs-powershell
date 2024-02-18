@@ -30,22 +30,6 @@ Get-MgShareItemContent -InputObject <IFilesIdentity> [-Format <String>] -OutFile
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveItemId
@@ -216,6 +200,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemcontent)
+
 
 
 

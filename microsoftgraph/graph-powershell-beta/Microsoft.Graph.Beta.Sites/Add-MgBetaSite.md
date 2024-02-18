@@ -34,18 +34,6 @@ Follow a user's site or multiple sites.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15093,6 +15081,7 @@ Read-only.
 [Add-MgSite](/powershell/module/Microsoft.Graph.Sites/Add-MgSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite)
+
 
 
 

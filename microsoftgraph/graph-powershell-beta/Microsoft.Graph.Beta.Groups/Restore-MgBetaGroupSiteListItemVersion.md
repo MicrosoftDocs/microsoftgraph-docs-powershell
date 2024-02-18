@@ -31,22 +31,6 @@ Restore-MgBetaGroupSiteListItemVersion -InputObject <IGroupsIdentity> [-Headers 
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -285,6 +269,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Restore-MgGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupSiteListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemversion)
+
 
 
 

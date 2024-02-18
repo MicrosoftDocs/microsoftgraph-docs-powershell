@@ -30,22 +30,6 @@ Remove-MgBetaSiteList -InputObject <ISitesIdentity> [-IfMatch <String>] [-Header
 ## DESCRIPTION
 Delete navigation property lists for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -260,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelist)
+
 
 
 

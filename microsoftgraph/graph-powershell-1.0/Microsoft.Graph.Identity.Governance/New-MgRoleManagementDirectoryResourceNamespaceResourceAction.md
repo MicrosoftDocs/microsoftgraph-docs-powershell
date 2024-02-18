@@ -50,18 +50,6 @@ New-MgRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <IIden
 ## DESCRIPTION
 Create new navigation property to resourceActions for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionVerb
@@ -396,6 +384,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespaceresourceaction)
+
 
 
 

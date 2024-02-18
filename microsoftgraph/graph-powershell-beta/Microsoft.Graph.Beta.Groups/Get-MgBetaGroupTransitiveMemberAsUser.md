@@ -40,18 +40,6 @@ Get-MgBetaGroupTransitiveMemberAsUser -InputObject <IGroupsIdentity> [-ExpandPro
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -366,6 +354,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgGroupTransitiveMemberAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberAsUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasuser)
+
 
 
 

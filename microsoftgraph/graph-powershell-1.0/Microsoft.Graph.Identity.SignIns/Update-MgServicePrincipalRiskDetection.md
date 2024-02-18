@@ -56,18 +56,6 @@ Update-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property servicePrincipalRiskDetections in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -672,6 +660,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 [Update-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection)
+
 
 
 

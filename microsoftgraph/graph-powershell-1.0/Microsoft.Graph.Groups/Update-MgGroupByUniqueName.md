@@ -99,18 +99,6 @@ Update-MgGroupByUniqueName -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 Add a member to a security or Microsoft 365 group through the members navigation property.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedSenders
@@ -25829,6 +25817,7 @@ Always null when the object hasn't been deleted.
 [Update-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename)
+
 
 
 

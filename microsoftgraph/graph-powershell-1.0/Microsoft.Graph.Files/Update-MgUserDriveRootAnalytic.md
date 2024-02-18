@@ -46,18 +46,6 @@ Update-MgUserDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property analytics in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18625,6 +18613,7 @@ Read-only.
 [Update-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootanalytic)
+
 
 
 

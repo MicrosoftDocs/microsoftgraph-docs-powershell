@@ -66,18 +66,6 @@ Update-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property subjectRightsRequests in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -19241,6 +19229,7 @@ This URL should be treated as an opaque blob, and not parsed.
 [Update-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequest)
+
 
 
 

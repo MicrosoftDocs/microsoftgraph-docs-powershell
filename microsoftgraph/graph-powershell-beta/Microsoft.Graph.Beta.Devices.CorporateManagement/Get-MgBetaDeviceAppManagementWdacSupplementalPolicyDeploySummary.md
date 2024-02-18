@@ -29,18 +29,6 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary
 ## DESCRIPTION
 WindowsDefenderApplicationControl supplemental policy deployment summary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -224,6 +212,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicydeploysummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicydeploysummary)
+
 
 
 

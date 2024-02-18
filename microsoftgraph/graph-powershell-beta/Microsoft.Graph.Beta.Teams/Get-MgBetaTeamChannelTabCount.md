@@ -30,18 +30,6 @@ Get-MgBetaTeamChannelTabCount -InputObject <ITeamsIdentity> [-Filter <String>] [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -214,6 +202,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgTeamChannelTabCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTabCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltabcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltabcount)
+
 
 
 

@@ -50,22 +50,6 @@ Update-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Update the navigation property transcripts in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -421,6 +405,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingTranscript?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingtranscript)
+
 
 
 

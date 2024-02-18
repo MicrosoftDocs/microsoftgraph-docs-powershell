@@ -29,18 +29,6 @@ Remove-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -InputObject <I
 ## DESCRIPTION
 Delete navigation property deviceAppPerformances for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceAppPerformanceId
@@ -225,6 +213,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantdeviceappperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantdeviceappperformance)
+
 
 
 

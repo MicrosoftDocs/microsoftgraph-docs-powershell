@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportComplianceSettingDetailReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getComplianceSettingDetailsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +323,7 @@ BODYPARAMETER `<IPathsI1B8OaDevicemanagementReportsMicrosoftGraphGetcompliancese
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcompliancesettingdetailreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcompliancesettingdetailreport)
+
 
 
 

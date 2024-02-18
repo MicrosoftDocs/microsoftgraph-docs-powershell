@@ -29,18 +29,6 @@ Invoke-MgBetaHasDeviceAppManagementAndroidManagedAppProtectionPayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -174,6 +162,7 @@ BODY `<IPathsMzlge2DeviceappmanagementAndroidmanagedappprotectionsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementandroidmanagedappprotectionpayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementandroidmanagedappprotectionpayloadlink)
+
 
 
 

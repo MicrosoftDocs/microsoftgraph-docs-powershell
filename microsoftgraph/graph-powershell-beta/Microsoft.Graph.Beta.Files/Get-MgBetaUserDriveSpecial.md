@@ -51,22 +51,6 @@ If a user deletes one, it is recreated when written to again.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-get-specialfolder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -358,6 +342,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgUserDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveSpecial?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivespecial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivespecial)
+
 
 
 

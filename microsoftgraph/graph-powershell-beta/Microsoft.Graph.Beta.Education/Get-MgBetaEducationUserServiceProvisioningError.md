@@ -25,18 +25,6 @@ Get-MgBetaEducationUserServiceProvisioningError -EducationUserId <String> [-Expa
 ## DESCRIPTION
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -251,6 +239,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgEducationUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserserviceprovisioningerror)
+
 
 
 

@@ -32,18 +32,6 @@ Set-MgPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> [-D
 ## DESCRIPTION
 Update media content for the navigation property documents in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -268,6 +256,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Set-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Set-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/set-mgprintsharejobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/set-mgprintsharejobdocumentcontent)
+
 
 
 

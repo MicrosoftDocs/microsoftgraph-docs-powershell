@@ -78,22 +78,6 @@ Update-MgDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property root in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29389,6 +29373,7 @@ Read-only.
 [Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot)
+
 
 
 

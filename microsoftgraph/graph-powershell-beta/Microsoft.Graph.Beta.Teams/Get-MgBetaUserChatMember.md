@@ -39,22 +39,6 @@ Get-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +347,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmember)
+
 
 
 

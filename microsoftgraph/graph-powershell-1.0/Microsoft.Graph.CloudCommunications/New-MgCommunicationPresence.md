@@ -31,22 +31,6 @@ New-MgCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-Headers <
 ## DESCRIPTION
 Create new navigation property to presences for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -260,6 +244,7 @@ See below for more possible values.
 [New-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence)
+
 
 
 

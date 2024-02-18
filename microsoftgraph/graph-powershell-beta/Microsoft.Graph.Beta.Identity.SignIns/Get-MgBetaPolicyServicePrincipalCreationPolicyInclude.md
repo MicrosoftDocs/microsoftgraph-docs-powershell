@@ -37,22 +37,6 @@ Get-MgBetaPolicyServicePrincipalCreationPolicyInclude -InputObject <IIdentitySig
 ## DESCRIPTION
 Get includes from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +365,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyserviceprincipalcreationpolicyinclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyserviceprincipalcreationpolicyinclude)
+
 
 
 

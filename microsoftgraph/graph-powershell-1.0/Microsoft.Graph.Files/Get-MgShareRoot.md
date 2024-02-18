@@ -32,22 +32,6 @@ Get-MgShareRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 Used to access the underlying driveItem.
 Deprecated -- use driveItem instead.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -188,6 +172,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareroot)
+
 
 
 

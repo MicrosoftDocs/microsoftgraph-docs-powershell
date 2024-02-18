@@ -36,18 +36,6 @@ Get-MgSiteGetByPath -Path <String> -SiteId <String> -Path1 <String> [-ExpandProp
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
 Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -292,6 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaSiteGetByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPath?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypath)
+
 
 
 

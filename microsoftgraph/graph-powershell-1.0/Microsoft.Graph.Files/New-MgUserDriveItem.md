@@ -78,22 +78,6 @@ New-MgUserDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to items for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29404,6 +29388,7 @@ Read-only.
 [New-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitem)
+
 
 
 

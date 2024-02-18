@@ -30,22 +30,6 @@ Get-MgSharePermission -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Used to access the permission representing the underlying sharing link
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -186,6 +170,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharepermission)
+
 
 
 

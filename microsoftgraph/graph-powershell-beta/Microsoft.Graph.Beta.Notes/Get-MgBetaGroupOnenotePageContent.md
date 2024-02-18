@@ -30,22 +30,6 @@ Get-MgBetaGroupOnenotePageContent -InputObject <INotesIdentity> -OutFile <String
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -188,6 +172,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Get-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotepagecontent)
+
 
 
 

@@ -29,18 +29,6 @@ Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -InputObject <IIdent
 Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multitenant management platform using the offboardTenant action.
 By invoking this action the platform attempts to onboard the managed tenant for management.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -202,6 +190,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/reset-mgbetatenantrelationshipmanagedtenantonboardingstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/reset-mgbetatenantrelationshipmanagedtenantonboardingstatus)
+
 
 
 

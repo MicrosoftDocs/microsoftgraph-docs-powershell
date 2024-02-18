@@ -30,18 +30,6 @@ Invoke-MgPreviewSiteOnenoteSectionPage -InputObject <ISitesIdentity> [-Headers <
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -197,6 +185,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Invoke-MgBetaPreviewSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewSiteOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotesectionpage)
+
 
 
 

@@ -29,22 +29,6 @@ Remove-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Delete navigation property cloudAppSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CloudAppSecurityProfileId
@@ -270,6 +254,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycloudappsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycloudappsecurityprofile)
+
 
 
 

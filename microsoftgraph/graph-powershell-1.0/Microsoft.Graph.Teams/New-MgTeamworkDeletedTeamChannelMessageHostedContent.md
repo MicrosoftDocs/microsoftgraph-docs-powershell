@@ -46,18 +46,6 @@ New-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Create new navigation property to hostedContents for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,6 +305,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [New-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessagehostedcontent)
+
 
 
 

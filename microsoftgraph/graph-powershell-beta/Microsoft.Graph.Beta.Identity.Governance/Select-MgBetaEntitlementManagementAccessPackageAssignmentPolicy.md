@@ -21,22 +21,6 @@ Select-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ## DESCRIPTION
 Select matching entitlement management accessPackageAssignmentPolicy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -NoApprovalRequiredForRequest
@@ -7862,6 +7846,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackageassignmentpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+
 
 
 

@@ -30,22 +30,6 @@ Get-MgUserDriveRootListItemField -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -201,6 +185,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlistitemfield)
+
 
 
 

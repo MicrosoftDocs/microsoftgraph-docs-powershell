@@ -35,18 +35,6 @@ Remove-MgBetaDeviceManagementExchangeOnPremisePolicy -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property exchangeOnPremisesPolicies for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId
@@ -250,6 +238,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementexchangeonpremisepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementexchangeonpremisepolicy)
+
 
 
 

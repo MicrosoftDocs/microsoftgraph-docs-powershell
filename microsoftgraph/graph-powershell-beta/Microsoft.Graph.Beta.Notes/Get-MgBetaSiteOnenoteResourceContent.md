@@ -30,22 +30,6 @@ Get-MgBetaSiteOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <Str
 ## DESCRIPTION
 Get content for the navigation property resources from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -188,6 +172,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Get-MgSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteResourceContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteresourcecontent)
+
 
 
 

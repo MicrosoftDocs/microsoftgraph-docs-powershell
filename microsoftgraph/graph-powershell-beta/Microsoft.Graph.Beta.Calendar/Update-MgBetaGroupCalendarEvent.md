@@ -76,18 +76,6 @@ Update-MgBetaGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property events in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2211,6 +2199,7 @@ See below for possible values.
 [Update-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarevent)
+
 
 
 

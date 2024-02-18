@@ -31,18 +31,6 @@ Get-MgUserTransitiveMemberOfCountAsDirectoryRole -InputObject <IUsersIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -188,6 +176,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofcountasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofcountasdirectoryrole)
+
 
 
 

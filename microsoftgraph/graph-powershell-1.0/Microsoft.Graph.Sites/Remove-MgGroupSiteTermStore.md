@@ -43,22 +43,6 @@ Remove-MgGroupSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Delete navigation property termStore for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -275,6 +259,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstore)
+
 
 
 

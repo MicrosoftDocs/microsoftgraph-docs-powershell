@@ -48,22 +48,6 @@ Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <I
 ## DESCRIPTION
 Update the navigation property hostedContents in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,6 +345,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Update-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelmessagereplyhostedcontent)
+
 
 
 

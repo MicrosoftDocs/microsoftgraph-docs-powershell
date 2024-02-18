@@ -23,18 +23,6 @@ Get-MgSecurityTriggerType [-ExpandProperty <String[]>] [-Property <String[]>] [-
 ## DESCRIPTION
 Get triggerTypes from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype)
+
 
 
 

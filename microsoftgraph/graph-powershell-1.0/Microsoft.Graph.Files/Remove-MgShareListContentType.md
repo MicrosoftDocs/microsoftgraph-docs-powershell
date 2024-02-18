@@ -31,22 +31,6 @@ Remove-MgShareListContentType -InputObject <IFilesIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property contentTypes for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttype)
+
 
 
 

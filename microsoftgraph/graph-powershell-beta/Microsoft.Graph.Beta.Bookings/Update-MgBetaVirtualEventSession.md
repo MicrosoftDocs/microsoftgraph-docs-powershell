@@ -70,18 +70,6 @@ Update-MgBetaVirtualEventSession -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property sessions in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1261,6 +1249,7 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 [Update-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsession)
+
 
 
 

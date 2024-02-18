@@ -29,18 +29,6 @@ Remove-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition -InputObject <IM
 ## DESCRIPTION
 Delete navigation property managedTenantAlertRuleDefinitions for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -225,6 +213,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantalertruledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantalertruledefinition)
+
 
 
 

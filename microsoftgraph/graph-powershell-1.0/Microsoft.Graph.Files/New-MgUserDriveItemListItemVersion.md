@@ -49,22 +49,6 @@ New-MgUserDriveItemListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to versions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -405,6 +389,7 @@ Read-only.
 [New-MgBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlistitemversion)
+
 
 
 

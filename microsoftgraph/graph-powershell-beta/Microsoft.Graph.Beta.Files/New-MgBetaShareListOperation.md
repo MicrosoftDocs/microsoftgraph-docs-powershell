@@ -50,22 +50,6 @@ New-MgBetaShareListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -443,6 +427,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [New-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/New-MgShareListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistoperation)
+
 
 
 

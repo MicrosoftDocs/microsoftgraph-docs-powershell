@@ -48,22 +48,6 @@ New-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,6 +398,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [New-MgGroupTeamOperation](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamoperation)
+
 
 
 

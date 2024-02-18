@@ -31,22 +31,6 @@ New-MgBetaSecurityThreatSubmissionFileThreat -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to fileThreats for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -413,6 +397,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionfilethreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionfilethreat)
+
 
 
 

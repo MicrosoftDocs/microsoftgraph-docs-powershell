@@ -34,18 +34,6 @@ Get-MgSiteGetByPathApplicableContentTypeForList -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 Invoke function getApplicableContentTypesForList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -321,6 +309,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaSiteGetByPathApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathApplicableContentTypeForList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathapplicablecontenttypeforlist)
+
 
 
 

@@ -38,22 +38,6 @@ Get-MgBetaDriveRootListItemVersion -InputObject <IFilesIdentity> [-ExpandPropert
 ## DESCRIPTION
 The list of previous versions of the list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,6 +314,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootlistitemversion)
+
 
 
 

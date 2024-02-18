@@ -32,18 +32,6 @@ Remove-MgBetaSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property sets for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -273,6 +261,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresetparentgroupset)
+
 
 
 

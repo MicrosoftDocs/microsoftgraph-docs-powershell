@@ -24,18 +24,6 @@ Get-MgBetaAllTeamworkDeletedTeamMessage [-Count] [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Invoke function getAllMessages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -219,6 +207,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteamworkdeletedteammessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteamworkdeletedteammessage)
+
 
 
 

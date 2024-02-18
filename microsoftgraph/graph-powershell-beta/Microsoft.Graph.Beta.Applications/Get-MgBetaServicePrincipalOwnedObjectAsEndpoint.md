@@ -40,18 +40,6 @@ Get-MgBetaServicePrincipalOwnedObjectAsEndpoint -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -335,6 +323,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalOwnedObjectAsEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObjectAsEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectasendpoint)
+
 
 
 

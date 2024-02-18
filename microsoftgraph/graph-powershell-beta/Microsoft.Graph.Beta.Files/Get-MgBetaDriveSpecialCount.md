@@ -30,18 +30,6 @@ Get-MgBetaDriveSpecialCount -InputObject <IFilesIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -182,6 +170,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveSpecialCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecialCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivespecialcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivespecialcount)
+
 
 
 

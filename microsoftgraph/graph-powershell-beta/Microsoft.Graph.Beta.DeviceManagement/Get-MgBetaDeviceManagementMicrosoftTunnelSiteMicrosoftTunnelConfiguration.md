@@ -29,22 +29,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
 ## DESCRIPTION
 The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -300,6 +284,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelconfiguration)
+
 
 
 

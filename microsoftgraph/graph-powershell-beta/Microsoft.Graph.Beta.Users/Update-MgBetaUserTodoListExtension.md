@@ -45,22 +45,6 @@ Update-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,6 +262,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Update-MgUserTodoListExtension](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolistextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolistextension)
+
 
 
 

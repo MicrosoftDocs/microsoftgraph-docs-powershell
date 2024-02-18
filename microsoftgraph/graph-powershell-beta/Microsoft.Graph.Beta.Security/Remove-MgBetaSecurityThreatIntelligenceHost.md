@@ -31,18 +31,6 @@ Remove-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property hosts for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -269,6 +257,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehost)
+
 
 
 

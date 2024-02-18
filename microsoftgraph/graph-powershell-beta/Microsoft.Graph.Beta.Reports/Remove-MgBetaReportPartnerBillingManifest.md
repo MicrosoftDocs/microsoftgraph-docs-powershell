@@ -31,18 +31,6 @@ Remove-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property manifests for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +222,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Remove-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingmanifest)
+
 
 
 

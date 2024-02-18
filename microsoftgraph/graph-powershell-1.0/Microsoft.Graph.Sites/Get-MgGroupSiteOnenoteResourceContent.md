@@ -31,18 +31,6 @@ Get-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> -OutFile <St
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -228,6 +216,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteresourcecontent)
+
 
 
 

@@ -32,18 +32,6 @@ Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -307,6 +295,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontent)
+
 
 
 

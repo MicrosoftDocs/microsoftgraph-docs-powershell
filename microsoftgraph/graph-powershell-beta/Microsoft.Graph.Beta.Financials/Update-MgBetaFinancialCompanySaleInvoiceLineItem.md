@@ -88,22 +88,6 @@ Update-MgBetaFinancialCompanySaleInvoiceLineItem -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Update the navigation property item in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -635,6 +619,7 @@ PICTURE <IMicrosoftGraphPicture- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoicelineitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoicelineitem)
+
 
 
 

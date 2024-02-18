@@ -63,18 +63,6 @@ Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <IId
 ## DESCRIPTION
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Action
@@ -1072,6 +1060,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 [Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleeligibilityschedulerequest)
+
 
 
 

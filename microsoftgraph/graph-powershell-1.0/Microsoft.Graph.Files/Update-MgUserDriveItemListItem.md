@@ -59,22 +59,6 @@ Update-MgUserDriveItemListItem -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property listItem in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23607,6 +23591,7 @@ Read-only.
 [Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitem)
+
 
 
 

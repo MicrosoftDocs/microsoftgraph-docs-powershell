@@ -32,18 +32,6 @@ Get-MgBetaServicePrincipalOwnerCountAsEndpoint -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -207,6 +195,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalOwnerCountAsEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerCountAsEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownercountasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownercountasendpoint)
+
 
 
 

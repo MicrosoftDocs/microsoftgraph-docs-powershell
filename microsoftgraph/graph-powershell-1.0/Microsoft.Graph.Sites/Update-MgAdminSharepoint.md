@@ -31,18 +31,6 @@ Update-MgAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-Headers <I
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,6 +268,7 @@ For a list of possible values, see SPRegionalSettings.TimeZones property.
 [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint)
+
 
 
 

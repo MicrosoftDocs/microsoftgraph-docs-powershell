@@ -31,22 +31,6 @@ Remove-MgBetaDriveListSubscription -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property subscriptions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgDriveListSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrivelistsubscription)
+
 
 
 

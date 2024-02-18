@@ -30,22 +30,6 @@ Get-MgBetaSecurityTriggerRetentionEventType -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -241,6 +225,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventtype)
+
 
 
 

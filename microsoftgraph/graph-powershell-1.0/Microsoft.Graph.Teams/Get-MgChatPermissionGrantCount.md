@@ -30,18 +30,6 @@ Get-MgChatPermissionGrantCount -InputObject <ITeamsIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -190,6 +178,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaChatPermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrantcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrantcount)
+
 
 
 

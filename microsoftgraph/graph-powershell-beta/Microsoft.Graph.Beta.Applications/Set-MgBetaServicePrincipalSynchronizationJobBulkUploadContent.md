@@ -33,18 +33,6 @@ Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent -InputObject <IApp
 ## DESCRIPTION
 Update media content for the navigation property bulkUpload in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -272,6 +260,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Set-MgServicePrincipalSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent)
+
 
 
 

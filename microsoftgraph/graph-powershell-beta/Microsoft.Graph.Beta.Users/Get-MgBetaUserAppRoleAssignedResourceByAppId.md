@@ -27,18 +27,6 @@ Get-MgBetaUserAppRoleAssignedResourceByAppId -InputObject <IUsersIdentity> [-Exp
 ## DESCRIPTION
 Get appRoleAssignedResources from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -192,6 +180,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserapproleassignedresourcebyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserapproleassignedresourcebyappid)
+
 
 
 

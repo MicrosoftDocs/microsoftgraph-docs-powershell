@@ -30,18 +30,6 @@ Get-MgUserOwnedDeviceCountAsDevice -InputObject <IUsersIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -187,6 +175,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserOwnedDeviceCountAsDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceCountAsDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecountasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecountasdevice)
+
 
 
 

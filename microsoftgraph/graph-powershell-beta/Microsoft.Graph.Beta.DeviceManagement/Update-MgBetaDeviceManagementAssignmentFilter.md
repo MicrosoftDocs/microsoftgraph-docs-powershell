@@ -49,22 +49,6 @@ Update-MgBetaDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Update the navigation property assignmentFilters in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -539,6 +523,7 @@ PAYLOADS <IMicrosoftGraphPayloadByFilter- `[]`>: Indicates associated assignment
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter)
+
 
 
 

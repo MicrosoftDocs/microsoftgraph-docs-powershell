@@ -31,22 +31,6 @@ Get-MgBetaDeviceManagementReportRelatedAppStatusReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getRelatedAppsStatusReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,6 +322,7 @@ BODYPARAMETER `<IPathsUcgxcdDevicemanagementReportsMicrosoftGraphGetrelatedappss
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportrelatedappstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportrelatedappstatusreport)
+
 
 
 

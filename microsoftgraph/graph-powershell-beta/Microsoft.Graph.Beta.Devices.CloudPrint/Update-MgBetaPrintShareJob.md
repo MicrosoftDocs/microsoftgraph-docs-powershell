@@ -53,18 +53,6 @@ Update-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property jobs in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcknowledgedDateTime
@@ -731,6 +719,7 @@ Read-only.
 [Update-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejob)
+
 
 
 

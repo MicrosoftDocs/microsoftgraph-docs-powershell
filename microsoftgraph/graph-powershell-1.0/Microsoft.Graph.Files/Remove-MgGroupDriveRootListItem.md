@@ -31,22 +31,6 @@ Remove-MgGroupDriveRootListItem -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property listItem for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootlistitem)
+
 
 
 

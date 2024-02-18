@@ -29,18 +29,6 @@ New-MgGroupSettingTemplateGroupSettingTemplate -BodyParameter <IMicrosoftGraphGr
 ## DESCRIPTION
 Add new entity to groupSettingTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -255,6 +243,7 @@ VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplat
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate)
+
 
 
 

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject 
 ## DESCRIPTION
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -444,6 +428,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver)
+
 
 
 

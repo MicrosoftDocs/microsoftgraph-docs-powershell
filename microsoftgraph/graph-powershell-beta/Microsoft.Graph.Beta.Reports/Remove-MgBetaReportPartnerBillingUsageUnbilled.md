@@ -23,18 +23,6 @@ Remove-MgBetaReportPartnerBillingUsageUnbilled [-IfMatch <String>] [-Headers <ID
 ## DESCRIPTION
 Delete navigation property unbilled for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -144,6 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportPartnerBillingUsageUnbilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingusageunbilled)
+
 
 
 

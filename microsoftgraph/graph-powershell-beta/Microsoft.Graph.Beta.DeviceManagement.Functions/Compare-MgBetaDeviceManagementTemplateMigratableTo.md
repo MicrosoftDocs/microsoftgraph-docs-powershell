@@ -30,22 +30,6 @@ Compare-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManageme
 ## DESCRIPTION
 Invoke function compare
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -267,6 +251,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/compare-mgbetadevicemanagementtemplatemigratableto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/compare-mgbetadevicemanagementtemplatemigratableto)
+
 
 
 

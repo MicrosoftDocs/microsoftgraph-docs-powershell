@@ -23,18 +23,6 @@ Remove-MgSecurityTriggerType [-IfMatch <String>] [-Headers <IDictionary>] [-Pass
 ## DESCRIPTION
 Delete navigation property triggerTypes for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -144,6 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertype)
+
 
 
 

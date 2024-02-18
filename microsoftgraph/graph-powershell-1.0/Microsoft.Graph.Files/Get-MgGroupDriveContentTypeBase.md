@@ -31,18 +31,6 @@ Get-MgGroupDriveContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaGroupDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveContentTypeBase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebase)
+
 
 
 

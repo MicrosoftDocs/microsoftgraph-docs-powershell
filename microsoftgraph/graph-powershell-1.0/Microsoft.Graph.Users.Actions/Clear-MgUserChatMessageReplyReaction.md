@@ -49,18 +49,6 @@ Clear-MgUserChatMessageReplyReaction -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -319,6 +307,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Clear-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserchatmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserchatmessagereplyreaction)
+
 
 
 

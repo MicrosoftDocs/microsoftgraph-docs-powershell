@@ -47,18 +47,6 @@ Update-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property resources in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -359,6 +347,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenoteresource)
+
 
 
 

@@ -47,18 +47,6 @@ Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh
 ## DESCRIPTION
 Initiates a command to pause config refresh for the device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,6 +282,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/suspend-mgbetadevicemanagementcomanageddeviceconfigurationrefresh](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/suspend-mgbetadevicemanagementcomanageddeviceconfigurationrefresh)
+
 
 
 

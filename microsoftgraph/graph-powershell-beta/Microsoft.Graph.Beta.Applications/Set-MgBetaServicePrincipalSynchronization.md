@@ -50,18 +50,6 @@ Set-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property synchronization in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -946,6 +934,7 @@ Must match one of the directory definitions in synchronizationSchema.
 [Set-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronization)
+
 
 
 

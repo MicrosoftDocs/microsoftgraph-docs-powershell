@@ -55,22 +55,6 @@ New-MgBetaDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to permissions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -683,6 +667,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitempermission)
+
 
 
 

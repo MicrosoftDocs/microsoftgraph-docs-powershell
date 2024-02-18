@@ -32,18 +32,6 @@ Get-MgUserDriveRootLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProp
 Identity of the user who last modified the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -199,6 +187,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaUserDriveRootLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootLastModifiedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlastmodifiedbyuser)
+
 
 
 

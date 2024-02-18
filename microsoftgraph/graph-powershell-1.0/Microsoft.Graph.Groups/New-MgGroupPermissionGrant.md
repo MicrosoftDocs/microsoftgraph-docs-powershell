@@ -47,22 +47,6 @@ New-MgGroupPermissionGrant -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -380,6 +364,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [New-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouppermissiongrant)
+
 
 
 

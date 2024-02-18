@@ -77,22 +77,6 @@ Get-MgShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-E
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -383,6 +367,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemactivitybyinterval)
+
 
 
 

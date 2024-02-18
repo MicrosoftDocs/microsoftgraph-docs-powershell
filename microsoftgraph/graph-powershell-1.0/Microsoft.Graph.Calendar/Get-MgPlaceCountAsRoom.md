@@ -23,18 +23,6 @@ Get-MgPlaceCountAsRoom [-Filter <String>] [-Search <String>] [-Headers <IDiction
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaPlaceCountAsRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCountAsRoom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecountasroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecountasroom)
+
 
 
 

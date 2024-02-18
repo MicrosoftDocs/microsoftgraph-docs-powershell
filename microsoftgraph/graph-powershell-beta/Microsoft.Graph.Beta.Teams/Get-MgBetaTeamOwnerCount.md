@@ -27,18 +27,6 @@ Get-MgBetaTeamOwnerCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Sear
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -195,6 +183,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamownercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamownercount)
+
 
 
 

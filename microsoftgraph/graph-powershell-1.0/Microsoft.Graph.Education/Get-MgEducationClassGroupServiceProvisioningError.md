@@ -27,18 +27,6 @@ Get-MgEducationClassGroupServiceProvisioningError -EducationClassId <String> [-E
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -253,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaEducationClassGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroupServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror)
+
 
 
 

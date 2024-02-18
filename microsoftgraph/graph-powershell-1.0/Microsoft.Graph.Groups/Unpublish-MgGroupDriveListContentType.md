@@ -31,22 +31,6 @@ Unpublish-MgGroupDriveListContentType -InputObject <IGroupsIdentity> [-Headers <
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -246,6 +230,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupdrivelistcontenttype)
+
 
 
 

@@ -31,18 +31,6 @@ Remove-MgAllUserDeviceFromManagement -InputObject <IUsersActionsIdentity> [-Head
 ## DESCRIPTION
 Retire all devices from management for this user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -205,6 +193,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Remove-MgBetaAllUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaAllUserDeviceFromManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgalluserdevicefrommanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgalluserdevicefrommanagement)
+
 
 
 

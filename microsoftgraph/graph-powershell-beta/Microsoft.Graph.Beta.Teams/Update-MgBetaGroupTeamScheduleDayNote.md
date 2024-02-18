@@ -44,18 +44,6 @@ Update-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a day note.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -412,6 +400,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduledaynote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduledaynote)
+
 
 
 

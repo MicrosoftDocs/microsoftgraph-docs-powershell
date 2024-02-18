@@ -30,18 +30,6 @@ Get-MgGroupThreadCount -InputObject <IGroupsIdentity> [-Filter <String>] [-Heade
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -180,6 +168,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgBetaGroupThreadCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount)
+
 
 
 

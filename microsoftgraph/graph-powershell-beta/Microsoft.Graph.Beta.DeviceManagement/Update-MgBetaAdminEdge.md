@@ -31,18 +31,6 @@ Update-MgBetaAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-Headers <IDictiona
 ## DESCRIPTION
 Update the navigation property edge in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,6 +328,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 [Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedge](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedge)
+
 
 
 

@@ -42,22 +42,6 @@ New-MgBetaBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-S
 ## DESCRIPTION
 Add new entity to bookingCurrencies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -212,6 +196,7 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 [New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency)
+
 
 
 

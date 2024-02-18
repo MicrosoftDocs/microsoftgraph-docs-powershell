@@ -103,18 +103,6 @@ New-MgBetaSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create a new \[list\]\[\] in a \[site\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -46012,6 +46000,7 @@ See the possible resource path values for each supported resource.
 [New-MgSiteGetByPathList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteGetByPathList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathlist)
+
 
 
 

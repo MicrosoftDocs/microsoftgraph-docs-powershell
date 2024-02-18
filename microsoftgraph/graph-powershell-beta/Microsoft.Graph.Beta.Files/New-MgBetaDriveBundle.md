@@ -84,18 +84,6 @@ Create new navigation property to bundles for drives
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-post-bundles-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -54264,6 +54252,7 @@ Read-only.
 [New-MgDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgDriveBundle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivebundle)
+
 
 
 

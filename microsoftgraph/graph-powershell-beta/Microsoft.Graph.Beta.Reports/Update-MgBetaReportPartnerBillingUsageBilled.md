@@ -30,18 +30,6 @@ Update-MgBetaReportPartnerBillingUsageBilled -BodyParameter <Hashtable> [-Header
 ## DESCRIPTION
 Update the navigation property billed in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -168,6 +156,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Update-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusagebilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusagebilled)
+
 
 
 

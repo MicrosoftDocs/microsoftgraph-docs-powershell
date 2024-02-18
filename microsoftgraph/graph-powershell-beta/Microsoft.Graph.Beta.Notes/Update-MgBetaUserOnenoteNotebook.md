@@ -52,22 +52,6 @@ Update-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property notebooks in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -845,6 +829,7 @@ Read-only.
 [Update-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotenotebook)
+
 
 
 

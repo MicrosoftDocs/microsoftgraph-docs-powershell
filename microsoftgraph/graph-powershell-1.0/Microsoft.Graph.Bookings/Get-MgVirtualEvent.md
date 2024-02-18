@@ -37,18 +37,6 @@ Get-MgVirtualEvent -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get events from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -301,6 +289,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Get-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualevent)
+
 
 
 

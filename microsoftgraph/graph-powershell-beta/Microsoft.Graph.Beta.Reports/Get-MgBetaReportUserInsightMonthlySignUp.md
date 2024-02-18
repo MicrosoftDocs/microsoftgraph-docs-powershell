@@ -34,18 +34,6 @@ Get-MgBetaReportUserInsightMonthlySignUp -InputObject <IReportsIdentity> [-Expan
 ## DESCRIPTION
 Total sign-ups on apps registered in the tenant for a specified period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -326,6 +314,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlysignup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlysignup)
+
 
 
 

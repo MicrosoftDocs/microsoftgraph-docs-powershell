@@ -48,18 +48,6 @@ New-MgBetaAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> -BodyP
 ## DESCRIPTION
 Create new navigation property to versions for agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -463,6 +451,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [New-MgAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfileversion)
+
 
 
 

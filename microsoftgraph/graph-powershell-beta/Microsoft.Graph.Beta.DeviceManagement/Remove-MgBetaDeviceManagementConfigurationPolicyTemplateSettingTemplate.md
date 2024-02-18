@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
 ## DESCRIPTION
 Delete navigation property settingTemplates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyTemplateId
@@ -347,6 +331,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate)
+
 
 
 

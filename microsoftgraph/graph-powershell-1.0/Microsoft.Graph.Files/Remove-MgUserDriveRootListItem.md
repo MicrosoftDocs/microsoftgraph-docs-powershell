@@ -30,22 +30,6 @@ Remove-MgUserDriveRootListItem -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property listItem for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -232,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitem)
+
 
 
 

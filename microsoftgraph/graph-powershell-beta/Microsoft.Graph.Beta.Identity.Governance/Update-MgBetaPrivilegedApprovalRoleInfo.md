@@ -46,22 +46,6 @@ Update-MgBetaPrivilegedApprovalRoleInfo -InputObject <IIdentityGovernanceIdentit
 ## DESCRIPTION
 Update the navigation property roleInfo in privilegedApproval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -490,6 +474,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedapprovalroleinfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedapprovalroleinfo)
+
 
 
 

@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementAssignmentFilterStatusDetail
 ## DESCRIPTION
 Invoke action getAssignmentFiltersStatusDetails
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -259,6 +243,7 @@ BODYPARAMETER `<IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfilterss
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail)
+
 
 
 

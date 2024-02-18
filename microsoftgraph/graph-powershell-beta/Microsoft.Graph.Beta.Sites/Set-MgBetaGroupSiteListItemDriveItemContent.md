@@ -32,22 +32,6 @@ Set-MgBetaGroupSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -311,6 +295,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Set-MgGroupSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsitelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsitelistitemdriveitemcontent)
+
 
 
 

@@ -31,22 +31,6 @@ Remove-MgDriveRootVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-He
 ## DESCRIPTION
 Delete navigation property versions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversion)
+
 
 
 

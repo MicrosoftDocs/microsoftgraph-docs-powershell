@@ -30,22 +30,6 @@ Skip-MgBetaUserManagedDeviceActivationLock -InputObject <IUsersActionsIdentity> 
 ## DESCRIPTION
 Bypass activation lock
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +218,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Skip-MgUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Users.Actions/Skip-MgUserManagedDeviceActivationLock?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/skip-mgbetausermanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/skip-mgbetausermanageddeviceactivationlock)
+
 
 
 

@@ -76,18 +76,6 @@ Update-MgGroupSiteGetByPathAnalytic -InputObject <ISitesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18700,6 +18688,7 @@ Read-only.
 [Update-MgBetaGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteGetByPathAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathanalytic)
+
 
 
 

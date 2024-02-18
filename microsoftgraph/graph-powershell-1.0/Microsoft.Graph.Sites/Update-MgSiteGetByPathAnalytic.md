@@ -75,18 +75,6 @@ Update-MgSiteGetByPathAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property analytics in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18684,6 +18672,7 @@ Read-only.
 [Update-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathanalytic)
+
 
 
 

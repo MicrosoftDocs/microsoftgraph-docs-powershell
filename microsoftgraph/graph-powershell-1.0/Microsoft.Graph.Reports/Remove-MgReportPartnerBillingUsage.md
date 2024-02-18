@@ -23,18 +23,6 @@ Remove-MgReportPartnerBillingUsage [-IfMatch <String>] [-Headers <IDictionary>] 
 ## DESCRIPTION
 Delete navigation property usage for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -144,6 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgBetaReportPartnerBillingUsage](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingUsage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingusage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingusage)
+
 
 
 

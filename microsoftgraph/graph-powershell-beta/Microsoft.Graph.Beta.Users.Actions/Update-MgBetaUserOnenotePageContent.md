@@ -49,22 +49,6 @@ Update-MgBetaUserOnenotePageContent -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -319,6 +303,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Update-MgUserOnenotePageContent](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauseronenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauseronenotepagecontent)
+
 
 
 

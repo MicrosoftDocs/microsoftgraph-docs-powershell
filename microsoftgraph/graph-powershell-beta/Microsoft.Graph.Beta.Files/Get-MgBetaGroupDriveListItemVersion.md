@@ -39,22 +39,6 @@ Get-MgBetaGroupDriveListItemVersion -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 The list of previous versions of the list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +345,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitemversion)
+
 
 
 

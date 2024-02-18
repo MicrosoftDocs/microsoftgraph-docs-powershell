@@ -31,22 +31,6 @@ Get-MgShareListColumnSourceColumn -InputObject <IFilesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The source column for the content type column.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -202,6 +186,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumnSourceColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumnsourcecolumn)
+
 
 
 

@@ -31,22 +31,6 @@ Remove-MgUserOnenoteSection -InputObject <INotesIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Delete navigation property sections for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -220,6 +204,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Remove-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotesection)
+
 
 
 

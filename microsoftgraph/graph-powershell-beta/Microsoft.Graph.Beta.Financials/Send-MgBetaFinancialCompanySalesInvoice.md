@@ -27,18 +27,6 @@ Send-MgBetaFinancialCompanySalesInvoice -InputObject <IFinancialsIdentity> [-Hea
 ## DESCRIPTION
 Invoke action send
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -221,6 +209,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesinvoice)
+
 
 
 

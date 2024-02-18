@@ -30,22 +30,6 @@ Remove-MgBetaUserExtension -InputObject <IUsersIdentity> [-IfMatch <String>] [-H
 ## DESCRIPTION
 Delete navigation property extensions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExtensionId
@@ -231,6 +215,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Remove-MgUserExtension](/powershell/module/Microsoft.Graph.Users/Remove-MgUserExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserextension)
+
 
 
 

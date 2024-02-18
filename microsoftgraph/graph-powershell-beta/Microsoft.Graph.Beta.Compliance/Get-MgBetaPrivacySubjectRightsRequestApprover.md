@@ -39,18 +39,6 @@ Get-MgBetaPrivacySubjectRightsRequestApprover -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Get approvers from privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -320,6 +308,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 [Get-MgPrivacySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApprover?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprover](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprover)
+
 
 
 

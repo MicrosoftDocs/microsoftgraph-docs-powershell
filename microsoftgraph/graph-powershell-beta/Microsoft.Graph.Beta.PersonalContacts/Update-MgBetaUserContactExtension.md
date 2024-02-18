@@ -45,22 +45,6 @@ Update-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> -Body
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,6 +244,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Update-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactextension)
+
 
 
 

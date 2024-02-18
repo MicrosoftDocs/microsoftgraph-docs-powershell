@@ -30,18 +30,6 @@ Get-MgBetaPrintPrinterJobTaskCount -InputObject <IDevicesCloudPrintIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -186,6 +174,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgPrintPrinterJobTaskCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobTaskCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobtaskcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobtaskcount)
+
 
 
 

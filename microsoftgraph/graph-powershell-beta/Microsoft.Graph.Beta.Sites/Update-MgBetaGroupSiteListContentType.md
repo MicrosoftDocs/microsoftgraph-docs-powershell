@@ -58,22 +58,6 @@ Update-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property contentTypes in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1873,6 +1857,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 [Update-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistcontenttype)
+
 
 
 

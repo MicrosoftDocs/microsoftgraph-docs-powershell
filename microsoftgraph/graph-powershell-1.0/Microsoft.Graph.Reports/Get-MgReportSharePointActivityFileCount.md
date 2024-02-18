@@ -30,22 +30,6 @@ Get-MgReportSharePointActivityFileCount -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getSharePointActivityFileCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -184,6 +168,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportSharePointActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityFileCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount)
+
 
 
 

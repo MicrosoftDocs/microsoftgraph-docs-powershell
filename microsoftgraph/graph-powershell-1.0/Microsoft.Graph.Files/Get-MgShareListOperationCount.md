@@ -30,18 +30,6 @@ Get-MgShareListOperationCount -InputObject <IFilesIdentity> [-Filter <String>] [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -182,6 +170,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareListOperationCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListOperationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistoperationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistoperationcount)
+
 
 
 

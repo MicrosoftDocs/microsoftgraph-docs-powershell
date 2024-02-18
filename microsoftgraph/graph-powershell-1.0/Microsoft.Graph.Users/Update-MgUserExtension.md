@@ -43,22 +43,6 @@ Update-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> 
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,6 +235,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Update-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension)
+
 
 
 

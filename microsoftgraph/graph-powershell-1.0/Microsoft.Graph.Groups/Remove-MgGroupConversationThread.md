@@ -31,22 +31,6 @@ Remove-MgGroupConversationThread -InputObject <IGroupsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property threads for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationId
@@ -261,6 +245,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Remove-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthread)
+
 
 
 

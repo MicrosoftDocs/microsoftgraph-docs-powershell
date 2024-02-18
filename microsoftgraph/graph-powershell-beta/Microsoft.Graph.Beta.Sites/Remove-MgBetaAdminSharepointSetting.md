@@ -23,18 +23,6 @@ Remove-MgBetaAdminSharepointSetting [-IfMatch <String>] [-Headers <IDictionary>]
 ## DESCRIPTION
 Delete navigation property settings for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -144,6 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Remove-MgAdminSharepointSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetaadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetaadminsharepointsetting)
+
 
 
 

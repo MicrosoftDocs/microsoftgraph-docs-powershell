@@ -32,22 +32,6 @@ Remove-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Delete navigation property servicePrincipalRiskDetections for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -272,6 +256,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Remove-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaserviceprincipalriskdetection)
+
 
 
 

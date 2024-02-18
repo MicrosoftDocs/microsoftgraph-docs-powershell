@@ -32,18 +32,6 @@ Get-MgBetaDeviceManagementReportMobileApplicationManagementAppConfigurationRepor
 ## DESCRIPTION
 Invoke action getMobileApplicationManagementAppConfigurationReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,6 +323,7 @@ BODYPARAMETER `<IPathsDmlzxnDevicemanagementReportsMicrosoftGraphGetmobileapplic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportmobileapplicationmanagementappconfigurationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportmobileapplicationmanagementappconfigurationreport)
+
 
 
 

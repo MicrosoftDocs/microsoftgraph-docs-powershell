@@ -23,22 +23,6 @@ Get-MgBetaPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers 
 ## DESCRIPTION
 Get planner
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -117,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgPlanner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplanner)
+
 
 
 

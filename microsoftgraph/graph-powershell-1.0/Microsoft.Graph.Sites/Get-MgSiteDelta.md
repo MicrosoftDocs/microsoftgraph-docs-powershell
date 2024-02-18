@@ -24,18 +24,6 @@ Get-MgSiteDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Stri
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -235,6 +223,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaSiteDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta)
+
 
 
 

@@ -36,18 +36,6 @@ Get-MgGroupSettingCount -InputObject <IGroupsIdentity> [-Filter <String>] [-Sear
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -201,6 +189,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgBetaGroupSettingCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSettingCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingcount)
+
 
 
 

@@ -29,18 +29,6 @@ Invoke-MgBetaHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -174,6 +162,7 @@ BODY `<IPathsOw6D8EDeviceappmanagementTargetedmanagedappconfigurationsMicrosoftG
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementtargetedmanagedappconfigurationpayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementtargetedmanagedappconfigurationpayloadlink)
+
 
 
 

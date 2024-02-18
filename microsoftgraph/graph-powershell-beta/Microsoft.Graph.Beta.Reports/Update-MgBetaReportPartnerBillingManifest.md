@@ -50,18 +50,6 @@ Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Update the navigation property manifests in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -461,6 +449,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Update-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingmanifest)
+
 
 
 

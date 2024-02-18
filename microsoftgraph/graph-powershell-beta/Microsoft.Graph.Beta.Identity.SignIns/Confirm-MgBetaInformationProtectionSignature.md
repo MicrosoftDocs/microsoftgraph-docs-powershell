@@ -29,22 +29,6 @@ Confirm-MgBetaInformationProtectionSignature
 ## DESCRIPTION
 Invoke action verifySignature
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -210,6 +194,7 @@ BODYPARAMETER `<IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetainformationprotectionsignature](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetainformationprotectionsignature)
+
 
 
 

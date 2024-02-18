@@ -75,18 +75,6 @@ Update-MgBetaSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property termStore in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -551,6 +539,7 @@ Read-only.
 [Update-MgSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteGetByPathTermStore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathtermstore)
+
 
 
 

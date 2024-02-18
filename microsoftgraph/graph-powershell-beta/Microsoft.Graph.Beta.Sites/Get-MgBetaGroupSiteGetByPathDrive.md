@@ -60,18 +60,6 @@ Get-MgBetaGroupSiteGetByPathDrive -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The default drive (document library) for this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -406,6 +394,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgGroupSiteGetByPathDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathdrive)
+
 
 
 

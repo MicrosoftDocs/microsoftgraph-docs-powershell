@@ -23,22 +23,6 @@ Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [-Heade
 ## DESCRIPTION
 Represents an abstract type that contains resources for attack simulation and training reports.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -117,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity)
+
 
 
 

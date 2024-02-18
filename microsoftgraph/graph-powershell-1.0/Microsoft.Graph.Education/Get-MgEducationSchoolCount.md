@@ -23,18 +23,6 @@ Get-MgEducationSchoolCount [-Filter <String>] [-Search <String>] [-Headers <IDic
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaEducationSchoolCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolcount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolcount)
+
 
 
 

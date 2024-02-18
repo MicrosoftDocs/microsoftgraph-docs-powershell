@@ -30,18 +30,6 @@ Get-MgBetaSiteOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -169,6 +157,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Get-MgSiteOnenoteNotebookCount](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebookcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebookcount)
+
 
 
 

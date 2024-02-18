@@ -32,22 +32,6 @@ Remove-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property endpoints for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EndpointId
@@ -241,6 +225,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Remove-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalendpoint)
+
 
 
 

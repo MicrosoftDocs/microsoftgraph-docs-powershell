@@ -40,22 +40,6 @@ Currently, when creating a team using application permissions, exactly one owner
 When using user-delegated permissions, no owner can be specified (the current user is the owner).
 The owner must be specified as an object ID (GUID), not a UPN.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +332,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamowner)
+
 
 
 

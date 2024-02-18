@@ -32,22 +32,6 @@ Set-MgSiteOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stream>] 
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -240,6 +224,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Set-MgBetaSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaSiteOnenoteResourceContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mgsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mgsiteonenoteresourcecontent)
+
 
 
 

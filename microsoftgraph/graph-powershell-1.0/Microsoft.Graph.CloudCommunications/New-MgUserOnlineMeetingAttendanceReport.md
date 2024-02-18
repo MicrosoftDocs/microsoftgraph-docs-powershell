@@ -48,22 +48,6 @@ New-MgUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Create new navigation property to attendanceReports for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -371,6 +355,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [New-MgBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingattendancereport)
+
 
 
 

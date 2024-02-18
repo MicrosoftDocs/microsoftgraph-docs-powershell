@@ -40,18 +40,6 @@ Get-MgUserOwnedDeviceAsDevice -InputObject <IUsersIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -333,6 +321,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserOwnedDeviceAsDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceAsDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasdevice)
+
 
 
 

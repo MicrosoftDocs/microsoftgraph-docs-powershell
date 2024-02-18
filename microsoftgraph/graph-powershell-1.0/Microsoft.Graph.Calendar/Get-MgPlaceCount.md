@@ -23,18 +23,6 @@ Get-MgPlaceCount [-Filter <String>] [-Search <String>] [-Headers <IDictionary>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaPlaceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecount)
+
 
 
 

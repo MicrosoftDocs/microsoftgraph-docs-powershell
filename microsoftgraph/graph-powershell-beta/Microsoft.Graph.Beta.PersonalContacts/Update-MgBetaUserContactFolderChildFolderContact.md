@@ -71,22 +71,6 @@ Update-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContacts
 ## DESCRIPTION
 Update the navigation property contacts in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1107,6 +1091,7 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: .
 [Update-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontact)
+
 
 
 

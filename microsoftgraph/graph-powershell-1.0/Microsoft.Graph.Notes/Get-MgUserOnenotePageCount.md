@@ -30,18 +30,6 @@ Get-MgUserOnenotePageCount -InputObject <INotesIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -169,6 +157,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Get-MgBetaUserOnenotePageCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecount)
+
 
 
 

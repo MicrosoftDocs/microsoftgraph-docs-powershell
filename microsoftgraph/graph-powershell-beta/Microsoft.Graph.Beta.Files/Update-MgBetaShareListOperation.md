@@ -50,22 +50,6 @@ Update-MgBetaShareListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -458,6 +442,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Update-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgShareListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistoperation)
+
 
 
 

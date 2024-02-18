@@ -40,18 +40,6 @@ Get-MgBetaUserOwnedObjectAsServicePrincipal -InputObject <IUsersIdentity> [-Expa
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -343,6 +331,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserOwnedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObjectAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectasserviceprincipal)
+
 
 
 

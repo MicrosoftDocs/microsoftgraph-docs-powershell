@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementEffectivePermission -InputObject <IDeviceManagementFun
 ## DESCRIPTION
 Invoke function getEffectivePermissions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -247,6 +231,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 [Get-MgDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementEffectivePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementeffectivepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementeffectivepermission)
+
 
 
 

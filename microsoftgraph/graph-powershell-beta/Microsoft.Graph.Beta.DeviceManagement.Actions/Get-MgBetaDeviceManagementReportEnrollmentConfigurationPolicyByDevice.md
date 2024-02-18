@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <
 ## DESCRIPTION
 Invoke action getEnrollmentConfigurationPoliciesByDevice
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -323,6 +307,7 @@ BODYPARAMETER `<IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentco
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice)
+
 
 
 

@@ -47,18 +47,6 @@ New-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScope
 ## DESCRIPTION
 Create new navigation property to scopes for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleId
@@ -532,6 +520,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperesourceroleresourcescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperesourceroleresourcescope)
+
 
 
 

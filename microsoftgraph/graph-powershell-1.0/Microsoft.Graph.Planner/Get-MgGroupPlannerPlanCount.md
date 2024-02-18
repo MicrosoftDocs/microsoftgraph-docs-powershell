@@ -30,18 +30,6 @@ Get-MgGroupPlannerPlanCount -InputObject <IPlannerIdentity> [-Filter <String>] [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -163,6 +151,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 [Get-MgBetaGroupPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplancount](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplancount)
+
 
 
 

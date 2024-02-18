@@ -38,22 +38,6 @@ Get-MgShareListSubscription -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The set of subscriptions on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,6 +314,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistsubscription)
+
 
 
 

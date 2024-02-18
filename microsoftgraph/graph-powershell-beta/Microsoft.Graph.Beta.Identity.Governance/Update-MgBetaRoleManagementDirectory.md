@@ -41,18 +41,6 @@ Update-MgBetaRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplicat
 ## DESCRIPTION
 Update the navigation property directory in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1946,6 +1934,7 @@ Supports $filter (eq, in).
 [Update-MgRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory)
+
 
 
 

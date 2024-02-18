@@ -30,22 +30,6 @@ Remove-MgUserChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Headers <I
 ## DESCRIPTION
 Delete navigation property chats for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -240,6 +224,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchat)
+
 
 
 

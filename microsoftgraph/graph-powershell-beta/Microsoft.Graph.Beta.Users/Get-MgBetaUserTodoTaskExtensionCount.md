@@ -31,18 +31,6 @@ Get-MgBetaUserTodoTaskExtensionCount -InputObject <IUsersIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -212,6 +200,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserTodoTaskExtensionCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskExtensionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextensioncount)
+
 
 
 

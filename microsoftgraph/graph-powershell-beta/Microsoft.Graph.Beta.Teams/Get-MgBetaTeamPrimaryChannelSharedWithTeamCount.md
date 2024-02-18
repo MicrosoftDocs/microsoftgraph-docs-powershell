@@ -30,18 +30,6 @@ Get-MgBetaTeamPrimaryChannelSharedWithTeamCount -InputObject <ITeamsIdentity> [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -199,6 +187,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgTeamPrimaryChannelSharedWithTeamCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelSharedWithTeamCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelsharedwithteamcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelsharedwithteamcount)
+
 
 
 

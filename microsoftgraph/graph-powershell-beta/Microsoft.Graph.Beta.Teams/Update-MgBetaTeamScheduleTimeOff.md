@@ -52,22 +52,6 @@ Update-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <I
 Replace an existing timeOff.
 If the specified timeOff doesn't exist, this method returns 404 Not found.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -506,6 +490,7 @@ Required.
 [Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoff)
+
 
 
 

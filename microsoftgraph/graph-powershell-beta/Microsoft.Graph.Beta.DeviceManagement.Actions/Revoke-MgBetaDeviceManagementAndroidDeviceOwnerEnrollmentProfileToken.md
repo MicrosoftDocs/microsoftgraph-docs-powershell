@@ -29,22 +29,6 @@ Revoke-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
 ## DESCRIPTION
 Invoke action revokeToken
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AndroidDeviceOwnerEnrollmentProfileId
@@ -229,6 +213,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/revoke-mgbetadevicemanagementandroiddeviceownerenrollmentprofiletoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/revoke-mgbetadevicemanagementandroiddeviceownerenrollmentprofiletoken)
+
 
 
 

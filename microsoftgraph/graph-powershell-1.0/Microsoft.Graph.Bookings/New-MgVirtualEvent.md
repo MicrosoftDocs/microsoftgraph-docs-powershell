@@ -33,18 +33,6 @@ New-MgVirtualEvent -BodyParameter <IMicrosoftGraphVirtualEvent> [-Headers <IDict
 ## DESCRIPTION
 Create new navigation property to events for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -520,6 +508,7 @@ See below for more possible values.
 [New-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualevent)
+
 
 
 

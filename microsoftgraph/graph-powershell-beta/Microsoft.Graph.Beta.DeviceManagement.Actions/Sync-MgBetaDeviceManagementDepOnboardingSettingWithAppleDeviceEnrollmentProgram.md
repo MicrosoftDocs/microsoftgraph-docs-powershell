@@ -29,22 +29,6 @@ Sync-MgBetaDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram
 ## DESCRIPTION
 Synchronizes between Apple Device Enrollment Program and Intune
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -229,6 +213,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementdeponboardingsettingwithappledeviceenrollmentprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementdeponboardingsettingwithappledeviceenrollmentprogram)
+
 
 
 

@@ -42,22 +42,6 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +341,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextension)
+
 
 
 

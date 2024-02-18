@@ -27,18 +27,6 @@ Invoke-MgBetaUnarchiveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-Headers
 ## DESCRIPTION
 Invoke action unarchive
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -211,6 +199,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamprimarychannel)
+
 
 
 

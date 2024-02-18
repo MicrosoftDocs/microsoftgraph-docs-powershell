@@ -32,18 +32,6 @@ Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact -InputObject <ISecu
 ## DESCRIPTION
 The artifact related to this indicator.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ArticleIndicatorId
@@ -239,6 +227,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityThreatIntelligenceArticleIndicatorArtifact](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceArticleIndicatorArtifact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicatorartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicatorartifact)
+
 
 
 

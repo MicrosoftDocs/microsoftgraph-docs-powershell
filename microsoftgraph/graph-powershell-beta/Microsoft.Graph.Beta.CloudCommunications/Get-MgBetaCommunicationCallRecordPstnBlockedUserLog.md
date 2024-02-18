@@ -29,18 +29,6 @@ Get-MgBetaCommunicationCallRecordPstnBlockedUserLog -InputObject <ICloudCommunic
 ## DESCRIPTION
 Invoke function getPstnBlockedUsersLog
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -235,6 +223,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordpstnblockeduserlog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordpstnblockeduserlog)
+
 
 
 

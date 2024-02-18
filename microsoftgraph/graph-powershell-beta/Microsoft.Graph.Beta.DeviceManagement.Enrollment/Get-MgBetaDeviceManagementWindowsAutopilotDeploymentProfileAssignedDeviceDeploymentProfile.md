@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploym
 ## DESCRIPTION
 Deployment profile currently assigned to the Windows autopilot device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -199,6 +187,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddevicedeploymentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddevicedeploymentprofile)
+
 
 
 

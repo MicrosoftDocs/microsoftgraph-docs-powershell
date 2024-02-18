@@ -48,18 +48,6 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -256,6 +244,7 @@ BODYPARAMETER `<IPaths1Wf2XtvGroupsettingtemplatesMicrosoftGraphValidateproperti
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsettingtemplateproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsettingtemplateproperty)
+
 
 
 

@@ -31,22 +31,6 @@ Remove-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property notebooks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -220,6 +204,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Remove-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Remove-MgGroupOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotenotebook)
+
 
 
 

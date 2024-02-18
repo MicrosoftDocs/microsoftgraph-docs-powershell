@@ -30,22 +30,6 @@ Remove-MgGroupDriveList -InputObject <IFilesIdentity> [-IfMatch <String>] [-Head
 ## DESCRIPTION
 Delete navigation property list for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -232,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelist)
+
 
 
 

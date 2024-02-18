@@ -45,18 +45,6 @@ Update-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> -B
 ## DESCRIPTION
 Update the navigation property methods in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,6 +301,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Update-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationmethod)
+
 
 
 

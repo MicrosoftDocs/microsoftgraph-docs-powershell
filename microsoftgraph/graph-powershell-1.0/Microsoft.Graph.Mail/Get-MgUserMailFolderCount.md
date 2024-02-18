@@ -30,18 +30,6 @@ Get-MgUserMailFolderCount -InputObject <IMailIdentity> [-Filter <String>] [-Head
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -151,6 +139,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Get-MgBetaUserMailFolderCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldercount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldercount)
+
 
 
 

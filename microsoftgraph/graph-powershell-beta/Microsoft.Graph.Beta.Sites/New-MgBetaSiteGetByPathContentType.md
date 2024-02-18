@@ -95,18 +95,6 @@ New-MgBetaSiteGetByPathContentType -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new \[contentType\]\[\] for a \[site\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1891,6 +1879,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 [New-MgSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Sites/New-MgSiteGetByPathContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathcontenttype)
+
 
 
 

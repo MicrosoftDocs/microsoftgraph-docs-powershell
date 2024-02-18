@@ -69,18 +69,6 @@ New-MgBetaDeviceAppManagementiOSManagedAppProtection -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to iosManagedAppProtections for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1524,6 +1512,7 @@ EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair- `[]`>: Apps in this list will
 [New-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementiosmanagedappprotection)
+
 
 
 

@@ -42,22 +42,6 @@ Get-MgReportTeamUserActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getTeamsUserActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -211,6 +195,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportTeamUserActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityuserdetail)
+
 
 
 

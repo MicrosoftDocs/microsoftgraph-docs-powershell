@@ -30,22 +30,6 @@ Invoke-MgBetaDownUserManagedDeviceShut -InputObject <IUsersActionsIdentity> [-He
 ## DESCRIPTION
 Shut down device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +218,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadownusermanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadownusermanageddeviceshut)
+
 
 
 

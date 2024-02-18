@@ -39,18 +39,6 @@ Get-MgBetaGroupDriveContentTypeBaseType -InputObject <IFilesIdentity> [-ExpandPr
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +345,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgGroupDriveContentTypeBaseType](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveContentTypeBaseType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivecontenttypebasetype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivecontenttypebasetype)
+
 
 
 

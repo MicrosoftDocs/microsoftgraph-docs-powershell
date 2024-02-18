@@ -30,22 +30,6 @@ Get-MgGroupPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Entry-point to Planner resource that might exist for a Unified Group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -167,6 +151,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 [Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplanner)
+
 
 
 

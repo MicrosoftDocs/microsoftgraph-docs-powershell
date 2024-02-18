@@ -66,22 +66,6 @@ Update-MgGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property columns in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1284,6 +1268,7 @@ For examples, see Examples of common formulas in lists.
 [Update-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecolumn)
+
 
 
 

@@ -111,18 +111,6 @@ New-MgSiteGetByPathColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a column for a \[site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1325,6 +1313,7 @@ For examples, see Examples of common formulas in lists.
 [New-MgBetaSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathcolumn)
+
 
 
 

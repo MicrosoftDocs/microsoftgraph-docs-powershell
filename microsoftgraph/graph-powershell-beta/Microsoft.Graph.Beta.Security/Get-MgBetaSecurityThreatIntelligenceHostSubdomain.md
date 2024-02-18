@@ -39,18 +39,6 @@ Get-MgBetaSecurityThreatIntelligenceHostSubdomain -InputObject <ISecurityIdentit
 ## DESCRIPTION
 The subdomains that are associated with this host.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -382,6 +370,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHostSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSubdomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsubdomain)
+
 
 
 

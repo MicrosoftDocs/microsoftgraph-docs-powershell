@@ -32,22 +32,6 @@ Search-MgBetaDriveRoot -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <
 ## DESCRIPTION
 Invoke function search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -293,6 +277,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Search-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Search-MgDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveroot)
+
 
 
 

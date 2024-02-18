@@ -36,18 +36,6 @@ Get-MgBetaUserAppRoleAssignedResource -InputObject <IUsersIdentity> [-ExpandProp
 ## DESCRIPTION
 Get appRoleAssignedResources from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,6 +310,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserapproleassignedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserapproleassignedresource)
+
 
 
 

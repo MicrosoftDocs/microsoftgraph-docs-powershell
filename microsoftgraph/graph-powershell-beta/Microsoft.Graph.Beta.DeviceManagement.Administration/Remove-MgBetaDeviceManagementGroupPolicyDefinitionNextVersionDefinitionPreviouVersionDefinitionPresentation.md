@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVe
 ## DESCRIPTION
 Delete navigation property presentations for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupPolicyDefinitionId
@@ -264,6 +248,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinitionpreviouversiondefinitionpresentation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinitionpreviouversiondefinitionpresentation)
+
 
 
 

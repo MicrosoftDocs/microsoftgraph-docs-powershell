@@ -39,18 +39,6 @@ Get-MgUserTodoTaskAttachmentSession -InputObject <IUsersIdentity> [-Property <St
 ## DESCRIPTION
 Get attachmentSessions from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -316,6 +304,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserTodoTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsession)
+
 
 
 

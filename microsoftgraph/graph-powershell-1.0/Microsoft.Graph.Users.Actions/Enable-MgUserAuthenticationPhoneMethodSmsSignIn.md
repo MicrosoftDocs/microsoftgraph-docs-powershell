@@ -34,18 +34,6 @@ To be successfully enabled:
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-enablesmssignin-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +210,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/enable-mguserauthenticationphonemethodsmssignin](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/enable-mguserauthenticationphonemethodsmssignin)
+
 
 
 

@@ -38,18 +38,6 @@ Get-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 ## DESCRIPTION
 Get jobs from print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -315,6 +303,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjob)
+
 
 
 

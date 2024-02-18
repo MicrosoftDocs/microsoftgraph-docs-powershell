@@ -32,18 +32,6 @@ Get-MgBetaServicePrincipalOwnerCountAsServicePrincipal -InputObject <IApplicatio
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -207,6 +195,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalOwnerCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerCountAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownercountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownercountasserviceprincipal)
+
 
 
 

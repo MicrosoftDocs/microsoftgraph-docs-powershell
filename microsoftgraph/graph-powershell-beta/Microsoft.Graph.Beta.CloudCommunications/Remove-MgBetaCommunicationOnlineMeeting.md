@@ -31,22 +31,6 @@ Remove-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Delete navigation property onlineMeetings for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -213,6 +197,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [Remove-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeeting)
+
 
 
 

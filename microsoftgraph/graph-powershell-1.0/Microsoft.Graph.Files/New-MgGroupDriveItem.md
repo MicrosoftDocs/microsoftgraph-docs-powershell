@@ -78,22 +78,6 @@ New-MgGroupDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to items for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29404,6 +29388,7 @@ Read-only.
 [New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitem)
+
 
 
 

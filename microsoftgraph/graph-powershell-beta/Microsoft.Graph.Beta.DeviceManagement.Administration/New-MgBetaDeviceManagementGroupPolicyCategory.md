@@ -32,22 +32,6 @@ New-MgBetaDeviceManagementGroupPolicyCategory -BodyParameter <IMicrosoftGraphGro
 ## DESCRIPTION
 Create new navigation property to groupPolicyCategories for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -595,6 +579,7 @@ For example: edge.admx
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicycategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicycategory)
+
 
 
 

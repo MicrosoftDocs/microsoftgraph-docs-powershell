@@ -29,22 +29,6 @@ Remove-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Delete navigation property deviceEnrollmentConfigurations for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceEnrollmentConfigurationId
@@ -274,6 +258,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdeviceenrollmentconfiguration)
+
 
 
 

@@ -43,22 +43,6 @@ Remove-MgShareListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Heade
 ## DESCRIPTION
 Delete navigation property listItem for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -245,6 +229,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitem)
+
 
 
 

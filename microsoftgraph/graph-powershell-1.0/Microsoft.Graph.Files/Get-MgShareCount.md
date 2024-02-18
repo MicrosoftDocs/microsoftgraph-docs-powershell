@@ -23,18 +23,6 @@ Get-MgShareCount [-Filter <String>] [-Search <String>] [-Headers <IDictionary>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount)
+
 
 
 

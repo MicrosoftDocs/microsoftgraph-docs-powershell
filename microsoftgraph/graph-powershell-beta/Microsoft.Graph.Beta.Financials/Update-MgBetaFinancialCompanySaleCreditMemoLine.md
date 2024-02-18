@@ -55,22 +55,6 @@ Update-MgBetaFinancialCompanySaleCreditMemoLine -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Update the navigation property salesCreditMemoLines in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -755,6 +739,7 @@ ITEM `<IMicrosoftGraphItem>`: item
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemoline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemoline)
+
 
 
 

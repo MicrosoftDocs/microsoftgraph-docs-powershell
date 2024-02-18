@@ -32,22 +32,6 @@ Get-MgBetaReportOffice365ActiveUserCount -InputObject <IReportsIdentity> [-Count
 ## DESCRIPTION
 Invoke function getOffice365ActiveUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -298,6 +282,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgReportOffice365ActiveUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActiveUserCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activeusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activeusercount)
+
 
 
 

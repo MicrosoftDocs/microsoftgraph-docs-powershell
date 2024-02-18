@@ -34,18 +34,6 @@ Get-MgBetaGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId 
 ## DESCRIPTION
 Get the permission resources from the permissions navigation property on a site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -305,6 +293,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission)
+
 
 
 

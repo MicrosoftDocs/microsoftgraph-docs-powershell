@@ -30,18 +30,6 @@ Get-MgApplicationOwnerCount -InputObject <IApplicationsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -197,6 +185,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgBetaApplicationOwnerCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownercount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownercount)
+
 
 
 

@@ -29,18 +29,6 @@ Get-MgBetaDeviceManagementOperationApprovalRequestStatus
 ## DESCRIPTION
 Invoke action retrieveRequestStatus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -190,6 +178,7 @@ BODY `<IPaths1Lazzr4DevicemanagementOperationapprovalrequestsMicrosoftGraphRetri
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementoperationapprovalrequeststatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementoperationapprovalrequeststatus)
+
 
 
 

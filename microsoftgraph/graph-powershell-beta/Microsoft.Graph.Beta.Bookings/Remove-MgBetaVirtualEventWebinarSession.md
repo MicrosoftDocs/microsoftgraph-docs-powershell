@@ -32,18 +32,6 @@ Remove-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -228,6 +216,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Remove-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsession)
+
 
 
 

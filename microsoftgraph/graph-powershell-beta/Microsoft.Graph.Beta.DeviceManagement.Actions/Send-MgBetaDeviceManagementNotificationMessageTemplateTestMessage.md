@@ -32,22 +32,6 @@ Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage
 ## DESCRIPTION
 Sends test message using the specified notificationMessageTemplate in the default locale
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -233,6 +217,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Send-MgDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementnotificationmessagetemplatetestmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementnotificationmessagetemplatetestmessage)
+
 
 
 

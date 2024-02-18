@@ -45,22 +45,6 @@ Update-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property defaultUserRoleOverrides in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,6 +349,7 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicydefaultuserroleoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicydefaultuserroleoverride)
+
 
 
 

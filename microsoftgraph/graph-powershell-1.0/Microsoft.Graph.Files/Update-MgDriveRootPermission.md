@@ -61,22 +61,6 @@ Only the roles property can be modified this way.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -677,6 +661,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission)
+
 
 
 

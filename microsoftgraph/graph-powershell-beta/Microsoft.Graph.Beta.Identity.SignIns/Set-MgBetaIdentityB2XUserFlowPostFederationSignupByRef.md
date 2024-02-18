@@ -46,18 +46,6 @@ Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySi
 ## DESCRIPTION
 Update the ref of navigation property postFederationSignup in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -336,6 +324,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowpostfederationsignupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowpostfederationsignupbyref)
+
 
 
 

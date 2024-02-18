@@ -30,22 +30,6 @@ Get-MgBetaGroupTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The team associated with this group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -203,6 +187,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteam)
+
 
 
 

@@ -30,18 +30,6 @@ Get-MgPrivacySubjectRightsRequestCollaboratorCount -InputObject <IComplianceIden
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -161,6 +149,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 [Get-MgBetaPrivacySubjectRightsRequestCollaboratorCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCollaboratorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaboratorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaboratorcount)
+
 
 
 

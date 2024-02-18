@@ -30,22 +30,6 @@ New-MgBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-Headers 
 ## DESCRIPTION
 Create new navigation property to bookingCurrencies for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -200,6 +184,7 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
+
 
 
 

@@ -50,18 +50,6 @@ Set-MgDriveRootSensitivityLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,6 +289,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgBetaDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriverootsensitivitylabel)
+
 
 
 

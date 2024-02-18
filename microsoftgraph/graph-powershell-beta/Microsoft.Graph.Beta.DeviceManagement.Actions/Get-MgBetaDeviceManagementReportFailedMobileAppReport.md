@@ -31,22 +31,6 @@ Get-MgBetaDeviceManagementReportFailedMobileAppReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getFailedMobileAppsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,6 +322,7 @@ BODYPARAMETER `<IPaths1NdtknnDevicemanagementReportsMicrosoftGraphGetfailedmobil
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportfailedmobileappreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportfailedmobileappreport)
+
 
 
 

@@ -91,18 +91,6 @@ New-MgSiteGetByPathPermission -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new permission object on a site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -733,6 +721,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgBetaSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpermission)
+
 
 
 

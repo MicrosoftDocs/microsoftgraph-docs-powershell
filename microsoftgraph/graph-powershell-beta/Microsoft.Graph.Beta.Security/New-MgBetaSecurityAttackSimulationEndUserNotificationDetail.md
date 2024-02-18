@@ -48,18 +48,6 @@ New-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecur
 ## DESCRIPTION
 Create new navigation property to details for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,6 +410,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [New-MgSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotificationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotificationdetail)
+
 
 
 

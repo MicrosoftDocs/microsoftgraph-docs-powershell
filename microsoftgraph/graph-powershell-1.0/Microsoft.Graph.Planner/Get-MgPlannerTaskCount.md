@@ -23,18 +23,6 @@ Get-MgPlannerTaskCount [-Filter <String>] [-Search <String>] [-Headers <IDiction
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaPlannerTaskCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskcount](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskcount)
+
 
 
 

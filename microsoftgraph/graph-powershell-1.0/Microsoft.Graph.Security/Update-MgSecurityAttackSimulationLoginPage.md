@@ -51,18 +51,6 @@ Update-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property loginPages in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -477,6 +465,7 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationloginpage)
+
 
 
 

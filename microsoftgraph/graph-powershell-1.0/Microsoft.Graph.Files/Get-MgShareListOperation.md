@@ -39,22 +39,6 @@ Get-MgShareListOperation -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The collection of long-running operations on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -331,6 +315,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistoperation)
+
 
 
 

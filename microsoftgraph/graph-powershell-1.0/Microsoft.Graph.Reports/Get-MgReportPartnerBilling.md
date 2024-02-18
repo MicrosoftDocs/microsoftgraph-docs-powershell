@@ -23,18 +23,6 @@ Get-MgReportPartnerBilling [-ExpandProperty <String[]>] [-Property <String[]>] [
 ## DESCRIPTION
 Represents billing details for billed and unbilled data.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -113,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBilling?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbilling)
+
 
 
 

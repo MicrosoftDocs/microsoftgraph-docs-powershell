@@ -29,18 +29,6 @@ Remove-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Delete navigation property participants_v2 for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordId
@@ -221,6 +209,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallrecordparticipantv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallrecordparticipantv2)
+
 
 
 

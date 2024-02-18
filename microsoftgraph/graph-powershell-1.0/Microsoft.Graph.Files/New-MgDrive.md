@@ -38,22 +38,6 @@ New-MgDrive -BodyParameter <IMicrosoftGraphDrive> [-Headers <IDictionary>] [-Pro
 ## DESCRIPTION
 Add new entity to drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -41847,6 +41831,7 @@ Read-only.
 [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive)
+
 
 
 

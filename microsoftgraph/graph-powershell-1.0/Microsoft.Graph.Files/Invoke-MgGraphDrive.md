@@ -32,22 +32,6 @@ Invoke-MgGraphDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Str
 ## DESCRIPTION
 Invoke function sharedWithMe
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -278,6 +262,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Invoke-MgBetaGraphDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mggraphdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mggraphdrive)
+
 
 
 

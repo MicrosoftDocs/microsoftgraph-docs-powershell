@@ -30,18 +30,6 @@ Remove-MgBetaSiteAnalytic -InputObject <ISitesIdentity> [-IfMatch <String>] [-He
 ## DESCRIPTION
 Delete navigation property analytics for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -241,6 +229,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasiteanalytic)
+
 
 
 

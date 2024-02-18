@@ -34,22 +34,6 @@ New-MgBetaDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> 
 ## DESCRIPTION
 Create new navigation property to auditEvents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -414,6 +398,7 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 [New-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent)
+
 
 
 

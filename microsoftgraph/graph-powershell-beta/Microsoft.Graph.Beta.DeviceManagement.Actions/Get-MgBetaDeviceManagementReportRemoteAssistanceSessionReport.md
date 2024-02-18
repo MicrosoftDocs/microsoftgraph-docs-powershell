@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportRemoteAssistanceSessionReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getRemoteAssistanceSessionsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +323,7 @@ BODYPARAMETER `<IPaths1Ch0ZdjDevicemanagementReportsMicrosoftGraphGetremoteassis
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportremoteassistancesessionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportremoteassistancesessionreport)
+
 
 
 

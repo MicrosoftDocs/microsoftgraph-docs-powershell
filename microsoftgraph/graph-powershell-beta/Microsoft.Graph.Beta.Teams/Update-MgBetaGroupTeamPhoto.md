@@ -44,22 +44,6 @@ Update-MgBetaGroupTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property photo in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -307,6 +291,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Update-MgGroupTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamphoto)
+
 
 
 

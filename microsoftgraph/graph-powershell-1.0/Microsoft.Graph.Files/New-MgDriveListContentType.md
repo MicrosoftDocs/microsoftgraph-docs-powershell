@@ -56,22 +56,6 @@ New-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to contentTypes for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1798,6 +1782,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 [New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype)
+
 
 
 

@@ -48,22 +48,6 @@ Test-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +292,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Test-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserdriverootpermission)
+
 
 
 

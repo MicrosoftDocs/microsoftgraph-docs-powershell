@@ -35,22 +35,6 @@ Get-MgBetaReportDailyPrintUsageSummaryByPrinter -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Get dailyPrintUsageSummariesByPrinter from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -331,6 +315,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagesummarybyprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagesummarybyprinter)
+
 
 
 

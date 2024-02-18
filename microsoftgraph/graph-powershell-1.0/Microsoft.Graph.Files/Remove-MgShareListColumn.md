@@ -31,22 +31,6 @@ Remove-MgShareListColumn -InputObject <IFilesIdentity> [-IfMatch <String>] [-Hea
 ## DESCRIPTION
 Delete navigation property columns for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcolumn)
+
 
 
 

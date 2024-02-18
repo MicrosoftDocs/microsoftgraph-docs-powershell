@@ -23,18 +23,6 @@ Get-MgGroupCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -129,6 +117,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaGroupCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcount)
+
 
 
 

@@ -31,18 +31,6 @@ Remove-MgBetaUserDriveItemPermanent -InputObject <IUsersActionsIdentity> [-Heade
 ## DESCRIPTION
 Invoke action permanentDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -246,6 +234,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserdriveitempermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserdriveitempermanent)
+
 
 
 
