@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaUnmuteCommunicationCall
@@ -46,6 +47,9 @@ Invoke-MgBetaUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-unmute-permissions.md)]
 
 ## EXAMPLES
 

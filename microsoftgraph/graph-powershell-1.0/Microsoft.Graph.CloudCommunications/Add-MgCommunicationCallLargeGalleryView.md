@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/add-mgcommunicationcalllargegalleryview
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Add-MgCommunicationCallLargeGalleryView
@@ -44,6 +45,9 @@ Add-MgCommunicationCallLargeGalleryView -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Add the large gallery view to a call.
 For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-addlargegalleryview-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/move-mgbetaentitlementmanagementaccesspackagetocatalog
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Move-MgBetaEntitlementManagementAccessPackageToCatalog
@@ -46,6 +47,9 @@ Move-MgBetaEntitlementManagementAccessPackageToCatalog -InputObject <IIdentityGo
 ## DESCRIPTION
 In Microsoft Entra entitlement management, this action moves the accessPackage to a specified target accessPackageCatalog.
 The resources in the access package must be present in the target catalog.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-movetocatalog-permissions.md)]
 
 ## EXAMPLES
 

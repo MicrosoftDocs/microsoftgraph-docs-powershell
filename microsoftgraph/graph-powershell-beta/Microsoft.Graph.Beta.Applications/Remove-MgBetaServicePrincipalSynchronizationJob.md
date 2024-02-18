@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalSynchronizationJob
@@ -30,6 +31,9 @@ Remove-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
 
 ## EXAMPLES
 

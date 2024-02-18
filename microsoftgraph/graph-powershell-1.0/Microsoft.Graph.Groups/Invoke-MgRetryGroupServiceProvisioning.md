@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Invoke-MgRetryGroupServiceProvisioning
@@ -26,6 +27,9 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Headers 
 
 ## DESCRIPTION
 Retry the group service provisioning.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-retryserviceprovisioning-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Remove-MgDomain
@@ -27,6 +28,9 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Deletes a domain from a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-delete-permissions.md)]
 
 ## EXAMPLES
 

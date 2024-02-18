@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mggrouponenotepage
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Remove-MgGroupOnenotePage
@@ -27,6 +28,9 @@ Remove-MgGroupOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-He
 
 ## DESCRIPTION
 Delete a OneNote page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-delete-permissions.md)]
 
 ## EXAMPLES
 

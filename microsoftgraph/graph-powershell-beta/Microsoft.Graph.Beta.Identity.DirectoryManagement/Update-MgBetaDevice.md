@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgBetaDevice
@@ -70,6 +71,9 @@ Update-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 ## DESCRIPTION
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-update-permissions.md)]
 
 ## EXAMPLES
 

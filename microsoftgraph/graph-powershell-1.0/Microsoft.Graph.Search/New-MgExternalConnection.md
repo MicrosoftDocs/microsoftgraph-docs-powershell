@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
+ms.prod: search
 ---
 
 # New-MgExternalConnection
@@ -32,6 +33,9 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 
 ## DESCRIPTION
 Create a new externalConnection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
+ms.prod: partner-customer-administration
 ---
 
 # Remove-MgBetaTenantRelationshipDelegatedAdminRelationship
@@ -30,6 +31,9 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
 ## DESCRIPTION
 Delete a delegatedAdminRelationship object.
 A relationship can only be deleted if it's in the 'created' status.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-delete-permissions.md)]
 
 ## EXAMPLES
 

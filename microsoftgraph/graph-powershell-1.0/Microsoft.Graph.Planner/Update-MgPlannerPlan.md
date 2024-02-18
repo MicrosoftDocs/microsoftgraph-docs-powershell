@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgPlannerPlan
@@ -46,6 +47,9 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the properties of a plannerPlan object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-update-permissions.md)]
 
 ## EXAMPLES
 

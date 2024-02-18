@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgBetaApplicationFederatedIdentityCredential
@@ -48,6 +49,9 @@ New-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
 
 ## EXAMPLES
 

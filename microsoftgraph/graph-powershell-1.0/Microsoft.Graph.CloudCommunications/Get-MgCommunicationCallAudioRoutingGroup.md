@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallaudioroutinggroup
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallAudioRoutingGroup
@@ -36,6 +37,9 @@ Get-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an audioRoutingGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-get-permissions.md)]
 
 ## EXAMPLES
 

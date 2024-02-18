@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUserPasswordSingleSignOnCredential
@@ -28,6 +29,9 @@ Get-MgBetaUserPasswordSingleSignOnCredential -InputObject <IUsersActionsIdentity
 ## DESCRIPTION
 Get the list of password-based single sign-on credentials for a given user.
 This API returns the encrypted passwords as null or empty strings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-getpasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteNotebookSection
@@ -49,6 +50,9 @@ New-MgGroupOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
 
 ## EXAMPLES
 

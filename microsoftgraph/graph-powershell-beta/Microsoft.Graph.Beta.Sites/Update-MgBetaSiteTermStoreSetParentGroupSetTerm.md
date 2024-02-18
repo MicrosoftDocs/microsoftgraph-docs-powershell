@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsetterm
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Update-MgBetaSiteTermStoreSetParentGroupSetTerm
@@ -50,6 +51,9 @@ Update-MgBetaSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update the properties of a term object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-update-permissions.md)]
 
 ## EXAMPLES
 

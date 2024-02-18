@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan
 schema: 2.0.0
+ms.prod: business-scenarios
 ---
 
 # Get-MgBetaBusinessScenarioPlannerPlan
@@ -44,6 +45,9 @@ Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Get information about the plannerPlan mapped to a given target.
 If a plannerPlan doesn't exist for the specified target at the time of the request, a new plan will be created for the businessScenario.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-getplan-permissions.md)]
 
 ## EXAMPLES
 

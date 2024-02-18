@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationmeassignmentsubmission
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Invoke-MgBetaReturnEducationMeAssignmentSubmission
@@ -31,6 +32,9 @@ Invoke-MgBetaReturnEducationMeAssignmentSubmission -InputObject <IEducationIdent
 Make the grade and feedback associated with this submission available to the student.
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-return-permissions.md)]
 
 ## EXAMPLES
 

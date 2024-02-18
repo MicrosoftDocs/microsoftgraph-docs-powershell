@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgBetaDriveListItemDocumentSetVersion
@@ -49,6 +50,9 @@ New-MgBetaDriveListItemDocumentSetVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create a new version of a document set item in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
 ## EXAMPLES
 

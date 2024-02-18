@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupcalendarevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaForwardGroupCalendarEvent
@@ -48,6 +49,9 @@ Invoke-MgBetaForwardGroupCalendarEvent -InputObject <IGroupsIdentity>
 This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-forward-permissions.md)]
 
 ## EXAMPLES
 

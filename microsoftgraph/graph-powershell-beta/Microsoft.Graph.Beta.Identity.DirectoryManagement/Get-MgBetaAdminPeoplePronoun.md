@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Get-MgBetaAdminPeoplePronoun
@@ -21,6 +22,9 @@ Get-MgBetaAdminPeoplePronoun [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-pronouns-permissions.md)]
 
 ## EXAMPLES
 

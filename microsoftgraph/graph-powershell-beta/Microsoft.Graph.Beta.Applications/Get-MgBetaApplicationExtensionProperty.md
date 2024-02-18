@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgBetaApplicationExtensionProperty
@@ -35,6 +36,9 @@ Get-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Ex
 
 ## DESCRIPTION
 Read a directory extension definition represented by an extensionProperty object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/extensionproperty-get-permissions.md)]
 
 ## EXAMPLES
 

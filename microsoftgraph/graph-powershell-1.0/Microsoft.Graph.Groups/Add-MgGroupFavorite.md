@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Add-MgGroupFavorite
@@ -28,6 +29,9 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-Headers <IDictionary>] [-Pa
 ## DESCRIPTION
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-addfavorite-permissions.md)]
 
 ## EXAMPLES
 

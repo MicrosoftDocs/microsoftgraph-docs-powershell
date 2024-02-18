@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemlistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgGroupDriveItemListItemDocumentSetVersion
@@ -28,6 +29,9 @@ Remove-MgGroupDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> 
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-delete-permissions.md)]
 
 ## EXAMPLES
 

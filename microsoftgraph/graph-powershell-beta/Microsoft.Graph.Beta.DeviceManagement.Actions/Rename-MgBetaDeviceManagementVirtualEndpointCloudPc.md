@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Rename-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -46,6 +47,9 @@ Rename-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagem
 ## DESCRIPTION
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-rename-permissions.md)]
 
 ## EXAMPLES
 

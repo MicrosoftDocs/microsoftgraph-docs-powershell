@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgGroup
@@ -59,6 +60,9 @@ Create a new group as specified in the request body.
 You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-groups-permissions.md)]
 
 ## EXAMPLES
 

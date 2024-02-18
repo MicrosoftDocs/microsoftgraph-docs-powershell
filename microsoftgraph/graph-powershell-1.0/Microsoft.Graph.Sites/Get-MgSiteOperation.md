@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteOperation
@@ -33,6 +34,9 @@ Get-MgSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Get the status of a rich long-running operation on a site or a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/richlongrunningoperation-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermission
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Remove-MgDriveItemPermission
@@ -29,6 +30,9 @@ Remove-MgDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-delete-permissions.md)]
 
 ## EXAMPLES
 

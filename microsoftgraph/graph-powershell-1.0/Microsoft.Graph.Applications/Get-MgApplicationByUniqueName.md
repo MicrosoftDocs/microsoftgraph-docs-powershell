@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationByUniqueName
@@ -26,6 +27,9 @@ Get-MgApplicationByUniqueName -InputObject <IApplicationsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
 
 ## EXAMPLES
 

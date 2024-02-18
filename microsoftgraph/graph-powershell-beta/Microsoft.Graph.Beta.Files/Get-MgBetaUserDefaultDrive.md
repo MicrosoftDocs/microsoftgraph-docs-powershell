@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaUserDefaultDrive
@@ -28,6 +29,9 @@ Get-MgBetaUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the properties and relationships of a Drive resource.
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-get-permissions.md)]
 
 ## EXAMPLES
 

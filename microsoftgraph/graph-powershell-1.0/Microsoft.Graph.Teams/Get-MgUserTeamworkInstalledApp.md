@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgUserTeamworkInstalledApp
@@ -35,6 +36,9 @@ Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the app installed in the personal scope of the specified user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-get-installedapps-permissions.md)]
 
 ## EXAMPLES
 

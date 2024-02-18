@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserContactFolder
@@ -28,6 +29,9 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete contactFolder other than the default contactFolder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-delete-permissions.md)]
 
 ## EXAMPLES
 

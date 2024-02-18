@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgServicePrincipalDelegatedPermissionClassification
@@ -44,6 +45,9 @@ New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 
 ## DESCRIPTION
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-delegatedpermissionclassifications-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenissuancepolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaPolicyTokenIssuancePolicy
@@ -28,6 +29,9 @@ New-MgBetaPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-Headers <IDicti
 
 ## DESCRIPTION
 Create a new tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-post-tokenissuancepolicy-permissions.md)]
 
 ## EXAMPLES
 

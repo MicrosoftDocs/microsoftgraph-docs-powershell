@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingcustomcss
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingCustomCss
@@ -28,6 +29,9 @@ Get-MgOrganizationBrandingCustomCss -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
 
 ## EXAMPLES
 

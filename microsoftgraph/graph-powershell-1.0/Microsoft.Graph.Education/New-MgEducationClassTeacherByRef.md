@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgEducationClassTeacherByRef
@@ -42,6 +43,9 @@ New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParamete
 
 ## DESCRIPTION
 Add a teacher to a class.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-teachers-permissions.md)]
 
 ## EXAMPLES
 

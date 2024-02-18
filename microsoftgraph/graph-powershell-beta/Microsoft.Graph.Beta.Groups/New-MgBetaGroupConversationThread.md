@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgBetaGroupConversationThread
@@ -54,6 +55,9 @@ A thread and post are created as specified.
 Use reply thread to further postto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-post-threads-permissions.md)]
 
 ## EXAMPLES
 

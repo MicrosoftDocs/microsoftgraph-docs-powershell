@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserSettingContactMergeSuggestion
@@ -26,6 +27,9 @@ Get-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a contactMergeSuggestions object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-get-permissions.md)]
 
 ## EXAMPLES
 

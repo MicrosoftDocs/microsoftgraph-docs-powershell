@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityapiconnector
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityApiConnector
@@ -33,6 +34,9 @@ Get-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties of an identityApiConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-get-permissions.md)]
 
 ## EXAMPLES
 

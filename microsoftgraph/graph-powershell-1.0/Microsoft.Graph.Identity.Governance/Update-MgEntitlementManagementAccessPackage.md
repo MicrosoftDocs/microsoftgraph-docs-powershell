@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Update-MgEntitlementManagementAccessPackage
@@ -52,6 +53,9 @@ Update-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 
 ## DESCRIPTION
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-update-permissions.md)]
 
 ## EXAMPLES
 

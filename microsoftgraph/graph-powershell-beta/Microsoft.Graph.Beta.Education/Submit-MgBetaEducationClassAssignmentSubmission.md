@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/submit-mgbetaeducationclassassignmentsubmission
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Submit-MgBetaEducationClassAssignmentSubmission
@@ -37,6 +38,9 @@ This method changes the status of the submission from working to submitted.
 During the submit process, all the resources are copied to the submittedResources bucket.
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-submit-permissions.md)]
 
 ## EXAMPLES
 

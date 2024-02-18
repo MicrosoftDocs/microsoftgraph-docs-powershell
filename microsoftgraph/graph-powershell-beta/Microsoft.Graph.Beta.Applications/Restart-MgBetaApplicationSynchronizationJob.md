@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Restart-MgBetaApplicationSynchronizationJob
@@ -48,6 +49,9 @@ Restart-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
 
 ## EXAMPLES
 

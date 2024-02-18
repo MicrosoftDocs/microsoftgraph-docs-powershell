@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Copy-MgUserDriveListContentTypeToDefaultContentLocation
@@ -49,6 +50,9 @@ Copy-MgUserDriveListContentTypeToDefaultContentLocation -InputObject <IUsersActi
 ## DESCRIPTION
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

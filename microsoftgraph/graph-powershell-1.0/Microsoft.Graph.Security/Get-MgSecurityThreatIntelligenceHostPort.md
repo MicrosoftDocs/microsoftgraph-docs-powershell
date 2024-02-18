@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostport
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostPort
@@ -53,6 +54,9 @@ Get-MgSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a hostPort object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-hostport-get-permissions.md)]
 
 ## EXAMPLES
 

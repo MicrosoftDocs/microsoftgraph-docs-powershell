@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroup
 schema: 2.0.0
+ms.prod: taxonomy  
 ---
 
 # Get-MgBetaSiteTermStoreGroup
@@ -34,6 +35,9 @@ Get-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-get-permissions.md)]
 
 ## EXAMPLES
 

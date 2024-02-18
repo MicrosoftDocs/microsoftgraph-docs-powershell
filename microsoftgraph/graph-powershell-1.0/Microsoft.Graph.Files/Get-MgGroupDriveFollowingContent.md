@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivefollowingcontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveFollowingContent
@@ -27,6 +28,9 @@ Get-MgGroupDriveFollowingContent -InputObject <IFilesIdentity> [-Format <String>
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-list-following-permissions.md)]
 
 ## EXAMPLES
 

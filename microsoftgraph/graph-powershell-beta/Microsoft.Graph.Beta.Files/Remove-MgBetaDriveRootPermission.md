@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootpermission
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgBetaDriveRootPermission
@@ -29,6 +30,9 @@ Remove-MgBetaDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-delete-permissions.md)]
 
 ## EXAMPLES
 

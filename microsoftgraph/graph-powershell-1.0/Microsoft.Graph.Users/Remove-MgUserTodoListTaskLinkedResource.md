@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserTodoListTaskLinkedResource
@@ -28,6 +29,9 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Deletes a linkedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-delete-permissions.md)]
 
 ## EXAMPLES
 

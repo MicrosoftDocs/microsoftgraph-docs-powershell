@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
@@ -38,6 +39,9 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage -InputObjec
 ## DESCRIPTION
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-get-permissions.md)]
 
 ## EXAMPLES
 

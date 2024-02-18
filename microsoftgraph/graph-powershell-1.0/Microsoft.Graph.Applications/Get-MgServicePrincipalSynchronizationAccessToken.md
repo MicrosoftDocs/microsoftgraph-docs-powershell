@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationaccesstoken
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalSynchronizationAccessToken
@@ -46,6 +47,9 @@ Get-MgServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
 
 ## EXAMPLES
 

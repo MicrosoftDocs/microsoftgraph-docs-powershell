@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatiblegroupbyref
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef
@@ -42,6 +43,9 @@ New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <IId
 
 ## DESCRIPTION
 Add a group to the list of groups that have been marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-post-incompatiblegroup-permissions.md)]
 
 ## EXAMPLES
 

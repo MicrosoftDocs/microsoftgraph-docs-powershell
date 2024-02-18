@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteSectionPage
@@ -21,6 +22,9 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 
 ## DESCRIPTION
 Retrieve a list of page objects from the specified section.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationuserassignment
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Initialize-MgBetaEducationUserAssignment
@@ -28,6 +29,9 @@ Initialize-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-Hea
 ## DESCRIPTION
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
 This action can only be performed by a teacher on currently inactive assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-activate-permissions.md)]
 
 ## EXAMPLES
 

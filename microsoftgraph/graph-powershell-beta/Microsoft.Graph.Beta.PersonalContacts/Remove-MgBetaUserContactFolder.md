@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserContactFolder
@@ -28,6 +29,9 @@ Remove-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete contactFolder other than the default contactFolder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-delete-permissions.md)]
 
 ## EXAMPLES
 

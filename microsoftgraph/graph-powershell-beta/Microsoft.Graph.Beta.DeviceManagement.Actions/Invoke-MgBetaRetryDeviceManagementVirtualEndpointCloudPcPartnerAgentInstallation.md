@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaretrydevicemanagementvirtualendpointcloudpcpartneragentinstallation
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation
@@ -30,6 +31,9 @@ Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation
 ## DESCRIPTION
 Retry installation for the partner agents that failed to install on the Cloud PC.
 Service side checks which agent installation failed firstly and retry.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrypartneragentinstallation-permissions.md)]
 
 ## EXAMPLES
 

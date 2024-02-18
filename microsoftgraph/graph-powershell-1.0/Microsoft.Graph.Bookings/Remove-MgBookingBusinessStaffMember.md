@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Remove-MgBookingBusinessStaffMember
@@ -28,6 +29,9 @@ Remove-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a bookingStaffMember in the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-delete-permissions.md)]
 
 ## EXAMPLES
 

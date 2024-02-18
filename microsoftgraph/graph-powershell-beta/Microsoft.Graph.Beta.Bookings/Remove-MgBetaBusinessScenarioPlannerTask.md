@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannertask
 schema: 2.0.0
+ms.prod: business-scenarios
 ---
 
 # Remove-MgBetaBusinessScenarioPlannerTask
@@ -28,6 +29,9 @@ Remove-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete a businessScenarioTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-delete-tasks-permissions.md)]
 
 ## EXAMPLES
 

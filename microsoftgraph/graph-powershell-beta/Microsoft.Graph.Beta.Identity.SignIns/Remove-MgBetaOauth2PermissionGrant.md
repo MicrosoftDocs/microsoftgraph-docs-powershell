@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaoauth2permissiongrant
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaOauth2PermissionGrant
@@ -32,6 +33,9 @@ Remove-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-IfM
 Delete an oAuth2PermissionGrant, representing a delegated permission grant.
 When a delegated permission grant is deleted, the access it granted is revoked.
 Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-delete-permissions.md)]
 
 ## EXAMPLES
 

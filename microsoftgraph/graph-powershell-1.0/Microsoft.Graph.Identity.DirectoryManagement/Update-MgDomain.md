@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgDomain
@@ -51,6 +52,9 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 
 ## DESCRIPTION
 Update the properties of domain object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-update-permissions.md)]
 
 ## EXAMPLES
 

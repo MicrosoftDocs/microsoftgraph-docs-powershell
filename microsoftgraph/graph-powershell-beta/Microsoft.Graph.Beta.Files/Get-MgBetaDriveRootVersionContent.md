@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootversioncontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveRootVersionContent
@@ -26,6 +27,9 @@ Get-MgBetaDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <String
 
 ## DESCRIPTION
 Get content for the navigation property versions from drives
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-versions-permissions.md)]
 
 ## EXAMPLES
 

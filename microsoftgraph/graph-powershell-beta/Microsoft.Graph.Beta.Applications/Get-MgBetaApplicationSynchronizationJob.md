@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjob
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaApplicationSynchronizationJob
@@ -35,6 +36,9 @@ Get-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-E
 
 ## DESCRIPTION
 Retrieve the existing synchronization job and its properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
 
 ## EXAMPLES
 

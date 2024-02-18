@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalOwner
@@ -29,6 +30,9 @@ The owners are a set of non-admin users or servicePrincipals who are allowed to 
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-owners-permissions.md)]
 
 ## EXAMPLES
 

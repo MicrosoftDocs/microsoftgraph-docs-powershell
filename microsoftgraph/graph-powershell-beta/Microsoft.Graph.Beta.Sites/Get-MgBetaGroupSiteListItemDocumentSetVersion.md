@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteListItemDocumentSetVersion
@@ -35,6 +36,9 @@ Get-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Ex
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
 
 ## EXAMPLES
 

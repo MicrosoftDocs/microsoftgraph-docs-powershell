@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Add-MgGroupSite
@@ -41,6 +42,9 @@ Add-MgGroupSite -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
 

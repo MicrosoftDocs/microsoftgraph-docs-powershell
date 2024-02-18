@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshare
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # New-MgBetaPrintShare
@@ -32,6 +33,9 @@ New-MgBetaPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-Headers <IDi
 
 ## DESCRIPTION
 Create a new printerShare for the specified printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-post-shares-permissions.md)]
 
 ## EXAMPLES
 

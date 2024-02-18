@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Update-MgGroupSiteContentType
@@ -53,6 +54,9 @@ Update-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update a \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-update-permissions.md)]
 
 ## EXAMPLES
 

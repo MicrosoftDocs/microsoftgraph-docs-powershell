@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserMailFolderChildFolderMessage
@@ -67,6 +68,9 @@ New-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyParamet
 
 ## DESCRIPTION
 Use this API to create a new Message in a mailfolder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-messages-permissions.md)]
 
 ## EXAMPLES
 

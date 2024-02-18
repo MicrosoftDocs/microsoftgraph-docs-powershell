@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
@@ -44,6 +45,9 @@ Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in planner
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 

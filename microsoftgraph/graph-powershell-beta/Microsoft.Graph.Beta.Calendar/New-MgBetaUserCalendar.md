@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserCalendar
@@ -54,6 +55,9 @@ New-MgBetaUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new calendar for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-calendars-permissions.md)]
 
 ## EXAMPLES
 

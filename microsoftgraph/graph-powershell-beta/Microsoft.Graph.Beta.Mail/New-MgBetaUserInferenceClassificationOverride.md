@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # New-MgBetaUserInferenceClassificationOverride
@@ -44,6 +45,9 @@ New-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ## DESCRIPTION
 Create a focused Inbox override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
 
 ## EXAMPLES
 

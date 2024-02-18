@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduletimeoffreason
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Remove-MgGroupTeamScheduleTimeOffReason
@@ -34,6 +35,9 @@ Mark a timeOffReason as inactive by setting the isActive property.
 Every team must include at least one timeoff reason.
 This method doesn't remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-delete-permissions.md)]
 
 ## EXAMPLES
 

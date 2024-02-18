@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Update-MgExternalConnectionSchema
@@ -42,6 +43,9 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new schema object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 ## EXAMPLES
 

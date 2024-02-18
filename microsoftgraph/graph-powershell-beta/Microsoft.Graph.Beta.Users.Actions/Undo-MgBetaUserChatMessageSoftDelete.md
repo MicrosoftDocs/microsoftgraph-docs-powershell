@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Undo-MgBetaUserChatMessageSoftDelete
@@ -27,6 +28,9 @@ Undo-MgBetaUserChatMessageSoftDelete -InputObject <IUsersActionsIdentity> [-Head
 
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
 
 ## EXAMPLES
 

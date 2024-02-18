@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallaudioroutinggroup
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # New-MgCommunicationCallAudioRoutingGroup
@@ -42,6 +43,9 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 
 ## DESCRIPTION
 Create a new audioRoutingGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-post-audioroutinggroups-permissions.md)]
 
 ## EXAMPLES
 

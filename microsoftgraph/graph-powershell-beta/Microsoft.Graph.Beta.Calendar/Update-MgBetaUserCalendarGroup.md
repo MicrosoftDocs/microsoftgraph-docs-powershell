@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendargroup
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserCalendarGroup
@@ -43,6 +44,9 @@ Update-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the properties of calendargroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-update-permissions.md)]
 
 ## EXAMPLES
 

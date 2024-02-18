@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintconnector
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Remove-MgPrintConnector
@@ -26,6 +27,9 @@ Remove-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete (unregister) a printConnector.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgUserTeamworkInstalledApp
@@ -43,6 +44,9 @@ New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Install an app in the personal scope of the specified user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-post-installedapps-permissions.md)]
 
 ## EXAMPLES
 

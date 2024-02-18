@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityschedule
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule
@@ -36,6 +37,9 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule -InputObject <I
 
 ## DESCRIPTION
 Retrieve the schedule for a role eligibility operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedule-get-permissions.md)]
 
 ## EXAMPLES
 

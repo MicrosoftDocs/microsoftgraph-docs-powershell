@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserCalendarGroup
@@ -42,6 +43,9 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Use this API to create a new CalendarGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendargroups-permissions.md)]
 
 ## EXAMPLES
 

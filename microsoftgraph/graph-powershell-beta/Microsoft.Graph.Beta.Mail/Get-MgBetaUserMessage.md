@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserMessage
@@ -40,6 +41,9 @@ Get-MgBetaUserMessage -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
 The messages in a mailbox or folder.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-get-permissions.md)]
 
 ## EXAMPLES
 

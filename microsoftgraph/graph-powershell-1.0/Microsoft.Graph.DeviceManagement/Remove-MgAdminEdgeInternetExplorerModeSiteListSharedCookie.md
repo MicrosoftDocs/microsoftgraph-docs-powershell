@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
+ms.prod: browser-management
 ---
 
 # Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -28,6 +29,9 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 
 ## DESCRIPTION
 Delete a browserSharedCookie from a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]
 
 ## EXAMPLES
 

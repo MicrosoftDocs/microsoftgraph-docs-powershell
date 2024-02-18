@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaUserAuthenticationTemporaryAccessPassMethod
@@ -48,6 +49,9 @@ New-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
 A user can only have one Temporary Access Pass that's usable within its specified lifetime.
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-post-temporaryaccesspassmethods-permissions.md)]
 
 ## EXAMPLES
 

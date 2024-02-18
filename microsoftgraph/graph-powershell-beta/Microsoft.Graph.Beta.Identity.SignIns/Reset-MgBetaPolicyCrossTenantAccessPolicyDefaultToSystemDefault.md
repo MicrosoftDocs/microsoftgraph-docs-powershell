@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/reset-mgbetapolicycrosstenantaccesspolicydefaulttosystemdefault
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault
@@ -19,6 +20,9 @@ Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault [-Headers <IDict
 
 ## DESCRIPTION
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-permissions.md)]
 
 ## EXAMPLES
 

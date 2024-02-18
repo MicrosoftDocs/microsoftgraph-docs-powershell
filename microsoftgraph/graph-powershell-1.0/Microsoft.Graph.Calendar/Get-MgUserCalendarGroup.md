@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroup
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserCalendarGroup
@@ -33,6 +34,9 @@ Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>] 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a calendar group object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-get-permissions.md)]
 
 ## EXAMPLES
 

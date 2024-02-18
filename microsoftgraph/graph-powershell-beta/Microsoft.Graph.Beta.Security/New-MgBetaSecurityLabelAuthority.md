@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelauthority
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgBetaSecurityLabelAuthority
@@ -27,6 +28,9 @@ New-MgBetaSecurityLabelAuthority -BodyParameter <Hashtable> [-Headers <IDictiona
 
 ## DESCRIPTION
 Create a new authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-authorities-permissions.md)]
 
 ## EXAMPLES
 

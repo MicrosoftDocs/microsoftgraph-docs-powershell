@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupSiteListItem
@@ -35,6 +36,9 @@ Get-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-get-permissions.md)]
 
 ## EXAMPLES
 

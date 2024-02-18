@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupeventtentatively
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgAcceptGroupEventTentatively
@@ -48,6 +49,9 @@ Invoke-MgAcceptGroupEventTentatively -InputObject <IGroupsIdentity>
 Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-tentativelyaccept-permissions.md)]
 
 ## EXAMPLES
 

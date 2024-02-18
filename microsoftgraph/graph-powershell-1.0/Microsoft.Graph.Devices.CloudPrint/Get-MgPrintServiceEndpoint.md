@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintserviceendpoint
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Get-MgPrintServiceEndpoint
@@ -35,6 +36,9 @@ Get-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service endpoint.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printserviceendpoint-get-permissions.md)]
 
 ## EXAMPLES
 

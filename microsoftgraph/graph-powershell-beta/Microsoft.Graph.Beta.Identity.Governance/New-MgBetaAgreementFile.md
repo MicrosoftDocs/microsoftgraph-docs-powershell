@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfile
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgBetaAgreementFile
@@ -44,6 +45,9 @@ New-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Create a new localized agreement file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-post-files-permissions.md)]
 
 ## EXAMPLES
 

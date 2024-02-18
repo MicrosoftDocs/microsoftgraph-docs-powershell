@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingjoinweburlvirtualappointmentsm
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentSm
@@ -50,6 +51,9 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentSm -InputObject
 Send an SMS notification to external attendees when a Teams Virtual Appointment is confirmed, rescheduled, or canceled.
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 ## EXAMPLES
 

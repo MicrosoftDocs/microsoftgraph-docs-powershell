@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear
 schema: 2.0.0
+ms.prod: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataYear
@@ -27,6 +28,9 @@ New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYe
 
 ## DESCRIPTION
 Create a new yearTimePeriodDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-post-permissions.md)]
 
 ## EXAMPLES
 

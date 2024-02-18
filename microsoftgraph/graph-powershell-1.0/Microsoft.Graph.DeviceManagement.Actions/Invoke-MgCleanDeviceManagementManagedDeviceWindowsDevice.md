@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice

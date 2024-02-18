@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserOutlookMasterCategory
@@ -44,6 +45,9 @@ Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName propertyonce you have created the category.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookcategory-update-permissions.md)]
 
 ## EXAMPLES
 

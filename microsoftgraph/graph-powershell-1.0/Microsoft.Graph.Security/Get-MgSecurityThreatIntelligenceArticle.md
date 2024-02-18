@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligenceArticle
@@ -33,6 +34,9 @@ Get-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of an article object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-article-get-permissions.md)]
 
 ## EXAMPLES
 

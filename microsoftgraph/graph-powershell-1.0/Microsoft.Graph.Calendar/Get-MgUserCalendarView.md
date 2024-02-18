@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserCalendarView
@@ -33,6 +34,9 @@ Get-MgUserCalendarView -UserId <String> -CalendarId <String> -EndDateTime <Strin
 The calendar view for the calendar.
 Navigation property.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-calendarview-permissions.md)]
 
 ## EXAMPLES
 

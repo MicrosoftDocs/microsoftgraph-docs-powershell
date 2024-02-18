@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtagmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamTagMember
@@ -41,6 +42,9 @@ New-MgGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new teamworkTagMember object in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-post-permissions.md)]
 
 ## EXAMPLES
 

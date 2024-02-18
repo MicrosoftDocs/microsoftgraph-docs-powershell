@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclassbyref
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Remove-MgBetaEducationSchoolClassByRef
@@ -42,6 +43,9 @@ Remove-MgBetaEducationSchoolClassByRef -InputObject <IEducationIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete a class from a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-classes-permissions.md)]
 
 ## EXAMPLES
 

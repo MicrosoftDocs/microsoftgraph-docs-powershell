@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatroubleshootusercloudpc
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaTroubleshootUserCloudPc
@@ -28,6 +29,9 @@ Invoke-MgBetaTroubleshootUserCloudPc -InputObject <IUsersActionsIdentity> [-Head
 ## DESCRIPTION
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-troubleshoot-permissions.md)]
 
 ## EXAMPLES
 

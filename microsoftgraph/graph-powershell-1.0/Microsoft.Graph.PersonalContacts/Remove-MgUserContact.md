@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserContact
@@ -26,6 +27,9 @@ Remove-MgUserContact -InputObject <IPersonalContactsIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete a contact.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgDriveRootChildContent
@@ -26,6 +27,9 @@ Get-MgDriveRootChildContent -InputObject <IFilesIdentity> [-Format <String>] -Ou
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-children-permissions.md)]
 
 ## EXAMPLES
 

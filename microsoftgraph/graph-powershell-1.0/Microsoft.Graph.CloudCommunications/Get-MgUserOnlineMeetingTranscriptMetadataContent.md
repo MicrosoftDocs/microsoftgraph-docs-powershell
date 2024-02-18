@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgUserOnlineMeetingTranscriptMetadataContent
@@ -29,6 +30,9 @@ Get-MgUserOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCommunicati
 ## DESCRIPTION
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
 
 ## EXAMPLES
 

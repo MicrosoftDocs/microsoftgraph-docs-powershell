@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem
 schema: 2.0.0
+ms.prod: project-rome
 ---
 
 # Update-MgBetaUserActivityHistoryItem
@@ -46,6 +47,9 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 
 ## DESCRIPTION
 Delete an existing history item for an existing user activity.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/projectrome-delete-historyitem-permissions.md)]
 
 ## EXAMPLES
 

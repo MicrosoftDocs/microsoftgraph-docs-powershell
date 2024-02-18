@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgGroupDriveRootChild
@@ -74,6 +75,9 @@ New-MgGroupDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create new navigation property to children for groups
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-additem-permissions.md)]
 
 ## EXAMPLES
 

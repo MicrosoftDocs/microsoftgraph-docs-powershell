@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileeducationalactivity
 schema: 2.0.0
+ms.prod: people
 ---
 
 # New-MgBetaUserProfileEducationalActivity
@@ -51,6 +52,9 @@ New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Create a new educationalActivity in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-educationalactivities-permissions.md)]
 
 ## EXAMPLES
 

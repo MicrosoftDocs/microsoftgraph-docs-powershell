@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality
@@ -41,6 +42,9 @@ One media leg is between the CVI bot and Teams infrastructure, such as Teams con
 The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-logteleconferencedevicequality-permissions.md)]
 
 ## EXAMPLES
 

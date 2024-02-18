@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattab
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgUserChatTab
@@ -34,6 +35,9 @@ Get-MgUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-tabs-permissions.md)]
 
 ## EXAMPLES
 

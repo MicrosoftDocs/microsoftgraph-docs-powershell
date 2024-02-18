@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport
@@ -33,6 +34,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -OutF
 ## DESCRIPTION
 Get the device recommendation reports for Cloud PCs, such as the usage category report.
 The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getcloudpcrecommendationreports-permissions.md)]
 
 ## EXAMPLES
 

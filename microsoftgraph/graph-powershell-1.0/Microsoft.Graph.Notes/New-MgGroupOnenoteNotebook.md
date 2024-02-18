@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteNotebook
@@ -48,6 +49,9 @@ New-MgGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create a new OneNote notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-notebooks-permissions.md)]
 
 ## EXAMPLES
 

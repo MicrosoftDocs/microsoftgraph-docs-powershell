@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgBetaSiteTermStoreSetChild
@@ -83,6 +84,9 @@ New-MgBetaSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create a new term object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-post-permissions.md)]
 
 ## EXAMPLES
 

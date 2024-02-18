@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Update-MgBetaServicePrincipalSynchronizationJobSchema
@@ -51,6 +52,9 @@ Update the synchronization schema for a given job or template.
 This method fully replaces the current schema with the one provided in the request.
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-update-permissions.md)]
 
 ## EXAMPLES
 

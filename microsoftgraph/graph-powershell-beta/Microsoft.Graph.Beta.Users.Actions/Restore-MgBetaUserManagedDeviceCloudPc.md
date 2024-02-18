@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausermanageddevicecloudpc
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Restore-MgBetaUserManagedDeviceCloudPc
@@ -44,6 +45,9 @@ Restore-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-restorecloudpc-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryinboundshareduserprofilepersonaldata
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData
@@ -28,6 +29,9 @@ Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 
 ## DESCRIPTION
 Create a request to remove the personal data for an inboundSharedUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-removepersonaldata-permissions.md)]
 
 ## EXAMPLES
 

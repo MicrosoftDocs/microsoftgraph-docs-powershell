@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaward
 schema: 2.0.0
+ms.prod: people
 ---
 
 # New-MgBetaUserProfileAward
@@ -48,6 +49,9 @@ New-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create a new personAward object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-awards-permissions.md)]
 
 ## EXAMPLES
 

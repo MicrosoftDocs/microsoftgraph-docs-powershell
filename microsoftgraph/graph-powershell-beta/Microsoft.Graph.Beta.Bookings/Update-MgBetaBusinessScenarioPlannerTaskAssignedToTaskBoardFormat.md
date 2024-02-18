@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskassignedtotaskboardformat
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
@@ -45,6 +46,9 @@ Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <
 
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in solutions
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Remove-MgBetaGroupEvent
@@ -26,6 +27,9 @@ Remove-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-H
 
 ## DESCRIPTION
 Delete an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-event-permissions.md)]
 
 ## EXAMPLES
 

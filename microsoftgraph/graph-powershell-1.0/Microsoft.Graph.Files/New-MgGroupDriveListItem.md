@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgGroupDriveListItem
@@ -54,6 +55,9 @@ New-MgGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
 
 ## EXAMPLES
 

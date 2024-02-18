@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
@@ -34,6 +35,9 @@ New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## DESCRIPTION
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-post-eligibilityschedulerequests-permissions.md)]
 
 ## EXAMPLES
 

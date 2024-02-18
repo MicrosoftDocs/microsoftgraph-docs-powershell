@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookTaskGroupTaskFolder
@@ -50,6 +51,9 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Create an Outlook task folder under a specified outlookTaskGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-post-taskfolders-permissions.md)]
 
 ## EXAMPLES
 

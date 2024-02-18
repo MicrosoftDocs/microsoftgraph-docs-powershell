@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequest
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest
@@ -36,6 +37,9 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdent
 
 ## DESCRIPTION
 Read the properties and relationships of a userConsentRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userconsentrequest-get-permissions.md)]
 
 ## EXAMPLES
 

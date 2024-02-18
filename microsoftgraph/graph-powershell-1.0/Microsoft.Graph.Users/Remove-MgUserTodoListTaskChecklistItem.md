@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserTodoListTaskChecklistItem
@@ -28,6 +29,9 @@ Remove-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a checklistItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-delete-permissions.md)]
 
 ## EXAMPLES
 

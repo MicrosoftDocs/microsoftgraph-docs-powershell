@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/rename-mgbetacommunicationcallscreensharingrole
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Rename-MgBetaCommunicationCallScreenSharingRole
@@ -44,6 +45,9 @@ Rename-MgBetaCommunicationCallScreenSharingRole -InputObject <ICloudCommunicatio
 
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-changescreensharingrole-permissions.md)]
 
 ## EXAMPLES
 

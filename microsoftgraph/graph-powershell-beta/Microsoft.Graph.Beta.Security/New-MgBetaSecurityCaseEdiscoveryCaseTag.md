@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasetag
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseTag
@@ -46,6 +47,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryReviewTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-post-tags-permissions.md)]
 
 ## EXAMPLES
 

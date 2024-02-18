@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetparentgroupsetterm
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm
@@ -35,6 +36,9 @@ Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of a term object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementroleassignment
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaRoleManagementDeviceManagementRoleAssignment
@@ -38,6 +39,9 @@ Get-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceMana
 ## DESCRIPTION
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-get-permissions.md)]
 
 ## EXAMPLES
 

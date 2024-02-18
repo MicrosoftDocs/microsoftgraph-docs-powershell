@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityuserflowattribute
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityUserFlowAttribute
@@ -27,6 +28,9 @@ New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowA
 
 ## DESCRIPTION
 Create a new custom identityUserFlowAttribute object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattribute-post-permissions.md)]
 
 ## EXAMPLES
 

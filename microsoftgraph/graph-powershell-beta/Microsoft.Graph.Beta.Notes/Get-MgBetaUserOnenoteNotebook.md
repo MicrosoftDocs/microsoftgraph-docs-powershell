@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgBetaUserOnenoteNotebook
@@ -34,6 +35,9 @@ Get-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserMailFolderMessageRule
@@ -28,6 +29,9 @@ Remove-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete the specified messageRule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-delete-permissions.md)]
 
 ## EXAMPLES
 

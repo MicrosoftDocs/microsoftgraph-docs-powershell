@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjobschema
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Update-MgApplicationSynchronizationJobSchema
@@ -50,6 +51,9 @@ Update the synchronization schema for a given job or template.
 This method fully replaces the current schema with the one provided in the request.
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskprogresstaskboardformat
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgPlannerTaskProgressTaskBoardFormat
@@ -26,6 +27,9 @@ Get-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-Expan
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerprogresstaskboardtaskformat-get-permissions.md)]
 
 ## EXAMPLES
 

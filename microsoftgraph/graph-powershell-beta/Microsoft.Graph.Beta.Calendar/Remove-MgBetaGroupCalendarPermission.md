@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermission
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaGroupCalendarPermission
@@ -28,6 +29,9 @@ Remove-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete calendarPermission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendarpermission-delete-permissions.md)]
 
 ## EXAMPLES
 

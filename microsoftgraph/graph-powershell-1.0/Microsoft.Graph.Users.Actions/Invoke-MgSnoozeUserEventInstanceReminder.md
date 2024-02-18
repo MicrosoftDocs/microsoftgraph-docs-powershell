@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventinstancereminder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgSnoozeUserEventInstanceReminder
@@ -44,6 +45,9 @@ Invoke-MgSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-snoozereminder-permissions.md)]
 
 ## EXAMPLES
 

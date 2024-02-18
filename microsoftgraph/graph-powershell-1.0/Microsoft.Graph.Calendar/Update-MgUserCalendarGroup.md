@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendargroup
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserCalendarGroup
@@ -43,6 +44,9 @@ Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the properties of calendargroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfederationconfiguration
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaDirectoryFederationConfiguration
@@ -28,6 +29,9 @@ Remove-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Delete a samlOrWsFedExternalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/samlorwsfedexternaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
 

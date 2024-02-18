@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyDefaultAppManagementPolicy
@@ -19,6 +20,9 @@ Get-MgBetaPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Proper
 
 ## DESCRIPTION
 Read the properties of a tenantAppManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantappmanagementpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

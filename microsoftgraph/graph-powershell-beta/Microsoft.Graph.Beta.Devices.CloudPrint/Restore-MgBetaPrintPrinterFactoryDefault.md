@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/restore-mgbetaprintprinterfactorydefault
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Restore-MgBetaPrintPrinterFactoryDefault
@@ -26,6 +27,9 @@ Restore-MgBetaPrintPrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentit
 
 ## DESCRIPTION
 Restore a printer's default settings to the values specified by the manufacturer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-restorefactorydefaults-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcdevice
 schema: 2.0.0
+ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice
@@ -35,6 +36,9 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManagedTen
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcDevice object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcdevice-get-permissions.md)]
 
 ## EXAMPLES
 

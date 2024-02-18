@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregistereduserbyref
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Remove-MgBetaDeviceRegisteredUserByRef
@@ -42,6 +43,9 @@ Remove-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Remove a user as a registered user of the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredusers-permissions.md)]
 
 ## EXAMPLES
 

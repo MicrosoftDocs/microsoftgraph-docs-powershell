@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Set-MgBetaCommunicationPresence
@@ -45,6 +46,9 @@ Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setpresence-permissions.md)]
 
 ## EXAMPLES
 

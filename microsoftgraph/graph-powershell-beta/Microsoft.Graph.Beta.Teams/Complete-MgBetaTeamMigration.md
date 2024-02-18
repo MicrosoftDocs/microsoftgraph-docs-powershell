@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Complete-MgBetaTeamMigration
@@ -32,6 +33,9 @@ Complete the message migration process by removing migration mode from a team.
 Migration mode is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-completemigration-permissions.md)]
 
 ## EXAMPLES
 

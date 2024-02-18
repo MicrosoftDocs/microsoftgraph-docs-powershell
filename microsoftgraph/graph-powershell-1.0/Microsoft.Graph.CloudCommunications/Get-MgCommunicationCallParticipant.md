@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallparticipant
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallParticipant
@@ -34,6 +35,9 @@ Get-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity> [
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a participant object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-get-permissions.md)]
 
 ## EXAMPLES
 

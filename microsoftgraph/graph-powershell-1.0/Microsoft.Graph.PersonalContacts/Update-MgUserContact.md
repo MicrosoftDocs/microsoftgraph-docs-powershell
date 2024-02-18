@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserContact
@@ -66,6 +67,9 @@ Update-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the properties of a contact object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-update-permissions.md)]
 
 ## EXAMPLES
 

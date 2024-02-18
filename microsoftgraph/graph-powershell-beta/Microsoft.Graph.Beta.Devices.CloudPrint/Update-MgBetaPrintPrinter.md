@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Update-MgBetaPrintPrinter
@@ -53,6 +54,9 @@ Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 
 ## DESCRIPTION
 Update the properties of a printer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfilePublishedResource
@@ -36,6 +37,9 @@ Get-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 
 ## DESCRIPTION
 Retrieve the properties and relationships of publishedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-get-permissions.md)]
 
 ## EXAMPLES
 

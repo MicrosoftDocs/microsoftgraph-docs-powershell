@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember
 schema: 2.0.0
+ms.prod: search
 ---
 
 # New-MgExternalConnectionGroupMember
@@ -42,6 +43,9 @@ New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create an identity resource for a new member in an externalGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
 
 ## EXAMPLES
 

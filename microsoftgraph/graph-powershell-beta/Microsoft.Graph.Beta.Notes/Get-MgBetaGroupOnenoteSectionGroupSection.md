@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectiongroupsection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgBetaGroupOnenoteSectionGroupSection
@@ -21,6 +22,9 @@ Get-MgBetaGroupOnenoteSectionGroupSection -GroupId <String> -SectionGroupId <Str
 
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified section group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-list-sections-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # New-MgPlannerPlan
@@ -29,6 +30,9 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-Headers <IDictio
 
 ## DESCRIPTION
 Use this API to create a new plannerPlan.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-plans-permissions.md)]
 
 ## EXAMPLES
 

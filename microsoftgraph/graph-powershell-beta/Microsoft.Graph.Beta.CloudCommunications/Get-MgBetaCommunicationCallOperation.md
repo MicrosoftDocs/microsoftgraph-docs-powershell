@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcalloperation
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallOperation
@@ -34,6 +35,9 @@ Get-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Get the status of an operation that adds the large gallery view to a call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
 
 ## EXAMPLES
 

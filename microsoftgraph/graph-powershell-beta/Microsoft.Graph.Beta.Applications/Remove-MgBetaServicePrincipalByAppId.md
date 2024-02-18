@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalbyappid
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalByAppId
@@ -27,6 +28,9 @@ Remove-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete a servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-permissions.md)]
 
 ## EXAMPLES
 

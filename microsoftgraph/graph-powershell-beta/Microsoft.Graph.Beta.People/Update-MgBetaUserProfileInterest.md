@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileinterest
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfileInterest
@@ -49,6 +50,9 @@ Update-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the properties of a personInterest object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personinterest-update-permissions.md)]
 
 ## EXAMPLES
 

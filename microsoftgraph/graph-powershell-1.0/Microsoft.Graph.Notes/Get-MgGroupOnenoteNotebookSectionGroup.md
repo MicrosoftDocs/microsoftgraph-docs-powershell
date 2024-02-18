@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksectiongroup
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteNotebookSectionGroup
@@ -21,6 +22,9 @@ Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> [-
 
 ## DESCRIPTION
 Retrieve a list of section groups from the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sectiongroups-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuser
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Remove-MgEducationUser
@@ -26,6 +27,9 @@ Remove-MgEducationUser -InputObject <IEducationIdentity> [-IfMatch <String>] [-H
 
 ## DESCRIPTION
 Delete a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-delete-permissions.md)]
 
 ## EXAMPLES
 

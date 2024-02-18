@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentrubric
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Remove-MgBetaEducationUserAssignmentRubric
@@ -30,6 +31,9 @@ Remove-MgBetaEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-I
 ## DESCRIPTION
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delete-rubric-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgGroupDriveItem
@@ -27,6 +28,9 @@ Remove-MgGroupDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Head
 
 ## DESCRIPTION
 Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items that were referenced by the bundle.They remain in their parent folders.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-delete-permissions.md)]
 
 ## EXAMPLES
 

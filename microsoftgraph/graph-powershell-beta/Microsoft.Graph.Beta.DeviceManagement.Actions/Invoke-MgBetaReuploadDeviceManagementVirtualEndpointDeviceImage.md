@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage
@@ -28,6 +29,9 @@ Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <ID
 
 ## DESCRIPTION
 Reupload a cloudPcDeviceImage object that failed to upload.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcdeviceimage-reupload-permissions.md)]
 
 ## EXAMPLES
 

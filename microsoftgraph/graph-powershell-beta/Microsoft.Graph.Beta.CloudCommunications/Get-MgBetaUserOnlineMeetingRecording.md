@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingRecording
@@ -47,6 +48,9 @@ Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Get recording for the navigation property onlineMeetings from users
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
 
 ## EXAMPLES
 

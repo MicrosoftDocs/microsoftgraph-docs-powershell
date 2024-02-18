@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgBetaUserDriveListColumn
@@ -61,6 +62,9 @@ New-MgBetaUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-post-columns-permissions.md)]
 
 ## EXAMPLES
 

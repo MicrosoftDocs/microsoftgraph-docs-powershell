@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Update-MgBetaSecurityAlertV2
@@ -58,6 +59,9 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUser
@@ -41,6 +42,9 @@ This operation returns by default only a subset of the more commonly used proper
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-permissions.md)]
 
 ## EXAMPLES
 

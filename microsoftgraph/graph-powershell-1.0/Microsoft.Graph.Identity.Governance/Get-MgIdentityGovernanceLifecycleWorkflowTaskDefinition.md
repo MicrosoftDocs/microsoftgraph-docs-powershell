@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
@@ -35,6 +36,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdentityG
 
 ## DESCRIPTION
 Read the details of a built-in workflow task.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaInvitation
@@ -34,6 +35,9 @@ New-MgBetaInvitation -BodyParameter <IMicrosoftGraphInvitation> [-Headers <IDict
 Create a new invitation.
 The invitation adds an external user to the organization.
 The following options are available for creating an invitation:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/invitation-post-permissions.md)]
 
 ## EXAMPLES
 

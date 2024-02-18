@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Update-MgDriveItem
@@ -74,6 +75,9 @@ Update-MgDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests will be ignored.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-update-permissions.md)]
 
 ## EXAMPLES
 

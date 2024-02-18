@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Confirm-MgDomain
@@ -26,6 +27,9 @@ Confirm-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Headers <
 
 ## DESCRIPTION
 Validates the ownership of the domain.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
 

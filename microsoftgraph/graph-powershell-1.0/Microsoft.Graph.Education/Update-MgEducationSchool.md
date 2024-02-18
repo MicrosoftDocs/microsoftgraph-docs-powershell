@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgEducationSchool
@@ -50,6 +51,9 @@ Update-MgEducationSchool -InputObject <IEducationIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the properties of an educationSchool object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-update-permissions.md)]
 
 ## EXAMPLES
 

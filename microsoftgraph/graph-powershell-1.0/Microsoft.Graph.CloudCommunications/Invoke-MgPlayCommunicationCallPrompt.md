@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgPlayCommunicationCallPrompt
@@ -44,6 +45,9 @@ Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-playprompt-permissions.md)]
 
 ## EXAMPLES
 

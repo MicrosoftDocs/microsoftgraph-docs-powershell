@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject
 schema: 2.0.0
+ms.prod: people
 ---
 
 # New-MgBetaUserProfileProject
@@ -52,6 +53,9 @@ New-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Use this API to create a new projectParticipation object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-projects-permissions.md)]
 
 ## EXAMPLES
 

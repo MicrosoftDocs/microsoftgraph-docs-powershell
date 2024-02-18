@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationemailmethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaUserAuthenticationEmailMethod
@@ -46,6 +47,9 @@ New-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
 Set a user's emailAuthenticationMethod object.
 Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-post-emailmethods-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Update-MgBetaSiteContentType
@@ -53,6 +54,9 @@ Update-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update a \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackage
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Remove-MgEntitlementManagementAccessPackage
@@ -30,6 +31,9 @@ Remove-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Delete an accessPackage object.
 You cannot delete an access package if it has any accessPackageAssignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-permissions.md)]
 
 ## EXAMPLES
 

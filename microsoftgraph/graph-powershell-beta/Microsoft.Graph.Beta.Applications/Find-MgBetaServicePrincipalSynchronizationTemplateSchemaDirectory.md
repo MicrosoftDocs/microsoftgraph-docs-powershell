@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory
@@ -27,6 +28,9 @@ Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <
 
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
 
 ## EXAMPLES
 

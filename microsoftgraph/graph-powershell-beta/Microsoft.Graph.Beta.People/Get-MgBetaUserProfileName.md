@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Get-MgBetaUserProfileName
@@ -34,6 +35,9 @@ Get-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a personName object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personname-get-permissions.md)]
 
 ## EXAMPLES
 

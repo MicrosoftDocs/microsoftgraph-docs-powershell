@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggerretentionevent
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Remove-MgBetaSecurityTriggerRetentionEvent
@@ -28,6 +29,9 @@ Remove-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-If
 
 ## DESCRIPTION
 Delete a retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserOutlookTaskFolder
@@ -52,6 +53,9 @@ Update-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the writable properties of an Outlook task folder.
 You cannot change the name property value of the default task folder, 'Tasks'.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-update-permissions.md)]
 
 ## EXAMPLES
 

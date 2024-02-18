@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocumentuploadsession
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # New-MgPrintPrinterJobDocumentUploadSession
@@ -48,6 +49,9 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-createuploadsession-permissions.md)]
 
 ## EXAMPLES
 

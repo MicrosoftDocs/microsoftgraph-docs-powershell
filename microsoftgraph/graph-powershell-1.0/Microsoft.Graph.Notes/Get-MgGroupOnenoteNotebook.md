@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteNotebook
@@ -34,6 +35,9 @@ Get-MgGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-get-permissions.md)]
 
 ## EXAMPLES
 

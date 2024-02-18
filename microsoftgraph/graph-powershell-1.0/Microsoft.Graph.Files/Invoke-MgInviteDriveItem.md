@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgInviteDriveItem
@@ -46,6 +47,9 @@ Invoke-MgInviteDriveItem -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a \[sharing link\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
 
 ## EXAMPLES
 

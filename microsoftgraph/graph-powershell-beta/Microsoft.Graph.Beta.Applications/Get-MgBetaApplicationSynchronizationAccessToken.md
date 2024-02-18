@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaApplicationSynchronizationAccessToken
@@ -45,6 +46,9 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
 
 ## DESCRIPTION
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
 
 ## EXAMPLES
 
