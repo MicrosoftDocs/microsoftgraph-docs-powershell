@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancedecisioninsight
@@ -17,33 +17,51 @@ Update the navigation property insights in identityGovernance
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceDecisionItemId1 <String>
  -GovernanceInsightId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InsightCreatedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InsightCreatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceDecisionItemId1 <String>
- -GovernanceInsightId <String> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -GovernanceInsightId <String> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InsightCreatedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InsightCreatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphGovernanceInsight>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property insights in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -123,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -170,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -208,9 +256,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceInsight
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceInsight
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -275,6 +325,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -327,6 +378,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancedecisioninsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancedecisioninsight)
-
-
 

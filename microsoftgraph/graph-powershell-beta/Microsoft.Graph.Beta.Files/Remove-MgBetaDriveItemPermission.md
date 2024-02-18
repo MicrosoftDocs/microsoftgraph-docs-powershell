@@ -1,53 +1,43 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitempermission
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Remove-MgBetaDriveItemPermission
 
 ## SYNOPSIS
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemPermission?view=graph-powershell-1.0)
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaDriveItemPermission -DriveId <String> -DriveItemId <String> -PermissionId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-delete-permissions.md)]
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Remove-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
-```
-This example shows how to use the Remove-MgBetaDriveItemPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -78,6 +68,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -142,6 +147,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -179,9 +199,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -215,8 +237,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitempermission)
-
 

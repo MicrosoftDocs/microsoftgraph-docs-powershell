@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: 51fa7a02-1099-4183-b155-e14ffb788a3c
 Download Help Link: {{ Update Download Link }}
@@ -15,6 +15,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Confirm-MgBetaAuditLogSignInSafe](Confirm-MgBetaAuditLogSignInSafe.md)
+{{ Fill in the Description }}
+
+### [Export-MgBetaReportPartnerBillingUsageBilled](Export-MgBetaReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Export-MgBetaReportPartnerBillingUsageUnbilled](Export-MgBetaReportPartnerBillingUsageUnbilled.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaAdminReportSetting](Get-MgBetaAdminReportSetting.md)
@@ -300,6 +306,33 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportOneDriveUsageStorage](Get-MgBetaReportOneDriveUsageStorage.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartner](Get-MgBetaReportPartner.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBilling](Get-MgBetaReportPartnerBilling.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingManifest](Get-MgBetaReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingManifestCount](Get-MgBetaReportPartnerBillingManifestCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingOperation](Get-MgBetaReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingOperationCount](Get-MgBetaReportPartnerBillingOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingUsage](Get-MgBetaReportPartnerBillingUsage.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingUsageBilled](Get-MgBetaReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingUsageUnbilled](Get-MgBetaReportPartnerBillingUsageUnbilled.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportPrinterArchivedPrintJob](Get-MgBetaReportPrinterArchivedPrintJob.md)
@@ -629,6 +662,12 @@ Locale: en-US
 ### [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](New-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaReportPartnerBillingManifest](New-MgBetaReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaReportPartnerBillingOperation](New-MgBetaReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaAdminReportSetting](Remove-MgBetaAdminReportSetting.md)
 {{ Fill in the Description }}
 
@@ -636,6 +675,24 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBilling](Remove-MgBetaReportPartnerBilling.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingManifest](Remove-MgBetaReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingOperation](Remove-MgBetaReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingUsage](Remove-MgBetaReportPartnerBillingUsage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingUsageBilled](Remove-MgBetaReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingUsageUnbilled](Remove-MgBetaReportPartnerBillingUsageUnbilled.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaReportSlaAzureAdAuthentication](Remove-MgBetaReportSlaAzureAdAuthentication.md)
@@ -656,6 +713,24 @@ Locale: en-US
 ### [Update-MgBetaReportAuthenticationMethodUserRegistrationDetail](Update-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaReportPartnerBilling](Update-MgBetaReportPartnerBilling.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingManifest](Update-MgBetaReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingOperation](Update-MgBetaReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingUsage](Update-MgBetaReportPartnerBillingUsage.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingUsageBilled](Update-MgBetaReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingUsageUnbilled](Update-MgBetaReportPartnerBillingUsageUnbilled.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaReportSlaAzureAdAuthentication](Update-MgBetaReportSlaAzureAdAuthentication.md)
 {{ Fill in the Description }}
 
@@ -664,5 +739,4 @@ Locale: en-US
 
 ### [Update-MgBetaReportUserInsightMonthly](Update-MgBetaReportUserInsightMonthly.md)
 {{ Fill in the Description }}
-
 

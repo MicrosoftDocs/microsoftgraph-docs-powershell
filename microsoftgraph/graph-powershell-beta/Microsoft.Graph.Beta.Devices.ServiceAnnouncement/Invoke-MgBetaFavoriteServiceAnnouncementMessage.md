@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
 # Invoke-MgBetaFavoriteServiceAnnouncementMessage
@@ -11,36 +10,30 @@ ms.prod: service-communications
 ## SYNOPSIS
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### FavoriteExpanded (Default)
 ```
 Invoke-MgBetaFavoriteServiceAnnouncementMessage [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Favorite
 ```
 Invoke-MgBetaFavoriteServiceAnnouncementMessage
  -Body <IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-favorite-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -50,10 +43,6 @@ $params = @{
 }
 
 Invoke-MgBetaFavoriteServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaFavoriteServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -88,6 +77,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -MessageIds
 .
 
@@ -95,6 +99,21 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: FavoriteExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -140,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -154,8 +175,6 @@ BODY \<IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRe
   \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementderivedcredential
@@ -29,6 +29,18 @@ New-MgBetaDeviceManagementDerivedCredential
 
 ## DESCRIPTION
 Create new navigation property to derivedCredentials for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -232,21 +244,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementDerivedCredentialSettings>`: Entity that describes tenant level settings for derived credentials
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementDerivedCredentialSettings\>: Entity that describes tenant level settings for derived credentials
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the profile.
-  - `[HelpUrl <String>]`: The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.
-  - `[Issuer <DeviceManagementDerivedCredentialIssuer?>]`: Supported values for the derived credential issuer.
-  - `[NotificationType <DeviceManagementDerivedCredentialNotificationType?>]`: Supported values for the notification type to use.
-  - `[RenewalThresholdPercentage <Int32?>]`: The nominal percentage of time before certificate renewal is initiated by the client.
+  \[DisplayName \<String\>\]: The display name for the profile.
+  \[HelpUrl \<String\>\]: The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.
+  \[Issuer \<DeviceManagementDerivedCredentialIssuer?\>\]: Supported values for the derived credential issuer.
+  \[NotificationType \<DeviceManagementDerivedCredentialNotificationType?\>\]: Supported values for the notification type to use.
+  \[RenewalThresholdPercentage \<Int32?\>\]: The nominal percentage of time before certificate renewal is initiated by the client.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementderivedcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementderivedcredential)
-
-
-
-
 

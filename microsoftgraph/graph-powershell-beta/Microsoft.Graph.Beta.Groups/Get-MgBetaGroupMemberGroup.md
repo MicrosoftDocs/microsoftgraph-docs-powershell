@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaGroupMemberGroup
@@ -15,35 +14,33 @@ This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberGroup?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgBetaGroupMemberGroup -GroupId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaGroupMemberGroup -GroupId <String>
  -BodyParameter <IPathsAp3OzjGroupsGroupIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
 Get-MgBetaGroupMemberGroup -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SecurityEnabledOnly] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupMemberGroup -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsAp3OzjGroupsGroupIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,25 +51,22 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
-### Example 1: Check group memberships for a directory object
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	SecurityEnabledOnly = $false
 }
 
 Get-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaGroupMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	SecurityEnabledOnly = $true
@@ -80,11 +74,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaGroupMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -134,6 +123,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -147,6 +151,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -203,8 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsAp3OzjGroupsGroupIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -246,6 +267,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
   \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
@@ -264,8 +286,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupMemberGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmembergroup)
-
 

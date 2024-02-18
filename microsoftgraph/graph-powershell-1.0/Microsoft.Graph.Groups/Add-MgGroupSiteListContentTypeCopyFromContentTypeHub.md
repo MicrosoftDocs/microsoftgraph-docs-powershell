@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgGroupSiteListContentTypeCopyFromContentTypeHub
@@ -14,35 +13,34 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
 Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -GroupId <String> -ListId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -GroupId <String> -ListId <String> -SiteId <String>
  -BodyParameter <IPathsHo8D96GroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
 Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsHo8D96GroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,10 +49,17 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopyfromcontenttypehub-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -119,6 +124,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -144,6 +164,21 @@ Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -203,9 +238,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPathsHo8D96GroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -242,6 +279,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PostId \<String\>\]: The unique identifier of post
   \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
@@ -251,11 +289,10 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
   \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopyfromcontenttypehub)
-
 

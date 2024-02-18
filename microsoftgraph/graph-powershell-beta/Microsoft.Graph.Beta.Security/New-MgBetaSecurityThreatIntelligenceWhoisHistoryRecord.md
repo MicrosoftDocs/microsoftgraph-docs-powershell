@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoishistoryrecord
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to whoisHistoryRecords for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,17 +23,30 @@ New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord [-Abuse <IMicrosoftGraphS
  [-RawWhoisText <String>] [-Registrant <IMicrosoftGraphSecurityWhoisContact>]
  [-Registrar <IMicrosoftGraphSecurityWhoisContact>] [-RegistrationDateTime <DateTime>]
  [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
- [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -BodyParameter <Hashtable> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to whoisHistoryRecords for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -167,6 +177,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Host1
 host
 To construct, see NOTES section for HOST1 properties and create a hash table.
@@ -257,6 +282,21 @@ To construct, see NOTES section for NOC properties and create a hash table.
 Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -413,9 +453,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisHistoryRecord
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1139,9 +1181,6 @@ No format is guaranteed.
 No format is guaranteed.
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoishistoryrecord)
-
-
 

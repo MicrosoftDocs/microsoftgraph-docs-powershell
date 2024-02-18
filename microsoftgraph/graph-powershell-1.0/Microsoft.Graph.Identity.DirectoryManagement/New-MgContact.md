@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to contacts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,51 +23,30 @@ New-MgContact [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPh
  [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnabled]
  [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to contacts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgContact
+### EXAMPLE 1
 ```
-This example shows how to use the New-MgContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgContact -Filter "startswith(displayName,'A')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual
+{{ Add code here }}
 ```
-This example shows how to use the New-MgContact Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -218,6 +194,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -389,6 +380,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProxyAddresses
 For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
@@ -494,9 +500,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -651,8 +659,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact)
-
 

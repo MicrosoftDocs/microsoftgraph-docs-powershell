@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAssignmentPolicy
@@ -26,27 +25,26 @@ New-MgEntitlementManagementAssignmentPolicy [-AccessPackage <IMicrosoftGraphAcce
  [-RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]
  [-ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]
- [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
 The request will include a reference to the accessPackage that will contain this policy, which must already exist.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "New Policy"
@@ -82,15 +80,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "policy for external access requests"
@@ -172,7 +166,7 @@ $params = @{
 		isReviewerJustificationRequired = $true
 		isSelfReview = $false
 		schedule = @{
-			startDateTime = [System.DateTime]::Parse("2022-07-02T06:59:59.998Z")
+			startDateTime = \[System.DateTime\]::Parse("2022-07-02T06:59:59.998Z")
 			expiration = @{
 				duration = "P14D"
 				type = "afterDuration"
@@ -207,15 +201,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Sales department users"
@@ -239,15 +229,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "A Policy With Questions"
@@ -333,7 +319,7 @@ $params = @{
 				}
 			)
 			isSingleLineQuestion = "false"
-			regexPattern = "[a-zA-Z]+[a-zA-Z\s]*"
+			regexPattern = "\[a-zA-Z\]+\[a-zA-Z\s\]*"
 		}
 	)
 	accessPackage = @{
@@ -342,11 +328,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -523,6 +504,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -547,6 +543,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -671,9 +682,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -741,6 +754,13 @@ For a SharePoint Online site, the originId will be the sequence number of the ro
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+            \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+            \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -750,6 +770,9 @@ Read-only.
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
             \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1491,6 +1514,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+              \[OnPremisesSecurityIdentifier \<String\>\]: 
               \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -3130,7 +3154,8 @@ Read-only.
             \[Message \<String\>\]: A non-localized message for the developer.
             \[Target \<String\>\]: The target of the error.
           \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-          \[IsPersonalSite \<Boolean?\>\]: 
+          \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
           \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -3409,8 +3434,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
           \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
           \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -5038,7 +5063,7 @@ See Known issue.
         \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -5046,7 +5071,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
           \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
           \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -5181,9 +5206,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5435,6 +5460,7 @@ Nullable.
 Nullable.
     \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+    \[UniqueName \<String\>\]: 
     \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -5522,6 +5548,13 @@ For a SharePoint Online site, the originId will be the sequence number of the ro
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+            \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+            \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -5531,6 +5564,9 @@ Read-only.
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
             \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -6194,6 +6230,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+                \[OnPremisesSecurityIdentifier \<String\>\]: 
                 \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -7833,7 +7870,8 @@ Read-only.
               \[Message \<String\>\]: A non-localized message for the developer.
               \[Target \<String\>\]: The target of the error.
             \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-            \[IsPersonalSite \<Boolean?\>\]: 
+            \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
             \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -8112,8 +8150,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
             \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
             \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -9741,7 +9779,7 @@ See Known issue.
           \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -9749,7 +9787,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
             \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -9884,9 +9922,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10138,6 +10176,7 @@ Nullable.
 Nullable.
       \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+      \[UniqueName \<String\>\]: 
       \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -10988,6 +11027,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+                \[OnPremisesSecurityIdentifier \<String\>\]: 
                 \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -12627,7 +12667,8 @@ Read-only.
               \[Message \<String\>\]: A non-localized message for the developer.
               \[Target \<String\>\]: The target of the error.
             \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-            \[IsPersonalSite \<Boolean?\>\]: 
+            \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
             \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -12906,8 +12947,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
             \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
             \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -14535,7 +14576,7 @@ See Known issue.
           \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -14543,7 +14584,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
             \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -14678,9 +14719,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14932,6 +14973,7 @@ Nullable.
 Nullable.
       \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+      \[UniqueName \<String\>\]: 
       \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -14967,6 +15009,13 @@ For a SharePoint Online site, the originId will be the sequence number of the ro
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+            \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+            \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -14976,6 +15025,9 @@ Read-only.
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
             \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -15159,5 +15211,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy)
-
 

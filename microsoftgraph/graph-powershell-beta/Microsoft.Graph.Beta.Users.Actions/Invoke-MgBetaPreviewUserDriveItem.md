@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetapreviewuserdriveitem
@@ -10,41 +10,55 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action preview
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### PreviewExpanded (Default)
 ```
 Invoke-MgBetaPreviewUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>]
- [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Zoom <Double>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Preview
 ```
 Invoke-MgBetaPreviewUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPathsZ9C15KUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentityExpanded
 ```
 Invoke-MgBetaPreviewUserDriveItem -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
 Invoke-MgBetaPreviewUserDriveItem -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsZ9C15KUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action preview
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -139,6 +153,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -162,6 +191,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -253,9 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsZ9C15KUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -289,6 +335,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
   \[EventId \<String\>\]: The unique identifier of event
   \[EventId1 \<String\>\]: The unique identifier of event
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[ListItemId \<String\>\]: The unique identifier of listItem
   \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
   \[MailFolderId \<String\>\]: The unique identifier of mailFolder
@@ -313,9 +360,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgPreviewUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetapreviewuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetapreviewuserdriveitem)
-
-
 

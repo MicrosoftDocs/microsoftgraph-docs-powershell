@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Unpublish-MgBetaBookingBusiness
@@ -12,50 +11,43 @@ ms.prod: bookings
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Unpublish (Default)
 ```
-Unpublish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Unpublish-MgBetaBookingBusiness -BookingBusinessId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Unpublish1
 ```
-Unpublish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Unpublish-MgBetaBookingBusiness -BookingBusinessId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnpublishViaIdentity1
 ```
-Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnpublishViaIdentity
 ```
-Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-unpublish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Unpublish-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Unpublish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-This example shows how to use the Unpublish-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -71,6 +63,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -101,6 +108,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -142,9 +164,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -162,9 +186,11 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
   \[UserId \<String\>\]: Usage: userId='{userId}'
   \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
@@ -174,8 +200,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
-
 

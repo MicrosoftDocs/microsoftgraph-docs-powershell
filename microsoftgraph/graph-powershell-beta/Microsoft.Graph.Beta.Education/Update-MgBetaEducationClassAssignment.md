@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationClassAssignment
@@ -13,9 +12,6 @@ Update an educationAssignment object.
 Only teachers in the class can do this.
 You can't use a PATCH request to change the status of an assignment.
 Use the publish action to change the assignment status.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,14 +26,15 @@ Update-MgBetaEducationClassAssignment -EducationAssignmentId <String> -Education
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,14 +48,15 @@ Update-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-AddToC
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClassAssignment -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,14 +65,12 @@ Only teachers in the class can do this.
 You can't use a PATCH request to change the status of an assignment.
 Use the publish action to change the assignment status.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	displayName = "Reading and review test 09.03 #5"
@@ -82,17 +78,12 @@ $params = @{
 		contentType = "text"
 		content = "Read chapter 5 and write your review"
 	}
-	dueDateTime = [System.DateTime]::Parse("2021-09-10T00:00:00Z")
+	dueDateTime = \[System.DateTime\]::Parse("2021-09-10T00:00:00Z")
 	addedStudentAction = "none"
 	addToCalendarAction = "studentsAndPublisher"
 }
 
 Update-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationClassAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -143,7 +134,7 @@ Accept wildcard characters: False
 
 ### -AllowLateSubmissions
 Identifies whether students can submit after the due date.
-If this property is not specified during create, it defaults to true.
+If this property isn't specified during create, it defaults to true.
 
 ```yaml
 Type: SwitchParameter
@@ -222,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassId
-Class which this assignment belongs.
+Class to which this assignment belongs.
 
 ```yaml
 Type: String
@@ -238,7 +229,7 @@ Accept wildcard characters: False
 
 ### -CloseDateTime
 Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -364,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -447,12 +453,27 @@ Accept wildcard characters: False
 Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl is not allowed after the assignment has been published.
+Updating the notificationChannelUrl isn't allowed after the assignment has been published.
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -566,9 +587,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -582,7 +605,7 @@ Read-only.
   \[AddToCalendarAction \<String\>\]: educationAddToCalendarOptions
   \[AddedStudentAction \<String\>\]: educationAddedStudentAction
   \[AllowLateSubmissions \<Boolean?\>\]: Identifies whether students can submit after the due date.
-If this property is not specified during create, it defaults to true.
+If this property isn't specified during create, it defaults to true.
   \[AllowStudentsToAddResourcesToSubmission \<Boolean?\>\]: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
   \[AssignTo \<IMicrosoftGraphEducationAssignmentRecipient\>\]: educationAssignmentRecipient
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -592,9 +615,9 @@ Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[DisplayName \<String\>\]: Unique identifier for the category.
-  \[ClassId \<String\>\]: Class which this assignment belongs.
+  \[ClassId \<String\>\]: Class to which this assignment belongs.
   \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -630,7 +653,7 @@ Read-only.
   \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl is not allowed after the assignment has been published.
+Updating the notificationChannelUrl isn't allowed after the assignment has been published.
   \[Resources \<IMicrosoftGraphEducationAssignmentResource\[\]\>\]: Learning objects that are associated with this assignment. 
 Only teachers can modify this list.
 Nullable.
@@ -863,8 +886,6 @@ If the value is null, the student uploaded the resource.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment)
-
 

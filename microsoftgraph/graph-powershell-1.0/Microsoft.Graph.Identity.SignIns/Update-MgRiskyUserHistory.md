@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyuserhistory
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property history in identityProtection
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUserHistory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,15 @@ Update-MgRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String>
  [-Activity <IMicrosoftGraphRiskUserActivity>] [-AdditionalProperties <Hashtable>]
  [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>] [-InitiatedBy <String>] [-IsDeleted]
  [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>]
- [-RiskState <String>] [-UserDisplayName <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RiskState <String>] [-UserDisplayName <String>] [-UserId <String>] [-UserPrincipalName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String>
- -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,17 +35,35 @@ Update-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-Activity <IM
  [-AdditionalProperties <Hashtable>] [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>]
  [-InitiatedBy <String>] [-IsDeleted] [-IsProcessing] [-RiskDetail <String>]
  [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>] [-UserDisplayName <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property history in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -92,6 +108,21 @@ Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -179,6 +210,7 @@ Accept wildcard characters: False
 
 ### -IsProcessing
 Indicates whether a user's risky state is being processed by the backend.
+Supports $filter (eq).
 
 ```yaml
 Type: SwitchParameter
@@ -188,6 +220,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -211,6 +258,7 @@ Accept wildcard characters: False
 The date and time that the risky user was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Supports $filter (eq, gt, lt).
 
 ```yaml
 Type: DateTime
@@ -367,9 +415,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -387,10 +437,12 @@ BODYPARAMETER \<IMicrosoftGraphRiskyUserHistoryItem\>: riskyUserHistoryItem
   \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
   \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
+Supports $filter (eq).
   \[RiskDetail \<String\>\]: riskDetail
   \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Supports $filter (eq, gt, lt).
   \[RiskLevel \<String\>\]: riskLevel
   \[RiskState \<String\>\]: riskState
   \[UserDisplayName \<String\>\]: Risky user display name.
@@ -409,10 +461,12 @@ HISTORY \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>: The activity related to use
   \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
   \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
+Supports $filter (eq).
   \[RiskDetail \<String\>\]: riskDetail
   \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Supports $filter (eq, gt, lt).
   \[RiskLevel \<String\>\]: riskLevel
   \[RiskState \<String\>\]: riskState
   \[UserDisplayName \<String\>\]: Risky user display name.
@@ -484,9 +538,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyuserhistory)
-
-
 

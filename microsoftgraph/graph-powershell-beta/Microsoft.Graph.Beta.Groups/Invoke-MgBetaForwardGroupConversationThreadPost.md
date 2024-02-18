@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgBetaForwardGroupConversationThreadPost
 
 ## SYNOPSIS
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPost?view=graph-powershell-1.0)
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ## SYNTAX
 
@@ -21,7 +17,8 @@ You can specify both the parent conversation and thread in the request, or, you 
 ```
 Invoke-MgBetaForwardGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Forward
@@ -29,35 +26,36 @@ Invoke-MgBetaForwardGroupConversationThreadPost -ConversationId <String> -Conver
 Invoke-MgBetaForwardGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ForwardViaIdentityExpanded
 ```
 Invoke-MgBetaForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
 Invoke-MgBetaForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-forward-permissions.md)]
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	Comment = "comment-value"
@@ -72,11 +70,6 @@ $params = @{
 }
 
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaForwardGroupConversationThreadPost Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -171,6 +164,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -211,6 +219,21 @@ Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -271,9 +294,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -319,6 +344,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
   \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
@@ -343,8 +369,6 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
-[Invoke-MgForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgGroupOnenotePage
@@ -14,9 +13,6 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -25,13 +21,14 @@ New-MgGroupOnenotePage -GroupId <String> [-AdditionalProperties <Hashtable>] [-C
  [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>] [-Order <Int32>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>] [-Self <String>]
- [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-UserTags <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupOnenotePage -GroupId <String> -BodyParameter <IMicrosoftGraphOnenotePage> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGroupOnenotePage -GroupId <String> -BodyParameter <IMicrosoftGraphOnenotePage> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,13 +37,14 @@ New-MgGroupOnenotePage -InputObject <INotesIdentity> [-AdditionalProperties <Has
  [-ContentInputFile <String>] [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>]
  [-Order <Int32>] [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>]
- [-Self <String>] [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Self <String>] [-Title <String>] [-UserTags <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenotePage> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenotePage>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,8 +53,21 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-pages-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -168,6 +179,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -301,6 +327,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Self
 The endpoint where you can get details about the page.
 Read-only.
@@ -385,9 +426,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -535,6 +578,8 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
   \[SiteId \<String\>\]: The unique identifier of site
   \[UserId \<String\>\]: The unique identifier of user
@@ -814,9 +859,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage)
-
-
 

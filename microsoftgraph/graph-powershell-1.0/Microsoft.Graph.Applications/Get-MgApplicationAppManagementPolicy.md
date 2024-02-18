@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicy
@@ -21,6 +21,18 @@ Get-MgApplicationAppManagementPolicy -ApplicationId <String> [-ExpandProperty <S
 
 ## DESCRIPTION
 The appManagementPolicy applied to this application.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -229,13 +241,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicy)
-
-
-
-
 

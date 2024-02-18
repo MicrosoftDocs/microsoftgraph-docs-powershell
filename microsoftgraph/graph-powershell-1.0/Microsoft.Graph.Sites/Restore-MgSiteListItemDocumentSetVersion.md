@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Restore-MgSiteListItemDocumentSetVersion
@@ -11,37 +10,32 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Restore a document set version.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Restore (Default)
 ```
 Restore-MgSiteListItemDocumentSetVersion -DocumentSetVersionId <String> -ListId <String> -ListItemId <String>
- -SiteId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SiteId <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore a document set version.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Restore-MgSiteListItemDocumentSetVersion Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Sites
-Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
+
+### EXAMPLE 1
 ```
-This example shows how to use the Restore-MgSiteListItemDocumentSetVersion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Sites
+```
+
+Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
 
 ## PARAMETERS
 
@@ -57,6 +51,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -121,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -173,9 +197,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -206,6 +232,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[RelationId \<String\>\]: The unique identifier of relation
   \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
@@ -223,8 +250,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
@@ -9,11 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -22,14 +19,14 @@ Note: You can also start a new thread in an existing conversation.
 New-MgGroupThread -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments] [-Id <String>] [-IsLocked]
  [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupThread -GroupId <String> -BodyParameter <IMicrosoftGraphConversationThread> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGroupThread -GroupId <String> -BodyParameter <IMicrosoftGraphConversationThread> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,26 +34,27 @@ New-MgGroupThread -GroupId <String> -BodyParameter <IMicrosoftGraphConversationT
 New-MgGroupThread -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments] [-Id <String>] [-IsLocked]
  [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversationThread> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversationThread>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	topic = "New Conversation Thread Topic"
@@ -79,11 +77,6 @@ $params = @{
 }
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -163,6 +156,21 @@ Required: False
 Position: Named
 Default value: False
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -262,6 +270,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Topic
 The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
@@ -350,9 +373,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -476,6 +501,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PostId \<String\>\]: The unique identifier of post
   \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
@@ -485,6 +511,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
   \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
 
 POSTS \<IMicrosoftGraphPost\[\]\>: .
@@ -559,8 +586,6 @@ Returned only on $select.
     \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread)
-
 

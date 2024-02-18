@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgUserOnlineMeeting
 
 ## SYNOPSIS
 Create an online meeting on behalf of a user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,14 +27,14 @@ New-MgUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>] [-A
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-ShareMeetingChatHistoryDefault <String>]
  [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
- [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserOnlineMeeting -UserId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserOnlineMeeting -UserId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -56,50 +52,44 @@ New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Additional
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-ShareMeetingChatHistoryDefault <String>]
  [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
- [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnlineMeeting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an online meeting on behalf of a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-onlinemeetings-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an online meeting with user token
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User Token Meeting"
 }
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an online meeting with user token
-
-### Example 2: Create an online meeting that requires a passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User meeting"
 	joinMeetingIdSettings = @{
 		isPasscodeRequired = $true
@@ -109,18 +99,14 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create an online meeting that requires a passcode
-
-### Example 3: Create an online meeting that doesn't require a passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User meeting in Microsoft Teams channel."
 	joinMeetingIdSettings = @{
 		isPasscodeRequired = $false
@@ -129,10 +115,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
-
-```
-This example will create an online meeting that doesn't require a passcode
-
 
 ## PARAMETERS
 
@@ -383,6 +365,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -517,6 +514,21 @@ To construct, see NOTES section for PARTICIPANTS properties and create a hash ta
 Type: IMicrosoftGraphMeetingParticipants
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -704,9 +716,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1036,8 +1050,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting)
-
 

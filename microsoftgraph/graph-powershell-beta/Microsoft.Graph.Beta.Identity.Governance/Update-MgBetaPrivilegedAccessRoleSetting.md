@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting
@@ -20,13 +20,15 @@ Update-MgBetaPrivilegedAccessRoleSetting -GovernanceRoleSettingId <String> -Priv
  [-LastUpdatedBy <String>] [-LastUpdatedDateTime <DateTime>] [-Resource <IMicrosoftGraphGovernanceResource>]
  [-ResourceId <String>] [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]
  [-RoleDefinitionId <String>] [-UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]
- [-UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedAccessRoleSetting -GovernanceRoleSettingId <String> -PrivilegedAccessId <String>
- -BodyParameter <IMicrosoftGraphGovernanceRoleSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleSetting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,21 +39,24 @@ Update-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdenti
  [-LastUpdatedBy <String>] [-LastUpdatedDateTime <DateTime>] [-Resource <IMicrosoftGraphGovernanceResource>]
  [-ResourceId <String>] [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]
  [-RoleDefinitionId <String>] [-UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]
- [-UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceRoleSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleSetting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of governanceRoleSetting.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	AdminEligibleSettings = @(
@@ -63,8 +68,6 @@ $params = @{
 }
 Update-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -143,6 +146,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -237,6 +255,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -378,9 +411,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -479,8 +514,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -595,6 +630,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -730,8 +766,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        \[Key \<String\>\]: Key.
-        \[Value \<String\>\]: Value.
+        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+        \[Value \<String\>\]: Contains the corresponding value for the specified key.
       \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -841,8 +877,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -945,5 +981,4 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action updateWindowsDeviceAccount
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,16 @@ Invoke action updateWindowsDeviceAccount
 Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>]
  [-UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String>
  -BodyParameter <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +34,32 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId 
 Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>]
  [-UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action updateWindowsDeviceAccount
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -75,6 +88,21 @@ Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -123,6 +151,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -181,9 +224,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -194,14 +239,14 @@ BODYPARAMETER \<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicros
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[UpdateWindowsDeviceAccountActionParameter \<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter\>\]: updateWindowsDeviceAccountActionParameter
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CalendarSyncEnabled \<Boolean?\>\]: Not yet documented
+    \[CalendarSyncEnabled \<Boolean?\>\]: 
     \[DeviceAccount \<IMicrosoftGraphWindowsDeviceAccount\>\]: windowsDeviceAccount
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Password \<String\>\]: Not yet documented
-    \[DeviceAccountEmail \<String\>\]: Not yet documented
-    \[ExchangeServer \<String\>\]: Not yet documented
-    \[PasswordRotationEnabled \<Boolean?\>\]: Not yet documented
-    \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
+      \[Password \<String\>\]: 
+    \[DeviceAccountEmail \<String\>\]: 
+    \[ExchangeServer \<String\>\]: 
+    \[PasswordRotationEnabled \<Boolean?\>\]: 
+    \[SessionInitiationProtocalAddress \<String\>\]: 
 
 INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[AlertRecordId \<String\>\]: The unique identifier of alertRecord
@@ -247,6 +292,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
   \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
@@ -259,19 +305,16 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 
 UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER \<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter\>: updateWindowsDeviceAccountActionParameter
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CalendarSyncEnabled \<Boolean?\>\]: Not yet documented
+  \[CalendarSyncEnabled \<Boolean?\>\]: 
   \[DeviceAccount \<IMicrosoftGraphWindowsDeviceAccount\>\]: windowsDeviceAccount
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Password \<String\>\]: Not yet documented
-  \[DeviceAccountEmail \<String\>\]: Not yet documented
-  \[ExchangeServer \<String\>\]: Not yet documented
-  \[PasswordRotationEnabled \<Boolean?\>\]: Not yet documented
-  \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
+    \[Password \<String\>\]: 
+  \[DeviceAccountEmail \<String\>\]: 
+  \[ExchangeServer \<String\>\]: 
+  \[PasswordRotationEnabled \<Boolean?\>\]: 
+  \[SessionInitiationProtocalAddress \<String\>\]:
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount)
-
-
 

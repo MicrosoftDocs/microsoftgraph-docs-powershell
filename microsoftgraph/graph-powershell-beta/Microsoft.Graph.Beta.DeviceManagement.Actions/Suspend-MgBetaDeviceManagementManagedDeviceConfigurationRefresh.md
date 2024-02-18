@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/suspend-mgbetadevicemanagementmanageddeviceconfigurationrefresh
@@ -15,33 +15,47 @@ Initiates a command to pause config refresh for the device.
 ### PauseExpanded (Default)
 ```
 Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Pause
 ```
 Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh -ManagedDeviceId <String>
  -BodyParameter <IPaths18Ks7VwDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPauseconfigurationrefreshPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### PauseViaIdentityExpanded
 ```
 Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PauseViaIdentity
 ```
 Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths18Ks7VwDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPauseconfigurationrefreshPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Initiates a command to pause config refresh for the device.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -70,6 +84,21 @@ Parameter Sets: Pause, PauseViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -137,6 +166,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -175,9 +219,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Ks7VwDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPauseconfigurationrefreshPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -232,6 +278,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
   \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
@@ -245,6 +292,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/suspend-mgbetadevicemanagementmanageddeviceconfigurationrefresh](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/suspend-mgbetadevicemanagementmanageddeviceconfigurationrefresh)
-
-
 

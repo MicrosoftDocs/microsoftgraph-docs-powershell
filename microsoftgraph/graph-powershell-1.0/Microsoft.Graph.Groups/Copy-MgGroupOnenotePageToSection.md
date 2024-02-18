@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotepagetosection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgGroupOnenotePageToSection
@@ -12,47 +11,51 @@ ms.prod: onenote
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenotePageToSection?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
 Copy-MgGroupOnenotePageToSection -GroupId <String> -OnenotePageId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId1 <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GroupId1 <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgGroupOnenotePageToSection [-GroupId <String>] -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgGroupOnenotePageToSection -GroupId <String> -OnenotePageId <String>
  -BodyParameter <IPaths112UvcyGroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgGroupOnenotePageToSection -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths112UvcyGroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-copytosection-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -129,6 +132,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 .
 
@@ -169,6 +187,21 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -243,9 +276,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths112UvcyGroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -285,6 +320,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PostId \<String\>\]: The unique identifier of post
   \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
@@ -294,11 +330,10 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
   \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Copy-MgBetaGroupOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenotePageToSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotepagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotepagetosection)
-
 

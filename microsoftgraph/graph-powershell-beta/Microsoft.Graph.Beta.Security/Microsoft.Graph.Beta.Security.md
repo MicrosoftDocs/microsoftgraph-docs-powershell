@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: 987c645b-9ff9-4398-8963-19739c27f5c3
 Download Help Link: {{ Update Download Link }}
@@ -315,6 +315,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityCloudAppSecurityProfileCount](Get-MgBetaSecurityCloudAppSecurityProfileCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityCollaboration](Get-MgBetaSecurityCollaboration.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityCollaborationAnalyzedEmail](Get-MgBetaSecurityCollaborationAnalyzedEmail.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityCollaborationAnalyzedEmailCount](Get-MgBetaSecurityCollaborationAnalyzedEmailCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityDomainSecurityProfile](Get-MgBetaSecurityDomainSecurityProfile.md)
@@ -821,6 +830,9 @@ Locale: en-US
 ### [Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel](Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail](Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](Invoke-MgBetaReopenSecurityCaseEdiscoveryCase.md)
 {{ Fill in the Description }}
 
@@ -924,6 +936,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecurityCloudAppSecurityProfile](New-MgBetaSecurityCloudAppSecurityProfile.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSecurityCollaborationAnalyzedEmail](New-MgBetaSecurityCollaborationAnalyzedEmail.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecurityDomainSecurityProfile](New-MgBetaSecurityDomainSecurityProfile.md)
@@ -1175,12 +1190,6 @@ Locale: en-US
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](Remove-MgBetaSecurityCaseEdiscoveryCaseSetting.md)
 {{ Fill in the Description }}
 
@@ -1188,6 +1197,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityCloudAppSecurityProfile](Remove-MgBetaSecurityCloudAppSecurityProfile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityCollaboration](Remove-MgBetaSecurityCollaboration.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityCollaborationAnalyzedEmail](Remove-MgBetaSecurityCollaborationAnalyzedEmail.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityDomainSecurityProfile](Remove-MgBetaSecurityDomainSecurityProfile.md)
@@ -1529,6 +1544,12 @@ Locale: en-US
 ### [Update-MgBetaSecurityCloudAppSecurityProfile](Update-MgBetaSecurityCloudAppSecurityProfile.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSecurityCollaboration](Update-MgBetaSecurityCollaboration.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityCollaborationAnalyzedEmail](Update-MgBetaSecurityCollaborationAnalyzedEmail.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSecurityDomainSecurityProfile](Update-MgBetaSecurityDomainSecurityProfile.md)
 {{ Fill in the Description }}
 
@@ -1717,5 +1738,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent](Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent.md)
 {{ Fill in the Description }}
-
 

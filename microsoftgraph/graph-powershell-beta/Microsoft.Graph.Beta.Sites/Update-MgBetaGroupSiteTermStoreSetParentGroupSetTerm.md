@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsetterm
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm
 
 ## SYNOPSIS
 Update the properties of a term object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,14 +20,15 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <S
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -GroupId <String> -SetId <String> -SetId1 <String>
- -SiteId <String> -TermId <String> -BodyParameter <IMicrosoftGraphTermStoreTerm> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -SiteId <String> -TermId <String> -BodyParameter <IMicrosoftGraphTermStoreTerm> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,20 +38,31 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentit
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreTerm> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStoreTerm> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -152,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -208,6 +231,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -362,9 +400,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermStoreTerm
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermStoreTerm
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -388,8 +428,8 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
   \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -439,8 +479,8 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
   \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -509,6 +549,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[RecycleBinItemId \<String\>\]: The unique identifier of recycleBinItem
   \[RelationId \<String\>\]: The unique identifier of relation
@@ -537,8 +578,8 @@ LABELS \<IMicrosoftGraphTermStoreLocalizedLabel\[\]\>: Label metadata for a term
   \[Name \<String\>\]: The name of the label.
 
 PROPERTIES \<IMicrosoftGraphKeyValue\[\]\>: Collection of properties on the term.
-  \[Key \<String\>\]: Key.
-  \[Value \<String\>\]: Value.
+  \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+  \[Value \<String\>\]: Contains the corresponding value for the specified key.
 
 RELATIONS \<IMicrosoftGraphTermStoreRelation\[\]\>: To indicate which terms are related to the current term as either pinned or reused.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -560,8 +601,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Key.
-      \[Value \<String\>\]: Value.
+      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+      \[Value \<String\>\]: Contains the corresponding value for the specified key.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -612,8 +653,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Key.
-      \[Value \<String\>\]: Value.
+      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+      \[Value \<String\>\]: Contains the corresponding value for the specified key.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -644,9 +685,6 @@ Read-only.
   \[Terms \<IMicrosoftGraphTermStoreTerm\[\]\>\]: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsetterm)
-
-
 

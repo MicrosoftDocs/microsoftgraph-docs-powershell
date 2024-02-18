@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMessageHostedContent
@@ -11,56 +10,53 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgChatMessageHostedContent -ChatId <String> -ChatMessageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String> -ChatMessageId <String>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+ -OutFile <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String> -ChatMessageId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <String> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## EXAMPLES
-### Example 1: List hosted content for message in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-
-```
-This example will list hosted content for message in a chat
-
 
 ## PARAMETERS
 
@@ -170,6 +166,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -227,6 +238,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -312,10 +338,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -357,8 +385,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent)
-
 

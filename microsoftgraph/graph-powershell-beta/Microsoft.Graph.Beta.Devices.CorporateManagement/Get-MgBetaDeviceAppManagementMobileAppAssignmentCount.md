@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappassignmentcount
@@ -10,277 +10,61 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAssignmentCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAssignmentCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get9
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get8
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get7
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get6
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get5
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get4
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get21
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
+ [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get20
 ```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get19
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get18
-```
 Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get17
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get16
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get15
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get14
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get13
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get12
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get11
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+ [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get10
 ```
 Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity9
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity8
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity7
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity6
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity5
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity4
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity3
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity21
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity20
 ```
 Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity10
 ```
 Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
-### Get (Default)
+### GetViaIdentity
 ```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get9
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get8
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get7
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get6
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get5
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get4
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get21
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get20
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get19
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -289,7 +73,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get21, Get20, Get2, Get19, Get18, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity21, GetViaIdentity20, GetViaIdentity2
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -299,13 +83,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get21, Get20, Get2, Get19, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity21, GetViaIdentity20, GetViaIdentity2
+Parameter Sets: GetViaIdentity20, GetViaIdentity10, GetViaIdentity
 Aliases:
 
 Required: True
@@ -320,10 +119,25 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get21, Get20, Get2, Get19, Get18, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1
+Parameter Sets: Get, Get20, Get10
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -335,7 +149,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get21, Get20, Get2, Get19, Get18, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity21, GetViaIdentity20, GetViaIdentity2
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -351,8 +165,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -431,9 +247,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementMobileAppAssignmentCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAssignmentCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappassignmentcount)
-
-
 

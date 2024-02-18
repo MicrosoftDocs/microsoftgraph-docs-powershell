@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer
@@ -23,14 +23,14 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer -Comp
  [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>]
  [-TaxAreaId <String>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer -CompanyId <String>
  -CustomerPaymentId <String> -CustomerPaymentJournalId <String> -BodyParameter <IMicrosoftGraphCustomer>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,18 +43,35 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer -Inpu
  [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
  [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>] [-TaxAreaId <String>] [-TaxLiable]
- [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCustomer> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomer> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property customer in financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -241,6 +258,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 .
 
@@ -387,6 +419,21 @@ To construct, see NOTES section for PICTURE properties and create a hash table.
 Type: IMicrosoftGraphPicture[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -554,9 +601,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomer
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomer
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -719,6 +768,4 @@ SHIPMENTMETHOD \<IMicrosoftGraphShipmentMethod\>: shipmentMethod
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer)
-
-
 

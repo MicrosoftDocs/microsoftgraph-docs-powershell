@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Remove-MgBetaSubscription
@@ -12,21 +11,19 @@ ms.prod: change-notifications
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaSubscription -SubscriptionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaSubscription -SubscriptionId <String> [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,19 +31,30 @@ Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
+```
 
 Remove-MgBetaSubscription -SubscriptionId $subscriptionId
-```
-This example shows how to use the Remove-MgBetaSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -90,6 +98,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -146,9 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IChangeNotificationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -159,8 +184,6 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
-[Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
-
 

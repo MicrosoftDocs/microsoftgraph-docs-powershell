@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl
@@ -10,25 +10,35 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDownloadUrl
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Create (Default)
 ```
 New-MgUserManagedDeviceLogCollectionResponseDownloadUrl -DeviceLogCollectionResponseId <String>
- -ManagedDeviceId <String> -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ManagedDeviceId <String> -UserId <String> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserManagedDeviceLogCollectionResponseDownloadUrl -InputObject <IUsersActionsIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserManagedDeviceLogCollectionResponseDownloadUrl -InputObject <IUsersActionsIdentity>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createDownloadUrl
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -44,6 +54,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -72,6 +97,21 @@ Parameter Sets: Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -130,8 +170,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -162,6 +204,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
@@ -171,9 +214,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl)
-
-
 

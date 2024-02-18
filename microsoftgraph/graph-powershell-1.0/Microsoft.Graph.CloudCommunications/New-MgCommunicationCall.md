@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgCommunicationCall
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,13 +25,14 @@ New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
  [-Participants <IMicrosoftGraphParticipant[]>] [-RequestedModalities <String[]>]
  [-ResultInfo <IMicrosoftGraphResultInfo>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>]
  [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
- [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,11 +40,11 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -79,14 +76,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create peer-to-peer voip call with service hosted media
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -122,20 +115,16 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 }
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create peer-to-peer voip call with application hosted media
-
-### Example 3: Create a group call with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -188,14 +177,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a group call with service hosted media
-
-### Example 4: Create a group call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -248,14 +233,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create a group call with application hosted media
-
-### Example 5: Join scheduled meeting with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -291,14 +272,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will join scheduled meeting with service hosted media
-
-### Example 6: Join scheduled meeting with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -333,14 +310,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example will join scheduled meeting with application hosted media
-
-### Example 7: Join a scheduled meeting with joinMeetingId and passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -363,14 +336,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 8
 ```
-This example will join a scheduled meeting with joinmeetingid and passcode
-
-### Example 8: Join a scheduled meeting with joinMeetingId
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -393,14 +362,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 9
 ```
-This example will join a scheduled meeting with joinmeetingid
-
-### Example 9: Create peer-to-peer PSTN call with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -443,14 +408,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 10
 ```
-This example will create peer-to-peer pstn call with service hosted media
-
-### Example 10: Create peer-to-peer PSTN call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -487,16 +448,12 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params
-
-```
-This example will### example 10: create peer-to-peer pstn call with application hosted media
-
 
 ## PARAMETERS
 
@@ -659,6 +616,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -776,6 +748,21 @@ To construct, see NOTES section for PARTICIPANTS properties and create a hash ta
 Type: IMicrosoftGraphParticipant[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -963,9 +950,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1079,12 +1068,12 @@ Read-only.
       \[RecordingStatus \<String\>\]: recordingStatus
     \[RemovedState \<IMicrosoftGraphRemovedState\>\]: removedState
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Reason \<String\>\]: 
+      \[Reason \<String\>\]: The removal reason for the participant resource.
     \[RestrictedExperience \<IMicrosoftGraphOnlineMeetingRestricted\>\]: onlineMeetingRestricted
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
       \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
-    \[RosterSequenceNumber \<Int64?\>\]: 
+    \[RosterSequenceNumber \<Int64?\>\]: Indicates the roster sequence number in which the participant was last updated.
   \[RequestedModalities \<String\[\]\>\]: The list of requested modalities.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
   \[ResultInfo \<IMicrosoftGraphResultInfo\>\]: resultInfo
@@ -1218,12 +1207,12 @@ Read-only.
     \[RecordingStatus \<String\>\]: recordingStatus
   \[RemovedState \<IMicrosoftGraphRemovedState\>\]: removedState
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Reason \<String\>\]: 
+    \[Reason \<String\>\]: The removal reason for the participant resource.
   \[RestrictedExperience \<IMicrosoftGraphOnlineMeetingRestricted\>\]: onlineMeetingRestricted
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
     \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
-  \[RosterSequenceNumber \<Int64?\>\]: 
+  \[RosterSequenceNumber \<Int64?\>\]: Indicates the roster sequence number in which the participant was last updated.
 
 RESULTINFO \<IMicrosoftGraphResultInfo\>: resultInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -1288,8 +1277,6 @@ TRANSCRIPTION \<IMicrosoftGraphCallTranscriptionInfo\>: callTranscriptionInfo
   \[State \<String\>\]: callTranscriptionState
 
 ## RELATED LINKS
-[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
-
 

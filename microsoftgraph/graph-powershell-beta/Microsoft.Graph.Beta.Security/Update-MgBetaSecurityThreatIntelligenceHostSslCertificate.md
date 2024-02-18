@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostsslcertificate
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property hostSslCertificates in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,13 +17,15 @@ Update the navigation property hostSslCertificates in security
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String>
  [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>]
  [-Id <String>] [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
- [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,17 +33,31 @@ Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId 
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>]
  [-Id <String>] [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
- [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hostSslCertificates in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -93,6 +106,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -192,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificate
 sslCertificate
 To construct, see NOTES section for SSLCERTIFICATE properties and create a hash table.
@@ -246,9 +289,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -814,6 +859,7 @@ Read-only.
 
 INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[AlertId \<String\>\]: The unique identifier of alert
+  \[AnalyzedEmailId \<String\>\]: The unique identifier of analyzedEmail
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
@@ -1179,9 +1225,6 @@ Note: This is not the signature.
   \[Subject \<IMicrosoftGraphSecuritySslCertificateEntity\>\]: sslCertificateEntity
 
 ## RELATED LINKS
-[Update-MgSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostsslcertificate)
-
-
 

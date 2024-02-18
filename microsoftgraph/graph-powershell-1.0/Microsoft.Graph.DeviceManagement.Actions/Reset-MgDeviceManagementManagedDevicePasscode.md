@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/reset-mgdevicemanagementmanageddevicepasscode
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Reset-MgDeviceManagementManagedDevicePasscode
@@ -11,27 +10,56 @@ ms.prod: intune
 ## SYNOPSIS
 Reset passcode
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reset (Default)
 ```
-Reset-MgDeviceManagementManagedDevicePasscode -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Reset-MgDeviceManagementManagedDevicePasscode -ManagedDeviceId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Reset-MgDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagementActionsIdentity>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reset passcode
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -79,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -116,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -140,9 +185,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/reset-mgdevicemanagementmanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/reset-mgdevicemanagementmanageddevicepasscode)
-
-
 

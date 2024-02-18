@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyPermissionGrantPolicy
@@ -11,42 +10,37 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve a single permissionGrantPolicy object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgPolicyPermissionGrantPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a single permissionGrantPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1:  List all permission grant policies
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"  
-Get-MgPolicyPermissionGrantPolicy | fl  
+Get-MgPolicyPermissionGrantPolicy | fl
+```
 
 DeletedDateTime      :
 Description          : Includes all application permissions (app roles), for all APIs, for any client application.
@@ -54,9 +48,9 @@ DisplayName          : All application permissions, for any client app
 Excludes             : {}
 Id                   : microsoft-all-application-permissions
 Includes             : {bddda1ec-0174-44d5-84e2-47fb0ac01595}
-AdditionalProperties : {[includeAllPreApprovedApplications, False], [resourceScopeType, tenant], [includes@odata.context,
-                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes], [excludes@odata.context,
-                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/excludes]}
+AdditionalProperties : {\[includeAllPreApprovedApplications, False\], \[resourceScopeType, tenant\], \[includes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes\], \[excludes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/excludes\]}
 
 DeletedDateTime      :
 Description          : Includes all chat resoruce-specific application permissions, for all APIs, for any client application.
@@ -64,18 +58,15 @@ DisplayName          : All chat resource-specific application permissions, for a
 Excludes             : {}
 Id                   : microsoft-all-application-permissions-for-chat
 Includes             : {013e8de3-5e79-4b0f-a440-8f7794086460}
-AdditionalProperties : {[includeAllPreApprovedApplications, False], [resourceScopeType, chat], [includes@odata.context,
-                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/includes], [excludes@odata.context,
-                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
+AdditionalProperties : {\[includeAllPreApprovedApplications, False\], \[resourceScopeType, chat\], \[includes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/includes\], \[excludes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes\]}
+
+### EXAMPLE 2
 ```
-
-This command retrieves a list of all permission grant policies in Azure AD.
-
-### Example 2: Get a permission grant policy by ID
-
-```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"  
-Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl  
+Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl
+```
 
 DeletedDateTime      :
 Description          : Includes all application permissions (app roles), for all APIs, for any client application.
@@ -83,12 +74,8 @@ DisplayName          : All application permissions, for any client app
 Excludes             : {}
 Id                   : microsoft-all-application-permissions
 Includes             : {bddda1ec-0174-44d5-84e2-47fb0ac01595}
-AdditionalProperties : {[@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies/$entity], [includeAllPreApprovedApplications, False], [resourceScopeType, tenant],
-                       [includes@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes]…}
-```
-
-This command retrieves a specified permission grant policy in Azure AD.
-
+AdditionalProperties : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies/$entity\], \[includeAllPreApprovedApplications, False\], \[resourceScopeType, tenant\],
+                       \[includes@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes\]…}
 
 ## PARAMETERS
 
@@ -153,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -193,6 +195,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -280,9 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -347,8 +366,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy)
-
 

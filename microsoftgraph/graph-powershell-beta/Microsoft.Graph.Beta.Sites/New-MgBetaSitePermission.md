@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgBetaSitePermission
 
 ## SYNOPSIS
 Create a new permission object on a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -23,14 +19,14 @@ New-MgBetaSitePermission -SiteId <String> [-AdditionalProperties <Hashtable>] [-
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
- [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSitePermission -SiteId <String> -BodyParameter <IMicrosoftGraphPermission> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSitePermission -SiteId <String> -BodyParameter <IMicrosoftGraphPermission> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,27 +37,25 @@ New-MgBetaSitePermission -InputObject <ISitesIdentity> [-AdditionalProperties <H
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
- [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphPermission> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphPermission>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-permissions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	roles = @(
@@ -78,11 +72,6 @@ $params = @{
 }
 
 New-MgBetaSitePermission -SiteId $siteId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaSitePermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -218,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -290,6 +294,21 @@ To construct, see NOTES section for LINK properties and create a hash table.
 Type: IMicrosoftGraphSharingLink
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -384,9 +403,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -613,6 +634,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[RecycleBinItemId \<String\>\]: The unique identifier of recycleBinItem
   \[RelationId \<String\>\]: The unique identifier of relation
@@ -673,8 +695,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission)
-
 

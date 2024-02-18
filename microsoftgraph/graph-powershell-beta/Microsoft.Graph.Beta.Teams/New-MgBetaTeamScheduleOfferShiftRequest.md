@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleoffershiftrequest
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an instance of an offerShiftRequest.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,14 @@ New-MgBetaTeamScheduleOfferShiftRequest -TeamId <String> [-AdditionalProperties 
  [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
- [-SenderShiftId <String>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTeamScheduleOfferShiftRequest -TeamId <String> -BodyParameter <IMicrosoftGraphOfferShiftRequest>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,24 +34,26 @@ New-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Addition
  [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
- [-SenderShiftId <String>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an instance of an offerShiftRequest.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	senderShiftId = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29"
@@ -62,10 +62,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleOfferShiftRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,6 +127,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -186,6 +197,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -322,9 +348,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -387,10 +415,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -421,8 +451,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleoffershiftrequest)
-
 

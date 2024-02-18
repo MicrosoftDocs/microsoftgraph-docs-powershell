@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsappxcontentversion
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentVersions in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,15 @@ Update the navigation property contentVersions in deviceAppManagement
 Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion -MobileAppContentId <String>
  -MobileAppId <String> [-AdditionalProperties <Hashtable>]
  [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion -MobileAppContentId <String>
- -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileAppContent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +33,31 @@ Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion -MobileAppC
 Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property contentVersions in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,6 +125,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -176,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -214,9 +255,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -234,16 +277,31 @@ Read-only.
   \[Files \<IMicrosoftGraphMobileAppContentFile\[\]\>\]: The list of files for this app content version.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[AzureStorageUri \<String\>\]: The Azure Storage URI.
-    \[AzureStorageUriExpirationDateTime \<DateTime?\>\]: The time the Azure storage Uri expires.
-    \[CreatedDateTime \<DateTime?\>\]: The time the file was created.
+    \[AzureStorageUri \<String\>\]: Indicates the Azure Storage URI that the file is uploaded to.
+Created by the service upon receiving a valid mobileAppContentFile.
+Read-only.
+    \[AzureStorageUriExpirationDateTime \<DateTime?\>\]: Indicates the date and time when the Azure storage URI expires, in ISO 8601 format.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Read-only.
+    \[CreatedDateTime \<DateTime?\>\]: Indicates created date and time associated with app content file, in ISO 8601 format.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Read-only.
     \[IsCommitted \<Boolean?\>\]: A value indicating whether the file is committed.
-    \[IsDependency \<Boolean?\>\]: Whether the content file is a dependency for the main content file.
+A committed app content file has been fully uploaded and validated by the Intune service.
+TRUE means that app content file is committed, FALSE means that app content file is not committed.
+Defaults to FALSE.
+Read-only.
+    \[IsDependency \<Boolean?\>\]: Indicates whether this content file is a dependency for the main content file.
+TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
+Defaults to FALSE.
     \[IsFrameworkFile \<Boolean?\>\]: A value indicating whether the file is a framework file.
-    \[Manifest \<Byte\[\]\>\]: The manifest information.
-    \[Name \<String\>\]: the file name.
+To be deprecated.
+    \[Manifest \<Byte\[\]\>\]: Indicates the manifest information, containing file metadata.
+    \[Name \<String\>\]: Indicates the name of the file.
     \[Size \<Int64?\>\]: The size of the file prior to encryption.
+To be deprecated, please use sizeInBytes property instead.
     \[SizeEncrypted \<Int64?\>\]: The size of the file after encryption.
+To be deprecated, please use sizeEncryptedInBytes property instead.
     \[SizeEncryptedInBytes \<Int64?\>\]: Indicates the size of the file after encryption, in bytes.
     \[SizeInBytes \<Int64?\>\]: Indicates the original size of the file, in bytes.
     \[UploadState \<String\>\]: Contains properties for upload request states.
@@ -255,16 +313,31 @@ Read-only.
 FILES \<IMicrosoftGraphMobileAppContentFile\[\]\>: The list of files for this app content version.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[AzureStorageUri \<String\>\]: The Azure Storage URI.
-  \[AzureStorageUriExpirationDateTime \<DateTime?\>\]: The time the Azure storage Uri expires.
-  \[CreatedDateTime \<DateTime?\>\]: The time the file was created.
+  \[AzureStorageUri \<String\>\]: Indicates the Azure Storage URI that the file is uploaded to.
+Created by the service upon receiving a valid mobileAppContentFile.
+Read-only.
+  \[AzureStorageUriExpirationDateTime \<DateTime?\>\]: Indicates the date and time when the Azure storage URI expires, in ISO 8601 format.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Read-only.
+  \[CreatedDateTime \<DateTime?\>\]: Indicates created date and time associated with app content file, in ISO 8601 format.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Read-only.
   \[IsCommitted \<Boolean?\>\]: A value indicating whether the file is committed.
-  \[IsDependency \<Boolean?\>\]: Whether the content file is a dependency for the main content file.
+A committed app content file has been fully uploaded and validated by the Intune service.
+TRUE means that app content file is committed, FALSE means that app content file is not committed.
+Defaults to FALSE.
+Read-only.
+  \[IsDependency \<Boolean?\>\]: Indicates whether this content file is a dependency for the main content file.
+TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
+Defaults to FALSE.
   \[IsFrameworkFile \<Boolean?\>\]: A value indicating whether the file is a framework file.
-  \[Manifest \<Byte\[\]\>\]: The manifest information.
-  \[Name \<String\>\]: the file name.
+To be deprecated.
+  \[Manifest \<Byte\[\]\>\]: Indicates the manifest information, containing file metadata.
+  \[Name \<String\>\]: Indicates the name of the file.
   \[Size \<Int64?\>\]: The size of the file prior to encryption.
+To be deprecated, please use sizeInBytes property instead.
   \[SizeEncrypted \<Int64?\>\]: The size of the file after encryption.
+To be deprecated, please use sizeEncryptedInBytes property instead.
   \[SizeEncryptedInBytes \<Int64?\>\]: Indicates the size of the file after encryption, in bytes.
   \[SizeInBytes \<Int64?\>\]: Indicates the original size of the file, in bytes.
   \[UploadState \<String\>\]: Contains properties for upload request states.
@@ -340,9 +413,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsappxcontentversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsappxcontentversion)
-
-
 

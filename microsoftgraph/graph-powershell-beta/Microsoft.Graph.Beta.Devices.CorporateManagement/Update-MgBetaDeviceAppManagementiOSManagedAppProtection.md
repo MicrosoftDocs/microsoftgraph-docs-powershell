@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property iosManagedAppProtections in deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,13 +54,14 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
  [-ProtectInboundDataFromUnknownSources] [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-SimplePinBlocked]
  [-TargetedAppManagementLevels <AppManagementLevel>] [-ThirdPartyKeyboardsBlocked] [-Version <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -108,17 +106,30 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCo
  [-ProtectInboundDataFromUnknownSources] [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-SimplePinBlocked]
  [-TargetedAppManagementLevels <AppManagementLevel>] [-ThirdPartyKeyboardsBlocked] [-Version <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property iosManagedAppProtections in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -686,6 +697,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -1243,6 +1269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectedMessagingRedirectAppType
 Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
@@ -1403,9 +1444,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1517,12 +1560,12 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
-    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+    \[ConfigurationDeployedUserCount \<Int32?\>\]: 
+    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: 
       \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
       \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
-    \[DisplayName \<String\>\]: Not yet documented
-    \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+    \[DisplayName \<String\>\]: 
+    \[LastRefreshTime \<DateTime?\>\]: 
     \[Version \<String\>\]: Version of the entity.
   \[DisableProtectionOfManagedOutboundOpenInData \<Boolean?\>\]: Disable protection of data transferred to other apps through IOS OpenIn option.
 This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.
@@ -1546,13 +1589,13 @@ DEPLOYMENTSUMMARY \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>: The Mana
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
-  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+  \[ConfigurationDeployedUserCount \<Int32?\>\]: 
+  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: 
     \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
     \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: Not yet documented
-  \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+  \[DisplayName \<String\>\]: 
+  \[LastRefreshTime \<DateTime?\>\]: 
   \[Version \<String\>\]: Version of the entity.
 
 EXEMPTEDAPPPROTOCOLS \<IMicrosoftGraphKeyValuePair\[\]\>: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
@@ -1630,9 +1673,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection)
-
-
 

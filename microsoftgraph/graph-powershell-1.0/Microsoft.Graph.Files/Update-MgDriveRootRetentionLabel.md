@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootretentionlabel
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgDriveRootRetentionLabel
@@ -15,23 +14,20 @@ When a retention label is applied to a folder, all the items in the folder are t
 For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootRetentionLabel?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDriveRootRetentionLabel -DriveId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>]
- [-Name <String>] [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Name <String>] [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDriveRootRetentionLabel -DriveId <String> -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDriveRootRetentionLabel -DriveId <String> -BodyParameter <IMicrosoftGraphItemRetentionLabel>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,13 +35,15 @@ Update-MgDriveRootRetentionLabel -DriveId <String> -BodyParameter <IMicrosoftGra
 Update-MgDriveRootRetentionLabel -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
  [-LabelAppliedDateTime <DateTime>] [-Name <String>]
- [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDriveRootRetentionLabel -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,6 +52,18 @@ Retention labels don't need to be published in a retention label policy to be ap
 When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
 For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -100,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -202,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionSettings
 retentionLabelSettings
 To construct, see NOTES section for RETENTIONSETTINGS properties and create a hash table.
@@ -256,9 +296,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -354,9 +396,6 @@ Read-only.
 Read-write.
 
 ## RELATED LINKS
-[Update-MgBetaDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootRetentionLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootretentionlabel)
-
-
 

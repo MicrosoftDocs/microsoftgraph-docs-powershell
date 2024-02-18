@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentity
@@ -19,13 +19,15 @@ New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity -DepOn
  [-DiscoverySource <DiscoverySource>] [-EnrollmentState <EnrollmentState>] [-Id <String>] [-IsDeleted]
  [-IsSupervised] [-LastContactedDateTime <DateTime>] [-Platform <Platform>]
  [-RequestedEnrollmentProfileAssignmentDateTime <DateTime>] [-RequestedEnrollmentProfileId <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,18 +38,31 @@ New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
  [-EnrollmentState <EnrollmentState>] [-Id <String>] [-IsDeleted] [-IsSupervised]
  [-LastContactedDateTime <DateTime>] [-Platform <Platform>]
  [-RequestedEnrollmentProfileAssignmentDateTime <DateTime>] [-RequestedEnrollmentProfileId <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
  -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to importedAppleDeviceIdentities for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -157,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -206,7 +236,6 @@ Accept wildcard characters: False
 
 ### -IsSupervised
 Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/en-us/HT202837
 
 ```yaml
 Type: SwitchParameter
@@ -242,6 +271,21 @@ platform
 Type: Platform
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -333,9 +377,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -352,7 +398,6 @@ Read-only.
   \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
   \[IsDeleted \<Boolean?\>\]: Indicates if the device is deleted from Apple Business Manager
   \[IsSupervised \<Boolean?\>\]: Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/en-us/HT202837
   \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
   \[Platform \<Platform?\>\]: platform
   \[RequestedEnrollmentProfileAssignmentDateTime \<DateTime?\>\]: The time enrollment profile was assigned to the device
@@ -391,6 +436,4 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentity)
-
-
 

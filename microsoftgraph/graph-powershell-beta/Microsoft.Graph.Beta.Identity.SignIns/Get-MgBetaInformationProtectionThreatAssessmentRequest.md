@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaInformationProtectionThreatAssessmentRequest
@@ -12,93 +11,70 @@ ms.prod: security
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaInformationProtectionThreatAssessmentRequest [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySignInsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/threatassessmentrequest-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get the properties of a mail assessment request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 2
 ```
-This example will get the properties of a mail assessment request
-
-### Example 2: Get the properties of an email file assessment request
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 3
 ```
-This example will get the properties of an email file assessment request
-
-### Example 3: Get the properties of a file assessment request
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 4
 ```
-This example will get the properties of a file assessment request
-
-### Example 4: Get the properties of an url assessment request
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 5
 ```
-This example will get the properties of an url assessment request
-
-### Example 5: Expand threat assessment results for a request
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results" 
-
 ```
-This example will expand threat assessment results for a request
 
+Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
 
 ## PARAMETERS
 
@@ -163,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -190,6 +181,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -290,9 +296,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -379,8 +387,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest)
-
 

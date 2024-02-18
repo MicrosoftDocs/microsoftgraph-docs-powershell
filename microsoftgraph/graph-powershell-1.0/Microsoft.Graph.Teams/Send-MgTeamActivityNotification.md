@@ -1,62 +1,62 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Send-MgTeamActivityNotification
 
 ## SYNOPSIS
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+For more information about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
 
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
 Send-MgTeamActivityNotification -TeamId <String> [-ActivityType <String>] [-AdditionalProperties <Hashtable>]
- [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>]
+ [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgTeamActivityNotification -TeamId <String>
  -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
 Send-MgTeamActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgTeamActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
+For more information about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
 
 ## EXAMPLES
-### Example 1: Notify a user about pending finance approval requests
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -81,14 +81,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will notify a user about pending finance approval requests
-
-### Example 2: Notify a user about a channel tab
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -117,14 +113,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will notify a user about a channel tab
-
-### Example 3: Notify a user about a channel tab using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -153,14 +145,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will notify a user about a channel tab using user principal name
-
-### Example 4: Notify a user about an event using custom topic
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -186,14 +174,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will notify a user about an event using custom topic
-
-### Example 5: Notify the team members about pending finance approval requests
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -218,14 +202,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will notify the team members about pending finance approval requests
-
-### Example 6: Notify the channel members about pending finance approval requests
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -251,14 +231,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example will notify the channel members about pending finance approval requests
-
-### Example 7: Notify about pending finance approval requests in channel message reply location
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -286,10 +262,6 @@ $params = @{
 }
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
-
-```
-This example will notify about pending finance approval requests in channel message reply location
-
 
 ## PARAMETERS
 
@@ -354,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -401,6 +388,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipient
 teamworkNotificationRecipient
 
@@ -425,6 +427,21 @@ Parameter Sets: SendExpanded, Send
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamsAppId
+.
+
+```yaml
+Type: String
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -501,9 +518,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -520,6 +539,7 @@ BODYPARAMETER \<IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPo
     \[ContentType \<String\>\]: bodyType
   \[Recipient \<IMicrosoftGraphTeamworkNotificationRecipient\>\]: teamworkNotificationRecipient
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TeamsAppId \<String\>\]: 
   \[TemplateParameters \<IMicrosoftGraphKeyValuePair\[\]\>\]: 
     \[Name \<String\>\]: Name for this key-value pair
     \[Value \<String\>\]: Value for this key-value pair
@@ -585,8 +605,6 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
-
 

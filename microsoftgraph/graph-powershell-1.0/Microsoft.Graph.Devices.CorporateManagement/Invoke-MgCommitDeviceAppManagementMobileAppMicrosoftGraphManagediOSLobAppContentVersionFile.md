@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphmanagedioslobappcontentversionfile
@@ -10,17 +10,15 @@ schema: 2.0.0
 ## SYNOPSIS
 Commits a file of a given app.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CommitExpanded (Default)
 ```
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
- [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Commit
@@ -28,15 +26,16 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContent
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
  -BodyParameter <IPaths25T0QeDeviceappmanagementMobileappsMobileappIdMicrosoftGraphManagedioslobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CommitViaIdentityExpanded
 ```
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CommitViaIdentity
@@ -44,11 +43,24 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContent
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths25T0QeDeviceappmanagementMobileappsMobileappIdMicrosoftGraphManagedioslobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Commits a file of a given app.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -96,6 +108,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -175,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -213,9 +255,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths25T0QeDeviceappmanagementMobileappsMobileappIdMicrosoftGraphManagedioslobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -296,9 +340,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphmanagedioslobappcontentversionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphmanagedioslobappcontentversionfile)
-
-
 

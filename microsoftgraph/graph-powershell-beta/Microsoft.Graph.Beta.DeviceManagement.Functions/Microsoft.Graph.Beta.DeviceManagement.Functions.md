@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 Module Guid: a629509a-ebee-475b-aa2d-5201c47a425c
 Download Help Link: {{ Update Download Link }}
@@ -110,6 +110,18 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementOperationApprovalPolicyApprovableOperation](Get-MgBetaDeviceManagementOperationApprovalPolicyApprovableOperation.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementOperationApprovalPolicyOperationRequiringApproval](Get-MgBetaDeviceManagementOperationApprovalPolicyOperationRequiringApproval.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementOperationApprovalRequestMyRequest](Get-MgBetaDeviceManagementOperationApprovalRequestMyRequest.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementOperationApprovalRequestMyRequestById](Get-MgBetaDeviceManagementOperationApprovalRequestMyRequestById.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementResourceOperationScopeForUser](Get-MgBetaDeviceManagementResourceOperationScopeForUser.md)
 {{ Fill in the Description }}
 
@@ -202,5 +214,4 @@ Locale: en-US
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
 {{ Fill in the Description }}
-
 

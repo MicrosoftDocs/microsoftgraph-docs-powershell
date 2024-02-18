@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property threatIntelligence in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,17 +27,30 @@ Update-MgSecurityThreatIntelligence [-AdditionalProperties <Hashtable>]
  [-SslCertificates <IMicrosoftGraphSecuritySslCertificate[]>]
  [-Subdomains <IMicrosoftGraphSecuritySubdomain[]>] [-Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]
  [-WhoisHistoryRecords <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]
- [-WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property threatIntelligence in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -101,6 +111,21 @@ Parameter Sets: Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -283,6 +308,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificates
 Retrieve details about sslCertificate objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for SSLCERTIFICATES properties and create a hash table.
@@ -400,9 +440,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -4220,9 +4262,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence)
-
-
 

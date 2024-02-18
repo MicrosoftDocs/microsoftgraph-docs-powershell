@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationmobiledevicemanagementauthority
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Set-MgOrganizationMobileDeviceManagementAuthority
@@ -11,27 +10,48 @@ ms.prod: intune
 ## SYNOPSIS
 Set mobile device management authority
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationMobileDeviceManagementAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationMobileDeviceManagementAuthority?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
 ```
-Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId <String> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirectoryManagementIdentity>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Set mobile device management authority
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
+
+Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId $organizationId
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -58,6 +78,21 @@ Parameter Sets: Set
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -101,8 +136,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -137,9 +174,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaOrganizationMobileDeviceManagementAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationMobileDeviceManagementAuthority?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationmobiledevicemanagementauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationmobiledevicemanagementauthority)
-
-
 

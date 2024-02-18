@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
 Module Guid: 467f54f2-44a8-4993-8e75-b96c3e443098
 Download Help Link: {{ Update Download Link }}
@@ -69,6 +69,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
+{{ Fill in the Description }}
+
+### [Get-MgApplicationByUniqueName](Get-MgApplicationByUniqueName.md)
 {{ Fill in the Description }}
 
 ### [Get-MgApplicationCount](Get-MgApplicationCount.md)
@@ -147,6 +150,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgApplicationSynchronizationJob](Get-MgApplicationSynchronizationJob.md)
+{{ Fill in the Description }}
+
+### [Get-MgApplicationSynchronizationJobBulkUpload](Get-MgApplicationSynchronizationJobBulkUpload.md)
+{{ Fill in the Description }}
+
+### [Get-MgApplicationSynchronizationJobBulkUploadContent](Get-MgApplicationSynchronizationJobBulkUploadContent.md)
 {{ Fill in the Description }}
 
 ### [Get-MgApplicationSynchronizationJobCount](Get-MgApplicationSynchronizationJobCount.md)
@@ -407,6 +416,12 @@ Locale: en-US
 ### [Get-MgServicePrincipalSynchronizationJob](Get-MgServicePrincipalSynchronizationJob.md)
 {{ Fill in the Description }}
 
+### [Get-MgServicePrincipalSynchronizationJobBulkUpload](Get-MgServicePrincipalSynchronizationJobBulkUpload.md)
+{{ Fill in the Description }}
+
+### [Get-MgServicePrincipalSynchronizationJobBulkUploadContent](Get-MgServicePrincipalSynchronizationJobBulkUploadContent.md)
+{{ Fill in the Description }}
+
 ### [Get-MgServicePrincipalSynchronizationJobCount](Get-MgServicePrincipalSynchronizationJobCount.md)
 {{ Fill in the Description }}
 
@@ -611,6 +626,9 @@ Locale: en-US
 ### [Remove-MgApplicationByAppId](Remove-MgApplicationByAppId.md)
 {{ Fill in the Description }}
 
+### [Remove-MgApplicationByUniqueName](Remove-MgApplicationByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 {{ Fill in the Description }}
 
@@ -630,6 +648,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgApplicationSynchronizationJob](Remove-MgApplicationSynchronizationJob.md)
+{{ Fill in the Description }}
+
+### [Remove-MgApplicationSynchronizationJobBulkUpload](Remove-MgApplicationSynchronizationJobBulkUpload.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgApplicationSynchronizationJobSchema](Remove-MgApplicationSynchronizationJobSchema.md)
@@ -701,6 +722,9 @@ Locale: en-US
 ### [Remove-MgServicePrincipalSynchronizationJob](Remove-MgServicePrincipalSynchronizationJob.md)
 {{ Fill in the Description }}
 
+### [Remove-MgServicePrincipalSynchronizationJobBulkUpload](Remove-MgServicePrincipalSynchronizationJobBulkUpload.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgServicePrincipalSynchronizationJobSchema](Remove-MgServicePrincipalSynchronizationJobSchema.md)
 {{ Fill in the Description }}
 
@@ -731,6 +755,9 @@ Locale: en-US
 ### [Set-MgApplicationSynchronization](Set-MgApplicationSynchronization.md)
 {{ Fill in the Description }}
 
+### [Set-MgApplicationSynchronizationJobBulkUploadContent](Set-MgApplicationSynchronizationJobBulkUploadContent.md)
+{{ Fill in the Description }}
+
 ### [Set-MgApplicationSynchronizationSecret](Set-MgApplicationSynchronizationSecret.md)
 {{ Fill in the Description }}
 
@@ -738,6 +765,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgServicePrincipalSynchronization](Set-MgServicePrincipalSynchronization.md)
+{{ Fill in the Description }}
+
+### [Set-MgServicePrincipalSynchronizationJobBulkUploadContent](Set-MgServicePrincipalSynchronizationJobBulkUploadContent.md)
 {{ Fill in the Description }}
 
 ### [Set-MgServicePrincipalSynchronizationSecret](Set-MgServicePrincipalSynchronizationSecret.md)
@@ -773,6 +803,9 @@ Locale: en-US
 ### [Update-MgApplicationByAppId](Update-MgApplicationByAppId.md)
 {{ Fill in the Description }}
 
+### [Update-MgApplicationByUniqueName](Update-MgApplicationByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Update-MgApplicationExtensionProperty](Update-MgApplicationExtensionProperty.md)
 {{ Fill in the Description }}
 
@@ -780,6 +813,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgApplicationSynchronizationJob](Update-MgApplicationSynchronizationJob.md)
+{{ Fill in the Description }}
+
+### [Update-MgApplicationSynchronizationJobBulkUpload](Update-MgApplicationSynchronizationJobBulkUpload.md)
 {{ Fill in the Description }}
 
 ### [Update-MgApplicationSynchronizationJobSchema](Update-MgApplicationSynchronizationJobSchema.md)
@@ -827,6 +863,9 @@ Locale: en-US
 ### [Update-MgServicePrincipalSynchronizationJob](Update-MgServicePrincipalSynchronizationJob.md)
 {{ Fill in the Description }}
 
+### [Update-MgServicePrincipalSynchronizationJobBulkUpload](Update-MgServicePrincipalSynchronizationJobBulkUpload.md)
+{{ Fill in the Description }}
+
 ### [Update-MgServicePrincipalSynchronizationJobSchema](Update-MgServicePrincipalSynchronizationJobSchema.md)
 {{ Fill in the Description }}
 
@@ -844,5 +883,4 @@ Locale: en-US
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

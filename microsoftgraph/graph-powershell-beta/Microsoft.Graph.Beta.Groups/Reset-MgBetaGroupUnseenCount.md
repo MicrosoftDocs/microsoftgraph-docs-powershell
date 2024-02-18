@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount
@@ -11,20 +11,18 @@ schema: 2.0.0
 Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Reset-MgGroupUnseenCount](/powershell/module/Microsoft.Graph.Groups/Reset-MgGroupUnseenCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Reset (Default)
 ```
-Reset-MgBetaGroupUnseenCount -GroupId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Reset-MgBetaGroupUnseenCount -GroupId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgBetaGroupUnseenCount -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Reset-MgBetaGroupUnseenCount -InputObject <IGroupsIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +30,12 @@ Reset the unseenCount of all the posts that the current user hasn't seen since t
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Using the Reset-MgBetaGroupUnseenCount Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Reset-MgBetaGroupUnseenCount -GroupId $groupId
 ```
-This example shows how to use the Reset-MgBetaGroupUnseenCount Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -54,6 +51,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -84,6 +96,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,9 +152,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -164,6 +193,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
   \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
@@ -182,8 +212,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Reset-MgGroupUnseenCount](/powershell/module/Microsoft.Graph.Groups/Reset-MgGroupUnseenCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount)
-
 

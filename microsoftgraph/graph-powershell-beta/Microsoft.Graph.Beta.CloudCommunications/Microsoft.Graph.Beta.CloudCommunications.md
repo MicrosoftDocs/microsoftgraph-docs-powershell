@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 Module Guid: f07aeb05-f355-4116-a587-f725d4797aa2
 Download Help Link: {{ Update Download Link }}
@@ -107,7 +107,13 @@ Locale: en-US
 ### [Get-MgBetaCommunicationOnlineMeetingBroadcastRecording](Get-MgBetaCommunicationOnlineMeetingBroadcastRecording.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaCommunicationOnlineMeetingByJoinWebUrl](Get-MgBetaCommunicationOnlineMeetingByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaCommunicationOnlineMeetingCount](Get-MgBetaCommunicationOnlineMeetingCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl](Get-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecording](Get-MgBetaCommunicationOnlineMeetingRecording.md)
@@ -186,6 +192,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingBroadcastRecording](Get-MgBetaUserOnlineMeetingBroadcastRecording.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserOnlineMeetingByJoinWebUrl](Get-MgBetaUserOnlineMeetingByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingCount](Get-MgBetaUserOnlineMeetingCount.md)
@@ -377,6 +386,9 @@ Locale: en-US
 ### [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaCommunicationOnlineMeetingByJoinWebUrl](Remove-MgBetaCommunicationOnlineMeetingByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaCommunicationOnlineMeetingRecording](Remove-MgBetaCommunicationOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
@@ -404,6 +416,9 @@ Locale: en-US
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserOnlineMeetingByJoinWebUrl](Remove-MgBetaUserOnlineMeetingByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserOnlineMeetingRecording](Remove-MgBetaUserOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
@@ -426,6 +441,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Send-MgBetaCommunicationCallDtmfTone](Send-MgBetaCommunicationCallDtmfTone.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm](Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentSm](Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentSm.md)
 {{ Fill in the Description }}
 
 ### [Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm](Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm.md)
@@ -527,6 +548,9 @@ Locale: en-US
 ### [Update-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Update-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaCommunicationOnlineMeetingByJoinWebUrl](Update-MgBetaCommunicationOnlineMeetingByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaCommunicationOnlineMeetingRecording](Update-MgBetaCommunicationOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
@@ -554,6 +578,9 @@ Locale: en-US
 ### [Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaUserOnlineMeetingByJoinWebUrl](Update-MgBetaUserOnlineMeetingByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaUserOnlineMeetingRecording](Update-MgBetaUserOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
@@ -571,5 +598,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
 {{ Fill in the Description }}
-
 

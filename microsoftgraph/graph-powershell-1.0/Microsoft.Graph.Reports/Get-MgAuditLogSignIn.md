@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogSignIn
@@ -12,28 +11,25 @@ ms.prod: identity-and-access-reports
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgAuditLogSignIn [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgAuditLogSignIn -SignInId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,28 +37,20 @@ Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 ## EXAMPLES
-### Example 1: List all sign-ins
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgAuditLogSignIn
 
+### EXAMPLE 2
 ```
-This example will list all sign-ins
-
-### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'
-
-```powershell
-
 Import-Module Microsoft.Graph.Reports
-
-Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10 
-
 ```
-This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'graph'
 
+Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10
 
 ## PARAMETERS
 
@@ -127,6 +115,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -154,6 +157,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -254,9 +272,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSignIn
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -272,6 +292,8 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[OperationId \<String\>\]: The unique identifier of operation
   \[Period \<String\>\]: Usage: period='{period}'
   \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
   \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
@@ -286,8 +308,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin)
-
 

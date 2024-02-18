@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgBetaUserOnenoteNotebookSectionGroup
 
 ## SYNOPSIS
 Create a new section group in the specified notebook.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,13 +20,15 @@ New-MgBetaUserOnenoteNotebookSectionGroup -NotebookId <String> -UserId <String>
  [-LastModifiedDateTime <DateTime>] [-ParentNotebook <IMicrosoftGraphNotebook>]
  [-ParentSectionGroup <IMicrosoftGraphSectionGroup>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
  [-SectionGroupsUrl <String>] [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>]
- [-Self <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Self <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserOnenoteNotebookSectionGroup -NotebookId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSectionGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSectionGroup> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,28 +38,26 @@ New-MgBetaUserOnenoteNotebookSectionGroup -InputObject <INotesIdentity> [-Additi
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSectionGroup <IMicrosoftGraphSectionGroup>]
  [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-SectionGroupsUrl <String>]
- [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>] [-Self <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sections <IMicrosoftGraphOnenoteSection[]>] [-SectionsUrl <String>] [-Self <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
- -BodyParameter <IMicrosoftGraphSectionGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSectionGroup> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new section group in the specified notebook.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-post-sectiongroups-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Notes
+```
 
 $params = @{
 	displayName = "Section group name"
@@ -69,10 +65,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserOnenoteNotebookSectionGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -150,6 +142,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -255,6 +262,21 @@ To construct, see NOTES section for PARENTSECTIONGROUP properties and create a h
 Type: IMicrosoftGraphSectionGroup
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -399,9 +421,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSectionGroup
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSectionGroup
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -537,6 +561,8 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
   \[SiteId \<String\>\]: The unique identifier of site
   \[UserId \<String\>\]: The unique identifier of user
@@ -995,8 +1021,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgUserOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebooksectiongroup)
-
 

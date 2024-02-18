@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp
@@ -8,12 +8,9 @@ schema: 2.0.0
 # New-MgBetaAppCatalogTeamApp
 
 ## SYNOPSIS
-Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -21,45 +18,39 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 ```
 New-MgBetaAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
  [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
- [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExternalId <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
-$params = [Zip file containing a Teams app package]
+$params = \[Zip file containing a Teams app package\]
 
 
 New-MgBetaAppCatalogTeamApp -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-New-MgBetaAppCatalogTeamApp -Requiresreview true 
-
 ```
-This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
 
+New-MgBetaAppCatalogTeamApp -Requiresreview true
 
 ## PARAMETERS
 
@@ -155,6 +146,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -163,6 +169,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -208,9 +229,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsApp
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsApp
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -257,6 +280,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[BotId \<String\>\]: 
+      \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+    \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IconUrl \<String\>\]: 
+      \[OfficeUiFabricIconName \<String\>\]: 
+    \[PickerGroupId \<String\>\]: 
   \[Description \<String\>\]: 
   \[DisplayName \<String\>\]: The name of the app provided by the app developer.
   \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -310,6 +350,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[BotId \<String\>\]: 
+        \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+      \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+      \[Description \<String\>\]: 
+      \[DisplayName \<String\>\]: 
+      \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[IconUrl \<String\>\]: 
+        \[OfficeUiFabricIconName \<String\>\]: 
+      \[PickerGroupId \<String\>\]: 
     \[Description \<String\>\]: 
     \[DisplayName \<String\>\]: The name of the app provided by the app developer.
     \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -323,8 +380,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
-
 

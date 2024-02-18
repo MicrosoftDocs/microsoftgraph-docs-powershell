@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerolescope
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAccessPackageResourceRoleScope
@@ -13,9 +12,6 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23,13 +19,14 @@ Once you add the resource role scope to the access package, the user will receiv
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Role <IMicrosoftGraphAccessPackageResourceRole>] [-Scope <IMicrosoftGraphAccessPackageResourceScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,13 +34,14 @@ New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <Stri
 New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Role <IMicrosoftGraphAccessPackageResourceRole>] [-Scope <IMicrosoftGraphAccessPackageResourceScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +49,17 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-post-resourcerolescopes-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -118,6 +125,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -147,6 +169,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -220,9 +257,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -248,6 +287,13 @@ For a SharePoint Online site, the originId will be the sequence number of the ro
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+        \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+        \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -257,6 +303,9 @@ Read-only.
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+        \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
         \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -377,6 +426,13 @@ For a SharePoint Online site, the originId will be the sequence number of the ro
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+      \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+      \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -386,6 +442,9 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
       \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -435,6 +494,13 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+      \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+      \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -444,6 +510,9 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
       \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -481,9 +550,6 @@ Nullable.
 Supports $expand.
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerolescope)
-
-
 

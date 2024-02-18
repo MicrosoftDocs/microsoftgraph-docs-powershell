@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgBetaSecurityAlert
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,13 +33,14 @@ Update-MgBetaSecurityAlert -AlertId <String> [-ActivityGroupName <String>] [-Add
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -66,31 +63,30 @@ Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName 
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/alert-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -106,19 +102,15 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Request with Prefer header
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -134,11 +126,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -440,6 +427,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HistoryStates
 A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
 To construct, see NOTES section for HISTORYSTATES properties and create a hash table.
@@ -623,6 +625,21 @@ To construct, see NOTES section for PROCESSES properties and create a hash table
 Type: IMicrosoftGraphProcess[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -875,9 +892,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1142,6 +1161,7 @@ Recommended value range of 0-1, which equates to a percentage.
 
 INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[AlertId \<String\>\]: The unique identifier of alert
+  \[AnalyzedEmailId \<String\>\]: The unique identifier of analyzedEmail
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
@@ -1366,8 +1386,6 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
   \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelemail
@@ -13,19 +13,18 @@ Microsoft Teams doesn't automatically provision an email address for a channel b
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelEmail?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Provision (Default)
 ```
-New-MgBetaTeamPrimaryChannelEmail -TeamId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamPrimaryChannelEmail -TeamId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ProvisionViaIdentity
 ```
-New-MgBetaTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +35,32 @@ To remove the email address of a channel, use the removeEmail method.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -51,6 +75,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -106,8 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -135,10 +176,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -157,8 +200,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelEmail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelemail)
-
 

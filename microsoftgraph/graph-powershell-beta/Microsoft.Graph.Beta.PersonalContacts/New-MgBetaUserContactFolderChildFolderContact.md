@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserContactFolderChildFolderContact
 
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,14 +28,15 @@ New-MgBetaUserContactFolderChildFolderContact -ContactFolderId <String> -Contact
  [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
- [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserContactFolderChildFolderContact -ContactFolderId <String> -ContactFolderId1 <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -57,23 +54,31 @@ New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIde
  [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
- [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-contacts-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -388,6 +393,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -667,6 +687,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the contact.
 Read-only.
@@ -859,9 +894,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
 ### Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1045,8 +1082,6 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
   \[Type \<String\>\]: websiteType
 
 ## RELATED LINKS
-[New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact)
-
 

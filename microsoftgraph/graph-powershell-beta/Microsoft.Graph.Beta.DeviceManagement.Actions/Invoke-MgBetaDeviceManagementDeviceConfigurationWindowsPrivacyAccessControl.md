@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol
@@ -16,23 +16,26 @@ Invoke action windowsPrivacyAccessControls
 ```
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>]
- [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Access1
 ```
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -DeviceConfigurationId <String>
  -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AccessViaIdentityExpanded1
 ```
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AccessViaIdentity1
@@ -40,11 +43,28 @@ Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action windowsPrivacyAccessControls
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -94,6 +114,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -121,6 +156,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -179,9 +229,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -244,6 +296,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
   \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
@@ -267,6 +320,4 @@ When set, the access level applies to the specified application.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol)
-
-
 

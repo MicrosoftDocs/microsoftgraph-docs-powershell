@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserMessageAttachment
 
 ## SYNOPSIS
 Use this API to add an attachment to a message.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageAttachment?view=graph-powershell-1.0)
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a new\nmessage that is being drafted, or created and sent on the fly.
 
 ## SYNTAX
 
@@ -22,41 +18,41 @@ You can add an attachment to an existing message by posting to its attachments c
 ```
 New-MgBetaUserMessageAttachment -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserMessageAttachment -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserMessageAttachment -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserMessageAttachment -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphAttachment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Use this API to add an attachment to a message.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-post-attachments-permissions.md)]
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a new\nmessage that is being drafted, or created and sent on the fly.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.OutlookServices.FileAttachment"
@@ -69,11 +65,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -120,6 +111,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -217,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Size
 The length of the attachment in bytes.
 
@@ -285,9 +306,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -319,8 +342,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachment)
-
 

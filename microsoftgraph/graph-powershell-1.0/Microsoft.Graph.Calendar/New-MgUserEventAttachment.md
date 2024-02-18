@@ -1,19 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserEventAttachment
 
 ## SYNOPSIS
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachment?view=graph-powershell-beta)
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ## SYNTAX
 
@@ -21,40 +18,41 @@ An attachment can be one of the following types: All these types of attachment r
 ```
 New-MgUserEventAttachment -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserEventAttachment -EventId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserEventAttachment -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphAttachment>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-post-attachments-permissions.md)]
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
@@ -64,15 +62,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
@@ -85,11 +79,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the New-MgUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -151,6 +140,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -232,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Size
 The length of the attachment in bytes.
 
@@ -300,9 +319,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -334,8 +355,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventattachment)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdrivelistsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeUserDriveListSubscription
@@ -11,25 +10,39 @@ ms.prod: change-notifications
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReauthorizeUserDriveListSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reauthorize (Default)
 ```
 Invoke-MgReauthorizeUserDriveListSubscription -DriveId <String> -SubscriptionId <String> -UserId <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
 ```
-Invoke-MgReauthorizeUserDriveListSubscription -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgReauthorizeUserDriveListSubscription -InputObject <IUsersActionsIdentity> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -45,6 +58,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -75,6 +103,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -146,9 +189,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -178,6 +223,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
@@ -187,9 +233,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaReauthorizeUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReauthorizeUserDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdrivelistsubscription)
-
-
 

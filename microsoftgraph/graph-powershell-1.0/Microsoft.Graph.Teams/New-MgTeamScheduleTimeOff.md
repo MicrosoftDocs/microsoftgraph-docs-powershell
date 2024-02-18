@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleTimeOff
@@ -11,71 +10,63 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgTeamScheduleTimeOff -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamScheduleTimeOff -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOff> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgTeamScheduleTimeOff -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOff> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timesoff-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 	sharedTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "white"
 	}
 	draftTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "pink"
 	}
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
-
 
 ## PARAMETERS
 
@@ -126,6 +117,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -166,6 +172,21 @@ To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash 
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -259,9 +280,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -355,8 +378,6 @@ SHAREDTIMEOFF \<IMicrosoftGraphTimeOffItem\>: timeOffItem
 Required.
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff)
-
 

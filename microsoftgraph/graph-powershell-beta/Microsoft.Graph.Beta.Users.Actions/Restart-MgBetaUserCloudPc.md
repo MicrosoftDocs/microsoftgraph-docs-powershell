@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausercloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Restart-MgBetaUserCloudPc
@@ -15,31 +14,27 @@ Reboot a specific Cloud PC.
 
 ### Reboot (Default)
 ```
-Restart-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Restart-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RebootViaIdentity
 ```
-Restart-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Restart-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reboot a specific Cloud PC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Restart-MgBetaUserCloudPc Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Restart-MgBetaUserCloudPc -UserId $userId -CloudPCId $cloudPCId
 ```
-This example shows how to use the Restart-MgBetaUserCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -55,6 +50,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -85,6 +95,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -141,9 +166,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -169,6 +196,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
   \[EventId \<String\>\]: The unique identifier of event
   \[EventId1 \<String\>\]: The unique identifier of event
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[ListItemId \<String\>\]: The unique identifier of listItem
   \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
   \[MailFolderId \<String\>\]: The unique identifier of mailFolder
@@ -195,5 +223,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausercloudpc)
-
 

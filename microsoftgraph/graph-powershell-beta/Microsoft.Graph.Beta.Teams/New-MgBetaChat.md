@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new chat object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,23 +23,24 @@ New-MgBetaChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-Create
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new chat object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -66,14 +64,10 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -105,14 +99,10 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -141,14 +131,10 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -179,10 +165,6 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -245,6 +227,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -413,6 +410,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tabs
 A collection of all the tabs in the chat.
 Nullable.
@@ -532,9 +544,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -597,6 +611,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           \[Device \<IMicrosoftGraphIdentity\>\]: identity
           \[User \<IMicrosoftGraphIdentity\>\]: identity
+        \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+          \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+          \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[BotId \<String\>\]: 
+            \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+          \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+          \[Description \<String\>\]: 
+          \[DisplayName \<String\>\]: 
+          \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[IconUrl \<String\>\]: 
+            \[OfficeUiFabricIconName \<String\>\]: 
+          \[PickerGroupId \<String\>\]: 
         \[Description \<String\>\]: 
         \[DisplayName \<String\>\]: The name of the app provided by the app developer.
         \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -886,6 +917,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
+      \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[BotId \<String\>\]: 
+          \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+        \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+        \[Description \<String\>\]: 
+        \[DisplayName \<String\>\]: 
+        \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[IconUrl \<String\>\]: 
+          \[OfficeUiFabricIconName \<String\>\]: 
+        \[PickerGroupId \<String\>\]: 
       \[Description \<String\>\]: 
       \[DisplayName \<String\>\]: The name of the app provided by the app developer.
       \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -1310,6 +1358,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
+      \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[BotId \<String\>\]: 
+          \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+        \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+        \[Description \<String\>\]: 
+        \[DisplayName \<String\>\]: 
+        \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[IconUrl \<String\>\]: 
+          \[OfficeUiFabricIconName \<String\>\]: 
+        \[PickerGroupId \<String\>\]: 
       \[Description \<String\>\]: 
       \[DisplayName \<String\>\]: The name of the app provided by the app developer.
       \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -1331,8 +1396,6 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat)
-
 

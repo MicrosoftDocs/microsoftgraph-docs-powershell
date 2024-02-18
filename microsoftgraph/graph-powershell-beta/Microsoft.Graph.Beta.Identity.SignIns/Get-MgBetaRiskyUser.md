@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser
@@ -10,63 +10,56 @@ schema: 2.0.0
 ## SYNOPSIS
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaRiskyUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaRiskyUser -RiskyUserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
 ## EXAMPLES
-### Example 1: List all risky users
-```powershell
+
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUser | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                        RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                        --------- -----------------------
 Alex Su         adminConfirmedUserCompromised     high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised     high      5/30/2022 12:44:25 AM
 Jason Mayer     userPerformedSecuredPasswordReset none      7/4/2022 4:36:44 AM
+
+### EXAMPLE 2
 ```
-
-This command returns all risky users
-
-### Example 2: List all risky users by RiskLevel
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUser -Filter "RiskLevel ne 'none'" | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                    RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                    --------- -----------------------
 Alex Su         adminConfirmedUserCompromised high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised high      5/30/2022 12:44:25 AM
-```
-
-This command retruns all risky users whose risk level is not none
-
 
 ## PARAMETERS
 
@@ -131,6 +124,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -158,6 +166,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -258,9 +281,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUser
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -347,8 +372,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser)
-
 

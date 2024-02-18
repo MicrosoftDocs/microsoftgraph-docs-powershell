@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostport
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property hostPorts in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostPort?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,13 +19,15 @@ Update-MgBetaSecurityThreatIntelligenceHostPort -HostPortId <String> [-Additiona
  [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastScanDateTime <DateTime>]
  [-LastSeenDateTime <DateTime>] [-MostRecentSslCertificate <IMicrosoftGraphSecuritySslCertificate>]
  [-Port <Int32>] [-Protocol <String>] [-Services <IMicrosoftGraphSecurityHostPortComponent[]>]
- [-Status <String>] [-TimesObserved <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-TimesObserved <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceHostPort -HostPortId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostPort> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostPort> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +37,31 @@ Update-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity>
  [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
  [-LastScanDateTime <DateTime>] [-LastSeenDateTime <DateTime>]
  [-MostRecentSslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Port <Int32>] [-Protocol <String>]
- [-Services <IMicrosoftGraphSecurityHostPortComponent[]>] [-Status <String>] [-TimesObserved <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Services <IMicrosoftGraphSecurityHostPortComponent[]>] [-Status <String>] [-TimesObserved <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostPort> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostPort> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hostPorts in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,6 +126,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -245,6 +272,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Protocol
 hostPortProtocol
 
@@ -344,9 +386,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostPort
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostPort
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -923,6 +967,7 @@ Read-only.
 
 INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[AlertId \<String\>\]: The unique identifier of alert
+  \[AnalyzedEmailId \<String\>\]: The unique identifier of analyzedEmail
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
@@ -1558,9 +1603,6 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostPort?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostport)
-
-
 

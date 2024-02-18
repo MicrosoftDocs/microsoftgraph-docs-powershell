@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess
@@ -16,18 +16,31 @@ Invoke function getMetricsForMfaSignInSuccess
 ```
 Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess -ExclusiveIntervalEndDateTime <DateTime>
  -InclusiveIntervalStartDateTime <DateTime> [-AggregationIntervalInMinutes <Int32>] [-Count] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess -InputObject <IReportsIdentity>
  [-AggregationIntervalInMinutes <Int32>] [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Top <Int32>] [<CommonParameters>]
+ [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getMetricsForMfaSignInSuccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -91,6 +104,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InclusiveIntervalStartDateTime
 Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
 
@@ -119,6 +147,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -173,9 +216,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceActivityValueMetric
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -204,9 +249,11 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
   \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
+  \[ManifestId \<String\>\]: The unique identifier of manifest
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
   \[MonthlyInactiveUsersMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersMetric
+  \[OperationId \<String\>\]: The unique identifier of operation
   \[Period \<String\>\]: Usage: period='{period}'
   \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
   \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
@@ -229,6 +276,4 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess)
-
-
 

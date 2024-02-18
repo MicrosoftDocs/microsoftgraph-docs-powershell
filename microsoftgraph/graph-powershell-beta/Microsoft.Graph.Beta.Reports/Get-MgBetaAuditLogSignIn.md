@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaAuditLogSignIn
@@ -11,67 +10,52 @@ ms.prod: identity-and-access-reports
 ## SYNOPSIS
 Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaAuditLogSignIn [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaAuditLogSignIn -SignInId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## EXAMPLES
-### Example 1: List all sign-ins
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
+```
 
 Get-MgBetaAuditLogSignIn
 
+### EXAMPLE 2
 ```
-This example will list all sign-ins
-
-### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Azure'
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10 
-
 ```
-This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'azure'
 
-### Example 3: Retrieve the first 10 sign-ins where the signInEventType is not interactiveUser starting with the latest sign-in
+Get-MgBetaAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10 
-
 ```
-This example will retrieve the first 10 sign-ins where the signineventtype is not interactiveuser starting with the latest sign-in
 
+Get-MgBetaAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10
 
 ## PARAMETERS
 
@@ -136,6 +120,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -163,6 +162,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -263,9 +277,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSignIn
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -294,9 +310,11 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
   \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
+  \[ManifestId \<String\>\]: The unique identifier of manifest
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
   \[MonthlyInactiveUsersMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersMetric
+  \[OperationId \<String\>\]: The unique identifier of operation
   \[Period \<String\>\]: Usage: period='{period}'
   \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
   \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
@@ -317,8 +335,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
-
 

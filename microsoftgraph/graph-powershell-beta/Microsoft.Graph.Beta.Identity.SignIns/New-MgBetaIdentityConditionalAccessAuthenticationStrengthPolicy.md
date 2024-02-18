@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy
@@ -18,18 +18,35 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy [-AdditionalProp
  [-AllowedCombinations <String[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-PolicyType <String>] [-RequirementsSatisfied <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-PolicyType <String>] [-RequirementsSatisfied <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy
- -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to policies for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -141,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -179,6 +211,21 @@ authenticationStrengthPolicyType
 Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -239,9 +286,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -257,8 +306,8 @@ Read-only.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
-The only possible value for fido2combinationConfigurations is 'fido2'.
+Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
+For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
   \[CreatedDateTime \<DateTime?\>\]: The datetime when this policy was created.
   \[Description \<String\>\]: The human-readable description of this policy.
   \[DisplayName \<String\>\]: The human-readable display name of this policy.
@@ -271,12 +320,10 @@ COMBINATIONCONFIGURATIONS \<IMicrosoftGraphAuthenticationCombinationConfiguratio
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
-The only possible value for fido2combinationConfigurations is 'fido2'.
+Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
+For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy)
-
-
 

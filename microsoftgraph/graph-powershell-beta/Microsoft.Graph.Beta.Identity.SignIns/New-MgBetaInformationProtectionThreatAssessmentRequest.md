@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaInformationProtectionThreatAssessmentRequest
@@ -12,9 +11,6 @@ ms.prod: security
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,28 +18,26 @@ A threat assessment request can be one of the following types:
 New-MgBetaInformationProtectionThreatAssessmentRequest [-AdditionalProperties <Hashtable>] [-Category <String>]
  [-ContentType <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-ExpectedAssessment <String>] [-Id <String>] [-RequestSource <String>]
- [-Results <IMicrosoftGraphThreatAssessmentResult[]>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Results <IMicrosoftGraphThreatAssessmentResult[]>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGraphThreatAssessmentRequest>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create a mail assessment request
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mailAssessmentRequest"
@@ -54,15 +48,11 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an email assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailFileAssessmentRequest"
@@ -73,15 +63,11 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create a file assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAssessmentRequest"
@@ -92,15 +78,11 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create an url assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlAssessmentRequest"
@@ -110,11 +92,6 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
-```
-This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -226,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -234,6 +226,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -327,9 +334,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -391,8 +400,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[ResultType \<String\>\]: threatAssessmentResultType
 
 ## RELATED LINKS
-[New-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionthreatassessmentrequest)
-
 

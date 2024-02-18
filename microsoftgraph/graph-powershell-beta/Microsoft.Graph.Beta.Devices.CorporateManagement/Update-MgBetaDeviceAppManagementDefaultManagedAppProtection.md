@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property defaultManagedAppProtections in deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,13 +75,15 @@ Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppPr
  [-RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType>]
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked]
  [-ThirdPartyKeyboardsBlocked] [-Version <String>] [-WarnAfterCompanyPortalUpdateDeferralInDays <Int32>]
- [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -150,17 +149,31 @@ Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevic
  [-RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType>]
  [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked]
  [-ThirdPartyKeyboardsBlocked] [-Version <String>] [-WarnAfterCompanyPortalUpdateDeferralInDays <Int32>]
- [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property defaultManagedAppProtections in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1074,6 +1087,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -1711,6 +1739,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProtectedMessagingRedirectAppType
 Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
@@ -1979,9 +2022,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -2099,12 +2144,12 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
-    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+    \[ConfigurationDeployedUserCount \<Int32?\>\]: 
+    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: 
       \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
       \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
-    \[DisplayName \<String\>\]: Not yet documented
-    \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+    \[DisplayName \<String\>\]: 
+    \[LastRefreshTime \<DateTime?\>\]: 
     \[Version \<String\>\]: Version of the entity.
   \[DeviceLockRequired \<Boolean?\>\]: Defines if any kind of lock must be required on device.
 (android only)
@@ -2165,13 +2210,13 @@ DEPLOYMENTSUMMARY \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>: The Mana
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
-  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+  \[ConfigurationDeployedUserCount \<Int32?\>\]: 
+  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: 
     \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
     \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: Not yet documented
-  \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+  \[DisplayName \<String\>\]: 
+  \[LastRefreshTime \<DateTime?\>\]: 
   \[Version \<String\>\]: Version of the entity.
 
 EXEMPTEDAPPPACKAGES \<IMicrosoftGraphKeyValuePair\[\]\>: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
@@ -2255,9 +2300,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotection)
-
-
 

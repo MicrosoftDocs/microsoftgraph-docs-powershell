@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Update-MgBetaExternalConnection
 
 ## SYNOPSIS
 Update the properties of an externalConnection.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,14 +24,15 @@ Update-MgBetaExternalConnection -ExternalConnectionId <String>
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
- [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalConnection -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,27 +47,26 @@ Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
- [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an externalConnection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	name = "Contoso HR Service Tickets"
@@ -78,11 +74,6 @@ $params = @{
 }
 
 Update-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaExternalConnection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -243,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -333,6 +339,21 @@ To construct, see NOTES section for OPERATIONS properties and create a hash tabl
 Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -442,9 +463,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -805,8 +828,6 @@ Required.
       \[ValuesJoinedBy \<String\>\]: binaryOperator
 
 ## RELATED LINKS
-[Update-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection)
-
 

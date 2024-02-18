@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgDevice
 
 ## SYNOPSIS
 Create and register a new device in the organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,37 +20,36 @@ New-MgDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-DeviceId <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
  [-DisplayName <String>] [-EnrollmentProfileName <String>] [-Extensions <IMicrosoftGraphExtension[]>]
  [-Id <String>] [-IsCompliant] [-IsManaged] [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-OperatingSystem <String>]
- [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-ProfileType <String>]
- [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
- [-RegistrationDateTime <DateTime>] [-SystemLabels <String[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
+ [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>]
+ [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
+ [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>]
+ [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create and register a new device in the organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-devices-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	accountEnabled = $false
 	alternativeSecurityIds = @(
 		@{
 			type = 2
-			key = [System.Text.Encoding]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
+			key = \[System.Text.Encoding\]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	)
 	deviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
@@ -64,11 +59,6 @@ $params = @{
 }
 
 New-MgDevice -BodyParameter $params
-```
-This example shows how to use the New-MgDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -324,6 +314,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -429,6 +434,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OnPremisesSecurityIdentifier
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OnPremisesSyncEnabled
 true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -505,6 +525,21 @@ Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -660,9 +695,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -744,6 +781,7 @@ Always null when the object hasn't been deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+  \[OnPremisesSecurityIdentifier \<String\>\]: 
   \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -826,8 +864,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
-
 

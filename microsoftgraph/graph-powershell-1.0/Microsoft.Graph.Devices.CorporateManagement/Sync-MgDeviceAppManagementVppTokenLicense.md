@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementvpptokenlicense
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Sync-MgDeviceAppManagementVppTokenLicense
@@ -11,26 +10,51 @@ ms.prod: intune
 ## SYNOPSIS
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Sync (Default)
 ```
-Sync-MgDeviceAppManagementVppTokenLicense -VppTokenId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Sync-MgDeviceAppManagementVppTokenLicense -VppTokenId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SyncViaIdentity
 ```
-Sync-MgDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Sync-MgDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -45,6 +69,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -100,9 +139,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVppToken
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -147,9 +188,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementvpptokenlicense](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementvpptokenlicense)
-
-
 

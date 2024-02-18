@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserMessage
 
 ## SYNOPSIS
-Update the properties of a message object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
+Update the properties of an eventMessage object.
 
 ## SYNTAX
 
@@ -34,14 +30,14 @@ Update-MgBetaUserMessage -MessageId <String> -UserId <String> [-AdditionalProper
  [-SentDateTime <DateTime>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
- [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserMessage -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessage> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaUserMessage -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessage>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -62,27 +58,25 @@ Update-MgBetaUserMessage -InputObject <IMailIdentity> [-AdditionalProperties <Ha
  [-SentDateTime <DateTime>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
- [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessage> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessage>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a message object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-update-permissions.md)]
+Update the properties of an eventMessage object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	subject = "subject-value"
@@ -95,11 +89,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -357,6 +346,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -606,6 +610,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReceivedDateTime
 .
 
@@ -830,9 +849,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1089,8 +1110,6 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
-[Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage)
-
 

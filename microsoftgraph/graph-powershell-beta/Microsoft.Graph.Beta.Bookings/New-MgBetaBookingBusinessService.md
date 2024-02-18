@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessService
 
 ## SYNOPSIS
 Create a new bookingService for the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessService?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,7 +22,8 @@ New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInforma
  [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
  [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
  [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -39,19 +36,20 @@ New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInforma
  [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
  [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
  [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -64,7 +62,8 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalIn
  [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
  [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
  [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -77,30 +76,31 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalIn
  [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
  [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
  [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingService> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingService> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingService> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingService> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-services-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusinessService Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingService"
@@ -167,8 +167,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusinessService Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -234,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date, time and timezone when the Service was created.
 
 ```yaml
 Type: DateTime
@@ -373,6 +371,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -406,7 +419,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsAnonymousJoinEnabled
-True if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
+Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -436,8 +450,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsLocationOnline
-True indicates that the appointments for the service will be held online.
-Default value is false.
+Indicates that the appointments for the service are held online.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -467,7 +481,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+The date, time and timezone when the Service was last updated.
 
 ```yaml
 Type: DateTime
@@ -535,6 +549,21 @@ The time to buffer before an appointment for this service can start.
 Type: TimeSpan
 Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -628,9 +657,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingService
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingService
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -643,7 +674,7 @@ BODYPARAMETER \<IMicrosoftGraphBookingService\>: Represents a particular service
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
-  \[CreatedDateTime \<DateTime?\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: The date, time and timezone when the Service was created.
   \[CustomQuestions \<IMicrosoftGraphBookingQuestionAssignment\[\]\>\]: Contains the set of custom questions associated with a particular service.
     \[IsRequired \<Boolean?\>\]: Indicates whether it's mandatory to answer the custom question.
     \[QuestionId \<String\>\]: If it's mandatory to answer the custom question.
@@ -684,12 +715,13 @@ The value of this property is available only when reading this bookingService by
 It's denoted in ISO 8601 format.
     \[Recipients \<String\>\]: bookingReminderRecipients
   \[Description \<String\>\]: A text description for the service.
-  \[IsAnonymousJoinEnabled \<Boolean?\>\]: True if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
+  \[IsAnonymousJoinEnabled \<Boolean?\>\]: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+The default value is false.
   \[IsHiddenFromCustomers \<Boolean?\>\]: True means this service isn't available to customers for booking.
-  \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointments for the service will be held online.
-Default value is false.
+  \[IsLocationOnline \<Boolean?\>\]: Indicates that the appointments for the service are held online.
+The default value is false.
   \[LanguageTag \<String\>\]: The language of the self service booking page.
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time and timezone when the Service  was last updated.
   \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. 
 To create a customer, use the Create bookingCustomer operation.
@@ -699,7 +731,8 @@ To create a customer, use the Create bookingCustomer operation.
   \[SchedulingPolicy \<IMicrosoftGraphBookingSchedulingPolicy\>\]: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
-    \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
+    \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Indicates if the meeting invite is sent to the customers.
+The default value is false
     \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
@@ -760,9 +793,11 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
   \[UserId \<String\>\]: Usage: userId='{userId}'
   \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
@@ -774,7 +809,8 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 SCHEDULINGPOLICY \<IMicrosoftGraphBookingSchedulingPolicy\>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
-  \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
+  \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Indicates if the meeting invite is sent to the customers.
+The default value is false
   \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
   \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
@@ -784,8 +820,6 @@ Use the email address specified in the email property of the bookingBusiness ent
   \[TimeSlotInterval \<TimeSpan?\>\]: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
-[New-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessService?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest
@@ -19,14 +19,15 @@ New-MgBetaEntitlementManagementAccessPackageResourceRequest
  [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>] [-AdditionalProperties <Hashtable>]
  [-CatalogId <String>] [-ExecuteImmediately] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-IsValidationOnly] [-Justification <String>] [-RequestState <String>] [-RequestStatus <String>]
- [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageResourceRequest
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,15 +35,16 @@ Create a new accessPackageResourceRequest object to request the addition of a re
 A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
 ## EXAMPLES
-### Example 1: Create a new access package resource request
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
   OriginId= "b5cd9d19-91c0-4622-93e2-537ad8a0b3ad"
   }
 New-MgBetaEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
+```
 
 AccessPackageResource : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResource
 CatalogId             : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
@@ -55,10 +57,7 @@ RequestState          : Delivered
 RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                            
-```
-
-This example creates a new resource request for addition of a resource to an access package catalog.
+AdditionalProperties  : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity\]}
 
 ## PARAMETERS
 
@@ -155,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -193,6 +207,21 @@ The requestor's justification for adding or removing the resource.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -301,9 +330,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -379,12 +410,12 @@ Read-only.
     \[IsEditable \<Boolean?\>\]: Specifies whether or not an existing attribute value can be edited by the requester.
     \[IsPersistedOnAssignmentRemoval \<Boolean?\>\]: Specifies whether the attribute will remain in the end system after an assignment ends.
   \[Description \<String\>\]: A description for the resource.
-  \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+  \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name, or site name.
   \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
   \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
-  \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+In the case of a Microsoft Entra group, originId is the identifier of the group.
+  \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
   \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
   \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
@@ -461,12 +492,12 @@ Read-only.
       \[IsEditable \<Boolean?\>\]: Specifies whether or not an existing attribute value can be edited by the requester.
       \[IsPersistedOnAssignmentRemoval \<Boolean?\>\]: Specifies whether the attribute will remain in the end system after an assignment ends.
     \[Description \<String\>\]: A description for the resource.
-    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name, or site name.
     \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
     \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
-    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+In the case of a Microsoft Entra group, originId is the identifier of the group.
+    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
     \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   \[CatalogId \<String\>\]: The unique ID of the access package catalog.
@@ -577,5 +608,4 @@ Alternate key.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
-
 

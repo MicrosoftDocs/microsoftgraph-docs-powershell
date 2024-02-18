@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaDirectoryRoleMember
@@ -15,15 +14,13 @@ Read-only.
 Nullable.
 Supports $expand.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaDirectoryRoleMember -DirectoryRoleId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-ConsistencyLevel <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,14 +30,12 @@ Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-list-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get member from directory roles
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaDirectoryRoleMember -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -49,9 +44,6 @@ f890ceed-822a-4647-8748-73d88013ae9d
 5d5dff7a-d9cd-4bd3-a585-3d0ebbd58b69
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
 7425a698-2aa8-4333-9352-04f52e3a4c9d
-```
-
-This example gets the members of a directory role.
 
 ## PARAMETERS
 
@@ -147,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
@@ -158,6 +165,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -242,14 +264,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
@@ -33,6 +33,22 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadi
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -370,61 +386,61 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>`: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric\>: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[OSCheckFailedPercentage <Double?>]`: The percentage of devices for which OS check has failed.
+  \[OSCheckFailedPercentage \<Double?\>\]: The percentage of devices for which OS check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[Processor64BitCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware 64-bit architecture check has failed.
+  \[Processor64BitCheckFailedPercentage \<Double?\>\]: The percentage of devices for which processor hardware 64-bit architecture check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[ProcessorCoreCountCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware core count check has failed.
+  \[ProcessorCoreCountCheckFailedPercentage \<Double?\>\]: The percentage of devices for which processor hardware core count check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[ProcessorFamilyCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware family check has failed.
+  \[ProcessorFamilyCheckFailedPercentage \<Double?\>\]: The percentage of devices for which processor hardware family check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[ProcessorSpeedCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware speed check has failed.
+  \[ProcessorSpeedCheckFailedPercentage \<Double?\>\]: The percentage of devices for which processor hardware speed check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[RamCheckFailedPercentage <Double?>]`: The percentage of devices for which RAM hardware check has failed.
+  \[RamCheckFailedPercentage \<Double?\>\]: The percentage of devices for which RAM hardware check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[SecureBootCheckFailedPercentage <Double?>]`: The percentage of devices for which secure boot hardware check has failed.
+  \[SecureBootCheckFailedPercentage \<Double?\>\]: The percentage of devices for which secure boot hardware check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[StorageCheckFailedPercentage <Double?>]`: The percentage of devices for which storage hardware check has failed.
+  \[StorageCheckFailedPercentage \<Double?\>\]: The percentage of devices for which storage hardware check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[TotalDeviceCount <Int32?>]`: The count of total devices in an organization.
+  \[TotalDeviceCount \<Int32?\>\]: The count of total devices in an organization.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[TpmCheckFailedPercentage <Double?>]`: The percentage of devices for which Trusted Platform Module (TPM) hardware check has failed.
+  \[TpmCheckFailedPercentage \<Double?\>\]: The percentage of devices for which Trusted Platform Module (TPM) hardware check has failed.
 Valid values 0 to 100.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[UpgradeEligibleDeviceCount <Int32?>]`: The count of devices in an organization eligible for windows upgrade.
+  \[UpgradeEligibleDeviceCount \<Int32?\>\]: The count of devices in an organization eligible for windows upgrade.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
@@ -433,8 +449,4 @@ Valid values -2147483648 to 2147483647
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule
@@ -15,22 +15,24 @@ Invoke action evaluateDynamicMembership
 ### EvaluateExpanded1 (Default)
 ```
 Test-MgBetaGroupDynamicMembershipRule [-AdditionalProperties <Hashtable>] [-MemberId <String>]
- [-MembershipRule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MembershipRule <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Evaluate1
 ```
 Test-MgBetaGroupDynamicMembershipRule
  -BodyParameter <IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaGroupDynamicMembershipRule Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
@@ -38,8 +40,6 @@ $params = @{
 }
 Test-MgBetaGroupDynamicMembershipRule -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaGroupDynamicMembershipRule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -74,6 +74,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -MemberId
 .
 
@@ -96,6 +111,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: EvaluateExpanded1
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -141,9 +171,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -158,5 +190,4 @@ BODYPARAMETER \<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
-
 

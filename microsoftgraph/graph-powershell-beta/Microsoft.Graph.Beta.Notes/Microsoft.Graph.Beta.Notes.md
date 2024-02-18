@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Notes
 Module Guid: dfba33b1-0baf-47e5-9deb-4f381cdd48e7
 Download Help Link: {{ Update Download Link }}
@@ -63,6 +63,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupOnenoteSectionPage](Get-MgBetaGroupOnenoteSectionPage.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteGetByPathOnenote](Get-MgBetaSiteGetByPathOnenote.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteOnenoteNotebook](Get-MgBetaSiteOnenoteNotebook.md)
@@ -257,6 +260,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupOnenoteSectionGroup](Remove-MgBetaGroupOnenoteSectionGroup.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaSiteGetByPathOnenote](Remove-MgBetaSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaSiteOnenoteNotebook](Remove-MgBetaSiteOnenoteNotebook.md)
 {{ Fill in the Description }}
 
@@ -320,6 +326,9 @@ Locale: en-US
 ### [Update-MgBetaGroupOnenoteSectionGroup](Update-MgBetaGroupOnenoteSectionGroup.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSiteGetByPathOnenote](Update-MgBetaSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSiteOnenoteNotebook](Update-MgBetaSiteOnenoteNotebook.md)
 {{ Fill in the Description }}
 
@@ -343,5 +352,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserOnenoteSectionGroup](Update-MgBetaUserOnenoteSectionGroup.md)
 {{ Fill in the Description }}
-
 

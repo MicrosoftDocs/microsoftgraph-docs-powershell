@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityAttackSimulation
 
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,27 +25,25 @@ New-MgBetaSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackT
  [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-LoginPage <IMicrosoftGraphLoginPage>]
  [-OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>] [-Payload <IMicrosoftGraphPayload>]
  [-PayloadDeliveryPlatform <String>] [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>]
- [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an attack simulation campaign for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -84,10 +78,6 @@ $params = @{
 }
 
 New-MgBetaSecurityAttackSimulation -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityAttackSimulation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -292,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -466,6 +471,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Report
 simulationReport
 To construct, see NOTES section for REPORT properties and create a hash table.
@@ -550,9 +570,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1026,8 +1048,6 @@ TRAININGSETTING \<IMicrosoftGraphTrainingSetting\>: trainingSetting
   \[SettingType \<String\>\]: trainingSettingType
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
-
 

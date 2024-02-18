@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Functions
 Module Guid: 83409d1d-810b-4b22-9cae-40d2614f4ba5
 Download Help Link: {{ Update Download Link }}
@@ -167,6 +167,9 @@ Locale: en-US
 ### [Get-MgBetaUserOnenoteRecentNotebook](Get-MgBetaUserOnenoteRecentNotebook.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl](Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserOnlineMeetingRecordingDelta](Get-MgBetaUserOnlineMeetingRecordingDelta.md)
 {{ Fill in the Description }}
 
@@ -265,5 +268,4 @@ Locale: en-US
 
 ### [Test-MgBetaUserManagedAppUserBlocked](Test-MgBetaUserManagedAppUserBlocked.md)
 {{ Fill in the Description }}
-
 

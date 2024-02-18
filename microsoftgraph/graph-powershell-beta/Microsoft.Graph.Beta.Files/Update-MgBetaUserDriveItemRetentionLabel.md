@@ -1,22 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemretentionlabel
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgBetaUserDriveItemRetentionLabel
 
 ## SYNOPSIS
-Apply (set) a retention label on a driveItem (files and folders).
-Retention labels don't need to be published in a retention label policy to be applied using this method.
-When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
-For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
+Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemRetentionLabel?view=graph-powershell-1.0)
+For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 ## SYNTAX
 
@@ -25,13 +19,15 @@ For information about retention labels from an administrator's perspective, see 
 Update-MgBetaUserDriveItemRetentionLabel -DriveId <String> -DriveItemId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
  [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
- [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserDriveItemRetentionLabel -DriveId <String> -DriveItemId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,21 +35,33 @@ Update-MgBetaUserDriveItemRetentionLabel -DriveId <String> -DriveItemId <String>
 Update-MgBetaUserDriveItemRetentionLabel -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
  [-LabelAppliedDateTime <DateTime>] [-Name <String>]
- [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDriveItemRetentionLabel -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Apply (set) a retention label on a driveItem (files and folders).
-Retention labels don't need to be published in a retention label policy to be applied using this method.
-When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
-For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
+Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,6 +123,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -217,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionSettings
 retentionLabelSettings
 To construct, see NOTES section for RETENTIONSETTINGS properties and create a hash table.
@@ -286,9 +324,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -386,9 +426,6 @@ Read-only.
 Read-write.
 
 ## RELATED LINKS
-[Update-MgUserDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemretentionlabel)
-
-
 

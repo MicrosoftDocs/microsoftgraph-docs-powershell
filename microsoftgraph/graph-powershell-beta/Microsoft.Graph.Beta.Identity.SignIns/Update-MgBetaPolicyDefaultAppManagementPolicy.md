@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
 Update the properties of a tenantAppManagementPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -21,27 +17,25 @@ Update the properties of a tenantAppManagementPolicy object.
 Update-MgBetaPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
  [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
- [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a tenantAppManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantappmanagementpolicy-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	isEnabled = $true
@@ -50,45 +44,40 @@ $params = @{
 			@{
 				restrictionType = "passwordAddition"
 				maxLifetime = $null
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+				restrictForAppsCreatedAfterDateTime = \[System.DateTime\]::Parse("2021-01-01T10:37:00Z")
 			}
 			@{
 				restrictionType = "passwordLifetime"
 				maxLifetime = "P4DT12H30M5S"
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
+				restrictForAppsCreatedAfterDateTime = \[System.DateTime\]::Parse("2017-01-01T10:37:00Z")
 			}
 			@{
 				restrictionType = "symmetricKeyAddition"
 				maxLifetime = $null
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+				restrictForAppsCreatedAfterDateTime = \[System.DateTime\]::Parse("2021-01-01T10:37:00Z")
 			}
 			@{
 				restrictionType = "customPasswordAddition"
 				maxLifetime = $null
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictForAppsCreatedAfterDateTime = \[System.DateTime\]::Parse("2015-01-01T10:37:00Z")
 			}
 			@{
 				restrictionType = "symmetricKeyLifetime"
 				maxLifetime = "P40D"
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictForAppsCreatedAfterDateTime = \[System.DateTime\]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
 		keyCredentials = @(
 			@{
 				restrictionType = "asymmetricKeyLifetime"
 				maxLifetime = "P30D"
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictForAppsCreatedAfterDateTime = \[System.DateTime\]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
 	}
 }
 
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -187,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -215,6 +219,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -272,9 +291,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -346,8 +367,6 @@ To apply to all applications, this date would be null.
     \[RestrictionType \<String\>\]: appCredentialRestrictionType
 
 ## RELATED LINKS
-[Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Invoke-MgBetaQuerySearch
@@ -12,37 +11,31 @@ ms.prod: search
 Run a specified search query.
 Search results are provided in the response.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### QueryExpanded (Default)
 ```
 Invoke-MgBetaQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Query
 ```
 Invoke-MgBetaQuerySearch
- -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Run a specified search query.
 Search results are provided in the response.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-query-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	requests = @(
@@ -53,6 +46,7 @@ $params = @{
 			contentSources = @(
 				"/external/connections/connectionfriendlyname"
 			)
+			region = "US"
 			query = @{
 				queryString = "contoso product"
 			}
@@ -67,10 +61,6 @@ $params = @{
 }
 
 Invoke-MgBetaQuerySearch -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaQuerySearch Cmdlet.
-
 
 ## PARAMETERS
 
@@ -102,6 +92,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -158,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchResponse
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -376,8 +398,6 @@ Default value is false.
 Optional.
 
 ## RELATED LINKS
-[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
-
 

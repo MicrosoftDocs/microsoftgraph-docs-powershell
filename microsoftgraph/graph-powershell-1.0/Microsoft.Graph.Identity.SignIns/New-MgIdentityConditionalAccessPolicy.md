@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,23 +19,24 @@ New-MgIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-TemplateId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
-### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -77,15 +74,11 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Block access to Exchange Online from non-trusted regions
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -119,15 +112,11 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Use all conditions and controls
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -230,15 +219,11 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Require MFA to Exchange Online from non-compliant devices
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-compliant devices."
@@ -264,11 +249,6 @@ $params = @{
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -382,6 +362,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -407,6 +402,21 @@ Readonly.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -498,9 +508,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -738,8 +750,6 @@ SESSIONCONTROLS \<IMicrosoftGraphConditionalAccessSessionControls\>: conditional
     \[Value \<Int32?\>\]: The number of days or hours.
 
 ## RELATED LINKS
-[New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy)
-
 

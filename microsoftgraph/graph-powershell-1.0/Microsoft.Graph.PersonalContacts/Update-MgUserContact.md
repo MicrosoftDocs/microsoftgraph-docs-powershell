@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserContact
 
 ## SYNOPSIS
 Update the properties of a contact object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,13 +28,14 @@ Update-MgUserContact -ContactId <String> -UserId <String> [-AdditionalProperties
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-YomiSurname <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserContact -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserContact -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -57,26 +54,25 @@ Update-MgUserContact -InputObject <IPersonalContactsIdentity> [-AdditionalProper
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-YomiSurname <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a contact object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.PersonalContacts
+```
 
 $params = @{
 	homeAddress = @{
@@ -85,16 +81,11 @@ $params = @{
 		state = "WA"
 		postalCode = "98121"
 	}
-	birthday = [System.DateTime]::Parse("1974-07-22")
+	birthday = \[System.DateTime\]::Parse("1974-07-22")
 }
 
 # A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -413,6 +404,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HomeAddress
 physicalAddress
 To construct, see NOTES section for HOMEADDRESS properties and create a hash table.
@@ -707,6 +713,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the contact.
 Read-only.
@@ -868,9 +889,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1031,8 +1054,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Update-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact)
-
 

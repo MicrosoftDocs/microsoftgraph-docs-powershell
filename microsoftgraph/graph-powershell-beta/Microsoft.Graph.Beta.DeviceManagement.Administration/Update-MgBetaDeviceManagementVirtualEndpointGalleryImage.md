@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage
@@ -18,14 +18,15 @@ Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId 
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
  [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>]
  [-PublisherName <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
- [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <String>
- -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,18 +35,35 @@ Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceMa
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
  [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>]
  [-PublisherName <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
- [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property galleryImages in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -96,7 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The official display name of the gallery image.
+The display name of this gallery image.
+For example, Windows 11 Enterprise + Microsoft 365 Apps 22H2.
 Read-only.
 
 ```yaml
@@ -112,8 +131,9 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-The date in which this image is no longer within long-term support.
-The Cloud PC continues to provide short-term support.
+The date when the status of image becomes supportedWithWarning.
+Users can still provision new Cloud PCs if the current time is later than endDate and earlier than expirationDate.
+For example, assume the endDate of a gallery image is 2023-9-14 and expirationDate is 2024-3-14, users are able to provision new Cloud PCs if today is 2023-10-01.
 Read-only.
 
 ```yaml
@@ -130,6 +150,9 @@ Accept wildcard characters: False
 
 ### -ExpirationDate
 The date when the image is no longer available.
+Users are unable to provision new Cloud PCs if the current time is later than expirationDate.
+The value is usually endDate plus six months.
+For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
 Read-only.
 
 ```yaml
@@ -141,6 +164,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -177,9 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Offer
-The offer name of the gallery image.
-This value is passed to Azure to get the image resource.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -194,9 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDisplayName
-The official display offer name of the gallery image.
-For example, Windows 10 Enterprise + OS Optimizations.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -211,7 +245,8 @@ Accept wildcard characters: False
 ```
 
 ### -OfferName
-.
+The offer name of this gallery image that is passed to ARM to retrieve the image resource.
+Read-only.
 
 ```yaml
 Type: String
@@ -225,10 +260,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Publisher
-The publisher name of the gallery image.
-This value is passed to Azure to get the image resource.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -243,22 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublisherName
-.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RecommendedSku
-Recommended Cloud PC SKU for this gallery image.
+The publisher name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
 
 ```yaml
@@ -273,8 +306,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RecommendedSku
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SizeInGb
-The size of this image in gigabytes.
+Indicates the size of this image in gigabytes.
+For example, 64.
 Read-only.
 
 ```yaml
@@ -290,40 +339,6 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The SKU name of the gallery image.
-This value is passed to Azure to get the image resource.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SkuDisplayName
-The official display stock keeping unit (SKU) name of this gallery image.
-For example, 2004.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SkuName
 .
 
 ```yaml
@@ -338,8 +353,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SkuDisplayName
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SkuName
+The SKU name of this image that is passed to ARM to retrieve the image resource.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDate
-The date when the image becomes available.
+The date when the Cloud PC image is available for provisioning new Cloud PCs.
+For example, 2022-09-20.
 Read-only.
 
 ```yaml
@@ -407,9 +454,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -420,36 +469,35 @@ BODYPARAMETER \<IMicrosoftGraphCloudPcGalleryImage\>: cloudPcGalleryImage
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The official display name of the gallery image.
+  \[DisplayName \<String\>\]: The display name of this gallery image.
+For example, Windows 11 Enterprise + Microsoft 365 Apps 22H2.
 Read-only.
-  \[EndDate \<DateTime?\>\]: The date in which this image is no longer within long-term support.
-The Cloud PC continues to provide short-term support.
+  \[EndDate \<DateTime?\>\]: The date when the status of image becomes supportedWithWarning.
+Users can still provision new Cloud PCs if the current time is later than endDate and earlier than expirationDate.
+For example, assume the endDate of a gallery image is 2023-9-14 and expirationDate is 2024-3-14, users are able to provision new Cloud PCs if today is 2023-10-01.
 Read-only.
   \[ExpirationDate \<DateTime?\>\]: The date when the image is no longer available.
+Users are unable to provision new Cloud PCs if the current time is later than expirationDate.
+The value is usually endDate plus six months.
+For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
 Read-only.
-  \[Offer \<String\>\]: The offer name of the gallery image.
-This value is passed to Azure to get the image resource.
+  \[Offer \<String\>\]: 
+  \[OfferDisplayName \<String\>\]: 
+  \[OfferName \<String\>\]: The offer name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
-  \[OfferDisplayName \<String\>\]: The official display offer name of the gallery image.
-For example, Windows 10 Enterprise + OS Optimizations.
+  \[Publisher \<String\>\]: 
+  \[PublisherName \<String\>\]: The publisher name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
-  \[OfferName \<String\>\]: 
-  \[Publisher \<String\>\]: The publisher name of the gallery image.
-This value is passed to Azure to get the image resource.
+  \[RecommendedSku \<String\>\]: 
+  \[SizeInGb \<Int32?\>\]: Indicates the size of this image in gigabytes.
+For example, 64.
 Read-only.
-  \[PublisherName \<String\>\]: 
-  \[RecommendedSku \<String\>\]: Recommended Cloud PC SKU for this gallery image.
+  \[Sku \<String\>\]: 
+  \[SkuDisplayName \<String\>\]: 
+  \[SkuName \<String\>\]: The SKU name of this image that is passed to ARM to retrieve the image resource.
 Read-only.
-  \[SizeInGb \<Int32?\>\]: The size of this image in gigabytes.
-Read-only.
-  \[Sku \<String\>\]: The SKU name of the gallery image.
-This value is passed to Azure to get the image resource.
-Read-only.
-  \[SkuDisplayName \<String\>\]: The official display stock keeping unit (SKU) name of this gallery image.
-For example, 2004.
-Read-only.
-  \[SkuName \<String\>\]: 
-  \[StartDate \<DateTime?\>\]: The date when the image becomes available.
+  \[StartDate \<DateTime?\>\]: The date when the Cloud PC image is available for provisioning new Cloud PCs.
+For example, 2022-09-20.
 Read-only.
   \[Status \<String\>\]: cloudPcGalleryImageStatus
 
@@ -515,6 +563,4 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage)
-
-
 

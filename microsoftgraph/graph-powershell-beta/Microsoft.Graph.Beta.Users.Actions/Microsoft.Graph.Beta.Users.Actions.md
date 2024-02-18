@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 1f5a9e1d-7b62-410d-8541-b56b33a7d63a
 Download Help Link: {{ Update Download Link }}
@@ -285,6 +285,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink](Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaInitiateUserManagedDeviceAttestation](Invoke-MgBetaInitiateUserManagedDeviceAttestation.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery.md)
@@ -686,6 +689,12 @@ Locale: en-US
 ### [Send-MgBetaUserMessage](Send-MgBetaUserMessage.md)
 {{ Fill in the Description }}
 
+### [Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm](Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentSm](Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentSm.md)
+{{ Fill in the Description }}
+
 ### [Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm.md)
 {{ Fill in the Description }}
 
@@ -838,5 +847,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
 {{ Fill in the Description }}
-
 

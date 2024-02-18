@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Send-MgBetaUserMailFolderMessage
@@ -14,21 +13,19 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderMessage?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Send (Default)
 ```
-Send-MgBetaUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Send-MgBetaUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
-Send-MgBetaUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Send-MgBetaUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,24 +34,32 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-send-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Send an existing draft message
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMessage -UserId $userId -MessageId $messageId
-```
-This example shows how to use the Send-MgBetaUserMailFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -117,6 +122,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -169,9 +189,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -197,6 +219,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
   \[EventId \<String\>\]: The unique identifier of event
   \[EventId1 \<String\>\]: The unique identifier of event
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[ListItemId \<String\>\]: The unique identifier of listItem
   \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
   \[MailFolderId \<String\>\]: The unique identifier of mailFolder
@@ -221,8 +244,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Send-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage)
-
 

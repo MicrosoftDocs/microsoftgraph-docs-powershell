@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence
@@ -10,63 +10,51 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property presence for users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserPresence?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserPresence -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserPresence -UserId <String> [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property presence for users
 
 ## EXAMPLES
-### Example 1: Get your own presence information
 
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-
-# A UPN can also be used as -UserId.
-Get-MgUserPresence -UserId $userId
+### EXAMPLE 1
 ```
-This example shows how to use the Remove-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get the presence information of another user
-
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgUserPresence -UserId $userId
+{{ Add code here }}
 ```
-This example shows how to use the Remove-MgUserPresence Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get the presence information of another user
-
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgCommunicationPresence -PresenceId $presenceId
+### EXAMPLE 2
 ```
-This example shows how to use the Remove-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+{{ Add code here }}
+```
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -110,6 +98,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -166,9 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -192,8 +197,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence)
-
 

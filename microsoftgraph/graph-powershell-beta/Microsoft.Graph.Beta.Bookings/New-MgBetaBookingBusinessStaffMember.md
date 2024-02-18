@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessStaffMember
 
 ## SYNOPSIS
 Create a new staff member in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -22,8 +18,8 @@ New-MgBetaBookingBusinessStaffMember -BookingBusinessId <String> [-AdditionalPro
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
  [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>]
- [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -32,20 +28,22 @@ New-MgBetaBookingBusinessStaffMember -BookingBusinessId <String> [-AdditionalPro
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
  [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>]
- [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaBookingBusinessStaffMember -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingStaffMember> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaBookingBusinessStaffMember -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingStaffMember> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -54,8 +52,8 @@ New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-Addition
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
  [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>]
- [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -64,31 +62,31 @@ New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-Addition
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
  [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>]
- [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingStaffMember> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingStaffMember> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new staff member in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-staffmembers-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusinessStaffMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingStaffMember"
@@ -171,8 +169,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -254,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date, time and timezone when the staff member was created.
 
 ```yaml
 Type: DateTime
@@ -298,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -331,7 +342,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsEmailNotificationEnabled
-True indicates that a staff member will be notified via email when a booking assigned to them is created or changed.
+Indicates that a staff members are notified via email when a booking assigned to them is created or changed.
+The default value is true
 
 ```yaml
 Type: SwitchParameter
@@ -346,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+The date, time and timezone when the staff member was last updated.
 
 ```yaml
 Type: DateTime
@@ -367,6 +379,21 @@ bookingStaffMembershipStatus
 Type: String
 Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -424,7 +451,7 @@ Accept wildcard characters: False
 
 ### -WorkingHours
 The range of hours each day of the week that the staff member is available for booking.
-By default, they are initialized to be the same as the businessHours property of the business.
+By default, they're initialized to be the same as the businessHours property of the business.
 To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
@@ -477,9 +504,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingStaffMember
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingStaffMember
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -495,9 +524,10 @@ Read-only.
   \[AvailabilityIsAffectedByPersonalCalendar \<Boolean?\>\]: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
   \[ColorIndex \<Int32?\>\]: Identifies a color to represent the staff member.
 The color corresponds to the color palette in the Staff details page in the Bookings app.
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[IsEmailNotificationEnabled \<Boolean?\>\]: True indicates that a staff member will be notified via email when a booking assigned to them is created or changed.
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: The date, time and timezone when the staff member was created.
+  \[IsEmailNotificationEnabled \<Boolean?\>\]: Indicates that a staff members are  notified via email when a booking assigned to them is created or changed.
+The default value is true
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time and timezone when the staff member was last updated.
   \[MembershipStatus \<String\>\]: bookingStaffMembershipStatus
   \[Role \<String\>\]: bookingStaffRole
   \[TimeZone \<String\>\]: The time zone of the staff member.
@@ -505,7 +535,7 @@ For a list of possible values, see dateTimeTimeZone.
   \[UseBusinessHours \<Boolean?\>\]: True means the staff member's availability is as specified in the businessHours property of the business.
 False means the availability is determined by the staff member's workingHours property setting.
   \[WorkingHours \<IMicrosoftGraphBookingWorkHours\[\]\>\]: The range of hours each day of the week that the staff member is available for booking.
-By default, they are initialized to be the same as the businessHours property of the business.
+By default, they're initialized to be the same as the businessHours property of the business.
     \[Day \<String\>\]: dayOfWeek
     \[TimeSlots \<IMicrosoftGraphBookingWorkTimeSlot\[\]\>\]: A list of start/end times during a day.
       \[End \<String\>\]: The time of the day when work stops.
@@ -524,9 +554,11 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
   \[UserId \<String\>\]: Usage: userId='{userId}'
   \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
@@ -536,7 +568,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 WORKINGHOURS \<IMicrosoftGraphBookingWorkHours\[\]\>: The range of hours each day of the week that the staff member is available for booking.
-By default, they are initialized to be the same as the businessHours property of the business.
+By default, they're initialized to be the same as the businessHours property of the business.
   \[Day \<String\>\]: dayOfWeek
   \[TimeSlots \<IMicrosoftGraphBookingWorkTimeSlot\[\]\>\]: A list of start/end times during a day.
     \[End \<String\>\]: The time of the day when work stops.
@@ -545,8 +577,6 @@ For example, 17:00:00.0000000.
 For example, 08:00:00.0000000.
 
 ## RELATED LINKS
-[New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilename
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileName
@@ -21,14 +20,14 @@ Update-MgBetaUserProfileName -PersonNameId <String> -UserId <String> [-Additiona
  [-Initials <String>] [-IsSearchable] [-LanguageTag <String>] [-Last <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Maiden <String>]
  [-Middle <String>] [-Nickname <String>] [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserProfileName -PersonNameId <String> -UserId <String> -BodyParameter <IMicrosoftGraphPersonName>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,25 +38,23 @@ Update-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-AdditionalProperti
  [-Initials <String>] [-IsSearchable] [-LanguageTag <String>] [-Last <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Maiden <String>]
  [-Middle <String>] [-Nickname <String>] [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPersonName>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a personName object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personname-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileName Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Nickname = "Kesha"
@@ -65,8 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileName -UserId $userId -PersonNameId $personNameId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileName Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -159,6 +154,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -361,6 +371,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Pronunciation
 personNamePronounciation
 To construct, see NOTES section for PRONUNCIATION properties and create a hash table.
@@ -491,9 +516,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonName
 ### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonName
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -613,5 +640,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilename)
-
 

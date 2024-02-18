@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgBetaDevice
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +30,8 @@ Update-MgBetaDevice -DeviceId <String> [-AccountEnabled] [-AdditionalProperties 
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,48 +51,43 @@ Update-MgBetaDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagem
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update the accountEnabled property of a device
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	accountEnabled = $false
 }
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2:  Write extensionAttributes on a device
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	extensionAttributes = @{
@@ -104,11 +96,6 @@ $params = @{
 }
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -455,6 +442,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Hostnames
 List of host names for the device.
 
@@ -607,7 +609,7 @@ Accept wildcard characters: False
 
 ### -Manufacturer
 Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
 
 ```yaml
 Type: String
@@ -659,7 +661,7 @@ Accept wildcard characters: False
 
 ### -Model
 Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
 
 ```yaml
 Type: String
@@ -825,6 +827,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegisteredOwners
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
@@ -937,7 +954,7 @@ Accept wildcard characters: False
 Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -1005,9 +1022,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1125,7 +1144,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
   \[Manufacturer \<String\>\]: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
   \[MdmAppId \<String\>\]: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -1138,7 +1157,7 @@ Read-only.
     \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   \[Model \<String\>\]: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
   \[Name \<String\>\]: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
   \[OnPremisesLastSyncDateTime \<DateTime?\>\]: The last time at which the object was synced with the on-premises directory.
@@ -1189,7 +1208,7 @@ Supports $expand.
   \[TrustType \<String\>\]: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
   \[UsageRights \<IMicrosoftGraphUsageRight\[\]\>\]: Represents the usage rights a device has been granted.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1245,6 +1264,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
   \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
   \[CommandId \<String\>\]: The unique identifier of command
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
   \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
@@ -1265,6 +1285,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
   \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
   \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
   \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
   \[OrgContactId \<String\>\]: The unique identifier of orgContact
   \[OrganizationId \<String\>\]: The unique identifier of organization
@@ -1328,8 +1349,6 @@ Read-only.
   \[State \<String\>\]: usageRightState
 
 ## RELATED LINKS
-[Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice)
-
 

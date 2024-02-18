@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerBucket
@@ -11,34 +10,30 @@ ms.prod: planner
 ## SYNOPSIS
 Create a new plannerBucket object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerBucket?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgPlannerBucket [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-OrderHint <String>]
- [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new plannerBucket object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-buckets-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	name = "Advertising"
@@ -47,10 +42,6 @@ $params = @{
 }
 
 New-MgPlannerBucket -BodyParameter $params
-
-```
-This example shows how to use the New-MgPlannerBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -79,6 +70,21 @@ Parameter Sets: Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -147,6 +153,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tasks
 Read-only.
 Nullable.
@@ -202,9 +223,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -398,8 +421,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[New-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket)
-
 

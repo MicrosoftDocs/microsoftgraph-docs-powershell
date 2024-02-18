@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgBetaPlannerPlan
 
 ## SYNOPSIS
 Update the properties of a plannerPlan object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,13 +21,14 @@ Update-MgBetaPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtab
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,37 +40,31 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties 
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	title = "title-value"
 }
 
 Update-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -239,6 +230,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -310,6 +316,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -404,9 +425,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1147,8 +1170,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to subscribedSkus
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,30 +17,30 @@ Add new entity to subscribedSkus
 New-MgBetaSubscribedSku [-AccountId <String>] [-AccountName <String>] [-AdditionalProperties <Hashtable>]
  [-AppliesTo <String>] [-CapabilityStatus <String>] [-ConsumedUnits <Int32>] [-Id <String>]
  [-PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>] [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>]
- [-SkuId <String>] [-SkuPartNumber <String>] [-SubscriptionIds <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SkuId <String>] [-SkuPartNumber <String>] [-SubscriptionIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to subscribedSkus
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaSubscribedSku
+### EXAMPLE 1
 ```
-This example shows how to use the New-MgBetaBetaSubscribedSku Cmdlet.
+{{ Add code here }}
+```
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -157,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -181,6 +193,21 @@ To construct, see NOTES section for PREPAIDUNITS properties and create a hash ta
 Type: IMicrosoftGraphLicenseUnitsDetail
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -289,9 +316,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -351,8 +380,6 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
-[New-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku)
-
 

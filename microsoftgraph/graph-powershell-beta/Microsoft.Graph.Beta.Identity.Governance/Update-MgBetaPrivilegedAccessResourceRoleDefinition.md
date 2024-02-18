@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroledefinition
@@ -17,15 +17,16 @@ Update the navigation property roleDefinitions in privilegedAccess
 Update-MgBetaPrivilegedAccessResourceRoleDefinition -GovernanceResourceId <String>
  -GovernanceRoleDefinitionId <String> -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-Resource <IMicrosoftGraphGovernanceResource>]
- [-ResourceId <String>] [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResourceId <String>] [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedAccessResourceRoleDefinition -GovernanceResourceId <String>
  -GovernanceRoleDefinitionId <String> -PrivilegedAccessId <String>
- -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,18 +34,35 @@ Update-MgBetaPrivilegedAccessResourceRoleDefinition -GovernanceResourceId <Strin
 Update-MgBetaPrivilegedAccessResourceRoleDefinition -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>]
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
- [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedAccessResourceRoleDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleDefinitions in privilegedAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -139,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -180,6 +213,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -287,9 +335,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -351,8 +401,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -489,6 +539,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -624,8 +675,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        \[Key \<String\>\]: Key.
-        \[Value \<String\>\]: Value.
+        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+        \[Value \<String\>\]: Contains the corresponding value for the specified key.
       \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -758,8 +809,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -825,6 +876,4 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroledefinition)
-
-
 

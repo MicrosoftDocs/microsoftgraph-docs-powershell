@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update roleManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,17 +18,30 @@ Update-MgBetaRoleManagement [-AdditionalProperties <Hashtable>]
  [-CloudPc <IMicrosoftGraphRbacApplicationMultiple>]
  [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
  [-EnterpriseApps <IMicrosoftGraphRbacApplication[]>] [-EntitlementManagement <IMicrosoftGraphRbacApplication>]
- [-Exchange <IMicrosoftGraphUnifiedRbacApplication>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Exchange <IMicrosoftGraphUnifiedRbacApplication>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -162,6 +172,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -199,9 +239,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -2378,9 +2420,6 @@ Supports $filter (eq, in).
   \[TransitiveRoleAssignments \<IMicrosoftGraphUnifiedRoleAssignment\[\]\>\]: Resource to grant access to users or groups that are transitive.
 
 ## RELATED LINKS
-[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
-
-
 

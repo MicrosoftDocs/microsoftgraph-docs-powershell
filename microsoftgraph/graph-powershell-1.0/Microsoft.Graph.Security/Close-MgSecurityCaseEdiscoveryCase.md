@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase
@@ -11,21 +11,18 @@ schema: 2.0.0
 Close an eDiscovery case.
 For details, see Close a case.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Close (Default)
 ```
-Close-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Close-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CloseViaIdentity
 ```
-Close-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Close-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +30,12 @@ Close an eDiscovery case.
 For details, see Close a case.
 
 ## EXAMPLES
-### Example 1: Using the Close-MgSecurityCaseEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Close-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Close-MgSecurityCaseEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -55,6 +51,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -85,6 +96,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -126,9 +152,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -190,8 +218,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase)
-
 

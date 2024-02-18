@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo
@@ -14,26 +14,27 @@ Invoke function getCloudPcLaunchInfo
 
 ### Get (Default)
 ```
-Get-MgBetaUserCloudPcLaunchInfo -CloudPcId <String> -UserId <String> [<CommonParameters>]
+Get-MgBetaUserCloudPcLaunchInfo -CloudPcId <String> -UserId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getCloudPcLaunchInfo
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserCloudPcLaunchInfo Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Get-MgBetaUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
 ```
-This example shows how to use the Get-MgBetaUserCloudPcLaunchInfo Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -52,6 +53,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -65,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -89,9 +120,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcLaunchInfo
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -115,6 +148,7 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[ListItemId \<String\>\]: The unique identifier of listItem
   \[MailFolderId \<String\>\]: The unique identifier of mailFolder
   \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
@@ -140,5 +174,4 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo)
-
 

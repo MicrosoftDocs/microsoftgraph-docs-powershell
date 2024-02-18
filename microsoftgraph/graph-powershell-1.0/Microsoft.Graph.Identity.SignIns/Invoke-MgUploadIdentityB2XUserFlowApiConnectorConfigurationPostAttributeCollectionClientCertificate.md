@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate
@@ -13,16 +12,14 @@ Upload a PKCS 12 format key (.pfx) to an API connector's authentication configur
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UploadExpanded (Default)
 ```
 Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate
  -B2XIdentityUserFlowId <String> [-AdditionalProperties <Hashtable>] [-Password <String>]
- [-Pkcs12Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Pkcs12Value <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Upload
@@ -30,14 +27,15 @@ Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollecti
 Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate
  -B2XIdentityUserFlowId <String>
  -BodyParameter <IPaths5ChofkIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostattributecollectionMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentityExpanded
 ```
 Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate
  -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Password <String>]
- [-Pkcs12Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Pkcs12Value <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
@@ -45,7 +43,7 @@ Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollecti
 Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate
  -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths5ChofkIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostattributecollectionMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,8 +51,17 @@ Upload a PKCS 12 format key (.pfx) to an API connector's authentication configur
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-uploadclientcertificate-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -98,6 +105,21 @@ Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -150,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -188,9 +225,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths5ChofkIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostattributecollectionMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -260,9 +299,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate)
-
-
 

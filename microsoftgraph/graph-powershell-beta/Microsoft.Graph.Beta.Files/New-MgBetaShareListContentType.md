@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to contentTypes for shares
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,13 +22,13 @@ New-MgBetaShareListContentType -SharedDriveItemId <String> [-AdditionalPropertie
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaShareListContentType -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphContentType>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -44,17 +41,33 @@ New-MgBetaShareListContentType -InputObject <IFilesIdentity> [-AdditionalPropert
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -249,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Hidden
 Indicates whether the content type is hidden in the list's 'New' menu.
 
@@ -373,6 +401,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PropagateChanges
 If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
 
@@ -472,9 +515,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -599,8 +644,8 @@ Read-only.
         \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
         \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -830,8 +875,8 @@ Read-only.
         \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
         \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1062,8 +1107,8 @@ Read-only.
         \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
         \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1286,8 +1331,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Key.
-        \[Value \<String\>\]: Value.
+        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+        \[Value \<String\>\]: Contains the corresponding value for the specified key.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1448,8 +1493,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Key.
-        \[Value \<String\>\]: Value.
+        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+        \[Value \<String\>\]: Contains the corresponding value for the specified key.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1617,8 +1662,8 @@ Read-only.
         \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
         \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1747,9 +1792,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttype)
-
-
 

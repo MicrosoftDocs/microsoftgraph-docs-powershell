@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Stop-MgCommunicationCallMediaProcessing
@@ -15,35 +14,34 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CancelExpanded (Default)
 ```
 Stop-MgCommunicationCallMediaProcessing -CallId <String> [-AdditionalProperties <Hashtable>]
- [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ClientContext <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Cancel
 ```
 Stop-MgCommunicationCallMediaProcessing -CallId <String>
  -BodyParameter <IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CancelViaIdentityExpanded
 ```
 Stop-MgCommunicationCallMediaProcessing -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
 Stop-MgCommunicationCallMediaProcessing -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,20 +51,18 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-cancelmediaprocessing-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Stop-MgCommunicationCallMediaProcessing Cmdlet
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-$params = @{
-	ClientContext = "clientContext-value"
-}
-Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
+
+### EXAMPLE 1
 ```
-This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.CloudCommunications
+```
+
+$params = @{
+	clientContext = "clientContext-value"
+}
+
+Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -131,6 +127,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -144,6 +155,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -185,9 +211,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCancelMediaProcessingOperation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -215,8 +243,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
-
 

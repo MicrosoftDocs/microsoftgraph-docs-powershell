@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentityappledeviceidentitylist
@@ -17,7 +17,8 @@ Invoke action importAppleDeviceIdentityList
 Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -DepOnboardingSettingId <String> [-AdditionalProperties <Hashtable>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
- [-OverwriteImportedDeviceIdentities] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OverwriteImportedDeviceIdentities] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Import
@@ -25,7 +26,7 @@ Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppl
 Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -DepOnboardingSettingId <String>
  -BodyParameter <IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentityExpanded
@@ -33,7 +34,8 @@ Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppl
 Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
- [-OverwriteImportedDeviceIdentities] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OverwriteImportedDeviceIdentities] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
@@ -41,11 +43,27 @@ Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppl
 Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action importAppleDeviceIdentityList
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -92,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -142,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -180,9 +228,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentityResult
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -200,7 +250,6 @@ Read-only.
     \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
     \[IsDeleted \<Boolean?\>\]: Indicates if the device is deleted from Apple Business Manager
     \[IsSupervised \<Boolean?\>\]: Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/en-us/HT202837
     \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
     \[Platform \<Platform?\>\]: platform
     \[RequestedEnrollmentProfileAssignmentDateTime \<DateTime?\>\]: The time enrollment profile was assigned to the device
@@ -217,7 +266,6 @@ Read-only.
   \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
   \[IsDeleted \<Boolean?\>\]: Indicates if the device is deleted from Apple Business Manager
   \[IsSupervised \<Boolean?\>\]: Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/en-us/HT202837
   \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
   \[Platform \<Platform?\>\]: platform
   \[RequestedEnrollmentProfileAssignmentDateTime \<DateTime?\>\]: The time enrollment profile was assigned to the device
@@ -268,6 +316,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
   \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
@@ -281,6 +330,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentityappledeviceidentitylist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentityappledeviceidentitylist)
-
-
 

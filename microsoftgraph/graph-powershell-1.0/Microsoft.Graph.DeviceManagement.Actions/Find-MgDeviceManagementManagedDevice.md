@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Find-MgDeviceManagementManagedDevice
@@ -11,40 +10,48 @@ ms.prod: intune
 ## SYNOPSIS
 Locate a device
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Locate (Default)
 ```
-Find-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Find-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LocateViaIdentity
 ```
-Find-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Find-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Locate a device
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Actions
+```
 
 Find-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
 
-```
-This example shows how to use the Find-MgDeviceManagementManagedDevice Cmdlet.
-
-
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -92,6 +99,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -129,9 +151,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -153,8 +177,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice)
-
 

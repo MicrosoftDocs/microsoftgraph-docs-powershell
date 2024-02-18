@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,13 +17,15 @@ Create a new timeOff instance in a schedule.
 New-MgBetaTeamScheduleTimeOff -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>]
+ [-UserInfo <IMicrosoftGraphShiftsUserInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaTeamScheduleTimeOff -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOff> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTeamScheduleTimeOff -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOff> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,46 +33,44 @@ New-MgBetaTeamScheduleTimeOff -TeamId <String> -BodyParameter <IMicrosoftGraphTi
 New-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>]
+ [-UserInfo <IMicrosoftGraphShiftsUserInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 	sharedTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "white"
 	}
 	draftTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "pink"
 	}
 }
 
 New-MgBetaTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleTimeOff Cmdlet.
-
 
 ## PARAMETERS
 
@@ -140,6 +137,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -203,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedTimeOff
 timeOffItem
 To construct, see NOTES section for SHAREDTIMEOFF properties and create a hash table.
@@ -234,12 +261,44 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TeamInfo
+shiftsTeamInfo
+To construct, see NOTES section for TEAMINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftsTeamInfo
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 ID of the user assigned to the timeOff.
 Required.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserInfo
+shiftsUserInfo
+To construct, see NOTES section for USERINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftsUserInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -288,9 +347,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOff
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOff
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -322,8 +383,18 @@ Read-only.
 Required.
   \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
   \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
+  \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the team.
+Required.
+    \[TeamId \<String\>\]: ID of the team.
   \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
+  \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the user.
+Required.
+    \[UserId \<String\>\]: ID of the user.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -365,10 +436,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -406,9 +479,19 @@ SHAREDTIMEOFF \<IMicrosoftGraphTimeOffItem\>: timeOffItem
   \[TimeOffReasonId \<String\>\]: ID of the timeOffReason for this timeOffItem.
 Required.
 
+TEAMINFO \<IMicrosoftGraphShiftsTeamInfo\>: shiftsTeamInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name for the team.
+Required.
+  \[TeamId \<String\>\]: ID of the team.
+
+USERINFO \<IMicrosoftGraphShiftsUserInfo\>: shiftsUserInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name for the user.
+Required.
+  \[UserId \<String\>\]: ID of the user.
+
 ## RELATED LINKS
-[New-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff)
-
 

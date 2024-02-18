@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Update-MgBetaComplianceEdiscoveryCaseSetting
@@ -18,13 +17,15 @@ Update the properties of a an eDiscovery caseSettings object.
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,24 +33,24 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String>
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a an eDiscovery caseSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-casesettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	RedundancyDetection = @{
@@ -71,10 +72,9 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	RedundancyDetection = @{
@@ -96,8 +96,6 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -147,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -187,6 +200,21 @@ To construct, see NOTES section for OCR properties and create a hash table.
 Type: IMicrosoftGraphEdiscoveryOcrSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -265,9 +293,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -346,5 +376,4 @@ TOPICMODELING \<IMicrosoftGraphEdiscoveryTopicModelingSettings\>: topicModelingS
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
-
 

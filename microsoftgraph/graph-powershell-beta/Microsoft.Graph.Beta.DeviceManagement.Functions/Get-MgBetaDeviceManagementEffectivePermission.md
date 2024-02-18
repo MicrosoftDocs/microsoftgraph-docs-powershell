@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementeffectivepermission
@@ -10,31 +10,46 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getEffectivePermissions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementEffectivePermission?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaDeviceManagementEffectivePermission [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Top <Int32>] [<CommonParameters>]
+ [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaDeviceManagementEffectivePermission -Scope <String> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity> [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getEffectivePermissions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,6 +83,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -81,6 +111,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -150,9 +195,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRolePermission
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -177,6 +224,7 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[EnrollmentType \<String\>\]: Usage: enrollmentType='{enrollmentType}'
   \[ExpiringBeforeDateTime \<String\>\]: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[Id \<String\>\]: Usage: id='{id}'
   \[Ids \<String\[\]\>\]: Usage: ids={ids}
   \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
   \[Platform \<DevicePlatformType?\>\]: Usage: platform='{platform}'
@@ -193,9 +241,6 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[Userid \<String\>\]: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Get-MgDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementEffectivePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementeffectivepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementeffectivepermission)
-
-
 

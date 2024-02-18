@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgEducationClassAssignmentSetting
@@ -12,60 +11,76 @@ ms.prod: education
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgEducationClassAssignmentSetting -EducationClassId <String> [-AdditionalProperties <Hashtable>]
  [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>] [-Id <String>] [-SubmissionAnimationDisabled]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationClassAssignmentSetting -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
  [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>] [-Id <String>] [-SubmissionAnimationDisabled]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentsettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	submissionAnimationDisabled = $true
 }
 
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgEducationClassAssignmentSetting Cmdlet.
+Import-Module Microsoft.Graph.Education
+```
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+$params = @{
+	gradingCategories = @(
+		@{
+			displayName = "Lab"
+			percentageWeight = 10
+		}
+		@{
+			displayName = "Homework"
+			percentageWeight = 80
+		}
+		@{
+			displayName = "Test"
+			percentageWeight = 10
+		}
+	)
+}
 
+Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -116,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -GradingCategories
-.
+When set, enables users to weight assignments differently when computing a class average grade.
 To construct, see NOTES section for GRADINGCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -128,6 +143,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -163,10 +193,25 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubmissionAnimationDisabled
-Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -218,9 +263,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentSettings
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentSettings
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -231,20 +278,20 @@ BODYPARAMETER \<IMicrosoftGraphEducationAssignmentSettings\>: educationAssignmen
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: 
+  \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: When set, enables users to weight assignments differently when computing a class average grade.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: 
-    \[PercentageWeight \<Int32?\>\]: 
-  \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+    \[DisplayName \<String\>\]: The name of the grading category.
+    \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
+  \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
 
-GRADINGCATEGORIES \<IMicrosoftGraphEducationGradingCategory\[\]\>: .
+GRADINGCATEGORIES \<IMicrosoftGraphEducationGradingCategory\[\]\>: When set, enables users to weight assignments differently when computing a class average grade.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: 
-  \[PercentageWeight \<Int32?\>\]: 
+  \[DisplayName \<String\>\]: The name of the grading category.
+  \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
 
 INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
@@ -252,6 +299,8 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
   \[EducationClassId \<String\>\]: The unique identifier of educationClass
   \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
   \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
   \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
   \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
@@ -260,8 +309,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting)
-
 

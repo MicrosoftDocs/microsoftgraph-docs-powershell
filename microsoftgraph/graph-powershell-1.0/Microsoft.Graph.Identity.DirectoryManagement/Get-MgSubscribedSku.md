@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgSubscribedSku
@@ -11,39 +10,35 @@ ms.prod: directory-management
 ## SYNOPSIS
 Get a specific commercial subscription that an organization has acquired.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaSubscribedSku?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSubscribedSku [-Property <String[]>] [-Search <String>] [-Sort <String[]>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgSubscribedSku [-Property <String[]>] [-Search <String>] [-Sort <String[]>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSubscribedSku -SubscribedSkuId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgSubscribedSku -SubscribedSkuId <String> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Property <String[]>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscribedsku-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get subscribed SKUs
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgSubscribedSKU | Format-List
+```
 
 AppliesTo            : User
 CapabilityStatus     : Enabled
@@ -54,11 +49,8 @@ ServicePlans         : {M365_LIGHTHOUSE_PARTNER_PLAN1, WINDOWSUPDATEFORBUSINESS_
                        M365_LIGHTHOUSE_CUSTOMER_PLAN1...}
 SkuId                : cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
 SkuPartNumber        : SPB
-AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
-                       a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46]}
-```
-
-This command gets the information about the service SKU that the company has subscribed to.
+AdditionalProperties : {\[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
+                       a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46\]}
 
 ## PARAMETERS
 
@@ -93,6 +85,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -120,6 +127,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -190,9 +212,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -226,8 +250,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaSubscribedSku?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku)
-
 

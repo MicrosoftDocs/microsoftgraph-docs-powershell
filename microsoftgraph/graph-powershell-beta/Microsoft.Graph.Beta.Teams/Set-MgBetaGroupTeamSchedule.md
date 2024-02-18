@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamschedule
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property schedule in groups
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -23,18 +20,19 @@ Set-MgBetaGroupTeamSchedule -GroupId <String> [-ActivitiesIncludedWhenCopyingShi
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
  [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
- [-StartDayOfWeek <String>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]
- [-SwapShiftsRequestsEnabled] [-TimeCards <IMicrosoftGraphTimeCard[]>] [-TimeClockEnabled]
+ [-ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition[]>] [-StartDayOfWeek <String>]
+ [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>] [-SwapShiftsRequestsEnabled]
+ [-TimeCards <IMicrosoftGraphTimeCard[]>] [-TimeClockEnabled]
  [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
  [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
- [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgBetaGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgBetaGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -45,22 +43,35 @@ Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-ActivitiesIncludedWh
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
  [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
- [-StartDayOfWeek <String>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]
- [-SwapShiftsRequestsEnabled] [-TimeCards <IMicrosoftGraphTimeCard[]>] [-TimeClockEnabled]
+ [-ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition[]>] [-StartDayOfWeek <String>]
+ [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>] [-SwapShiftsRequestsEnabled]
+ [-TimeCards <IMicrosoftGraphTimeCard[]>] [-TimeClockEnabled]
  [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
  [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
- [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property schedule in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -154,6 +165,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -267,6 +293,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProvisionStatus
 operationStatus
 
@@ -304,6 +345,22 @@ To construct, see NOTES section for SHIFTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShift[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShiftsRoleDefinitions
+.
+To construct, see NOTES section for SHIFTSROLEDEFINITIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftsRoleDefinition[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -539,9 +596,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedule
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedule
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -632,7 +691,18 @@ Required.
       \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
     \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
     \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
+    \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The code for the schedulingGroup.
+      \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+      \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
     \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
+    \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name for the team.
+Required.
+      \[TeamId \<String\>\]: ID of the team.
   \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
   \[ProvisionStatus \<String\>\]: operationStatus
   \[SchedulingGroups \<IMicrosoftGraphSchedulingGroup\[\]\>\]: The logical grouping of users in the schedule (usually by role).
@@ -663,9 +733,23 @@ Required.
     \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
     \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
+    \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
     \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
+    \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
     \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+    \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name for the user.
+Required.
+      \[UserId \<String\>\]: ID of the user.
+  \[ShiftsRoleDefinitions \<IMicrosoftGraphShiftsRoleDefinition\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[ShiftsRolePermissions \<IMicrosoftGraphShiftsRolePermission\[\]\>\]: 
+      \[AllowedResourceActions \<String\[\]\>\]: 
   \[StartDayOfWeek \<String\>\]: dayOfWeek
   \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
     \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
@@ -762,8 +846,10 @@ Read-only.
 Required.
     \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
     \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
+    \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
     \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
+    \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
   \[WorkforceIntegrationIds \<String\[\]\>\]: The Ids for the workforce integrations associated with this schedule.
 
 DAYNOTES \<IMicrosoftGraphDayNote\[\]\>: The day notes in the schedule.
@@ -808,10 +894,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -916,7 +1004,18 @@ Required.
     \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
   \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
   \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
+  \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The code for the schedulingGroup.
+    \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+    \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
   \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
+  \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the team.
+Required.
+    \[TeamId \<String\>\]: ID of the team.
 
 SCHEDULINGGROUPS \<IMicrosoftGraphSchedulingGroup\[\]\>: The logical grouping of users in the schedule (usually by role).
   \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -982,9 +1081,33 @@ Required.
   \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
   \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
+  \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The code for the schedulingGroup.
+    \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+    \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
   \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
+  \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the team.
+Required.
+    \[TeamId \<String\>\]: ID of the team.
   \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+  \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the user.
+Required.
+    \[UserId \<String\>\]: ID of the user.
+
+SHIFTSROLEDEFINITIONS \<IMicrosoftGraphShiftsRoleDefinition\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[ShiftsRolePermissions \<IMicrosoftGraphShiftsRolePermission\[\]\>\]: 
+    \[AllowedResourceActions \<String\[\]\>\]: 
 
 SWAPSHIFTSCHANGEREQUESTS \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>: The swap requests for shifts in the schedule.
   \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
@@ -1134,13 +1257,20 @@ Read-only.
 Required.
   \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
   \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
+  \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the team.
+Required.
+    \[TeamId \<String\>\]: ID of the team.
   \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
+  \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the user.
+Required.
+    \[UserId \<String\>\]: ID of the user.
 
 ## RELATED LINKS
-[Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamschedule)
-
-
 

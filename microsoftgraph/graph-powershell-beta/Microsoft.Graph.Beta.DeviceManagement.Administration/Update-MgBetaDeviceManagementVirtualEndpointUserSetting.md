@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementVirtualEndpointUserSetting
@@ -20,14 +19,15 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <S
  [-CreatedDateTime <DateTime>]
  [-CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled] [-ResetEnabled]
- [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <String>
- -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,25 +37,24 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
  [-CreatedDateTime <DateTime>]
  [-CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled] [-ResetEnabled]
- [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
@@ -69,8 +68,6 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -186,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -249,6 +261,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -340,9 +367,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -397,9 +426,7 @@ When false, end-user initiated reset is not allowed.
 The default value is false.
   \[RestorePointSetting \<IMicrosoftGraphCloudPcRestorePointSetting\>\]: cloudPcRestorePointSetting
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[FrequencyInHours \<Int32?\>\]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
-Possible values are 4, 6, 12, 16, and 24.
-The default frequency is 12 hours.
+    \[FrequencyInHours \<Int32?\>\]: 
     \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
     \[UserRestoreEnabled \<Boolean?\>\]: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
@@ -473,9 +500,7 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 
 RESTOREPOINTSETTING \<IMicrosoftGraphCloudPcRestorePointSetting\>: cloudPcRestorePointSetting
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[FrequencyInHours \<Int32?\>\]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
-Possible values are 4, 6, 12, 16, and 24.
-The default frequency is 12 hours.
+  \[FrequencyInHours \<Int32?\>\]: 
   \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
   \[UserRestoreEnabled \<Boolean?\>\]: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
@@ -483,5 +508,4 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
-
 

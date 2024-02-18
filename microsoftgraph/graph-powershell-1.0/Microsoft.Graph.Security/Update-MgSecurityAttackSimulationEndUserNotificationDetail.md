@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property details in security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,15 @@ Update the navigation property details in security
 Update-MgSecurityAttackSimulationEndUserNotificationDetail -EndUserNotificationDetailId <String>
  -EndUserNotificationId <String> [-AdditionalProperties <Hashtable>] [-EmailContent <String>] [-Id <String>]
  [-IsDefaultLangauge] [-Language <String>] [-Locale <String>] [-SentFrom <IMicrosoftGraphEmailIdentity>]
- [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Subject <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityAttackSimulationEndUserNotificationDetail -EndUserNotificationDetailId <String>
- -EndUserNotificationId <String> -BodyParameter <IMicrosoftGraphEndUserNotificationDetail> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -EndUserNotificationId <String> -BodyParameter <IMicrosoftGraphEndUserNotificationDetail>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,17 +33,30 @@ Update-MgSecurityAttackSimulationEndUserNotificationDetail -EndUserNotificationD
 Update-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-EmailContent <String>] [-Id <String>] [-IsDefaultLangauge]
  [-Language <String>] [-Locale <String>] [-SentFrom <IMicrosoftGraphEmailIdentity>] [-Subject <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphEndUserNotificationDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEndUserNotificationDetail> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property details in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -122,6 +133,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -202,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SentFrom
 emailIdentity
 To construct, see NOTES section for SENTFROM properties and create a hash table.
@@ -271,9 +312,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndUserNotificationDetail
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndUserNotificationDetail
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -360,9 +403,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail)
-
-
 

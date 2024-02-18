@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerTask
 
 ## SYNOPSIS
 Create a new plannerTask.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,27 +24,25 @@ New-MgPlannerTask [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Ha
  [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>]
  [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>] [-PreviewType <String>]
  [-Priority <Int32>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
- [-ReferenceCount <Int32>] [-StartDateTime <DateTime>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReferenceCount <Int32>] [-StartDateTime <DateTime>] [-Title <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new plannerTask.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-tasks-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
@@ -63,10 +57,6 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
-
-```
-This example shows how to use the New-MgPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -360,6 +350,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -452,6 +457,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -556,9 +576,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -710,8 +732,6 @@ Read-only.
 For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
-[New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask)
-
 

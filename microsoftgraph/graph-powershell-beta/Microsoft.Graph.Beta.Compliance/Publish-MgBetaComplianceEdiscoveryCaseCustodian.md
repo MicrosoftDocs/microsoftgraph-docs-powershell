@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian
@@ -15,14 +15,14 @@ For details, see Release a custodian from a case.
 
 ### Release (Default)
 ```
-Publish-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Publish-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReleaseViaIdentity
 ```
-Publish-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Publish-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,13 +30,12 @@ Release a custodian from a case.
 For details, see Release a custodian from a case.
 
 ## EXAMPLES
-### Example 1: Using the Publish-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Publish-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
 ```
-This example shows how to use the Publish-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -70,6 +69,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -97,6 +111,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -138,9 +167,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -169,5 +200,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian)
-
 

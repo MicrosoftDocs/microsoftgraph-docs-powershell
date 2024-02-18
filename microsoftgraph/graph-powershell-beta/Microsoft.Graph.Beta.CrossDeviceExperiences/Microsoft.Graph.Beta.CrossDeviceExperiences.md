@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 Module Guid: 292e8ddf-b97f-4c33-908c-16f3d732c771
 Download Help Link: {{ Update Download Link }}
@@ -27,6 +27,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDevice](Get-MgBetaUserDevice.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserDeviceByDeviceId](Get-MgBetaUserDeviceByDeviceId.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceCommand](Get-MgBetaUserDeviceCommand.md)
@@ -176,6 +179,9 @@ Locale: en-US
 ### [Remove-MgBetaUserDevice](Remove-MgBetaUserDevice.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserDeviceByDeviceId](Remove-MgBetaUserDeviceByDeviceId.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserDeviceCommand](Remove-MgBetaUserDeviceCommand.md)
 {{ Fill in the Description }}
 
@@ -200,6 +206,9 @@ Locale: en-US
 ### [Update-MgBetaUserDevice](Update-MgBetaUserDevice.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaUserDeviceByDeviceId](Update-MgBetaUserDeviceByDeviceId.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaUserDeviceCommand](Update-MgBetaUserDeviceCommand.md)
 {{ Fill in the Description }}
 
@@ -208,5 +217,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserDeviceUsageRights](Update-MgBetaUserDeviceUsageRights.md)
 {{ Fill in the Description }}
-
 

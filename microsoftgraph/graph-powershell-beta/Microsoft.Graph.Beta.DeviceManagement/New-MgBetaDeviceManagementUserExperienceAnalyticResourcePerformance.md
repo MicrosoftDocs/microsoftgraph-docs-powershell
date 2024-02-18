@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticresourceperformance
@@ -34,6 +34,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -474,48 +490,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>`: The user experience analytics resource performance entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsResourcePerformance\>: The user experience analytics resource performance entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AverageSpikeTimeScore <Int32?>]`: AverageSpikeTimeScore of a device or a model type.
+  \[AverageSpikeTimeScore \<Int32?\>\]: AverageSpikeTimeScore of a device or a model type.
 Valid values 0 to 100
-  - `[CpuClockSpeedInMHz <Double?>]`: The clock speed of the processor, in MHz.
+  \[CpuClockSpeedInMHz \<Double?\>\]: The clock speed of the processor, in MHz.
 Valid values 0 to 1000000
-  - `[CpuDisplayName <String>]`: The name of the processor on the device, For example, 11th Gen Intel(R) Core(TM) i7.
-  - `[CpuSpikeTimePercentage <Double?>]`: CPU spike time in percentage.
+  \[CpuDisplayName \<String\>\]: The name of the processor on the device, For example, 11th Gen Intel(R) Core(TM) i7.
+  \[CpuSpikeTimePercentage \<Double?\>\]: CPU spike time in percentage.
 Valid values 0 to 100
-  - `[CpuSpikeTimePercentageThreshold <Double?>]`: Threshold of cpuSpikeTimeScore.
+  \[CpuSpikeTimePercentageThreshold \<Double?\>\]: Threshold of cpuSpikeTimeScore.
 Valid values 0 to 100
-  - `[CpuSpikeTimeScore <Int32?>]`: The user experience analytics device CPU spike time score.
+  \[CpuSpikeTimeScore \<Int32?\>\]: The user experience analytics device CPU spike time score.
 Valid values 0 to 100
-  - `[DeviceCount <Int64?>]`: User experience analytics summarized device count.
-  - `[DeviceId <String>]`: The id of the device.
-  - `[DeviceName <String>]`: The name of the device.
-  - `[DeviceResourcePerformanceScore <Int32?>]`: Resource performance score of a specific device.
+  \[DeviceCount \<Int64?\>\]: User experience analytics summarized device count.
+  \[DeviceId \<String\>\]: The id of the device.
+  \[DeviceName \<String\>\]: The name of the device.
+  \[DeviceResourcePerformanceScore \<Int32?\>\]: Resource performance score of a specific device.
 Valid values 0 to 100
-  - `[DiskType <DiskType?>]`: diskType
-  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[MachineType <UserExperienceAnalyticsMachineType?>]`: Indicates if machine is physical or virtual.
+  \[DiskType \<DiskType?\>\]: diskType
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[MachineType \<UserExperienceAnalyticsMachineType?\>\]: Indicates if machine is physical or virtual.
 Possible values are: physical or virtual
-  - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
-  - `[Model <String>]`: The user experience analytics device model.
-  - `[RamSpikeTimePercentage <Double?>]`: RAM spike time in percentage.
+  \[Manufacturer \<String\>\]: The user experience analytics device manufacturer.
+  \[Model \<String\>\]: The user experience analytics device model.
+  \[RamSpikeTimePercentage \<Double?\>\]: RAM spike time in percentage.
 Valid values 0 to 100
-  - `[RamSpikeTimePercentageThreshold <Double?>]`: Threshold of ramSpikeTimeScore.
+  \[RamSpikeTimePercentageThreshold \<Double?\>\]: Threshold of ramSpikeTimeScore.
 Valid values 0 to 100
-  - `[RamSpikeTimeScore <Int32?>]`: The user experience analytics device RAM spike time score.
+  \[RamSpikeTimeScore \<Int32?\>\]: The user experience analytics device RAM spike time score.
 Valid values 0 to 100
-  - `[TotalProcessorCoreCount <Int32?>]`: The count of cores of the processor of device.
+  \[TotalProcessorCoreCount \<Int32?\>\]: The count of cores of the processor of device.
 Valid values 0 to 512
-  - `[TotalRamInMb <Double?>]`: The total RAM of the device, in MB.
+  \[TotalRamInMb \<Double?\>\]: The total RAM of the device, in MB.
 Valid values 0 to 1000000
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticresourceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticresourceperformance)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity
@@ -15,19 +15,35 @@ Invoke action searchExistingIdentities
 ### SearchExpanded (Default)
 ```
 Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity [-AdditionalProperties <Hashtable>]
- [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Search
 ```
 Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity
  -BodyParameter <IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action searchExistingIdentities
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -62,6 +78,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -ImportedDeviceIdentities
 .
 To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
@@ -70,6 +101,21 @@ To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and crea
 Type: IMicrosoftGraphImportedDeviceIdentity[]
 Parameter Sets: SearchExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -115,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -153,6 +201,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity)
-
-
 

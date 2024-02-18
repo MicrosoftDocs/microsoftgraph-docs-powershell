@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationMeRubric
 
 ## SYNOPSIS
 Create a new educationRubric object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,27 +17,25 @@ Create a new educationRubric object.
 New-MgEducationMeRubric [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>] [-Grading <Hashtable>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Levels <IMicrosoftGraphRubricLevel[]>]
- [-Qualities <IMicrosoftGraphRubricQuality[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new educationRubric object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-rubrics-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	displayName = "Example Credit Rubric"
@@ -110,10 +104,6 @@ $params = @{
 }
 
 New-MgEducationMeRubric -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationMeRubric Cmdlet.
-
 
 ## PARAMETERS
 
@@ -210,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -250,6 +255,21 @@ To construct, see NOTES section for LEVELS properties and create a hash table.
 Type: IMicrosoftGraphRubricLevel[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -311,9 +331,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -406,8 +428,6 @@ QUALITIES \<IMicrosoftGraphRubricQuality\[\]\>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Planner
 Module Guid: 847f19b7-09d1-41e3-8ece-42850194b241
 Download Help Link: {{ Update Download Link }}
@@ -113,6 +113,12 @@ Locale: en-US
 ### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserPlannerMyDayTask](Get-MgBetaUserPlannerMyDayTask.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserPlannerMyDayTaskCount](Get-MgBetaUserPlannerMyDayTaskCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserPlannerPlan](Get-MgBetaUserPlannerPlan.md)
 {{ Fill in the Description }}
 
@@ -223,5 +229,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPlanner](Update-MgBetaUserPlanner.md)
 {{ Fill in the Description }}
-
 

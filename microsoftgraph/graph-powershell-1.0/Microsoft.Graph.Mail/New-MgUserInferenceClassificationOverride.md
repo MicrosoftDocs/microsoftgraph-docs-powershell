@@ -1,62 +1,58 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride
 schema: 2.0.0
-ms.prod: mail
 ---
 
 # New-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
 Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classifiedas specified in the override.
+Future messages from that SMTP address will be consistently classified\nas specified in the override.
 Note
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgUserInferenceClassificationOverride -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserInferenceClassificationOverride -UserId <String>
- -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classifiedas specified in the override.
+Future messages from that SMTP address will be consistently classified\nas specified in the override.
 Note
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	classifyAs = "focused"
@@ -68,11 +64,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserInferenceClassificationOverride Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -122,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -151,6 +157,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -223,9 +244,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -258,8 +281,6 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
   \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
-
 

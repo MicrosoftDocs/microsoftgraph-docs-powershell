@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalyticitemactivitystatactivity
@@ -10,40 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property activities in sites
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSiteAnalyticItemActivityStatActivity -ItemActivityId <String> -ItemActivityStatId <String>
  -SiteId <String> [-Access <Hashtable>] [-ActivityDateTime <DateTime>] [-Actor <IMicrosoftGraphIdentitySet>]
- [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSiteAnalyticItemActivityStatActivity -ItemActivityId <String> -ItemActivityStatId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphItemActivity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SiteId <String> -BodyParameter <IMicrosoftGraphItemActivity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-Access <Hashtable>]
  [-ActivityDateTime <DateTime>] [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
- [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivity> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property activities in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -140,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -202,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -255,9 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivity
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivity
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -494,8 +538,8 @@ For example, applications that can render file streams may set the addIns proper
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
           \[Id \<String\>\]: 
           \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: 
-            \[Key \<String\>\]: Key.
-            \[Value \<String\>\]: Value.
+            \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+            \[Value \<String\>\]: Contains the corresponding value for the specified key.
           \[Type \<String\>\]: 
         \[AlternativeNames \<String\[\]\>\]: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -587,10 +631,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -865,10 +909,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -1349,7 +1393,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
             \[Manufacturer \<String\>\]: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
             \[MdmAppId \<String\>\]: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -1358,7 +1402,7 @@ Read-only.
 Nullable.
 Supports $expand.
             \[Model \<String\>\]: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
             \[Name \<String\>\]: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
             \[OnPremisesLastSyncDateTime \<DateTime?\>\]: The last time at which the object was synced with the on-premises directory.
@@ -1409,7 +1453,7 @@ Supports $expand.
             \[TrustType \<String\>\]: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
             \[UsageRights \<IMicrosoftGraphUsageRight\[\]\>\]: Represents the usage rights a device has been granted.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1808,6 +1852,23 @@ Bytes for the hosted content (such as images).
 Content type, such as image/png, image/jpg.
                 \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
               \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+              \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+                \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+                \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+                    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                    \[BotId \<String\>\]: 
+                  \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+                \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+                \[Description \<String\>\]: 
+                \[DisplayName \<String\>\]: 
+                \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[IconUrl \<String\>\]: 
+                  \[OfficeUiFabricIconName \<String\>\]: 
+                \[PickerGroupId \<String\>\]: 
               \[Description \<String\>\]: 
               \[DisplayName \<String\>\]: The name of the app provided by the app developer.
               \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -2115,15 +2176,14 @@ For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
         \[OSVersion \<String\>\]: cloudPcOperatingSystem
         \[OnPremisesConnectionName \<String\>\]: The Azure network connection that is applied during the provisioning of Cloud PCs.
         \[PartnerAgentInstallResults \<IMicrosoftGraphCloudPcPartnerAgentInstallResult\[\]\>\]: The results of every partner agent's installation status on Cloud PC.
-          \[ErrorMessage \<String\>\]: 
+          \[ErrorMessage \<String\>\]: Contains a detailed error message when the partner agent installation failed.
           \[InstallStatus \<String\>\]: cloudPcPartnerAgentInstallStatus
-          \[IsThirdPartyPartner \<Boolean?\>\]: Indicates if the partner agent is a third party.
-When 'TRUE' the agent is a third-party (non-Microsoft) agent and when 'FALSE' the agent is a Microsoft agent or isn't known. 
-The default value is 'FALSE'
+          \[IsThirdPartyPartner \<Boolean?\>\]: Indicates whether the partner agent is a third party.
+When true, the agent is a third-party (non-Microsoft) agent and when false, the agent is a Microsoft agent or isn't known. 
+The default value is false.
           \[PartnerAgentName \<String\>\]: cloudPcPartnerAgentName
-          \[Retriable \<Boolean?\>\]: Indicates if the partner agent is a third party.
-When 'TRUE' the agent is a third-party (non-Microsoft) agent and when 'FALSE' the agent is a Microsoft agent or isn't known.
-The default value is 'FALSE'
+          \[Retriable \<Boolean?\>\]: Indicates whether the partner agent installation should be retried.
+The default value is false.
         \[PowerState \<String\>\]: cloudPcPowerState
         \[ProvisioningPolicyId \<String\>\]: The provisioning policy ID of the Cloud PC.
         \[ProvisioningPolicyName \<String\>\]: The provisioning policy that is applied during the provisioning of Cloud PCs.
@@ -2308,14 +2368,14 @@ Read-only.
 It is an Optional field
         \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[Context \<String\>\]: Not yet documented
-          \[Failure \<String\>\]: Not yet documented
+          \[Context \<String\>\]: 
+          \[Failure \<String\>\]: 
           \[FailureDetails \<String\>\]: The detailed description of what went wrong.
           \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
           \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
             \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-            \[Text \<String\>\]: Not yet documented
+            \[Text \<String\>\]: 
       \[Devices \<IMicrosoftGraphDevice\[\]\>\]: 
       \[DirectReports \<IMicrosoftGraphDirectoryObject\[\]\>\]: The users and contacts that report to the user.
 (The users and contacts with their manager property set to this user.) Read-only.
@@ -4176,9 +4236,9 @@ Maximum length: 1024 characters.
             \[AllowDeleteChannels \<Boolean?\>\]: If set to true, guests can delete channels.
           \[IncomingChannels \<IMicrosoftGraphChannel\[\]\>\]: List of channels shared with the team.
           \[InstalledApps \<IMicrosoftGraphTeamsAppInstallation\[\]\>\]: The apps installed in this team.
-          \[InternalId \<String\>\]: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+          \[InternalId \<String\>\]: A unique ID for the team used in a few places such as the audit log/Office 365 Management Activity API.
           \[IsArchived \<Boolean?\>\]: Whether this team is in read-only mode.
-          \[IsMembershipLimitedToOwners \<Boolean?\>\]: If set to true, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.
+          \[IsMembershipLimitedToOwners \<Boolean?\>\]: If set to true, the team is currently in the owner-only team membership state and inaccessible by other team members, such as students.
           \[MemberSettings \<IMicrosoftGraphTeamMemberSettings\>\]: teamMemberSettings
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[AllowAddRemoveApps \<Boolean?\>\]: If set to true, members can add and remove apps.
@@ -4198,8 +4258,8 @@ Maximum length: 1024 characters.
           \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: The async operations that ran or are running on this team.
           \[Owners \<IMicrosoftGraphUser\[\]\>\]: The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
-When using user delegated permissions, no owner can be specified (the current user is the owner).
-Owner must be specified as an object ID (GUID), not a UPN.
+When using user-delegated permissions, no owner can be specified (the current user is the owner).
+The owner must be specified as an object ID (GUID), not a UPN.
           \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: A collection of permissions granted to apps to access the team.
           \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
           \[PrimaryChannel \<IMicrosoftGraphChannel\>\]: channel
@@ -4274,7 +4334,18 @@ Required.
                 \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
               \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
               \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
+              \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[Code \<String\>\]: The code for the schedulingGroup.
+                \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+                \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
               \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
+              \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[DisplayName \<String\>\]: The display name for the team.
+Required.
+                \[TeamId \<String\>\]: ID of the team.
             \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
             \[ProvisionStatus \<String\>\]: operationStatus
             \[SchedulingGroups \<IMicrosoftGraphSchedulingGroup\[\]\>\]: The logical grouping of users in the schedule (usually by role).
@@ -4305,9 +4376,23 @@ Required.
               \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
               \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
+              \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
               \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
+              \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
               \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+              \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[DisplayName \<String\>\]: The display name for the user.
+Required.
+                \[UserId \<String\>\]: ID of the user.
+            \[ShiftsRoleDefinitions \<IMicrosoftGraphShiftsRoleDefinition\[\]\>\]: 
+              \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+              \[Description \<String\>\]: 
+              \[DisplayName \<String\>\]: 
+              \[ShiftsRolePermissions \<IMicrosoftGraphShiftsRolePermission\[\]\>\]: 
+                \[AllowedResourceActions \<String\[\]\>\]: 
             \[StartDayOfWeek \<String\>\]: dayOfWeek
             \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
               \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
@@ -4404,8 +4489,10 @@ Read-only.
 Required.
               \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
               \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
+              \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
               \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
+              \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
             \[WorkforceIntegrationIds \<String\[\]\>\]: The Ids for the workforce integrations associated with this schedule.
           \[Specialization \<String\>\]: teamSpecialization
           \[Summary \<IMicrosoftGraphTeamSummary\>\]: teamSummary
@@ -4450,8 +4537,8 @@ Read-only.
             \[TeamDefinition \<IMicrosoftGraphTeam\>\]: team
           \[TenantId \<String\>\]: The ID of the Microsoft Entra tenant.
           \[Visibility \<String\>\]: teamVisibilityType
-          \[WebUrl \<String\>\]: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+          \[WebUrl \<String\>\]: A hyperlink that goes to the team in the Microsoft Teams client.
+It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
         \[Theme \<String\>\]: Specifies a Microsoft 365 group's color theme.
 Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
@@ -4830,8 +4917,8 @@ Read-only.
             \[SettingInstanceId \<String\>\]: SettingInstanceId
             \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
             \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-              \[DisplayName \<String\>\]: Not yet documented
-              \[Id \<String\>\]: Not yet documented
+              \[DisplayName \<String\>\]: 
+              \[Id \<String\>\]: 
               \[SourceType \<String\>\]: settingSourceType
             \[State \<String\>\]: complianceStatus
             \[UserEmail \<String\>\]: UserEmail
@@ -4927,7 +5014,17 @@ Windows 11 devices will have values "notApplicable", "level1", "level2" or "leve
 Windows 10 devices will have value "notApplicable".
           \[TestSigning \<String\>\]: When test signing is allowed, the device does not enforce signature validation during boot
           \[TpmVersion \<String\>\]: The security version number of the Boot Application
-          \[VirtualSecureMode \<String\>\]: VSM is a container that protects high value assets from a compromised kernel
+          \[VirtualSecureMode \<String\>\]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
           \[VirtualizationBasedSecurity \<AzureAttestationSettingStatus?\>\]: A list of possible Azure Attestation states for a device.
 Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service.
 Only Windows 11 devices will have values "enabled" or "disabled".
@@ -4954,10 +5051,6 @@ This property is read-only.
           \[RemediationScriptError \<String\>\]: Error output of the remediation script
           \[RemediationState \<RemediationState?\>\]: Indicates the type of execution status of the device management script.
           \[UserName \<String\>\]: Name of the user whom ran the device health script
-        \[DeviceIdentityAttestationDetail \<IMicrosoftGraphDeviceIdentityAttestationDetail\>\]: Indicates the attestation status of the managed device
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[DeviceIdentityAttestationStatus \<DeviceIdentityAttestationStatus?\>\]: Indicates the state of the anomaly.
-Eg: anomaly severity can be new, active, disabled, removed or other.
         \[DeviceRegistrationState \<DeviceRegistrationState?\>\]: Device registration status.
         \[DeviceType \<DeviceType?\>\]: Device type.
         \[ExchangeAccessState \<DeviceManagementExchangeAccessState?\>\]: Device Exchange Access State.
@@ -5882,6 +5975,7 @@ Read-only.
         \[FavoritePlans \<IMicrosoftGraphPlannerPlan\[\]\>\]: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
+        \[MyDayTasks \<IMicrosoftGraphPlannerTask\[\]\>\]: 
         \[Plans \<IMicrosoftGraphPlannerPlan\[\]\>\]: 
         \[RecentPlanReferences \<IMicrosoftGraphPlannerRecentPlanReferenceCollection\>\]: plannerRecentPlanReferenceCollection
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -6750,7 +6844,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -6758,7 +6852,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -6898,9 +6992,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -7894,8 +7988,8 @@ For example, applications that can render file streams may set the addIns proper
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
         \[Id \<String\>\]: 
         \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: 
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[Type \<String\>\]: 
       \[AlternativeNames \<String\[\]\>\]: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -7987,10 +8081,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -8265,10 +8359,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -8749,7 +8843,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
           \[Manufacturer \<String\>\]: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
           \[MdmAppId \<String\>\]: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -8758,7 +8852,7 @@ Read-only.
 Nullable.
 Supports $expand.
           \[Model \<String\>\]: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
           \[Name \<String\>\]: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
           \[OnPremisesLastSyncDateTime \<DateTime?\>\]: The last time at which the object was synced with the on-premises directory.
@@ -8809,7 +8903,7 @@ Supports $expand.
           \[TrustType \<String\>\]: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
           \[UsageRights \<IMicrosoftGraphUsageRight\[\]\>\]: Represents the usage rights a device has been granted.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -9208,6 +9302,23 @@ Bytes for the hosted content (such as images).
 Content type, such as image/png, image/jpg.
               \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
             \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+            \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+              \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+              \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[BotId \<String\>\]: 
+                \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+              \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+              \[Description \<String\>\]: 
+              \[DisplayName \<String\>\]: 
+              \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[IconUrl \<String\>\]: 
+                \[OfficeUiFabricIconName \<String\>\]: 
+              \[PickerGroupId \<String\>\]: 
             \[Description \<String\>\]: 
             \[DisplayName \<String\>\]: The name of the app provided by the app developer.
             \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -9515,15 +9626,14 @@ For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
       \[OSVersion \<String\>\]: cloudPcOperatingSystem
       \[OnPremisesConnectionName \<String\>\]: The Azure network connection that is applied during the provisioning of Cloud PCs.
       \[PartnerAgentInstallResults \<IMicrosoftGraphCloudPcPartnerAgentInstallResult\[\]\>\]: The results of every partner agent's installation status on Cloud PC.
-        \[ErrorMessage \<String\>\]: 
+        \[ErrorMessage \<String\>\]: Contains a detailed error message when the partner agent installation failed.
         \[InstallStatus \<String\>\]: cloudPcPartnerAgentInstallStatus
-        \[IsThirdPartyPartner \<Boolean?\>\]: Indicates if the partner agent is a third party.
-When 'TRUE' the agent is a third-party (non-Microsoft) agent and when 'FALSE' the agent is a Microsoft agent or isn't known. 
-The default value is 'FALSE'
+        \[IsThirdPartyPartner \<Boolean?\>\]: Indicates whether the partner agent is a third party.
+When true, the agent is a third-party (non-Microsoft) agent and when false, the agent is a Microsoft agent or isn't known. 
+The default value is false.
         \[PartnerAgentName \<String\>\]: cloudPcPartnerAgentName
-        \[Retriable \<Boolean?\>\]: Indicates if the partner agent is a third party.
-When 'TRUE' the agent is a third-party (non-Microsoft) agent and when 'FALSE' the agent is a Microsoft agent or isn't known.
-The default value is 'FALSE'
+        \[Retriable \<Boolean?\>\]: Indicates whether the partner agent installation should be retried.
+The default value is false.
       \[PowerState \<String\>\]: cloudPcPowerState
       \[ProvisioningPolicyId \<String\>\]: The provisioning policy ID of the Cloud PC.
       \[ProvisioningPolicyName \<String\>\]: The provisioning policy that is applied during the provisioning of Cloud PCs.
@@ -9708,14 +9818,14 @@ Read-only.
 It is an Optional field
       \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Context \<String\>\]: Not yet documented
-        \[Failure \<String\>\]: Not yet documented
+        \[Context \<String\>\]: 
+        \[Failure \<String\>\]: 
         \[FailureDetails \<String\>\]: The detailed description of what went wrong.
         \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
         \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
           \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-          \[Text \<String\>\]: Not yet documented
+          \[Text \<String\>\]: 
     \[Devices \<IMicrosoftGraphDevice\[\]\>\]: 
     \[DirectReports \<IMicrosoftGraphDirectoryObject\[\]\>\]: The users and contacts that report to the user.
 (The users and contacts with their manager property set to this user.) Read-only.
@@ -11583,9 +11693,9 @@ Maximum length: 1024 characters.
           \[AllowDeleteChannels \<Boolean?\>\]: If set to true, guests can delete channels.
         \[IncomingChannels \<IMicrosoftGraphChannel\[\]\>\]: List of channels shared with the team.
         \[InstalledApps \<IMicrosoftGraphTeamsAppInstallation\[\]\>\]: The apps installed in this team.
-        \[InternalId \<String\>\]: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+        \[InternalId \<String\>\]: A unique ID for the team used in a few places such as the audit log/Office 365 Management Activity API.
         \[IsArchived \<Boolean?\>\]: Whether this team is in read-only mode.
-        \[IsMembershipLimitedToOwners \<Boolean?\>\]: If set to true, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.
+        \[IsMembershipLimitedToOwners \<Boolean?\>\]: If set to true, the team is currently in the owner-only team membership state and inaccessible by other team members, such as students.
         \[MemberSettings \<IMicrosoftGraphTeamMemberSettings\>\]: teamMemberSettings
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[AllowAddRemoveApps \<Boolean?\>\]: If set to true, members can add and remove apps.
@@ -11605,8 +11715,8 @@ Maximum length: 1024 characters.
         \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: The async operations that ran or are running on this team.
         \[Owners \<IMicrosoftGraphUser\[\]\>\]: The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
-When using user delegated permissions, no owner can be specified (the current user is the owner).
-Owner must be specified as an object ID (GUID), not a UPN.
+When using user-delegated permissions, no owner can be specified (the current user is the owner).
+The owner must be specified as an object ID (GUID), not a UPN.
         \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: A collection of permissions granted to apps to access the team.
         \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
         \[PrimaryChannel \<IMicrosoftGraphChannel\>\]: channel
@@ -11681,7 +11791,18 @@ Required.
               \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
             \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
             \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
+            \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[Code \<String\>\]: The code for the schedulingGroup.
+              \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+              \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
             \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
+            \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[DisplayName \<String\>\]: The display name for the team.
+Required.
+              \[TeamId \<String\>\]: ID of the team.
           \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
           \[ProvisionStatus \<String\>\]: operationStatus
           \[SchedulingGroups \<IMicrosoftGraphSchedulingGroup\[\]\>\]: The logical grouping of users in the schedule (usually by role).
@@ -11712,9 +11833,23 @@ Required.
             \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
             \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
+            \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
             \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
+            \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
             \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+            \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[DisplayName \<String\>\]: The display name for the user.
+Required.
+              \[UserId \<String\>\]: ID of the user.
+          \[ShiftsRoleDefinitions \<IMicrosoftGraphShiftsRoleDefinition\[\]\>\]: 
+            \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+            \[Description \<String\>\]: 
+            \[DisplayName \<String\>\]: 
+            \[ShiftsRolePermissions \<IMicrosoftGraphShiftsRolePermission\[\]\>\]: 
+              \[AllowedResourceActions \<String\[\]\>\]: 
           \[StartDayOfWeek \<String\>\]: dayOfWeek
           \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
             \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
@@ -11811,8 +11946,10 @@ Read-only.
 Required.
             \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
             \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
+            \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
             \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
+            \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
           \[WorkforceIntegrationIds \<String\[\]\>\]: The Ids for the workforce integrations associated with this schedule.
         \[Specialization \<String\>\]: teamSpecialization
         \[Summary \<IMicrosoftGraphTeamSummary\>\]: teamSummary
@@ -11857,8 +11994,8 @@ Read-only.
           \[TeamDefinition \<IMicrosoftGraphTeam\>\]: team
         \[TenantId \<String\>\]: The ID of the Microsoft Entra tenant.
         \[Visibility \<String\>\]: teamVisibilityType
-        \[WebUrl \<String\>\]: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+        \[WebUrl \<String\>\]: A hyperlink that goes to the team in the Microsoft Teams client.
+It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
       \[Theme \<String\>\]: Specifies a Microsoft 365 group's color theme.
 Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
@@ -12237,8 +12374,8 @@ Read-only.
           \[SettingInstanceId \<String\>\]: SettingInstanceId
           \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
           \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-            \[DisplayName \<String\>\]: Not yet documented
-            \[Id \<String\>\]: Not yet documented
+            \[DisplayName \<String\>\]: 
+            \[Id \<String\>\]: 
             \[SourceType \<String\>\]: settingSourceType
           \[State \<String\>\]: complianceStatus
           \[UserEmail \<String\>\]: UserEmail
@@ -12334,7 +12471,17 @@ Windows 11 devices will have values "notApplicable", "level1", "level2" or "leve
 Windows 10 devices will have value "notApplicable".
         \[TestSigning \<String\>\]: When test signing is allowed, the device does not enforce signature validation during boot
         \[TpmVersion \<String\>\]: The security version number of the Boot Application
-        \[VirtualSecureMode \<String\>\]: VSM is a container that protects high value assets from a compromised kernel
+        \[VirtualSecureMode \<String\>\]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         \[VirtualizationBasedSecurity \<AzureAttestationSettingStatus?\>\]: A list of possible Azure Attestation states for a device.
 Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service.
 Only Windows 11 devices will have values "enabled" or "disabled".
@@ -12361,10 +12508,6 @@ This property is read-only.
         \[RemediationScriptError \<String\>\]: Error output of the remediation script
         \[RemediationState \<RemediationState?\>\]: Indicates the type of execution status of the device management script.
         \[UserName \<String\>\]: Name of the user whom ran the device health script
-      \[DeviceIdentityAttestationDetail \<IMicrosoftGraphDeviceIdentityAttestationDetail\>\]: Indicates the attestation status of the managed device
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DeviceIdentityAttestationStatus \<DeviceIdentityAttestationStatus?\>\]: Indicates the state of the anomaly.
-Eg: anomaly severity can be new, active, disabled, removed or other.
       \[DeviceRegistrationState \<DeviceRegistrationState?\>\]: Device registration status.
       \[DeviceType \<DeviceType?\>\]: Device type.
       \[ExchangeAccessState \<DeviceManagementExchangeAccessState?\>\]: Device Exchange Access State.
@@ -13289,6 +13432,7 @@ Read-only.
       \[FavoritePlans \<IMicrosoftGraphPlannerPlan\[\]\>\]: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
+      \[MyDayTasks \<IMicrosoftGraphPlannerTask\[\]\>\]: 
       \[Plans \<IMicrosoftGraphPlannerPlan\[\]\>\]: 
       \[RecentPlanReferences \<IMicrosoftGraphPlannerRecentPlanReferenceCollection\>\]: plannerRecentPlanReferenceCollection
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -14157,7 +14301,7 @@ See Known issue.
     \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -14165,7 +14309,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
       \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -14305,9 +14449,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
     \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -15122,6 +15266,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[RecycleBinItemId \<String\>\]: The unique identifier of recycleBinItem
   \[RelationId \<String\>\]: The unique identifier of relation
@@ -15145,9 +15290,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalyticitemactivitystatactivity)
-
-
 

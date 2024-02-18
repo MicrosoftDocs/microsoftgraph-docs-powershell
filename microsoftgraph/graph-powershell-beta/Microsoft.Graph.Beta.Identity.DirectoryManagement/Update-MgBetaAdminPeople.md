@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
@@ -15,18 +15,31 @@ Update the navigation property people in admin
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAdminPeople [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property people in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -61,12 +74,43 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ItemInsights
+insightsSettings
+To construct, see NOTES section for ITEMINSIGHTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphInsightsSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,6 +129,21 @@ To construct, see NOTES section for PROFILECARDPROPERTIES properties and create 
 Type: IMicrosoftGraphProfileCardProperty[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -146,9 +205,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -159,6 +220,16 @@ BODYPARAMETER \<IMicrosoftGraphPeopleAdminSettings\>: peopleAdminSettings
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+  \[ItemInsights \<IMicrosoftGraphInsightsSettings\>\]: insightsSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
+Default is empty.
+Optional.
+    \[IsEnabledInOrganization \<Boolean?\>\]: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+Default is true.
+Optional.
   \[ProfileCardProperties \<IMicrosoftGraphProfileCardProperty\[\]\>\]: Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -178,6 +249,17 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 Read-only.
     \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
+
+ITEMINSIGHTS \<IMicrosoftGraphInsightsSettings\>: insightsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
+Default is empty.
+Optional.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+Default is true.
+Optional.
 
 PROFILECARDPROPERTIES \<IMicrosoftGraphProfileCardProperty\[\]\>: Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -203,6 +285,4 @@ The default value is false, and pronouns are disabled.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
-
-
 

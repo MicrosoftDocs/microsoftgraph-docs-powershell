@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgBetaDirectoryCustomSecurityAttributeDefinition
 
 ## SYNOPSIS
 Create a new customSecurityAttributeDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -21,87 +17,89 @@ Create a new customSecurityAttributeDefinition object.
 New-MgBetaDirectoryCustomSecurityAttributeDefinition [-AdditionalProperties <Hashtable>]
  [-AllowedValues <IMicrosoftGraphAllowedValue[]>] [-AttributeSet <String>] [-Description <String>]
  [-Id <String>] [-IsCollection] [-IsSearchable] [-Name <String>] [-Status <String>] [-Type <String>]
- [-UsePreDefinedValuesOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsePreDefinedValuesOnly] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryCustomSecurityAttributeDefinition
- -BodyParameter <IMicrosoftGraphCustomSecurityAttributeDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomSecurityAttributeDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new customSecurityAttributeDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
+
 $params = @{
-	AttributeSet = "Engineering"
-	Description = "Active projects for user"
-	IsCollection = $true
-	IsSearchable = $true
-	Name = "Project"
-	Status = "Available"
-	Type = "String"
-	UsePreDefinedValuesOnly = $true
-	AllowedValues = @(
+	attributeSet = "Engineering"
+	description = "Target completion date"
+	isCollection = $false
+	isSearchable = $true
+	name = "ProjectDate"
+	status = "Available"
+	type = "String"
+	usePreDefinedValuesOnly = $false
+}
+
+New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
+
+$params = @{
+	attributeSet = "Engineering"
+	description = "Active projects for user"
+	isCollection = $true
+	isSearchable = $true
+	name = "Project"
+	status = "Available"
+	type = "String"
+	usePreDefinedValuesOnly = $true
+}
+
+New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
+
+$params = @{
+	attributeSet = "Engineering"
+	description = "Active projects for user"
+	isCollection = $true
+	isSearchable = $true
+	name = "Project"
+	status = "Available"
+	type = "String"
+	usePreDefinedValuesOnly = $true
+	allowedValues = @(
 		@{
-			Id = "Alpine"
-			IsActive = $true
+			id = "Alpine"
+			isActive = $true
 		}
 		@{
-			Id = "Baker"
-			IsActive = $true
+			id = "Baker"
+			isActive = $true
 		}
 		@{
-			Id = "Cascade"
-			IsActive = $true
+			id = "Cascade"
+			isActive = $true
 		}
 	)
 }
+
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-$params = @{
-	AttributeSet = "Engineering"
-	Description = "Target completion date"
-	IsCollection = $false
-	IsSearchable = $true
-	Name = "ProjectDate"
-	Status = "Available"
-	Type = "String"
-	UsePreDefinedValuesOnly = $false
-}
-New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-$params = @{
-	AttributeSet = "Engineering"
-	Description = "Active projects for user"
-	IsCollection = $true
-	IsSearchable = $true
-	Name = "Project"
-	Status = "Available"
-	Type = "String"
-	UsePreDefinedValuesOnly = $true
-}
-New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -248,6 +261,21 @@ Case insensitive.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -345,9 +373,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -401,8 +431,6 @@ Can later be changed from true to false, but cannot be changed from false to tru
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
 ## RELATED LINKS
-[New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)
-
 

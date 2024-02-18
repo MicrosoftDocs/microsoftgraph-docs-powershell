@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementvpptoken
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceAppManagementVppToken
 
 ## SYNOPSIS
 Update the properties of a vppToken object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -22,13 +18,14 @@ Update-MgDeviceAppManagementVppToken -VppTokenId <String> [-AdditionalProperties
  [-AppleId <String>] [-AutomaticallyUpdateApps] [-CountryOrRegion <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
  [-LastSyncStatus <VppTokenSyncStatus>] [-OrganizationName <String>] [-State <VppTokenState>] [-Token <String>]
- [-VppTokenAccountType <VppTokenAccountType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VppTokenAccountType <VppTokenAccountType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceAppManagementVppToken -VppTokenId <String> -BodyParameter <IMicrosoftGraphVppToken> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDeviceAppManagementVppToken -VppTokenId <String> -BodyParameter <IMicrosoftGraphVppToken>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +34,31 @@ Update-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementId
  [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-AutomaticallyUpdateApps] [-CountryOrRegion <String>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>] [-OrganizationName <String>]
- [-State <VppTokenState>] [-Token <String>] [-VppTokenAccountType <VppTokenAccountType>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-State <VppTokenState>] [-Token <String>] [-VppTokenAccountType <VppTokenAccountType>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphVppToken> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVppToken> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a vppToken object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -146,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -230,6 +255,21 @@ The organization associated with the Apple Volume Purchase Program Token
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -336,9 +376,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVppToken
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVppToken
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -402,9 +444,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementvpptoken)
-
-
 

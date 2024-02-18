@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogprovisioning
@@ -10,56 +10,45 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents an action performed by the Microsoft Entra provisioning service and its associated properties.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogProvisioning](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogProvisioning?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaAuditLogProvisioning [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaAuditLogProvisioning -ProvisioningObjectSummaryId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents an action performed by the Microsoft Entra provisioning service and its associated properties.
 
 ## EXAMPLES
-### Example 1: Successful request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
+```
 
 Get-MgBetaAuditLogProvisioning
 
+### EXAMPLE 2
 ```
-This example will successful request
-
-### Example 2: Error reponse
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Reports
+```
 
 Get-MgBetaAuditLogProvisioning
-
-```
-This example will error reponse
-
 
 ## PARAMETERS
 
@@ -124,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -151,6 +155,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -251,9 +270,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProvisioningObjectSummary
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -282,9 +303,11 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
   \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
+  \[ManifestId \<String\>\]: The unique identifier of manifest
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
   \[MonthlyInactiveUsersMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersMetric
+  \[OperationId \<String\>\]: The unique identifier of operation
   \[Period \<String\>\]: Usage: period='{period}'
   \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
   \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
@@ -305,8 +328,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgAuditLogProvisioning](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogProvisioning?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogprovisioning)
-
 

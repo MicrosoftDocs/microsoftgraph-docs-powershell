@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityTiIndicator
@@ -31,24 +30,23 @@ New-MgBetaSecurityTiIndicator [-Action <String>] [-ActivityGroupNames <String[]>
  [-NetworkProtocol <Int32>] [-NetworkSourceAsn <Int64>] [-NetworkSourceCidrBlock <String>]
  [-NetworkSourceIPv4 <String>] [-NetworkSourceIPv6 <String>] [-NetworkSourcePort <Int32>] [-PassiveOnly]
  [-Severity <Int32>] [-Tags <String[]>] [-TargetProduct <String>] [-ThreatType <String>] [-TlpLevel <String>]
- [-Url <String>] [-UserAgent <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Url <String>] [-UserAgent <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new tiIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicators-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityTiIndicator Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Action = "alert"
@@ -73,8 +71,6 @@ $params = @{
 }
 New-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -553,6 +549,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -911,6 +922,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 An integer representing the severity of the malicious behavior identified by the data within the indicator.
 Acceptable values are 0 - 5 where 5 is the most severe and zero isn't severe at all.
@@ -1059,9 +1085,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTiIndicator
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTiIndicator
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1161,5 +1189,4 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
-
 

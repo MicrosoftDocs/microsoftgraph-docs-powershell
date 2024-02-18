@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent
@@ -21,13 +21,15 @@ Update-MgBetaUserMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId 
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
  [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
- [-UserId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId1 <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +40,35 @@ Update-MgBetaUserMobileAppTroubleshootingEvent [-UserId <String>]
  [-ApplicationId <String>] [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>]
  [-EventName <String>] [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property mobileAppTroubleshootingEvents in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -192,6 +211,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -History
 Intune Mobile Application Troubleshooting History Item
 To construct, see NOTES section for HISTORY properties and create a hash table.
@@ -264,6 +298,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -366,9 +415,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -398,14 +449,14 @@ BODYPARAMETER \<IMicrosoftGraphMobileAppTroubleshootingEvent\>: Event representi
 It is an Optional field
   \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Context \<String\>\]: Not yet documented
-    \[Failure \<String\>\]: Not yet documented
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
     \[FailureDetails \<String\>\]: The detailed description of what went wrong.
     \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
     \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
       \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      \[Text \<String\>\]: Not yet documented
+      \[Text \<String\>\]: 
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AppLogCollectionRequests \<IMicrosoftGraphAppLogCollectionRequest\[\]\>\]: The collection property of AppLogUploadRequest.
@@ -427,14 +478,14 @@ HISTORY \<IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[\]\>: Intune Mobil
   \[OccurrenceDateTime \<DateTime?\>\]: Time when the history item occurred.
   \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Context \<String\>\]: Not yet documented
-    \[Failure \<String\>\]: Not yet documented
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
     \[FailureDetails \<String\>\]: The detailed description of what went wrong.
     \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
     \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
       \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      \[Text \<String\>\]: Not yet documented
+      \[Text \<String\>\]: 
 
 INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
@@ -508,18 +559,16 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 
 TROUBLESHOOTINGERRORDETAILS \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>: Object containing detailed information about the error and its remediation.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Context \<String\>\]: Not yet documented
-  \[Failure \<String\>\]: Not yet documented
+  \[Context \<String\>\]: 
+  \[Failure \<String\>\]: 
   \[FailureDetails \<String\>\]: The detailed description of what went wrong.
   \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
   \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
     \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-    \[Text \<String\>\]: Not yet documented
+    \[Text \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent)
-
-
 

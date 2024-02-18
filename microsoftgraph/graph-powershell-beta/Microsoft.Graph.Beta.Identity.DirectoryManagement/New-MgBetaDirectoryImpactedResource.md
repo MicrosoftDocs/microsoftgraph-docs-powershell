@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource
@@ -18,18 +18,34 @@ New-MgBetaDirectoryImpactedResource [-AddedDateTime <DateTime>]
  [-AdditionalDetails <IMicrosoftGraphKeyValue[]>] [-AdditionalProperties <Hashtable>] [-ApiUrl <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <String>] [-LastModifiedDateTime <String>]
  [-Owner <String>] [-PortalUrl <String>] [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>]
- [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-SubjectId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-SubjectId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResource> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResource> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to impactedResources for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -125,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -208,6 +239,21 @@ The future date and time when the status of a postponed impactedResource will be
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -331,9 +377,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -341,8 +389,8 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ADDITIONALDETAILS \<IMicrosoftGraphKeyValue\[\]\>: Additional information unique to the impactedResource to help contextualize the recommendation.
-  \[Key \<String\>\]: Key.
-  \[Value \<String\>\]: Value.
+  \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+  \[Value \<String\>\]: Contains the corresponding value for the specified key.
 
 BODYPARAMETER \<IMicrosoftGraphImpactedResource\>: impactedResource
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -350,8 +398,8 @@ BODYPARAMETER \<IMicrosoftGraphImpactedResource\>: impactedResource
 Read-only.
   \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
   \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
   \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
   \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
   \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
@@ -371,6 +419,4 @@ For example, this property is set to the applicationId if the resourceType is an
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource)
-
-
 

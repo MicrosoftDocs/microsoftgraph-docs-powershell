@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaUserAuthenticationTemporaryAccessPassMethod
@@ -13,38 +12,36 @@ Create a new temporaryAccessPassAuthenticationMethod object on a user.
 A user can only have one Temporary Access Pass that's usable within its specified lifetime.
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-IsUsableOnce] [-LifetimeInMinutes <Int32>]
- [-StartDateTime <DateTime>] [-TemporaryAccessPass <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-TemporaryAccessPass <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId <String>
- -BodyParameter <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsUsableOnce]
- [-LifetimeInMinutes <Int32>] [-StartDateTime <DateTime>] [-TemporaryAccessPass <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LifetimeInMinutes <Int32>] [-StartDateTime <DateTime>] [-TemporaryAccessPass <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,27 +49,20 @@ Create a new temporaryAccessPassAuthenticationMethod object on a user.
 A user can only have one Temporary Access Pass that's usable within its specified lifetime.
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-post-temporaryaccesspassmethods-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2022-06-05T00:00:00.000Z")
+	startDateTime = \[System.DateTime\]::Parse("2022-06-05T00:00:00.000Z")
 	lifetimeInMinutes = 60
 	isUsableOnce = $false
 }
 
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserAuthenticationTemporaryAccessPassMethod Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -119,6 +109,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -182,6 +187,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -270,9 +290,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTemporaryAccessPassAuthenticationMethod
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTemporaryAccessPassAuthenticationMethod
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -372,8 +394,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod)
-
 

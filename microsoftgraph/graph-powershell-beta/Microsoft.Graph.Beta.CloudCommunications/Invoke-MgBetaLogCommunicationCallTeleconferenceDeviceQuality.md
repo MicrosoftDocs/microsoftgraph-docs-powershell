@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality
@@ -17,22 +16,21 @@ The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### LogExpanded (Default)
 ```
 Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality [-AdditionalProperties <Hashtable>]
- [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Log
 ```
 Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality
  -Body <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,12 +42,10 @@ The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-logteleconferencedevicequality-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Quality = @{
@@ -137,8 +133,6 @@ $params = @{
 }
 Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -173,6 +167,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
@@ -184,6 +193,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -241,9 +265,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -343,8 +369,6 @@ If the media enabled and disabled multiple times, MediaDuration will the summati
 The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 ## RELATED LINKS
-[Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality)
-
 

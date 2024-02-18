@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgBetaPlannerTask
 
 ## SYNOPSIS
 Update the navigation property tasks in planner
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,14 +28,14 @@ Update-MgBetaPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ActiveCheck
  [-PreviewType <String>] [-Priority <Int32>]
  [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>]
- [-SpecifiedCompletionRequirements <String>] [-StartDateTime <DateTime>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SpecifiedCompletionRequirements <String>] [-StartDateTime <DateTime>] [-Title <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPlannerTask -PlannerTaskId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerTask>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,27 +54,26 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-Act
  [-PreviewType <String>] [-Priority <Int32>]
  [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>]
- [-SpecifiedCompletionRequirements <String>] [-StartDateTime <DateTime>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SpecifiedCompletionRequirements <String>] [-StartDateTime <DateTime>] [-Title <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerTask> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property tasks in planner
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	assignments = @{
@@ -97,17 +92,12 @@ $params = @{
 				type = "daily"
 				interval = 3
 			}
-			patternStartDateTime = [System.DateTime]::Parse("2022-02-22T02:10:33Z")
+			patternStartDateTime = \[System.DateTime\]::Parse("2022-02-22T02:10:33Z")
 		}
 	}
 }
 
-Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-```
-This example shows how to use the Update-MgBetaPlannerTask Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -433,6 +423,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -620,6 +625,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressTaskBoardFormat
 plannerProgressTaskBoardTaskFormat
 To construct, see NOTES section for PROGRESSTASKBOARDFORMAT properties and create a hash table.
@@ -752,9 +772,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1108,8 +1130,6 @@ Required.
 A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
-[Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
-
 

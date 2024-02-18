@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault
@@ -10,34 +10,30 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reset (Default)
 ```
-Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId <String> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdentity> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reset a caseSettings object to the default values.
 
 ## EXAMPLES
-### Example 1: Using the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -53,6 +49,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -83,6 +94,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -124,9 +150,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -188,8 +216,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault](https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault)
-
 

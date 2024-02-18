@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection
@@ -16,13 +16,15 @@ Update the navigation property informationProtection in users
 ```
 Update-MgBetaUserSecurityInformationProtection -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
- [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSecurityInformationProtection -UserId <String>
- -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -30,17 +32,31 @@ Update-MgBetaUserSecurityInformationProtection -UserId <String>
 Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
- [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property informationProtection in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -69,6 +85,21 @@ Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -115,6 +146,21 @@ To construct, see NOTES section for LABELPOLICYSETTINGS properties and create a 
 Type: IMicrosoftGraphSecurityInformationProtectionPolicySetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -192,9 +238,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -231,6 +279,7 @@ False if the label is a parent with child labels.
 
 INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[AlertId \<String\>\]: The unique identifier of alert
+  \[AnalyzedEmailId \<String\>\]: The unique identifier of analyzedEmail
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
@@ -337,6 +386,4 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection)
-
-
 

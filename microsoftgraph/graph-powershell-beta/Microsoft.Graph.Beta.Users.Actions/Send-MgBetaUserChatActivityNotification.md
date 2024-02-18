@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Send-MgBetaUserChatActivityNotification
@@ -12,39 +11,40 @@ ms.prod: microsoft-teams
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
 Send-MgBetaUserChatActivityNotification -ChatId <String> -UserId <String> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaUserChatActivityNotification -ChatId <String> -UserId <String>
  -BodyParameter <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
 Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,10 +52,11 @@ Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
 ## EXAMPLES
-### Example 1: Notify a user about a task created in a chat
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -79,15 +80,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Notify a user about an approval needed in a chat message
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -111,15 +108,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Notify a user about an approval needed in a chat message using user principal name
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -143,15 +136,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Notify a user about an event in relation to a chat
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -176,11 +165,6 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -260,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -307,11 +306,41 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipient
 teamworkNotificationRecipient
 
 ```yaml
 Type: Hashtable
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamsAppId
+.
+
+```yaml
+Type: String
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -407,9 +436,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -426,6 +457,7 @@ BODYPARAMETER \<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynoti
     \[ContentType \<String\>\]: bodyType
   \[Recipient \<IMicrosoftGraphTeamworkNotificationRecipient\>\]: teamworkNotificationRecipient
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TeamsAppId \<String\>\]: 
   \[TemplateParameters \<IMicrosoftGraphKeyValuePair\[\]\>\]: 
     \[Name \<String\>\]: Name for this key-value pair
     \[Value \<String\>\]: Value for this key-value pair
@@ -457,6 +489,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
   \[EventId \<String\>\]: The unique identifier of event
   \[EventId1 \<String\>\]: The unique identifier of event
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[ListItemId \<String\>\]: The unique identifier of listItem
   \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
   \[MailFolderId \<String\>\]: The unique identifier of mailFolder
@@ -499,8 +532,6 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification)
-
 

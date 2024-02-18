@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope
@@ -12,9 +12,6 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23,13 +20,15 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <
  [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
  [-AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-ModifiedBy <String>]
- [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,13 +37,15 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIde
  [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
  [-AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-ModifiedBy <String>]
- [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,9 +54,9 @@ The access package resource, for a group, an app, or a SharePoint Online site, m
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## EXAMPLES
-### Example 1: Create a new access package resource role scope
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{
   "id"= '4f5dac35-b025-4131-a27f-6e0e46d48dd1'
@@ -63,6 +64,7 @@ $accessPackageResource = @{
   "originId"= '8902df17-a973-438f-8321-8b619aa18dc4'
   "originSystem"= 'AadGroup'
   }
+```
 
 $accessPackageResourceRole = @{
   "originId"= 'Member_8902df17-a973-438f-8321-8b619aa18dc4'
@@ -77,25 +79,6 @@ $accessPackageResourceScope = @{
   }
 
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
-```
-
-```Output
-AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
-AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
-CreatedBy                  : admin@M365x814237.onmicrosoft.com
-CreatedDateTime            : 11/5/2021 9:06:32 AM
-Id                         : 3c955d0f-f6d5-45f0-b465-e8e6375a3895_5fef70e1-b78f-4d21-a6ad-979d9f54daf1
-ModifiedBy                 : admin@M365x814237.onmicrosoft.com
-ModifiedDateTime           : 11/5/2021 9:06:32 AM
-AdditionalProperties       : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('bc041fda-b3ba-41fc-b911-ca95f7aa
-                             c656')/accessPackageResourceRoleScopes/$entity]}
-```
-
-This example, the commands;
-1. Defines a resource variable. **Id** in the $accesspackageresource variable is the identifier of the group catalog resource.
-1. Defines the resource role variable
-1. Defines the resource scope variable
-1. Create a new access package resource role scope.
 
 ## PARAMETERS
 
@@ -208,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -271,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -309,9 +322,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -383,12 +398,12 @@ Read-only.
       \[IsEditable \<Boolean?\>\]: Specifies whether or not an existing attribute value can be edited by the requester.
       \[IsPersistedOnAssignmentRemoval \<Boolean?\>\]: Specifies whether the attribute will remain in the end system after an assignment ends.
     \[Description \<String\>\]: A description for the resource.
-    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name, or site name.
     \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
     \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
-    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+In the case of a Microsoft Entra group, originId is the identifier of the group.
+    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
     \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   \[Description \<String\>\]: A description for the resource role.
@@ -460,12 +475,12 @@ Read-only.
       \[IsEditable \<Boolean?\>\]: Specifies whether or not an existing attribute value can be edited by the requester.
       \[IsPersistedOnAssignmentRemoval \<Boolean?\>\]: Specifies whether the attribute will remain in the end system after an assignment ends.
     \[Description \<String\>\]: A description for the resource.
-    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name, or site name.
     \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
     \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
-    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+In the case of a Microsoft Entra group, originId is the identifier of the group.
+    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
     \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   \[Description \<String\>\]: The description of the scope.
@@ -545,12 +560,12 @@ Read-only.
         \[IsEditable \<Boolean?\>\]: Specifies whether or not an existing attribute value can be edited by the requester.
         \[IsPersistedOnAssignmentRemoval \<Boolean?\>\]: Specifies whether the attribute will remain in the end system after an assignment ends.
       \[Description \<String\>\]: A description for the resource.
-      \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+      \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name, or site name.
       \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
       \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
-      \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+In the case of a Microsoft Entra group, originId is the identifier of the group.
+      \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
       \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
       \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
     \[Description \<String\>\]: A description for the resource role.
@@ -618,6 +633,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -668,8 +684,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope)
-
 

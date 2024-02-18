@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleShift
@@ -12,52 +11,46 @@ ms.prod: microsoft-teams
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleShift?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgTeamScheduleShift -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamScheduleShift -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgTeamScheduleShift -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-shifts-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -66,14 +59,14 @@ $params = @{
 	sharedShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
+				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:15:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -82,14 +75,14 @@ $params = @{
 	draftShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
+				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:30:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -98,10 +91,6 @@ $params = @{
 }
 
 New-MgTeamScheduleShift -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -152,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -192,6 +196,21 @@ To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash 
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -301,9 +320,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -453,8 +474,6 @@ Required.
   \[Notes \<String\>\]: The shift notes for the shiftItem.
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift)
-
 

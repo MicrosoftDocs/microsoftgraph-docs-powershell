@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner
@@ -10,26 +10,23 @@ schema: 2.0.0
 ## SYNOPSIS
 Get planner
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
-Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get planner
 
 ## EXAMPLES
-### Example 1: Using the Get-MgPlanner Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
 Get-MgPlanner
 ```
-This example shows how to use the Get-MgPlanner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -40,6 +37,36 @@ Expand related entities
 Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -68,14 +95,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner)
-
 

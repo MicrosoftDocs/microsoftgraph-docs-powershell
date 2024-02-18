@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshift
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an openShift object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,13 +18,16 @@ Update-MgBetaGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>] [-IsStagedForDeletion]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
- [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>]
+ [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String>
- -BodyParameter <IMicrosoftGraphOpenShift> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOpenShift> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,17 +35,35 @@ Update-MgBetaGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String>
 Update-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
- [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>]
+ [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an openShift object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -127,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -205,11 +238,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingGroupId
 The ID of the schedulingGroup that contains the openShift.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SchedulingGroupInfo
+schedulingGroupInfo
+To construct, see NOTES section for SCHEDULINGGROUPINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSchedulingGroupInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,6 +290,22 @@ To construct, see NOTES section for SHAREDOPENSHIFT properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamInfo
+shiftsTeamInfo
+To construct, see NOTES section for TEAMINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftsTeamInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,9 +354,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOpenShift
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOpenShift
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -327,7 +409,18 @@ Required.
     \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
   \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
   \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
+  \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The code for the schedulingGroup.
+    \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+    \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
   \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
+  \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the team.
+Required.
+    \[TeamId \<String\>\]: ID of the team.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -388,10 +481,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -421,6 +516,13 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
+SCHEDULINGGROUPINFO \<IMicrosoftGraphSchedulingGroupInfo\>: schedulingGroupInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: The code for the schedulingGroup.
+  \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+  \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
+
 SHAREDOPENSHIFT \<IMicrosoftGraphOpenShiftItem\>: openShiftItem
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Activities \<IMicrosoftGraphShiftActivity\[\]\>\]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
@@ -448,10 +550,13 @@ Required.
   \[Theme \<String\>\]: scheduleEntityTheme
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
+TEAMINFO \<IMicrosoftGraphShiftsTeamInfo\>: shiftsTeamInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name for the team.
+Required.
+  \[TeamId \<String\>\]: ID of the team.
+
 ## RELATED LINKS
-[Update-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshift)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetauserdevicemanagementtroubleshootingevent
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceManagementTroubleshootingEvents in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,15 +17,15 @@ Update the navigation property deviceManagementTroubleshootingEvents in users
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -DeviceManagementTroubleshootingEventId <String>
  -UserId <String> [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
  [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>] [-Id <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -DeviceManagementTroubleshootingEventId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -UserId <String> -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,18 +33,35 @@ Update-MgBetaUserDeviceManagementTroubleshootingEvent -DeviceManagementTroublesh
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
  [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>] [-Id <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceManagementTroubleshootingEvents in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -159,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -188,6 +217,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -260,9 +304,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -286,14 +332,14 @@ Read-only.
 It is an Optional field
   \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Context \<String\>\]: Not yet documented
-    \[Failure \<String\>\]: Not yet documented
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
     \[FailureDetails \<String\>\]: The detailed description of what went wrong.
     \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
     \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
       \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      \[Text \<String\>\]: Not yet documented
+      \[Text \<String\>\]: 
 
 INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
@@ -367,19 +413,16 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 
 TROUBLESHOOTINGERRORDETAILS \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>: Object containing detailed information about the error and its remediation.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Context \<String\>\]: Not yet documented
-  \[Failure \<String\>\]: Not yet documented
+  \[Context \<String\>\]: 
+  \[Failure \<String\>\]: 
   \[FailureDetails \<String\>\]: The detailed description of what went wrong.
   \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
   \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
     \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-    \[Text \<String\>\]: Not yet documented
+    \[Text \<String\>\]:
 
 ## RELATED LINKS
-[Update-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetauserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetauserdevicemanagementtroubleshootingevent)
-
-
 

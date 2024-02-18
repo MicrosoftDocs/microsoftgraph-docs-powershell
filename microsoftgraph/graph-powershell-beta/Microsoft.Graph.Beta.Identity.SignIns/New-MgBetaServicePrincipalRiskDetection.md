@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23,42 +20,34 @@ New-MgBetaServicePrincipalRiskDetection [-Activity <String>] [-ActivityDateTime 
  [-KeyIds <String[]>] [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>]
  [-MitreTechniqueId <String>] [-RequestId <String>] [-RiskDetail <String>] [-RiskEventType <String>]
  [-RiskLevel <String>] [-RiskState <String>] [-ServicePrincipalDisplayName <String>]
- [-ServicePrincipalId <String>] [-Source <String>] [-TokenIssuerType <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ServicePrincipalId <String>] [-Source <String>] [-TokenIssuerType <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrincipalRiskDetection> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrincipalRiskDetection>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
 ## EXAMPLES
-### Example 1: List risk detections
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaServicePrincipalRiskDetection
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaBetaServicePrincipalRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List risk detections and filter the results
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaServicePrincipalRiskDetection -Filter "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
-```
-This example shows how to use the New-MgBetaBetaServicePrincipalRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -204,6 +193,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -288,6 +292,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -473,9 +492,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -558,8 +579,6 @@ Writable on OneDrive Personal.
 This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[New-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection)
-
 

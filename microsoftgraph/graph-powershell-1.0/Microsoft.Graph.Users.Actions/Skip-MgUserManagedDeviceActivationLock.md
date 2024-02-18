@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Skip-MgUserManagedDeviceActivationLock
@@ -11,27 +10,55 @@ ms.prod: intune
 ## SYNOPSIS
 Bypass activation lock
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Skip-MgBetaUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Skip-MgBetaUserManagedDeviceActivationLock?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Bypass (Default)
 ```
-Skip-MgUserManagedDeviceActivationLock -ManagedDeviceId <String> -UserId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Skip-MgUserManagedDeviceActivationLock -ManagedDeviceId <String> -UserId <String> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BypassViaIdentity
 ```
-Skip-MgUserManagedDeviceActivationLock -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Skip-MgUserManagedDeviceActivationLock -InputObject <IUsersActionsIdentity> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Bypass activation lock
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -75,6 +102,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -131,9 +173,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -163,6 +207,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[PermissionId \<String\>\]: The unique identifier of permission
   \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
@@ -172,9 +217,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Skip-MgBetaUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Skip-MgBetaUserManagedDeviceActivationLock?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock)
-
-
 

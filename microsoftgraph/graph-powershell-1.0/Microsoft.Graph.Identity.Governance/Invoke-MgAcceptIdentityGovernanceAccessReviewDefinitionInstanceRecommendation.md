@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
@@ -11,37 +10,32 @@ ms.prod: governance
 ## SYNOPSIS
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that haven't been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Accept (Default)
 ```
 Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation -AccessReviewInstanceId <String>
- -AccessReviewScheduleDefinitionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AccessReviewScheduleDefinitionId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
- -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that haven't been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-acceptrecommendations-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
 Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
-This example shows how to use the Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -75,6 +69,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -102,6 +111,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -143,9 +167,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -223,8 +249,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation)
-
 

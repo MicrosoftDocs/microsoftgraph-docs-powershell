@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcontentversioncount
@@ -10,145 +10,48 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppContentVersionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppContentVersionCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get9
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get8
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get7
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get6
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get5
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get4
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+ [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get10
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity9
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity8
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity7
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity6
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity5
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity4
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity3
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity2
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity10
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -167,13 +70,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity10, GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity10, GetViaIdentity
 Aliases:
 
 Required: True
@@ -188,10 +106,25 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1
+Parameter Sets: Get, Get10
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,8 +152,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -266,9 +201,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementMobileAppContentVersionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppContentVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcontentversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcontentversioncount)
-
-
 

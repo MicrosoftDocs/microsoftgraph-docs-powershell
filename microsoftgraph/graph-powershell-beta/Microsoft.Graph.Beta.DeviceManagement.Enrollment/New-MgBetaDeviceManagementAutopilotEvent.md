@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent
@@ -27,17 +27,30 @@ New-MgBetaDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
  [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationId <String>]
- [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to autopilotEvents for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -342,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -396,6 +424,21 @@ To construct, see NOTES section for POLICYSTATUSDETAILS properties and create a 
 Type: IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -531,9 +574,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -573,7 +618,7 @@ Read-only.
 Error code for enforcement status takes precedence if it exists.
     \[LastReportedDateTime \<DateTime?\>\]: Timestamp of the reported policy status
     \[PolicyType \<String\>\]: deviceManagementAutopilotPolicyType
-    \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+    \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
   \[TargetedAppCount \<Int32?\>\]: Count of applications targeted.
   \[TargetedPolicyCount \<Int32?\>\]: Count of policies targeted.
   \[UserPrincipalName \<String\>\]: User principal name used to enroll the device.
@@ -590,11 +635,9 @@ Read-only.
 Error code for enforcement status takes precedence if it exists.
   \[LastReportedDateTime \<DateTime?\>\]: Timestamp of the reported policy status
   \[PolicyType \<String\>\]: deviceManagementAutopilotPolicyType
-  \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+  \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent)
-
-
 

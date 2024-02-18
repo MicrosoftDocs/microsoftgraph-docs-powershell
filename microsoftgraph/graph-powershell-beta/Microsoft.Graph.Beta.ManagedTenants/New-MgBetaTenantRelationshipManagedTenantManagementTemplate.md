@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplate
@@ -22,17 +22,34 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplate [-AdditionalProperti
  [-ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]
  [-Parameters <IMicrosoftGraphManagedTenantsTemplateParameter[]>] [-Priority <Int32>] [-Provider <String>]
  [-UserImpact <String>] [-Version <Int32>] [-WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplate
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managementTemplates for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -143,6 +160,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -273,6 +305,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Provider
 managementProvider
 
@@ -373,9 +420,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -446,11 +495,13 @@ Read-only.
     \[CreatedDateTime \<DateTime?\>\]: 
     \[Description \<String\>\]: 
     \[DisplayName \<String\>\]: 
+    \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
     \[LastActionByUserId \<String\>\]: 
     \[LastActionDateTime \<DateTime?\>\]: 
     \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
     \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
     \[Priority \<Int32?\>\]: 
+    \[UserImpact \<String\>\]: 
     \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]: 
   \[Parameters \<IMicrosoftGraphManagedTenantsTemplateParameter\[\]\>\]: The collection of parameters used by the management template.
 Optional.
@@ -571,11 +622,13 @@ Read-only.
       \[CreatedDateTime \<DateTime?\>\]: 
       \[Description \<String\>\]: 
       \[DisplayName \<String\>\]: 
+      \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
       \[LastActionByUserId \<String\>\]: 
       \[LastActionDateTime \<DateTime?\>\]: 
       \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
       \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
       \[Priority \<Int32?\>\]: 
+      \[UserImpact \<String\>\]: 
       \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]: 
     \[Parameters \<IMicrosoftGraphManagedTenantsTemplateParameter\[\]\>\]: The collection of parameters used by the management template.
 Optional.
@@ -665,6 +718,9 @@ Read-only.
   \[CreatedDateTime \<DateTime?\>\]: 
   \[Description \<String\>\]: 
   \[DisplayName \<String\>\]: 
+  \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
+    \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
+    \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
   \[LastActionByUserId \<String\>\]: 
   \[LastActionDateTime \<DateTime?\>\]: 
   \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
@@ -681,8 +737,6 @@ Read-only.
 Required.
 Read-only.
     \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
-      \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-      \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
     \[LastActionByUserId \<String\>\]: 
     \[LastActionDateTime \<DateTime?\>\]: 
     \[ManagementTemplateCollections \<IMicrosoftGraphManagedTenantsManagementTemplateCollection\[\]\>\]: 
@@ -749,6 +803,7 @@ Read-only.
         \[ValueType \<String\>\]: managementParameterValueType
   \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
   \[Priority \<Int32?\>\]: 
+  \[UserImpact \<String\>\]: 
   \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]: 
 
 PARAMETERS \<IMicrosoftGraphManagedTenantsTemplateParameter\[\]\>: The collection of parameters used by the management template.
@@ -803,6 +858,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplate)
-
-
 

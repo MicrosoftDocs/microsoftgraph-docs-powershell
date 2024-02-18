@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetasupporteduseroutlooklanguage
@@ -10,39 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language bygetting the user's mailbox settings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgSupportedUserOutlookLanguage?view=graph-powershell-1.0)
+You can subsequently get the preferred language by\ngetting the user's mailbox settings.
 
 ## SYNTAX
 
 ### Supported (Default)
 ```
 Invoke-MgBetaSupportedUserOutlookLanguage -UserId <String> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### SupportedViaIdentity
 ```
 Invoke-MgBetaSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language bygetting the user's mailbox settings.
+You can subsequently get the preferred language by\ngetting the user's mailbox settings.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaSupportedUserOutlookLanguage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSupportedUserOutlookLanguage -UserId $userId
 ```
-This example shows how to use the Invoke-MgBetaSupportedUserOutlookLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,6 +74,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -89,6 +102,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -158,9 +186,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocaleInfo
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -184,6 +214,7 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[ListItemId \<String\>\]: The unique identifier of listItem
   \[MailFolderId \<String\>\]: The unique identifier of mailFolder
   \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
@@ -207,8 +238,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgSupportedUserOutlookLanguage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetasupporteduseroutlooklanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetasupporteduseroutlooklanguage)
-
 

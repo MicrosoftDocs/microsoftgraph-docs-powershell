@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property participants in communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,15 @@ Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
  [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- -BodyParameter <IMicrosoftGraphParticipant> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphParticipant> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +35,35 @@ Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
  [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphParticipant> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphParticipant> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property participants in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -95,6 +110,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -222,6 +252,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecordingInfo
 recordingInfo
 To construct, see NOTES section for RECORDINGINFO properties and create a hash table.
@@ -271,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterSequenceNumber
-.
+Indicates the roster sequence number in which the participant was last updated.
 
 ```yaml
 Type: Int64
@@ -323,9 +368,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -374,12 +421,12 @@ Read-only.
     \[RecordingStatus \<String\>\]: recordingStatus
   \[RemovedState \<IMicrosoftGraphRemovedState\>\]: removedState
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Reason \<String\>\]: 
+    \[Reason \<String\>\]: The removal reason for the participant resource.
   \[RestrictedExperience \<IMicrosoftGraphOnlineMeetingRestricted\>\]: onlineMeetingRestricted
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
     \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
-  \[RosterSequenceNumber \<Int64?\>\]: 
+  \[RosterSequenceNumber \<Int64?\>\]: Indicates the roster sequence number in which the participant was last updated.
 
 INFO \<IMicrosoftGraphParticipantInfo\>: participantInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -444,7 +491,7 @@ For example, if a user changes their display name, the API might show the new va
 
 REMOVEDSTATE \<IMicrosoftGraphRemovedState\>: removedState
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Reason \<String\>\]: 
+  \[Reason \<String\>\]: The removal reason for the participant resource.
 
 RESTRICTEDEXPERIENCE \<IMicrosoftGraphOnlineMeetingRestricted\>: onlineMeetingRestricted
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -452,9 +499,6 @@ RESTRICTEDEXPERIENCE \<IMicrosoftGraphOnlineMeetingRestricted\>: onlineMeetingRe
   \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
-[Update-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant)
-
-
 

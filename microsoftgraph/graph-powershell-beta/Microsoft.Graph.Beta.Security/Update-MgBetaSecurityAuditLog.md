@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog
@@ -15,17 +15,30 @@ Update the navigation property auditLog in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityAuditLog [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Queries <IMicrosoftGraphSecurityAuditLogQuery[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Queries <IMicrosoftGraphSecurityAuditLogQuery[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityAuditLog -BodyParameter <IMicrosoftGraphSecurityAuditCoreRoot> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityAuditLog -BodyParameter <IMicrosoftGraphSecurityAuditCoreRoot> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property auditLog in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -60,6 +73,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -68,6 +96,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -129,9 +172,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditCoreRoot
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditCoreRoot
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -145,70 +190,84 @@ Read-only.
   \[Queries \<IMicrosoftGraphSecurityAuditLogQuery\[\]\>\]: 
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[AdministrativeUnitIdFilters \<String\[\]\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[FilterEndDateTime \<DateTime?\>\]: 
-    \[FilterStartDateTime \<DateTime?\>\]: 
-    \[IPAddressFilters \<String\[\]\>\]: 
-    \[KeywordFilter \<String\>\]: 
-    \[ObjectIdFilters \<String\[\]\>\]: 
-    \[OperationFilters \<String\[\]\>\]: 
+    \[AdministrativeUnitIdFilters \<String\[\]\>\]: The administrative units tagged to an audit log record.
+    \[DisplayName \<String\>\]: The display name of the saved audit log query.
+    \[FilterEndDateTime \<DateTime?\>\]: The end date of the date range in the query.
+    \[FilterStartDateTime \<DateTime?\>\]: The start date of the date range in the query.
+    \[IPAddressFilters \<String\[\]\>\]: The IP address of the device that was used when the activity was logged.
+    \[KeywordFilter \<String\>\]: Free text field to search non-indexed properties of the audit log.
+    \[ObjectIdFilters \<String\[\]\>\]: For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user.
+For Exchange admin audit logging, the name of the object that was modified by the cmdlet.
+    \[OperationFilters \<String\[\]\>\]: The name of the user or admin activity.
+For a description of the most common operations/activities, see Search the audit log in the Office 365 Protection Center.
     \[RecordTypeFilters \<String\[\]\>\]: 
-    \[Records \<IMicrosoftGraphSecurityAuditLogRecord\[\]\>\]: 
+    \[Records \<IMicrosoftGraphSecurityAuditLogRecord\[\]\>\]: An individual audit log record.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[AdministrativeUnits \<String\[\]\>\]: 
+      \[AdministrativeUnits \<String\[\]\>\]: The administrative units tagged to an audit log record.
       \[AuditData \<IMicrosoftGraphSecurityAuditData\>\]: auditData
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[AuditLogRecordType \<String\>\]: auditLogRecordType
-      \[ClientIP \<String\>\]: 
-      \[CreatedDateTime \<DateTime?\>\]: 
-      \[ObjectId \<String\>\]: 
-      \[Operation \<String\>\]: 
-      \[OrganizationId \<String\>\]: 
-      \[Service \<String\>\]: 
-      \[UserId \<String\>\]: 
-      \[UserPrincipalName \<String\>\]: 
+      \[ClientIP \<String\>\]: The IP address of the device used when the activity was logged.
+The IP address is displayed in either an IPv4 or IPv6 address format.
+      \[CreatedDateTime \<DateTime?\>\]: The date and time in UTC when the user performed the activity.
+      \[ObjectId \<String\>\]: For Exchange admin audit logging, the name of the object modified by the cmdlet.
+For SharePoint activity, the full URL path name of the file or folder accessed by a user.
+For Microsoft Entra activity, the name of the user account that was modified.
+      \[Operation \<String\>\]: The name of the user or admin activity.
+      \[OrganizationId \<String\>\]: The GUID for your organization.
+      \[Service \<String\>\]: The Microsoft 365 service where the activity occurred.
+      \[UserId \<String\>\]: The user who performed the action (specified in the Operation property) that resulted in the record being logged.
+Audit records for activity performed by system accounts (such as SHAREPOINT/system or NT AUTHORITY/SYSTEM) are also included in the audit log.
+Another common value for the UserId property is app@sharepoint.
+It indicates that the 'user' who performed the activity was an application with the necessary permissions in SharePoint to perform organization-wide actions (such as searching a SharePoint site or OneDrive account) on behalf of a user, admin, or service.
+      \[UserPrincipalName \<String\>\]: UPN of the user who performed the action.
       \[UserType \<String\>\]: auditLogUserType
     \[ServiceFilters \<String\[\]\>\]: 
     \[Status \<String\>\]: auditLogQueryStatus
-    \[UserPrincipalNameFilters \<String\[\]\>\]: 
+    \[UserPrincipalNameFilters \<String\[\]\>\]: The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, myname@mydomain_name.
 
 QUERIES \<IMicrosoftGraphSecurityAuditLogQuery\[\]\>: .
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[AdministrativeUnitIdFilters \<String\[\]\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[FilterEndDateTime \<DateTime?\>\]: 
-  \[FilterStartDateTime \<DateTime?\>\]: 
-  \[IPAddressFilters \<String\[\]\>\]: 
-  \[KeywordFilter \<String\>\]: 
-  \[ObjectIdFilters \<String\[\]\>\]: 
-  \[OperationFilters \<String\[\]\>\]: 
+  \[AdministrativeUnitIdFilters \<String\[\]\>\]: The administrative units tagged to an audit log record.
+  \[DisplayName \<String\>\]: The display name of the saved audit log query.
+  \[FilterEndDateTime \<DateTime?\>\]: The end date of the date range in the query.
+  \[FilterStartDateTime \<DateTime?\>\]: The start date of the date range in the query.
+  \[IPAddressFilters \<String\[\]\>\]: The IP address of the device that was used when the activity was logged.
+  \[KeywordFilter \<String\>\]: Free text field to search non-indexed properties of the audit log.
+  \[ObjectIdFilters \<String\[\]\>\]: For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user.
+For Exchange admin audit logging, the name of the object that was modified by the cmdlet.
+  \[OperationFilters \<String\[\]\>\]: The name of the user or admin activity.
+For a description of the most common operations/activities, see Search the audit log in the Office 365 Protection Center.
   \[RecordTypeFilters \<String\[\]\>\]: 
-  \[Records \<IMicrosoftGraphSecurityAuditLogRecord\[\]\>\]: 
+  \[Records \<IMicrosoftGraphSecurityAuditLogRecord\[\]\>\]: An individual audit log record.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[AdministrativeUnits \<String\[\]\>\]: 
+    \[AdministrativeUnits \<String\[\]\>\]: The administrative units tagged to an audit log record.
     \[AuditData \<IMicrosoftGraphSecurityAuditData\>\]: auditData
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AuditLogRecordType \<String\>\]: auditLogRecordType
-    \[ClientIP \<String\>\]: 
-    \[CreatedDateTime \<DateTime?\>\]: 
-    \[ObjectId \<String\>\]: 
-    \[Operation \<String\>\]: 
-    \[OrganizationId \<String\>\]: 
-    \[Service \<String\>\]: 
-    \[UserId \<String\>\]: 
-    \[UserPrincipalName \<String\>\]: 
+    \[ClientIP \<String\>\]: The IP address of the device used when the activity was logged.
+The IP address is displayed in either an IPv4 or IPv6 address format.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time in UTC when the user performed the activity.
+    \[ObjectId \<String\>\]: For Exchange admin audit logging, the name of the object modified by the cmdlet.
+For SharePoint activity, the full URL path name of the file or folder accessed by a user.
+For Microsoft Entra activity, the name of the user account that was modified.
+    \[Operation \<String\>\]: The name of the user or admin activity.
+    \[OrganizationId \<String\>\]: The GUID for your organization.
+    \[Service \<String\>\]: The Microsoft 365 service where the activity occurred.
+    \[UserId \<String\>\]: The user who performed the action (specified in the Operation property) that resulted in the record being logged.
+Audit records for activity performed by system accounts (such as SHAREPOINT/system or NT AUTHORITY/SYSTEM) are also included in the audit log.
+Another common value for the UserId property is app@sharepoint.
+It indicates that the 'user' who performed the activity was an application with the necessary permissions in SharePoint to perform organization-wide actions (such as searching a SharePoint site or OneDrive account) on behalf of a user, admin, or service.
+    \[UserPrincipalName \<String\>\]: UPN of the user who performed the action.
     \[UserType \<String\>\]: auditLogUserType
   \[ServiceFilters \<String\[\]\>\]: 
   \[Status \<String\>\]: auditLogQueryStatus
-  \[UserPrincipalNameFilters \<String\[\]\>\]:
+  \[UserPrincipalNameFilters \<String\[\]\>\]: The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, myname@mydomain_name.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog)
-
-
 

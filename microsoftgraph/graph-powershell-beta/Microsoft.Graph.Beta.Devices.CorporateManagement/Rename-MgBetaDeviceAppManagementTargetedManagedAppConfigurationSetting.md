@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting
@@ -16,8 +16,8 @@ Invoke action changeSettings
 ```
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -TargetedManagedAppConfigurationId <String> [-AdditionalProperties <Hashtable>]
- [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Change
@@ -25,15 +25,16 @@ Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -TargetedManagedAppConfigurationId <String>
  -BodyParameter <IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ChangeViaIdentityExpanded
 ```
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
@@ -41,11 +42,24 @@ Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action changeSettings
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -80,6 +94,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -107,6 +136,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -180,9 +224,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -206,11 +252,14 @@ Read-only.
         \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
         \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
       \[BaseUri \<String\>\]: Base CSP Path
-      \[CategoryId \<String\>\]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-      \[Description \<String\>\]: Description of the item
-      \[DisplayName \<String\>\]: Display name of the item
-      \[HelpText \<String\>\]: Help text of the item
-      \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at
+      \[CategoryId \<String\>\]: Specify category in which the setting is under.
+Support $filters.
+      \[Description \<String\>\]: Description of the setting.
+      \[DisplayName \<String\>\]: Name of the setting.
+For example: Allow Toast.
+      \[HelpText \<String\>\]: Help text of the setting.
+Give more details of the setting.
+      \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at.
       \[Keywords \<String\[\]\>\]: Tokens which to search settings on
       \[Name \<String\>\]: Name of the item
       \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
@@ -221,8 +270,8 @@ A MinDeviceOccurrence of 0 means setting is optional
       \[OffsetUri \<String\>\]: Offset CSP Path from Base
       \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
         \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
-      \[RootDefinitionId \<String\>\]: Root setting definition if the setting is a child setting.
+Applicable for reusable setting.
+      \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
       \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
       \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
       \[Version \<String\>\]: Item Version
@@ -319,11 +368,14 @@ Read-only.
       \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
       \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
     \[BaseUri \<String\>\]: Base CSP Path
-    \[CategoryId \<String\>\]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-    \[Description \<String\>\]: Description of the item
-    \[DisplayName \<String\>\]: Display name of the item
-    \[HelpText \<String\>\]: Help text of the item
-    \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at
+    \[CategoryId \<String\>\]: Specify category in which the setting is under.
+Support $filters.
+    \[Description \<String\>\]: Description of the setting.
+    \[DisplayName \<String\>\]: Name of the setting.
+For example: Allow Toast.
+    \[HelpText \<String\>\]: Help text of the setting.
+Give more details of the setting.
+    \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at.
     \[Keywords \<String\[\]\>\]: Tokens which to search settings on
     \[Name \<String\>\]: Name of the item
     \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
@@ -334,8 +386,8 @@ A MinDeviceOccurrence of 0 means setting is optional
     \[OffsetUri \<String\>\]: Offset CSP Path from Base
     \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
       \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
-    \[RootDefinitionId \<String\>\]: Root setting definition if the setting is a child setting.
+Applicable for reusable setting.
+    \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
     \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
     \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
     \[Version \<String\>\]: Item Version
@@ -350,6 +402,4 @@ Applicable for reusable setting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)
-
-
 

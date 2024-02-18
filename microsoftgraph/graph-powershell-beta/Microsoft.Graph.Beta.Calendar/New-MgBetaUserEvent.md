@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserEvent
@@ -12,18 +11,15 @@ ms.prod: outlook
 Create an event in the user's default calendar or specified calendar.
 By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
 See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the start and end properties are of dateTimeTimeZone type.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \nstart and end properties are of dateTimeTimeZone type.
 First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
 When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipmentlike a projector.
+Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
 Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejectsthe meeting request based on the free/busy schedule of the resource.If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,the server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
+On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
 If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,13 +42,14 @@ New-MgBetaUserEvent -UserId <String> [-AdditionalProperties <Hashtable>] [-Allow
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-Uid <String>] [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Uid <String>] [-WebLink <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserEvent -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserEvent -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -74,37 +71,36 @@ New-MgBetaUserEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Has
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-Uid <String>] [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Uid <String>] [-WebLink <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an event in the user's default calendar or specified calendar.
 By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
 See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the start and end properties are of dateTimeTimeZone type.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \nstart and end properties are of dateTimeTimeZone type.
 First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
 When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipmentlike a projector.
+Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
 Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejectsthe meeting request based on the free/busy schedule of the resource.If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,the server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
+On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
 If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-events-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -138,15 +134,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -192,15 +184,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -243,15 +231,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -286,11 +270,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEvent -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -548,6 +527,21 @@ Required: False
 Position: Named
 Default value: False
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -912,6 +906,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recurrence
 patternedRecurrence
 To construct, see NOTES section for RECURRENCE properties and create a hash table.
@@ -1181,9 +1190,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -2365,8 +2376,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 06b0769e-2c63-4d60-9fb4-9ca0ec87e0d7
 Download Help Link: {{ Update Download Link }}
@@ -812,12 +812,6 @@ Locale: en-US
 ### [Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-{{ Fill in the Description }}
-
-### [Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgSecurityCaseEdiscoveryCaseSetting](Remove-MgSecurityCaseEdiscoveryCaseSetting.md)
 {{ Fill in the Description }}
 
@@ -1102,5 +1096,4 @@ Locale: en-US
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
 {{ Fill in the Description }}
-
 

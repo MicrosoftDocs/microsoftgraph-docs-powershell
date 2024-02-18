@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserMailFolder
 
 ## SYNOPSIS
 Update the writable properties of a mailSearchFolder object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,13 +20,14 @@ Update-MgUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProp
  [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserMailFolder -MailFolderId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMailFolder>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,26 +38,25 @@ Update-MgUserMailFolder -InputObject <IMailIdentity> [-AdditionalProperties <Has
  [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the writable properties of a mailSearchFolder object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailsearchfolder-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	displayName = "displayName-value"
@@ -68,11 +64,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -150,6 +141,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -282,6 +288,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
@@ -383,9 +404,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -882,8 +905,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder)
-
 

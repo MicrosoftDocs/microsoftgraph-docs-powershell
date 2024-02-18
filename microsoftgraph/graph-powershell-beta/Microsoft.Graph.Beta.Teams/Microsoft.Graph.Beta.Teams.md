@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: e264919d-7ae2-4a89-ba8b-524bd93ddc08
 Download Help Link: {{ Update Download Link }}
@@ -105,6 +105,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaAppCatalogTeamAppDefinitionCount](Get-MgBetaAppCatalogTeamAppDefinitionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard](Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaAppCatalogTeamAppDefinitionDashboardCardCount](Get-MgBetaAppCatalogTeamAppDefinitionDashboardCardCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon](Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon.md)
@@ -434,6 +440,12 @@ Locale: en-US
 ### [Get-MgBetaGroupTeamScheduleShiftCount](Get-MgBetaGroupTeamScheduleShiftCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupTeamScheduleShiftRoleDefinition](Get-MgBetaGroupTeamScheduleShiftRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupTeamScheduleShiftRoleDefinitionCount](Get-MgBetaGroupTeamScheduleShiftRoleDefinitionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest](Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest.md)
 {{ Fill in the Description }}
 
@@ -737,6 +749,12 @@ Locale: en-US
 ### [Get-MgBetaTeamScheduleShiftCount](Get-MgBetaTeamScheduleShiftCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaTeamScheduleShiftRoleDefinition](Get-MgBetaTeamScheduleShiftRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamScheduleShiftRoleDefinitionCount](Get-MgBetaTeamScheduleShiftRoleDefinitionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaTeamScheduleSwapShiftChangeRequest](Get-MgBetaTeamScheduleSwapShiftChangeRequest.md)
 {{ Fill in the Description }}
 
@@ -767,6 +785,9 @@ Locale: en-US
 ### [Get-MgBetaTeamScheduleTimeOffRequestCount](Get-MgBetaTeamScheduleTimeOffRequestCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaTeamShift](Get-MgBetaTeamShift.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaTeamTag](Get-MgBetaTeamTag.md)
 {{ Fill in the Description }}
 
@@ -783,6 +804,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamTemplateDefinition](Get-MgBetaTeamTemplateDefinition.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamTimeOff](Get-MgBetaTeamTimeOff.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamwork](Get-MgBetaTeamwork.md)
@@ -1115,6 +1139,9 @@ Locale: en-US
 ### [New-MgBetaAppCatalogTeamAppDefinition](New-MgBetaAppCatalogTeamAppDefinition.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaAppCatalogTeamAppDefinitionDashboardCard](New-MgBetaAppCatalogTeamAppDefinitionDashboardCard.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaChat](New-MgBetaChat.md)
 {{ Fill in the Description }}
 
@@ -1223,6 +1250,9 @@ Locale: en-US
 ### [New-MgBetaGroupTeamScheduleShift](New-MgBetaGroupTeamScheduleShift.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaGroupTeamScheduleShiftRoleDefinition](New-MgBetaGroupTeamScheduleShiftRoleDefinition.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaGroupTeamScheduleSwapShiftChangeRequest](New-MgBetaGroupTeamScheduleSwapShiftChangeRequest.md)
 {{ Fill in the Description }}
 
@@ -1329,6 +1359,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaTeamScheduleShift](New-MgBetaTeamScheduleShift.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaTeamScheduleShiftRoleDefinition](New-MgBetaTeamScheduleShiftRoleDefinition.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaTeamScheduleSwapShiftChangeRequest](New-MgBetaTeamScheduleSwapShiftChangeRequest.md)
@@ -1454,6 +1487,9 @@ Locale: en-US
 ### [Remove-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent](Remove-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaAppCatalogTeamAppDefinitionDashboardCard](Remove-MgBetaAppCatalogTeamAppDefinitionDashboardCard.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaAppCatalogTeamAppDefinitionOutlineIcon](Remove-MgBetaAppCatalogTeamAppDefinitionOutlineIcon.md)
 {{ Fill in the Description }}
 
@@ -1517,9 +1553,6 @@ Locale: en-US
 ### [Remove-MgBetaGroupTeamChannelTab](Remove-MgBetaGroupTeamChannelTab.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupTeamIncomingChannel](Remove-MgBetaGroupTeamIncomingChannel.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaGroupTeamInstalledApp](Remove-MgBetaGroupTeamInstalledApp.md)
 {{ Fill in the Description }}
 
@@ -1577,6 +1610,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupTeamScheduleShift](Remove-MgBetaGroupTeamScheduleShift.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupTeamScheduleShiftRoleDefinition](Remove-MgBetaGroupTeamScheduleShiftRoleDefinition.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest](Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest.md)
 {{ Fill in the Description }}
 
@@ -1620,9 +1656,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamChannelTab](Remove-MgBetaTeamChannelTab.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaTeamIncomingChannel](Remove-MgBetaTeamIncomingChannel.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamInstalledApp](Remove-MgBetaTeamInstalledApp.md)
@@ -1674,6 +1707,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamScheduleShift](Remove-MgBetaTeamScheduleShift.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamScheduleShiftRoleDefinition](Remove-MgBetaTeamScheduleShiftRoleDefinition.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamScheduleSwapShiftChangeRequest](Remove-MgBetaTeamScheduleSwapShiftChangeRequest.md)
@@ -1973,6 +2009,9 @@ Locale: en-US
 ### [Update-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent](Update-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard](Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon](Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon.md)
 {{ Fill in the Description }}
 
@@ -2093,6 +2132,9 @@ Locale: en-US
 ### [Update-MgBetaGroupTeamScheduleShift](Update-MgBetaGroupTeamScheduleShift.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaGroupTeamScheduleShiftRoleDefinition](Update-MgBetaGroupTeamScheduleShiftRoleDefinition.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest](Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest.md)
 {{ Fill in the Description }}
 
@@ -2196,6 +2238,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaTeamScheduleShift](Update-MgBetaTeamScheduleShift.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaTeamScheduleShiftRoleDefinition](Update-MgBetaTeamScheduleShiftRoleDefinition.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaTeamScheduleSwapShiftChangeRequest](Update-MgBetaTeamScheduleSwapShiftChangeRequest.md)
@@ -2320,5 +2365,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserTeamworkAssociatedTeam](Update-MgBetaUserTeamworkAssociatedTeam.md)
 {{ Fill in the Description }}
-
 

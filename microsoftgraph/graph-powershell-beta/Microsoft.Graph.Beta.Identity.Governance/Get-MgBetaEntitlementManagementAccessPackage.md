@@ -1,80 +1,75 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
+Retrieve the properties and relationships of an accessPackage object.
 
 ## SYNTAX
 
 ### ListAll (Default)
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-All] [<CommonParameters>]
+ [-Sort <String[]>] [-All] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaEntitlementManagementAccessPackage -AccessPackageId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### List
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ListByDisplayNameContains
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### ListByDisplayNameEq
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### ListByCatalogId
 ```
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -CatalogId <String> [-All] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] -CatalogId <String> [-All] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-accesspackageresourcerolescopes-permissions.md)]
+Retrieve the properties and relationships of an accessPackage object.
 
 ## EXAMPLES
-### Example 1: Get a list of all access packages
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackage | Format-List
+```
 
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
@@ -111,16 +106,12 @@ IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 9/15/2021 7:23:44 AM
 AdditionalProperties            : {}
+
+### EXAMPLE 2
 ```
-
-This examples returns all access packages.
-
-### Example 2: Get access package by Id
-
-```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackage -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656'| Format-List
-
+```
 
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
@@ -138,11 +129,7 @@ IsHidden                        : False
 IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 11/5/2021 9:08:44 AM
-AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
-
-```
-
-This example returns the access package of the specified id.
+AdditionalProperties            : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity\]}
 
 ## PARAMETERS
 
@@ -267,6 +254,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: Get, GetViaIdentity, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -294,6 +296,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -379,9 +396,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackage
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -440,6 +459,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -490,8 +510,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage)
-
 

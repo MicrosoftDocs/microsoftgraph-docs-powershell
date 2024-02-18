@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sslCertificates for security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,18 +18,30 @@ New-MgSecurityThreatIntelligenceSslCertificate [-AdditionalProperties <Hashtable
  [-ExpirationDateTime <DateTime>] [-Fingerprint <String>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
  [-IssueDateTime <DateTime>] [-Issuer <IMicrosoftGraphSecuritySslCertificateEntity>]
  [-LastSeenDateTime <DateTime>] [-RelatedHosts <IMicrosoftGraphSecurityHost[]>] [-SerialNumber <String>]
- [-Sha1 <String>] [-Subject <IMicrosoftGraphSecuritySslCertificateEntity>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sha1 <String>] [-Subject <IMicrosoftGraphSecuritySslCertificateEntity>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceSslCertificate -BodyParameter <IMicrosoftGraphSecuritySslCertificate> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgSecurityThreatIntelligenceSslCertificate -BodyParameter <IMicrosoftGraphSecuritySslCertificate>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to sslCertificates for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -116,6 +125,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -174,6 +198,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -282,9 +321,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -880,9 +921,6 @@ It's a free-format string value, for example, 'United States'.
   \[Surname \<String\>\]: If the entity is a person, this is the person's surname (last name).
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate)
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserMailFolder
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to create a new mail folder in the root folder of the user's mailbox.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,13 +20,14 @@ New-MgUserMailFolder -UserId <String> [-AdditionalProperties <Hashtable>] [-Chil
  [-MessageRules <IMicrosoftGraphMessageRule[]>] [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserMailFolder -UserId <String> -BodyParameter <IMicrosoftGraphMailFolder> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserMailFolder -UserId <String> -BodyParameter <IMicrosoftGraphMailFolder> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,27 +38,26 @@ New-MgUserMailFolder -InputObject <IMailIdentity> [-AdditionalProperties <Hashta
  [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Use this API to create a new mail folder in the root folder of the user's mailbox.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-mailfolders-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	displayName = "Clutter"
@@ -70,11 +66,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMailFolder -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -152,6 +143,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -269,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
@@ -370,9 +391,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -869,8 +892,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
-
 

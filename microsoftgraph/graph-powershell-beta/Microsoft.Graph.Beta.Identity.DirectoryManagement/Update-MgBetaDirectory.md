@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update directory
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,16 +28,34 @@ Update-MgBetaDirectory [-AdditionalProperties <Hashtable>]
  [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]
- [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,7 +155,9 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedItems
-.
+Recently deleted items.
+Read-only.
+Nullable.
 To construct, see NOTES section for DELETEDITEMS properties and create a hash table.
 
 ```yaml
@@ -203,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -236,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundSharedUserProfiles
-A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant.
+A collection of external users whose profile data is shared with the Microsoft Entra tenant.
 Nullable.
 To construct, see NOTES section for INBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
@@ -284,6 +316,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recommendations
 List of recommended improvements to improve tenant posture.
 To construct, see NOTES section for RECOMMENDATIONS properties and create a hash table.
@@ -317,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subscriptions
-List of commercial subscriptions that an organization has acquired.
+List of commercial subscriptions that an organization has.
 To construct, see NOTES section for SUBSCRIPTIONS properties and create a hash table.
 
 ```yaml
@@ -369,9 +416,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -539,7 +588,9 @@ Cannot be changed later.
 If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
-  \[DeletedItems \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
+  \[DeletedItems \<IMicrosoftGraphDirectoryObject\[\]\>\]: Recently deleted items.
+Read-only.
+Nullable.
   \[DeviceLocalCredentials \<IMicrosoftGraphDeviceLocalCredentialInfo\[\]\>\]: The credentials of the device's local administrator account backed up to Microsoft Entra ID.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -572,8 +623,8 @@ Read-only.
 Read-only.
     \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
     \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-      \[Key \<String\>\]: Key.
-      \[Value \<String\>\]: Value.
+      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+      \[Value \<String\>\]: Contains the corresponding value for the specified key.
     \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
     \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
     \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
@@ -589,7 +640,7 @@ Examples include user, application.
     \[Status \<String\>\]: recommendationStatus
     \[SubjectId \<String\>\]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
-  \[InboundSharedUserProfiles \<IMicrosoftGraphInboundSharedUserProfile\[\]\>\]: A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant.
+  \[InboundSharedUserProfiles \<IMicrosoftGraphInboundSharedUserProfile\[\]\>\]: A collection of external users whose profile data is shared with the Microsoft Entra tenant.
 Nullable.
     \[DisplayName \<String\>\]: The name displayed in the address book for the user at the time when the sharing record was created.
 Read-only.
@@ -701,7 +752,7 @@ Read-only.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[ProvisioningStatus \<String\>\]: 
-  \[Subscriptions \<IMicrosoftGraphCompanySubscription\[\]\>\]: List of commercial subscriptions that an organization has acquired.
+  \[Subscriptions \<IMicrosoftGraphCompanySubscription\[\]\>\]: List of commercial subscriptions that an organization has.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[CommerceSubscriptionId \<String\>\]: The ID of this subscription in the commerce system.
@@ -787,7 +838,9 @@ If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-DELETEDITEMS \<IMicrosoftGraphDirectoryObject\[\]\>: .
+DELETEDITEMS \<IMicrosoftGraphDirectoryObject\[\]\>: Recently deleted items.
+Read-only.
+Nullable.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
@@ -832,8 +885,8 @@ IMPACTEDRESOURCES \<IMicrosoftGraphImpactedResource\[\]\>: .
 Read-only.
   \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
   \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
   \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
   \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
   \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
@@ -850,7 +903,7 @@ Examples include user, application.
   \[SubjectId \<String\>\]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
 
-INBOUNDSHAREDUSERPROFILES \<IMicrosoftGraphInboundSharedUserProfile\[\]\>: A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant.
+INBOUNDSHAREDUSERPROFILES \<IMicrosoftGraphInboundSharedUserProfile\[\]\>: A collection of external users whose profile data is shared with the Microsoft Entra tenant.
 Nullable.
   \[DisplayName \<String\>\]: The name displayed in the address book for the user at the time when the sharing record was created.
 Read-only.
@@ -948,8 +1001,8 @@ Other possible values include users, applications.
 Read-only.
     \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
     \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-      \[Key \<String\>\]: Key.
-      \[Value \<String\>\]: Value.
+      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+      \[Value \<String\>\]: Contains the corresponding value for the specified key.
     \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
     \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
     \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
@@ -988,7 +1041,7 @@ SHAREDEMAILDOMAINS \<IMicrosoftGraphSharedEmailDomain\[\]\>: .
 Read-only.
   \[ProvisioningStatus \<String\>\]: 
 
-SUBSCRIPTIONS \<IMicrosoftGraphCompanySubscription\[\]\>: List of commercial subscriptions that an organization has acquired.
+SUBSCRIPTIONS \<IMicrosoftGraphCompanySubscription\[\]\>: List of commercial subscriptions that an organization has.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[CommerceSubscriptionId \<String\>\]: The ID of this subscription in the commerce system.
@@ -1018,9 +1071,6 @@ Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
   \[TotalLicenses \<Int32?\>\]: The number of seats included in this subscription.
 
 ## RELATED LINKS
-[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory)
-
-
 

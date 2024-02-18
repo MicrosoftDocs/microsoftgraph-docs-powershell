@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrol
@@ -17,8 +17,8 @@ Update entity in programControls
 Update-MgBetaProgramControl -ProgramControlId <String> [-ProgramId <String>]
  [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
- [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded2
@@ -26,8 +26,8 @@ Update-MgBetaProgramControl -ProgramControlId <String> [-ProgramId <String>]
 Update-MgBetaProgramControl -ProgramControlId <String> -ProgramId <String> [-AdditionalProperties <Hashtable>]
  [-ControlId <String>] [-ControlTypeId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>] [-Program <IMicrosoftGraphProgram>]
- [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-ProgramId1 <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-ProgramId1 <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -35,26 +35,28 @@ Update-MgBetaProgramControl -ProgramControlId <String> -ProgramId <String> [-Add
 Update-MgBetaProgramControl -ProgramControlId <String> -ProgramControlId1 <String> [-ProgramId <String>]
  [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
- [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update2
 ```
 Update-MgBetaProgramControl -ProgramControlId <String> -ProgramId <String>
- -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphProgramControl> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaProgramControl -ProgramControlId <String> -ProgramControlId1 <String>
- -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphProgramControl> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaProgramControl -ProgramControlId <String> -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaProgramControl -ProgramControlId <String> -BodyParameter <IMicrosoftGraphProgramControl>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded2
@@ -62,8 +64,8 @@ Update-MgBetaProgramControl -ProgramControlId <String> -BodyParameter <IMicrosof
 Update-MgBetaProgramControl [-ProgramId <String>] -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
- [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -71,8 +73,8 @@ Update-MgBetaProgramControl [-ProgramId <String>] -InputObject <IIdentityGoverna
 Update-MgBetaProgramControl [-ProgramId <String>] -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
- [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -80,30 +82,49 @@ Update-MgBetaProgramControl [-ProgramId <String>] -InputObject <IIdentityGoverna
 Update-MgBetaProgramControl [-ProgramId <String>] -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
- [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity2
 ```
 Update-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphProgramControl> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphProgramControl> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphProgramControl> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in programControls
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -197,6 +218,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -337,6 +373,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 programResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
@@ -406,9 +457,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgramControl
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgramControl
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -506,6 +559,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -615,6 +669,4 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrol](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrol)
-
-
 

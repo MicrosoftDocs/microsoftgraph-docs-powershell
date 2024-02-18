@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeysetkey
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaTrustFrameworkKeySetKey
@@ -17,39 +16,39 @@ The caller doesn't have to provide a secret.
 ### GenerateExpanded (Default)
 ```
 New-MgBetaTrustFrameworkKeySetKey -TrustFrameworkKeySetId <String> [-AdditionalProperties <Hashtable>]
- [-Exp <Int64>] [-Kty <String>] [-Nbf <Int64>] [-Use <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Exp <Int64>] [-Kty <String>] [-Nbf <Int64>] [-Use <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Generate
 ```
 New-MgBetaTrustFrameworkKeySetKey -TrustFrameworkKeySetId <String>
  -BodyParameter <IPaths1IaopbhTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphGeneratekeyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GenerateViaIdentityExpanded
 ```
 New-MgBetaTrustFrameworkKeySetKey -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-Exp <Int64>] [-Kty <String>] [-Nbf <Int64>] [-Use <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Exp <Int64>] [-Kty <String>] [-Nbf <Int64>] [-Use <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GenerateViaIdentity
 ```
 New-MgBetaTrustFrameworkKeySetKey -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1IaopbhTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphGeneratekeyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
 The caller doesn't have to provide a secret.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-generatekey-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTrustFrameworkKeySetKey Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Use = "sig"
@@ -59,8 +58,6 @@ $params = @{
 }
 New-MgBetaTrustFrameworkKeySetKey -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySetKey Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -152,6 +164,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -224,9 +251,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1IaopbhTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphGeneratekeyPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKey
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -322,5 +351,4 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeysetkey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeysetkey)
-
 

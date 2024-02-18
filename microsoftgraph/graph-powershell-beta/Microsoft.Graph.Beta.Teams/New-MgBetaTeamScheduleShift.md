@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift
@@ -11,9 +11,6 @@ schema: 2.0.0
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleShift?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,15 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 New-MgBetaTeamScheduleShift -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
- [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
+ [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaTeamScheduleShift -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTeamScheduleShift -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,13 +34,15 @@ New-MgBetaTeamScheduleShift -TeamId <String> -BodyParameter <IMicrosoftGraphShif
 New-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
- [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
+ [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,11 +50,11 @@ Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -62,14 +63,14 @@ $params = @{
 	sharedShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
+				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:15:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -78,14 +79,14 @@ $params = @{
 	draftShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
+				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:30:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -94,10 +95,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleShift -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -164,6 +161,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -227,12 +239,43 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingGroupId
 ID of the scheduling group the shift is part of.
 Required.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SchedulingGroupInfo
+schedulingGroupInfo
+To construct, see NOTES section for SCHEDULINGGROUPINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSchedulingGroupInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -274,12 +317,44 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TeamInfo
+shiftsTeamInfo
+To construct, see NOTES section for TEAMINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftsTeamInfo
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 ID of the user assigned to the shift.
 Required.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserInfo
+shiftsUserInfo
+To construct, see NOTES section for USERINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftsUserInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -328,9 +403,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShift
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShift
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -381,9 +458,25 @@ Required.
   \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
   \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
+  \[SchedulingGroupInfo \<IMicrosoftGraphSchedulingGroupInfo\>\]: schedulingGroupInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The code for the schedulingGroup.
+    \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+    \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
   \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
+  \[TeamInfo \<IMicrosoftGraphShiftsTeamInfo\>\]: shiftsTeamInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the team.
+Required.
+    \[TeamId \<String\>\]: ID of the team.
   \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+  \[UserInfo \<IMicrosoftGraphShiftsUserInfo\>\]: shiftsUserInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name for the user.
+Required.
+    \[UserId \<String\>\]: ID of the user.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -443,10 +536,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -476,6 +571,13 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
+SCHEDULINGGROUPINFO \<IMicrosoftGraphSchedulingGroupInfo\>: schedulingGroupInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: The code for the schedulingGroup.
+  \[DisplayName \<String\>\]: The display name for the schedulingGroup.
+Required.
+  \[SchedulingGroupId \<String\>\]: ID of the schedulingGroup.
+
 SHAREDSHIFT \<IMicrosoftGraphShiftItem\>: shiftItem
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[EndDateTime \<DateTime?\>\]: 
@@ -502,9 +604,19 @@ Required.
   \[DisplayName \<String\>\]: The shift label of the shiftItem.
   \[Notes \<String\>\]: The shift notes for the shiftItem.
 
+TEAMINFO \<IMicrosoftGraphShiftsTeamInfo\>: shiftsTeamInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name for the team.
+Required.
+  \[TeamId \<String\>\]: ID of the team.
+
+USERINFO \<IMicrosoftGraphShiftsUserInfo\>: shiftsUserInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name for the user.
+Required.
+  \[UserId \<String\>\]: ID of the user.
+
 ## RELATED LINKS
-[New-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift)
-
 

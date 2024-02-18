@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property team in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,13 +25,14 @@ Set-MgGroupTeam -GroupId <String> [-AdditionalProperties <Hashtable>] [-AllChann
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
- [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgGroupTeam -GroupId <String> -BodyParameter <IMicrosoftGraphTeam> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgGroupTeam -GroupId <String> -BodyParameter <IMicrosoftGraphTeam> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -51,17 +49,30 @@ Set-MgGroupTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
- [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property team in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,6 +262,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -460,6 +486,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 schedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -623,9 +664,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -914,6 +957,7 @@ Always null when the object hasn't been deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+            \[OnPremisesSecurityIdentifier \<String\>\]: 
             \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -2259,7 +2303,8 @@ Read-only.
         \[Drives \<IMicrosoftGraphDrive\[\]\>\]: The collection of drives (document libraries) under this site.
         \[Error \<IMicrosoftGraphPublicError\>\]: publicError
         \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-        \[IsPersonalSite \<Boolean?\>\]: 
+        \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
         \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -2540,8 +2585,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
         \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
         \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -3133,6 +3178,7 @@ Nullable.
 Nullable.
           \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+          \[UniqueName \<String\>\]: 
           \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -4456,7 +4502,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -4464,7 +4510,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -4599,9 +4645,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5494,6 +5540,7 @@ Always null when the object hasn't been deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+              \[OnPremisesSecurityIdentifier \<String\>\]: 
               \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -6839,7 +6886,8 @@ Read-only.
           \[Drives \<IMicrosoftGraphDrive\[\]\>\]: The collection of drives (document libraries) under this site.
           \[Error \<IMicrosoftGraphPublicError\>\]: publicError
           \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-          \[IsPersonalSite \<Boolean?\>\]: 
+          \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
           \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -7120,8 +7168,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
           \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
           \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -8680,6 +8728,7 @@ Nullable.
 Nullable.
               \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+              \[UniqueName \<String\>\]: 
               \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -8803,7 +8852,7 @@ See Known issue.
         \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -8811,7 +8860,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
           \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
           \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -8946,9 +8995,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10066,6 +10115,7 @@ Always null when the object hasn't been deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+            \[OnPremisesSecurityIdentifier \<String\>\]: 
             \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -11411,7 +11461,8 @@ Read-only.
         \[Drives \<IMicrosoftGraphDrive\[\]\>\]: The collection of drives (document libraries) under this site.
         \[Error \<IMicrosoftGraphPublicError\>\]: publicError
         \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-        \[IsPersonalSite \<Boolean?\>\]: 
+        \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
         \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -11692,8 +11743,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
         \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
         \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -12285,6 +12336,7 @@ Nullable.
 Nullable.
           \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+          \[UniqueName \<String\>\]: 
           \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -13608,7 +13660,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -13616,7 +13668,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -13751,9 +13803,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14985,6 +15037,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+            \[OnPremisesSecurityIdentifier \<String\>\]: 
             \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -16624,7 +16677,8 @@ Read-only.
           \[Message \<String\>\]: A non-localized message for the developer.
           \[Target \<String\>\]: The target of the error.
         \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-        \[IsPersonalSite \<Boolean?\>\]: 
+        \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
         \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -16903,8 +16957,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
         \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
         \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -18532,7 +18586,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -18540,7 +18594,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -18675,9 +18729,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -18929,6 +18983,7 @@ Nullable.
 Nullable.
   \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+  \[UniqueName \<String\>\]: 
   \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -19230,6 +19285,7 @@ Always null when the object hasn't been deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+            \[OnPremisesSecurityIdentifier \<String\>\]: 
             \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -20575,7 +20631,8 @@ Read-only.
         \[Drives \<IMicrosoftGraphDrive\[\]\>\]: The collection of drives (document libraries) under this site.
         \[Error \<IMicrosoftGraphPublicError\>\]: publicError
         \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-        \[IsPersonalSite \<Boolean?\>\]: 
+        \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
         \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -20856,8 +20913,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
         \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
         \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -21449,6 +21506,7 @@ Nullable.
 Nullable.
           \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+          \[UniqueName \<String\>\]: 
           \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -22772,7 +22830,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -22780,7 +22838,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -22915,9 +22973,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -23956,6 +24014,7 @@ Always null when the object hasn't been deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+            \[OnPremisesSecurityIdentifier \<String\>\]: 
             \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -25301,7 +25360,8 @@ Read-only.
         \[Drives \<IMicrosoftGraphDrive\[\]\>\]: The collection of drives (document libraries) under this site.
         \[Error \<IMicrosoftGraphPublicError\>\]: publicError
         \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-        \[IsPersonalSite \<Boolean?\>\]: 
+        \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
         \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -25582,8 +25642,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
         \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
         \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -26175,6 +26235,7 @@ Nullable.
 Nullable.
           \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+          \[UniqueName \<String\>\]: 
           \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -27498,7 +27559,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -27506,7 +27567,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -27641,9 +27702,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -28425,9 +28486,6 @@ Read-only.
   \[TeamId \<String\>\]: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
-
-
 

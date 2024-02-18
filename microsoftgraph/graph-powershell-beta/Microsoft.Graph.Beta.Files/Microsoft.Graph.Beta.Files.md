@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: d6278476-f9b5-4d1e-909c-110aff851952
 Download Help Link: {{ Update Download Link }}
@@ -2135,9 +2135,6 @@ Locale: en-US
 ### [Remove-MgBetaDriveItemAnalyticItemActivityStat](Remove-MgBetaDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaDriveItemChild](Remove-MgBetaDriveItemChild.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaDriveItemListItem](Remove-MgBetaDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2222,9 +2219,6 @@ Locale: en-US
 ### [Remove-MgBetaDriveRootAnalyticItemActivityStat](Remove-MgBetaDriveRootAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaDriveRootChild](Remove-MgBetaDriveRootChild.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaDriveRootListItem](Remove-MgBetaDriveRootListItem.md)
 {{ Fill in the Description }}
 
@@ -2271,9 +2265,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupDriveItemAnalyticItemActivityStat](Remove-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaGroupDriveItemChild](Remove-MgBetaGroupDriveItemChild.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupDriveItemListItem](Remove-MgBetaGroupDriveItemListItem.md)
@@ -2355,9 +2346,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupDriveRootAnalyticItemActivityStat](Remove-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaGroupDriveRootChild](Remove-MgBetaGroupDriveRootChild.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupDriveRootListItem](Remove-MgBetaGroupDriveRootListItem.md)
@@ -2450,9 +2438,6 @@ Locale: en-US
 ### [Remove-MgBetaUserDriveItemAnalyticItemActivityStat](Remove-MgBetaUserDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaUserDriveItemChild](Remove-MgBetaUserDriveItemChild.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaUserDriveItemListItem](Remove-MgBetaUserDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2532,9 +2517,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDriveRootAnalyticItemActivityStat](Remove-MgBetaUserDriveRootAnalyticItemActivityStat.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaUserDriveRootChild](Remove-MgBetaUserDriveRootChild.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDriveRootListItem](Remove-MgBetaUserDriveRootListItem.md)
@@ -3334,5 +3316,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserDriveRootVersion](Update-MgBetaUserDriveRootVersion.md)
 {{ Fill in the Description }}
-
 

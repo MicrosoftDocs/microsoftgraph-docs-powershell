@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation
@@ -10,26 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to dataPolicyOperations
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgDataPolicyOperation?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDataPolicyOperation [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-Id <String>] [-Progress <Double>] [-Status <String>] [-StorageLocation <String>]
- [-SubmittedDateTime <DateTime>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubmittedDateTime <DateTime>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to dataPolicyOperations
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,6 +95,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -108,6 +137,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -210,9 +254,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataPolicyOperation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataPolicyOperation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -234,9 +280,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[UserId \<String\>\]: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
-[New-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgDataPolicyOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation)
-
-
 

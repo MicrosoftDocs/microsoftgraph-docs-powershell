@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserverhealthmetric
@@ -16,7 +16,8 @@ Invoke action getHealthMetrics
 ```
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric
  -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String> [-AdditionalProperties <Hashtable>]
- [-MetricNames <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MetricNames <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -24,14 +25,14 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric
  -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String>
  -BodyParameter <IPaths12U8BljDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGethealthmetricsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-MetricNames <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -39,11 +40,27 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths12U8BljDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGethealthmetricsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getHealthMetrics
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -72,6 +89,21 @@ Parameter Sets: Get, GetViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -139,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -177,9 +224,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths12U8BljDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGethealthmetricsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyLongValuePair
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -234,6 +283,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
   \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
@@ -247,6 +297,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserverhealthmetric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserverhealthmetric)
-
-
 

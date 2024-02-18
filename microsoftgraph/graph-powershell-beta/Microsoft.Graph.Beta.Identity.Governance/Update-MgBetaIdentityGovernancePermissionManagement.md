@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement
@@ -16,18 +16,31 @@ Update the navigation property permissionsManagement in identityGovernance
 ```
 Update-MgBetaIdentityGovernancePermissionManagement [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PermissionsRequestChanges <IMicrosoftGraphPermissionsRequestChange[]>]
- [-ScheduledPermissionsRequests <IMicrosoftGraphScheduledPermissionsRequest[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ScheduledPermissionsApprovals <IMicrosoftGraphApproval[]>]
+ [-ScheduledPermissionsRequests <IMicrosoftGraphScheduledPermissionsRequest[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernancePermissionManagement -BodyParameter <IMicrosoftGraphPermissionsManagement>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property permissionsManagement in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,6 +75,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -84,6 +112,37 @@ To construct, see NOTES section for PERMISSIONSREQUESTCHANGES properties and cre
 
 ```yaml
 Type: IMicrosoftGraphPermissionsRequestChange[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ScheduledPermissionsApprovals
+.
+To construct, see NOTES section for SCHEDULEDPERMISSIONSAPPROVALS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphApproval[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -148,9 +207,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsManagement
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsManagement
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -169,10 +230,38 @@ Read-only.
     \[PermissionsRequestId \<String\>\]: The ID of the scheduledPermissionsRequest object.
     \[StatusDetail \<String\>\]: statusDetail
     \[TicketId \<String\>\]: Represents the ticketing system identifier.
+  \[ScheduledPermissionsApprovals \<IMicrosoftGraphApproval\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Steps \<IMicrosoftGraphApprovalStep\[\]\>\]: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[AssignedToMe \<Boolean?\>\]: Indicates whether the step is assigned to the calling user to review.
+Read-only.
+      \[DisplayName \<String\>\]: The label provided by the policy creator to identify an approval step.
+Read-only.
+      \[Justification \<String\>\]: The justification associated with the approval step decision.
+      \[ReviewResult \<String\>\]: The result of this approval record.
+Possible values include: NotReviewed, Approved, Denied.
+      \[ReviewedBy \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      \[ReviewedDateTime \<DateTime?\>\]: The date and time when a decision was recorded.
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      \[Status \<String\>\]: The step status.
+Possible values: InProgress, Initializing, Completed, Expired.
+Read-only.
   \[ScheduledPermissionsRequests \<IMicrosoftGraphScheduledPermissionsRequest\[\]\>\]: Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system.
 This request can be granted, rejected or canceled by identities in Permissions Management.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[Action \<String\>\]: unifiedRoleScheduleRequestActions
     \[CreatedDateTime \<DateTime?\>\]: Defines when the identity created the request.
     \[Justification \<String\>\]: The identity's justification for the request.
     \[Notes \<String\>\]: Additional context for the permissions request.
@@ -252,10 +341,39 @@ Read-only.
   \[StatusDetail \<String\>\]: statusDetail
   \[TicketId \<String\>\]: Represents the ticketing system identifier.
 
+SCHEDULEDPERMISSIONSAPPROVALS \<IMicrosoftGraphApproval\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Steps \<IMicrosoftGraphApprovalStep\[\]\>\]: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[AssignedToMe \<Boolean?\>\]: Indicates whether the step is assigned to the calling user to review.
+Read-only.
+    \[DisplayName \<String\>\]: The label provided by the policy creator to identify an approval step.
+Read-only.
+    \[Justification \<String\>\]: The justification associated with the approval step decision.
+    \[ReviewResult \<String\>\]: The result of this approval record.
+Possible values include: NotReviewed, Approved, Denied.
+    \[ReviewedBy \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    \[ReviewedDateTime \<DateTime?\>\]: The date and time when a decision was recorded.
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+    \[Status \<String\>\]: The step status.
+Possible values: InProgress, Initializing, Completed, Expired.
+Read-only.
+
 SCHEDULEDPERMISSIONSREQUESTS \<IMicrosoftGraphScheduledPermissionsRequest\[\]\>: Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system.
 This request can be granted, rejected or canceled by identities in Permissions Management.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+  \[Action \<String\>\]: unifiedRoleScheduleRequestActions
   \[CreatedDateTime \<DateTime?\>\]: Defines when the identity created the request.
   \[Justification \<String\>\]: The identity's justification for the request.
   \[Notes \<String\>\]: Additional context for the permissions request.
@@ -329,6 +447,4 @@ In PIM, when the  eligible or active assignment becomes active.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement)
-
-
 

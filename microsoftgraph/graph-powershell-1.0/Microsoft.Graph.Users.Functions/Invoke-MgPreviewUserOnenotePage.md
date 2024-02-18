@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage
@@ -10,25 +10,55 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function preview
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Preview (Default)
 ```
-Invoke-MgPreviewUserOnenotePage -OnenotePageId <String> -UserId <String> [<CommonParameters>]
+Invoke-MgPreviewUserOnenotePage -OnenotePageId <String> -UserId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
-Invoke-MgPreviewUserOnenotePage -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Invoke-MgPreviewUserOnenotePage -InputObject <IUsersFunctionsIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -61,6 +91,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -82,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePagePreview
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -120,9 +167,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage)
-
-
 

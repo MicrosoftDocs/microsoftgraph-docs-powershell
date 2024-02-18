@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceAppManagementAndroidManagedAppProtection
 
 ## SYNOPSIS
 Update the properties of a androidManagedAppProtection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,14 +34,15 @@ Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtec
  [-OrganizationalCredentialsRequired] [-PeriodBeforePinReset <TimeSpan>]
  [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>]
  [-PeriodOnlineBeforeAccessCheck <TimeSpan>] [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
- [-PrintBlocked] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PrintBlocked] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked] [-Version <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -70,18 +67,31 @@ Update-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCo
  [-OrganizationalCredentialsRequired] [-PeriodBeforePinReset <TimeSpan>]
  [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>]
  [-PeriodOnlineBeforeAccessCheck <TimeSpan>] [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
- [-PrintBlocked] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PrintBlocked] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked] [-Version <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a androidManagedAppProtection object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -436,6 +446,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -768,6 +793,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SaveAsBlocked
 Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
 
@@ -866,9 +906,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1009,9 +1051,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection)
-
-
 

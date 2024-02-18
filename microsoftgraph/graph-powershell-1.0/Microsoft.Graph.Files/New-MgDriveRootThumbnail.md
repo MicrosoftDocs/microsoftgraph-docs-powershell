@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootthumbnail
@@ -10,39 +10,54 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to thumbnails for drives
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDriveRootThumbnail -DriveId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Large <IMicrosoftGraphThumbnail>] [-Medium <IMicrosoftGraphThumbnail>] [-Small <IMicrosoftGraphThumbnail>]
- [-Source <IMicrosoftGraphThumbnail>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphThumbnail>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDriveRootThumbnail -DriveId <String> -BodyParameter <IMicrosoftGraphThumbnailSet> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDriveRootThumbnail -DriveId <String> -BodyParameter <IMicrosoftGraphThumbnailSet>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgDriveRootThumbnail -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Large <IMicrosoftGraphThumbnail>] [-Medium <IMicrosoftGraphThumbnail>] [-Small <IMicrosoftGraphThumbnail>]
- [-Source <IMicrosoftGraphThumbnail>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphThumbnail>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphThumbnailSet> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphThumbnailSet>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to thumbnails for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -89,6 +104,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -148,6 +178,21 @@ To construct, see NOTES section for MEDIUM properties and create a hash table.
 Type: IMicrosoftGraphThumbnail
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -226,9 +271,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -314,9 +361,6 @@ This is only available when a folder thumbnail is requested.
   \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootthumbnail)
-
-
 

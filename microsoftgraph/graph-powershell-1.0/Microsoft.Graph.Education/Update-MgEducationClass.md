@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgEducationClass
 
 ## SYNOPSIS
 Update the properties of an educationClass object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,14 +23,15 @@ Update-MgEducationClass -EducationClassId <String> [-AdditionalProperties <Hasht
  [-DisplayName <String>] [-ExternalId <String>] [-ExternalName <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Grade <String>] [-Group <IMicrosoftGraphGroup>] [-Id <String>]
  [-MailNickname <String>] [-Members <IMicrosoftGraphEducationUser[]>]
- [-Schools <IMicrosoftGraphEducationSchool[]>] [-Teachers <IMicrosoftGraphEducationUser[]>]
- [-Term <IMicrosoftGraphEducationTerm>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Modules <IMicrosoftGraphEducationModule[]>] [-Schools <IMicrosoftGraphEducationSchool[]>]
+ [-Teachers <IMicrosoftGraphEducationUser[]>] [-Term <IMicrosoftGraphEducationTerm>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgEducationClass -EducationClassId <String> -BodyParameter <IMicrosoftGraphEducationClass> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgEducationClass -EducationClassId <String> -BodyParameter <IMicrosoftGraphEducationClass>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,27 +45,26 @@ Update-MgEducationClass -InputObject <IEducationIdentity> [-AdditionalProperties
  [-DisplayName <String>] [-ExternalId <String>] [-ExternalName <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Grade <String>] [-Group <IMicrosoftGraphGroup>] [-Id <String>]
  [-MailNickname <String>] [-Members <IMicrosoftGraphEducationUser[]>]
- [-Schools <IMicrosoftGraphEducationSchool[]>] [-Teachers <IMicrosoftGraphEducationUser[]>]
- [-Term <IMicrosoftGraphEducationTerm>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Modules <IMicrosoftGraphEducationModule[]>] [-Schools <IMicrosoftGraphEducationSchool[]>]
+ [-Teachers <IMicrosoftGraphEducationUser[]>] [-Term <IMicrosoftGraphEducationTerm>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEducationClass -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationClass>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an educationClass object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	description = "History - World History 1"
@@ -76,11 +72,6 @@ $params = @{
 }
 
 Update-MgEducationClass -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the Update-MgEducationClass Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -364,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -420,6 +426,37 @@ To construct, see NOTES section for MEMBERS properties and create a hash table.
 Type: IMicrosoftGraphEducationUser[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Modules
+.
+To construct, see NOTES section for MODULES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEducationModule[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -516,9 +553,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -559,9 +598,9 @@ Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[DisplayName \<String\>\]: Unique identifier for the category.
-  \[ClassId \<String\>\]: Class which this assignment belongs.
+  \[ClassId \<String\>\]: Class to which this assignment belongs.
   \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -585,13 +624,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: 
-    \[PercentageWeight \<Int32?\>\]: 
+    \[DisplayName \<String\>\]: The name of the grading category.
+    \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
   \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: 
     \[ContentType \<String\>\]: bodyType
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[ModuleUrl \<String\>\]: 
   \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
@@ -631,7 +671,7 @@ Read-only.
       \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
   \[Status \<String\>\]: educationAssignmentStatus
-  \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+  \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there's a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -661,14 +701,14 @@ ASSIGNMENTSETTINGS \<IMicrosoftGraphEducationAssignmentSettings\>: educationAssi
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: 
+  \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: When set, enables users to weight assignments differently when computing a class average grade.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: 
-    \[PercentageWeight \<Int32?\>\]: 
-  \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+    \[DisplayName \<String\>\]: The name of the grading category.
+    \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
+  \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
 
 BODYPARAMETER \<IMicrosoftGraphEducationClass\>: educationClass
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -693,14 +733,14 @@ Default value is null.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: 
+    \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: When set, enables users to weight assignments differently when computing a class average grade.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: 
-      \[PercentageWeight \<Int32?\>\]: 
-    \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+      \[DisplayName \<String\>\]: The name of the grading category.
+      \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
+    \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
   \[Assignments \<IMicrosoftGraphEducationAssignment\[\]\>\]: All assignments associated with this class.
 Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -715,9 +755,9 @@ If this property isn't specified during create, it defaults to true.
     \[Categories \<IMicrosoftGraphEducationCategory\[\]\>\]: When set, enables users to easily find assignments of a given type. 
 Read-only.
 Nullable.
-    \[ClassId \<String\>\]: Class which this assignment belongs.
+    \[ClassId \<String\>\]: Class to which this assignment belongs.
     \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -743,6 +783,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[Content \<String\>\]: 
       \[ContentType \<String\>\]: bodyType
     \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[ModuleUrl \<String\>\]: 
     \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
@@ -782,7 +823,7 @@ Read-only.
         \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
     \[Status \<String\>\]: educationAssignmentStatus
-    \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+    \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there's a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -1432,6 +1473,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+              \[OnPremisesSecurityIdentifier \<String\>\]: 
               \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -3071,7 +3113,8 @@ Read-only.
             \[Message \<String\>\]: A non-localized message for the developer.
             \[Target \<String\>\]: The target of the error.
           \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-          \[IsPersonalSite \<Boolean?\>\]: 
+          \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
           \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -3350,8 +3393,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
           \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
           \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -4979,7 +5022,7 @@ See Known issue.
         \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -4987,7 +5030,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
           \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
           \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -5122,9 +5165,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5376,6 +5419,7 @@ Nullable.
 Nullable.
     \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+    \[UniqueName \<String\>\]: 
     \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -5528,6 +5572,19 @@ The verified domains for the tenant can be accessed from the verifiedDomains pro
 Supports $filter and $orderby.
     \[UserType \<String\>\]: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
+  \[Modules \<IMicrosoftGraphEducationModule\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[IsPinned \<Boolean?\>\]: 
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[Resources \<IMicrosoftGraphEducationModuleResource\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+    \[Status \<String\>\]: educationModuleStatus
   \[Schools \<IMicrosoftGraphEducationSchool\[\]\>\]: All schools that this class is associated with.
 Nullable.
   \[Teachers \<IMicrosoftGraphEducationUser\[\]\>\]: All teachers in the class.
@@ -6176,6 +6233,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+            \[OnPremisesSecurityIdentifier \<String\>\]: 
             \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -7815,7 +7873,8 @@ Read-only.
           \[Message \<String\>\]: A non-localized message for the developer.
           \[Target \<String\>\]: The target of the error.
         \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-        \[IsPersonalSite \<Boolean?\>\]: 
+        \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
         \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -8094,8 +8153,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
         \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
         \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -9723,7 +9782,7 @@ See Known issue.
       \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -9731,7 +9790,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
         \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -9866,9 +9925,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10120,6 +10179,7 @@ Nullable.
 Nullable.
   \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+  \[UniqueName \<String\>\]: 
   \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -10140,6 +10200,8 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
   \[EducationClassId \<String\>\]: The unique identifier of educationClass
   \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
   \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
   \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
   \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
@@ -10186,9 +10248,9 @@ Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[DisplayName \<String\>\]: Unique identifier for the category.
-    \[ClassId \<String\>\]: Class which this assignment belongs.
+    \[ClassId \<String\>\]: Class to which this assignment belongs.
     \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -10212,13 +10274,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: 
-      \[PercentageWeight \<Int32?\>\]: 
+      \[DisplayName \<String\>\]: The name of the grading category.
+      \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
     \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Content \<String\>\]: 
       \[ContentType \<String\>\]: bodyType
     \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[ModuleUrl \<String\>\]: 
     \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
@@ -10258,7 +10321,7 @@ Read-only.
         \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
     \[Status \<String\>\]: educationAssignmentStatus
-    \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+    \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there's a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -10305,10 +10368,10 @@ Default value is null.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: 
-      \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+      \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: When set, enables users to weight assignments differently when computing a class average grade.
+      \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
     \[Assignments \<IMicrosoftGraphEducationAssignment\[\]\>\]: All assignments associated with this class.
 Nullable.
     \[ClassCode \<String\>\]: Class code used by the school to identify the class.
@@ -10925,6 +10988,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+                \[OnPremisesSecurityIdentifier \<String\>\]: 
                 \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -12564,7 +12628,8 @@ Read-only.
               \[Message \<String\>\]: A non-localized message for the developer.
               \[Target \<String\>\]: The target of the error.
             \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-            \[IsPersonalSite \<Boolean?\>\]: 
+            \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
             \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -12843,8 +12908,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
             \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
             \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -14472,7 +14537,7 @@ See Known issue.
           \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -14480,7 +14545,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
             \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -14615,9 +14680,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14869,6 +14934,7 @@ Nullable.
 Nullable.
       \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+      \[UniqueName \<String\>\]: 
       \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -14885,6 +14951,19 @@ Nullable.
     \[MailNickname \<String\>\]: Mail name for sending email to all members, if this is enabled.
     \[Members \<IMicrosoftGraphEducationUser\[\]\>\]: All users in the class.
 Nullable.
+    \[Modules \<IMicrosoftGraphEducationModule\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[Description \<String\>\]: 
+      \[DisplayName \<String\>\]: 
+      \[IsPinned \<Boolean?\>\]: 
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[Resources \<IMicrosoftGraphEducationModuleResource\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+      \[Status \<String\>\]: educationModuleStatus
     \[Schools \<IMicrosoftGraphEducationSchool\[\]\>\]: All schools that this class is associated with.
 Nullable.
       \[Description \<String\>\]: Organization description.
@@ -15017,6 +15096,33 @@ Supports $filter and $orderby.
   \[UserType \<String\>\]: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
 
+MODULES \<IMicrosoftGraphEducationModule\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[IsPinned \<Boolean?\>\]: 
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[Resources \<IMicrosoftGraphEducationModuleResource\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[DisplayName \<String\>\]: Display name of resource.
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[Status \<String\>\]: educationModuleStatus
+
 SCHOOLS \<IMicrosoftGraphEducationSchool\[\]\>: All schools that this class is associated with.
 Nullable.
   \[Description \<String\>\]: Organization description.
@@ -15091,14 +15197,14 @@ Default value is null.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: 
+      \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: When set, enables users to weight assignments differently when computing a class average grade.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        \[DisplayName \<String\>\]: 
-        \[PercentageWeight \<Int32?\>\]: 
-      \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+        \[DisplayName \<String\>\]: The name of the grading category.
+        \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
+      \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
     \[Assignments \<IMicrosoftGraphEducationAssignment\[\]\>\]: All assignments associated with this class.
 Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -15113,9 +15219,9 @@ If this property isn't specified during create, it defaults to true.
       \[Categories \<IMicrosoftGraphEducationCategory\[\]\>\]: When set, enables users to easily find assignments of a given type. 
 Read-only.
 Nullable.
-      \[ClassId \<String\>\]: Class which this assignment belongs.
+      \[ClassId \<String\>\]: Class to which this assignment belongs.
       \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -15136,6 +15242,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         \[Content \<String\>\]: 
         \[ContentType \<String\>\]: bodyType
       \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[ModuleUrl \<String\>\]: 
       \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
@@ -15175,7 +15282,7 @@ Read-only.
           \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
       \[Status \<String\>\]: educationAssignmentStatus
-      \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+      \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there's a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -15812,6 +15919,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+                \[OnPremisesSecurityIdentifier \<String\>\]: 
                 \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -17451,7 +17559,8 @@ Read-only.
               \[Message \<String\>\]: A non-localized message for the developer.
               \[Target \<String\>\]: The target of the error.
             \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-            \[IsPersonalSite \<Boolean?\>\]: 
+            \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
             \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -17730,8 +17839,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
             \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
             \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -19354,7 +19463,7 @@ See Known issue.
           \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -19362,7 +19471,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
             \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -19497,9 +19606,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -19751,6 +19860,7 @@ Nullable.
 Nullable.
       \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+      \[UniqueName \<String\>\]: 
       \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -19863,6 +19973,19 @@ The verified domains for the tenant can be accessed from the verifiedDomains pro
 Supports $filter and $orderby.
       \[UserType \<String\>\]: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
+    \[Modules \<IMicrosoftGraphEducationModule\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[Description \<String\>\]: 
+      \[DisplayName \<String\>\]: 
+      \[IsPinned \<Boolean?\>\]: 
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[Resources \<IMicrosoftGraphEducationModuleResource\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+      \[Status \<String\>\]: educationModuleStatus
     \[Schools \<IMicrosoftGraphEducationSchool\[\]\>\]: All schools that this class is associated with.
 Nullable.
     \[Teachers \<IMicrosoftGraphEducationUser\[\]\>\]: All teachers in the class.
@@ -19925,9 +20048,9 @@ Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[DisplayName \<String\>\]: Unique identifier for the category.
-    \[ClassId \<String\>\]: Class which this assignment belongs.
+    \[ClassId \<String\>\]: Class to which this assignment belongs.
     \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -19951,13 +20074,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: 
-      \[PercentageWeight \<Int32?\>\]: 
+      \[DisplayName \<String\>\]: The name of the grading category.
+      \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
     \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Content \<String\>\]: 
       \[ContentType \<String\>\]: bodyType
     \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[ModuleUrl \<String\>\]: 
     \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
@@ -19997,7 +20121,7 @@ Read-only.
         \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
     \[Status \<String\>\]: educationAssignmentStatus
-    \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+    \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there's a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -20044,10 +20168,10 @@ Default value is null.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: 
-      \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether turn-in celebration animation is shown.
-A value of true indicates that the animation isn't shown.
-Default value is false.
+      \[GradingCategories \<IMicrosoftGraphEducationGradingCategory\[\]\>\]: When set, enables users to weight assignments differently when computing a class average grade.
+      \[SubmissionAnimationDisabled \<Boolean?\>\]: Indicates whether to show the turn-in celebration animation.
+If true, indicates to skip the animation.
+The default value is false.
     \[Assignments \<IMicrosoftGraphEducationAssignment\[\]\>\]: All assignments associated with this class.
 Nullable.
     \[ClassCode \<String\>\]: Class code used by the school to identify the class.
@@ -20664,6 +20788,7 @@ Supports $expand.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
+                \[OnPremisesSecurityIdentifier \<String\>\]: 
                 \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -22303,7 +22428,8 @@ Read-only.
               \[Message \<String\>\]: A non-localized message for the developer.
               \[Target \<String\>\]: The target of the error.
             \[ExternalColumns \<IMicrosoftGraphColumnDefinition\[\]\>\]: 
-            \[IsPersonalSite \<Boolean?\>\]: 
+            \[IsPersonalSite \<Boolean?\>\]: Identifies whether the site is personal or not.
+Read-only.
             \[Items \<IMicrosoftGraphBaseItem\[\]\>\]: Used to address any item contained in this site.
 This collection can't be enumerated.
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -22582,8 +22708,8 @@ Supports $filter (eq) including on null values, only where the signInType is not
 512 character limit.
             \[IssuerAssignedId \<String\>\]: Specifies the unique identifier assigned to the user by the issuer.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
-64 character limit.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
+64 character limit.Supports $filter.
             \[SignInType \<String\>\]: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
 federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
 Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
@@ -24211,7 +24337,7 @@ See Known issue.
           \[SignInActivity \<IMicrosoftGraphSignInActivity\>\]: signInActivity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[LastNonInteractiveSignInDateTime \<DateTime?\>\]: The last non-interactive sign-in date for a specific user.
-You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user.
+You can use this field to calculate the last time a client attempted (either successfully or unsuccessfully) to sign in to the directory on behalf of a user.
 Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -24219,7 +24345,7 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastNonInteractiveSignInRequestId \<String\>\]: Request identifier of the last non-interactive sign-in performed by this user.
             \[LastSignInDateTime \<DateTime?\>\]: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method.
+You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
 This field can be used to build reports, such as inactive users.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
@@ -24354,9 +24480,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -24608,6 +24734,7 @@ Nullable.
 Nullable.
       \[TransitiveMembers \<IMicrosoftGraphDirectoryObject\[\]\>\]: The direct and transitive members of a group.
 Nullable.
+      \[UniqueName \<String\>\]: 
       \[UnseenCount \<Int32?\>\]: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -24624,6 +24751,19 @@ Nullable.
     \[MailNickname \<String\>\]: Mail name for sending email to all members, if this is enabled.
     \[Members \<IMicrosoftGraphEducationUser\[\]\>\]: All users in the class.
 Nullable.
+    \[Modules \<IMicrosoftGraphEducationModule\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[Description \<String\>\]: 
+      \[DisplayName \<String\>\]: 
+      \[IsPinned \<Boolean?\>\]: 
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[Resources \<IMicrosoftGraphEducationModuleResource\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+      \[Status \<String\>\]: educationModuleStatus
     \[Schools \<IMicrosoftGraphEducationSchool\[\]\>\]: All schools that this class is associated with.
 Nullable.
       \[Description \<String\>\]: Organization description.
@@ -24764,8 +24904,6 @@ TERM \<IMicrosoftGraphEducationTerm\>: educationTerm
   \[StartDate \<DateTime?\>\]: Start of the term.
 
 ## RELATED LINKS
-[Update-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass)
-
 

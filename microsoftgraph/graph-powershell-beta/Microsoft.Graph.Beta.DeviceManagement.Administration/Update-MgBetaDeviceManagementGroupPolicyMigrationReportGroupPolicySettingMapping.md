@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping
@@ -22,15 +22,16 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
  [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
  [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
- [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -GroupPolicyMigrationReportId <String> -GroupPolicySettingMappingId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,19 +44,36 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
  [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
  [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
- [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property groupPolicySettingMappings in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -147,6 +165,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -294,6 +327,21 @@ Parent Id of the group policy setting.
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -490,9 +538,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -586,6 +636,4 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting
@@ -23,13 +23,15 @@ Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <Strin
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,17 +45,31 @@ Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagemen
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property depOnboardingSettings in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -184,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -284,6 +315,21 @@ When Intune last requested a sync.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -420,9 +466,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -581,7 +629,6 @@ Read-only.
     \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
     \[IsDeleted \<Boolean?\>\]: Indicates if the device is deleted from Apple Business Manager
     \[IsSupervised \<Boolean?\>\]: Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/en-us/HT202837
     \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
     \[Platform \<Platform?\>\]: platform
     \[RequestedEnrollmentProfileAssignmentDateTime \<DateTime?\>\]: The time enrollment profile was assigned to the device
@@ -746,7 +793,6 @@ Read-only.
   \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
   \[IsDeleted \<Boolean?\>\]: Indicates if the device is deleted from Apple Business Manager
   \[IsSupervised \<Boolean?\>\]: Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/en-us/HT202837
   \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
   \[Platform \<Platform?\>\]: platform
   \[RequestedEnrollmentProfileAssignmentDateTime \<DateTime?\>\]: The time enrollment profile was assigned to the device
@@ -785,6 +831,4 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting)
-
-
 

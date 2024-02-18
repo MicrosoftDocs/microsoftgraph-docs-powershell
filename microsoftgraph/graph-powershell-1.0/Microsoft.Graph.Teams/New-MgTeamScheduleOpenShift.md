@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleOpenShift
@@ -11,51 +10,45 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Create an instance of an openShift object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgTeamScheduleOpenShift -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamScheduleOpenShift -TeamId <String> -BodyParameter <IMicrosoftGraphOpenShift> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgTeamScheduleOpenShift -TeamId <String> -BodyParameter <IMicrosoftGraphOpenShift> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an instance of an openShift object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -64,22 +57,22 @@ $params = @{
 		notes = "InventoryManagement"
 		openSlotCount = 2
 		displayName = "Dayshift"
-		startDateTime = [System.DateTime]::Parse("2018-10-04T00: 58: 45.340Z")
-		endDateTime = [System.DateTime]::Parse("2018-10-04T09: 50: 45.332Z")
+		startDateTime = \[System.DateTime\]::Parse("2018-10-04T00: 58: 45.340Z")
+		endDateTime = \[System.DateTime\]::Parse("2018-10-04T09: 50: 45.332Z")
 		theme = "white"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2018-10-04T00: 58: 45.340Z")
-				endDateTime = [System.DateTime]::Parse("2018-10-04T01: 58: 45.340Z")
+				startDateTime = \[System.DateTime\]::Parse("2018-10-04T00: 58: 45.340Z")
+				endDateTime = \[System.DateTime\]::Parse("2018-10-04T01: 58: 45.340Z")
 				code = ""
 				displayName = "Lunch"
 			}
 		)
 	}
 	draftOpenShift = $null
-	createdDateTime = [System.DateTime]::Parse("2019-03-14T04: 32: 51.451Z")
-	lastModifiedDateTime = [System.DateTime]::Parse("2019-03-14T05: 32: 51.451Z")
+	createdDateTime = \[System.DateTime\]::Parse("2019-03-14T04: 32: 51.451Z")
+	lastModifiedDateTime = \[System.DateTime\]::Parse("2019-03-14T05: 32: 51.451Z")
 	lastModifiedBy = @{
 		application = $null
 		device = $null
@@ -92,10 +85,6 @@ $params = @{
 }
 
 New-MgTeamScheduleOpenShift -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleOpenShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -146,6 +135,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -186,6 +190,21 @@ To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash 
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -278,9 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -430,8 +451,6 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift)
-
 

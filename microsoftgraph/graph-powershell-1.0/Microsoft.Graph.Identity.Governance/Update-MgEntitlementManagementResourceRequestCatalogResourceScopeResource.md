@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogresourcescoperesource
@@ -16,74 +16,94 @@ Update the navigation property resource in identityGovernance
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-OriginId <String>] [-OriginSystem <String>]
- [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>] [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Attributes <IMicrosoftGraphAccessPackageResourceAttribute[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource -AccessPackageResourceId <String>
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-OriginId <String>] [-OriginSystem <String>]
- [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>] [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Attributes <IMicrosoftGraphAccessPackageResourceAttribute[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource -AccessPackageResourceId <String>
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResource> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResource> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-Attributes <IMicrosoftGraphAccessPackageResourceAttribute[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
  [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
- [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-Attributes <IMicrosoftGraphAccessPackageResourceAttribute[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
  [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
- [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResource> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResource>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResource
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResource> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResource>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property resource in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -137,6 +157,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Attributes
+Contains information about the attributes to be collected from the requestor and sent to the resource application.
+To construct, see NOTES section for ATTRIBUTES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResourceAttribute[]
 Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -298,6 +349,21 @@ The type of the resource in the origin system, such as SharePointOnline, AadAppl
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -380,19 +446,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+ATTRIBUTES \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+  \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+  \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+
 BODYPARAMETER \<IMicrosoftGraphAccessPackageResource\>: accessPackageResource
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+  \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+    \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+    \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -402,6 +485,9 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
     \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -450,6 +536,9 @@ ENVIRONMENT \<IMicrosoftGraphAccessPackageResourceEnvironment\>: accessPackageRe
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+  \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
   \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -467,6 +556,13 @@ Requires $filter (eq).
 Required.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+      \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+      \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -586,6 +682,13 @@ For a SharePoint Online site, the originId will be the sequence number of the ro
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+      \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+      \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -595,6 +698,9 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
       \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -645,6 +751,13 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+      \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of the attribute in the end system.
+If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
+      \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -654,6 +767,9 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
       \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -693,6 +809,4 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogresourcescoperesource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogresourcescoperesource)
-
-
 

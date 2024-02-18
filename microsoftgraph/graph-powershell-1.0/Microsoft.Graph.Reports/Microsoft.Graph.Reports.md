@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: 0bfc88b7-a8ad-471a-8c86-5f0aa3c84217
 Download Help Link: {{ Update Download Link }}
@@ -11,6 +11,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ## Microsoft.Graph.Reports Cmdlets
+### [Export-MgReportPartnerBillingUsageBilled](Export-MgReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Export-MgReportPartnerBillingUsageUnbilled](Export-MgReportPartnerBillingUsageUnbilled.md)
+{{ Fill in the Description }}
+
 ### [Get-MgAuditLogDirectoryAudit](Get-MgAuditLogDirectoryAudit.md)
 {{ Fill in the Description }}
 
@@ -182,6 +188,33 @@ Locale: en-US
 ### [Get-MgReportOneDriveUsageStorage](Get-MgReportOneDriveUsageStorage.md)
 {{ Fill in the Description }}
 
+### [Get-MgReportPartner](Get-MgReportPartner.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBilling](Get-MgReportPartnerBilling.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingManifest](Get-MgReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingManifestCount](Get-MgReportPartnerBillingManifestCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingOperation](Get-MgReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingOperationCount](Get-MgReportPartnerBillingOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingUsage](Get-MgReportPartnerBillingUsage.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingUsageBilled](Get-MgReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingUsageUnbilled](Get-MgReportPartnerBillingUsageUnbilled.md)
+{{ Fill in the Description }}
+
 ### [Get-MgReportPrinterArchivedPrintJob](Get-MgReportPrinterArchivedPrintJob.md)
 {{ Fill in the Description }}
 
@@ -335,10 +368,34 @@ Locale: en-US
 ### [New-MgReportAuthenticationMethodUserRegistrationDetail](New-MgReportAuthenticationMethodUserRegistrationDetail.md)
 {{ Fill in the Description }}
 
+### [New-MgReportPartnerBillingManifest](New-MgReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [New-MgReportPartnerBillingOperation](New-MgReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDeviceManagementReport](Remove-MgDeviceManagementReport.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgReportAuthenticationMethodUserRegistrationDetail](Remove-MgReportAuthenticationMethodUserRegistrationDetail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBilling](Remove-MgReportPartnerBilling.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBillingManifest](Remove-MgReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBillingOperation](Remove-MgReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBillingUsage](Remove-MgReportPartnerBillingUsage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBillingUsageBilled](Remove-MgReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBillingUsageUnbilled](Remove-MgReportPartnerBillingUsageUnbilled.md)
 {{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementReport](Update-MgDeviceManagementReport.md)
@@ -347,4 +404,21 @@ Locale: en-US
 ### [Update-MgReportAuthenticationMethodUserRegistrationDetail](Update-MgReportAuthenticationMethodUserRegistrationDetail.md)
 {{ Fill in the Description }}
 
+### [Update-MgReportPartnerBilling](Update-MgReportPartnerBilling.md)
+{{ Fill in the Description }}
+
+### [Update-MgReportPartnerBillingManifest](Update-MgReportPartnerBillingManifest.md)
+{{ Fill in the Description }}
+
+### [Update-MgReportPartnerBillingOperation](Update-MgReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgReportPartnerBillingUsage](Update-MgReportPartnerBillingUsage.md)
+{{ Fill in the Description }}
+
+### [Update-MgReportPartnerBillingUsageBilled](Update-MgReportPartnerBillingUsageBilled.md)
+{{ Fill in the Description }}
+
+### [Update-MgReportPartnerBillingUsageUnbilled](Update-MgReportPartnerBillingUsageUnbilled.md)
+{{ Fill in the Description }}
 

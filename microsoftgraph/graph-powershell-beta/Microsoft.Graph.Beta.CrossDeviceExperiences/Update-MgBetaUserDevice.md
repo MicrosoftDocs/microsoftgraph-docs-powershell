@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice
@@ -29,7 +29,8 @@ Update-MgBetaUserDevice -DeviceId <String> -UserId <String> [-AccountEnabled]
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,23 +50,40 @@ Update-MgBetaUserDevice [-DeviceId <String>] -InputObject <ICrossDeviceExperienc
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
  [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
  [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserDevice -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDevice> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaUserDevice -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDevice>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property devices in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -412,6 +430,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Hostnames
 List of host names for the device.
 
@@ -564,7 +597,7 @@ Accept wildcard characters: False
 
 ### -Manufacturer
 Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
 
 ```yaml
 Type: String
@@ -616,7 +649,7 @@ Accept wildcard characters: False
 
 ### -Model
 Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
 
 ```yaml
 Type: String
@@ -782,6 +815,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegisteredOwners
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
@@ -894,7 +942,7 @@ Accept wildcard characters: False
 Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -977,9 +1025,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1097,7 +1147,7 @@ Only returned if the user signs in with a Microsoft account as part of Project R
 This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
   \[Manufacturer \<String\>\]: Manufacturer of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
   \[MdmAppId \<String\>\]: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -1110,7 +1160,7 @@ Read-only.
     \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   \[Model \<String\>\]: Model of the device.
-Only returned if the user signs in with a Microsoft account as part of Project Rome.
+Read-only.
   \[Name \<String\>\]: Friendly name of the device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
   \[OnPremisesLastSyncDateTime \<DateTime?\>\]: The last time at which the object was synced with the on-premises directory.
@@ -1161,7 +1211,7 @@ Supports $expand.
   \[TrustType \<String\>\]: Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+For more information, see Introduction to device management in Microsoft Entra ID.
   \[UsageRights \<IMicrosoftGraphUsageRight\[\]\>\]: Represents the usage rights a device has been granted.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1267,6 +1317,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice)
-
-
 

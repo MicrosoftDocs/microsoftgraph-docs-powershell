@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Move-MgBetaCommunicationCall
@@ -13,37 +12,38 @@ Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Move-MgCommunicationCall?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### TransferExpanded (Default)
 ```
 Move-MgBetaCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
  [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>] [-Transferee <IMicrosoftGraphParticipantInfo>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Transfer
 ```
 Move-MgBetaCommunicationCall -CallId <String>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### TransferViaIdentityExpanded
 ```
 Move-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>] [-Transferee <IMicrosoftGraphParticipantInfo>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### TransferViaIdentity
 ```
 Move-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,15 +51,12 @@ Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-transfer-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Call transfer from a peer-to-peer call
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -78,14 +75,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will call transfer from a peer-to-peer call
-
-### Example 2: Consultative transfer from a peer-to-peer call
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -108,14 +101,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will consultative transfer from a peer-to-peer call
-
-### Example 3: Call transfer from a peer-to-peer call to PSTN number
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -133,14 +122,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will call transfer from a peer-to-peer call to pstn number
-
-### Example 4: Consultative transfer from a peer-to-peer call to PSTN number
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -161,14 +146,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will consultative transfer from a peer-to-peer call to pstn number
-
-### Example 5: Call transfer from a group call
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -195,10 +176,6 @@ $params = @{
 }
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will call transfer from a group call
-
 
 ## PARAMETERS
 
@@ -248,6 +225,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -275,6 +267,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -349,9 +356,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -410,6 +419,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
   \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
   \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
   \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
@@ -472,8 +482,6 @@ The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Move-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Move-MgCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall)
-
 

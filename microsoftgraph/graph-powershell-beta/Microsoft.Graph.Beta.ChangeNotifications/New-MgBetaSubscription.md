@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # New-MgBetaSubscription
@@ -14,9 +13,6 @@ To identify the resources for which you can create subscriptions and the limitat
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,12 +22,14 @@ New-MgBetaSubscription [-AdditionalProperties <Hashtable>] [-ApplicationId <Stri
  [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
  [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>]
  [-NotificationQueryOptions <String>] [-NotificationUrl <String>] [-NotificationUrlAppId <String>]
- [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSubscription -BodyParameter <IMicrosoftGraphSubscription> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSubscription -BodyParameter <IMicrosoftGraphSubscription> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,26 +39,22 @@ Some resources support rich notifications, that is, notifications that include r
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
+```
 
 $params = @{
 	changeType = "created"
 	notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient"
 	resource = "me/mailFolders('Inbox')/messages"
-	expirationDateTime = [System.DateTime]::Parse("2016-11-20T18:23:45.9356913Z")
+	expirationDateTime = \[System.DateTime\]::Parse("2016-11-20T18:23:45.9356913Z")
 	clientState = "secretClientValue"
 	latestSupportedTlsVersion = "v1_2"
 }
 
 New-MgBetaSubscription -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -223,6 +217,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -367,6 +376,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 Required.
 Specifies the resource that will be monitored for changes.
@@ -422,9 +446,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscription
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscription
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -501,8 +527,6 @@ Do not include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
-
 

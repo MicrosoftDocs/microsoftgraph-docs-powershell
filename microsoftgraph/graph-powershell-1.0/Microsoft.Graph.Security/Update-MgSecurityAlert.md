@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgSecurityAlert
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,13 +33,14 @@ Update-MgSecurityAlert -AlertId <String> [-ActivityGroupName <String>] [-Additio
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -66,31 +63,30 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName <Str
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -106,19 +102,15 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Request with Prefer header
-
-```powershell
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -134,11 +126,6 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-```
-This example shows how to use the Update-MgSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -440,6 +427,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HistoryStates
 .
 To construct, see NOTES section for HISTORYSTATES properties and create a hash table.
@@ -623,6 +625,21 @@ To construct, see NOTES section for PROCESSES properties and create a hash table
 Type: IMicrosoftGraphProcess[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -875,9 +892,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1334,8 +1353,6 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
   \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
-
 

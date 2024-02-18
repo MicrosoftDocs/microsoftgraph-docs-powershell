@@ -1,65 +1,62 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Send-MgChatActivityNotification
 
 ## SYNOPSIS
 Send an activity feed notification in scope of a chat.
-For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaChatActivityNotification?view=graph-powershell-beta)
+For more information about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
 Send-MgChatActivityNotification -ChatId <String> [-ActivityType <String>] [-AdditionalProperties <Hashtable>]
- [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>]
+ [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgChatActivityNotification -ChatId <String>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
 Send-MgChatActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgChatActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an activity feed notification in scope of a chat.
-For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-sendactivitynotification-permissions.md)]
+For more information about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
-### Example 1: Notify a user about a task created in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -84,14 +81,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will notify a user about a task created in a chat
-
-### Example 2: Notify a user about an approval needed in a chat message
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -116,14 +109,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will notify a user about an approval needed in a chat message
-
-### Example 3: Notify a user about an approval needed in a chat message using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -148,14 +137,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will notify a user about an approval needed in a chat message using user principal name
-
-### Example 4: Notify a user about an event in relation to a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -181,14 +166,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will notify a user about an event in relation to a chat
-
-### Example 5: Notify the chat members about a task created in a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -212,10 +193,6 @@ $params = @{
 }
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
-
-```
-This example will notify the chat members about a task created in a chat
-
 
 ## PARAMETERS
 
@@ -295,6 +272,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -342,11 +334,41 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipient
 teamworkNotificationRecipient
 
 ```yaml
 Type: Hashtable
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamsAppId
+.
+
+```yaml
+Type: String
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -427,9 +449,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -446,6 +470,7 @@ BODYPARAMETER \<IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPo
     \[ContentType \<String\>\]: bodyType
   \[Recipient \<IMicrosoftGraphTeamworkNotificationRecipient\>\]: teamworkNotificationRecipient
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TeamsAppId \<String\>\]: 
   \[TemplateParameters \<IMicrosoftGraphKeyValuePair\[\]\>\]: 
     \[Name \<String\>\]: Name for this key-value pair
     \[Value \<String\>\]: Value for this key-value pair
@@ -511,8 +536,6 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaChatActivityNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification)
-
 

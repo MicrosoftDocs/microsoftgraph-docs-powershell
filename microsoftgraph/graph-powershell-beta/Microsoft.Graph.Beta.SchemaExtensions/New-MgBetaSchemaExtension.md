@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgBetaSchemaExtension
@@ -12,11 +11,8 @@ ms.prod: extensions
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/New-MgSchemaExtension?view=graph-powershell-1.0)
+Depending on the \nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, \nuse the schema extension definition to create a new group with training course data, and \nadd training course data to an existing group.
 
 ## SYNTAX
 
@@ -24,28 +20,29 @@ See examples of how to define a schema extension that describes a training cours
 ```
 New-MgBetaSchemaExtension [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
  [-Owner <String>] [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>]
- [-TargetTypes <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetTypes <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSchemaExtension -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSchemaExtension -BodyParameter <IMicrosoftGraphSchemaExtension> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
+Depending on the \nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, \nuse the schema extension definition to create a new group with training course data, and \nadd training course data to an existing group.
 
 ## EXAMPLES
-### Example 1: Creating a schema extension using a verified domain
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
+```
 
 $params = @{
 	id = "graphlearn_courses"
@@ -71,14 +68,10 @@ $params = @{
 
 New-MgBetaSchemaExtension -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows creating a schema extension using a verified domain
-
-### Example 2: Creating a schema extension using just a name
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
+```
 
 $params = @{
 	id = "courses"
@@ -104,14 +97,10 @@ $params = @{
 
 New-MgBetaSchemaExtension -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows creating a schema extension using just a name
-
-### Example 3: Creating a schema extension setting the owner
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
+```
 
 $params = @{
 	id = "courses"
@@ -137,10 +126,6 @@ $params = @{
 }
 
 New-MgBetaSchemaExtension -BodyParameter $params
-
-```
-This example shows creating a schema extension setting the owner
-
 
 ## PARAMETERS
 
@@ -191,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -221,6 +221,21 @@ Supports $filter (eq).
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -317,9 +332,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -360,8 +377,6 @@ Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table below for more details.
 
 ## RELATED LINKS
-[New-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/New-MgSchemaExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension)
-
 

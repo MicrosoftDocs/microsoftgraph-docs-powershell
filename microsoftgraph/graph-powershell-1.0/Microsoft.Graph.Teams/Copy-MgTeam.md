@@ -1,25 +1,21 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Copy-MgTeam
 
 ## SYNOPSIS
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
+\nIf the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,46 +23,50 @@ The recommended delay between GETs is 5 seconds.
 ```
 Copy-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Clone
 ```
 Copy-MgTeam -TeamId <String>
  -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CloneViaIdentityExpanded
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CloneViaIdentity
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
+\nIf the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "Library Assist"
@@ -77,10 +77,6 @@ $params = @{
 }
 
 Copy-MgTeam -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Copy-MgTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -160,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -217,6 +228,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -289,9 +315,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -342,8 +370,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam)
-
 

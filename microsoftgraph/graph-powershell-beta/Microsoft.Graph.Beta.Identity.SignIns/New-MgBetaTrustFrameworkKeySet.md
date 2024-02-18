@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaTrustFrameworkKeySet
@@ -18,13 +17,14 @@ The modified ID will be available in the response and in the location header.
 ### CreateExpanded (Default)
 ```
 New-MgBetaTrustFrameworkKeySet [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Keys <IMicrosoftGraphTrustFrameworkKey[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Keys <IMicrosoftGraphTrustFrameworkKey[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,12 +32,10 @@ Create a new trustFrameworkKeySet.
 The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-post-keysets-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "keyset1"
@@ -66,18 +64,15 @@ $params = @{
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "keyset1"
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -112,6 +107,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -136,6 +146,21 @@ To construct, see NOTES section for KEYS properties and create a hash table.
 Type: IMicrosoftGraphTrustFrameworkKey[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -181,9 +206,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -251,5 +278,4 @@ Possible values are: sig (signature), enc (encryption)
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset)
-
 

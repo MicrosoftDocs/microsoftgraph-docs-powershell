@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskyUserHistory
@@ -11,42 +10,39 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Get a riskyUserHistoryItem object of a riskyUser.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaRiskyUserHistory -RiskyUserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a riskyUserHistoryItem object of a riskyUser.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyuserhistoryitem-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: List history of a specific user
-```powershell
+
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05 | Format-Table RiskDetail, RiskLastUpdatedDateTime, RiskState, UserDisplayName
+```
 
 RiskDetail                         RiskLastUpdatedDateTime RiskState            UserDisplayName
 ----------                         ----------------------- ---------            ---------------
@@ -55,15 +51,13 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM   confirmedCompromised 
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM   dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    atRisk               Jason Mayer
+
+### EXAMPLE 2
 ```
-
-The command return all the user risk history 
-
-### Example 2: List history of a specific user with detailed risk detection
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05| Format-Table RiskDetail, RiskLastUpdatedDateTime, @{N="RiskDetection";E={($_). Activity.RiskEventTypes}}, RiskState, UserDisplayName
+```
 
 RiskDetail                         RiskLastUpdatedDateTime RiskDetection       RiskState            UserDisplayName
 ----------                         ----------------------- -------------       ---------            ---------------
@@ -72,9 +66,6 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM                       c
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM                       dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    anomalousToken      atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    anonymizedIPAddress atRisk               Jason Mayer
-```
-
-The command return all the user risk history and expand the property of Activity
 
 ## PARAMETERS
 
@@ -139,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -166,6 +172,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -281,9 +302,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -370,8 +393,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
-
 

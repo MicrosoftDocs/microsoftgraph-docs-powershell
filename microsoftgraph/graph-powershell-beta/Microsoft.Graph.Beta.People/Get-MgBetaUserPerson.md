@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson
@@ -13,26 +13,25 @@ The most relevant people to the user.
 The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration, and business relationships.
 A person aggregates information from mail, contacts, and social networks.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaUserPerson -UserId <String> [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaUserPerson -PersonId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPerson -PersonId <String> -UserId <String> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,18 +41,14 @@ The collection is ordered by their relevance to the user, which is determined by
 A person aggregates information from mail, contacts, and social networks.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPerson -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserPerson Cmdlet.
-
 
 ## PARAMETERS
 
@@ -103,6 +98,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -143,6 +153,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -245,9 +270,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPerson
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -279,8 +306,6 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
   \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson)
-
 

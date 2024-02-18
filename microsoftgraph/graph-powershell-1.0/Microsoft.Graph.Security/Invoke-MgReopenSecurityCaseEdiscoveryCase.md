@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase
@@ -11,21 +11,18 @@ schema: 2.0.0
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaReopenSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reopen (Default)
 ```
-Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReopenViaIdentity
 ```
-Invoke-MgReopenSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgReopenSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +30,12 @@ Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -55,6 +51,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -85,6 +96,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -126,9 +152,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -190,8 +218,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaReopenSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase)
-
 

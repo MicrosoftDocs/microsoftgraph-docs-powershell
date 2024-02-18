@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 Module Guid: 8e808470-ff01-4270-a111-2339cdce072c
 Download Help Link: {{ Update Download Link }}
@@ -221,6 +221,18 @@ Locale: en-US
 ### [Get-MgBetaEntitlementManagementAccessPackageResourceRequestCount](Get-MgBetaEntitlementManagementAccessPackageResourceRequestCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaEntitlementManagementAssignmentRequest](Get-MgBetaEntitlementManagementAssignmentRequest.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment](Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEntitlementManagementAssignmentRequestCount](Get-MgBetaEntitlementManagementAssignmentRequestCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEntitlementManagementAssignmentRequestRequestorConnectedOrganization](Get-MgBetaEntitlementManagementAssignmentRequestRequestorConnectedOrganization.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaEntitlementManagementConnectedOrganization](Get-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
@@ -249,6 +261,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEntitlementManagementSubject](Get-MgBetaEntitlementManagementSubject.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEntitlementManagementSubjectByObjectId](Get-MgBetaEntitlementManagementSubjectByObjectId.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEntitlementManagementSubjectConnectedOrganization](Get-MgBetaEntitlementManagementSubjectConnectedOrganization.md)
@@ -792,6 +807,21 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalCount](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStepCount](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStepCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccess](Get-MgBetaIdentityGovernancePrivilegedAccess.md)
@@ -1961,6 +1991,9 @@ Locale: en-US
 ### [Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser](Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaFilterEntitlementManagementAssignmentRequestByCurrentUser](Invoke-MgBetaFilterEntitlementManagementAssignmentRequestByCurrentUser.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser.md)
 {{ Fill in the Description }}
 
@@ -1992,6 +2025,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaFilterIdentityGovernancePermissionManagementScheduledPermissionApprovalByCurrentUser](Invoke-MgBetaFilterIdentityGovernancePermissionManagementScheduledPermissionApprovalByCurrentUser.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaFilterIdentityGovernancePermissionManagementScheduledPermissionRequestByCurrentUser](Invoke-MgBetaFilterIdentityGovernancePermissionManagementScheduledPermissionRequestByCurrentUser.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser](Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser.md)
@@ -2243,6 +2282,9 @@ Locale: en-US
 ### [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](New-MgBetaEntitlementManagementAccessPackageResourceRoleScope.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaEntitlementManagementAssignmentRequest](New-MgBetaEntitlementManagementAssignmentRequest.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaEntitlementManagementConnectedOrganization](New-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
@@ -2361,6 +2403,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval](New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest](New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest.md)
@@ -2705,6 +2753,9 @@ Locale: en-US
 ### [Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope](Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaEntitlementManagementAssignmentRequest](Remove-MgBetaEntitlementManagementAssignmentRequest.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaEntitlementManagementConnectedOrganization](Remove-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
@@ -2715,6 +2766,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEntitlementManagementSubject](Remove-MgBetaEntitlementManagementSubject.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaEntitlementManagementSubjectByObjectId](Remove-MgBetaEntitlementManagementSubjectByObjectId.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernanceAccessReviewDecision](Remove-MgBetaIdentityGovernanceAccessReviewDecision.md)
@@ -2850,6 +2904,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval](Remove-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](Remove-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernancePrivilegedAccess](Remove-MgBetaIdentityGovernancePrivilegedAccess.md)
@@ -3221,6 +3281,9 @@ Locale: en-US
 ### [Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest](Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest.md)
 {{ Fill in the Description }}
 
+### [Resume-MgBetaEntitlementManagementAssignmentRequest](Resume-MgBetaEntitlementManagementAssignmentRequest.md)
+{{ Fill in the Description }}
+
 ### [Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 {{ Fill in the Description }}
 
@@ -3270,6 +3333,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest](Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest.md)
+{{ Fill in the Description }}
+
+### [Stop-MgBetaEntitlementManagementAssignmentRequest](Stop-MgBetaEntitlementManagementAssignmentRequest.md)
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstance.md)
@@ -3410,6 +3476,9 @@ Locale: en-US
 ### [Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope](Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaEntitlementManagementAssignmentRequest](Update-MgBetaEntitlementManagementAssignmentRequest.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaEntitlementManagementConnectedOrganization](Update-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
@@ -3417,6 +3486,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaEntitlementManagementSubject](Update-MgBetaEntitlementManagementSubject.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaEntitlementManagementSubjectByObjectId](Update-MgBetaEntitlementManagementSubjectByObjectId.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceAccessReviewDecision](Update-MgBetaIdentityGovernanceAccessReviewDecision.md)
@@ -3585,6 +3657,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval](Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernancePrivilegedAccess](Update-MgBetaIdentityGovernancePrivilegedAccess.md)
@@ -3931,5 +4009,4 @@ Locale: en-US
 
 ### [Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
 {{ Fill in the Description }}
-
 

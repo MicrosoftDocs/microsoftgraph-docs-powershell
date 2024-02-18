@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserEvent
 
 ## SYNOPSIS
 Update the properties of the event object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,13 +31,14 @@ Update-MgUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Ha
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WebLink <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserEvent -EventId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserEvent -EventId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -63,33 +60,32 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hash
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WebLink <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of the event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
 	responseStatus = @{
 		response = ""
-		time = [System.DateTime]::Parse("datetime-value")
+		time = \[System.DateTime\]::Parse("datetime-value")
 	}
 	recurrence = $null
 	reminderMinutesBeforeStart = 99
@@ -104,11 +100,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -352,6 +343,21 @@ Required: False
 Position: Named
 Default value: False
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -718,6 +724,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recurrence
 patternedRecurrence
 To construct, see NOTES section for RECURRENCE properties and create a hash table.
@@ -972,9 +993,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1864,8 +1887,6 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp
@@ -10,48 +10,45 @@ schema: 2.0.0
 ## SYNOPSIS
 Install an app to the specified team.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgTeamInstalledApp?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaTeamInstalledApp -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaTeamInstalledApp -TeamId <String> -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaTeamInstalledApp -TeamId <String> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Install an app to the specified team.
 
 ## EXAMPLES
-### Example 1: Install app in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
@@ -59,14 +56,10 @@ $params = @{
 
 New-MgBetaTeamInstalledApp -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will install app in a chat
-
-### Example 2: Install app in a team and consent to the resource-specific permissions required by the app
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785"
@@ -85,10 +78,6 @@ $params = @{
 }
 
 New-MgBetaTeamInstalledApp -TeamId $teamId -BodyParameter $params
-
-```
-This example will install app in a team and consent to the resource-specific permissions required by the app
-
 
 ## PARAMETERS
 
@@ -139,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -168,6 +172,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -256,9 +275,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -314,6 +335,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
+      \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[BotId \<String\>\]: 
+          \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+        \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+        \[Description \<String\>\]: 
+        \[DisplayName \<String\>\]: 
+        \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[IconUrl \<String\>\]: 
+          \[OfficeUiFabricIconName \<String\>\]: 
+        \[PickerGroupId \<String\>\]: 
       \[Description \<String\>\]: 
       \[DisplayName \<String\>\]: The name of the app provided by the app developer.
       \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -353,10 +391,12 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
   \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
   \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
   \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
   \[TeamId \<String\>\]: The unique identifier of team
   \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
   \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
   \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
   \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
   \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
@@ -418,6 +458,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[BotId \<String\>\]: 
+        \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+      \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+      \[Description \<String\>\]: 
+      \[DisplayName \<String\>\]: 
+      \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[IconUrl \<String\>\]: 
+        \[OfficeUiFabricIconName \<String\>\]: 
+      \[PickerGroupId \<String\>\]: 
     \[Description \<String\>\]: 
     \[DisplayName \<String\>\]: The name of the app provided by the app developer.
     \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -471,6 +528,23 @@ For example, if a user changes their display name the API might show the new val
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[BotId \<String\>\]: 
+      \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+    \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IconUrl \<String\>\]: 
+      \[OfficeUiFabricIconName \<String\>\]: 
+    \[PickerGroupId \<String\>\]: 
   \[Description \<String\>\]: 
   \[DisplayName \<String\>\]: The name of the app provided by the app developer.
   \[LastModifiedDateTime \<DateTime?\>\]: 
@@ -481,8 +555,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Version \<String\>\]: The version number of the application.
 
 ## RELATED LINKS
-[New-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp)
-
 

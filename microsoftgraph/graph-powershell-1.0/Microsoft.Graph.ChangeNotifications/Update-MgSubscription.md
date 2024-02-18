@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Update-MgSubscription
@@ -15,9 +14,6 @@ Subscriptions expire after a length of time that varies by resource type.
 In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
 See subscription for maximum length of a subscription for each resource type.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -27,13 +23,14 @@ Update-MgSubscription -SubscriptionId <String> [-AdditionalProperties <Hashtable
  [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
  [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>]
  [-NotificationQueryOptions <String>] [-NotificationUrl <String>] [-NotificationUrlAppId <String>]
- [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSubscription -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSubscription -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,13 +40,14 @@ Update-MgSubscription -InputObject <IChangeNotificationsIdentity> [-AdditionalPr
  [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
- [-NotificationUrlAppId <String>] [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSubscription -InputObject <IChangeNotificationsIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,21 +58,17 @@ In order to avoid missing change notifications, an app should renew its subscrip
 See subscription for maximum length of a subscription for each resource type.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 $params = @{
-	expirationDateTime = [System.DateTime]::Parse("2016-11-22T18:23:45.9356913Z")
+	expirationDateTime = \[System.DateTime\]::Parse("2016-11-22T18:23:45.9356913Z")
 }
 
 Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
-```
-This example shows how to use the Update-MgSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -236,6 +230,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -379,6 +388,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 Required.
 Specifies the resource that will be monitored for changes.
@@ -450,9 +474,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -528,8 +554,6 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
-[Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
-
 

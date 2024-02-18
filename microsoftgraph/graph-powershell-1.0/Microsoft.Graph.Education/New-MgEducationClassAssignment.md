@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassAssignment
@@ -12,9 +11,6 @@ ms.prod: education
 Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,15 +23,16 @@ New-MgEducationClassAssignment -EducationClassId <String> [-AddToCalendarAction 
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <String>]
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-NotificationChannelUrl <String>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <String>]
- [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
+ [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationClassAssignment -EducationClassId <String> -BodyParameter <IMicrosoftGraphEducationAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,15 +44,17 @@ New-MgEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCalendar
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <String>]
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-NotificationChannelUrl <String>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <String>]
- [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
+ [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEducationClassAssignment -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,18 +62,15 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-assignment-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
-	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
+	dueDateTime = \[System.DateTime\]::Parse("2022-09-16T00:00:00Z")
 	displayName = "Reading test 09.14"
 	instructions = @{
 		contentType = "text"
@@ -92,10 +88,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -225,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassId
-Class which this assignment belongs.
+Class to which this assignment belongs.
 
 ```yaml
 Type: String
@@ -241,7 +233,7 @@ Accept wildcard characters: False
 
 ### -CloseDateTime
 Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -352,6 +344,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -416,6 +423,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ModuleUrl
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -NotificationChannelUrl
 Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
@@ -426,6 +448,21 @@ Updating the notificationChannelUrl isn't allowed after the assignment has been 
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -484,7 +521,7 @@ Accept wildcard characters: False
 ```
 
 ### -Submissions
-Once published, there is a submission object for each student representing their work and grade.
+Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
 To construct, see NOTES section for SUBMISSIONS properties and create a hash table.
@@ -539,9 +576,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -565,9 +604,9 @@ Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[DisplayName \<String\>\]: Unique identifier for the category.
-  \[ClassId \<String\>\]: Class which this assignment belongs.
+  \[ClassId \<String\>\]: Class to which this assignment belongs.
   \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -591,13 +630,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: 
-    \[PercentageWeight \<Int32?\>\]: 
+    \[DisplayName \<String\>\]: The name of the grading category.
+    \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
   \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: 
     \[ContentType \<String\>\]: bodyType
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[ModuleUrl \<String\>\]: 
   \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
@@ -637,7 +677,7 @@ Read-only.
       \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
   \[Status \<String\>\]: educationAssignmentStatus
-  \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+  \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there's a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -685,8 +725,8 @@ GRADINGCATEGORY \<IMicrosoftGraphEducationGradingCategory\>: educationGradingCat
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: 
-  \[PercentageWeight \<Int32?\>\]: 
+  \[DisplayName \<String\>\]: The name of the grading category.
+  \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
 
 INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
@@ -694,6 +734,8 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
   \[EducationClassId \<String\>\]: The unique identifier of educationClass
   \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
   \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
   \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
   \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
@@ -775,7 +817,7 @@ For example, if a user changes their display name, the API might show the new va
     \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
-SUBMISSIONS \<IMicrosoftGraphEducationSubmission\[\]\>: Once published, there is a submission object for each student representing their work and grade.
+SUBMISSIONS \<IMicrosoftGraphEducationSubmission\[\]\>: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -815,8 +857,6 @@ Read-only.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment)
-
 

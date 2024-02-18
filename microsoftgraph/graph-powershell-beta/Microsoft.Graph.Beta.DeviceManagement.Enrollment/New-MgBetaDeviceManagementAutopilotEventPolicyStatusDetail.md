@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopiloteventpolicystatusdetail
@@ -17,14 +17,14 @@ Create new navigation property to policyStatusDetails for deviceManagement
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -DeviceManagementAutopilotEventId <String>
  [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-DisplayName <String>] [-ErrorCode <Int32>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-PolicyType <String>] [-TrackedOnEnrollmentStatus]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -DeviceManagementAutopilotEventId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -32,18 +32,30 @@ New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -DeviceManagementAuto
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceManagementEnrollmentIdentity>
  [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-DisplayName <String>] [-ErrorCode <Int32>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-PolicyType <String>] [-TrackedOnEnrollmentStatus]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to policyStatusDetails for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -139,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -201,8 +228,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TrackedOnEnrollmentStatus
-Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ```yaml
 Type: SwitchParameter
@@ -254,9 +296,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -273,7 +317,7 @@ Read-only.
 Error code for enforcement status takes precedence if it exists.
   \[LastReportedDateTime \<DateTime?\>\]: Timestamp of the reported policy status
   \[PolicyType \<String\>\]: deviceManagementAutopilotPolicyType
-  \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+  \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
 
 INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
   \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
@@ -307,6 +351,4 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopiloteventpolicystatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopiloteventpolicystatusdetail)
-
-
 

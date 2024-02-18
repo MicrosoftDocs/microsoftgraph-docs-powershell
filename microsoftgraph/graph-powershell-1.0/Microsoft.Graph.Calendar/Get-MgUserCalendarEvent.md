@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserCalendarEvent
@@ -12,30 +11,28 @@ ms.prod: outlook
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or get the instances of an event.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarEvent?view=graph-powershell-beta)
+To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 
 ## SYNTAX
 
 ```
 Get-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or get the instances of an event.
+To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 
 ## EXAMPLES
-### Example 1: Create an event in a specific calendar
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	Subject = "Let's go for lunch"
@@ -68,15 +65,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create and enable an event as an online meeting
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	Subject = "Let's go for lunch"
@@ -110,11 +103,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-```
-This example shows how to use the Get-MgUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -194,6 +182,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
@@ -205,6 +208,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -289,14 +307,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent)
-
 

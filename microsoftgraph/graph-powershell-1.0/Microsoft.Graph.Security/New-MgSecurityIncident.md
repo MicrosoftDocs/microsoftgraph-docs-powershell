@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to incidents for security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,17 +19,30 @@ New-MgSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftG
  [-CreatedDateTime <DateTime>] [-CustomTags <String[]>] [-Description <String>] [-Determination <String>]
  [-DisplayName <String>] [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>]
  [-LastUpdateDateTime <DateTime>] [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>]
- [-SystemTags <String[]>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to incidents for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -206,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -259,6 +284,21 @@ Time when the incident was last updated.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -380,9 +420,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -519,9 +561,6 @@ COMMENTS \<IMicrosoftGraphSecurityAlertComment\[\]\>: Array of comments created 
   \[CreatedDateTime \<DateTime?\>\]: The time when the comment was submitted.
 
 ## RELATED LINKS
-[New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
-
-
 

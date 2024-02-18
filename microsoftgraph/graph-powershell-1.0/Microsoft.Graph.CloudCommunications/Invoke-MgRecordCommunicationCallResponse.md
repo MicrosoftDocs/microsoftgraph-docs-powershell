@@ -1,22 +1,18 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgRecordCommunicationCallResponse
 
 ## SYNOPSIS
-Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,14 +21,14 @@ The bot must download the recording promptly after the recording operation finis
 Invoke-MgRecordCommunicationCallResponse -CallId <String> [-AdditionalProperties <Hashtable>] [-BargeInAllowed]
  [-ClientContext <String>] [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
  [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Record
 ```
 Invoke-MgRecordCommunicationCallResponse -CallId <String>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RecordViaIdentityExpanded
@@ -41,32 +37,29 @@ Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdent
  [-AdditionalProperties <Hashtable>] [-BargeInAllowed] [-ClientContext <String>]
  [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
  [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RecordViaIdentity
 ```
 Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-record-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	bargeInAllowed = $true
@@ -88,10 +81,6 @@ $params = @{
 }
 
 Invoke-MgRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgRecordCommunicationCallResponse Cmdlet.
-
 
 ## PARAMETERS
 
@@ -171,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InitialSilenceTimeoutInSeconds
 .
 
@@ -247,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Prompts
 .
 
@@ -315,9 +334,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecordOperation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -352,8 +373,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse)
-
 

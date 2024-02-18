@@ -1,53 +1,62 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserDefaultCalendar -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserDefaultCalendar -UserId <String> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultCalendar -UserId $userId
-```
-This example shows how to use the Get-MgUserDefaultCalendar Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -62,6 +71,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -101,9 +125,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -124,8 +150,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessNamedLocation
@@ -12,22 +11,19 @@ ms.prod: identity-and-sign-in
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityConditionalAccessNamedLocation [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,10 +31,11 @@ Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ## EXAMPLES
-### Example 1: Create a country named location
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+```
 
 $params = @{
 "@odata.type" = "#microsoft.graph.countryNamedLocation"
@@ -55,14 +52,11 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter $params
 Id                                   CreatedDateTime      DisplayName                                       ModifiedDateTime
 --                                   ---------------      -----------                                       ----------------
 1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM Named location with unknown countries and regions 6/13/2022 8:27:35 AM
+
+### EXAMPLE 2
 ```
-
-This example creates a country named location.
-
-### Example 2: Create an ip named location
-
-```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+```
 
 $params = @{
 "@odata.type" = "#microsoft.graph.ipNamedLocation"
@@ -85,9 +79,6 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter $params
 Id                                   CreatedDateTime      DisplayName                 ModifiedDateTime
 --                                   ---------------      -----------                 ----------------
 0824dbaf-6277-4db0-8112-b29fd356f2c4 6/13/2022 8:41:38 AM Untrusted IP named location 6/13/2022 8:41:38 AM
-```
-
-This example creates an Ip named location.
 
 ## PARAMETERS
 
@@ -154,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -179,6 +185,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -224,9 +245,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -246,8 +269,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
-
 

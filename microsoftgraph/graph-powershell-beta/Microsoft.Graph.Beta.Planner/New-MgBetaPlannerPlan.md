@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgBetaPlannerPlan
 
 ## SYNOPSIS
 Create a new plannerPlan.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,26 +20,25 @@ New-MgBetaPlannerPlan [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicro
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new plannerPlan.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-plans-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	container = @{
@@ -53,10 +48,6 @@ $params = @{
 }
 
 New-MgBetaPlannerPlan -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -222,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -260,6 +266,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -355,9 +376,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -1088,8 +1111,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent
 schema: 2.0.0
-ms.prod: security 
 ---
 
 # New-MgBetaSecurityTriggerRetentionEvent
 
 ## SYNOPSIS
 Create a new retentionEvent object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,27 +21,24 @@ New-MgBetaSecurityTriggerRetentionEvent [-AdditionalProperties <Hashtable>]
  [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LastStatusUpdateDateTime <DateTime>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityRetentionEvent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new retentionEvent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -56,7 +49,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.security.eventQueries"
 		}
 	)
-	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
+	eventTriggerDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
@@ -68,14 +61,10 @@ $params = @{
 	eventStatus = @{
 		"@odata.type" = "microsoft.graph.security.retentionEventStatus"
 	}
-	lastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
+	lastStatusUpdateDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 }
 
 New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityTriggerRetentionEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -234,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -296,6 +300,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionEventType
 retentionEventType
 To construct, see NOTES section for RETENTIONEVENTTYPE properties and create a hash table.
@@ -349,9 +368,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -492,8 +513,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
-
 

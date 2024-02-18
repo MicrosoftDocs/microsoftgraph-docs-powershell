@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusinessAppointment
 
 ## SYNOPSIS
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +27,8 @@ Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingB
  [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -49,19 +46,22 @@ Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingB
  [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -79,7 +79,8 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-Addit
  [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -97,30 +98,31 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-Addit
  [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusinessAppointment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
@@ -142,8 +144,6 @@ $params = @{
 }
 Update-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppointmentLabel
-Custom label that can be stamped on this appointment by users.
+Custom label that can be stamped on this appointment by the user.
 
 ```yaml
 Type: String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date, time and timezone when the appointment was created.
 
 ```yaml
 Type: DateTime
@@ -413,6 +413,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -553,7 +568,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+The date, time and timezone when the booking business was last updated.
 
 ```yaml
 Type: DateTime
@@ -668,6 +683,21 @@ Represents the type of pricing of a booking service.
 Type: BookingPriceType
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -856,9 +886,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -871,8 +903,8 @@ BODYPARAMETER \<IMicrosoftGraphBookingAppointment\>: Represents a booked appoint
 Read-only.
   \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
   \[AnonymousJoinWebUrl \<String\>\]: The URL of the meeting to join anonymously.
-  \[AppointmentLabel \<String\>\]: Custom label that can be stamped on this appointment by users.
-  \[CreatedDateTime \<DateTime?\>\]: 
+  \[AppointmentLabel \<String\>\]: Custom label that can be stamped on this appointment by the user.
+  \[CreatedDateTime \<DateTime?\>\]: The date, time and timezone when the appointment was created.
   \[CustomerEmailAddress \<String\>\]: The SMTP address of the bookingCustomer who is booking the appointment.
   \[CustomerId \<String\>\]: The ID of the bookingCustomer for this appointment.
 If no ID is specified when an appointment is created, then a new bookingCustomer object is created.
@@ -928,7 +960,7 @@ See below for possible values.
   \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointment will be held online.
 Default value is false.
   \[JoinWebUrl \<String\>\]: The URL of the online meeting for the appointment.
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time and timezone when the booking business was last updated.
   \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -1003,9 +1035,11 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
   \[UserId \<String\>\]: Usage: userId='{userId}'
   \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
@@ -1063,8 +1097,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment)
-
 

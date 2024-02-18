@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -22,24 +18,25 @@ New-MgBetaIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
- [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
-### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -77,15 +74,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Block access to Exchange Online from non-trusted regions
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -119,15 +112,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Use all conditions/controls
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -238,15 +227,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Require MFA to Exchange Online from non-complaint devices
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-complaint devices."
@@ -280,11 +265,6 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -398,6 +378,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -423,6 +418,21 @@ Readonly.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -499,9 +509,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -601,8 +613,8 @@ Read-only.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
         \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
-The only possible value for fido2combinationConfigurations is 'fido2'.
+Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
+For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
       \[CreatedDateTime \<DateTime?\>\]: The datetime when this policy was created.
       \[Description \<String\>\]: The human-readable description of this policy.
       \[DisplayName \<String\>\]: The human-readable display name of this policy.
@@ -734,8 +746,8 @@ Read-only.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
-The only possible value for fido2combinationConfigurations is 'fido2'.
+Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
+For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
     \[CreatedDateTime \<DateTime?\>\]: The datetime when this policy was created.
     \[Description \<String\>\]: The human-readable description of this policy.
     \[DisplayName \<String\>\]: The human-readable display name of this policy.
@@ -780,8 +792,6 @@ SESSIONCONTROLS \<IMicrosoftGraphConditionalAccessSessionControls\>: conditional
     \[Value \<Int32?\>\]: The number of days or hours.
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy)
-
 

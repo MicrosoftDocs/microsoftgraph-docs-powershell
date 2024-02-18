@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/lock-mgdevicemanagementmanageddeviceremote
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Lock-MgDeviceManagementManagedDeviceRemote
@@ -11,27 +10,56 @@ ms.prod: intune
 ## SYNOPSIS
 Remote lock
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Lock (Default)
 ```
-Lock-MgDeviceManagementManagedDeviceRemote -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Lock-MgDeviceManagementManagedDeviceRemote -ManagedDeviceId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LockViaIdentity
 ```
-Lock-MgDeviceManagementManagedDeviceRemote -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Lock-MgDeviceManagementManagedDeviceRemote -InputObject <IDeviceManagementActionsIdentity>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remote lock
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -79,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -116,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -140,9 +185,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/lock-mgdevicemanagementmanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/lock-mgdevicemanagementmanageddeviceremote)
-
-
 

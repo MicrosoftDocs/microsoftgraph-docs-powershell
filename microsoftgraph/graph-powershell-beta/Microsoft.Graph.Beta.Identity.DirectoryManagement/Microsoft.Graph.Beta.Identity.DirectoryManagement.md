@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 Module Guid: ddc572b3-dfd0-4f8b-9f70-bd50b8298164
 Download Help Link: {{ Update Download Link }}
@@ -165,6 +165,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaAdminPeople](Get-MgBetaAdminPeople.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaAdminPeopleItemInsight](Get-MgBetaAdminPeopleItemInsight.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaAdminPeopleProfileCardProperty](Get-MgBetaAdminPeopleProfileCardProperty.md)
@@ -770,6 +773,12 @@ Locale: en-US
 ### [Get-MgBetaDirectorySubscription](Get-MgBetaDirectorySubscription.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId](Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDirectorySubscriptionByOcpSubscriptionId](Get-MgBetaDirectorySubscriptionByOcpSubscriptionId.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDirectorySubscriptionCount](Get-MgBetaDirectorySubscriptionCount.md)
 {{ Fill in the Description }}
 
@@ -1142,6 +1151,9 @@ Locale: en-US
 ### [Remove-MgBetaAdminPeople](Remove-MgBetaAdminPeople.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaAdminPeopleItemInsight](Remove-MgBetaAdminPeopleItemInsight.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaAdminPeopleProfileCardProperty](Remove-MgBetaAdminPeopleProfileCardProperty.md)
 {{ Fill in the Description }}
 
@@ -1269,6 +1281,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectorySubscription](Remove-MgBetaDirectorySubscription.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId](Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDirectorySubscriptionByOcpSubscriptionId](Remove-MgBetaDirectorySubscriptionByOcpSubscriptionId.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDomain](Remove-MgBetaDomain.md)
@@ -1418,6 +1436,9 @@ Locale: en-US
 ### [Update-MgBetaAdminPeople](Update-MgBetaAdminPeople.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaAdminPeopleItemInsight](Update-MgBetaAdminPeopleItemInsight.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaAdminPeopleProfileCardProperty](Update-MgBetaAdminPeopleProfileCardProperty.md)
 {{ Fill in the Description }}
 
@@ -1529,6 +1550,12 @@ Locale: en-US
 ### [Update-MgBetaDirectorySubscription](Update-MgBetaDirectorySubscription.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaDirectorySubscriptionByCommerceSubscriptionId](Update-MgBetaDirectorySubscriptionByCommerceSubscriptionId.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaDirectorySubscriptionByOcpSubscriptionId](Update-MgBetaDirectorySubscriptionByOcpSubscriptionId.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaDomain](Update-MgBetaDomain.md)
 {{ Fill in the Description }}
 
@@ -1579,5 +1606,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserScopedRoleMemberOf](Update-MgBetaUserScopedRoleMemberOf.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion
@@ -20,15 +20,16 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
  [-CreatedDateTime <DateTime>] [-Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]
  [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
  [-TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>] [-Version <Int32>]
- [-VersionInformation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VersionInformation <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
  -ManagementTemplateStepVersionId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,19 +40,36 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
  [-CreatedDateTime <DateTime>] [-Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]
  [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
  [-TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>] [-Version <Int32>]
- [-VersionInformation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VersionInformation <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
  -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managementTemplateStepVersions in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -163,6 +181,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -255,6 +288,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TemplateStep
 managementTemplateStep
 To construct, see NOTES section for TEMPLATESTEP properties and create a hash table.
@@ -339,9 +387,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -385,6 +435,9 @@ Read-only.
   \[CreatedDateTime \<DateTime?\>\]: 
   \[Description \<String\>\]: 
   \[DisplayName \<String\>\]: 
+  \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
+    \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
+    \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
   \[LastActionByUserId \<String\>\]: 
   \[LastActionDateTime \<DateTime?\>\]: 
   \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
@@ -401,8 +454,6 @@ Read-only.
 Required.
 Read-only.
     \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
-      \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-      \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
     \[LastActionByUserId \<String\>\]: 
     \[LastActionDateTime \<DateTime?\>\]: 
     \[ManagementTemplateCollections \<IMicrosoftGraphManagedTenantsManagementTemplateCollection\[\]\>\]: 
@@ -469,6 +520,7 @@ Read-only.
         \[ValueType \<String\>\]: managementParameterValueType
   \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
   \[Priority \<Int32?\>\]: 
+  \[UserImpact \<String\>\]: 
   \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]: 
 
 BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\>: managementTemplateStepVersion
@@ -485,6 +537,9 @@ Read-only.
     \[CreatedDateTime \<DateTime?\>\]: 
     \[Description \<String\>\]: 
     \[DisplayName \<String\>\]: 
+    \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
+      \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
+      \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
     \[LastActionByUserId \<String\>\]: 
     \[LastActionDateTime \<DateTime?\>\]: 
     \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
@@ -501,8 +556,6 @@ Read-only.
 Required.
 Read-only.
       \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
-        \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-        \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
       \[LastActionByUserId \<String\>\]: 
       \[LastActionDateTime \<DateTime?\>\]: 
       \[ManagementTemplateCollections \<IMicrosoftGraphManagedTenantsManagementTemplateCollection\[\]\>\]: 
@@ -569,6 +622,7 @@ Read-only.
           \[ValueType \<String\>\]: managementParameterValueType
     \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
     \[Priority \<Int32?\>\]: 
+    \[UserImpact \<String\>\]: 
     \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]: 
   \[ContentMarkdown \<String\>\]: 
   \[CreatedByUserId \<String\>\]: 
@@ -620,6 +674,9 @@ Read-only.
       \[CreatedDateTime \<DateTime?\>\]: 
       \[Description \<String\>\]: 
       \[DisplayName \<String\>\]: 
+      \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
+        \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
+        \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
       \[LastActionByUserId \<String\>\]: 
       \[LastActionDateTime \<DateTime?\>\]: 
       \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
@@ -636,8 +693,6 @@ Read-only.
 Required.
 Read-only.
         \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
-          \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-          \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
         \[LastActionByUserId \<String\>\]: 
         \[LastActionDateTime \<DateTime?\>\]: 
         \[ManagementTemplateCollections \<IMicrosoftGraphManagedTenantsManagementTemplateCollection\[\]\>\]: 
@@ -704,6 +759,7 @@ Read-only.
             \[ValueType \<String\>\]: managementParameterValueType
       \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
       \[Priority \<Int32?\>\]: 
+      \[UserImpact \<String\>\]: 
       \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]: 
     \[ContentMarkdown \<String\>\]: 
     \[CreatedByUserId \<String\>\]: 
@@ -794,6 +850,9 @@ Read-only.
   \[CreatedDateTime \<DateTime?\>\]: 
   \[Description \<String\>\]: 
   \[DisplayName \<String\>\]: 
+  \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
+    \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
+    \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
   \[LastActionByUserId \<String\>\]: 
   \[LastActionDateTime \<DateTime?\>\]: 
   \[ManagementTemplate \<IMicrosoftGraphManagedTenantsManagementTemplate\>\]: managementTemplate
@@ -810,8 +869,6 @@ Read-only.
 Required.
 Read-only.
     \[InformationLinks \<IMicrosoftGraphActionUrl\[\]\>\]: 
-      \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-      \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
     \[LastActionByUserId \<String\>\]: 
     \[LastActionDateTime \<DateTime?\>\]: 
     \[ManagementTemplateCollections \<IMicrosoftGraphManagedTenantsManagementTemplateCollection\[\]\>\]: 
@@ -878,11 +935,10 @@ Read-only.
         \[ValueType \<String\>\]: managementParameterValueType
   \[PortalLink \<IMicrosoftGraphActionUrl\>\]: actionUrl
   \[Priority \<Int32?\>\]: 
+  \[UserImpact \<String\>\]: 
   \[Versions \<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest
@@ -22,13 +22,15 @@ New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId <String>
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-Schedule <IMicrosoftGraphGovernanceSchedule>]
  [-Status <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubjectId <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId <String>
- -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,13 +42,15 @@ New-MgBetaPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanc
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-Schedule <IMicrosoftGraphGovernanceSchedule>]
  [-Status <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubjectId <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,8 +58,9 @@ Create a role assignment request to represent the operation you want on a role a
 The following table lists the operations.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	RoleDefinitionId = "ea48ad5e-e3b0-4d10-af54-39a45bbfe68d"
@@ -72,10 +77,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	RoleDefinitionId = "8b4d1d51-08e9-4254-b0a6-b16177aae376"
@@ -93,10 +97,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	RoleDefinitionId = "bc75b4e6-7403-4243-bf2f-d1f6990be122"
@@ -109,10 +112,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 4
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	RoleDefinitionId = "65bb4622-61f5-4f25-9d75-d0e20cf92019"
@@ -123,10 +125,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 5: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 5
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	RoleDefinitionId = "70521f3e-3b95-4e51-b4d2-a2f485b02103"
@@ -142,10 +143,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 6: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 6
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	RoleDefinitionId = "0e88fd18-50f5-4ee1-9104-01c3ed910065"
@@ -162,8 +162,6 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -209,6 +207,21 @@ Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -271,6 +284,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -495,9 +523,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -635,8 +665,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
     \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-      \[Key \<String\>\]: Key.
-      \[Value \<String\>\]: Value.
+      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+      \[Value \<String\>\]: Contains the corresponding value for the specified key.
     \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
   \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -699,6 +729,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[ObjectId \<String\>\]: Alternate key of accessPackageSubject
   \[On \<String\>\]: Usage: on='{on}'
   \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
   \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
@@ -834,8 +865,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        \[Key \<String\>\]: Key.
-        \[Value \<String\>\]: Value.
+        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+        \[Value \<String\>\]: Contains the corresponding value for the specified key.
       \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -945,8 +976,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Key.
-          \[Value \<String\>\]: Value.
+          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+          \[Value \<String\>\]: Contains the corresponding value for the specified key.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -1051,8 +1082,8 @@ STATUS \<IMicrosoftGraphGovernanceRoleAssignmentRequestStatus\>: governanceRoleA
 The value can be InProgress or Closed.
   \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
+    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
+    \[Value \<String\>\]: Contains the corresponding value for the specified key.
   \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
 
@@ -1071,5 +1102,4 @@ The value can be User, Group, and ServicePrincipal.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest)
-
 
