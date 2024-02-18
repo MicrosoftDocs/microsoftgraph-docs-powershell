@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate
@@ -279,19 +279,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphApplePushNotificationCertificate\>: Apple push notification certificate.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphApplePushNotificationCertificate>`: Apple push notification certificate.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppleIdentifier \<String\>\]: Apple Id of the account used to create the MDM push certificate.
-  \[Certificate \<String\>\]: 
-  \[CertificateUploadFailureReason \<String\>\]: The reason the certificate upload failed.
-  \[CertificateUploadStatus \<String\>\]: The certificate upload status.
-  \[ExpirationDateTime \<DateTime?\>\]: The expiration date and time for Apple push notification certificate.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modified date and time for Apple push notification certificate.
-  \[TopicIdentifier \<String\>\]: Topic Id.
+  - `[AppleIdentifier <String>]`: Apple Id of the account used to create the MDM push certificate.
+  - `[Certificate <String>]`: 
+  - `[CertificateUploadFailureReason <String>]`: The reason the certificate upload failed.
+  - `[CertificateUploadStatus <String>]`: The certificate upload status.
+  - `[ExpirationDateTime <DateTime?>]`: The expiration date and time for Apple push notification certificate.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time for Apple push notification certificate.
+  - `[TopicIdentifier <String>]`: Topic Id.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate)
+
+
+
 

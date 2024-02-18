@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
@@ -203,20 +203,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAuthenticationMethodConfiguration\>: authenticationMethodConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodConfiguration>`: authenticationMethodConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Groups of users that are excluded from a policy.
-    \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
-    \[TargetType \<String\>\]: authenticationMethodTargetType
-  \[State \<String\>\]: authenticationMethodState
+  - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Groups of users that are excluded from a policy.
+    - `[Id <String>]`: The object identifier of a Microsoft Entra user or group.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[State <String>]`: authenticationMethodState
 
-EXCLUDETARGETS \<IMicrosoftGraphExcludeTarget\[\]\>: Groups of users that are excluded from a policy.
-  \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
-  \[TargetType \<String\>\]: authenticationMethodTargetType
+EXCLUDETARGETS <IMicrosoftGraphExcludeTarget- `[]`>: Groups of users that are excluded from a policy.
+  - `[Id <String>]`: The object identifier of a Microsoft Entra user or group.
+  - `[TargetType <String>]`: authenticationMethodTargetType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+
+
+
 

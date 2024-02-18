@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkworkforceintegration
@@ -333,65 +333,68 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphWorkforceIntegration\>: workforceIntegration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ApiVersion \<Int32?\>\]: API version for the callback URL.
+  - `[ApiVersion <Int32?>]`: API version for the callback URL.
 Start with 1.
-  \[DisplayName \<String\>\]: Name of the workforce integration.
-  \[EligibilityFilteringEnabledEntities \<String\>\]: eligibilityFilteringEnabledEntities
-  \[Encryption \<IMicrosoftGraphWorkforceIntegrationEncryption\>\]: workforceIntegrationEncryption
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Protocol \<String\>\]: workforceIntegrationEncryptionProtocol
-    \[Secret \<String\>\]: Encryption shared secret.
-  \[IsActive \<Boolean?\>\]: Indicates whether this workforce integration is currently active and available.
-  \[SupportedEntities \<String\>\]: workforceIntegrationSupportedEntities
-  \[Supports \<String\>\]: workforceIntegrationSupportedEntities
-  \[Url \<String\>\]: Workforce Integration URL for callbacks from the Shifts service.
+  - `[DisplayName <String>]`: Name of the workforce integration.
+  - `[EligibilityFilteringEnabledEntities <String>]`: eligibilityFilteringEnabledEntities
+  - `[Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]`: workforceIntegrationEncryption
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
+    - `[Secret <String>]`: Encryption shared secret.
+  - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
+  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
+  - `[Supports <String>]`: workforceIntegrationSupportedEntities
+  - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-ENCRYPTION \<IMicrosoftGraphWorkforceIntegrationEncryption\>: workforceIntegrationEncryption
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Protocol \<String\>\]: workforceIntegrationEncryptionProtocol
-  \[Secret \<String\>\]: Encryption shared secret.
+ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
+  - `[Secret <String>]`: Encryption shared secret.
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkworkforceintegration)
+
+
+
 

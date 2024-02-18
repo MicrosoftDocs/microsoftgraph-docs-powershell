@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatesummary
@@ -309,21 +309,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary\>: deviceCompliancePolicyDeviceStateSummary
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>`: deviceCompliancePolicyDeviceStateSummary
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CompliantDeviceCount \<Int32?\>\]: Number of compliant devices
-  \[ConfigManagerCount \<Int32?\>\]: Number of devices that have compliance managed by System Center Configuration Manager
-  \[ConflictDeviceCount \<Int32?\>\]: Number of conflict devices
-  \[ErrorDeviceCount \<Int32?\>\]: Number of error devices
-  \[InGracePeriodCount \<Int32?\>\]: Number of devices that are in grace period
-  \[NonCompliantDeviceCount \<Int32?\>\]: Number of NonCompliant devices
-  \[NotApplicableDeviceCount \<Int32?\>\]: Number of not applicable devices
-  \[RemediatedDeviceCount \<Int32?\>\]: Number of remediated devices
-  \[UnknownDeviceCount \<Int32?\>\]: Number of unknown devices
+  - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
+  - `[ConfigManagerCount <Int32?>]`: Number of devices that have compliance managed by System Center Configuration Manager
+  - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
+  - `[ErrorDeviceCount <Int32?>]`: Number of error devices
+  - `[InGracePeriodCount <Int32?>]`: Number of devices that are in grace period
+  - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
+  - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
+  - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
+  - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatesummary)
+
+
+
 

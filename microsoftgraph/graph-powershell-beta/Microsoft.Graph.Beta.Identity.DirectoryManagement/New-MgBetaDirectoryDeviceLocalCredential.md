@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential
@@ -229,30 +229,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceLocalCredentialInfo\>: deviceLocalCredentialInfo
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceLocalCredentialInfo>`: deviceLocalCredentialInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Credentials \<IMicrosoftGraphDeviceLocalCredential\[\]\>\]: The credentials of the device's local administrator account backed up to Azure Active Directory.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Credentials <IMicrosoftGraphDeviceLocalCredential- `[]`>]`: The credentials of the device's local administrator account backed up to Azure Active Directory.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AccountName \<String\>\]: The name of the local admin account for which LAPS is enabled.
-    \[AccountSid \<String\>\]: The SID of the local admin account for which LAPS is enabled.
-    \[BackupDateTime \<DateTime?\>\]: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
-    \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
-  \[DeviceName \<String\>\]: Display name of the device that the local credentials are associated with.
-  \[LastBackupDateTime \<DateTime?\>\]: When the local administrator account credential was backed up to Microsoft Entra ID.
-  \[RefreshDateTime \<DateTime?\>\]: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
+    - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
+    - `[AccountSid <String>]`: The SID of the local admin account for which LAPS is enabled.
+    - `[BackupDateTime <DateTime?>]`: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
+    - `[PasswordBase64 <String>]`: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
+  - `[DeviceName <String>]`: Display name of the device that the local credentials are associated with.
+  - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Microsoft Entra ID.
+  - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
 
-CREDENTIALS \<IMicrosoftGraphDeviceLocalCredential\[\]\>: The credentials of the device's local administrator account backed up to Azure Active Directory.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CREDENTIALS <IMicrosoftGraphDeviceLocalCredential- `[]`>: The credentials of the device's local administrator account backed up to Azure Active Directory.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AccountName \<String\>\]: The name of the local admin account for which LAPS is enabled.
-  \[AccountSid \<String\>\]: The SID of the local admin account for which LAPS is enabled.
-  \[BackupDateTime \<DateTime?\>\]: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
-  \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
+  - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
+  - `[AccountSid <String>]`: The SID of the local admin account for which LAPS is enabled.
+  - `[BackupDateTime <DateTime?>]`: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
+  - `[PasswordBase64 <String>]`: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential)
+
+
+
 

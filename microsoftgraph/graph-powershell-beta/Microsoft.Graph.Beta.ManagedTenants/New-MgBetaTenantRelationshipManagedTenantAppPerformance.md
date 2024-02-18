@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantappperformance
@@ -321,22 +321,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsAppPerformance\>: appPerformance
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsAppPerformance>`: appPerformance
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppFriendlyName \<String\>\]: 
-  \[AppName \<String\>\]: 
-  \[AppPublisher \<String\>\]: 
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
-  \[MeanTimeToFailureInMinutes \<Int32?\>\]: 
-  \[TenantDisplayName \<String\>\]: 
-  \[TenantId \<String\>\]: 
-  \[TotalActiveDeviceCount \<Int32?\>\]: 
-  \[TotalAppCrashCount \<Int32?\>\]: 
-  \[TotalAppFreezeCount \<Int32?\>\]:
+  - `[AppFriendlyName <String>]`: 
+  - `[AppName <String>]`: 
+  - `[AppPublisher <String>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[MeanTimeToFailureInMinutes <Int32?>]`: 
+  - `[TenantDisplayName <String>]`: 
+  - `[TenantId <String>]`: 
+  - `[TotalActiveDeviceCount <Int32?>]`: 
+  - `[TotalAppCrashCount <Int32?>]`: 
+  - `[TotalAppFreezeCount <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantappperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantappperformance)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespace
@@ -198,32 +198,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUnifiedRbacResourceNamespace\>: unifiedRbacResourceNamespace
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUnifiedRbacResourceNamespace>`: unifiedRbacResourceNamespace
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Name \<String\>\]: 
-  \[ResourceActions \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Name <String>]`: 
+  - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ActionVerb \<String\>\]: 
-    \[AuthenticationContextId \<String\>\]: 
-    \[Description \<String\>\]: 
-    \[IsAuthenticationContextSettable \<Boolean?\>\]: 
-    \[Name \<String\>\]: 
-    \[ResourceScopeId \<String\>\]: 
+    - `[ActionVerb <String>]`: 
+    - `[AuthenticationContextId <String>]`: 
+    - `[Description <String>]`: 
+    - `[IsAuthenticationContextSettable <Boolean?>]`: 
+    - `[Name <String>]`: 
+    - `[ResourceScopeId <String>]`: 
 
-RESOURCEACTIONS \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionVerb \<String\>\]: 
-  \[AuthenticationContextId \<String\>\]: 
-  \[Description \<String\>\]: 
-  \[IsAuthenticationContextSettable \<Boolean?\>\]: 
-  \[Name \<String\>\]: 
-  \[ResourceScopeId \<String\>\]:
+  - `[ActionVerb <String>]`: 
+  - `[AuthenticationContextId <String>]`: 
+  - `[Description <String>]`: 
+  - `[IsAuthenticationContextSettable <Boolean?>]`: 
+  - `[Name <String>]`: 
+  - `[ResourceScopeId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespace)
+
+
+
 

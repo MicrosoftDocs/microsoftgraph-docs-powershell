@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy
@@ -266,25 +266,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphContinuousAccessEvaluationPolicy\>: continuousAccessEvaluationPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphContinuousAccessEvaluationPolicy>`: continuousAccessEvaluationPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes.
+  - `[Description <String>]`: Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes.
 Read-only.
-  \[DisplayName \<String\>\]: The value is always Continuous Access Evaluation.
+  - `[DisplayName <String>]`: The value is always Continuous Access Evaluation.
 Read-only.
-  \[Groups \<String\[\]\>\]: The collection of group identifiers in scope for evaluation.
+  - `[Groups <String- `[]`>]`: The collection of group identifiers in scope for evaluation.
 All groups are in scope when the collection is empty.
 Read-only.
-  \[IsEnabled \<Boolean?\>\]: true to indicate whether continuous access evaluation should be performed; otherwise false.
+  - `[IsEnabled <Boolean?>]`: true to indicate whether continuous access evaluation should be performed; otherwise false.
 Read-only.
-  \[Migrate \<Boolean?\>\]: true to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy.
-  \[Users \<String\[\]\>\]: The collection of user identifiers in scope for evaluation.
+  - `[Migrate <Boolean?>]`: true to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy.
+  - `[Users <String- `[]`>]`: The collection of user identifiers in scope for evaluation.
 All users are in scope when the collection is empty.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend
@@ -378,79 +378,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend\>: managedDeviceComplianceTrend
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend>`: managedDeviceComplianceTrend
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CompliantDeviceCount \<Int32?\>\]: The number of devices with a compliant status.
+  - `[CompliantDeviceCount <Int32?>]`: The number of devices with a compliant status.
 Required.
 Read-only.
-  \[ConfigManagerDeviceCount \<Int32?\>\]: The number of devices manged by Configuration Manager.
+  - `[ConfigManagerDeviceCount <Int32?>]`: The number of devices manged by Configuration Manager.
 Required.
 Read-only.
-  \[CountDateTime \<String\>\]: The date and time compliance snapshot was performed.
+  - `[CountDateTime <String>]`: The date and time compliance snapshot was performed.
 Required.
 Read-only.
-  \[ErrorDeviceCount \<Int32?\>\]: The number of devices with an error status.
+  - `[ErrorDeviceCount <Int32?>]`: The number of devices with an error status.
 Required.
 Read-only.
-  \[InGracePeriodDeviceCount \<Int32?\>\]: The number of devices that are in a grace period status.
+  - `[InGracePeriodDeviceCount <Int32?>]`: The number of devices that are in a grace period status.
 Required.
 Read-only.
-  \[NoncompliantDeviceCount \<Int32?\>\]: The number of devices that are in a non-compliant status.
+  - `[NoncompliantDeviceCount <Int32?>]`: The number of devices that are in a non-compliant status.
 Required.
 Read-only.
-  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
+  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
 Optional.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
-  \[UnknownDeviceCount \<Int32?\>\]: The number of devices in an unknown status.
+  - `[UnknownDeviceCount <Int32?>]`: The number of devices in an unknown status.
 Required.
 Read-only.
 
-INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
-  \[AggregatedPolicyComplianceId \<String\>\]: The unique identifier of aggregatedPolicyCompliance
-  \[AppPerformanceId \<String\>\]: The unique identifier of appPerformance
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[CloudPcConnectionId \<String\>\]: The unique identifier of cloudPcConnection
-  \[CloudPcDeviceId \<String\>\]: The unique identifier of cloudPcDevice
-  \[CloudPcOverviewTenantId \<String\>\]: The unique identifier of cloudPcOverview
-  \[ConditionalAccessPolicyCoverageId \<String\>\]: The unique identifier of conditionalAccessPolicyCoverage
-  \[CredentialUserRegistrationsSummaryId \<String\>\]: The unique identifier of credentialUserRegistrationsSummary
-  \[DeviceAppPerformanceId \<String\>\]: The unique identifier of deviceAppPerformance
-  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
-  \[DeviceHealthStatusId \<String\>\]: The unique identifier of deviceHealthStatus
-  \[ManagedDeviceComplianceId \<String\>\]: The unique identifier of managedDeviceCompliance
-  \[ManagedDeviceComplianceTrendId \<String\>\]: The unique identifier of managedDeviceComplianceTrend
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagedTenantAlertLogId \<String\>\]: The unique identifier of managedTenantAlertLog
-  \[ManagedTenantAlertRuleDefinitionId \<String\>\]: The unique identifier of managedTenantAlertRuleDefinition
-  \[ManagedTenantAlertRuleId \<String\>\]: The unique identifier of managedTenantAlertRule
-  \[ManagedTenantApiNotificationId \<String\>\]: The unique identifier of managedTenantApiNotification
-  \[ManagedTenantEmailNotificationId \<String\>\]: The unique identifier of managedTenantEmailNotification
-  \[ManagedTenantTicketingEndpointId \<String\>\]: The unique identifier of managedTenantTicketingEndpoint
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[ManagementActionTenantDeploymentStatusId \<String\>\]: The unique identifier of managementActionTenantDeploymentStatus
-  \[ManagementIntentId \<String\>\]: The unique identifier of managementIntent
-  \[ManagementTemplateCollectionId \<String\>\]: The unique identifier of managementTemplateCollection
-  \[ManagementTemplateCollectionTenantSummaryId \<String\>\]: The unique identifier of managementTemplateCollectionTenantSummary
-  \[ManagementTemplateId \<String\>\]: The unique identifier of managementTemplate
-  \[ManagementTemplateStepDeploymentId \<String\>\]: The unique identifier of managementTemplateStepDeployment
-  \[ManagementTemplateStepId \<String\>\]: The unique identifier of managementTemplateStep
-  \[ManagementTemplateStepTenantSummaryId \<String\>\]: The unique identifier of managementTemplateStepTenantSummary
-  \[ManagementTemplateStepVersionId \<String\>\]: The unique identifier of managementTemplateStepVersion
-  \[MyRoleTenantId \<String\>\]: The unique identifier of myRole
-  \[TenantCustomizedInformationId \<String\>\]: The unique identifier of tenantCustomizedInformation
-  \[TenantDetailedInformationId \<String\>\]: The unique identifier of tenantDetailedInformation
-  \[TenantGroupId \<String\>\]: The unique identifier of tenantGroup
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
-  \[WindowsProtectionStateId \<String\>\]: The unique identifier of windowsProtectionState
+INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+  - `[AggregatedPolicyComplianceId <String>]`: The unique identifier of aggregatedPolicyCompliance
+  - `[AppPerformanceId <String>]`: The unique identifier of appPerformance
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[CloudPcConnectionId <String>]`: The unique identifier of cloudPcConnection
+  - `[CloudPcDeviceId <String>]`: The unique identifier of cloudPcDevice
+  - `[CloudPcOverviewTenantId <String>]`: The unique identifier of cloudPcOverview
+  - `[ConditionalAccessPolicyCoverageId <String>]`: The unique identifier of conditionalAccessPolicyCoverage
+  - `[CredentialUserRegistrationsSummaryId <String>]`: The unique identifier of credentialUserRegistrationsSummary
+  - `[DeviceAppPerformanceId <String>]`: The unique identifier of deviceAppPerformance
+  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
+  - `[DeviceHealthStatusId <String>]`: The unique identifier of deviceHealthStatus
+  - `[ManagedDeviceComplianceId <String>]`: The unique identifier of managedDeviceCompliance
+  - `[ManagedDeviceComplianceTrendId <String>]`: The unique identifier of managedDeviceComplianceTrend
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagedTenantAlertLogId <String>]`: The unique identifier of managedTenantAlertLog
+  - `[ManagedTenantAlertRuleDefinitionId <String>]`: The unique identifier of managedTenantAlertRuleDefinition
+  - `[ManagedTenantAlertRuleId <String>]`: The unique identifier of managedTenantAlertRule
+  - `[ManagedTenantApiNotificationId <String>]`: The unique identifier of managedTenantApiNotification
+  - `[ManagedTenantEmailNotificationId <String>]`: The unique identifier of managedTenantEmailNotification
+  - `[ManagedTenantTicketingEndpointId <String>]`: The unique identifier of managedTenantTicketingEndpoint
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[ManagementActionTenantDeploymentStatusId <String>]`: The unique identifier of managementActionTenantDeploymentStatus
+  - `[ManagementIntentId <String>]`: The unique identifier of managementIntent
+  - `[ManagementTemplateCollectionId <String>]`: The unique identifier of managementTemplateCollection
+  - `[ManagementTemplateCollectionTenantSummaryId <String>]`: The unique identifier of managementTemplateCollectionTenantSummary
+  - `[ManagementTemplateId <String>]`: The unique identifier of managementTemplate
+  - `[ManagementTemplateStepDeploymentId <String>]`: The unique identifier of managementTemplateStepDeployment
+  - `[ManagementTemplateStepId <String>]`: The unique identifier of managementTemplateStep
+  - `[ManagementTemplateStepTenantSummaryId <String>]`: The unique identifier of managementTemplateStepTenantSummary
+  - `[ManagementTemplateStepVersionId <String>]`: The unique identifier of managementTemplateStepVersion
+  - `[MyRoleTenantId <String>]`: The unique identifier of myRole
+  - `[TenantCustomizedInformationId <String>]`: The unique identifier of tenantCustomizedInformation
+  - `[TenantDetailedInformationId <String>]`: The unique identifier of tenantDetailedInformation
+  - `[TenantGroupId <String>]`: The unique identifier of tenantGroup
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat
@@ -342,72 +342,75 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINREVIEW \<IMicrosoftGraphSecuritySubmissionAdminReview\>: submissionAdminReview
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ReviewBy \<String\>\]: Specifies who reviewed the email.
+ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ReviewBy <String>]`: Specifies who reviewed the email.
 The identification is an email ID or other identity strings.
-  \[ReviewDateTime \<DateTime?\>\]: Specifies the date time when the review occurred.
-  \[ReviewResult \<String\>\]: submissionResultCategory
+  - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
+  - `[ReviewResult <String>]`: submissionResultCategory
 
-BODYPARAMETER \<IMicrosoftGraphSecurityUrlThreatSubmission\>: urlThreatSubmission
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AdminReview \<IMicrosoftGraphSecuritySubmissionAdminReview\>\]: submissionAdminReview
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ReviewBy \<String\>\]: Specifies who reviewed the email.
+BODYPARAMETER `<IMicrosoftGraphSecurityUrlThreatSubmission>`: urlThreatSubmission
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ReviewBy <String>]`: Specifies who reviewed the email.
 The identification is an email ID or other identity strings.
-    \[ReviewDateTime \<DateTime?\>\]: Specifies the date time when the review occurred.
-    \[ReviewResult \<String\>\]: submissionResultCategory
-  \[Category \<String\>\]: submissionCategory
-  \[ClientSource \<String\>\]: submissionClientSource
-  \[ContentType \<String\>\]: submissionContentType
-  \[CreatedBy \<IMicrosoftGraphSecuritySubmissionUserIdentity\>\]: submissionUserIdentity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+    - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
+    - `[ReviewResult <String>]`: submissionResultCategory
+  - `[Category <String>]`: submissionCategory
+  - `[ClientSource <String>]`: submissionClientSource
+  - `[ContentType <String>]`: submissionContentType
+  - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Email \<String\>\]: The email of user who is making the submission when logged in (delegated token case).
-  \[CreatedDateTime \<DateTime?\>\]: Specifies when the threat submission was created.
+    - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
+  - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created.
 Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
-  \[Result \<IMicrosoftGraphSecuritySubmissionResult\>\]: submissionResult
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Category \<String\>\]: submissionResultCategory
-    \[Detail \<String\>\]: submissionResultDetail
-    \[DetectedFiles \<IMicrosoftGraphSecuritySubmissionDetectedFile\[\]\>\]: Specifies the files detected by Microsoft in the submitted emails.
-      \[FileHash \<String\>\]: The file hash.
-      \[FileName \<String\>\]: The file name.
-    \[DetectedUrls \<String\[\]\>\]: Specifies the URLs detected by Microsoft in the submitted email.
-    \[UserMailboxSetting \<String\>\]: userMailboxSetting
-  \[Source \<String\>\]: submissionSource
-  \[Status \<String\>\]: longRunningOperationStatus
-  \[TenantId \<String\>\]: Indicates the tenant id of the submitter.
+  - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Category <String>]`: submissionResultCategory
+    - `[Detail <String>]`: submissionResultDetail
+    - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile- `[]`>]`: Specifies the files detected by Microsoft in the submitted emails.
+      - `[FileHash <String>]`: The file hash.
+      - `[FileName <String>]`: The file name.
+    - `[DetectedUrls <String- `[]`>]`: Specifies the URLs detected by Microsoft in the submitted email.
+    - `[UserMailboxSetting <String>]`: userMailboxSetting
+  - `[Source <String>]`: submissionSource
+  - `[Status <String>]`: longRunningOperationStatus
+  - `[TenantId <String>]`: Indicates the tenant id of the submitter.
 Not required when created using a POST operation.
 It's extracted from the token of the post API call.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[WebUrl \<String\>\]: Denotes the webUrl that needs to be submitted.
+  - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
-CREATEDBY \<IMicrosoftGraphSecuritySubmissionUserIdentity\>: submissionUserIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Email \<String\>\]: The email of user who is making the submission when logged in (delegated token case).
+  - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
 
-RESULT \<IMicrosoftGraphSecuritySubmissionResult\>: submissionResult
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Category \<String\>\]: submissionResultCategory
-  \[Detail \<String\>\]: submissionResultDetail
-  \[DetectedFiles \<IMicrosoftGraphSecuritySubmissionDetectedFile\[\]\>\]: Specifies the files detected by Microsoft in the submitted emails.
-    \[FileHash \<String\>\]: The file hash.
-    \[FileName \<String\>\]: The file name.
-  \[DetectedUrls \<String\[\]\>\]: Specifies the URLs detected by Microsoft in the submitted email.
-  \[UserMailboxSetting \<String\>\]: userMailboxSetting
+RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Category <String>]`: submissionResultCategory
+  - `[Detail <String>]`: submissionResultDetail
+  - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile- `[]`>]`: Specifies the files detected by Microsoft in the submitted emails.
+    - `[FileHash <String>]`: The file hash.
+    - `[FileName <String>]`: The file name.
+  - `[DetectedUrls <String- `[]`>]`: Specifies the URLs detected by Microsoft in the submitted email.
+  - `[UserMailboxSetting <String>]`: userMailboxSetting
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat)
+
+
+
 

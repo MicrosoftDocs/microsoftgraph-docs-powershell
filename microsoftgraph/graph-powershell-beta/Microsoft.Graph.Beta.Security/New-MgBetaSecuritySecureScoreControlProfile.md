@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile
@@ -461,69 +461,72 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecureScoreControlProfile\>: secureScoreControlProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionType \<String\>\]: Control action type (Config, Review, Behavior).
-  \[ActionUrl \<String\>\]: URL to where the control can be actioned.
-  \[AzureTenantId \<String\>\]: GUID string for tenant ID.
-  \[ComplianceInformation \<IMicrosoftGraphComplianceInformation\[\]\>\]: The collection of compliance information associated with secure score control
-    \[CertificationControls \<IMicrosoftGraphCertificationControl\[\]\>\]: Collection of the certification controls associated with the certification.
-      \[Name \<String\>\]: 
-      \[Url \<String\>\]: 
-    \[CertificationName \<String\>\]: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
-  \[ControlCategory \<String\>\]: Control action category (Account, Data, Device, Apps, Infrastructure).
-  \[ControlStateUpdates \<IMicrosoftGraphSecureScoreControlStateUpdate\[\]\>\]: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-    \[AssignedTo \<String\>\]: 
-    \[Comment \<String\>\]: 
-    \[State \<String\>\]: 
-    \[UpdatedBy \<String\>\]: 
-    \[UpdatedDateTime \<DateTime?\>\]: 
-  \[Deprecated \<Boolean?\>\]: Flag to indicate if a control is depreciated.
-  \[ImplementationCost \<String\>\]: Resource cost of implemmentating control (low, moderate, high).
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[MaxScore \<Double?\>\]: Current obtained max score on specified date.
-  \[Rank \<Int32?\>\]: Microsoft's stack ranking of control.
-  \[Remediation \<String\>\]: Description of what the control will help remediate.
-  \[RemediationImpact \<String\>\]: Description of the impact on users of the remediation.
-  \[Service \<String\>\]: Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).
-  \[Threats \<String\[\]\>\]: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
-  \[Tier \<String\>\]: Control tier (Core, Defense in Depth, Advanced.)
-  \[Title \<String\>\]: Title of the control.
-  \[UserImpact \<String\>\]: User impact of implementing control (low, moderate, high).
-  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
+  - `[ActionType <String>]`: Control action type (Config, Review, Behavior).
+  - `[ActionUrl <String>]`: URL to where the control can be actioned.
+  - `[AzureTenantId <String>]`: GUID string for tenant ID.
+  - `[ComplianceInformation <IMicrosoftGraphComplianceInformation- `[]`>]`: The collection of compliance information associated with secure score control
+    - `[CertificationControls <IMicrosoftGraphCertificationControl- `[]`>]`: Collection of the certification controls associated with the certification.
+      - `[Name <String>]`: 
+      - `[Url <String>]`: 
+    - `[CertificationName <String>]`: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
+  - `[ControlCategory <String>]`: Control action category (Account, Data, Device, Apps, Infrastructure).
+  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>]`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+    - `[AssignedTo <String>]`: 
+    - `[Comment <String>]`: 
+    - `[State <String>]`: 
+    - `[UpdatedBy <String>]`: 
+    - `[UpdatedDateTime <DateTime?>]`: 
+  - `[Deprecated <Boolean?>]`: Flag to indicate if a control is depreciated.
+  - `[ImplementationCost <String>]`: Resource cost of implemmentating control (low, moderate, high).
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[MaxScore <Double?>]`: Current obtained max score on specified date.
+  - `[Rank <Int32?>]`: Microsoft's stack ranking of control.
+  - `[Remediation <String>]`: Description of what the control will help remediate.
+  - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
+  - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).
+  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+  - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
+  - `[Title <String>]`: Title of the control.
+  - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
+  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-COMPLIANCEINFORMATION \<IMicrosoftGraphComplianceInformation\[\]\>: The collection of compliance information associated with secure score control
-  \[CertificationControls \<IMicrosoftGraphCertificationControl\[\]\>\]: Collection of the certification controls associated with the certification.
-    \[Name \<String\>\]: 
-    \[Url \<String\>\]: 
-  \[CertificationName \<String\>\]: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
+COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation- `[]`>: The collection of compliance information associated with secure score control
+  - `[CertificationControls <IMicrosoftGraphCertificationControl- `[]`>]`: Collection of the certification controls associated with the certification.
+    - `[Name <String>]`: 
+    - `[Url <String>]`: 
+  - `[CertificationName <String>]`: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
 
-CONTROLSTATEUPDATES \<IMicrosoftGraphSecureScoreControlStateUpdate\[\]\>: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-  \[AssignedTo \<String\>\]: 
-  \[Comment \<String\>\]: 
-  \[State \<String\>\]: 
-  \[UpdatedBy \<String\>\]: 
-  \[UpdatedDateTime \<DateTime?\>\]: 
+CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+  - `[AssignedTo <String>]`: 
+  - `[Comment <String>]`: 
+  - `[State <String>]`: 
+  - `[UpdatedBy <String>]`: 
+  - `[UpdatedDateTime <DateTime?>]`: 
 
-VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile)
+
+
+
 

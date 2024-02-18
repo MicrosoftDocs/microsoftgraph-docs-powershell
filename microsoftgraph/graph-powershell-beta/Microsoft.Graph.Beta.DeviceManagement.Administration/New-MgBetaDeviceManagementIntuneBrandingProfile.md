@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementintunebrandingprofile
@@ -700,97 +700,100 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphIntuneBrandingProfileAssignment\[\]\>: The list of group assignments for the branding profile
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment- `[]`>: The list of group assignments for the branding profile
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphIntuneBrandingProfile\>: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphIntuneBrandingProfileAssignment\[\]\>\]: The list of group assignments for the branding profile
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment- `[]`>]`: The list of group assignments for the branding profile
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[CompanyPortalBlockedActions \<IMicrosoftGraphCompanyPortalBlockedAction\[\]\>\]: Collection of blocked actions on the company portal as per platform and device ownership types.
-    \[Action \<CompanyPortalAction?\>\]: Action on a device that can be executed in the Company Portal
-    \[OwnerType \<OwnerType?\>\]: Owner type of device.
-    \[Platform \<DevicePlatformType?\>\]: Supported platform types.
-  \[ContactItEmailAddress \<String\>\]: E-mail address of the person/organization responsible for IT support
-  \[ContactItName \<String\>\]: Name of the person/organization responsible for IT support
-  \[ContactItNotes \<String\>\]: Text comments regarding the person/organization responsible for IT support
-  \[ContactItPhoneNumber \<String\>\]: Phone number of the person/organization responsible for IT support
-  \[CreatedDateTime \<DateTime?\>\]: Time when the BrandingProfile was created
-  \[CustomCanSeePrivacyMessage \<String\>\]: Text comments regarding what the admin has access to on the device
-  \[CustomCantSeePrivacyMessage \<String\>\]: Text comments regarding what the admin doesn't have access to on the device
-  \[CustomPrivacyMessage \<String\>\]: Text comments regarding what the admin doesn't have access to on the device
-  \[DisableClientTelemetry \<Boolean?\>\]: Applies to telemetry sent from all clients to the Intune service.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction- `[]`>]`: Collection of blocked actions on the company portal as per platform and device ownership types.
+    - `[Action <CompanyPortalAction?>]`: Action on a device that can be executed in the Company Portal
+    - `[OwnerType <OwnerType?>]`: Owner type of device.
+    - `[Platform <DevicePlatformType?>]`: Supported platform types.
+  - `[ContactItEmailAddress <String>]`: E-mail address of the person/organization responsible for IT support
+  - `[ContactItName <String>]`: Name of the person/organization responsible for IT support
+  - `[ContactItNotes <String>]`: Text comments regarding the person/organization responsible for IT support
+  - `[ContactItPhoneNumber <String>]`: Phone number of the person/organization responsible for IT support
+  - `[CreatedDateTime <DateTime?>]`: Time when the BrandingProfile was created
+  - `[CustomCanSeePrivacyMessage <String>]`: Text comments regarding what the admin has access to on the device
+  - `[CustomCantSeePrivacyMessage <String>]`: Text comments regarding what the admin doesn't have access to on the device
+  - `[CustomPrivacyMessage <String>]`: Text comments regarding what the admin doesn't have access to on the device
+  - `[DisableClientTelemetry <Boolean?>]`: Applies to telemetry sent from all clients to the Intune service.
 When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.
-  \[DisableDeviceCategorySelection \<Boolean?\>\]: Boolean that indicates if Device Category Selection will be shown in Company Portal
-  \[DisplayName \<String\>\]: Company/organization name that is displayed to end users
-  \[EnrollmentAvailability \<EnrollmentAvailabilityOptions?\>\]: Options available for enrollment flow customization
-  \[IsDefaultProfile \<Boolean?\>\]: Boolean that represents whether the profile is used as default or not
-  \[IsFactoryResetDisabled \<Boolean?\>\]: Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.
-  \[IsRemoveDeviceDisabled \<Boolean?\>\]: Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.
-  \[LandingPageCustomizedImage \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Type \<String\>\]: Indicates the content mime type.
-    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
-  \[LastModifiedDateTime \<DateTime?\>\]: Time when the BrandingProfile was last modified
-  \[LightBackgroundLogo \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
-  \[OnlineSupportSiteName \<String\>\]: Display name of the company/organization's IT helpdesk site
-  \[OnlineSupportSiteUrl \<String\>\]: URL to the company/organization's IT helpdesk site
-  \[PrivacyUrl \<String\>\]: URL to the company/organization's privacy policy
-  \[ProfileDescription \<String\>\]: Description of the profile
-  \[ProfileName \<String\>\]: Name of the profile
-  \[RoleScopeTagIds \<String\[\]\>\]: List of scope tags assigned to the branding profile
-  \[SendDeviceOwnershipChangePushNotification \<Boolean?\>\]: Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate
-  \[ShowAzureAdEnterpriseApps \<Boolean?\>\]: Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal
-  \[ShowConfigurationManagerApps \<Boolean?\>\]: Boolean that indicates if Configuration Manager Apps will be shown in Company Portal
-  \[ShowDisplayNameNextToLogo \<Boolean?\>\]: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
-  \[ShowLogo \<Boolean?\>\]: Boolean that represents whether the administrator-supplied logo images are shown or not
-  \[ShowOfficeWebApps \<Boolean?\>\]: Boolean that indicates if Office WebApps will be shown in Company Portal
-  \[ThemeColor \<IMicrosoftGraphRgbColor\>\]: Color in RGB.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[B \<Int32?\>\]: Blue value
-    \[G \<Int32?\>\]: Green value
-    \[R \<Int32?\>\]: Red value
-  \[ThemeColorLogo \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
+  - `[DisableDeviceCategorySelection <Boolean?>]`: Boolean that indicates if Device Category Selection will be shown in Company Portal
+  - `[DisplayName <String>]`: Company/organization name that is displayed to end users
+  - `[EnrollmentAvailability <EnrollmentAvailabilityOptions?>]`: Options available for enrollment flow customization
+  - `[IsDefaultProfile <Boolean?>]`: Boolean that represents whether the profile is used as default or not
+  - `[IsFactoryResetDisabled <Boolean?>]`: Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.
+  - `[IsRemoveDeviceDisabled <Boolean?>]`: Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.
+  - `[LandingPageCustomizedImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: Indicates the content mime type.
+    - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
+  - `[LastModifiedDateTime <DateTime?>]`: Time when the BrandingProfile was last modified
+  - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site
+  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site
+  - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy
+  - `[ProfileDescription <String>]`: Description of the profile
+  - `[ProfileName <String>]`: Name of the profile
+  - `[RoleScopeTagIds <String- `[]`>]`: List of scope tags assigned to the branding profile
+  - `[SendDeviceOwnershipChangePushNotification <Boolean?>]`: Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate
+  - `[ShowAzureAdEnterpriseApps <Boolean?>]`: Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal
+  - `[ShowConfigurationManagerApps <Boolean?>]`: Boolean that indicates if Configuration Manager Apps will be shown in Company Portal
+  - `[ShowDisplayNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
+  - `[ShowLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied logo images are shown or not
+  - `[ShowOfficeWebApps <Boolean?>]`: Boolean that indicates if Office WebApps will be shown in Company Portal
+  - `[ThemeColor <IMicrosoftGraphRgbColor>]`: Color in RGB.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[B <Int32?>]`: Blue value
+    - `[G <Int32?>]`: Green value
+    - `[R <Int32?>]`: Red value
+  - `[ThemeColorLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
 
-COMPANYPORTALBLOCKEDACTIONS \<IMicrosoftGraphCompanyPortalBlockedAction\[\]\>: Collection of blocked actions on the company portal as per platform and device ownership types.
-  \[Action \<CompanyPortalAction?\>\]: Action on a device that can be executed in the Company Portal
-  \[OwnerType \<OwnerType?\>\]: Owner type of device.
-  \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction- `[]`>: Collection of blocked actions on the company portal as per platform and device ownership types.
+  - `[Action <CompanyPortalAction?>]`: Action on a device that can be executed in the Company Portal
+  - `[OwnerType <OwnerType?>]`: Owner type of device.
+  - `[Platform <DevicePlatformType?>]`: Supported platform types.
 
-LANDINGPAGECUSTOMIZEDIMAGE \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Type \<String\>\]: Indicates the content mime type.
-  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+LANDINGPAGECUSTOMIZEDIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: Indicates the content mime type.
+  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
-LIGHTBACKGROUNDLOGO \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Type \<String\>\]: Indicates the content mime type.
-  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+LIGHTBACKGROUNDLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: Indicates the content mime type.
+  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
-THEMECOLOR \<IMicrosoftGraphRgbColor\>: Color in RGB.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[B \<Int32?\>\]: Blue value
-  \[G \<Int32?\>\]: Green value
-  \[R \<Int32?\>\]: Red value
+THEMECOLOR `<IMicrosoftGraphRgbColor>`: Color in RGB.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[B <Int32?>]`: Blue value
+  - `[G <Int32?>]`: Green value
+  - `[R <Int32?>]`: Red value
 
-THEMECOLORLOGO \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Type \<String\>\]: Indicates the content mime type.
-  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+THEMECOLORLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: Indicates the content mime type.
+  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementintunebrandingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementintunebrandingprofile)
+
+
+
 

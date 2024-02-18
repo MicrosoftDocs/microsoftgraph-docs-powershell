@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypath
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.\nTo list them, include system in your $select statement.
+Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgBetaGroupSiteGetByPath -GroupId <String> -Path <String> -SiteId <String> -
 
 ## DESCRIPTION
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.\nTo list them, include system in your $select statement.
+Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
 
 ## EXAMPLES
 
@@ -303,4 +303,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypath)
+
+
+
 

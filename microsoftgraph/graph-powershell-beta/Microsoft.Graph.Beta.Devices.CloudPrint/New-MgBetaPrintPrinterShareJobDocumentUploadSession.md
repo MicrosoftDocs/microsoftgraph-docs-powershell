@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession
@@ -252,36 +252,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Ox8Y49PrintPrintersharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Properties \<IMicrosoftGraphPrintDocumentUploadProperties\>\]: printDocumentUploadProperties
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ContentType \<String\>\]: The document's content (MIME) type.
-    \[DocumentName \<String\>\]: The document's name.
-    \[Size \<Int64?\>\]: The document's size in bytes.
+BODYPARAMETER `<IPaths1Ox8Y49PrintPrintersharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Properties <IMicrosoftGraphPrintDocumentUploadProperties>]`: printDocumentUploadProperties
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentType <String>]`: The document's content (MIME) type.
+    - `[DocumentName <String>]`: The document's name.
+    - `[Size <Int64?>]`: The document's size in bytes.
 
-INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
-  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
-  \[PrintJobId \<String\>\]: The unique identifier of printJob
-  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
-  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
-  \[PrintServiceId \<String\>\]: The unique identifier of printService
-  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
-  \[PrintTaskId \<String\>\]: The unique identifier of printTask
-  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
-  \[PrinterId \<String\>\]: The unique identifier of printer
-  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
+  - `[PrintOperationId <String>]`: The unique identifier of printOperation
+  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+  - `[PrintServiceId <String>]`: The unique identifier of printService
+  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+  - `[PrintTaskId <String>]`: The unique identifier of printTask
+  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+  - `[PrinterId <String>]`: The unique identifier of printer
+  - `[PrinterShareId <String>]`: The unique identifier of printerShare
+  - `[UserId <String>]`: The unique identifier of user
 
-PROPERTIES \<IMicrosoftGraphPrintDocumentUploadProperties\>: printDocumentUploadProperties
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ContentType \<String\>\]: The document's content (MIME) type.
-  \[DocumentName \<String\>\]: The document's name.
-  \[Size \<Int64?\>\]: The document's size in bytes.
+PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUploadProperties
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ContentType <String>]`: The document's content (MIME) type.
+  - `[DocumentName <String>]`: The document's name.
+  - `[Size <Int64?>]`: The document's size in bytes.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession)
+
+
+
 

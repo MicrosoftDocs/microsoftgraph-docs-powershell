@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener
@@ -221,32 +221,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAuthenticationEventListener\>: authenticationEventListener
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthenticationEventsFlowId \<String\>\]: The identifier of the authenticationEventsFlow object.
-  \[Conditions \<IMicrosoftGraphAuthenticationConditions\>\]: authenticationConditions
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[IncludeAllApplications \<Boolean?\>\]: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
+  - `[AuthenticationEventsFlowId <String>]`: The identifier of the authenticationEventsFlow object.
+  - `[Conditions <IMicrosoftGraphAuthenticationConditions>]`: authenticationConditions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IncludeAllApplications <Boolean?>]`: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
 This property must be set to false for listener of type onTokenIssuanceStartListener.
-      \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
-        \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
-  \[Priority \<Int32?\>\]: The priority of this handler.
+      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
+        - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  - `[Priority <Int32?>]`: The priority of this handler.
 Between 0 (lower priority) and 1000 (higher priority).
 
-CONDITIONS \<IMicrosoftGraphAuthenticationConditions\>: authenticationConditions
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IncludeAllApplications \<Boolean?\>\]: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
+CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IncludeAllApplications <Boolean?>]`: Whether the custom authentication extension should trigger for all applications with appIds specified in the includeApplications relationship.
 This property must be set to false for listener of type onTokenIssuanceStartListener.
-    \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
-      \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
+      - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
+
+
+
 

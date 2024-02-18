@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration
@@ -405,36 +405,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADVANCEDSETTINGS \<IMicrosoftGraphKeyValuePair\[\]\>: Additional settings that may be applied to the server
-  \[Name \<String\>\]: Name for this key-value pair
-  \[Value \<String\>\]: Value for this key-value pair
+ADVANCEDSETTINGS <IMicrosoftGraphKeyValuePair- `[]`>: Additional settings that may be applied to the server
+  - `[Name <String>]`: Name for this key-value pair
+  - `[Value <String>]`: Value for this key-value pair
 
-BODYPARAMETER \<IMicrosoftGraphMicrosoftTunnelConfiguration\>: Entity that represents a collection of Microsoft Tunnel settings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that represents a collection of Microsoft Tunnel settings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AdvancedSettings \<IMicrosoftGraphKeyValuePair\[\]\>\]: Additional settings that may be applied to the server
-    \[Name \<String\>\]: Name for this key-value pair
-    \[Value \<String\>\]: Value for this key-value pair
-  \[DefaultDomainSuffix \<String\>\]: The Default Domain appendix that will be used by the clients
-  \[Description \<String\>\]: The configuration's description (optional)
-  \[DisableUdpConnections \<Boolean?\>\]: When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to transfer data.
-  \[DisplayName \<String\>\]: The display name for the server configuration.
+  - `[AdvancedSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: Additional settings that may be applied to the server
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
+  - `[DefaultDomainSuffix <String>]`: The Default Domain appendix that will be used by the clients
+  - `[Description <String>]`: The configuration's description (optional)
+  - `[DisableUdpConnections <Boolean?>]`: When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to transfer data.
+  - `[DisplayName <String>]`: The display name for the server configuration.
 This property is required when a server is created.
-  \[DnsServers \<String\[\]\>\]: The DNS servers that will be used by the clients
-  \[LastUpdateDateTime \<DateTime?\>\]: When the configuration was last updated
-  \[ListenPort \<Int32?\>\]: The port that both TCP and UPD will listen over on the server
-  \[Network \<String\>\]: The subnet that will be used to allocate virtual address for the clients
-  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance
-  \[RouteExcludes \<String\[\]\>\]: Subsets of the routes that will not be routed by the server
-  \[RouteIncludes \<String\[\]\>\]: The routes that will be routed by the server
-  \[RoutesExclude \<String\[\]\>\]: Subsets of the routes that will not be routed by the server.
+  - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
+  - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
+  - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
+  - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
+  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance
+  - `[RouteExcludes <String- `[]`>]`: Subsets of the routes that will not be routed by the server
+  - `[RouteIncludes <String- `[]`>]`: The routes that will be routed by the server
+  - `[RoutesExclude <String- `[]`>]`: Subsets of the routes that will not be routed by the server.
 This property is going to be deprecated with the option of using the new property, 'RouteExcludes'.
-  \[RoutesInclude \<String\[\]\>\]: The routes that will be routed by the server.
+  - `[RoutesInclude <String- `[]`>]`: The routes that will be routed by the server.
 This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
-  \[SplitDns \<String\[\]\>\]: The domains that will be resolved using the provided dns servers
+  - `[SplitDns <String- `[]`>]`: The domains that will be resolved using the provided dns servers
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration)
+
+
+
 

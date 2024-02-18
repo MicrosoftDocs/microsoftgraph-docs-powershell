@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner
@@ -311,27 +311,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceManagementPartner\>: Entity which represents a connection to device management partner.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner>`: Entity which represents a connection to device management partner.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: Partner display name
-  \[GroupsRequiringPartnerEnrollment \<IMicrosoftGraphDeviceManagementPartnerAssignment\[\]\>\]: User groups that specifies whether enrollment is through partner.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsConfigured \<Boolean?\>\]: Whether device management partner is configured or not
-  \[LastHeartbeatDateTime \<DateTime?\>\]: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
-  \[PartnerAppType \<DeviceManagementPartnerAppType?\>\]: Partner App Type.
-  \[PartnerState \<DeviceManagementPartnerTenantState?\>\]: Partner state of this tenant.
-  \[SingleTenantAppId \<String\>\]: Partner Single tenant App id
-  \[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime \<DateTime?\>\]: DateTime in UTC when PartnerDevices will be marked as NonCompliant
-  \[WhenPartnerDevicesWillBeRemovedDateTime \<DateTime?\>\]: DateTime in UTC when PartnerDevices will be removed
+  - `[DisplayName <String>]`: Partner display name
+  - `[GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment- `[]`>]`: User groups that specifies whether enrollment is through partner.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
+  - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
+  - `[PartnerAppType <DeviceManagementPartnerAppType?>]`: Partner App Type.
+  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
+  - `[SingleTenantAppId <String>]`: Partner Single tenant App id
+  - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
+  - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-GROUPSREQUIRINGPARTNERENROLLMENT \<IMicrosoftGraphDeviceManagementPartnerAssignment\[\]\>: User groups that specifies whether enrollment is through partner.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment- `[]`>: User groups that specifies whether enrollment is through partner.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner)
+
+
+
 

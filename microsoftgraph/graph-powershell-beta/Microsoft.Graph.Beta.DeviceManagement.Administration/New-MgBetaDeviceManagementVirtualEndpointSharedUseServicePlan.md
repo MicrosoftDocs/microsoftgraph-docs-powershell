@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointshareduseserviceplan
@@ -213,15 +213,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCloudPcSharedUseServicePlan\>: cloudPcSharedUseServicePlan
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCloudPcSharedUseServicePlan>`: cloudPcSharedUseServicePlan
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The display name of the shared-use service plan.
-  \[TotalCount \<Int32?\>\]: Total number of shared-use service plans purchased by the customer.
-  \[UsedCount \<Int32?\>\]: The number of service plans that the account uses.
+  - `[DisplayName <String>]`: The display name of the shared-use service plan.
+  - `[TotalCount <Int32?>]`: Total number of shared-use service plans purchased by the customer.
+  - `[UsedCount <Int32?>]`: The number of service plans that the account uses.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointshareduseserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointshareduseserviceplan)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcachedreport
@@ -293,17 +293,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GroupBy \<String\[\]\>\]: 
-  \[Id \<String\>\]: 
-  \[OrderBy \<String\[\]\>\]: 
-  \[Search \<String\>\]: 
-  \[Select \<String\[\]\>\]: 
-  \[Skip \<Int32?\>\]: 
-  \[Top \<Int32?\>\]:
+BODYPARAMETER `<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[GroupBy <String- `[]`>]`: 
+  - `[Id <String>]`: 
+  - `[OrderBy <String- `[]`>]`: 
+  - `[Search <String>]`: 
+  - `[Select <String- `[]`>]`: 
+  - `[Skip <Int32?>]`: 
+  - `[Top <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcachedreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcachedreport)
+
+
+
 

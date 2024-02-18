@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance
@@ -369,49 +369,49 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance\>: The user experience analytics device performance entity contains device performance details.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>`: The user experience analytics device performance entity contains device performance details.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppCrashCount \<Int32?\>\]: The number of application crashes for the device.
+  - `[AppCrashCount <Int32?>]`: The number of application crashes for the device.
 Valid values 0 to 2147483647.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  \[AppHangCount \<Int32?\>\]: The number of application hangs for the device.
+  - `[AppHangCount <Int32?>]`: The number of application hangs for the device.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  \[CrashedAppCount \<Int32?\>\]: The number of distinct application crashes for the device.
+  - `[CrashedAppCount <Int32?>]`: The number of distinct application crashes for the device.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  \[DeviceAppHealthScore \<Double?\>\]: The application health score of the device.
+  - `[DeviceAppHealthScore <Double?>]`: The application health score of the device.
 Valid values 0 to 100.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[DeviceDisplayName \<String\>\]: The name of the device.
+  - `[DeviceDisplayName <String>]`: The name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[DeviceId \<String\>\]: The Intune device id of the device.
+  - `[DeviceId <String>]`: The Intune device id of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[DeviceManufacturer \<String\>\]: The manufacturer name of the device.
+  - `[DeviceManufacturer <String>]`: The manufacturer name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[DeviceModel \<String\>\]: The model name of the device.
+  - `[DeviceModel <String>]`: The model name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
-  \[MeanTimeToFailureInMinutes \<Int32?\>\]: The mean time to failure for the application in minutes.
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
+  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the application in minutes.
 Valid values 0 to 2147483647.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  \[ProcessedDateTime \<DateTime?\>\]: The date and time when the statistics were last computed.
+  - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed.
 The value cannot be modified and is automatically populated when the statistics are computed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'.
@@ -421,4 +421,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance)
+
+
+
 

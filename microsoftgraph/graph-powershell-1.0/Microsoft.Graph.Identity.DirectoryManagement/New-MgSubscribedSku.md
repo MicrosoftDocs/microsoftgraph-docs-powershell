@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku
@@ -327,59 +327,62 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSubscribedSku\>: subscribedSku
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSubscribedSku>`: subscribedSku
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AccountId \<String\>\]: The unique ID of the account this SKU belongs to.
-  \[AccountName \<String\>\]: The name of the account this SKU belongs to.
-  \[AppliesTo \<String\>\]: The target class for this SKU.
+  - `[AccountId <String>]`: The unique ID of the account this SKU belongs to.
+  - `[AccountName <String>]`: The name of the account this SKU belongs to.
+  - `[AppliesTo <String>]`: The target class for this SKU.
 Only SKUs with target class User are assignable.
 Possible values are: 'User', 'Company'.
-  \[CapabilityStatus \<String\>\]: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
+  - `[CapabilityStatus <String>]`: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
 LockedOut indicates that the customer canceled their subscription.
 Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
-  \[ConsumedUnits \<Int32?\>\]: The number of licenses that have been assigned.
-  \[PrepaidUnits \<IMicrosoftGraphLicenseUnitsDetail\>\]: licenseUnitsDetail
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-    \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
-    \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+  - `[ConsumedUnits <Int32?>]`: The number of licenses that have been assigned.
+  - `[PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]`: licenseUnitsDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
+    - `[LockedOut <Int32?>]`: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+    - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been canceled.
 The units can't be assigned but can still be reactivated before they're deleted.
-    \[Warning \<Int32?\>\]: The number of units that are in warning status.
+    - `[Warning <Int32?>]`: The number of units that are in warning status.
 When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
-  \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans that are available with the SKU.
+  - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans that are available with the SKU.
 Not nullable.
-    \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
+    - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
+    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-    \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
-    \[ServicePlanName \<String\>\]: The name of the service plan.
-  \[SkuId \<String\>\]: The unique identifier (GUID) for the service SKU.
-  \[SkuPartNumber \<String\>\]: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
+    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+    - `[ServicePlanName <String>]`: The name of the service plan.
+  - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
+  - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
-  \[SubscriptionIds \<String\[\]\>\]: 
+  - `[SubscriptionIds <String- `[]`>]`: 
 
-PREPAIDUNITS \<IMicrosoftGraphLicenseUnitsDetail\>: licenseUnitsDetail
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-  \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
-  \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
+  - `[LockedOut <Int32?>]`: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+  - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been canceled.
 The units can't be assigned but can still be reactivated before they're deleted.
-  \[Warning \<Int32?\>\]: The number of units that are in warning status.
+  - `[Warning <Int32?>]`: The number of units that are in warning status.
 When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
 
-SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans that are available with the SKU.
+SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans that are available with the SKU.
 Not nullable.
-  \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
+  - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
+  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-  \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
-  \[ServicePlanName \<String\>\]: The name of the service plan.
+  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+  - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku)
+
+
+
 

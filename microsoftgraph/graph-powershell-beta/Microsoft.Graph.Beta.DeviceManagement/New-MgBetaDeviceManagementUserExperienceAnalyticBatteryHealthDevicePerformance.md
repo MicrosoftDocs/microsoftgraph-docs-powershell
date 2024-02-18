@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance
@@ -385,51 +385,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance\>: The user experience analytics battery health device performance entity contains device level battery information.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>`: The user experience analytics battery health device performance entity contains device level battery information.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[BatteryAgeInDays \<Int32?\>\]: Estimated battery age.
+  - `[BatteryAgeInDays <Int32?>]`: Estimated battery age.
 Unit in days.
 Valid values 0 to 2147483647
-  \[DeviceBatteriesDetails \<IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail\[\]\>\]: Properties (maxCapacity and cycleCount) related to all batteries of the device.
-    \[BatteryId \<String\>\]: Uniquely identifies the batteries in a single device.
-    \[FullBatteryDrainCount \<Int32?\>\]: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
+  - `[DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail- `[]`>]`: Properties (maxCapacity and cycleCount) related to all batteries of the device.
+    - `[BatteryId <String>]`: Uniquely identifies the batteries in a single device.
+    - `[FullBatteryDrainCount <Int32?>]`: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
 Valid values 0 to 2147483647
-    \[MaxCapacityPercentage \<Int32?\>\]: Ratio of current capacity and design capacity of the battery.
+    - `[MaxCapacityPercentage <Int32?>]`: Ratio of current capacity and design capacity of the battery.
 Unit in percentage and values range from 0-100.
 Valid values 0 to 2147483647
-  \[DeviceBatteryCount \<Int32?\>\]: Number of batteries in a user device.
+  - `[DeviceBatteryCount <Int32?>]`: Number of batteries in a user device.
 Valid values 0 to 2147483647
-  \[DeviceBatteryHealthScore \<Int32?\>\]: A weighted average of a device's maximum capacity score and runtime estimate score.
+  - `[DeviceBatteryHealthScore <Int32?>]`: A weighted average of a device's maximum capacity score and runtime estimate score.
 Values range from 0-100.
 Valid values 0 to 2147483647
-  \[DeviceBatteryTags \<String\[\]\>\]: Tags for computed information on how battery on the device is behaving.
+  - `[DeviceBatteryTags <String- `[]`>]`: Tags for computed information on how battery on the device is behaving.
 E.g.
 newbattery, batterycapacityred, designcapacityzero, etc.
-  \[DeviceId \<String\>\]: The unique identifier of the device, Intune DeviceID.
-  \[DeviceName \<String\>\]: Device friendly name.
-  \[EstimatedRuntimeInMinutes \<Int32?\>\]: The estimated runtime of the device when the battery is fully charged.
+  - `[DeviceId <String>]`: The unique identifier of the device, Intune DeviceID.
+  - `[DeviceName <String>]`: Device friendly name.
+  - `[EstimatedRuntimeInMinutes <Int32?>]`: The estimated runtime of the device when the battery is fully charged.
 Unit in minutes.
 Valid values 0 to 2147483647
-  \[FullBatteryDrainCount \<Int32?\>\]: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
+  - `[FullBatteryDrainCount <Int32?>]`: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
 Valid values 0 to 2147483647
-  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
-  \[Manufacturer \<String\>\]: The manufacturer name of the device.
-  \[MaxCapacityPercentage \<Int32?\>\]: Ratio of current capacity and design capacity of the battery with the lowest capacity.
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
+  - `[Manufacturer <String>]`: The manufacturer name of the device.
+  - `[MaxCapacityPercentage <Int32?>]`: Ratio of current capacity and design capacity of the battery with the lowest capacity.
 Unit in percentage and values range from 0-100.
 Valid values 0 to 2147483647
-  \[Model \<String\>\]: The model name of the device.
+  - `[Model <String>]`: The model name of the device.
 
-DEVICEBATTERIESDETAILS \<IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail\[\]\>: Properties (maxCapacity and cycleCount) related to all batteries of the device.
-  \[BatteryId \<String\>\]: Uniquely identifies the batteries in a single device.
-  \[FullBatteryDrainCount \<Int32?\>\]: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
+DEVICEBATTERIESDETAILS <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail- `[]`>: Properties (maxCapacity and cycleCount) related to all batteries of the device.
+  - `[BatteryId <String>]`: Uniquely identifies the batteries in a single device.
+  - `[FullBatteryDrainCount <Int32?>]`: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
 Valid values 0 to 2147483647
-  \[MaxCapacityPercentage \<Int32?\>\]: Ratio of current capacity and design capacity of the battery.
+  - `[MaxCapacityPercentage <Int32?>]`: Ratio of current capacity and design capacity of the battery.
 Unit in percentage and values range from 0-100.
 Valid values 0 to 2147483647
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance)
+
+
+
 

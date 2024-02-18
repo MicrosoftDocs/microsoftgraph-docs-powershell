@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization
@@ -200,24 +200,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate\>: multiTenantOrganizationIdentitySyncPolicyTemplate
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>`: multiTenantOrganizationIdentitySyncPolicyTemplate
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[TemplateApplicationLevel \<String\>\]: templateApplicationLevel
-  \[UserSyncInbound \<IMicrosoftGraphCrossTenantUserSyncInbound\>\]: crossTenantUserSyncInbound
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsSyncAllowed \<Boolean?\>\]: Defines whether user objects should be synchronized from the partner tenant.
+  - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
+  - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
 This property has no impact on existing users who have already been synchronized.
 
-USERSYNCINBOUND \<IMicrosoftGraphCrossTenantUserSyncInbound\>: crossTenantUserSyncInbound
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsSyncAllowed \<Boolean?\>\]: Defines whether user objects should be synchronized from the partner tenant.
+USERSYNCINBOUND `<IMicrosoftGraphCrossTenantUserSyncInbound>`: crossTenantUserSyncInbound
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
 This property has no impact on existing users who have already been synchronized.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization)
+
+
+
 

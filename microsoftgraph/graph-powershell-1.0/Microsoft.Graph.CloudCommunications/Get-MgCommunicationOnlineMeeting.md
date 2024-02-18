@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
@@ -446,74 +446,77 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ChatInfo \<IMicrosoftGraphChatInfo\>\]: chatInfo
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
-    \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
-    \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-  \[EndDateTime \<DateTime?\>\]: 
-  \[ExternalId \<String\>\]: 
-  \[Participants \<IMicrosoftGraphMeetingParticipants\>\]: meetingParticipants
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Attendees \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: 
-      \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Application \<IMicrosoftGraphIdentity\>\]: identity
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[DisplayName \<String\>\]: The display name of the identity.
+BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+    - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+  - `[EndDateTime <DateTime?>]`: 
+  - `[ExternalId <String>]`: 
+  - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+      - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          \[Id \<String\>\]: Unique identifier for the identity.
-        \[Device \<IMicrosoftGraphIdentity\>\]: identity
-        \[User \<IMicrosoftGraphIdentity\>\]: identity
-      \[Role \<String\>\]: onlineMeetingRole
-      \[Upn \<String\>\]: User principal name of the participant.
-    \[Organizer \<IMicrosoftGraphMeetingParticipantInfo\>\]: meetingParticipantInfo
-  \[StartDateTime \<DateTime?\>\]: 
-  \[Subject \<String\>\]: 
+          - `[Id <String>]`: Unique identifier for the identity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[Role <String>]`: onlineMeetingRole
+      - `[Upn <String>]`: User principal name of the participant.
+    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+  - `[StartDateTime <DateTime?>]`: 
+  - `[Subject <String>]`: 
 
-CHATINFO \<IMicrosoftGraphChatInfo\>: chatInfo
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
-  \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
-  \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
+CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+  - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS \<IMicrosoftGraphMeetingParticipants\>: meetingParticipants
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Attendees \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: 
-    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[Role \<String\>\]: onlineMeetingRole
-    \[Upn \<String\>\]: User principal name of the participant.
-  \[Organizer \<IMicrosoftGraphMeetingParticipantInfo\>\]: meetingParticipantInfo
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[Role <String>]`: onlineMeetingRole
+    - `[Upn <String>]`: User principal name of the participant.
+  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting)
+
+
+
 

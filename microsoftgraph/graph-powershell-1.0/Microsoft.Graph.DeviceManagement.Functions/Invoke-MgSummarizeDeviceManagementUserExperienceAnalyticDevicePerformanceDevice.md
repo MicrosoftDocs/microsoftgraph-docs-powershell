@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice
@@ -243,15 +243,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
-  \[Category \<String\>\]: Usage: category='{category}'
-  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
-  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
-  \[Scope \<String\>\]: Usage: scope='{scope}'
-  \[SecretReferenceValueId \<String\>\]: Usage: secretReferenceValueId='{secretReferenceValueId}'
-  \[SummarizeBy \<UserExperienceAnalyticsSummarizedBy?\>\]: Usage: summarizeBy='{summarizeBy}'
+INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+  - `[Category <String>]`: Usage: category='{category}'
+  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
+  - `[Scope <String>]`: Usage: scope='{scope}'
+  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice)
+
+
+
 

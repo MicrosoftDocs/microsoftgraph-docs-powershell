@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting
@@ -357,38 +357,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings\>: Enterprise settings for an Android managed store account.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>`: Enterprise settings for an Android managed store account.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AndroidDeviceOwnerFullyManagedEnrollmentEnabled \<Boolean?\>\]: Company codes for AndroidManagedStoreAccountEnterpriseSettings
-  \[BindStatus \<String\>\]: Bind status of the tenant with the Google EMM API
-  \[CompanyCodes \<IMicrosoftGraphAndroidEnrollmentCompanyCode\[\]\>\]: Company codes for AndroidManagedStoreAccountEnterpriseSettings
-    \[EnrollmentToken \<String\>\]: Enrollment Token used by the User to enroll their device.
-    \[QrCodeContent \<String\>\]: String used to generate a QR code for the token.
-    \[QrCodeImage \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Type \<String\>\]: Indicates the content mime type.
-      \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
-  \[DeviceOwnerManagementEnabled \<Boolean?\>\]: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
-  \[EnrollmentTarget \<String\>\]: Android for Work device management targeting type for the account
-  \[LastAppSyncDateTime \<DateTime?\>\]: Last completion time for app sync
-  \[LastAppSyncStatus \<String\>\]: Sync status of the tenant with the Google EMM API
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modification time for Android enterprise settings
-  \[ManagedGooglePlayInitialScopeTagIds \<String\[\]\>\]: Initial scope tags for MGP apps
-  \[OwnerOrganizationName \<String\>\]: Organization name used when onboarding Android Enterprise
-  \[OwnerUserPrincipalName \<String\>\]: Owner UPN that created the enterprise
-  \[TargetGroupIds \<String\[\]\>\]: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
+  - `[AndroidDeviceOwnerFullyManagedEnrollmentEnabled <Boolean?>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
+  - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
+  - `[CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode- `[]`>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
+    - `[EnrollmentToken <String>]`: Enrollment Token used by the User to enroll their device.
+    - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
+    - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Type <String>]`: Indicates the content mime type.
+      - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
+  - `[DeviceOwnerManagementEnabled <Boolean?>]`: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
+  - `[EnrollmentTarget <String>]`: Android for Work device management targeting type for the account
+  - `[LastAppSyncDateTime <DateTime?>]`: Last completion time for app sync
+  - `[LastAppSyncStatus <String>]`: Sync status of the tenant with the Google EMM API
+  - `[LastModifiedDateTime <DateTime?>]`: Last modification time for Android enterprise settings
+  - `[ManagedGooglePlayInitialScopeTagIds <String- `[]`>]`: Initial scope tags for MGP apps
+  - `[OwnerOrganizationName <String>]`: Organization name used when onboarding Android Enterprise
+  - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise
+  - `[TargetGroupIds <String- `[]`>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
-COMPANYCODES \<IMicrosoftGraphAndroidEnrollmentCompanyCode\[\]\>: Company codes for AndroidManagedStoreAccountEnterpriseSettings
-  \[EnrollmentToken \<String\>\]: Enrollment Token used by the User to enroll their device.
-  \[QrCodeContent \<String\>\]: String used to generate a QR code for the token.
-  \[QrCodeImage \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Type \<String\>\]: Indicates the content mime type.
-    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode- `[]`>: Company codes for AndroidManagedStoreAccountEnterpriseSettings
+  - `[EnrollmentToken <String>]`: Enrollment Token used by the User to enroll their device.
+  - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
+  - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: Indicates the content mime type.
+    - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
+
+
+
 
