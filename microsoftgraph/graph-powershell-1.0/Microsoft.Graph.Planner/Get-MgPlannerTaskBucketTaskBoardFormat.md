@@ -35,13 +35,17 @@ Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat ob
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbuckettaskboardtaskformat-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId
+
+```
+This example shows how to use the Get-MgPlannerTaskBucketTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

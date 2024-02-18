@@ -52,9 +52,8 @@ his method returns trustFrameworkKey.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-uploadsecret-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Use = "use-value"
@@ -64,6 +63,8 @@ $params = @{
 }
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

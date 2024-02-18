@@ -53,9 +53,8 @@ Get the free/busy availability information for a collection of users, distributi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserDefaultCalendarSchedule Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Schedules = @(
@@ -75,6 +74,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaUserDefaultCalendarSchedule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

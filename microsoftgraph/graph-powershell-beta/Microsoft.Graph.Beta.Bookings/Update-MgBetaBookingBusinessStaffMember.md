@@ -91,9 +91,8 @@ Update the properties of a bookingStaffMember in the specified bookingBusiness.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingstaffmember-update-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaBookingBusinessStaffMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	WorkingHours = @(
@@ -161,6 +160,8 @@ $params = @{
 }
 Update-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaBookingBusinessStaffMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

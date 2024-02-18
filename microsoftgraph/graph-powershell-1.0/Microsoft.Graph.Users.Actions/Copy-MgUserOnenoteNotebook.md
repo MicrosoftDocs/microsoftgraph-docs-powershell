@@ -53,9 +53,8 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-copynotebook-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Copy-MgUserOnenoteNotebook Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	GroupId = "groupId-value"
@@ -64,6 +63,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
+This example shows how to use the Copy-MgUserOnenoteNotebook Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -57,24 +57,27 @@ Get-MgBetaBookingBusiness [-ExpandProperty <String[]>] [-Property <String[]>] [-
 Represents a Microsoft Bookings Business.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaBookingBusiness Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaBookingBusiness Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the Get-MgBetaBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaBookingBusiness Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
-Get-MgBetaBookingBusiness -Query "Adventure"
+Get-MgBetaBookingBusiness -Query "Adventure" 
 ```
+This example shows how to use the Get-MgBetaBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

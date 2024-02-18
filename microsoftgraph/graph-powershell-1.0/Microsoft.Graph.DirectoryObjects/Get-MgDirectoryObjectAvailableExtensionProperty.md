@@ -35,13 +35,17 @@ The following entities support extension properties:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getavailableextensionproperties-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 Get-MgDirectoryObjectAvailableExtensionProperty
+
+```
+This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.
+
 
 ## PARAMETERS
 

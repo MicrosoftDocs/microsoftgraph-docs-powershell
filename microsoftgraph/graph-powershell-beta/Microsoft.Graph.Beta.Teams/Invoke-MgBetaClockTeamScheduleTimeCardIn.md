@@ -44,9 +44,8 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 Clock in to start a timeCard.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaClockTeamScheduleTimeCardIn Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	AtAprovedLocation = $true
@@ -57,6 +56,8 @@ $params = @{
 }
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaClockTeamScheduleTimeCardIn Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

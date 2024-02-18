@@ -35,13 +35,17 @@ Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using th
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Remove-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId
+```
+This example shows how to use the Remove-MgBetaDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

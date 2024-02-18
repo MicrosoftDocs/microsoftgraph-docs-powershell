@@ -75,11 +75,10 @@ Update the properties of a contact object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	homeAddress = @{
@@ -88,11 +87,16 @@ $params = @{
 		state = "WA"
 		postalCode = "98121"
 	}
-	birthday = \[System.DateTime\]::Parse("1974-07-22")
+	birthday = [System.DateTime]::Parse("1974-07-22")
 }
 
 # A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserContact Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

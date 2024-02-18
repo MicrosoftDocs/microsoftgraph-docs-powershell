@@ -59,11 +59,11 @@ Create a new section in the specified notebook.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-post-sections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 $params = @{
 	displayName = "Section name"
@@ -71,6 +71,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserOnenoteNotebookSection Cmdlet.
+
 
 ## PARAMETERS
 

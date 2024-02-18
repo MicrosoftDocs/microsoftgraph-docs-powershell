@@ -37,13 +37,17 @@ Supported for Microsoft 365 groups only.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-addfavorite-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Add-MgGroupFavorite -GroupId $groupId
+
+```
+This example shows how to use the Add-MgGroupFavorite Cmdlet.
+
 
 ## PARAMETERS
 

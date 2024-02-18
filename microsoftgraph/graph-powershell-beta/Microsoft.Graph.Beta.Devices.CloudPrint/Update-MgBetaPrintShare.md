@@ -63,11 +63,11 @@ For example, if a physical printer device breaks, an administrator can register 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "ShareName"
@@ -76,6 +76,10 @@ $params = @{
 }
 
 Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

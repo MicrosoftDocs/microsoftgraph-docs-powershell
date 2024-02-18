@@ -69,11 +69,10 @@ Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[col
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	description = "test"
@@ -90,6 +89,11 @@ $params = @{
 }
 
 New-MgBetaSiteColumn -SiteId $siteId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaSiteColumn Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

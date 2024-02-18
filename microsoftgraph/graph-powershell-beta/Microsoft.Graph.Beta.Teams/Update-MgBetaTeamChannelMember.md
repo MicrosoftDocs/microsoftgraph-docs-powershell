@@ -47,11 +47,11 @@ Update-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Update the role of a conversationMember in a team.or channel.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 

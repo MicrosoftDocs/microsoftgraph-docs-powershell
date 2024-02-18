@@ -44,13 +44,17 @@ An oAuth2PermissionGrant represents delegated permissions which have been grante
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaOauth2PermissionGrant
+
+```
+This example shows how to use the Get-MgBetaOauth2PermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

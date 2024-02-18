@@ -79,11 +79,10 @@ Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	groupLifetimeInDays = 180
@@ -92,6 +91,11 @@ $params = @{
 }
 
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaGroupLifecyclePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

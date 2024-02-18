@@ -58,11 +58,11 @@ Create a new permission object on a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-permissions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	roles = @(
@@ -79,6 +79,10 @@ $params = @{
 }
 
 New-MgSitePermission -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

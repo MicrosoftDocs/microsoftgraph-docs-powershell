@@ -41,11 +41,10 @@ Create a new accessReviewHistoryDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-post-historydefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Last quarter's group reviews April 2021"
@@ -56,8 +55,8 @@ $params = @{
 		"notReviewed"
 		"notNotified"
 	)
-	reviewHistoryPeriodStartDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
-	reviewHistoryPeriodEndDateTime = \[System.DateTime\]::Parse("2021-04-30T23:59:59Z")
+	reviewHistoryPeriodStartDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
+	reviewHistoryPeriodEndDateTime = [System.DateTime]::Parse("2021-04-30T23:59:59Z")
 	scopes = @(
 		@{
 			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
@@ -75,6 +74,11 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
+```
+This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

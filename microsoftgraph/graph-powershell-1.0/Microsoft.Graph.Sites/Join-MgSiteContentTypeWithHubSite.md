@@ -53,11 +53,11 @@ Associate a published \[content type\]\[contentType\] present in a content type 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	hubSiteUrls = @(
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Join-MgSiteContentTypeWithHubSite Cmdlet.
+
 
 ## PARAMETERS
 

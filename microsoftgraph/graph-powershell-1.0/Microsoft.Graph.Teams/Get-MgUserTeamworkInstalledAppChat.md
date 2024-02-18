@@ -36,13 +36,17 @@ Retrieve the chat of the specified user and Teams app.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userscopeteamsappinstallation-get-chat-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
+
+```
+This example shows how to use the Get-MgUserTeamworkInstalledAppChat Cmdlet.
+
 
 ## PARAMETERS
 

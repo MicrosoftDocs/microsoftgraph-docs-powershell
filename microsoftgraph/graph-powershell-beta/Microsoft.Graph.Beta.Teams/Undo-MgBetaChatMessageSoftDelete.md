@@ -32,16 +32,6 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId

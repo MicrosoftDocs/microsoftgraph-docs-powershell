@@ -30,14 +30,18 @@ Retrieve a list of onenoteSection objects from the specified section group.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-list-sections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId
+
+```
+This example shows how to use the Get-MgUserOnenoteSectionGroupSection Cmdlet.
+
 
 ## PARAMETERS
 

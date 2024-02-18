@@ -43,20 +43,28 @@ Read the properties and relationships of a term store group object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
-Get-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId"
+Get-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId" 
 
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgBetaSiteTermStoreGroup Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaSiteTermStoreGroup Cmdlet.
+
 
 ## PARAMETERS
 

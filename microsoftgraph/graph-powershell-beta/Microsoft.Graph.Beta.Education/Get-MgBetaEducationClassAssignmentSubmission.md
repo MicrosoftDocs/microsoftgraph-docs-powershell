@@ -64,27 +64,39 @@ For details, see the examples section.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request without optional Prefer header
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-### EXAMPLE 2
 ```
+This example will request without optional prefer header
+
+### Example 2: Request with optional Prefer header
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-### EXAMPLE 3
 ```
-Import-Module Microsoft.Graph.Beta.Education
-```
+This example will request with optional prefer header
 
-Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -ExpandProperty "*"
+### Example 3: Get submission with $expand options
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -ExpandProperty "*" 
+
+```
+This example will get submission with $expand options
+
 
 ## PARAMETERS
 

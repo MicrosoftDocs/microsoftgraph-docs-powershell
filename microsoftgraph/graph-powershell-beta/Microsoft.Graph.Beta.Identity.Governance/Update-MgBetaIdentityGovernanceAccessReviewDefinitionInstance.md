@@ -66,11 +66,10 @@ You can only add reviewers to the fallbackReviewers property but can't remove ex
 To update an accessReviewInstance, its status must be InProgress.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	scope = @{
@@ -114,6 +113,11 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

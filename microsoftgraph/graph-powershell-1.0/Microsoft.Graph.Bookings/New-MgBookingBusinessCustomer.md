@@ -48,11 +48,11 @@ Create a new bookingCustomer object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomer"
@@ -65,6 +65,10 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusinessCustomer Cmdlet.
+
 
 ## PARAMETERS
 

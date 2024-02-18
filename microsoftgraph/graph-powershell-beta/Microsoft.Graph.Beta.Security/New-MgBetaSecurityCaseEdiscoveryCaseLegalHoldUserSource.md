@@ -52,9 +52,8 @@ Create a new userSource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryholdpolicy-post-usersources-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Email = "admin@M365x809305.onmicrosoft.com"
@@ -62,9 +61,10 @@ $params = @{
 }
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Email = "admin@M365x809305.onmicrosoft.com"
@@ -72,6 +72,8 @@ $params = @{
 }
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

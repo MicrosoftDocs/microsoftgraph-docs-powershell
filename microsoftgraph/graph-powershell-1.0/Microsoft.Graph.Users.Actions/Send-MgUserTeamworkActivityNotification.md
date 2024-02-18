@@ -59,9 +59,8 @@ For more information, see sending Teams activity notifications.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Send-MgUserTeamworkActivityNotification Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Topic = @{
@@ -82,9 +81,10 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Send-MgUserTeamworkActivityNotification Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Topic = @{
@@ -105,9 +105,10 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Send-MgUserTeamworkActivityNotification Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Topic = @{
@@ -127,6 +128,8 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

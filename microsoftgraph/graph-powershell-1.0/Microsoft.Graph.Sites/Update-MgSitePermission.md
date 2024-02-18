@@ -59,11 +59,11 @@ Update an application permission object on a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-update-permission-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	roles = @(
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

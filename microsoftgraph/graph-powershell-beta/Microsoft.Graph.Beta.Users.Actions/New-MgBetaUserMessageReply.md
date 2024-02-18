@@ -61,9 +61,8 @@ Alternatively, reply to a message in a single operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreply-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserMessageReply Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Message = @{
@@ -87,6 +86,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserMessageReply Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

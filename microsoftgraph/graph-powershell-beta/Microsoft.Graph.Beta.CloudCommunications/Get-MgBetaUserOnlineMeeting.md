@@ -39,14 +39,18 @@ Get-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Expand
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
+Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'" 
+
+```
+This example shows how to use the Get-MgBetaUserOnlineMeeting Cmdlet.
+
 
 ## PARAMETERS
 

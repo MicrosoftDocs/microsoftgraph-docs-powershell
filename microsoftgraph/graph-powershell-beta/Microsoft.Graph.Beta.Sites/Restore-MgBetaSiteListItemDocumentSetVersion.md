@@ -36,13 +36,17 @@ Restore a document set version.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Restore-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
+
+```
+This example shows how to use the Restore-MgBetaSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 

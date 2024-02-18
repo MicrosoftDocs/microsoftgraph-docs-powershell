@@ -46,13 +46,17 @@ Retrieve the properties and relationships of an accessReviewStage object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+
 
 ## PARAMETERS
 

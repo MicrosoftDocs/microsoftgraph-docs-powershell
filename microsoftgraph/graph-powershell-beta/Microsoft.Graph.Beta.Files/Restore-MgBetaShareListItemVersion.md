@@ -45,13 +45,17 @@ Restore-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-Headers <IDic
 Invoke action restoreVersion
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
+```
+This example shows how to use the Restore-MgBetaShareListItemVersion Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

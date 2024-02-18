@@ -57,11 +57,11 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopyfromcontenttypehub-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Synchronous pull
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	contentTypeId = "0x0101"
@@ -69,16 +69,24 @@ $params = @{
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example synchronous pull
+
+### Example 2: Asynchronous pull
+
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	contentTypeId = "0x0101"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example asynchronous pull
+
 
 ## PARAMETERS
 

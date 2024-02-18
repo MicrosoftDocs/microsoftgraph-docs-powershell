@@ -46,9 +46,8 @@ Confirm-MgBetaUserMemberObject -InputObject <IUsersActionsIdentity>
 Invoke action checkMemberObjects
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Confirm-MgBetaUserMemberObject Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Ids = @(
@@ -61,6 +60,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberObject -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgBetaUserMemberObject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

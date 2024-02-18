@@ -55,11 +55,10 @@ The rule can be one of the following types that are derived from the unifiedRole
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyrule-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
@@ -81,6 +80,11 @@ $params = @{
 }
 
 Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
+```
+This example shows how to use the Update-MgPolicyRoleManagementPolicyRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

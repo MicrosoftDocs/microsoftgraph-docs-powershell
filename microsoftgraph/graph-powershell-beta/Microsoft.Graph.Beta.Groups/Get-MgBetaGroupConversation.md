@@ -42,13 +42,17 @@ Get a conversation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-conversation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupConversation -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

@@ -25,12 +25,13 @@ Get-MgBetaEducationUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 Invoke function delta
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaEducationUserDelta Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationUserDelta
 ```
+This example shows how to use the Get-MgBetaEducationUserDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

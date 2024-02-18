@@ -43,13 +43,17 @@ Get the status of an operation that adds the large gallery view to a call.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallOperation Cmdlet.
+
 
 ## PARAMETERS
 

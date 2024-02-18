@@ -66,11 +66,11 @@ Create a new reply to a chatMessage in a specified channel.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-messagereply-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -80,6 +80,10 @@ $params = @{
 }
 
 New-MgTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamChannelMessageReply Cmdlet.
+
 
 ## PARAMETERS
 

@@ -62,9 +62,8 @@ Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIden
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	Id = "4540a08f-8ab5-43f6-a923-015275799197"
@@ -84,9 +83,10 @@ $params = @{
 }
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	Id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
@@ -163,6 +163,8 @@ $params = @{
 }
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
+This example shows how to use the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

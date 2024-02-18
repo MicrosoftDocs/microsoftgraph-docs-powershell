@@ -42,13 +42,17 @@ Get the list of richLongRunningOperations associated with a list.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-operations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteList -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteList Cmdlet.
+
 
 ## PARAMETERS
 

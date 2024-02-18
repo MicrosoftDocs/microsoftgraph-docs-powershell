@@ -43,13 +43,17 @@ Retrieve the properties and relationships of an openshift object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOpenShift -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleOpenShift Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,13 +35,17 @@ Delete a user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationUser -EducationUserId $educationUserId
+
+```
+This example shows how to use the Remove-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

@@ -40,11 +40,10 @@ A threat assessment request can be one of the following types:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a mail assessment request
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mailAssessmentRequest"
@@ -55,11 +54,15 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an email assessment request
+
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailFileAssessmentRequest"
@@ -70,11 +73,15 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Create a file assessment request
+
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAssessmentRequest"
@@ -85,11 +92,15 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Create an url assessment request
+
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlAssessmentRequest"
@@ -99,6 +110,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -44,14 +44,18 @@ There are two scenarios where an app can get another user's contact folder:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserContactFolder -UserId $userId
+
+```
+This example shows how to use the Get-MgUserContactFolder Cmdlet.
+
 
 ## PARAMETERS
 

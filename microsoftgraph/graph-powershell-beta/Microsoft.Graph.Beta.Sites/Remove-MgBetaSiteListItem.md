@@ -36,13 +36,17 @@ Removes an item from a \[list\]\[\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
+
+```
+This example shows how to use the Remove-MgBetaSiteListItem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,11 +51,11 @@ New-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 Create an instance of an openshift object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -64,22 +64,22 @@ $params = @{
 		notes = "InventoryManagement"
 		openSlotCount = 2
 		displayName = "Dayshift"
-		startDateTime = \[System.DateTime\]::Parse("2018-10-04T00: 58: 45.340Z")
-		endDateTime = \[System.DateTime\]::Parse("2018-10-04T09: 50: 45.332Z")
+		startDateTime = [System.DateTime]::Parse("2018-10-04T00: 58: 45.340Z")
+		endDateTime = [System.DateTime]::Parse("2018-10-04T09: 50: 45.332Z")
 		theme = "white"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = \[System.DateTime\]::Parse("2018-10-04T00: 58: 45.340Z")
-				endDateTime = \[System.DateTime\]::Parse("2018-10-04T01: 58: 45.340Z")
+				startDateTime = [System.DateTime]::Parse("2018-10-04T00: 58: 45.340Z")
+				endDateTime = [System.DateTime]::Parse("2018-10-04T01: 58: 45.340Z")
 				code = ""
 				displayName = "Lunch"
 			}
 		)
 	}
 	draftOpenShift = $null
-	createdDateTime = \[System.DateTime\]::Parse("2019-03-14T04: 32: 51.451Z")
-	lastModifiedDateTime = \[System.DateTime\]::Parse("2019-03-14T05: 32: 51.451Z")
+	createdDateTime = [System.DateTime]::Parse("2019-03-14T04: 32: 51.451Z")
+	lastModifiedDateTime = [System.DateTime]::Parse("2019-03-14T05: 32: 51.451Z")
 	lastModifiedBy = @{
 		application = $null
 		device = $null
@@ -92,6 +92,10 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleOpenShift -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamScheduleOpenShift Cmdlet.
+
 
 ## PARAMETERS
 

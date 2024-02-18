@@ -62,20 +62,24 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "\<emoji alt="😶‍🌫️"\>\</emoji\>"
+		content = "<emoji alt="😶‍🌫️"></emoji>"
 	}
 }
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

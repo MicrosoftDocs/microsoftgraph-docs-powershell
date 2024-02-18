@@ -37,13 +37,17 @@ It may also be the unique ID of a SharePoint list item.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveRoot -DriveId $driveId
+```
+This example shows how to use the Get-MgDriveRoot Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

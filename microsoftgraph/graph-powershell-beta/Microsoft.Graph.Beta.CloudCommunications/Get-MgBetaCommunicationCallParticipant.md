@@ -43,13 +43,17 @@ Retrieve the properties and relationships of a participant object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallParticipant -CallId $callId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

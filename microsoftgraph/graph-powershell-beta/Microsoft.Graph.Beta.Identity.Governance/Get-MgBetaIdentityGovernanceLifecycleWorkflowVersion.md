@@ -45,20 +45,28 @@ Read the properties and relationships of a workflowVersion object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflowversion-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a workflow version
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will get a workflow version
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks"
+### Example 2: Get specific properties of a version of a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks" 
+
+```
+This example will get specific properties of a version of a workflow
+
 
 ## PARAMETERS
 

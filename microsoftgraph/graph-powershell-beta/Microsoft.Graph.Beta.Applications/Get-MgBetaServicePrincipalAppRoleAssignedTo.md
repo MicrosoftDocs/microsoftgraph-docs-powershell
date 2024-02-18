@@ -40,13 +40,17 @@ Get-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalAppRoleAssignedTo Cmdlet.
+
 
 ## PARAMETERS
 

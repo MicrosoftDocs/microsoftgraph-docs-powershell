@@ -37,21 +37,29 @@ An optional expiration date and time can be supplied.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setstatusmessage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get your own presence information
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPresence -UserId $userId
 
-### EXAMPLE 2
 ```
+This example will get your own presence information
+
+### Example 2: Get the presence information of another user
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgUserPresence -UserId $userId
+
+```
+This example will get the presence information of another user
+
 
 ## PARAMETERS
 

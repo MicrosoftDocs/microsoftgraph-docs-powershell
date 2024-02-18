@@ -41,18 +41,20 @@ Read the properties and relationships of an ediscoveryFile object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryfile-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryFileId $ediscoveryFileId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5
+Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5 
 ```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -37,13 +37,17 @@ Get a list of the ediscoveryIndexOperation associated with an ediscoveryCustodia
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-lastindexoperation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation Cmdlet.
+
 
 ## PARAMETERS
 

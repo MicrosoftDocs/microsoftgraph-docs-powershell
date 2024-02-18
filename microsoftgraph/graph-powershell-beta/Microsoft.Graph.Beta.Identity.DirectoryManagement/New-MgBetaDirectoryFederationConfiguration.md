@@ -32,9 +32,8 @@ New-MgBetaDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdenti
 Create new navigation property to federationConfigurations for directory
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaDirectoryFederationConfiguration Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	"@odata.type" = "microsoft.graph.samlOrWsFedExternalDomainFederation"
@@ -53,6 +52,8 @@ $params = @{
 }
 New-MgBetaDirectoryFederationConfiguration -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDirectoryFederationConfiguration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

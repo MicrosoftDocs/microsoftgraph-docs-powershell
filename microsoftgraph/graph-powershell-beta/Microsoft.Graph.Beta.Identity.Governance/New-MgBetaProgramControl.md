@@ -97,9 +97,8 @@ This links an access review to a program.
 Prior to making this request, the caller must have previously
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaProgramControl Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	ControlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
@@ -108,6 +107,8 @@ $params = @{
 }
 New-MgBetaProgramControl -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaProgramControl Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

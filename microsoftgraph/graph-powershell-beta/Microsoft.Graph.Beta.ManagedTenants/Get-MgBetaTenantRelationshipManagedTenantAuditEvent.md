@@ -41,12 +41,13 @@ Read the properties and relationships of an auditEvent object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-auditevent-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantAuditEvent Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantAuditEvent -AuditEventId $auditEventId
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantAuditEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -54,9 +54,8 @@ Create a new personAward object in a user's profile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-awards-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserProfileAward Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Description = "Lifetime Achievement award from the International Association of Branding Managers"
@@ -69,6 +68,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAward -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserProfileAward Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -40,13 +40,17 @@ Get-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPro
 Get operations from external
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
+
+```
+This example shows how to use the Get-MgBetaExternalConnectionOperation Cmdlet.
+
 
 ## PARAMETERS
 

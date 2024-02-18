@@ -59,17 +59,21 @@ However, it will not cancel a subscribeToTone operation because it operates inde
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-cancelmediaprocessing-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
+
 
 ## PARAMETERS
 

@@ -69,11 +69,11 @@ Update the properties of an ediscoveryCase object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "My Case 1 - Renamed"
@@ -81,6 +81,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

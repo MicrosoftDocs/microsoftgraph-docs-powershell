@@ -37,16 +37,6 @@ Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or 
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId

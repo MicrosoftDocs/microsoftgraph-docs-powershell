@@ -35,12 +35,13 @@ Check out a driveItem resource to prevent others from editing the document, and 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkout-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgCheckoutDriveItem Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Files
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 ```
+This example shows how to use the Invoke-MgCheckoutDriveItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

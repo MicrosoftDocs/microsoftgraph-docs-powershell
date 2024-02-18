@@ -32,12 +32,13 @@ Invoke-MgBetaSoftTeamChannelMessageDelete -InputObject <ITeamsIdentity> [-Header
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaSoftTeamChannelMessageDelete Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Invoke-MgBetaSoftTeamChannelMessageDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 ```
+This example shows how to use the Invoke-MgBetaSoftTeamChannelMessageDelete Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

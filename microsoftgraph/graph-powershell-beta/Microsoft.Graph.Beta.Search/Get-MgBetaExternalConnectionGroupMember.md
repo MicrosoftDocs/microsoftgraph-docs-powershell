@@ -43,16 +43,6 @@ You can add Microsoft Entra users, Microsoft Entra groups, or other externalGrou
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

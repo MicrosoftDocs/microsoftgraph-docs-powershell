@@ -65,17 +65,21 @@ Update the properties of an ediscoverySearch object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "Teams search"
 }
 
 Update-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseSearch Cmdlet.
+
 
 ## PARAMETERS
 

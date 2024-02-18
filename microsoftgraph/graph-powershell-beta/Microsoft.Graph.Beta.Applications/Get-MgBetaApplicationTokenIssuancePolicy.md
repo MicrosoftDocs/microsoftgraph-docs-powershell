@@ -27,13 +27,17 @@ Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandPropert
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgBetaApplicationTokenIssuancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

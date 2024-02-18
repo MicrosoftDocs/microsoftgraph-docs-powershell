@@ -38,13 +38,17 @@ Get-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPro
 Retrieve the properties and relationships of a workforceintegration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamworkWorkforceIntegration
+
+```
+This example shows how to use the Get-MgBetaTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

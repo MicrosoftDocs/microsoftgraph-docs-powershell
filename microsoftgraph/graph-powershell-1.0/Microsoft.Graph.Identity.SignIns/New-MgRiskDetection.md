@@ -36,13 +36,17 @@ New-MgRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-Headers <IDi
 Create new navigation property to riskDetections for identityProtection
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgRiskDetection
+```
+This example shows how to use the New-MgRiskDetection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -55,17 +55,21 @@ For more information about how to handle unmute operations, see unmuteParticipan
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-unmute-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaUnmuteCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUnmuteCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

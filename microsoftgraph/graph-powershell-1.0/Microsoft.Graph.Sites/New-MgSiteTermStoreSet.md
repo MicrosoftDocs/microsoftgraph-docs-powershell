@@ -87,11 +87,11 @@ Create a new set object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.termStore.set"
@@ -107,6 +107,10 @@ $params = @{
 }
 
 New-MgSiteTermStoreSet -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteTermStoreSet Cmdlet.
+
 
 ## PARAMETERS
 

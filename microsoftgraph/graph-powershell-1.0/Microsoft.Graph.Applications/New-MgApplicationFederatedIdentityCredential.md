@@ -57,11 +57,11 @@ Maximum of 20 objects can be added to an application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	name = "testing02"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 New-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgApplicationFederatedIdentityCredential Cmdlet.
+
 
 ## PARAMETERS
 

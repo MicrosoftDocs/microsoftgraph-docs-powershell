@@ -39,18 +39,20 @@ Retrieve the properties of a specific directory setting object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaDirectorySetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySetting -DirectorySettingId $directorySettingId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaDirectorySetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaDirectorySetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySetting
 ```
+This example shows how to use the Get-MgBetaDirectorySetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

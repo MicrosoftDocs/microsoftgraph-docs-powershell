@@ -42,20 +42,28 @@ Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List all bundles in a drive
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveBundle -DriveId $driveId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Files
-```
+This example will list all bundles in a drive
 
-Get-MgBetaDriveBundle -DriveId $driveId -Filter "bundle/album ne null"
+### Example 2: List all photo albums in a drive
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+Get-MgBetaDriveBundle -DriveId $driveId -Filter "bundle/album ne null" 
+
+```
+This example will list all photo albums in a drive
+
 
 ## PARAMETERS
 

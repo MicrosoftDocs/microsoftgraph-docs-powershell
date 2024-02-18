@@ -36,11 +36,11 @@ Create a new attributeSet object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-attributesets-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	id = "Engineering"
@@ -49,6 +49,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryAttributeSet -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryAttributeSet Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,14 +35,18 @@ Read the user and organization userSettings object.To learn how to update the pr
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/usersettings-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserSetting -UserId $userId
+
+```
+This example shows how to use the Get-MgUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

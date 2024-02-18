@@ -36,13 +36,17 @@ Delete a registered device.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDevice -DeviceId $deviceId
+
+```
+This example shows how to use the Remove-MgDevice Cmdlet.
+
 
 ## PARAMETERS
 

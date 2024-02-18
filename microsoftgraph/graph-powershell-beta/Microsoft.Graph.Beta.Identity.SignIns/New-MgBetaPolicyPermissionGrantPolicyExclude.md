@@ -59,12 +59,11 @@ You do this by adding a permissionGrantConditionSet to the excludes collection o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-post-excludes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a permission grant policy exclude
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
-New-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000" | fl
-```
+New-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000" | fl 
 
 ClientApplicationIds                        : {all}
 ClientApplicationPublisherIds               : {all}
@@ -75,7 +74,11 @@ PermissionClassification                    : all
 PermissionType                              : application
 Permissions                                 : {00000000-0000-0000-0000-000000000000}
 ResourceApplication                         : 00000000-0000-0000-0000-000000000000
-AdditionalProperties                        : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('testtenant-sampleapp-permissions')/excludes/$entity\]}
+AdditionalProperties                        : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('testtenant-sampleapp-permissions')/excludes/$entity]}
+```
+
+This command creates a new permission grant policy exclude configuration for the specified permission grant policy in Azure AD.
+
 
 ## PARAMETERS
 

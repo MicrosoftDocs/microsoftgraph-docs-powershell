@@ -64,16 +64,6 @@ That rubric can be retrieved using GET /education/classes/{class-id}/assignments
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

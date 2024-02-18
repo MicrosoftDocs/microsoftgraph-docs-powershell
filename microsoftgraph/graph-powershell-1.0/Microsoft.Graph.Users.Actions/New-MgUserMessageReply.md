@@ -61,13 +61,14 @@ Alternatively, reply to a message in a single operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-createreply-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgUserMessageReply Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.
 New-MgUserMessageReply -UserId $userId -MessageId $messageId
 ```
+This example shows how to use the New-MgUserMessageReply Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
