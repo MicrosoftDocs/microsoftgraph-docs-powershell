@@ -17,14 +17,14 @@ The following entities support extension properties:
 ### GetExpanded (Default)
 ```
 Get-MgDirectoryObjectAvailableExtensionProperty [-AdditionalProperties <Hashtable>] [-IsSyncedFromOnPremises]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDirectoryObjectAvailableExtensionProperty
  -BodyParameter <IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,6 +80,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -IsSyncedFromOnPremises
 .
 
@@ -91,6 +106,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -132,21 +162,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsSyncedFromOnPremises \<Boolean?\>\]:
+BODYPARAMETER `<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsSyncedFromOnPremises <Boolean?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
+
+
 
 

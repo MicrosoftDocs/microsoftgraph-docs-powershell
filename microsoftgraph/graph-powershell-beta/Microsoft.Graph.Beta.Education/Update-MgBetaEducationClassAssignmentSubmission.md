@@ -23,14 +23,15 @@ Update-MgBetaEducationClassAssignmentSubmission -EducationAssignmentId <String> 
  [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
- -EducationSubmissionId <String> -BodyParameter <IMicrosoftGraphEducationSubmission> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -EducationSubmissionId <String> -BodyParameter <IMicrosoftGraphEducationSubmission> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,13 +42,15 @@ Update-MgBetaEducationClassAssignmentSubmission -InputObject <IEducationIdentity
  [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClassAssignmentSubmission -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSubmission> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSubmission> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -147,6 +150,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -187,6 +205,21 @@ To construct, see NOTES section for OUTCOMES properties and create a hash table.
 Type: IMicrosoftGraphEducationOutcome[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -359,202 +392,206 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphEducationSubmission\>: educationSubmission
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphEducationSubmission>`: educationSubmission
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExcusedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[ExcusedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Outcomes \<IMicrosoftGraphEducationOutcome\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: The moment in time when the resource was last modified.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
-  \[ReassignedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Recipient \<IMicrosoftGraphEducationSubmissionRecipient\>\]: educationSubmissionRecipient
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Resources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AssignmentResourceUrl \<String\>\]: Pointer to the assignment from which the resource was copied.
+    - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-    \[DependentResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-    \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[DisplayName \<String\>\]: Display name of resource.
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[ReturnedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Status \<String\>\]: educationSubmissionStatus
-  \[SubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[SubmittedResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-  \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    - `[DependentResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+    - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: Display name of resource.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Status <String>]`: educationSubmissionStatus
+  - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+  - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-EXCUSEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+EXCUSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
-  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
-  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
-  \[EducationClassId \<String\>\]: The unique identifier of educationClass
-  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
-  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
-  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
-  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
-  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
-  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
-  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
-  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
-  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
-  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+  - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
+  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+  - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-OUTCOMES \<IMicrosoftGraphEducationOutcome\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+OUTCOMES <IMicrosoftGraphEducationOutcome- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[LastModifiedDateTime \<DateTime?\>\]: The moment in time when the resource was last modified.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 
-REASSIGNEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+REASSIGNEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES \<IMicrosoftGraphEducationSubmissionResource\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+RESOURCES <IMicrosoftGraphEducationSubmissionResource- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AssignmentResourceUrl \<String\>\]: Pointer to the assignment from which the resource was copied.
+  - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-  \[DependentResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-  \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+  - `[DependentResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[DisplayName \<String\>\]: Display name of resource.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: Display name of resource.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-RETURNEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+RETURNEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBMITTEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+SUBMITTEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBMITTEDRESOURCES \<IMicrosoftGraphEducationSubmissionResource\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AssignmentResourceUrl \<String\>\]: Pointer to the assignment from which the resource was copied.
+  - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-  \[DependentResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-  \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+  - `[DependentResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[DisplayName \<String\>\]: Display name of resource.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: Display name of resource.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-UNSUBMITTEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+UNSUBMITTEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmission)
+
+
 
 
 

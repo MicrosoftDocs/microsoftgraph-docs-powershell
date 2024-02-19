@@ -20,14 +20,14 @@ Named locations can be either ipNamedLocation or countryNamedLocation objects.
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityConditionalAccessNamedLocation [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -179,6 +194,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -224,24 +254,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphNamedLocation\>: namedLocation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphNamedLocation>`: namedLocation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[DisplayName \<String\>\]: Human-readable name of the location.
-  \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time.
+  - `[DisplayName <String>]`: Human-readable name of the location.
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
@@ -249,5 +281,7 @@ Read-only.
 [New-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
+
+
 
 

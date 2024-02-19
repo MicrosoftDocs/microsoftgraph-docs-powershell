@@ -15,39 +15,45 @@ Invoke action applyHold
 ### ApplyExpanded (Default)
 ```
 Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -CaseId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Apply1
 ```
 Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -CaseId <String>
  -BodyParameter <IPaths18Kl3FpComplianceEdiscoveryCasesCaseIdNoncustodialdatasourcesMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Apply
 ```
 Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -CaseId <String>
- -NoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -NoncustodialDataSourceId <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentityExpanded
 ```
 Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity1
 ```
 Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IComplianceIdentity>
  -BodyParameter <IPaths18Kl3FpComplianceEdiscoveryCasesCaseIdNoncustodialdatasourcesMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
-Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IComplianceIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IComplianceIdentity>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -98,6 +104,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -162,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -200,41 +236,45 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Kl3FpComplianceEdiscoveryCasesCaseIdNoncustodialdatasourcesMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths18Kl3FpComplianceEdiscoveryCasesCaseIdNoncustodialdatasourcesMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Ids \<String\[\]\>\]: 
+BODYPARAMETER `<IPaths18Kl3FpComplianceEdiscoveryCasesCaseIdNoncustodialdatasourcesMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Ids <String- `[]`>]`: 
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[CaseId \<String\>\]: The unique identifier of case
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CustodianId \<String\>\]: The unique identifier of custodian
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
-  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
-  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
-  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TagId \<String\>\]: The unique identifier of tag
-  \[TagId1 \<String\>\]: The unique identifier of tag
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseId <String>]`: The unique identifier of case
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CustodianId <String>]`: The unique identifier of custodian
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[LegalHoldId <String>]`: The unique identifier of legalHold
+  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
+  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
+  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TagId <String>]`: The unique identifier of tag
+  - `[TagId1 <String>]`: The unique identifier of tag
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasenoncustodialdatasourcehold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasenoncustodialdatasourcehold)
+
+
 
 
 

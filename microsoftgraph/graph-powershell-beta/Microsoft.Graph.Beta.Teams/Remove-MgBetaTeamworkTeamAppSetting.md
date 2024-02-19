@@ -16,13 +16,29 @@ Delete navigation property teamsAppSettings for teamwork
 ## SYNTAX
 
 ```
-Remove-MgBetaTeamworkTeamAppSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaTeamworkTeamAppSetting [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property teamsAppSettings for teamwork
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -50,6 +66,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -90,15 +121,19 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 [Remove-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamappsetting)
+
+
 
 
 

@@ -15,13 +15,14 @@ Create new navigation property to outboundSharedUserProfiles for directory
 ### CreateExpanded (Default)
 ```
 New-MgBetaDirectoryOutboundSharedUserProfile [-AdditionalProperties <Hashtable>]
- [-Tenants <IMicrosoftGraphTenantReference[]>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tenants <IMicrosoftGraphTenantReference[]>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryOutboundSharedUserProfile -BodyParameter <IMicrosoftGraphOutboundSharedUserProfile>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,6 +58,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -130,34 +161,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphOutboundSharedUserProfile\>: outboundSharedUserProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Tenants \<IMicrosoftGraphTenantReference\[\]\>\]: The collection of external Microsoft Entra tenants that the user has shared profile data with.
+BODYPARAMETER `<IMicrosoftGraphOutboundSharedUserProfile>`: outboundSharedUserProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Tenants <IMicrosoftGraphTenantReference- `[]`>]`: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-    \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
+    - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
-  \[UserId \<String\>\]: The object id of the external user.
+  - `[UserId <String>]`: The object id of the external user.
 Read-only.
 
-TENANTS \<IMicrosoftGraphTenantReference\[\]\>: The collection of external Microsoft Entra tenants that the user has shared profile data with.
+TENANTS <IMicrosoftGraphTenantReference- `[]`>: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-  \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
+  - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile)
+
+
 
 
 

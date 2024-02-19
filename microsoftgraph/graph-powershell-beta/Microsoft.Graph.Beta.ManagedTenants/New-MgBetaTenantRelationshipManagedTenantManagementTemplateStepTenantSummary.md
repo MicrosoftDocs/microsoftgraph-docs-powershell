@@ -21,14 +21,15 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-ManagementTemplateDisplayName <String>] [-ManagementTemplateId <String>]
  [-ManagementTemplateStepDisplayName <String>] [-ManagementTemplateStepId <String>]
- [-NotCompliantTenantsCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotCompliantTenantsCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -139,6 +140,21 @@ Required: False
 Position: Named
 Default value: 0
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -308,6 +324,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -345,38 +376,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary\>: managementTemplateStepTenantSummary
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>`: managementTemplateStepTenantSummary
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AssignedTenantsCount \<Int32?\>\]: 
-  \[CompliantTenantsCount \<Int32?\>\]: 
-  \[CreatedByUserId \<String\>\]: 
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[DismissedTenantsCount \<Int32?\>\]: 
-  \[IneligibleTenantsCount \<Int32?\>\]: 
-  \[LastActionByUserId \<String\>\]: 
-  \[LastActionDateTime \<DateTime?\>\]: 
-  \[ManagementTemplateCollectionDisplayName \<String\>\]: 
-  \[ManagementTemplateCollectionId \<String\>\]: 
-  \[ManagementTemplateDisplayName \<String\>\]: 
-  \[ManagementTemplateId \<String\>\]: 
-  \[ManagementTemplateStepDisplayName \<String\>\]: 
-  \[ManagementTemplateStepId \<String\>\]: 
-  \[NotCompliantTenantsCount \<Int32?\>\]:
+  - `[AssignedTenantsCount <Int32?>]`: 
+  - `[CompliantTenantsCount <Int32?>]`: 
+  - `[CreatedByUserId <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[DismissedTenantsCount <Int32?>]`: 
+  - `[IneligibleTenantsCount <Int32?>]`: 
+  - `[LastActionByUserId <String>]`: 
+  - `[LastActionDateTime <DateTime?>]`: 
+  - `[ManagementTemplateCollectionDisplayName <String>]`: 
+  - `[ManagementTemplateCollectionId <String>]`: 
+  - `[ManagementTemplateDisplayName <String>]`: 
+  - `[ManagementTemplateId <String>]`: 
+  - `[ManagementTemplateStepDisplayName <String>]`: 
+  - `[ManagementTemplateStepId <String>]`: 
+  - `[NotCompliantTenantsCount <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary)
+
+
 
 
 

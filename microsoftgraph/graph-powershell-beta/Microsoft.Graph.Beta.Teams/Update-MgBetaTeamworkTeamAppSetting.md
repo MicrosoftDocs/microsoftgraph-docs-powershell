@@ -19,13 +19,13 @@ Update the properties of a teamsAppSettings object.
 ```
 Update-MgBetaTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-AllowUserRequestsForAppAccess]
  [-Id <String>] [-IsChatResourceSpecificConsentEnabled] [-IsUserPersonalScopeResourceSpecificConsentEnabled]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -113,6 +113,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -163,6 +178,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -200,24 +230,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphTeamsAppSettings\>: teamsAppSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllowUserRequestsForAppAccess \<Boolean?\>\]: Indicates whether users are allowed to request access to the unavailable Teams apps.
-  \[IsChatResourceSpecificConsentEnabled \<Boolean?\>\]: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant.
+  - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether users are allowed to request access to the unavailable Teams apps.
+  - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings.
 False blocks the installation of any Teams app that requires resource-specific permissions in a chat or a meeting.
-  \[IsUserPersonalScopeResourceSpecificConsentEnabled \<Boolean?\>\]: Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant.
+  - `[IsUserPersonalScopeResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
@@ -225,5 +257,7 @@ False blocks the installation of any Teams app that requires resource-specific p
 [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
+
+
 
 

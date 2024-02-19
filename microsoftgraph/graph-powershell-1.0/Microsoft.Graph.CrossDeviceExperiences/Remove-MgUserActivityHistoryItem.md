@@ -18,13 +18,15 @@ Delete navigation property historyItems for users
 ### Delete (Default)
 ```
 Remove-MgUserActivityHistoryItem -ActivityHistoryItemId <String> -UserActivityId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,6 +46,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -89,6 +106,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,24 +192,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
-  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
-  \[UserActivityId \<String\>\]: The unique identifier of userActivity
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
+  - `[UserActivityId <String>]`: The unique identifier of userActivity
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivityhistoryitem)
+
+
 
 
 

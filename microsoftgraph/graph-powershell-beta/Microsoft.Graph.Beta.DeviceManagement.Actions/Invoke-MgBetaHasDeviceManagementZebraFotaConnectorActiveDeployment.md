@@ -13,13 +13,44 @@ Invoke action hasActiveDeployments
 ## SYNTAX
 
 ```
-Invoke-MgBetaHasDeviceManagementZebraFotaConnectorActiveDeployment [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaHasDeviceManagementZebraFotaConnectorActiveDeployment [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action hasActiveDeployments
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
@@ -57,14 +88,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementzebrafotaconnectoractivedeployment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementzebrafotaconnectoractivedeployment)
+
+
 
 
 

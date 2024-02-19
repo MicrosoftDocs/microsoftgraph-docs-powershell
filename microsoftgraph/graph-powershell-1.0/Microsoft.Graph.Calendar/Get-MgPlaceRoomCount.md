@@ -17,13 +17,14 @@ Get the number of the resource
 
 ### Get (Default)
 ```
-Get-MgPlaceRoomCount -PlaceId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgPlaceRoomCount -PlaceId <String> [-Filter <String>] [-Search <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgPlaceRoomCount -InputObject <ICalendarIdentity> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,6 +44,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -77,6 +93,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -98,8 +129,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -107,23 +140,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[RoomId \<String\>\]: The unique identifier of room
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaPlaceRoomCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceRoomCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceroomcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceroomcount)
+
+
 
 
 

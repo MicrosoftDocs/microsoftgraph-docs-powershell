@@ -21,14 +21,16 @@ You can dismiss up to 60 service principal accounts in one request.
 ### DismissExpanded (Default)
 ```
 Invoke-MgBetaDismissRiskyServicePrincipal [-AdditionalProperties <Hashtable>] [-ServicePrincipalIds <String[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Dismiss
 ```
 Invoke-MgBetaDismissRiskyServicePrincipal
  -BodyParameter <IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -86,6 +88,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
@@ -97,6 +114,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -153,22 +185,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ServicePrincipalIds \<String\[\]\>\]:
+BODYPARAMETER `<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ServicePrincipalIds <String- `[]`>]`:
 
 ## RELATED LINKS
 [Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
+
+
 
 

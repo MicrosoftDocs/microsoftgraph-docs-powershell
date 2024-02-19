@@ -65,6 +65,9 @@ Locale: en-US
 ### [Get-MgGroupOnenoteSectionPage](Get-MgGroupOnenoteSectionPage.md)
 {{ Fill in the Description }}
 
+### [Get-MgSiteGetByPathOnenote](Get-MgSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
 ### [Get-MgSiteOnenoteNotebook](Get-MgSiteOnenoteNotebook.md)
 {{ Fill in the Description }}
 
@@ -257,6 +260,9 @@ Locale: en-US
 ### [Remove-MgGroupOnenoteSectionGroup](Remove-MgGroupOnenoteSectionGroup.md)
 {{ Fill in the Description }}
 
+### [Remove-MgSiteGetByPathOnenote](Remove-MgSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgSiteOnenoteNotebook](Remove-MgSiteOnenoteNotebook.md)
 {{ Fill in the Description }}
 
@@ -318,6 +324,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgGroupOnenoteSectionGroup](Update-MgGroupOnenoteSectionGroup.md)
+{{ Fill in the Description }}
+
+### [Update-MgSiteGetByPathOnenote](Update-MgSiteGetByPathOnenote.md)
 {{ Fill in the Description }}
 
 ### [Update-MgSiteOnenoteNotebook](Update-MgSiteOnenoteNotebook.md)

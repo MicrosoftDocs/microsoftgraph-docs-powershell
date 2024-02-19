@@ -16,13 +16,14 @@ Create new navigation property to roleScopeTags for deviceManagement
 ```
 New-MgBetaDeviceManagementRoleScopeTag [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,6 +108,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -115,6 +131,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -160,40 +191,44 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTag
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTag
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphRoleScopeTagAutoAssignment\[\]\>: The list of assignments for this Role Scope Tag.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphRoleScopeTagAutoAssignment- `[]`>: The list of assignments for this Role Scope Tag.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphRoleScopeTag\>: Role Scope Tag
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphRoleScopeTag>`: Role Scope Tag
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphRoleScopeTagAutoAssignment\[\]\>\]: The list of assignments for this Role Scope Tag.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment- `[]`>]`: The list of assignments for this Role Scope Tag.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[Description \<String\>\]: Description of the Role Scope Tag.
-  \[DisplayName \<String\>\]: The display or friendly name of the Role Scope Tag.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[Description <String>]`: Description of the Role Scope Tag.
+  - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementrolescopetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementrolescopetag)
+
+
 
 
 

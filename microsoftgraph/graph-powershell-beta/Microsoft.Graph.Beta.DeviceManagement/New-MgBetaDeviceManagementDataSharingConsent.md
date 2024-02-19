@@ -16,13 +16,14 @@ Create new navigation property to dataSharingConsents for deviceManagement
 ```
 New-MgBetaDeviceManagementDataSharingConsent [-AdditionalProperties <Hashtable>] [-GrantDateTime <DateTime>]
  [-Granted] [-GrantedByUpn <String>] [-GrantedByUserId <String>] [-Id <String>] [-ServiceDisplayName <String>]
- [-TermsUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TermsUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -121,6 +122,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -129,6 +145,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -204,29 +235,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataSharingConsent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataSharingConsent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDataSharingConsent\>: Data sharing consent information.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDataSharingConsent>`: Data sharing consent information.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[GrantDateTime \<DateTime?\>\]: The time consent was granted for this account
-  \[Granted \<Boolean?\>\]: The granted state for the data sharing consent
-  \[GrantedByUpn \<String\>\]: The Upn of the user that granted consent for this account
-  \[GrantedByUserId \<String\>\]: The UserId of the user that granted consent for this account
-  \[ServiceDisplayName \<String\>\]: The display name of the service work flow
-  \[TermsUrl \<String\>\]: The TermsUrl for the data sharing consent
+  - `[GrantDateTime <DateTime?>]`: The time consent was granted for this account
+  - `[Granted <Boolean?>]`: The granted state for the data sharing consent
+  - `[GrantedByUpn <String>]`: The Upn of the user that granted consent for this account
+  - `[GrantedByUserId <String>]`: The UserId of the user that granted consent for this account
+  - `[ServiceDisplayName <String>]`: The display name of the service work flow
+  - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdatasharingconsent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdatasharingconsent)
+
+
 
 
 

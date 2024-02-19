@@ -29,13 +29,13 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 Update-MgSchemaExtension -SchemaExtensionId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,13 +43,14 @@ Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftG
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity>
- -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSchemaExtension> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,6 +68,7 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
@@ -92,10 +94,9 @@ $params = @{
 }
 
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgSchemaExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -147,6 +148,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -193,6 +209,21 @@ Supports $filter (eq).
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -305,22 +336,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
 ### Microsoft.Graph.PowerShell.Models.ISchemaExtensionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSchemaExtension\>: schemaExtension
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Description for the schema extension.
+  - `[Description <String>]`: Description for the schema extension.
 Supports $filter (eq).
-  \[Owner \<String\>\]: The appId of the application that is the owner of the schema extension.
+  - `[Owner <String>]`: The appId of the application that is the owner of the schema extension.
 The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Microsoft Entra ID as follows: In delegated access: The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition. 
 If the signed-in user isn't the owner of the calling app, they must explicitly specify the owner property, and assign it the appId of an app that they own.
 In app-only access:  The owner property isn't required in the request body.
@@ -328,25 +361,25 @@ Instead, the calling app is assigned ownership of the schema extension.
 So, for example, if creating a new schema extension definition using Graph Explorer, you must supply the owner property.
 Once set, this property is read-only and cannot be changed.
 Supports $filter (eq).
-  \[Properties \<IMicrosoftGraphExtensionSchemaProperty\[\]\>\]: The collection of property names and types that make up the schema extension definition.
-    \[Name \<String\>\]: The name of the strongly typed property defined as part of a schema extension.
-    \[Type \<String\>\]: The type of the property that is defined as part of a schema extension. 
+  - `[Properties <IMicrosoftGraphExtensionSchemaProperty- `[]`>]`: The collection of property names and types that make up the schema extension definition.
+    - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
+    - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
 Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table in the Supported property data types section for more details.
-  \[Status \<String\>\]: The lifecycle state of the schema extension.
+  - `[Status <String>]`: The lifecycle state of the schema extension.
 Possible states are InDevelopment, Available, and Deprecated.
 Automatically set to InDevelopment on creation.
 For more information about the possible state transitions and behaviors, see Schema extensions lifecycle.
 Supports $filter (eq).
-  \[TargetTypes \<String\[\]\>\]: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
+  - `[TargetTypes <String- `[]`>]`: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
 Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
-INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
-  \[SchemaExtensionId \<String\>\]: The unique identifier of schemaExtension
+INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
+  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
-PROPERTIES \<IMicrosoftGraphExtensionSchemaProperty\[\]\>: The collection of property names and types that make up the schema extension definition.
-  \[Name \<String\>\]: The name of the strongly typed property defined as part of a schema extension.
-  \[Type \<String\>\]: The type of the property that is defined as part of a schema extension. 
+PROPERTIES <IMicrosoftGraphExtensionSchemaProperty- `[]`>: The collection of property names and types that make up the schema extension definition.
+  - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
+  - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
 Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table in the Supported property data types section for more details.
 
@@ -354,5 +387,7 @@ See the table in the Supported property data types section for more details.
 [Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension)
+
+
 
 

@@ -18,14 +18,14 @@ Get attendeeReport for the navigation property onlineMeetings from users
 
 ### Get (Default)
 ```
-Get-MgUserOnlineMeetingAttendeeReport -OnlineMeetingId <String> -UserId <String> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgUserOnlineMeetingAttendeeReport -OnlineMeetingId <String> -UserId <String> -OutFile <String>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,6 +49,21 @@ This example will fetch attendee report of a teams live event
 
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -111,6 +126,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -132,34 +162,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendeeReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingattendeereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingattendeereport)
+
+
 
 

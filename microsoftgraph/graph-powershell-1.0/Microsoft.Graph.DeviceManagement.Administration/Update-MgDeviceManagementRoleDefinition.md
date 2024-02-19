@@ -21,13 +21,14 @@ Update the properties of a deviceAndAppManagementRoleDefinition object.
 Update-MgDeviceManagementRoleDefinition -RoleDefinitionId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsBuiltIn]
  [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>] [-RolePermissions <IMicrosoftGraphRolePermission[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementRoleDefinition -RoleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRoleDefinition> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,13 +36,15 @@ Update-MgDeviceManagementRoleDefinition -RoleDefinitionId <String>
 Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsBuiltIn] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
- [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRoleDefinition> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -116,6 +119,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -160,6 +178,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -250,104 +283,108 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphRoleDefinition\>: The Role Definition resource.
+BODYPARAMETER `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Description of the Role definition.
-  \[DisplayName \<String\>\]: Display Name of the Role definition.
-  \[IsBuiltIn \<Boolean?\>\]: Type of Role.
+  - `[Description <String>]`: Description of the Role definition.
+  - `[DisplayName <String>]`: Display Name of the Role definition.
+  - `[IsBuiltIn <Boolean?>]`: Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
-  \[RoleAssignments \<IMicrosoftGraphRoleAssignment\[\]\>\]: List of Role assignments for this role definition.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[RoleAssignments <IMicrosoftGraphRoleAssignment- `[]`>]`: List of Role assignments for this role definition.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Description \<String\>\]: Description of the Role Assignment.
-    \[DisplayName \<String\>\]: The display or friendly name of the role Assignment.
-    \[ResourceScopes \<String\[\]\>\]: List of ids of role scope member security groups. 
+    - `[Description <String>]`: Description of the Role Assignment.
+    - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
+    - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
-    \[RoleDefinition \<IMicrosoftGraphRoleDefinition\>\]: The Role Definition resource.
+    - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-  \[RolePermissions \<IMicrosoftGraphRolePermission\[\]\>\]: List of Role Permissions this role is allowed to perform.
+  - `[RolePermissions <IMicrosoftGraphRolePermission- `[]`>]`: List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-    \[ResourceActions \<IMicrosoftGraphResourceAction\[\]\>\]: Resource Actions each containing a set of allowed and not allowed permissions.
-      \[AllowedResourceActions \<String\[\]\>\]: Allowed Actions
-      \[NotAllowedResourceActions \<String\[\]\>\]: Not Allowed Actions.
+    - `[ResourceActions <IMicrosoftGraphResourceAction- `[]`>]`: Resource Actions each containing a set of allowed and not allowed permissions.
+      - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
+      - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
-INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
-  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
-  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
-  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
-  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
-  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
-  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
-  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
-  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
-ROLEASSIGNMENTS \<IMicrosoftGraphRoleAssignment\[\]\>: List of Role assignments for this role definition.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment- `[]`>: List of Role assignments for this role definition.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Description of the Role Assignment.
-  \[DisplayName \<String\>\]: The display or friendly name of the role Assignment.
-  \[ResourceScopes \<String\[\]\>\]: List of ids of role scope member security groups. 
+  - `[Description <String>]`: Description of the Role Assignment.
+  - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
+  - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
-  \[RoleDefinition \<IMicrosoftGraphRoleDefinition\>\]: The Role Definition resource.
+  - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Description \<String\>\]: Description of the Role definition.
-    \[DisplayName \<String\>\]: Display Name of the Role definition.
-    \[IsBuiltIn \<Boolean?\>\]: Type of Role.
+    - `[Description <String>]`: Description of the Role definition.
+    - `[DisplayName <String>]`: Display Name of the Role definition.
+    - `[IsBuiltIn <Boolean?>]`: Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
-    \[RoleAssignments \<IMicrosoftGraphRoleAssignment\[\]\>\]: List of Role assignments for this role definition.
-    \[RolePermissions \<IMicrosoftGraphRolePermission\[\]\>\]: List of Role Permissions this role is allowed to perform.
+    - `[RoleAssignments <IMicrosoftGraphRoleAssignment- `[]`>]`: List of Role assignments for this role definition.
+    - `[RolePermissions <IMicrosoftGraphRolePermission- `[]`>]`: List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-      \[ResourceActions \<IMicrosoftGraphResourceAction\[\]\>\]: Resource Actions each containing a set of allowed and not allowed permissions.
-        \[AllowedResourceActions \<String\[\]\>\]: Allowed Actions
-        \[NotAllowedResourceActions \<String\[\]\>\]: Not Allowed Actions.
+      - `[ResourceActions <IMicrosoftGraphResourceAction- `[]`>]`: Resource Actions each containing a set of allowed and not allowed permissions.
+        - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
+        - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
-ROLEPERMISSIONS \<IMicrosoftGraphRolePermission\[\]\>: List of Role Permissions this role is allowed to perform.
+ROLEPERMISSIONS <IMicrosoftGraphRolePermission- `[]`>: List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-  \[ResourceActions \<IMicrosoftGraphResourceAction\[\]\>\]: Resource Actions each containing a set of allowed and not allowed permissions.
-    \[AllowedResourceActions \<String\[\]\>\]: Allowed Actions
-    \[NotAllowedResourceActions \<String\[\]\>\]: Not Allowed Actions.
+  - `[ResourceActions <IMicrosoftGraphResourceAction- `[]`>]`: Resource Actions each containing a set of allowed and not allowed permissions.
+    - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
+    - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
+
+
 
 
 

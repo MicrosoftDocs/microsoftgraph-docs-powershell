@@ -65,6 +65,9 @@ Locale: en-US
 ### [Get-MgBetaBusinessScenario](Get-MgBetaBusinessScenario.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaBusinessScenarioByUniqueName](Get-MgBetaBusinessScenarioByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaBusinessScenarioCount](Get-MgBetaBusinessScenarioCount.md)
 {{ Fill in the Description }}
 
@@ -122,6 +125,9 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventPresenterSession](Get-MgBetaVirtualEventPresenterSession.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventPresenterSessionByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaVirtualEventPresenterSessionCount](Get-MgBetaVirtualEventPresenterSessionCount.md)
 {{ Fill in the Description }}
 
@@ -138,6 +144,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionAttendanceReportCount](Get-MgBetaVirtualEventSessionAttendanceReportCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventSessionByJoinWebUrl](Get-MgBetaVirtualEventSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionCount](Get-MgBetaVirtualEventSessionCount.md)
@@ -182,6 +191,9 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventTownhallPresenterSession](Get-MgBetaVirtualEventTownhallPresenterSession.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaVirtualEventTownhallPresenterSessionCount](Get-MgBetaVirtualEventTownhallPresenterSessionCount.md)
 {{ Fill in the Description }}
 
@@ -198,6 +210,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportCount](Get-MgBetaVirtualEventTownhallSessionAttendanceReportCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionByJoinWebUrl](Get-MgBetaVirtualEventTownhallSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionCount](Get-MgBetaVirtualEventTownhallSessionCount.md)
@@ -242,6 +257,9 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventWebinarPresenterSession](Get-MgBetaVirtualEventWebinarPresenterSession.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventWebinarPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventWebinarPresenterSessionByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaVirtualEventWebinarPresenterSessionCount](Get-MgBetaVirtualEventWebinarPresenterSessionCount.md)
 {{ Fill in the Description }}
 
@@ -255,6 +273,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationSession](Get-MgBetaVirtualEventWebinarRegistrationSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarRegistrationSessionByJoinWebUrl](Get-MgBetaVirtualEventWebinarRegistrationSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationSessionCount](Get-MgBetaVirtualEventWebinarRegistrationSessionCount.md)
@@ -273,6 +294,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount](Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionCount](Get-MgBetaVirtualEventWebinarSessionCount.md)
@@ -407,6 +431,9 @@ Locale: en-US
 ### [Remove-MgBetaBusinessScenario](Remove-MgBetaBusinessScenario.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaBusinessScenarioByUniqueName](Remove-MgBetaBusinessScenarioByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaBusinessScenarioPlanner](Remove-MgBetaBusinessScenarioPlanner.md)
 {{ Fill in the Description }}
 
@@ -449,6 +476,9 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaVirtualEventSessionByJoinWebUrl](Remove-MgBetaVirtualEventSessionByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaVirtualEventTownhall](Remove-MgBetaVirtualEventTownhall.md)
 {{ Fill in the Description }}
 
@@ -462,6 +492,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaVirtualEventTownhallSessionByJoinWebUrl](Remove-MgBetaVirtualEventTownhallSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinar](Remove-MgBetaVirtualEventWebinar.md)
@@ -480,6 +513,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaVirtualEventPresenterProfilePhoto](Set-MgBetaVirtualEventPresenterProfilePhoto.md)
@@ -539,6 +575,9 @@ Locale: en-US
 ### [Update-MgBetaBusinessScenario](Update-MgBetaBusinessScenario.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaBusinessScenarioByUniqueName](Update-MgBetaBusinessScenarioByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaBusinessScenarioPlanner](Update-MgBetaBusinessScenarioPlanner.md)
 {{ Fill in the Description }}
 
@@ -581,6 +620,9 @@ Locale: en-US
 ### [Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaVirtualEventSessionByJoinWebUrl](Update-MgBetaVirtualEventSessionByJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaVirtualEventTownhall](Update-MgBetaVirtualEventTownhall.md)
 {{ Fill in the Description }}
 
@@ -594,6 +636,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl](Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinar](Update-MgBetaVirtualEventWebinar.md)
@@ -612,6 +657,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 

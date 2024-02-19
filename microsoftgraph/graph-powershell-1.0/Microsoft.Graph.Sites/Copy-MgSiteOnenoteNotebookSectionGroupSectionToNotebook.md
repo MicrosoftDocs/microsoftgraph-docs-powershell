@@ -20,8 +20,8 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ```
 Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook -NotebookId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>] [-GroupId <String>]
- [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -29,21 +29,22 @@ Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook -NotebookId <String> -On
 Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook -NotebookId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -SiteId <String>
  -BodyParameter <IPathsD1OdemSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook [-SiteId <String>] -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteCollectionId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook -InputObject <ISitesIdentity>
  -BodyParameter <IPathsD1OdemSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -97,6 +98,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -155,6 +171,21 @@ Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -286,67 +317,72 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPathsD1OdemSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsD1OdemSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GroupId \<String\>\]: 
-  \[Id \<String\>\]: 
-  \[RenameAs \<String\>\]: 
-  \[SiteCollectionId \<String\>\]: 
-  \[SiteId \<String\>\]: 
+BODYPARAMETER `<IPathsD1OdemSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[GroupId <String>]`: 
+  - `[Id <String>]`: 
+  - `[RenameAs <String>]`: 
+  - `[SiteCollectionId <String>]`: 
+  - `[SiteId <String>]`: 
 
-INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
-  \[BaseItemId \<String\>\]: The unique identifier of baseItem
-  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
-  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[GroupId1 \<String\>\]: The unique identifier of group
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ItemActivityId \<String\>\]: The unique identifier of itemActivity
-  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
-  \[ListId \<String\>\]: The unique identifier of list
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[RelationId \<String\>\]: The unique identifier of relation
-  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
-  \[SetId \<String\>\]: The unique identifier of set
-  \[SetId1 \<String\>\]: The unique identifier of set
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[SiteId1 \<String\>\]: The unique identifier of site
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[StoreId \<String\>\]: The unique identifier of store
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TermId \<String\>\]: The unique identifier of term
-  \[TermId1 \<String\>\]: The unique identifier of term
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+  - `[BaseItemId <String>]`: The unique identifier of baseItem
+  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[GroupId1 <String>]`: The unique identifier of group
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[ListId <String>]`: The unique identifier of list
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[Path1 <String>]`: Usage: path='{path1}'
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RelationId <String>]`: The unique identifier of relation
+  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+  - `[SetId <String>]`: The unique identifier of set
+  - `[SetId1 <String>]`: The unique identifier of set
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[SiteId1 <String>]`: The unique identifier of site
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StoreId <String>]`: The unique identifier of store
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TermId <String>]`: The unique identifier of term
+  - `[TermId1 <String>]`: The unique identifier of term
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectiongroupsectiontonotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectiongroupsectiontonotebook)
+
+
 
 
 

@@ -593,6 +593,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementManagedDeviceCategory](Get-MgBetaDeviceManagementManagedDeviceCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementManagedDeviceCleanupRule](Get-MgBetaDeviceManagementManagedDeviceCleanupRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementManagedDeviceCleanupRuleCount](Get-MgBetaDeviceManagementManagedDeviceCleanupRuleCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
 {{ Fill in the Description }}
 
@@ -1436,6 +1442,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaDeviceManagementManagedDeviceCleanupRule](New-MgBetaDeviceManagementManagedDeviceCleanupRule.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
 {{ Fill in the Description }}
 
@@ -1998,6 +2007,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceCategory](Remove-MgBetaDeviceManagementManagedDeviceCategory.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDeviceManagementManagedDeviceCleanupRule](Remove-MgBetaDeviceManagementManagedDeviceCleanupRule.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Remove-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
@@ -2589,6 +2601,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceCategory](Update-MgBetaDeviceManagementManagedDeviceCategory.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaDeviceManagementManagedDeviceCleanupRule](Update-MgBetaDeviceManagementManagedDeviceCleanupRule.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Update-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)

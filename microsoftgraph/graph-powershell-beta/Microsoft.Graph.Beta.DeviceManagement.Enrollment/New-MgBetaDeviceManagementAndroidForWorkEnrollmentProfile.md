@@ -18,13 +18,15 @@ New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>] [-TokenExpirationDateTime <DateTime>]
- [-TokenValue <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenValue <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile
- -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -138,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -161,6 +178,21 @@ Date time the enrollment profile was last modified.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -267,41 +299,45 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAndroidForWorkEnrollmentProfile\>: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAndroidForWorkEnrollmentProfile>`: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AccountId \<String\>\]: Tenant GUID the enrollment profile belongs to.
-  \[CreatedDateTime \<DateTime?\>\]: Date time the enrollment profile was created.
-  \[Description \<String\>\]: Description for the enrollment profile.
-  \[DisplayName \<String\>\]: Display name for the enrollment profile.
-  \[EnrolledDeviceCount \<Int32?\>\]: Total number of Android devices that have enrolled using this enrollment profile.
-  \[LastModifiedDateTime \<DateTime?\>\]: Date time the enrollment profile was last modified.
-  \[QrCodeContent \<String\>\]: String used to generate a QR code for the token.
-  \[QrCodeImage \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Type \<String\>\]: Indicates the content mime type.
-    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
-  \[TokenExpirationDateTime \<DateTime?\>\]: Date time the most recently created token will expire.
-  \[TokenValue \<String\>\]: Value of the most recently created token for this enrollment profile.
+  - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
+  - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.
+  - `[Description <String>]`: Description for the enrollment profile.
+  - `[DisplayName <String>]`: Display name for the enrollment profile.
+  - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
+  - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
+  - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
+  - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: Indicates the content mime type.
+    - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
+  - `[TokenExpirationDateTime <DateTime?>]`: Date time the most recently created token will expire.
+  - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
 
-QRCODEIMAGE \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Type \<String\>\]: Indicates the content mime type.
-  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: Indicates the content mime type.
+  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroidforworkenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroidforworkenrollmentprofile)
+
+
 
 
 

@@ -18,8 +18,8 @@ Retrieve a list of calendars belonging to a calendar group.
 
 ```
 Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -101,6 +101,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
@@ -112,6 +127,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -196,14 +226,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendar
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar)
+
+
 
 

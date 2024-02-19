@@ -18,14 +18,16 @@ Update media content for the navigation property hostedContents in teamwork
 ### Set (Default)
 ```
 Set-MgTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String> -ChatMessageHostedContentId <String>
- -ChatMessageId <String> -DeletedTeamId <String> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -ChatMessageId <String> -DeletedTeamId <String> [-Data <Stream>] -InFile <String> [-ContentType <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-Data <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,6 +80,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ContentType
+ContentType Parameter
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Data
 .
 
@@ -105,6 +122,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -156,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -193,54 +240,59 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.IDictionary
 ### System.IO.Stream
+### System.String
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
-  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
-  \[ChannelId \<String\>\]: The unique identifier of channel
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
-  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
-  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
-  \[OpenShiftId \<String\>\]: The unique identifier of openShift
-  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
-  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
-  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
-  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
-  \[ShiftId \<String\>\]: The unique identifier of shift
-  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
-  \[TeamId \<String\>\]: The unique identifier of team
-  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
-  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
-  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
-  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
-  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
-  \[TimeOffId \<String\>\]: The unique identifier of timeOff
-  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
-  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
-  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
+  - `[ChannelId <String>]`: The unique identifier of channel
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
+  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
+  - `[OpenShiftId <String>]`: The unique identifier of openShift
+  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
+  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
+  - `[ShiftId <String>]`: The unique identifier of shift
+  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
+  - `[TeamId <String>]`: The unique identifier of team
+  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
+  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
+  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
+  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
+  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeOffId <String>]`: The unique identifier of timeOff
+  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
+  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
+  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
 [Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelmessagehostedcontent)
+
+
 
 
 

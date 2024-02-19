@@ -18,27 +18,29 @@ Update the navigation property members in external
 ### UpdateExpanded (Default)
 ```
 Update-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
- -IdentityId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Type <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -IdentityId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Type <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
- -IdentityId <String> -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -IdentityId <String> -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,6 +109,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -151,6 +168,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -207,33 +239,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphExternalConnectorsIdentity\>: identity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsIdentity>`: identity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Type \<String\>\]: identityType
+  - `[Type <String>]`: identityType
 
-INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
-  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
-  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
-  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
-  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
-  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
-  \[IdentityId \<String\>\]: The unique identifier of identity
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
+  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
+  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
+  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
+  - `[ExternalItemId <String>]`: The unique identifier of externalItem
+  - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
 [Update-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroupmember)
+
+
 
 
 

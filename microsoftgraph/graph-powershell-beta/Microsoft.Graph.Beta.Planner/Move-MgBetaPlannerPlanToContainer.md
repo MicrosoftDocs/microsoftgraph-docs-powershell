@@ -17,27 +17,29 @@ Planner plans can only be moved from a user container to a group container.
 ### MoveExpanded (Default)
 ```
 Move-MgBetaPlannerPlanToContainer -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
- [-Container <IMicrosoftGraphPlannerPlanContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Container <IMicrosoftGraphPlannerPlanContainer>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Move
 ```
 Move-MgBetaPlannerPlanToContainer -PlannerPlanId <String>
  -BodyParameter <IPathsXmyifhPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentityExpanded
 ```
 Move-MgBetaPlannerPlanToContainer -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-Container <IMicrosoftGraphPlannerPlanContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Container <IMicrosoftGraphPlannerPlanContainer>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
 Move-MgBetaPlannerPlanToContainer -InputObject <IPlannerIdentity>
  -BodyParameter <IPathsXmyifhPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -96,6 +98,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -121,6 +138,21 @@ Parameter Sets: MoveExpanded, Move
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -165,46 +197,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsXmyifhPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsXmyifhPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Container \<IMicrosoftGraphPlannerPlanContainer\>\]: plannerPlanContainer
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
+BODYPARAMETER `<IPathsXmyifhPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Container <IMicrosoftGraphPlannerPlanContainer>]`: plannerPlanContainer
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
-    \[Type \<String\>\]: plannerContainerType
-    \[Url \<String\>\]: The full canonical URL of the container.
-Optional.
-
-CONTAINER \<IMicrosoftGraphPlannerPlanContainer\>: plannerPlanContainer
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
-Optional.
-  \[Type \<String\>\]: plannerContainerType
-  \[Url \<String\>\]: The full canonical URL of the container.
+    - `[Type <String>]`: plannerContainerType
+    - `[Url <String>]`: The full canonical URL of the container.
 Optional.
 
-INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
-  \[PlannerDeltaId \<String\>\]: The unique identifier of plannerDelta
-  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
-  \[PlannerRosterId \<String\>\]: The unique identifier of plannerRoster
-  \[PlannerRosterMemberId \<String\>\]: The unique identifier of plannerRosterMember
-  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
-  \[UserId \<String\>\]: The unique identifier of user
+CONTAINER `<IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+Optional.
+  - `[Type <String>]`: plannerContainerType
+  - `[Url <String>]`: The full canonical URL of the container.
+Optional.
+
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer)
+
+
 
 
 

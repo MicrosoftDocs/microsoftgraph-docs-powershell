@@ -452,6 +452,12 @@ Locale: en-US
 ### [Send-MgUserMessage](Send-MgUserMessage.md)
 {{ Fill in the Description }}
 
+### [Send-MgUserOnlineMeetingVirtualAppointmentReminderSm](Send-MgUserOnlineMeetingVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgUserOnlineMeetingVirtualAppointmentSm](Send-MgUserOnlineMeetingVirtualAppointmentSm.md)
+{{ Fill in the Description }}
+
 ### [Send-MgUserTeamworkActivityNotification](Send-MgUserTeamworkActivityNotification.md)
 {{ Fill in the Description }}
 

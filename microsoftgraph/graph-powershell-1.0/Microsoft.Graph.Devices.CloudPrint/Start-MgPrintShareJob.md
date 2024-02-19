@@ -19,12 +19,14 @@ It will be printed after any existing pending jobs are completed, aborted, or ca
 
 ### Start (Default)
 ```
-Start-MgPrintShareJob -PrintJobId <String> -PrinterShareId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Start-MgPrintShareJob -PrintJobId <String> -PrinterShareId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
-Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,6 +37,21 @@ It will be printed after any existing pending jobs are completed, aborted, or ca
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-start-permissions.md)]
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -82,6 +99,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -119,34 +151,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJobStatus
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
-  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
-  \[PrintJobId \<String\>\]: The unique identifier of printJob
-  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
-  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
-  \[PrintServiceId \<String\>\]: The unique identifier of printService
-  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
-  \[PrintTaskId \<String\>\]: The unique identifier of printTask
-  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
-  \[PrinterId \<String\>\]: The unique identifier of printer
-  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
+  - `[PrintOperationId <String>]`: The unique identifier of printOperation
+  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+  - `[PrintServiceId <String>]`: The unique identifier of printService
+  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+  - `[PrintTaskId <String>]`: The unique identifier of printTask
+  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+  - `[PrinterId <String>]`: The unique identifier of printer
+  - `[PrinterShareId <String>]`: The unique identifier of printerShare
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintsharejob)
+
+
 
 
 

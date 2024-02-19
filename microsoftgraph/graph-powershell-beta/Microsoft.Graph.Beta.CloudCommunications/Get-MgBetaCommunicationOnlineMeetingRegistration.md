@@ -9,27 +9,28 @@ ms.prod: cloud-communications
 # Get-MgBetaCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingRegistration -OnlineMeetingId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalmeetingregistration-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -45,6 +46,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -79,6 +95,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -100,38 +131,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistration
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration)
+
+
 
 
 

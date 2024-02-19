@@ -28,15 +28,16 @@ To learn more about configuring naming policies, see Configure naming policy.
 ### ValidateExpanded (Default)
 ```
 Test-MgDirectoryRoleTemplateProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgDirectoryRoleTemplateProperty
  -BodyParameter <IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,24 +56,6 @@ To learn more about configuring naming policies, see Configure naming policy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	EntityType = "Group"
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgDirectoryObjectProperty -BodyParameter $params
-```
-This example shows how to use the Test-MgDirectoryRoleTemplateProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -137,6 +120,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -MailNickname
 .
 
@@ -182,6 +180,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -219,25 +232,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: 
-  \[EntityType \<String\>\]: 
-  \[MailNickname \<String\>\]: 
-  \[OnBehalfOfUserId \<String\>\]:
+BODYPARAMETER `<IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: 
+  - `[EntityType <String>]`: 
+  - `[MailNickname <String>]`: 
+  - `[OnBehalfOfUserId <String>]`:
 
 ## RELATED LINKS
 [Test-MgBetaDirectoryRoleTemplateProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryRoleTemplateProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty)
+
+
 
 

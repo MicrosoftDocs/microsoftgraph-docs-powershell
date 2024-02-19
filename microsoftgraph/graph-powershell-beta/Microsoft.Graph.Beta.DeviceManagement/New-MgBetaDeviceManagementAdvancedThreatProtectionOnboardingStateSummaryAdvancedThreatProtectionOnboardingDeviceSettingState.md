@@ -18,14 +18,15 @@ New-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvanced
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>]
  [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-PlatformType <DeviceType>] [-Setting <String>]
  [-SettingName <String>] [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>]
- [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
- -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -124,6 +125,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -147,6 +163,21 @@ Device type.
 Type: DeviceType
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -297,35 +328,39 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState\>: ATP onboarding State for a given device.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState>`: ATP onboarding State for a given device.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
-  \[DeviceId \<String\>\]: The Device Id that is being reported
-  \[DeviceModel \<String\>\]: The device model that is being reported
-  \[DeviceName \<String\>\]: The Device Name that is being reported
-  \[PlatformType \<DeviceType?\>\]: Device type.
-  \[Setting \<String\>\]: The setting class name and property name.
-  \[SettingName \<String\>\]: The Setting Name that is being reported
-  \[State \<String\>\]: complianceStatus
-  \[UserEmail \<String\>\]: The User email address that is being reported
-  \[UserId \<String\>\]: The user Id that is being reported
-  \[UserName \<String\>\]: The User Name that is being reported
-  \[UserPrincipalName \<String\>\]: The User PrincipalName that is being reported
+  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+  - `[DeviceId <String>]`: The Device Id that is being reported
+  - `[DeviceModel <String>]`: The device model that is being reported
+  - `[DeviceName <String>]`: The Device Name that is being reported
+  - `[PlatformType <DeviceType?>]`: Device type.
+  - `[Setting <String>]`: The setting class name and property name.
+  - `[SettingName <String>]`: The Setting Name that is being reported
+  - `[State <String>]`: complianceStatus
+  - `[UserEmail <String>]`: The User email address that is being reported
+  - `[UserId <String>]`: The user Id that is being reported
+  - `[UserName <String>]`: The User Name that is being reported
+  - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate)
+
+
 
 
 

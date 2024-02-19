@@ -19,54 +19,36 @@ Create new navigation property to attachments for admin
 ```
 New-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
- -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to attachments for admin
 
 ## EXAMPLES
-### Example 1: Get all attachments of a message in a collection
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-
-Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
-```
-This example shows how to use the New-MgBetaBetaServiceAnnouncementMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get a zip file of all attachments in stream for a message
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-
-Get-MgBetaServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
-```
-This example shows how to use the New-MgBetaBetaServiceAnnouncementMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -131,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -185,6 +182,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -261,34 +273,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphServiceAnnouncementAttachment\>: serviceAnnouncementAttachment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncementAttachment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<Byte\[\]\>\]: The attachment content.
-  \[ContentType \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[Name \<String\>\]: 
-  \[Size \<Int32?\>\]: 
+  - `[Content <Byte- `[]`>]`: The attachment content.
+  - `[ContentType <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Name <String>]`: 
+  - `[Size <Int32?>]`: 
 
-INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
-  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
-  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
-  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
-  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
+INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
 [New-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementmessageattachment)
+
+
 
 

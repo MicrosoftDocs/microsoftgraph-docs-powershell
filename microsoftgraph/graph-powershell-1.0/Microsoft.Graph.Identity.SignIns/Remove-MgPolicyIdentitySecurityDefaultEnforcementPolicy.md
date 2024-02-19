@@ -16,8 +16,8 @@ Delete navigation property identitySecurityDefaultsEnforcementPolicy for policie
 ## SYNTAX
 
 ```
-Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,6 +41,21 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -68,6 +83,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -108,14 +138,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyidentitysecuritydefaultenforcementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyidentitysecuritydefaultenforcementpolicy)
+
+
 
 

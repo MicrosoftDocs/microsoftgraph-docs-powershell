@@ -18,13 +18,15 @@ Invoke function reminderView
 ### View (Default)
 ```
 Invoke-MgViewUserReminder -EndDateTime <String> -StartDateTime <String> -UserId <String> [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ViewViaIdentity
 ```
 Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +79,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -90,6 +107,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -174,47 +206,51 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphReminder
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
-  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[EventId \<String\>\]: The unique identifier of event
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[Q \<String\>\]: Usage: q='{q}'
-  \[Skip \<Int32?\>\]: Usage: skip={skip}
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[Top \<Int32?\>\]: Usage: top={top}
-  \[User \<String\>\]: Usage: User='{User}'
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EventId <String>]`: The unique identifier of event
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[Skip <Int32?>]`: Usage: skip={skip}
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[Top <Int32?>]`: Usage: top={top}
+  - `[User <String>]`: Usage: User='{User}'
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Invoke-MgBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
+
+
 
 
 

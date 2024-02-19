@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport
 
 ## SYNOPSIS
-Invoke action getCloudPcRecommendationReports
+Get the device recommendation reports for Cloud PCs, such as the usage category report.
+The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
 
 ## SYNTAX
 
@@ -16,19 +18,25 @@ Invoke action getCloudPcRecommendationReports
 ```
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
- [-ReportName <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReportName <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -OutFile <String>
  -BodyParameter <IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getCloudPcRecommendationReports
+Get the device recommendation reports for Cloud PCs, such as the usage category report.
+The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getcloudpcrecommendationreports-permissions.md)]
 
 ## PARAMETERS
 
@@ -93,6 +101,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -OutFile
 Path to write output file to
 
@@ -119,6 +142,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -250,29 +288,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Filter \<String\>\]: 
-  \[GroupBy \<String\[\]\>\]: 
-  \[OrderBy \<String\[\]\>\]: 
-  \[ReportName \<String\>\]: cloudPcReportName
-  \[Search \<String\>\]: 
-  \[Select \<String\[\]\>\]: 
-  \[Skip \<Int32?\>\]: 
-  \[Top \<Int32?\>\]:
+BODYPARAMETER `<IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Filter <String>]`: 
+  - `[GroupBy <String- `[]`>]`: 
+  - `[OrderBy <String- `[]`>]`: 
+  - `[ReportName <String>]`: cloudPcReportName
+  - `[Search <String>]`: 
+  - `[Select <String- `[]`>]`: 
+  - `[Skip <Int32?>]`: 
+  - `[Top <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport)
+
+
 
 
 

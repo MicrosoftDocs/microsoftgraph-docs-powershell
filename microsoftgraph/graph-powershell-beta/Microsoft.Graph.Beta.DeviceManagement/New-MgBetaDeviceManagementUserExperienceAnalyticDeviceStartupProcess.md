@@ -19,14 +19,15 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses 
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-ManagedDeviceId <String>] [-ProcessName <String>] [-ProductName <String>]
- [-Publisher <String>] [-StartupImpactInMS <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Publisher <String>] [-StartupImpactInMS <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +60,21 @@ Parameter Sets: Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -126,6 +142,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -206,35 +237,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess\>: The user experience analytics device startup process details.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess>`: The user experience analytics device startup process details.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ManagedDeviceId \<String\>\]: The Intune device id of the device.
+  - `[ManagedDeviceId <String>]`: The Intune device id of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[ProcessName \<String\>\]: The name of the process.
+  - `[ProcessName <String>]`: The name of the process.
 Examples: outlook, excel.
 Supports: $select, $OrderBy.
 Read-only.
-  \[ProductName \<String\>\]: The product name of the process.
+  - `[ProductName <String>]`: The product name of the process.
 Examples: Microsoft Outlook, Microsoft Excel.
 Supports: $select, $OrderBy.
 Read-only.
-  \[Publisher \<String\>\]: The publisher of the process.
+  - `[Publisher <String>]`: The publisher of the process.
 Examples: Microsoft Corporation, Contoso Corp.
 Supports: $select, $OrderBy.
 Read-only.
-  \[StartupImpactInMS \<Int32?\>\]: The impact of startup process on device boot time in milliseconds.
+  - `[StartupImpactInMS <Int32?>]`: The impact of startup process on device boot time in milliseconds.
 Supports: $select, $OrderBy.
 Read-only.
 
@@ -242,6 +275,8 @@ Read-only.
 [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocess)
+
+
 
 
 

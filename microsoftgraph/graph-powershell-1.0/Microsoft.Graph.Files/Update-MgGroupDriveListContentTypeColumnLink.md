@@ -18,26 +18,29 @@ Update the navigation property columnLinks in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupDriveListContentTypeColumnLink -ColumnLinkId <String> -ContentTypeId <String> -DriveId <String>
- -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupDriveListContentTypeColumnLink -ColumnLinkId <String> -ContentTypeId <String> -DriveId <String>
- -GroupId <String> -BodyParameter <IMicrosoftGraphColumnLink> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -GroupId <String> -BodyParameter <IMicrosoftGraphColumnLink> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Name <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Name <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphColumnLink> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphColumnLink> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -136,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -183,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -221,51 +254,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphColumnLink\>: columnLink
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphColumnLink>`: columnLink
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Name \<String\>\]: The name of the column  in this content type.
+  - `[Name <String>]`: The name of the column  in this content type.
 
-INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
-  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
-  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[Q \<String\>\]: Usage: q='{q}'
-  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
-  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumnlink)
+
+
 
 
 

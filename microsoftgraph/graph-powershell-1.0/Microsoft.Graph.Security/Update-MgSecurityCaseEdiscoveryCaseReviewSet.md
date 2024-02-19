@@ -20,13 +20,14 @@ Update the navigation property reviewSets in security
 Update-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Id <String>] [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,13 +35,14 @@ Update-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -Ediscov
 Update-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Id <String>] [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -184,6 +201,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -241,131 +273,135 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSet
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSet
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityEdiscoveryReviewSet\>: ediscoveryReviewSet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewSet>`: ediscoveryReviewSet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Queries \<IMicrosoftGraphSecurityEdiscoveryReviewSetQuery\[\]\>\]: Represents queries within the review set.
-    \[ContentQuery \<String\>\]: 
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: 
-    \[Description \<String\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>]`: Represents queries within the review set.
+    - `[ContentQuery <String>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[ArticleId \<String\>\]: The unique identifier of article
-  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
-  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
-  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
-  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
-  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
-  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
-  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
-  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
-  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
-  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
-  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
-  \[HostId \<String\>\]: The unique identifier of host
-  \[HostPairId \<String\>\]: The unique identifier of hostPair
-  \[HostPortId \<String\>\]: The unique identifier of hostPort
-  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
-  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
-  \[IncidentId \<String\>\]: The unique identifier of incident
-  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
-  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
-  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
-  \[LandingPageId \<String\>\]: The unique identifier of landingPage
-  \[LoginPageId \<String\>\]: The unique identifier of loginPage
-  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
-  \[PayloadId \<String\>\]: The unique identifier of payload
-  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
-  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
-  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
-  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
-  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
-  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
-  \[SimulationId \<String\>\]: The unique identifier of simulation
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
-  \[SubdomainId \<String\>\]: The unique identifier of subdomain
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TrainingId \<String\>\]: The unique identifier of training
-  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
-  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
-  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
-  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
-  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+  - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
+  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+  - `[SimulationId <String>]`: The unique identifier of simulation
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-QUERIES \<IMicrosoftGraphSecurityEdiscoveryReviewSetQuery\[\]\>: Represents queries within the review set.
-  \[ContentQuery \<String\>\]: 
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+QUERIES <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery- `[]`>: Represents queries within the review set.
+  - `[ContentQuery <String>]`: 
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasereviewset)
+
+
 
 
 

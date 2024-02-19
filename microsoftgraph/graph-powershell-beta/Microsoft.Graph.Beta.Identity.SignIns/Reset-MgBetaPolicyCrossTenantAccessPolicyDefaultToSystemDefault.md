@@ -17,8 +17,8 @@ Reset any changes made to the default configuration in a cross-tenant access pol
 ## SYNTAX
 
 ```
-Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,6 +38,21 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ## PARAMETERS
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
@@ -49,6 +64,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -89,14 +119,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/reset-mgbetapolicycrosstenantaccesspolicydefaulttosystemdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/reset-mgbetapolicycrosstenantaccesspolicydefaulttosystemdefault)
+
+
 
 

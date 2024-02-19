@@ -15,15 +15,15 @@ Invoke action searchExistingIdentities
 ### SearchExpanded (Default)
 ```
 Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity [-AdditionalProperties <Hashtable>]
- [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Search
 ```
 Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity
  -BodyParameter <IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,6 +62,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -ImportedDeviceIdentities
 .
 To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
@@ -70,6 +85,21 @@ To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and crea
 Type: IMicrosoftGraphImportedDeviceIdentity[]
 Parameter Sets: SearchExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -115,44 +145,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ImportedDeviceIdentities \<IMicrosoftGraphImportedDeviceIdentity\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: Created Date Time of the device
-    \[Description \<String\>\]: The description of the device
-    \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
-    \[ImportedDeviceIdentifier \<String\>\]: Imported Device Identifier
-    \[ImportedDeviceIdentityType \<ImportedDeviceIdentityType?\>\]: importedDeviceIdentityType
-    \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
-    \[LastModifiedDateTime \<DateTime?\>\]: Last Modified DateTime of the description
-    \[Platform \<Platform?\>\]: platform
+    - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
+    - `[Description <String>]`: The description of the device
+    - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
+    - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
+    - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
+    - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
+    - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
+    - `[Platform <Platform?>]`: platform
 
-IMPORTEDDEVICEIDENTITIES \<IMicrosoftGraphImportedDeviceIdentity\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: Created Date Time of the device
-  \[Description \<String\>\]: The description of the device
-  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
-  \[ImportedDeviceIdentifier \<String\>\]: Imported Device Identifier
-  \[ImportedDeviceIdentityType \<ImportedDeviceIdentityType?\>\]: importedDeviceIdentityType
-  \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
-  \[LastModifiedDateTime \<DateTime?\>\]: Last Modified DateTime of the description
-  \[Platform \<Platform?\>\]: platform
+  - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
+  - `[Description <String>]`: The description of the device
+  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
+  - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
+  - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
+  - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
+  - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
+  - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity)
+
+
 
 
 

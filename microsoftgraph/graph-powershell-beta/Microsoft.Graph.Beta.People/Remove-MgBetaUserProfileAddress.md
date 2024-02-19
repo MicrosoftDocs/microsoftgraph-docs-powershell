@@ -15,14 +15,15 @@ Deletes an itemAddress object.
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserProfileAddress -ItemAddressId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserProfileAddress -ItemAddressId <String> -UserId <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,6 +42,21 @@ This example shows how to use the Remove-MgBetaUserProfileAddress Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -103,6 +119,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -155,41 +186,45 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
-  \[ActivityStatisticsId \<String\>\]: The unique identifier of activityStatistics
-  \[EducationalActivityId \<String\>\]: The unique identifier of educationalActivity
-  \[ItemAddressId \<String\>\]: The unique identifier of itemAddress
-  \[ItemEmailId \<String\>\]: The unique identifier of itemEmail
-  \[ItemPatentId \<String\>\]: The unique identifier of itemPatent
-  \[ItemPhoneId \<String\>\]: The unique identifier of itemPhone
-  \[ItemPublicationId \<String\>\]: The unique identifier of itemPublication
-  \[LanguageProficiencyId \<String\>\]: The unique identifier of languageProficiency
-  \[PersonAnnotationId \<String\>\]: The unique identifier of personAnnotation
-  \[PersonAnnualEventId \<String\>\]: The unique identifier of personAnnualEvent
-  \[PersonAwardId \<String\>\]: The unique identifier of personAward
-  \[PersonCertificationId \<String\>\]: The unique identifier of personCertification
-  \[PersonId \<String\>\]: The unique identifier of person
-  \[PersonInterestId \<String\>\]: The unique identifier of personInterest
-  \[PersonNameId \<String\>\]: The unique identifier of personName
-  \[PersonWebsiteId \<String\>\]: The unique identifier of personWebsite
-  \[ProjectParticipationId \<String\>\]: The unique identifier of projectParticipation
-  \[SkillProficiencyId \<String\>\]: The unique identifier of skillProficiency
-  \[UserAccountInformationId \<String\>\]: The unique identifier of userAccountInformation
-  \[UserId \<String\>\]: The unique identifier of user
-  \[WebAccountId \<String\>\]: The unique identifier of webAccount
-  \[WorkPositionId \<String\>\]: The unique identifier of workPosition
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+  - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
+  - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
+  - `[ItemAddressId <String>]`: The unique identifier of itemAddress
+  - `[ItemEmailId <String>]`: The unique identifier of itemEmail
+  - `[ItemPatentId <String>]`: The unique identifier of itemPatent
+  - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
+  - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
+  - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
+  - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
+  - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
+  - `[PersonAwardId <String>]`: The unique identifier of personAward
+  - `[PersonCertificationId <String>]`: The unique identifier of personCertification
+  - `[PersonId <String>]`: The unique identifier of person
+  - `[PersonInterestId <String>]`: The unique identifier of personInterest
+  - `[PersonNameId <String>]`: The unique identifier of personName
+  - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
+  - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
+  - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
+  - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
+  - `[UserId <String>]`: The unique identifier of user
+  - `[WebAccountId <String>]`: The unique identifier of webAccount
+  - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress)
+
+
 
 

@@ -18,14 +18,16 @@ For details, see Export documents from a review set in Advanced eDiscovery.
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Export
 ```
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <String>
  -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
@@ -33,14 +35,16 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <St
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
 ```
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
  -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -185,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -227,6 +246,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -284,45 +318,49 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AzureBlobContainer \<String\>\]: 
-  \[AzureBlobToken \<String\>\]: 
-  \[Description \<String\>\]: 
-  \[ExportOptions \<String\>\]: exportOptions
-  \[ExportStructure \<String\>\]: exportFileStructure
-  \[OutputName \<String\>\]: 
+BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AzureBlobContainer <String>]`: 
+  - `[AzureBlobToken <String>]`: 
+  - `[Description <String>]`: 
+  - `[ExportOptions <String>]`: exportOptions
+  - `[ExportStructure <String>]`: exportFileStructure
+  - `[OutputName <String>]`: 
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[CaseId \<String\>\]: The unique identifier of case
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CustodianId \<String\>\]: The unique identifier of custodian
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
-  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
-  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
-  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TagId \<String\>\]: The unique identifier of tag
-  \[TagId1 \<String\>\]: The unique identifier of tag
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseId <String>]`: The unique identifier of case
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CustodianId <String>]`: The unique identifier of custodian
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[LegalHoldId <String>]`: The unique identifier of legalHold
+  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
+  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
+  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TagId <String>]`: The unique identifier of tag
+  - `[TagId1 <String>]`: The unique identifier of tag
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
+
+
 
 

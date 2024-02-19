@@ -19,26 +19,30 @@ Update the properties of a mobileAppAssignment object.
 ```
 Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -71,6 +75,21 @@ Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -154,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Settings
 Abstract class to contain properties used to assign a mobile app to a group.
 
@@ -222,66 +256,70 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphMobileAppAssignment\>: A class containing the properties used for Group Assignment of a Mobile App.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphMobileAppAssignment>`: A class containing the properties used for Group Assignment of a Mobile App.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Intent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
-  \[Settings \<IMicrosoftGraphMobileAppAssignmentSettings\>\]: Abstract class to contain properties used to assign a mobile app to a group.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
+  - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
-  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
-  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
-  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
-  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
-  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
-  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
-  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
-  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
-  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
-  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
-  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
-  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
-  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
-  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
-  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
-  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
-  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
-  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
-  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
-  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
-  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
-  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
-  \[VppTokenId \<String\>\]: The unique identifier of vppToken
-  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
-  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
-  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
+  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
+  - `[MobileAppId <String>]`: The unique identifier of mobileApp
+  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
+  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+  - `[VppTokenId <String>]`: The unique identifier of vppToken
+  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasiovppappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasiovppappassignment)
+
+
 
 
 

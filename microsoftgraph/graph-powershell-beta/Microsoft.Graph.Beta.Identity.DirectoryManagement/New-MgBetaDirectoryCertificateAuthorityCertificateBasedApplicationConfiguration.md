@@ -17,15 +17,15 @@ Create new navigation property to certificateBasedApplicationConfigurations for 
 New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
- -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -118,6 +133,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -179,44 +209,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCertificateBasedApplicationConfiguration\>: certificateBasedApplicationConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCertificateBasedApplicationConfiguration>`: certificateBasedApplicationConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>]`: Collection of trusted certificate authorities.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Certificate \<Byte\[\]\>\]: The trusted certificate.
-    \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+    - `[Certificate <Byte- `[]`>]`: The trusted certificate.
+    - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority.
 In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
-    \[Issuer \<String\>\]: The issuer of the trusted certificate.
-    \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[Issuer <String>]`: The issuer of the trusted certificate.
+    - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: The description of the trusted certificate authorities.
-  \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
+  - `[Description <String>]`: The description of the trusted certificate authorities.
+  - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
-TRUSTEDCERTIFICATEAUTHORITIES \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>: Collection of trusted certificate authorities.
-  \[Id \<String\>\]: The unique identifier for an entity.
+TRUSTEDCERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>: Collection of trusted certificate authorities.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Certificate \<Byte\[\]\>\]: The trusted certificate.
-  \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+  - `[Certificate <Byte- `[]`>]`: The trusted certificate.
+  - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority.
 In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
-  \[Issuer \<String\>\]: The issuer of the trusted certificate.
-  \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
+  - `[Issuer <String>]`: The issuer of the trusted certificate.
+  - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+
+
 
 
 

@@ -21,13 +21,14 @@ Update-MgSubscribedSku -SubscribedSkuId <String> [-AccountId <String>] [-Account
  [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-CapabilityStatus <String>]
  [-ConsumedUnits <Int32>] [-Id <String>] [-PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]
  [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-SubscriptionIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSubscribedSku -SubscribedSkuId <String> -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSubscribedSku -SubscribedSkuId <String> -BodyParameter <IMicrosoftGraphSubscribedSku>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,30 +37,21 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Acc
  [-AccountName <String>] [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-CapabilityStatus <String>]
  [-ConsumedUnits <Int32>] [-Id <String>] [-PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]
  [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-SubscriptionIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSubscribedSku> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in subscribedSkus
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgSubscribedSku -SubscribedSkuId $subscribedSkuId
-```
-This example shows how to use the Update-MgSubscribedSku Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -173,6 +165,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -213,6 +220,21 @@ To construct, see NOTES section for PREPAIDUNITS properties and create a hash ta
 Type: IMicrosoftGraphLicenseUnitsDetail
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -337,96 +359,100 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSubscribedSku\>: subscribedSku
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSubscribedSku>`: subscribedSku
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AccountId \<String\>\]: The unique ID of the account this SKU belongs to.
-  \[AccountName \<String\>\]: The name of the account this SKU belongs to.
-  \[AppliesTo \<String\>\]: The target class for this SKU.
+  - `[AccountId <String>]`: The unique ID of the account this SKU belongs to.
+  - `[AccountName <String>]`: The name of the account this SKU belongs to.
+  - `[AppliesTo <String>]`: The target class for this SKU.
 Only SKUs with target class User are assignable.
 Possible values are: 'User', 'Company'.
-  \[CapabilityStatus \<String\>\]: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
+  - `[CapabilityStatus <String>]`: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
 LockedOut indicates that the customer canceled their subscription.
 Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
-  \[ConsumedUnits \<Int32?\>\]: The number of licenses that have been assigned.
-  \[PrepaidUnits \<IMicrosoftGraphLicenseUnitsDetail\>\]: licenseUnitsDetail
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-    \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
-    \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+  - `[ConsumedUnits <Int32?>]`: The number of licenses that have been assigned.
+  - `[PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]`: licenseUnitsDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
+    - `[LockedOut <Int32?>]`: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+    - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been canceled.
 The units can't be assigned but can still be reactivated before they're deleted.
-    \[Warning \<Int32?\>\]: The number of units that are in warning status.
+    - `[Warning <Int32?>]`: The number of units that are in warning status.
 When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
-  \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans that are available with the SKU.
+  - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans that are available with the SKU.
 Not nullable.
-    \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
+    - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
+    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-    \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
-    \[ServicePlanName \<String\>\]: The name of the service plan.
-  \[SkuId \<String\>\]: The unique identifier (GUID) for the service SKU.
-  \[SkuPartNumber \<String\>\]: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
+    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+    - `[ServicePlanName <String>]`: The name of the service plan.
+  - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
+  - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
-  \[SubscriptionIds \<String\[\]\>\]: 
+  - `[SubscriptionIds <String- `[]`>]`: 
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[UserId <String>]`: The unique identifier of user
 
-PREPAIDUNITS \<IMicrosoftGraphLicenseUnitsDetail\>: licenseUnitsDetail
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-  \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
-  \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
+  - `[LockedOut <Int32?>]`: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+  - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been canceled.
 The units can't be assigned but can still be reactivated before they're deleted.
-  \[Warning \<Int32?\>\]: The number of units that are in warning status.
+  - `[Warning <Int32?>]`: The number of units that are in warning status.
 When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
 
-SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans that are available with the SKU.
+SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans that are available with the SKU.
 Not nullable.
-  \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
+  - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
+  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-  \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
-  \[ServicePlanName \<String\>\]: The name of the service plan.
+  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+  - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
 [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku)
+
+
 
 

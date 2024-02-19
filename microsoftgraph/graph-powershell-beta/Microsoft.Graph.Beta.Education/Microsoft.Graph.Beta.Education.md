@@ -671,9 +671,6 @@ Locale: en-US
 ### [Remove-MgBetaEducationClassAssignmentDefault](Remove-MgBetaEducationClassAssignmentDefault.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEducationClassAssignmentGradingCategory](Remove-MgBetaEducationClassAssignmentGradingCategory.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEducationClassAssignmentResource](Remove-MgBetaEducationClassAssignmentResource.md)
 {{ Fill in the Description }}
 
@@ -729,9 +726,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentCategoryByRef](Remove-MgBetaEducationMeAssignmentCategoryByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEducationMeAssignmentGradingCategory](Remove-MgBetaEducationMeAssignmentGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentResource](Remove-MgBetaEducationMeAssignmentResource.md)
@@ -792,9 +786,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentCategoryByRef](Remove-MgBetaEducationUserAssignmentCategoryByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEducationUserAssignmentGradingCategory](Remove-MgBetaEducationUserAssignmentGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentResource](Remove-MgBetaEducationUserAssignmentResource.md)

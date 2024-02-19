@@ -18,13 +18,14 @@ The page's HTML content.
 
 ### Get (Default)
 ```
-Get-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> -OutFile <String>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSiteOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgSiteOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +37,21 @@ The page's HTML content.
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -98,6 +114,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -119,29 +150,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<INotesIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[Path1 <String>]`: Usage: path='{path1}'
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent)
+
+
 
 

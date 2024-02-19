@@ -20,13 +20,14 @@ New-MgBetaDeviceManagementComanagementEligibleDevice [-AdditionalProperties <Has
  [-ManagementState <ManagementState>] [-Manufacturer <String>] [-MdmStatus <String>] [-Model <String>]
  [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <OwnerType>] [-ReferenceId <String>]
  [-SerialNumber <String>] [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>]
- [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementComanagementEligibleDevice -BodyParameter <IMicrosoftGraphComanagementEligibleDevice>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,6 +123,21 @@ Required: False
 Position: Named
 Default value: 0
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -253,6 +269,21 @@ Owner type of device.
 Type: OwnerType
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -403,42 +434,46 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphComanagementEligibleDevice\>: Device Co-Management eligibility state
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Management eligibility state
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ClientRegistrationStatus \<DeviceRegistrationState?\>\]: Device registration status.
-  \[DeviceName \<String\>\]: DeviceName
-  \[DeviceType \<DeviceType?\>\]: Device type.
-  \[EntitySource \<Int32?\>\]: EntitySource
-  \[ManagementAgents \<ManagementAgentType?\>\]: Management agent type.
-  \[ManagementState \<ManagementState?\>\]: Management state of device in Microsoft Intune.
-  \[Manufacturer \<String\>\]: Manufacturer
-  \[MdmStatus \<String\>\]: MDMStatus
-  \[Model \<String\>\]: Model
-  \[OSDescription \<String\>\]: OSDescription
-  \[OSVersion \<String\>\]: OSVersion
-  \[OwnerType \<OwnerType?\>\]: Owner type of device.
-  \[ReferenceId \<String\>\]: ReferenceId
-  \[SerialNumber \<String\>\]: SerialNumber
-  \[Status \<ComanagementEligibleType?\>\]: comanagementEligibleType
-  \[Upn \<String\>\]: UPN
-  \[UserEmail \<String\>\]: UserEmail
-  \[UserId \<String\>\]: UserId
-  \[UserName \<String\>\]: UserName
+  - `[ClientRegistrationStatus <DeviceRegistrationState?>]`: Device registration status.
+  - `[DeviceName <String>]`: DeviceName
+  - `[DeviceType <DeviceType?>]`: Device type.
+  - `[EntitySource <Int32?>]`: EntitySource
+  - `[ManagementAgents <ManagementAgentType?>]`: Management agent type.
+  - `[ManagementState <ManagementState?>]`: Management state of device in Microsoft Intune.
+  - `[Manufacturer <String>]`: Manufacturer
+  - `[MdmStatus <String>]`: MDMStatus
+  - `[Model <String>]`: Model
+  - `[OSDescription <String>]`: OSDescription
+  - `[OSVersion <String>]`: OSVersion
+  - `[OwnerType <OwnerType?>]`: Owner type of device.
+  - `[ReferenceId <String>]`: ReferenceId
+  - `[SerialNumber <String>]`: SerialNumber
+  - `[Status <ComanagementEligibleType?>]`: comanagementEligibleType
+  - `[Upn <String>]`: UPN
+  - `[UserEmail <String>]`: UserEmail
+  - `[UserId <String>]`: UserId
+  - `[UserName <String>]`: UserName
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcomanagementeligibledevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcomanagementeligibledevice)
+
+
 
 
 

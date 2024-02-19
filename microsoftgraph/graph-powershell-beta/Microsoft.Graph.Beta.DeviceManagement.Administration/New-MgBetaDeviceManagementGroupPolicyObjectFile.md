@@ -16,14 +16,14 @@ Create new navigation property to groupPolicyObjectFiles for deviceManagement
 ```
 New-MgBetaDeviceManagementGroupPolicyObjectFile [-AdditionalProperties <Hashtable>] [-Content <String>]
  [-CreatedDateTime <DateTime>] [-GroupPolicyObjectId <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementGroupPolicyObjectFile -BodyParameter <IMicrosoftGraphGroupPolicyObjectFile> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementGroupPolicyObjectFile -BodyParameter <IMicrosoftGraphGroupPolicyObjectFile>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -145,6 +160,21 @@ The distinguished name of the OU.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -205,29 +235,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphGroupPolicyObjectFile\>: The Group Policy Object file uploaded by admin.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<String\>\]: The Group Policy Object file content.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicy was first uploaded.
-  \[GroupPolicyObjectId \<String\>\]: The Group Policy Object GUID from GPO Xml content
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicyObjectFile was last modified.
-  \[OuDistinguishedName \<String\>\]: The distinguished name of the OU.
-  \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
+  - `[Content <String>]`: The Group Policy Object file content.
+  - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+  - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+  - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyobjectfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyobjectfile)
+
+
 
 
 

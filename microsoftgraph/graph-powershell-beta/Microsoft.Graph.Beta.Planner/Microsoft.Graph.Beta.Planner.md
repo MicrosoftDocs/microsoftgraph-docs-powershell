@@ -113,6 +113,12 @@ Locale: en-US
 ### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserPlannerMyDayTask](Get-MgBetaUserPlannerMyDayTask.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserPlannerMyDayTaskCount](Get-MgBetaUserPlannerMyDayTaskCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserPlannerPlan](Get-MgBetaUserPlannerPlan.md)
 {{ Fill in the Description }}
 

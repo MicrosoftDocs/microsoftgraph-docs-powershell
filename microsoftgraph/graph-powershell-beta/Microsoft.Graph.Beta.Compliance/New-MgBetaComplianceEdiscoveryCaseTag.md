@@ -19,14 +19,14 @@ The tags are used in review sets while reviewing content.
 New-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> [-AdditionalProperties <Hashtable>]
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphEdiscoveryTag[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphEdiscoveryTag>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphEdiscoveryTag>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoveryTag> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoveryTag>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,14 +34,15 @@ New-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -BodyParameter <IMicrosof
 New-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphEdiscoveryTag[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphEdiscoveryTag>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphEdiscoveryTag>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryTag> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryTag> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -190,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -253,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -291,113 +322,117 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphEdiscoveryTag\>: tag
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphEdiscoveryTag>`: tag
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ChildSelectability \<String\>\]: childSelectability
-  \[ChildTags \<IMicrosoftGraphEdiscoveryTag\[\]\>\]: Returns the tags that are a child of a tag.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[ChildSelectability <String>]`: childSelectability
+  - `[ChildTags <IMicrosoftGraphEdiscoveryTag- `[]`>]`: Returns the tags that are a child of a tag.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Description \<String\>\]: The description for the tag.
-  \[DisplayName \<String\>\]: Display name of the tag.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the tag was last modified.
-  \[Parent \<IMicrosoftGraphEdiscoveryTag\>\]: tag
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Description <String>]`: The description for the tag.
+  - `[DisplayName <String>]`: Display name of the tag.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
+  - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CHILDTAGS \<IMicrosoftGraphEdiscoveryTag\[\]\>: Returns the tags that are a child of a tag.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CHILDTAGS <IMicrosoftGraphEdiscoveryTag- `[]`>: Returns the tags that are a child of a tag.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ChildSelectability \<String\>\]: childSelectability
-  \[ChildTags \<IMicrosoftGraphEdiscoveryTag\[\]\>\]: Returns the tags that are a child of a tag.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[ChildSelectability <String>]`: childSelectability
+  - `[ChildTags <IMicrosoftGraphEdiscoveryTag- `[]`>]`: Returns the tags that are a child of a tag.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Description \<String\>\]: The description for the tag.
-  \[DisplayName \<String\>\]: Display name of the tag.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the tag was last modified.
-  \[Parent \<IMicrosoftGraphEdiscoveryTag\>\]: tag
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Description <String>]`: The description for the tag.
+  - `[DisplayName <String>]`: Display name of the tag.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
+  - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[CaseId \<String\>\]: The unique identifier of case
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CustodianId \<String\>\]: The unique identifier of custodian
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
-  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
-  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
-  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TagId \<String\>\]: The unique identifier of tag
-  \[TagId1 \<String\>\]: The unique identifier of tag
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseId <String>]`: The unique identifier of case
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CustodianId <String>]`: The unique identifier of custodian
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[LegalHoldId <String>]`: The unique identifier of legalHold
+  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
+  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
+  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TagId <String>]`: The unique identifier of tag
+  - `[TagId1 <String>]`: The unique identifier of tag
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSourceId <String>]`: The unique identifier of userSource
 
-PARENT \<IMicrosoftGraphEdiscoveryTag\>: tag
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+PARENT `<IMicrosoftGraphEdiscoveryTag>`: tag
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ChildSelectability \<String\>\]: childSelectability
-  \[ChildTags \<IMicrosoftGraphEdiscoveryTag\[\]\>\]: Returns the tags that are a child of a tag.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[ChildSelectability <String>]`: childSelectability
+  - `[ChildTags <IMicrosoftGraphEdiscoveryTag- `[]`>]`: Returns the tags that are a child of a tag.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Description \<String\>\]: The description for the tag.
-  \[DisplayName \<String\>\]: Display name of the tag.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the tag was last modified.
-  \[Parent \<IMicrosoftGraphEdiscoveryTag\>\]: tag
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Description <String>]`: The description for the tag.
+  - `[DisplayName <String>]`: Display name of the tag.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
+  - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag)
+
+
 
 

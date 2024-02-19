@@ -22,13 +22,14 @@ Only a student in the class can determine what files to upload in a given submis
 ### Set (Default)
 ```
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationAssignmentId <String>
- -EducationClassId <String> -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationClassId <String> -EducationSubmissionId <String> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,33 +42,48 @@ Only a student in the class can determine what files to upload in a given submis
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Education
+
 $params = @{
 }
+
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
 This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
+
+### Example 2: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Education
+
 $params = @{
 }
+
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
 This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
+
+### Example 3: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Education
+
 $params = @{
 }
+
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
 This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -116,6 +132,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -129,6 +160,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -169,31 +215,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
-  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
-  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
-  \[EducationClassId \<String\>\]: The unique identifier of educationClass
-  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
-  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
-  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
-  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
-  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
-  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+  - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
+  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
 [Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder)
+
+
 
 

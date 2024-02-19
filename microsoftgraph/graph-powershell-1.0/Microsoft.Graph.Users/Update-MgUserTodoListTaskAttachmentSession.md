@@ -19,28 +19,29 @@ Update the navigation property attachmentSessions in users
 ```
 Update-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
  -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphAttachmentSession> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttachmentSession> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -125,6 +126,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -164,6 +180,21 @@ Indicates a single value {start} that represents the location in the file where 
 Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -255,43 +286,47 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentSession
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentSession
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAttachmentSession\>: attachmentSession
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAttachmentSession>`: attachmentSession
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<Byte\[\]\>\]: The content streams that are uploaded.
-  \[ExpirationDateTime \<DateTime?\>\]: The date and time in UTC when the upload session will expire.
+  - `[Content <Byte- `[]`>]`: The content streams that are uploaded.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire.
 The complete file must be uploaded before this expiration time is reached.
-  \[NextExpectedRanges \<String\[\]\>\]: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+  - `[NextExpectedRanges <String- `[]`>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgBetaUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskAttachmentSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskattachmentsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskattachmentsession)
+
+
 
 
 

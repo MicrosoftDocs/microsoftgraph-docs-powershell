@@ -18,19 +18,36 @@ Delete navigation property sessions for solutions
 ### Delete (Default)
 ```
 Remove-MgVirtualEventWebinarSession -VirtualEventSessionId <String> -VirtualEventWebinarId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -74,6 +91,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -145,36 +177,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
-  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
-  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
-  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
-  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
-  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
-  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[Role \<String\>\]: Usage: role='{role}'
-  \[UserId \<String\>\]: Usage: userId='{userId}'
-  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
-  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
-  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
-  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
+  - `[BookingServiceId <String>]`: The unique identifier of bookingService
+  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[Role <String>]`: Usage: role='{role}'
+  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Remove-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarsession)
+
+
 
 
 

@@ -15,15 +15,16 @@ Invoke action approveApps
 ### ApproveExpanded (Default)
 ```
 Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp
- [-AdditionalProperties <Hashtable>] [-ApproveAllPermissions] [-PackageIds <String[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ApproveAllPermissions] [-PackageIds <String[]>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Approve
 ```
 Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp
  -BodyParameter <IPathsQ0Me7IDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphApproveappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +78,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PackageIds
 .
 
@@ -103,6 +119,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -144,23 +175,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsQ0Me7IDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphApproveappsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsQ0Me7IDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphApproveappsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ApproveAllPermissions \<Boolean?\>\]: 
-  \[PackageIds \<String\[\]\>\]:
+BODYPARAMETER `<IPathsQ0Me7IDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphApproveappsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ApproveAllPermissions <Boolean?>]`: 
+  - `[PackageIds <String- `[]`>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/approve-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/approve-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
+
+
 
 
 

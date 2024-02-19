@@ -18,13 +18,13 @@ New-MgBetaDeviceAppManagementTask [-AdditionalProperties <Hashtable>] [-Assigned
  [-Category <DeviceAppManagementTaskCategory>] [-CreatedDateTime <DateTime>] [-Creator <String>]
  [-CreatorNotes <String>] [-Description <String>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Id <String>] [-Priority <DeviceAppManagementTaskPriority>] [-Status <DeviceAppManagementTaskStatus>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementTask -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceAppManagementTask -BodyParameter <IMicrosoftGraphDeviceAppManagementTask>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -183,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -206,6 +221,21 @@ Device app management task priority.
 Type: DeviceAppManagementTaskPriority
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -266,33 +296,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceAppManagementTask\>: A device app management task.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceAppManagementTask>`: A device app management task.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AssignedTo \<String\>\]: The name or email of the admin this task is assigned to.
-  \[Category \<DeviceAppManagementTaskCategory?\>\]: Device app management task category.
-  \[CreatedDateTime \<DateTime?\>\]: The created date.
-  \[Creator \<String\>\]: The email address of the creator.
-  \[CreatorNotes \<String\>\]: Notes from the creator.
-  \[Description \<String\>\]: The description.
-  \[DisplayName \<String\>\]: The name.
-  \[DueDateTime \<DateTime?\>\]: The due date.
-  \[Priority \<DeviceAppManagementTaskPriority?\>\]: Device app management task priority.
-  \[Status \<DeviceAppManagementTaskStatus?\>\]: Device app management task status.
+  - `[AssignedTo <String>]`: The name or email of the admin this task is assigned to.
+  - `[Category <DeviceAppManagementTaskCategory?>]`: Device app management task category.
+  - `[CreatedDateTime <DateTime?>]`: The created date.
+  - `[Creator <String>]`: The email address of the creator.
+  - `[CreatorNotes <String>]`: Notes from the creator.
+  - `[Description <String>]`: The description.
+  - `[DisplayName <String>]`: The name.
+  - `[DueDateTime <DateTime?>]`: The due date.
+  - `[Priority <DeviceAppManagementTaskPriority?>]`: Device app management task priority.
+  - `[Status <DeviceAppManagementTaskStatus?>]`: Device app management task status.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtask)
+
+
 
 
 

@@ -16,13 +16,14 @@ Update the navigation property certificateAuthorities in directory
 ```
 Update-MgBetaDirectoryCertificateAuthority [-AdditionalProperties <Hashtable>]
  [-CertificateBasedApplicationConfigurations <IMicrosoftGraphCertificateBasedApplicationConfiguration[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDirectoryCertificateAuthority -BodyParameter <IMicrosoftGraphCertificateAuthorityPath> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectoryCertificateAuthority -BodyParameter <IMicrosoftGraphCertificateAuthorityPath>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +78,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -85,6 +101,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -130,54 +161,58 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateAuthorityPath
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateAuthorityPath
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCertificateAuthorityPath\>: certificateAuthorityPath
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCertificateAuthorityPath>`: certificateAuthorityPath
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CertificateBasedApplicationConfigurations \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>\]: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
-    \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[CertificateBasedApplicationConfigurations <IMicrosoftGraphCertificateBasedApplicationConfiguration- `[]`>]`: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+    - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>]`: Collection of trusted certificate authorities.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Certificate \<Byte\[\]\>\]: The trusted certificate.
-      \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+      - `[Certificate <Byte- `[]`>]`: The trusted certificate.
+      - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority.
 In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
-      \[Issuer \<String\>\]: The issuer of the trusted certificate.
-      \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
-    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+      - `[Issuer <String>]`: The issuer of the trusted certificate.
+      - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Description \<String\>\]: The description of the trusted certificate authorities.
-    \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
+    - `[Description <String>]`: The description of the trusted certificate authorities.
+    - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
-CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
-  \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
-    \[Id \<String\>\]: The unique identifier for an entity.
+CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS <IMicrosoftGraphCertificateBasedApplicationConfiguration- `[]`>: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+  - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>]`: Collection of trusted certificate authorities.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Certificate \<Byte\[\]\>\]: The trusted certificate.
-    \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+    - `[Certificate <Byte- `[]`>]`: The trusted certificate.
+    - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority.
 In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
-    \[Issuer \<String\>\]: The issuer of the trusted certificate.
-    \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[Issuer <String>]`: The issuer of the trusted certificate.
+    - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: The description of the trusted certificate authorities.
-  \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
+  - `[Description <String>]`: The description of the trusted certificate authorities.
+  - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority)
+
+
 
 
 

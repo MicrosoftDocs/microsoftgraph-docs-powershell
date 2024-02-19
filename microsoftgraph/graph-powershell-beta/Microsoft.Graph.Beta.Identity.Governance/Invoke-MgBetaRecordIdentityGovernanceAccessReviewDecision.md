@@ -17,15 +17,17 @@ If no IDs are specified, the decisions will apply to every accessReviewInstanceD
 ### RecordExpanded (Default)
 ```
 Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision [-AdditionalProperties <Hashtable>]
- [-Decision <String>] [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Decision <String>] [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Record
 ```
 Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision
  -BodyParameter <IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -83,6 +85,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Justification
 .
 
@@ -120,6 +137,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: RecordExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -180,25 +212,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Decision \<String\>\]: 
-  \[Justification \<String\>\]: 
-  \[PrincipalId \<String\>\]: 
-  \[ResourceId \<String\>\]:
+BODYPARAMETER `<IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Decision <String>]`: 
+  - `[Justification <String>]`: 
+  - `[PrincipalId <String>]`: 
+  - `[ResourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdecision)
+
+
 
 
 

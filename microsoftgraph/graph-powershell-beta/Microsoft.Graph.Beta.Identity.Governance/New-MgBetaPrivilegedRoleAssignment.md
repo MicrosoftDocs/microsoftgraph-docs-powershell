@@ -16,13 +16,14 @@ Add new entity to privilegedRoleAssignments
 ```
 New-MgBetaPrivilegedRoleAssignment [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IsElevated] [-ResultMessage <String>] [-RoleId <String>]
- [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPrivilegedRoleAssignment -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignment> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaPrivilegedRoleAssignment -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignment>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -89,6 +90,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -116,6 +132,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,94 +249,98 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPrivilegedRoleAssignment\>: privilegedRoleAssignment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleAssignment>`: privilegedRoleAssignment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExpirationDateTime \<DateTime?\>\]: 
-  \[IsElevated \<Boolean?\>\]: 
-  \[ResultMessage \<String\>\]: 
-  \[RoleId \<String\>\]: 
-  \[RoleInfo \<IMicrosoftGraphPrivilegedRole\>\]: privilegedRole
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ExpirationDateTime <DateTime?>]`: 
+  - `[IsElevated <Boolean?>]`: 
+  - `[ResultMessage <String>]`: 
+  - `[RoleId <String>]`: 
+  - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Assignments \<IMicrosoftGraphPrivilegedRoleAssignment\[\]\>\]: 
-    \[Name \<String\>\]: 
-    \[Settings \<IMicrosoftGraphPrivilegedRoleSettings\>\]: privilegedRoleSettings
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment- `[]`>]`: 
+    - `[Name <String>]`: 
+    - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[ApprovalOnElevation \<Boolean?\>\]: 
-      \[ApproverIds \<String\[\]\>\]: 
-      \[ElevationDuration \<TimeSpan?\>\]: 
-      \[IsMfaOnElevationConfigurable \<Boolean?\>\]: 
-      \[LastGlobalAdmin \<Boolean?\>\]: 
-      \[MaxElavationDuration \<TimeSpan?\>\]: 
-      \[MfaOnElevation \<Boolean?\>\]: 
-      \[MinElevationDuration \<TimeSpan?\>\]: 
-      \[NotificationToUserOnElevation \<Boolean?\>\]: 
-      \[TicketingInfoOnElevation \<Boolean?\>\]: 
-    \[Summary \<IMicrosoftGraphPrivilegedRoleSummary\>\]: privilegedRoleSummary
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+      - `[ApprovalOnElevation <Boolean?>]`: 
+      - `[ApproverIds <String- `[]`>]`: 
+      - `[ElevationDuration <TimeSpan?>]`: 
+      - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+      - `[LastGlobalAdmin <Boolean?>]`: 
+      - `[MaxElavationDuration <TimeSpan?>]`: 
+      - `[MfaOnElevation <Boolean?>]`: 
+      - `[MinElevationDuration <TimeSpan?>]`: 
+      - `[NotificationToUserOnElevation <Boolean?>]`: 
+      - `[TicketingInfoOnElevation <Boolean?>]`: 
+    - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[ElevatedCount \<Int32?\>\]: 
-      \[ManagedCount \<Int32?\>\]: 
-      \[MfaEnabled \<Boolean?\>\]: 
-      \[Status \<String\>\]: roleSummaryStatus
-      \[UsersCount \<Int32?\>\]: 
-  \[UserId \<String\>\]: 
+      - `[ElevatedCount <Int32?>]`: 
+      - `[ManagedCount <Int32?>]`: 
+      - `[MfaEnabled <Boolean?>]`: 
+      - `[Status <String>]`: roleSummaryStatus
+      - `[UsersCount <Int32?>]`: 
+  - `[UserId <String>]`: 
 
-ROLEINFO \<IMicrosoftGraphPrivilegedRole\>: privilegedRole
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphPrivilegedRoleAssignment\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ExpirationDateTime \<DateTime?\>\]: 
-    \[IsElevated \<Boolean?\>\]: 
-    \[ResultMessage \<String\>\]: 
-    \[RoleId \<String\>\]: 
-    \[RoleInfo \<IMicrosoftGraphPrivilegedRole\>\]: privilegedRole
-    \[UserId \<String\>\]: 
-  \[Name \<String\>\]: 
-  \[Settings \<IMicrosoftGraphPrivilegedRoleSettings\>\]: privilegedRoleSettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ExpirationDateTime <DateTime?>]`: 
+    - `[IsElevated <Boolean?>]`: 
+    - `[ResultMessage <String>]`: 
+    - `[RoleId <String>]`: 
+    - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+    - `[UserId <String>]`: 
+  - `[Name <String>]`: 
+  - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ApprovalOnElevation \<Boolean?\>\]: 
-    \[ApproverIds \<String\[\]\>\]: 
-    \[ElevationDuration \<TimeSpan?\>\]: 
-    \[IsMfaOnElevationConfigurable \<Boolean?\>\]: 
-    \[LastGlobalAdmin \<Boolean?\>\]: 
-    \[MaxElavationDuration \<TimeSpan?\>\]: 
-    \[MfaOnElevation \<Boolean?\>\]: 
-    \[MinElevationDuration \<TimeSpan?\>\]: 
-    \[NotificationToUserOnElevation \<Boolean?\>\]: 
-    \[TicketingInfoOnElevation \<Boolean?\>\]: 
-  \[Summary \<IMicrosoftGraphPrivilegedRoleSummary\>\]: privilegedRoleSummary
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ApprovalOnElevation <Boolean?>]`: 
+    - `[ApproverIds <String- `[]`>]`: 
+    - `[ElevationDuration <TimeSpan?>]`: 
+    - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+    - `[LastGlobalAdmin <Boolean?>]`: 
+    - `[MaxElavationDuration <TimeSpan?>]`: 
+    - `[MfaOnElevation <Boolean?>]`: 
+    - `[MinElevationDuration <TimeSpan?>]`: 
+    - `[NotificationToUserOnElevation <Boolean?>]`: 
+    - `[TicketingInfoOnElevation <Boolean?>]`: 
+  - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ElevatedCount \<Int32?\>\]: 
-    \[ManagedCount \<Int32?\>\]: 
-    \[MfaEnabled \<Boolean?\>\]: 
-    \[Status \<String\>\]: roleSummaryStatus
-    \[UsersCount \<Int32?\>\]:
+    - `[ElevatedCount <Int32?>]`: 
+    - `[ManagedCount <Int32?>]`: 
+    - `[MfaEnabled <Boolean?>]`: 
+    - `[Status <String>]`: roleSummaryStatus
+    - `[UsersCount <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignment)
+
+
 
 

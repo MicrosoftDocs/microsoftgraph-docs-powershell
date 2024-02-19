@@ -17,14 +17,15 @@ Update the navigation property authenticationStrengths in identity
 Update-MgBetaIdentityConditionalAccessAuthenticationStrength [-AdditionalProperties <Hashtable>]
  [-AuthenticationCombinations <String[]>]
  [-AuthenticationMethodModes <IMicrosoftGraphAuthenticationMethodModeDetail[]>] [-Combinations <String[]>]
- [-Id <String>] [-Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrength
- -BodyParameter <IMicrosoftGraphAuthenticationStrengthRoot> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationStrengthRoot> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -133,6 +149,21 @@ To construct, see NOTES section for POLICIES properties and create a hash table.
 Type: IMicrosoftGraphAuthenticationStrengthPolicy[]
 Parameter Sets: UpdateExpanded1
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -178,71 +209,75 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHENTICATIONMETHODMODES \<IMicrosoftGraphAuthenticationMethodModeDetail\[\]\>: Names and descriptions of all valid authentication method modes in the system.
-  \[Id \<String\>\]: The unique identifier for an entity.
+AUTHENTICATIONMETHODMODES <IMicrosoftGraphAuthenticationMethodModeDetail- `[]`>: Names and descriptions of all valid authentication method modes in the system.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthenticationMethod \<String\>\]: baseAuthenticationMethod
-  \[DisplayName \<String\>\]: The display name of this mode
+  - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
+  - `[DisplayName <String>]`: The display name of this mode
 
-BODYPARAMETER \<IMicrosoftGraphAuthenticationStrengthRoot\>: authenticationStrengthRoot
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStrengthRoot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthenticationCombinations \<String\[\]\>\]: A collection of all valid authentication method combinations in the system.
-  \[AuthenticationMethodModes \<IMicrosoftGraphAuthenticationMethodModeDetail\[\]\>\]: Names and descriptions of all valid authentication method modes in the system.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AuthenticationCombinations <String- `[]`>]`: A collection of all valid authentication method combinations in the system.
+  - `[AuthenticationMethodModes <IMicrosoftGraphAuthenticationMethodModeDetail- `[]`>]`: Names and descriptions of all valid authentication method modes in the system.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AuthenticationMethod \<String\>\]: baseAuthenticationMethod
-    \[DisplayName \<String\>\]: The display name of this mode
-  \[Combinations \<String\[\]\>\]: 
-  \[Policies \<IMicrosoftGraphAuthenticationStrengthPolicy\[\]\>\]: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
+    - `[DisplayName <String>]`: The display name of this mode
+  - `[Combinations <String- `[]`>]`: 
+  - `[Policies <IMicrosoftGraphAuthenticationStrengthPolicy- `[]`>]`: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AllowedCombinations \<String\[\]\>\]: A collection of authentication method modes that are required be used to satify this authentication strength.
-    \[CombinationConfigurations \<IMicrosoftGraphAuthenticationCombinationConfiguration\[\]\>\]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[AllowedCombinations <String- `[]`>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
+    - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration- `[]`>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
-The only possible value for fido2combinationConfigurations is 'fido2'.
-    \[CreatedDateTime \<DateTime?\>\]: The datetime when this policy was created.
-    \[Description \<String\>\]: The human-readable description of this policy.
-    \[DisplayName \<String\>\]: The human-readable display name of this policy.
+      - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
+Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
+For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
+    - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
+    - `[Description <String>]`: The human-readable description of this policy.
+    - `[DisplayName <String>]`: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
-    \[ModifiedDateTime \<DateTime?\>\]: The datetime when this policy was last modified.
-    \[PolicyType \<String\>\]: authenticationStrengthPolicyType
-    \[RequirementsSatisfied \<String\>\]: authenticationStrengthRequirements
+    - `[ModifiedDateTime <DateTime?>]`: The datetime when this policy was last modified.
+    - `[PolicyType <String>]`: authenticationStrengthPolicyType
+    - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-POLICIES \<IMicrosoftGraphAuthenticationStrengthPolicy\[\]\>: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
-  \[Id \<String\>\]: The unique identifier for an entity.
+POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy- `[]`>: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllowedCombinations \<String\[\]\>\]: A collection of authentication method modes that are required be used to satify this authentication strength.
-  \[CombinationConfigurations \<IMicrosoftGraphAuthenticationCombinationConfiguration\[\]\>\]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AllowedCombinations <String- `[]`>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
+  - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration- `[]`>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
-The only possible value for fido2combinationConfigurations is 'fido2'.
-  \[CreatedDateTime \<DateTime?\>\]: The datetime when this policy was created.
-  \[Description \<String\>\]: The human-readable description of this policy.
-  \[DisplayName \<String\>\]: The human-readable display name of this policy.
+    - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
+Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
+For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
+  - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
+  - `[Description <String>]`: The human-readable description of this policy.
+  - `[DisplayName <String>]`: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
-  \[ModifiedDateTime \<DateTime?\>\]: The datetime when this policy was last modified.
-  \[PolicyType \<String\>\]: authenticationStrengthPolicyType
-  \[RequirementsSatisfied \<String\>\]: authenticationStrengthRequirements
+  - `[ModifiedDateTime <DateTime?>]`: The datetime when this policy was last modified.
+  - `[PolicyType <String>]`: authenticationStrengthPolicyType
+  - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)
+
+
 
 
 

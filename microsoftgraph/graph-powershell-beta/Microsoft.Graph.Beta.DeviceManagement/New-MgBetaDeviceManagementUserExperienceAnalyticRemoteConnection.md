@@ -18,14 +18,15 @@ New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalPro
  [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
  [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
- [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -190,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -228,6 +244,21 @@ The user experience analytics device model.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -319,43 +350,47 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsRemoteConnection\>: The user experience analyte remote connection entity.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analyte remote connection entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CloudPcFailurePercentage \<Double?\>\]: The sign in failure percentage of Cloud PC Device.
+  - `[CloudPcFailurePercentage <Double?>]`: The sign in failure percentage of Cloud PC Device.
 Valid values 0 to 100
-  \[CloudPcRoundTripTime \<Double?\>\]: The round tip time of Cloud PC Device.
+  - `[CloudPcRoundTripTime <Double?>]`: The round tip time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
-  \[CloudPcSignInTime \<Double?\>\]: The sign in time of Cloud PC Device.
+  - `[CloudPcSignInTime <Double?>]`: The sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
-  \[CoreBootTime \<Double?\>\]: The core boot time of Cloud PC Device.
+  - `[CoreBootTime <Double?>]`: The core boot time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
-  \[CoreSignInTime \<Double?\>\]: The core sign in time of Cloud PC Device.
+  - `[CoreSignInTime <Double?>]`: The core sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
-  \[DeviceCount \<Int32?\>\]: The count of remote connection.
+  - `[DeviceCount <Int32?>]`: The count of remote connection.
 Valid values 0 to 2147483647
-  \[DeviceId \<String\>\]: The id of the device.
-  \[DeviceName \<String\>\]: The name of the device.
-  \[Manufacturer \<String\>\]: The user experience analytics manufacturer.
-  \[Model \<String\>\]: The user experience analytics device model.
-  \[RemoteSignInTime \<Double?\>\]: The remote sign in time of Cloud PC Device.
+  - `[DeviceId <String>]`: The id of the device.
+  - `[DeviceName <String>]`: The name of the device.
+  - `[Manufacturer <String>]`: The user experience analytics manufacturer.
+  - `[Model <String>]`: The user experience analytics device model.
+  - `[RemoteSignInTime <Double?>]`: The remote sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
-  \[UserPrincipalName \<String\>\]: The user experience analytics userPrincipalName.
-  \[VirtualNetwork \<String\>\]: The user experience analytics virtual network.
+  - `[UserPrincipalName <String>]`: The user experience analytics userPrincipalName.
+  - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticremoteconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticremoteconnection)
+
+
 
 
 

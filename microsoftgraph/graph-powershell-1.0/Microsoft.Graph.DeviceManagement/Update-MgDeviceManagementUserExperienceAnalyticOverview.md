@@ -18,13 +18,15 @@ Update the navigation property userExperienceAnalyticsOverview in deviceManageme
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementUserExperienceAnalyticOverview [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticOverview
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsOverview> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsOverview> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,6 +65,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -88,6 +105,21 @@ To construct, see NOTES section for INSIGHTS properties and create a hash table.
 Type: IMicrosoftGraphUserExperienceAnalyticsInsight[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -133,39 +165,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsOverview
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsOverview
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsOverview\>: The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsOverview>`: The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Insights \<IMicrosoftGraphUserExperienceAnalyticsInsight\[\]\>\]: The user experience analytics insights.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>]`: The user experience analytics insights.
 Read-only.
-    \[InsightId \<String\>\]: The unique identifier of the user experience analytics insight.
-    \[Severity \<UserExperienceAnalyticsInsightSeverity?\>\]: Indicates severity of insights.
+    - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
 Possible values are: None, Informational, Warning, Error.
-    \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of the user experience analytics metric.
-    \[Values \<IMicrosoftGraphUserExperienceAnalyticsInsightValue\[\]\>\]: The value of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
+    - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
-INSIGHTS \<IMicrosoftGraphUserExperienceAnalyticsInsight\[\]\>: The user experience analytics insights.
+INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>: The user experience analytics insights.
 Read-only.
-  \[InsightId \<String\>\]: The unique identifier of the user experience analytics insight.
-  \[Severity \<UserExperienceAnalyticsInsightSeverity?\>\]: Indicates severity of insights.
+  - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+  - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
 Possible values are: None, Informational, Warning, Error.
-  \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of the user experience analytics metric.
-  \[Values \<IMicrosoftGraphUserExperienceAnalyticsInsightValue\[\]\>\]: The value of the user experience analytics insight.
+  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
+  - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticoverview)
+
+
 
 
 

@@ -18,27 +18,31 @@ Update the properties of a plannerPlanConfigurationLocalization object.
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  -PlannerPlanConfigurationLocalizationId <String> [-AdditionalProperties <Hashtable>]
  [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>] [-Id <String>]
- [-LanguageTag <String>] [-PlanTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LanguageTag <String>] [-PlanTitle <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  -PlannerPlanConfigurationLocalizationId <String>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
  [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]
- [-Id <String>] [-LanguageTag <String>] [-PlanTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LanguageTag <String>] [-PlanTitle <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -108,6 +112,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -188,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -226,54 +260,60 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPlannerPlanConfigurationLocalization\>: plannerPlanConfigurationLocalization
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfigurationLocalization>`: plannerPlanConfigurationLocalization
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>\]: Localized names for configured buckets in the plan configuration.
-    \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
-    \[Name \<String\>\]: Name of the bucket.
-  \[LanguageTag \<String\>\]: The language code associated with the localized names in this object.
-  \[PlanTitle \<String\>\]: Localized title of the plan.
+  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
+    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+    - `[Name <String>]`: Name of the bucket.
+  - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
+  - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>: Localized names for configured buckets in the plan configuration.
-  \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
-  \[Name \<String\>\]: Name of the bucket.
+BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>: Localized names for configured buckets in the plan configuration.
+  - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+  - `[Name <String>]`: Name of the bucket.
 
-INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
-  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
-  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
-  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
-  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
-  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
-  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
-  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
-  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
-  \[Role \<String\>\]: Usage: role='{role}'
-  \[UserId \<String\>\]: Usage: userId='{userId}'
-  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
-  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
-  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
-  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
-  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
-  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
+  - `[BookingServiceId <String>]`: The unique identifier of bookingService
+  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
+  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
+  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[Role <String>]`: Usage: role='{role}'
+  - `[UniqueName <String>]`: Alternate key of businessScenario
+  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
+  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization)
+
+
 
 
 

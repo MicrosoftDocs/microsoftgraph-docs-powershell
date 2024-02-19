@@ -266,6 +266,12 @@ Locale: en-US
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByAppId](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByAppId.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationCount](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationCount.md)
 {{ Fill in the Description }}
 
@@ -873,9 +879,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipal](Remove-MgBetaServicePrincipal.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaServicePrincipalAppManagementPolicy](Remove-MgBetaServicePrincipalAppManagementPolicy.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalAppRoleAssignedTo](Remove-MgBetaServicePrincipalAppRoleAssignedTo.md)

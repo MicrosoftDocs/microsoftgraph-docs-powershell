@@ -18,49 +18,59 @@ The attachment content.
 ### Set (Default)
 ```
 Set-MgBetaServiceAnnouncementMessageAttachmentContent -ServiceAnnouncementAttachmentId <String>
- -ServiceUpdateMessageId <String> [-Data <Stream>] -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ServiceUpdateMessageId <String> [-Data <Stream>] -InFile <String> [-ContentType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceAnnouncementIdentity>
- [-Data <Stream>] -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Data <Stream>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The attachment content.
 
 ## EXAMPLES
-### Example 1: Get all attachments of a message in a collection
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-
-Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
-```
-This example shows how to use the Set-MgBetaBetaServiceAnnouncementMessageAttachmentContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get a zip file of all attachments in stream for a message
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-
-Get-MgBetaServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
-```
-This example shows how to use the Set-MgBetaBetaServiceAnnouncementMessageAttachmentContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -ContentType
+ContentType Parameter
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -Data
 .
 
 ```yaml
 Type: Stream
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
 Parameter Sets: (All)
 Aliases:
 
@@ -101,6 +111,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -171,25 +196,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### System.Collections.IDictionary
 ### System.IO.Stream
+### System.String
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
-  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
-  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
-  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
-  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
+INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
 [Set-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/set-mgbetaserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/set-mgbetaserviceannouncementmessageattachmentcontent)
+
+
 
 

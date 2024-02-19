@@ -19,28 +19,31 @@ Cancel the specified bookingAppointment in the specified bookingBusiness, and se
 ### CancelExpanded (Default)
 ```
 Stop-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Cancel
 ```
 Stop-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CancelViaIdentityExpanded
 ```
 Stop-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-CancellationMessage <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CancellationMessage <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
 Stop-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -139,6 +142,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -166,6 +184,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -208,44 +241,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CancellationMessage \<String\>\]: 
+BODYPARAMETER `<IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CancellationMessage <String>]`: 
 
-INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
-  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
-  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
-  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
-  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
-  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
-  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
-  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
-  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
-  \[Role \<String\>\]: Usage: role='{role}'
-  \[UserId \<String\>\]: Usage: userId='{userId}'
-  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
-  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
-  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
-  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
-  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
-  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
+  - `[BookingServiceId <String>]`: The unique identifier of bookingService
+  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
+  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
+  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[Role <String>]`: Usage: role='{role}'
+  - `[UniqueName <String>]`: Alternate key of businessScenario
+  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
+  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Stop-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment)
+
+
 
 

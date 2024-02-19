@@ -21,14 +21,16 @@ Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <
  -MeetingAttendanceReportId <String> -OnlineMeetingId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
  -MeetingAttendanceReportId <String> -OnlineMeetingId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,13 +38,15 @@ Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <
 Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -127,6 +131,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -199,6 +218,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -289,66 +323,70 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCEINTERVALS \<IMicrosoftGraphAttendanceInterval\[\]\>: List of time periods between joining and leaving a meeting.
-  \[DurationInSeconds \<Int32?\>\]: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-  \[JoinDateTime \<DateTime?\>\]: The time the attendee joined in UTC.
-  \[LeaveDateTime \<DateTime?\>\]: The time the attendee left in UTC.
+ATTENDANCEINTERVALS <IMicrosoftGraphAttendanceInterval- `[]`>: List of time periods between joining and leaving a meeting.
+  - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+  - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+  - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
 
-BODYPARAMETER \<IMicrosoftGraphAttendanceRecord\>: attendanceRecord
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAttendanceRecord>`: attendanceRecord
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AttendanceIntervals \<IMicrosoftGraphAttendanceInterval\[\]\>\]: List of time periods between joining and leaving a meeting.
-    \[DurationInSeconds \<Int32?\>\]: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-    \[JoinDateTime \<DateTime?\>\]: The time the attendee joined in UTC.
-    \[LeaveDateTime \<DateTime?\>\]: The time the attendee left in UTC.
-  \[EmailAddress \<String\>\]: Email address of the user associated with this attendance record.
-  \[Identity \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval- `[]`>]`: List of time periods between joining and leaving a meeting.
+    - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+    - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+    - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+  - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+  - `[Identity <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
-  \[Role \<String\>\]: Role of the attendee.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
-  \[TotalAttendanceInSeconds \<Int32?\>\]: Total duration of the attendances in seconds.
+  - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
 
-IDENTITY \<IMicrosoftGraphIdentity\>: identity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+IDENTITY `<IMicrosoftGraphIdentity>`: identity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereportattendancerecord)
+
+
 
 
 

@@ -15,7 +15,8 @@ Licensed administrators will continue to function as-is in that transitive membe
 ## SYNTAX
 
 ```
-Enable-MgBetaDeviceManagementUnlicensedAdminstrator [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-MgBetaDeviceManagementUnlicensedAdminstrator [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,6 +25,21 @@ You are limited to 350 unlicensed direct members for each AAD security group in 
 Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -PassThru
 Returns true when the command succeeds
@@ -36,6 +52,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -76,14 +107,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementunlicensedadminstrator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementunlicensedadminstrator)
+
+
 
 
 

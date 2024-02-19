@@ -17,28 +17,30 @@ Update the properties of a sourceSystemDefinition object.
 ```
 Update-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String>
- -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -96,6 +98,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -125,6 +142,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -213,99 +245,103 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataSourceSystemDefinition
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataSourceSystemDefinition
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphIndustryDataSourceSystemDefinition\>: sourceSystemDefinition
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the source system.
+  - `[DisplayName <String>]`: The name of the source system.
 Maximum supported length is 100 characters.
-  \[UserMatchingSettings \<IMicrosoftGraphIndustryDataUserMatchingSetting\[\]\>\]: A collection of user matching settings by roleGroup.
-    \[MatchTarget \<IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue\>\]: userMatchTargetReferenceValue
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-      \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Id \<String\>\]: The unique identifier for an entity.
+  - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>]`: A collection of user matching settings by roleGroup.
+    - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The code of the desired referenceDefinition entry.
+      - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
-        \[IsDisabled \<Boolean?\>\]: Indicates whether the definition has been disabled.
-        \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
-        \[SortIndex \<Int32?\>\]: The ordering index to present the definitions within a type consistently in user interfaces.
-    \[PriorityOrder \<Int32?\>\]: The priority order to apply when a user has multiple RefRole codes assigned.
-    \[RoleGroup \<IMicrosoftGraphIndustryDataRoleGroup\>\]: roleGroup
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+        - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+        - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+        - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+        - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+    - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
+    - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: The name of the role group.
-      \[Roles \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>\]: The set of roles included in the role group.
-        \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-        \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-    \[SourceIdentifier \<IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue\>\]: identifierTypeReferenceValue
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-      \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-  \[Vendor \<String\>\]: The name of the vendor who supplies the source system.
+      - `[DisplayName <String>]`: The name of the role group.
+      - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>]`: The set of roles included in the role group.
+        - `[Code <String>]`: The code of the desired referenceDefinition entry.
+        - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+    - `[SourceIdentifier <IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue>]`: identifierTypeReferenceValue
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The code of the desired referenceDefinition entry.
+      - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+  - `[Vendor <String>]`: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
-  \[AcronymId \<String\>\]: The unique identifier of acronym
-  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
-  \[BookmarkId \<String\>\]: The unique identifier of bookmark
-  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
-  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
-  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
-  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
-  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
-  \[IdentityId \<String\>\]: The unique identifier of identity
-  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
-  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
-  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
-  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
-  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
-  \[QnaId \<String\>\]: The unique identifier of qna
-  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
-  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
-  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
-  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
+  - `[BookmarkId <String>]`: The unique identifier of bookmark
+  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
+  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
+  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
+  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
+  - `[ExternalItemId <String>]`: The unique identifier of externalItem
+  - `[IdentityId <String>]`: The unique identifier of identity
+  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
+  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
+  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
+  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
+  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[QnaId <String>]`: The unique identifier of qna
+  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
+  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
+  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
+  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-USERMATCHINGSETTINGS \<IMicrosoftGraphIndustryDataUserMatchingSetting\[\]\>: A collection of user matching settings by roleGroup.
-  \[MatchTarget \<IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue\>\]: userMatchTargetReferenceValue
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-    \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>: A collection of user matching settings by roleGroup.
+  - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: The code of the desired referenceDefinition entry.
+    - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
-      \[IsDisabled \<Boolean?\>\]: Indicates whether the definition has been disabled.
-      \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
-      \[SortIndex \<Int32?\>\]: The ordering index to present the definitions within a type consistently in user interfaces.
-  \[PriorityOrder \<Int32?\>\]: The priority order to apply when a user has multiple RefRole codes assigned.
-  \[RoleGroup \<IMicrosoftGraphIndustryDataRoleGroup\>\]: roleGroup
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+  - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
+  - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: The name of the role group.
-    \[Roles \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>\]: The set of roles included in the role group.
-      \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-      \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-  \[SourceIdentifier \<IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue\>\]: identifierTypeReferenceValue
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-    \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+    - `[DisplayName <String>]`: The name of the role group.
+    - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>]`: The set of roles included in the role group.
+      - `[Code <String>]`: The code of the desired referenceDefinition entry.
+      - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+  - `[SourceIdentifier <IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue>]`: identifierTypeReferenceValue
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: The code of the desired referenceDefinition entry.
+    - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem)
+
+
 
 
 

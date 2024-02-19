@@ -20,13 +20,14 @@ Read-only.
 ### Get (Default)
 ```
 Get-MgUserOnlineMeetingTranscriptContent -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+ -OutFile <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
- [-PassThru] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,6 +51,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -114,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -135,35 +166,39 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingTranscriptContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptcontent)
+
+
 
 
 

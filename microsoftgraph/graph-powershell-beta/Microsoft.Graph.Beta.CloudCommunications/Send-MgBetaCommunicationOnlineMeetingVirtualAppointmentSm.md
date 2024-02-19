@@ -13,40 +13,50 @@ Send an SMS notification to external attendees when a Teams Virtual Appointment 
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgCommunicationOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationOnlineMeetingVirtualAppointmentSm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
  [-AdditionalProperties <Hashtable>] [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>]
- [-MessageType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MessageType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -OnlineMeetingId <String>
  -BodyParameter <IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>]
- [-MessageType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MessageType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an SMS notification to external attendees when a Teams Virtual Appointment is confirmed, rescheduled, or canceled.
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 ## PARAMETERS
 
@@ -91,6 +101,21 @@ Parameter Sets: Send, SendViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -158,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -196,49 +236,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDEES \<IMicrosoftGraphAttendeeNotificationInfo\[\]\>: .
-  \[PhoneNumber \<String\>\]: 
-  \[TimeZone \<String\>\]: 
+ATTENDEES <IMicrosoftGraphAttendeeNotificationInfo- `[]`>: .
+  - `[PhoneNumber <String>]`: 
+  - `[TimeZone <String>]`: 
 
-BODYPARAMETER \<IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Attendees \<IMicrosoftGraphAttendeeNotificationInfo\[\]\>\]: 
-    \[PhoneNumber \<String\>\]: 
-    \[TimeZone \<String\>\]: 
-  \[MessageType \<String\>\]: virtualAppointmentMessageType
+BODYPARAMETER `<IPaths17Lqpb4CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`: 
+    - `[PhoneNumber <String>]`: 
+    - `[TimeZone <String>]`: 
+  - `[MessageType <String>]`: virtualAppointmentMessageType
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgCommunicationOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationOnlineMeetingVirtualAppointmentSm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingvirtualappointmentsm)
+
+
 
 
 

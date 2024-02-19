@@ -20,13 +20,15 @@ Delete a delegatedAdminAccessAssignment object.
 ```
 Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
  -DelegatedAdminAccessAssignmentId <String> -DelegatedAdminRelationshipId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject <IIdentityPartnerIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,6 +66,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -113,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -150,27 +182,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityPartnerIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
-  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
-  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
-  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
-  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
-  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
-  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
+  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
+  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
+  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
+  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
+  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
 [Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
+
+
 
 
 

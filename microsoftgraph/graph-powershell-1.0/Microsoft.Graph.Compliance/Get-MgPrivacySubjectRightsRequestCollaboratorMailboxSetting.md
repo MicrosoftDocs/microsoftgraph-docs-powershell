@@ -20,13 +20,15 @@ Returned only on $select.
 ### Get (Default)
 ```
 Get-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRequestId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting -InputObject <IComplianceIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,6 +53,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -64,6 +81,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -118,24 +150,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaboratormailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaboratormailboxsetting)
+
+
 
 
 

@@ -27,13 +27,14 @@ New-MgBetaDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
  [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationId <String>]
- [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -342,6 +343,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -396,6 +412,21 @@ To construct, see NOTES section for POLICYSTATUSDETAILS properties and create a 
 Type: IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -531,70 +562,74 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceManagementAutopilotEvent\>: Represents an Autopilot flow event.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AccountSetupDuration \<TimeSpan?\>\]: Time spent in user ESP.
-  \[AccountSetupStatus \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
-  \[DeploymentDuration \<TimeSpan?\>\]: Autopilot deployment duration including enrollment.
-  \[DeploymentEndDateTime \<DateTime?\>\]: Deployment end time.
-  \[DeploymentStartDateTime \<DateTime?\>\]: Deployment start time.
-  \[DeploymentState \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
-  \[DeploymentTotalDuration \<TimeSpan?\>\]: Total deployment duration from enrollment to Desktop screen.
-  \[DeviceId \<String\>\]: Device id associated with the object
-  \[DevicePreparationDuration \<TimeSpan?\>\]: Time spent in device enrollment.
-  \[DeviceRegisteredDateTime \<DateTime?\>\]: Device registration date.
-  \[DeviceSerialNumber \<String\>\]: Device serial number.
-  \[DeviceSetupDuration \<TimeSpan?\>\]: Time spent in device ESP.
-  \[DeviceSetupStatus \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
-  \[EnrollmentFailureDetails \<String\>\]: Enrollment failure details.
-  \[EnrollmentStartDateTime \<DateTime?\>\]: Device enrollment start date.
-  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
-  \[EnrollmentType \<String\>\]: windowsAutopilotEnrollmentType
-  \[EventDateTime \<DateTime?\>\]: Time when the event occurred .
-  \[ManagedDeviceName \<String\>\]: Managed device name.
-  \[OSVersion \<String\>\]: Device operating system version.
-  \[PolicyStatusDetails \<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail\[\]\>\]: Policy and application status details for this device.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
+  - `[AccountSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
+  - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
+  - `[DeploymentEndDateTime <DateTime?>]`: Deployment end time.
+  - `[DeploymentStartDateTime <DateTime?>]`: Deployment start time.
+  - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
+  - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
+  - `[DeviceId <String>]`: Device id associated with the object
+  - `[DevicePreparationDuration <TimeSpan?>]`: Time spent in device enrollment.
+  - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
+  - `[DeviceSerialNumber <String>]`: Device serial number.
+  - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
+  - `[DeviceSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
+  - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
+  - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
+  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
+  - `[EnrollmentType <String>]`: windowsAutopilotEnrollmentType
+  - `[EventDateTime <DateTime?>]`: Time when the event occurred .
+  - `[ManagedDeviceName <String>]`: Managed device name.
+  - `[OSVersion <String>]`: Device operating system version.
+  - `[PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>]`: Policy and application status details for this device.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ComplianceStatus \<String\>\]: deviceManagementAutopilotPolicyComplianceStatus
-    \[DisplayName \<String\>\]: The friendly name of the policy.
-    \[ErrorCode \<Int32?\>\]: The errorode associated with the compliance or enforcement status of the policy.
+    - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
+    - `[DisplayName <String>]`: The friendly name of the policy.
+    - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy.
 Error code for enforcement status takes precedence if it exists.
-    \[LastReportedDateTime \<DateTime?\>\]: Timestamp of the reported policy status
-    \[PolicyType \<String\>\]: deviceManagementAutopilotPolicyType
-    \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
-  \[TargetedAppCount \<Int32?\>\]: Count of applications targeted.
-  \[TargetedPolicyCount \<Int32?\>\]: Count of policies targeted.
-  \[UserPrincipalName \<String\>\]: User principal name used to enroll the device.
-  \[Windows10EnrollmentCompletionPageConfigurationDisplayName \<String\>\]: Enrollment Status Page profile name
-  \[Windows10EnrollmentCompletionPageConfigurationId \<String\>\]: Enrollment Status Page profile ID
-  \[WindowsAutopilotDeploymentProfileDisplayName \<String\>\]: Autopilot profile name.
+    - `[LastReportedDateTime <DateTime?>]`: Timestamp of the reported policy status
+    - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
+    - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
+  - `[TargetedAppCount <Int32?>]`: Count of applications targeted.
+  - `[TargetedPolicyCount <Int32?>]`: Count of policies targeted.
+  - `[UserPrincipalName <String>]`: User principal name used to enroll the device.
+  - `[Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]`: Enrollment Status Page profile name
+  - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
+  - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
 
-POLICYSTATUSDETAILS \<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail\[\]\>: Policy and application status details for this device.
-  \[Id \<String\>\]: The unique identifier for an entity.
+POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>: Policy and application status details for this device.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ComplianceStatus \<String\>\]: deviceManagementAutopilotPolicyComplianceStatus
-  \[DisplayName \<String\>\]: The friendly name of the policy.
-  \[ErrorCode \<Int32?\>\]: The errorode associated with the compliance or enforcement status of the policy.
+  - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
+  - `[DisplayName <String>]`: The friendly name of the policy.
+  - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy.
 Error code for enforcement status takes precedence if it exists.
-  \[LastReportedDateTime \<DateTime?\>\]: Timestamp of the reported policy status
-  \[PolicyType \<String\>\]: deviceManagementAutopilotPolicyType
-  \[TrackedOnEnrollmentStatus \<Boolean?\>\]: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+  - `[LastReportedDateTime <DateTime?>]`: Timestamp of the reported policy status
+  - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
+  - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent)
+
+
 
 
 

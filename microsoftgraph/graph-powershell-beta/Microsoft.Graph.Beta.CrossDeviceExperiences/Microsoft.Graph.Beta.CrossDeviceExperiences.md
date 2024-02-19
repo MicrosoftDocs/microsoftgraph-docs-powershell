@@ -29,6 +29,9 @@ Locale: en-US
 ### [Get-MgBetaUserDevice](Get-MgBetaUserDevice.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserDeviceByDeviceId](Get-MgBetaUserDeviceByDeviceId.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserDeviceCommand](Get-MgBetaUserDeviceCommand.md)
 {{ Fill in the Description }}
 
@@ -176,6 +179,9 @@ Locale: en-US
 ### [Remove-MgBetaUserDevice](Remove-MgBetaUserDevice.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserDeviceByDeviceId](Remove-MgBetaUserDeviceByDeviceId.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserDeviceCommand](Remove-MgBetaUserDeviceCommand.md)
 {{ Fill in the Description }}
 
@@ -198,6 +204,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserDevice](Update-MgBetaUserDevice.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserDeviceByDeviceId](Update-MgBetaUserDeviceByDeviceId.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceCommand](Update-MgBetaUserDeviceCommand.md)

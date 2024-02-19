@@ -218,9 +218,6 @@ Locale: en-US
 ### [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaIdentityConditionalAccess](Get-MgBetaIdentityConditionalAccess.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference.md)
 {{ Fill in the Description }}
 
@@ -791,6 +788,9 @@ Locale: en-US
 ### [Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice](Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserAuthenticationSignInPreference](Get-MgBetaUserAuthenticationSignInPreference.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
 {{ Fill in the Description }}
 
@@ -1220,9 +1220,6 @@ Locale: en-US
 ### [Remove-MgBetaIdentityB2XUserFlow](Remove-MgBetaIdentityB2XUserFlow.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaIdentityB2XUserFlowIdentityProvider](Remove-MgBetaIdentityB2XUserFlowIdentityProvider.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
@@ -1251,9 +1248,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment](Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaIdentityConditionalAccess](Remove-MgBetaIdentityConditionalAccess.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference.md)
@@ -1646,9 +1640,6 @@ Locale: en-US
 ### [Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment](Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaIdentityConditionalAccess](Update-MgBetaIdentityConditionalAccess.md)
-{{ Fill in the Description }}
-
 ### [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference.md)
 {{ Fill in the Description }}
 
@@ -1890,6 +1881,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserAuthenticationPhoneMethod](Update-MgBetaUserAuthenticationPhoneMethod.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserAuthenticationSignInPreference](Update-MgBetaUserAuthenticationSignInPreference.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserInformationProtection](Update-MgBetaUserInformationProtection.md)

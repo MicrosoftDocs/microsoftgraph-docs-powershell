@@ -16,7 +16,8 @@ Get virtualEndpoint from deviceManagement
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,6 +32,36 @@ Expand related entities
 Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -59,8 +90,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 
@@ -68,6 +101,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaDeviceManagementVirtualEndpoint](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpoint)
+
+
 
 
 

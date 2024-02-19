@@ -15,25 +15,28 @@ Invoke function findRooms
 ### Find (Default)
 ```
 Find-MgBetaUserRoom -UserId <String> [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Top <Int32>] [<CommonParameters>]
+ [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Find1
 ```
 Find-MgBetaUserRoom -UserId <String> -RoomList <String> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### FindViaIdentity1
 ```
 Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### FindViaIdentity
 ```
 Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+ [-Skip <Int32>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,6 +84,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -94,6 +112,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -178,56 +211,61 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAddress
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
-  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
-  \[AppConsentRequestId \<String\>\]: The unique identifier of appConsentRequest
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
-  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[EventId \<String\>\]: The unique identifier of event
-  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[On \<String\>\]: Usage: on='{on}'
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
-  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
-  \[Q \<String\>\]: Usage: q='{q}'
-  \[RoomList \<String\>\]: Usage: RoomList='{RoomList}'
-  \[ServicePlanId \<String\>\]: Usage: servicePlanId='{servicePlanId}'
-  \[Skip \<Int32?\>\]: Usage: skip={skip}
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[Top \<Int32?\>\]: Usage: top={top}
-  \[Upn \<String\>\]: Usage: upn='{upn}'
-  \[User \<String\>\]: Usage: User='{User}'
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
+  - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EventId <String>]`: The unique identifier of event
+  - `[GroupId <String>]`: Usage: groupId='{groupId}'
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[On <String>]`: Usage: on='{on}'
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+  - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
+  - `[Skip <Int32?>]`: Usage: skip={skip}
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[Top <Int32?>]`: Usage: top={top}
+  - `[Upn <String>]`: Usage: upn='{upn}'
+  - `[User <String>]`: Usage: User='{User}'
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom)
+
+
 
 

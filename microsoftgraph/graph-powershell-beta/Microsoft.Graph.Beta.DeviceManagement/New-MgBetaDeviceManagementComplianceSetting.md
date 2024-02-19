@@ -22,14 +22,15 @@ New-MgBetaDeviceManagementComplianceSetting [-AccessTypes <String>] [-Additional
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementComplianceSetting
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -115,7 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -CategoryId
-Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+Specify category in which the setting is under.
+Support $filters.
 
 ```yaml
 Type: String
@@ -130,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the item
+Description of the setting.
 
 ```yaml
 Type: String
@@ -145,7 +147,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the item
+Name of the setting.
+For example: Allow Toast.
 
 ```yaml
 Type: String
@@ -159,8 +162,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HelpText
-Help text of the item
+Help text of the setting.
+Give more details of the setting.
 
 ```yaml
 Type: String
@@ -191,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -InfoUrls
-List of links more info for the setting can be found at
+List of links more info for the setting can be found at.
 
 ```yaml
 Type: String[]
@@ -266,6 +285,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReferredSettingInformationList
 List of referred setting information.
 To construct, see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
@@ -283,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootDefinitionId
-Root setting definition if the setting is a child setting.
+Root setting definition id if the setting is a child setting.
 
 ```yaml
 Type: String
@@ -394,69 +428,76 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICABILITY \<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability\>: deviceManagementConfigurationSettingApplicability
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Description \<String\>\]: description of the setting
-  \[DeviceMode \<DeviceManagementConfigurationDeviceMode?\>\]: Describes applicability for the mode the device is in
-  \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
-  \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
+APPLICABILITY `<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>`: deviceManagementConfigurationSettingApplicability
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: description of the setting
+  - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
+  - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
+  - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
 
-BODYPARAMETER \<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\>: deviceManagementConfigurationSettingDefinition
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`: deviceManagementConfigurationSettingDefinition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AccessTypes \<String\>\]: deviceManagementConfigurationSettingAccessTypes
-  \[Applicability \<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability\>\]: deviceManagementConfigurationSettingApplicability
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Description \<String\>\]: description of the setting
-    \[DeviceMode \<DeviceManagementConfigurationDeviceMode?\>\]: Describes applicability for the mode the device is in
-    \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
-    \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
-  \[BaseUri \<String\>\]: Base CSP Path
-  \[CategoryId \<String\>\]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-  \[Description \<String\>\]: Description of the item
-  \[DisplayName \<String\>\]: Display name of the item
-  \[HelpText \<String\>\]: Help text of the item
-  \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at
-  \[Keywords \<String\[\]\>\]: Tokens which to search settings on
-  \[Name \<String\>\]: Name of the item
-  \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[MaxDeviceOccurrence \<Int32?\>\]: Maximum times setting can be set on device.
-    \[MinDeviceOccurrence \<Int32?\>\]: Minimum times setting can be set on device.
+  - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
+  - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Description <String>]`: description of the setting
+    - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
+    - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
+    - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
+  - `[BaseUri <String>]`: Base CSP Path
+  - `[CategoryId <String>]`: Specify category in which the setting is under.
+Support $filters.
+  - `[Description <String>]`: Description of the setting.
+  - `[DisplayName <String>]`: Name of the setting.
+For example: Allow Toast.
+  - `[HelpText <String>]`: Help text of the setting.
+Give more details of the setting.
+  - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
+  - `[Keywords <String- `[]`>]`: Tokens which to search settings on
+  - `[Name <String>]`: Name of the item
+  - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
+    - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device.
 A MinDeviceOccurrence of 0 means setting is optional
-  \[OffsetUri \<String\>\]: Offset CSP Path from Base
-  \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
-    \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
-  \[RootDefinitionId \<String\>\]: Root setting definition if the setting is a child setting.
-  \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
-  \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
-  \[Version \<String\>\]: Item Version
-  \[Visibility \<DeviceManagementConfigurationSettingVisibility?\>\]: Supported setting types
+  - `[OffsetUri <String>]`: Offset CSP Path from Base
+  - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
+    - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
+Applicable for reusable setting.
+  - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+  - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
+  - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
+  - `[Version <String>]`: Item Version
+  - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
 
-OCCURRENCE \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>: deviceManagementConfigurationSettingOccurrence
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[MaxDeviceOccurrence \<Int32?\>\]: Maximum times setting can be set on device.
-  \[MinDeviceOccurrence \<Int32?\>\]: Minimum times setting can be set on device.
+OCCURRENCE `<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>`: deviceManagementConfigurationSettingOccurrence
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
+  - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device.
 A MinDeviceOccurrence of 0 means setting is optional
 
-REFERREDSETTINGINFORMATIONLIST \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>: List of referred setting information.
-  \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+REFERREDSETTINGINFORMATIONLIST <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>: List of referred setting information.
+  - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
+Applicable for reusable setting.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancesetting)
+
+
 
 
 

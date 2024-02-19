@@ -15,14 +15,14 @@ Create new navigation property to roleGroups for external
 ### CreateExpanded (Default)
 ```
 New-MgBetaExternalIndustryDataRoleGroup [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryDataRoleGroup> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryDataRoleGroup>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -76,6 +76,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -84,6 +99,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -145,45 +175,49 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoleGroup
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoleGroup
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphIndustryDataRoleGroup\>: roleGroup
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphIndustryDataRoleGroup>`: roleGroup
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the role group.
-  \[Roles \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>\]: The set of roles included in the role group.
-    \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-    \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DisplayName <String>]`: The name of the role group.
+  - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>]`: The set of roles included in the role group.
+    - `[Code <String>]`: The code of the desired referenceDefinition entry.
+    - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
-      \[IsDisabled \<Boolean?\>\]: Indicates whether the definition has been disabled.
-      \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
-      \[SortIndex \<Int32?\>\]: The ordering index to present the definitions within a type consistently in user interfaces.
+      - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
-ROLES \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>: The set of roles included in the role group.
-  \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-  \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles included in the role group.
+  - `[Code <String>]`: The code of the desired referenceDefinition entry.
+  - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
-    \[IsDisabled \<Boolean?\>\]: Indicates whether the definition has been disabled.
-    \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
-    \[SortIndex \<Int32?\>\]: The ordering index to present the definitions within a type consistently in user interfaces.
+    - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+    - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+    - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+    - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup)
+
+
 
 
 

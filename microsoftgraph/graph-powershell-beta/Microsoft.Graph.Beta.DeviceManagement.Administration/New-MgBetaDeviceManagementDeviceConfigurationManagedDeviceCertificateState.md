@@ -20,13 +20,15 @@ New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-Add
  [-CertificateRevokeStatus <CertificateRevocationStatus>]
  [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
  [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
- [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
- -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -215,6 +217,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -238,6 +255,21 @@ Device display name
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -298,35 +330,39 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedAllDeviceCertificateState\>: managedAllDeviceCertificateState
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDeviceCertificateState
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CertificateExpirationDateTime \<DateTime?\>\]: Certificate expiry date
-  \[CertificateExtendedKeyUsages \<String\>\]: Enhanced Key Usage
-  \[CertificateIssuanceDateTime \<DateTime?\>\]: Issuance date
-  \[CertificateIssuerName \<String\>\]: Issuer
-  \[CertificateKeyUsages \<Int32?\>\]: Key Usage
-  \[CertificateRevokeStatus \<CertificateRevocationStatus?\>\]: Certificate Revocation Status.
-  \[CertificateRevokeStatusLastChangeDateTime \<DateTime?\>\]: The time the revoke status was last changed
-  \[CertificateSerialNumber \<String\>\]: Serial number
-  \[CertificateSubjectName \<String\>\]: Certificate subject name
-  \[CertificateThumbprint \<String\>\]: Thumbprint
-  \[ManagedDeviceDisplayName \<String\>\]: Device display name
-  \[UserPrincipalName \<String\>\]: User principal name
+  - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
+  - `[CertificateExtendedKeyUsages <String>]`: Enhanced Key Usage
+  - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
+  - `[CertificateIssuerName <String>]`: Issuer
+  - `[CertificateKeyUsages <Int32?>]`: Key Usage
+  - `[CertificateRevokeStatus <CertificateRevocationStatus?>]`: Certificate Revocation Status.
+  - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
+  - `[CertificateSerialNumber <String>]`: Serial number
+  - `[CertificateSubjectName <String>]`: Certificate subject name
+  - `[CertificateThumbprint <String>]`: Thumbprint
+  - `[ManagedDeviceDisplayName <String>]`: Device display name
+  - `[UserPrincipalName <String>]`: User principal name
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate)
+
+
 
 
 

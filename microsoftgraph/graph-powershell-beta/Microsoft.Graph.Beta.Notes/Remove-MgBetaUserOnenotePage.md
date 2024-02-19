@@ -18,14 +18,15 @@ Delete a OneNote page.
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserOnenotePage -OnenotePageId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserOnenotePage -OnenotePageId <String> -UserId <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaUserOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,17 +39,32 @@ Delete a OneNote page.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
+
 ```
 This example shows how to use the Remove-MgBetaUserOnenotePage Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -111,6 +127,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -163,29 +194,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<INotesIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[Path1 <String>]`: Usage: path='{path1}'
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgUserOnenotePage](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage)
+
+
 
 

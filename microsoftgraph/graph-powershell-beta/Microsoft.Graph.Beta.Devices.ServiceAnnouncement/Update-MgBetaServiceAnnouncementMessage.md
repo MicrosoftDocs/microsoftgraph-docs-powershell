@@ -23,13 +23,15 @@ Update-MgBetaServiceAnnouncementMessage -ServiceUpdateMessageId <String> [-Actio
  [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>] [-HasAttachments] [-Id <String>]
  [-IsMajorChange] [-LastModifiedDateTime <DateTime>] [-Services <String[]>] [-Severity <String>]
  [-StartDateTime <DateTime>] [-Tags <String[]>] [-Title <String>]
- [-ViewPoint <IMicrosoftGraphServiceUpdateMessageViewpoint>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ViewPoint <IMicrosoftGraphServiceUpdateMessageViewpoint>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServiceAnnouncementMessage -ServiceUpdateMessageId <String>
- -BodyParameter <IMicrosoftGraphServiceUpdateMessage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceUpdateMessage> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,13 +42,15 @@ Update-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncemen
  [-Body <IMicrosoftGraphItemBody>] [-Category <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
  [-EndDateTime <DateTime>] [-HasAttachments] [-Id <String>] [-IsMajorChange] [-LastModifiedDateTime <DateTime>]
  [-Services <String[]>] [-Severity <String>] [-StartDateTime <DateTime>] [-Tags <String[]>] [-Title <String>]
- [-ViewPoint <IMicrosoftGraphServiceUpdateMessageViewpoint>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ViewPoint <IMicrosoftGraphServiceUpdateMessageViewpoint>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceUpdateMessage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceUpdateMessage> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -209,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -263,6 +282,21 @@ The last modified time of the service event.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -416,89 +450,93 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceUpdateMessage
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceUpdateMessage
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS \<IMicrosoftGraphServiceAnnouncementAttachment\[\]\>: A collection of serviceAnnouncementAttachments.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ATTACHMENTS <IMicrosoftGraphServiceAnnouncementAttachment- `[]`>: A collection of serviceAnnouncementAttachments.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<Byte\[\]\>\]: The attachment content.
-  \[ContentType \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[Name \<String\>\]: 
-  \[Size \<Int32?\>\]: 
+  - `[Content <Byte- `[]`>]`: The attachment content.
+  - `[ContentType <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Name <String>]`: 
+  - `[Size <Int32?>]`: 
 
-BODY \<IMicrosoftGraphItemBody\>: itemBody
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of the item.
-  \[ContentType \<String\>\]: bodyType
+BODY `<IMicrosoftGraphItemBody>`: itemBody
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of the item.
+  - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER \<IMicrosoftGraphServiceUpdateMessage\>: serviceUpdateMessage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Details \<IMicrosoftGraphKeyValuePair\[\]\>\]: Extra details about service event.
+BODYPARAMETER `<IMicrosoftGraphServiceUpdateMessage>`: serviceUpdateMessage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Details <IMicrosoftGraphKeyValuePair- `[]`>]`: Extra details about service event.
 This property doesn't support filters.
-    \[Name \<String\>\]: Name for this key-value pair
-    \[Value \<String\>\]: Value for this key-value pair
-  \[EndDateTime \<DateTime?\>\]: The end time of the service event.
-  \[LastModifiedDateTime \<DateTime?\>\]: The last modified time of the service event.
-  \[StartDateTime \<DateTime?\>\]: The start time of the service event.
-  \[Title \<String\>\]: The title of the service event.
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
+  - `[EndDateTime <DateTime?>]`: The end time of the service event.
+  - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
+  - `[StartDateTime <DateTime?>]`: The start time of the service event.
+  - `[Title <String>]`: The title of the service event.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionRequiredByDateTime \<DateTime?\>\]: The expected deadline of the action for the message.
-  \[Attachments \<IMicrosoftGraphServiceAnnouncementAttachment\[\]\>\]: A collection of serviceAnnouncementAttachments.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ActionRequiredByDateTime <DateTime?>]`: The expected deadline of the action for the message.
+  - `[Attachments <IMicrosoftGraphServiceAnnouncementAttachment- `[]`>]`: A collection of serviceAnnouncementAttachments.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Content \<Byte\[\]\>\]: The attachment content.
-    \[ContentType \<String\>\]: 
-    \[LastModifiedDateTime \<DateTime?\>\]: 
-    \[Name \<String\>\]: 
-    \[Size \<Int32?\>\]: 
-  \[AttachmentsArchive \<Byte\[\]\>\]: The zip file of all attachments for a message.
-  \[Body \<IMicrosoftGraphItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[Category \<String\>\]: serviceUpdateCategory
-  \[HasAttachments \<Boolean?\>\]: Indicates whether the message has any attachment.
-  \[IsMajorChange \<Boolean?\>\]: Indicates whether the message describes a major update for the service.
-  \[Services \<String\[\]\>\]: The affected services by the service message.
-  \[Severity \<String\>\]: serviceUpdateSeverity
-  \[Tags \<String\[\]\>\]: A collection of tags for the service message.
+    - `[Content <Byte- `[]`>]`: The attachment content.
+    - `[ContentType <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Name <String>]`: 
+    - `[Size <Int32?>]`: 
+  - `[AttachmentsArchive <Byte- `[]`>]`: The zip file of all attachments for a message.
+  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[Category <String>]`: serviceUpdateCategory
+  - `[HasAttachments <Boolean?>]`: Indicates whether the message has any attachment.
+  - `[IsMajorChange <Boolean?>]`: Indicates whether the message describes a major update for the service.
+  - `[Services <String- `[]`>]`: The affected services by the service message.
+  - `[Severity <String>]`: serviceUpdateSeverity
+  - `[Tags <String- `[]`>]`: A collection of tags for the service message.
 Tags are provided by the service team/support team who post the message to tell whether this message contains privacy data, or whether this message is for a service new feature update, and so on.
-  \[ViewPoint \<IMicrosoftGraphServiceUpdateMessageViewpoint\>\]: serviceUpdateMessageViewpoint
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsArchived \<Boolean?\>\]: Indicates whether the user archived the message.
-    \[IsFavorited \<Boolean?\>\]: Indicates whether the user marked the message as favorite.
-    \[IsRead \<Boolean?\>\]: Indicates whether the user read the message.
+  - `[ViewPoint <IMicrosoftGraphServiceUpdateMessageViewpoint>]`: serviceUpdateMessageViewpoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsArchived <Boolean?>]`: Indicates whether the user archived the message.
+    - `[IsFavorited <Boolean?>]`: Indicates whether the user marked the message as favorite.
+    - `[IsRead <Boolean?>]`: Indicates whether the user read the message.
 
-DETAILS \<IMicrosoftGraphKeyValuePair\[\]\>: Extra details about service event.
+DETAILS <IMicrosoftGraphKeyValuePair- `[]`>: Extra details about service event.
 This property doesn't support filters.
-  \[Name \<String\>\]: Name for this key-value pair
-  \[Value \<String\>\]: Value for this key-value pair
+  - `[Name <String>]`: Name for this key-value pair
+  - `[Value <String>]`: Value for this key-value pair
 
-INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
-  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
-  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
-  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
-  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
+INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
-VIEWPOINT \<IMicrosoftGraphServiceUpdateMessageViewpoint\>: serviceUpdateMessageViewpoint
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsArchived \<Boolean?\>\]: Indicates whether the user archived the message.
-  \[IsFavorited \<Boolean?\>\]: Indicates whether the user marked the message as favorite.
-  \[IsRead \<Boolean?\>\]: Indicates whether the user read the message.
+VIEWPOINT `<IMicrosoftGraphServiceUpdateMessageViewpoint>`: serviceUpdateMessageViewpoint
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsArchived <Boolean?>]`: Indicates whether the user archived the message.
+  - `[IsFavorited <Boolean?>]`: Indicates whether the user marked the message as favorite.
+  - `[IsRead <Boolean?>]`: Indicates whether the user read the message.
 
 ## RELATED LINKS
 [Update-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementmessage)
+
+
 
 
 

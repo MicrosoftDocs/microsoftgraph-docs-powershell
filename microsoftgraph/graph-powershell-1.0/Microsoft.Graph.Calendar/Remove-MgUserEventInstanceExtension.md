@@ -18,13 +18,15 @@ Delete navigation property extensions for users
 ### Delete (Default)
 ```
 Remove-MgUserEventInstanceExtension -EventId <String> -EventId1 <String> -ExtensionId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserEventInstanceExtension -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserEventInstanceExtension -InputObject <ICalendarIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +79,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -IfMatch
 ETag
 
@@ -119,6 +136,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -175,32 +207,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[RoomId \<String\>\]: The unique identifier of room
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventInstanceExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceextension)
+
+
 
 
 

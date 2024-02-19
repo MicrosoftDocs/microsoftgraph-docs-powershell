@@ -21,25 +21,25 @@ The table in the Permissions section lists the resources that support open exten
 ### CreateExpanded (Default)
 ```
 New-MgUserEventExtension -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserEventExtension -EventId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserEventExtension -EventId <String> -UserId <String> -BodyParameter <Hashtable> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserEventExtension -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,6 +94,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -123,6 +138,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -179,8 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ### System.Collections.Hashtable
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -188,23 +220,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[RoomId \<String\>\]: The unique identifier of room
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [New-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventextension)
+
+
 
 
 

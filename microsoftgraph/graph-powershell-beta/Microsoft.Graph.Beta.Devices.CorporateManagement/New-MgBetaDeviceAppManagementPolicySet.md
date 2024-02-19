@@ -18,13 +18,14 @@ New-MgBetaDeviceAppManagementPolicySet [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphPolicySetAssignment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-ErrorCode <ErrorCode>] [-GuidedDeploymentTags <String[]>] [-Id <String>]
  [-Items <IMicrosoftGraphPolicySetItem[]>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTags <String[]>]
- [-Status <PolicySetStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <PolicySetStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementPolicySet -BodyParameter <IMicrosoftGraphPolicySet> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceAppManagementPolicySet -BodyParameter <IMicrosoftGraphPolicySet> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -193,6 +209,21 @@ Last modified time of the PolicySet.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -268,71 +299,75 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphPolicySetAssignment\[\]\>: Assignments of the PolicySet.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphPolicySetAssignment- `[]`>: Assignments of the PolicySet.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modified time of the PolicySetAssignment.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySetAssignment.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphPolicySet\>: A class containing the properties used for PolicySet.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPolicySet>`: A class containing the properties used for PolicySet.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphPolicySetAssignment\[\]\>\]: Assignments of the PolicySet.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphPolicySetAssignment- `[]`>]`: Assignments of the PolicySet.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[LastModifiedDateTime \<DateTime?\>\]: Last modified time of the PolicySetAssignment.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[CreatedDateTime \<DateTime?\>\]: Creation time of the PolicySet.
-  \[Description \<String\>\]: Description of the PolicySet.
-  \[DisplayName \<String\>\]: DisplayName of the PolicySet.
-  \[ErrorCode \<ErrorCode?\>\]: errorCode
-  \[GuidedDeploymentTags \<String\[\]\>\]: Tags of the guided deployment
-  \[Items \<IMicrosoftGraphPolicySetItem\[\]\>\]: Items of the PolicySet with maximum count 100.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySetAssignment.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[CreatedDateTime <DateTime?>]`: Creation time of the PolicySet.
+  - `[Description <String>]`: Description of the PolicySet.
+  - `[DisplayName <String>]`: DisplayName of the PolicySet.
+  - `[ErrorCode <ErrorCode?>]`: errorCode
+  - `[GuidedDeploymentTags <String- `[]`>]`: Tags of the guided deployment
+  - `[Items <IMicrosoftGraphPolicySetItem- `[]`>]`: Items of the PolicySet with maximum count 100.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: Creation time of the PolicySetItem.
-    \[DisplayName \<String\>\]: DisplayName of the PolicySetItem.
-    \[ErrorCode \<ErrorCode?\>\]: errorCode
-    \[GuidedDeploymentTags \<String\[\]\>\]: Tags of the guided deployment
-    \[ItemType \<String\>\]: policySetType of the PolicySetItem.
-    \[LastModifiedDateTime \<DateTime?\>\]: Last modified time of the PolicySetItem.
-    \[PayloadId \<String\>\]: PayloadId of the PolicySetItem.
-    \[Status \<PolicySetStatus?\>\]: The enum to specify the status of PolicySet.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modified time of the PolicySet.
-  \[RoleScopeTags \<String\[\]\>\]: RoleScopeTags of the PolicySet
-  \[Status \<PolicySetStatus?\>\]: The enum to specify the status of PolicySet.
+    - `[CreatedDateTime <DateTime?>]`: Creation time of the PolicySetItem.
+    - `[DisplayName <String>]`: DisplayName of the PolicySetItem.
+    - `[ErrorCode <ErrorCode?>]`: errorCode
+    - `[GuidedDeploymentTags <String- `[]`>]`: Tags of the guided deployment
+    - `[ItemType <String>]`: policySetType of the PolicySetItem.
+    - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySetItem.
+    - `[PayloadId <String>]`: PayloadId of the PolicySetItem.
+    - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySet.
+  - `[RoleScopeTags <String- `[]`>]`: RoleScopeTags of the PolicySet
+  - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
-ITEMS \<IMicrosoftGraphPolicySetItem\[\]\>: Items of the PolicySet with maximum count 100.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ITEMS <IMicrosoftGraphPolicySetItem- `[]`>: Items of the PolicySet with maximum count 100.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: Creation time of the PolicySetItem.
-  \[DisplayName \<String\>\]: DisplayName of the PolicySetItem.
-  \[ErrorCode \<ErrorCode?\>\]: errorCode
-  \[GuidedDeploymentTags \<String\[\]\>\]: Tags of the guided deployment
-  \[ItemType \<String\>\]: policySetType of the PolicySetItem.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modified time of the PolicySetItem.
-  \[PayloadId \<String\>\]: PayloadId of the PolicySetItem.
-  \[Status \<PolicySetStatus?\>\]: The enum to specify the status of PolicySet.
+  - `[CreatedDateTime <DateTime?>]`: Creation time of the PolicySetItem.
+  - `[DisplayName <String>]`: DisplayName of the PolicySetItem.
+  - `[ErrorCode <ErrorCode?>]`: errorCode
+  - `[GuidedDeploymentTags <String- `[]`>]`: Tags of the guided deployment
+  - `[ItemType <String>]`: policySetType of the PolicySetItem.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySetItem.
+  - `[PayloadId <String>]`: PayloadId of the PolicySetItem.
+  - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementpolicyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementpolicyset)
+
+
 
 
 

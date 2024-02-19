@@ -17,28 +17,31 @@ Update the navigation property assignedToTaskBoardFormat in solutions
 ```
 Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -BusinessScenarioId <String>
  -BusinessScenarioTaskId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-OrderHintsByAssignee <Hashtable>] [-UnassignedOrderHint <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OrderHintsByAssignee <Hashtable>] [-UnassignedOrderHint <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -BusinessScenarioId <String>
  -BusinessScenarioTaskId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBookingsIdentity>
  -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHintsByAssignee <Hashtable>]
- [-UnassignedOrderHint <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnassignedOrderHint <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBookingsIdentity>
- -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -172,6 +190,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnassignedOrderHint
 Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
@@ -226,49 +259,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>: plannerAssignedToTaskBoardTaskFormat
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[OrderHintsByAssignee \<IMicrosoftGraphPlannerOrderHintsByAssignee\>\]: plannerOrderHintsByAssignee
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[UnassignedOrderHint \<String\>\]: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
+  - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
 
-INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
-  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
-  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
-  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
-  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
-  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
-  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
-  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
-  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
-  \[Role \<String\>\]: Usage: role='{role}'
-  \[UserId \<String\>\]: Usage: userId='{userId}'
-  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
-  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
-  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
-  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
-  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
-  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
+  - `[BookingServiceId <String>]`: The unique identifier of bookingService
+  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
+  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
+  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[Role <String>]`: Usage: role='{role}'
+  - `[UniqueName <String>]`: Alternate key of businessScenario
+  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
+  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskassignedtotaskboardformat)
+
+
 
 
 

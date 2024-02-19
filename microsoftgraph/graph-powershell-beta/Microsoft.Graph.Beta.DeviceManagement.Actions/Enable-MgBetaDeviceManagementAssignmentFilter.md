@@ -14,15 +14,17 @@ Invoke action enable
 
 ### EnableExpanded (Default)
 ```
-Enable-MgBetaDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-Enable] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-MgBetaDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-Enable]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Enable
 ```
 Enable-MgBetaDeviceManagementAssignmentFilter
  -BodyParameter <IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -76,6 +78,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
@@ -87,6 +104,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -128,22 +160,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Enable \<Boolean?\>\]:
+BODYPARAMETER `<IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Enable <Boolean?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementassignmentfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementassignmentfilter)
+
+
 
 
 

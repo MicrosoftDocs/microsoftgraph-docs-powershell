@@ -27,13 +27,14 @@ Update-MgBetaContact -OrgContactId <String> [-AdditionalProperties <Hashtable>]
  [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-TransitiveReports <IMicrosoftGraphDirectoryObject[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveReports <IMicrosoftGraphDirectoryObject[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaContact -OrgContactId <String> -BodyParameter <IMicrosoftGraphOrgContact> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaContact -OrgContactId <String> -BodyParameter <IMicrosoftGraphOrgContact> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,30 +49,21 @@ Update-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-Addit
  [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-TransitiveReports <IMicrosoftGraphDirectoryObject[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveReports <IMicrosoftGraphDirectoryObject[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrgContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOrgContact> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in contacts
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaContact -OrgContactId $orgContactId
-```
-This example shows how to use the Update-MgBetaBetaContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -219,6 +211,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -422,6 +429,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProxyAddresses
 For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
@@ -543,213 +565,219 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrgContact
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrgContact
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESSES \<IMicrosoftGraphPhysicalOfficeAddress\[\]\>: Postal addresses for this organizational contact.
+ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress- `[]`>: Postal addresses for this organizational contact.
 For now a contact can only have one physical address.
-  \[City \<String\>\]: The city.
-  \[CountryOrRegion \<String\>\]: The country or region.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
-  \[OfficeLocation \<String\>\]: Office location such as building and office number for an organizational contact.
-  \[PostalCode \<String\>\]: The postal code.
-  \[State \<String\>\]: The state.
-  \[Street \<String\>\]: The street.
+  - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
 
-BODYPARAMETER \<IMicrosoftGraphOrgContact\>: orgContact
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphOrgContact>`: orgContact
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Addresses \<IMicrosoftGraphPhysicalOfficeAddress\[\]\>\]: Postal addresses for this organizational contact.
+  - `[Addresses <IMicrosoftGraphPhysicalOfficeAddress- `[]`>]`: Postal addresses for this organizational contact.
 For now a contact can only have one physical address.
-    \[City \<String\>\]: The city.
-    \[CountryOrRegion \<String\>\]: The country or region.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
-    \[OfficeLocation \<String\>\]: Office location such as building and office number for an organizational contact.
-    \[PostalCode \<String\>\]: The postal code.
-    \[State \<String\>\]: The state.
-    \[Street \<String\>\]: The street.
-  \[CompanyName \<String\>\]: Name of the company that this organizational contact belong to.
+    - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+  - `[CompanyName <String>]`: Name of the company that this organizational contact belong to.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  \[Department \<String\>\]: The name for the department in which the contact works.
+  - `[Department <String>]`: The name for the department in which the contact works.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  \[DirectReports \<IMicrosoftGraphDirectoryObject\[\]\>\]: The contact's direct reports.
+  - `[DirectReports <IMicrosoftGraphDirectoryObject- `[]`>]`: The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
 Supports $expand.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[DisplayName \<String\>\]: Display name for this organizational contact.
+  - `[DisplayName <String>]`: Display name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values), $search, and $orderby.
-  \[GivenName \<String\>\]: First name for this organizational contact.
+  - `[GivenName <String>]`: First name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  \[JobTitle \<String\>\]: Job title for this organizational contact.
+  - `[JobTitle <String>]`: Job title for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  \[Mail \<String\>\]: The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
+  - `[Mail <String>]`: The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  \[MailNickname \<String\>\]: Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.
+  - `[MailNickname <String>]`: Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  \[Manager \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
-  \[MemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: Groups that this contact is a member of.
+  - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
+  - `[MemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-  \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Date and time when this organizational contact was last synchronized from on-premises AD.
+  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Date and time when this organizational contact was last synchronized from on-premises AD.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, ne, not, ge, le, in).
-  \[OnPremisesProvisioningErrors \<IMicrosoftGraphOnPremisesProvisioningError\[\]\>\]: List of any synchronization provisioning errors for this organizational contact.
+  - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: List of any synchronization provisioning errors for this organizational contact.
 Supports $filter (eq, not for category and propertyCausingError), /$count eq 0, /$count ne 0.
-    \[Category \<String\>\]: Category of the provisioning error.
+    - `[Category <String>]`: Category of the provisioning error.
 Note: Currently, there is only one possible value.
 Possible value: PropertyConflict - indicates a property value is not unique.
 Other objects contain the same value for the property.
-    \[OccurredDateTime \<DateTime?\>\]: The date and time at which the error occurred.
-    \[PropertyCausingError \<String\>\]: Name of the directory property causing the error.
+    - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
+    - `[PropertyCausingError <String>]`: Name of the directory property causing the error.
 Current possible values: UserPrincipalName or ProxyAddress
-    \[Value \<String\>\]: Value of the property causing the error.
-  \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default). 
+    - `[Value <String>]`: Value of the property causing the error.
+  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default). 
 Supports $filter (eq, ne, not, in, and eq for null values).
-  \[Phones \<IMicrosoftGraphPhone\[\]\>\]: List of phones for this organizational contact.
+  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
 Supports $filter (eq, ne, not, in).
-    \[Number \<String\>\]: The phone number.
-    \[Type \<String\>\]: phoneType
-  \[ProxyAddresses \<String\[\]\>\]: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
+    - `[Number <String>]`: The phone number.
+    - `[Type <String>]`: phoneType
+  - `[ProxyAddresses <String- `[]`>]`: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
 Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
-  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object . 
+  - `[ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError- `[]`>]`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object . 
 Supports $filter (eq, not, for isResolved and serviceInstance).
-    \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
-    \[IsResolved \<Boolean?\>\]: Indicates whether the Error has been attended to.
-    \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
-  \[Surname \<String\>\]: Last name for this organizational contact.
+    - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
+    - `[IsResolved <Boolean?>]`: Indicates whether the Error has been attended to.
+    - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
+  - `[Surname <String>]`: Last name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values)
-  \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-  \[TransitiveReports \<IMicrosoftGraphDirectoryObject\[\]\>\]: The transitive reports for a contact.
+  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+  - `[TransitiveReports <IMicrosoftGraphDirectoryObject- `[]`>]`: The transitive reports for a contact.
 Read-only.
 
-DIRECTREPORTS \<IMicrosoftGraphDirectoryObject\[\]\>: The contact's direct reports.
+DIRECTREPORTS <IMicrosoftGraphDirectoryObject- `[]`>: The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
 Supports $expand.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
-  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
-  \[CommandId \<String\>\]: The unique identifier of command
-  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
-  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
-  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RecommendationId \<String\>\]: The unique identifier of recommendation
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
-  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[UsageRightId \<String\>\]: The unique identifier of usageRight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
+  - `[CommandId <String>]`: The unique identifier of command
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[UsageRightId <String>]`: The unique identifier of usageRight
+  - `[UserId <String>]`: The unique identifier of user
 
-MANAGER \<IMicrosoftGraphDirectoryObject\>: directoryObject
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+MANAGER `<IMicrosoftGraphDirectoryObject>`: directoryObject
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: Groups that this contact is a member of.
+MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ONPREMISESPROVISIONINGERRORS \<IMicrosoftGraphOnPremisesProvisioningError\[\]\>: List of any synchronization provisioning errors for this organizational contact.
+ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError- `[]`>: List of any synchronization provisioning errors for this organizational contact.
 Supports $filter (eq, not for category and propertyCausingError), /$count eq 0, /$count ne 0.
-  \[Category \<String\>\]: Category of the provisioning error.
+  - `[Category <String>]`: Category of the provisioning error.
 Note: Currently, there is only one possible value.
 Possible value: PropertyConflict - indicates a property value is not unique.
 Other objects contain the same value for the property.
-  \[OccurredDateTime \<DateTime?\>\]: The date and time at which the error occurred.
-  \[PropertyCausingError \<String\>\]: Name of the directory property causing the error.
+  - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
+  - `[PropertyCausingError <String>]`: Name of the directory property causing the error.
 Current possible values: UserPrincipalName or ProxyAddress
-  \[Value \<String\>\]: Value of the property causing the error.
+  - `[Value <String>]`: Value of the property causing the error.
 
-PHONES \<IMicrosoftGraphPhone\[\]\>: List of phones for this organizational contact.
+PHONES <IMicrosoftGraphPhone- `[]`>: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
 Supports $filter (eq, ne, not, in).
-  \[Number \<String\>\]: The phone number.
-  \[Type \<String\>\]: phoneType
+  - `[Number <String>]`: The phone number.
+  - `[Type <String>]`: phoneType
 
-SERVICEPROVISIONINGERRORS \<IMicrosoftGraphServiceProvisioningError\[\]\>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
+SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError- `[]`>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
-  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
-  \[IsResolved \<Boolean?\>\]: Indicates whether the Error has been attended to.
-  \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
+  - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
+  - `[IsResolved <Boolean?>]`: Indicates whether the Error has been attended to.
+  - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
-TRANSITIVEMEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-TRANSITIVEREPORTS \<IMicrosoftGraphDirectoryObject\[\]\>: The transitive reports for a contact.
+TRANSITIVEREPORTS <IMicrosoftGraphDirectoryObject- `[]`>: The transitive reports for a contact.
 Read-only.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 [Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact)
+
+
 
 

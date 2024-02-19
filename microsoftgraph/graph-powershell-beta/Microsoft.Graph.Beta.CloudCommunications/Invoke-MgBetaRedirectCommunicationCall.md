@@ -23,15 +23,16 @@ The current timeout value is 15 seconds.
 ```
 Invoke-MgBetaRedirectCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
  [-CallbackUri <String>] [-MaskCallee] [-MaskCaller] [-TargetDisposition <String>]
- [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Redirect
 ```
 Invoke-MgBetaRedirectCommunicationCall -CallId <String>
  -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RedirectViaIdentityExpanded
@@ -39,14 +40,16 @@ Invoke-MgBetaRedirectCommunicationCall -CallId <String>
 Invoke-MgBetaRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-CallbackUri <String>] [-MaskCallee] [-MaskCaller]
  [-TargetDisposition <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RedirectViaIdentity
 ```
 Invoke-MgBetaRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -150,6 +153,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -207,6 +225,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -295,85 +328,88 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CallbackUri \<String\>\]: 
-  \[MaskCallee \<Boolean?\>\]: 
-  \[MaskCaller \<Boolean?\>\]: 
-  \[TargetDisposition \<String\>\]: callDisposition
-  \[Targets \<IMicrosoftGraphInvitationParticipantInfo\[\]\>\]: 
-    \[EndpointType \<String\>\]: endpointType
-    \[Hidden \<Boolean?\>\]: Optional.
+BODYPARAMETER `<IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CallbackUri <String>]`: 
+  - `[MaskCallee <Boolean?>]`: 
+  - `[MaskCaller <Boolean?>]`: 
+  - `[TargetDisposition <String>]`: callDisposition
+  - `[Targets <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: 
+    - `[EndpointType <String>]`: endpointType
+    - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
-    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[ParticipantId \<String\>\]: Optional.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[ParticipantId <String>]`: Optional.
 The ID of the target participant.
-    \[RemoveFromDefaultAudioRoutingGroup \<Boolean?\>\]: Optional.
+    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional.
 Whether to remove them from the main mixer.
-    \[ReplacesCallId \<String\>\]: Optional.
+    - `[ReplacesCallId <String>]`: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
-  \[Timeout \<Int32?\>\]: 
+  - `[Timeout <Int32?>]`: 
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
 
-TARGETS \<IMicrosoftGraphInvitationParticipantInfo\[\]\>: .
-  \[EndpointType \<String\>\]: endpointType
-  \[Hidden \<Boolean?\>\]: Optional.
+TARGETS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: .
+  - `[EndpointType <String>]`: endpointType
+  - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
-  \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[ParticipantId \<String\>\]: Optional.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[ParticipantId <String>]`: Optional.
 The ID of the target participant.
-  \[RemoveFromDefaultAudioRoutingGroup \<Boolean?\>\]: Optional.
+  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional.
 Whether to remove them from the main mixer.
-  \[ReplacesCallId \<String\>\]: Optional.
+  - `[ReplacesCallId <String>]`: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
@@ -381,5 +417,7 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 [Invoke-MgRedirectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRedirectCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaredirectcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaredirectcommunicationcall)
+
+
 
 

@@ -24,29 +24,33 @@ For more details, see presence sessions and time-out and expiration.
 ### SetExpanded (Default)
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String>
  -BodyParameter <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicationsIdentity>
  [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
- [-ExpirationDuration <TimeSpan>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExpirationDuration <TimeSpan>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +63,8 @@ For more details, see presence sessions and time-out and expiration.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -138,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -184,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -222,41 +258,44 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Activity \<String\>\]: 
-  \[Availability \<String\>\]: 
-  \[ExpirationDuration \<TimeSpan?\>\]: 
+BODYPARAMETER `<IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Activity <String>]`: 
+  - `[Availability <String>]`: 
+  - `[ExpirationDuration <TimeSpan?>]`: 
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Set-MgBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence)
+
 
 
 

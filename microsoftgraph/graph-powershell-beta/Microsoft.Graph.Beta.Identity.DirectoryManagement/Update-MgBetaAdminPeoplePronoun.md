@@ -20,13 +20,13 @@ For more information on settings to manage pronouns support, see Manage pronouns
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAdminPeoplePronoun [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabledInOrganization]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaAdminPeoplePronoun -BodyParameter <IMicrosoftGraphPronounsSettings> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaAdminPeoplePronoun -BodyParameter <IMicrosoftGraphPronounsSettings> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,6 +69,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -97,6 +112,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -138,26 +168,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPronounsSettings
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPronounsSettings
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPronounsSettings\>: pronounsSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
+  - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
 [Update-MgAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeoplePronoun?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun)
+
+
 
 
 

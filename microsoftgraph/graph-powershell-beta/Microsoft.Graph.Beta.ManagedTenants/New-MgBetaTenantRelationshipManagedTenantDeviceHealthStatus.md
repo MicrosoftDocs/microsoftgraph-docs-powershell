@@ -19,13 +19,15 @@ New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus [-AdditionalProperti
  [-DeviceModel <String>] [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-PrimaryDiskType <String>] [-RestartCount <Int32>]
  [-StartupPerformanceScore <Double>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-TopProcesses <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TopProcesses <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus
- -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HealthStatus
 .
 
@@ -222,6 +239,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -342,38 +374,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceHealthStatus
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceHealthStatus
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsDeviceHealthStatus\>: deviceHealthStatus
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceHealthStatus>`: deviceHealthStatus
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[BlueScreenCount \<Int32?\>\]: 
-  \[BootTotalDurationInSeconds \<Double?\>\]: 
-  \[DeviceId \<String\>\]: 
-  \[DeviceMake \<String\>\]: 
-  \[DeviceModel \<String\>\]: 
-  \[DeviceName \<String\>\]: 
-  \[HealthStatus \<String\>\]: 
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
-  \[OSVersion \<String\>\]: 
-  \[PrimaryDiskType \<String\>\]: 
-  \[RestartCount \<Int32?\>\]: 
-  \[StartupPerformanceScore \<Double?\>\]: 
-  \[TenantDisplayName \<String\>\]: 
-  \[TenantId \<String\>\]: 
-  \[TopProcesses \<String\>\]:
+  - `[BlueScreenCount <Int32?>]`: 
+  - `[BootTotalDurationInSeconds <Double?>]`: 
+  - `[DeviceId <String>]`: 
+  - `[DeviceMake <String>]`: 
+  - `[DeviceModel <String>]`: 
+  - `[DeviceName <String>]`: 
+  - `[HealthStatus <String>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[OSVersion <String>]`: 
+  - `[PrimaryDiskType <String>]`: 
+  - `[RestartCount <Int32?>]`: 
+  - `[StartupPerformanceScore <Double?>]`: 
+  - `[TenantDisplayName <String>]`: 
+  - `[TenantId <String>]`: 
+  - `[TopProcesses <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)
+
+
 
 
 

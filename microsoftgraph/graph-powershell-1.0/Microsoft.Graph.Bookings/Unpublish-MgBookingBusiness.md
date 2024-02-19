@@ -19,13 +19,14 @@ Set the isPublished property to false, and the publicUrl property to null.
 
 ### Unpublish (Default)
 ```
-Unpublish-MgBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Unpublish-MgBookingBusiness -BookingBusinessId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnpublishViaIdentity
 ```
-Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,13 +37,17 @@ Set the isPublished property to false, and the publicUrl property to null.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-unpublish-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Unpublish-MgBookingBusiness Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
+
 Unpublish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
+
 ```
 This example shows how to use the Unpublish-MgBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -58,6 +63,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -88,6 +108,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -129,35 +164,39 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
-  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
-  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
-  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
-  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
-  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
-  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[Role \<String\>\]: Usage: role='{role}'
-  \[UserId \<String\>\]: Usage: userId='{userId}'
-  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
-  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
-  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
-  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
+  - `[BookingServiceId <String>]`: The unique identifier of bookingService
+  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[Role <String>]`: Usage: role='{role}'
+  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Unpublish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Unpublish-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness)
+
+
 
 

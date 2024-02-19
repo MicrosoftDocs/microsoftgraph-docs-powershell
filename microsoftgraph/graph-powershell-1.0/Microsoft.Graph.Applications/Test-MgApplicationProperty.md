@@ -28,14 +28,16 @@ To learn more about configuring naming policies, see Configure naming policy.
 ### ValidateExpanded (Default)
 ```
 Test-MgApplicationProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>]
- [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgApplicationProperty
  -BodyParameter <IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -136,6 +138,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -MailNickname
 .
 
@@ -181,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -218,25 +250,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: 
-  \[EntityType \<String\>\]: 
-  \[MailNickname \<String\>\]: 
-  \[OnBehalfOfUserId \<String\>\]:
+BODYPARAMETER `<IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: 
+  - `[EntityType <String>]`: 
+  - `[MailNickname <String>]`: 
+  - `[OnBehalfOfUserId <String>]`:
 
 ## RELATED LINKS
 [Test-MgBetaApplicationProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationproperty)
+
+
 
 

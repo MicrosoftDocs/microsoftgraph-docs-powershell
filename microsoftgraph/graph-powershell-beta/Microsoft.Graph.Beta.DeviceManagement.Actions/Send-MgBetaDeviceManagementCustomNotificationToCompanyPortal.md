@@ -15,15 +15,17 @@ Invoke action sendCustomNotificationToCompanyPortal
 ### SendExpanded (Default)
 ```
 Send-MgBetaDeviceManagementCustomNotificationToCompanyPortal [-AdditionalProperties <Hashtable>]
- [-GroupsToNotify <String[]>] [-NotificationBody <String>] [-NotificationTitle <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-GroupsToNotify <String[]>] [-NotificationBody <String>] [-NotificationTitle <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaDeviceManagementCustomNotificationToCompanyPortal
  -BodyParameter <IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +79,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -NotificationBody
 .
 
@@ -122,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -159,24 +191,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GroupsToNotify \<String\[\]\>\]: 
-  \[NotificationBody \<String\>\]: 
-  \[NotificationTitle \<String\>\]:
+BODYPARAMETER `<IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[GroupsToNotify <String- `[]`>]`: 
+  - `[NotificationBody <String>]`: 
+  - `[NotificationTitle <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal)
+
+
 
 
 

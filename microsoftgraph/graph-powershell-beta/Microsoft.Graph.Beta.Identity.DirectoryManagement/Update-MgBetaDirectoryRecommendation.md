@@ -21,14 +21,14 @@ Update-MgBetaDirectoryRecommendation -RecommendationId <String> [-ActionSteps <I
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
- [-ReleaseType <String>] [-RemediationImpact <String>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReleaseType <String>] [-RemediationImpact <String>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDirectoryRecommendation -RecommendationId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDirectoryRecommendation -RecommendationId <String> -BodyParameter <Hashtable>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,14 +40,15 @@ Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementI
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
- [-ReleaseType <String>] [-RemediationImpact <String>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReleaseType <String>] [-RemediationImpact <String>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <Hashtable> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -190,6 +191,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -380,6 +396,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecommendationId
 The unique identifier of recommendation
 
@@ -495,94 +526,100 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### System.Collections.Hashtable
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONSTEPS \<IMicrosoftGraphActionStep\[\]\>: List of actions to take to complete a recommendation.
-  \[ActionUrl \<IMicrosoftGraphActionUrl\>\]: actionUrl
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-    \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
-  \[StepNumber \<Int64?\>\]: Indicates the position for this action in the order of the collection of actions to be taken.
-  \[Text \<String\>\]: Friendly description of the action to take.
+ACTIONSTEPS <IMicrosoftGraphActionStep- `[]`>: List of actions to take to complete a recommendation.
+  - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: Brief title for the page that the links directs to.
+    - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
+  - `[StepNumber <Int64?>]`: Indicates the position for this action in the order of the collection of actions to be taken.
+  - `[Text <String>]`: Friendly description of the action to take.
 
-IMPACTEDRESOURCES \<IMicrosoftGraphImpactedResource\[\]\>: The list of directory objects associated with the recommendation.
-  \[Id \<String\>\]: The unique identifier for an entity.
+IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource- `[]`>: The list of directory objects associated with the recommendation.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
-  \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-    \[Key \<String\>\]: Key.
-    \[Value \<String\>\]: Value.
-  \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
-  \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
-  \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
-  \[LastModifiedDateTime \<String\>\]: The date and time when the status was last updated.
-  \[Owner \<String\>\]: The user responsible for maintaining the resource.
-  \[PortalUrl \<String\>\]: The URL link to the corresponding Microsoft Entra admin center page of the resource.
-  \[PostponeUntilDateTime \<DateTime?\>\]: The future date and time when the status of a postponed impactedResource will be active again.
-  \[Rank \<Int32?\>\]: Indicates the importance of the resource.
+  - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
+  - `[AdditionalDetails <IMicrosoftGraphKeyValue- `[]`>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
+  - `[ApiUrl <String>]`: The URL link to the corresponding Microsoft Entra resource.
+  - `[DisplayName <String>]`: Friendly name of the Microsoft Entra resource.
+  - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
+  - `[LastModifiedDateTime <String>]`: The date and time when the status was last updated.
+  - `[Owner <String>]`: The user responsible for maintaining the resource.
+  - `[PortalUrl <String>]`: The URL link to the corresponding Microsoft Entra admin center page of the resource.
+  - `[PostponeUntilDateTime <DateTime?>]`: The future date and time when the status of a postponed impactedResource will be active again.
+  - `[Rank <Int32?>]`: Indicates the importance of the resource.
 A resource with a rank equal to 1 is of the highest importance.
-  \[RecommendationId \<String\>\]: The unique identifier of the recommendation that the resource is associated with.
-  \[ResourceType \<String\>\]: Indicates the type of Microsoft Entra resource.
+  - `[RecommendationId <String>]`: The unique identifier of the recommendation that the resource is associated with.
+  - `[ResourceType <String>]`: Indicates the type of Microsoft Entra resource.
 Examples include user, application.
-  \[Status \<String\>\]: recommendationStatus
-  \[SubjectId \<String\>\]: The related unique identifier, depending on the resourceType.
+  - `[Status <String>]`: recommendationStatus
+  - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
-  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
-  \[CommandId \<String\>\]: The unique identifier of command
-  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
-  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
-  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RecommendationId \<String\>\]: The unique identifier of recommendation
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
-  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[UsageRightId \<String\>\]: The unique identifier of usageRight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
+  - `[CommandId <String>]`: The unique identifier of command
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[UsageRightId <String>]`: The unique identifier of usageRight
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation)
+
+
 
 
 

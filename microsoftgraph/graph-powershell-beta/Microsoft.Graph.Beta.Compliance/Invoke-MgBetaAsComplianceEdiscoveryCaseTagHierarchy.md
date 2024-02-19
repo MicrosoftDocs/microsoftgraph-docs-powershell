@@ -14,15 +14,16 @@ Invoke function asHierarchy
 
 ### As (Default)
 ```
-Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -CaseId <String> [-Count] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -CaseId <String> [-Count] [-ExpandProperty <String[]>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### AsViaIdentity
 ```
 Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -InputObject <IComplianceIdentity> [-Count]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
@@ -70,6 +71,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Filter
 Filter items by property values
 
@@ -82,6 +98,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -98,6 +129,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -182,36 +228,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[CaseId \<String\>\]: The unique identifier of case
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CustodianId \<String\>\]: The unique identifier of custodian
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
-  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
-  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
-  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TagId \<String\>\]: The unique identifier of tag
-  \[TagId1 \<String\>\]: The unique identifier of tag
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseId <String>]`: The unique identifier of case
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CustodianId <String>]`: The unique identifier of custodian
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[LegalHoldId <String>]`: The unique identifier of legalHold
+  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
+  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
+  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TagId <String>]`: The unique identifier of tag
+  - `[TagId1 <String>]`: The unique identifier of tag
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy)
+
+
 
 

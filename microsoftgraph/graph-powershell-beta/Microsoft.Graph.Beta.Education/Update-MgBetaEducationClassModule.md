@@ -14,6 +14,9 @@ Only teachers in the class can perform this operation.
 Note that you can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassModule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +24,15 @@ Use the publish action to change the module status.
 Update-MgBetaEducationClassModule -EducationClassId <String> -EducationModuleId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsPinned] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-Resources <IMicrosoftGraphEducationModuleResource[]>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Resources <IMicrosoftGraphEducationModuleResource[]>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationClassModule -EducationClassId <String> -EducationModuleId <String>
- -BodyParameter <IMicrosoftGraphEducationModule> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationModule> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +40,15 @@ Update-MgBetaEducationClassModule -EducationClassId <String> -EducationModuleId 
 Update-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsPinned] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-Resources <IMicrosoftGraphEducationModuleResource[]>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Resources <IMicrosoftGraphEducationModuleResource[]>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClassModule -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationModule> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationModule> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -164,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -219,6 +239,21 @@ To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash 
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -298,113 +333,118 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationModule
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationModule
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphEducationModule\>: educationModule
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphEducationModule>`: educationModule
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Description \<String\>\]: Description of the module.
-  \[DisplayName \<String\>\]: Name of the module.
-  \[IsPinned \<Boolean?\>\]: Indicates whether the module is pinned or not.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Resources \<IMicrosoftGraphEducationModuleResource\[\]\>\]: Learning objects that are associated with this module. 
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Description <String>]`: Description of the module.
+  - `[DisplayName <String>]`: Name of the module.
+  - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module. 
 Only teachers can modify this list.
 Nullable.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[DisplayName \<String\>\]: Display name of resource.
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Status \<String\>\]: educationModuleStatus
+    - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: Display name of resource.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Status <String>]`: educationModuleStatus
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
-  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
-  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
-  \[EducationClassId \<String\>\]: The unique identifier of educationClass
-  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
-  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
-  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
-  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
-  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
-  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
-  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
-  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
-  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
-  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+  - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
+  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+  - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES \<IMicrosoftGraphEducationModuleResource\[\]\>: Learning objects that are associated with this module.
+RESOURCES <IMicrosoftGraphEducationModuleResource- `[]`>: Learning objects that are associated with this module.
 Only teachers can modify this list.
 Nullable.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[DisplayName \<String\>\]: Display name of resource.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: Display name of resource.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassModule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmodule)
+
+
 
 
 

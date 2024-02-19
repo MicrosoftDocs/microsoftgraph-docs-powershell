@@ -20,13 +20,14 @@ Update the navigation property delegatedAdminCustomers in tenantRelationships
 Update-MgTenantRelationshipDelegatedAdminCustomer -DelegatedAdminCustomerId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>] [-TenantId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTenantRelationshipDelegatedAdminCustomer -DelegatedAdminCustomerId <String>
- -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,13 +35,14 @@ Update-MgTenantRelationshipDelegatedAdminCustomer -DelegatedAdminCustomerId <Str
 Update-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartnerIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>] [-TenantId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartnerIdentity>
- -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -111,6 +113,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -140,6 +157,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -213,52 +245,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityPartnerIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminCustomer
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminCustomer
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDelegatedAdminCustomer\>: delegatedAdminCustomer
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDelegatedAdminCustomer>`: delegatedAdminCustomer
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The Microsoft Entra ID display name of the customer tenant.
+  - `[DisplayName <String>]`: The Microsoft Entra ID display name of the customer tenant.
 Read-only.
 Supports $orderby.
-  \[ServiceManagementDetails \<IMicrosoftGraphDelegatedAdminServiceManagementDetail\[\]\>\]: Contains the management details of a service in the customer tenant that's managed by delegated administration.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail- `[]`>]`: Contains the management details of a service in the customer tenant that's managed by delegated administration.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ServiceManagementUrl \<String\>\]: The URL of the management portal for the managed service.
+    - `[ServiceManagementUrl <String>]`: The URL of the management portal for the managed service.
 Read-only.
-    \[ServiceName \<String\>\]: The name of a managed service.
+    - `[ServiceName <String>]`: The name of a managed service.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra ID-assigned tenant ID of the customer.
+  - `[TenantId <String>]`: The Microsoft Entra ID-assigned tenant ID of the customer.
 Read-only.
 
-INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
-  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
-  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
-  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
-  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
-  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
-  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
+  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
+  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
+  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
+  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
+  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
-SERVICEMANAGEMENTDETAILS \<IMicrosoftGraphDelegatedAdminServiceManagementDetail\[\]\>: Contains the management details of a service in the customer tenant that's managed by delegated administration.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SERVICEMANAGEMENTDETAILS <IMicrosoftGraphDelegatedAdminServiceManagementDetail- `[]`>: Contains the management details of a service in the customer tenant that's managed by delegated administration.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ServiceManagementUrl \<String\>\]: The URL of the management portal for the managed service.
+  - `[ServiceManagementUrl <String>]`: The URL of the management portal for the managed service.
 Read-only.
-  \[ServiceName \<String\>\]: The name of a managed service.
+  - `[ServiceName <String>]`: The name of a managed service.
 Read-only.
 
 ## RELATED LINKS
 [Update-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomer)
+
+
 
 
 

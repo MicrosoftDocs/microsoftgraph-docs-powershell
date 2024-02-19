@@ -19,13 +19,15 @@ Remove a Microsoft Entra role assignment with administrative unit scope.
 ### Delete (Default)
 ```
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
- -ScopedRoleMembershipId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ScopedRoleMembershipId <String> [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,13 +40,13 @@ Remove a Microsoft Entra role assignment with administrative unit scope.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
+
 ```
 This example shows how to use the Remove-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -61,6 +63,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -106,6 +123,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -162,44 +194,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember)
+
+
 
 

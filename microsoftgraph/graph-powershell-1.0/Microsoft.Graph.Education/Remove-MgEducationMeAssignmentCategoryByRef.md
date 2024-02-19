@@ -20,13 +20,29 @@ Only teachers can perform this operation.
 ### Delete (Default)
 ```
 Remove-MgEducationMeAssignmentCategoryByRef -EducationAssignmentId <String> -EducationCategoryId <String>
- [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgEducationMeAssignmentCategoryByRef -EducationAssignmentId <String> -Id <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity> -Id <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity> [-Id <String>]
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +52,8 @@ Only teachers can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-remove-category-permissions.md)]
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -43,7 +61,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -68,15 +86,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-Delete Uri
+### -Headers
+Optional headers that will be added to the request.
 
 ```yaml
-Type: String
+Type: IDictionary
 Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Id
+The delete Uri
+
+```yaml
+Type: String
+Parameter Sets: Delete1, DeleteViaIdentity1
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -104,7 +137,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -125,6 +158,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -166,32 +214,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
-  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
-  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
-  \[EducationClassId \<String\>\]: The unique identifier of educationClass
-  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
-  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
-  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
-  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
-  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
-  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+  - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
+  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
 [Remove-MgBetaEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeAssignmentCategoryByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmeassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmeassignmentcategorybyref)
+
 
 
 

@@ -659,9 +659,6 @@ Locale: en-US
 ### [Remove-MgIdentityB2XUserFlow](Remove-MgIdentityB2XUserFlow.md)
 {{ Fill in the Description }}
 
-### [Remove-MgIdentityB2XUserFlowIdentityProvider](Remove-MgIdentityB2XUserFlowIdentityProvider.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](Remove-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 {{ Fill in the Description }}
 

@@ -16,13 +16,15 @@ Update the navigation property informationProtection in users
 ```
 Update-MgBetaUserSecurityInformationProtection -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
- [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSecurityInformationProtection -UserId <String>
- -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -30,13 +32,15 @@ Update-MgBetaUserSecurityInformationProtection -UserId <String>
 Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
- [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,6 +73,21 @@ Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -115,6 +134,21 @@ To construct, see NOTES section for LABELPOLICYSETTINGS properties and create a 
 Type: IMicrosoftGraphSecurityInformationProtectionPolicySetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -192,151 +226,156 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityInformationProtection\>: informationProtection
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityInformationProtection>`: informationProtection
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[LabelPolicySettings \<IMicrosoftGraphSecurityInformationProtectionPolicySetting\>\]: informationProtectionPolicySetting
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]`: informationProtectionPolicySetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DefaultLabelId \<String\>\]: 
-    \[IsDowngradeJustificationRequired \<Boolean?\>\]: Exposes whether justification input is required on label downgrade.
-    \[IsMandatory \<Boolean?\>\]: Exposes whether mandatory labeling is enabled.
-    \[MoreInfoUrl \<String\>\]: Exposes the more information URL that can be configured by the administrator.
-  \[SensitivityLabels \<IMicrosoftGraphSecuritySensitivityLabel\[\]\>\]: Read the Microsoft Purview Information Protection labels for the user or organization.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[DefaultLabelId <String>]`: 
+    - `[IsDowngradeJustificationRequired <Boolean?>]`: Exposes whether justification input is required on label downgrade.
+    - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
+    - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
+  - `[SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel- `[]`>]`: Read the Microsoft Purview Information Protection labels for the user or organization.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-    \[ContentFormats \<String\[\]\>\]: Returns the supported content formats for the label.
-    \[Description \<String\>\]: The admin-defined description for the label.
-    \[HasProtection \<Boolean?\>\]: Indicates whether the label has protection actions configured.
-    \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+    - `[Color <String>]`: The color that the UI should display for the label, if configured.
+    - `[ContentFormats <String- `[]`>]`: Returns the supported content formats for the label.
+    - `[Description <String>]`: The admin-defined description for the label.
+    - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
-    \[IsAppliable \<Boolean?\>\]: Indicates whether the label can be applied to content.
+    - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content.
 False if the label is a parent with child labels.
-    \[Name \<String\>\]: The plaintext name of the label.
-    \[Parent \<IMicrosoftGraphSecuritySensitivityLabel\>\]: sensitivityLabel
-    \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-    \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+    - `[Name <String>]`: The plaintext name of the label.
+    - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[ArticleId \<String\>\]: The unique identifier of article
-  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
-  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
-  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
-  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CategoryTemplateId \<String\>\]: The unique identifier of categoryTemplate
-  \[CitationTemplateId \<String\>\]: The unique identifier of citationTemplate
-  \[CloudAppSecurityProfileId \<String\>\]: The unique identifier of cloudAppSecurityProfile
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[DepartmentTemplateId \<String\>\]: The unique identifier of departmentTemplate
-  \[DispositionReviewStageId \<String\>\]: The unique identifier of dispositionReviewStage
-  \[DomainSecurityProfileId \<String\>\]: The unique identifier of domainSecurityProfile
-  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
-  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
-  \[EdiscoveryFileId \<String\>\]: The unique identifier of ediscoveryFile
-  \[EdiscoveryHoldPolicyId \<String\>\]: The unique identifier of ediscoveryHoldPolicy
-  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
-  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
-  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
-  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
-  \[EmailThreatSubmissionId \<String\>\]: The unique identifier of emailThreatSubmission
-  \[EmailThreatSubmissionPolicyId \<String\>\]: The unique identifier of emailThreatSubmissionPolicy
-  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
-  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
-  \[FilePlanReferenceTemplateId \<String\>\]: The unique identifier of filePlanReferenceTemplate
-  \[FileSecurityProfileId \<String\>\]: The unique identifier of fileSecurityProfile
-  \[FileThreatSubmissionId \<String\>\]: The unique identifier of fileThreatSubmission
-  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
-  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
-  \[HostId \<String\>\]: The unique identifier of host
-  \[HostPairId \<String\>\]: The unique identifier of hostPair
-  \[HostPortId \<String\>\]: The unique identifier of hostPort
-  \[HostSecurityProfileId \<String\>\]: The unique identifier of hostSecurityProfile
-  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
-  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
-  \[IPSecurityProfileId \<String\>\]: The unique identifier of ipSecurityProfile
-  \[IncidentId \<String\>\]: The unique identifier of incident
-  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
-  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
-  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
-  \[LandingPageId \<String\>\]: The unique identifier of landingPage
-  \[LoginPageId \<String\>\]: The unique identifier of loginPage
-  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
-  \[PayloadId \<String\>\]: The unique identifier of payload
-  \[ProviderTenantSettingId \<String\>\]: The unique identifier of providerTenantSetting
-  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
-  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
-  \[RetentionLabelId \<String\>\]: The unique identifier of retentionLabel
-  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
-  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
-  \[SecurityActionId \<String\>\]: The unique identifier of securityAction
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
-  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
-  \[SimulationId \<String\>\]: The unique identifier of simulation
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
-  \[SubCategoryTemplateId \<String\>\]: The unique identifier of subCategoryTemplate
-  \[SubdomainId \<String\>\]: The unique identifier of subdomain
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TiIndicatorId \<String\>\]: The unique identifier of tiIndicator
-  \[TrainingId \<String\>\]: The unique identifier of training
-  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UrlThreatSubmissionId \<String\>\]: The unique identifier of urlThreatSubmission
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSecurityProfileId \<String\>\]: The unique identifier of userSecurityProfile
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
-  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
-  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
-  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
-  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[AnalyzedEmailId <String>]`: The unique identifier of analyzedEmail
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuditLogQueryId <String>]`: The unique identifier of auditLogQuery
+  - `[AuditLogRecordId <String>]`: The unique identifier of auditLogRecord
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
+  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+  - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
+  - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
+  - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
+  - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
+  - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+  - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
+  - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
+  - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
+  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
+  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SecurityActionId <String>]`: The unique identifier of securityAction
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+  - `[SimulationId <String>]`: The unique identifier of simulation
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
+  - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-LABELPOLICYSETTINGS \<IMicrosoftGraphSecurityInformationProtectionPolicySetting\>: informationProtectionPolicySetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+LABELPOLICYSETTINGS `<IMicrosoftGraphSecurityInformationProtectionPolicySetting>`: informationProtectionPolicySetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DefaultLabelId \<String\>\]: 
-  \[IsDowngradeJustificationRequired \<Boolean?\>\]: Exposes whether justification input is required on label downgrade.
-  \[IsMandatory \<Boolean?\>\]: Exposes whether mandatory labeling is enabled.
-  \[MoreInfoUrl \<String\>\]: Exposes the more information URL that can be configured by the administrator.
+  - `[DefaultLabelId <String>]`: 
+  - `[IsDowngradeJustificationRequired <Boolean?>]`: Exposes whether justification input is required on label downgrade.
+  - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
+  - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
-SENSITIVITYLABELS \<IMicrosoftGraphSecuritySensitivityLabel\[\]\>: Read the Microsoft Purview Information Protection labels for the user or organization.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SENSITIVITYLABELS <IMicrosoftGraphSecuritySensitivityLabel- `[]`>: Read the Microsoft Purview Information Protection labels for the user or organization.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-  \[ContentFormats \<String\[\]\>\]: Returns the supported content formats for the label.
-  \[Description \<String\>\]: The admin-defined description for the label.
-  \[HasProtection \<Boolean?\>\]: Indicates whether the label has protection actions configured.
-  \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[ContentFormats <String- `[]`>]`: Returns the supported content formats for the label.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
-  \[IsAppliable \<Boolean?\>\]: Indicates whether the label can be applied to content.
+  - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content.
 False if the label is a parent with child labels.
-  \[Name \<String\>\]: The plaintext name of the label.
-  \[Parent \<IMicrosoftGraphSecuritySensitivityLabel\>\]: sensitivityLabel
-  \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-  \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+  - `[Name <String>]`: The plaintext name of the label.
+  - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection)
+
+
 
 
 

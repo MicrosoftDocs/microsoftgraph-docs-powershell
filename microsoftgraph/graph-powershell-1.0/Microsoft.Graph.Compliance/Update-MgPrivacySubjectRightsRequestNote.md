@@ -19,26 +19,30 @@ Update the navigation property notes in privacy
 ```
 Update-MgPrivacySubjectRightsRequestNote -AuthoredNoteId <String> -SubjectRightsRequestId <String>
  [-AdditionalProperties <Hashtable>] [-Author <IMicrosoftGraphIdentity>] [-Content <IMicrosoftGraphItemBody>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrivacySubjectRightsRequestNote -AuthoredNoteId <String> -SubjectRightsRequestId <String>
- -BodyParameter <IMicrosoftGraphAuthoredNote> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthoredNote> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
  [-Author <IMicrosoftGraphIdentity>] [-Content <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphAuthoredNote> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthoredNote> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -170,6 +189,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -226,54 +260,58 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthoredNote
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthoredNote
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHOR \<IMicrosoftGraphIdentity\>: identity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+AUTHOR `<IMicrosoftGraphIdentity>`: identity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 
-BODYPARAMETER \<IMicrosoftGraphAuthoredNote\>: authoredNote
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthoredNote>`: authoredNote
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Author \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Author <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
-  \[Content \<IMicrosoftGraphItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the entity was created.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Content <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the entity was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-CONTENT \<IMicrosoftGraphItemBody\>: itemBody
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of the item.
-  \[ContentType \<String\>\]: bodyType
+CONTENT `<IMicrosoftGraphItemBody>`: itemBody
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of the item.
+  - `[ContentType <String>]`: bodyType
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequestnote)
+
+
 
 
 

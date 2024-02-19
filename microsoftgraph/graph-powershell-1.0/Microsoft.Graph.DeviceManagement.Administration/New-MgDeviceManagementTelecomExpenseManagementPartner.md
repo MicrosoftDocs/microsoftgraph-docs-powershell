@@ -20,13 +20,14 @@ Create a new telecomExpenseManagementPartner object.
 ```
 New-MgDeviceManagementTelecomExpenseManagementPartner [-AdditionalProperties <Hashtable>] [-AppAuthorized]
  [-DisplayName <String>] [-Enabled] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-Url <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementTelecomExpenseManagementPartner
- -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -133,6 +134,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -156,6 +172,21 @@ Timestamp of the last request sent to Intune by the TEM partner.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -216,29 +247,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphTelecomExpenseManagementPartner\>: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
+BODYPARAMETER `<IMicrosoftGraphTelecomExpenseManagementPartner>`: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
 Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppAuthorized \<Boolean?\>\]: Whether the partner's AAD app has been authorized to access Intune.
-  \[DisplayName \<String\>\]: Display name of the TEM partner.
-  \[Enabled \<Boolean?\>\]: Whether Intune's connection to the TEM service is currently enabled or disabled.
-  \[LastConnectionDateTime \<DateTime?\>\]: Timestamp of the last request sent to Intune by the TEM partner.
-  \[Url \<String\>\]: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
+  - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
+  - `[DisplayName <String>]`: Display name of the TEM partner.
+  - `[Enabled <Boolean?>]`: Whether Intune's connection to the TEM service is currently enabled or disabled.
+  - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
+  - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner)
+
+
 
 

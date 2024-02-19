@@ -15,27 +15,29 @@ Invoke action hasPayloadLinks
 ### LinkExpanded (Default)
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
- [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Link
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
  -Body <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LinkViaIdentityExpanded
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LinkViaIdentity
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -90,6 +92,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -113,6 +130,21 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: LinkExpanded, LinkViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -174,68 +206,73 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY \<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[PayloadIds \<String\[\]\>\]: 
+BODY `<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PayloadIds <String- `[]`>]`: 
 
-BODYPARAMETER \<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[PayloadIds \<String\[\]\>\]: 
+BODYPARAMETER `<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PayloadIds <String- `[]`>]`: 
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
-  \[AccessReviewStageId \<String\>\]: The unique identifier of accessReviewStage
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
-  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
-  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
+  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
+  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
+  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink)
+
+
 
 
 

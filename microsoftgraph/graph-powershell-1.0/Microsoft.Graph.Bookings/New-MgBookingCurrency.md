@@ -17,13 +17,14 @@ Create new navigation property to bookingCurrencies for solutions
 
 ### CreateExpanded (Default)
 ```
-New-MgBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-Symbol <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-Symbol <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,6 +63,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -70,6 +86,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -131,26 +162,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCurrency
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCurrency
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphBookingCurrency\>: bookingCurrency
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphBookingCurrency>`: bookingCurrency
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Symbol \<String\>\]: The currency symbol.
+  - `[Symbol <String>]`: The currency symbol.
 For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
 [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
+
+
 
 
 

@@ -17,14 +17,14 @@ Currently only the Exchange Online RBAC provider is supported.
 ### CreateExpanded (Default)
 ```
 New-MgBetaRoleManagementExchangeCustomAppScope [-AdditionalProperties <Hashtable>]
- [-CustomAttributes <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Type <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CustomAttributes <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Type <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter <IMicrosoftGraphCustomAppScope> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter <IMicrosoftGraphCustomAppScope>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -107,6 +122,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -168,30 +198,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAppScope
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAppScope
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCustomAppScope\>: customAppScope
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
+BODYPARAMETER `<IMicrosoftGraphCustomAppScope>`: customAppScope
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CustomAttributes \<IMicrosoftGraphCustomAppScopeAttributesDictionary\>\]: customAppScopeAttributesDictionary
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope)
+
+
 
 
 

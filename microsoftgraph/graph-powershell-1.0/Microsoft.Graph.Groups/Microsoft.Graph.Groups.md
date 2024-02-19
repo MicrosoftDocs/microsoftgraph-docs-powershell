@@ -98,6 +98,9 @@ Locale: en-US
 ### [Get-MgGroupById](Get-MgGroupById.md)
 {{ Fill in the Description }}
 
+### [Get-MgGroupByUniqueName](Get-MgGroupByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Get-MgGroupCalendarEventDelta](Get-MgGroupCalendarEventDelta.md)
 {{ Fill in the Description }}
 
@@ -417,6 +420,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSiteDelta](Get-MgGroupSiteDelta.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathApplicableContentTypeForList](Get-MgGroupSiteGetByPathApplicableContentTypeForList.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetGraphBPrePathActivityByInterval](Get-MgGroupSiteGetGraphBPrePathActivityByInterval.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetGraphBPrePathByPath](Get-MgGroupSiteGetGraphBPrePathByPath.md)
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSiteListContentTypeCompatibleHubContentType](Get-MgGroupSiteListContentTypeCompatibleHubContentType.md)
@@ -803,6 +815,9 @@ Locale: en-US
 ### [Remove-MgGroupAcceptedSenderByRef](Remove-MgGroupAcceptedSenderByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupByUniqueName](Remove-MgGroupByUniqueName.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupConversation](Remove-MgGroupConversation.md)
 {{ Fill in the Description }}
 
@@ -846,9 +861,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
-{{ Fill in the Description }}
-
-### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupRejectedSenderByRef](Remove-MgGroupRejectedSenderByRef.md)
@@ -978,6 +990,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgGroup](Update-MgGroup.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupByUniqueName](Update-MgGroupByUniqueName.md)
 {{ Fill in the Description }}
 
 ### [Update-MgGroupConversationThread](Update-MgGroupConversationThread.md)

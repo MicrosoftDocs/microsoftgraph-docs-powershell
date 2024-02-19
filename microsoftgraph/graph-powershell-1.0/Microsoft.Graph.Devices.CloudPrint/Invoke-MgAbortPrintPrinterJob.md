@@ -22,27 +22,31 @@ For details about how to register a task trigger, see Extending Universal Print 
 ### AbortExpanded (Default)
 ```
 Invoke-MgAbortPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-AdditionalProperties <Hashtable>]
- [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Reason <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Abort
 ```
 Invoke-MgAbortPrintPrinterJob -PrintJobId <String> -PrinterId <String>
  -BodyParameter <IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AbortViaIdentityExpanded
 ```
 Invoke-MgAbortPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Reason <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AbortViaIdentity
 ```
 Invoke-MgAbortPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,6 +85,21 @@ Parameter Sets: Abort, AbortViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -148,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Reason
 .
 
@@ -201,38 +235,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ### Microsoft.Graph.PowerShell.Models.IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Reason \<String\>\]: 
+BODYPARAMETER `<IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Reason <String>]`: 
 
-INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
-  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
-  \[PrintJobId \<String\>\]: The unique identifier of printJob
-  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
-  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
-  \[PrintServiceId \<String\>\]: The unique identifier of printService
-  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
-  \[PrintTaskId \<String\>\]: The unique identifier of printTask
-  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
-  \[PrinterId \<String\>\]: The unique identifier of printer
-  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
+  - `[PrintOperationId <String>]`: The unique identifier of printOperation
+  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+  - `[PrintServiceId <String>]`: The unique identifier of printService
+  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+  - `[PrintTaskId <String>]`: The unique identifier of printTask
+  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+  - `[PrinterId <String>]`: The unique identifier of printer
+  - `[PrinterShareId <String>]`: The unique identifier of printerShare
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Invoke-MgBetaAbortPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaAbortPrintPrinterJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob)
+
+
 
 
 

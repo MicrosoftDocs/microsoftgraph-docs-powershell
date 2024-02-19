@@ -17,14 +17,16 @@ Update media content for the navigation property messages in users
 
 ### Set (Default)
 ```
-Set-MgUserMessageContent -MessageId <String> -UserId <String> [-Data <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserMessageContent -MessageId <String> -UserId <String> [-Data <Stream>] -InFile <String>
+ [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgUserMessageContent -InputObject <IMailIdentity> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgUserMessageContent -InputObject <IMailIdentity> [-Data <Stream>] -InFile <String> [-ContentType <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,11 +34,41 @@ Update media content for the navigation property messages in users
 
 ## PARAMETERS
 
+### -ContentType
+ContentType Parameter
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Data
 .
 
 ```yaml
 Type: Stream
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
 Parameter Sets: (All)
 Aliases:
 
@@ -110,6 +142,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -162,30 +209,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+### System.Collections.IDictionary
 ### System.IO.Stream
+### System.String
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Set-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMessageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent)
+
+
 
 
 

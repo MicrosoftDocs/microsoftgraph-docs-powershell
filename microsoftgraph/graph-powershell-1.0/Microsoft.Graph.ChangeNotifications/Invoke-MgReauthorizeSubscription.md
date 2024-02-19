@@ -18,13 +18,14 @@ Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ### Reauthorize (Default)
 ```
-Invoke-MgReauthorizeSubscription -SubscriptionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReauthorizeSubscription -SubscriptionId <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
 ```
-Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,6 +45,21 @@ This example shows how to use the Invoke-MgReauthorizeSubscription Cmdlet.
 
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -72,6 +88,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -128,21 +159,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
 [Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription)
+
+
 
 

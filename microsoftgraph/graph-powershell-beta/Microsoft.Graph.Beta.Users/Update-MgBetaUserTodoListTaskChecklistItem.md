@@ -20,28 +20,30 @@ Update the properties of a checklistItem object.
 ```
 Update-MgBetaUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String>
  -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-CheckedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-IsChecked] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-IsChecked] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChecklistItem> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChecklistItem>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-CheckedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-IsChecked] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsChecked] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphChecklistItem> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChecklistItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -161,6 +163,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -204,6 +221,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -291,51 +323,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChecklistItem
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChecklistItem
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphChecklistItem\>: checklistItem
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CheckedDateTime \<DateTime?\>\]: The date and time when the checklistItem was finished.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the checklistItem was created.
-  \[DisplayName \<String\>\]: Field indicating the title of checklistItem.
-  \[IsChecked \<Boolean?\>\]: State indicating whether the item is checked off or not.
+  - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
+  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
+  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[NotificationId \<String\>\]: The unique identifier of notification
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
-  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
-  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
-  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[TrendingId \<String\>\]: The unique identifier of trending
-  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of servicePrincipal
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[NotificationId <String>]`: The unique identifier of notification
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
+  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
+  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem)
+
+
 
 

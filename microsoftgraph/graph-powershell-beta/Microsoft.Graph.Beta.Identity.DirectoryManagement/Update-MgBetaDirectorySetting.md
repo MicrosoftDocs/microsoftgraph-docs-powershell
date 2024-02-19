@@ -17,26 +17,28 @@ Update the properties of a specific directory setting object.
 ```
 Update-MgBetaDirectorySetting -DirectorySettingId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectorySetting -DirectorySettingId <String> -BodyParameter <IMicrosoftGraphDirectorySetting>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TemplateId <String>]
- [-Values <IMicrosoftGraphSettingValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Values <IMicrosoftGraphSettingValue[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphDirectorySetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDirectorySetting> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -126,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -155,6 +172,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -228,78 +260,84 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySetting
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySetting
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDirectorySetting\>: directorySetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDirectorySetting>`: directorySetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: Display name of this group of settings, which comes from the associated template.
+  - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template.
 Read-only.
-  \[TemplateId \<String\>\]: Unique identifier for the template used to create this group of settings.
+  - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings.
 Read-only.
-  \[Values \<IMicrosoftGraphSettingValue\[\]\>\]: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-    \[Name \<String\>\]: Name of the setting (as defined by the directorySettingTemplate).
-    \[Value \<String\>\]: Value of the setting.
+  - `[Values <IMicrosoftGraphSettingValue- `[]`>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+    - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+    - `[Value <String>]`: Value of the setting.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
-  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
-  \[CommandId \<String\>\]: The unique identifier of command
-  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
-  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
-  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RecommendationId \<String\>\]: The unique identifier of recommendation
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
-  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[UsageRightId \<String\>\]: The unique identifier of usageRight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
+  - `[CommandId <String>]`: The unique identifier of command
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[UsageRightId <String>]`: The unique identifier of usageRight
+  - `[UserId <String>]`: The unique identifier of user
 
-VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-  \[Name \<String\>\]: Name of the setting (as defined by the directorySettingTemplate).
-  \[Value \<String\>\]: Value of the setting.
+VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+  - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+  - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting)
+
+
 
 

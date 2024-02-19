@@ -16,13 +16,14 @@ Add new entity to directorySettingTemplates
 ```
 New-MgBetaDirectorySettingTemplate [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDirectorySettingTemplate -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDirectorySettingTemplate -BodyParameter <IMicrosoftGraphDirectorySettingTemplate>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -117,6 +133,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -179,50 +210,54 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDirectorySettingTemplate\>: directorySettingTemplate
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphDirectorySettingTemplate>`: directorySettingTemplate
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Description of the template.
+  - `[Description <String>]`: Description of the template.
 Read-only.
-  \[DisplayName \<String\>\]: Display name of the template.
+  - `[DisplayName <String>]`: Display name of the template.
 Read-only.
-  \[Values \<IMicrosoftGraphSettingTemplateValue\[\]\>\]: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. 
+  - `[Values <IMicrosoftGraphSettingTemplateValue- `[]`>]`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. 
 Read-only.
-    \[DefaultValue \<String\>\]: Default value for the setting.
+    - `[DefaultValue <String>]`: Default value for the setting.
 Read-only.
-    \[Description \<String\>\]: Description of the setting.
+    - `[Description <String>]`: Description of the setting.
 Read-only.
-    \[Name \<String\>\]: Name of the setting.
+    - `[Name <String>]`: Name of the setting.
 Read-only.
-    \[Type \<String\>\]: Type of the setting.
+    - `[Type <String>]`: Type of the setting.
 Read-only.
 
-VALUES \<IMicrosoftGraphSettingTemplateValue\[\]\>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
 Read-only.
-  \[DefaultValue \<String\>\]: Default value for the setting.
+  - `[DefaultValue <String>]`: Default value for the setting.
 Read-only.
-  \[Description \<String\>\]: Description of the setting.
+  - `[Description <String>]`: Description of the setting.
 Read-only.
-  \[Name \<String\>\]: Name of the setting.
+  - `[Name <String>]`: Name of the setting.
 Read-only.
-  \[Type \<String\>\]: Type of the setting.
+  - `[Type <String>]`: Type of the setting.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysettingtemplate)
+
+
 
 
 

@@ -23,13 +23,14 @@ New-MgBetaTenantRelationshipManagedTenantWindowsProtectionState [-AdditionalProp
  [-ManagedDeviceHealthState <String>] [-ManagedDeviceId <String>] [-ManagedDeviceName <String>]
  [-NetworkInspectionSystemEnabled] [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired]
  [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
- -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -184,6 +185,21 @@ Required: False
 Position: Named
 Default value: False
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -390,6 +406,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -QuickScanOverdue
 A flag indicating weather a quick scan is overdue.
 Optional.
@@ -546,98 +577,102 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsWindowsProtectionState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsWindowsProtectionState
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsWindowsProtectionState\>: windowsProtectionState
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsWindowsProtectionState>`: windowsProtectionState
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AntiMalwareVersion \<String\>\]: The anti-malware version for the managed device.
+  - `[AntiMalwareVersion <String>]`: The anti-malware version for the managed device.
 Optional.
 Read-only.
-  \[AttentionRequired \<Boolean?\>\]: A flag indicating whether attention is required for the managed device.
+  - `[AttentionRequired <Boolean?>]`: A flag indicating whether attention is required for the managed device.
 Optional.
 Read-only.
-  \[DeviceDeleted \<Boolean?\>\]: A flag indicating whether the managed device has been deleted.
+  - `[DeviceDeleted <Boolean?>]`: A flag indicating whether the managed device has been deleted.
 Optional.
 Read-only.
-  \[DevicePropertyRefreshDateTime \<DateTime?\>\]: The date and time the device property has been refreshed.
+  - `[DevicePropertyRefreshDateTime <DateTime?>]`: The date and time the device property has been refreshed.
 Optional.
 Read-only.
-  \[EngineVersion \<String\>\]: The anti-virus engine version for the managed device.
+  - `[EngineVersion <String>]`: The anti-virus engine version for the managed device.
 Optional.
 Read-only.
-  \[FullScanOverdue \<Boolean?\>\]: A flag indicating whether quick scan is overdue for the managed device.
+  - `[FullScanOverdue <Boolean?>]`: A flag indicating whether quick scan is overdue for the managed device.
 Optional.
 Read-only.
-  \[FullScanRequired \<Boolean?\>\]: A flag indicating whether full scan is overdue for the managed device.
+  - `[FullScanRequired <Boolean?>]`: A flag indicating whether full scan is overdue for the managed device.
 Optional.
 Read-only.
-  \[LastFullScanDateTime \<DateTime?\>\]: The date and time a full scan was completed.
+  - `[LastFullScanDateTime <DateTime?>]`: The date and time a full scan was completed.
 Optional.
 Read-only.
-  \[LastFullScanSignatureVersion \<String\>\]: The version anti-malware version used to perform the last full scan.
+  - `[LastFullScanSignatureVersion <String>]`: The version anti-malware version used to perform the last full scan.
 Optional.
 Read-only.
-  \[LastQuickScanDateTime \<DateTime?\>\]: The date and time a quick scan was completed.
+  - `[LastQuickScanDateTime <DateTime?>]`: The date and time a quick scan was completed.
 Optional.
 Read-only.
-  \[LastQuickScanSignatureVersion \<String\>\]: The version anti-malware version used to perform the last full scan.
+  - `[LastQuickScanSignatureVersion <String>]`: The version anti-malware version used to perform the last full scan.
 Optional.
 Read-only.
-  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
+  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
-  \[LastReportedDateTime \<DateTime?\>\]: The date and time the protection state was last reported for the managed device.
+  - `[LastReportedDateTime <DateTime?>]`: The date and time the protection state was last reported for the managed device.
 Optional.
 Read-only.
-  \[MalwareProtectionEnabled \<Boolean?\>\]: A flag indicating whether malware protection is enabled for the managed device.
+  - `[MalwareProtectionEnabled <Boolean?>]`: A flag indicating whether malware protection is enabled for the managed device.
 Optional.
 Read-only.
-  \[ManagedDeviceHealthState \<String\>\]: The health state for the managed device.
+  - `[ManagedDeviceHealthState <String>]`: The health state for the managed device.
 Optional.
 Read-only.
-  \[ManagedDeviceId \<String\>\]: The unique identifier for the managed device.
+  - `[ManagedDeviceId <String>]`: The unique identifier for the managed device.
 Optional.
 Read-only.
-  \[ManagedDeviceName \<String\>\]: The display name for the managed device.
+  - `[ManagedDeviceName <String>]`: The display name for the managed device.
 Optional.
 Read-only.
-  \[NetworkInspectionSystemEnabled \<Boolean?\>\]: A flag indicating whether the network inspection system is enabled.
+  - `[NetworkInspectionSystemEnabled <Boolean?>]`: A flag indicating whether the network inspection system is enabled.
 Optional.
 Read-only.
-  \[QuickScanOverdue \<Boolean?\>\]: A flag indicating weather a quick scan is overdue.
+  - `[QuickScanOverdue <Boolean?>]`: A flag indicating weather a quick scan is overdue.
 Optional.
 Read-only.
-  \[RealTimeProtectionEnabled \<Boolean?\>\]: A flag indicating whether real time protection is enabled.
+  - `[RealTimeProtectionEnabled <Boolean?>]`: A flag indicating whether real time protection is enabled.
 Optional.
 Read-only.
-  \[RebootRequired \<Boolean?\>\]: A flag indicating whether a reboot is required.
+  - `[RebootRequired <Boolean?>]`: A flag indicating whether a reboot is required.
 Optional.
 Read-only.
-  \[SignatureUpdateOverdue \<Boolean?\>\]: A flag indicating whether an signature update is overdue.
+  - `[SignatureUpdateOverdue <Boolean?>]`: A flag indicating whether an signature update is overdue.
 Optional.
 Read-only.
-  \[SignatureVersion \<String\>\]: The signature version for the managed device.
+  - `[SignatureVersion <String>]`: The signature version for the managed device.
 Optional.
 Read-only.
-  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
+  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
 Optional.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate)
+
+
 
 
 

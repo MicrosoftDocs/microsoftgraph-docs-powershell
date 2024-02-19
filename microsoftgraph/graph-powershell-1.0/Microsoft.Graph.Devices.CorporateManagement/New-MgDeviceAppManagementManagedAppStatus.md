@@ -18,13 +18,14 @@ Create new navigation property to managedAppStatuses for deviceAppManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceAppManagementManagedAppStatus [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceAppManagementManagedAppStatus -BodyParameter <IMicrosoftGraphManagedAppStatus> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDeviceAppManagementManagedAppStatus -BodyParameter <IMicrosoftGraphManagedAppStatus>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,6 +79,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -86,6 +102,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -146,26 +177,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppStatus
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppStatus
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedAppStatus\>: Represents app protection and configuration status for the organization.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedAppStatus>`: Represents app protection and configuration status for the organization.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: Friendly name of the status report.
-  \[Version \<String\>\]: Version of the entity.
+  - `[DisplayName <String>]`: Friendly name of the status report.
+  - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
 [New-MgBetaDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappstatus)
+
+
 
 
 

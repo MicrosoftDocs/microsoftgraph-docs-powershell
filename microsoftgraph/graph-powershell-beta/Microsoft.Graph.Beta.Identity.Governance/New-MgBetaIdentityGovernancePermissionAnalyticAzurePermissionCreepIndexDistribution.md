@@ -17,14 +17,15 @@ Create new navigation property to permissionsCreepIndexDistributions for identit
 New-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution
  [-AdditionalProperties <Hashtable>] [-AuthorizationSystem <IMicrosoftGraphAuthorizationSystem>]
  [-CreatedDateTime <DateTime>] [-HighRiskProfile <IMicrosoftGraphRiskProfile>] [-Id <String>]
- [-LowRiskProfile <IMicrosoftGraphRiskProfile>] [-MediumRiskProfile <IMicrosoftGraphRiskProfile>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LowRiskProfile <IMicrosoftGraphRiskProfile>] [-MediumRiskProfile <IMicrosoftGraphRiskProfile>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution
- -BodyParameter <IMicrosoftGraphPermissionsCreepIndexDistribution> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPermissionsCreepIndexDistribution> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,6 +95,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HighRiskProfile
 riskProfile
 To construct, see NOTES section for HIGHRISKPROFILE properties and create a hash table.
@@ -158,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -195,80 +226,84 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsCreepIndexDistribution
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsCreepIndexDistribution
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATIONSYSTEM \<IMicrosoftGraphAuthorizationSystem\>: authorizationSystem
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+AUTHORIZATIONSYSTEM `<IMicrosoftGraphAuthorizationSystem>`: authorizationSystem
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+  - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
 Supports $filter(eq, contains) and $orderBy.
-  \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
+  - `[AuthorizationSystemName <String>]`: Name of the authorization system detected after onboarding.
 Supports $filter(eq,contains) and $orderBy.
-  \[AuthorizationSystemType \<String\>\]: The type of authorization system.
+  - `[AuthorizationSystemType <String>]`: The type of authorization system.
 Can be gcp, azure, or aws.
 Supports $filter(eq).
-  \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>]`: dataCollectionInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER \<IMicrosoftGraphPermissionsCreepIndexDistribution\>: permissionsCreepIndexDistribution
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPermissionsCreepIndexDistribution>`: permissionsCreepIndexDistribution
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthorizationSystem \<IMicrosoftGraphAuthorizationSystem\>\]: authorizationSystem
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AuthorizationSystem <IMicrosoftGraphAuthorizationSystem>]`: authorizationSystem
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+    - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
 Supports $filter(eq, contains) and $orderBy.
-    \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
+    - `[AuthorizationSystemName <String>]`: Name of the authorization system detected after onboarding.
 Supports $filter(eq,contains) and $orderBy.
-    \[AuthorizationSystemType \<String\>\]: The type of authorization system.
+    - `[AuthorizationSystemType <String>]`: The type of authorization system.
 Can be gcp, azure, or aws.
 Supports $filter(eq).
-    \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>]`: dataCollectionInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedDateTime \<DateTime?\>\]: Defines when the PCI distribution was created.
-  \[HighRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[HumanCount \<Int32?\>\]: This is the count of human identities that have been assigned to this riskScoreBracket,
-    \[NonHumanCount \<Int32?\>\]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
-  \[LowRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
-  \[MediumRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
+      - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedDateTime <DateTime?>]`: Defines when the PCI distribution was created.
+  - `[HighRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[HumanCount <Int32?>]`: This is the count of human identities that have been assigned to this riskScoreBracket,
+    - `[NonHumanCount <Int32?>]`: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
+  - `[LowRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
+  - `[MediumRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
 
-HIGHRISKPROFILE \<IMicrosoftGraphRiskProfile\>: riskProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[HumanCount \<Int32?\>\]: This is the count of human identities that have been assigned to this riskScoreBracket,
-  \[NonHumanCount \<Int32?\>\]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
+HIGHRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[HumanCount <Int32?>]`: This is the count of human identities that have been assigned to this riskScoreBracket,
+  - `[NonHumanCount <Int32?>]`: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
 
-LOWRISKPROFILE \<IMicrosoftGraphRiskProfile\>: riskProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[HumanCount \<Int32?\>\]: This is the count of human identities that have been assigned to this riskScoreBracket,
-  \[NonHumanCount \<Int32?\>\]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
+LOWRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[HumanCount <Int32?>]`: This is the count of human identities that have been assigned to this riskScoreBracket,
+  - `[NonHumanCount <Int32?>]`: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
 
-MEDIUMRISKPROFILE \<IMicrosoftGraphRiskProfile\>: riskProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[HumanCount \<Int32?\>\]: This is the count of human identities that have been assigned to this riskScoreBracket,
-  \[NonHumanCount \<Int32?\>\]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
+MEDIUMRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[HumanCount <Int32?>]`: This is the count of human identities that have been assigned to this riskScoreBracket,
+  - `[NonHumanCount <Int32?>]`: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticazurepermissioncreepindexdistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticazurepermissioncreepindexdistribution)
+
+
 
 
 

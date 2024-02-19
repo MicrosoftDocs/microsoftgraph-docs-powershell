@@ -20,27 +20,28 @@ Grant users access to a link represented by a \[permission\]\[\].
 ```
 Grant-MgUserDriveItemPermission -DriveId <String> -DriveItemId <String> -PermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Grant
 ```
 Grant-MgUserDriveItemPermission -DriveId <String> -DriveItemId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPaths1Sp3KjhUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GrantViaIdentityExpanded
 ```
 Grant-MgUserDriveItemPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GrantViaIdentity
 ```
 Grant-MgUserDriveItemPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Sp3KjhUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -139,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -164,6 +180,21 @@ Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -254,64 +285,69 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Sp3KjhUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Sp3KjhUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
-    \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+BODYPARAMETER `<IPaths1Sp3KjhUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Recipients <IMicrosoftGraphDriveRecipient- `[]`>]`: 
+    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
-    \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
-    \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
-  \[Roles \<String\[\]\>\]: 
+    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
+    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+  - `[Roles <String- `[]`>]`: 
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
-  \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
-  \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
-  \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
+  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
+  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
 [Grant-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Grant-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriveitempermission)
+
+
 
 

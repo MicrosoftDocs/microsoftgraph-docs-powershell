@@ -20,26 +20,30 @@ Update the properties of a telecomExpenseManagementPartner object.
 ```
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId <String>
  [-AdditionalProperties <Hashtable>] [-AppAuthorized] [-DisplayName <String>] [-Enabled] [-Id <String>]
- [-LastConnectionDateTime <DateTime>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastConnectionDateTime <DateTime>] [-Url <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId <String>
- -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-AppAuthorized] [-DisplayName <String>] [-Enabled] [-Id <String>]
- [-LastConnectionDateTime <DateTime>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastConnectionDateTime <DateTime>] [-Url <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -146,6 +150,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -185,6 +204,21 @@ Timestamp of the last request sent to Intune by the TEM partner.
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -261,46 +295,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphTelecomExpenseManagementPartner\>: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
+BODYPARAMETER `<IMicrosoftGraphTelecomExpenseManagementPartner>`: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
 Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppAuthorized \<Boolean?\>\]: Whether the partner's AAD app has been authorized to access Intune.
-  \[DisplayName \<String\>\]: Display name of the TEM partner.
-  \[Enabled \<Boolean?\>\]: Whether Intune's connection to the TEM service is currently enabled or disabled.
-  \[LastConnectionDateTime \<DateTime?\>\]: Timestamp of the last request sent to Intune by the TEM partner.
-  \[Url \<String\>\]: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
+  - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
+  - `[DisplayName <String>]`: Display name of the TEM partner.
+  - `[Enabled <Boolean?>]`: Whether Intune's connection to the TEM service is currently enabled or disabled.
+  - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
+  - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
-INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
-  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
-  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
-  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
-  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
-  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
-  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
-  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
-  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtelecomexpensemanagementpartner)
+
+
 
 

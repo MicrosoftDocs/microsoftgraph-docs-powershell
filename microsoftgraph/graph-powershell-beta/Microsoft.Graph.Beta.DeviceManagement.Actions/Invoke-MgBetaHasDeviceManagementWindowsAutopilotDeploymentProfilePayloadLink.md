@@ -15,14 +15,15 @@ Invoke action hasPayloadLinks
 ### LinkExpanded (Default)
 ```
 Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink
- [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Link
 ```
 Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink
  -Body <IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,6 +62,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PayloadIds
 .
 
@@ -68,6 +84,21 @@ Accept wildcard characters: False
 Type: String[]
 Parameter Sets: LinkExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -113,22 +144,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY \<IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[PayloadIds \<String\[\]\>\]:
+BODY `<IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PayloadIds <String- `[]`>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink)
+
+
 
 
 

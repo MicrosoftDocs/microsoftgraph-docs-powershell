@@ -20,25 +20,29 @@ Service principal owners can be users, the service principal itself, or other se
 ### CreateExpanded (Default)
 ```
 New-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId <String> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId <String> -BodyParameter <IReferenceCreate> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId <String> -BodyParameter <IReferenceCreate>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter <IReferenceCreate>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -91,6 +95,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -134,6 +153,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -191,56 +225,60 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IReferenceCreate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IReferenceCreate\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  OdataId \<String\>: The entity reference URL of the resource.
+BODYPARAMETER `<IReferenceCreate>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  OdataId `<String>`: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
-  \[AppId \<String\>\]: Alternate key of application
-  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
-  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
-  \[ApplicationId \<String\>\]: The unique identifier of application
-  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
-  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
-  \[ConnectorGroupId \<String\>\]: The unique identifier of connectorGroup
-  \[ConnectorId \<String\>\]: The unique identifier of connector
-  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
-  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[EndpointId \<String\>\]: The unique identifier of endpoint
-  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
-  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OnPremisesAgentGroupId \<String\>\]: The unique identifier of onPremisesAgentGroup
-  \[OnPremisesAgentGroupId1 \<String\>\]: The unique identifier of onPremisesAgentGroup
-  \[OnPremisesAgentId \<String\>\]: The unique identifier of onPremisesAgent
-  \[OnPremisesPublishingProfileId \<String\>\]: The unique identifier of onPremisesPublishingProfile
-  \[PublishedResourceId \<String\>\]: The unique identifier of publishedResource
-  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
-  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
-  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
-  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
-  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
-  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
-  \[UniqueName \<String\>\]: Alternate key of application
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
+  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
+  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
+  - `[ApplicationId <String>]`: The unique identifier of application
+  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
+  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
+  - `[ConnectorId <String>]`: The unique identifier of connector
+  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndpointId <String>]`: The unique identifier of endpoint
+  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
+  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[UniqueName <String>]`: Alternate key of application
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [New-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalownerbyref)
+
+
 
 

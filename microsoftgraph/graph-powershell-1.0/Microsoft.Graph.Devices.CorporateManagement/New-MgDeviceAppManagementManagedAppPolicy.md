@@ -19,13 +19,14 @@ Create new navigation property to managedAppPolicies for deviceAppManagement
 ```
 New-MgDeviceAppManagementManagedAppPolicy [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceAppManagementManagedAppPolicy -BodyParameter <IMicrosoftGraphManagedAppPolicy> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDeviceAppManagementManagedAppPolicy -BodyParameter <IMicrosoftGraphManagedAppPolicy>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -132,6 +148,21 @@ Last time the policy was modified.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -192,29 +223,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedAppPolicy\>: The ManagedAppPolicy resource represents a base type for platform specific policies.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedAppPolicy>`: The ManagedAppPolicy resource represents a base type for platform specific policies.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the policy was created.
-  \[Description \<String\>\]: The policy's description.
-  \[DisplayName \<String\>\]: Policy display name.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last time the policy was modified.
-  \[Version \<String\>\]: Version of the entity.
+  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+  - `[Description <String>]`: The policy's description.
+  - `[DisplayName <String>]`: Policy display name.
+  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+  - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
 [New-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedapppolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedapppolicy)
+
+
 
 
 

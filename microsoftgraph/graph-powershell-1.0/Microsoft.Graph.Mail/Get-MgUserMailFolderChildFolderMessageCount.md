@@ -18,13 +18,14 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgUserMailFolderChildFolderMessageCount -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgUserMailFolderChildFolderMessageCount -InputObject <IMailIdentity> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,6 +45,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -93,6 +109,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -129,8 +160,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -138,20 +171,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserMailFolderChildFolderMessageCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagecount)
+
+
 
 
 

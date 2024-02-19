@@ -21,13 +21,15 @@ New-MgBetaDeviceManagementDeviceEnrollmentConfiguration [-AdditionalProperties <
  [-Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Priority <Int32>]
- [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceEnrollmentConfiguration
- -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -142,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -185,6 +202,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -256,52 +288,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphEnrollmentConfigurationAssignment\[\]\>: The list of group assignments for the device configuration profile
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>: The list of group assignments for the device configuration profile
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
-  \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
+  - `[SourceId <String>]`: Identifier for resource used for deployment to a group
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceEnrollmentConfiguration\>: The Base Class of Device Enrollment Configuration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration>`: The Base Class of Device Enrollment Configuration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphEnrollmentConfigurationAssignment\[\]\>\]: The list of group assignments for the device configuration profile
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>]`: The list of group assignments for the device configuration profile
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
-    \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[CreatedDateTime \<DateTime?\>\]: Created date time in UTC of the device enrollment configuration
-  \[Description \<String\>\]: The description of the device enrollment configuration
-  \[DeviceEnrollmentConfigurationType \<DeviceEnrollmentConfigurationType?\>\]: Describes the TemplateFamily for the Template entity
-  \[DisplayName \<String\>\]: The display name of the device enrollment configuration
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modified date time in UTC of the device enrollment configuration
-  \[Priority \<Int32?\>\]: Priority is used when a user exists in multiple groups that are assigned enrollment configuration.
+    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
+    - `[SourceId <String>]`: Identifier for resource used for deployment to a group
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration
+  - `[Description <String>]`: The description of the device enrollment configuration
+  - `[DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType?>]`: Describes the TemplateFamily for the Template entity
+  - `[DisplayName <String>]`: The display name of the device enrollment configuration
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified date time in UTC of the device enrollment configuration
+  - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration.
 Users are subject only to the configuration with the lowest priority value.
-  \[RoleScopeTagIds \<String\[\]\>\]: Optional role scope tags for the enrollment restrictions.
-  \[Version \<Int32?\>\]: The version of the device enrollment configuration
+  - `[RoleScopeTagIds <String- `[]`>]`: Optional role scope tags for the enrollment restrictions.
+  - `[Version <Int32?>]`: The version of the device enrollment configuration
 
 ## RELATED LINKS
 [New-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration)
+
+
 
 
 

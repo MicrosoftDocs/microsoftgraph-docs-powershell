@@ -17,6 +17,9 @@ Locale: en-US
 ### [Get-MgBetaUserAppRoleAssignedResource](Get-MgBetaUserAppRoleAssignedResource.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserAppRoleAssignedResourceByAppId](Get-MgBetaUserAppRoleAssignedResourceByAppId.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserAppRoleAssignedResourceCount](Get-MgBetaUserAppRoleAssignedResourceCount.md)
 {{ Fill in the Description }}
 
@@ -464,9 +467,6 @@ Locale: en-US
 ### [Remove-MgBetaUserLicenseDetail](Remove-MgBetaUserLicenseDetail.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaUserManager](Remove-MgBetaUserManager.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaUserManagerByRef](Remove-MgBetaUserManagerByRef.md)
 {{ Fill in the Description }}
 
@@ -516,9 +516,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserSettingShiftPreference](Remove-MgBetaUserSettingShiftPreference.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaUserSponsor](Remove-MgBetaUserSponsor.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserTodoList](Remove-MgBetaUserTodoList.md)

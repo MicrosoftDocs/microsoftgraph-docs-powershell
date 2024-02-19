@@ -21,26 +21,29 @@ Only teachers, students, and applications with application permissions can perfo
 ```
 Get-MgBetaEducationClassAssignmentCategory -EducationClassId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### List1
 ```
 Get-MgBetaEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +54,7 @@ Only teachers, students, and applications with application permissions can perfo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-get-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get assignment categories
 
 ```powershell
 
@@ -60,7 +63,29 @@ Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId
 
 ```
-This example shows how to use the Get-MgBetaEducationClassAssignmentCategory Cmdlet.
+This example will get assignment categories
+
+### Example 2: Using `$filter` to get assignment categories
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -Filter "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'" 
+
+```
+This example shows using `$filter` to get assignment categories
+
+### Example 3: Using `$orderby` to get assignment categories
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -Sort "displayName" 
+
+```
+This example shows using `$orderby` to get assignment categories
 
 
 ## PARAMETERS
@@ -171,6 +196,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -198,6 +238,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -283,37 +338,41 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationCategory
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
-  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
-  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
-  \[EducationClassId \<String\>\]: The unique identifier of educationClass
-  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
-  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
-  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
-  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
-  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
-  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
-  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
-  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
-  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
-  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+  - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
+  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+  - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory)
+
+
 
 

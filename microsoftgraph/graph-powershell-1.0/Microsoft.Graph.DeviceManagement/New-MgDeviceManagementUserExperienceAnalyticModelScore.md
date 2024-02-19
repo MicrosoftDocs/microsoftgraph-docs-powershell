@@ -20,14 +20,15 @@ Create new navigation property to userExperienceAnalyticsModelScores for deviceM
 New-MgDeviceManagementUserExperienceAnalyticModelScore [-AdditionalProperties <Hashtable>]
  [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>] [-EndpointAnalyticsScore <Double>]
  [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelDeviceCount <Int64>] [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ModelDeviceCount <Int64>] [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticModelScore
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -126,6 +127,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HealthStatus
 userExperienceAnalyticsHealthState
 
@@ -210,6 +226,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartupPerformanceScore
 Indicates a weighted average of boot score and logon score used for measuring startup performance.
 Valid values range from 0-100.
@@ -287,56 +318,58 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsModelScores\>: The user experience analytics model scores entity consolidates the various Endpoint Analytics scores.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsModelScores>`: The user experience analytics model scores entity consolidates the various Endpoint Analytics scores.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppReliabilityScore \<Double?\>\]: Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications.
+  - `[AppReliabilityScore <Double?>]`: Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[BatteryHealthScore \<Double?\>\]: Indicates a calulated score indicating the health of the device's battery.
+  - `[BatteryHealthScore <Double?>]`: Indicates a calulated score indicating the health of the device's battery.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[EndpointAnalyticsScore \<Double?\>\]: Indicates a weighted average of the various scores.
+  - `[EndpointAnalyticsScore <Double?>]`: Indicates a weighted average of the various scores.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
-  \[Manufacturer \<String\>\]: The manufacturer name of the device.
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
+  - `[Manufacturer <String>]`: The manufacturer name of the device.
 Examples: Microsoft Corporation, HP, Lenovo.
 Supports: $select, $OrderBy.
 Read-only.
-  \[Model \<String\>\]: The model name of the device.
+  - `[Model <String>]`: The model name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[ModelDeviceCount \<Int64?\>\]: Indicates unique devices count of given model in a consolidated report.
+  - `[ModelDeviceCount <Int64?>]`: Indicates unique devices count of given model in a consolidated report.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -9.22337203685478E+18 to 9.22337203685478E+18
-  \[StartupPerformanceScore \<Double?\>\]: Indicates a weighted average of boot score and logon score used for measuring startup performance.
+  - `[StartupPerformanceScore <Double?>]`: Indicates a weighted average of boot score and logon score used for measuring startup performance.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[WorkFromAnywhereScore \<Double?\>\]: Indicates a weighted score of the work from anywhere on a device level.
+  - `[WorkFromAnywhereScore <Double?>]`: Indicates a weighted score of the work from anywhere on a device level.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
@@ -347,6 +380,8 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 [New-MgBetaDeviceManagementUserExperienceAnalyticModelScore](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticModelScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticmodelscore](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticmodelscore)
+
+
 
 
 

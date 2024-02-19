@@ -17,14 +17,15 @@ Create new navigation property to tenantsDetailedInformation for tenantRelations
 New-MgBetaTenantRelationshipManagedTenantDetailedInformation [-AdditionalProperties <Hashtable>]
  [-City <String>] [-CountryCode <String>] [-CountryName <String>] [-DefaultDomainName <String>]
  [-DisplayName <String>] [-Id <String>] [-IndustryName <String>] [-Region <String>] [-SegmentName <String>]
- [-TenantId <String>] [-VerticalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-VerticalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDetailedInformation
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -146,6 +147,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -171,6 +187,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -282,49 +313,53 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantDetailedInformation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantDetailedInformation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantDetailedInformation\>: tenantDetailedInformation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantDetailedInformation>`: tenantDetailedInformation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[City \<String\>\]: The city where the managed tenant is located.
+  - `[City <String>]`: The city where the managed tenant is located.
 Optional.
 Read-only.
-  \[CountryCode \<String\>\]: The code for the country where the managed tenant is located.
+  - `[CountryCode <String>]`: The code for the country where the managed tenant is located.
 Optional.
 Read-only.
-  \[CountryName \<String\>\]: The name for the country where the managed tenant is located.
+  - `[CountryName <String>]`: The name for the country where the managed tenant is located.
 Optional.
 Read-only.
-  \[DefaultDomainName \<String\>\]: The default domain name for the managed tenant.
+  - `[DefaultDomainName <String>]`: The default domain name for the managed tenant.
 Optional.
 Read-only.
-  \[DisplayName \<String\>\]: The display name for the managed tenant.
-  \[IndustryName \<String\>\]: The business industry associated with the managed tenant.
+  - `[DisplayName <String>]`: The display name for the managed tenant.
+  - `[IndustryName <String>]`: The business industry associated with the managed tenant.
 Optional.
 Read-only.
-  \[Region \<String\>\]: The region where the managed tenant is located.
+  - `[Region <String>]`: The region where the managed tenant is located.
 Optional.
 Read-only.
-  \[SegmentName \<String\>\]: The business segment associated with the managed tenant.
+  - `[SegmentName <String>]`: The business segment associated with the managed tenant.
 Optional.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
-  \[VerticalName \<String\>\]: The vertical associated with the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[VerticalName <String>]`: The vertical associated with the managed tenant.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdetailedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdetailedinformation)
+
+
 
 
 

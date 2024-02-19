@@ -21,13 +21,14 @@ New-MgDeviceManagementManagedDeviceConfigurationState -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-Version <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementManagedDeviceConfigurationState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,13 +37,14 @@ New-MgDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceManag
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-Version <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -93,6 +95,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -150,6 +167,21 @@ Supported platform types for policies.
 Type: PolicyPlatformType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -257,118 +289,122 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceConfigurationState\>: Device Configuration State for a given device.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationState>`: Device Configuration State for a given device.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the policy for this policyBase
-  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
-  \[SettingCount \<Int32?\>\]: Count of how many setting a policy holds
-  \[SettingStates \<IMicrosoftGraphDeviceConfigurationSettingState\[\]\>\]: 
-    \[CurrentValue \<String\>\]: Current value of setting on device
-    \[ErrorCode \<Int64?\>\]: Error code for the setting
-    \[ErrorDescription \<String\>\]: Error description
-    \[InstanceDisplayName \<String\>\]: Name of setting instance that is being reported.
-    \[Setting \<String\>\]: The setting that is being reported
-    \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
-    \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-      \[DisplayName \<String\>\]: Not yet documented
-      \[Id \<String\>\]: Not yet documented
-      \[SourceType \<String\>\]: settingSourceType
-    \[State \<String\>\]: complianceStatus
-    \[UserEmail \<String\>\]: UserEmail
-    \[UserId \<String\>\]: UserId
-    \[UserName \<String\>\]: UserName
-    \[UserPrincipalName \<String\>\]: UserPrincipalName.
-  \[State \<String\>\]: complianceStatus
-  \[Version \<Int32?\>\]: The version of the policy
+  - `[DisplayName <String>]`: The name of the policy for this policyBase
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
+  - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
+  - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>]`: 
+    - `[CurrentValue <String>]`: Current value of setting on device
+    - `[ErrorCode <Int64?>]`: Error code for the setting
+    - `[ErrorDescription <String>]`: Error description
+    - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
+    - `[Setting <String>]`: The setting that is being reported
+    - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
+    - `[Sources <IMicrosoftGraphSettingSource- `[]`>]`: Contributing policies
+      - `[DisplayName <String>]`: Not yet documented
+      - `[Id <String>]`: Not yet documented
+      - `[SourceType <String>]`: settingSourceType
+    - `[State <String>]`: complianceStatus
+    - `[UserEmail <String>]`: UserEmail
+    - `[UserId <String>]`: UserId
+    - `[UserName <String>]`: UserName
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+  - `[State <String>]`: complianceStatus
+  - `[Version <Int32?>]`: The version of the policy
 
-INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[BrowserSharedCookieId \<String\>\]: The unique identifier of browserSharedCookie
-  \[BrowserSiteId \<String\>\]: The unique identifier of browserSite
-  \[BrowserSiteListId \<String\>\]: The unique identifier of browserSiteList
-  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
-  \[DeviceCategoryId \<String\>\]: The unique identifier of deviceCategory
-  \[DeviceComplianceActionItemId \<String\>\]: The unique identifier of deviceComplianceActionItem
-  \[DeviceComplianceDeviceStatusId \<String\>\]: The unique identifier of deviceComplianceDeviceStatus
-  \[DeviceCompliancePolicyAssignmentId \<String\>\]: The unique identifier of deviceCompliancePolicyAssignment
-  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
-  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
-  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
-  \[DeviceComplianceScheduledActionForRuleId \<String\>\]: The unique identifier of deviceComplianceScheduledActionForRule
-  \[DeviceComplianceSettingStateId \<String\>\]: The unique identifier of deviceComplianceSettingState
-  \[DeviceComplianceUserStatusId \<String\>\]: The unique identifier of deviceComplianceUserStatus
-  \[DeviceConfigurationAssignmentId \<String\>\]: The unique identifier of deviceConfigurationAssignment
-  \[DeviceConfigurationDeviceStatusId \<String\>\]: The unique identifier of deviceConfigurationDeviceStatus
-  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
-  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
-  \[DeviceConfigurationUserStatusId \<String\>\]: The unique identifier of deviceConfigurationUserStatus
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
-  \[LocalizedNotificationMessageId \<String\>\]: The unique identifier of localizedNotificationMessage
-  \[MalwareStateForWindowsDeviceId \<String\>\]: The unique identifier of malwareStateForWindowsDevice
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
-  \[SettingStateDeviceSummaryId \<String\>\]: The unique identifier of settingStateDeviceSummary
-  \[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-  \[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-  \[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-  \[UserExperienceAnalyticsAppHealthApplicationPerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthApplicationPerformance
-  \[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthDeviceModelPerformance
-  \[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformanceDetails
-  \[UserExperienceAnalyticsAppHealthDevicePerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformance
-  \[UserExperienceAnalyticsAppHealthOSVersionPerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsAppHealthOSVersionPerformance
-  \[UserExperienceAnalyticsBaselineId \<String\>\]: The unique identifier of userExperienceAnalyticsBaseline
-  \[UserExperienceAnalyticsCategoryId \<String\>\]: The unique identifier of userExperienceAnalyticsCategory
-  \[UserExperienceAnalyticsDevicePerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsDevicePerformance
-  \[UserExperienceAnalyticsDeviceScoresId \<String\>\]: The unique identifier of userExperienceAnalyticsDeviceScores
-  \[UserExperienceAnalyticsDeviceStartupHistoryId \<String\>\]: The unique identifier of userExperienceAnalyticsDeviceStartupHistory
-  \[UserExperienceAnalyticsDeviceStartupProcessId \<String\>\]: The unique identifier of userExperienceAnalyticsDeviceStartupProcess
-  \[UserExperienceAnalyticsDeviceStartupProcessPerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsDeviceStartupProcessPerformance
-  \[UserExperienceAnalyticsMetricHistoryId \<String\>\]: The unique identifier of userExperienceAnalyticsMetricHistory
-  \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of userExperienceAnalyticsMetric
-  \[UserExperienceAnalyticsModelScoresId \<String\>\]: The unique identifier of userExperienceAnalyticsModelScores
-  \[UserExperienceAnalyticsScoreHistoryId \<String\>\]: The unique identifier of userExperienceAnalyticsScoreHistory
-  \[UserExperienceAnalyticsWorkFromAnywhereDeviceId \<String\>\]: The unique identifier of userExperienceAnalyticsWorkFromAnywhereDevice
-  \[UserExperienceAnalyticsWorkFromAnywhereMetricId \<String\>\]: The unique identifier of userExperienceAnalyticsWorkFromAnywhereMetric
-  \[UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId \<String\>\]: The unique identifier of userExperienceAnalyticsWorkFromAnywhereModelPerformance
-  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
-  \[WindowsInformationProtectionAppLearningSummaryId \<String\>\]: The unique identifier of windowsInformationProtectionAppLearningSummary
-  \[WindowsInformationProtectionNetworkLearningSummaryId \<String\>\]: The unique identifier of windowsInformationProtectionNetworkLearningSummary
-  \[WindowsMalwareInformationId \<String\>\]: The unique identifier of windowsMalwareInformation
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
+  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
+  - `[DeviceCategoryId <String>]`: The unique identifier of deviceCategory
+  - `[DeviceComplianceActionItemId <String>]`: The unique identifier of deviceComplianceActionItem
+  - `[DeviceComplianceDeviceStatusId <String>]`: The unique identifier of deviceComplianceDeviceStatus
+  - `[DeviceCompliancePolicyAssignmentId <String>]`: The unique identifier of deviceCompliancePolicyAssignment
+  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
+  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+  - `[DeviceComplianceScheduledActionForRuleId <String>]`: The unique identifier of deviceComplianceScheduledActionForRule
+  - `[DeviceComplianceSettingStateId <String>]`: The unique identifier of deviceComplianceSettingState
+  - `[DeviceComplianceUserStatusId <String>]`: The unique identifier of deviceComplianceUserStatus
+  - `[DeviceConfigurationAssignmentId <String>]`: The unique identifier of deviceConfigurationAssignment
+  - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
+  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+  - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+  - `[LocalizedNotificationMessageId <String>]`: The unique identifier of localizedNotificationMessage
+  - `[MalwareStateForWindowsDeviceId <String>]`: The unique identifier of malwareStateForWindowsDevice
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+  - `[SettingStateDeviceSummaryId <String>]`: The unique identifier of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
+  - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
+  - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthApplicationPerformance
+  - `[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDeviceModelPerformance
+  - `[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformanceDetails
+  - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformance
+  - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthOSVersionPerformance
+  - `[UserExperienceAnalyticsBaselineId <String>]`: The unique identifier of userExperienceAnalyticsBaseline
+  - `[UserExperienceAnalyticsCategoryId <String>]`: The unique identifier of userExperienceAnalyticsCategory
+  - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDevicePerformance
+  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: The unique identifier of userExperienceAnalyticsDeviceScores
+  - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupHistory
+  - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcess
+  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsMetricHistoryId <String>]`: The unique identifier of userExperienceAnalyticsMetricHistory
+  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of userExperienceAnalyticsMetric
+  - `[UserExperienceAnalyticsModelScoresId <String>]`: The unique identifier of userExperienceAnalyticsModelScores
+  - `[UserExperienceAnalyticsScoreHistoryId <String>]`: The unique identifier of userExperienceAnalyticsScoreHistory
+  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereDevice
+  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereMetric
+  - `[UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereModelPerformance
+  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
+  - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
+  - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-SETTINGSTATES \<IMicrosoftGraphDeviceConfigurationSettingState\[\]\>: .
-  \[CurrentValue \<String\>\]: Current value of setting on device
-  \[ErrorCode \<Int64?\>\]: Error code for the setting
-  \[ErrorDescription \<String\>\]: Error description
-  \[InstanceDisplayName \<String\>\]: Name of setting instance that is being reported.
-  \[Setting \<String\>\]: The setting that is being reported
-  \[SettingName \<String\>\]: Localized/user friendly setting name that is being reported
-  \[Sources \<IMicrosoftGraphSettingSource\[\]\>\]: Contributing policies
-    \[DisplayName \<String\>\]: Not yet documented
-    \[Id \<String\>\]: Not yet documented
-    \[SourceType \<String\>\]: settingSourceType
-  \[State \<String\>\]: complianceStatus
-  \[UserEmail \<String\>\]: UserEmail
-  \[UserId \<String\>\]: UserId
-  \[UserName \<String\>\]: UserName
-  \[UserPrincipalName \<String\>\]: UserPrincipalName.
+SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
+  - `[CurrentValue <String>]`: Current value of setting on device
+  - `[ErrorCode <Int64?>]`: Error code for the setting
+  - `[ErrorDescription <String>]`: Error description
+  - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
+  - `[Setting <String>]`: The setting that is being reported
+  - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
+  - `[Sources <IMicrosoftGraphSettingSource- `[]`>]`: Contributing policies
+    - `[DisplayName <String>]`: Not yet documented
+    - `[Id <String>]`: Not yet documented
+    - `[SourceType <String>]`: settingSourceType
+  - `[State <String>]`: complianceStatus
+  - `[UserEmail <String>]`: UserEmail
+  - `[UserId <String>]`: UserId
+  - `[UserName <String>]`: UserName
+  - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementManagedDeviceConfigurationState?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceconfigurationstate)
+
+
 
 
 

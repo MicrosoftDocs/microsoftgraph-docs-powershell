@@ -21,14 +21,30 @@ For details, see Role template IDs.
 
 ### Delete (Default)
 ```
-Remove-MgDirectoryRoleMemberByRef -DirectoryObjectId <String> -DirectoryRoleId <String> [-Id <String>]
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgDirectoryRoleMemberByRef -DirectoryObjectId <String> -DirectoryRoleId <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgDirectoryRoleMemberByRef -DirectoryRoleId <String> -Id <String> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> -Id <String>
+ [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> [-Id <String>]
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +60,13 @@ For details, see Role template IDs.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryRoleMemberByRef -DirectoryRoleId $directoryRoleId -DirectoryObjectId $directoryObjectId
+
 ```
 This example shows how to use the Remove-MgDirectoryRoleMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -75,7 +91,7 @@ The unique identifier of directoryRole
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -85,15 +101,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-Delete Uri
+### -Headers
+Optional headers that will be added to the request.
 
 ```yaml
-Type: String
+Type: IDictionary
 Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Id
+The delete Uri
+
+```yaml
+Type: String
+Parameter Sets: Delete1, DeleteViaIdentity1
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -121,7 +152,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -142,6 +173,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -183,44 +229,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberbyref)
+
+
 
 

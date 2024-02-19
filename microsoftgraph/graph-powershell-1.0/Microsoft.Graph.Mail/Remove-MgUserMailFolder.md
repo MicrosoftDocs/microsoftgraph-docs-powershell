@@ -20,14 +20,14 @@ You can specify a mail folder by its folder ID, or by its well-known folder name
 
 ### Delete (Default)
 ```
-Remove-MgUserMailFolder -MailFolderId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserMailFolder -MailFolderId <String> -UserId <String> [-IfMatch <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,6 +53,21 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -115,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -167,28 +197,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolder)
+
+
 
 

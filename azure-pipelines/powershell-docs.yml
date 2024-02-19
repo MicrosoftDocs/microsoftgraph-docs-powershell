@@ -24,13 +24,13 @@ resources:
  repositories:     
    - repository: msgraph-sdk-powershell
      type: github
-     endpoint: microsoftgraph
+     endpoint: MicrosoftDocs
      name: microsoftgraph/msgraph-sdk-powershell
      ref: dev
 
    - repository: microsoft-graph-docs
      type: github
-     endpoint: microsoftgraph
+     endpoint: timayabi2020
      name: microsoftgraph/microsoft-graph-docs
      ref: main
 

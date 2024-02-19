@@ -16,7 +16,8 @@ Read-only.
 ```
 Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -ConnectorId <String>
  -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -86,6 +87,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -OnPremisesPublishingProfileId
 The unique identifier of onPremisesPublishingProfile
 
@@ -112,6 +128,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -181,14 +212,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberofbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberofbyref)
+
+
 
 
 

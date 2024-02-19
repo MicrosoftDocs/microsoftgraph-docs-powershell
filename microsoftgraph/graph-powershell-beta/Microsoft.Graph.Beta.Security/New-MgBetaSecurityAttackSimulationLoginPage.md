@@ -20,14 +20,14 @@ Create new navigation property to loginPages for security
 New-MgBetaSecurityAttackSimulationLoginPage [-AdditionalProperties <Hashtable>] [-Content <String>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-Source <String>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Source <String>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLoginPage> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLoginPage> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -144,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -200,6 +215,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -275,63 +305,67 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLoginPage
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLoginPage
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphLoginPage\>: loginPage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphLoginPage>`: loginPage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<String\>\]: The HTML content of the login page.
-  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Content <String>]`: The HTML content of the login page.
+  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Email \<String\>\]: Email address of the user.
-  \[CreatedDateTime \<DateTime?\>\]: Date and time when the login page was created.
+    - `[Email <String>]`: Email address of the user.
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the login page was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Description \<String\>\]: Description about the login page.
-  \[DisplayName \<String\>\]: Display name of the login page.
-  \[Language \<String\>\]: The content language of the login page.
-  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
-  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the login page was last modified.
+  - `[Description <String>]`: Description about the login page.
+  - `[DisplayName <String>]`: Display name of the login page.
+  - `[Language <String>]`: The content language of the login page.
+  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the login page was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Source \<String\>\]: simulationContentSource
-  \[Status \<String\>\]: simulationContentStatus
+  - `[Source <String>]`: simulationContentSource
+  - `[Status <String>]`: simulationContentStatus
 
-CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Email \<String\>\]: Email address of the user.
+  - `[Email <String>]`: Email address of the user.
 
-LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Email \<String\>\]: Email address of the user.
+  - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
 [New-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage)
+
+
 
 
 

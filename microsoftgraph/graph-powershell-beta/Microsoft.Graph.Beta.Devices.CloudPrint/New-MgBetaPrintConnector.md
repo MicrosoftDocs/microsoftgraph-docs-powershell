@@ -20,30 +20,20 @@ Create new navigation property to connectors for print
 New-MgBetaPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
  [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>]
  [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>] [-Name <String>] [-OperatingSystem <String>]
- [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RegisteredDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to connectors for print
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-
-Get-MgBetaPrintConnector
-```
-This example shows how to use the New-MgBetaBetaPrintConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -139,6 +129,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -201,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegisteredDateTime
 The DateTimeOffset when the connector was registered.
 
@@ -253,87 +273,91 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPrintConnector\>: printConnector
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppVersion \<String\>\]: The connector's version.
-  \[DeviceHealth \<IMicrosoftGraphDeviceHealth\>\]: deviceHealth
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[LastConnectionTime \<DateTime?\>\]: The last time the device was connected.
-  \[DisplayName \<String\>\]: The name of the connector.
-  \[FullyQualifiedDomainName \<String\>\]: The connector machine's hostname.
-  \[Location \<IMicrosoftGraphPrinterLocation\>\]: printerLocation
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AltitudeInMeters \<Int32?\>\]: The altitude, in meters, that the printer is located at.
-    \[Building \<String\>\]: The building that the printer is located in.
-    \[City \<String\>\]: The city that the printer is located in.
-    \[CountryOrRegion \<String\>\]: The country or region that the printer is located in.
-    \[Floor \<String\>\]: The floor that the printer is located on.
+  - `[AppVersion <String>]`: The connector's version.
+  - `[DeviceHealth <IMicrosoftGraphDeviceHealth>]`: deviceHealth
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
+  - `[DisplayName <String>]`: The name of the connector.
+  - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
+  - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
+    - `[Building <String>]`: The building that the printer is located in.
+    - `[City <String>]`: The city that the printer is located in.
+    - `[CountryOrRegion <String>]`: The country or region that the printer is located in.
+    - `[Floor <String>]`: The floor that the printer is located on.
 Only numerical values are supported right now.
-    \[FloorDescription \<String\>\]: The description of the floor that the printer is located on.
-    \[FloorNumber \<Int32?\>\]: 
-    \[Latitude \<Double?\>\]: The latitude that the printer is located at.
-    \[Longitude \<Double?\>\]: The longitude that the printer is located at.
-    \[Organization \<String\[\]\>\]: The organizational hierarchy that the printer belongs to.
+    - `[FloorDescription <String>]`: The description of the floor that the printer is located on.
+    - `[FloorNumber <Int32?>]`: 
+    - `[Latitude <Double?>]`: The latitude that the printer is located at.
+    - `[Longitude <Double?>]`: The longitude that the printer is located at.
+    - `[Organization <String- `[]`>]`: The organizational hierarchy that the printer belongs to.
 The elements should be in hierarchical order.
-    \[PostalCode \<String\>\]: The postal code that the printer is located in.
-    \[RoomDescription \<String\>\]: The description of the room that the printer is located in.
-    \[RoomName \<String\>\]: The room that the printer is located in.
+    - `[PostalCode <String>]`: The postal code that the printer is located in.
+    - `[RoomDescription <String>]`: The description of the room that the printer is located in.
+    - `[RoomName <String>]`: The room that the printer is located in.
 Only numerical values are supported right now.
-    \[RoomNumber \<Int32?\>\]: 
-    \[Site \<String\>\]: The site that the printer is located in.
-    \[StateOrProvince \<String\>\]: The state or province that the printer is located in.
-    \[StreetAddress \<String\>\]: The street address where the printer is located.
-    \[Subdivision \<String\[\]\>\]: The subdivision that the printer is located in.
+    - `[RoomNumber <Int32?>]`: 
+    - `[Site <String>]`: The site that the printer is located in.
+    - `[StateOrProvince <String>]`: The state or province that the printer is located in.
+    - `[StreetAddress <String>]`: The street address where the printer is located.
+    - `[Subdivision <String- `[]`>]`: The subdivision that the printer is located in.
 The elements should be in hierarchical order.
-    \[Subunit \<String\[\]\>\]: 
-  \[Name \<String\>\]: 
-  \[OperatingSystem \<String\>\]: The connector machine's operating system version.
-  \[RegisteredDateTime \<DateTime?\>\]: The DateTimeOffset when the connector was registered.
+    - `[Subunit <String- `[]`>]`: 
+  - `[Name <String>]`: 
+  - `[OperatingSystem <String>]`: The connector machine's operating system version.
+  - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH \<IMicrosoftGraphDeviceHealth\>: deviceHealth
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[LastConnectionTime \<DateTime?\>\]: The last time the device was connected.
+DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-LOCATION \<IMicrosoftGraphPrinterLocation\>: printerLocation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AltitudeInMeters \<Int32?\>\]: The altitude, in meters, that the printer is located at.
-  \[Building \<String\>\]: The building that the printer is located in.
-  \[City \<String\>\]: The city that the printer is located in.
-  \[CountryOrRegion \<String\>\]: The country or region that the printer is located in.
-  \[Floor \<String\>\]: The floor that the printer is located on.
+LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
+  - `[Building <String>]`: The building that the printer is located in.
+  - `[City <String>]`: The city that the printer is located in.
+  - `[CountryOrRegion <String>]`: The country or region that the printer is located in.
+  - `[Floor <String>]`: The floor that the printer is located on.
 Only numerical values are supported right now.
-  \[FloorDescription \<String\>\]: The description of the floor that the printer is located on.
-  \[FloorNumber \<Int32?\>\]: 
-  \[Latitude \<Double?\>\]: The latitude that the printer is located at.
-  \[Longitude \<Double?\>\]: The longitude that the printer is located at.
-  \[Organization \<String\[\]\>\]: The organizational hierarchy that the printer belongs to.
+  - `[FloorDescription <String>]`: The description of the floor that the printer is located on.
+  - `[FloorNumber <Int32?>]`: 
+  - `[Latitude <Double?>]`: The latitude that the printer is located at.
+  - `[Longitude <Double?>]`: The longitude that the printer is located at.
+  - `[Organization <String- `[]`>]`: The organizational hierarchy that the printer belongs to.
 The elements should be in hierarchical order.
-  \[PostalCode \<String\>\]: The postal code that the printer is located in.
-  \[RoomDescription \<String\>\]: The description of the room that the printer is located in.
-  \[RoomName \<String\>\]: The room that the printer is located in.
+  - `[PostalCode <String>]`: The postal code that the printer is located in.
+  - `[RoomDescription <String>]`: The description of the room that the printer is located in.
+  - `[RoomName <String>]`: The room that the printer is located in.
 Only numerical values are supported right now.
-  \[RoomNumber \<Int32?\>\]: 
-  \[Site \<String\>\]: The site that the printer is located in.
-  \[StateOrProvince \<String\>\]: The state or province that the printer is located in.
-  \[StreetAddress \<String\>\]: The street address where the printer is located.
-  \[Subdivision \<String\[\]\>\]: The subdivision that the printer is located in.
+  - `[RoomNumber <Int32?>]`: 
+  - `[Site <String>]`: The site that the printer is located in.
+  - `[StateOrProvince <String>]`: The state or province that the printer is located in.
+  - `[StreetAddress <String>]`: The street address where the printer is located.
+  - `[Subdivision <String- `[]`>]`: The subdivision that the printer is located in.
 The elements should be in hierarchical order.
-  \[Subunit \<String\[\]\>\]:
+  - `[Subunit <String- `[]`>]`:
 
 ## RELATED LINKS
 [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector)
+
+
 
 

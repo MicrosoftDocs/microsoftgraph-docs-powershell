@@ -21,28 +21,28 @@ You can identify the room or roomList by specifying the id or emailAddress prope
 ```
 Update-MgPlace -PlaceId <String> [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPlace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -216,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -254,72 +284,76 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS \<IMicrosoftGraphPhysicalAddress\>: physicalAddress
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[City \<String\>\]: The city.
-  \[CountryOrRegion \<String\>\]: The country or region.
+ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
-  \[PostalCode \<String\>\]: The postal code.
-  \[State \<String\>\]: The state.
-  \[Street \<String\>\]: The street.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
 
-BODYPARAMETER \<IMicrosoftGraphPlace\>: place
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[City \<String\>\]: The city.
-    \[CountryOrRegion \<String\>\]: The country or region.
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
-    \[PostalCode \<String\>\]: The postal code.
-    \[State \<String\>\]: The state.
-    \[Street \<String\>\]: The street.
-  \[DisplayName \<String\>\]: The name associated with the place.
-  \[GeoCoordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+  - `[DisplayName <String>]`: The name associated with the place.
+  - `[GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    \[Altitude \<Double?\>\]: The altitude of the location.
-    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
-    \[Latitude \<Double?\>\]: The latitude of the location.
-    \[Longitude \<Double?\>\]: The longitude of the location.
-  \[Phone \<String\>\]: The phone number of the place.
+    - `[Altitude <Double?>]`: The altitude of the location.
+    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
+    - `[Latitude <Double?>]`: The latitude of the location.
+    - `[Longitude <Double?>]`: The longitude of the location.
+  - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES \<IMicrosoftGraphOutlookGeoCoordinates\>: outlookGeoCoordinates
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
+GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-  \[Altitude \<Double?\>\]: The altitude of the location.
-  \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
-  \[Latitude \<Double?\>\]: The latitude of the location.
-  \[Longitude \<Double?\>\]: The longitude of the location.
+  - `[Altitude <Double?>]`: The altitude of the location.
+  - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
+  - `[Latitude <Double?>]`: The latitude of the location.
+  - `[Longitude <Double?>]`: The longitude of the location.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[RoomId \<String\>\]: The unique identifier of room
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace)
+
+
 
 

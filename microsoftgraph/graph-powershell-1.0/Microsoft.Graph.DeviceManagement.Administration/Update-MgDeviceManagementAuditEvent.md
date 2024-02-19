@@ -22,13 +22,14 @@ Update-MgDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>] 
  [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
  [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
  [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,13 +38,15 @@ Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
  [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
  [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
  [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
- [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuditEvent> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -248,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -277,6 +295,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -334,88 +367,92 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTOR \<IMicrosoftGraphAuditActor\>: A class containing the properties for Audit Actor.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ApplicationDisplayName \<String\>\]: Name of the Application.
-  \[ApplicationId \<String\>\]: AAD Application Id.
-  \[AuditActorType \<String\>\]: Actor Type.
-  \[IPAddress \<String\>\]: IPAddress.
-  \[ServicePrincipalName \<String\>\]: Service Principal Name (SPN).
-  \[UserId \<String\>\]: User Id.
-  \[UserPermissions \<String\[\]\>\]: List of user permissions when the audit was performed.
-  \[UserPrincipalName \<String\>\]: User Principal Name (UPN).
+ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ApplicationDisplayName <String>]`: Name of the Application.
+  - `[ApplicationId <String>]`: AAD Application Id.
+  - `[AuditActorType <String>]`: Actor Type.
+  - `[IPAddress <String>]`: IPAddress.
+  - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
+  - `[UserId <String>]`: User Id.
+  - `[UserPermissions <String- `[]`>]`: List of user permissions when the audit was performed.
+  - `[UserPrincipalName <String>]`: User Principal Name (UPN).
 
-BODYPARAMETER \<IMicrosoftGraphAuditEvent\>: A class containing the properties for Audit Event.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Activity \<String\>\]: Friendly name of the activity.
-  \[ActivityDateTime \<DateTime?\>\]: The date time in UTC when the activity was performed.
-  \[ActivityOperationType \<String\>\]: The HTTP operation type of the activity.
-  \[ActivityResult \<String\>\]: The result of the activity.
-  \[ActivityType \<String\>\]: The type of activity that was being performed.
-  \[Actor \<IMicrosoftGraphAuditActor\>\]: A class containing the properties for Audit Actor.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ApplicationDisplayName \<String\>\]: Name of the Application.
-    \[ApplicationId \<String\>\]: AAD Application Id.
-    \[AuditActorType \<String\>\]: Actor Type.
-    \[IPAddress \<String\>\]: IPAddress.
-    \[ServicePrincipalName \<String\>\]: Service Principal Name (SPN).
-    \[UserId \<String\>\]: User Id.
-    \[UserPermissions \<String\[\]\>\]: List of user permissions when the audit was performed.
-    \[UserPrincipalName \<String\>\]: User Principal Name (UPN).
-  \[Category \<String\>\]: Audit category.
-  \[ComponentName \<String\>\]: Component name.
-  \[CorrelationId \<String\>\]: The client request Id that is used to correlate activity within the system.
-  \[DisplayName \<String\>\]: Event display name.
-  \[Resources \<IMicrosoftGraphAuditResource\[\]\>\]: Resources being modified.
-    \[AuditResourceType \<String\>\]: Audit resource's type.
-    \[DisplayName \<String\>\]: Display name.
-    \[ModifiedProperties \<IMicrosoftGraphAuditProperty\[\]\>\]: List of modified properties.
-      \[DisplayName \<String\>\]: Display name.
-      \[NewValue \<String\>\]: New value.
-      \[OldValue \<String\>\]: Old value.
-    \[ResourceId \<String\>\]: Audit resource's Id.
+  - `[Activity <String>]`: Friendly name of the activity.
+  - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
+  - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
+  - `[ActivityResult <String>]`: The result of the activity.
+  - `[ActivityType <String>]`: The type of activity that was being performed.
+  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ApplicationDisplayName <String>]`: Name of the Application.
+    - `[ApplicationId <String>]`: AAD Application Id.
+    - `[AuditActorType <String>]`: Actor Type.
+    - `[IPAddress <String>]`: IPAddress.
+    - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
+    - `[UserId <String>]`: User Id.
+    - `[UserPermissions <String- `[]`>]`: List of user permissions when the audit was performed.
+    - `[UserPrincipalName <String>]`: User Principal Name (UPN).
+  - `[Category <String>]`: Audit category.
+  - `[ComponentName <String>]`: Component name.
+  - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
+  - `[DisplayName <String>]`: Event display name.
+  - `[Resources <IMicrosoftGraphAuditResource- `[]`>]`: Resources being modified.
+    - `[AuditResourceType <String>]`: Audit resource's type.
+    - `[DisplayName <String>]`: Display name.
+    - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
+      - `[DisplayName <String>]`: Display name.
+      - `[NewValue <String>]`: New value.
+      - `[OldValue <String>]`: Old value.
+    - `[ResourceId <String>]`: Audit resource's Id.
 
-INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
-  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
-  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
-  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
-  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
-  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
-  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
-  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
-  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
-RESOURCES \<IMicrosoftGraphAuditResource\[\]\>: Resources being modified.
-  \[AuditResourceType \<String\>\]: Audit resource's type.
-  \[DisplayName \<String\>\]: Display name.
-  \[ModifiedProperties \<IMicrosoftGraphAuditProperty\[\]\>\]: List of modified properties.
-    \[DisplayName \<String\>\]: Display name.
-    \[NewValue \<String\>\]: New value.
-    \[OldValue \<String\>\]: Old value.
-  \[ResourceId \<String\>\]: Audit resource's Id.
+RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
+  - `[AuditResourceType <String>]`: Audit resource's type.
+  - `[DisplayName <String>]`: Display name.
+  - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
+    - `[DisplayName <String>]`: Display name.
+    - `[NewValue <String>]`: New value.
+    - `[OldValue <String>]`: Old value.
+  - `[ResourceId <String>]`: Audit resource's Id.
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
+
+
 
 
 

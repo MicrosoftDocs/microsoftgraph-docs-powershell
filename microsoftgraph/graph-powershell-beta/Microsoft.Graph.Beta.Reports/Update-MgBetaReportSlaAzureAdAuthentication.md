@@ -15,14 +15,14 @@ Update the navigation property azureADAuthentication in reports
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaReportSlaAzureAdAuthentication [-AdditionalProperties <Hashtable>]
- [-Attainments <IMicrosoftGraphServiceLevelAgreementAttainment[]>] [-Id <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Attainments <IMicrosoftGraphServiceLevelAgreementAttainment[]>] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzureAdAuthentication> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzureAdAuthentication>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +77,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -85,6 +100,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -130,36 +160,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTAINMENTS \<IMicrosoftGraphServiceLevelAgreementAttainment\[\]\>: A list of monthly serviceLevelAgreementAttainment objects.
-  \[EndDate \<DateTime?\>\]: The end date for the calendar month for which SLA attainment is measured.
-  \[Score \<Double?\>\]: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
+ATTAINMENTS <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>: A list of monthly serviceLevelAgreementAttainment objects.
+  - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
+  - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.
 Values are expressed as a percentage of availability for the tenant.
-  \[StartDate \<DateTime?\>\]: The start date for the calendar month for which SLA attainment is measured.
+  - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
 
-BODYPARAMETER \<IMicrosoftGraphAzureAdAuthentication\>: azureADAuthentication
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAzureAdAuthentication>`: azureADAuthentication
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Attainments \<IMicrosoftGraphServiceLevelAgreementAttainment\[\]\>\]: A list of monthly serviceLevelAgreementAttainment objects.
-    \[EndDate \<DateTime?\>\]: The end date for the calendar month for which SLA attainment is measured.
-    \[Score \<Double?\>\]: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
+  - `[Attainments <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>]`: A list of monthly serviceLevelAgreementAttainment objects.
+    - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
+    - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.
 Values are expressed as a percentage of availability for the tenant.
-    \[StartDate \<DateTime?\>\]: The start date for the calendar month for which SLA attainment is measured.
+    - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
+
+
 
 
 

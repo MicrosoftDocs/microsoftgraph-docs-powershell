@@ -16,13 +16,15 @@ Create new navigation property to cloudPcConnections for tenantRelationships
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcConnection [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-HealthCheckStatus <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
- [-TenantDisplayName <String>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcConnection
- -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcConnection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcConnection> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,6 +80,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HealthCheckStatus
 The health status of the cloud PC connection.
 Possible values are: pending, running, passed, failed, unknownFutureValue.
@@ -121,6 +138,21 @@ Read-only.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -200,39 +232,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCloudPcConnection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCloudPcConnection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsCloudPcConnection\>: cloudPcConnection
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcConnection>`: cloudPcConnection
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The display name of the cloud PC connection.
+  - `[DisplayName <String>]`: The display name of the cloud PC connection.
 Required.
 Read-only.
-  \[HealthCheckStatus \<String\>\]: The health status of the cloud PC connection.
+  - `[HealthCheckStatus <String>]`: The health status of the cloud PC connection.
 Possible values are: pending, running, passed, failed, unknownFutureValue. 
 Required.
 Read-only.
-  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
+  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
 Required.
 Read-only.
-  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
+  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
 Required.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Required.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcconnection)
+
+
 
 
 

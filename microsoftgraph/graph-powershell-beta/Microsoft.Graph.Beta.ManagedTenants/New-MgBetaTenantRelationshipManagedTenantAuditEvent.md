@@ -18,13 +18,14 @@ New-MgBetaTenantRelationshipManagedTenantAuditEvent [-Activity <String>] [-Activ
  [-ActivityId <String>] [-AdditionalProperties <Hashtable>] [-Category <String>] [-HttpVerb <String>]
  [-IPAddress <String>] [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>]
  [-InitiatedByUserId <String>] [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>]
- [-TenantNames <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantNames <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -131,6 +132,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HttpVerb
 The HTTP verb that was used when making the API request.
 Required.
@@ -225,6 +241,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -337,62 +368,66 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsAuditEvent\>: auditEvent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsAuditEvent>`: auditEvent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Activity \<String\>\]: A string that uniquely represents the operation that occurred.
+  - `[Activity <String>]`: A string that uniquely represents the operation that occurred.
 Required.
 Read-only.
-  \[ActivityDateTime \<DateTime?\>\]: The time when the activity occurred.
+  - `[ActivityDateTime <DateTime?>]`: The time when the activity occurred.
 Required.
 Read-only.
-  \[ActivityId \<String\>\]: The identifier of the activity request that made the audit event.
+  - `[ActivityId <String>]`: The identifier of the activity request that made the audit event.
 Required.
 Read-only.
-  \[Category \<String\>\]: A category that represents a logical grouping of activities.
+  - `[Category <String>]`: A category that represents a logical grouping of activities.
 Required.
 Read-only.
-  \[HttpVerb \<String\>\]: The HTTP verb that was used when making the API request.
+  - `[HttpVerb <String>]`: The HTTP verb that was used when making the API request.
 Required.
 Read-only.
-  \[IPAddress \<String\>\]: The IP address of where the activity was initiated.
+  - `[IPAddress <String>]`: The IP address of where the activity was initiated.
 This may be an IPv4 or IPv6 address.
 Required.
 Read-only.
-  \[InitiatedByAppId \<String\>\]: The identifier of the app that was used to make the request.
+  - `[InitiatedByAppId <String>]`: The identifier of the app that was used to make the request.
 Required.
 Read-only.
-  \[InitiatedByUpn \<String\>\]: The UPN of the user who initiated the activity.
+  - `[InitiatedByUpn <String>]`: The UPN of the user who initiated the activity.
 Required.
 Read-only.
-  \[InitiatedByUserId \<String\>\]: The identifier of the user who initiated the activity.
+  - `[InitiatedByUserId <String>]`: The identifier of the user who initiated the activity.
 Required.
 Read-only.
-  \[RequestBody \<String\>\]: The raw HTTP request body.
+  - `[RequestBody <String>]`: The raw HTTP request body.
 Some sensitive information may be removed.
-  \[RequestUrl \<String\>\]: The raw HTTP request URL.
+  - `[RequestUrl <String>]`: The raw HTTP request URL.
 Required.
 Read-only.
-  \[TenantIds \<String\>\]: The collection of Microsoft Entra tenant identifiers for the managed tenants that were affected by a change, and is formatted as a list of comma-separated values.
+  - `[TenantIds <String>]`: The collection of Microsoft Entra tenant identifiers for the managed tenants that were affected by a change, and is formatted as a list of comma-separated values.
 Required.
 Read-only.
-  \[TenantNames \<String\>\]: The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values.
+  - `[TenantNames <String>]`: The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values.
 Required.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantauditevent)
+
+
 
 
 

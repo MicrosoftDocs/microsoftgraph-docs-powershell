@@ -18,13 +18,14 @@ Create new navigation property to presences for communications
 ### CreateExpanded (Default)
 ```
 New-MgCommunicationPresence [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
- [-Id <String>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -95,6 +96,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -103,6 +119,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -164,53 +195,57 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPresence\>: presence
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPresence>`: presence
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Activity \<String\>\]: The supplemental information to a user's availability.
+  - `[Activity <String>]`: The supplemental information to a user's availability.
 Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
-  \[Availability \<String\>\]: The base presence information for a user.
+  - `[Availability <String>]`: The base presence information for a user.
 Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-  \[StatusMessage \<IMicrosoftGraphPresenceStatusMessage\>\]: presenceStatusMessage
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+  - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-    \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Content \<String\>\]: The content of the item.
-      \[ContentType \<String\>\]: bodyType
-    \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+    - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-STATUSMESSAGE \<IMicrosoftGraphPresenceStatusMessage\>: presenceStatusMessage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+  - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
 [New-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence)
+
+
 
 
 

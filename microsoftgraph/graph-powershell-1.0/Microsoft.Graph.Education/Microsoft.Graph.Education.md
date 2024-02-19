@@ -110,6 +110,18 @@ Locale: en-US
 ### [Get-MgEducationClassMemberCount](Get-MgEducationClassMemberCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgEducationClassModule](Get-MgEducationClassModule.md)
+{{ Fill in the Description }}
+
+### [Get-MgEducationClassModuleCount](Get-MgEducationClassModuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgEducationClassModuleResource](Get-MgEducationClassModuleResource.md)
+{{ Fill in the Description }}
+
+### [Get-MgEducationClassModuleResourceCount](Get-MgEducationClassModuleResourceCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgEducationClassSchool](Get-MgEducationClassSchool.md)
 {{ Fill in the Description }}
 
@@ -359,6 +371,9 @@ Locale: en-US
 ### [Get-MgEducationUserTaughtClassCount](Get-MgEducationUserTaughtClassCount.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgPinEducationClassModule](Invoke-MgPinEducationClassModule.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgReassignEducationClassAssignmentSubmission](Invoke-MgReassignEducationClassAssignmentSubmission.md)
 {{ Fill in the Description }}
 
@@ -375,6 +390,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgReturnEducationUserAssignmentSubmission](Invoke-MgReturnEducationUserAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgUnpinEducationClassModule](Invoke-MgUnpinEducationClassModule.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgUnsubmitEducationClassAssignmentSubmission](Invoke-MgUnsubmitEducationClassAssignmentSubmission.md)
@@ -417,6 +435,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgEducationClassMemberByRef](New-MgEducationClassMemberByRef.md)
+{{ Fill in the Description }}
+
+### [New-MgEducationClassModule](New-MgEducationClassModule.md)
+{{ Fill in the Description }}
+
+### [New-MgEducationClassModuleResource](New-MgEducationClassModuleResource.md)
 {{ Fill in the Description }}
 
 ### [New-MgEducationClassTeacherByRef](New-MgEducationClassTeacherByRef.md)
@@ -491,6 +515,9 @@ Locale: en-US
 ### [Publish-MgEducationClassAssignment](Publish-MgEducationClassAssignment.md)
 {{ Fill in the Description }}
 
+### [Publish-MgEducationClassModule](Publish-MgEducationClassModule.md)
+{{ Fill in the Description }}
+
 ### [Publish-MgEducationMeAssignment](Publish-MgEducationMeAssignment.md)
 {{ Fill in the Description }}
 
@@ -540,6 +567,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationClassMemberByRef](Remove-MgEducationClassMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgEducationClassModule](Remove-MgEducationClassModule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgEducationClassModuleResource](Remove-MgEducationClassModuleResource.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationClassTeacherByRef](Remove-MgEducationClassTeacherByRef.md)
@@ -632,6 +665,9 @@ Locale: en-US
 ### [Set-MgEducationClassAssignmentUpResourceFolder](Set-MgEducationClassAssignmentUpResourceFolder.md)
 {{ Fill in the Description }}
 
+### [Set-MgEducationClassModuleUpResourceFolder](Set-MgEducationClassModuleUpResourceFolder.md)
+{{ Fill in the Description }}
+
 ### [Set-MgEducationMeAssignmentRubricByRef](Set-MgEducationMeAssignmentRubricByRef.md)
 {{ Fill in the Description }}
 
@@ -699,6 +735,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgEducationClassAssignmentSubmissionSubmittedResource](Update-MgEducationClassAssignmentSubmissionSubmittedResource.md)
+{{ Fill in the Description }}
+
+### [Update-MgEducationClassModule](Update-MgEducationClassModule.md)
+{{ Fill in the Description }}
+
+### [Update-MgEducationClassModuleResource](Update-MgEducationClassModuleResource.md)
 {{ Fill in the Description }}
 
 ### [Update-MgEducationMe](Update-MgEducationMe.md)

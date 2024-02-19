@@ -22,26 +22,28 @@ If the size of the file attachments is more than 3 MB, create an upload session 
 ```
 New-MgUserTodoListTaskAttachment -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Name <String>] [-Size <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserTodoListTaskAttachment -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttachmentBase> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttachmentBase> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphAttachmentBase>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -121,6 +123,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -177,6 +194,21 @@ This doesn't need to be the actual file name.
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -283,44 +315,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentBase
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentBase
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAttachmentBase\>: attachmentBase
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAttachmentBase>`: attachmentBase
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ContentType \<String\>\]: The MIME type.
-  \[LastModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  - `[ContentType <String>]`: The MIME type.
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Name \<String\>\]: The display name of the attachment.
+  - `[Name <String>]`: The display name of the attachment.
 This doesn't need to be the actual file name.
-  \[Size \<Int32?\>\]: The length of the attachment in bytes.
+  - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [New-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment)
+
+
 
 

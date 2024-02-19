@@ -17,13 +17,29 @@ New-MgBetaTeamAppPreApproval -TeamsAppId <String>
  [-ResourceSpecificApplicationPermissionsAllowedForTeams <String[]>]
  [-ResourceSpecificApplicationPermissionsAllowedForChats <String[]>]
  [-TeamLevelSensitivityLabelCondition <MicrosoftGraphSensitivityLabelCondition>]
- [-SpecificSensitivityLabelIdsApplicableToTeams <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SpecificSensitivityLabelIdsApplicableToTeams <String[]>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create Preapproval policy associated with a Teams App.
 
 ## PARAMETERS
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ResourceSpecificApplicationPermissionsAllowedForChats
 Resource Specific Permissions Allowed for Chats
@@ -144,6 +160,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamapppreapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamapppreapproval)
+
+
 
 
 
