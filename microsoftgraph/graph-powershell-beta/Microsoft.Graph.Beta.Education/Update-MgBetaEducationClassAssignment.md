@@ -30,14 +30,15 @@ Update-MgBetaEducationClassAssignment -EducationAssignmentId <String> -Education
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,14 +52,15 @@ Update-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-AddToC
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClassAssignment -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -74,6 +76,7 @@ Use the publish action to change the assignment status.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
@@ -88,10 +91,9 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaEducationClassAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 
 ### -AllowLateSubmissions
 Identifies whether students can submit after the due date.
-If this property is not specified during create, it defaults to true.
+If this property isn't specified during create, it defaults to true.
 
 ```yaml
 Type: SwitchParameter
@@ -222,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassId
-Class which this assignment belongs.
+Class to which this assignment belongs.
 
 ```yaml
 Type: String
@@ -238,7 +240,7 @@ Accept wildcard characters: False
 
 ### -CloseDateTime
 Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -364,6 +366,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -447,12 +464,27 @@ Accept wildcard characters: False
 Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl is not allowed after the assignment has been published.
+Updating the notificationChannelUrl isn't allowed after the assignment has been published.
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -566,305 +598,309 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphEducationAssignment\>: educationAssignment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AddToCalendarAction \<String\>\]: educationAddToCalendarOptions
-  \[AddedStudentAction \<String\>\]: educationAddedStudentAction
-  \[AllowLateSubmissions \<Boolean?\>\]: Identifies whether students can submit after the due date.
-If this property is not specified during create, it defaults to true.
-  \[AllowStudentsToAddResourcesToSubmission \<Boolean?\>\]: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
-  \[AssignTo \<IMicrosoftGraphEducationAssignmentRecipient\>\]: educationAssignmentRecipient
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Categories \<IMicrosoftGraphEducationCategory\[\]\>\]: When set, enables users to easily find assignments of a given type. 
+  - `[AddToCalendarAction <String>]`: educationAddToCalendarOptions
+  - `[AddedStudentAction <String>]`: educationAddedStudentAction
+  - `[AllowLateSubmissions <Boolean?>]`: Identifies whether students can submit after the due date.
+If this property isn't specified during create, it defaults to true.
+  - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
+  - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
 Read-only.
 Nullable.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: Unique identifier for the category.
-  \[ClassId \<String\>\]: Class which this assignment belongs.
-  \[CloseDateTime \<DateTime?\>\]: Date when the assignment will be closed for submissions.
-This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
+    - `[DisplayName <String>]`: Unique identifier for the category.
+  - `[ClassId <String>]`: Class to which this assignment belongs.
+  - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[DisplayName \<String\>\]: Name of the assignment.
-  \[DueDateTime \<DateTime?\>\]: Date when the students assignment is due. 
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[DisplayName <String>]`: Name of the assignment.
+  - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GradingCategory \<IMicrosoftGraphEducationGradingCategory\>\]: educationGradingCategory
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[GradingCategory <IMicrosoftGraphEducationGradingCategory>]`: educationGradingCategory
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: The name of the grading category.
-    \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
-  \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: 
-    \[ContentType \<String\>\]: bodyType
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[ModuleUrl \<String\>\]: The URL of the module from which to access the assignment.
-  \[NotificationChannelUrl \<String\>\]: Optional field to specify the URL of the channel to post the assignment publish notification.
+    - `[DisplayName <String>]`: The name of the grading category.
+    - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
+  - `[Instructions <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: 
+    - `[ContentType <String>]`: bodyType
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
+  - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl is not allowed after the assignment has been published.
-  \[Resources \<IMicrosoftGraphEducationAssignmentResource\[\]\>\]: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment has been published.
+  - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
 Only teachers can modify this list.
 Nullable.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DependentResources \<IMicrosoftGraphEducationAssignmentResource\[\]\>\]: 
-    \[DistributeForStudentWork \<Boolean?\>\]: Indicates whether this resource should be copied to each student submission for modification and submission.
+    - `[DependentResources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: 
+    - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
-    \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[DisplayName \<String\>\]: Display name of resource.
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Rubric \<IMicrosoftGraphEducationRubric\>\]: educationRubric
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: Display name of resource.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Rubric <IMicrosoftGraphEducationRubric>]`: educationRubric
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-    \[DisplayName \<String\>\]: The name of this rubric.
-    \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[Levels \<IMicrosoftGraphRubricLevel\[\]\>\]: The collection of levels making up this rubric.
-      \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-      \[DisplayName \<String\>\]: The name of this rubric level.
-      \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
-      \[LevelId \<String\>\]: The ID of this resource.
-    \[Qualities \<IMicrosoftGraphRubricQuality\[\]\>\]: The collection of qualities making up this rubric.
-      \[Criteria \<IMicrosoftGraphRubricCriterion\[\]\>\]: The collection of criteria for this rubric quality.
-        \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-      \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-      \[DisplayName \<String\>\]: The name of this rubric quality.
-      \[QualityId \<String\>\]: The ID of this resource.
-      \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+    - `[DisplayName <String>]`: The name of this rubric.
+    - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Levels <IMicrosoftGraphRubricLevel- `[]`>]`: The collection of levels making up this rubric.
+      - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+      - `[DisplayName <String>]`: The name of this rubric level.
+      - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
+      - `[LevelId <String>]`: The ID of this resource.
+    - `[Qualities <IMicrosoftGraphRubricQuality- `[]`>]`: The collection of qualities making up this rubric.
+      - `[Criteria <IMicrosoftGraphRubricCriterion- `[]`>]`: The collection of criteria for this rubric quality.
+        - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+      - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+      - `[DisplayName <String>]`: The name of this rubric quality.
+      - `[QualityId <String>]`: The ID of this resource.
+      - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
-  \[Status \<String\>\]: educationAssignmentStatus
-  \[Submissions \<IMicrosoftGraphEducationSubmission\[\]\>\]: Once published, there is a submission object for each student representing their work and grade. 
+  - `[Status <String>]`: educationAssignmentStatus
+  - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there is a submission object for each student representing their work and grade. 
 Read-only.
 Nullable.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ExcusedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[Outcomes \<IMicrosoftGraphEducationOutcome\[\]\>\]: 
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ExcusedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[LastModifiedDateTime \<DateTime?\>\]: The moment in time when the resource was last modified.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
-    \[ReassignedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[Recipient \<IMicrosoftGraphEducationSubmissionRecipient\>\]: educationSubmissionRecipient
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Resources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[AssignmentResourceUrl \<String\>\]: Pointer to the assignment from which the resource was copied.
+      - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-      \[DependentResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-      \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-    \[ReturnedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[Status \<String\>\]: educationSubmissionStatus
-    \[SubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[SubmittedResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-    \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      - `[DependentResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+      - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+    - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Status <String>]`: educationSubmissionStatus
+    - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+    - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-CATEGORIES \<IMicrosoftGraphEducationCategory\[\]\>: When set, enables users to easily find assignments of a given type.
+CATEGORIES <IMicrosoftGraphEducationCategory- `[]`>: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: Unique identifier for the category.
+  - `[DisplayName <String>]`: Unique identifier for the category.
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRADINGCATEGORY \<IMicrosoftGraphEducationGradingCategory\>: educationGradingCategory
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+GRADINGCATEGORY `<IMicrosoftGraphEducationGradingCategory>`: educationGradingCategory
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the grading category.
-  \[PercentageWeight \<Int32?\>\]: The weight of the category; an integer between 0 and 100.
+  - `[DisplayName <String>]`: The name of the grading category.
+  - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
 
-INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
-  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
-  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
-  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
-  \[EducationClassId \<String\>\]: The unique identifier of educationClass
-  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
-  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
-  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
-  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
-  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
-  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
-  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
-  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
-  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
-  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
-  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+  - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
+  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+  - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-INSTRUCTIONS \<IMicrosoftGraphEducationItemBody\>: educationItemBody
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: 
-  \[ContentType \<String\>\]: bodyType
+INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: 
+  - `[ContentType <String>]`: bodyType
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES \<IMicrosoftGraphEducationAssignmentResource\[\]\>: Learning objects that are associated with this assignment.
+RESOURCES <IMicrosoftGraphEducationAssignmentResource- `[]`>: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DependentResources \<IMicrosoftGraphEducationAssignmentResource\[\]\>\]: 
-  \[DistributeForStudentWork \<Boolean?\>\]: Indicates whether this resource should be copied to each student submission for modification and submission.
+  - `[DependentResources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: 
+  - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
-  \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[DisplayName \<String\>\]: Display name of resource.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: Display name of resource.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-RUBRIC \<IMicrosoftGraphEducationRubric\>: educationRubric
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+RUBRIC `<IMicrosoftGraphEducationRubric>`: educationRubric
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: 
-    \[ContentType \<String\>\]: bodyType
-  \[DisplayName \<String\>\]: The name of this rubric.
-  \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Levels \<IMicrosoftGraphRubricLevel\[\]\>\]: The collection of levels making up this rubric.
-    \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-    \[DisplayName \<String\>\]: The name of this rubric level.
-    \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
-    \[LevelId \<String\>\]: The ID of this resource.
-  \[Qualities \<IMicrosoftGraphRubricQuality\[\]\>\]: The collection of qualities making up this rubric.
-    \[Criteria \<IMicrosoftGraphRubricCriterion\[\]\>\]: The collection of criteria for this rubric quality.
-      \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-    \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
-    \[DisplayName \<String\>\]: The name of this rubric quality.
-    \[QualityId \<String\>\]: The ID of this resource.
-    \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: 
+    - `[ContentType <String>]`: bodyType
+  - `[DisplayName <String>]`: The name of this rubric.
+  - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Levels <IMicrosoftGraphRubricLevel- `[]`>]`: The collection of levels making up this rubric.
+    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+    - `[DisplayName <String>]`: The name of this rubric level.
+    - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
+    - `[LevelId <String>]`: The ID of this resource.
+  - `[Qualities <IMicrosoftGraphRubricQuality- `[]`>]`: The collection of qualities making up this rubric.
+    - `[Criteria <IMicrosoftGraphRubricCriterion- `[]`>]`: The collection of criteria for this rubric quality.
+      - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
+    - `[DisplayName <String>]`: The name of this rubric quality.
+    - `[QualityId <String>]`: The ID of this resource.
+    - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
-SUBMISSIONS \<IMicrosoftGraphEducationSubmission\[\]\>: Once published, there is a submission object for each student representing their work and grade.
+SUBMISSIONS <IMicrosoftGraphEducationSubmission- `[]`>: Once published, there is a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExcusedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[ExcusedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[Outcomes \<IMicrosoftGraphEducationOutcome\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: The moment in time when the resource was last modified.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
-  \[ReassignedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Recipient \<IMicrosoftGraphEducationSubmissionRecipient\>\]: educationSubmissionRecipient
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Resources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Resources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AssignmentResourceUrl \<String\>\]: Pointer to the assignment from which the resource was copied.
+    - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-    \[DependentResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-    \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[DisplayName \<String\>\]: Display name of resource.
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[ReturnedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Status \<String\>\]: educationSubmissionStatus
-  \[SubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[SubmittedResources \<IMicrosoftGraphEducationSubmissionResource\[\]\>\]: 
-  \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    - `[DependentResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+    - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: Display name of resource.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Status <String>]`: educationSubmissionStatus
+  - `[SubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
+  - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment)
+
+
 
 

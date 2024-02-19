@@ -287,6 +287,9 @@ Locale: en-US
 ### [Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink](Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaInitiateUserManagedDeviceAttestation](Invoke-MgBetaInitiateUserManagedDeviceAttestation.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery.md)
 {{ Fill in the Description }}
 
@@ -684,6 +687,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Send-MgBetaUserMessage](Send-MgBetaUserMessage.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm](Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentSm](Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentSm.md)
 {{ Fill in the Description }}
 
 ### [Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm.md)

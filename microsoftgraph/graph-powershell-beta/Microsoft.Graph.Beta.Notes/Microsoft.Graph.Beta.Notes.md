@@ -65,6 +65,9 @@ Locale: en-US
 ### [Get-MgBetaGroupOnenoteSectionPage](Get-MgBetaGroupOnenoteSectionPage.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSiteGetByPathOnenote](Get-MgBetaSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSiteOnenoteNotebook](Get-MgBetaSiteOnenoteNotebook.md)
 {{ Fill in the Description }}
 
@@ -257,6 +260,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupOnenoteSectionGroup](Remove-MgBetaGroupOnenoteSectionGroup.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaSiteGetByPathOnenote](Remove-MgBetaSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaSiteOnenoteNotebook](Remove-MgBetaSiteOnenoteNotebook.md)
 {{ Fill in the Description }}
 
@@ -318,6 +324,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupOnenoteSectionGroup](Update-MgBetaGroupOnenoteSectionGroup.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSiteGetByPathOnenote](Update-MgBetaSiteGetByPathOnenote.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSiteOnenoteNotebook](Update-MgBetaSiteOnenoteNotebook.md)

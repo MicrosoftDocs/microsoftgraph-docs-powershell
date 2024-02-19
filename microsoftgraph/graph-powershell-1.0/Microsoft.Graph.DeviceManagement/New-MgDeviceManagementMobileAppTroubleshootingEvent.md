@@ -19,14 +19,15 @@ Create a new mobileAppTroubleshootingEvent object.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementMobileAppTroubleshootingEvent [-AdditionalProperties <Hashtable>]
- [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-Id <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementMobileAppTroubleshootingEvent
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,6 +82,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -89,6 +105,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -134,39 +165,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLOGCOLLECTIONREQUESTS \<IMicrosoftGraphAppLogCollectionRequest\[\]\>: Indicates collection of App Log Upload Request.
-  \[Id \<String\>\]: The unique identifier for an entity.
+APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: Indicates collection of App Log Upload Request.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CompletedDateTime \<DateTime?\>\]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
-  \[CustomLogFolders \<String\[\]\>\]: List of log folders.
-  \[ErrorMessage \<String\>\]: Indicates error message if any during the upload process.
-  \[Status \<AppLogUploadState?\>\]: AppLogUploadStatus
+  - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
+  - `[CustomLogFolders <String- `[]`>]`: List of log folders.
+  - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
+  - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-BODYPARAMETER \<IMicrosoftGraphMobileAppTroubleshootingEvent\>: mobileAppTroubleshootingEvent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: mobileAppTroubleshootingEvent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppLogCollectionRequests \<IMicrosoftGraphAppLogCollectionRequest\[\]\>\]: Indicates collection of App Log Upload Request.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CompletedDateTime \<DateTime?\>\]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
-    \[CustomLogFolders \<String\[\]\>\]: List of log folders.
-    \[ErrorMessage \<String\>\]: Indicates error message if any during the upload process.
-    \[Status \<AppLogUploadState?\>\]: AppLogUploadStatus
+    - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
+    - `[CustomLogFolders <String- `[]`>]`: List of log folders.
+    - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
+    - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)
+
+
 
 
 

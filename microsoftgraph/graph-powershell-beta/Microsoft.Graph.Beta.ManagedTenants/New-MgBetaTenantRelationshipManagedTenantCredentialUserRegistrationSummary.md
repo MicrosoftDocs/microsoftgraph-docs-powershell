@@ -19,14 +19,14 @@ New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary [-Add
  [-MfaConditionalAccessPolicyState <String>] [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>]
  [-SecurityDefaultsEnabled] [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>]
  [-TenantDisplayName <String>] [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
- -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +59,21 @@ Parameter Sets: Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -162,6 +177,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -320,57 +350,61 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary\>: credentialUserRegistrationsSummary
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary>`: credentialUserRegistrationsSummary
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
+  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
-  \[MfaAndSsprCapableUserCount \<Int32?\>\]: The number of users that are capable of performing multi-factor authentication or self service password reset.
+  - `[MfaAndSsprCapableUserCount <Int32?>]`: The number of users that are capable of performing multi-factor authentication or self service password reset.
 Optional.
 Read-only.
-  \[MfaConditionalAccessPolicyState \<String\>\]: The state of a conditional access policy that enforces multi-factor authentication.
+  - `[MfaConditionalAccessPolicyState <String>]`: The state of a conditional access policy that enforces multi-factor authentication.
 Optional.
 Read-only.
-  \[MfaExcludedUserCount \<Int32?\>\]: The number of users in the multi-factor authentication exclusion security group (Microsoft 365 Lighthouse - MFA exclusions).
+  - `[MfaExcludedUserCount <Int32?>]`: The number of users in the multi-factor authentication exclusion security group (Microsoft 365 Lighthouse - MFA exclusions).
 Optional.
 Read-only.
-  \[MfaRegisteredUserCount \<Int32?\>\]: The number of users registered for multi-factor authentication.
+  - `[MfaRegisteredUserCount <Int32?>]`: The number of users registered for multi-factor authentication.
 Optional.
 Read-only.
-  \[SecurityDefaultsEnabled \<Boolean?\>\]: A flag indicating whether Identity Security Defaults is enabled.
+  - `[SecurityDefaultsEnabled <Boolean?>]`: A flag indicating whether Identity Security Defaults is enabled.
 Optional.
 Read-only.
-  \[SsprEnabledUserCount \<Int32?\>\]: The number of users enabled for self service password reset.
+  - `[SsprEnabledUserCount <Int32?>]`: The number of users enabled for self service password reset.
 Optional.
 Read-only.
-  \[SsprRegisteredUserCount \<Int32?\>\]: The number of users registered for self service password reset.
+  - `[SsprRegisteredUserCount <Int32?>]`: The number of users registered for self service password reset.
 Optional.
 Read-only.
-  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
+  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
 Required.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Required.
 Read-only.
-  \[TenantLicenseType \<String\>\]: The license type associated with the tenant; for example, AADFree, AADPremium1, AADPremium2.
-  \[TotalUserCount \<Int32?\>\]: The total number of users in the given managed tenant.
+  - `[TenantLicenseType <String>]`: The license type associated with the tenant; for example, AADFree, AADPremium1, AADPremium2.
+  - `[TotalUserCount <Int32?>]`: The total number of users in the given managed tenant.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary)
+
+
 
 
 

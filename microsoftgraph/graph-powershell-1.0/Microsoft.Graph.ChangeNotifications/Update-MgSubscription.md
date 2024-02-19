@@ -27,13 +27,14 @@ Update-MgSubscription -SubscriptionId <String> [-AdditionalProperties <Hashtable
  [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
  [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>]
  [-NotificationQueryOptions <String>] [-NotificationUrl <String>] [-NotificationUrlAppId <String>]
- [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSubscription -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSubscription -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,13 +44,14 @@ Update-MgSubscription -InputObject <IChangeNotificationsIdentity> [-AdditionalPr
  [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
- [-NotificationUrlAppId <String>] [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSubscription -InputObject <IChangeNotificationsIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,6 +65,7 @@ See subscription for maximum length of a subscription for each resource type.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.ChangeNotifications
 
 $params = @{
@@ -70,10 +73,9 @@ $params = @{
 }
 
 Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -236,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -379,6 +396,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Resource
 Required.
 Specifies the resource that will be monitored for changes.
@@ -450,23 +482,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSubscription\>: subscription
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSubscription>`: subscription
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ApplicationId \<String\>\]: Optional.
+  - `[ApplicationId <String>]`: Optional.
 Identifier of the application used to create the subscription.
 Read-only.
-  \[ChangeType \<String\>\]: Required.
+  - `[ChangeType <String>]`: Required.
 Indicates the type of change in the subscribed resource that will raise a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
@@ -474,62 +508,64 @@ Note:  Drive root item and list change notifications support only the updated ch
 User and group change notifications support updated and deleted changeType.
 Use updated to receive notifications when user or group is created, updated or soft deleted. 
 Use deleted to receive notifications when user or group is permanently deleted.
-  \[ClientState \<String\>\]: Optional.
+  - `[ClientState <String>]`: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
 The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
-  \[CreatorId \<String\>\]: Optional.
+  - `[CreatorId <String>]`: Optional.
 Identifier of the user or service principal that created the subscription.
 If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
 If the app used application permissions, this field contains the id of the service principal corresponding to the app.
 Read-only.
-  \[EncryptionCertificate \<String\>\]: Optional.
+  - `[EncryptionCertificate <String>]`: Optional.
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
 Optional but required when includeResourceData is true.
-  \[EncryptionCertificateId \<String\>\]: Optional.
+  - `[EncryptionCertificateId <String>]`: Optional.
 A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
-  \[ExpirationDateTime \<DateTime?\>\]: Required.
+  - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
 For the maximum supported subscription length of time, see the table below.
-  \[IncludeResourceData \<Boolean?\>\]: Optional.
+  - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
-  \[LatestSupportedTlsVersion \<String\>\]: Optional.
+  - `[LatestSupportedTlsVersion <String>]`: Optional.
 Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports.
 The possible values are: v10, v11, v12, v13.
 For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2.
 For these subscribers, not setting this property per the timeline would result in subscription operations failing.
 For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional.
 In such cases, Microsoft Graph defaults the property to v1_2.
-  \[LifecycleNotificationUrl \<String\>\]: Required for Teams resources if  the expirationDateTime value is more than 1 hour from now; optional otherwise.
+  - `[LifecycleNotificationUrl <String>]`: Required for Teams resources if  the expirationDateTime value is more than 1 hour from now; optional otherwise.
 The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications.
 This URL must make use of the HTTPS protocol.
 For more information, see Reduce missing subscriptions and change notifications.
-  \[NotificationQueryOptions \<String\>\]: Optional.
+  - `[NotificationQueryOptions <String>]`: Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
 With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-  \[NotificationUrl \<String\>\]: Required.
+  - `[NotificationUrl <String>]`: Required.
 The URL of the endpoint that will receive the change notifications.
 This URL must make use of the HTTPS protocol.
 Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
-  \[NotificationUrlAppId \<String\>\]: Optional.
+  - `[NotificationUrlAppId <String>]`: Optional.
 The app ID that the subscription service can use to generate the validation token.
 This allows the client to validate the authenticity of the notification received.
-  \[Resource \<String\>\]: Required.
+  - `[Resource <String>]`: Required.
 Specifies the resource that will be monitored for changes.
 Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
-INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
 [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
+
+
 
 

@@ -21,13 +21,13 @@ New-MgBetaFinancialCompanyVendor -CompanyId <String> [-AdditionalProperties <Has
  [-PaymentMethod <IMicrosoftGraphPaymentMethod>] [-PaymentMethodId <String>]
  [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Website <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaFinancialCompanyVendor -CompanyId <String> -BodyParameter <IMicrosoftGraphVendor> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyVendor -CompanyId <String> -BodyParameter <IMicrosoftGraphVendor>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,13 +39,13 @@ New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> [-Additional
  [-PaymentMethod <IMicrosoftGraphPaymentMethod>] [-PaymentMethodId <String>]
  [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Website <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphVendor>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -221,6 +221,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 .
 
@@ -375,6 +390,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaxLiable
 .
 
@@ -458,155 +488,159 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVendor
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVendor
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS \<IMicrosoftGraphPostalAddressType\>: postalAddressType
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[City \<String\>\]: 
-  \[CountryLetterCode \<String\>\]: 
-  \[PostalCode \<String\>\]: 
-  \[State \<String\>\]: 
-  \[Street \<String\>\]: 
+ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: 
+  - `[CountryLetterCode <String>]`: 
+  - `[PostalCode <String>]`: 
+  - `[State <String>]`: 
+  - `[Street <String>]`: 
 
-BODYPARAMETER \<IMicrosoftGraphVendor\>: vendor
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Address \<IMicrosoftGraphPostalAddressType\>\]: postalAddressType
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[City \<String\>\]: 
-    \[CountryLetterCode \<String\>\]: 
-    \[PostalCode \<String\>\]: 
-    \[State \<String\>\]: 
-    \[Street \<String\>\]: 
-  \[Balance \<Decimal?\>\]: 
-  \[Blocked \<String\>\]: 
-  \[Currency \<IMicrosoftGraphCurrency\>\]: currency
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AmountDecimalPlaces \<String\>\]: 
-    \[AmountRoundingPrecision \<Decimal?\>\]: 
-    \[Code \<String\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[Id \<String\>\]: 
-    \[LastModifiedDateTime \<DateTime?\>\]: 
-    \[Symbol \<String\>\]: 
-  \[CurrencyCode \<String\>\]: 
-  \[CurrencyId \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[Email \<String\>\]: 
-  \[Id \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[Number \<String\>\]: 
-  \[PaymentMethod \<IMicrosoftGraphPaymentMethod\>\]: paymentMethod
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[Id \<String\>\]: 
-    \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[PaymentMethodId \<String\>\]: 
-  \[PaymentTerm \<IMicrosoftGraphPaymentTerm\>\]: paymentTerm
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CalculateDiscountOnCreditMemos \<Boolean?\>\]: 
-    \[Code \<String\>\]: 
-    \[DiscountDateCalculation \<String\>\]: 
-    \[DiscountPercent \<Decimal?\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[DueDateCalculation \<String\>\]: 
-    \[Id \<String\>\]: 
-    \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[PaymentTermsId \<String\>\]: 
-  \[PhoneNumber \<String\>\]: 
-  \[Picture \<IMicrosoftGraphPicture\[\]\>\]: 
-    \[Content \<Byte\[\]\>\]: 
-    \[ContentType \<String\>\]: 
-    \[Height \<Int32?\>\]: 
-    \[Id \<String\>\]: 
-    \[Width \<Int32?\>\]: 
-  \[TaxLiable \<Boolean?\>\]: 
-  \[TaxRegistrationNumber \<String\>\]: 
-  \[Website \<String\>\]: 
+BODYPARAMETER `<IMicrosoftGraphVendor>`: vendor
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: 
+    - `[CountryLetterCode <String>]`: 
+    - `[PostalCode <String>]`: 
+    - `[State <String>]`: 
+    - `[Street <String>]`: 
+  - `[Balance <Decimal?>]`: 
+  - `[Blocked <String>]`: 
+  - `[Currency <IMicrosoftGraphCurrency>]`: currency
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AmountDecimalPlaces <String>]`: 
+    - `[AmountRoundingPrecision <Decimal?>]`: 
+    - `[Code <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Symbol <String>]`: 
+  - `[CurrencyCode <String>]`: 
+  - `[CurrencyId <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Email <String>]`: 
+  - `[Id <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Number <String>]`: 
+  - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[PaymentMethodId <String>]`: 
+  - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
+    - `[Code <String>]`: 
+    - `[DiscountDateCalculation <String>]`: 
+    - `[DiscountPercent <Decimal?>]`: 
+    - `[DisplayName <String>]`: 
+    - `[DueDateCalculation <String>]`: 
+    - `[Id <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[PaymentTermsId <String>]`: 
+  - `[PhoneNumber <String>]`: 
+  - `[Picture <IMicrosoftGraphPicture- `[]`>]`: 
+    - `[Content <Byte- `[]`>]`: 
+    - `[ContentType <String>]`: 
+    - `[Height <Int32?>]`: 
+    - `[Id <String>]`: 
+    - `[Width <Int32?>]`: 
+  - `[TaxLiable <Boolean?>]`: 
+  - `[TaxRegistrationNumber <String>]`: 
+  - `[Website <String>]`: 
 
-CURRENCY \<IMicrosoftGraphCurrency\>: currency
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AmountDecimalPlaces \<String\>\]: 
-  \[AmountRoundingPrecision \<Decimal?\>\]: 
-  \[Code \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[Id \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[Symbol \<String\>\]: 
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AmountDecimalPlaces <String>]`: 
+  - `[AmountRoundingPrecision <Decimal?>]`: 
+  - `[Code <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Id <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Symbol <String>]`: 
 
-INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
-  \[AccountId \<String\>\]: The unique identifier of account
-  \[AgedAccountsPayableId \<String\>\]: The unique identifier of agedAccountsPayable
-  \[AgedAccountsReceivableId \<String\>\]: The unique identifier of agedAccountsReceivable
-  \[CompanyId \<String\>\]: The unique identifier of company
-  \[CompanyInformationId \<String\>\]: The unique identifier of companyInformation
-  \[CountryRegionId \<String\>\]: The unique identifier of countryRegion
-  \[CurrencyId \<String\>\]: The unique identifier of currency
-  \[CustomerId \<String\>\]: The unique identifier of customer
-  \[CustomerPaymentId \<String\>\]: The unique identifier of customerPayment
-  \[CustomerPaymentJournalId \<String\>\]: The unique identifier of customerPaymentJournal
-  \[DimensionId \<String\>\]: The unique identifier of dimension
-  \[DimensionValueId \<String\>\]: The unique identifier of dimensionValue
-  \[EmployeeId \<String\>\]: The unique identifier of employee
-  \[GeneralLedgerEntryId \<String\>\]: The unique identifier of generalLedgerEntry
-  \[ItemCategoryId \<String\>\]: The unique identifier of itemCategory
-  \[ItemId \<String\>\]: The unique identifier of item
-  \[JournalId \<String\>\]: The unique identifier of journal
-  \[JournalLineId \<String\>\]: The unique identifier of journalLine
-  \[PaymentMethodId \<String\>\]: The unique identifier of paymentMethod
-  \[PaymentTermId \<String\>\]: The unique identifier of paymentTerm
-  \[PictureId \<String\>\]: The unique identifier of picture
-  \[PurchaseInvoiceId \<String\>\]: The unique identifier of purchaseInvoice
-  \[PurchaseInvoiceLineId \<String\>\]: The unique identifier of purchaseInvoiceLine
-  \[SalesCreditMemoId \<String\>\]: The unique identifier of salesCreditMemo
-  \[SalesCreditMemoLineId \<String\>\]: The unique identifier of salesCreditMemoLine
-  \[SalesInvoiceId \<String\>\]: The unique identifier of salesInvoice
-  \[SalesInvoiceLineId \<String\>\]: The unique identifier of salesInvoiceLine
-  \[SalesOrderId \<String\>\]: The unique identifier of salesOrder
-  \[SalesOrderLineId \<String\>\]: The unique identifier of salesOrderLine
-  \[SalesQuoteId \<String\>\]: The unique identifier of salesQuote
-  \[SalesQuoteLineId \<String\>\]: The unique identifier of salesQuoteLine
-  \[ShipmentMethodId \<String\>\]: The unique identifier of shipmentMethod
-  \[TaxAreaId \<String\>\]: The unique identifier of taxArea
-  \[TaxGroupId \<String\>\]: The unique identifier of taxGroup
-  \[UnitOfMeasureId \<String\>\]: The unique identifier of unitOfMeasure
-  \[VendorId \<String\>\]: The unique identifier of vendor
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+  - `[AccountId <String>]`: The unique identifier of account
+  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
+  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
+  - `[CompanyId <String>]`: The unique identifier of company
+  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
+  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
+  - `[CurrencyId <String>]`: The unique identifier of currency
+  - `[CustomerId <String>]`: The unique identifier of customer
+  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
+  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
+  - `[DimensionId <String>]`: The unique identifier of dimension
+  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
+  - `[EmployeeId <String>]`: The unique identifier of employee
+  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
+  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
+  - `[ItemId <String>]`: The unique identifier of item
+  - `[JournalId <String>]`: The unique identifier of journal
+  - `[JournalLineId <String>]`: The unique identifier of journalLine
+  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
+  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
+  - `[PictureId <String>]`: The unique identifier of picture
+  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
+  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
+  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
+  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
+  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
+  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
+  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
+  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
+  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
+  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
+  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
+  - `[TaxAreaId <String>]`: The unique identifier of taxArea
+  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
+  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
+  - `[VendorId <String>]`: The unique identifier of vendor
 
-PAYMENTMETHOD \<IMicrosoftGraphPaymentMethod\>: paymentMethod
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Code \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[Id \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
+PAYMENTMETHOD `<IMicrosoftGraphPaymentMethod>`: paymentMethod
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Code <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Id <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTTERM \<IMicrosoftGraphPaymentTerm\>: paymentTerm
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CalculateDiscountOnCreditMemos \<Boolean?\>\]: 
-  \[Code \<String\>\]: 
-  \[DiscountDateCalculation \<String\>\]: 
-  \[DiscountPercent \<Decimal?\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[DueDateCalculation \<String\>\]: 
-  \[Id \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
+PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
+  - `[Code <String>]`: 
+  - `[DiscountDateCalculation <String>]`: 
+  - `[DiscountPercent <Decimal?>]`: 
+  - `[DisplayName <String>]`: 
+  - `[DueDateCalculation <String>]`: 
+  - `[Id <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE \<IMicrosoftGraphPicture\[\]\>: .
-  \[Content \<Byte\[\]\>\]: 
-  \[ContentType \<String\>\]: 
-  \[Height \<Int32?\>\]: 
-  \[Id \<String\>\]: 
-  \[Width \<Int32?\>\]:
+PICTURE <IMicrosoftGraphPicture- `[]`>: .
+  - `[Content <Byte- `[]`>]`: 
+  - `[ContentType <String>]`: 
+  - `[Height <Int32?>]`: 
+  - `[Id <String>]`: 
+  - `[Width <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor)
+
+
 
 
 

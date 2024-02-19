@@ -21,13 +21,15 @@ Update-MgBetaSecurityThreatIntelligenceArticle -ArticleId <String> [-AdditionalP
  [-Body <IMicrosoftGraphSecurityFormattedContent>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-ImageUrl <String>] [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured]
  [-LastUpdatedDateTime <DateTime>] [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceArticle -ArticleId <String>
- -BodyParameter <IMicrosoftGraphSecurityArticle> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityArticle> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,14 +38,15 @@ Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Body <IMicrosoftGraphSecurityFormattedContent>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-ImageUrl <String>]
  [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured] [-LastUpdatedDateTime <DateTime>]
- [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>] [-Title <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityArticle> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityArticle> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -127,6 +130,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -225,6 +243,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Summary
 formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
@@ -309,146 +342,151 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticle
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticle
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+BODY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
-BODYPARAMETER \<IMicrosoftGraphSecurityArticle\>: article
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityArticle>`: article
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Body \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of this formattedContent.
-    \[Format \<String\>\]: contentFormat
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when this article was created.
+  - `[Body <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of this formattedContent.
+    - `[Format <String>]`: contentFormat
+  - `[CreatedDateTime <DateTime?>]`: The date and time when this article was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ImageUrl \<String\>\]: URL of the header image for this article, used for display purposes.
-  \[Indicators \<IMicrosoftGraphSecurityArticleIndicator\[\]\>\]: Indicators related to this article.
-    \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ImageUrl <String>]`: URL of the header image for this article, used for display purposes.
+  - `[Indicators <IMicrosoftGraphSecurityArticleIndicator- `[]`>]`: Indicators related to this article.
+    - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Source \<String\>\]: indicatorSource
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Source <String>]`: indicatorSource
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsFeatured \<Boolean?\>\]: Indicates whether this article is currently featured by Microsoft.
-  \[LastUpdatedDateTime \<DateTime?\>\]: The most recent date and time when this article was updated.
+  - `[IsFeatured <Boolean?>]`: Indicates whether this article is currently featured by Microsoft.
+  - `[LastUpdatedDateTime <DateTime?>]`: The most recent date and time when this article was updated.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Summary \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
-  \[Tags \<String\[\]\>\]: Tags for this article, communicating keywords, or key concepts.
-  \[Title \<String\>\]: The title of this article.
+  - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+  - `[Tags <String- `[]`>]`: Tags for this article, communicating keywords, or key concepts.
+  - `[Title <String>]`: The title of this article.
 
-INDICATORS \<IMicrosoftGraphSecurityArticleIndicator\[\]\>: Indicators related to this article.
-  \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+INDICATORS <IMicrosoftGraphSecurityArticleIndicator- `[]`>: Indicators related to this article.
+  - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Source \<String\>\]: indicatorSource
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Source <String>]`: indicatorSource
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[ArticleId \<String\>\]: The unique identifier of article
-  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
-  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
-  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
-  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CategoryTemplateId \<String\>\]: The unique identifier of categoryTemplate
-  \[CitationTemplateId \<String\>\]: The unique identifier of citationTemplate
-  \[CloudAppSecurityProfileId \<String\>\]: The unique identifier of cloudAppSecurityProfile
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[DepartmentTemplateId \<String\>\]: The unique identifier of departmentTemplate
-  \[DispositionReviewStageId \<String\>\]: The unique identifier of dispositionReviewStage
-  \[DomainSecurityProfileId \<String\>\]: The unique identifier of domainSecurityProfile
-  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
-  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
-  \[EdiscoveryFileId \<String\>\]: The unique identifier of ediscoveryFile
-  \[EdiscoveryHoldPolicyId \<String\>\]: The unique identifier of ediscoveryHoldPolicy
-  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
-  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
-  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
-  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
-  \[EmailThreatSubmissionId \<String\>\]: The unique identifier of emailThreatSubmission
-  \[EmailThreatSubmissionPolicyId \<String\>\]: The unique identifier of emailThreatSubmissionPolicy
-  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
-  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
-  \[FilePlanReferenceTemplateId \<String\>\]: The unique identifier of filePlanReferenceTemplate
-  \[FileSecurityProfileId \<String\>\]: The unique identifier of fileSecurityProfile
-  \[FileThreatSubmissionId \<String\>\]: The unique identifier of fileThreatSubmission
-  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
-  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
-  \[HostId \<String\>\]: The unique identifier of host
-  \[HostPairId \<String\>\]: The unique identifier of hostPair
-  \[HostPortId \<String\>\]: The unique identifier of hostPort
-  \[HostSecurityProfileId \<String\>\]: The unique identifier of hostSecurityProfile
-  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
-  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
-  \[IPSecurityProfileId \<String\>\]: The unique identifier of ipSecurityProfile
-  \[IncidentId \<String\>\]: The unique identifier of incident
-  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
-  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
-  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
-  \[LandingPageId \<String\>\]: The unique identifier of landingPage
-  \[LoginPageId \<String\>\]: The unique identifier of loginPage
-  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
-  \[PayloadId \<String\>\]: The unique identifier of payload
-  \[ProviderTenantSettingId \<String\>\]: The unique identifier of providerTenantSetting
-  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
-  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
-  \[RetentionLabelId \<String\>\]: The unique identifier of retentionLabel
-  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
-  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
-  \[SecurityActionId \<String\>\]: The unique identifier of securityAction
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
-  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
-  \[SimulationId \<String\>\]: The unique identifier of simulation
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
-  \[SubCategoryTemplateId \<String\>\]: The unique identifier of subCategoryTemplate
-  \[SubdomainId \<String\>\]: The unique identifier of subdomain
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TiIndicatorId \<String\>\]: The unique identifier of tiIndicator
-  \[TrainingId \<String\>\]: The unique identifier of training
-  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UrlThreatSubmissionId \<String\>\]: The unique identifier of urlThreatSubmission
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSecurityProfileId \<String\>\]: The unique identifier of userSecurityProfile
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
-  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
-  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
-  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
-  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[AnalyzedEmailId <String>]`: The unique identifier of analyzedEmail
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuditLogQueryId <String>]`: The unique identifier of auditLogQuery
+  - `[AuditLogRecordId <String>]`: The unique identifier of auditLogRecord
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
+  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+  - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
+  - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
+  - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
+  - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
+  - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+  - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
+  - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
+  - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
+  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
+  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SecurityActionId <String>]`: The unique identifier of securityAction
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+  - `[SimulationId <String>]`: The unique identifier of simulation
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
+  - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
 [Update-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
+
+
 
 
 

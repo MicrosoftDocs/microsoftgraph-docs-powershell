@@ -16,13 +16,14 @@ Update the navigation property informationProtection in security
 ```
 Update-MgBetaSecurityInformationProtection [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
- [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityInformationProtection -BodyParameter <IMicrosoftGraphSecurityInformationProtection>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,6 +62,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -85,6 +101,21 @@ To construct, see NOTES section for LABELPOLICYSETTINGS properties and create a 
 Type: IMicrosoftGraphSecurityInformationProtectionPolicySetting
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -146,71 +177,75 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityInformationProtection\>: informationProtection
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityInformationProtection>`: informationProtection
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[LabelPolicySettings \<IMicrosoftGraphSecurityInformationProtectionPolicySetting\>\]: informationProtectionPolicySetting
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]`: informationProtectionPolicySetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DefaultLabelId \<String\>\]: 
-    \[IsDowngradeJustificationRequired \<Boolean?\>\]: Exposes whether justification input is required on label downgrade.
-    \[IsMandatory \<Boolean?\>\]: Exposes whether mandatory labeling is enabled.
-    \[MoreInfoUrl \<String\>\]: Exposes the more information URL that can be configured by the administrator.
-  \[SensitivityLabels \<IMicrosoftGraphSecuritySensitivityLabel\[\]\>\]: Read the Microsoft Purview Information Protection labels for the user or organization.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[DefaultLabelId <String>]`: 
+    - `[IsDowngradeJustificationRequired <Boolean?>]`: Exposes whether justification input is required on label downgrade.
+    - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
+    - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
+  - `[SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel- `[]`>]`: Read the Microsoft Purview Information Protection labels for the user or organization.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-    \[ContentFormats \<String\[\]\>\]: Returns the supported content formats for the label.
-    \[Description \<String\>\]: The admin-defined description for the label.
-    \[HasProtection \<Boolean?\>\]: Indicates whether the label has protection actions configured.
-    \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+    - `[Color <String>]`: The color that the UI should display for the label, if configured.
+    - `[ContentFormats <String- `[]`>]`: Returns the supported content formats for the label.
+    - `[Description <String>]`: The admin-defined description for the label.
+    - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
-    \[IsAppliable \<Boolean?\>\]: Indicates whether the label can be applied to content.
+    - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content.
 False if the label is a parent with child labels.
-    \[Name \<String\>\]: The plaintext name of the label.
-    \[Parent \<IMicrosoftGraphSecuritySensitivityLabel\>\]: sensitivityLabel
-    \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-    \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+    - `[Name <String>]`: The plaintext name of the label.
+    - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-LABELPOLICYSETTINGS \<IMicrosoftGraphSecurityInformationProtectionPolicySetting\>: informationProtectionPolicySetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+LABELPOLICYSETTINGS `<IMicrosoftGraphSecurityInformationProtectionPolicySetting>`: informationProtectionPolicySetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DefaultLabelId \<String\>\]: 
-  \[IsDowngradeJustificationRequired \<Boolean?\>\]: Exposes whether justification input is required on label downgrade.
-  \[IsMandatory \<Boolean?\>\]: Exposes whether mandatory labeling is enabled.
-  \[MoreInfoUrl \<String\>\]: Exposes the more information URL that can be configured by the administrator.
+  - `[DefaultLabelId <String>]`: 
+  - `[IsDowngradeJustificationRequired <Boolean?>]`: Exposes whether justification input is required on label downgrade.
+  - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
+  - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
-SENSITIVITYLABELS \<IMicrosoftGraphSecuritySensitivityLabel\[\]\>: Read the Microsoft Purview Information Protection labels for the user or organization.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SENSITIVITYLABELS <IMicrosoftGraphSecuritySensitivityLabel- `[]`>: Read the Microsoft Purview Information Protection labels for the user or organization.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-  \[ContentFormats \<String\[\]\>\]: Returns the supported content formats for the label.
-  \[Description \<String\>\]: The admin-defined description for the label.
-  \[HasProtection \<Boolean?\>\]: Indicates whether the label has protection actions configured.
-  \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[ContentFormats <String- `[]`>]`: Returns the supported content formats for the label.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
-  \[IsAppliable \<Boolean?\>\]: Indicates whether the label can be applied to content.
+  - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content.
 False if the label is a parent with child labels.
-  \[Name \<String\>\]: The plaintext name of the label.
-  \[Parent \<IMicrosoftGraphSecuritySensitivityLabel\>\]: sensitivityLabel
-  \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-  \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+  - `[Name <String>]`: The plaintext name of the label.
+  - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection)
+
+
 
 
 

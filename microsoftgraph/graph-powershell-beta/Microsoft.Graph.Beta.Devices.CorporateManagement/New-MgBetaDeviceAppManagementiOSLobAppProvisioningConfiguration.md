@@ -21,13 +21,15 @@ New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration [-AdditionalProp
  [-GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment[]>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PayloadFileName <String>] [-PayloadInputFile <String>]
  [-RoleScopeTagIds <String[]>] [-UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>]
- [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
- -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -174,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -228,6 +245,21 @@ Input File for Payload (Payload.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -319,97 +351,101 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosLobAppProvisioningConfiguration
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosLobAppProvisioningConfiguration
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment\[\]\>: The associated group assignments for IosLobAppProvisioningConfiguration.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>: The associated group assignments for IosLobAppProvisioningConfiguration.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphIosLobAppProvisioningConfiguration\>: This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphIosLobAppProvisioningConfiguration>`: This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment\[\]\>\]: The associated group assignments for IosLobAppProvisioningConfiguration.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
-  \[Description \<String\>\]: Admin provided description of the Device Configuration.
-  \[DeviceStatuses \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus\[\]\>\]: The list of device installation states for this mobile app configuration.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
+  - `[Description <String>]`: Admin provided description of the Device Configuration.
+  - `[DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus- `[]`>]`: The list of device installation states for this mobile app configuration.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
-    \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
-    \[DeviceModel \<String\>\]: The device model that is being reported
-    \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
-    \[Platform \<Int32?\>\]: Platform of the device that is being reported
-    \[Status \<String\>\]: complianceStatus
-    \[UserName \<String\>\]: The User Name that is being reported
-    \[UserPrincipalName \<String\>\]: UserPrincipalName.
-  \[DisplayName \<String\>\]: Admin provided name of the device configuration.
-  \[ExpirationDateTime \<DateTime?\>\]: Optional profile expiration date and time.
-  \[GroupAssignments \<IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment\[\]\>\]: The associated group assignments.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+    - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
+    - `[DeviceModel <String>]`: The device model that is being reported
+    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+    - `[Platform <Int32?>]`: Platform of the device that is being reported
+    - `[Status <String>]`: complianceStatus
+    - `[UserName <String>]`: The User Name that is being reported
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+  - `[DisplayName <String>]`: Admin provided name of the device configuration.
+  - `[ExpirationDateTime <DateTime?>]`: Optional profile expiration date and time.
+  - `[GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>]`: The associated group assignments.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[TargetGroupId \<String\>\]: The ID of the AAD group in which the app provisioning configuration is being targeted.
-  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
-  \[Payload \<Byte\[\]\>\]: Payload.
+    - `[TargetGroupId <String>]`: The ID of the AAD group in which the app provisioning configuration is being targeted.
+  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
+  - `[Payload <Byte- `[]`>]`: Payload.
 (UTF8 encoded byte array)
-  \[PayloadFileName \<String\>\]: Payload file name (.mobileprovision
-  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this iOS LOB app provisioning configuration entity.
-  \[UserStatuses \<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus\[\]\>\]: The list of user installation states for this mobile app configuration.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[PayloadFileName <String>]`: Payload file name (.mobileprovision
+  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this iOS LOB app provisioning configuration entity.
+  - `[UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus- `[]`>]`: The list of user installation states for this mobile app configuration.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DevicesCount \<Int32?\>\]: Devices count for that user.
-    \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
-    \[Status \<String\>\]: complianceStatus
-    \[UserDisplayName \<String\>\]: User name of the DevicePolicyStatus.
-    \[UserPrincipalName \<String\>\]: UserPrincipalName.
-  \[Version \<Int32?\>\]: Version of the device configuration.
+    - `[DevicesCount <Int32?>]`: Devices count for that user.
+    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+    - `[Status <String>]`: complianceStatus
+    - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+  - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESTATUSES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus\[\]\>: The list of device installation states for this mobile app configuration.
-  \[Id \<String\>\]: The unique identifier for an entity.
+DEVICESTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus- `[]`>: The list of device installation states for this mobile app configuration.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
-  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
-  \[DeviceModel \<String\>\]: The device model that is being reported
-  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
-  \[Platform \<Int32?\>\]: Platform of the device that is being reported
-  \[Status \<String\>\]: complianceStatus
-  \[UserName \<String\>\]: The User Name that is being reported
-  \[UserPrincipalName \<String\>\]: UserPrincipalName.
+  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
+  - `[DeviceModel <String>]`: The device model that is being reported
+  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+  - `[Platform <Int32?>]`: Platform of the device that is being reported
+  - `[Status <String>]`: complianceStatus
+  - `[UserName <String>]`: The User Name that is being reported
+  - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-GROUPASSIGNMENTS \<IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment\[\]\>: The associated group assignments.
-  \[Id \<String\>\]: The unique identifier for an entity.
+GROUPASSIGNMENTS <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>: The associated group assignments.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[TargetGroupId \<String\>\]: The ID of the AAD group in which the app provisioning configuration is being targeted.
+  - `[TargetGroupId <String>]`: The ID of the AAD group in which the app provisioning configuration is being targeted.
 
-USERSTATUSES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus\[\]\>: The list of user installation states for this mobile app configuration.
-  \[Id \<String\>\]: The unique identifier for an entity.
+USERSTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus- `[]`>: The list of user installation states for this mobile app configuration.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DevicesCount \<Int32?\>\]: Devices count for that user.
-  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
-  \[Status \<String\>\]: complianceStatus
-  \[UserDisplayName \<String\>\]: User name of the DevicePolicyStatus.
-  \[UserPrincipalName \<String\>\]: UserPrincipalName.
+  - `[DevicesCount <Int32?>]`: Devices count for that user.
+  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+  - `[Status <String>]`: complianceStatus
+  - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
+  - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementioslobappprovisioningconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementioslobappprovisioningconfiguration)
+
+
 
 
 

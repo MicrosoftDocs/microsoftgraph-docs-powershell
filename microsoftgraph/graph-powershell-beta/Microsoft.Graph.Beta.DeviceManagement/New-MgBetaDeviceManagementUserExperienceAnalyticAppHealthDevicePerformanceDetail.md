@@ -20,14 +20,15 @@ Create new navigation property to userExperienceAnalyticsAppHealthDevicePerforma
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppPublisher <String>] [-AppVersion <String>]
  [-DeviceDisplayName <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventType <String>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -190,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -198,6 +214,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -243,43 +274,45 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails\>: The user experience analytics device performance entity contains device performance details.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails>`: The user experience analytics device performance entity contains device performance details.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppDisplayName \<String\>\]: The friendly name of the application for which the event occurred.
+  - `[AppDisplayName <String>]`: The friendly name of the application for which the event occurred.
 Possible values are: outlook.exe, excel.exe.
 Supports: $select, $OrderBy.
 Read-only.
-  \[AppPublisher \<String\>\]: The publisher of the application.
+  - `[AppPublisher <String>]`: The publisher of the application.
 Supports: $select, $OrderBy.
 Read-only.
-  \[AppVersion \<String\>\]: The version of the application.
+  - `[AppVersion <String>]`: The version of the application.
 Possible values are: 1.0.0.1, 75.65.23.9.
 Supports: $select, $OrderBy.
 Read-only.
-  \[DeviceDisplayName \<String\>\]: The name of the device.
+  - `[DeviceDisplayName <String>]`: The name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[DeviceId \<String\>\]: The Intune device id of the device.
+  - `[DeviceId <String>]`: The Intune device id of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[EventDateTime \<DateTime?\>\]: The time the event occurred.
+  - `[EventDateTime <DateTime?>]`: The time the event occurred.
 The value cannot be modified and is automatically populated when the statistics are computed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-  \[EventType \<String\>\]: The type of the event.
+  - `[EventType <String>]`: The type of the event.
 Supports: $select, $OrderBy.
 Read-only.
 
@@ -287,6 +320,8 @@ Read-only.
 [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformancedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformancedetail)
+
+
 
 
 

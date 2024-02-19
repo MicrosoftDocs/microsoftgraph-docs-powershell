@@ -16,13 +16,14 @@ Create new navigation property to cartToClassAssociations for deviceManagement
 ```
 New-MgBetaDeviceManagementCartToClassAssociation [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementCartToClassAssociation -BodyParameter <IMicrosoftGraphCartToClassAssociation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -136,6 +137,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -159,6 +175,21 @@ DateTime the object was last modified.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -219,30 +250,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCartToClassAssociation\>: CartToClassAssociation for associating device carts with classrooms.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCartToClassAssociation>`: CartToClassAssociation for associating device carts with classrooms.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ClassroomIds \<String\[\]\>\]: Identifiers of classrooms to be associated with device carts.
-  \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
-  \[Description \<String\>\]: Admin provided description of the CartToClassAssociation.
-  \[DeviceCartIds \<String\[\]\>\]: Identifiers of device carts to be associated with classes.
-  \[DisplayName \<String\>\]: Admin provided name of the device configuration.
-  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
-  \[Version \<Int32?\>\]: Version of the CartToClassAssociation.
+  - `[ClassroomIds <String- `[]`>]`: Identifiers of classrooms to be associated with device carts.
+  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
+  - `[Description <String>]`: Admin provided description of the CartToClassAssociation.
+  - `[DeviceCartIds <String- `[]`>]`: Identifiers of device carts to be associated with classes.
+  - `[DisplayName <String>]`: Admin provided name of the device configuration.
+  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
+  - `[Version <Int32?>]`: Version of the CartToClassAssociation.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation)
+
+
 
 
 

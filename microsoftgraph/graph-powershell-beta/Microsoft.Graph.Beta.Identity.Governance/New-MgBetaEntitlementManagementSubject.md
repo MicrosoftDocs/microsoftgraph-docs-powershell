@@ -18,13 +18,14 @@ New-MgBetaEntitlementManagementSubject [-AdditionalProperties <Hashtable>] [-Alt
  [-CleanupScheduledDateTime <DateTime>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]
  [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
  [-ObjectId <String>] [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>]
- [-SubjectLifecycle <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubjectLifecycle <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -210,6 +226,21 @@ The principal name, if known, of the subject.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -285,95 +316,99 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAccessPackageSubject\>: accessPackageSubject
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AltSecId \<String\>\]: Not Supported.
-  \[CleanupScheduledDateTime \<DateTime?\>\]: The date and time the subject is marked to be blocked from sign in or deleted.
+  - `[AltSecId <String>]`: Not Supported.
+  - `[CleanupScheduledDateTime <DateTime?>]`: The date and time the subject is marked to be blocked from sign in or deleted.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-  \[ConnectedOrganization \<IMicrosoftGraphConnectedOrganization\>\]: connectedOrganization
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedBy \<String\>\]: UPN of the user who created this resource.
+    - `[CreatedBy <String>]`: UPN of the user who created this resource.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    \[Description \<String\>\]: The description of the connected organization.
-    \[DisplayName \<String\>\]: The display name of the connected organization.
+    - `[Description <String>]`: The description of the connected organization.
+    - `[DisplayName <String>]`: The display name of the connected organization.
 Supports $filter (eq).
-    \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ExternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
+    - `[IdentitySources <IMicrosoftGraphIdentitySource- `[]`>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Read-only.
 Nullable.
 Supports $select and $filter(eq).
 To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-    \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-    \[ModifiedBy \<String\>\]: UPN of the user who last modified this resource.
+    - `[InternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+    - `[ModifiedBy <String>]`: UPN of the user who last modified this resource.
 Read-only.
-    \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    \[State \<String\>\]: connectedOrganizationState
-  \[ConnectedOrganizationId \<String\>\]: The identifier of the connected organization of the subject.
-  \[DisplayName \<String\>\]: The display name of the subject.
-  \[Email \<String\>\]: The email address of the subject.
-  \[ObjectId \<String\>\]: The object identifier of the subject.
+    - `[State <String>]`: connectedOrganizationState
+  - `[ConnectedOrganizationId <String>]`: The identifier of the connected organization of the subject.
+  - `[DisplayName <String>]`: The display name of the subject.
+  - `[Email <String>]`: The email address of the subject.
+  - `[ObjectId <String>]`: The object identifier of the subject.
 null if the subject isn't yet a user in the tenant.
 Alternate key.
-  \[OnPremisesSecurityIdentifier \<String\>\]: 
-  \[PrincipalName \<String\>\]: The principal name, if known, of the subject.
-  \[SubjectLifecycle \<String\>\]: accessPackageSubjectLifecycle
-  \[Type \<String\>\]: The resource type of the subject.
+  - `[OnPremisesSecurityIdentifier <String>]`: 
+  - `[PrincipalName <String>]`: The principal name, if known, of the subject.
+  - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
+  - `[Type <String>]`: The resource type of the subject.
 
-CONNECTEDORGANIZATION \<IMicrosoftGraphConnectedOrganization\>: connectedOrganization
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization>`: connectedOrganization
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedBy \<String\>\]: UPN of the user who created this resource.
+  - `[CreatedBy <String>]`: UPN of the user who created this resource.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[Description \<String\>\]: The description of the connected organization.
-  \[DisplayName \<String\>\]: The display name of the connected organization.
+  - `[Description <String>]`: The description of the connected organization.
+  - `[DisplayName <String>]`: The display name of the connected organization.
 Supports $filter (eq).
-  \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
+  - `[IdentitySources <IMicrosoftGraphIdentitySource- `[]`>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Read-only.
 Nullable.
 Supports $select and $filter(eq).
 To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-  \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-  \[ModifiedBy \<String\>\]: UPN of the user who last modified this resource.
+  - `[InternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+  - `[ModifiedBy <String>]`: UPN of the user who last modified this resource.
 Read-only.
-  \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[State \<String\>\]: connectedOrganizationState
+  - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject)
+
+
 
 
 

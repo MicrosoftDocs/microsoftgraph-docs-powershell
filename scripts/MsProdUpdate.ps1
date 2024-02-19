@@ -342,8 +342,8 @@ function ConfirmHttpStatus {
             New-Item -ItemType Directory -Force -Path $MissingMsProdHeaderPath
         }
         $MissingPermData = "$MissingMsProdHeaderPath\MissingPermissionsIncludeLink.csv"
-        if (-not (Test-Path $MissingMetaData)) {
-            "Graph profile, Command, ApiReferenceUrl" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
+        if (-not (Test-Path $MissingPermData)) {
+            "Graph profile, Command, ApiReferenceUrl" | Out-File -FilePath  $MissingPermData -Encoding ASCII
         }
 
         #Check if module already exists

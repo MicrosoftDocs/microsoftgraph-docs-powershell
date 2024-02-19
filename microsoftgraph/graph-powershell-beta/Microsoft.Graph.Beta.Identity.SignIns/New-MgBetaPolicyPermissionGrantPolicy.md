@@ -22,14 +22,14 @@ After creating the permission grant policy, you can add include condition sets t
 ```
 New-MgBetaPolicyPermissionGrantPolicy [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>]
- [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrantPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrantPolicy>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -157,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -182,6 +197,21 @@ To construct, see NOTES section for INCLUDES properties and create a hash table.
 Type: IMicrosoftGraphPermissionGrantConditionSet[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -227,108 +257,110 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPermissionGrantPolicy\>: permissionGrantPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Description \<String\>\]: Description for this policy.
+BODYPARAMETER `<IMicrosoftGraphPermissionGrantPolicy>`: permissionGrantPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: Description for this policy.
 Required.
-  \[DisplayName \<String\>\]: Display name for this policy.
+  - `[DisplayName <String>]`: Display name for this policy.
 Required.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Excludes \<IMicrosoftGraphPermissionGrantConditionSet\[\]\>\]: Condition sets that are excluded in this permission grant policy.
+  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CertifiedClientApplicationsOnly \<Boolean?\>\]: Set to true to only match on client applications that are Microsoft 365 certified.
+    - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified.
 Set to false to match on any other client app.
 Default is false.
-    \[ClientApplicationIds \<String\[\]\>\]: A list of appId values for the client applications to match with, or a list with the single value all to match any client application.
+    - `[ClientApplicationIds <String- `[]`>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application.
 Default is the single value all.
-    \[ClientApplicationPublisherIds \<String\[\]\>\]: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher.
+    - `[ClientApplicationPublisherIds <String- `[]`>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher.
 Default is the single value all.
-    \[ClientApplicationTenantIds \<String\[\]\>\]: A list of Microsoft Entra tenant IDs in which the client application is registered, or a list with the single value all to match with client apps registered in any tenant.
+    - `[ClientApplicationTenantIds <String- `[]`>]`: A list of Microsoft Entra tenant IDs in which the client application is registered, or a list with the single value all to match with client apps registered in any tenant.
 Default is the single value all.
-    \[ClientApplicationsFromVerifiedPublisherOnly \<Boolean?\>\]: Set to true to only match on client applications with a verified publisher.
+    - `[ClientApplicationsFromVerifiedPublisherOnly <Boolean?>]`: Set to true to only match on client applications with a verified publisher.
 Set to false to match on any client app, even if it does not have a verified publisher.
 Default is false.
-    \[PermissionClassification \<String\>\]: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified).
+    - `[PermissionClassification <String>]`: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified).
 Default is all.
-    \[PermissionType \<String\>\]: permissionType
-    \[Permissions \<String\[\]\>\]: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
+    - `[PermissionType <String>]`: permissionType
+    - `[Permissions <String- `[]`>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
 The id of delegated permissions can be found in the publishedPermissionScopes property of the API's servicePrincipal object.
 The id of application permissions can be found in the appRoles property of the API's servicePrincipal object.
 The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's servicePrincipal object.
 Default is the single value all.
-    \[ResourceApplication \<String\>\]: The appId of the resource application (e.g.
+    - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
-  \[Includes \<IMicrosoftGraphPermissionGrantConditionSet\[\]\>\]: Condition sets that are included in this permission grant policy.
+  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
-EXCLUDES \<IMicrosoftGraphPermissionGrantConditionSet\[\]\>: Condition sets that are excluded in this permission grant policy.
+EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CertifiedClientApplicationsOnly \<Boolean?\>\]: Set to true to only match on client applications that are Microsoft 365 certified.
+  - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified.
 Set to false to match on any other client app.
 Default is false.
-  \[ClientApplicationIds \<String\[\]\>\]: A list of appId values for the client applications to match with, or a list with the single value all to match any client application.
+  - `[ClientApplicationIds <String- `[]`>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application.
 Default is the single value all.
-  \[ClientApplicationPublisherIds \<String\[\]\>\]: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher.
+  - `[ClientApplicationPublisherIds <String- `[]`>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher.
 Default is the single value all.
-  \[ClientApplicationTenantIds \<String\[\]\>\]: A list of Microsoft Entra tenant IDs in which the client application is registered, or a list with the single value all to match with client apps registered in any tenant.
+  - `[ClientApplicationTenantIds <String- `[]`>]`: A list of Microsoft Entra tenant IDs in which the client application is registered, or a list with the single value all to match with client apps registered in any tenant.
 Default is the single value all.
-  \[ClientApplicationsFromVerifiedPublisherOnly \<Boolean?\>\]: Set to true to only match on client applications with a verified publisher.
+  - `[ClientApplicationsFromVerifiedPublisherOnly <Boolean?>]`: Set to true to only match on client applications with a verified publisher.
 Set to false to match on any client app, even if it does not have a verified publisher.
 Default is false.
-  \[PermissionClassification \<String\>\]: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified).
+  - `[PermissionClassification <String>]`: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified).
 Default is all.
-  \[PermissionType \<String\>\]: permissionType
-  \[Permissions \<String\[\]\>\]: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
+  - `[PermissionType <String>]`: permissionType
+  - `[Permissions <String- `[]`>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
 The id of delegated permissions can be found in the publishedPermissionScopes property of the API's servicePrincipal object.
 The id of application permissions can be found in the appRoles property of the API's servicePrincipal object.
 The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's servicePrincipal object.
 Default is the single value all.
-  \[ResourceApplication \<String\>\]: The appId of the resource application (e.g.
+  - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
 
-INCLUDES \<IMicrosoftGraphPermissionGrantConditionSet\[\]\>: Condition sets that are included in this permission grant policy.
+INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CertifiedClientApplicationsOnly \<Boolean?\>\]: Set to true to only match on client applications that are Microsoft 365 certified.
+  - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified.
 Set to false to match on any other client app.
 Default is false.
-  \[ClientApplicationIds \<String\[\]\>\]: A list of appId values for the client applications to match with, or a list with the single value all to match any client application.
+  - `[ClientApplicationIds <String- `[]`>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application.
 Default is the single value all.
-  \[ClientApplicationPublisherIds \<String\[\]\>\]: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher.
+  - `[ClientApplicationPublisherIds <String- `[]`>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher.
 Default is the single value all.
-  \[ClientApplicationTenantIds \<String\[\]\>\]: A list of Microsoft Entra tenant IDs in which the client application is registered, or a list with the single value all to match with client apps registered in any tenant.
+  - `[ClientApplicationTenantIds <String- `[]`>]`: A list of Microsoft Entra tenant IDs in which the client application is registered, or a list with the single value all to match with client apps registered in any tenant.
 Default is the single value all.
-  \[ClientApplicationsFromVerifiedPublisherOnly \<Boolean?\>\]: Set to true to only match on client applications with a verified publisher.
+  - `[ClientApplicationsFromVerifiedPublisherOnly <Boolean?>]`: Set to true to only match on client applications with a verified publisher.
 Set to false to match on any client app, even if it does not have a verified publisher.
 Default is false.
-  \[PermissionClassification \<String\>\]: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified).
+  - `[PermissionClassification <String>]`: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified).
 Default is all.
-  \[PermissionType \<String\>\]: permissionType
-  \[Permissions \<String\[\]\>\]: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
+  - `[PermissionType <String>]`: permissionType
+  - `[Permissions <String- `[]`>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
 The id of delegated permissions can be found in the publishedPermissionScopes property of the API's servicePrincipal object.
 The id of application permissions can be found in the appRoles property of the API's servicePrincipal object.
 The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's servicePrincipal object.
 Default is the single value all.
-  \[ResourceApplication \<String\>\]: The appId of the resource application (e.g.
+  - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
 
@@ -336,5 +368,7 @@ Default is any.
 [New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy)
+
+
 
 

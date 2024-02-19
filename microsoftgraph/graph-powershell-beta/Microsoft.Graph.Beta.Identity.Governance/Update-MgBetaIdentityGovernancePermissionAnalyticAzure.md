@@ -16,14 +16,14 @@ Update the navigation property azure in identityGovernance
 ```
 Update-MgBetaIdentityGovernancePermissionAnalyticAzure [-AdditionalProperties <Hashtable>]
  [-Findings <IMicrosoftGraphFinding[]>] [-Id <String>]
- [-PermissionsCreepIndexDistributions <IMicrosoftGraphPermissionsCreepIndexDistribution[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PermissionsCreepIndexDistributions <IMicrosoftGraphPermissionsCreepIndexDistribution[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernancePermissionAnalyticAzure -BodyParameter <IMicrosoftGraphPermissionsAnalytics>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,6 +78,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -103,6 +118,21 @@ To construct, see NOTES section for PERMISSIONSCREEPINDEXDISTRIBUTIONS propertie
 Type: IMicrosoftGraphPermissionsCreepIndexDistribution[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -148,89 +178,93 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsAnalytics
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsAnalytics
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPermissionsAnalytics\>: permissionsAnalytics
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Findings \<IMicrosoftGraphFinding\[\]\>\]: The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Findings <IMicrosoftGraphFinding- `[]`>]`: The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: Defines when the finding was created.
-  \[PermissionsCreepIndexDistributions \<IMicrosoftGraphPermissionsCreepIndexDistribution\[\]\>\]: Represents the Permissions Creep Index (PCI) for the authorization system.
+    - `[CreatedDateTime <DateTime?>]`: Defines when the finding was created.
+  - `[PermissionsCreepIndexDistributions <IMicrosoftGraphPermissionsCreepIndexDistribution- `[]`>]`: Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AuthorizationSystem \<IMicrosoftGraphAuthorizationSystem\>\]: authorizationSystem
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[AuthorizationSystem <IMicrosoftGraphAuthorizationSystem>]`: authorizationSystem
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+      - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
 Supports $filter(eq, contains) and $orderBy.
-      \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
+      - `[AuthorizationSystemName <String>]`: Name of the authorization system detected after onboarding.
 Supports $filter(eq,contains) and $orderBy.
-      \[AuthorizationSystemType \<String\>\]: The type of authorization system.
+      - `[AuthorizationSystemType <String>]`: The type of authorization system.
 Can be gcp, azure, or aws.
 Supports $filter(eq).
-      \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Id \<String\>\]: The unique identifier for an entity.
+      - `[DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>]`: dataCollectionInfo
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CreatedDateTime \<DateTime?\>\]: Defines when the PCI distribution was created.
-    \[HighRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[HumanCount \<Int32?\>\]: This is the count of human identities that have been assigned to this riskScoreBracket,
-      \[NonHumanCount \<Int32?\>\]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
-    \[LowRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
-    \[MediumRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
+        - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedDateTime <DateTime?>]`: Defines when the PCI distribution was created.
+    - `[HighRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[HumanCount <Int32?>]`: This is the count of human identities that have been assigned to this riskScoreBracket,
+      - `[NonHumanCount <Int32?>]`: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
+    - `[LowRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
+    - `[MediumRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
 
-FINDINGS \<IMicrosoftGraphFinding\[\]\>: The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
-  \[Id \<String\>\]: The unique identifier for an entity.
+FINDINGS <IMicrosoftGraphFinding- `[]`>: The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: Defines when the finding was created.
+  - `[CreatedDateTime <DateTime?>]`: Defines when the finding was created.
 
-PERMISSIONSCREEPINDEXDISTRIBUTIONS \<IMicrosoftGraphPermissionsCreepIndexDistribution\[\]\>: Represents the Permissions Creep Index (PCI) for the authorization system.
+PERMISSIONSCREEPINDEXDISTRIBUTIONS <IMicrosoftGraphPermissionsCreepIndexDistribution- `[]`>: Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthorizationSystem \<IMicrosoftGraphAuthorizationSystem\>\]: authorizationSystem
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AuthorizationSystem <IMicrosoftGraphAuthorizationSystem>]`: authorizationSystem
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+    - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
 Supports $filter(eq, contains) and $orderBy.
-    \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
+    - `[AuthorizationSystemName <String>]`: Name of the authorization system detected after onboarding.
 Supports $filter(eq,contains) and $orderBy.
-    \[AuthorizationSystemType \<String\>\]: The type of authorization system.
+    - `[AuthorizationSystemType <String>]`: The type of authorization system.
 Can be gcp, azure, or aws.
 Supports $filter(eq).
-    \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>]`: dataCollectionInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedDateTime \<DateTime?\>\]: Defines when the PCI distribution was created.
-  \[HighRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[HumanCount \<Int32?\>\]: This is the count of human identities that have been assigned to this riskScoreBracket,
-    \[NonHumanCount \<Int32?\>\]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
-  \[LowRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
-  \[MediumRiskProfile \<IMicrosoftGraphRiskProfile\>\]: riskProfile
+      - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedDateTime <DateTime?>]`: Defines when the PCI distribution was created.
+  - `[HighRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[HumanCount <Int32?>]`: This is the count of human identities that have been assigned to this riskScoreBracket,
+    - `[NonHumanCount <Int32?>]`: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
+  - `[LowRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
+  - `[MediumRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalyticazure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalyticazure)
+
+
 
 
 

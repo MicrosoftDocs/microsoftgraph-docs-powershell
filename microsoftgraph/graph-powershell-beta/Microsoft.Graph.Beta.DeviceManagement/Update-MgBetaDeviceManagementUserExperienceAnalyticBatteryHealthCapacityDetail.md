@@ -16,15 +16,15 @@ Update the navigation property userExperienceAnalyticsBatteryHealthCapacityDetai
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail [-ActiveDevices <Int32>]
  [-AdditionalProperties <Hashtable>] [-BatteryCapacityFair <Int32>] [-BatteryCapacityGood <Int32>]
- [-BatteryCapacityPoor <Int32>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-BatteryCapacityPoor <Int32>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity \> 80%, devices with capacity 50-80% and devices with capacity \< 50 %.This API provides the count of devices in these 3 categories..
+The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity >` 80%, devices with capacity 50-80% and devices with capacity `< 50 %.This API provides the count of devices in these 3 categories..
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -121,6 +121,21 @@ Parameter Sets: Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -150,6 +165,21 @@ Recorded date time of this capacity details instance.
 Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -195,32 +225,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails\>: The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity \> 80%, devices with capacity 50-80% and devices with capacity \< 50 %.This API provides the count of devices in these 3 categories..
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails>`: The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity > 80%, devices with capacity 50-80% and devices with capacity < 50 %.This API provides the count of devices in these 3 categories..
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActiveDevices \<Int32?\>\]: Number of active devices within the tenant.
+  - `[ActiveDevices <Int32?>]`: Number of active devices within the tenant.
 Valid values 0 to 2147483647
-  \[BatteryCapacityFair \<Int32?\>\]: Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%.
+  - `[BatteryCapacityFair <Int32?>]`: Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%.
 Valid values 0 to 2147483647
-  \[BatteryCapacityGood \<Int32?\>\]: Number of devices whose battery maximum capacity is greater than 80%.
+  - `[BatteryCapacityGood <Int32?>]`: Number of devices whose battery maximum capacity is greater than 80%.
 Valid values 0 to 2147483647
-  \[BatteryCapacityPoor \<Int32?\>\]: Number of devices whose battery maximum capacity is lesser than 50%.
+  - `[BatteryCapacityPoor <Int32?>]`: Number of devices whose battery maximum capacity is lesser than 50%.
 Valid values 0 to 2147483647
-  \[LastRefreshedDateTime \<DateTime?\>\]: Recorded date time of this capacity details instance.
+  - `[LastRefreshedDateTime <DateTime?>]`: Recorded date time of this capacity details instance.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail)
+
+
 
 
 

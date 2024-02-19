@@ -21,13 +21,15 @@ Update the properties of a applePushNotificationCertificate object.
 Update-MgDeviceManagementApplePushNotificationCertificate [-AdditionalProperties <Hashtable>]
  [-AppleIdentifier <String>] [-Certificate <String>] [-CertificateUploadFailureReason <String>]
  [-CertificateUploadStatus <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-TopicIdentifier <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-TopicIdentifier <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementApplePushNotificationCertificate
- -BodyParameter <IMicrosoftGraphApplePushNotificationCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApplePushNotificationCertificate> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,6 +143,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -164,6 +181,21 @@ Last modified date and time for Apple push notification certificate.
 Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -224,31 +256,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphApplePushNotificationCertificate\>: Apple push notification certificate.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphApplePushNotificationCertificate>`: Apple push notification certificate.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppleIdentifier \<String\>\]: Apple Id of the account used to create the MDM push certificate.
-  \[Certificate \<String\>\]: Not yet documented
-  \[CertificateUploadFailureReason \<String\>\]: The reason the certificate upload failed.
-  \[CertificateUploadStatus \<String\>\]: The certificate upload status.
-  \[ExpirationDateTime \<DateTime?\>\]: The expiration date and time for Apple push notification certificate.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modified date and time for Apple push notification certificate.
-  \[TopicIdentifier \<String\>\]: Topic Id.
+  - `[AppleIdentifier <String>]`: Apple Id of the account used to create the MDM push certificate.
+  - `[Certificate <String>]`: Not yet documented
+  - `[CertificateUploadFailureReason <String>]`: The reason the certificate upload failed.
+  - `[CertificateUploadStatus <String>]`: The certificate upload status.
+  - `[ExpirationDateTime <DateTime?>]`: The expiration date and time for Apple push notification certificate.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time for Apple push notification certificate.
+  - `[TopicIdentifier <String>]`: Topic Id.
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate)
+
+
 
 
 

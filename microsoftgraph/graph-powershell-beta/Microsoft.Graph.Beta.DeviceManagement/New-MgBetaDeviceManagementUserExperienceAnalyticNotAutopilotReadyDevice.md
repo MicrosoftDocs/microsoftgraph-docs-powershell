@@ -17,14 +17,15 @@ Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice
 New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice [-AdditionalProperties <Hashtable>]
  [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdJoinType <String>] [-AzureAdRegistered]
  [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -138,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -199,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 The intune device's serial number.
 
@@ -251,32 +282,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice\>: The user experience analytics Device not windows autopilot ready.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>`: The user experience analytics Device not windows autopilot ready.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AutoPilotProfileAssigned \<Boolean?\>\]: The intune device's autopilotProfileAssigned.
-  \[AutoPilotRegistered \<Boolean?\>\]: The intune device's autopilotRegistered.
-  \[AzureAdJoinType \<String\>\]: The intune device's azure Ad joinType.
-  \[AzureAdRegistered \<Boolean?\>\]: The intune device's azureAdRegistered.
-  \[DeviceName \<String\>\]: The intune device's name.
-  \[ManagedBy \<String\>\]: The intune device's managed by.
-  \[Manufacturer \<String\>\]: The intune device's manufacturer.
-  \[Model \<String\>\]: The intune device's model.
-  \[SerialNumber \<String\>\]: The intune device's serial number.
+  - `[AutoPilotProfileAssigned <Boolean?>]`: The intune device's autopilotProfileAssigned.
+  - `[AutoPilotRegistered <Boolean?>]`: The intune device's autopilotRegistered.
+  - `[AzureAdJoinType <String>]`: The intune device's azure Ad joinType.
+  - `[AzureAdRegistered <Boolean?>]`: The intune device's azureAdRegistered.
+  - `[DeviceName <String>]`: The intune device's name.
+  - `[ManagedBy <String>]`: The intune device's managed by.
+  - `[Manufacturer <String>]`: The intune device's manufacturer.
+  - `[Model <String>]`: The intune device's model.
+  - `[SerialNumber <String>]`: The intune device's serial number.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice)
+
+
 
 
 

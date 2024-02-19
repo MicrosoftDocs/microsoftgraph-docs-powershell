@@ -17,15 +17,17 @@ Get the Windows 365 Frontline reports, such as real-time or historical data repo
 ```
 Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
- [-ReportName <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReportName <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
  -BodyParameter <IPaths1Q4BouvDevicemanagementVirtualendpointReportsMicrosoftGraphGetfrontlinereportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -97,6 +99,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -OutFile
 Path to write output file to
 
@@ -123,6 +140,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -254,29 +286,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Q4BouvDevicemanagementVirtualendpointReportsMicrosoftGraphGetfrontlinereportPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### System.Boolean
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Q4BouvDevicemanagementVirtualendpointReportsMicrosoftGraphGetfrontlinereportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Filter \<String\>\]: 
-  \[GroupBy \<String\[\]\>\]: 
-  \[OrderBy \<String\[\]\>\]: 
-  \[ReportName \<String\>\]: cloudPcReportName
-  \[Search \<String\>\]: 
-  \[Select \<String\[\]\>\]: 
-  \[Skip \<Int32?\>\]: 
-  \[Top \<Int32?\>\]:
+BODYPARAMETER `<IPaths1Q4BouvDevicemanagementVirtualendpointReportsMicrosoftGraphGetfrontlinereportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Filter <String>]`: 
+  - `[GroupBy <String- `[]`>]`: 
+  - `[OrderBy <String- `[]`>]`: 
+  - `[ReportName <String>]`: cloudPcReportName
+  - `[Search <String>]`: 
+  - `[Select <String- `[]`>]`: 
+  - `[Skip <Int32?>]`: 
+  - `[Top <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport)
+
+
 
 
 

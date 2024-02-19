@@ -16,14 +16,15 @@ Invoke action evaluate
 ```
 Test-MgBetaInformationProtectionDataLossPreventionPolicy [-AdditionalProperties <Hashtable>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>] [-NotificationInfo <IMicrosoftGraphDlpNotification>]
- [-Target <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaInformationProtectionDataLossPreventionPolicy
  -BodyParameter <IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,6 +79,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -NotificationInfo
 dlpNotification
 To construct, see NOTES section for NOTIFICATIONINFO properties and create a hash table.
@@ -86,6 +102,21 @@ To construct, see NOTES section for NOTIFICATIONINFO properties and create a has
 Type: IMicrosoftGraphDlpNotification
 Parameter Sets: EvaluateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -146,56 +177,60 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDlpEvaluatePoliciesJobResponse
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[EvaluationInput \<IMicrosoftGraphDlpEvaluationInput\>\]: dlpEvaluationInput
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CurrentLabel \<IMicrosoftGraphCurrentLabel\>\]: currentLabel
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[ApplicationMode \<String\>\]: applicationMode
-      \[Id \<String\>\]: 
-    \[DiscoveredSensitiveTypes \<IMicrosoftGraphDiscoveredSensitiveType\[\]\>\]: 
-      \[ClassificationAttributes \<IMicrosoftGraphClassificationAttribute\[\]\>\]: 
-        \[Confidence \<Int32?\>\]: 
-        \[Count \<Int32?\>\]: 
-      \[Confidence \<Int32?\>\]: 
-      \[Count \<Int32?\>\]: 
-      \[Id \<String\>\]: 
-  \[NotificationInfo \<IMicrosoftGraphDlpNotification\>\]: dlpNotification
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Author \<String\>\]: 
-  \[Target \<String\>\]: 
+BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]`: dlpEvaluationInput
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ApplicationMode <String>]`: applicationMode
+      - `[Id <String>]`: 
+    - `[DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType- `[]`>]`: 
+      - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute- `[]`>]`: 
+        - `[Confidence <Int32?>]`: 
+        - `[Count <Int32?>]`: 
+      - `[Confidence <Int32?>]`: 
+      - `[Count <Int32?>]`: 
+      - `[Id <String>]`: 
+  - `[NotificationInfo <IMicrosoftGraphDlpNotification>]`: dlpNotification
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Author <String>]`: 
+  - `[Target <String>]`: 
 
-EVALUATIONINPUT \<IMicrosoftGraphDlpEvaluationInput\>: dlpEvaluationInput
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CurrentLabel \<IMicrosoftGraphCurrentLabel\>\]: currentLabel
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ApplicationMode \<String\>\]: applicationMode
-    \[Id \<String\>\]: 
-  \[DiscoveredSensitiveTypes \<IMicrosoftGraphDiscoveredSensitiveType\[\]\>\]: 
-    \[ClassificationAttributes \<IMicrosoftGraphClassificationAttribute\[\]\>\]: 
-      \[Confidence \<Int32?\>\]: 
-      \[Count \<Int32?\>\]: 
-    \[Confidence \<Int32?\>\]: 
-    \[Count \<Int32?\>\]: 
-    \[Id \<String\>\]: 
+EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ApplicationMode <String>]`: applicationMode
+    - `[Id <String>]`: 
+  - `[DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType- `[]`>]`: 
+    - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute- `[]`>]`: 
+      - `[Confidence <Int32?>]`: 
+      - `[Count <Int32?>]`: 
+    - `[Confidence <Int32?>]`: 
+    - `[Count <Int32?>]`: 
+    - `[Id <String>]`: 
 
-NOTIFICATIONINFO \<IMicrosoftGraphDlpNotification\>: dlpNotification
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Author \<String\>\]:
+NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Author <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy)
+
+
 
 
 

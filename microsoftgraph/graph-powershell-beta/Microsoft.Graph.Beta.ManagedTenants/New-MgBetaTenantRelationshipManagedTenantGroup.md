@@ -17,14 +17,14 @@ Create new navigation property to tenantGroups for tenantRelationships
 New-MgBetaTenantRelationshipManagedTenantGroup [-AdditionalProperties <Hashtable>] [-AllTenantsIncluded]
  [-DisplayName <String>] [-Id <String>]
  [-ManagementActions <IMicrosoftGraphManagedTenantsManagementActionInfo[]>]
- [-ManagementIntents <IMicrosoftGraphManagedTenantsManagementIntentInfo[]>] [-TenantIds <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ManagementIntents <IMicrosoftGraphManagedTenantsManagementIntentInfo[]>] [-TenantIds <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantGroup -BodyParameter <IMicrosoftGraphManagedTenantsTenantGroup>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -97,6 +97,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -141,6 +156,21 @@ To construct, see NOTES section for MANAGEMENTINTENTS properties and create a ha
 Type: IMicrosoftGraphManagedTenantsManagementIntentInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -203,94 +233,98 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantGroup
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantGroup
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantGroup\>: tenantGroup
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantGroup>`: tenantGroup
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllTenantsIncluded \<Boolean?\>\]: A flag indicating whether all managed tenant are included in the tenant group.
+  - `[AllTenantsIncluded <Boolean?>]`: A flag indicating whether all managed tenant are included in the tenant group.
 Required.
 Read-only.
-  \[DisplayName \<String\>\]: The display name for the tenant group.
+  - `[DisplayName <String>]`: The display name for the tenant group.
 Optional.
 Read-only.
-  \[ManagementActions \<IMicrosoftGraphManagedTenantsManagementActionInfo\[\]\>\]: The collection of management action associated with the tenant group.
+  - `[ManagementActions <IMicrosoftGraphManagedTenantsManagementActionInfo- `[]`>]`: The collection of management action associated with the tenant group.
 Optional.
 Read-only.
-    \[ManagementActionId \<String\>\]: The identifier for the management action.
+    - `[ManagementActionId <String>]`: The identifier for the management action.
 Required.
 Read-only.
-    \[ManagementTemplateId \<String\>\]: The identifier for the management template.
+    - `[ManagementTemplateId <String>]`: The identifier for the management template.
 Required.
 Read-only.
-    \[ManagementTemplateVersion \<Int32?\>\]: 
-  \[ManagementIntents \<IMicrosoftGraphManagedTenantsManagementIntentInfo\[\]\>\]: The collection of management intents associated with the tenant group.
+    - `[ManagementTemplateVersion <Int32?>]`: 
+  - `[ManagementIntents <IMicrosoftGraphManagedTenantsManagementIntentInfo- `[]`>]`: The collection of management intents associated with the tenant group.
 Optional.
 Read-only.
-    \[ManagementIntentDisplayName \<String\>\]: The display name for the management intent.
+    - `[ManagementIntentDisplayName <String>]`: The display name for the management intent.
 Optional.
 Read-only.
-    \[ManagementIntentId \<String\>\]: The identifier for the management intent.
+    - `[ManagementIntentId <String>]`: The identifier for the management intent.
 Required.
 Read-only.
-    \[ManagementTemplates \<IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo\[\]\>\]: The collection of management template information associated with the management intent.
+    - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>]`: The collection of management template information associated with the management intent.
 Optional.
 Read-only.
-      \[Category \<String\>\]: managementCategory
-      \[DisplayName \<String\>\]: The display name for the management template.
+      - `[Category <String>]`: managementCategory
+      - `[DisplayName <String>]`: The display name for the management template.
 Required.
 Read-only.
-      \[ManagementTemplateId \<String\>\]: The unique identifier for the management template.
+      - `[ManagementTemplateId <String>]`: The unique identifier for the management template.
 Required.
 Read-only.
-      \[Version \<Int32?\>\]: 
-  \[TenantIds \<String\[\]\>\]: The collection of managed tenant identifiers include in the tenant group.
+      - `[Version <Int32?>]`: 
+  - `[TenantIds <String- `[]`>]`: The collection of managed tenant identifiers include in the tenant group.
 Optional.
 Read-only.
 
-MANAGEMENTACTIONS \<IMicrosoftGraphManagedTenantsManagementActionInfo\[\]\>: The collection of management action associated with the tenant group.
+MANAGEMENTACTIONS <IMicrosoftGraphManagedTenantsManagementActionInfo- `[]`>: The collection of management action associated with the tenant group.
 Optional.
 Read-only.
-  \[ManagementActionId \<String\>\]: The identifier for the management action.
+  - `[ManagementActionId <String>]`: The identifier for the management action.
 Required.
 Read-only.
-  \[ManagementTemplateId \<String\>\]: The identifier for the management template.
+  - `[ManagementTemplateId <String>]`: The identifier for the management template.
 Required.
 Read-only.
-  \[ManagementTemplateVersion \<Int32?\>\]: 
+  - `[ManagementTemplateVersion <Int32?>]`: 
 
-MANAGEMENTINTENTS \<IMicrosoftGraphManagedTenantsManagementIntentInfo\[\]\>: The collection of management intents associated with the tenant group.
+MANAGEMENTINTENTS <IMicrosoftGraphManagedTenantsManagementIntentInfo- `[]`>: The collection of management intents associated with the tenant group.
 Optional.
 Read-only.
-  \[ManagementIntentDisplayName \<String\>\]: The display name for the management intent.
+  - `[ManagementIntentDisplayName <String>]`: The display name for the management intent.
 Optional.
 Read-only.
-  \[ManagementIntentId \<String\>\]: The identifier for the management intent.
+  - `[ManagementIntentId <String>]`: The identifier for the management intent.
 Required.
 Read-only.
-  \[ManagementTemplates \<IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo\[\]\>\]: The collection of management template information associated with the management intent.
+  - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>]`: The collection of management template information associated with the management intent.
 Optional.
 Read-only.
-    \[Category \<String\>\]: managementCategory
-    \[DisplayName \<String\>\]: The display name for the management template.
+    - `[Category <String>]`: managementCategory
+    - `[DisplayName <String>]`: The display name for the management template.
 Required.
 Read-only.
-    \[ManagementTemplateId \<String\>\]: The unique identifier for the management template.
+    - `[ManagementTemplateId <String>]`: The unique identifier for the management template.
 Required.
 Read-only.
-    \[Version \<Int32?\>\]:
+    - `[Version <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantgroup)
+
+
 
 
 

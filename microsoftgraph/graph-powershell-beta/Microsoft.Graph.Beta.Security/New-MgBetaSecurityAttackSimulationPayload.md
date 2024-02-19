@@ -23,13 +23,14 @@ New-MgBetaSecurityAttackSimulationPayload [-AdditionalProperties <Hashtable>] [-
  [-Industry <String>] [-IsAutomated] [-IsControversial] [-IsCurrentEvent] [-Language <String>]
  [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>]
  [-Platform <String>] [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>]
- [-Status <String>] [-Technique <String>] [-Theme <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Technique <String>] [-Theme <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulationPayload -BodyParameter <IMicrosoftGraphPayload> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityAttackSimulationPayload -BodyParameter <IMicrosoftGraphPayload> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -175,6 +176,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -348,6 +364,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SimulationAttackType
 simulationAttackType
 
@@ -460,107 +491,111 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPayload\>: payload
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPayload>`: payload
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Brand \<String\>\]: payloadBrand
-  \[Complexity \<String\>\]: payloadComplexity
-  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Brand <String>]`: payloadBrand
+  - `[Complexity <String>]`: payloadComplexity
+  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Email \<String\>\]: Email address of the user.
-  \[CreatedDateTime \<DateTime?\>\]: Date and time when the attack simulation and training campaign payload.
+    - `[Email <String>]`: Email address of the user.
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Description \<String\>\]: Description of the attack simulation and training campaign payload.
-  \[Detail \<IMicrosoftGraphPayloadDetail\>\]: payloadDetail
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Coachmarks \<IMicrosoftGraphPayloadCoachmark\[\]\>\]: Payload coachmark details.
-      \[CoachmarkLocation \<IMicrosoftGraphCoachmarkLocation\>\]: coachmarkLocation
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Length \<Int32?\>\]: Length of coachmark.
-        \[Offset \<Int32?\>\]: Offset of coachmark.
-        \[Type \<String\>\]: coachmarkLocationType
-      \[Description \<String\>\]: The description about the coachmark.
-      \[Indicator \<String\>\]: The coachmark indicator.
-      \[IsValid \<Boolean?\>\]: Indicates whether the coachmark is valid or not.
-      \[Language \<String\>\]: The coachmark language.
-      \[Order \<String\>\]: The coachmark order.
-    \[Content \<String\>\]: Payload content details.
-    \[PhishingUrl \<String\>\]: The phishing URL used to target a user.
-  \[DisplayName \<String\>\]: Display name of the attack simulation and training campaign payload.
+  - `[Description <String>]`: Description of the attack simulation and training campaign payload.
+  - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+      - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Length <Int32?>]`: Length of coachmark.
+        - `[Offset <Int32?>]`: Offset of coachmark.
+        - `[Type <String>]`: coachmarkLocationType
+      - `[Description <String>]`: The description about the coachmark.
+      - `[Indicator <String>]`: The coachmark indicator.
+      - `[IsValid <Boolean?>]`: Indicates whether the coachmark is valid or not.
+      - `[Language <String>]`: The coachmark language.
+      - `[Order <String>]`: The coachmark order.
+    - `[Content <String>]`: Payload content details.
+    - `[PhishingUrl <String>]`: The phishing URL used to target a user.
+  - `[DisplayName <String>]`: Display name of the attack simulation and training campaign payload.
 Supports $filter and $orderby.
-  \[Industry \<String\>\]: payloadIndustry
-  \[IsAutomated \<Boolean?\>\]: Indicates whether the attack simulation and training campaign payload was created from an automation flow.
+  - `[Industry <String>]`: payloadIndustry
+  - `[IsAutomated <Boolean?>]`: Indicates whether the attack simulation and training campaign payload was created from an automation flow.
 Supports $filter and $orderby.
-  \[IsControversial \<Boolean?\>\]: Indicates whether the payload is controversial.
-  \[IsCurrentEvent \<Boolean?\>\]: Indicates whether the payload is from any recent event.
-  \[Language \<String\>\]: Payload language.
-  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
-  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the attack simulation and training campaign payload was last modified.
+  - `[IsControversial <Boolean?>]`: Indicates whether the payload is controversial.
+  - `[IsCurrentEvent <Boolean?>]`: Indicates whether the payload is from any recent event.
+  - `[Language <String>]`: Payload language.
+  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[PayloadTags \<String\[\]\>\]: Free text tags for a payload.
-  \[Platform \<String\>\]: payloadDeliveryPlatform
-  \[PredictedCompromiseRate \<Double?\>\]: Predicted probability for a payload to phish a targeted user.
-  \[SimulationAttackType \<String\>\]: simulationAttackType
-  \[Source \<String\>\]: simulationContentSource
-  \[Status \<String\>\]: simulationContentStatus
-  \[Technique \<String\>\]: simulationAttackTechnique
-  \[Theme \<String\>\]: payloadTheme
+  - `[PayloadTags <String- `[]`>]`: Free text tags for a payload.
+  - `[Platform <String>]`: payloadDeliveryPlatform
+  - `[PredictedCompromiseRate <Double?>]`: Predicted probability for a payload to phish a targeted user.
+  - `[SimulationAttackType <String>]`: simulationAttackType
+  - `[Source <String>]`: simulationContentSource
+  - `[Status <String>]`: simulationContentStatus
+  - `[Technique <String>]`: simulationAttackTechnique
+  - `[Theme <String>]`: payloadTheme
 
-CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Email \<String\>\]: Email address of the user.
+  - `[Email <String>]`: Email address of the user.
 
-DETAIL \<IMicrosoftGraphPayloadDetail\>: payloadDetail
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Coachmarks \<IMicrosoftGraphPayloadCoachmark\[\]\>\]: Payload coachmark details.
-    \[CoachmarkLocation \<IMicrosoftGraphCoachmarkLocation\>\]: coachmarkLocation
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Length \<Int32?\>\]: Length of coachmark.
-      \[Offset \<Int32?\>\]: Offset of coachmark.
-      \[Type \<String\>\]: coachmarkLocationType
-    \[Description \<String\>\]: The description about the coachmark.
-    \[Indicator \<String\>\]: The coachmark indicator.
-    \[IsValid \<Boolean?\>\]: Indicates whether the coachmark is valid or not.
-    \[Language \<String\>\]: The coachmark language.
-    \[Order \<String\>\]: The coachmark order.
-  \[Content \<String\>\]: Payload content details.
-  \[PhishingUrl \<String\>\]: The phishing URL used to target a user.
+DETAIL `<IMicrosoftGraphPayloadDetail>`: payloadDetail
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+    - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Length <Int32?>]`: Length of coachmark.
+      - `[Offset <Int32?>]`: Offset of coachmark.
+      - `[Type <String>]`: coachmarkLocationType
+    - `[Description <String>]`: The description about the coachmark.
+    - `[Indicator <String>]`: The coachmark indicator.
+    - `[IsValid <Boolean?>]`: Indicates whether the coachmark is valid or not.
+    - `[Language <String>]`: The coachmark language.
+    - `[Order <String>]`: The coachmark order.
+  - `[Content <String>]`: Payload content details.
+  - `[PhishingUrl <String>]`: The phishing URL used to target a user.
 
-LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+  - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Email \<String\>\]: Email address of the user.
+  - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
 [New-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationpayload)
+
+
 
 
 

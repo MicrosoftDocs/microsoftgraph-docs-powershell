@@ -18,14 +18,15 @@ Create new navigation property to resourceNamespaces for roleManagement
 ### CreateExpanded (Default)
 ```
 New-MgRoleManagementEntitlementManagementResourceNamespace [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Name <String>] [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Name <String>] [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRoleManagementEntitlementManagementResourceNamespace
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,6 +65,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -87,6 +103,21 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -148,44 +179,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUnifiedRbacResourceNamespace\>: unifiedRbacResourceNamespace
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUnifiedRbacResourceNamespace>`: unifiedRbacResourceNamespace
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Name \<String\>\]: 
-  \[ResourceActions \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Name <String>]`: 
+  - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ActionVerb \<String\>\]: 
-    \[AuthenticationContextId \<String\>\]: 
-    \[Description \<String\>\]: 
-    \[IsAuthenticationContextSettable \<Boolean?\>\]: 
-    \[Name \<String\>\]: 
-    \[ResourceScopeId \<String\>\]: 
+    - `[ActionVerb <String>]`: 
+    - `[AuthenticationContextId <String>]`: 
+    - `[Description <String>]`: 
+    - `[IsAuthenticationContextSettable <Boolean?>]`: 
+    - `[Name <String>]`: 
+    - `[ResourceScopeId <String>]`: 
 
-RESOURCEACTIONS \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionVerb \<String\>\]: 
-  \[AuthenticationContextId \<String\>\]: 
-  \[Description \<String\>\]: 
-  \[IsAuthenticationContextSettable \<Boolean?\>\]: 
-  \[Name \<String\>\]: 
-  \[ResourceScopeId \<String\>\]:
+  - `[ActionVerb <String>]`: 
+  - `[AuthenticationContextId <String>]`: 
+  - `[Description <String>]`: 
+  - `[IsAuthenticationContextSettable <Boolean?>]`: 
+  - `[Name <String>]`: 
+  - `[ResourceScopeId <String>]`:
 
 ## RELATED LINKS
 [New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace)
+
+
 
 
 

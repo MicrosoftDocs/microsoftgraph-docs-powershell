@@ -18,13 +18,15 @@ New-MgBetaDeviceManagementEmbeddedSimActivationCodePool [-ActivationCodeCount <I
  [-ActivationCodes <IMicrosoftGraphEmbeddedSimActivationCode[]>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DeviceStates <IMicrosoftGraphEmbeddedSimDeviceState[]>] [-DisplayName <String>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementEmbeddedSimActivationCodePool
- -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePool> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePool> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -182,6 +199,21 @@ Updated service side.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -227,88 +259,92 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVATIONCODES \<IMicrosoftGraphEmbeddedSimActivationCode\[\]\>: The activation codes which belong to this pool.
+ACTIVATIONCODES <IMicrosoftGraphEmbeddedSimActivationCode- `[]`>: The activation codes which belong to this pool.
 This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
-  \[IntegratedCircuitCardIdentifier \<String\>\]: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
-  \[MatchingIdentifier \<String\>\]: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
-  \[SmdpPlusServerAddress \<String\>\]: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
+  - `[IntegratedCircuitCardIdentifier <String>]`: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
+  - `[MatchingIdentifier <String>]`: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
+  - `[SmdpPlusServerAddress <String>]`: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
 
-ASSIGNMENTS \<IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment\[\]\>: Navigational property to a list of targets to which this pool is assigned.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment- `[]`>: Navigational property to a list of targets to which this pool is assigned.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphEmbeddedSimActivationCodePool\>: A pool represents a group of embedded SIM activation codes.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphEmbeddedSimActivationCodePool>`: A pool represents a group of embedded SIM activation codes.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActivationCodeCount \<Int32?\>\]: The total count of activation codes which belong to this pool.
-  \[ActivationCodes \<IMicrosoftGraphEmbeddedSimActivationCode\[\]\>\]: The activation codes which belong to this pool.
+  - `[ActivationCodeCount <Int32?>]`: The total count of activation codes which belong to this pool.
+  - `[ActivationCodes <IMicrosoftGraphEmbeddedSimActivationCode- `[]`>]`: The activation codes which belong to this pool.
 This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
-    \[IntegratedCircuitCardIdentifier \<String\>\]: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
-    \[MatchingIdentifier \<String\>\]: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
-    \[SmdpPlusServerAddress \<String\>\]: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
-  \[Assignments \<IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment\[\]\>\]: Navigational property to a list of targets to which this pool is assigned.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[IntegratedCircuitCardIdentifier <String>]`: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
+    - `[MatchingIdentifier <String>]`: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
+    - `[SmdpPlusServerAddress <String>]`: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
+  - `[Assignments <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment- `[]`>]`: Navigational property to a list of targets to which this pool is assigned.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[CreatedDateTime \<DateTime?\>\]: The time the embedded SIM activation code pool was created.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM activation code pool was created.
 Generated service side.
-  \[DeviceStates \<IMicrosoftGraphEmbeddedSimDeviceState\[\]\>\]: Navigational property to a list of device states for this pool.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DeviceStates <IMicrosoftGraphEmbeddedSimDeviceState- `[]`>]`: Navigational property to a list of device states for this pool.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The time the embedded SIM device status was created.
+    - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM device status was created.
 Generated service side.
-    \[DeviceName \<String\>\]: Device name to which the subscription was provisioned e.g.
+    - `[DeviceName <String>]`: Device name to which the subscription was provisioned e.g.
 DESKTOP-JOE
-    \[LastSyncDateTime \<DateTime?\>\]: The time the embedded SIM device last checked in.
+    - `[LastSyncDateTime <DateTime?>]`: The time the embedded SIM device last checked in.
 Updated service side.
-    \[ModifiedDateTime \<DateTime?\>\]: The time the embedded SIM device status was last modified.
+    - `[ModifiedDateTime <DateTime?>]`: The time the embedded SIM device status was last modified.
 Updated service side.
-    \[State \<EmbeddedSimDeviceStateValue?\>\]: Describes the various states for an embedded SIM activation code.
-    \[StateDetails \<String\>\]: String description of the provisioning state.
-    \[UniversalIntegratedCircuitCardIdentifier \<String\>\]: The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.
-    \[UserName \<String\>\]: Username which the subscription was provisioned to e.g.
+    - `[State <EmbeddedSimDeviceStateValue?>]`: Describes the various states for an embedded SIM activation code.
+    - `[StateDetails <String>]`: String description of the provisioning state.
+    - `[UniversalIntegratedCircuitCardIdentifier <String>]`: The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.
+    - `[UserName <String>]`: Username which the subscription was provisioned to e.g.
 joe@contoso.com
-  \[DisplayName \<String\>\]: The admin defined name of the embedded SIM activation code pool.
-  \[ModifiedDateTime \<DateTime?\>\]: The time the embedded SIM activation code pool was last modified.
+  - `[DisplayName <String>]`: The admin defined name of the embedded SIM activation code pool.
+  - `[ModifiedDateTime <DateTime?>]`: The time the embedded SIM activation code pool was last modified.
 Updated service side.
 
-DEVICESTATES \<IMicrosoftGraphEmbeddedSimDeviceState\[\]\>: Navigational property to a list of device states for this pool.
-  \[Id \<String\>\]: The unique identifier for an entity.
+DEVICESTATES <IMicrosoftGraphEmbeddedSimDeviceState- `[]`>: Navigational property to a list of device states for this pool.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The time the embedded SIM device status was created.
+  - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM device status was created.
 Generated service side.
-  \[DeviceName \<String\>\]: Device name to which the subscription was provisioned e.g.
+  - `[DeviceName <String>]`: Device name to which the subscription was provisioned e.g.
 DESKTOP-JOE
-  \[LastSyncDateTime \<DateTime?\>\]: The time the embedded SIM device last checked in.
+  - `[LastSyncDateTime <DateTime?>]`: The time the embedded SIM device last checked in.
 Updated service side.
-  \[ModifiedDateTime \<DateTime?\>\]: The time the embedded SIM device status was last modified.
+  - `[ModifiedDateTime <DateTime?>]`: The time the embedded SIM device status was last modified.
 Updated service side.
-  \[State \<EmbeddedSimDeviceStateValue?\>\]: Describes the various states for an embedded SIM activation code.
-  \[StateDetails \<String\>\]: String description of the provisioning state.
-  \[UniversalIntegratedCircuitCardIdentifier \<String\>\]: The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.
-  \[UserName \<String\>\]: Username which the subscription was provisioned to e.g.
+  - `[State <EmbeddedSimDeviceStateValue?>]`: Describes the various states for an embedded SIM activation code.
+  - `[StateDetails <String>]`: String description of the provisioning state.
+  - `[UniversalIntegratedCircuitCardIdentifier <String>]`: The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.
+  - `[UserName <String>]`: Username which the subscription was provisioned to e.g.
 joe@contoso.com
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool)
+
+
 
 
 

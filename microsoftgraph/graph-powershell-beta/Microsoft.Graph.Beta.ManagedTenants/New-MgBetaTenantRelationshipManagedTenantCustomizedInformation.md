@@ -16,14 +16,15 @@ Create new navigation property to tenantsCustomizedInformation for tenantRelatio
 ```
 New-MgBetaTenantRelationshipManagedTenantCustomizedInformation [-AdditionalProperties <Hashtable>]
  [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
- [-TenantId <String>] [-Website <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCustomizedInformation
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -96,6 +97,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -104,6 +120,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -182,56 +213,60 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantCustomizedInformation\>: tenantCustomizedInformation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantCustomizedInformation>`: tenantCustomizedInformation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Contacts \<IMicrosoftGraphManagedTenantsTenantContactInformation\[\]\>\]: The collection of contacts for the managed tenant.
+  - `[Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>]`: The collection of contacts for the managed tenant.
 Optional.
-    \[Email \<String\>\]: The email address for the contact.
+    - `[Email <String>]`: The email address for the contact.
 Optional
-    \[Name \<String\>\]: The name for the contact.
+    - `[Name <String>]`: The name for the contact.
 Required.
-    \[Notes \<String\>\]: The notes associated with the contact.
+    - `[Notes <String>]`: The notes associated with the contact.
 Optional
-    \[Phone \<String\>\]: The phone number for the contact.
+    - `[Phone <String>]`: The phone number for the contact.
 Optional.
-    \[Title \<String\>\]: The title for the contact.
+    - `[Title <String>]`: The title for the contact.
 Required.
-  \[DisplayName \<String\>\]: The display name for the managed tenant.
+  - `[DisplayName <String>]`: The display name for the managed tenant.
 Required.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
-  \[Website \<String\>\]: The website for the managed tenant.
+  - `[Website <String>]`: The website for the managed tenant.
 Required.
 
-CONTACTS \<IMicrosoftGraphManagedTenantsTenantContactInformation\[\]\>: The collection of contacts for the managed tenant.
+CONTACTS <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>: The collection of contacts for the managed tenant.
 Optional.
-  \[Email \<String\>\]: The email address for the contact.
+  - `[Email <String>]`: The email address for the contact.
 Optional
-  \[Name \<String\>\]: The name for the contact.
+  - `[Name <String>]`: The name for the contact.
 Required.
-  \[Notes \<String\>\]: The notes associated with the contact.
+  - `[Notes <String>]`: The notes associated with the contact.
 Optional
-  \[Phone \<String\>\]: The phone number for the contact.
+  - `[Phone <String>]`: The phone number for the contact.
 Optional.
-  \[Title \<String\>\]: The title for the contact.
+  - `[Title <String>]`: The title for the contact.
 Required.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
+
+
 
 
 

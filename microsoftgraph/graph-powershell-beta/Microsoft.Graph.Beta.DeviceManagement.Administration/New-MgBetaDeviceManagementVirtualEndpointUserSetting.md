@@ -19,14 +19,14 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting [-AdditionalProperties <Has
  [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled] [-ResetEnabled]
- [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftGraphCloudPcUserSetting>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -153,6 +153,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -200,6 +215,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -290,89 +320,89 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphCloudPcUserSettingAssignment\[\]\>: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
+ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time this assignment was created.
+  - `[CreatedDateTime <DateTime?>]`: The date and time this assignment was created.
 The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
-  \[Target \<IMicrosoftGraphCloudPcManagementAssignmentTarget\>\]: cloudPcManagementAssignmentTarget
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER \<IMicrosoftGraphCloudPcUserSetting\>: cloudPcUserSetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphCloudPcUserSettingAssignment\[\]\>\]: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
+  - `[Assignments <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>]`: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time this assignment was created.
+    - `[CreatedDateTime <DateTime?>]`: The date and time this assignment was created.
 The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
-    \[Target \<IMicrosoftGraphCloudPcManagementAssignmentTarget\>\]: cloudPcManagementAssignmentTarget
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the setting was created.
+    - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedDateTime <DateTime?>]`: The date and time the setting was created.
 The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
-  \[CrossRegionDisasterRecoverySetting \<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting\>\]: cloudPcCrossRegionDisasterRecoverySetting
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CrossRegionDisasterRecoveryEnabled \<Boolean?\>\]: 
-    \[DisasterRecoveryNetworkSetting \<IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting\>\]: cloudPcDisasterRecoveryNetworkSetting
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[MaintainCrossRegionRestorePointEnabled \<Boolean?\>\]: 
-  \[DisplayName \<String\>\]: The setting name displayed in the user interface.
-  \[LastModifiedDateTime \<DateTime?\>\]: The last date and time the setting was modified.
+  - `[CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]`: cloudPcCrossRegionDisasterRecoverySetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CrossRegionDisasterRecoveryEnabled <Boolean?>]`: 
+    - `[DisasterRecoveryNetworkSetting <IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting>]`: cloudPcDisasterRecoveryNetworkSetting
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MaintainCrossRegionRestorePointEnabled <Boolean?>]`: 
+  - `[DisplayName <String>]`: The setting name displayed in the user interface.
+  - `[LastModifiedDateTime <DateTime?>]`: The last date and time the setting was modified.
 The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
-  \[LocalAdminEnabled \<Boolean?\>\]: Indicates whether the local admin option is enabled.
+  - `[LocalAdminEnabled <Boolean?>]`: Indicates whether the local admin option is enabled.
 Default value is false.
 To enable the local admin option, change the setting to true.
 If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
-  \[ResetEnabled \<Boolean?\>\]: Indicates whether an end user is allowed to reset their Cloud PC.
+  - `[ResetEnabled <Boolean?>]`: Indicates whether an end user is allowed to reset their Cloud PC.
 When true, the user is allowed to reset their Cloud PC.
 When false, end-user initiated reset is not allowed.
 The default value is false.
-  \[RestorePointSetting \<IMicrosoftGraphCloudPcRestorePointSetting\>\]: cloudPcRestorePointSetting
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[FrequencyInHours \<Int32?\>\]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
-Possible values are 4, 6, 12, 16, and 24.
-The default frequency is 12 hours.
-    \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
-    \[UserRestoreEnabled \<Boolean?\>\]: If true, the user has the ability to use snapshots to restore Cloud PCs.
+  - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[FrequencyInHours <Int32?>]`: 
+    - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
+    - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
-  \[SelfServiceEnabled \<Boolean?\>\]: 
+  - `[SelfServiceEnabled <Boolean?>]`: 
 
-CROSSREGIONDISASTERRECOVERYSETTING \<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting\>: cloudPcCrossRegionDisasterRecoverySetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CrossRegionDisasterRecoveryEnabled \<Boolean?\>\]: 
-  \[DisasterRecoveryNetworkSetting \<IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting\>\]: cloudPcDisasterRecoveryNetworkSetting
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[MaintainCrossRegionRestorePointEnabled \<Boolean?\>\]: 
+CROSSREGIONDISASTERRECOVERYSETTING `<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>`: cloudPcCrossRegionDisasterRecoverySetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CrossRegionDisasterRecoveryEnabled <Boolean?>]`: 
+  - `[DisasterRecoveryNetworkSetting <IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting>]`: cloudPcDisasterRecoveryNetworkSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[MaintainCrossRegionRestorePointEnabled <Boolean?>]`: 
 
-RESTOREPOINTSETTING \<IMicrosoftGraphCloudPcRestorePointSetting\>: cloudPcRestorePointSetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[FrequencyInHours \<Int32?\>\]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
-Possible values are 4, 6, 12, 16, and 24.
-The default frequency is 12 hours.
-  \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
-  \[UserRestoreEnabled \<Boolean?\>\]: If true, the user has the ability to use snapshots to restore Cloud PCs.
+RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[FrequencyInHours <Int32?>]`: 
+  - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
+  - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
+
+
 
 

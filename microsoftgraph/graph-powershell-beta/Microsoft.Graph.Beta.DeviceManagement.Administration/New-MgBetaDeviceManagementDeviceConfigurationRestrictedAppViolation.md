@@ -18,13 +18,15 @@ New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation [-Additional
  [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
  [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
  [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
- [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
- -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -108,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -146,6 +163,21 @@ Supported platform types for policies.
 Type: PolicyPlatformType
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -252,36 +284,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphRestrictedAppsViolation\>: Violation of restricted apps configuration profile per device per user
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeviceConfigurationId \<String\>\]: Device configuration profile unique identifier, must be Guid
-  \[DeviceConfigurationName \<String\>\]: Device configuration profile name
-  \[DeviceName \<String\>\]: Device name
-  \[ManagedDeviceId \<String\>\]: Managed device unique identifier, must be Guid
-  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
-  \[RestrictedApps \<IMicrosoftGraphManagedDeviceReportedApp\[\]\>\]: List of violated restricted apps
-    \[AppId \<String\>\]: The application or bundle identifier of the application
-  \[RestrictedAppsState \<RestrictedAppsState?\>\]: Restricted apps state
-  \[UserId \<String\>\]: User unique identifier, must be Guid
-  \[UserName \<String\>\]: User name
+  - `[DeviceConfigurationId <String>]`: Device configuration profile unique identifier, must be Guid
+  - `[DeviceConfigurationName <String>]`: Device configuration profile name
+  - `[DeviceName <String>]`: Device name
+  - `[ManagedDeviceId <String>]`: Managed device unique identifier, must be Guid
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
+  - `[RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp- `[]`>]`: List of violated restricted apps
+    - `[AppId <String>]`: The application or bundle identifier of the application
+  - `[RestrictedAppsState <RestrictedAppsState?>]`: Restricted apps state
+  - `[UserId <String>]`: User unique identifier, must be Guid
+  - `[UserName <String>]`: User name
 
-RESTRICTEDAPPS \<IMicrosoftGraphManagedDeviceReportedApp\[\]\>: List of violated restricted apps
-  \[AppId \<String\>\]: The application or bundle identifier of the application
+RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp- `[]`>: List of violated restricted apps
+  - `[AppId <String>]`: The application or bundle identifier of the application
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
+
+
 
 
 

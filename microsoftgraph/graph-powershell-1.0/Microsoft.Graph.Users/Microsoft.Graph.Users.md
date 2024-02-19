@@ -305,16 +305,10 @@ Locale: en-US
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
 {{ Fill in the Description }}
 
-### [Remove-MgUserManager](Remove-MgUserManager.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
-{{ Fill in the Description }}
-
-### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserSetting](Remove-MgUserSetting.md)

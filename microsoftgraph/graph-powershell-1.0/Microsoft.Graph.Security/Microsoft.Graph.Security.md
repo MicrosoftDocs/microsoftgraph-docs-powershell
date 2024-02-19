@@ -812,12 +812,6 @@ Locale: en-US
 ### [Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-{{ Fill in the Description }}
-
-### [Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgSecurityCaseEdiscoveryCaseSetting](Remove-MgSecurityCaseEdiscoveryCaseSetting.md)
 {{ Fill in the Description }}
 

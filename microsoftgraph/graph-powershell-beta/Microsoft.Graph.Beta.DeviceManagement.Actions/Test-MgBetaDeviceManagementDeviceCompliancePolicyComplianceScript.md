@@ -15,15 +15,15 @@ Invoke action validateComplianceScript
 ### ValidateExpanded (Default)
 ```
 Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript [-AdditionalProperties <Hashtable>]
- [-DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
  -BodyParameter <IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,6 +78,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -115,30 +145,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceScriptValidationResult
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeviceCompliancePolicyScript \<IMicrosoftGraphDeviceCompliancePolicyScript\>\]: deviceCompliancePolicyScript
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceComplianceScriptId \<String\>\]: Device compliance script Id.
-    \[RulesContent \<Byte\[\]\>\]: Json of the rules.
+BODYPARAMETER `<IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>]`: deviceCompliancePolicyScript
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceComplianceScriptId <String>]`: Device compliance script Id.
+    - `[RulesContent <Byte- `[]`>]`: Json of the rules.
 
-DEVICECOMPLIANCEPOLICYSCRIPT \<IMicrosoftGraphDeviceCompliancePolicyScript\>: deviceCompliancePolicyScript
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeviceComplianceScriptId \<String\>\]: Device compliance script Id.
-  \[RulesContent \<Byte\[\]\>\]: Json of the rules.
+DEVICECOMPLIANCEPOLICYSCRIPT `<IMicrosoftGraphDeviceCompliancePolicyScript>`: deviceCompliancePolicyScript
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeviceComplianceScriptId <String>]`: Device compliance script Id.
+  - `[RulesContent <Byte- `[]`>]`: Json of the rules.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript)
+
+
 
 
 

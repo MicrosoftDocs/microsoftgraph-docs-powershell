@@ -22,14 +22,14 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteList [-AdditionalProperties <Hashtabl
  [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-PublishedBy <IMicrosoftGraphIdentitySet>] [-PublishedDateTime <DateTime>]
  [-Revision <String>] [-SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]
- [-Sites <IMicrosoftGraphBrowserSite[]>] [-Status <BrowserSiteListStatus>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sites <IMicrosoftGraphBrowserSite[]>] [-Status <BrowserSiteListStatus>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrowserSiteList> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrowserSiteList>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -101,6 +101,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -140,6 +155,21 @@ The date and time when the site list was last modified.
 Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -278,182 +308,186 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSiteList
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSiteList
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphBrowserSiteList\>: A singleton entity which is used to specify IE mode site list metadata
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphBrowserSiteList>`: A singleton entity which is used to specify IE mode site list metadata
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: The description of the site list.
-  \[DisplayName \<String\>\]: The name of the site list.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Description <String>]`: The description of the site list.
+  - `[DisplayName <String>]`: The name of the site list.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the site list was last modified.
-  \[PublishedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[PublishedDateTime \<DateTime?\>\]: The date and time when the site list was published.
-  \[Revision \<String\>\]: The current revision of the site list.
-  \[SharedCookies \<IMicrosoftGraphBrowserSharedCookie\[\]\>\]: A collection of shared cookies defined for the site list.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the site list was last modified.
+  - `[PublishedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[PublishedDateTime <DateTime?>]`: The date and time when the site list was published.
+  - `[Revision <String>]`: The current revision of the site list.
+  - `[SharedCookies <IMicrosoftGraphBrowserSharedCookie- `[]`>]`: A collection of shared cookies defined for the site list.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Comment \<String\>\]: The comment for the shared cookie.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time when the shared cookie was created.
-    \[DeletedDateTime \<DateTime?\>\]: The date and time when the shared cookie was deleted.
-    \[DisplayName \<String\>\]: The name of the cookie.
-    \[History \<IMicrosoftGraphBrowserSharedCookieHistory\[\]\>\]: The history of modifications applied to the cookie.
-      \[Comment \<String\>\]: The comment for the shared cookie.
-      \[DisplayName \<String\>\]: The name of the cookie.
-      \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
-      \[HostOrDomain \<String\>\]: The URL of the cookie.
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[Path \<String\>\]: The path of the cookie.
-      \[PublishedDateTime \<DateTime?\>\]: The date and time when the cookie was last published.
-      \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
-    \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
-    \[HostOrDomain \<String\>\]: The URL of the cookie.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the cookie was last modified.
-    \[Path \<String\>\]: The path of the cookie.
-    \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
-    \[Status \<BrowserSharedCookieStatus?\>\]: browserSharedCookieStatus
-  \[Sites \<IMicrosoftGraphBrowserSite\[\]\>\]: A collection of sites defined for the site list.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Comment <String>]`: The comment for the shared cookie.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
+    - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
+    - `[DisplayName <String>]`: The name of the cookie.
+    - `[History <IMicrosoftGraphBrowserSharedCookieHistory- `[]`>]`: The history of modifications applied to the cookie.
+      - `[Comment <String>]`: The comment for the shared cookie.
+      - `[DisplayName <String>]`: The name of the cookie.
+      - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
+      - `[HostOrDomain <String>]`: The URL of the cookie.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[Path <String>]`: The path of the cookie.
+      - `[PublishedDateTime <DateTime?>]`: The date and time when the cookie was last published.
+      - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
+    - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
+    - `[HostOrDomain <String>]`: The URL of the cookie.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the cookie was last modified.
+    - `[Path <String>]`: The path of the cookie.
+    - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
+    - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
+  - `[Sites <IMicrosoftGraphBrowserSite- `[]`>]`: A collection of sites defined for the site list.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AllowRedirect \<Boolean?\>\]: Controls the behavior of redirected sites.
+    - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites.
 If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
-    \[Comment \<String\>\]: The comment for the site.
-    \[CompatibilityMode \<BrowserSiteCompatibilityMode?\>\]: browserSiteCompatibilityMode
-    \[CreatedDateTime \<DateTime?\>\]: The date and time when the site was created.
-    \[DeletedDateTime \<DateTime?\>\]: The date and time when the site was deleted.
-    \[History \<IMicrosoftGraphBrowserSiteHistory\[\]\>\]: The history of modifications applied to the site.
-      \[AllowRedirect \<Boolean?\>\]: Controls the behavior of redirected sites.
+    - `[Comment <String>]`: The comment for the site.
+    - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the site was created.
+    - `[DeletedDateTime <DateTime?>]`: The date and time when the site was deleted.
+    - `[History <IMicrosoftGraphBrowserSiteHistory- `[]`>]`: The history of modifications applied to the site.
+      - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites.
 If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
-      \[Comment \<String\>\]: The comment for the site.
-      \[CompatibilityMode \<BrowserSiteCompatibilityMode?\>\]: browserSiteCompatibilityMode
-      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[MergeType \<BrowserSiteMergeType?\>\]: browserSiteMergeType
-      \[PublishedDateTime \<DateTime?\>\]: The date and time when the site was last published.
-      \[TargetEnvironment \<BrowserSiteTargetEnvironment?\>\]: browserSiteTargetEnvironment
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the site was last modified.
-    \[MergeType \<BrowserSiteMergeType?\>\]: browserSiteMergeType
-    \[Status \<BrowserSiteStatus?\>\]: browserSiteStatus
-    \[TargetEnvironment \<BrowserSiteTargetEnvironment?\>\]: browserSiteTargetEnvironment
-    \[WebUrl \<String\>\]: The URL of the site.
-  \[Status \<BrowserSiteListStatus?\>\]: browserSiteListStatus
+      - `[Comment <String>]`: The comment for the site.
+      - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[MergeType <BrowserSiteMergeType?>]`: browserSiteMergeType
+      - `[PublishedDateTime <DateTime?>]`: The date and time when the site was last published.
+      - `[TargetEnvironment <BrowserSiteTargetEnvironment?>]`: browserSiteTargetEnvironment
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the site was last modified.
+    - `[MergeType <BrowserSiteMergeType?>]`: browserSiteMergeType
+    - `[Status <BrowserSiteStatus?>]`: browserSiteStatus
+    - `[TargetEnvironment <BrowserSiteTargetEnvironment?>]`: browserSiteTargetEnvironment
+    - `[WebUrl <String>]`: The URL of the site.
+  - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PUBLISHEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+PUBLISHEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDCOOKIES \<IMicrosoftGraphBrowserSharedCookie\[\]\>: A collection of shared cookies defined for the site list.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SHAREDCOOKIES <IMicrosoftGraphBrowserSharedCookie- `[]`>: A collection of shared cookies defined for the site list.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Comment \<String\>\]: The comment for the shared cookie.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the shared cookie was created.
-  \[DeletedDateTime \<DateTime?\>\]: The date and time when the shared cookie was deleted.
-  \[DisplayName \<String\>\]: The name of the cookie.
-  \[History \<IMicrosoftGraphBrowserSharedCookieHistory\[\]\>\]: The history of modifications applied to the cookie.
-    \[Comment \<String\>\]: The comment for the shared cookie.
-    \[DisplayName \<String\>\]: The name of the cookie.
-    \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
-    \[HostOrDomain \<String\>\]: The URL of the cookie.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Comment <String>]`: The comment for the shared cookie.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
+  - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
+  - `[DisplayName <String>]`: The name of the cookie.
+  - `[History <IMicrosoftGraphBrowserSharedCookieHistory- `[]`>]`: The history of modifications applied to the cookie.
+    - `[Comment <String>]`: The comment for the shared cookie.
+    - `[DisplayName <String>]`: The name of the cookie.
+    - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
+    - `[HostOrDomain <String>]`: The URL of the cookie.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[Path \<String\>\]: The path of the cookie.
-    \[PublishedDateTime \<DateTime?\>\]: The date and time when the cookie was last published.
-    \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
-  \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
-  \[HostOrDomain \<String\>\]: The URL of the cookie.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the cookie was last modified.
-  \[Path \<String\>\]: The path of the cookie.
-  \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
-  \[Status \<BrowserSharedCookieStatus?\>\]: browserSharedCookieStatus
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[Path <String>]`: The path of the cookie.
+    - `[PublishedDateTime <DateTime?>]`: The date and time when the cookie was last published.
+    - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
+  - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
+  - `[HostOrDomain <String>]`: The URL of the cookie.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the cookie was last modified.
+  - `[Path <String>]`: The path of the cookie.
+  - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
+  - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
 
-SITES \<IMicrosoftGraphBrowserSite\[\]\>: A collection of sites defined for the site list.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SITES <IMicrosoftGraphBrowserSite- `[]`>: A collection of sites defined for the site list.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllowRedirect \<Boolean?\>\]: Controls the behavior of redirected sites.
+  - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites.
 If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
-  \[Comment \<String\>\]: The comment for the site.
-  \[CompatibilityMode \<BrowserSiteCompatibilityMode?\>\]: browserSiteCompatibilityMode
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the site was created.
-  \[DeletedDateTime \<DateTime?\>\]: The date and time when the site was deleted.
-  \[History \<IMicrosoftGraphBrowserSiteHistory\[\]\>\]: The history of modifications applied to the site.
-    \[AllowRedirect \<Boolean?\>\]: Controls the behavior of redirected sites.
+  - `[Comment <String>]`: The comment for the site.
+  - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the site was created.
+  - `[DeletedDateTime <DateTime?>]`: The date and time when the site was deleted.
+  - `[History <IMicrosoftGraphBrowserSiteHistory- `[]`>]`: The history of modifications applied to the site.
+    - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites.
 If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
-    \[Comment \<String\>\]: The comment for the site.
-    \[CompatibilityMode \<BrowserSiteCompatibilityMode?\>\]: browserSiteCompatibilityMode
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+    - `[Comment <String>]`: The comment for the site.
+    - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[MergeType \<BrowserSiteMergeType?\>\]: browserSiteMergeType
-    \[PublishedDateTime \<DateTime?\>\]: The date and time when the site was last published.
-    \[TargetEnvironment \<BrowserSiteTargetEnvironment?\>\]: browserSiteTargetEnvironment
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the site was last modified.
-  \[MergeType \<BrowserSiteMergeType?\>\]: browserSiteMergeType
-  \[Status \<BrowserSiteStatus?\>\]: browserSiteStatus
-  \[TargetEnvironment \<BrowserSiteTargetEnvironment?\>\]: browserSiteTargetEnvironment
-  \[WebUrl \<String\>\]: The URL of the site.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[MergeType <BrowserSiteMergeType?>]`: browserSiteMergeType
+    - `[PublishedDateTime <DateTime?>]`: The date and time when the site was last published.
+    - `[TargetEnvironment <BrowserSiteTargetEnvironment?>]`: browserSiteTargetEnvironment
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the site was last modified.
+  - `[MergeType <BrowserSiteMergeType?>]`: browserSiteMergeType
+  - `[Status <BrowserSiteStatus?>]`: browserSiteStatus
+  - `[TargetEnvironment <BrowserSiteTargetEnvironment?>]`: browserSiteTargetEnvironment
+  - `[WebUrl <String>]`: The URL of the site.
 
 ## RELATED LINKS
 [New-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist)
+
+
 
 
 

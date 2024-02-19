@@ -29,6 +29,9 @@ Locale: en-US
 ### [Approve-MgBetaDeviceManagementElevationRequest](Approve-MgBetaDeviceManagementElevationRequest.md)
 {{ Fill in the Description }}
 
+### [Approve-MgBetaDeviceManagementOperationApprovalRequest](Approve-MgBetaDeviceManagementOperationApprovalRequest.md)
+{{ Fill in the Description }}
+
 ### [Approve-MgBetaDeviceManagementZebraFotaConnectorFotaApp](Approve-MgBetaDeviceManagementZebraFotaConnectorFotaApp.md)
 {{ Fill in the Description }}
 
@@ -132,6 +135,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementOperationApprovalRequestStatus](Get-MgBetaDeviceManagementOperationApprovalRequestStatus.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementReportActiveMalwareReport](Get-MgBetaDeviceManagementReportActiveMalwareReport.md)
@@ -500,10 +506,16 @@ Locale: en-US
 ### [Invoke-MgBetaHasDeviceManagementZebraFotaConnectorActiveDeployment](Invoke-MgBetaHasDeviceManagementZebraFotaConnectorActiveDeployment.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaInitiateDeviceManagementComanagedDeviceAttestation](Invoke-MgBetaInitiateDeviceManagementComanagedDeviceAttestation.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaInitiateDeviceManagementManagedDeviceAttestation](Invoke-MgBetaInitiateDeviceManagementManagedDeviceAttestation.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery.md)
@@ -537,6 +549,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaReenableDeviceManagementManagedDevice](Invoke-MgBetaReenableDeviceManagementManagedDevice.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaRejectDeviceManagementOperationApprovalRequest](Invoke-MgBetaRejectDeviceManagementOperationApprovalRequest.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaReorderDeviceManagementConfigurationPolicy](Invoke-MgBetaReorderDeviceManagementConfigurationPolicy.md)
@@ -921,6 +936,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck](Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck.md)
+{{ Fill in the Description }}
+
+### [Stop-MgBetaDeviceManagementOperationApprovalRequestApproval](Stop-MgBetaDeviceManagementOperationApprovalRequestApproval.md)
+{{ Fill in the Description }}
+
+### [Stop-MgBetaDeviceManagementOperationApprovalRequestMyRequest](Stop-MgBetaDeviceManagementOperationApprovalRequestMyRequest.md)
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaDeviceManagementVirtualEndpointCloudPc](Stop-MgBetaDeviceManagementVirtualEndpointCloudPc.md)

@@ -19,15 +19,15 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance [-
  [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
  [-Manufacturer <String>] [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
  [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-Model <String>]
- [-ModelBatteryHealthScore <Int32>] [-ModelHealthStatus <UserExperienceAnalyticsHealthState>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ModelBatteryHealthScore <Int32>] [-ModelHealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -128,6 +128,21 @@ Parameter Sets: Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
@@ -279,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -316,52 +346,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance\>: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>`: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActiveDevices \<Int32?\>\]: Number of active devices for that model.
+  - `[ActiveDevices <Int32?>]`: Number of active devices for that model.
 Valid values 0 to 2147483647
-  \[AverageBatteryAgeInDays \<Int32?\>\]: The mean of the battery age for all devices of a given model in a tenant.
+  - `[AverageBatteryAgeInDays <Int32?>]`: The mean of the battery age for all devices of a given model in a tenant.
 Unit in days.
 Valid values 0 to 2147483647
-  \[AverageEstimatedRuntimeInMinutes \<Int32?\>\]: The mean of the estimated runtimes on full charge for all devices of a given model.
+  - `[AverageEstimatedRuntimeInMinutes <Int32?>]`: The mean of the estimated runtimes on full charge for all devices of a given model.
 Unit in minutes.
 Valid values 0 to 2147483647
-  \[AverageMaxCapacityPercentage \<Int32?\>\]: The mean of the maximum capacity for all devices of a given model.
+  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices of a given model.
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
-  \[Manufacturer \<String\>\]: Name of the device manufacturer.
-  \[MeanFullBatteryDrainCount \<Int32?\>\]: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
+  - `[Manufacturer <String>]`: Name of the device manufacturer.
+  - `[MeanFullBatteryDrainCount <Int32?>]`: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
 Valid values 0 to 2147483647
-  \[MedianEstimatedRuntimeInMinutes \<Int32?\>\]: The median of the estimated runtimes on full charge for all devices of a given model.
+  - `[MedianEstimatedRuntimeInMinutes <Int32?>]`: The median of the estimated runtimes on full charge for all devices of a given model.
 Unit in minutes.
 Valid values 0 to 2147483647
-  \[MedianFullBatteryDrainCount \<Int32?\>\]: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
+  - `[MedianFullBatteryDrainCount <Int32?>]`: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
 Valid values 0 to 2147483647
-  \[MedianMaxCapacityPercentage \<Int32?\>\]: The median of the maximum capacity for all devices of a given model.
+  - `[MedianMaxCapacityPercentage <Int32?>]`: The median of the maximum capacity for all devices of a given model.
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
-  \[Model \<String\>\]: The model name of the device.
-  \[ModelBatteryHealthScore \<Int32?\>\]: A weighted average of a model's maximum capacity score and runtime estimate score.
+  - `[Model <String>]`: The model name of the device.
+  - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model's maximum capacity score and runtime estimate score.
 Values range from 0-100.
 Valid values 0 to 2147483647
-  \[ModelHealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  - `[ModelHealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance)
+
+
 
 
 

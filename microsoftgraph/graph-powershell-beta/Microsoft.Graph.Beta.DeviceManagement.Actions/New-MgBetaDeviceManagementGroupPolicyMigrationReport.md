@@ -15,14 +15,15 @@ Invoke action createMigrationReport
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReport [-AdditionalProperties <Hashtable>]
- [-GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReport
  -BodyParameter <IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +78,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -114,8 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema
+### System.Collections.IDictionary
 ## OUTPUTS
 
+### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -123,33 +156,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GroupPolicyObjectFile \<IMicrosoftGraphGroupPolicyObjectFile\>\]: The Group Policy Object file uploaded by admin.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>]`: The Group Policy Object file uploaded by admin.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Content \<String\>\]: The Group Policy Object file content.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicy was first uploaded.
-    \[GroupPolicyObjectId \<String\>\]: The Group Policy Object GUID from GPO Xml content
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicyObjectFile was last modified.
-    \[OuDistinguishedName \<String\>\]: The distinguished name of the OU.
-    \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
+    - `[Content <String>]`: The Group Policy Object file content.
+    - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+    - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+    - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+    - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
 
-GROUPPOLICYOBJECTFILE \<IMicrosoftGraphGroupPolicyObjectFile\>: The Group Policy Object file uploaded by admin.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+GROUPPOLICYOBJECTFILE `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<String\>\]: The Group Policy Object file content.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicy was first uploaded.
-  \[GroupPolicyObjectId \<String\>\]: The Group Policy Object GUID from GPO Xml content
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicyObjectFile was last modified.
-  \[OuDistinguishedName \<String\>\]: The distinguished name of the OU.
-  \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
+  - `[Content <String>]`: The Group Policy Object file content.
+  - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+  - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+  - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport)
+
+
 
 
 

@@ -1280,9 +1280,6 @@ Locale: en-US
 ### [Remove-MgGroupTeamChannelTab](Remove-MgGroupTeamChannelTab.md)
 {{ Fill in the Description }}
 
-### [Remove-MgGroupTeamIncomingChannel](Remove-MgGroupTeamIncomingChannel.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgGroupTeamInstalledApp](Remove-MgGroupTeamInstalledApp.md)
 {{ Fill in the Description }}
 
@@ -1374,9 +1371,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgTeamChannelTab](Remove-MgTeamChannelTab.md)
-{{ Fill in the Description }}
-
-### [Remove-MgTeamIncomingChannel](Remove-MgTeamIncomingChannel.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgTeamInstalledApp](Remove-MgTeamInstalledApp.md)

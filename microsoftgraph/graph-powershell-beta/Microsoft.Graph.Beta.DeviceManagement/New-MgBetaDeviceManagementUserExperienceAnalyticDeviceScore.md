@@ -20,14 +20,16 @@ Create new navigation property to userExperienceAnalyticsDeviceScores for device
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
  [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>] [-DeviceName <String>]
  [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
- [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Manufacturer <String>] [-MeanResourceSpikeTimeScore <Double>] [-Model <String>]
+ [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -143,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HealthStatus
 userExperienceAnalyticsHealthState
 
@@ -192,6 +209,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MeanResourceSpikeTimeScore
+Indicates a calulated score indicating the health of the device's resources CPU and RAM.
+Valid values range from 0-100.
+Value -1 means associated score is unavailable.
+A higher score indicates a healthier device.
+Read-only.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Model
 The model name of the device.
 Supports: $select, $OrderBy.
@@ -201,6 +238,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -286,55 +338,63 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceScores\>: The user experience analytics device scores entity consolidates the various Endpoint Analytics scores.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScores>`: The user experience analytics device scores entity consolidates the various Endpoint Analytics scores.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppReliabilityScore \<Double?\>\]: Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications.
+  - `[AppReliabilityScore <Double?>]`: Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[BatteryHealthScore \<Double?\>\]: Indicates a calulated score indicating the health of the device's battery.
+  - `[BatteryHealthScore <Double?>]`: Indicates a calulated score indicating the health of the device's battery.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[DeviceName \<String\>\]: The name of the device.
+  - `[DeviceName <String>]`: The name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  \[EndpointAnalyticsScore \<Double?\>\]: Indicates a weighted average of the various scores.
+  - `[EndpointAnalyticsScore <Double?>]`: Indicates a weighted average of the various scores.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
-  \[Manufacturer \<String\>\]: The manufacturer name of the device.
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
+  - `[Manufacturer <String>]`: The manufacturer name of the device.
 Examples: Microsoft Corporation, HP, Lenovo.
 Supports: $select, $OrderBy.
 Read-only.
-  \[Model \<String\>\]: The model name of the device.
-Supports: $select, $OrderBy.
-Read-only.
-  \[StartupPerformanceScore \<Double?\>\]: Indicates a weighted average of boot score and logon score used for measuring startup performance.
+  - `[MeanResourceSpikeTimeScore <Double?>]`: Indicates a calulated score indicating the health of the device's resources CPU and RAM.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[WorkFromAnywhereScore \<Double?\>\]: Indicates a weighted score of the work from anywhere on a device level.
+  - `[Model <String>]`: The model name of the device.
+Supports: $select, $OrderBy.
+Read-only.
+  - `[StartupPerformanceScore <Double?>]`: Indicates a weighted average of boot score and logon score used for measuring startup performance.
+Valid values range from 0-100.
+Value -1 means associated score is unavailable.
+A higher score indicates a healthier device.
+Read-only.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[WorkFromAnywhereScore <Double?>]`: Indicates a weighted score of the work from anywhere on a device level.
 Valid values range from 0-100.
 Value -1 means associated score is unavailable.
 A higher score indicates a healthier device.
@@ -345,6 +405,8 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 [New-MgDeviceManagementUserExperienceAnalyticDeviceScore](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceScore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescore)
+
+
 
 
 

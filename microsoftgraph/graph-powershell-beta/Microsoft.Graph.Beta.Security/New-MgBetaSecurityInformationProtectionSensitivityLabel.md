@@ -17,13 +17,15 @@ Create new navigation property to sensitivityLabels for security
 New-MgBetaSecurityInformationProtectionSensitivityLabel [-AdditionalProperties <Hashtable>] [-Color <String>]
  [-ContentFormats <String[]>] [-Description <String>] [-HasProtection] [-Id <String>] [-IsActive]
  [-IsAppliable] [-Name <String>] [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>]
- [-Tooltip <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tooltip <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityInformationProtectionSensitivityLabel
- -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,6 +124,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -201,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sensitivity
 The sensitivity value of the label, where lower is less sensitive.
 
@@ -268,52 +300,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecuritySensitivityLabel\>: sensitivityLabel
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-  \[ContentFormats \<String\[\]\>\]: Returns the supported content formats for the label.
-  \[Description \<String\>\]: The admin-defined description for the label.
-  \[HasProtection \<Boolean?\>\]: Indicates whether the label has protection actions configured.
-  \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[ContentFormats <String- `[]`>]`: Returns the supported content formats for the label.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
-  \[IsAppliable \<Boolean?\>\]: Indicates whether the label can be applied to content.
+  - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content.
 False if the label is a parent with child labels.
-  \[Name \<String\>\]: The plaintext name of the label.
-  \[Parent \<IMicrosoftGraphSecuritySensitivityLabel\>\]: sensitivityLabel
-  \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-  \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+  - `[Name <String>]`: The plaintext name of the label.
+  - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-PARENT \<IMicrosoftGraphSecuritySensitivityLabel\>: sensitivityLabel
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+PARENT `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-  \[ContentFormats \<String\[\]\>\]: Returns the supported content formats for the label.
-  \[Description \<String\>\]: The admin-defined description for the label.
-  \[HasProtection \<Boolean?\>\]: Indicates whether the label has protection actions configured.
-  \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[ContentFormats <String- `[]`>]`: Returns the supported content formats for the label.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
-  \[IsAppliable \<Boolean?\>\]: Indicates whether the label can be applied to content.
+  - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content.
 False if the label is a parent with child labels.
-  \[Name \<String\>\]: The plaintext name of the label.
-  \[Parent \<IMicrosoftGraphSecuritySensitivityLabel\>\]: sensitivityLabel
-  \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-  \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+  - `[Name <String>]`: The plaintext name of the label.
+  - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityinformationprotectionsensitivitylabel)
+
+
 
 
 

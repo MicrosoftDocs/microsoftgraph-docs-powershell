@@ -167,6 +167,9 @@ Locale: en-US
 ### [Get-MgBetaUserOnenoteRecentNotebook](Get-MgBetaUserOnenoteRecentNotebook.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl](Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserOnlineMeetingRecordingDelta](Get-MgBetaUserOnlineMeetingRecordingDelta.md)
 {{ Fill in the Description }}
 

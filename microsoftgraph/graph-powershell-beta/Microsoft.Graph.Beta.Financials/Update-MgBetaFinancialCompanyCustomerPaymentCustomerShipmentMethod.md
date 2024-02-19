@@ -16,27 +16,30 @@ Update the navigation property shipmentMethod in financials
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod -CompanyId <String>
  -CustomerPaymentId <String> [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod -CompanyId <String>
- -CustomerPaymentId <String> -BodyParameter <IMicrosoftGraphShipmentMethod> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -CustomerPaymentId <String> -BodyParameter <IMicrosoftGraphShipmentMethod> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod -InputObject <IFinancialsIdentity>
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphShipmentMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphShipmentMethod> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -135,6 +138,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 .
 
@@ -181,6 +199,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -219,63 +252,67 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShipmentMethod
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShipmentMethod
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphShipmentMethod\>: shipmentMethod
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Code \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[Id \<String\>\]: 
-  \[LastModifiedDateTime \<DateTime?\>\]: 
+BODYPARAMETER `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Code <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Id <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
 
-INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
-  \[AccountId \<String\>\]: The unique identifier of account
-  \[AgedAccountsPayableId \<String\>\]: The unique identifier of agedAccountsPayable
-  \[AgedAccountsReceivableId \<String\>\]: The unique identifier of agedAccountsReceivable
-  \[CompanyId \<String\>\]: The unique identifier of company
-  \[CompanyInformationId \<String\>\]: The unique identifier of companyInformation
-  \[CountryRegionId \<String\>\]: The unique identifier of countryRegion
-  \[CurrencyId \<String\>\]: The unique identifier of currency
-  \[CustomerId \<String\>\]: The unique identifier of customer
-  \[CustomerPaymentId \<String\>\]: The unique identifier of customerPayment
-  \[CustomerPaymentJournalId \<String\>\]: The unique identifier of customerPaymentJournal
-  \[DimensionId \<String\>\]: The unique identifier of dimension
-  \[DimensionValueId \<String\>\]: The unique identifier of dimensionValue
-  \[EmployeeId \<String\>\]: The unique identifier of employee
-  \[GeneralLedgerEntryId \<String\>\]: The unique identifier of generalLedgerEntry
-  \[ItemCategoryId \<String\>\]: The unique identifier of itemCategory
-  \[ItemId \<String\>\]: The unique identifier of item
-  \[JournalId \<String\>\]: The unique identifier of journal
-  \[JournalLineId \<String\>\]: The unique identifier of journalLine
-  \[PaymentMethodId \<String\>\]: The unique identifier of paymentMethod
-  \[PaymentTermId \<String\>\]: The unique identifier of paymentTerm
-  \[PictureId \<String\>\]: The unique identifier of picture
-  \[PurchaseInvoiceId \<String\>\]: The unique identifier of purchaseInvoice
-  \[PurchaseInvoiceLineId \<String\>\]: The unique identifier of purchaseInvoiceLine
-  \[SalesCreditMemoId \<String\>\]: The unique identifier of salesCreditMemo
-  \[SalesCreditMemoLineId \<String\>\]: The unique identifier of salesCreditMemoLine
-  \[SalesInvoiceId \<String\>\]: The unique identifier of salesInvoice
-  \[SalesInvoiceLineId \<String\>\]: The unique identifier of salesInvoiceLine
-  \[SalesOrderId \<String\>\]: The unique identifier of salesOrder
-  \[SalesOrderLineId \<String\>\]: The unique identifier of salesOrderLine
-  \[SalesQuoteId \<String\>\]: The unique identifier of salesQuote
-  \[SalesQuoteLineId \<String\>\]: The unique identifier of salesQuoteLine
-  \[ShipmentMethodId \<String\>\]: The unique identifier of shipmentMethod
-  \[TaxAreaId \<String\>\]: The unique identifier of taxArea
-  \[TaxGroupId \<String\>\]: The unique identifier of taxGroup
-  \[UnitOfMeasureId \<String\>\]: The unique identifier of unitOfMeasure
-  \[VendorId \<String\>\]: The unique identifier of vendor
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+  - `[AccountId <String>]`: The unique identifier of account
+  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
+  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
+  - `[CompanyId <String>]`: The unique identifier of company
+  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
+  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
+  - `[CurrencyId <String>]`: The unique identifier of currency
+  - `[CustomerId <String>]`: The unique identifier of customer
+  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
+  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
+  - `[DimensionId <String>]`: The unique identifier of dimension
+  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
+  - `[EmployeeId <String>]`: The unique identifier of employee
+  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
+  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
+  - `[ItemId <String>]`: The unique identifier of item
+  - `[JournalId <String>]`: The unique identifier of journal
+  - `[JournalLineId <String>]`: The unique identifier of journalLine
+  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
+  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
+  - `[PictureId <String>]`: The unique identifier of picture
+  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
+  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
+  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
+  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
+  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
+  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
+  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
+  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
+  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
+  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
+  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
+  - `[TaxAreaId <String>]`: The unique identifier of taxArea
+  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
+  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
+  - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentcustomershipmentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentcustomershipmentmethod)
+
+
 
 
 

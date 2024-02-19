@@ -317,6 +317,12 @@ Locale: en-US
 ### [Send-MgCommunicationCallDtmfTone](Send-MgCommunicationCallDtmfTone.md)
 {{ Fill in the Description }}
 
+### [Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm](Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgCommunicationOnlineMeetingVirtualAppointmentSm](Send-MgCommunicationOnlineMeetingVirtualAppointmentSm.md)
+{{ Fill in the Description }}
+
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
 {{ Fill in the Description }}
 

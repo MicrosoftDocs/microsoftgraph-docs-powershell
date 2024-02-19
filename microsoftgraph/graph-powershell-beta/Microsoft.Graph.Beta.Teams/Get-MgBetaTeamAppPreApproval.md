@@ -13,13 +13,28 @@ Get Preapproval policy associated with a Teams App.
 ## SYNTAX
 
 ```
-Get-MgBetaTeamAppPreApproval -TeamsAppId <String> [<CommonParameters>]
+Get-MgBetaTeamAppPreApproval -TeamsAppId <String> [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get Preapproval policy associated with a Teams App.
 
 ## PARAMETERS
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -TeamsAppId
 key: id of Teams App
@@ -49,6 +64,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamapppreapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamapppreapproval)
+
+
 
 
 

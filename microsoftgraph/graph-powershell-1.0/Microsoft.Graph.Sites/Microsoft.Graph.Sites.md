@@ -188,6 +188,48 @@ Locale: en-US
 ### [Get-MgGroupSiteExternalColumnCount](Get-MgGroupSiteExternalColumnCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgGroupSiteGetByPath](Get-MgGroupSiteGetByPath.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathAnalytic](Get-MgGroupSiteGetByPathAnalytic.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathColumn](Get-MgGroupSiteGetByPathColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathContentType](Get-MgGroupSiteGetByPathContentType.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathDrive](Get-MgGroupSiteGetByPathDrive.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathExternalColumn](Get-MgGroupSiteGetByPathExternalColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathItem](Get-MgGroupSiteGetByPathItem.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathOnenote](Get-MgGroupSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathOperation](Get-MgGroupSiteGetByPathOperation.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathPermission](Get-MgGroupSiteGetByPathPermission.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathSite](Get-MgGroupSiteGetByPathSite.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathTermStore](Get-MgGroupSiteGetByPathTermStore.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetGraphBPrePathCreatedByUser](Get-MgGroupSiteGetGraphBPrePathCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser](Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser.md)
+{{ Fill in the Description }}
+
 ### [Get-MgGroupSiteItem](Get-MgGroupSiteItem.md)
 {{ Fill in the Description }}
 
@@ -926,6 +968,45 @@ Locale: en-US
 ### [Get-MgSiteExternalColumnCount](Get-MgSiteExternalColumnCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgSiteGetByPath](Get-MgSiteGetByPath.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathAnalytic](Get-MgSiteGetByPathAnalytic.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathApplicableContentTypeForList](Get-MgSiteGetByPathApplicableContentTypeForList.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathColumn](Get-MgSiteGetByPathColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathContentType](Get-MgSiteGetByPathContentType.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathDrive](Get-MgSiteGetByPathDrive.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathExternalColumn](Get-MgSiteGetByPathExternalColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathOperation](Get-MgSiteGetByPathOperation.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathPermission](Get-MgSiteGetByPathPermission.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathSite](Get-MgSiteGetByPathSite.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathTermStore](Get-MgSiteGetByPathTermStore.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetGraphBPrePathActivityByInterval](Get-MgSiteGetGraphBPrePathActivityByInterval.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetGraphBPrePathByPath](Get-MgSiteGetGraphBPrePathByPath.md)
+{{ Fill in the Description }}
+
 ### [Get-MgSiteItemLastModifiedByUser](Get-MgSiteItemLastModifiedByUser.md)
 {{ Fill in the Description }}
 
@@ -1442,6 +1523,24 @@ Locale: en-US
 ### [New-MgGroupSiteContentTypeColumnLink](New-MgGroupSiteContentTypeColumnLink.md)
 {{ Fill in the Description }}
 
+### [New-MgGroupSiteGetByPathColumn](New-MgGroupSiteGetByPathColumn.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSiteGetByPathContentType](New-MgGroupSiteGetByPathContentType.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSiteGetByPathList](New-MgGroupSiteGetByPathList.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSiteGetByPathOperation](New-MgGroupSiteGetByPathOperation.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSiteGetByPathPermission](New-MgGroupSiteGetByPathPermission.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSiteGetByPathTermStore](New-MgGroupSiteGetByPathTermStore.md)
+{{ Fill in the Description }}
+
 ### [New-MgGroupSiteList](New-MgGroupSiteList.md)
 {{ Fill in the Description }}
 
@@ -1616,6 +1715,24 @@ Locale: en-US
 ### [New-MgSiteContentTypeColumnLink](New-MgSiteContentTypeColumnLink.md)
 {{ Fill in the Description }}
 
+### [New-MgSiteGetByPathColumn](New-MgSiteGetByPathColumn.md)
+{{ Fill in the Description }}
+
+### [New-MgSiteGetByPathContentType](New-MgSiteGetByPathContentType.md)
+{{ Fill in the Description }}
+
+### [New-MgSiteGetByPathList](New-MgSiteGetByPathList.md)
+{{ Fill in the Description }}
+
+### [New-MgSiteGetByPathOperation](New-MgSiteGetByPathOperation.md)
+{{ Fill in the Description }}
+
+### [New-MgSiteGetByPathPermission](New-MgSiteGetByPathPermission.md)
+{{ Fill in the Description }}
+
+### [New-MgSiteGetByPathTermStore](New-MgSiteGetByPathTermStore.md)
+{{ Fill in the Description }}
+
 ### [New-MgSiteList](New-MgSiteList.md)
 {{ Fill in the Description }}
 
@@ -1764,6 +1881,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupSiteContentTypeColumnLink](Remove-MgGroupSiteContentTypeColumnLink.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSiteGetByPathAnalytic](Remove-MgGroupSiteGetByPathAnalytic.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSiteGetByPathOnenote](Remove-MgGroupSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSiteGetByPathTermStore](Remove-MgGroupSiteGetByPathTermStore.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupSiteList](Remove-MgGroupSiteList.md)
@@ -1959,6 +2085,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgSiteContentTypeColumnLink](Remove-MgSiteContentTypeColumnLink.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSiteGetByPathAnalytic](Remove-MgSiteGetByPathAnalytic.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSiteGetByPathTermStore](Remove-MgSiteGetByPathTermStore.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgSiteList](Remove-MgSiteList.md)
@@ -2169,6 +2301,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgGroupSiteCreatedByUserMailboxSetting](Update-MgGroupSiteCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSiteGetByPathAnalytic](Update-MgGroupSiteGetByPathAnalytic.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSiteGetByPathOnenote](Update-MgGroupSiteGetByPathOnenote.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSiteGetByPathTermStore](Update-MgGroupSiteGetByPathTermStore.md)
 {{ Fill in the Description }}
 
 ### [Update-MgGroupSiteLastModifiedByUserMailboxSetting](Update-MgGroupSiteLastModifiedByUserMailboxSetting.md)
@@ -2382,6 +2523,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgSiteContentTypeColumnLink](Update-MgSiteContentTypeColumnLink.md)
+{{ Fill in the Description }}
+
+### [Update-MgSiteGetByPathAnalytic](Update-MgSiteGetByPathAnalytic.md)
+{{ Fill in the Description }}
+
+### [Update-MgSiteGetByPathTermStore](Update-MgSiteGetByPathTermStore.md)
 {{ Fill in the Description }}
 
 ### [Update-MgSiteList](Update-MgSiteList.md)

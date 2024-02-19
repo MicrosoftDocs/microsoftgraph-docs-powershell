@@ -2060,9 +2060,6 @@ Locale: en-US
 ### [Remove-MgDriveItemAnalyticItemActivityStat](Remove-MgDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
-### [Remove-MgDriveItemChild](Remove-MgDriveItemChild.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgDriveItemListItem](Remove-MgDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2147,9 +2144,6 @@ Locale: en-US
 ### [Remove-MgDriveRootAnalyticItemActivityStat](Remove-MgDriveRootAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
-### [Remove-MgDriveRootChild](Remove-MgDriveRootChild.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgDriveRootListItem](Remove-MgDriveRootListItem.md)
 {{ Fill in the Description }}
 
@@ -2196,9 +2190,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItemAnalyticItemActivityStat](Remove-MgGroupDriveItemAnalyticItemActivityStat.md)
-{{ Fill in the Description }}
-
-### [Remove-MgGroupDriveItemChild](Remove-MgGroupDriveItemChild.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItemListItem](Remove-MgGroupDriveItemListItem.md)
@@ -2280,9 +2271,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveRootAnalyticItemActivityStat](Remove-MgGroupDriveRootAnalyticItemActivityStat.md)
-{{ Fill in the Description }}
-
-### [Remove-MgGroupDriveRootChild](Remove-MgGroupDriveRootChild.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveRootListItem](Remove-MgGroupDriveRootListItem.md)
@@ -2375,9 +2363,6 @@ Locale: en-US
 ### [Remove-MgUserDriveItemAnalyticItemActivityStat](Remove-MgUserDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
-### [Remove-MgUserDriveItemChild](Remove-MgUserDriveItemChild.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgUserDriveItemListItem](Remove-MgUserDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2457,9 +2442,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootAnalyticItemActivityStat](Remove-MgUserDriveRootAnalyticItemActivityStat.md)
-{{ Fill in the Description }}
-
-### [Remove-MgUserDriveRootChild](Remove-MgUserDriveRootChild.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootListItem](Remove-MgUserDriveRootListItem.md)

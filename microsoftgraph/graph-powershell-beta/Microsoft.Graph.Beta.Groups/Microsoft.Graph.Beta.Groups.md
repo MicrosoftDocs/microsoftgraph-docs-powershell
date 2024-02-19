@@ -434,6 +434,15 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteDelta](Get-MgBetaGroupSiteDelta.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList](Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval](Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteGetGraphBPrePathByPath](Get-MgBetaGroupSiteGetGraphBPrePathByPath.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType](Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType.md)
 {{ Fill in the Description }}
 

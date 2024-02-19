@@ -15,14 +15,15 @@ Update the navigation property federatedTokenValidationPolicy in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPolicyFederatedTokenValidationPolicy [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Id <String>] [-ValidatingDomains <IMicrosoftGraphValidatingDomains>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-ValidatingDomains <IMicrosoftGraphValidatingDomains>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyFederatedTokenValidationPolicy
- -BodyParameter <IMicrosoftGraphFederatedTokenValidationPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFederatedTokenValidationPolicy> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +78,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -85,6 +101,21 @@ Read-only.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -146,32 +177,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFederatedTokenValidationPolicy
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFederatedTokenValidationPolicy
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphFederatedTokenValidationPolicy\>: federatedTokenValidationPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphFederatedTokenValidationPolicy>`: federatedTokenValidationPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ValidatingDomains \<IMicrosoftGraphValidatingDomains\>\]: validatingDomains
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[RootDomains \<String\>\]: rootDomains
+  - `[ValidatingDomains <IMicrosoftGraphValidatingDomains>]`: validatingDomains
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[RootDomains <String>]`: rootDomains
 
-VALIDATINGDOMAINS \<IMicrosoftGraphValidatingDomains\>: validatingDomains
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[RootDomains \<String\>\]: rootDomains
+VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[RootDomains <String>]`: rootDomains
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
+
+
 
 
 

@@ -17,13 +17,15 @@ Update the navigation property symantecCodeSigningCertificate in deviceAppManage
 Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-Issuer <String>]
  [-IssuerName <String>] [-Password <String>] [-Status <String>] [-Subject <String>] [-SubjectName <String>]
- [-UploadDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UploadDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate
- -BodyParameter <IMicrosoftGraphSymantecCodeSigningCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSymantecCodeSigningCertificate> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -92,6 +94,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -145,6 +162,21 @@ The Password required for .pfx file.
 Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -250,32 +282,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSymantecCodeSigningCertificate\>: symantecCodeSigningCertificate
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSymantecCodeSigningCertificate>`: symantecCodeSigningCertificate
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<Byte\[\]\>\]: The Windows Symantec Code-Signing Certificate in the raw data format.
-  \[ExpirationDateTime \<DateTime?\>\]: The Cert Expiration Date.
-  \[Issuer \<String\>\]: The Issuer value for the cert.
-  \[IssuerName \<String\>\]: The Issuer Name for the cert.
-  \[Password \<String\>\]: The Password required for .pfx file.
-  \[Status \<String\>\]: certificateStatus
-  \[Subject \<String\>\]: The Subject value for the cert.
-  \[SubjectName \<String\>\]: The Subject Name for the cert.
-  \[UploadDateTime \<DateTime?\>\]: The Type of the CodeSigning Cert as Symantec Cert.
+  - `[Content <Byte- `[]`>]`: The Windows Symantec Code-Signing Certificate in the raw data format.
+  - `[ExpirationDateTime <DateTime?>]`: The Cert Expiration Date.
+  - `[Issuer <String>]`: The Issuer value for the cert.
+  - `[IssuerName <String>]`: The Issuer Name for the cert.
+  - `[Password <String>]`: The Password required for .pfx file.
+  - `[Status <String>]`: certificateStatus
+  - `[Subject <String>]`: The Subject value for the cert.
+  - `[SubjectName <String>]`: The Subject Name for the cert.
+  - `[UploadDateTime <DateTime?>]`: The Type of the CodeSigning Cert as Symantec Cert.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate)
+
+
 
 
 

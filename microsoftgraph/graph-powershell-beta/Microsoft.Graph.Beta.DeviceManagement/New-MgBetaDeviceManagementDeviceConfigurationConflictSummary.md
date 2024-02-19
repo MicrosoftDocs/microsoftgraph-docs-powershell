@@ -16,13 +16,15 @@ Create new navigation property to deviceConfigurationConflictSummary for deviceM
 ```
 New-MgBetaDeviceManagementDeviceConfigurationConflictSummary [-AdditionalProperties <Hashtable>]
  [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>] [-ContributingSettings <String[]>]
- [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationConflictSummary
- -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,6 +109,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -115,6 +132,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -160,34 +192,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceConfigurationConflictSummary\>: Conflict summary for a set of device configuration policies.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationConflictSummary>`: Conflict summary for a set of device configuration policies.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ConflictingDeviceConfigurations \<IMicrosoftGraphSettingSource\[\]\>\]: The set of policies in conflict with the given setting
-    \[DisplayName \<String\>\]: Not yet documented
-    \[Id \<String\>\]: Not yet documented
-    \[SourceType \<String\>\]: settingSourceType
-  \[ContributingSettings \<String\[\]\>\]: The set of settings in conflict with the given policies
-  \[DeviceCheckinsImpacted \<Int32?\>\]: The count of checkins impacted by the conflicting policies and settings
+  - `[ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource- `[]`>]`: The set of policies in conflict with the given setting
+    - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
+    - `[SourceType <String>]`: settingSourceType
+  - `[ContributingSettings <String- `[]`>]`: The set of settings in conflict with the given policies
+  - `[DeviceCheckinsImpacted <Int32?>]`: The count of checkins impacted by the conflicting policies and settings
 
-CONFLICTINGDEVICECONFIGURATIONS \<IMicrosoftGraphSettingSource\[\]\>: The set of policies in conflict with the given setting
-  \[DisplayName \<String\>\]: Not yet documented
-  \[Id \<String\>\]: Not yet documented
-  \[SourceType \<String\>\]: settingSourceType
+CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource- `[]`>: The set of policies in conflict with the given setting
+  - `[DisplayName <String>]`: 
+  - `[Id <String>]`: 
+  - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationconflictsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationconflictsummary)
+
+
 
 
 

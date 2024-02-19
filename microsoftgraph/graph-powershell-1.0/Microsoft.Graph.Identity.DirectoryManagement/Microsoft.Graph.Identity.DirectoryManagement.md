@@ -800,9 +800,6 @@ Locale: en-US
 ### [Remove-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](Remove-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 {{ Fill in the Description }}
 
-### [Remove-MgDirectoryDeletedItem](Remove-MgDirectoryDeletedItem.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgDirectoryDeviceLocalCredential](Remove-MgDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 

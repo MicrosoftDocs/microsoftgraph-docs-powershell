@@ -22,13 +22,14 @@ New-MgSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtable>]
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
  [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Targets <String[]>] [-Title <String>]
- [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -131,6 +132,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -170,6 +186,21 @@ intelligenceProfileKind
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -277,80 +308,84 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityIntelligenceProfile\>: intelligenceProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Aliases \<String\[\]\>\]: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
-  \[CountriesOrRegionsOfOrigin \<IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin\[\]\>\]: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
-    \[Code \<String\>\]: A codified representation for this country/region of origin.
-    \[Label \<String\>\]: A display label for this ountry/region of origin.
-  \[Description \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of this formattedContent.
-    \[Format \<String\>\]: contentFormat
-  \[FirstActiveDateTime \<DateTime?\>\]: The date and time when this intelligenceProfile was first active.
+  - `[Aliases <String- `[]`>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
+  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>]`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+    - `[Code <String>]`: A codified representation for this country/region of origin.
+    - `[Label <String>]`: A display label for this ountry/region of origin.
+  - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of this formattedContent.
+    - `[Format <String>]`: contentFormat
+  - `[FirstActiveDateTime <DateTime?>]`: The date and time when this intelligenceProfile was first active.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Indicators \<IMicrosoftGraphSecurityIntelligenceProfileIndicator\[\]\>\]: Includes an assemblage of high-fidelity network indicators of compromise.
-    \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>]`: Includes an assemblage of high-fidelity network indicators of compromise.
+    - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Source \<String\>\]: indicatorSource
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Source <String>]`: indicatorSource
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[FirstSeenDateTime \<DateTime?\>\]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-    \[LastSeenDateTime \<DateTime?\>\]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  \[Kind \<String\>\]: intelligenceProfileKind
-  \[Summary \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
-  \[Targets \<String\[\]\>\]: Known targets related to this intelligenceProfile.
-  \[Title \<String\>\]: The title of this intelligenceProfile.
-  \[Tradecraft \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
+    - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+    - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  - `[Kind <String>]`: intelligenceProfileKind
+  - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+  - `[Targets <String- `[]`>]`: Known targets related to this intelligenceProfile.
+  - `[Title <String>]`: The title of this intelligenceProfile.
+  - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-COUNTRIESORREGIONSOFORIGIN \<IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin\[\]\>: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
-  \[Code \<String\>\]: A codified representation for this country/region of origin.
-  \[Label \<String\>\]: A display label for this ountry/region of origin.
+COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+  - `[Code <String>]`: A codified representation for this country/region of origin.
+  - `[Label <String>]`: A display label for this ountry/region of origin.
 
-DESCRIPTION \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
-INDICATORS \<IMicrosoftGraphSecurityIntelligenceProfileIndicator\[\]\>: Includes an assemblage of high-fidelity network indicators of compromise.
-  \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>: Includes an assemblage of high-fidelity network indicators of compromise.
+  - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Source \<String\>\]: indicatorSource
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Source <String>]`: indicatorSource
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[FirstSeenDateTime \<DateTime?\>\]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  \[LastSeenDateTime \<DateTime?\>\]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
-TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile)
+
+
 
 
 

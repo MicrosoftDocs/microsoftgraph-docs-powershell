@@ -19,15 +19,15 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPer
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance [-AdditionalProperties <Hashtable>]
  [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int64>] [-ProcessName <String>]
- [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int64>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int64>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,6 +80,21 @@ Required: False
 Position: Named
 Default value: 0
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -144,6 +159,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -224,38 +254,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance\>: The user experience analytics device startup process performance.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance>`: The user experience analytics device startup process performance.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeviceCount \<Int64?\>\]: The count of devices which initiated this process on startup.
+  - `[DeviceCount <Int64?>]`: The count of devices which initiated this process on startup.
 Supports: $filter, $select, $OrderBy.
 Read-only.
-  \[MedianImpactInMS \<Int64?\>\]: The median impact of startup process on device boot time in milliseconds.
+  - `[MedianImpactInMS <Int64?>]`: The median impact of startup process on device boot time in milliseconds.
 Supports: $filter, $select, $OrderBy.
 Read-only.
-  \[ProcessName \<String\>\]: The name of the startup process.
+  - `[ProcessName <String>]`: The name of the startup process.
 Examples: outlook, excel.
 Supports: $select, $OrderBy.
 Read-only.
-  \[ProductName \<String\>\]: The product name of the startup process.
+  - `[ProductName <String>]`: The product name of the startup process.
 Examples: Microsoft Outlook, Microsoft Excel.
 Supports: $select, $OrderBy.
 Read-only.
-  \[Publisher \<String\>\]: The publisher of the startup process.
+  - `[Publisher <String>]`: The publisher of the startup process.
 Examples: Microsoft Corporation, Contoso Corp.
 Supports: $select, $OrderBy.
 Read-only.
-  \[TotalImpactInMS \<Int64?\>\]: The total impact of startup process on device boot time in milliseconds.
+  - `[TotalImpactInMS <Int64?>]`: The total impact of startup process on device boot time in milliseconds.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 
@@ -263,6 +295,8 @@ Read-only.
 [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance)
+
+
 
 
 

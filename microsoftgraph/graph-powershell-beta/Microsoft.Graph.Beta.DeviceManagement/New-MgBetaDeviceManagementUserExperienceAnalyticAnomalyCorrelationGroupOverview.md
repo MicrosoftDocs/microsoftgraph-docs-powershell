@@ -21,15 +21,15 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
  [-CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>]
  [-CorrelationGroupId <String>]
  [-CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence>]
- [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -213,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -221,6 +236,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -282,51 +312,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
+### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
+### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview\>: The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview>`: The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AnomalyCorrelationGroupCount \<Int32?\>\]: Indicates the number of correlation groups in the anomaly.
+  - `[AnomalyCorrelationGroupCount <Int32?>]`: Indicates the number of correlation groups in the anomaly.
 Valid values -2147483648 to 2147483647
-  \[AnomalyId \<String\>\]: The unique identifier of the anomaly.
+  - `[AnomalyId <String>]`: The unique identifier of the anomaly.
 Anomaly details such as name and type can be found in the UserExperienceAnalyticsAnomalySeverityOverview entity.
-  \[CorrelationGroupAnomalousDeviceCount \<Int32?\>\]: Indicates the total number of devices affected by the anomaly in the correlation group.
+  - `[CorrelationGroupAnomalousDeviceCount <Int32?>]`: Indicates the total number of devices affected by the anomaly in the correlation group.
 Valid values -2147483648 to 2147483647
-  \[CorrelationGroupAtRiskDeviceCount \<Int32?\>\]: Indicates the total number of devices at risk in the correlation group.
+  - `[CorrelationGroupAtRiskDeviceCount <Int32?>]`: Indicates the total number of devices at risk in the correlation group.
 Valid values -2147483648 to 2147483647
-  \[CorrelationGroupDeviceCount \<Int32?\>\]: Indicates the total number of devices in a correlation group.
+  - `[CorrelationGroupDeviceCount <Int32?>]`: Indicates the total number of devices in a correlation group.
 Valid values -2147483648 to 2147483647
-  \[CorrelationGroupFeatures \<IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature\[\]\>\]: Describes the features of a device that are shared between all devices in a correlation group.
-    \[DeviceFeatureType \<UserExperienceAnalyticsAnomalyDeviceFeatureType?\>\]: Indicates the device's feature type.
+  - `[CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature- `[]`>]`: Describes the features of a device that are shared between all devices in a correlation group.
+    - `[DeviceFeatureType <UserExperienceAnalyticsAnomalyDeviceFeatureType?>]`: Indicates the device's feature type.
 Possible values are: manufacturer, model, osVersion, application or driver.
-    \[Values \<String\[\]\>\]: Specific metric values that describe the features of the given device feature type.
-  \[CorrelationGroupId \<String\>\]: The unique identifier for the correlation group which will uniquely identify one of the correlation group within an anomaly.
+    - `[Values <String- `[]`>]`: Specific metric values that describe the features of the given device feature type.
+  - `[CorrelationGroupId <String>]`: The unique identifier for the correlation group which will uniquely identify one of the correlation group within an anomaly.
 The correlation Id can be mapped to the correlation group name by concatinating the correlation group features.
 Example of correlation group name which is the indicative of concatenated features names are  for names, Contoso manufacture 4.4.1 and Windows 11.22621.1485.
-  \[CorrelationGroupPrevalence \<UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence?\>\]: Indicates the level of prevalence of the correlation group features in the anomaly.
+  - `[CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence?>]`: Indicates the level of prevalence of the correlation group features in the anomaly.
 Possible values are: high, medium or low
-  \[CorrelationGroupPrevalencePercentage \<Double?\>\]: The percentage of the devices in the correlation group that are anomalous.
+  - `[CorrelationGroupPrevalencePercentage <Double?>]`: The percentage of the devices in the correlation group that are anomalous.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  \[TotalDeviceCount \<Int32?\>\]: Indicates the total number of devices in the tenant.
+  - `[TotalDeviceCount <Int32?>]`: Indicates the total number of devices in the tenant.
 Valid values -2147483648 to 2147483647
 
-CORRELATIONGROUPFEATURES \<IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature\[\]\>: Describes the features of a device that are shared between all devices in a correlation group.
-  \[DeviceFeatureType \<UserExperienceAnalyticsAnomalyDeviceFeatureType?\>\]: Indicates the device's feature type.
+CORRELATIONGROUPFEATURES <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature- `[]`>: Describes the features of a device that are shared between all devices in a correlation group.
+  - `[DeviceFeatureType <UserExperienceAnalyticsAnomalyDeviceFeatureType?>]`: Indicates the device's feature type.
 Possible values are: manufacturer, model, osVersion, application or driver.
-  \[Values \<String\[\]\>\]: Specific metric values that describe the features of the given device feature type.
+  - `[Values <String- `[]`>]`: Specific metric values that describe the features of the given device feature type.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview)
+
+
 
 
 
