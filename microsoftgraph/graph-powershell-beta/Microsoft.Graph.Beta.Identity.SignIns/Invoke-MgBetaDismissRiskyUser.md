@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgBetaDismissRiskyUser
@@ -13,24 +12,21 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyUser?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### DismissExpanded (Default)
 ```
-Invoke-MgBetaDismissRiskyUser [-AdditionalProperties <Hashtable>] [-UserIds <String[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaDismissRiskyUser [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-UserIds <String[]>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Dismiss
 ```
 Invoke-MgBetaDismissRiskyUser
  -BodyParameter <IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,12 +34,10 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-dismiss-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaDismissRiskyUser Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	UserIds = @(
@@ -53,8 +47,6 @@ $params = @{
 }
 Invoke-MgBetaDismissRiskyUser -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaDismissRiskyUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -134,6 +126,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserIds
 .
 
@@ -190,22 +197,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UserIds <String- `[]`>]`:
+BODYPARAMETER \<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[UserIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgDismissRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequestnote
@@ -10,27 +10,36 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property notes for privacy
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaPrivacySubjectRightsRequestNote -AuthoredNoteId <String> -SubjectRightsRequestId <String>
- [-IfMatch <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-IfMatch <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property notes for privacy
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -125,6 +134,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubjectRightsRequestId
 The unique identifier of subjectRightsRequest
 
@@ -181,38 +205,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseId <String>]`: The unique identifier of case
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CustodianId <String>]`: The unique identifier of custodian
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[LegalHoldId <String>]`: The unique identifier of legalHold
-  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
-  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
-  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TagId <String>]`: The unique identifier of tag
-  - `[TagId1 <String>]`: The unique identifier of tag
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseId \<String\>\]: The unique identifier of case
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CustodianId \<String\>\]: The unique identifier of custodian
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
+  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
+  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
+  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TagId \<String\>\]: The unique identifier of tag
+  \[TagId1 \<String\>\]: The unique identifier of tag
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
-[Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequestnote)
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgBetaSearchQna
@@ -15,9 +14,10 @@ Create a new qna object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSearchQna [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
- [-AvailabilityStartDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-GroupIds <String[]>]
- [-Id <String>] [-IsSuggested] [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
+New-MgBetaSearchQna [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
+ [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-State <String>]
  [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-Headers <IDictionary>]
@@ -26,19 +26,17 @@ New-MgBetaSearchQna [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTim
 
 ### Create
 ```
-New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new qna object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-qnas-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSearchQna Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Global Country Holidays"
@@ -73,8 +71,6 @@ $params = @{
 }
 New-MgBetaSearchQna -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -330,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 answerState
 
@@ -420,89 +431,85 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchQna>`: qna
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Search answer description shown on search results page.
-  - `[DisplayName <String>]`: Search answer name displayed in search results.
-  - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited.
+BODYPARAMETER \<IMicrosoftGraphSearchQna\>: qna
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Search answer description shown on search results page.
+  \[DisplayName \<String\>\]: Search answer name displayed in search results.
+  \[LastModifiedBy \<IMicrosoftGraphSearchIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: 
+      \[Id \<String\>\]: 
+    \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of when the search answer is created or edited.
 Read-only.
-  - `[WebUrl <String>]`: Search answer URL link.
+  \[WebUrl \<String\>\]: Search answer URL link.
 When users click this search answer in search results, they'll go to this URL.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna stops to appear as a search result.
+  \[AvailabilityEndDateTime \<DateTime?\>\]: Timestamp of when the qna stops to appear as a search result.
 Set as null for always available.
-  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna starts to appear as a search result.
+  \[AvailabilityStartDateTime \<DateTime?\>\]: Timestamp of when the qna starts to appear as a search result.
 Set as null for always available.
-  - `[GroupIds <String- `[]`>]`: List of security groups able to view this qna.
-  - `[IsSuggested <Boolean?>]`: True if a user or Microsoft suggested this qna to the admin.
+  \[GroupIds \<String\[\]\>\]: List of security groups able to view this qna.
+  \[IsSuggested \<Boolean?\>\]: True if a user or Microsoft suggested this qna to the admin.
 Read-only.
-  - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Keywords <String- `[]`>]`: A collection of keywords used to trigger the search answer.
-    - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
-    - `[ReservedKeywords <String- `[]`>]`: Unique keywords that will guarantee the search answer is triggered.
-  - `[LanguageTags <String- `[]`>]`: A list of language names that are geographically specific and that this QnA can be viewed in.
+  \[Keywords \<IMicrosoftGraphSearchAnswerKeyword\>\]: answerKeyword
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Keywords \<String\[\]\>\]: A collection of keywords used to trigger the search answer.
+    \[MatchSimilarKeywords \<Boolean?\>\]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+    \[ReservedKeywords \<String\[\]\>\]: Unique keywords that will guarantee the search answer is triggered.
+  \[LanguageTags \<String\[\]\>\]: A list of language names that are geographically specific and that this QnA can be viewed in.
 Each language tag value follows the pattern {language}-{region}.
 As an example, en-us is English as used in the United States.
 For the list of possible values, see supported language tags.
-  - `[Platforms <DevicePlatformType- `[]`>]`: List of devices and operating systems able to view this qna.
+  \[Platforms \<DevicePlatformType\[\]\>\]: List of devices and operating systems able to view this qna.
 Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
-  - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a qna for different countries or devices.
+  \[State \<String\>\]: answerState
+  \[TargetedVariations \<IMicrosoftGraphSearchAnswerVariant\[\]\>\]: Variations of a qna for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
-    - `[Description <String>]`: Answer variation description shown on search results page.
-    - `[DisplayName <String>]`: Answer variation name displayed in search results.
-    - `[LanguageTag <String>]`: 
-    - `[Platform <DevicePlatformType?>]`: Supported platform types.
-    - `[WebUrl <String>]`: Answer variation URL link.
+    \[Description \<String\>\]: Answer variation description shown on search results page.
+    \[DisplayName \<String\>\]: Answer variation name displayed in search results.
+    \[LanguageTag \<String\>\]: 
+    \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+    \[WebUrl \<String\>\]: Answer variation URL link.
 When users click this answer variation in search results, they will go to this URL.
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Keywords <String- `[]`>]`: A collection of keywords used to trigger the search answer.
-  - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
-  - `[ReservedKeywords <String- `[]`>]`: Unique keywords that will guarantee the search answer is triggered.
+KEYWORDS \<IMicrosoftGraphSearchAnswerKeyword\>: answerKeyword
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Keywords \<String\[\]\>\]: A collection of keywords used to trigger the search answer.
+  \[MatchSimilarKeywords \<Boolean?\>\]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+  \[ReservedKeywords \<String\[\]\>\]: Unique keywords that will guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-  - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+LASTMODIFIEDBY \<IMicrosoftGraphSearchIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
+  \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: Variations of a qna for different countries or devices.
+TARGETEDVARIATIONS \<IMicrosoftGraphSearchAnswerVariant\[\]\>: Variations of a qna for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
-  - `[Description <String>]`: Answer variation description shown on search results page.
-  - `[DisplayName <String>]`: Answer variation name displayed in search results.
-  - `[LanguageTag <String>]`: 
-  - `[Platform <DevicePlatformType?>]`: Supported platform types.
-  - `[WebUrl <String>]`: Answer variation URL link.
+  \[Description \<String\>\]: Answer variation description shown on search results page.
+  \[DisplayName \<String\>\]: Answer variation name displayed in search results.
+  \[LanguageTag \<String\>\]: 
+  \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+  \[WebUrl \<String\>\]: Answer variation URL link.
 When users click this answer variation in search results, they will go to this URL.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
-
-
-
 

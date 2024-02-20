@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasetag
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCaseTag
@@ -16,31 +15,27 @@ Delete a tag object.
 ### Delete (Default)
 ```
 Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -TagId <String> [-IfMatch <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-IfMatch <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete a tag object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-tag-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseTag Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Compliance
-Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true 
+
+### EXAMPLE 1
 ```
-This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Compliance
+Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true
+```
 
 ## PARAMETERS
 
@@ -135,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TagId
 The unique identifier of tag
 
@@ -191,36 +201,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseId <String>]`: The unique identifier of case
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CustodianId <String>]`: The unique identifier of custodian
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[LegalHoldId <String>]`: The unique identifier of legalHold
-  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
-  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
-  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TagId <String>]`: The unique identifier of tag
-  - `[TagId1 <String>]`: The unique identifier of tag
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseId \<String\>\]: The unique identifier of case
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CustodianId \<String\>\]: The unique identifier of custodian
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
+  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
+  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
+  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TagId \<String\>\]: The unique identifier of tag
+  \[TagId1 \<String\>\]: The unique identifier of tag
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasetag)
-
-
-
 

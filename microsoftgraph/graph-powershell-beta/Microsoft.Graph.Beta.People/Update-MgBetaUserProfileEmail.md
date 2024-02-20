@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileEmail
@@ -15,9 +14,9 @@ Update the properties of an itemEmail object in a user's profile.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserProfileEmail -ItemEmailId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Address <String>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+Update-MgBetaUserProfileEmail -ItemEmailId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <String>] [-AllowedAudiences <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>] [-Type <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,14 +25,15 @@ Update-MgBetaUserProfileEmail -ItemEmailId <String> -UserId <String> [-Additiona
 ### Update
 ```
 Update-MgBetaUserProfileEmail -ItemEmailId <String> -UserId <String> -BodyParameter <IMicrosoftGraphItemEmail>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <String>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <String>] [-AllowedAudiences <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>] [-Type <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,18 +42,17 @@ Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-AdditionalPropert
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemEmail>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an itemEmail object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itememail-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileEmail Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	DisplayName = "Business Email"
@@ -61,8 +60,6 @@ $params = @{
 }
 Update-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileEmail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -312,6 +309,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
@@ -400,105 +412,101 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemEmail
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphItemEmail>`: itemEmail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedAudiences <String>]`: allowedAudiences
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphItemEmail\>: itemEmail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AllowedAudiences \<String\>\]: allowedAudiences
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
-  - `[Inference <IMicrosoftGraphInferenceData>]`: inferenceData
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
-    - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
-  - `[IsSearchable <Boolean?>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
-  - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String- `[]`>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
+  \[Inference \<IMicrosoftGraphInferenceData\>\]: inferenceData
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ConfidenceScore \<Double?\>\]: Confidence score reflecting the accuracy of the data inferred about the user.
+    \[UserHasVerifiedAccuracy \<Boolean?\>\]: Records if the user has confirmed this inference as being True or False.
+  \[IsSearchable \<Boolean?\>\]: 
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
+  \[Source \<IMicrosoftGraphPersonDataSources\>\]: personDataSources
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\[\]\>\]: 
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Address <String>]`: The email address itself.
-  - `[DisplayName <String>]`: The name or label a user has associated with a particular email address.
-  - `[Type <String>]`: emailType
+  \[Address \<String\>\]: The email address itself.
+  \[DisplayName \<String\>\]: The name or label a user has associated with a particular email address.
+  \[Type \<String\>\]: emailType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
-  - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
+INFERENCE \<IMicrosoftGraphInferenceData\>: inferenceData
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ConfidenceScore \<Double?\>\]: Confidence score reflecting the accuracy of the data inferred about the user.
+  \[UserHasVerifiedAccuracy \<Boolean?\>\]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
-  - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
-  - `[ItemAddressId <String>]`: The unique identifier of itemAddress
-  - `[ItemEmailId <String>]`: The unique identifier of itemEmail
-  - `[ItemPatentId <String>]`: The unique identifier of itemPatent
-  - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
-  - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
-  - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
-  - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
-  - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
-  - `[PersonAwardId <String>]`: The unique identifier of personAward
-  - `[PersonCertificationId <String>]`: The unique identifier of personCertification
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[PersonInterestId <String>]`: The unique identifier of personInterest
-  - `[PersonNameId <String>]`: The unique identifier of personName
-  - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
-  - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebAccountId <String>]`: The unique identifier of webAccount
-  - `[WorkPositionId <String>]`: The unique identifier of workPosition
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[ActivityStatisticsId \<String\>\]: The unique identifier of activityStatistics
+  \[EducationalActivityId \<String\>\]: The unique identifier of educationalActivity
+  \[ItemAddressId \<String\>\]: The unique identifier of itemAddress
+  \[ItemEmailId \<String\>\]: The unique identifier of itemEmail
+  \[ItemPatentId \<String\>\]: The unique identifier of itemPatent
+  \[ItemPhoneId \<String\>\]: The unique identifier of itemPhone
+  \[ItemPublicationId \<String\>\]: The unique identifier of itemPublication
+  \[LanguageProficiencyId \<String\>\]: The unique identifier of languageProficiency
+  \[PersonAnnotationId \<String\>\]: The unique identifier of personAnnotation
+  \[PersonAnnualEventId \<String\>\]: The unique identifier of personAnnualEvent
+  \[PersonAwardId \<String\>\]: The unique identifier of personAward
+  \[PersonCertificationId \<String\>\]: The unique identifier of personCertification
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[PersonInterestId \<String\>\]: The unique identifier of personInterest
+  \[PersonNameId \<String\>\]: The unique identifier of personName
+  \[PersonWebsiteId \<String\>\]: The unique identifier of personWebsite
+  \[ProjectParticipationId \<String\>\]: The unique identifier of projectParticipation
+  \[SkillProficiencyId \<String\>\]: The unique identifier of skillProficiency
+  \[UserAccountInformationId \<String\>\]: The unique identifier of userAccountInformation
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebAccountId \<String\>\]: The unique identifier of webAccount
+  \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
-
-
-
 

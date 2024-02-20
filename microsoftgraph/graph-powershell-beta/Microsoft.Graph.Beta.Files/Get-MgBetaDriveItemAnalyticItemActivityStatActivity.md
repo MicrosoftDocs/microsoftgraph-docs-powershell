@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalyticitemactivitystatactivity
@@ -10,20 +10,30 @@ schema: 2.0.0
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaDriveItemAnalyticItemActivityStatActivity -DriveId <String> -DriveItemId <String>
  -ItemActivityStatId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -193,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -262,15 +287,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivity
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalyticitemactivitystatactivity)
-
-
-
-
 

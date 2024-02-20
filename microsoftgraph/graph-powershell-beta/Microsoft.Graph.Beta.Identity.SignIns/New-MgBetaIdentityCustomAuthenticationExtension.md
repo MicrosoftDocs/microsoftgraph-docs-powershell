@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityCustomAuthenticationExtension
@@ -16,8 +15,8 @@ The following derived types are currently supported.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityCustomAuthenticationExtension [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>]
+New-MgBetaIdentityCustomAuthenticationExtension [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,16 +24,29 @@ New-MgBetaIdentityCustomAuthenticationExtension [-AdditionalProperties <Hashtabl
 
 ### Create
 ```
-New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -190,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -231,27 +258,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAuthenticationExtension
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+CLIENTCONFIGURATION \<IMicrosoftGraphCustomExtensionClientConfiguration\>: customExtensionClientConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
 If null, the default for the service applies.
-  - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
+  \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 If null, the default for the service applies.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
-
-
-
-
 

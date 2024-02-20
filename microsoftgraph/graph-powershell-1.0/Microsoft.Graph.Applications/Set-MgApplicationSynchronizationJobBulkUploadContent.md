@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationjobbulkuploadcontent
@@ -10,27 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property bulkUpload in applications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
 ```
 Set-MgApplicationSynchronizationJobBulkUploadContent -ApplicationId <String> -SynchronizationJobId <String>
- [-Data <Stream>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgApplicationSynchronizationJobBulkUploadContent -InputObject <IApplicationsIdentity> [-Data <Stream>]
- -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update media content for the navigation property bulkUpload in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -157,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SynchronizationJobId
 The unique identifier of synchronizationJob
 
@@ -215,44 +240,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of application
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UniqueName <String>]`: Alternate key of application
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of application
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
+  \[ApplicationId \<String\>\]: The unique identifier of application
+  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
+  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
+  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
+  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
+  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UniqueName \<String\>\]: Alternate key of application
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationjobbulkuploadcontent)
-
-
-
-
 

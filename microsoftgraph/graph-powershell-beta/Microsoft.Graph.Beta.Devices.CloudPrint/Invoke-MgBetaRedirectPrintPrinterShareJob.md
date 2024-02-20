@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintprintersharejob
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Invoke-MgBetaRedirectPrintPrinterShareJob
@@ -18,31 +17,33 @@ For details about how to use this API to add pull printing support to Universal 
 ### RedirectExpanded (Default)
 ```
 Invoke-MgBetaRedirectPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-DestinationPrinterId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Redirect
 ```
 Invoke-MgBetaRedirectPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
  -BodyParameter <IPathsV0BkcePrintPrintersharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentityExpanded
 ```
 Invoke-MgBetaRedirectPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity>
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-DestinationPrinterId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentity
 ```
 Invoke-MgBetaRedirectPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsV0BkcePrintPrintersharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,8 +51,17 @@ Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printjob-redirect-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -193,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -235,112 +260,107 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJob
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsV0BkcePrintPrintersharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Collate <Boolean?>]`: Whether the printer should collate pages when printing multiple copies of a multi-page document.
-    - `[ColorMode <String>]`: printColorMode
-    - `[Copies <Int32?>]`: The number of copies that should be printed.
+BODYPARAMETER \<IPathsV0BkcePrintPrintersharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Configuration \<IMicrosoftGraphPrintJobConfiguration\>\]: printJobConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Collate \<Boolean?\>\]: Whether the printer should collate pages when printing multiple copies of a multi-page document.
+    \[ColorMode \<String\>\]: printColorMode
+    \[Copies \<Int32?\>\]: The number of copies that should be printed.
 Read-only.
-    - `[Dpi <Int32?>]`: The resolution to use when printing the job, expressed in dots per inch (DPI).
+    \[Dpi \<Int32?\>\]: The resolution to use when printing the job, expressed in dots per inch (DPI).
 Read-only.
-    - `[DuplexMode <String>]`: printDuplexMode
-    - `[FeedOrientation <String>]`: printerFeedOrientation
-    - `[Finishings <String- `[]`>]`: Finishing processes to use when printing.
-    - `[FitPdfToPage <Boolean?>]`: 
-    - `[InputBin <String>]`: The input bin (tray) to use when printing.
+    \[DuplexMode \<String\>\]: printDuplexMode
+    \[FeedOrientation \<String\>\]: printerFeedOrientation
+    \[Finishings \<String\[\]\>\]: Finishing processes to use when printing.
+    \[FitPdfToPage \<Boolean?\>\]: 
+    \[InputBin \<String\>\]: The input bin (tray) to use when printing.
 See the printer's capabilities for a list of supported input bins.
-    - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
-      - `[Left <Int32?>]`: The margin in microns from the left edge.
-      - `[Right <Int32?>]`: The margin in microns from the right edge.
-      - `[Top <Int32?>]`: The margin in microns from the top edge.
-    - `[MediaSize <String>]`: The media sizeto use when printing.
+    \[Margin \<IMicrosoftGraphPrintMargin\>\]: printMargin
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Bottom \<Int32?\>\]: The margin in microns from the bottom edge.
+      \[Left \<Int32?\>\]: The margin in microns from the left edge.
+      \[Right \<Int32?\>\]: The margin in microns from the right edge.
+      \[Top \<Int32?\>\]: The margin in microns from the top edge.
+    \[MediaSize \<String\>\]: The media sizeto use when printing.
 Supports standard size names for ISO and ANSI media sizes.
 Valid values are listed in the printerCapabilities topic.
-    - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
-    - `[MultipageLayout <String>]`: printMultipageLayout
-    - `[Orientation <String>]`: printOrientation
-    - `[OutputBin <String>]`: The output bin to place completed prints into.
+    \[MediaType \<String\>\]: The default media (such as paper) type to print the document on.
+    \[MultipageLayout \<String\>\]: printMultipageLayout
+    \[Orientation \<String\>\]: printOrientation
+    \[OutputBin \<String\>\]: The output bin to place completed prints into.
 See the printer's capabilities for a list of supported output bins.
-    - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: The page ranges to print.
+    \[PageRanges \<IMicrosoftGraphIntegerRange\[\]\>\]: The page ranges to print.
 Read-only.
-      - `[End <Int64?>]`: The inclusive upper bound of the integer range.
-      - `[Maximum <Int64?>]`: 
-      - `[Minimum <Int64?>]`: 
-      - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-    - `[PagesPerSheet <Int32?>]`: The number of document pages to print on each sheet.
-    - `[Quality <String>]`: printQuality
-    - `[Scaling <String>]`: printScaling
-  - `[DestinationPrinterId <String>]`: 
+      \[End \<Int64?\>\]: The inclusive upper bound of the integer range.
+      \[Maximum \<Int64?\>\]: 
+      \[Minimum \<Int64?\>\]: 
+      \[Start \<Int64?\>\]: The inclusive lower bound of the integer range.
+    \[PagesPerSheet \<Int32?\>\]: The number of document pages to print on each sheet.
+    \[Quality \<String\>\]: printQuality
+    \[Scaling \<String\>\]: printScaling
+  \[DestinationPrinterId \<String\>\]: 
 
-CONFIGURATION `<IMicrosoftGraphPrintJobConfiguration>`: printJobConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Collate <Boolean?>]`: Whether the printer should collate pages when printing multiple copies of a multi-page document.
-  - `[ColorMode <String>]`: printColorMode
-  - `[Copies <Int32?>]`: The number of copies that should be printed.
+CONFIGURATION \<IMicrosoftGraphPrintJobConfiguration\>: printJobConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Collate \<Boolean?\>\]: Whether the printer should collate pages when printing multiple copies of a multi-page document.
+  \[ColorMode \<String\>\]: printColorMode
+  \[Copies \<Int32?\>\]: The number of copies that should be printed.
 Read-only.
-  - `[Dpi <Int32?>]`: The resolution to use when printing the job, expressed in dots per inch (DPI).
+  \[Dpi \<Int32?\>\]: The resolution to use when printing the job, expressed in dots per inch (DPI).
 Read-only.
-  - `[DuplexMode <String>]`: printDuplexMode
-  - `[FeedOrientation <String>]`: printerFeedOrientation
-  - `[Finishings <String- `[]`>]`: Finishing processes to use when printing.
-  - `[FitPdfToPage <Boolean?>]`: 
-  - `[InputBin <String>]`: The input bin (tray) to use when printing.
+  \[DuplexMode \<String\>\]: printDuplexMode
+  \[FeedOrientation \<String\>\]: printerFeedOrientation
+  \[Finishings \<String\[\]\>\]: Finishing processes to use when printing.
+  \[FitPdfToPage \<Boolean?\>\]: 
+  \[InputBin \<String\>\]: The input bin (tray) to use when printing.
 See the printer's capabilities for a list of supported input bins.
-  - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
-    - `[Left <Int32?>]`: The margin in microns from the left edge.
-    - `[Right <Int32?>]`: The margin in microns from the right edge.
-    - `[Top <Int32?>]`: The margin in microns from the top edge.
-  - `[MediaSize <String>]`: The media sizeto use when printing.
+  \[Margin \<IMicrosoftGraphPrintMargin\>\]: printMargin
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Bottom \<Int32?\>\]: The margin in microns from the bottom edge.
+    \[Left \<Int32?\>\]: The margin in microns from the left edge.
+    \[Right \<Int32?\>\]: The margin in microns from the right edge.
+    \[Top \<Int32?\>\]: The margin in microns from the top edge.
+  \[MediaSize \<String\>\]: The media sizeto use when printing.
 Supports standard size names for ISO and ANSI media sizes.
 Valid values are listed in the printerCapabilities topic.
-  - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
-  - `[MultipageLayout <String>]`: printMultipageLayout
-  - `[Orientation <String>]`: printOrientation
-  - `[OutputBin <String>]`: The output bin to place completed prints into.
+  \[MediaType \<String\>\]: The default media (such as paper) type to print the document on.
+  \[MultipageLayout \<String\>\]: printMultipageLayout
+  \[Orientation \<String\>\]: printOrientation
+  \[OutputBin \<String\>\]: The output bin to place completed prints into.
 See the printer's capabilities for a list of supported output bins.
-  - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: The page ranges to print.
+  \[PageRanges \<IMicrosoftGraphIntegerRange\[\]\>\]: The page ranges to print.
 Read-only.
-    - `[End <Int64?>]`: The inclusive upper bound of the integer range.
-    - `[Maximum <Int64?>]`: 
-    - `[Minimum <Int64?>]`: 
-    - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-  - `[PagesPerSheet <Int32?>]`: The number of document pages to print on each sheet.
-  - `[Quality <String>]`: printQuality
-  - `[Scaling <String>]`: printScaling
+    \[End \<Int64?\>\]: The inclusive upper bound of the integer range.
+    \[Maximum \<Int64?\>\]: 
+    \[Minimum \<Int64?\>\]: 
+    \[Start \<Int64?\>\]: The inclusive lower bound of the integer range.
+  \[PagesPerSheet \<Int32?\>\]: The number of document pages to print on each sheet.
+  \[Quality \<String\>\]: printQuality
+  \[Scaling \<String\>\]: printScaling
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintprintersharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintprintersharejob)
-
-
-
-
 

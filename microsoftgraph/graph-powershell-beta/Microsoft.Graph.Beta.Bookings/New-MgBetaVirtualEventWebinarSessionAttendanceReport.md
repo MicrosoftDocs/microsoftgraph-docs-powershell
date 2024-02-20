@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereport
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to attendanceReports for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaVirtualEventWebinarSessionAttendanceReport -VirtualEventSessionId <String>
- -VirtualEventWebinarId <String> [-AdditionalProperties <Hashtable>]
+ -VirtualEventWebinarId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>] [-MeetingEndDateTime <DateTime>]
  [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -28,26 +25,40 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReport -VirtualEventSessionId <Str
 ```
 New-MgBetaVirtualEventWebinarSessionAttendanceReport -VirtualEventSessionId <String>
  -VirtualEventWebinarId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>] [-MeetingEndDateTime <DateTime>]
+ [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to attendanceReports for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -193,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TotalParticipantCount
 Total number of participants.
 Read-only.
@@ -281,97 +307,91 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord- `[]`>: List of attendance records of an attendance report.
+ATTENDANCERECORDS \<IMicrosoftGraphAttendanceRecord\[\]\>: List of attendance records of an attendance report.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval- `[]`>]`: List of time periods between joining and leaving a meeting.
-    - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-    - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-    - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-  - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
-  - `[Identity <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  \[AttendanceIntervals \<IMicrosoftGraphAttendanceInterval\[\]\>\]: List of time periods between joining and leaving a meeting.
+    \[DurationInSeconds \<Int32?\>\]: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+    \[JoinDateTime \<DateTime?\>\]: The time the attendee joined in UTC.
+    \[LeaveDateTime \<DateTime?\>\]: The time the attendee left in UTC.
+  \[EmailAddress \<String\>\]: Email address of the user associated with this attendance record.
+  \[Identity \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
+  \[RegistrantId \<String\>\]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
-  - `[Role <String>]`: Role of the attendee.
+  \[Role \<String\>\]: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
-  - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+  \[TotalAttendanceInSeconds \<Int32?\>\]: Total duration of the attendances in seconds.
 
-BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMeetingAttendanceReport\>: meetingAttendanceReport
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord- `[]`>]`: List of attendance records of an attendance report.
+  \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
 Read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval- `[]`>]`: List of time periods between joining and leaving a meeting.
-      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-      - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-      - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-    - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
-    - `[Identity <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+    \[AttendanceIntervals \<IMicrosoftGraphAttendanceInterval\[\]\>\]: List of time periods between joining and leaving a meeting.
+      \[DurationInSeconds \<Int32?\>\]: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+      \[JoinDateTime \<DateTime?\>\]: The time the attendee joined in UTC.
+      \[LeaveDateTime \<DateTime?\>\]: The time the attendee left in UTC.
+    \[EmailAddress \<String\>\]: Email address of the user associated with this attendance record.
+    \[Identity \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
+    \[RegistrantId \<String\>\]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
-    - `[Role <String>]`: Role of the attendee.
+    \[Role \<String\>\]: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
-    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
+    \[TotalAttendanceInSeconds \<Int32?\>\]: Total duration of the attendances in seconds.
+  \[MeetingEndDateTime \<DateTime?\>\]: UTC time when the meeting ended.
 Read-only.
-  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
+  \[MeetingStartDateTime \<DateTime?\>\]: UTC time when the meeting started.
 Read-only.
-  - `[TotalParticipantCount <Int32?>]`: Total number of participants.
+  \[TotalParticipantCount \<Int32?\>\]: Total number of participants.
 Read-only.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[New-MgVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereport)
-
-
-
-
 

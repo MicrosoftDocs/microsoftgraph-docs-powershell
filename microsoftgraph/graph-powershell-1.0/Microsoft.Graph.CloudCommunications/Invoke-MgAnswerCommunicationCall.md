@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgAnswerCommunicationCall
@@ -15,41 +14,39 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AnswerExpanded (Default)
 ```
-Invoke-MgAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]>]
- [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
- [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgAnswerCommunicationCall -CallId <String> [-ResponseHeadersVariable <String>]
+ [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>]
+ [-CallbackUri <String>] [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Answer
 ```
 Invoke-MgAnswerCommunicationCall -CallId <String>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AnswerViaIdentityExpanded
 ```
-Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AcceptedModalities <String[]>]
- [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
- [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>]
+ [-CallOptions <Hashtable>] [-CallbackUri <String>] [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AnswerViaIdentity
 ```
 Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,21 +56,18 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-answer-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "callbackUri-value"
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 	acceptedModalities = @(
 		"audio"
@@ -87,14 +81,10 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will answer a peer-to-peer voip call with service hosted media
-
-### Example 2: Answer VOIP call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -110,14 +100,10 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will answer voip call with application hosted media
-
-### Example 3: Answer a policy-based recording call
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -126,15 +112,11 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 }
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will answer a policy-based recording call
-
 
 ## PARAMETERS
 
@@ -320,6 +302,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -362,46 +359,41 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AcceptedModalities <String- `[]`>]`: 
-  - `[CallOptions <IMicrosoftGraphIncomingCallOptions>]`: incomingCallOptions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
-    - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
-  - `[CallbackUri <String>]`: 
-  - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ParticipantCapacity <Int32?>]`: 
+BODYPARAMETER \<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AcceptedModalities \<String\[\]\>\]: 
+  \[CallOptions \<IMicrosoftGraphIncomingCallOptions\>\]: incomingCallOptions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[HideBotAfterEscalation \<Boolean?\>\]: Indicates whether to hide the app after the call is escalated.
+    \[IsContentSharingNotificationEnabled \<Boolean?\>\]: Indicates whether content sharing notifications should be enabled for the call.
+  \[CallbackUri \<String\>\]: 
+  \[MediaConfig \<IMicrosoftGraphMediaConfig\>\]: mediaConfig
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ParticipantCapacity \<Int32?\>\]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall)
-
-
-
 

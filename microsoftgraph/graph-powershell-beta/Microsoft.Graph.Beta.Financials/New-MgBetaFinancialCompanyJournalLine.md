@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournalline
@@ -14,17 +14,7 @@ Create new navigation property to journalLines for financials
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaFinancialCompanyJournalLine -CompanyId <String> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String>
+New-MgBetaFinancialCompanyJournalLine -CompanyId <String> [-ResponseHeadersVariable <String>]
  [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
  [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
  [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
@@ -32,55 +22,83 @@ New-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### CreateExpanded1
+```
+New-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String>
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>]
+ [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
+ [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
+ [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### Create1
 ```
 New-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaFinancialCompanyJournalLine -CompanyId <String> -BodyParameter <IMicrosoftGraphJournalLine>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
+ [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
+ [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
+ [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
+ [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to journalLines for financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -387,6 +405,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -429,90 +462,85 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphJournalLine
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Blocked <Boolean?>]`: 
-  - `[Category <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Id <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Number <String>]`: 
-  - `[SubCategory <String>]`: 
+ACCOUNT \<IMicrosoftGraphAccount\>: account
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Blocked \<Boolean?\>\]: 
+  \[Category \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[Id \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[Number \<String\>\]: 
+  \[SubCategory \<String\>\]: 
 
-BODYPARAMETER `<IMicrosoftGraphJournalLine>`: journalLine
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Account <IMicrosoftGraphAccount>]`: account
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Blocked <Boolean?>]`: 
-    - `[Category <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Number <String>]`: 
-    - `[SubCategory <String>]`: 
-  - `[AccountId <String>]`: 
-  - `[AccountNumber <String>]`: 
-  - `[Amount <Decimal?>]`: 
-  - `[Comment <String>]`: 
-  - `[Description <String>]`: 
-  - `[DocumentNumber <String>]`: 
-  - `[ExternalDocumentNumber <String>]`: 
-  - `[Id <String>]`: 
-  - `[JournalDisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[LineNumber <Int32?>]`: 
-  - `[PostingDate <DateTime?>]`: 
+BODYPARAMETER \<IMicrosoftGraphJournalLine\>: journalLine
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Account \<IMicrosoftGraphAccount\>\]: account
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Blocked \<Boolean?\>\]: 
+    \[Category \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
+    \[LastModifiedDateTime \<DateTime?\>\]: 
+    \[Number \<String\>\]: 
+    \[SubCategory \<String\>\]: 
+  \[AccountId \<String\>\]: 
+  \[AccountNumber \<String\>\]: 
+  \[Amount \<Decimal?\>\]: 
+  \[Comment \<String\>\]: 
+  \[Description \<String\>\]: 
+  \[DocumentNumber \<String\>\]: 
+  \[ExternalDocumentNumber \<String\>\]: 
+  \[Id \<String\>\]: 
+  \[JournalDisplayName \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[LineNumber \<Int32?\>\]: 
+  \[PostingDate \<DateTime?\>\]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: The unique identifier of account
-  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
-  - `[CompanyId <String>]`: The unique identifier of company
-  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
-  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
-  - `[CurrencyId <String>]`: The unique identifier of currency
-  - `[CustomerId <String>]`: The unique identifier of customer
-  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
-  - `[DimensionId <String>]`: The unique identifier of dimension
-  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
-  - `[EmployeeId <String>]`: The unique identifier of employee
-  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
-  - `[ItemId <String>]`: The unique identifier of item
-  - `[JournalId <String>]`: The unique identifier of journal
-  - `[JournalLineId <String>]`: The unique identifier of journalLine
-  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
-  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
-  - `[PictureId <String>]`: The unique identifier of picture
-  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
-  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
-  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
-  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
-  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
-  - `[TaxAreaId <String>]`: The unique identifier of taxArea
-  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
-  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
-  - `[VendorId <String>]`: The unique identifier of vendor
+INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
+  \[AccountId \<String\>\]: The unique identifier of account
+  \[AgedAccountsPayableId \<String\>\]: The unique identifier of agedAccountsPayable
+  \[AgedAccountsReceivableId \<String\>\]: The unique identifier of agedAccountsReceivable
+  \[CompanyId \<String\>\]: The unique identifier of company
+  \[CompanyInformationId \<String\>\]: The unique identifier of companyInformation
+  \[CountryRegionId \<String\>\]: The unique identifier of countryRegion
+  \[CurrencyId \<String\>\]: The unique identifier of currency
+  \[CustomerId \<String\>\]: The unique identifier of customer
+  \[CustomerPaymentId \<String\>\]: The unique identifier of customerPayment
+  \[CustomerPaymentJournalId \<String\>\]: The unique identifier of customerPaymentJournal
+  \[DimensionId \<String\>\]: The unique identifier of dimension
+  \[DimensionValueId \<String\>\]: The unique identifier of dimensionValue
+  \[EmployeeId \<String\>\]: The unique identifier of employee
+  \[GeneralLedgerEntryId \<String\>\]: The unique identifier of generalLedgerEntry
+  \[ItemCategoryId \<String\>\]: The unique identifier of itemCategory
+  \[ItemId \<String\>\]: The unique identifier of item
+  \[JournalId \<String\>\]: The unique identifier of journal
+  \[JournalLineId \<String\>\]: The unique identifier of journalLine
+  \[PaymentMethodId \<String\>\]: The unique identifier of paymentMethod
+  \[PaymentTermId \<String\>\]: The unique identifier of paymentTerm
+  \[PictureId \<String\>\]: The unique identifier of picture
+  \[PurchaseInvoiceId \<String\>\]: The unique identifier of purchaseInvoice
+  \[PurchaseInvoiceLineId \<String\>\]: The unique identifier of purchaseInvoiceLine
+  \[SalesCreditMemoId \<String\>\]: The unique identifier of salesCreditMemo
+  \[SalesCreditMemoLineId \<String\>\]: The unique identifier of salesCreditMemoLine
+  \[SalesInvoiceId \<String\>\]: The unique identifier of salesInvoice
+  \[SalesInvoiceLineId \<String\>\]: The unique identifier of salesInvoiceLine
+  \[SalesOrderId \<String\>\]: The unique identifier of salesOrder
+  \[SalesOrderLineId \<String\>\]: The unique identifier of salesOrderLine
+  \[SalesQuoteId \<String\>\]: The unique identifier of salesQuote
+  \[SalesQuoteLineId \<String\>\]: The unique identifier of salesQuoteLine
+  \[ShipmentMethodId \<String\>\]: The unique identifier of shipmentMethod
+  \[TaxAreaId \<String\>\]: The unique identifier of taxArea
+  \[TaxGroupId \<String\>\]: The unique identifier of taxGroup
+  \[UnitOfMeasureId \<String\>\]: The unique identifier of unitOfMeasure
+  \[VendorId \<String\>\]: The unique identifier of vendor
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournalline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournalline)
-
-
-
-
 

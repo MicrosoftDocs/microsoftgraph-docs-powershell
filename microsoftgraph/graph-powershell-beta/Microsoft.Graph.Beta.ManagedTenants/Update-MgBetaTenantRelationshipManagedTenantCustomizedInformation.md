@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation
 schema: 2.0.0
-ms.prod: multi-tenant-management
 ---
 
 # Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation
@@ -16,42 +15,42 @@ Update the properties of a tenantCustomizedInformation object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
- [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
+ [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
+ [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a tenantCustomizedInformation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantcustomizedinformation-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedTenants.tenantCustomizedInformation"
@@ -70,8 +69,6 @@ $params = @{
 }
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -202,6 +199,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantCustomizedInformationId
 The unique identifier of tenantCustomizedInformation
 
@@ -292,95 +304,91 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantCustomizedInformation>`: tenantCustomizedInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantCustomizedInformation\>: tenantCustomizedInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>]`: The collection of contacts for the managed tenant.
+  \[Contacts \<IMicrosoftGraphManagedTenantsTenantContactInformation\[\]\>\]: The collection of contacts for the managed tenant.
 Optional.
-    - `[Email <String>]`: The email address for the contact.
+    \[Email \<String\>\]: The email address for the contact.
 Optional
-    - `[Name <String>]`: The name for the contact.
+    \[Name \<String\>\]: The name for the contact.
 Required.
-    - `[Notes <String>]`: The notes associated with the contact.
+    \[Notes \<String\>\]: The notes associated with the contact.
 Optional
-    - `[Phone <String>]`: The phone number for the contact.
+    \[Phone \<String\>\]: The phone number for the contact.
 Optional.
-    - `[Title <String>]`: The title for the contact.
+    \[Title \<String\>\]: The title for the contact.
 Required.
-  - `[DisplayName <String>]`: The display name for the managed tenant.
+  \[DisplayName \<String\>\]: The display name for the managed tenant.
 Required.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
-  - `[Website <String>]`: The website for the managed tenant.
+  \[Website \<String\>\]: The website for the managed tenant.
 Required.
 
-CONTACTS <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>: The collection of contacts for the managed tenant.
+CONTACTS \<IMicrosoftGraphManagedTenantsTenantContactInformation\[\]\>: The collection of contacts for the managed tenant.
 Optional.
-  - `[Email <String>]`: The email address for the contact.
+  \[Email \<String\>\]: The email address for the contact.
 Optional
-  - `[Name <String>]`: The name for the contact.
+  \[Name \<String\>\]: The name for the contact.
 Required.
-  - `[Notes <String>]`: The notes associated with the contact.
+  \[Notes \<String\>\]: The notes associated with the contact.
 Optional
-  - `[Phone <String>]`: The phone number for the contact.
+  \[Phone \<String\>\]: The phone number for the contact.
 Optional.
-  - `[Title <String>]`: The title for the contact.
+  \[Title \<String\>\]: The title for the contact.
 Required.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
-  - `[AggregatedPolicyComplianceId <String>]`: The unique identifier of aggregatedPolicyCompliance
-  - `[AppPerformanceId <String>]`: The unique identifier of appPerformance
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CloudPcConnectionId <String>]`: The unique identifier of cloudPcConnection
-  - `[CloudPcDeviceId <String>]`: The unique identifier of cloudPcDevice
-  - `[CloudPcOverviewTenantId <String>]`: The unique identifier of cloudPcOverview
-  - `[ConditionalAccessPolicyCoverageId <String>]`: The unique identifier of conditionalAccessPolicyCoverage
-  - `[CredentialUserRegistrationsSummaryId <String>]`: The unique identifier of credentialUserRegistrationsSummary
-  - `[DeviceAppPerformanceId <String>]`: The unique identifier of deviceAppPerformance
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
-  - `[DeviceHealthStatusId <String>]`: The unique identifier of deviceHealthStatus
-  - `[ManagedDeviceComplianceId <String>]`: The unique identifier of managedDeviceCompliance
-  - `[ManagedDeviceComplianceTrendId <String>]`: The unique identifier of managedDeviceComplianceTrend
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagedTenantAlertLogId <String>]`: The unique identifier of managedTenantAlertLog
-  - `[ManagedTenantAlertRuleDefinitionId <String>]`: The unique identifier of managedTenantAlertRuleDefinition
-  - `[ManagedTenantAlertRuleId <String>]`: The unique identifier of managedTenantAlertRule
-  - `[ManagedTenantApiNotificationId <String>]`: The unique identifier of managedTenantApiNotification
-  - `[ManagedTenantEmailNotificationId <String>]`: The unique identifier of managedTenantEmailNotification
-  - `[ManagedTenantTicketingEndpointId <String>]`: The unique identifier of managedTenantTicketingEndpoint
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[ManagementActionTenantDeploymentStatusId <String>]`: The unique identifier of managementActionTenantDeploymentStatus
-  - `[ManagementIntentId <String>]`: The unique identifier of managementIntent
-  - `[ManagementTemplateCollectionId <String>]`: The unique identifier of managementTemplateCollection
-  - `[ManagementTemplateCollectionTenantSummaryId <String>]`: The unique identifier of managementTemplateCollectionTenantSummary
-  - `[ManagementTemplateId <String>]`: The unique identifier of managementTemplate
-  - `[ManagementTemplateStepDeploymentId <String>]`: The unique identifier of managementTemplateStepDeployment
-  - `[ManagementTemplateStepId <String>]`: The unique identifier of managementTemplateStep
-  - `[ManagementTemplateStepTenantSummaryId <String>]`: The unique identifier of managementTemplateStepTenantSummary
-  - `[ManagementTemplateStepVersionId <String>]`: The unique identifier of managementTemplateStepVersion
-  - `[MyRoleTenantId <String>]`: The unique identifier of myRole
-  - `[TenantCustomizedInformationId <String>]`: The unique identifier of tenantCustomizedInformation
-  - `[TenantDetailedInformationId <String>]`: The unique identifier of tenantDetailedInformation
-  - `[TenantGroupId <String>]`: The unique identifier of tenantGroup
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
+INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
+  \[AggregatedPolicyComplianceId \<String\>\]: The unique identifier of aggregatedPolicyCompliance
+  \[AppPerformanceId \<String\>\]: The unique identifier of appPerformance
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CloudPcConnectionId \<String\>\]: The unique identifier of cloudPcConnection
+  \[CloudPcDeviceId \<String\>\]: The unique identifier of cloudPcDevice
+  \[CloudPcOverviewTenantId \<String\>\]: The unique identifier of cloudPcOverview
+  \[ConditionalAccessPolicyCoverageId \<String\>\]: The unique identifier of conditionalAccessPolicyCoverage
+  \[CredentialUserRegistrationsSummaryId \<String\>\]: The unique identifier of credentialUserRegistrationsSummary
+  \[DeviceAppPerformanceId \<String\>\]: The unique identifier of deviceAppPerformance
+  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
+  \[DeviceHealthStatusId \<String\>\]: The unique identifier of deviceHealthStatus
+  \[ManagedDeviceComplianceId \<String\>\]: The unique identifier of managedDeviceCompliance
+  \[ManagedDeviceComplianceTrendId \<String\>\]: The unique identifier of managedDeviceComplianceTrend
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagedTenantAlertLogId \<String\>\]: The unique identifier of managedTenantAlertLog
+  \[ManagedTenantAlertRuleDefinitionId \<String\>\]: The unique identifier of managedTenantAlertRuleDefinition
+  \[ManagedTenantAlertRuleId \<String\>\]: The unique identifier of managedTenantAlertRule
+  \[ManagedTenantApiNotificationId \<String\>\]: The unique identifier of managedTenantApiNotification
+  \[ManagedTenantEmailNotificationId \<String\>\]: The unique identifier of managedTenantEmailNotification
+  \[ManagedTenantTicketingEndpointId \<String\>\]: The unique identifier of managedTenantTicketingEndpoint
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[ManagementActionTenantDeploymentStatusId \<String\>\]: The unique identifier of managementActionTenantDeploymentStatus
+  \[ManagementIntentId \<String\>\]: The unique identifier of managementIntent
+  \[ManagementTemplateCollectionId \<String\>\]: The unique identifier of managementTemplateCollection
+  \[ManagementTemplateCollectionTenantSummaryId \<String\>\]: The unique identifier of managementTemplateCollectionTenantSummary
+  \[ManagementTemplateId \<String\>\]: The unique identifier of managementTemplate
+  \[ManagementTemplateStepDeploymentId \<String\>\]: The unique identifier of managementTemplateStepDeployment
+  \[ManagementTemplateStepId \<String\>\]: The unique identifier of managementTemplateStep
+  \[ManagementTemplateStepTenantSummaryId \<String\>\]: The unique identifier of managementTemplateStepTenantSummary
+  \[ManagementTemplateStepVersionId \<String\>\]: The unique identifier of managementTemplateStepVersion
+  \[MyRoleTenantId \<String\>\]: The unique identifier of myRole
+  \[TenantCustomizedInformationId \<String\>\]: The unique identifier of tenantCustomizedInformation
+  \[TenantDetailedInformationId \<String\>\]: The unique identifier of tenantDetailedInformation
+  \[TenantGroupId \<String\>\]: The unique identifier of tenantGroup
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsProtectionStateId \<String\>\]: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
-
-
-
 

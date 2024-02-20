@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile
@@ -14,8 +14,8 @@ Create new navigation property to appleUserInitiatedEnrollmentProfiles for devic
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
+New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
  [-AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]
  [-CreatedDateTime <DateTime>] [-DefaultEnrollmentType <AppleUserInitiatedEnrollmentType>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
@@ -26,12 +26,24 @@ New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile [-AdditionalProper
 ### Create
 ```
 New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
- -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -250,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -291,53 +318,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphAppleEnrollmentProfileAssignment- `[]`>: The list of assignments for this profile.
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphAppleEnrollmentProfileAssignment\[\]\>: The list of assignments for this profile.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
 
-AVAILABLEENROLLMENTTYPEOPTIONS <IMicrosoftGraphAppleOwnerTypeEnrollmentType- `[]`>: List of available enrollment type options
-  - `[EnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
-  - `[OwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
+AVAILABLEENROLLMENTTYPEOPTIONS \<IMicrosoftGraphAppleOwnerTypeEnrollmentType\[\]\>: List of available enrollment type options
+  \[EnrollmentType \<AppleUserInitiatedEnrollmentType?\>\]: appleUserInitiatedEnrollmentType
+  \[OwnerType \<ManagedDeviceOwnerType?\>\]: Owner type of device.
 
-BODYPARAMETER `<IMicrosoftGraphAppleUserInitiatedEnrollmentProfile>`: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
+BODYPARAMETER \<IMicrosoftGraphAppleUserInitiatedEnrollmentProfile\>: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
 Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment- `[]`>]`: The list of assignments for this profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Assignments \<IMicrosoftGraphAppleEnrollmentProfileAssignment\[\]\>\]: The list of assignments for this profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType- `[]`>]`: List of available enrollment type options
-    - `[EnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
-    - `[OwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
-  - `[CreatedDateTime <DateTime?>]`: Profile creation time
-  - `[DefaultEnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
-  - `[Description <String>]`: Description of the profile
-  - `[DisplayName <String>]`: Name of the profile
-  - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time
-  - `[Platform <DevicePlatformType?>]`: Supported platform types.
-  - `[Priority <Int32?>]`: Priority, 0 is highest
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[AvailableEnrollmentTypeOptions \<IMicrosoftGraphAppleOwnerTypeEnrollmentType\[\]\>\]: List of available enrollment type options
+    \[EnrollmentType \<AppleUserInitiatedEnrollmentType?\>\]: appleUserInitiatedEnrollmentType
+    \[OwnerType \<ManagedDeviceOwnerType?\>\]: Owner type of device.
+  \[CreatedDateTime \<DateTime?\>\]: Profile creation time
+  \[DefaultEnrollmentType \<AppleUserInitiatedEnrollmentType?\>\]: appleUserInitiatedEnrollmentType
+  \[Description \<String\>\]: Description of the profile
+  \[DisplayName \<String\>\]: Name of the profile
+  \[LastModifiedDateTime \<DateTime?\>\]: Profile last modified time
+  \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+  \[Priority \<Int32?\>\]: Priority, 0 is highest
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile)
-
-
-
-
 

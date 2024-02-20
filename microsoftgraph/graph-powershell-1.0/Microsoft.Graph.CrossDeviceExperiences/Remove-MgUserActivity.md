@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity
 schema: 2.0.0
-ms.prod: project-rome
 ---
 
 # Remove-MgUserActivity
@@ -11,43 +10,34 @@ ms.prod: project-rome
 ## SYNOPSIS
 Delete an existing user activity for your app.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserActivity -UserActivityId <String> -UserId <String> [-IfMatch <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserActivity -UserActivityId <String> -UserId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete an existing user activity for your app.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-delete-activity-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CrossDeviceExperiences
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserActivity -UserId $userId -UserActivityId $userActivityId
-
-```
-This example shows how to use the Remove-MgUserActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -127,6 +117,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserActivityId
 The unique identifier of userActivity
 
@@ -198,23 +203,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
-  - `[UserActivityId <String>]`: The unique identifier of userActivity
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
+  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
+  \[UserActivityId \<String\>\]: The unique identifier of userActivity
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity)
-
-
-
 

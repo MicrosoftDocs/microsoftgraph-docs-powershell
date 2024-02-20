@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy
@@ -14,19 +14,36 @@ Update the navigation property policy in informationProtection
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaInformationProtectionPolicy [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaInformationProtectionPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Labels <IMicrosoftGraphInformationProtectionLabel[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationProtectionPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property policy in informationProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -123,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -164,66 +196,61 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphInformationProtectionPolicy\>: informationProtectionPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Labels <IMicrosoftGraphInformationProtectionLabel- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Labels \<IMicrosoftGraphInformationProtectionLabel\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Color <String>]`: The color that the UI should display for the label, if configured.
-    - `[Description <String>]`: The admin-defined description for the label.
-    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+    \[Color \<String\>\]: The color that the UI should display for the label, if configured.
+    \[Description \<String\>\]: The admin-defined description for the label.
+    \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
-    - `[Name <String>]`: The plaintext name of the label.
-    - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Color <String>]`: The color that the user interface should display for the label, if configured.
-      - `[Description <String>]`: The admin-defined description for the label.
-      - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
-      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+    \[Name \<String\>\]: The plaintext name of the label.
+    \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Color \<String\>\]: The color that the user interface should display for the label, if configured.
+      \[Description \<String\>\]: The admin-defined description for the label.
+      \[Id \<String\>\]: The label ID is a globally unique identifier (GUID).
+      \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in user interfaces.
-      - `[Name <String>]`: The plaintext name of the label.
-      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
-    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+      \[Name \<String\>\]: The plaintext name of the label.
+      \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
+      \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
+      \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a user interface.
+    \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
+    \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
 
-LABELS <IMicrosoftGraphInformationProtectionLabel- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+LABELS \<IMicrosoftGraphInformationProtectionLabel\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Color <String>]`: The color that the UI should display for the label, if configured.
-  - `[Description <String>]`: The admin-defined description for the label.
-  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+  \[Color \<String\>\]: The color that the UI should display for the label, if configured.
+  \[Description \<String\>\]: The admin-defined description for the label.
+  \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
-  - `[Name <String>]`: The plaintext name of the label.
-  - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Color <String>]`: The color that the user interface should display for the label, if configured.
-    - `[Description <String>]`: The admin-defined description for the label.
-    - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
-    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
+  \[Name \<String\>\]: The plaintext name of the label.
+  \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Color \<String\>\]: The color that the user interface should display for the label, if configured.
+    \[Description \<String\>\]: The admin-defined description for the label.
+    \[Id \<String\>\]: The label ID is a globally unique identifier (GUID).
+    \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in user interfaces.
-    - `[Name <String>]`: The plaintext name of the label.
-    - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
-  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
-  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+    \[Name \<String\>\]: The plaintext name of the label.
+    \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
+    \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
+    \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a user interface.
+  \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
+  \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy)
-
-
-
-
 

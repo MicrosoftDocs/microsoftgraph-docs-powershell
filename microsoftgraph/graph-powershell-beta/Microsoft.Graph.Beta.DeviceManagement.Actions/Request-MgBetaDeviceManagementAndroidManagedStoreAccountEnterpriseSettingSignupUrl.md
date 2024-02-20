@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl
@@ -15,19 +15,36 @@ Invoke action requestSignupUrl
 ### RequestExpanded (Default)
 ```
 Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl
- [-AdditionalProperties <Hashtable>] [-HostName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-HostName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Request
 ```
 Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl
  -BodyParameter <IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action requestSignupUrl
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -107,6 +124,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -147,7 +179,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -155,15 +186,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HostName <String>]`:
+BODYPARAMETER \<IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[HostName \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl)
-
-
-
-
 

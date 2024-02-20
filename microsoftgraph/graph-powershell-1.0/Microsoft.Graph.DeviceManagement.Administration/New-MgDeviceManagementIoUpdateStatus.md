@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementIoUpdateStatus
@@ -11,14 +10,11 @@ ms.prod: intune
 ## SYNOPSIS
 Create a new iosUpdateDeviceStatus object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementIoUpdateStatus [-AdditionalProperties <Hashtable>]
+New-MgDeviceManagementIoUpdateStatus [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceId <String>]
  [-DeviceModel <String>] [-Id <String>] [-InstallStatus <String>] [-LastReportedDateTime <DateTime>]
  [-OSVersion <String>] [-Status <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
@@ -28,11 +24,24 @@ New-MgDeviceManagementIoUpdateStatus [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgDeviceManagementIoUpdateStatus -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new iosUpdateDeviceStatus object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -218,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 complianceStatus
 
@@ -319,35 +343,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIosUpdateDeviceStatus>`: iosUpdateDeviceStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIosUpdateDeviceStatus\>: iosUpdateDeviceStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceId <String>]`: The device id that is being reported.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[InstallStatus <String>]`: iosUpdatesInstallStatus
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[OSVersion <String>]`: The device version that is being reported.
-  - `[Status <String>]`: complianceStatus
-  - `[UserId <String>]`: The User id that is being reported.
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+  \[DeviceId \<String\>\]: The device id that is being reported.
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[InstallStatus \<String\>\]: iosUpdatesInstallStatus
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[OSVersion \<String\>\]: The device version that is being reported.
+  \[Status \<String\>\]: complianceStatus
+  \[UserId \<String\>\]: The User id that is being reported.
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement
@@ -10,18 +10,27 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
-Invoke-MgExperienceDeviceManagement [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Invoke-MgExperienceDeviceManagement [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -55,6 +64,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -64,15 +88,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevicesSummary
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement)
-
-
-
-
 

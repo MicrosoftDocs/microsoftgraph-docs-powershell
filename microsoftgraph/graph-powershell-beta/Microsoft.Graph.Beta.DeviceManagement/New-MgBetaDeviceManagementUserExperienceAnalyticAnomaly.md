@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomaly
@@ -14,8 +14,8 @@ Create new navigation property to userExperienceAnalyticsAnomaly for deviceManag
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <Hashtable>]
- [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
  [-AnomalyLatestOccurrenceDateTime <DateTime>] [-AnomalyName <String>]
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
@@ -27,12 +27,28 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -280,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 Indicates the severity of the anomaly.
 Eg: anomaly severity can be high, medium, low, informational or other.
@@ -353,40 +384,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experience analytics anomaly entity contains anomaly details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAnomaly\>: The user experience analytics anomaly entity contains anomaly details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AnomalyFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurrence date and time for the anomaly.
-  - `[AnomalyId <String>]`: The unique identifier of the anomaly.
-  - `[AnomalyLatestOccurrenceDateTime <DateTime?>]`: Indicates the latest occurrence date and time for the anomaly.
-  - `[AnomalyName <String>]`: The name of the anomaly.
-  - `[AnomalyType <UserExperienceAnalyticsAnomalyType?>]`: Indicates the category of the anomaly.
+  \[AnomalyFirstOccurrenceDateTime \<DateTime?\>\]: Indicates the first occurrence date and time for the anomaly.
+  \[AnomalyId \<String\>\]: The unique identifier of the anomaly.
+  \[AnomalyLatestOccurrenceDateTime \<DateTime?\>\]: Indicates the latest occurrence date and time for the anomaly.
+  \[AnomalyName \<String\>\]: The name of the anomaly.
+  \[AnomalyType \<UserExperienceAnalyticsAnomalyType?\>\]: Indicates the category of the anomaly.
 Eg: anomaly type can be device, application, stop error, driver or other.
-  - `[AssetName <String>]`: The name of the application or module that caused the anomaly.
-  - `[AssetPublisher <String>]`: The publisher of the application or module that caused the anomaly.
-  - `[AssetVersion <String>]`: The version of the application or module that caused the anomaly.
-  - `[DetectionModelId <String>]`: The unique identifier of the anomaly detection model.
-  - `[DeviceImpactedCount <Int32?>]`: The number of devices impacted by the anomaly.
+  \[AssetName \<String\>\]: The name of the application or module that caused the anomaly.
+  \[AssetPublisher \<String\>\]: The publisher of the application or module that caused the anomaly.
+  \[AssetVersion \<String\>\]: The version of the application or module that caused the anomaly.
+  \[DetectionModelId \<String\>\]: The unique identifier of the anomaly detection model.
+  \[DeviceImpactedCount \<Int32?\>\]: The number of devices impacted by the anomaly.
 Valid values -2147483648 to 2147483647
-  - `[IssueId <String>]`: The unique identifier of the anomaly detection model.
-  - `[Severity <UserExperienceAnalyticsAnomalySeverity?>]`: Indicates the severity of the anomaly.
+  \[IssueId \<String\>\]: The unique identifier of the anomaly detection model.
+  \[Severity \<UserExperienceAnalyticsAnomalySeverity?\>\]: Indicates the severity of the anomaly.
 Eg: anomaly severity can be high, medium, low, informational or other.
-  - `[State <UserExperienceAnalyticsAnomalyState?>]`: Indicates the state of the anomaly.
+  \[State \<UserExperienceAnalyticsAnomalyState?\>\]: Indicates the state of the anomaly.
 Eg: anomaly severity can be new, active, disabled, removed or other.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomaly](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomaly)
-
-
-
-
 

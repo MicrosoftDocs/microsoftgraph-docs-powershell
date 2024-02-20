@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityApiConnector
@@ -11,35 +10,31 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create a new identityApiConnector object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityApiConnector [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityApiConnector [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-create-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an API connector with basic authentication
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Test API"
@@ -52,15 +47,11 @@ $params = @{
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an API connector with client certificate authentication
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Test API"
@@ -73,11 +64,6 @@ $params = @{
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -188,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetUrl
 The URL of the API endpoint to call.
 
@@ -244,27 +245,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityApiConnector>`: identityApiConnector
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIdentityApiConnector\>: identityApiConnector
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthenticationConfiguration <IMicrosoftGraphApiAuthenticationConfigurationBase>]`: apiAuthenticationConfigurationBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The name of the API connector.
-  - `[TargetUrl <String>]`: The URL of the API endpoint to call.
+  \[AuthenticationConfiguration \<IMicrosoftGraphApiAuthenticationConfigurationBase\>\]: apiAuthenticationConfigurationBase
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The name of the API connector.
+  \[TargetUrl \<String\>\]: The URL of the API endpoint to call.
 
 ## RELATED LINKS
-[New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation
@@ -10,41 +10,54 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for external
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgExternalConnectionOperation -ExternalConnectionId <String> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgExternalConnectionOperation -ExternalConnectionId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgExternalConnectionOperation -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgExternalConnectionOperation -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to operations for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 connectionOperationStatus
 
@@ -229,64 +257,58 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsConnectionOperation>`: connectionOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphExternalConnectorsConnectionOperation\>: connectionOperation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Error <IMicrosoftGraphPublicError>]`: publicError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Represents the error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[Message <String>]`: A non-localized message for the developer.
-    - `[Target <String>]`: The target of the error.
-  - `[Status <String>]`: connectionOperationStatus
+  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: Represents the error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+      \[Code \<String\>\]: The error code.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The error code.
+      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[Message \<String\>\]: A non-localized message for the developer.
+    \[Target \<String\>\]: The target of the error.
+  \[Status \<String\>\]: connectionOperationStatus
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: Represents the error code.
-  - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-    - `[Code <String>]`: The error code.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: The error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[Message <String>]`: A non-localized message for the developer.
-  - `[Target <String>]`: The target of the error.
+ERROR \<IMicrosoftGraphPublicError\>: publicError
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<String\>\]: Represents the error code.
+  \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+    \[Code \<String\>\]: The error code.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+    \[Message \<String\>\]: The error message.
+    \[Target \<String\>\]: The target of the error.
+  \[Message \<String\>\]: A non-localized message for the developer.
+  \[Target \<String\>\]: The target of the error.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-[New-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation)
-
-
-
-
 

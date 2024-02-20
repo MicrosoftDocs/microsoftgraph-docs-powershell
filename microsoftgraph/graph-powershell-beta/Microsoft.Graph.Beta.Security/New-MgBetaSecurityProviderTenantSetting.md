@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting
@@ -14,19 +14,37 @@ Create new navigation property to providerTenantSettings for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityProviderTenantSetting [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
- [-Enabled] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Provider <String>] [-Vendor <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityProviderTenantSetting [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AzureTenantId <String>] [-Enabled] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Provider <String>]
+ [-Vendor <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityProviderTenantSetting -BodyParameter <IMicrosoftGraphProviderTenantSetting>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to providerTenantSettings for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -167,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Vendor
 .
 
@@ -223,28 +256,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProviderTenantSetting
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProviderTenantSetting>`: providerTenantSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphProviderTenantSetting\>: providerTenantSetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AzureTenantId <String>]`: 
-  - `[Enabled <Boolean?>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Provider <String>]`: 
-  - `[Vendor <String>]`:
+  \[AzureTenantId \<String\>\]: 
+  \[Enabled \<Boolean?\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[Provider \<String\>\]: 
+  \[Vendor \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)
-
-
-
-
 

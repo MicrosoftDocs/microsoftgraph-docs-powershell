@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport
@@ -10,14 +10,11 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property reports in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementReport [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementReport [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]
  [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,11 +23,28 @@ Update-MgBetaDeviceManagementReport [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgBetaDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property reports in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -143,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -184,94 +213,88 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts as a container for all reports functionality.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementReports\>: Singleton entity that acts as a container for all reports functionality.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration- `[]`>]`: Entity representing the configuration of a cached report.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CachedReportConfigurations \<IMicrosoftGraphDeviceManagementCachedReportConfiguration\[\]\>\]: Entity representing the configuration of a cached report.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires.
-    - `[Filter <String>]`: Filters applied on report creation.
-    - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed.
-    - `[Metadata <String>]`: Caller-managed metadata associated with the report.
-    - `[OrderBy <String- `[]`>]`: Ordering of columns in the report.
-    - `[ReportName <String>]`: Name of the report.
-    - `[Select <String- `[]`>]`: Columns selected from the report.
-    - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
-  - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob- `[]`>]`: Entity representing a job to export a report.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[ExpirationDateTime \<DateTime?\>\]: Time that the cached report expires.
+    \[Filter \<String\>\]: Filters applied on report creation.
+    \[LastRefreshDateTime \<DateTime?\>\]: Time that the cached report was last refreshed.
+    \[Metadata \<String\>\]: Caller-managed metadata associated with the report.
+    \[OrderBy \<String\[\]\>\]: Ordering of columns in the report.
+    \[ReportName \<String\>\]: Name of the report.
+    \[Select \<String\[\]\>\]: Columns selected from the report.
+    \[Status \<DeviceManagementReportStatus?\>\]: Possible statuses associated with a generated report.
+  \[ExportJobs \<IMicrosoftGraphDeviceManagementExportJob\[\]\>\]: Entity representing a job to export a report.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires.
-    - `[Filter <String>]`: Filters applied on the report.
+    \[ExpirationDateTime \<DateTime?\>\]: Time that the exported report expires.
+    \[Filter \<String\>\]: Filters applied on the report.
 The maximum length allowed for this property is 2000 characters.
-    - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report.
-    - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized.
-    - `[ReportName <String>]`: Name of the report.
+    \[Format \<DeviceManagementReportFileFormat?\>\]: Possible values for the file format of a report.
+    \[LocalizationType \<DeviceManagementExportJobLocalizationType?\>\]: Configures how the requested export job is localized.
+    \[ReportName \<String\>\]: Name of the report.
 The maximum length allowed for this property is 2000 characters.
-    - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested.
-    - `[Search <String>]`: Configures a search term to filter the data.
+    \[RequestDateTime \<DateTime?\>\]: Time that the exported report was requested.
+    \[Search \<String\>\]: Configures a search term to filter the data.
 The maximum length allowed for this property is 100 characters.
-    - `[Select <String- `[]`>]`: Columns selected from the report.
+    \[Select \<String\[\]\>\]: Columns selected from the report.
 The maximum number of allowed columns names is 256.
 The maximum length allowed for each column name in this property is 1000 characters.
-    - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName.
+    \[SnapshotId \<String\>\]: A snapshot is an identifiable subset of the dataset represented by the ReportName.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
 The maximum length allowed for this property is 128 characters.
-    - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
-    - `[Url <String>]`: Temporary location of the exported report.
+    \[Status \<DeviceManagementReportStatus?\>\]: Possible statuses associated with a generated report.
+    \[Url \<String\>\]: Temporary location of the exported report.
 
-CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration- `[]`>: Entity representing the configuration of a cached report.
-  - `[Id <String>]`: The unique identifier for an entity.
+CACHEDREPORTCONFIGURATIONS \<IMicrosoftGraphDeviceManagementCachedReportConfiguration\[\]\>: Entity representing the configuration of a cached report.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires.
-  - `[Filter <String>]`: Filters applied on report creation.
-  - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed.
-  - `[Metadata <String>]`: Caller-managed metadata associated with the report.
-  - `[OrderBy <String- `[]`>]`: Ordering of columns in the report.
-  - `[ReportName <String>]`: Name of the report.
-  - `[Select <String- `[]`>]`: Columns selected from the report.
-  - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
+  \[ExpirationDateTime \<DateTime?\>\]: Time that the cached report expires.
+  \[Filter \<String\>\]: Filters applied on report creation.
+  \[LastRefreshDateTime \<DateTime?\>\]: Time that the cached report was last refreshed.
+  \[Metadata \<String\>\]: Caller-managed metadata associated with the report.
+  \[OrderBy \<String\[\]\>\]: Ordering of columns in the report.
+  \[ReportName \<String\>\]: Name of the report.
+  \[Select \<String\[\]\>\]: Columns selected from the report.
+  \[Status \<DeviceManagementReportStatus?\>\]: Possible statuses associated with a generated report.
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob- `[]`>: Entity representing a job to export a report.
-  - `[Id <String>]`: The unique identifier for an entity.
+EXPORTJOBS \<IMicrosoftGraphDeviceManagementExportJob\[\]\>: Entity representing a job to export a report.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires.
-  - `[Filter <String>]`: Filters applied on the report.
+  \[ExpirationDateTime \<DateTime?\>\]: Time that the exported report expires.
+  \[Filter \<String\>\]: Filters applied on the report.
 The maximum length allowed for this property is 2000 characters.
-  - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report.
-  - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized.
-  - `[ReportName <String>]`: Name of the report.
+  \[Format \<DeviceManagementReportFileFormat?\>\]: Possible values for the file format of a report.
+  \[LocalizationType \<DeviceManagementExportJobLocalizationType?\>\]: Configures how the requested export job is localized.
+  \[ReportName \<String\>\]: Name of the report.
 The maximum length allowed for this property is 2000 characters.
-  - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested.
-  - `[Search <String>]`: Configures a search term to filter the data.
+  \[RequestDateTime \<DateTime?\>\]: Time that the exported report was requested.
+  \[Search \<String\>\]: Configures a search term to filter the data.
 The maximum length allowed for this property is 100 characters.
-  - `[Select <String- `[]`>]`: Columns selected from the report.
+  \[Select \<String\[\]\>\]: Columns selected from the report.
 The maximum number of allowed columns names is 256.
 The maximum length allowed for each column name in this property is 1000 characters.
-  - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName.
+  \[SnapshotId \<String\>\]: A snapshot is an identifiable subset of the dataset represented by the ReportName.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
 The maximum length allowed for this property is 128 characters.
-  - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
-  - `[Url <String>]`: Temporary location of the exported report.
+  \[Status \<DeviceManagementReportStatus?\>\]: Possible statuses associated with a generated report.
+  \[Url \<String\>\]: Temporary location of the exported report.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport)
-
-
-
-
 

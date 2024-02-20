@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Invoke-MgBetaExtractInformationProtectionPolicyLabel
@@ -16,28 +15,27 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ### ExtractExpanded (Default)
 ```
-Invoke-MgBetaExtractInformationProtectionPolicyLabel [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaExtractInformationProtectionPolicyLabel [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Extract
 ```
 Invoke-MgBetaExtractInformationProtectionPolicyLabel
  -BodyParameter <IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-extractlabel-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ContentInfo = @{
@@ -89,8 +87,6 @@ $params = @{
 }
 Invoke-MgBetaExtractInformationProtectionPolicyLabel -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -171,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -212,37 +223,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionContentLabel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Format <String>]`: contentFormat
-    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
-    - `[State <String>]`: contentState
+BODYPARAMETER \<IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentInfo \<IMicrosoftGraphContentInfo\>\]: contentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Format \<String\>\]: contentFormat
+    \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+    \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+      \[Name \<String\>\]: Name for this key-value pair
+      \[Value \<String\>\]: Value for this key-value pair
+    \[State \<String\>\]: contentState
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Format <String>]`: contentFormat
-  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[State <String>]`: contentState
+CONTENTINFO \<IMicrosoftGraphContentInfo\>: contentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Format \<String\>\]: contentFormat
+  \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+  \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[State \<String\>\]: contentState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmembercount
@@ -10,26 +10,36 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionGroupMemberCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionGroupMemberCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaExternalConnectionGroupMemberCount -ExternalConnectionId <String> -ExternalGroupId <String>
- [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaExternalConnectionGroupMemberCount -InputObject <ISearchIdentity> [-Filter <String>]
- [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -124,6 +134,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -148,7 +173,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -156,33 +180,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
+  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
+  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
+  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[QnaId \<String\>\]: The unique identifier of qna
+  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
+  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
+  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
+  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalConnectionGroupMemberCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionGroupMemberCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmembercount)
-
-
-
-
 

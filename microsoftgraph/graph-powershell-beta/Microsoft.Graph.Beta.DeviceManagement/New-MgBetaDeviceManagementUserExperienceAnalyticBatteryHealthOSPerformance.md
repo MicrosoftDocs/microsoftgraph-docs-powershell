@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthosperformance
@@ -14,8 +14,8 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthOsPerforma
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance [-ActiveDevices <Int32>]
- [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
+New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance [-ResponseHeadersVariable <String>]
+ [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
  [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
  [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
  [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-OSBatteryHealthScore <Int32>]
@@ -26,12 +26,29 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance [-Act
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthOsPerformance for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -309,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -350,52 +382,47 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance>`: The user experience analytics battery health os performance entity contains battery related information for all operating system versions in their organization.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance\>: The user experience analytics battery health os performance entity contains battery related information for all operating system versions in their organization.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDevices <Int32?>]`: Number of active devices for that os version.
+  \[ActiveDevices \<Int32?\>\]: Number of active devices for that os version.
 Valid values 0 to 2147483647
-  - `[AverageBatteryAgeInDays <Int32?>]`: The mean of the battery age for all devices running a particular operating system version in a tenant.
+  \[AverageBatteryAgeInDays \<Int32?\>\]: The mean of the battery age for all devices running a particular operating system version in a tenant.
 Unit in days.
 Valid values 0 to 2147483647
-  - `[AverageEstimatedRuntimeInMinutes <Int32?>]`: The mean of the estimated runtimes on full charge for all devices running a particular operating system version.
+  \[AverageEstimatedRuntimeInMinutes \<Int32?\>\]: The mean of the estimated runtimes on full charge for all devices running a particular operating system version.
 Unit in minutes.
 Valid values 0 to 2147483647
-  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices running a particular operating system version.
+  \[AverageMaxCapacityPercentage \<Int32?\>\]: The mean of the maximum capacity for all devices running a particular operating system version.
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
-  - `[MeanFullBatteryDrainCount <Int32?>]`: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant.
+  \[MeanFullBatteryDrainCount \<Int32?\>\]: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant.
 Valid values 0 to 2147483647
-  - `[MedianEstimatedRuntimeInMinutes <Int32?>]`: The median of the estimated runtimes on full charge for all devices running a particular operating system version.
+  \[MedianEstimatedRuntimeInMinutes \<Int32?\>\]: The median of the estimated runtimes on full charge for all devices running a particular operating system version.
 Unit in minutes.
 Valid values 0 to 2147483647
-  - `[MedianFullBatteryDrainCount <Int32?>]`: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant.
+  \[MedianFullBatteryDrainCount \<Int32?\>\]: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant.
 Valid values 0 to 2147483647
-  - `[MedianMaxCapacityPercentage <Int32?>]`: The median of the maximum capacity for all devices running a particular operating system version.
+  \[MedianMaxCapacityPercentage \<Int32?\>\]: The median of the maximum capacity for all devices running a particular operating system version.
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
-  - `[OSBatteryHealthScore <Int32?>]`: A weighted average of battery health score across all devices running a particular operating system version.
+  \[OSBatteryHealthScore \<Int32?\>\]: A weighted average of battery health score across all devices running a particular operating system version.
 Values range from 0-100.
 Valid values 0 to 2147483647
-  - `[OSBuildNumber <String>]`: Build number of the operating system.
-  - `[OSHealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[OSVersion <String>]`: Version of the operating system.
+  \[OSBuildNumber \<String\>\]: Build number of the operating system.
+  \[OSHealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[OSVersion \<String\>\]: Version of the operating system.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthosperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthosperformance)
-
-
-
-
 

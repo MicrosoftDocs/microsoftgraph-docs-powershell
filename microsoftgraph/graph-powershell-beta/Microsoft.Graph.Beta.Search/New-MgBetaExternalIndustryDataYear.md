@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear
 schema: 2.0.0
-ms.prod: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataYear
@@ -15,22 +14,32 @@ Create a new yearTimePeriodDefinition object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaExternalIndustryDataYear [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-Year <Hashtable>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaExternalIndustryDataYear [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-Year <Hashtable>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new yearTimePeriodDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-post-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -142,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDate
 The first day of the year using ISO 8601 format for date.
 
@@ -213,38 +237,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIndustryDataYearTimePeriodDefinition\>: yearTimePeriodDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name of the year.
+  \[DisplayName \<String\>\]: The name of the year.
 Maximum supported length is 100 characters.
-  - `[EndDate <DateTime?>]`: The last day of the year using ISO 8601 format for date.
-  - `[StartDate <DateTime?>]`: The first day of the year using ISO 8601 format for date.
-  - `[Year <IMicrosoftGraphIndustryDataYearReferenceValue>]`: yearReferenceValue
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: The code of the desired referenceDefinition entry.
-    - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+  \[EndDate \<DateTime?\>\]: The last day of the year using ISO 8601 format for date.
+  \[StartDate \<DateTime?\>\]: The first day of the year using ISO 8601 format for date.
+  \[Year \<IMicrosoftGraphIndustryDataYearReferenceValue\>\]: yearReferenceValue
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+    \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
-      - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+      \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
+      \[IsDisabled \<Boolean?\>\]: Indicates whether the definition has been disabled.
+      \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
+      \[SortIndex \<Int32?\>\]: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear)
-
-
-
-
 

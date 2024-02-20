@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Update-MgBetaComplianceEdiscoveryCaseSetting
@@ -15,8 +14,8 @@ Update the properties of a an eDiscovery caseSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
+Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,14 +24,15 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProper
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,19 +41,17 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a an eDiscovery caseSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-casesettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	RedundancyDetection = @{
@@ -75,10 +73,9 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	RedundancyDetection = @{
@@ -100,8 +97,6 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -245,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TopicModeling
 topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
@@ -303,86 +313,82 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryCaseSettings>`: caseSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEdiscoveryCaseSettings\>: caseSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]`: ocrSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
-    - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
-    - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine.
+  \[Ocr \<IMicrosoftGraphEdiscoveryOcrSettings\>\]: ocrSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsEnabled \<Boolean?\>\]: Indicates whether or not OCR is enabled for the case.
+    \[MaxImageSize \<Int32?\>\]: Maximum image size that will be processed in KB).
+    \[Timeout \<TimeSpan?\>\]: The timeout duration for the OCR engine.
 A longer timeout may increase success of OCR, but may add to the total processing time.
-  - `[RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]`: redundancyDetectionSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
-    - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection.
+  \[RedundancyDetection \<IMicrosoftGraphEdiscoveryRedundancyDetectionSettings\>\]: redundancyDetectionSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsEnabled \<Boolean?\>\]: Indicates whether email threading and near duplicate detection are enabled.
+    \[MaxWords \<Int32?\>\]: Specifies the maximum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-    - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection.
+    \[MinWords \<Int32?\>\]: Specifies the minimum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-    - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set.
+    \[SimilarityThreshold \<Int32?\>\]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
-  - `[TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>]`: topicModelingSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
-    - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
-    - `[IsEnabled <Boolean?>]`: Indicates whether themes are enabled for the case.
-    - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
+  \[TopicModeling \<IMicrosoftGraphEdiscoveryTopicModelingSettings\>\]: topicModelingSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DynamicallyAdjustTopicCount \<Boolean?\>\]: To learn more, see Adjust maximum number of themes dynamically.
+    \[IgnoreNumbers \<Boolean?\>\]: To learn more, see Include numbers in themes.
+    \[IsEnabled \<Boolean?\>\]: Indicates whether themes are enabled for the case.
+    \[TopicCount \<Int32?\>\]: To learn more, see Maximum number of themes.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseId <String>]`: The unique identifier of case
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CustodianId <String>]`: The unique identifier of custodian
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[LegalHoldId <String>]`: The unique identifier of legalHold
-  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
-  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
-  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TagId <String>]`: The unique identifier of tag
-  - `[TagId1 <String>]`: The unique identifier of tag
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseId \<String\>\]: The unique identifier of case
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CustodianId \<String\>\]: The unique identifier of custodian
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
+  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
+  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
+  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TagId \<String\>\]: The unique identifier of tag
+  \[TagId1 \<String\>\]: The unique identifier of tag
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
 
-OCR `<IMicrosoftGraphEdiscoveryOcrSettings>`: ocrSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
-  - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
-  - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine.
+OCR \<IMicrosoftGraphEdiscoveryOcrSettings\>: ocrSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether or not OCR is enabled for the case.
+  \[MaxImageSize \<Int32?\>\]: Maximum image size that will be processed in KB).
+  \[Timeout \<TimeSpan?\>\]: The timeout duration for the OCR engine.
 A longer timeout may increase success of OCR, but may add to the total processing time.
 
-REDUNDANCYDETECTION `<IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>`: redundancyDetectionSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
-  - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection.
+REDUNDANCYDETECTION \<IMicrosoftGraphEdiscoveryRedundancyDetectionSettings\>: redundancyDetectionSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether email threading and near duplicate detection are enabled.
+  \[MaxWords \<Int32?\>\]: Specifies the maximum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-  - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection.
+  \[MinWords \<Int32?\>\]: Specifies the minimum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-  - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set.
+  \[SimilarityThreshold \<Int32?\>\]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
 
-TOPICMODELING `<IMicrosoftGraphEdiscoveryTopicModelingSettings>`: topicModelingSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
-  - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
-  - `[IsEnabled <Boolean?>]`: Indicates whether themes are enabled for the case.
-  - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
+TOPICMODELING \<IMicrosoftGraphEdiscoveryTopicModelingSettings\>: topicModelingSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DynamicallyAdjustTopicCount \<Boolean?\>\]: To learn more, see Adjust maximum number of themes dynamically.
+  \[IgnoreNumbers \<Boolean?\>\]: To learn more, see Include numbers in themes.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether themes are enabled for the case.
+  \[TopicCount \<Int32?\>\]: To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
-
-
-
 

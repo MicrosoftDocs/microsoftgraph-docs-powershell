@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemuploadsession
@@ -10,41 +10,57 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createUploadSession
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserDriveItemUploadSession?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgUserDriveItemUploadSession -DriveId <String> -DriveItemId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Item <IMicrosoftGraphDriveItemUploadableProperties>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserDriveItemUploadSession -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserDriveItemUploadSession -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserDriveItemUploadSession -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Item <IMicrosoftGraphDriveItemUploadableProperties>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserDriveItemUploadSession -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createUploadSession
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -171,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -228,85 +259,79 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: Provides a user-visible description of the item.
+BODYPARAMETER \<IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Item \<IMicrosoftGraphDriveItemUploadableProperties\>\]: driveItemUploadableProperties
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Description \<String\>\]: Provides a user-visible description of the item.
 Read-write.
 Only on OneDrive Personal.
-    - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload.
+    \[FileSize \<Int64?\>\]: Provides an expected file size to perform a quota check prior to upload.
 Only on OneDrive Personal.
-    - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
-      - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed.
+    \[FileSystemInfo \<IMicrosoftGraphFileSystemInfo\>\]: fileSystemInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[CreatedDateTime \<DateTime?\>\]: The UTC date and time the file was created on a client.
+      \[LastAccessedDateTime \<DateTime?\>\]: The UTC date and time the file was last accessed.
 Available for the recent file list only.
-      - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
-    - `[Name <String>]`: The name of the item (filename and extension).
+      \[LastModifiedDateTime \<DateTime?\>\]: The UTC date and time the file was last modified on a client.
+    \[Name \<String\>\]: The name of the item (filename and extension).
 Read-write.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
-ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Provides a user-visible description of the item.
+ITEM \<IMicrosoftGraphDriveItemUploadableProperties\>: driveItemUploadableProperties
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Provides a user-visible description of the item.
 Read-write.
 Only on OneDrive Personal.
-  - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload.
+  \[FileSize \<Int64?\>\]: Provides an expected file size to perform a quota check prior to upload.
 Only on OneDrive Personal.
-  - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
-    - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed.
+  \[FileSystemInfo \<IMicrosoftGraphFileSystemInfo\>\]: fileSystemInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedDateTime \<DateTime?\>\]: The UTC date and time the file was created on a client.
+    \[LastAccessedDateTime \<DateTime?\>\]: The UTC date and time the file was last accessed.
 Available for the recent file list only.
-    - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
-  - `[Name <String>]`: The name of the item (filename and extension).
+    \[LastModifiedDateTime \<DateTime?\>\]: The UTC date and time the file was last modified on a client.
+  \[Name \<String\>\]: The name of the item (filename and extension).
 Read-write.
 
 ## RELATED LINKS
-[New-MgBetaUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserDriveItemUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemuploadsession)
-
-
-
-
 

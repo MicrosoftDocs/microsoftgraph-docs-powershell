@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategorybyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserAssignmentCategoryByRef
@@ -12,24 +11,34 @@ ms.prod: education
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategoryByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaEducationUserAssignmentCategoryByRef -EducationAssignmentId <String> -EducationUserId <String>
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -154,6 +163,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -222,16 +246,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.String
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategoryByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategorybyref)
-
-
-
-
 

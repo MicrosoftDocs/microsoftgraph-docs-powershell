@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Copy-MgUserDriveListContentTypeToDefaultContentLocation
@@ -12,17 +11,14 @@ ms.prod: sites-and-lists
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
 Copy-MgUserDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DestinationFileName <String>] [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -30,14 +26,14 @@ Copy-MgUserDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> 
 Copy-MgUserDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  -UserId <String>
  -BodyParameter <IPaths1T3YvnbUsersUserIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgUserDriveListContentTypeToDefaultContentLocation -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,22 +42,20 @@ Copy-MgUserDriveListContentTypeToDefaultContentLocation -InputObject <IUsersActi
 ```
 Copy-MgUserDriveListContentTypeToDefaultContentLocation -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1T3YvnbUsersUserIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	SourceFile = @{
@@ -74,11 +68,6 @@ $params = @{
 }
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-```
-This example shows how to use the Copy-MgUserDriveListContentTypeToDefaultContentLocation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -219,6 +208,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SourceFile
 itemReference
 To construct, see NOTES section for SOURCEFILE properties and create a hash table.
@@ -292,111 +296,106 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1T3YvnbUsersUserIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationFileName <String>]`: 
-  - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+BODYPARAMETER \<IPaths1T3YvnbUsersUserIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DestinationFileName \<String\>\]: 
+  \[SourceFile \<IMicrosoftGraphItemReference\>\]: itemReference
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DriveId \<String\>\]: Unique identifier of the drive instance that contains the driveItem.
+Only returned if the item is located in a \[drive\]\[\].
 Read-only.
-    - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`.
-See - `[drive]`- `[]` resource for values.
-    - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
+    \[DriveType \<String\>\]: Identifies the type of drive.
+Only returned if the item is located in a \[drive\]\[\].
+See \[drive\]\[\] resource for values.
+    \[Id \<String\>\]: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
-    - `[Name <String>]`: The name of the item being referenced.
+    \[Name \<String\>\]: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    \[Path \<String\>\]: Path that can be used to navigate to the item.
 Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
-    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+    \[ShareId \<String\>\]: A unique identifier for a shared resource that can be accessed via the \[Shares\]\[\] API.
+    \[SharepointIds \<IMicrosoftGraphSharepointIds\>\]: sharepointIds
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[ListId \<String\>\]: The unique identifier (guid) for the item's list in SharePoint.
+      \[ListItemId \<String\>\]: An integer identifier for the item within the containing list.
+      \[ListItemUniqueId \<String\>\]: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+      \[SiteId \<String\>\]: The unique identifier (guid) for the item's site collection (SPSite).
+      \[SiteUrl \<String\>\]: The SharePoint URL for the site that contains the item.
+      \[TenantId \<String\>\]: The unique identifier (guid) for the tenancy.
+      \[WebId \<String\>\]: The unique identifier (guid) for the item's site (SPWeb).
+    \[SiteId \<String\>\]: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
+The value is the same as the id property of that \[site\]\[\] resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
-SOURCEFILE `<IMicrosoftGraphItemReference>`: itemReference
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+SOURCEFILE \<IMicrosoftGraphItemReference\>: itemReference
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DriveId \<String\>\]: Unique identifier of the drive instance that contains the driveItem.
+Only returned if the item is located in a \[drive\]\[\].
 Read-only.
-  - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`.
-See - `[drive]`- `[]` resource for values.
-  - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
+  \[DriveType \<String\>\]: Identifies the type of drive.
+Only returned if the item is located in a \[drive\]\[\].
+See \[drive\]\[\] resource for values.
+  \[Id \<String\>\]: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
-  - `[Name <String>]`: The name of the item being referenced.
+  \[Name \<String\>\]: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  \[Path \<String\>\]: Path that can be used to navigate to the item.
 Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
-  - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-    - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-    - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-    - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-    - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-    - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-    - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-  - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+  \[ShareId \<String\>\]: A unique identifier for a shared resource that can be accessed via the \[Shares\]\[\] API.
+  \[SharepointIds \<IMicrosoftGraphSharepointIds\>\]: sharepointIds
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ListId \<String\>\]: The unique identifier (guid) for the item's list in SharePoint.
+    \[ListItemId \<String\>\]: An integer identifier for the item within the containing list.
+    \[ListItemUniqueId \<String\>\]: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+    \[SiteId \<String\>\]: The unique identifier (guid) for the item's site collection (SPSite).
+    \[SiteUrl \<String\>\]: The SharePoint URL for the site that contains the item.
+    \[TenantId \<String\>\]: The unique identifier (guid) for the tenancy.
+    \[WebId \<String\>\]: The unique identifier (guid) for the item's site (SPWeb).
+  \[SiteId \<String\>\]: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
+The value is the same as the id property of that \[site\]\[\] resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation)
-
-
-
 

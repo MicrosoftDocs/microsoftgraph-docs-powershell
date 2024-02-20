@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverviewissue
@@ -10,49 +10,62 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property issues in admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> -ServiceHealthIssueId <String>
- [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
- [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
- [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
- [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>] [-Service <String>] [-StartDateTime <DateTime>]
- [-Status <String>] [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Classification <String>]
+ [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>] [-Feature <String>]
+ [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
+ [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
+ [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> -ServiceHealthIssueId <String>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
- [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
- [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
- [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
- [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>] [-Service <String>] [-StartDateTime <DateTime>]
- [-Status <String>] [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Classification <String>]
+ [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>] [-Feature <String>]
+ [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
+ [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
+ [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property issues in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -302,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Service
 Indicates the service affected by the issue.
 
@@ -434,66 +462,60 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Details <IMicrosoftGraphKeyValuePair- `[]`>]`: More details about service event.
+BODYPARAMETER \<IMicrosoftGraphServiceHealthIssue\>: serviceHealthIssue
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Details \<IMicrosoftGraphKeyValuePair\[\]\>\]: More details about service event.
 This property doesn't support filters.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[EndDateTime <DateTime?>]`: The end time of the service event.
-  - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
-  - `[StartDateTime <DateTime?>]`: The start time of the service event.
-  - `[Title <String>]`: The title of the service event.
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[EndDateTime \<DateTime?\>\]: The end time of the service event.
+  \[LastModifiedDateTime \<DateTime?\>\]: The last modified time of the service event.
+  \[StartDateTime \<DateTime?\>\]: The start time of the service event.
+  \[Title \<String\>\]: The title of the service event.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Classification <String>]`: serviceHealthClassificationType
-  - `[Feature <String>]`: The feature name of the service issue.
-  - `[FeatureGroup <String>]`: The feature group name of the service issue.
-  - `[ImpactDescription <String>]`: The description of the service issue impact.
-  - `[IsResolved <Boolean?>]`: Indicates whether the issue is resolved.
-  - `[Origin <String>]`: serviceHealthOrigin
-  - `[Posts <IMicrosoftGraphServiceHealthIssuePost- `[]`>]`: Collection of historical posts for the service issue.
-    - `[CreatedDateTime <DateTime?>]`: The published time of the post.
-    - `[Description <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[PostType <String>]`: postType
-  - `[Service <String>]`: Indicates the service affected by the issue.
-  - `[Status <String>]`: serviceHealthStatus
+  \[Classification \<String\>\]: serviceHealthClassificationType
+  \[Feature \<String\>\]: The feature name of the service issue.
+  \[FeatureGroup \<String\>\]: The feature group name of the service issue.
+  \[ImpactDescription \<String\>\]: The description of the service issue impact.
+  \[IsResolved \<Boolean?\>\]: Indicates whether the issue is resolved.
+  \[Origin \<String\>\]: serviceHealthOrigin
+  \[Posts \<IMicrosoftGraphServiceHealthIssuePost\[\]\>\]: Collection of historical posts for the service issue.
+    \[CreatedDateTime \<DateTime?\>\]: The published time of the post.
+    \[Description \<IMicrosoftGraphItemBody\>\]: itemBody
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Content \<String\>\]: The content of the item.
+      \[ContentType \<String\>\]: bodyType
+    \[PostType \<String\>\]: postType
+  \[Service \<String\>\]: Indicates the service affected by the issue.
+  \[Status \<String\>\]: serviceHealthStatus
 
-DETAILS <IMicrosoftGraphKeyValuePair- `[]`>: More details about service event.
+DETAILS \<IMicrosoftGraphKeyValuePair\[\]\>: More details about service event.
 This property doesn't support filters.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
+  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
+  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
+  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
+  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
-POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical posts for the service issue.
-  - `[CreatedDateTime <DateTime?>]`: The published time of the post.
-  - `[Description <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[PostType <String>]`: postType
+POSTS \<IMicrosoftGraphServiceHealthIssuePost\[\]\>: Collection of historical posts for the service issue.
+  \[CreatedDateTime \<DateTime?\>\]: The published time of the post.
+  \[Description \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[PostType \<String\>\]: postType
 
 ## RELATED LINKS
-[Update-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverviewissue](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverviewissue)
-
-
-
-
 

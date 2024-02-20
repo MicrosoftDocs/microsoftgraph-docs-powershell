@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementMobileThreatDefenseConnector
@@ -11,17 +10,15 @@ ms.prod: intune
 ## SYNOPSIS
 Create a new mobileThreatDefenseConnector object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
- [-AllowPartnerToCollectIosApplicationMetadata] [-AllowPartnerToCollectIosPersonalApplicationMetadata]
- [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled]
- [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
+New-MgDeviceManagementMobileThreatDefenseConnector [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowPartnerToCollectIosApplicationMetadata]
+ [-AllowPartnerToCollectIosPersonalApplicationMetadata] [-AndroidDeviceBlockedOnMissingPartnerData]
+ [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled] [-Id <String>]
+ [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
  [-LastHeartbeatDateTime <DateTime>] [-MicrosoftDefenderForEndpointAttachEnabled]
  [-PartnerState <MobileThreatPartnerTenantState>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
  [-PartnerUnsupportedOSVersionBlocked] [-WindowsDeviceBlockedOnMissingPartnerData] [-WindowsEnabled]
@@ -31,11 +28,28 @@ New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hasht
 ### Create
 ```
 New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new mobileThreatDefenseConnector object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -323,6 +337,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WindowsDeviceBlockedOnMissingPartnerData
 When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows.
 When FALSE, inidicates that Intune may make a device compliant without receiving data from the Mobile Threat Defense partner for Windows.
@@ -398,55 +427,49 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector>`: Entity which represents a connection to Mobile Threat Defense partner.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMobileThreatDefenseConnector\>: Entity which represents a connection to Mobile Threat Defense partner.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices.
+  \[AllowPartnerToCollectIosApplicationMetadata \<Boolean?\>\]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices.
 When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for IOS devices.
 Default value is FALSE.
-  - `[AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for IOS devices.
+  \[AllowPartnerToCollectIosPersonalApplicationMetadata \<Boolean?\>\]: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for IOS devices.
 When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for IOS devices.
 Default value is FALSE.
-  - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
-  - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
-  - `[AndroidMobileApplicationManagementEnabled <Boolean?>]`: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for Android devices.
+  \[AndroidDeviceBlockedOnMissingPartnerData \<Boolean?\>\]: For Android, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
+  \[AndroidEnabled \<Boolean?\>\]: For Android, set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
+  \[AndroidMobileApplicationManagementEnabled \<Boolean?\>\]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for Android devices.
 When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for Android devices.
 Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
 Default value is FALSE.
-  - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
-  - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
-  - `[IosMobileApplicationManagementEnabled <Boolean?>]`: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for IOS devices.
+  \[IosDeviceBlockedOnMissingPartnerData \<Boolean?\>\]: For IOS, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
+  \[IosEnabled \<Boolean?\>\]: For IOS, get or set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
+  \[IosMobileApplicationManagementEnabled \<Boolean?\>\]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during Mobile Application Management (MAM) evaluations for IOS devices.
 When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during Mobile Application Management (MAM) evaluations for IOS devices.
 Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
 Default value is FALSE.
-  - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Mobile Threat Defense partner
-  - `[MicrosoftDefenderForEndpointAttachEnabled <Boolean?>]`: When TRUE, inidicates that configuration profile management via Microsoft Defender for Endpoint is enabled.
+  \[LastHeartbeatDateTime \<DateTime?\>\]: DateTime of last Heartbeat recieved from the Mobile Threat Defense partner
+  \[MicrosoftDefenderForEndpointAttachEnabled \<Boolean?\>\]: When TRUE, inidicates that configuration profile management via Microsoft Defender for Endpoint is enabled.
 When FALSE, inidicates that configuration profile management via Microsoft Defender for Endpoint is disabled.
 Default value is FALSE.
-  - `[PartnerState <MobileThreatPartnerTenantState?>]`: Partner state of this tenant.
-  - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
-  - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner
-  - `[WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]`: When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows.
+  \[PartnerState \<MobileThreatPartnerTenantState?\>\]: Partner state of this tenant.
+  \[PartnerUnresponsivenessThresholdInDays \<Int32?\>\]: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
+  \[PartnerUnsupportedOSVersionBlocked \<Boolean?\>\]: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner
+  \[WindowsDeviceBlockedOnMissingPartnerData \<Boolean?\>\]: When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows.
 When FALSE, inidicates that Intune may make a device compliant without receiving data from the Mobile Threat Defense partner for Windows.
 Default value is FALSE.
-  - `[WindowsEnabled <Boolean?>]`: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during compliance evaluations for Windows.
+  \[WindowsEnabled \<Boolean?\>\]: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during compliance evaluations for Windows.
 When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during compliance evaluations for Windows.
 Default value is FALSE.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector)
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Send-MgTeamworkActivityNotificationToRecipient
@@ -12,15 +11,12 @@ ms.prod: microsoft-teams
 Send activity feed notifications to multiple users, in bulk.
 For more information, see sending Teams activity notifications.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
-Send-MgTeamworkActivityNotificationToRecipient [-ActivityType <String>] [-AdditionalProperties <Hashtable>]
- [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
+Send-MgTeamworkActivityNotificationToRecipient [-ResponseHeadersVariable <String>] [-ActivityType <String>]
+ [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
  [-Recipients <IMicrosoftGraphTeamworkNotificationRecipient[]>] [-TeamsAppId <String>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -31,23 +27,20 @@ Send-MgTeamworkActivityNotificationToRecipient [-ActivityType <String>] [-Additi
 ```
 Send-MgTeamworkActivityNotificationToRecipient
  -BodyParameter <IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send activity feed notifications to multiple users, in bulk.
 For more information, see sending Teams activity notifications.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamwork-sendactivitynotificationtorecipients-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -82,10 +75,6 @@ $params = @{
 }
 
 Send-MgTeamworkActivityNotificationToRecipient -BodyParameter $params
-
-```
-This example shows how to use the Send-MgTeamworkActivityNotificationToRecipient Cmdlet.
-
 
 ## PARAMETERS
 
@@ -226,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppId
 .
 
@@ -314,58 +318,53 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ActivityType <String>]`: 
-  - `[ChainId <Int64?>]`: 
-  - `[PreviewText <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[Recipients <IMicrosoftGraphTeamworkNotificationRecipient- `[]`>]`: 
-  - `[TeamsAppId <String>]`: 
-  - `[TemplateParameters <IMicrosoftGraphKeyValuePair- `[]`>]`: 
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[Topic <IMicrosoftGraphTeamworkActivityTopic>]`: teamworkActivityTopic
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Source <String>]`: teamworkActivityTopicSource
-    - `[Value <String>]`: The topic value.
+BODYPARAMETER \<IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ActivityType \<String\>\]: 
+  \[ChainId \<Int64?\>\]: 
+  \[PreviewText \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[Recipients \<IMicrosoftGraphTeamworkNotificationRecipient\[\]\>\]: 
+  \[TeamsAppId \<String\>\]: 
+  \[TemplateParameters \<IMicrosoftGraphKeyValuePair\[\]\>\]: 
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[Topic \<IMicrosoftGraphTeamworkActivityTopic\>\]: teamworkActivityTopic
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Source \<String\>\]: teamworkActivityTopicSource
+    \[Value \<String\>\]: The topic value.
 If the value of the source property is entityUrl, this must be a Microsoft Graph URL.
 If the value is text, this must be a plain text value.
-    - `[WebUrl <String>]`: The link the user clicks when they select the notification.
+    \[WebUrl \<String\>\]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+PREVIEWTEXT \<IMicrosoftGraphItemBody\>: itemBody
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: The content of the item.
+  \[ContentType \<String\>\]: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair- `[]`>: .
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+TEMPLATEPARAMETERS \<IMicrosoftGraphKeyValuePair\[\]\>: .
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Source <String>]`: teamworkActivityTopicSource
-  - `[Value <String>]`: The topic value.
+TOPIC \<IMicrosoftGraphTeamworkActivityTopic\>: teamworkActivityTopic
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Source \<String\>\]: teamworkActivityTopicSource
+  \[Value \<String\>\]: The topic value.
 If the value of the source property is entityUrl, this must be a Microsoft Graph URL.
 If the value is text, this must be a plain text value.
-  - `[WebUrl <String>]`: The link the user clicks when they select the notification.
+  \[WebUrl \<String\>\]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient)
-
-
-
 

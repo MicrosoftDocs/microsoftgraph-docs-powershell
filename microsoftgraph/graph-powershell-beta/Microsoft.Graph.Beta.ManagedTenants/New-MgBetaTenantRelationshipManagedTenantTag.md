@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag
 schema: 2.0.0
-ms.prod: multi-tenant-management
 ---
 
 # New-MgBetaTenantRelationshipManagedTenantTag
@@ -15,9 +14,10 @@ Create a new tenantTag object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantTag [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
+New-MgBetaTenantRelationshipManagedTenantTag [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
  [-Tenants <IMicrosoftGraphManagedTenantsTenantInfo[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,18 +25,17 @@ New-MgBetaTenantRelationshipManagedTenantTag [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphManagedTenantsTenantTag>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new tenantTag object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-post-tenanttags-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
 	DisplayName = "Support"
@@ -44,8 +43,6 @@ $params = @{
 }
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -245,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tenants
 The collection of managed tenants associated with the tenant tag.
 Optional.
@@ -303,52 +315,48 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantTag
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantTag>`: tenantTag
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantTag\>: tenantTag
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedByUserId <String>]`: The identifier for the account that created the tenant tag.
+  \[CreatedByUserId \<String\>\]: The identifier for the account that created the tenant tag.
 Required.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the tenant tag was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the tenant tag was created.
 Required.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: The date and time when the tenant tag was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: The date and time when the tenant tag was deleted.
 Required.
 Read-only.
-  - `[Description <String>]`: The description for the tenant tag.
+  \[Description \<String\>\]: The description for the tenant tag.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the tenant tag.
+  \[DisplayName \<String\>\]: The display name for the tenant tag.
 Required.
 Read-only.
-  - `[LastActionByUserId <String>]`: The identifier for the account that lasted on the tenant tag.
+  \[LastActionByUserId \<String\>\]: The identifier for the account that lasted on the tenant tag.
 Optional.
 Read-only.
-  - `[LastActionDateTime <DateTime?>]`: The date and time the last action was performed against the tenant tag.
+  \[LastActionDateTime \<DateTime?\>\]: The date and time the last action was performed against the tenant tag.
 Optional.
 Read-only.
-  - `[Tenants <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>]`: The collection of managed tenants associated with the tenant tag.
+  \[Tenants \<IMicrosoftGraphManagedTenantsTenantInfo\[\]\>\]: The collection of managed tenants associated with the tenant tag.
 Optional.
-    - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+    \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-TENANTS <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>: The collection of managed tenants associated with the tenant tag.
+TENANTS \<IMicrosoftGraphManagedTenantsTenantInfo\[\]\>: The collection of managed tenants associated with the tenant tag.
 Optional.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag)
-
-
-
 

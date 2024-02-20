@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelhealththreshold
@@ -14,21 +14,37 @@ Create new navigation property to microsoftTunnelHealthThresholds for deviceMana
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold [-AdditionalProperties <Hashtable>]
- [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>] [-HealthyThreshold <Int64>]
- [-Id <String>] [-UnhealthyThreshold <Int64>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>]
+ [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultHealthyThreshold
-The threshold for being healthy based on default health status metrics: CPU usage healthy `< 50%, Memory usage healthy `< 50%, Disk space healthy >` 5GB, Latency healthy `< 10ms, health metrics can be customized.
+The threshold for being healthy based on default health status metrics: CPU usage healthy \< 50%, Memory usage healthy \< 50%, Disk space healthy \> 5GB, Latency healthy \< 10ms, health metrics can be customized.
 Read-only.
 
 ```yaml
@@ -80,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultUnhealthyThreshold
-The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy >` 75%, Memory usage unhealthy >` 75%, Disk space `< 3GB, Latency unhealthy >` 20ms, health metrics can be customized.
+The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy \> 75%, Memory usage unhealthy \> 75%, Disk space \< 3GB, Latency unhealthy \> 20ms, health metrics can be customized.
 Read-only.
 
 ```yaml
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthyThreshold
-The threshold for being healthy based on default health status metrics: CPU usage healthy `< 50%, Memory usage healthy `< 50%, Disk space healthy >` 5GB, Latency healthy `< 10ms, health metrics can be customized.
+The threshold for being healthy based on default health status metrics: CPU usage healthy \< 50%, Memory usage healthy \< 50%, Disk space healthy \> 5GB, Latency healthy \< 10ms, health metrics can be customized.
 
 ```yaml
 Type: Int64
@@ -156,8 +172,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnhealthyThreshold
-The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy >` 75%, Memory usage unhealthy >` 75%, Disk space `< 3GB, Latency Unhealthy >` 20ms, health metrics can be customized.
+The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy \> 75%, Memory usage unhealthy \> 75%, Disk space \< 3GB, Latency Unhealthy \> 20ms, health metrics can be customized.
 
 ```yaml
 Type: Int64
@@ -212,29 +243,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelHealthThreshold>`: Entity that represents the health thresholds of a health metric
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMicrosoftTunnelHealthThreshold\>: Entity that represents the health thresholds of a health metric
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DefaultHealthyThreshold <Int64?>]`: The threshold for being healthy based on default health status metrics: CPU usage healthy < 50%, Memory usage healthy < 50%, Disk space healthy > 5GB, Latency healthy < 10ms, health metrics can be customized.
+  \[DefaultHealthyThreshold \<Int64?\>\]: The threshold for being healthy based on default health status metrics: CPU usage healthy \< 50%, Memory usage healthy \< 50%, Disk space healthy \> 5GB, Latency healthy \< 10ms, health metrics can be customized.
 Read-only.
-  - `[DefaultUnhealthyThreshold <Int64?>]`: The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency unhealthy > 20ms, health metrics can be customized.
+  \[DefaultUnhealthyThreshold \<Int64?\>\]: The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy \> 75%, Memory usage unhealthy \> 75%, Disk space \< 3GB, Latency unhealthy \> 20ms, health metrics can be customized.
 Read-only.
-  - `[HealthyThreshold <Int64?>]`: The threshold for being healthy based on default health status metrics: CPU usage healthy < 50%, Memory usage healthy < 50%, Disk space healthy > 5GB, Latency healthy < 10ms, health metrics can be customized.
-  - `[UnhealthyThreshold <Int64?>]`: The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency Unhealthy > 20ms, health metrics can be customized.
+  \[HealthyThreshold \<Int64?\>\]: The threshold for being healthy based on default health status metrics: CPU usage healthy \< 50%, Memory usage healthy \< 50%, Disk space healthy \> 5GB, Latency healthy \< 10ms, health metrics can be customized.
+  \[UnhealthyThreshold \<Int64?\>\]: The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy \> 75%, Memory usage unhealthy \> 75%, Disk space \< 3GB, Latency Unhealthy \> 20ms, health metrics can be customized.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelhealththreshold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelhealththreshold)
-
-
-
-
 

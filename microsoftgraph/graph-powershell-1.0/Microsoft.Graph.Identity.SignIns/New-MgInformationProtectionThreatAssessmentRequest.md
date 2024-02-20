@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgInformationProtectionThreatAssessmentRequest
@@ -12,38 +11,35 @@ ms.prod: security
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgInformationProtectionThreatAssessmentRequest [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-ContentType <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-ExpectedAssessment <String>] [-Id <String>] [-RequestSource <String>]
- [-Results <IMicrosoftGraphThreatAssessmentResult[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgInformationProtectionThreatAssessmentRequest [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-ContentType <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-ExpectedAssessment <String>]
+ [-Id <String>] [-RequestSource <String>] [-Results <IMicrosoftGraphThreatAssessmentResult[]>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGraphThreatAssessmentRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create a mail assessment request
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mailAssessmentRequest"
@@ -54,15 +50,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an email assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailFileAssessmentRequest"
@@ -73,15 +65,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create a file assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAssessmentRequest"
@@ -92,15 +80,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create an url assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlAssessmentRequest"
@@ -110,11 +94,6 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
-```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -287,6 +266,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Results
 A collection of threat assessment results.
 Read-only.
@@ -361,70 +355,65 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphThreatAssessmentRequest>`: threatAssessmentRequest
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphThreatAssessmentRequest\>: threatAssessmentRequest
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Category <String>]`: threatCategory
-  - `[ContentType <String>]`: threatAssessmentContentType
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[Category \<String\>\]: threatCategory
+  \[ContentType \<String\>\]: threatAssessmentContentType
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ExpectedAssessment <String>]`: threatExpectedAssessment
-  - `[RequestSource <String>]`: threatAssessmentRequestSource
-  - `[Results <IMicrosoftGraphThreatAssessmentResult- `[]`>]`: A collection of threat assessment results.
+  \[ExpectedAssessment \<String\>\]: threatExpectedAssessment
+  \[RequestSource \<String\>\]: threatAssessmentRequestSource
+  \[Results \<IMicrosoftGraphThreatAssessmentResult\[\]\>\]: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Message <String>]`: The result message for each threat assessment.
-    - `[ResultType <String>]`: threatAssessmentResultType
-  - `[Status <String>]`: threatAssessmentStatus
+    \[Message \<String\>\]: The result message for each threat assessment.
+    \[ResultType \<String\>\]: threatAssessmentResultType
+  \[Status \<String\>\]: threatAssessmentStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+    \[Id \<String\>\]: Unique identifier for the identity.
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-RESULTS <IMicrosoftGraphThreatAssessmentResult- `[]`>: A collection of threat assessment results.
+RESULTS \<IMicrosoftGraphThreatAssessmentResult\[\]\>: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Message <String>]`: The result message for each threat assessment.
-  - `[ResultType <String>]`: threatAssessmentResultType
+  \[Message \<String\>\]: The result message for each threat assessment.
+  \[ResultType \<String\>\]: threatAssessmentResultType
 
 ## RELATED LINKS
-[New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest)
-
-
-
 

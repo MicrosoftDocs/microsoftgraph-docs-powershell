@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate
@@ -14,10 +14,11 @@ Create new navigation property to managedDeviceEncryptionStates for deviceManage
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementManagedDeviceEncryptionState [-AdditionalProperties <Hashtable>]
- [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>] [-DeviceType <DeviceTypes>]
- [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <EncryptionReadinessState>]
- [-EncryptionState <EncryptionState>] [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
+New-MgBetaDeviceManagementManagedDeviceEncryptionState [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>]
+ [-DeviceType <DeviceTypes>] [-EncryptionPolicySettingState <String>]
+ [-EncryptionReadinessState <EncryptionReadinessState>] [-EncryptionState <EncryptionState>]
+ [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
  [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -26,12 +27,28 @@ New-MgBetaDeviceManagementManagedDeviceEncryptionState [-AdditionalProperties <H
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDeviceEncryptionState
- -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managedDeviceEncryptionStates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -248,6 +265,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TpmSpecificationVersion
 Device TPM Version
 
@@ -319,40 +351,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceEncryptionState>`: Encryption report per device
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedDeviceEncryptionState\>: Encryption report per device
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdvancedBitLockerStates <AdvancedBitLockerState?>]`: Advanced BitLocker State
-  - `[DeviceName <String>]`: Device name
-  - `[DeviceType <DeviceTypes?>]`: Device type.
-  - `[EncryptionPolicySettingState <String>]`: complianceStatus
-  - `[EncryptionReadinessState <EncryptionReadinessState?>]`: Encryption readiness state
-  - `[EncryptionState <EncryptionState?>]`: Encryption state
-  - `[FileVaultStates <FileVaultState?>]`: FileVault State
-  - `[OSVersion <String>]`: Operating system version of the device
-  - `[PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails- `[]`>]`: Policy Details
-    - `[PolicyId <String>]`: Policy Id for Encryption Report
-    - `[PolicyName <String>]`: Policy Name for Encryption Report
-  - `[TpmSpecificationVersion <String>]`: Device TPM Version
-  - `[UserPrincipalName <String>]`: User name
+  \[AdvancedBitLockerStates \<AdvancedBitLockerState?\>\]: Advanced BitLocker State
+  \[DeviceName \<String\>\]: Device name
+  \[DeviceType \<DeviceTypes?\>\]: Device type.
+  \[EncryptionPolicySettingState \<String\>\]: complianceStatus
+  \[EncryptionReadinessState \<EncryptionReadinessState?\>\]: Encryption readiness state
+  \[EncryptionState \<EncryptionState?\>\]: Encryption state
+  \[FileVaultStates \<FileVaultState?\>\]: FileVault State
+  \[OSVersion \<String\>\]: Operating system version of the device
+  \[PolicyDetails \<IMicrosoftGraphEncryptionReportPolicyDetails\[\]\>\]: Policy Details
+    \[PolicyId \<String\>\]: Policy Id for Encryption Report
+    \[PolicyName \<String\>\]: Policy Name for Encryption Report
+  \[TpmSpecificationVersion \<String\>\]: Device TPM Version
+  \[UserPrincipalName \<String\>\]: User name
 
-POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails- `[]`>: Policy Details
-  - `[PolicyId <String>]`: Policy Id for Encryption Report
-  - `[PolicyName <String>]`: Policy Name for Encryption Report
+POLICYDETAILS \<IMicrosoftGraphEncryptionReportPolicyDetails\[\]\>: Policy Details
+  \[PolicyId \<String\>\]: Policy Id for Encryption Report
+  \[PolicyName \<String\>\]: Policy Name for Encryption Report
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate)
-
-
-
-
 

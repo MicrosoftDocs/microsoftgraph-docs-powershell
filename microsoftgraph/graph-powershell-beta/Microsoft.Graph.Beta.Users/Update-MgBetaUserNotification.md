@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification
@@ -14,37 +14,54 @@ Update the navigation property notifications in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserNotification -NotificationId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
- [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
- [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-Headers <IDictionary>]
+Update-MgBetaUserNotification -NotificationId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>]
+ [-GroupName <String>] [-Id <String>] [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>]
+ [-TargetHostName <String>] [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserNotification -NotificationId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphNotification> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphNotification> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserNotification -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
- [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
- [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-Headers <IDictionary>]
+Update-MgBetaUserNotification -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>]
+ [-GroupName <String>] [-Id <String>] [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>]
+ [-TargetHostName <String>] [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphNotification>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property notifications in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -236,6 +253,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetHostName
 Represents the host name of the app to which the calling service wants to post the notification, for the given user.
 If targeting web endpoints (see targetPolicy.platformTypes), ensure that targetHostName is the same as the name used when creating a subscription on the client side within the application JSON property.
@@ -325,90 +357,85 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotification
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNotification>`: notification
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNotification\>: notification
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content stays in each platform's notification viewer.
+  \[DisplayTimeToLive \<Int32?\>\]: Sets how long (in seconds) this notification content stays in each platform's notification viewer.
 For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification stays in the user's Windows Action Center.
-  - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z').
+  \[ExpirationDateTime \<DateTime?\>\]: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z').
 When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history.
 Max value is 30 days.
-  - `[GroupName <String>]`: The name of the group that this notification belongs to.
+  \[GroupName \<String\>\]: The name of the group that this notification belongs to.
 It is set by the developer for grouping notifications together.
-  - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RawContent <String>]`: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification.
+  \[Payload \<IMicrosoftGraphPayloadTypes\>\]: payloadTypes
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RawContent \<String\>\]: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification.
 At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
-    - `[VisualContent <IMicrosoftGraphVisualProperties>]`: visualProperties
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Body <String>]`: The body of a visual user notification.
+    \[VisualContent \<IMicrosoftGraphVisualProperties\>\]: visualProperties
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Body \<String\>\]: The body of a visual user notification.
 Body is optional.
-      - `[Title <String>]`: The title of a visual user notification.
+      \[Title \<String\>\]: The title of a visual user notification.
 This field is required for visual notification payloads.
-  - `[Priority <String>]`: priority
-  - `[TargetHostName <String>]`: Represents the host name of the app to which the calling service wants to post the notification, for the given user.
+  \[Priority \<String\>\]: priority
+  \[TargetHostName \<String\>\]: Represents the host name of the app to which the calling service wants to post the notification, for the given user.
 If targeting web endpoints (see targetPolicy.platformTypes), ensure that targetHostName is the same as the name used when creating a subscription on the client side within the application JSON property.
-  - `[TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>]`: targetPolicyEndpoints
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[PlatformTypes <String- `[]`>]`: Use to filter the notification distribution to a specific platform or platforms.
+  \[TargetPolicy \<IMicrosoftGraphTargetPolicyEndpoints\>\]: targetPolicyEndpoints
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[PlatformTypes \<String\[\]\>\]: Use to filter the notification distribution to a specific platform or platforms.
 Valid values are Windows, iOS, Android and WebPush.
 By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of servicePrincipal
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[NotificationId \<String\>\]: The unique identifier of notification
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
 
-PAYLOAD `<IMicrosoftGraphPayloadTypes>`: payloadTypes
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RawContent <String>]`: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification.
+PAYLOAD \<IMicrosoftGraphPayloadTypes\>: payloadTypes
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[RawContent \<String\>\]: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification.
 At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
-  - `[VisualContent <IMicrosoftGraphVisualProperties>]`: visualProperties
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Body <String>]`: The body of a visual user notification.
+  \[VisualContent \<IMicrosoftGraphVisualProperties\>\]: visualProperties
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Body \<String\>\]: The body of a visual user notification.
 Body is optional.
-    - `[Title <String>]`: The title of a visual user notification.
+    \[Title \<String\>\]: The title of a visual user notification.
 This field is required for visual notification payloads.
 
-TARGETPOLICY `<IMicrosoftGraphTargetPolicyEndpoints>`: targetPolicyEndpoints
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[PlatformTypes <String- `[]`>]`: Use to filter the notification distribution to a specific platform or platforms.
+TARGETPOLICY \<IMicrosoftGraphTargetPolicyEndpoints\>: targetPolicyEndpoints
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[PlatformTypes \<String\[\]\>\]: Use to filter the notification distribution to a specific platform or platforms.
 Valid values are Windows, iOS, Android and WebPush.
 By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification)
-
-
-
-
 

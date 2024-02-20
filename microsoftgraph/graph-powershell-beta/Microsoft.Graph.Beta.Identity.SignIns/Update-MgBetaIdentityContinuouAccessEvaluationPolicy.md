@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaIdentityContinuouAccessEvaluationPolicy
@@ -15,25 +14,26 @@ Update the properties of a continuousAccessEvaluationPolicy object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaIdentityContinuouAccessEvaluationPolicy [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Groups <String[]>] [-Id <String>] [-IsEnabled] [-Migrate]
- [-Users <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaIdentityContinuouAccessEvaluationPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Groups <String[]>]
+ [-Id <String>] [-IsEnabled] [-Migrate] [-Users <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy
- -BodyParameter <IMicrosoftGraphContinuousAccessEvaluationPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContinuousAccessEvaluationPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "#microsoft.graph.continuousAccessEvaluationPolicy"
@@ -41,8 +41,6 @@ $params = @{
 }
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -203,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Users
 The collection of user identifiers in scope for evaluation.
 All users are in scope when the collection is empty.
@@ -261,35 +274,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContinuousAccessEvaluationPolicy>`: continuousAccessEvaluationPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphContinuousAccessEvaluationPolicy\>: continuousAccessEvaluationPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes.
+  \[Description \<String\>\]: Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes.
 Read-only.
-  - `[DisplayName <String>]`: The value is always Continuous Access Evaluation.
+  \[DisplayName \<String\>\]: The value is always Continuous Access Evaluation.
 Read-only.
-  - `[Groups <String- `[]`>]`: The collection of group identifiers in scope for evaluation.
+  \[Groups \<String\[\]\>\]: The collection of group identifiers in scope for evaluation.
 All groups are in scope when the collection is empty.
 Read-only.
-  - `[IsEnabled <Boolean?>]`: true to indicate whether continuous access evaluation should be performed; otherwise false.
+  \[IsEnabled \<Boolean?\>\]: true to indicate whether continuous access evaluation should be performed; otherwise false.
 Read-only.
-  - `[Migrate <Boolean?>]`: true to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy.
-  - `[Users <String- `[]`>]`: The collection of user identifiers in scope for evaluation.
+  \[Migrate \<Boolean?\>\]: true to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy.
+  \[Users \<String\[\]\>\]: The collection of user identifiers in scope for evaluation.
 All users are in scope when the collection is empty.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
-
-
-
 

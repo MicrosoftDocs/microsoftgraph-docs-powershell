@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting
@@ -16,8 +16,8 @@ If this sync action is called within 10 minutes of the previous sync, the action
 ## SYNTAX
 
 ```
-Sync-MgBetaDeviceManagementWindowsAutopilotSetting [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Sync-MgBetaDeviceManagementWindowsAutopilotSetting [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -25,6 +25,18 @@ Initiates a sync of all AutoPilot registered devices from Store for Business and
 If the sync successful, this action returns a 204 No Content response code.
 If a sync is already in progress, the action returns a 409 Conflict response code.
 If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -73,6 +85,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -113,14 +140,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting)
-
-
-
-
 

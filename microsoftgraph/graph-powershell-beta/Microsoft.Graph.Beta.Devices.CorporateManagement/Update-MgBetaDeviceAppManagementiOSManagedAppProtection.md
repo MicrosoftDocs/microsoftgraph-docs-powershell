@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection
@@ -10,15 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property iosManagedAppProtections in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
@@ -63,14 +61,15 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
 ### Update
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
@@ -115,12 +114,24 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCo
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property iosManagedAppProtections in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1307,6 +1318,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -1439,236 +1465,230 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity.
+APPS \<IMicrosoftGraphManagedMobileApp\[\]\>: List of apps to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Version <String>]`: Version of the entity.
+  \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Version \<String\>\]: Version of the entity.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+  \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphIosManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppGroupType <TargetedManagedAppGroupType?>]`: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
-  - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIosManagedAppProtection\>: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AppGroupType \<TargetedManagedAppGroupType?\>\]: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
+  \[Assignments \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>\]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
-  - `[TargetedAppManagementLevels <AppManagementLevel?>]`: Management levels for apps
-  - `[AllowedDataIngestionLocations <ManagedAppDataIngestionLocation- `[]`>]`: Data storage locations where a user may store managed data.
-  - `[AllowedDataStorageLocations <ManagedAppDataStorageLocation- `[]`>]`: Data storage locations where a user may store managed data.
-  - `[AllowedInboundDataTransferSources <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
-  - `[AllowedOutboundClipboardSharingExceptionLength <Int32?>]`: Specify the number of characters that may be cut or copied from Org data and accounts to any application.
+    \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+    \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[IsAssigned \<Boolean?\>\]: Indicates if the policy is deployed to any inclusion groups or not.
+  \[TargetedAppManagementLevels \<AppManagementLevel?\>\]: Management levels for apps
+  \[AllowedDataIngestionLocations \<ManagedAppDataIngestionLocation\[\]\>\]: Data storage locations where a user may store managed data.
+  \[AllowedDataStorageLocations \<ManagedAppDataStorageLocation\[\]\>\]: Data storage locations where a user may store managed data.
+  \[AllowedInboundDataTransferSources \<ManagedAppDataTransferLevel?\>\]: Data can be transferred from/to these classes of apps
+  \[AllowedOutboundClipboardSharingExceptionLength \<Int32?\>\]: Specify the number of characters that may be cut or copied from Org data and accounts to any application.
 This setting overrides the AllowedOutboundClipboardSharingLevel restriction.
 Default value of '0' means no exception is allowed.
-  - `[AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel?>]`: Represents the level to which the device's clipboard may be shared between apps
-  - `[AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
-  - `[AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[BlockDataIngestionIntoOrganizationDocuments <Boolean?>]`: Indicates whether a user can bring data into org documents.
-  - `[ContactSyncBlocked <Boolean?>]`: Indicates whether contacts can be synced to the user's device.
-  - `[DataBackupBlocked <Boolean?>]`: Indicates whether the backup of a managed app's data is blocked.
-  - `[DeviceComplianceRequired <Boolean?>]`: Indicates whether device compliance is required.
-  - `[DialerRestrictionLevel <ManagedAppPhoneNumberRedirectLevel?>]`: The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages.
-  - `[DisableAppPinIfDevicePinIsSet <Boolean?>]`: Indicates whether use of the app pin is required if the device pin is set.
-  - `[FingerprintBlocked <Boolean?>]`: Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
-  - `[GracePeriodToBlockAppsDuringOffClockHours <TimeSpan?>]`: A grace period before blocking app access during off clock hours.
-  - `[ManagedBrowser <ManagedBrowserType?>]`: Type of managed browser
-  - `[ManagedBrowserToOpenLinksRequired <Boolean?>]`: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
-  - `[MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel?>]`: The maxium threat level allowed for an app to be compliant.
-  - `[MaximumPinRetries <Int32?>]`: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
-  - `[MaximumRequiredOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
-  - `[MaximumWarningOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
-  - `[MaximumWipeOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
-  - `[MinimumPinLength <Int32?>]`: Minimum pin length required for an app-level pin if PinRequired is set to True
-  - `[MinimumRequiredAppVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[MinimumRequiredOSVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[MinimumWarningAppVersion <String>]`: Versions less than the specified version will result in warning message on the managed app.
-  - `[MinimumWarningOSVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data.
-  - `[MinimumWipeAppVersion <String>]`: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
-  - `[MinimumWipeOSVersion <String>]`: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
-  - `[MobileThreatDefensePartnerPriority <MobileThreatDefensePartnerPriority?>]`: Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled.
-  - `[MobileThreatDefenseRemediationAction <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[NotificationRestriction <ManagedAppNotificationRestriction?>]`: Restrict managed app notification
-  - `[OrganizationalCredentialsRequired <Boolean?>]`: Indicates whether organizational credentials are required for app use.
-  - `[PeriodBeforePinReset <TimeSpan?>]`: TimePeriod before the all-level pin must be reset if PinRequired is set to True.
-  - `[PeriodOfflineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is not connected to the internet.
-  - `[PeriodOfflineBeforeWipeIsEnforced <TimeSpan?>]`: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
-  - `[PeriodOnlineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is connected to the internet.
-  - `[PinCharacterSet <ManagedAppPinCharacterSet?>]`: Character set which is to be used for a user's app PIN
-  - `[PinRequired <Boolean?>]`: Indicates whether an app-level pin is required.
-  - `[PinRequiredInsteadOfBiometricTimeout <TimeSpan?>]`: Timeout in minutes for an app pin instead of non biometrics passcode
-  - `[PreviousPinBlockCount <Int32?>]`: Requires a pin to be unique from the number specified in this property.
-  - `[PrintBlocked <Boolean?>]`: Indicates whether printing is allowed from managed apps.
-  - `[ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]`: Defines how app messaging redirection is protected by an App Protection Policy.
+  \[AllowedOutboundClipboardSharingLevel \<ManagedAppClipboardSharingLevel?\>\]: Represents the level to which the device's clipboard may be shared between apps
+  \[AllowedOutboundDataTransferDestinations \<ManagedAppDataTransferLevel?\>\]: Data can be transferred from/to these classes of apps
+  \[AppActionIfDeviceComplianceRequired \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfMaximumPinRetriesExceeded \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfUnableToAuthenticateUser \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[BlockDataIngestionIntoOrganizationDocuments \<Boolean?\>\]: Indicates whether a user can bring data into org documents.
+  \[ContactSyncBlocked \<Boolean?\>\]: Indicates whether contacts can be synced to the user's device.
+  \[DataBackupBlocked \<Boolean?\>\]: Indicates whether the backup of a managed app's data is blocked.
+  \[DeviceComplianceRequired \<Boolean?\>\]: Indicates whether device compliance is required.
+  \[DialerRestrictionLevel \<ManagedAppPhoneNumberRedirectLevel?\>\]: The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages.
+  \[DisableAppPinIfDevicePinIsSet \<Boolean?\>\]: Indicates whether use of the app pin is required if the device pin is set.
+  \[FingerprintBlocked \<Boolean?\>\]: Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
+  \[GracePeriodToBlockAppsDuringOffClockHours \<TimeSpan?\>\]: A grace period before blocking app access during off clock hours.
+  \[ManagedBrowser \<ManagedBrowserType?\>\]: Type of managed browser
+  \[ManagedBrowserToOpenLinksRequired \<Boolean?\>\]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
+  \[MaximumAllowedDeviceThreatLevel \<ManagedAppDeviceThreatLevel?\>\]: The maxium threat level allowed for an app to be compliant.
+  \[MaximumPinRetries \<Int32?\>\]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+  \[MaximumRequiredOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MaximumWarningOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MaximumWipeOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MinimumPinLength \<Int32?\>\]: Minimum pin length required for an app-level pin if PinRequired is set to True
+  \[MinimumRequiredAppVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumRequiredOSVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumWarningAppVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app.
+  \[MinimumWarningOSVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+  \[MinimumWipeAppVersion \<String\>\]: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
+  \[MinimumWipeOSVersion \<String\>\]: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
+  \[MobileThreatDefensePartnerPriority \<MobileThreatDefensePartnerPriority?\>\]: Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled.
+  \[MobileThreatDefenseRemediationAction \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[NotificationRestriction \<ManagedAppNotificationRestriction?\>\]: Restrict managed app notification
+  \[OrganizationalCredentialsRequired \<Boolean?\>\]: Indicates whether organizational credentials are required for app use.
+  \[PeriodBeforePinReset \<TimeSpan?\>\]: TimePeriod before the all-level pin must be reset if PinRequired is set to True.
+  \[PeriodOfflineBeforeAccessCheck \<TimeSpan?\>\]: The period after which access is checked when the device is not connected to the internet.
+  \[PeriodOfflineBeforeWipeIsEnforced \<TimeSpan?\>\]: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+  \[PeriodOnlineBeforeAccessCheck \<TimeSpan?\>\]: The period after which access is checked when the device is connected to the internet.
+  \[PinCharacterSet \<ManagedAppPinCharacterSet?\>\]: Character set which is to be used for a user's app PIN
+  \[PinRequired \<Boolean?\>\]: Indicates whether an app-level pin is required.
+  \[PinRequiredInsteadOfBiometricTimeout \<TimeSpan?\>\]: Timeout in minutes for an app pin instead of non biometrics passcode
+  \[PreviousPinBlockCount \<Int32?\>\]: Requires a pin to be unique from the number specified in this property.
+  \[PrintBlocked \<Boolean?\>\]: Indicates whether printing is allowed from managed apps.
+  \[ProtectedMessagingRedirectAppType \<MessagingRedirectAppType?\>\]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
-  - `[SaveAsBlocked <Boolean?>]`: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
-  - `[SimplePinBlocked <Boolean?>]`: Indicates whether simplePin is blocked.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
-  - `[Description <String>]`: The policy's description.
-  - `[DisplayName <String>]`: Policy display name.
-  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
-  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[Version <String>]`: Version of the entity.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[SaveAsBlocked \<Boolean?\>\]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
+  \[SimplePinBlocked \<Boolean?\>\]: Indicates whether simplePin is blocked.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the policy was created.
+  \[Description \<String\>\]: The policy's description.
+  \[DisplayName \<String\>\]: Policy display name.
+  \[LastModifiedDateTime \<DateTime?\>\]: Last time the policy was modified.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
+  \[Version \<String\>\]: Version of the entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
-  - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
-  - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AllowedIosDeviceModels \<String\>\]: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+  \[AppActionIfIosDeviceModelNotAllowed \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppDataEncryptionType \<ManagedAppDataEncryptionType?\>\]: Represents the level to which app data is encrypted for managed apps
+  \[Apps \<IMicrosoftGraphManagedMobileApp\[\]\>\]: List of apps to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Version <String>]`: Version of the entity.
-  - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
-  - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
-  - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
-  - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Version \<String\>\]: Version of the entity.
+  \[CustomBrowserProtocol \<String\>\]: A custom browser protocol to open weblink on iOS.
+  \[CustomDialerAppProtocol \<String\>\]: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
+  \[DeployedAppCount \<Int32?\>\]: Count of apps to which the current policy is deployed.
+  \[DeploymentSummary \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>\]: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ConfigurationDeployedUserCount <Int32?>]`: 
-    - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>]`: 
-      - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
-      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[DisplayName <String>]`: 
-    - `[LastRefreshTime <DateTime?>]`: 
-    - `[Version <String>]`: Version of the entity.
-  - `[DisableProtectionOfManagedOutboundOpenInData <Boolean?>]`: Disable protection of data transferred to other apps through IOS OpenIn option.
+    \[ConfigurationDeployedUserCount \<Int32?\>\]: 
+    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: 
+      \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
+      \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[DisplayName \<String\>\]: 
+    \[LastRefreshTime \<DateTime?\>\]: 
+    \[Version \<String\>\]: Version of the entity.
+  \[DisableProtectionOfManagedOutboundOpenInData \<Boolean?\>\]: Disable protection of data transferred to other apps through IOS OpenIn option.
 This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.
-  - `[ExemptedAppProtocols <IMicrosoftGraphKeyValuePair- `[]`>]`: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[ExemptedUniversalLinks <String- `[]`>]`: A list of custom urls that are allowed to invocate an unmanaged app
-  - `[FaceIdBlocked <Boolean?>]`: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
-  - `[FilterOpenInToOnlyManagedApps <Boolean?>]`: Defines if open-in operation is supported from the managed app to the filesharing locations selected.
+  \[ExemptedAppProtocols \<IMicrosoftGraphKeyValuePair\[\]\>\]: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[ExemptedUniversalLinks \<String\[\]\>\]: A list of custom urls that are allowed to invocate an unmanaged app
+  \[FaceIdBlocked \<Boolean?\>\]: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
+  \[FilterOpenInToOnlyManagedApps \<Boolean?\>\]: Defines if open-in operation is supported from the managed app to the filesharing locations selected.
 This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.
-  - `[ManagedUniversalLinks <String- `[]`>]`: A list of custom urls that are allowed to invocate a managed app
-  - `[MessagingRedirectAppUrlScheme <String>]`: When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app url redirect schemes which are allowed to be used.
-  - `[MinimumRequiredSdkVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[MinimumWarningSdkVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data.
-  - `[MinimumWipeSdkVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[ProtectInboundDataFromUnknownSources <Boolean?>]`: Protect incoming data from unknown source.
+  \[ManagedUniversalLinks \<String\[\]\>\]: A list of custom urls that are allowed to invocate a managed app
+  \[MessagingRedirectAppUrlScheme \<String\>\]: When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app url redirect schemes which are allowed to be used.
+  \[MinimumRequiredSdkVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumWarningSdkVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+  \[MinimumWipeSdkVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[ProtectInboundDataFromUnknownSources \<Boolean?\>\]: Protect incoming data from unknown source.
 This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps.
-  - `[ThirdPartyKeyboardsBlocked <Boolean?>]`: Defines if third party keyboards are allowed while accessing a managed app
+  \[ThirdPartyKeyboardsBlocked \<Boolean?\>\]: Defines if third party keyboards are allowed while accessing a managed app
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+DEPLOYMENTSUMMARY \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConfigurationDeployedUserCount <Int32?>]`: 
-  - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>]`: 
-    - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[LastRefreshTime <DateTime?>]`: 
-  - `[Version <String>]`: Version of the entity.
+  \[ConfigurationDeployedUserCount \<Int32?\>\]: 
+  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: 
+    \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[LastRefreshTime \<DateTime?\>\]: 
+  \[Version \<String\>\]: Version of the entity.
 
-EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair- `[]`>: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+EXEMPTEDAPPPROTOCOLS \<IMicrosoftGraphKeyValuePair\[\]\>: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: The unique identifier of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: The unique identifier of managedEBookCategory
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
-  - `[PolicySetId <String>]`: The unique identifier of policySet
-  - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AssignmentFilterEvaluationStatusDetailsId \<String\>\]: The unique identifier of assignmentFilterEvaluationStatusDetails
+  \[BundleId \<String\>\]: Usage: bundleId='{bundleId}'
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceAppManagementTaskId \<String\>\]: The unique identifier of deviceAppManagementTask
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementConfigurationSettingDefinitionId \<String\>\]: The unique identifier of deviceManagementConfigurationSettingDefinition
+  \[DeviceManagementConfigurationSettingId \<String\>\]: The unique identifier of deviceManagementConfigurationSetting
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnterpriseCodeSigningCertificateId \<String\>\]: The unique identifier of enterpriseCodeSigningCertificate
+  \[Id \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[IosLobAppProvisioningConfigurationAssignmentId \<String\>\]: The unique identifier of iosLobAppProvisioningConfigurationAssignment
+  \[IosLobAppProvisioningConfigurationId \<String\>\]: The unique identifier of iosLobAppProvisioningConfiguration
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[IosVppAppAssignedLicenseId \<String\>\]: The unique identifier of iosVppAppAssignedLicense
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationStateId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationState
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookCategoryId \<String\>\]: The unique identifier of managedEBookCategory
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppIntentAndStateId \<String\>\]: The unique identifier of mobileAppIntentAndState
+  \[MobileAppProvisioningConfigGroupAssignmentId \<String\>\]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[PolicyId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[PolicySetAssignmentId \<String\>\]: The unique identifier of policySetAssignment
+  \[PolicySetId \<String\>\]: The unique identifier of policySet
+  \[PolicySetItemId \<String\>\]: The unique identifier of policySetItem
+  \[SecurityBaselineSettingStateId \<String\>\]: The unique identifier of securityBaselineSettingState
+  \[SecurityBaselineStateId \<String\>\]: The unique identifier of securityBaselineState
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  \[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  \[WindowsDefenderApplicationControlSupplementalPolicyId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionDeviceRegistrationId \<String\>\]: The unique identifier of windowsInformationProtectionDeviceRegistration
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+  \[WindowsInformationProtectionWipeActionId \<String\>\]: The unique identifier of windowsInformationProtectionWipeAction
+  \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection)
-
-
-
-
 

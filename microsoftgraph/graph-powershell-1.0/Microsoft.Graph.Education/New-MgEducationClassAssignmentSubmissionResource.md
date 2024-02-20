@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassAssignmentSubmissionResource
@@ -15,39 +14,37 @@ The operation will not succeed if the allowStudentsToAddResources flag is not se
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgEducationClassAssignmentSubmissionResource -EducationAssignmentId <String> -EducationClassId <String>
- -EducationSubmissionId <String> [-AdditionalProperties <Hashtable>] [-AssignmentResourceUrl <String>]
- [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationSubmissionId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignmentResourceUrl <String>] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationClassAssignmentSubmissionResource -EducationAssignmentId <String> -EducationClassId <String>
  -EducationSubmissionId <String> -BodyParameter <IMicrosoftGraphEducationSubmissionResource>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEducationClassAssignmentSubmissionResource -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignmentResourceUrl <String>] [-Id <String>]
- [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignmentResourceUrl <String>]
+ [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEducationClassAssignmentSubmissionResource -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSubmissionResource> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSubmissionResource> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,15 +54,12 @@ The operation will not succeed if the allowStudentsToAddResources flag is not se
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-post-resources-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an educationWordResource
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -77,14 +71,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an educationwordresource
-
-### Example 2: Create an educationLinkResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -96,14 +86,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create an educationlinkresource
-
-### Example 3: Create an educationFileResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -115,14 +101,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create an educationfileresource
-
-### Example 4: Create an educationExcelResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -134,14 +116,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create an educationexcelresource
-
-### Example 5: Create an educationPowerPointResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -153,14 +131,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will create an educationpowerpointresource
-
-### Example 6: Create an educationMediaResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	resource = @{
@@ -171,10 +145,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
-
-```
-This example will create an educationmediaresource
-
 
 ## PARAMETERS
 
@@ -347,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -389,68 +374,63 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationSubmissionResource>`: educationSubmissionResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEducationSubmissionResource\>: educationSubmissionResource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
-  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+  \[AssignmentResourceUrl \<String\>\]: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
+  \[Resource \<IMicrosoftGraphEducationResource\>\]: educationResource
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[DisplayName <String>]`: Display name of resource.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        \[Id \<String\>\]: Unique identifier for the identity.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[DisplayName \<String\>\]: Display name of resource.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+RESOURCE \<IMicrosoftGraphEducationResource\>: educationResource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: Display name of resource.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DisplayName \<String\>\]: Display name of resource.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource)
-
-
-
 

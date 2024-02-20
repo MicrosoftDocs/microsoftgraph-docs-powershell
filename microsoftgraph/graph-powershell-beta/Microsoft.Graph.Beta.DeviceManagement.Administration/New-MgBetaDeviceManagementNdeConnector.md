@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementndeconnector
@@ -14,20 +14,38 @@ Create new navigation property to ndesConnectors for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementNdeConnector [-AdditionalProperties <Hashtable>] [-ConnectorVersion <String>]
- [-DisplayName <String>] [-EnrolledDateTime <DateTime>] [-Id <String>] [-LastConnectionDateTime <DateTime>]
- [-MachineName <String>] [-RoleScopeTagIds <String[]>] [-State <NdesConnectorState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementNdeConnector [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ConnectorVersion <String>] [-DisplayName <String>] [-EnrolledDateTime <DateTime>] [-Id <String>]
+ [-LastConnectionDateTime <DateTime>] [-MachineName <String>] [-RoleScopeTagIds <String[]>]
+ [-State <NdesConnectorState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to ndesConnectors for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -183,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -254,30 +287,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNdesConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNdesConnector\>: Entity which represents an OnPrem Ndes connector.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConnectorVersion <String>]`: The build version of the Ndes Connector.
-  - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
-  - `[EnrolledDateTime <DateTime?>]`: Timestamp when on-prem certificate connector was enrolled in Intune.
-  - `[LastConnectionDateTime <DateTime?>]`: Last connection time for the Ndes Connector
-  - `[MachineName <String>]`: Name of the machine running on-prem certificate connector service.
-  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[State <NdesConnectorState?>]`: The current status of the Ndes Connector.
+  \[ConnectorVersion \<String\>\]: The build version of the Ndes Connector.
+  \[DisplayName \<String\>\]: The friendly name of the Ndes Connector.
+  \[EnrolledDateTime \<DateTime?\>\]: Timestamp when on-prem certificate connector was enrolled in Intune.
+  \[LastConnectionDateTime \<DateTime?\>\]: Last connection time for the Ndes Connector
+  \[MachineName \<String\>\]: Name of the machine running on-prem certificate connector service.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
+  \[State \<NdesConnectorState?\>\]: The current status of the Ndes Connector.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementndeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementndeconnector)
-
-
-
-
 

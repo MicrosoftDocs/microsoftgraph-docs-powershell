@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Submit-MgBetaSecurityTiIndicator
@@ -15,26 +14,26 @@ Upload multiple threat intelligence (TI) indicators in one request instead of mu
 
 ### SubmitExpanded (Default)
 ```
-Submit-MgBetaSecurityTiIndicator [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphTiIndicator[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Submit-MgBetaSecurityTiIndicator [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Value <IMicrosoftGraphTiIndicator[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Submit
 ```
 Submit-MgBetaSecurityTiIndicator
  -BodyParameter <IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-submittiindicators-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Submit-MgBetaSecurityTiIndicator Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
@@ -82,8 +81,6 @@ $params = @{
 }
 Submit-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
-This example shows how to use the Submit-MgBetaSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -140,6 +137,21 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -205,197 +217,193 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTiIndicator
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Value <IMicrosoftGraphTiIndicator- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Value \<IMicrosoftGraphTiIndicator\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Action <String>]`: tiAction
-    - `[ActivityGroupNames <String- `[]`>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
-    - `[AdditionalInformation <String>]`: A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties.
+    \[Action \<String\>\]: tiAction
+    \[ActivityGroupNames \<String\[\]\>\]: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
+    \[AdditionalInformation \<String\>\]: A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties.
 The security tool specified by targetProduct typically does not utilize this data.
-    - `[AzureTenantId <String>]`: Stamped by the system when the indicator is ingested.
+    \[AzureTenantId \<String\>\]: Stamped by the system when the indicator is ingested.
 The Microsoft Entra tenant id of submitting client.
 Required.
-    - `[Confidence <Int32?>]`: An integer representing the confidence the data within the indicator accurately identifies malicious behavior.
+    \[Confidence \<Int32?\>\]: An integer representing the confidence the data within the indicator accurately identifies malicious behavior.
 Acceptable values are 0 - 100 with 100 being the highest.
-    - `[Description <String>]`: Brief description (100 characters or less) of the threat represented by the indicator.
+    \[Description \<String\>\]: Brief description (100 characters or less) of the threat represented by the indicator.
 Required.
-    - `[DiamondModel <String>]`: diamondModel
-    - `[DomainName <String>]`: 
-    - `[EmailEncoding <String>]`: 
-    - `[EmailLanguage <String>]`: 
-    - `[EmailRecipient <String>]`: 
-    - `[EmailSenderAddress <String>]`: 
-    - `[EmailSenderName <String>]`: 
-    - `[EmailSourceDomain <String>]`: 
-    - `[EmailSourceIPAddress <String>]`: 
-    - `[EmailSubject <String>]`: 
-    - `[EmailXMailer <String>]`: 
-    - `[ExpirationDateTime <DateTime?>]`: DateTime string indicating when the Indicator expires.
+    \[DiamondModel \<String\>\]: diamondModel
+    \[DomainName \<String\>\]: 
+    \[EmailEncoding \<String\>\]: 
+    \[EmailLanguage \<String\>\]: 
+    \[EmailRecipient \<String\>\]: 
+    \[EmailSenderAddress \<String\>\]: 
+    \[EmailSenderName \<String\>\]: 
+    \[EmailSourceDomain \<String\>\]: 
+    \[EmailSourceIPAddress \<String\>\]: 
+    \[EmailSubject \<String\>\]: 
+    \[EmailXMailer \<String\>\]: 
+    \[ExpirationDateTime \<DateTime?\>\]: DateTime string indicating when the Indicator expires.
 All indicators must have an expiration date to avoid stale indicators persisting in the system.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
-    - `[ExternalId <String>]`: An identification number that ties the indicator back to the indicator provider's system (for example, a foreign key).
-    - `[FileCompileDateTime <DateTime?>]`: 
-    - `[FileCreatedDateTime <DateTime?>]`: 
-    - `[FileHashType <String>]`: fileHashType
-    - `[FileHashValue <String>]`: 
-    - `[FileMutexName <String>]`: 
-    - `[FileName <String>]`: 
-    - `[FilePacker <String>]`: 
-    - `[FilePath <String>]`: 
-    - `[FileSize <Int64?>]`: 
-    - `[FileType <String>]`: 
-    - `[IngestedDateTime <DateTime?>]`: Stamped by the system when the indicator is ingested.
+    \[ExternalId \<String\>\]: An identification number that ties the indicator back to the indicator provider's system (for example, a foreign key).
+    \[FileCompileDateTime \<DateTime?\>\]: 
+    \[FileCreatedDateTime \<DateTime?\>\]: 
+    \[FileHashType \<String\>\]: fileHashType
+    \[FileHashValue \<String\>\]: 
+    \[FileMutexName \<String\>\]: 
+    \[FileName \<String\>\]: 
+    \[FilePacker \<String\>\]: 
+    \[FilePath \<String\>\]: 
+    \[FileSize \<Int64?\>\]: 
+    \[FileType \<String\>\]: 
+    \[IngestedDateTime \<DateTime?\>\]: Stamped by the system when the indicator is ingested.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[IsActive <Boolean?>]`: Used to deactivate indicators within system.
+    \[IsActive \<Boolean?\>\]: Used to deactivate indicators within system.
 By default, any indicator submitted is set as active.
 However, providers may submit existing indicators with this set to 'False' to deactivate indicators in the system.
-    - `[KillChain <String- `[]`>]`: A JSON array of strings that describes which point or points on the Kill Chain this indicator targets.
+    \[KillChain \<String\[\]\>\]: A JSON array of strings that describes which point or points on the Kill Chain this indicator targets.
 See 'killChain values' below for exact values.
-    - `[KnownFalsePositives <String>]`: Scenarios in which the indicator may cause false positives.
+    \[KnownFalsePositives \<String\>\]: Scenarios in which the indicator may cause false positives.
 This should be human-readable text.
-    - `[LastReportedDateTime <DateTime?>]`: The last time the indicator was seen.
+    \[LastReportedDateTime \<DateTime?\>\]: The last time the indicator was seen.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[MalwareFamilyNames <String- `[]`>]`: The malware family name associated with an indicator if it exists.
+    \[MalwareFamilyNames \<String\[\]\>\]: The malware family name associated with an indicator if it exists.
 Microsoft prefers the Microsoft malware family name if at all possible that can be found via the Windows Defender Security Intelligence threat encyclopedia.
-    - `[NetworkCidrBlock <String>]`: 
-    - `[NetworkDestinationAsn <Int64?>]`: 
-    - `[NetworkDestinationCidrBlock <String>]`: 
-    - `[NetworkDestinationIPv4 <String>]`: 
-    - `[NetworkDestinationIPv6 <String>]`: 
-    - `[NetworkDestinationPort <Int32?>]`: 
-    - `[NetworkIPv4 <String>]`: 
-    - `[NetworkIPv6 <String>]`: 
-    - `[NetworkPort <Int32?>]`: 
-    - `[NetworkProtocol <Int32?>]`: 
-    - `[NetworkSourceAsn <Int64?>]`: 
-    - `[NetworkSourceCidrBlock <String>]`: 
-    - `[NetworkSourceIPv4 <String>]`: 
-    - `[NetworkSourceIPv6 <String>]`: 
-    - `[NetworkSourcePort <Int32?>]`: 
-    - `[PassiveOnly <Boolean?>]`: Determines if the indicator should trigger an event that is visible to an end-user.
+    \[NetworkCidrBlock \<String\>\]: 
+    \[NetworkDestinationAsn \<Int64?\>\]: 
+    \[NetworkDestinationCidrBlock \<String\>\]: 
+    \[NetworkDestinationIPv4 \<String\>\]: 
+    \[NetworkDestinationIPv6 \<String\>\]: 
+    \[NetworkDestinationPort \<Int32?\>\]: 
+    \[NetworkIPv4 \<String\>\]: 
+    \[NetworkIPv6 \<String\>\]: 
+    \[NetworkPort \<Int32?\>\]: 
+    \[NetworkProtocol \<Int32?\>\]: 
+    \[NetworkSourceAsn \<Int64?\>\]: 
+    \[NetworkSourceCidrBlock \<String\>\]: 
+    \[NetworkSourceIPv4 \<String\>\]: 
+    \[NetworkSourceIPv6 \<String\>\]: 
+    \[NetworkSourcePort \<Int32?\>\]: 
+    \[PassiveOnly \<Boolean?\>\]: Determines if the indicator should trigger an event that is visible to an end-user.
 When set to 'true,' security tools won't notify the end user that a 'hit' has occurred.
 This is most often treated as audit or silent mode by security products where they'll simply log that a match occurred but won't perform the action.
 Default value is false.
-    - `[Severity <Int32?>]`: An integer representing the severity of the malicious behavior identified by the data within the indicator.
+    \[Severity \<Int32?\>\]: An integer representing the severity of the malicious behavior identified by the data within the indicator.
 Acceptable values are 0 - 5 where 5 is the most severe and zero isn't severe at all.
 Default value is 3.
-    - `[Tags <String- `[]`>]`: A JSON array of strings that stores arbitrary tags/keywords.
-    - `[TargetProduct <String>]`: A string value representing a single security product to which the indicator should be applied.
+    \[Tags \<String\[\]\>\]: A JSON array of strings that stores arbitrary tags/keywords.
+    \[TargetProduct \<String\>\]: A string value representing a single security product to which the indicator should be applied.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
-    - `[ThreatType <String>]`: Each indicator must have a valid Indicator Threat Type.
+    \[ThreatType \<String\>\]: Each indicator must have a valid Indicator Threat Type.
 Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
-    - `[TlpLevel <String>]`: tlpLevel
-    - `[Url <String>]`: 
-    - `[UserAgent <String>]`: 
+    \[TlpLevel \<String\>\]: tlpLevel
+    \[Url \<String\>\]: 
+    \[UserAgent \<String\>\]: 
 
-VALUE <IMicrosoftGraphTiIndicator- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+VALUE \<IMicrosoftGraphTiIndicator\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Action <String>]`: tiAction
-  - `[ActivityGroupNames <String- `[]`>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
-  - `[AdditionalInformation <String>]`: A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties.
+  \[Action \<String\>\]: tiAction
+  \[ActivityGroupNames \<String\[\]\>\]: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
+  \[AdditionalInformation \<String\>\]: A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties.
 The security tool specified by targetProduct typically does not utilize this data.
-  - `[AzureTenantId <String>]`: Stamped by the system when the indicator is ingested.
+  \[AzureTenantId \<String\>\]: Stamped by the system when the indicator is ingested.
 The Microsoft Entra tenant id of submitting client.
 Required.
-  - `[Confidence <Int32?>]`: An integer representing the confidence the data within the indicator accurately identifies malicious behavior.
+  \[Confidence \<Int32?\>\]: An integer representing the confidence the data within the indicator accurately identifies malicious behavior.
 Acceptable values are 0 - 100 with 100 being the highest.
-  - `[Description <String>]`: Brief description (100 characters or less) of the threat represented by the indicator.
+  \[Description \<String\>\]: Brief description (100 characters or less) of the threat represented by the indicator.
 Required.
-  - `[DiamondModel <String>]`: diamondModel
-  - `[DomainName <String>]`: 
-  - `[EmailEncoding <String>]`: 
-  - `[EmailLanguage <String>]`: 
-  - `[EmailRecipient <String>]`: 
-  - `[EmailSenderAddress <String>]`: 
-  - `[EmailSenderName <String>]`: 
-  - `[EmailSourceDomain <String>]`: 
-  - `[EmailSourceIPAddress <String>]`: 
-  - `[EmailSubject <String>]`: 
-  - `[EmailXMailer <String>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: DateTime string indicating when the Indicator expires.
+  \[DiamondModel \<String\>\]: diamondModel
+  \[DomainName \<String\>\]: 
+  \[EmailEncoding \<String\>\]: 
+  \[EmailLanguage \<String\>\]: 
+  \[EmailRecipient \<String\>\]: 
+  \[EmailSenderAddress \<String\>\]: 
+  \[EmailSenderName \<String\>\]: 
+  \[EmailSourceDomain \<String\>\]: 
+  \[EmailSourceIPAddress \<String\>\]: 
+  \[EmailSubject \<String\>\]: 
+  \[EmailXMailer \<String\>\]: 
+  \[ExpirationDateTime \<DateTime?\>\]: DateTime string indicating when the Indicator expires.
 All indicators must have an expiration date to avoid stale indicators persisting in the system.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
-  - `[ExternalId <String>]`: An identification number that ties the indicator back to the indicator provider's system (for example, a foreign key).
-  - `[FileCompileDateTime <DateTime?>]`: 
-  - `[FileCreatedDateTime <DateTime?>]`: 
-  - `[FileHashType <String>]`: fileHashType
-  - `[FileHashValue <String>]`: 
-  - `[FileMutexName <String>]`: 
-  - `[FileName <String>]`: 
-  - `[FilePacker <String>]`: 
-  - `[FilePath <String>]`: 
-  - `[FileSize <Int64?>]`: 
-  - `[FileType <String>]`: 
-  - `[IngestedDateTime <DateTime?>]`: Stamped by the system when the indicator is ingested.
+  \[ExternalId \<String\>\]: An identification number that ties the indicator back to the indicator provider's system (for example, a foreign key).
+  \[FileCompileDateTime \<DateTime?\>\]: 
+  \[FileCreatedDateTime \<DateTime?\>\]: 
+  \[FileHashType \<String\>\]: fileHashType
+  \[FileHashValue \<String\>\]: 
+  \[FileMutexName \<String\>\]: 
+  \[FileName \<String\>\]: 
+  \[FilePacker \<String\>\]: 
+  \[FilePath \<String\>\]: 
+  \[FileSize \<Int64?\>\]: 
+  \[FileType \<String\>\]: 
+  \[IngestedDateTime \<DateTime?\>\]: Stamped by the system when the indicator is ingested.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[IsActive <Boolean?>]`: Used to deactivate indicators within system.
+  \[IsActive \<Boolean?\>\]: Used to deactivate indicators within system.
 By default, any indicator submitted is set as active.
 However, providers may submit existing indicators with this set to 'False' to deactivate indicators in the system.
-  - `[KillChain <String- `[]`>]`: A JSON array of strings that describes which point or points on the Kill Chain this indicator targets.
+  \[KillChain \<String\[\]\>\]: A JSON array of strings that describes which point or points on the Kill Chain this indicator targets.
 See 'killChain values' below for exact values.
-  - `[KnownFalsePositives <String>]`: Scenarios in which the indicator may cause false positives.
+  \[KnownFalsePositives \<String\>\]: Scenarios in which the indicator may cause false positives.
 This should be human-readable text.
-  - `[LastReportedDateTime <DateTime?>]`: The last time the indicator was seen.
+  \[LastReportedDateTime \<DateTime?\>\]: The last time the indicator was seen.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[MalwareFamilyNames <String- `[]`>]`: The malware family name associated with an indicator if it exists.
+  \[MalwareFamilyNames \<String\[\]\>\]: The malware family name associated with an indicator if it exists.
 Microsoft prefers the Microsoft malware family name if at all possible that can be found via the Windows Defender Security Intelligence threat encyclopedia.
-  - `[NetworkCidrBlock <String>]`: 
-  - `[NetworkDestinationAsn <Int64?>]`: 
-  - `[NetworkDestinationCidrBlock <String>]`: 
-  - `[NetworkDestinationIPv4 <String>]`: 
-  - `[NetworkDestinationIPv6 <String>]`: 
-  - `[NetworkDestinationPort <Int32?>]`: 
-  - `[NetworkIPv4 <String>]`: 
-  - `[NetworkIPv6 <String>]`: 
-  - `[NetworkPort <Int32?>]`: 
-  - `[NetworkProtocol <Int32?>]`: 
-  - `[NetworkSourceAsn <Int64?>]`: 
-  - `[NetworkSourceCidrBlock <String>]`: 
-  - `[NetworkSourceIPv4 <String>]`: 
-  - `[NetworkSourceIPv6 <String>]`: 
-  - `[NetworkSourcePort <Int32?>]`: 
-  - `[PassiveOnly <Boolean?>]`: Determines if the indicator should trigger an event that is visible to an end-user.
+  \[NetworkCidrBlock \<String\>\]: 
+  \[NetworkDestinationAsn \<Int64?\>\]: 
+  \[NetworkDestinationCidrBlock \<String\>\]: 
+  \[NetworkDestinationIPv4 \<String\>\]: 
+  \[NetworkDestinationIPv6 \<String\>\]: 
+  \[NetworkDestinationPort \<Int32?\>\]: 
+  \[NetworkIPv4 \<String\>\]: 
+  \[NetworkIPv6 \<String\>\]: 
+  \[NetworkPort \<Int32?\>\]: 
+  \[NetworkProtocol \<Int32?\>\]: 
+  \[NetworkSourceAsn \<Int64?\>\]: 
+  \[NetworkSourceCidrBlock \<String\>\]: 
+  \[NetworkSourceIPv4 \<String\>\]: 
+  \[NetworkSourceIPv6 \<String\>\]: 
+  \[NetworkSourcePort \<Int32?\>\]: 
+  \[PassiveOnly \<Boolean?\>\]: Determines if the indicator should trigger an event that is visible to an end-user.
 When set to 'true,' security tools won't notify the end user that a 'hit' has occurred.
 This is most often treated as audit or silent mode by security products where they'll simply log that a match occurred but won't perform the action.
 Default value is false.
-  - `[Severity <Int32?>]`: An integer representing the severity of the malicious behavior identified by the data within the indicator.
+  \[Severity \<Int32?\>\]: An integer representing the severity of the malicious behavior identified by the data within the indicator.
 Acceptable values are 0 - 5 where 5 is the most severe and zero isn't severe at all.
 Default value is 3.
-  - `[Tags <String- `[]`>]`: A JSON array of strings that stores arbitrary tags/keywords.
-  - `[TargetProduct <String>]`: A string value representing a single security product to which the indicator should be applied.
+  \[Tags \<String\[\]\>\]: A JSON array of strings that stores arbitrary tags/keywords.
+  \[TargetProduct \<String\>\]: A string value representing a single security product to which the indicator should be applied.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
-  - `[ThreatType <String>]`: Each indicator must have a valid Indicator Threat Type.
+  \[ThreatType \<String\>\]: Each indicator must have a valid Indicator Threat Type.
 Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
-  - `[TlpLevel <String>]`: tlpLevel
-  - `[Url <String>]`: 
-  - `[UserAgent <String>]`:
+  \[TlpLevel \<String\>\]: tlpLevel
+  \[Url \<String\>\]: 
+  \[UserAgent \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator)
-
-
-
 

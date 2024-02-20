@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
@@ -11,29 +10,42 @@ ms.prod: intune
 ## SYNOPSIS
 Update the properties of a deviceConfigurationDeviceStateSummary object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-AdditionalProperties <Hashtable>]
- [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
- [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>]
- [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
+ [-ErrorDeviceCount <Int32>] [-Id <String>] [-NonCompliantDeviceCount <Int32>]
+ [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a deviceConfigurationDeviceStateSummary object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -204,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnknownDeviceCount
 Number of unknown devices
 
@@ -260,31 +287,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationDeviceStateSummary>`: deviceConfigurationDeviceStateSummary
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceConfigurationDeviceStateSummary\>: deviceConfigurationDeviceStateSummary
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
-  - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
-  - `[ErrorDeviceCount <Int32?>]`: Number of error devices
-  - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
-  - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-  - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
-  - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
+  \[CompliantDeviceCount \<Int32?\>\]: Number of compliant devices
+  \[ConflictDeviceCount \<Int32?\>\]: Number of conflict devices
+  \[ErrorDeviceCount \<Int32?\>\]: Number of error devices
+  \[NonCompliantDeviceCount \<Int32?\>\]: Number of NonCompliant devices
+  \[NotApplicableDeviceCount \<Int32?\>\]: Number of not applicable devices
+  \[RemediatedDeviceCount \<Int32?\>\]: Number of remediated devices
+  \[UnknownDeviceCount \<Int32?\>\]: Number of unknown devices
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new connectedOrganization object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,27 +22,30 @@ New-MgBetaEntitlementManagementConnectedOrganization [-Description <String>] [-D
 ### Create
 ```
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded
 ```
-New-MgBetaEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
- [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEntitlementManagementConnectedOrganization [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]
+ [-Id <String>] [-IdentitySources <IMicrosoftGraphIdentitySource[]>]
+ [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>]
+ [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new connectedOrganization object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -61,11 +61,6 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -309,6 +304,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: Create, CreateExpanded
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 connectedOrganizationState
 
@@ -365,60 +375,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConnectedOrganization>`: connectedOrganization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphConnectedOrganization\>: connectedOrganization
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <String>]`: UPN of the user who created this resource.
+  \[CreatedBy \<String\>\]: UPN of the user who created this resource.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Description <String>]`: The description of the connected organization.
-  - `[DisplayName <String>]`: The display name of the connected organization.
+  \[Description \<String\>\]: The description of the connected organization.
+  \[DisplayName \<String\>\]: The display name of the connected organization.
 Supports $filter (eq).
-  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[IdentitySources <IMicrosoftGraphIdentitySource- `[]`>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
+  \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Read-only.
 Nullable.
 Supports $select and $filter(eq).
 To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-  - `[InternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
-  - `[ModifiedBy <String>]`: UPN of the user who last modified this resource.
+  \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
+  \[ModifiedBy \<String\>\]: UPN of the user who last modified this resource.
 Read-only.
-  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[State <String>]`: connectedOrganizationState
+  \[State \<String\>\]: connectedOrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+EXTERNALSPONSORS \<IMicrosoftGraphDirectoryObject\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+INTERNALSPONSORS \<IMicrosoftGraphDirectoryObject\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization)
-
-
-
 

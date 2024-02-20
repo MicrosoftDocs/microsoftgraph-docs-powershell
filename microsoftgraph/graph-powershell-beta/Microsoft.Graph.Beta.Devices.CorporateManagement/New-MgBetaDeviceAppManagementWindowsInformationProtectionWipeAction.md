@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionwipeaction
@@ -14,21 +14,34 @@ Create new navigation property to windowsInformationProtectionWipeActions for de
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LastCheckInDateTime <DateTime>] [-Status <String>] [-TargetedDeviceMacAddress <String>]
- [-TargetedDeviceName <String>] [-TargetedDeviceRegistrationId <String>] [-TargetedUserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastCheckInDateTime <DateTime>] [-Status <String>]
+ [-TargetedDeviceMacAddress <String>] [-TargetedDeviceName <String>] [-TargetedDeviceRegistrationId <String>]
+ [-TargetedUserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionWipeAction> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionWipeAction> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -116,6 +129,21 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -240,29 +268,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionWipeAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionWipeAction>`: Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsInformationProtectionWipeAction\>: Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device that was targeted by this wipe action.
-  - `[Status <String>]`: actionState
-  - `[TargetedDeviceMacAddress <String>]`: Targeted device Mac address.
-  - `[TargetedDeviceName <String>]`: Targeted device name.
-  - `[TargetedDeviceRegistrationId <String>]`: The DeviceRegistrationId being targeted by this wipe action.
-  - `[TargetedUserId <String>]`: The UserId being targeted by this wipe action.
+  \[LastCheckInDateTime \<DateTime?\>\]: Last checkin time of the device that was targeted by this wipe action.
+  \[Status \<String\>\]: actionState
+  \[TargetedDeviceMacAddress \<String\>\]: Targeted device Mac address.
+  \[TargetedDeviceName \<String\>\]: Targeted device name.
+  \[TargetedDeviceRegistrationId \<String\>\]: The DeviceRegistrationId being targeted by this wipe action.
+  \[TargetedUserId \<String\>\]: The UserId being targeted by this wipe action.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionwipeaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionwipeaction)
-
-
-
-
 

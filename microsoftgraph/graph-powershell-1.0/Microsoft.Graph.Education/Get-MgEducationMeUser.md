@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationMeUser
@@ -11,31 +10,24 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the simple directory user that corresponds to this educationUser.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
-Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the simple directory user that corresponds to this educationUser.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationMeUser
-
-```
-This example shows how to use the Get-MgEducationMeUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -99,6 +91,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -108,14 +115,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser)
-
-
-
 

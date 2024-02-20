@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema
@@ -14,8 +14,8 @@ Create new navigation property to androidForWorkAppConfigurationSchemas for devi
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema [-AdditionalProperties <Hashtable>]
- [-ExampleJsonInputFile <String>] [-Id <String>]
+New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
  [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,12 +23,28 @@ New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema [-AdditionalPrope
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema
- -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to androidForWorkAppConfigurationSchemas for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -124,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchemaItems
 Collection of items each representing a named configuration option in the schema
 To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
@@ -181,49 +212,44 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema describing an Android for Work application's custom configurations.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAndroidForWorkAppConfigurationSchema\>: Schema describing an Android for Work application's custom configurations.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ExampleJson <Byte- `[]`>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
-  - `[SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem- `[]`>]`: Collection of items each representing a named configuration option in the schema
-    - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
-    - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
-    - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
-    - `[DefaultStringArrayValue <String- `[]`>]`: Default value for string array type items, if specified by the app developer
-    - `[DefaultStringValue <String>]`: Default value for string type items, if specified by the app developer
-    - `[Description <String>]`: Description of what the item controls within the application
-    - `[DisplayName <String>]`: Human readable name
-    - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
-    - `[Selections <IMicrosoftGraphKeyValuePair- `[]`>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+  \[ExampleJson \<Byte\[\]\>\]: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
+  \[SchemaItems \<IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[\]\>\]: Collection of items each representing a named configuration option in the schema
+    \[DataType \<String\>\]: Data type for a configuration item inside an Android for Work application's custom configuration schema
+    \[DefaultBoolValue \<Boolean?\>\]: Default value for boolean type items, if specified by the app developer
+    \[DefaultIntValue \<Int32?\>\]: Default value for integer type items, if specified by the app developer
+    \[DefaultStringArrayValue \<String\[\]\>\]: Default value for string array type items, if specified by the app developer
+    \[DefaultStringValue \<String\>\]: Default value for string type items, if specified by the app developer
+    \[Description \<String\>\]: Description of what the item controls within the application
+    \[DisplayName \<String\>\]: Human readable name
+    \[SchemaItemKey \<String\>\]: Unique key the application uses to identify the item
+    \[Selections \<IMicrosoftGraphKeyValuePair\[\]\>\]: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
+      \[Name \<String\>\]: Name for this key-value pair
+      \[Value \<String\>\]: Value for this key-value pair
 
-SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem- `[]`>: Collection of items each representing a named configuration option in the schema
-  - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
-  - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
-  - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
-  - `[DefaultStringArrayValue <String- `[]`>]`: Default value for string array type items, if specified by the app developer
-  - `[DefaultStringValue <String>]`: Default value for string type items, if specified by the app developer
-  - `[Description <String>]`: Description of what the item controls within the application
-  - `[DisplayName <String>]`: Human readable name
-  - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
-  - `[Selections <IMicrosoftGraphKeyValuePair- `[]`>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+SCHEMAITEMS \<IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[\]\>: Collection of items each representing a named configuration option in the schema
+  \[DataType \<String\>\]: Data type for a configuration item inside an Android for Work application's custom configuration schema
+  \[DefaultBoolValue \<Boolean?\>\]: Default value for boolean type items, if specified by the app developer
+  \[DefaultIntValue \<Int32?\>\]: Default value for integer type items, if specified by the app developer
+  \[DefaultStringArrayValue \<String\[\]\>\]: Default value for string array type items, if specified by the app developer
+  \[DefaultStringValue \<String\>\]: Default value for string type items, if specified by the app developer
+  \[Description \<String\>\]: Description of what the item controls within the application
+  \[DisplayName \<String\>\]: Human readable name
+  \[SchemaItemKey \<String\>\]: Unique key the application uses to identify the item
+  \[Selections \<IMicrosoftGraphKeyValuePair\[\]\>\]: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema)
-
-
-
-
 

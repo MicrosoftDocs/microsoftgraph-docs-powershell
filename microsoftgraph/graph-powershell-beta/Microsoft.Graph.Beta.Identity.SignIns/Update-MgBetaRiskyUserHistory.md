@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuserhistory
@@ -10,31 +10,29 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property history in identityProtection
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskyUserHistory?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String>
- [-Activity <IMicrosoftGraphRiskUserActivity>] [-AdditionalProperties <Hashtable>]
- [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>] [-InitiatedBy <String>] [-IsDeleted]
- [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>]
- [-RiskState <String>] [-UserDisplayName <String>] [-UserId <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Activity <IMicrosoftGraphRiskUserActivity>]
+ [-AdditionalProperties <Hashtable>] [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>]
+ [-InitiatedBy <String>] [-IsDeleted] [-IsProcessing] [-RiskDetail <String>]
+ [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>] [-UserDisplayName <String>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String>
- -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-Activity <IMicrosoftGraphRiskUserActivity>] [-AdditionalProperties <Hashtable>]
  [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>] [-InitiatedBy <String>] [-IsDeleted]
  [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>]
@@ -45,12 +43,28 @@ Update-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property history in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -218,6 +232,21 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -406,155 +435,149 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITY `<IMicrosoftGraphRiskUserActivity>`: riskUserActivity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Detail <String>]`: riskDetail
-  - `[EventTypes <String- `[]`>]`: 
-  - `[RiskEventTypes <String- `[]`>]`: 
+ACTIVITY \<IMicrosoftGraphRiskUserActivity\>: riskUserActivity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Detail \<String\>\]: riskDetail
+  \[EventTypes \<String\[\]\>\]: 
+  \[RiskEventTypes \<String\[\]\>\]: 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
-  - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
+BODYPARAMETER \<IMicrosoftGraphRiskyUserHistoryItem\>: riskyUserHistoryItem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[History \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>\]: 
+  \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
+  \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
 Supports $filter (eq).
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, gt, lt).
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[UserDisplayName <String>]`: Risky user display name.
-  - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[UserDisplayName \<String\>\]: Risky user display name.
+  \[UserPrincipalName \<String\>\]: Risky user principal name.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Detail <String>]`: riskDetail
-    - `[EventTypes <String- `[]`>]`: 
-    - `[RiskEventTypes <String- `[]`>]`: 
-  - `[InitiatedBy <String>]`: The ID of actor that does the operation.
-  - `[UserId <String>]`: The ID of the user.
+  \[Activity \<IMicrosoftGraphRiskUserActivity\>\]: riskUserActivity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Detail \<String\>\]: riskDetail
+    \[EventTypes \<String\[\]\>\]: 
+    \[RiskEventTypes \<String\[\]\>\]: 
+  \[InitiatedBy \<String\>\]: The ID of actor that does the operation.
+  \[UserId \<String\>\]: The ID of the user.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem- `[]`>: .
-  - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
-  - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
+HISTORY \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>: .
+  \[History \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>\]: 
+  \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
+  \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
 Supports $filter (eq).
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, gt, lt).
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[UserDisplayName <String>]`: Risky user display name.
-  - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[UserDisplayName \<String\>\]: Risky user display name.
+  \[UserPrincipalName \<String\>\]: Risky user principal name.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Detail <String>]`: riskDetail
-    - `[EventTypes <String- `[]`>]`: 
-    - `[RiskEventTypes <String- `[]`>]`: 
-  - `[InitiatedBy <String>]`: The ID of actor that does the operation.
-  - `[UserId <String>]`: The ID of the user.
+  \[Activity \<IMicrosoftGraphRiskUserActivity\>\]: riskUserActivity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Detail \<String\>\]: riskDetail
+    \[EventTypes \<String\[\]\>\]: 
+    \[RiskEventTypes \<String\[\]\>\]: 
+  \[InitiatedBy \<String\>\]: The ID of actor that does the operation.
+  \[UserId \<String\>\]: The ID of the user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
-  - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
-  - `[AuthenticationConditionApplicationAppId <String>]`: The unique identifier of authenticationConditionApplication
-  - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
-  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
-  - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationMethodModes <String- `[]`>]`: Usage: authenticationMethodModes={authenticationMethodModes}
-  - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[AuthorizationPolicyId <String>]`: The unique identifier of authorizationPolicy
-  - `[B2CIdentityUserFlowId <String>]`: The unique identifier of b2cIdentityUserFlow
-  - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
-  - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
-  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
-  - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DefaultUserRoleOverrideId <String>]`: The unique identifier of defaultUserRoleOverride
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
-  - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
-  - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[InvitationId <String>]`: The unique identifier of invitation
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
-  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
-  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
-  - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
-  - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
-  - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
-  - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
-  - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
-  - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
-  - `[ServicePrincipalCreationConditionSetId <String>]`: The unique identifier of servicePrincipalCreationConditionSet
-  - `[ServicePrincipalCreationPolicyId <String>]`: The unique identifier of servicePrincipalCreationPolicy
-  - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
-  - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
-  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
-  - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
-  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
-  - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
-  - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
-  - `[UserFlowLanguageConfigurationId <String>]`: The unique identifier of userFlowLanguageConfiguration
-  - `[UserFlowLanguagePageId <String>]`: The unique identifier of userFlowLanguagePage
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
+INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
+  \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
+  \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
+  \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
+  \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
+  \[AuthenticationMethodConfigurationId \<String\>\]: The unique identifier of authenticationMethodConfiguration
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[AuthenticationMethodModeDetailId \<String\>\]: The unique identifier of authenticationMethodModeDetail
+  \[AuthenticationMethodModes \<String\[\]\>\]: Usage: authenticationMethodModes={authenticationMethodModes}
+  \[AuthenticationStrengthPolicyId \<String\>\]: The unique identifier of authenticationStrengthPolicy
+  \[AuthorizationPolicyId \<String\>\]: The unique identifier of authorizationPolicy
+  \[B2CIdentityUserFlowId \<String\>\]: The unique identifier of b2cIdentityUserFlow
+  \[B2XIdentityUserFlowId \<String\>\]: The unique identifier of b2xIdentityUserFlow
+  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
+  \[CertificateBasedAuthConfigurationId \<String\>\]: The unique identifier of certificateBasedAuthConfiguration
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConditionalAccessTemplateId \<String\>\]: The unique identifier of conditionalAccessTemplate
+  \[CrossTenantAccessPolicyConfigurationPartnerTenantId \<String\>\]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  \[CustomAuthenticationExtensionId \<String\>\]: The unique identifier of customAuthenticationExtension
+  \[DataLossPreventionPolicyId \<String\>\]: The unique identifier of dataLossPreventionPolicy
+  \[DataPolicyOperationId \<String\>\]: The unique identifier of dataPolicyOperation
+  \[DefaultUserRoleOverrideId \<String\>\]: The unique identifier of defaultUserRoleOverride
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EmailAuthenticationMethodId \<String\>\]: The unique identifier of emailAuthenticationMethod
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[Fido2AuthenticationMethodId \<String\>\]: The unique identifier of fido2AuthenticationMethod
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[IdentityApiConnectorId \<String\>\]: The unique identifier of identityApiConnector
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[IdentityProviderId \<String\>\]: The unique identifier of identityProvider
+  \[IdentityUserFlowAttributeAssignmentId \<String\>\]: The unique identifier of identityUserFlowAttributeAssignment
+  \[IdentityUserFlowAttributeId \<String\>\]: The unique identifier of identityUserFlowAttribute
+  \[IdentityUserFlowId \<String\>\]: The unique identifier of identityUserFlow
+  \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
+  \[InvitationId \<String\>\]: The unique identifier of invitation
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[MicrosoftAuthenticatorAuthenticationMethodId \<String\>\]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  \[MobilityManagementPolicyId \<String\>\]: The unique identifier of mobilityManagementPolicy
+  \[MultiTenantOrganizationMemberId \<String\>\]: The unique identifier of multiTenantOrganizationMember
+  \[NamedLocationId \<String\>\]: The unique identifier of namedLocation
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[PasswordAuthenticationMethodId \<String\>\]: The unique identifier of passwordAuthenticationMethod
+  \[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId \<String\>\]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
+  \[PermissionGrantConditionSetId \<String\>\]: The unique identifier of permissionGrantConditionSet
+  \[PermissionGrantPolicyId \<String\>\]: The unique identifier of permissionGrantPolicy
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[PlatformCredentialAuthenticationMethodId \<String\>\]: The unique identifier of platformCredentialAuthenticationMethod
+  \[RiskDetectionId \<String\>\]: The unique identifier of riskDetection
+  \[RiskyServicePrincipalHistoryItemId \<String\>\]: The unique identifier of riskyServicePrincipalHistoryItem
+  \[RiskyServicePrincipalId \<String\>\]: The unique identifier of riskyServicePrincipal
+  \[RiskyUserHistoryItemId \<String\>\]: The unique identifier of riskyUserHistoryItem
+  \[RiskyUserId \<String\>\]: The unique identifier of riskyUser
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SensitivityLabelId1 \<String\>\]: The unique identifier of sensitivityLabel
+  \[ServicePrincipalCreationConditionSetId \<String\>\]: The unique identifier of servicePrincipalCreationConditionSet
+  \[ServicePrincipalCreationPolicyId \<String\>\]: The unique identifier of servicePrincipalCreationPolicy
+  \[ServicePrincipalRiskDetectionId \<String\>\]: The unique identifier of servicePrincipalRiskDetection
+  \[SoftwareOathAuthenticationMethodId \<String\>\]: The unique identifier of softwareOathAuthenticationMethod
+  \[TemporaryAccessPassAuthenticationMethodId \<String\>\]: The unique identifier of temporaryAccessPassAuthenticationMethod
+  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
+  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[TrustFrameworkKeySetId \<String\>\]: The unique identifier of trustFrameworkKeySet
+  \[TrustFrameworkPolicyId \<String\>\]: The unique identifier of trustFrameworkPolicy
+  \[UnifiedRoleManagementPolicyAssignmentId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyAssignment
+  \[UnifiedRoleManagementPolicyId \<String\>\]: The unique identifier of unifiedRoleManagementPolicy
+  \[UnifiedRoleManagementPolicyRuleId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyRule
+  \[UserFlowLanguageConfigurationId \<String\>\]: The unique identifier of userFlowLanguageConfiguration
+  \[UserFlowLanguagePageId \<String\>\]: The unique identifier of userFlowLanguagePage
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuserhistory)
-
-
-
-
 

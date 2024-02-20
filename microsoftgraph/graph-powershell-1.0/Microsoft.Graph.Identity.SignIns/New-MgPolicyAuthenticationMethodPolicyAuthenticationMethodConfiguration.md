@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
@@ -10,27 +10,41 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to authenticationMethodConfigurations for policies
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-AdditionalProperties <Hashtable>]
- [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>]
+ [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
- -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to authenticationMethodConfigurations for policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -127,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 authenticationMethodState
 
@@ -183,32 +212,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodConfiguration>`: authenticationMethodConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthenticationMethodConfiguration\>: authenticationMethodConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Groups of users that are excluded from a policy.
-    - `[Id <String>]`: The object identifier of a Microsoft Entra user or group.
-    - `[TargetType <String>]`: authenticationMethodTargetType
-  - `[State <String>]`: authenticationMethodState
+  \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Groups of users that are excluded from a policy.
+    \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
+    \[TargetType \<String\>\]: authenticationMethodTargetType
+  \[State \<String\>\]: authenticationMethodState
 
-EXCLUDETARGETS <IMicrosoftGraphExcludeTarget- `[]`>: Groups of users that are excluded from a policy.
-  - `[Id <String>]`: The object identifier of a Microsoft Entra user or group.
-  - `[TargetType <String>]`: authenticationMethodTargetType
+EXCLUDETARGETS \<IMicrosoftGraphExcludeTarget\[\]\>: Groups of users that are excluded from a policy.
+  \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
+  \[TargetType \<String\>\]: authenticationMethodTargetType
 
 ## RELATED LINKS
-[New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
-
-
-
-
 

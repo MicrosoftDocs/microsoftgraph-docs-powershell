@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection
@@ -14,8 +14,8 @@ Create new navigation property to windowsManagedAppProtections for deviceAppMana
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-AdditionalProperties <Hashtable>]
- [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
+New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
@@ -36,12 +36,24 @@ New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-AdditionalProperties 
 ### Create
 ```
 New-MgBetaDeviceAppManagementWindowsManagedAppProtection
- -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsManagedAppProtections for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -563,6 +575,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -634,102 +661,97 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity.
+APPS \<IMicrosoftGraphManagedMobileApp\[\]\>: List of apps to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Version <String>]`: Version of the entity.
+  \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Version \<String\>\]: Version of the entity.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+  \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on a Windows device
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
-  - `[Description <String>]`: The policy's description.
-  - `[DisplayName <String>]`: Policy display name.
-  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
-  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[Version <String>]`: Version of the entity.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsManagedAppProtection\>: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on a Windows device
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the policy was created.
+  \[Description \<String\>\]: The policy's description.
+  \[DisplayName \<String\>\]: Policy display name.
+  \[LastModifiedDateTime \<DateTime?\>\]: Last time the policy was modified.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
+  \[Version \<String\>\]: Version of the entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
-  - `[AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]`: Represents the level to which the device's clipboard may be shared between apps
-  - `[AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
-  - `[AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AllowedInboundDataTransferSources \<WindowsManagedAppDataTransferLevel?\>\]: Data can be transferred from/to these classes of apps
+  \[AllowedOutboundClipboardSharingLevel \<WindowsManagedAppClipboardSharingLevel?\>\]: Represents the level to which the device's clipboard may be shared between apps
+  \[AllowedOutboundDataTransferDestinations \<WindowsManagedAppDataTransferLevel?\>\]: Data can be transferred from/to these classes of apps
+  \[AppActionIfUnableToAuthenticateUser \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[Apps \<IMicrosoftGraphManagedMobileApp\[\]\>\]: List of apps to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Version <String>]`: Version of the entity.
-  - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Version \<String\>\]: Version of the entity.
+  \[Assignments \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>\]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[DeployedAppCount <Int32?>]`: Indicates the total number of applications for which the current policy is deployed.
-  - `[IsAssigned <Boolean?>]`: When TRUE, indicates that the policy is deployed to some inclusion groups.
+    \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+    \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[DeployedAppCount \<Int32?\>\]: Indicates the total number of applications for which the current policy is deployed.
+  \[IsAssigned \<Boolean?\>\]: When TRUE, indicates that the policy is deployed to some inclusion groups.
 When FALSE, indicates that the policy is not deployed to any inclusion groups.
 Default value is FALSE.
-  - `[MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel?>]`: The maxium threat level allowed for an app to be compliant.
-  - `[MaximumRequiredOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MaximumAllowedDeviceThreatLevel \<ManagedAppDeviceThreatLevel?\>\]: The maxium threat level allowed for an app to be compliant.
+  \[MaximumRequiredOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MaximumWarningOSVersion <String>]`: Versions bigger than the specified version will result in warning message on the managed app from accessing company data.
+  \[MaximumWarningOSVersion \<String\>\]: Versions bigger than the specified version will result in warning message on the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MaximumWipeOSVersion <String>]`: Versions bigger than the specified version will wipe the managed app and the associated company data.
+  \[MaximumWipeOSVersion \<String\>\]: Versions bigger than the specified version will wipe the managed app and the associated company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumRequiredAppVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumRequiredAppVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumRequiredOSVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumRequiredOSVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumRequiredSdkVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumRequiredSdkVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumWarningAppVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+  \[MinimumWarningAppVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumWarningOSVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+  \[MinimumWarningOSVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app from accessing company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumWipeAppVersion <String>]`: Versions less than the specified version will wipe the managed app and the associated company data.
+  \[MinimumWipeAppVersion \<String\>\]: Versions less than the specified version will wipe the managed app and the associated company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumWipeOSVersion <String>]`: Versions less than the specified version will wipe the managed app and the associated company data.
+  \[MinimumWipeOSVersion \<String\>\]: Versions less than the specified version will wipe the managed app and the associated company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MinimumWipeSdkVersion <String>]`: Versions less than the specified version will wipe the managed app and the associated company data.
+  \[MinimumWipeSdkVersion \<String\>\]: Versions less than the specified version will wipe the managed app and the associated company data.
 For example: '8.1.0' or '13.1.1'.
-  - `[MobileThreatDefenseRemediationAction <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[PeriodOfflineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is not connected to the internet.
+  \[MobileThreatDefenseRemediationAction \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[PeriodOfflineBeforeAccessCheck \<TimeSpan?\>\]: The period after which access is checked when the device is not connected to the internet.
 For example, PT5M indicates that the interval is 5 minutes in duration.
 A timespan value of PT0S indicates that access will be blocked immediately when the device is not connected to the internet.
-  - `[PeriodOfflineBeforeWipeIsEnforced <TimeSpan?>]`: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+  \[PeriodOfflineBeforeWipeIsEnforced \<TimeSpan?\>\]: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
 For example, P5D indicates that the interval is 5 days in duration.
 A timespan value of PT0S indicates that managed data will never be wiped when the device is not connected to the internet.
-  - `[PrintBlocked <Boolean?>]`: When TRUE, indicates that printing is blocked from managed apps.
+  \[PrintBlocked \<Boolean?\>\]: When TRUE, indicates that printing is blocked from managed apps.
 When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection)
-
-
-
-
 

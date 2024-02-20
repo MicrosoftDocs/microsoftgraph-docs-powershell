@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementComplianceManagementPartner
@@ -11,14 +10,12 @@ ms.prod: intune
 ## SYNOPSIS
 Create a new complianceManagementPartner object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashtable>]
+New-MgDeviceManagementComplianceManagementPartner [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-AndroidOnboarded]
  [-DisplayName <String>] [-Id <String>]
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-IosOnboarded]
@@ -31,11 +28,28 @@ New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashta
 ### Create
 ```
 New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new complianceManagementPartner object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -254,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -295,47 +324,41 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>: User groups which enroll Android devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ANDROIDENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>: User groups which enroll Android devices through partner.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphComplianceManagementPartner\>: Compliance management partner for all platforms
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll Android devices through partner.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AndroidOnboarded <Boolean?>]`: Partner onboarded for Android devices.
-  - `[DisplayName <String>]`: Partner display name
-  - `[IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll ios devices through partner.
-  - `[IosOnboarded <Boolean?>]`: Partner onboarded for ios devices.
-  - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
-  - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll Mac devices through partner.
-  - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
+  \[AndroidEnrollmentAssignments \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>\]: User groups which enroll Android devices through partner.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AndroidOnboarded \<Boolean?\>\]: Partner onboarded for Android devices.
+  \[DisplayName \<String\>\]: Partner display name
+  \[IosEnrollmentAssignments \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>\]: User groups which enroll ios devices through partner.
+  \[IosOnboarded \<Boolean?\>\]: Partner onboarded for ios devices.
+  \[LastHeartbeatDateTime \<DateTime?\>\]: Timestamp of last heartbeat after admin onboarded to the compliance management partner
+  \[MacOSEnrollmentAssignments \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>\]: User groups which enroll Mac devices through partner.
+  \[MacOSOnboarded \<Boolean?\>\]: Partner onboarded for Mac devices.
+  \[PartnerState \<DeviceManagementPartnerTenantState?\>\]: Partner state of this tenant.
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>: User groups which enroll ios devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+IOSENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>: User groups which enroll ios devices through partner.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>: User groups which enroll Mac devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+MACOSENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignment\[\]\>: User groups which enroll Mac devices through partner.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner)
-
-
-
-
 

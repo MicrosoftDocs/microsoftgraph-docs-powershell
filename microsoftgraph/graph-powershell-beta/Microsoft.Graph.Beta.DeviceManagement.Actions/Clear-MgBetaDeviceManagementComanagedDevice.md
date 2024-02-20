@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/clear-mgbetadevicemanagementcomanageddevice
@@ -14,8 +14,8 @@ Wipe a device
 
 ### WipeExpanded (Default)
 ```
-Clear-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
+Clear-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
  [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan] [-UseProtectedWipe]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -25,29 +25,45 @@ Clear-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <String> [-Addition
 ```
 Clear-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <String>
  -BodyParameter <IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentityExpanded
 ```
 Clear-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
- [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan] [-UseProtectedWipe]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData]
+ [-MacOSUnlockCode <String>] [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan]
+ [-UseProtectedWipe] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentity
 ```
 Clear-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Wipe a device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -237,6 +253,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UseProtectedWipe
 .
 
@@ -294,86 +325,81 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeepEnrollmentData <Boolean?>]`: 
-  - `[KeepUserData <Boolean?>]`: 
-  - `[MacOSUnlockCode <String>]`: 
-  - `[ObliterationBehavior <ObliterationBehavior?>]`: In macOS 12 and later, this command uses Erase All Content and Settings (EACS) on Mac computers with the Apple M1 chip or the Apple T2 Security Chip.
+BODYPARAMETER \<IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[KeepEnrollmentData \<Boolean?\>\]: 
+  \[KeepUserData \<Boolean?\>\]: 
+  \[MacOSUnlockCode \<String\>\]: 
+  \[ObliterationBehavior \<ObliterationBehavior?\>\]: In macOS 12 and later, this command uses Erase All Content and Settings (EACS) on Mac computers with the Apple M1 chip or the Apple T2 Security Chip.
 On those devices, if EACS can't run, the device can use obliteration (macOS 11.x behavior).
 This key has no effect on machines prior to the T2 chip.
 Upon receiving this command, the device performs preflight checks to determine if the device is in a state that allows EACS.
 The ObliterationBehavior value defines the device's fallback behavior.
-  - `[PersistEsimDataPlan <Boolean?>]`: 
-  - `[UseProtectedWipe <Boolean?>]`: 
+  \[PersistEsimDataPlan \<Boolean?\>\]: 
+  \[UseProtectedWipe \<Boolean?\>\]: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
-  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
-  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
-  - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
-  - `[CertificateConnectorDetailsId <String>]`: The unique identifier of certificateConnectorDetails
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
-  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
-  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
-  - `[DeviceComplianceScriptId <String>]`: The unique identifier of deviceComplianceScript
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceCustomAttributeShellScriptId <String>]`: The unique identifier of deviceCustomAttributeShellScript
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementCompliancePolicyId <String>]`: The unique identifier of deviceManagementCompliancePolicy
-  - `[DeviceManagementConfigurationPolicyId <String>]`: The unique identifier of deviceManagementConfigurationPolicy
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: The unique identifier of deviceManagementResourceAccessProfileBase
-  - `[DeviceManagementReusablePolicySettingId <String>]`: The unique identifier of deviceManagementReusablePolicySetting
-  - `[DeviceManagementScriptId <String>]`: The unique identifier of deviceManagementScript
-  - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
-  - `[DeviceShellScriptId <String>]`: The unique identifier of deviceShellScript
-  - `[EmbeddedSimActivationCodePoolId <String>]`: The unique identifier of embeddedSIMActivationCodePool
-  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
-  - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
-  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
-  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: The unique identifier of microsoftTunnelServerLogCollectionResponse
-  - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OperationApprovalRequestId <String>]`: The unique identifier of operationApprovalRequest
-  - `[PrivilegeManagementElevationRequestId <String>]`: The unique identifier of privilegeManagementElevationRequest
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
-  - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
-  - `[WindowsDriverUpdateProfileId <String>]`: The unique identifier of windowsDriverUpdateProfile
-  - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
-  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
-  - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
+INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
+  \[AlertRecordId \<String\>\]: The unique identifier of alertRecord
+  \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
+  \[AndroidForWorkEnrollmentProfileId \<String\>\]: The unique identifier of androidForWorkEnrollmentProfile
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AppleUserInitiatedEnrollmentProfileId \<String\>\]: The unique identifier of appleUserInitiatedEnrollmentProfile
+  \[CertificateConnectorDetailsId \<String\>\]: The unique identifier of certificateConnectorDetails
+  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[DataSharingConsentId \<String\>\]: The unique identifier of dataSharingConsent
+  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
+  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
+  \[DeviceComplianceScriptId \<String\>\]: The unique identifier of deviceComplianceScript
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceCustomAttributeShellScriptId \<String\>\]: The unique identifier of deviceCustomAttributeShellScript
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementCompliancePolicyId \<String\>\]: The unique identifier of deviceManagementCompliancePolicy
+  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[DeviceManagementResourceAccessProfileBaseId \<String\>\]: The unique identifier of deviceManagementResourceAccessProfileBase
+  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
+  \[DeviceManagementScriptId \<String\>\]: The unique identifier of deviceManagementScript
+  \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
+  \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
+  \[DeviceShellScriptId \<String\>\]: The unique identifier of deviceShellScript
+  \[EmbeddedSimActivationCodePoolId \<String\>\]: The unique identifier of embeddedSIMActivationCodePool
+  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
+  \[GroupPolicyConfigurationId \<String\>\]: The unique identifier of groupPolicyConfiguration
+  \[GroupPolicyMigrationReportId \<String\>\]: The unique identifier of groupPolicyMigrationReport
+  \[GroupPolicyUploadedDefinitionFileId \<String\>\]: The unique identifier of groupPolicyUploadedDefinitionFile
+  \[IntuneBrandingProfileId \<String\>\]: The unique identifier of intuneBrandingProfile
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MicrosoftTunnelServerId \<String\>\]: The unique identifier of microsoftTunnelServer
+  \[MicrosoftTunnelServerLogCollectionResponseId \<String\>\]: The unique identifier of microsoftTunnelServerLogCollectionResponse
+  \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
+  \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
+  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
+  \[WindowsDriverUpdateProfileId \<String\>\]: The unique identifier of windowsDriverUpdateProfile
+  \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
+  \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
+  \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/clear-mgbetadevicemanagementcomanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/clear-mgbetadevicemanagementcomanageddevice)
-
-
-
-
 

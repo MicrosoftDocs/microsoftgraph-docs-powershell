@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan
@@ -14,20 +14,38 @@ Create new navigation property to servicePlans for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementVirtualEndpointServicePlan [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-ProvisioningType <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>]
- [-SupportedSolution <String>] [-Type <String>] [-UserProfileInGb <Int32>] [-VCpuCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementVirtualEndpointServicePlan [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-ProvisioningType <String>]
+ [-RamInGb <Int32>] [-StorageInGb <Int32>] [-SupportedSolution <String>] [-Type <String>]
+ [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftGraphCloudPcServicePlan>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to servicePlans for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -155,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StorageInGb
 The size of the OS Disk in GB.
 Read-only.
@@ -274,36 +307,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcServicePlan
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcServicePlan\>: cloudPcServicePlan
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name for the service plan.
+  \[DisplayName \<String\>\]: The name for the service plan.
 Read-only.
-  - `[ProvisioningType <String>]`: cloudPcProvisioningType
-  - `[RamInGb <Int32?>]`: The size of the RAM in GB.
+  \[ProvisioningType \<String\>\]: cloudPcProvisioningType
+  \[RamInGb \<Int32?\>\]: The size of the RAM in GB.
 Read-only.
-  - `[StorageInGb <Int32?>]`: The size of the OS Disk in GB.
+  \[StorageInGb \<Int32?\>\]: The size of the OS Disk in GB.
 Read-only.
-  - `[SupportedSolution <String>]`: cloudPcManagementService
-  - `[Type <String>]`: cloudPcServicePlanType
-  - `[UserProfileInGb <Int32?>]`: The size of the user profile disk in GB.
+  \[SupportedSolution \<String\>\]: cloudPcManagementService
+  \[Type \<String\>\]: cloudPcServicePlanType
+  \[UserProfileInGb \<Int32?\>\]: The size of the user profile disk in GB.
 Read-only.
-  - `[VCpuCount <Int32?>]`: The number of vCPUs.
+  \[VCpuCount \<Int32?\>\]: The number of vCPUs.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan)
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationTokenIssuancePolicy
@@ -11,33 +10,26 @@ ms.prod: applications
 ## SYNOPSIS
 List the tokenIssuancePolicy objects that are assigned to an application.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgBetaApplicationTokenIssuancePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -177,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -246,14 +253,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)
-
-
-
 

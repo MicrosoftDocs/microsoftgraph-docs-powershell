@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem
@@ -15,24 +15,39 @@ Represents an onboarded AWS account, Azure subscription, or GCP project that Mic
 ### List (Default)
 ```
 Get-MgBetaExternalAuthorizationSystem [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -188,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -258,39 +288,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
+  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
+  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
+  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[QnaId \<String\>\]: The unique identifier of qna
+  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
+  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
+  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
+  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem)
-
-
-
-
 

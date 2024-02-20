@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgBetaBusinessScenarioPlannerTaskDetail
@@ -16,7 +15,7 @@ Update the navigation property details in solutions
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaBusinessScenarioPlannerTaskDetail -BusinessScenarioId <String> -BusinessScenarioTaskId <String>
- -IfMatch <String> [-AdditionalProperties <Hashtable>]
+ -IfMatch <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>] [-Checklist <Hashtable>]
  [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>] [-Description <String>]
  [-Forms <Hashtable>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>]
@@ -27,32 +26,42 @@ Update-MgBetaBusinessScenarioPlannerTaskDetail -BusinessScenarioId <String> -Bus
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerTaskDetail -BusinessScenarioId <String> -BusinessScenarioTaskId <String>
- -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> -IfMatch <String>
- [-AdditionalProperties <Hashtable>] [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>]
- [-Checklist <Hashtable>] [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]
- [-Description <String>] [-Forms <Hashtable>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>]
- [-PreviewType <String>] [-References <Hashtable>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>] [-Checklist <Hashtable>]
+ [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>] [-Description <String>]
+ [-Forms <Hashtable>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>]
+ [-References <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property details in solutions
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -317,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -359,94 +383,89 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVALATTACHMENT `<IMicrosoftGraphPlannerBaseApprovalAttachment>`: plannerBaseApprovalAttachment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Status <String>]`: plannerApprovalStatus
+APPROVALATTACHMENT \<IMicrosoftGraphPlannerBaseApprovalAttachment\>: plannerBaseApprovalAttachment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Status \<String\>\]: plannerApprovalStatus
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPlannerTaskDetails\>: plannerTaskDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>]`: plannerBaseApprovalAttachment
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Status <String>]`: plannerApprovalStatus
-  - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]`: plannerTaskCompletionRequirementDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]`: plannerApprovalRequirement
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsApprovalRequired <Boolean?>]`: 
-    - `[ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]`: plannerChecklistRequirement
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
-    - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RequiredForms <String- `[]`>]`: 
-  - `[Description <String>]`: Description of the task.
-  - `[Forms <IMicrosoftGraphPlannerFormsDictionary>]`: plannerFormsDictionary
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[PreviewType <String>]`: plannerPreviewType
-  - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Status \<String\>\]: plannerApprovalStatus
+  \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IsApprovalRequired \<Boolean?\>\]: 
+    \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+    \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[RequiredForms \<String\[\]\>\]: 
+  \[Description \<String\>\]: Description of the task.
+  \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[PreviewType \<String\>\]: plannerPreviewType
+  \[References \<IMicrosoftGraphPlannerExternalReferences\>\]: plannerExternalReferences
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>`: plannerTaskCompletionRequirementDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]`: plannerApprovalRequirement
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsApprovalRequired <Boolean?>]`: 
-  - `[ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]`: plannerChecklistRequirement
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
-  - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RequiredForms <String- `[]`>]`: 
+COMPLETIONREQUIREMENTS \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>: plannerTaskCompletionRequirementDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsApprovalRequired \<Boolean?\>\]: 
+  \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+  \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RequiredForms \<String\[\]\>\]: 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+NOTES \<IMicrosoftGraphItemBody\>: itemBody
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: The content of the item.
+  \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail)
-
-
-
-
 

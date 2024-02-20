@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeSubscription
@@ -11,38 +10,33 @@ ms.prod: change-notifications
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reauthorize (Default)
 ```
-Invoke-MgReauthorizeSubscription -SubscriptionId <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReauthorizeSubscription -SubscriptionId <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
 ```
-Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity> [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 Invoke-MgReauthorizeSubscription -SubscriptionId $subscriptionId
-
-```
-This example shows how to use the Invoke-MgReauthorizeSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -107,6 +101,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubscriptionId
 The unique identifier of subscription
 
@@ -163,21 +172,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
+INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
-[Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription)
-
-
-
 

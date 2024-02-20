@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileapptroubleshootingevent
@@ -14,7 +14,7 @@ Create new navigation property to mobileAppTroubleshootingEvents for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserMobileAppTroubleshootingEvent -UserId <String>
+New-MgBetaUserMobileAppTroubleshootingEvent -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
  [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
  [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
@@ -28,10 +28,11 @@ New-MgBetaUserMobileAppTroubleshootingEvent -UserId <String>
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserMobileAppTroubleshootingEvent [-UserId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]
- [-AdditionalProperties <Hashtable>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
- [-ApplicationId <String>] [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>]
- [-EventName <String>] [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
+ [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
+ [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
  [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -40,19 +41,35 @@ New-MgBetaUserMobileAppTroubleshootingEvent [-UserId <String>]
 ### Create
 ```
 New-MgBetaUserMobileAppTroubleshootingEvent -UserId <String>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mobileAppTroubleshootingEvents for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -288,6 +305,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TroubleshootingErrorDetails
 Object containing detailed information about the error and its remediation.
 To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
@@ -388,160 +420,155 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+ADDITIONALINFORMATION \<IMicrosoftGraphKeyValuePair\[\]\>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: The collection property of AppLogUploadRequest.
-  - `[Id <String>]`: The unique identifier for an entity.
+APPLOGCOLLECTIONREQUESTS \<IMicrosoftGraphAppLogCollectionRequest\[\]\>: The collection property of AppLogUploadRequest.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
-  - `[CustomLogFolders <String- `[]`>]`: List of log folders.
-  - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
-  - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
+  \[CompletedDateTime \<DateTime?\>\]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
+  \[CustomLogFolders \<String\[\]\>\]: List of log folders.
+  \[ErrorMessage \<String\>\]: Indicates error message if any during the upload process.
+  \[Status \<AppLogUploadState?\>\]: AppLogUploadStatus
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
-  - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[EventName <String>]`: Event Name corresponding to the Troubleshooting Event.
+BODYPARAMETER \<IMicrosoftGraphMobileAppTroubleshootingEvent\>: Event representing a users device application install status.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AdditionalInformation \<IMicrosoftGraphKeyValuePair\[\]\>\]: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[CorrelationId \<String\>\]: Id used for tracing the failure in the service.
+  \[EventDateTime \<DateTime?\>\]: Time when the event occurred .
+  \[EventName \<String\>\]: Event Name corresponding to the Troubleshooting Event.
 It is an Optional field
-  - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Context <String>]`: 
-    - `[Failure <String>]`: 
-    - `[FailureDetails <String>]`: The detailed description of what went wrong.
-    - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-    - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource- `[]`>]`: Links to helpful documentation about this failure.
-      - `[Link <String>]`: The link to the web resource.
+  \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
+    \[FailureDetails \<String\>\]: The detailed description of what went wrong.
+    \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
+    \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
+      \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      - `[Text <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+      \[Text \<String\>\]: 
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AppLogCollectionRequests \<IMicrosoftGraphAppLogCollectionRequest\[\]\>\]: The collection property of AppLogUploadRequest.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
-    - `[CustomLogFolders <String- `[]`>]`: List of log folders.
-    - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
-    - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
-  - `[ApplicationId <String>]`: Intune application identifier.
-  - `[DeviceId <String>]`: Device identifier created or collected by Intune.
-  - `[History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem- `[]`>]`: Intune Mobile Application Troubleshooting History Item
-    - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
-    - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-  - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
-  - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
+    \[CompletedDateTime \<DateTime?\>\]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
+    \[CustomLogFolders \<String\[\]\>\]: List of log folders.
+    \[ErrorMessage \<String\>\]: Indicates error message if any during the upload process.
+    \[Status \<AppLogUploadState?\>\]: AppLogUploadStatus
+  \[ApplicationId \<String\>\]: Intune application identifier.
+  \[DeviceId \<String\>\]: Device identifier created or collected by Intune.
+  \[History \<IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[\]\>\]: Intune Mobile Application Troubleshooting History Item
+    \[OccurrenceDateTime \<DateTime?\>\]: Time when the history item occurred.
+    \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
+  \[ManagedDeviceIdentifier \<String\>\]: Device identifier created or collected by Intune.
+  \[UserId \<String\>\]: Identifier for the user that tried to enroll the device.
 
-HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem- `[]`>: Intune Mobile Application Troubleshooting History Item
-  - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
-  - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Context <String>]`: 
-    - `[Failure <String>]`: 
-    - `[FailureDetails <String>]`: The detailed description of what went wrong.
-    - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-    - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource- `[]`>]`: Links to helpful documentation about this failure.
-      - `[Link <String>]`: The link to the web resource.
+HISTORY \<IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[\]\>: Intune Mobile Application Troubleshooting History Item
+  \[OccurrenceDateTime \<DateTime?\>\]: Time when the history item occurred.
+  \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
+    \[FailureDetails \<String\>\]: The detailed description of what went wrong.
+    \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
+    \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
+      \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      - `[Text <String>]`: 
+      \[Text \<String\>\]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: The unique identifier of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: The unique identifier of managedEBookCategory
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
-  - `[PolicySetId <String>]`: The unique identifier of policySet
-  - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AssignmentFilterEvaluationStatusDetailsId \<String\>\]: The unique identifier of assignmentFilterEvaluationStatusDetails
+  \[BundleId \<String\>\]: Usage: bundleId='{bundleId}'
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceAppManagementTaskId \<String\>\]: The unique identifier of deviceAppManagementTask
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementConfigurationSettingDefinitionId \<String\>\]: The unique identifier of deviceManagementConfigurationSettingDefinition
+  \[DeviceManagementConfigurationSettingId \<String\>\]: The unique identifier of deviceManagementConfigurationSetting
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnterpriseCodeSigningCertificateId \<String\>\]: The unique identifier of enterpriseCodeSigningCertificate
+  \[Id \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[IosLobAppProvisioningConfigurationAssignmentId \<String\>\]: The unique identifier of iosLobAppProvisioningConfigurationAssignment
+  \[IosLobAppProvisioningConfigurationId \<String\>\]: The unique identifier of iosLobAppProvisioningConfiguration
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[IosVppAppAssignedLicenseId \<String\>\]: The unique identifier of iosVppAppAssignedLicense
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationStateId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationState
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookCategoryId \<String\>\]: The unique identifier of managedEBookCategory
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppIntentAndStateId \<String\>\]: The unique identifier of mobileAppIntentAndState
+  \[MobileAppProvisioningConfigGroupAssignmentId \<String\>\]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[PolicyId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[PolicySetAssignmentId \<String\>\]: The unique identifier of policySetAssignment
+  \[PolicySetId \<String\>\]: The unique identifier of policySet
+  \[PolicySetItemId \<String\>\]: The unique identifier of policySetItem
+  \[SecurityBaselineSettingStateId \<String\>\]: The unique identifier of securityBaselineSettingState
+  \[SecurityBaselineStateId \<String\>\]: The unique identifier of securityBaselineState
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  \[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  \[WindowsDefenderApplicationControlSupplementalPolicyId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionDeviceRegistrationId \<String\>\]: The unique identifier of windowsInformationProtectionDeviceRegistration
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+  \[WindowsInformationProtectionWipeActionId \<String\>\]: The unique identifier of windowsInformationProtectionWipeAction
+  \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Context <String>]`: 
-  - `[Failure <String>]`: 
-  - `[FailureDetails <String>]`: The detailed description of what went wrong.
-  - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-  - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource- `[]`>]`: Links to helpful documentation about this failure.
-    - `[Link <String>]`: The link to the web resource.
+TROUBLESHOOTINGERRORDETAILS \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>: Object containing detailed information about the error and its remediation.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Context \<String\>\]: 
+  \[Failure \<String\>\]: 
+  \[FailureDetails \<String\>\]: The detailed description of what went wrong.
+  \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
+  \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
+    \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-    - `[Text <String>]`:
+    \[Text \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileapptroubleshootingevent)
-
-
-
-
 

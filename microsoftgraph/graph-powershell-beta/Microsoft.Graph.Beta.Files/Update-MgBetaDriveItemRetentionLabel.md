@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgBetaDriveItemRetentionLabel
@@ -13,32 +12,29 @@ Lock or unlock a retention label on a driveItem that classifies content as recor
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDriveItemRetentionLabel -DriveId <String> -DriveItemId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
- [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
- [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>]
+ [-Name <String>] [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDriveItemRetentionLabel -DriveId <String> -DriveItemId <String>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
- [-LabelAppliedDateTime <DateTime>] [-Name <String>]
+Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
+ [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
  [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,14 +42,26 @@ Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-AdditionalP
 ### UpdateViaIdentity
 ```
 Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -247,6 +255,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionSettings
 retentionLabelSettings
 To construct, see NOTES section for RETENTIONSETTINGS properties and create a hash table.
@@ -305,109 +328,103 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphItemRetentionLabel>`: itemRetentionLabel
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphItemRetentionLabel\>: itemRetentionLabel
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsLabelAppliedExplicitly <Boolean?>]`: Specifies whether the label is applied explicitly on the item.
+  \[IsLabelAppliedExplicitly \<Boolean?\>\]: Specifies whether the label is applied explicitly on the item.
 True indicates that the label is applied explicitly; otherwise, the label is inherited from its parent.
 Read-only.
-  - `[LabelAppliedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[LabelAppliedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LabelAppliedDateTime <DateTime?>]`: The date and time when the label was applied on the item.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[LabelAppliedDateTime \<DateTime?\>\]: The date and time when the label was applied on the item.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Name <String>]`: The retention label on the document.
+  \[Name \<String\>\]: The retention label on the document.
 Read-write.
-  - `[RetentionSettings <IMicrosoftGraphRetentionLabelSettings>]`: retentionLabelSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod
-    - `[IsContentUpdateAllowed <Boolean?>]`: Specifies whether updates to document content are allowed.
+  \[RetentionSettings \<IMicrosoftGraphRetentionLabelSettings\>\]: retentionLabelSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BehaviorDuringRetentionPeriod \<String\>\]: behaviorDuringRetentionPeriod
+    \[IsContentUpdateAllowed \<Boolean?\>\]: Specifies whether updates to document content are allowed.
 Read-only.
-    - `[IsDeleteAllowed <Boolean?>]`: Specifies whether the document deletion is allowed.
+    \[IsDeleteAllowed \<Boolean?\>\]: Specifies whether the document deletion is allowed.
 Read-only.
-    - `[IsLabelUpdateAllowed <Boolean?>]`: Specifies whether you're allowed to change the retention label on the document.
+    \[IsLabelUpdateAllowed \<Boolean?\>\]: Specifies whether you're allowed to change the retention label on the document.
 Read-only.
-    - `[IsMetadataUpdateAllowed <Boolean?>]`: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
+    \[IsMetadataUpdateAllowed \<Boolean?\>\]: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
 Read-only.
-    - `[IsRecordLocked <Boolean?>]`: Specifies whether the item is locked.
+    \[IsRecordLocked \<Boolean?\>\]: Specifies whether the item is locked.
 Read-write.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
-LABELAPPLIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LABELAPPLIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-RETENTIONSETTINGS `<IMicrosoftGraphRetentionLabelSettings>`: retentionLabelSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod
-  - `[IsContentUpdateAllowed <Boolean?>]`: Specifies whether updates to document content are allowed.
+RETENTIONSETTINGS \<IMicrosoftGraphRetentionLabelSettings\>: retentionLabelSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BehaviorDuringRetentionPeriod \<String\>\]: behaviorDuringRetentionPeriod
+  \[IsContentUpdateAllowed \<Boolean?\>\]: Specifies whether updates to document content are allowed.
 Read-only.
-  - `[IsDeleteAllowed <Boolean?>]`: Specifies whether the document deletion is allowed.
+  \[IsDeleteAllowed \<Boolean?\>\]: Specifies whether the document deletion is allowed.
 Read-only.
-  - `[IsLabelUpdateAllowed <Boolean?>]`: Specifies whether you're allowed to change the retention label on the document.
+  \[IsLabelUpdateAllowed \<Boolean?\>\]: Specifies whether you're allowed to change the retention label on the document.
 Read-only.
-  - `[IsMetadataUpdateAllowed <Boolean?>]`: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
+  \[IsMetadataUpdateAllowed \<Boolean?\>\]: Specifies whether updates to the item metadata (for example, the Title field) are blocked.
 Read-only.
-  - `[IsRecordLocked <Boolean?>]`: Specifies whether the item is locked.
+  \[IsRecordLocked \<Boolean?\>\]: Specifies whether the item is locked.
 Read-write.
 
 ## RELATED LINKS
-[Update-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdecision
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision
@@ -16,26 +15,39 @@ If no IDs are specified, the decisions will apply to every accessReviewInstanceD
 
 ### RecordExpanded (Default)
 ```
-Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision [-AdditionalProperties <Hashtable>]
- [-Decision <String>] [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Record
 ```
 Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision
  -BodyParameter <IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
 If no IDs are specified, the decisions will apply to every accessReviewInstanceDecisionItem for which you are the reviewer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-recordalldecisions-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -175,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -216,25 +243,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Decision <String>]`: 
-  - `[Justification <String>]`: 
-  - `[PrincipalId <String>]`: 
-  - `[ResourceId <String>]`:
+BODYPARAMETER \<IPathsAn1WrsIdentitygovernanceAccessreviewsDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Decision \<String\>\]: 
+  \[Justification \<String\>\]: 
+  \[PrincipalId \<String\>\]: 
+  \[ResourceId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdecision)
-
-
-
-
 

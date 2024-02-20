@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification
@@ -11,43 +11,42 @@ schema: 2.0.0
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgChatActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgChatActivityNotification?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
-Send-MgBetaChatActivityNotification -ChatId <String> [-ActivityType <String>]
- [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Send-MgBetaChatActivityNotification -ChatId <String> [-ResponseHeadersVariable <String>]
+ [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
+ [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
+ [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaChatActivityNotification -ChatId <String>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
-Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
- [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
+ [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
+ [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,11 +54,11 @@ Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
 ## EXAMPLES
-### Example 1: Notify a user about a task created in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	topic = @{
@@ -84,14 +83,10 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will notify a user about a task created in a chat
-
-### Example 2: Notify a user about an approval needed in a chat message
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	topic = @{
@@ -116,14 +111,10 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will notify a user about an approval needed in a chat message
-
-### Example 3: Notify a user about an approval needed in a chat message using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	topic = @{
@@ -148,14 +139,10 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will notify a user about an approval needed in a chat message using user principal name
-
-### Example 4: Notify a user about an event in relation to a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	topic = @{
@@ -181,14 +168,10 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will notify a user about an event in relation to a chat
-
-### Example 5: Notify the chat members about a task created in a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	topic = @{
@@ -212,10 +195,6 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-
-```
-This example will notify the chat members about a task created in a chat
-
 
 ## PARAMETERS
 
@@ -387,6 +366,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppId
 .
 
@@ -476,102 +470,97 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ActivityType <String>]`: 
-  - `[ChainId <Int64?>]`: 
-  - `[PreviewText <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[Recipient <IMicrosoftGraphTeamworkNotificationRecipient>]`: teamworkNotificationRecipient
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[TeamsAppId <String>]`: 
-  - `[TemplateParameters <IMicrosoftGraphKeyValuePair- `[]`>]`: 
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[Topic <IMicrosoftGraphTeamworkActivityTopic>]`: teamworkActivityTopic
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Source <String>]`: teamworkActivityTopicSource
-    - `[Value <String>]`: The topic value.
+BODYPARAMETER \<IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ActivityType \<String\>\]: 
+  \[ChainId \<Int64?\>\]: 
+  \[PreviewText \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[Recipient \<IMicrosoftGraphTeamworkNotificationRecipient\>\]: teamworkNotificationRecipient
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TeamsAppId \<String\>\]: 
+  \[TemplateParameters \<IMicrosoftGraphKeyValuePair\[\]\>\]: 
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[Topic \<IMicrosoftGraphTeamworkActivityTopic\>\]: teamworkActivityTopic
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Source \<String\>\]: teamworkActivityTopicSource
+    \[Value \<String\>\]: The topic value.
 If the value of the source property is entityUrl, this must be a Microsoft Graph URL.
 If the value is text, this must be a plain text value.
-    - `[WebUrl <String>]`: The link the user clicks when they select the notification.
+    \[WebUrl \<String\>\]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DayNoteId <String>]`: The unique identifier of dayNote
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[ShiftsRoleDefinitionId <String>]`: The unique identifier of shiftsRoleDefinition
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
-  - `[TeamsAppDashboardCardDefinitionId <String>]`: The unique identifier of teamsAppDashboardCardDefinition
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
+  \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkDeviceId \<String\>\]: The unique identifier of teamworkDevice
+  \[TeamworkDeviceOperationId \<String\>\]: The unique identifier of teamworkDeviceOperation
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeCardId \<String\>\]: The unique identifier of timeCard
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+PREVIEWTEXT \<IMicrosoftGraphItemBody\>: itemBody
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: The content of the item.
+  \[ContentType \<String\>\]: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair- `[]`>: .
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+TEMPLATEPARAMETERS \<IMicrosoftGraphKeyValuePair\[\]\>: .
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Source <String>]`: teamworkActivityTopicSource
-  - `[Value <String>]`: The topic value.
+TOPIC \<IMicrosoftGraphTeamworkActivityTopic\>: teamworkActivityTopic
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Source \<String\>\]: teamworkActivityTopicSource
+  \[Value \<String\>\]: The topic value.
 If the value of the source property is entityUrl, this must be a Microsoft Graph URL.
 If the value is text, this must be a plain text value.
-  - `[WebUrl <String>]`: The link the user clicks when they select the notification.
+  \[WebUrl \<String\>\]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgChatActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgChatActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification)
-
-
-
 

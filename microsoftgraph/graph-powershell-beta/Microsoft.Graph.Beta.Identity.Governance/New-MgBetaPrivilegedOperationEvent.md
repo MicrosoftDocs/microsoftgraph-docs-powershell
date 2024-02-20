@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedoperationevent
@@ -14,22 +14,39 @@ Add new entity to privilegedOperationEvents
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrivilegedOperationEvent [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
- [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReferenceKey <String>]
- [-ReferenceSystem <String>] [-RequestType <String>] [-RequestorId <String>] [-RequestorName <String>]
- [-RoleId <String>] [-RoleName <String>] [-TenantId <String>] [-UserId <String>] [-UserMail <String>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaPrivilegedOperationEvent [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>]
+ [-AdditionalProperties <Hashtable>] [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestType <String>]
+ [-RequestorId <String>] [-RequestorName <String>] [-RoleId <String>] [-RoleName <String>] [-TenantId <String>]
+ [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPrivilegedOperationEvent -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to privilegedOperationEvents
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -230,6 +247,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleId
 .
 
@@ -361,37 +393,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedOperationEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedOperationEvent>`: privilegedOperationEvent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrivilegedOperationEvent\>: privilegedOperationEvent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdditionalInformation <String>]`: 
-  - `[CreationDateTime <DateTime?>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[ReferenceKey <String>]`: 
-  - `[ReferenceSystem <String>]`: 
-  - `[RequestType <String>]`: 
-  - `[RequestorId <String>]`: 
-  - `[RequestorName <String>]`: 
-  - `[RoleId <String>]`: 
-  - `[RoleName <String>]`: 
-  - `[TenantId <String>]`: 
-  - `[UserId <String>]`: 
-  - `[UserMail <String>]`: 
-  - `[UserName <String>]`:
+  \[AdditionalInformation \<String\>\]: 
+  \[CreationDateTime \<DateTime?\>\]: 
+  \[ExpirationDateTime \<DateTime?\>\]: 
+  \[ReferenceKey \<String\>\]: 
+  \[ReferenceSystem \<String\>\]: 
+  \[RequestType \<String\>\]: 
+  \[RequestorId \<String\>\]: 
+  \[RequestorName \<String\>\]: 
+  \[RoleId \<String\>\]: 
+  \[RoleName \<String\>\]: 
+  \[TenantId \<String\>\]: 
+  \[UserId \<String\>\]: 
+  \[UserMail \<String\>\]: 
+  \[UserName \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedoperationevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedoperationevent)
-
-
-
-
 

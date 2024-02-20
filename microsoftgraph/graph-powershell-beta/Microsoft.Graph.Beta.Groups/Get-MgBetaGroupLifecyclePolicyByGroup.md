@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupLifecyclePolicyByGroup
@@ -11,32 +10,25 @@ ms.prod: groups
 ## SYNOPSIS
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupLifecyclePolicyByGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyByGroup?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupLifecyclePolicyByGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupLifecyclePolicyByGroup -GroupId $groupId
 ```
-This example shows how to use the Get-MgBetaGroupLifecyclePolicyByGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,6 +168,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -245,14 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupLifecyclePolicyByGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyByGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup)
-
-
-
 

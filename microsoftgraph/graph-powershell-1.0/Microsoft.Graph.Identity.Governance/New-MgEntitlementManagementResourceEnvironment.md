@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironment
@@ -14,21 +14,35 @@ Create new navigation property to resourceEnvironments for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementResourceEnvironment [-AdditionalProperties <Hashtable>]
- [-ConnectionInfo <IMicrosoftGraphConnectionInfo>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsDefaultEnvironment] [-ModifiedDateTime <DateTime>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resources <IMicrosoftGraphAccessPackageResource[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgEntitlementManagementResourceEnvironment [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ConnectionInfo <IMicrosoftGraphConnectionInfo>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsDefaultEnvironment] [-ModifiedDateTime <DateTime>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementResourceEnvironment -BodyParameter <IMicrosoftGraphAccessPackageResourceEnvironment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resourceEnvironments for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -253,6 +267,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -294,155 +323,150 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceEnvironment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAccessPackageResourceEnvironment\>: accessPackageResourceEnvironment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConnectionInfo <IMicrosoftGraphConnectionInfo>]`: connectionInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Url <String>]`: The endpoint that is used by Entitlement Management to communicate with the access package resource.
-  - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created.
+  \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Description <String>]`: The description of this object.
-  - `[DisplayName <String>]`: The display name of this object.
-  - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not.
+  \[Description \<String\>\]: The description of this object.
+  \[DisplayName \<String\>\]: The display name of this object.
+  \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
 It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
-  - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified.
+  \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
-  - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline.
+  \[OriginId \<String\>\]: The unique identifier of this environment in the origin system.
+  \[OriginSystem \<String\>\]: The type of the resource in the origin system, that is, SharePointOnline.
 Requires $filter (eq).
-  - `[Resources <IMicrosoftGraphAccessPackageResource- `[]`>]`: Read-only.
+  \[Resources \<IMicrosoftGraphAccessPackageResource\[\]\>\]: Read-only.
 Required.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
-      - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Name <String>]`: The name of the attribute in the end system.
+    \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+      \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
-      - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Description <String>]`: A description for the resource.
-    - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
-    - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
-    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    \[Description \<String\>\]: A description for the resource.
+    \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+    \[Environment \<IMicrosoftGraphAccessPackageResourceEnvironment\>\]: accessPackageResourceEnvironment
+    \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
+    \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, this is the identifier of the group.
-    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-    - `[Roles <IMicrosoftGraphAccessPackageResourceRole- `[]`>]`: Read-only.
+    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+    \[Roles \<IMicrosoftGraphAccessPackageResourceRole\[\]\>\]: Read-only.
 Nullable.
 Supports $expand.
-      - `[Id <String>]`: The unique identifier for an entity.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Description <String>]`: A description for the resource role.
-      - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
-      - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
+      \[Description \<String\>\]: A description for the resource role.
+      \[DisplayName \<String\>\]: The display name of the resource role such as the role defined by the application.
+      \[OriginId \<String\>\]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId will be the sequence number of the role in the site.
-      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-      - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
-    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
+      \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+      \[Resource \<IMicrosoftGraphAccessPackageResource\>\]: accessPackageResource
+    \[Scopes \<IMicrosoftGraphAccessPackageResourceScope\[\]\>\]: Read-only.
 Nullable.
 Supports $expand.
-      - `[Id <String>]`: The unique identifier for an entity.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Description <String>]`: The description of the scope.
-      - `[DisplayName <String>]`: The display name of the scope.
-      - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-      - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
-      - `[OriginSystem <String>]`: The origin system for the scope.
-      - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+      \[Description \<String\>\]: The description of the scope.
+      \[DisplayName \<String\>\]: The display name of the scope.
+      \[IsRootScope \<Boolean?\>\]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+      \[OriginId \<String\>\]: The unique identifier for the scope in the resource as defined in the origin system.
+      \[OriginSystem \<String\>\]: The origin system for the scope.
+      \[Resource \<IMicrosoftGraphAccessPackageResource\>\]: accessPackageResource
 
-CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Url <String>]`: The endpoint that is used by Entitlement Management to communicate with the access package resource.
+CONNECTIONINFO \<IMicrosoftGraphConnectionInfo\>: connectionInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
-RESOURCES <IMicrosoftGraphAccessPackageResource- `[]`>: Read-only.
+RESOURCES \<IMicrosoftGraphAccessPackageResource\[\]\>: Read-only.
 Required.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
-    - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Name <String>]`: The name of the attribute in the end system.
+  \[Attributes \<IMicrosoftGraphAccessPackageResourceAttribute\[\]\>\]: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+    \[Destination \<IMicrosoftGraphAccessPackageResourceAttributeDestination\>\]: accessPackageResourceAttributeDestination
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Name \<String\>\]: The name of the attribute in the end system.
 If the destination is accessPackageUserDirectoryAttributeStore, then a user property such as jobTitle or a directory schema extension for the user object type, such as extension2b676109c7c74ae2b41549205f1947edpersonalTitle.
-    - `[Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]`: accessPackageResourceAttributeSource
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    \[Source \<IMicrosoftGraphAccessPackageResourceAttributeSource\>\]: accessPackageResourceAttributeSource
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Description <String>]`: A description for the resource.
-  - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
-  - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Description \<String\>\]: A description for the resource.
+  \[DisplayName \<String\>\]: The display name of the resource, such as the application name, group name or site name.
+  \[Environment \<IMicrosoftGraphAccessPackageResourceEnvironment\>\]: accessPackageResourceEnvironment
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ConnectionInfo <IMicrosoftGraphConnectionInfo>]`: connectionInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Url <String>]`: The endpoint that is used by Entitlement Management to communicate with the access package resource.
-    - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created.
+    \[ConnectionInfo \<IMicrosoftGraphConnectionInfo\>\]: connectionInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Url \<String\>\]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time that this object was created.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Description <String>]`: The description of this object.
-    - `[DisplayName <String>]`: The display name of this object.
-    - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not.
+    \[Description \<String\>\]: The description of this object.
+    \[DisplayName \<String\>\]: The display name of this object.
+    \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
 It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
-    - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified.
+    \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
-    - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline.
+    \[OriginId \<String\>\]: The unique identifier of this environment in the origin system.
+    \[OriginSystem \<String\>\]: The type of the resource in the origin system, that is, SharePointOnline.
 Requires $filter (eq).
-    - `[Resources <IMicrosoftGraphAccessPackageResource- `[]`>]`: Read-only.
+    \[Resources \<IMicrosoftGraphAccessPackageResource\[\]\>\]: Read-only.
 Required.
-  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
+  \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, this is the identifier of the group.
-  - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-  - `[Roles <IMicrosoftGraphAccessPackageResourceRole- `[]`>]`: Read-only.
+  \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+  \[Roles \<IMicrosoftGraphAccessPackageResourceRole\[\]\>\]: Read-only.
 Nullable.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Description <String>]`: A description for the resource role.
-    - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
-    - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
+    \[Description \<String\>\]: A description for the resource role.
+    \[DisplayName \<String\>\]: The display name of the resource role such as the role defined by the application.
+    \[OriginId \<String\>\]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId will be the sequence number of the role in the site.
-    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-    - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
-  - `[Scopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
+    \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+    \[Resource \<IMicrosoftGraphAccessPackageResource\>\]: accessPackageResource
+  \[Scopes \<IMicrosoftGraphAccessPackageResourceScope\[\]\>\]: Read-only.
 Nullable.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Description <String>]`: The description of the scope.
-    - `[DisplayName <String>]`: The display name of the scope.
-    - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-    - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
-    - `[OriginSystem <String>]`: The origin system for the scope.
-    - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+    \[Description \<String\>\]: The description of the scope.
+    \[DisplayName \<String\>\]: The display name of the scope.
+    \[IsRootScope \<Boolean?\>\]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+    \[OriginId \<String\>\]: The unique identifier for the scope in the resource as defined in the origin system.
+    \[OriginSystem \<String\>\]: The origin system for the scope.
+    \[Resource \<IMicrosoftGraphAccessPackageResource\>\]: accessPackageResource
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironment)
-
-
-
-
 

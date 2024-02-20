@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagemententerprisecodesigningcertificate
@@ -14,22 +14,34 @@ Create new navigation property to enterpriseCodeSigningCertificates for deviceAp
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-Issuer <String>]
- [-IssuerName <String>] [-Status <String>] [-Subject <String>] [-SubjectName <String>]
- [-UploadDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-Issuer <String>] [-IssuerName <String>] [-Status <String>] [-Subject <String>]
+ [-SubjectName <String>] [-UploadDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate
- -BodyParameter <IMicrosoftGraphEnterpriseCodeSigningCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEnterpriseCodeSigningCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to enterpriseCodeSigningCertificates for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -182,6 +194,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 certificateStatus
 
@@ -294,45 +321,44 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnterpriseCodeSigningCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEnterpriseCodeSigningCertificate>`: enterpriseCodeSigningCertificate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEnterpriseCodeSigningCertificate\>: enterpriseCodeSigningCertificate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Content <Byte- `[]`>]`: The Windows Enterprise Code-Signing Certificate in the raw data format.
+  \[Content \<Byte\[\]\>\]: The Windows Enterprise Code-Signing Certificate in the raw data format.
 Set to null once certificate has been uploaded and other properties have been populated.
-  - `[ExpirationDateTime <DateTime?>]`: The cert expiration date and time (using ISO 8601 format, in UTC time).
+  \[ExpirationDateTime \<DateTime?\>\]: The cert expiration date and time (using ISO 8601 format, in UTC time).
 Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response.
 Supports: $filter, $select, $top, $OrderBy, $skip.
 $Search is not supported.
-  - `[Issuer <String>]`: The issuer value for the cert.
+  \[Issuer \<String\>\]: The issuer value for the cert.
 This might contain information such as country (C), state or province (S), locality (L), common name of the cert (CN), organization (O), and organizational unit (OU).
 Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response.
 Supports: $filter, $select, $top, $OrderBy, $skip.
 $Search is not supported.
-  - `[IssuerName <String>]`: The issuer name for the cert.
+  \[IssuerName \<String\>\]: The issuer name for the cert.
 This might contain information such as country (C), state or province (S), locality (L), common name of the cert (CN), organization (O), and organizational unit (OU).
 Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response.
 Supports: $filter, $select, $top, $OrderBy, $skip.
 $Search is not supported.
-  - `[Status <String>]`: certificateStatus
-  - `[Subject <String>]`: The subject value for the cert.
+  \[Status \<String\>\]: certificateStatus
+  \[Subject \<String\>\]: The subject value for the cert.
 This might contain information such as country (C), state or province (S), locality (L), common name of the cert (CN), organization (O), and organizational unit (OU).
 Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response.
 Supports: $filter, $select, $top, $OrderBy, $skip.
 $Search is not supported.
-  - `[SubjectName <String>]`: The subject name for the cert.
+  \[SubjectName \<String\>\]: The subject name for the cert.
 This might contain information such as country (C), state or province (S), locality (L), common name of the cert (CN), organization (O), and organizational unit (OU).
 Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response.
 Supports: $filter, $select, $top, $OrderBy, $skip.
 $Search is not supported.
-  - `[UploadDateTime <DateTime?>]`: The date time of CodeSigning Cert when it is uploaded (using ISO 8601 format, in UTC time).
+  \[UploadDateTime \<DateTime?\>\]: The date time of CodeSigning Cert when it is uploaded (using ISO 8601 format, in UTC time).
 Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response.
 Supports: $filter, $select, $top, $OrderBy, $skip.
 $Search is not supported.
@@ -340,8 +366,4 @@ $Search is not supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagemententerprisecodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagemententerprisecodesigningcertificate)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus
@@ -14,24 +14,36 @@ Create new navigation property to deviceHealthStatuses for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus [-AdditionalProperties <Hashtable>]
- [-BlueScreenCount <Int32>] [-BootTotalDurationInSeconds <Double>] [-DeviceId <String>] [-DeviceMake <String>]
- [-DeviceModel <String>] [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>]
- [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-PrimaryDiskType <String>] [-RestartCount <Int32>]
- [-StartupPerformanceScore <Double>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-TopProcesses <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BlueScreenCount <Int32>] [-BootTotalDurationInSeconds <Double>]
+ [-DeviceId <String>] [-DeviceMake <String>] [-DeviceModel <String>] [-DeviceName <String>]
+ [-HealthStatus <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>]
+ [-PrimaryDiskType <String>] [-RestartCount <Int32>] [-StartupPerformanceScore <Double>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TopProcesses <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus
- -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceHealthStatuses for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -262,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RestartCount
 .
 
@@ -378,38 +405,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceHealthStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceHealthStatus>`: deviceHealthStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsDeviceHealthStatus\>: deviceHealthStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BlueScreenCount <Int32?>]`: 
-  - `[BootTotalDurationInSeconds <Double?>]`: 
-  - `[DeviceId <String>]`: 
-  - `[DeviceMake <String>]`: 
-  - `[DeviceModel <String>]`: 
-  - `[DeviceName <String>]`: 
-  - `[HealthStatus <String>]`: 
-  - `[LastUpdatedDateTime <DateTime?>]`: 
-  - `[OSVersion <String>]`: 
-  - `[PrimaryDiskType <String>]`: 
-  - `[RestartCount <Int32?>]`: 
-  - `[StartupPerformanceScore <Double?>]`: 
-  - `[TenantDisplayName <String>]`: 
-  - `[TenantId <String>]`: 
-  - `[TopProcesses <String>]`:
+  \[BlueScreenCount \<Int32?\>\]: 
+  \[BootTotalDurationInSeconds \<Double?\>\]: 
+  \[DeviceId \<String\>\]: 
+  \[DeviceMake \<String\>\]: 
+  \[DeviceModel \<String\>\]: 
+  \[DeviceName \<String\>\]: 
+  \[HealthStatus \<String\>\]: 
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
+  \[OSVersion \<String\>\]: 
+  \[PrimaryDiskType \<String\>\]: 
+  \[RestartCount \<Int32?\>\]: 
+  \[StartupPerformanceScore \<Double?\>\]: 
+  \[TenantDisplayName \<String\>\]: 
+  \[TenantId \<String\>\]: 
+  \[TopProcesses \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication
@@ -17,7 +17,8 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 ### EvaluateExpanded (Default)
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
  [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,13 +27,15 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId 
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId <String>
  -BodyParameter <IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
  [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,7 +44,8 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -InputOb
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,8 +54,9 @@ This API is useful when a label should be set manually or explicitly by a user o
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	ContentInfo = @{
@@ -118,8 +123,6 @@ $params = @{
 }
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -232,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -289,105 +307,101 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentFormat <String>]`: The format of the content to be labeled.
+BODYPARAMETER \<IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentInfo \<IMicrosoftGraphSecurityContentInfo\>\]: contentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ContentFormat \<String\>\]: The format of the content to be labeled.
 Possible values are: file, email.
-    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair.
-      - `[Value <String>]`: Value for this key-value pair.
-    - `[State <String>]`: contentState
-  - `[LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>]`: labelingOptions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AssignmentMethod <String>]`: assignmentMethod
-    - `[DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]`: downgradeJustification
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or isn't justified.
-      - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
+    \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+    \[Metadata \<IMicrosoftGraphSecurityKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
+      \[Name \<String\>\]: Name for this key-value pair.
+      \[Value \<String\>\]: Value for this key-value pair.
+    \[State \<String\>\]: contentState
+  \[LabelingOptions \<IMicrosoftGraphSecurityLabelingOptions\>\]: labelingOptions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AssignmentMethod \<String\>\]: assignmentMethod
+    \[DowngradeJustification \<IMicrosoftGraphSecurityDowngradeJustification\>\]: downgradeJustification
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IsDowngradeJustified \<Boolean?\>\]: Indicates whether the downgrade is or isn't justified.
+      \[JustificationMessage \<String\>\]: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
-    - `[ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair- `[]`>]`: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
-    - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
+    \[ExtendedProperties \<IMicrosoftGraphSecurityKeyValuePair\[\]\>\]: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
+    \[LabelId \<String\>\]: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentFormat <String>]`: The format of the content to be labeled.
+CONTENTINFO \<IMicrosoftGraphSecurityContentInfo\>: contentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentFormat \<String\>\]: The format of the content to be labeled.
 Possible values are: file, email.
-  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair.
-    - `[Value <String>]`: Value for this key-value pair.
-  - `[State <String>]`: contentState
+  \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+  \[Metadata \<IMicrosoftGraphSecurityKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
+    \[Name \<String\>\]: Name for this key-value pair.
+    \[Value \<String\>\]: Value for this key-value pair.
+  \[State \<String\>\]: contentState
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
+  \[AccessReviewStageId \<String\>\]: The unique identifier of accessReviewStage
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
-LABELINGOPTIONS `<IMicrosoftGraphSecurityLabelingOptions>`: labelingOptions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignmentMethod <String>]`: assignmentMethod
-  - `[DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]`: downgradeJustification
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or isn't justified.
-    - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
+LABELINGOPTIONS \<IMicrosoftGraphSecurityLabelingOptions\>: labelingOptions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AssignmentMethod \<String\>\]: assignmentMethod
+  \[DowngradeJustification \<IMicrosoftGraphSecurityDowngradeJustification\>\]: downgradeJustification
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsDowngradeJustified \<Boolean?\>\]: Indicates whether the downgrade is or isn't justified.
+    \[JustificationMessage \<String\>\]: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
-  - `[ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair- `[]`>]`: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
-    - `[Name <String>]`: Name for this key-value pair.
-    - `[Value <String>]`: Value for this key-value pair.
-  - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
+  \[ExtendedProperties \<IMicrosoftGraphSecurityKeyValuePair\[\]\>\]: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
+    \[Name \<String\>\]: Name for this key-value pair.
+    \[Value \<String\>\]: Value for this key-value pair.
+  \[LabelId \<String\>\]: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication)
-
-
-
 

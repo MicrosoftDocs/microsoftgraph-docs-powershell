@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgBetaUserSettingShiftPreference
@@ -11,51 +10,47 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Update the properties and relationships of a shiftPreferences object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingShiftPreference?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserSettingShiftPreference -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Availability <IMicrosoftGraphShiftAvailability[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSettingShiftPreference -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <IMicrosoftGraphShiftAvailability[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSettingShiftPreference -UserId <String> -BodyParameter <IMicrosoftGraphShiftPreferences>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Availability <IMicrosoftGraphShiftAvailability[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <IMicrosoftGraphShiftAvailability[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphShiftPreferences> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphShiftPreferences> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties and relationships of a shiftPreferences object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shiftpreferences-put-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -83,11 +78,6 @@ $params = @{
 }
 
 Update-MgBetaUserSettingShiftPreference -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserSettingShiftPreference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -232,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -289,159 +294,154 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShiftPreferences
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVAILABILITY <IMicrosoftGraphShiftAvailability- `[]`>: Availability of the user to be scheduled for work and its recurrence pattern.
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
+AVAILABILITY \<IMicrosoftGraphShiftAvailability\[\]\>: Availability of the user to be scheduled for work and its recurrence pattern.
+  \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
+      \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
 If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
-      - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+      \[FirstDayOfWeek \<String\>\]: dayOfWeek
+      \[Index \<String\>\]: weekIndex
+      \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-      - `[Month <Int32?>]`: The month in which the event occurs. 
+      \[Month \<Int32?\>\]: The month in which the event occurs. 
 This is a number from 1 to 12.
-      - `[Type <String>]`: recurrencePatternType
-    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
+      \[Type \<String\>\]: recurrencePatternType
+    \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
+      \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
+      \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
+      \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-      - `[Type <String>]`: recurrenceRangeType
-  - `[TimeSlots <IMicrosoftGraphTimeRange- `[]`>]`: The time slot(s) preferred by the user.
-    - `[EndTime <String>]`: End time for the time range.
-    - `[StartTime <String>]`: Start time for the time range.
-  - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+      \[Type \<String\>\]: recurrenceRangeType
+  \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
+    \[EndTime \<String\>\]: End time for the time range.
+    \[StartTime \<String\>\]: Start time for the time range.
+  \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
 
-BODYPARAMETER `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphShiftPreferences\>: shiftPreferences
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Availability <IMicrosoftGraphShiftAvailability- `[]`>]`: Availability of the user to be scheduled for work and its recurrence pattern.
-    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
+  \[Availability \<IMicrosoftGraphShiftAvailability\[\]\>\]: Availability of the user to be scheduled for work and its recurrence pattern.
+    \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
+        \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
 If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
-        - `[FirstDayOfWeek <String>]`: dayOfWeek
-        - `[Index <String>]`: weekIndex
-        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+        \[FirstDayOfWeek \<String\>\]: dayOfWeek
+        \[Index \<String\>\]: weekIndex
+        \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        - `[Month <Int32?>]`: The month in which the event occurs. 
+        \[Month \<Int32?\>\]: The month in which the event occurs. 
 This is a number from 1 to 12.
-        - `[Type <String>]`: recurrencePatternType
-      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
+        \[Type \<String\>\]: recurrencePatternType
+      \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
+        \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
+        \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
+        \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-        - `[Type <String>]`: recurrenceRangeType
-    - `[TimeSlots <IMicrosoftGraphTimeRange- `[]`>]`: The time slot(s) preferred by the user.
-      - `[EndTime <String>]`: End time for the time range.
-      - `[StartTime <String>]`: Start time for the time range.
-    - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+        \[Type \<String\>\]: recurrenceRangeType
+    \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
+      \[EndTime \<String\>\]: End time for the time range.
+      \[StartTime \<String\>\]: Start time for the time range.
+    \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of servicePrincipal
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[NotificationId \<String\>\]: The unique identifier of notification
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingShiftPreference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformance
@@ -10,30 +10,44 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance [-AdditionalProperties <Hashtable>]
- [-AppCrashCount <Int32>] [-AppHangCount <Int32>] [-CrashedAppCount <Int32>] [-DeviceAppHealthScore <Double>]
- [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
- [-ProcessedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppHangCount <Int32>]
+ [-CrashedAppCount <Int32>] [-DeviceAppHealthScore <Double>] [-DeviceDisplayName <String>] [-DeviceId <String>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-ProcessedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -312,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -353,56 +382,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>`: The user experience analytics device performance entity contains device performance details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance\>: The user experience analytics device performance entity contains device performance details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppCrashCount <Int32?>]`: The number of application crashes for the device.
+  \[AppCrashCount \<Int32?\>\]: The number of application crashes for the device.
 Valid values 0 to 2147483647.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[AppHangCount <Int32?>]`: The number of application hangs for the device.
+  \[AppHangCount \<Int32?\>\]: The number of application hangs for the device.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[CrashedAppCount <Int32?>]`: The number of distinct application crashes for the device.
+  \[CrashedAppCount \<Int32?\>\]: The number of distinct application crashes for the device.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[DeviceAppHealthScore <Double?>]`: The application health score of the device.
+  \[DeviceAppHealthScore \<Double?\>\]: The application health score of the device.
 Valid values 0 to 100.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[DeviceDisplayName <String>]`: The name of the device.
+  \[DeviceDisplayName \<String\>\]: The name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[DeviceId <String>]`: The Intune device id of the device.
+  \[DeviceId \<String\>\]: The Intune device id of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[DeviceManufacturer <String>]`: The manufacturer name of the device.
+  \[DeviceManufacturer \<String\>\]: The manufacturer name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[DeviceModel <String>]`: The model name of the device.
+  \[DeviceModel \<String\>\]: The model name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the application in minutes.
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[MeanTimeToFailureInMinutes \<Int32?\>\]: The mean time to failure for the application in minutes.
 Valid values 0 to 2147483647.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed.
+  \[ProcessedDateTime \<DateTime?\>\]: The date and time when the statistics were last computed.
 The value cannot be modified and is automatically populated when the statistics are computed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'.
@@ -410,11 +438,6 @@ Returned by default.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformance)
-
-
-
-
 

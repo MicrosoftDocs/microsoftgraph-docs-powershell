@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationoperation
@@ -10,15 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityAttackSimulationOperation [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
+New-MgBetaSecurityAttackSimulationOperation [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
  [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,11 +24,24 @@ New-MgBetaSecurityAttackSimulationOperation [-AdditionalProperties <Hashtable>] 
 ### Create
 ```
 New-MgBetaSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSimulationOperation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to operations for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -175,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 longRunningOperationStatus
 
@@ -276,36 +302,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttackSimulationOperation>`: attackSimulationOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+BODYPARAMETER \<IMicrosoftGraphAttackSimulationOperation\>: attackSimulationOperation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+  \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
-  - `[Status <String>]`: longRunningOperationStatus
-  - `[StatusDetail <String>]`: Details about the status of the operation.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
+  \[Status \<String\>\]: longRunningOperationStatus
+  \[StatusDetail \<String\>\]: Details about the status of the operation.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[PercentageCompleted <Int32?>]`: Percentage of completion of the respective operation.
-  - `[TenantId <String>]`: Tenant identifier.
-  - `[Type <String>]`: attackSimulationOperationType
+  \[PercentageCompleted \<Int32?\>\]: Percentage of completion of the respective operation.
+  \[TenantId \<String\>\]: Tenant identifier.
+  \[Type \<String\>\]: attackSimulationOperationType
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationoperation)
-
-
-
-
 

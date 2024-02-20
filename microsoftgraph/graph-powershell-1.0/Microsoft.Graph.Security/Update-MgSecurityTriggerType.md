@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype
@@ -10,26 +10,36 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggerTypes in security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityTriggerType [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-Headers <IDictionary>]
+Update-MgSecurityTriggerType [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -110,6 +120,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionEventTypes
 .
 To construct, see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
@@ -167,61 +192,55 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityTriggerTypesRoot\>: triggerTypesRoot
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[RetentionEventTypes \<IMicrosoftGraphSecurityRetentionEventType\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
-    - `[Description <String>]`: Optional information about the event type.
-    - `[DisplayName <String>]`: Name of the event type.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
+        \[Id \<String\>\]: Unique identifier for the identity.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[CreatedDateTime \<DateTime?\>\]: The date time when the retentionEventType was created.
+    \[Description \<String\>\]: Optional information about the event type.
+    \[DisplayName \<String\>\]: Name of the event type.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTTYPES <IMicrosoftGraphSecurityRetentionEventType- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+RETENTIONEVENTTYPES \<IMicrosoftGraphSecurityRetentionEventType\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
-  - `[Description <String>]`: Optional information about the event type.
-  - `[DisplayName <String>]`: Name of the event type.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The date time when the retentionEventType was created.
+  \[Description \<String\>\]: Optional information about the event type.
+  \[DisplayName \<String\>\]: Name of the event type.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation
@@ -14,20 +14,38 @@ Create new navigation property to cartToClassAssociations for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementCartToClassAssociation [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
+New-MgBetaDeviceManagementCartToClassAssociation [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementCartToClassAssociation -BodyParameter <IMicrosoftGraphCartToClassAssociation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to cartToClassAssociations for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Version
 Version of the CartToClassAssociation.
 
@@ -254,30 +287,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCartToClassAssociation>`: CartToClassAssociation for associating device carts with classrooms.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCartToClassAssociation\>: CartToClassAssociation for associating device carts with classrooms.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ClassroomIds <String- `[]`>]`: Identifiers of classrooms to be associated with device carts.
-  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-  - `[Description <String>]`: Admin provided description of the CartToClassAssociation.
-  - `[DeviceCartIds <String- `[]`>]`: Identifiers of device carts to be associated with classes.
-  - `[DisplayName <String>]`: Admin provided name of the device configuration.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[Version <Int32?>]`: Version of the CartToClassAssociation.
+  \[ClassroomIds \<String\[\]\>\]: Identifiers of classrooms to be associated with device carts.
+  \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
+  \[Description \<String\>\]: Admin provided description of the CartToClassAssociation.
+  \[DeviceCartIds \<String\[\]\>\]: Identifiers of device carts to be associated with classes.
+  \[DisplayName \<String\>\]: Admin provided name of the device configuration.
+  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+  \[Version \<Int32?\>\]: Version of the CartToClassAssociation.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation)
-
-
-
-
 

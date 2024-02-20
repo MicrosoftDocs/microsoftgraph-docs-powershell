@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent
@@ -10,29 +10,43 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to auditEvents for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementAuditEvent [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
- [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementAuditEvent [-ResponseHeadersVariable <String>] [-Activity <String>]
+ [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
+ [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
+ [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
+ [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to auditEvents for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -280,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -321,85 +350,79 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApplicationDisplayName <String>]`: Name of the Application.
-  - `[ApplicationId <String>]`: AAD Application Id.
-  - `[AuditActorType <String>]`: Actor Type.
-  - `[IPAddress <String>]`: IPAddress.
-  - `[RemoteTenantId <String>]`: Remote Tenant Id
-  - `[RemoteUserId <String>]`: Remote User Id
-  - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
-  - `[Type <String>]`: Actor Type.
-  - `[UserId <String>]`: User Id.
-  - `[UserPermissions <String- `[]`>]`: List of user permissions when the audit was performed.
-  - `[UserPrincipalName <String>]`: User Principal Name (UPN).
-  - `[UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo- `[]`>]`: List of user scope tags when the audit was performed.
-    - `[DisplayName <String>]`: Scope Tag Display name.
-    - `[RoleScopeTagId <String>]`: Scope Tag Id.
+ACTOR \<IMicrosoftGraphAuditActor\>: A class containing the properties for Audit Actor.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ApplicationDisplayName \<String\>\]: Name of the Application.
+  \[ApplicationId \<String\>\]: AAD Application Id.
+  \[AuditActorType \<String\>\]: Actor Type.
+  \[IPAddress \<String\>\]: IPAddress.
+  \[RemoteTenantId \<String\>\]: Remote Tenant Id
+  \[RemoteUserId \<String\>\]: Remote User Id
+  \[ServicePrincipalName \<String\>\]: Service Principal Name (SPN).
+  \[Type \<String\>\]: Actor Type.
+  \[UserId \<String\>\]: User Id.
+  \[UserPermissions \<String\[\]\>\]: List of user permissions when the audit was performed.
+  \[UserPrincipalName \<String\>\]: User Principal Name (UPN).
+  \[UserRoleScopeTags \<IMicrosoftGraphRoleScopeTagInfo\[\]\>\]: List of user scope tags when the audit was performed.
+    \[DisplayName \<String\>\]: Scope Tag Display name.
+    \[RoleScopeTagId \<String\>\]: Scope Tag Id.
 
-BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuditEvent\>: A class containing the properties for Audit Event.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Activity <String>]`: Friendly name of the activity.
-  - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
-  - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
-  - `[ActivityResult <String>]`: The result of the activity.
-  - `[ActivityType <String>]`: The type of activity that was being performed.
-  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ApplicationDisplayName <String>]`: Name of the Application.
-    - `[ApplicationId <String>]`: AAD Application Id.
-    - `[AuditActorType <String>]`: Actor Type.
-    - `[IPAddress <String>]`: IPAddress.
-    - `[RemoteTenantId <String>]`: Remote Tenant Id
-    - `[RemoteUserId <String>]`: Remote User Id
-    - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
-    - `[Type <String>]`: Actor Type.
-    - `[UserId <String>]`: User Id.
-    - `[UserPermissions <String- `[]`>]`: List of user permissions when the audit was performed.
-    - `[UserPrincipalName <String>]`: User Principal Name (UPN).
-    - `[UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo- `[]`>]`: List of user scope tags when the audit was performed.
-      - `[DisplayName <String>]`: Scope Tag Display name.
-      - `[RoleScopeTagId <String>]`: Scope Tag Id.
-  - `[Category <String>]`: Audit category.
-  - `[ComponentName <String>]`: Component name.
-  - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
-  - `[DisplayName <String>]`: Event display name.
-  - `[Resources <IMicrosoftGraphAuditResource- `[]`>]`: Resources being modified.
-    - `[AuditResourceType <String>]`: Audit resource's type.
-    - `[DisplayName <String>]`: Display name.
-    - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
-      - `[DisplayName <String>]`: Display name.
-      - `[NewValue <String>]`: New value.
-      - `[OldValue <String>]`: Old value.
-    - `[ResourceId <String>]`: Audit resource's Id.
-    - `[Type <String>]`: Audit resource's type.
+  \[Activity \<String\>\]: Friendly name of the activity.
+  \[ActivityDateTime \<DateTime?\>\]: The date time in UTC when the activity was performed.
+  \[ActivityOperationType \<String\>\]: The HTTP operation type of the activity.
+  \[ActivityResult \<String\>\]: The result of the activity.
+  \[ActivityType \<String\>\]: The type of activity that was being performed.
+  \[Actor \<IMicrosoftGraphAuditActor\>\]: A class containing the properties for Audit Actor.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ApplicationDisplayName \<String\>\]: Name of the Application.
+    \[ApplicationId \<String\>\]: AAD Application Id.
+    \[AuditActorType \<String\>\]: Actor Type.
+    \[IPAddress \<String\>\]: IPAddress.
+    \[RemoteTenantId \<String\>\]: Remote Tenant Id
+    \[RemoteUserId \<String\>\]: Remote User Id
+    \[ServicePrincipalName \<String\>\]: Service Principal Name (SPN).
+    \[Type \<String\>\]: Actor Type.
+    \[UserId \<String\>\]: User Id.
+    \[UserPermissions \<String\[\]\>\]: List of user permissions when the audit was performed.
+    \[UserPrincipalName \<String\>\]: User Principal Name (UPN).
+    \[UserRoleScopeTags \<IMicrosoftGraphRoleScopeTagInfo\[\]\>\]: List of user scope tags when the audit was performed.
+      \[DisplayName \<String\>\]: Scope Tag Display name.
+      \[RoleScopeTagId \<String\>\]: Scope Tag Id.
+  \[Category \<String\>\]: Audit category.
+  \[ComponentName \<String\>\]: Component name.
+  \[CorrelationId \<String\>\]: The client request Id that is used to correlate activity within the system.
+  \[DisplayName \<String\>\]: Event display name.
+  \[Resources \<IMicrosoftGraphAuditResource\[\]\>\]: Resources being modified.
+    \[AuditResourceType \<String\>\]: Audit resource's type.
+    \[DisplayName \<String\>\]: Display name.
+    \[ModifiedProperties \<IMicrosoftGraphAuditProperty\[\]\>\]: List of modified properties.
+      \[DisplayName \<String\>\]: Display name.
+      \[NewValue \<String\>\]: New value.
+      \[OldValue \<String\>\]: Old value.
+    \[ResourceId \<String\>\]: Audit resource's Id.
+    \[Type \<String\>\]: Audit resource's type.
 
-RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
-  - `[AuditResourceType <String>]`: Audit resource's type.
-  - `[DisplayName <String>]`: Display name.
-  - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
-    - `[DisplayName <String>]`: Display name.
-    - `[NewValue <String>]`: New value.
-    - `[OldValue <String>]`: Old value.
-  - `[ResourceId <String>]`: Audit resource's Id.
-  - `[Type <String>]`: Audit resource's type.
+RESOURCES \<IMicrosoftGraphAuditResource\[\]\>: Resources being modified.
+  \[AuditResourceType \<String\>\]: Audit resource's type.
+  \[DisplayName \<String\>\]: Display name.
+  \[ModifiedProperties \<IMicrosoftGraphAuditProperty\[\]\>\]: List of modified properties.
+    \[DisplayName \<String\>\]: Display name.
+    \[NewValue \<String\>\]: New value.
+    \[OldValue \<String\>\]: Old value.
+  \[ResourceId \<String\>\]: Audit resource's Id.
+  \[Type \<String\>\]: Audit resource's type.
 
 ## RELATED LINKS
-[New-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent)
-
-
-
-
 

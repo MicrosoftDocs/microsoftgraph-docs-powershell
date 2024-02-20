@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicydefaultappmanagementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyDefaultAppManagementPolicy
@@ -11,16 +10,13 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Update the properties of a tenantAppManagementPolicy object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
- [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
+Update-MgPolicyDefaultAppManagementPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
  [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,14 +24,24 @@ Update-MgPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a tenantAppManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantappmanagementpolicy-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -196,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalRestrictions
 appManagementConfiguration
 To construct, see NOTES section for SERVICEPRINCIPALRESTRICTIONS properties and create a hash table.
@@ -253,80 +274,74 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATIONRESTRICTIONS `<IMicrosoftGraphAppManagementConfiguration>`: appManagementConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-    - `[MaxLifetime <TimeSpan?>]`: 
-    - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
+APPLICATIONRESTRICTIONS \<IMicrosoftGraphAppManagementConfiguration\>: appManagementConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[KeyCredentials \<IMicrosoftGraphKeyCredentialConfiguration\[\]\>\]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+    \[MaxLifetime \<TimeSpan?\>\]: 
+    \[RestrictForAppsCreatedAfterDateTime \<DateTime?\>\]: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
-    - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
-  - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-    - `[MaxLifetime <TimeSpan?>]`: 
-    - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
+    \[RestrictionType \<String\>\]: appKeyCredentialRestrictionType
+  \[PasswordCredentials \<IMicrosoftGraphPasswordCredentialConfiguration\[\]\>\]: Collection of password restrictions settings to be applied to an application or service principal.
+    \[MaxLifetime \<TimeSpan?\>\]: 
+    \[RestrictForAppsCreatedAfterDateTime \<DateTime?\>\]: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
-    - `[RestrictionType <String>]`: appCredentialRestrictionType
+    \[RestrictionType \<String\>\]: appCredentialRestrictionType
 
-BODYPARAMETER `<IMicrosoftGraphTenantAppManagementPolicy>`: tenantAppManagementPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
+BODYPARAMETER \<IMicrosoftGraphTenantAppManagementPolicy\>: tenantAppManagementPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description for this policy.
 Required.
-  - `[DisplayName <String>]`: Display name for this policy.
+  \[DisplayName \<String\>\]: Display name for this policy.
 Required.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
-      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
+  \[ApplicationRestrictions \<IMicrosoftGraphAppManagementConfiguration\>\]: appManagementConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[KeyCredentials \<IMicrosoftGraphKeyCredentialConfiguration\[\]\>\]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+      \[MaxLifetime \<TimeSpan?\>\]: 
+      \[RestrictForAppsCreatedAfterDateTime \<DateTime?\>\]: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
-      - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
-    - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
-      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
+      \[RestrictionType \<String\>\]: appKeyCredentialRestrictionType
+    \[PasswordCredentials \<IMicrosoftGraphPasswordCredentialConfiguration\[\]\>\]: Collection of password restrictions settings to be applied to an application or service principal.
+      \[MaxLifetime \<TimeSpan?\>\]: 
+      \[RestrictForAppsCreatedAfterDateTime \<DateTime?\>\]: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
-      - `[RestrictionType <String>]`: appCredentialRestrictionType
-  - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
+      \[RestrictionType \<String\>\]: appCredentialRestrictionType
+  \[IsEnabled \<Boolean?\>\]: Denotes whether the policy is enabled.
 Default value is false.
-  - `[ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+  \[ServicePrincipalRestrictions \<IMicrosoftGraphAppManagementConfiguration\>\]: appManagementConfiguration
 
-SERVICEPRINCIPALRESTRICTIONS `<IMicrosoftGraphAppManagementConfiguration>`: appManagementConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-    - `[MaxLifetime <TimeSpan?>]`: 
-    - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
+SERVICEPRINCIPALRESTRICTIONS \<IMicrosoftGraphAppManagementConfiguration\>: appManagementConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[KeyCredentials \<IMicrosoftGraphKeyCredentialConfiguration\[\]\>\]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+    \[MaxLifetime \<TimeSpan?\>\]: 
+    \[RestrictForAppsCreatedAfterDateTime \<DateTime?\>\]: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
-    - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
-  - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-    - `[MaxLifetime <TimeSpan?>]`: 
-    - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
+    \[RestrictionType \<String\>\]: appKeyCredentialRestrictionType
+  \[PasswordCredentials \<IMicrosoftGraphPasswordCredentialConfiguration\[\]\>\]: Collection of password restrictions settings to be applied to an application or service principal.
+    \[MaxLifetime \<TimeSpan?\>\]: 
+    \[RestrictForAppsCreatedAfterDateTime \<DateTime?\>\]: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
-    - `[RestrictionType <String>]`: appCredentialRestrictionType
+    \[RestrictionType \<String\>\]: appCredentialRestrictionType
 
 ## RELATED LINKS
-[Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicydefaultappmanagementpolicy)
-
-
-
-
 

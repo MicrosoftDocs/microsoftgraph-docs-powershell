@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcategory
@@ -14,8 +14,8 @@ Create new navigation property to categories for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementCategory [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-HasRequiredSetting] [-Id <String>]
+New-MgBetaDeviceManagementCategory [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,11 +23,28 @@ New-MgBetaDeviceManagementCategory [-AdditionalProperties <Hashtable>] [-Display
 ### Create
 ```
 New-MgBetaDeviceManagementCategory -BodyParameter <IMicrosoftGraphDeviceManagementSettingCategory>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to categories for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -138,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingDefinitions
 The setting definitions this category contains
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
@@ -195,58 +227,53 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingCategory
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementSettingCategory>`: Entity representing a setting category
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementSettingCategory\>: Entity representing a setting category
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The category name
-  - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
-  - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>]`: The setting definitions this category contains
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DisplayName \<String\>\]: The category name
+  \[HasRequiredSetting \<Boolean?\>\]: The category contains top level required setting
+  \[SettingDefinitions \<IMicrosoftGraphDeviceManagementSettingDefinition\[\]\>\]: The setting definitions this category contains
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
-    - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency- `[]`>]`: Collection of dependencies on other settings
-      - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the dependency setting value
-      - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-    - `[Description <String>]`: The setting's description
-    - `[DisplayName <String>]`: The setting's display name
-    - `[DocumentationUrl <String>]`: Url to setting documentation
-    - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-    - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-    - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-    - `[Keywords <String- `[]`>]`: Keywords associated with the setting
-    - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-    - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
+    \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the setting value
+    \[Dependencies \<IMicrosoftGraphDeviceManagementSettingDependency\[\]\>\]: Collection of dependencies on other settings
+      \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the dependency setting value
+      \[DefinitionId \<String\>\]: The setting definition ID of the setting depended on
+    \[Description \<String\>\]: The setting's description
+    \[DisplayName \<String\>\]: The setting's display name
+    \[DocumentationUrl \<String\>\]: Url to setting documentation
+    \[HeaderSubtitle \<String\>\]: subtitle of the setting header for more details about the category/section
+    \[HeaderTitle \<String\>\]: title of the setting header represents a category/section of a setting/settings
+    \[IsTopLevel \<Boolean?\>\]: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
+    \[Keywords \<String\[\]\>\]: Keywords associated with the setting
+    \[PlaceholderText \<String\>\]: Placeholder text as an example of valid input
+    \[ValueType \<DeviceManangementIntentValueType?\>\]: deviceManangementIntentValueType
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>: The setting definitions this category contains
-  - `[Id <String>]`: The unique identifier for an entity.
+SETTINGDEFINITIONS \<IMicrosoftGraphDeviceManagementSettingDefinition\[\]\>: The setting definitions this category contains
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
-  - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency- `[]`>]`: Collection of dependencies on other settings
-    - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the dependency setting value
-    - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-  - `[Description <String>]`: The setting's description
-  - `[DisplayName <String>]`: The setting's display name
-  - `[DocumentationUrl <String>]`: Url to setting documentation
-  - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-  - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-  - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-  - `[Keywords <String- `[]`>]`: Keywords associated with the setting
-  - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-  - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
+  \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the setting value
+  \[Dependencies \<IMicrosoftGraphDeviceManagementSettingDependency\[\]\>\]: Collection of dependencies on other settings
+    \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the dependency setting value
+    \[DefinitionId \<String\>\]: The setting definition ID of the setting depended on
+  \[Description \<String\>\]: The setting's description
+  \[DisplayName \<String\>\]: The setting's display name
+  \[DocumentationUrl \<String\>\]: Url to setting documentation
+  \[HeaderSubtitle \<String\>\]: subtitle of the setting header for more details about the category/section
+  \[HeaderTitle \<String\>\]: title of the setting header represents a category/section of a setting/settings
+  \[IsTopLevel \<Boolean?\>\]: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
+  \[Keywords \<String\[\]\>\]: Keywords associated with the setting
+  \[PlaceholderText \<String\>\]: Placeholder text as an example of valid input
+  \[ValueType \<DeviceManangementIntentValueType?\>\]: deviceManangementIntentValueType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcategory)
-
-
-
-
 

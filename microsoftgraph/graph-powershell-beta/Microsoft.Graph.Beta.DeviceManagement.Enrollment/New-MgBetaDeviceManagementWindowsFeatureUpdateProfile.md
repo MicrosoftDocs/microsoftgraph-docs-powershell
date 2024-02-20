@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsfeatureupdateprofile
@@ -14,10 +14,10 @@ Create new navigation property to windowsFeatureUpdateProfiles for deviceManagem
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
- [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
- [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
+New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]
+ [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
+ [-DisplayName <String>] [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
  [-InstallLatestWindows10OnWindows11IneligibleDevice] [-LastModifiedDateTime <DateTime>]
  [-RoleScopeTagIds <String[]>] [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,12 +26,24 @@ New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-AdditionalProperties <Ha
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsFeatureUpdateProfile
- -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -249,6 +261,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Feature Update entity.
 
@@ -321,59 +348,54 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment- `[]`>: The list of group assignments of the profile.
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphWindowsFeatureUpdateProfileAssignment\[\]\>: The list of group assignments of the profile.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsFeatureUpdateProfile>`: Windows Feature Update Profile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsFeatureUpdateProfile\>: Windows Feature Update Profile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment- `[]`>]`: The list of group assignments of the profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Assignments \<IMicrosoftGraphWindowsFeatureUpdateProfileAssignment\[\]\>\]: The list of group assignments of the profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[CreatedDateTime <DateTime?>]`: The date time that the profile was created.
-  - `[DeployableContentDisplayName <String>]`: Friendly display name of the quality update profile deployable content
-  - `[Description <String>]`: The description of the profile which is specified by the user.
-  - `[DisplayName <String>]`: The display name of the profile.
-  - `[EndOfSupportDate <DateTime?>]`: The last supported date for a feature update
-  - `[FeatureUpdateVersion <String>]`: The feature update version that will be deployed to the devices targeted by this profile.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[CreatedDateTime \<DateTime?\>\]: The date time that the profile was created.
+  \[DeployableContentDisplayName \<String\>\]: Friendly display name of the quality update profile deployable content
+  \[Description \<String\>\]: The description of the profile which is specified by the user.
+  \[DisplayName \<String\>\]: The display name of the profile.
+  \[EndOfSupportDate \<DateTime?\>\]: The last supported date for a feature update
+  \[FeatureUpdateVersion \<String\>\]: The feature update version that will be deployed to the devices targeted by this profile.
 The version could be any supported version for example 1709, 1803 or 1809 and so on.
-  - `[InstallLatestWindows10OnWindows11IneligibleDevice <Boolean?>]`: If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11
-  - `[LastModifiedDateTime <DateTime?>]`: The date time that the profile was last modified.
-  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Feature Update entity.
-  - `[RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>]`: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
-    - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
-    - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+  \[InstallLatestWindows10OnWindows11IneligibleDevice \<Boolean?\>\]: If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11
+  \[LastModifiedDateTime \<DateTime?\>\]: The date time that the profile was last modified.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Feature Update entity.
+  \[RolloutSettings \<IMicrosoftGraphWindowsUpdateRolloutSettings\>\]: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[OfferEndDateTimeInUtc \<DateTime?\>\]: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+    \[OfferIntervalInDays \<Int32?\>\]: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
+    \[OfferStartDateTimeInUtc \<DateTime?\>\]: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
-ROLLOUTSETTINGS `<IMicrosoftGraphWindowsUpdateRolloutSettings>`: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
-  - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
-  - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+ROLLOUTSETTINGS \<IMicrosoftGraphWindowsUpdateRolloutSettings\>: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[OfferEndDateTimeInUtc \<DateTime?\>\]: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+  \[OfferIntervalInDays \<Int32?\>\]: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
+  \[OfferStartDateTimeInUtc \<DateTime?\>\]: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsfeatureupdateprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsfeatureupdateprofile)
-
-
-
-
 

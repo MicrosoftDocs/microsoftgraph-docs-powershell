@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue
@@ -10,27 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOmaSettingPlainTextValue
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue -DeviceConfigurationId <String>
- -SecretReferenceValueId <String> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ -SecretReferenceValueId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
- -InputObject <IDeviceManagementFunctionsIdentity> [-Headers <IDictionary>]
+ -InputObject <IDeviceManagementFunctionsIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getOmaSettingPlainTextValue
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -95,6 +108,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecretReferenceValueId
 Usage: secretReferenceValueId='{secretReferenceValueId}'
 
@@ -119,7 +147,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -127,20 +154,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
-  - `[Category <String>]`: Usage: category='{category}'
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[Scope <String>]`: Usage: scope='{scope}'
-  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
-  - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
+INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
+  \[Category \<String\>\]: Usage: category='{category}'
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
+  \[Scope \<String\>\]: Usage: scope='{scope}'
+  \[SecretReferenceValueId \<String\>\]: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  \[SummarizeBy \<UserExperienceAnalyticsSummarizedBy?\>\]: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue)
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementWindowsAutopilotDeviceIdentity
@@ -11,31 +10,40 @@ ms.prod: intune
 ## SYNOPSIS
 Create a new windowsAutopilotDeviceIdentity object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementWindowsAutopilotDeviceIdentity [-AdditionalProperties <Hashtable>]
- [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>] [-DisplayName <String>]
- [-EnrollmentState <EnrollmentState>] [-GroupTag <String>] [-Id <String>] [-LastContactedDateTime <DateTime>]
- [-ManagedDeviceId <String>] [-Manufacturer <String>] [-Model <String>] [-ProductKey <String>]
- [-PurchaseOrderIdentifier <String>] [-ResourceName <String>] [-SerialNumber <String>] [-SkuNumber <String>]
- [-SystemFamily <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+New-MgDeviceManagementWindowsAutopilotDeviceIdentity [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>]
+ [-DisplayName <String>] [-EnrollmentState <EnrollmentState>] [-GroupTag <String>] [-Id <String>]
+ [-LastContactedDateTime <DateTime>] [-ManagedDeviceId <String>] [-Manufacturer <String>] [-Model <String>]
+ [-ProductKey <String>] [-PurchaseOrderIdentifier <String>] [-ResourceName <String>] [-SerialNumber <String>]
+ [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementWindowsAutopilotDeviceIdentity
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new windowsAutopilotDeviceIdentity object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -296,6 +304,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 Serial number of the Windows autopilot device.
 
@@ -397,40 +420,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeviceIdentity>`: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsAutopilotDeviceIdentity\>: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AddressableUserName <String>]`: Addressable user name.
-  - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
-  - `[DisplayName <String>]`: Display Name
-  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-  - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
-  - `[LastContactedDateTime <DateTime?>]`: Intune Last Contacted Date Time of the Windows autopilot device.
-  - `[ManagedDeviceId <String>]`: Managed Device ID
-  - `[Manufacturer <String>]`: Oem manufacturer of the Windows autopilot device.
-  - `[Model <String>]`: Model name of the Windows autopilot device.
-  - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
-  - `[PurchaseOrderIdentifier <String>]`: Purchase Order Identifier of the Windows autopilot device.
-  - `[ResourceName <String>]`: Resource Name.
-  - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
-  - `[SkuNumber <String>]`: SKU Number
-  - `[SystemFamily <String>]`: System Family
-  - `[UserPrincipalName <String>]`: User Principal Name.
+  \[AddressableUserName \<String\>\]: Addressable user name.
+  \[AzureActiveDirectoryDeviceId \<String\>\]: AAD Device ID - to be deprecated
+  \[DisplayName \<String\>\]: Display Name
+  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+  \[GroupTag \<String\>\]: Group Tag of the Windows autopilot device.
+  \[LastContactedDateTime \<DateTime?\>\]: Intune Last Contacted Date Time of the Windows autopilot device.
+  \[ManagedDeviceId \<String\>\]: Managed Device ID
+  \[Manufacturer \<String\>\]: Oem manufacturer of the Windows autopilot device.
+  \[Model \<String\>\]: Model name of the Windows autopilot device.
+  \[ProductKey \<String\>\]: Product Key of the Windows autopilot device.
+  \[PurchaseOrderIdentifier \<String\>\]: Purchase Order Identifier of the Windows autopilot device.
+  \[ResourceName \<String\>\]: Resource Name.
+  \[SerialNumber \<String\>\]: Serial number of the Windows autopilot device.
+  \[SkuNumber \<String\>\]: SKU Number
+  \[SystemFamily \<String\>\]: System Family
+  \[UserPrincipalName \<String\>\]: User Principal Name.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity)
-
-
-
-
 

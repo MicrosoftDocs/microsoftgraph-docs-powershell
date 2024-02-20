@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser
@@ -10,40 +10,34 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to riskyUsers for identityProtection
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaRiskyUser [-AdditionalProperties <Hashtable>] [-History <IMicrosoftGraphRiskyUserHistoryItem[]>]
- [-Id <String>] [-IsDeleted] [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>]
- [-RiskLevel <String>] [-RiskState <String>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRiskyUser [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>] [-IsDeleted] [-IsProcessing]
+ [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
+ [-UserDisplayName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaRiskyUser -BodyParameter <IMicrosoftGraphRiskyUser> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRiskyUser -BodyParameter <IMicrosoftGraphRiskyUser> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to riskyUsers for identityProtection
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaRiskyUser
-```
-This example shows how to use the New-MgBetaBetaRiskyUser Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -164,6 +158,21 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -306,85 +315,80 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUser
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUser>`: riskyUser
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphRiskyUser\>: riskyUser
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
-    - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
-    - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
+  \[History \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>\]: 
+    \[History \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>\]: 
+    \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
-    - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
+    \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
 Supports $filter (eq).
-    - `[RiskDetail <String>]`: riskDetail
-    - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+    \[RiskDetail \<String\>\]: riskDetail
+    \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, gt, lt).
-    - `[RiskLevel <String>]`: riskLevel
-    - `[RiskState <String>]`: riskState
-    - `[UserDisplayName <String>]`: Risky user display name.
-    - `[UserPrincipalName <String>]`: Risky user principal name.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[RiskLevel \<String\>\]: riskLevel
+    \[RiskState \<String\>\]: riskState
+    \[UserDisplayName \<String\>\]: Risky user display name.
+    \[UserPrincipalName \<String\>\]: Risky user principal name.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Detail <String>]`: riskDetail
-      - `[EventTypes <String- `[]`>]`: 
-      - `[RiskEventTypes <String- `[]`>]`: 
-    - `[InitiatedBy <String>]`: The ID of actor that does the operation.
-    - `[UserId <String>]`: The ID of the user.
-  - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
+    \[Activity \<IMicrosoftGraphRiskUserActivity\>\]: riskUserActivity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Detail \<String\>\]: riskDetail
+      \[EventTypes \<String\[\]\>\]: 
+      \[RiskEventTypes \<String\[\]\>\]: 
+    \[InitiatedBy \<String\>\]: The ID of actor that does the operation.
+    \[UserId \<String\>\]: The ID of the user.
+  \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
+  \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
 Supports $filter (eq).
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, gt, lt).
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[UserDisplayName <String>]`: Risky user display name.
-  - `[UserPrincipalName <String>]`: Risky user principal name.
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[UserDisplayName \<String\>\]: Risky user display name.
+  \[UserPrincipalName \<String\>\]: Risky user principal name.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem- `[]`>: .
-  - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
-  - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
+HISTORY \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>: .
+  \[History \<IMicrosoftGraphRiskyUserHistoryItem\[\]\>\]: 
+  \[IsDeleted \<Boolean?\>\]: Indicates whether the user is deleted.
 Possible values are: true, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
+  \[IsProcessing \<Boolean?\>\]: Indicates whether a user's risky state is being processed by the backend.
 Supports $filter (eq).
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risky user was last updated. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, gt, lt).
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[UserDisplayName <String>]`: Risky user display name.
-  - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[UserDisplayName \<String\>\]: Risky user display name.
+  \[UserPrincipalName \<String\>\]: Risky user principal name.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Detail <String>]`: riskDetail
-    - `[EventTypes <String- `[]`>]`: 
-    - `[RiskEventTypes <String- `[]`>]`: 
-  - `[InitiatedBy <String>]`: The ID of actor that does the operation.
-  - `[UserId <String>]`: The ID of the user.
+  \[Activity \<IMicrosoftGraphRiskUserActivity\>\]: riskUserActivity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Detail \<String\>\]: riskDetail
+    \[EventTypes \<String\[\]\>\]: 
+    \[RiskEventTypes \<String\[\]\>\]: 
+  \[InitiatedBy \<String\>\]: The ID of actor that does the operation.
+  \[UserId \<String\>\]: The ID of the user.
 
 ## RELATED LINKS
-[New-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser)
-
-
-
 

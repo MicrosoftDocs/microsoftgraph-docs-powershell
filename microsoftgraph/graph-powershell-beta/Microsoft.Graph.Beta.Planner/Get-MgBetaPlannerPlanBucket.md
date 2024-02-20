@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaPlannerPlanBucket
@@ -11,36 +10,26 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-list-buckets-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 Get-MgBetaPlannerPlanBucket -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgBetaPlannerPlanBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -180,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -249,14 +253,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucket
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket)
-
-
-
 

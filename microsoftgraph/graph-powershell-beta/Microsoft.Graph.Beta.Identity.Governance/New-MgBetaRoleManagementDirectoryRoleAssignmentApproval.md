@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentapproval
@@ -14,19 +14,32 @@ Create new navigation property to roleAssignmentApprovals for roleManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaRoleManagementDirectoryRoleAssignmentApproval [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Steps <IMicrosoftGraphApprovalStep[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRoleManagementDirectoryRoleAssignmentApproval [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Steps <IMicrosoftGraphApprovalStep[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementDirectoryRoleAssignmentApproval -BodyParameter <IMicrosoftGraphApproval>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleAssignmentApprovals for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -107,6 +120,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Steps
 Used to represent the decision associated with a single step in the approval process configured in approvalStage.
 To construct, see NOTES section for STEPS properties and create a hash table.
@@ -164,72 +192,67 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphApproval>`: approval
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphApproval\>: approval
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Steps <IMicrosoftGraphApprovalStep- `[]`>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Steps \<IMicrosoftGraphApprovalStep\[\]\>\]: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review.
+    \[AssignedToMe \<Boolean?\>\]: Indicates whether the step is assigned to the calling user to review.
 Read-only.
-    - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step.
+    \[DisplayName \<String\>\]: The label provided by the policy creator to identify an approval step.
 Read-only.
-    - `[Justification <String>]`: The justification associated with the approval step decision.
-    - `[ReviewResult <String>]`: The result of this approval record.
+    \[Justification \<String\>\]: The justification associated with the approval step decision.
+    \[ReviewResult \<String\>\]: The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
-    - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+    \[ReviewedBy \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded.
+    \[ReviewedDateTime \<DateTime?\>\]: The date and time when a decision was recorded.
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Status <String>]`: The step status.
+    \[Status \<String\>\]: The step status.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-STEPS <IMicrosoftGraphApprovalStep- `[]`>: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
-  - `[Id <String>]`: The unique identifier for an entity.
+STEPS \<IMicrosoftGraphApprovalStep\[\]\>: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review.
+  \[AssignedToMe \<Boolean?\>\]: Indicates whether the step is assigned to the calling user to review.
 Read-only.
-  - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step.
+  \[DisplayName \<String\>\]: The label provided by the policy creator to identify an approval step.
 Read-only.
-  - `[Justification <String>]`: The justification associated with the approval step decision.
-  - `[ReviewResult <String>]`: The result of this approval record.
+  \[Justification \<String\>\]: The justification associated with the approval step decision.
+  \[ReviewResult \<String\>\]: The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
-  - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  \[ReviewedBy \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded.
+  \[ReviewedDateTime \<DateTime?\>\]: The date and time when a decision was recorded.
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Status <String>]`: The step status.
+  \[Status \<String\>\]: The step status.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentapproval)
-
-
-
-
 

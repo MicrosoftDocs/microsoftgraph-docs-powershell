@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitiondashboardcard
@@ -15,39 +15,52 @@ Update the navigation property dashboardCards in appCatalogs
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -TeamsAppDashboardCardDefinitionId <String>
- -TeamsAppDefinitionId <String> -TeamsAppId <String> [-AdditionalProperties <Hashtable>]
- [-ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>] [-DefaultSize <String>]
- [-Description <String>] [-DisplayName <String>] [-Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]
- [-Id <String>] [-PickerGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -TeamsAppDashboardCardDefinitionId <String>
- -TeamsAppDefinitionId <String> -TeamsAppId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
+ -TeamsAppDefinitionId <String> -TeamsAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>]
  [-DefaultSize <String>] [-Description <String>] [-DisplayName <String>]
  [-Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>] [-Id <String>] [-PickerGroupId <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -TeamsAppDashboardCardDefinitionId <String>
+ -TeamsAppDefinitionId <String> -TeamsAppId <String>
+ -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>] [-DefaultSize <String>]
+ [-Description <String>] [-DisplayName <String>] [-Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]
+ [-Id <String>] [-PickerGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property dashboardCards in appCatalogs
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -236,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppDashboardCardDefinitionId
 The unique identifier of teamsAppDashboardCardDefinition
 
@@ -323,92 +351,87 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppDashboardCardDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppDashboardCardDefinition>`: teamsAppDashboardCardDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphTeamsAppDashboardCardDefinition\>: teamsAppDashboardCardDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>]`: teamsAppDashboardCardContentSource
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BotConfiguration <IMicrosoftGraphTeamsAppDashboardCardBotConfiguration>]`: teamsAppDashboardCardBotConfiguration
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[BotId <String>]`: 
-    - `[SourceType <String>]`: teamsAppDashboardCardSourceType
-  - `[DefaultSize <String>]`: teamsAppDashboardCardSize
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]`: teamsAppDashboardCardIcon
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IconUrl <String>]`: 
-    - `[OfficeUiFabricIconName <String>]`: 
-  - `[PickerGroupId <String>]`: 
+  \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BotId \<String\>\]: 
+    \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+  \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IconUrl \<String\>\]: 
+    \[OfficeUiFabricIconName \<String\>\]: 
+  \[PickerGroupId \<String\>\]: 
 
-CONTENTSOURCE `<IMicrosoftGraphTeamsAppDashboardCardContentSource>`: teamsAppDashboardCardContentSource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BotConfiguration <IMicrosoftGraphTeamsAppDashboardCardBotConfiguration>]`: teamsAppDashboardCardBotConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BotId <String>]`: 
-  - `[SourceType <String>]`: teamsAppDashboardCardSourceType
+CONTENTSOURCE \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>: teamsAppDashboardCardContentSource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BotId \<String\>\]: 
+  \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
 
-ICON `<IMicrosoftGraphTeamsAppDashboardCardIcon>`: teamsAppDashboardCardIcon
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IconUrl <String>]`: 
-  - `[OfficeUiFabricIconName <String>]`: 
+ICON \<IMicrosoftGraphTeamsAppDashboardCardIcon\>: teamsAppDashboardCardIcon
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IconUrl \<String\>\]: 
+  \[OfficeUiFabricIconName \<String\>\]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DayNoteId <String>]`: The unique identifier of dayNote
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[ShiftsRoleDefinitionId <String>]`: The unique identifier of shiftsRoleDefinition
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
-  - `[TeamsAppDashboardCardDefinitionId <String>]`: The unique identifier of teamsAppDashboardCardDefinition
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
+  \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkDeviceId \<String\>\]: The unique identifier of teamworkDevice
+  \[TeamworkDeviceOperationId \<String\>\]: The unique identifier of teamworkDeviceOperation
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeCardId \<String\>\]: The unique identifier of timeCard
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitiondashboardcard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitiondashboardcard)
-
-
-
-
 

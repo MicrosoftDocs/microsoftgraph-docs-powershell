@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition
@@ -8,19 +8,16 @@ schema: 2.0.0
 # Update-MgBetaAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAppCatalogTeamAppDefinition -TeamsAppDefinitionId <String> -TeamsAppId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
  [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-AzureAdAppId <String>] [-Bot <Hashtable>]
  [-ColorIcon <IMicrosoftGraphTeamsAppIcon>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition[]>] [-Description <String>]
@@ -33,14 +30,14 @@ Update-MgBetaAppCatalogTeamAppDefinition -TeamsAppDefinitionId <String> -TeamsAp
 ### Update
 ```
 Update-MgBetaAppCatalogTeamAppDefinition -TeamsAppDefinitionId <String> -TeamsAppId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
  [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-AzureAdAppId <String>] [-Bot <Hashtable>]
  [-ColorIcon <IMicrosoftGraphTeamsAppIcon>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition[]>] [-Description <String>]
@@ -53,16 +50,26 @@ Update-MgBetaAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <IT
 ### UpdateViaIdentity
 ```
 Update-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -344,6 +351,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Shortdescription
 .
 
@@ -473,194 +495,189 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
-      - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-      - `[PermissionValue <String>]`: The name of the resource-specific permission.
+AUTHORIZATION \<IMicrosoftGraphTeamsAppAuthorization\>: teamsAppAuthorization
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[RequiredPermissionSet \<IMicrosoftGraphTeamsAppPermissionSet\>\]: teamsAppPermissionSet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ResourceSpecificPermissions \<IMicrosoftGraphTeamsAppResourceSpecificPermission\[\]\>\]: A collection of resource-specific permissions.
+      \[PermissionType \<String\>\]: teamsAppResourceSpecificPermissionType
+      \[PermissionValue \<String\>\]: The name of the resource-specific permission.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphTeamsAppDefinition\>: teamsAppDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
-  - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
-        - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-        - `[PermissionValue <String>]`: The name of the resource-specific permission.
-  - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
-  - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AllowedInstallationScopes \<String\>\]: teamsAppInstallationScopes
+  \[Authorization \<IMicrosoftGraphTeamsAppAuthorization\>\]: teamsAppAuthorization
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RequiredPermissionSet \<IMicrosoftGraphTeamsAppPermissionSet\>\]: teamsAppPermissionSet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[ResourceSpecificPermissions \<IMicrosoftGraphTeamsAppResourceSpecificPermission\[\]\>\]: A collection of resource-specific permissions.
+        \[PermissionType \<String\>\]: teamsAppResourceSpecificPermissionType
+        \[PermissionValue \<String\>\]: The name of the resource-specific permission.
+  \[AzureAdAppId \<String\>\]: The WebApplicationInfo.Id from the Teams app manifest.
+  \[Bot \<IMicrosoftGraphTeamworkBot\>\]: teamworkBot
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ColorIcon \<IMicrosoftGraphTeamsAppIcon\>\]: teamsAppIcon
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[HostedContent \<IMicrosoftGraphTeamworkHostedContent\>\]: teamworkHostedContent
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[ContentBytes <Byte- `[]`>]`: Write only.
+      \[ContentBytes \<Byte\[\]\>\]: Write only.
 Bytes for the hosted content (such as images).
-      - `[ContentType <String>]`: Write only.
+      \[ContentType \<String\>\]: Write only.
 Content type, such as image/png, image/jpg.
-    - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+    \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DashboardCards \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>]`: teamsAppDashboardCardContentSource
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[BotConfiguration <IMicrosoftGraphTeamsAppDashboardCardBotConfiguration>]`: teamsAppDashboardCardBotConfiguration
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BotId <String>]`: 
-      - `[SourceType <String>]`: teamsAppDashboardCardSourceType
-    - `[DefaultSize <String>]`: teamsAppDashboardCardSize
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]`: teamsAppDashboardCardIcon
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IconUrl <String>]`: 
-      - `[OfficeUiFabricIconName <String>]`: 
-    - `[PickerGroupId <String>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: The name of the app provided by the app developer.
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
-  - `[PublishingState <String>]`: teamsAppPublishingState
-  - `[Shortdescription <String>]`: 
-  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
-  - `[Version <String>]`: The version number of the application.
+    \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[BotId \<String\>\]: 
+      \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+    \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IconUrl \<String\>\]: 
+      \[OfficeUiFabricIconName \<String\>\]: 
+    \[PickerGroupId \<String\>\]: 
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: The name of the app provided by the app developer.
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[OutlineIcon \<IMicrosoftGraphTeamsAppIcon\>\]: teamsAppIcon
+  \[PublishingState \<String\>\]: teamsAppPublishingState
+  \[Shortdescription \<String\>\]: 
+  \[TeamsAppId \<String\>\]: The ID from the Teams app manifest.
+  \[Version \<String\>\]: The version number of the application.
 
-COLORICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+COLORICON \<IMicrosoftGraphTeamsAppIcon\>: teamsAppIcon
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[HostedContent \<IMicrosoftGraphTeamworkHostedContent\>\]: teamworkHostedContent
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ContentBytes <Byte- `[]`>]`: Write only.
+    \[ContentBytes \<Byte\[\]\>\]: Write only.
 Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only.
+    \[ContentType \<String\>\]: Write only.
 Content type, such as image/png, image/jpg.
-  - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
+  \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-DASHBOARDCARDS <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+DASHBOARDCARDS \<IMicrosoftGraphTeamsAppDashboardCardDefinition\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>]`: teamsAppDashboardCardContentSource
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BotConfiguration <IMicrosoftGraphTeamsAppDashboardCardBotConfiguration>]`: teamsAppDashboardCardBotConfiguration
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[BotId <String>]`: 
-    - `[SourceType <String>]`: teamsAppDashboardCardSourceType
-  - `[DefaultSize <String>]`: teamsAppDashboardCardSize
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]`: teamsAppDashboardCardIcon
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IconUrl <String>]`: 
-    - `[OfficeUiFabricIconName <String>]`: 
-  - `[PickerGroupId <String>]`: 
+  \[ContentSource \<IMicrosoftGraphTeamsAppDashboardCardContentSource\>\]: teamsAppDashboardCardContentSource
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BotConfiguration \<IMicrosoftGraphTeamsAppDashboardCardBotConfiguration\>\]: teamsAppDashboardCardBotConfiguration
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BotId \<String\>\]: 
+    \[SourceType \<String\>\]: teamsAppDashboardCardSourceType
+  \[DefaultSize \<String\>\]: teamsAppDashboardCardSize
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[Icon \<IMicrosoftGraphTeamsAppDashboardCardIcon\>\]: teamsAppDashboardCardIcon
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IconUrl \<String\>\]: 
+    \[OfficeUiFabricIconName \<String\>\]: 
+  \[PickerGroupId \<String\>\]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DayNoteId <String>]`: The unique identifier of dayNote
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[ShiftsRoleDefinitionId <String>]`: The unique identifier of shiftsRoleDefinition
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
-  - `[TeamsAppDashboardCardDefinitionId <String>]`: The unique identifier of teamsAppDashboardCardDefinition
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
+  \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
+  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkDeviceId \<String\>\]: The unique identifier of teamworkDevice
+  \[TeamworkDeviceOperationId \<String\>\]: The unique identifier of teamworkDeviceOperation
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeCardId \<String\>\]: The unique identifier of timeCard
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
-OUTLINEICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+OUTLINEICON \<IMicrosoftGraphTeamsAppIcon\>: teamsAppIcon
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[HostedContent \<IMicrosoftGraphTeamworkHostedContent\>\]: teamworkHostedContent
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ContentBytes <Byte- `[]`>]`: Write only.
+    \[ContentBytes \<Byte\[\]\>\]: Write only.
 Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only.
+    \[ContentType \<String\>\]: Write only.
 Content type, such as image/png, image/jpg.
-  - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
+  \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
 
 ## RELATED LINKS
-[Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
-
-
-
 

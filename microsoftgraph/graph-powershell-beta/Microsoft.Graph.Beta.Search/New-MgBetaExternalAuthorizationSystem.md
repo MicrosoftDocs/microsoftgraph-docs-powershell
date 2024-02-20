@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalauthorizationsystem
@@ -14,8 +14,8 @@ Create new navigation property to authorizationSystems for external
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaExternalAuthorizationSystem [-AdditionalProperties <Hashtable>] [-AuthorizationSystemId <String>]
- [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
+New-MgBetaExternalAuthorizationSystem [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthorizationSystemId <String>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
  [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,11 +23,24 @@ New-MgBetaExternalAuthorizationSystem [-AdditionalProperties <Hashtable>] [-Auth
 ### Create
 ```
 New-MgBetaExternalAuthorizationSystem -BodyParameter <IMicrosoftGraphAuthorizationSystem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to authorizationSystems for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -173,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -214,43 +242,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthorizationSystem>`: authorizationSystem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthorizationSystem\>: authorizationSystem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
+  \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
 Supports $filter(eq, contains) and $orderBy.
-  - `[AuthorizationSystemName <String>]`: Name of the authorization system detected after onboarding.
+  \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
 Supports $filter(eq,contains) and $orderBy.
-  - `[AuthorizationSystemType <String>]`: The type of authorization system.
+  \[AuthorizationSystemType \<String\>\]: The type of authorization system.
 Can be gcp, azure, or aws.
 Supports $filter(eq).
-  - `[DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>]`: dataCollectionInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-DATACOLLECTIONINFO `<IMicrosoftGraphDataCollectionInfo>`: dataCollectionInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+DATACOLLECTIONINFO \<IMicrosoftGraphDataCollectionInfo\>: dataCollectionInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]`: entitlementsDataCollectionInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Entitlements \<IMicrosoftGraphEntitlementsDataCollectionInfo\>\]: entitlementsDataCollectionInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalauthorizationsystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalauthorizationsystem)
-
-
-
-
 

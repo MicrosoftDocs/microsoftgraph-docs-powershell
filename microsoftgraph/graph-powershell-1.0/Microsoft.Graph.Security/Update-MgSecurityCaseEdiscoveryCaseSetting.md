@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Update-MgSecurityCaseEdiscoveryCaseSetting
@@ -11,15 +10,12 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Update the properties of an ediscoveryCaseSettings object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -28,14 +24,14 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-Addition
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,22 +40,19 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an ediscoveryCaseSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycasesettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.ediscoveryCaseSettings"
@@ -75,10 +68,6 @@ $params = @{
 }
 
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -222,6 +211,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TopicModeling
 topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
@@ -280,128 +284,123 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCaseSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityEdiscoveryCaseSettings\>: ediscoveryCaseSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Ocr <IMicrosoftGraphSecurityOcrSettings>]`: ocrSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
-    - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
-    - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine.
+  \[Ocr \<IMicrosoftGraphSecurityOcrSettings\>\]: ocrSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsEnabled \<Boolean?\>\]: Indicates whether or not OCR is enabled for the case.
+    \[MaxImageSize \<Int32?\>\]: Maximum image size that will be processed in KB).
+    \[Timeout \<TimeSpan?\>\]: The timeout duration for the OCR engine.
 A longer timeout might increase success of OCR, but might add to the total processing time.
-  - `[RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]`: redundancyDetectionSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
-    - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection.
+  \[RedundancyDetection \<IMicrosoftGraphSecurityRedundancyDetectionSettings\>\]: redundancyDetectionSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsEnabled \<Boolean?\>\]: Indicates whether email threading and near duplicate detection are enabled.
+    \[MaxWords \<Int32?\>\]: Specifies the maximum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-    - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection.
+    \[MinWords \<Int32?\>\]: Specifies the minimum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-    - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set.
+    \[SimilarityThreshold \<Int32?\>\]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
-  - `[TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]`: topicModelingSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DynamicallyAdjustTopicCount <Boolean?>]`: Indicates whether the themes model should dynamically optimize the number of generated topics.
+  \[TopicModeling \<IMicrosoftGraphSecurityTopicModelingSettings\>\]: topicModelingSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DynamicallyAdjustTopicCount \<Boolean?\>\]: Indicates whether the themes model should dynamically optimize the number of generated topics.
 To learn more, see Adjust maximum number of themes dynamically.
-    - `[IgnoreNumbers <Boolean?>]`: Indicates whether the themes model should exclude numbers while parsing document texts.
+    \[IgnoreNumbers \<Boolean?\>\]: Indicates whether the themes model should exclude numbers while parsing document texts.
 To learn more, see Include numbers in themes.
-    - `[IsEnabled <Boolean?>]`: Indicates whether themes model is enabled for the case.
-    - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set.
+    \[IsEnabled \<Boolean?\>\]: Indicates whether themes model is enabled for the case.
+    \[TopicCount \<Int32?\>\]: The total number of topics that the themes model will generate for a review set.
 To learn more, see Maximum number of themes.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[ArticleId <String>]`: The unique identifier of article
-  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
-  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
-  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
-  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
-  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
-  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
-  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
-  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
-  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
-  - `[HostComponentId <String>]`: The unique identifier of hostComponent
-  - `[HostCookieId <String>]`: The unique identifier of hostCookie
-  - `[HostId <String>]`: The unique identifier of host
-  - `[HostPairId <String>]`: The unique identifier of hostPair
-  - `[HostPortId <String>]`: The unique identifier of hostPort
-  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
-  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
-  - `[IncidentId <String>]`: The unique identifier of incident
-  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
-  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
-  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
-  - `[LandingPageId <String>]`: The unique identifier of landingPage
-  - `[LoginPageId <String>]`: The unique identifier of loginPage
-  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
-  - `[PayloadId <String>]`: The unique identifier of payload
-  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
-  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
-  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: The unique identifier of secureScore
-  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
-  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
-  - `[SimulationId <String>]`: The unique identifier of simulation
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubdomainId <String>]`: The unique identifier of subdomain
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TrainingId <String>]`: The unique identifier of training
-  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
-  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
-  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
-  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
-  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
+INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[ArticleId \<String\>\]: The unique identifier of article
+  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
+  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
+  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
+  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
+  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
+  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
+  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
+  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
+  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
+  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
+  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
+  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
+  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
+  \[HostId \<String\>\]: The unique identifier of host
+  \[HostPairId \<String\>\]: The unique identifier of hostPair
+  \[HostPortId \<String\>\]: The unique identifier of hostPort
+  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
+  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
+  \[IncidentId \<String\>\]: The unique identifier of incident
+  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
+  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
+  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
+  \[LandingPageId \<String\>\]: The unique identifier of landingPage
+  \[LoginPageId \<String\>\]: The unique identifier of loginPage
+  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
+  \[PayloadId \<String\>\]: The unique identifier of payload
+  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
+  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
+  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
+  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
+  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
+  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
+  \[SimulationId \<String\>\]: The unique identifier of simulation
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
+  \[SubdomainId \<String\>\]: The unique identifier of subdomain
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TrainingId \<String\>\]: The unique identifier of training
+  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
+  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
+  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
+  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
+  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
-OCR `<IMicrosoftGraphSecurityOcrSettings>`: ocrSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
-  - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
-  - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine.
+OCR \<IMicrosoftGraphSecurityOcrSettings\>: ocrSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether or not OCR is enabled for the case.
+  \[MaxImageSize \<Int32?\>\]: Maximum image size that will be processed in KB).
+  \[Timeout \<TimeSpan?\>\]: The timeout duration for the OCR engine.
 A longer timeout might increase success of OCR, but might add to the total processing time.
 
-REDUNDANCYDETECTION `<IMicrosoftGraphSecurityRedundancyDetectionSettings>`: redundancyDetectionSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
-  - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection.
+REDUNDANCYDETECTION \<IMicrosoftGraphSecurityRedundancyDetectionSettings\>: redundancyDetectionSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether email threading and near duplicate detection are enabled.
+  \[MaxWords \<Int32?\>\]: Specifies the maximum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-  - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection.
+  \[MinWords \<Int32?\>\]: Specifies the minimum number of words used for email threading and near duplicate detection.
 To learn more, see Minimum/maximum number of words.
-  - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set.
+  \[SimilarityThreshold \<Int32?\>\]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
 
-TOPICMODELING `<IMicrosoftGraphSecurityTopicModelingSettings>`: topicModelingSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DynamicallyAdjustTopicCount <Boolean?>]`: Indicates whether the themes model should dynamically optimize the number of generated topics.
+TOPICMODELING \<IMicrosoftGraphSecurityTopicModelingSettings\>: topicModelingSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DynamicallyAdjustTopicCount \<Boolean?\>\]: Indicates whether the themes model should dynamically optimize the number of generated topics.
 To learn more, see Adjust maximum number of themes dynamically.
-  - `[IgnoreNumbers <Boolean?>]`: Indicates whether the themes model should exclude numbers while parsing document texts.
+  \[IgnoreNumbers \<Boolean?\>\]: Indicates whether the themes model should exclude numbers while parsing document texts.
 To learn more, see Include numbers in themes.
-  - `[IsEnabled <Boolean?>]`: Indicates whether themes model is enabled for the case.
-  - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether themes model is enabled for the case.
+  \[TopicCount \<Int32?\>\]: The total number of topics that the themes model will generate for a review set.
 To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting)
-
-
-
 

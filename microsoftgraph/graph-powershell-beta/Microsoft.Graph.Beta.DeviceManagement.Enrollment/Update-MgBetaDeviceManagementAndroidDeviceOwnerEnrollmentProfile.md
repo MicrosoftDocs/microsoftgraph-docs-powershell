@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroiddeviceownerenrollmentprofile
@@ -15,9 +15,9 @@ Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceMan
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
- -AndroidDeviceOwnerEnrollmentProfileId <String> [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ -AndroidDeviceOwnerEnrollmentProfileId <String> [-ResponseHeadersVariable <String>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -30,16 +30,16 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
  -AndroidDeviceOwnerEnrollmentProfileId <String>
- -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
- -InputObject <IDeviceManagementEnrollmentIdentity> [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -52,12 +52,24 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -369,6 +381,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -531,85 +558,80 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>`: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile\>: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
-  - `[ConfigureWifi <Boolean?>]`: Boolean that indicates that the Wi-Fi network should be configured during device provisioning.
+  \[AccountId \<String\>\]: Tenant GUID the enrollment profile belongs to.
+  \[ConfigureWifi \<Boolean?\>\]: Boolean that indicates that the Wi-Fi network should be configured during device provisioning.
 When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks.
 When set to FALSE or undefined, other Wi-Fi related properties will be ignored.
 Default value is TRUE.
 Returned by default.
-  - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.
-  - `[Description <String>]`: Description for the enrollment profile.
-  - `[DisplayName <String>]`: Display name for the enrollment profile.
-  - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
-  - `[EnrollmentMode <AndroidDeviceOwnerEnrollmentMode?>]`: The enrollment mode for an enrollment profile.
-  - `[EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType?>]`: The enrollment token type for an enrollment profile.
-  - `[EnrollmentTokenUsageCount <Int32?>]`: Total number of AOSP devices that have enrolled using the current token.
-  - `[IsTeamsDeviceProfile <Boolean?>]`: Boolean indicating if this profile is an Android AOSP for Teams device profile.
-  - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
-  - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
-  - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String>]`: Indicates the content mime type.
-    - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[TokenCreationDateTime <DateTime?>]`: Date time the most recently created token was created.
-  - `[TokenExpirationDateTime <DateTime?>]`: Date time the most recently created token will expire.
-  - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
-  - `[WifiHidden <Boolean?>]`: Boolean that indicates if hidden wifi networks are enabled
-  - `[WifiPassword <String>]`: String that contains the wi-fi login password
-  - `[WifiSecurityType <AospWifiSecurityType?>]`: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
-  - `[WifiSsid <String>]`: String that contains the wi-fi login ssid
+  \[CreatedDateTime \<DateTime?\>\]: Date time the enrollment profile was created.
+  \[Description \<String\>\]: Description for the enrollment profile.
+  \[DisplayName \<String\>\]: Display name for the enrollment profile.
+  \[EnrolledDeviceCount \<Int32?\>\]: Total number of Android devices that have enrolled using this enrollment profile.
+  \[EnrollmentMode \<AndroidDeviceOwnerEnrollmentMode?\>\]: The enrollment mode for an enrollment profile.
+  \[EnrollmentTokenType \<AndroidDeviceOwnerEnrollmentTokenType?\>\]: The enrollment token type for an enrollment profile.
+  \[EnrollmentTokenUsageCount \<Int32?\>\]: Total number of AOSP devices that have enrolled using the current token.
+  \[IsTeamsDeviceProfile \<Boolean?\>\]: Boolean indicating if this profile is an Android AOSP for Teams device profile.
+  \[LastModifiedDateTime \<DateTime?\>\]: Date time the enrollment profile was last modified.
+  \[QrCodeContent \<String\>\]: String used to generate a QR code for the token.
+  \[QrCodeImage \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\>\]: Indicates the content mime type.
+    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
+  \[TokenCreationDateTime \<DateTime?\>\]: Date time the most recently created token was created.
+  \[TokenExpirationDateTime \<DateTime?\>\]: Date time the most recently created token will expire.
+  \[TokenValue \<String\>\]: Value of the most recently created token for this enrollment profile.
+  \[WifiHidden \<Boolean?\>\]: Boolean that indicates if hidden wifi networks are enabled
+  \[WifiPassword \<String\>\]: String that contains the wi-fi login password
+  \[WifiSecurityType \<AospWifiSecurityType?\>\]: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+  \[WifiSsid \<String\>\]: String that contains the wi-fi login ssid
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
-  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
-  - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
-  - `[AppScopeId <String>]`: The unique identifier of appScope
-  - `[AppleEnrollmentProfileAssignmentId <String>]`: The unique identifier of appleEnrollmentProfileAssignment
-  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
-  - `[CustomAppScopeId <String>]`: The unique identifier of customAppScope
-  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceManagementAutopilotEventId <String>]`: The unique identifier of deviceManagementAutopilotEvent
-  - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
-  - `[ImportedAppleDeviceIdentityId <String>]`: The unique identifier of importedAppleDeviceIdentity
-  - `[ImportedDeviceIdentityId <String>]`: The unique identifier of importedDeviceIdentity
-  - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of importedWindowsAutopilotDeviceIdentity
-  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
-  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
-  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
-  - `[UnifiedRoleAssignmentMultipleId <String>]`: The unique identifier of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
-  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
-  - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: The unique identifier of windowsAutopilotDeploymentProfileAssignment
-  - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
-  - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
-  - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
+  \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
+  \[AndroidForWorkEnrollmentProfileId \<String\>\]: The unique identifier of androidForWorkEnrollmentProfile
+  \[AppScopeId \<String\>\]: The unique identifier of appScope
+  \[AppleEnrollmentProfileAssignmentId \<String\>\]: The unique identifier of appleEnrollmentProfileAssignment
+  \[AppleUserInitiatedEnrollmentProfileId \<String\>\]: The unique identifier of appleUserInitiatedEnrollmentProfile
+  \[CustomAppScopeId \<String\>\]: The unique identifier of customAppScope
+  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceManagementAutopilotEventId \<String\>\]: The unique identifier of deviceManagementAutopilotEvent
+  \[DeviceManagementAutopilotPolicyStatusDetailId \<String\>\]: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
+  \[ImportedAppleDeviceIdentityId \<String\>\]: The unique identifier of importedAppleDeviceIdentity
+  \[ImportedDeviceIdentityId \<String\>\]: The unique identifier of importedDeviceIdentity
+  \[ImportedWindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of importedWindowsAutopilotDeviceIdentity
+  \[UnifiedRbacResourceActionId \<String\>\]: The unique identifier of unifiedRbacResourceAction
+  \[UnifiedRbacResourceNamespaceId \<String\>\]: The unique identifier of unifiedRbacResourceNamespace
+  \[UnifiedRoleAssignmentId \<String\>\]: The unique identifier of unifiedRoleAssignment
+  \[UnifiedRoleAssignmentMultipleId \<String\>\]: The unique identifier of unifiedRoleAssignmentMultiple
+  \[UnifiedRoleDefinitionId \<String\>\]: The unique identifier of unifiedRoleDefinition
+  \[UnifiedRoleDefinitionId1 \<String\>\]: The unique identifier of unifiedRoleDefinition
+  \[WindowsAutopilotDeploymentProfileAssignmentId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfileAssignment
+  \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
+  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
+  \[WindowsFeatureUpdateProfileAssignmentId \<String\>\]: The unique identifier of windowsFeatureUpdateProfileAssignment
+  \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
 
-QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: Indicates the content mime type.
-  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
+QRCODEIMAGE \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\>\]: Indicates the content mime type.
+  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroiddeviceownerenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroiddeviceownerenrollmentprofile)
-
-
-
-
 

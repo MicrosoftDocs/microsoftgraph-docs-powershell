@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess
@@ -14,21 +14,37 @@ Create new navigation property to userExperienceAnalyticsImpactingProcess for de
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-Description <String>] [-DeviceId <String>] [-Id <String>] [-ImpactValue <Double>]
- [-ProcessName <String>] [-Publisher <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-Description <String>] [-DeviceId <String>]
+ [-Id <String>] [-ImpactValue <Double>] [-ProcessName <String>] [-Publisher <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsImpactingProcess> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsImpactingProcess> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -200,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -241,30 +272,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsImpactingProcess
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsImpactingProcess>`: The user experience analytics top impacting process entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsImpactingProcess\>: The user experience analytics top impacting process entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Category <String>]`: The category of impacting process.
-  - `[Description <String>]`: The description of process.
-  - `[DeviceId <String>]`: The unique identifier of the impacted device.
-  - `[ImpactValue <Double?>]`: The impact value of the process.
+  \[Category \<String\>\]: The category of impacting process.
+  \[Description \<String\>\]: The description of process.
+  \[DeviceId \<String\>\]: The unique identifier of the impacted device.
+  \[ImpactValue \<Double?\>\]: The impact value of the process.
 Valid values 0 to 1.79769313486232E+308
-  - `[ProcessName <String>]`: The process name.
-  - `[Publisher <String>]`: The publisher of the process.
+  \[ProcessName \<String\>\]: The process name.
+  \[Publisher \<String\>\]: The publisher of the process.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess)
-
-
-
-
 

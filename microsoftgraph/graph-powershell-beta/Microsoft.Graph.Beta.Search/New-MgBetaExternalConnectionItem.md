@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem
@@ -10,14 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to items for external
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaExternalConnectionItem -ExternalConnectionId <String> [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
+New-MgBetaExternalConnectionItem -ExternalConnectionId <String> [-ResponseHeadersVariable <String>]
+ [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,13 +24,14 @@ New-MgBetaExternalConnectionItem -ExternalConnectionId <String> [-Acl <IMicrosof
 ### Create
 ```
 New-MgBetaExternalConnectionItem -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
+New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
+ [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,12 +40,28 @@ New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-Acl <IMicrosof
 ### CreateViaIdentity
 ```
 New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to items for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -224,6 +239,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -266,104 +296,98 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACL <IMicrosoftGraphExternalConnectorsAcl- `[]`>: An array of access control entries.
+ACL \<IMicrosoftGraphExternalConnectorsAcl\[\]\>: An array of access control entries.
 Each entry specifies the access granted to a user or group.
 Required.
-  - `[AccessType <String>]`: accessType
-  - `[IdentitySource <String>]`: identitySourceType
-  - `[Type <String>]`: aclType
-  - `[Value <String>]`: The unique identifer of the identity.
+  \[AccessType \<String\>\]: accessType
+  \[IdentitySource \<String\>\]: identitySourceType
+  \[Type \<String\>\]: aclType
+  \[Value \<String\>\]: The unique identifer of the identity.
 For Microsoft Entra identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively.
 For external groups, value is set to the ID of the externalGroup.
 
-ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>: Returns a list of activities performed on the item.
+ACTIVITIES \<IMicrosoftGraphExternalConnectorsExternalActivity\[\]\>: Returns a list of activities performed on the item.
 Write-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[PerformedBy \<IMicrosoftGraphExternalConnectorsIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Type <String>]`: identityType
-  - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred.
+    \[Type \<String\>\]: identityType
+  \[StartDateTime \<DateTime?\>\]: The date and time when the particular activity occurred.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Type <String>]`: externalActivityType
+  \[Type \<String\>\]: externalActivityType
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem>`: externalItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphExternalConnectorsExternalItem\>: externalItem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Acl <IMicrosoftGraphExternalConnectorsAcl- `[]`>]`: An array of access control entries.
+  \[Acl \<IMicrosoftGraphExternalConnectorsAcl\[\]\>\]: An array of access control entries.
 Each entry specifies the access granted to a user or group.
 Required.
-    - `[AccessType <String>]`: accessType
-    - `[IdentitySource <String>]`: identitySourceType
-    - `[Type <String>]`: aclType
-    - `[Value <String>]`: The unique identifer of the identity.
+    \[AccessType \<String\>\]: accessType
+    \[IdentitySource \<String\>\]: identitySourceType
+    \[Type \<String\>\]: aclType
+    \[Value \<String\>\]: The unique identifer of the identity.
 For Microsoft Entra identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively.
 For external groups, value is set to the ID of the externalGroup.
-  - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>]`: Returns a list of activities performed on the item.
+  \[Activities \<IMicrosoftGraphExternalConnectorsExternalActivity\[\]\>\]: Returns a list of activities performed on the item.
 Write-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[PerformedBy \<IMicrosoftGraphExternalConnectorsIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Type <String>]`: identityType
-    - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred.
+      \[Type \<String\>\]: identityType
+    \[StartDateTime \<DateTime?\>\]: The date and time when the particular activity occurred.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Type <String>]`: externalActivityType
-  - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String>]`: externalItemContentType
-    - `[Value <String>]`: The content for the externalItem.
+    \[Type \<String\>\]: externalActivityType
+  \[Content \<IMicrosoftGraphExternalConnectorsExternalItemContent\>\]: externalItemContent
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\>\]: externalItemContentType
+    \[Value \<String\>\]: The content for the externalItem.
 Required.
-  - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Properties \<IMicrosoftGraphExternalConnectorsProperties\>\]: properties
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: externalItemContentType
-  - `[Value <String>]`: The content for the externalItem.
+CONTENT \<IMicrosoftGraphExternalConnectorsExternalItemContent\>: externalItemContent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\>\]: externalItemContentType
+  \[Value \<String\>\]: The content for the externalItem.
 Required.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
+  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
+  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
+  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[QnaId \<String\>\]: The unique identifier of qna
+  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
+  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
+  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
+  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[New-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem)
-
-
-
-
 

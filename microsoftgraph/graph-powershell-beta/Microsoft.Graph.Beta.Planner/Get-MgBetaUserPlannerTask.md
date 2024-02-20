@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaUserPlannerTask
@@ -11,37 +10,27 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve a list of plannertask objects assigned to a User.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-tasks-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerTask -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -166,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -250,14 +254,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask)
-
-
-
 

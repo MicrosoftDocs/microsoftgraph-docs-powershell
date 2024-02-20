@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantticketingendpoint
@@ -14,21 +14,35 @@ Create new navigation property to managedTenantTicketingEndpoints for tenantRela
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint [-AdditionalProperties <Hashtable>]
- [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>]
- [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-PhoneNumber <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-LastActionByUserId <String>]
+ [-LastActionDateTime <DateTime>] [-PhoneNumber <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managedTenantTicketingEndpoints for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -214,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -255,30 +284,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint>`: managedTenantTicketingEndpoint
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint\>: managedTenantTicketingEndpoint
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[EmailAddress <String>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[PhoneNumber <String>]`:
+  \[CreatedByUserId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[EmailAddress \<String\>\]: 
+  \[LastActionByUserId \<String\>\]: 
+  \[LastActionDateTime \<DateTime?\>\]: 
+  \[PhoneNumber \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantticketingendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantticketingendpoint)
-
-
-
-
 

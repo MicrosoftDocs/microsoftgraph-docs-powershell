@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceappimpact
@@ -15,20 +15,38 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppI
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
- [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
- [-BatteryUsagePercentage <Double>] [-DeviceId <String>] [-Id <String>] [-IsForegroundApp]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
+ [-AppName <String>] [-AppPublisher <String>] [-BatteryUsagePercentage <Double>] [-DeviceId <String>]
+ [-Id <String>] [-IsForegroundApp] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -204,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -245,34 +278,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact>`: The user experience analytics battery health device app impact entity contains battery usage related information at an app level for a given device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact\>: The user experience analytics battery health device app impact entity contains battery usage related information at an app level for a given device.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppDisplayName <String>]`: User friendly display name for the app.
+  \[AppDisplayName \<String\>\]: User friendly display name for the app.
 Eg: Outlook
-  - `[AppName <String>]`: App name.
+  \[AppName \<String\>\]: App name.
 Eg: oltk.exe
-  - `[AppPublisher <String>]`: App publisher.
+  \[AppPublisher \<String\>\]: App publisher.
 Eg: Microsoft Corporation
-  - `[BatteryUsagePercentage <Double?>]`: The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days.
+  \[BatteryUsagePercentage \<Double?\>\]: The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days.
 Unit in percentage.
 Valid values 0 to 1.79769313486232E+308
-  - `[DeviceId <String>]`: The unique identifier of the device, Intune DeviceID or SCCM device id.
-  - `[IsForegroundApp <Boolean?>]`: true if the user had active interaction with the app.
+  \[DeviceId \<String\>\]: The unique identifier of the device, Intune DeviceID or SCCM device id.
+  \[IsForegroundApp \<Boolean?\>\]: true if the user had active interaction with the app.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceappimpact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceappimpact)
-
-
-
-
 

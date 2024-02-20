@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessService
@@ -11,15 +10,12 @@ ms.prod: bookings
 ## SYNOPSIS
 Create a new bookingService for the specified bookingBusiness.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessService?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+New-MgBetaBookingBusinessService -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
  [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
  [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
@@ -32,8 +28,8 @@ New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInforma
 
 ### CreateExpanded1
 ```
-New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+New-MgBetaBookingBusinessService -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
  [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
  [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
@@ -47,19 +43,21 @@ New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInforma
 ### Create1
 ```
 New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
  [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
  [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
@@ -72,8 +70,8 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalIn
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
  [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
  [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
@@ -87,26 +85,24 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalIn
 ### CreateViaIdentity1
 ```
 New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingService> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingService> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingService> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingService> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-services-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusinessService Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingService"
@@ -173,8 +169,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusinessService Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -580,6 +574,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingPolicy
 This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
 To construct, see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
@@ -669,169 +678,164 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingService
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service offered by a booking business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphBookingService\>: Represents a particular service offered by a booking business.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: A name for the derived entity, which interfaces with customers.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
-  - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the Service was created.
-  - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-    - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
-    - `[QuestionId <String>]`: If it's mandatory to answer the custom question.
-  - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
+  \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
+  \[CreatedDateTime \<DateTime?\>\]: The date, time and timezone when the Service was created.
+  \[CustomQuestions \<IMicrosoftGraphBookingQuestionAssignment\[\]\>\]: Contains the set of custom questions associated with a particular service.
+    \[IsRequired \<Boolean?\>\]: Indicates whether it's mandatory to answer the custom question.
+    \[QuestionId \<String\>\]: If it's mandatory to answer the custom question.
+  \[DefaultDuration \<TimeSpan?\>\]: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
-  - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region.
+  \[DefaultLocation \<IMicrosoftGraphLocation\>\]: location
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[City \<String\>\]: The city.
+      \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-      - `[PostOfficeBox <String>]`: The post office box number.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
-      - `[Street <String>]`: The street.
-      - `[Type <String>]`: physicalAddressType
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+      \[PostOfficeBox \<String\>\]: The post office box number.
+      \[PostalCode \<String\>\]: The postal code.
+      \[State \<String\>\]: The state.
+      \[Street \<String\>\]: The street.
+      \[Type \<String\>\]: physicalAddressType
+    \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[DefaultPrice <Double?>]`: The default monetary price for the service.
-  - `[DefaultPriceType <BookingPriceType?>]`: Represents the type of pricing of a booking service.
-  - `[DefaultReminders <IMicrosoftGraphBookingReminder- `[]`>]`: The default set of reminders for an appointment of this service.
+      \[Altitude \<Double?\>\]: The altitude of the location.
+      \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+      \[Latitude \<Double?\>\]: The latitude of the location.
+      \[Longitude \<Double?\>\]: The longitude of the location.
+    \[DisplayName \<String\>\]: The name associated with the location.
+    \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+    \[LocationType \<String\>\]: locationType
+    \[LocationUri \<String\>\]: Optional URI representing the location.
+    \[UniqueId \<String\>\]: For internal use only.
+    \[UniqueIdType \<String\>\]: locationUniqueIdType
+  \[DefaultPrice \<Double?\>\]: The default monetary price for the service.
+  \[DefaultPriceType \<BookingPriceType?\>\]: Represents the type of pricing of a booking service.
+  \[DefaultReminders \<IMicrosoftGraphBookingReminder\[\]\>\]: The default set of reminders for an appointment of this service.
 The value of this property is available only when reading this bookingService by its ID.
-    - `[Message <String>]`: The message in the reminder.
-    - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
+    \[Message \<String\>\]: The message in the reminder.
+    \[Offset \<TimeSpan?\>\]: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
-    - `[Recipients <String>]`: bookingReminderRecipients
-  - `[Description <String>]`: A text description for the service.
-  - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+    \[Recipients \<String\>\]: bookingReminderRecipients
+  \[Description \<String\>\]: A text description for the service.
+  \[IsAnonymousJoinEnabled \<Boolean?\>\]: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
 The default value is false.
-  - `[IsHiddenFromCustomers <Boolean?>]`: True means this service isn't available to customers for booking.
-  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
+  \[IsHiddenFromCustomers \<Boolean?\>\]: True means this service isn't available to customers for booking.
+  \[IsLocationOnline \<Boolean?\>\]: Indicates that the appointments for the service are held online.
 The default value is false.
-  - `[LanguageTag <String>]`: The language of the self service booking page.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date, time and timezone when the Service  was last updated.
-  - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in a service.
+  \[LanguageTag \<String\>\]: The language of the self service booking page.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time and timezone when the Service  was last updated.
+  \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. 
 To create a customer, use the Create bookingCustomer operation.
-  - `[Notes <String>]`: Additional information about this service.
-  - `[PostBuffer <TimeSpan?>]`: The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.
-  - `[PreBuffer <TimeSpan?>]`: The time to buffer before an appointment for this service can start.
-  - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
+  \[Notes \<String\>\]: Additional information about this service.
+  \[PostBuffer \<TimeSpan?\>\]: The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.
+  \[PreBuffer \<TimeSpan?\>\]: The time to buffer before an appointment for this service can start.
+  \[SchedulingPolicy \<IMicrosoftGraphBookingSchedulingPolicy\>\]: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+    \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Indicates if the meeting invite is sent to the customers.
 The default value is false
-    - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
+    \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
-    - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.
+    \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
 It follows the ISO 8601 format.
-    - `[SendConfirmationsToOwner <Boolean?>]`: True to notify the business via email when a booking is created or changed.
+    \[SendConfirmationsToOwner \<Boolean?\>\]: True to notify the business via email when a booking is created or changed.
 Use the email address specified in the email property of the bookingBusiness entity for the business.
-    - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
-  - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service.
+    \[TimeSlotInterval \<TimeSpan?\>\]: Duration of each time slot, denoted in ISO 8601 format.
+  \[SmsNotificationsEnabled \<Boolean?\>\]: True indicates SMS notifications can be sent to the customers for the appointment of the service.
 Default value is false.
-  - `[StaffMemberIds <String- `[]`>]`: Represents those staff members who provide this service.
+  \[StaffMemberIds \<String\[\]\>\]: Represents those staff members who provide this service.
 
-CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment- `[]`>: Contains the set of custom questions associated with a particular service.
-  - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
-  - `[QuestionId <String>]`: If it's mandatory to answer the custom question.
+CUSTOMQUESTIONS \<IMicrosoftGraphBookingQuestionAssignment\[\]\>: Contains the set of custom questions associated with a particular service.
+  \[IsRequired \<Boolean?\>\]: Indicates whether it's mandatory to answer the custom question.
+  \[QuestionId \<String\>\]: If it's mandatory to answer the custom question.
 
-DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+DEFAULTLOCATION \<IMicrosoftGraphLocation\>: location
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+    \[Altitude \<Double?\>\]: The altitude of the location.
+    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+    \[Latitude \<Double?\>\]: The latitude of the location.
+    \[Longitude \<Double?\>\]: The longitude of the location.
+  \[DisplayName \<String\>\]: The name associated with the location.
+  \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+  \[LocationType \<String\>\]: locationType
+  \[LocationUri \<String\>\]: Optional URI representing the location.
+  \[UniqueId \<String\>\]: For internal use only.
+  \[UniqueIdType \<String\>\]: locationUniqueIdType
 
-DEFAULTREMINDERS <IMicrosoftGraphBookingReminder- `[]`>: The default set of reminders for an appointment of this service.
+DEFAULTREMINDERS \<IMicrosoftGraphBookingReminder\[\]\>: The default set of reminders for an appointment of this service.
 The value of this property is available only when reading this bookingService by its ID.
-  - `[Message <String>]`: The message in the reminder.
-  - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
+  \[Message \<String\>\]: The message in the reminder.
+  \[Offset \<TimeSpan?\>\]: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
-  - `[Recipients <String>]`: bookingReminderRecipients
+  \[Recipients \<String\>\]: bookingReminderRecipients
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-  - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
+SCHEDULINGPOLICY \<IMicrosoftGraphBookingSchedulingPolicy\>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+  \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Indicates if the meeting invite is sent to the customers.
 The default value is false
-  - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
+  \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
-  - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.
+  \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
 It follows the ISO 8601 format.
-  - `[SendConfirmationsToOwner <Boolean?>]`: True to notify the business via email when a booking is created or changed.
+  \[SendConfirmationsToOwner \<Boolean?\>\]: True to notify the business via email when a booking is created or changed.
 Use the email address specified in the email property of the bookingBusiness entity for the business.
-  - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
+  \[TimeSlotInterval \<TimeSpan?\>\]: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
-[New-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessService?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice)
-
-
-
 

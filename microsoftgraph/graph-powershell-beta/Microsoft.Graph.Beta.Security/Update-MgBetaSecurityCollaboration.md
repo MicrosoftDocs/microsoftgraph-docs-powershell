@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration
@@ -14,7 +14,7 @@ Update the navigation property collaboration in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityCollaboration [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityCollaboration [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -22,11 +22,24 @@ Update-MgBetaSecurityCollaboration [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgBetaSecurityCollaboration -BodyParameter <IMicrosoftGraphSecurityCollaborationRoot>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property collaboration in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -123,6 +136,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -164,164 +192,159 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCollaborationRoot
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANALYZEDEMAILS <IMicrosoftGraphSecurityAnalyzedEmail- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ANALYZEDEMAILS \<IMicrosoftGraphSecurityAnalyzedEmail\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AlertIds <String- `[]`>]`: 
-  - `[Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment- `[]`>]`: 
-    - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AnalysisDateTime <DateTime?>]`: 
-      - `[DetonationChain <IMicrosoftGraphSecurityDetonationChain>]`: detonationChain
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[ChildNodes <IMicrosoftGraphSecurityDetonationChain- `[]`>]`: 
-        - `[Value <String>]`: 
-      - `[DetonationObservables <IMicrosoftGraphSecurityDetonationObservables>]`: detonationObservables
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[ContactedIps <String- `[]`>]`: 
-        - `[ContactedUrls <String- `[]`>]`: 
-        - `[Droppedfiles <String- `[]`>]`: 
-      - `[DetonationVerdict <String>]`: 
-      - `[DetonationVerdictReason <String>]`: 
-    - `[FileName <String>]`: 
-    - `[FileType <String>]`: 
-    - `[Sha256 <String>]`: 
-    - `[ThreatName <String>]`: 
-    - `[ThreatType <String>]`: threatType
-  - `[AttachmentsCount <Int32?>]`: 
-  - `[AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]`: analyzedEmailAuthenticationDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompositeAuthentication <String>]`: 
-    - `[Dkim <String>]`: 
-    - `[Dmarc <String>]`: 
-    - `[SenderPolicyFramework <String>]`: 
-  - `[BulkComplaintLevel <String>]`: 
-  - `[Contexts <String- `[]`>]`: 
-  - `[DetectionMethods <String- `[]`>]`: 
-  - `[Directionality <String>]`: antispamDirectionality
-  - `[DistributionList <String>]`: 
-  - `[EmailClusterId <String>]`: 
-  - `[ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo- `[]`>]`: 
-    - `[Name <String>]`: 
-    - `[RuleId <String>]`: 
-  - `[InternetMessageId <String>]`: 
-  - `[Language <String>]`: 
-  - `[LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]`: analyzedEmailDeliveryDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Action <String>]`: deliveryAction
-    - `[Location <String>]`: deliveryLocation
-  - `[LoggedDateTime <DateTime?>]`: 
-  - `[NetworkMessageId <String>]`: 
-  - `[OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]`: analyzedEmailDeliveryDetail
-  - `[OverrideSources <String- `[]`>]`: 
-  - `[PhishConfidenceLevel <String>]`: 
-  - `[Policy <String>]`: 
-  - `[PolicyAction <String>]`: 
-  - `[RecipientEmailAddresses <String- `[]`>]`: 
-  - `[ReturnPath <String>]`: 
-  - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[FromAddress <String>]`: 
-    - `[Ipv4 <String>]`: 
-    - `[MailFromAddress <String>]`: 
-  - `[SizeInBytes <Int32?>]`: 
-  - `[SpamConfidenceLevel <String>]`: 
-  - `[Subject <String>]`: 
-  - `[ThreatType <String>]`: threatType
-  - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: 
-    - `[DetectionMethod <String>]`: 
-    - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
-    - `[ThreatType <String>]`: threatType
-    - `[Url <String>]`: 
-  - `[UrlsCount <Int32?>]`: 
+  \[AlertIds \<String\[\]\>\]: 
+  \[Attachments \<IMicrosoftGraphSecurityAnalyzedEmailAttachment\[\]\>\]: 
+    \[DetonationDetails \<IMicrosoftGraphSecurityDetonationDetails\>\]: detonationDetails
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AnalysisDateTime \<DateTime?\>\]: 
+      \[DetonationChain \<IMicrosoftGraphSecurityDetonationChain\>\]: detonationChain
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[ChildNodes \<IMicrosoftGraphSecurityDetonationChain\[\]\>\]: 
+        \[Value \<String\>\]: 
+      \[DetonationObservables \<IMicrosoftGraphSecurityDetonationObservables\>\]: detonationObservables
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[ContactedIps \<String\[\]\>\]: 
+        \[ContactedUrls \<String\[\]\>\]: 
+        \[Droppedfiles \<String\[\]\>\]: 
+      \[DetonationVerdict \<String\>\]: 
+      \[DetonationVerdictReason \<String\>\]: 
+    \[FileName \<String\>\]: 
+    \[FileType \<String\>\]: 
+    \[Sha256 \<String\>\]: 
+    \[ThreatName \<String\>\]: 
+    \[ThreatType \<String\>\]: threatType
+  \[AttachmentsCount \<Int32?\>\]: 
+  \[AuthenticationDetails \<IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail\>\]: analyzedEmailAuthenticationDetail
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CompositeAuthentication \<String\>\]: 
+    \[Dkim \<String\>\]: 
+    \[Dmarc \<String\>\]: 
+    \[SenderPolicyFramework \<String\>\]: 
+  \[BulkComplaintLevel \<String\>\]: 
+  \[Contexts \<String\[\]\>\]: 
+  \[DetectionMethods \<String\[\]\>\]: 
+  \[Directionality \<String\>\]: antispamDirectionality
+  \[DistributionList \<String\>\]: 
+  \[EmailClusterId \<String\>\]: 
+  \[ExchangeTransportRules \<IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo\[\]\>\]: 
+    \[Name \<String\>\]: 
+    \[RuleId \<String\>\]: 
+  \[InternetMessageId \<String\>\]: 
+  \[Language \<String\>\]: 
+  \[LatestDelivery \<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail\>\]: analyzedEmailDeliveryDetail
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Action \<String\>\]: deliveryAction
+    \[Location \<String\>\]: deliveryLocation
+  \[LoggedDateTime \<DateTime?\>\]: 
+  \[NetworkMessageId \<String\>\]: 
+  \[OriginalDelivery \<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail\>\]: analyzedEmailDeliveryDetail
+  \[OverrideSources \<String\[\]\>\]: 
+  \[PhishConfidenceLevel \<String\>\]: 
+  \[Policy \<String\>\]: 
+  \[PolicyAction \<String\>\]: 
+  \[RecipientEmailAddresses \<String\[\]\>\]: 
+  \[ReturnPath \<String\>\]: 
+  \[SenderDetail \<IMicrosoftGraphSecurityAnalyzedEmailSenderDetail\>\]: analyzedEmailSenderDetail
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[FromAddress \<String\>\]: 
+    \[Ipv4 \<String\>\]: 
+    \[MailFromAddress \<String\>\]: 
+  \[SizeInBytes \<Int32?\>\]: 
+  \[SpamConfidenceLevel \<String\>\]: 
+  \[Subject \<String\>\]: 
+  \[ThreatType \<String\>\]: threatType
+  \[Urls \<IMicrosoftGraphSecurityAnalyzedEmailUrl\[\]\>\]: 
+    \[DetectionMethod \<String\>\]: 
+    \[DetonationDetails \<IMicrosoftGraphSecurityDetonationDetails\>\]: detonationDetails
+    \[ThreatType \<String\>\]: threatType
+    \[Url \<String\>\]: 
+  \[UrlsCount \<Int32?\>\]: 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCollaborationRoot>`: collaborationRoot
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityCollaborationRoot\>: collaborationRoot
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AnalyzedEmails \<IMicrosoftGraphSecurityAnalyzedEmail\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AlertIds <String- `[]`>]`: 
-    - `[Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment- `[]`>]`: 
-      - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AnalysisDateTime <DateTime?>]`: 
-        - `[DetonationChain <IMicrosoftGraphSecurityDetonationChain>]`: detonationChain
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ChildNodes <IMicrosoftGraphSecurityDetonationChain- `[]`>]`: 
-          - `[Value <String>]`: 
-        - `[DetonationObservables <IMicrosoftGraphSecurityDetonationObservables>]`: detonationObservables
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ContactedIps <String- `[]`>]`: 
-          - `[ContactedUrls <String- `[]`>]`: 
-          - `[Droppedfiles <String- `[]`>]`: 
-        - `[DetonationVerdict <String>]`: 
-        - `[DetonationVerdictReason <String>]`: 
-      - `[FileName <String>]`: 
-      - `[FileType <String>]`: 
-      - `[Sha256 <String>]`: 
-      - `[ThreatName <String>]`: 
-      - `[ThreatType <String>]`: threatType
-    - `[AttachmentsCount <Int32?>]`: 
-    - `[AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]`: analyzedEmailAuthenticationDetail
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CompositeAuthentication <String>]`: 
-      - `[Dkim <String>]`: 
-      - `[Dmarc <String>]`: 
-      - `[SenderPolicyFramework <String>]`: 
-    - `[BulkComplaintLevel <String>]`: 
-    - `[Contexts <String- `[]`>]`: 
-    - `[DetectionMethods <String- `[]`>]`: 
-    - `[Directionality <String>]`: antispamDirectionality
-    - `[DistributionList <String>]`: 
-    - `[EmailClusterId <String>]`: 
-    - `[ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo- `[]`>]`: 
-      - `[Name <String>]`: 
-      - `[RuleId <String>]`: 
-    - `[InternetMessageId <String>]`: 
-    - `[Language <String>]`: 
-    - `[LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]`: analyzedEmailDeliveryDetail
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Action <String>]`: deliveryAction
-      - `[Location <String>]`: deliveryLocation
-    - `[LoggedDateTime <DateTime?>]`: 
-    - `[NetworkMessageId <String>]`: 
-    - `[OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]`: analyzedEmailDeliveryDetail
-    - `[OverrideSources <String- `[]`>]`: 
-    - `[PhishConfidenceLevel <String>]`: 
-    - `[Policy <String>]`: 
-    - `[PolicyAction <String>]`: 
-    - `[RecipientEmailAddresses <String- `[]`>]`: 
-    - `[ReturnPath <String>]`: 
-    - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[FromAddress <String>]`: 
-      - `[Ipv4 <String>]`: 
-      - `[MailFromAddress <String>]`: 
-    - `[SizeInBytes <Int32?>]`: 
-    - `[SpamConfidenceLevel <String>]`: 
-    - `[Subject <String>]`: 
-    - `[ThreatType <String>]`: threatType
-    - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: 
-      - `[DetectionMethod <String>]`: 
-      - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
-      - `[ThreatType <String>]`: threatType
-      - `[Url <String>]`: 
-    - `[UrlsCount <Int32?>]`:
+    \[AlertIds \<String\[\]\>\]: 
+    \[Attachments \<IMicrosoftGraphSecurityAnalyzedEmailAttachment\[\]\>\]: 
+      \[DetonationDetails \<IMicrosoftGraphSecurityDetonationDetails\>\]: detonationDetails
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[AnalysisDateTime \<DateTime?\>\]: 
+        \[DetonationChain \<IMicrosoftGraphSecurityDetonationChain\>\]: detonationChain
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[ChildNodes \<IMicrosoftGraphSecurityDetonationChain\[\]\>\]: 
+          \[Value \<String\>\]: 
+        \[DetonationObservables \<IMicrosoftGraphSecurityDetonationObservables\>\]: detonationObservables
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[ContactedIps \<String\[\]\>\]: 
+          \[ContactedUrls \<String\[\]\>\]: 
+          \[Droppedfiles \<String\[\]\>\]: 
+        \[DetonationVerdict \<String\>\]: 
+        \[DetonationVerdictReason \<String\>\]: 
+      \[FileName \<String\>\]: 
+      \[FileType \<String\>\]: 
+      \[Sha256 \<String\>\]: 
+      \[ThreatName \<String\>\]: 
+      \[ThreatType \<String\>\]: threatType
+    \[AttachmentsCount \<Int32?\>\]: 
+    \[AuthenticationDetails \<IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail\>\]: analyzedEmailAuthenticationDetail
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[CompositeAuthentication \<String\>\]: 
+      \[Dkim \<String\>\]: 
+      \[Dmarc \<String\>\]: 
+      \[SenderPolicyFramework \<String\>\]: 
+    \[BulkComplaintLevel \<String\>\]: 
+    \[Contexts \<String\[\]\>\]: 
+    \[DetectionMethods \<String\[\]\>\]: 
+    \[Directionality \<String\>\]: antispamDirectionality
+    \[DistributionList \<String\>\]: 
+    \[EmailClusterId \<String\>\]: 
+    \[ExchangeTransportRules \<IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo\[\]\>\]: 
+      \[Name \<String\>\]: 
+      \[RuleId \<String\>\]: 
+    \[InternetMessageId \<String\>\]: 
+    \[Language \<String\>\]: 
+    \[LatestDelivery \<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail\>\]: analyzedEmailDeliveryDetail
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Action \<String\>\]: deliveryAction
+      \[Location \<String\>\]: deliveryLocation
+    \[LoggedDateTime \<DateTime?\>\]: 
+    \[NetworkMessageId \<String\>\]: 
+    \[OriginalDelivery \<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail\>\]: analyzedEmailDeliveryDetail
+    \[OverrideSources \<String\[\]\>\]: 
+    \[PhishConfidenceLevel \<String\>\]: 
+    \[Policy \<String\>\]: 
+    \[PolicyAction \<String\>\]: 
+    \[RecipientEmailAddresses \<String\[\]\>\]: 
+    \[ReturnPath \<String\>\]: 
+    \[SenderDetail \<IMicrosoftGraphSecurityAnalyzedEmailSenderDetail\>\]: analyzedEmailSenderDetail
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[FromAddress \<String\>\]: 
+      \[Ipv4 \<String\>\]: 
+      \[MailFromAddress \<String\>\]: 
+    \[SizeInBytes \<Int32?\>\]: 
+    \[SpamConfidenceLevel \<String\>\]: 
+    \[Subject \<String\>\]: 
+    \[ThreatType \<String\>\]: threatType
+    \[Urls \<IMicrosoftGraphSecurityAnalyzedEmailUrl\[\]\>\]: 
+      \[DetectionMethod \<String\>\]: 
+      \[DetonationDetails \<IMicrosoftGraphSecurityDetonationDetails\>\]: detonationDetails
+      \[ThreatType \<String\>\]: threatType
+      \[Url \<String\>\]: 
+    \[UrlsCount \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration)
-
-
-
-
 

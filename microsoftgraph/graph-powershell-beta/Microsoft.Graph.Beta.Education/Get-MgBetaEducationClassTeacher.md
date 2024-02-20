@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacher
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClassTeacher
@@ -12,37 +11,27 @@ ms.prod: education
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassTeacher](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacher?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
 Get-MgBetaEducationClassTeacher -EducationClassId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-teachers-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassTeacher -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgBetaEducationClassTeacher Cmdlet.
-
 
 ## PARAMETERS
 
@@ -182,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -251,14 +255,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationUser
-### System.Collections.Hashtable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationClassTeacher](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacher?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacher)
-
-
-
 

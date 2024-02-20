@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic
@@ -15,21 +15,37 @@ Invoke action downloadAppDiagnostics
 ### DownloadExpanded (Default)
 ```
 Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
- [-AdditionalProperties <Hashtable>] [-Request <IMicrosoftGraphPowerliftDownloadRequest>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Request <IMicrosoftGraphPowerliftDownloadRequest>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Download
 ```
 Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
  -Body <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action downloadAppDiagnostics
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -181,30 +212,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Request <IMicrosoftGraphPowerliftDownloadRequest>]`: Request used to download app diagnostic files.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Files <String- `[]`>]`: The list of files to download
-    - `[PowerliftId <String>]`: The unique id for the request
+BODY \<IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Request \<IMicrosoftGraphPowerliftDownloadRequest\>\]: Request used to download app diagnostic files.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Files \<String\[\]\>\]: The list of files to download
+    \[PowerliftId \<String\>\]: The unique id for the request
 
-REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download app diagnostic files.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Files <String- `[]`>]`: The list of files to download
-  - `[PowerliftId <String>]`: The unique id for the request
+REQUEST \<IMicrosoftGraphPowerliftDownloadRequest\>: Request used to download app diagnostic files.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Files \<String\[\]\>\]: The list of files to download
+  \[PowerliftId \<String\>\]: The unique id for the request
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic)
-
-
-
-
 

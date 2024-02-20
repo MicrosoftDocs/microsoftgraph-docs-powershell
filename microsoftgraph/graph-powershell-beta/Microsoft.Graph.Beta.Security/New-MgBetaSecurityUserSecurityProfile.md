@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile
@@ -14,10 +14,10 @@ Create new navigation property to userSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityUserSecurityProfile [-Accounts <IMicrosoftGraphUserAccount[]>]
- [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
+New-MgBetaSecurityUserSecurityProfile [-ResponseHeadersVariable <String>]
+ [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
+ [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,11 +25,28 @@ New-MgBetaSecurityUserSecurityProfile [-Accounts <IMicrosoftGraphUserAccount[]>]
 ### Create
 ```
 New-MgBetaSecurityUserSecurityProfile -BodyParameter <IMicrosoftGraphUserSecurityProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userSecurityProfiles for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -201,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -303,63 +335,58 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNTS <IMicrosoftGraphUserAccount- `[]`>: .
-  - `[DisplayName <String>]`: 
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Service <String>]`: 
-  - `[SigninName <String>]`: 
-  - `[Status <String>]`: accountStatus
+ACCOUNTS \<IMicrosoftGraphUserAccount\[\]\>: .
+  \[DisplayName \<String\>\]: 
+  \[LastSeenDateTime \<DateTime?\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Service \<String\>\]: 
+  \[SigninName \<String\>\]: 
+  \[Status \<String\>\]: accountStatus
 
-BODYPARAMETER `<IMicrosoftGraphUserSecurityProfile>`: userSecurityProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserSecurityProfile\>: userSecurityProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Accounts <IMicrosoftGraphUserAccount- `[]`>]`: 
-    - `[DisplayName <String>]`: 
-    - `[LastSeenDateTime <DateTime?>]`: 
-    - `[RiskScore <String>]`: 
-    - `[Service <String>]`: 
-    - `[SigninName <String>]`: 
-    - `[Status <String>]`: accountStatus
-  - `[AzureSubscriptionId <String>]`: 
-  - `[AzureTenantId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Tags <String- `[]`>]`: 
-  - `[UserPrincipalName <String>]`: 
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[Accounts \<IMicrosoftGraphUserAccount\[\]\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[LastSeenDateTime \<DateTime?\>\]: 
+    \[RiskScore \<String\>\]: 
+    \[Service \<String\>\]: 
+    \[SigninName \<String\>\]: 
+    \[Status \<String\>\]: accountStatus
+  \[AzureSubscriptionId \<String\>\]: 
+  \[AzureTenantId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Tags \<String\[\]\>\]: 
+  \[UserPrincipalName \<String\>\]: 
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile)
-
-
-
-
 

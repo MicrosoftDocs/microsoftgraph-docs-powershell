@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend
@@ -14,9 +14,9 @@ Create new navigation property to managedDeviceComplianceTrends for tenantRelati
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-AdditionalProperties <Hashtable>]
- [-CompliantDeviceCount <Int32>] [-ConfigManagerDeviceCount <Int32>] [-CountDateTime <String>]
- [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodDeviceCount <Int32>]
+New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConfigManagerDeviceCount <Int32>]
+ [-CountDateTime <String>] [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodDeviceCount <Int32>]
  [-NoncompliantDeviceCount <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
  [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -25,12 +25,28 @@ New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-Addition
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managedDeviceComplianceTrends for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 The display name for the managed tenant.
 Optional.
@@ -305,50 +336,45 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend>`: managedDeviceComplianceTrend
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend\>: managedDeviceComplianceTrend
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantDeviceCount <Int32?>]`: The number of devices with a compliant status.
+  \[CompliantDeviceCount \<Int32?\>\]: The number of devices with a compliant status.
 Required.
 Read-only.
-  - `[ConfigManagerDeviceCount <Int32?>]`: The number of devices manged by Configuration Manager.
+  \[ConfigManagerDeviceCount \<Int32?\>\]: The number of devices manged by Configuration Manager.
 Required.
 Read-only.
-  - `[CountDateTime <String>]`: The date and time compliance snapshot was performed.
+  \[CountDateTime \<String\>\]: The date and time compliance snapshot was performed.
 Required.
 Read-only.
-  - `[ErrorDeviceCount <Int32?>]`: The number of devices with an error status.
+  \[ErrorDeviceCount \<Int32?\>\]: The number of devices with an error status.
 Required.
 Read-only.
-  - `[InGracePeriodDeviceCount <Int32?>]`: The number of devices that are in a grace period status.
+  \[InGracePeriodDeviceCount \<Int32?\>\]: The number of devices that are in a grace period status.
 Required.
 Read-only.
-  - `[NoncompliantDeviceCount <Int32?>]`: The number of devices that are in a non-compliant status.
+  \[NoncompliantDeviceCount \<Int32?\>\]: The number of devices that are in a non-compliant status.
 Required.
 Read-only.
-  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
+  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
-  - `[UnknownDeviceCount <Int32?>]`: The number of devices in an unknown status.
+  \[UnknownDeviceCount \<Int32?\>\]: The number of devices in an unknown status.
 Required.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend)
-
-
-
-
 
