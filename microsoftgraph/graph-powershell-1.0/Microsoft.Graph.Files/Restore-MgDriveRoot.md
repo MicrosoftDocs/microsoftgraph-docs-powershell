@@ -12,6 +12,9 @@ ms.prod: files
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -343,6 +346,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Restore-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveroot)
 

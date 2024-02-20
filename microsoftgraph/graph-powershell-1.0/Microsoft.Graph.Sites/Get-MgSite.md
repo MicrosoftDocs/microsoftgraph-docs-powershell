@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -343,6 +346,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite)
 

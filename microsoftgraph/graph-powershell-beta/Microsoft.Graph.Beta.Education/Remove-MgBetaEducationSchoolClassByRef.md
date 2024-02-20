@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Delete a class from a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -268,6 +271,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclassbyref)
 

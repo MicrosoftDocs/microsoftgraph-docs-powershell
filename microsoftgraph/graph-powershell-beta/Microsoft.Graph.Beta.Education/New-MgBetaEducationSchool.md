@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Create a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23852,6 +23855,7 @@ See standard - `[user]` resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
+[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool)
 

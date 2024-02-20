@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create new navigation property to children for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootChild](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -54274,6 +54277,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgDriveRootChild](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootchild)
 

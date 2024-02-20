@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create new navigation property to children for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29431,6 +29434,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemchild)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in invitations
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9659,6 +9662,7 @@ The language format should be in ISO 639.
 The default is en-US.
 
 ## RELATED LINKS
+[Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation)
 

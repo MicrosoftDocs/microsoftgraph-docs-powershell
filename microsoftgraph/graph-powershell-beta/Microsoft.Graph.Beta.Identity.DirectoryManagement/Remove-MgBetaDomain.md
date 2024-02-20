@@ -11,6 +11,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Deletes a domain from a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -245,6 +248,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomain)
 

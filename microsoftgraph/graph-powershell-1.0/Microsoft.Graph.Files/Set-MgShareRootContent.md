@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaShareRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareRootContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -246,6 +249,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaShareRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharerootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharerootcontent)
 

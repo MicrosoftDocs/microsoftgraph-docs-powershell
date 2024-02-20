@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of permissions granted to apps for the chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -372,6 +375,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatpermissiongrant)
 

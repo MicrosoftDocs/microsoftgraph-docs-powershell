@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
 Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPath](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPath?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -315,6 +318,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgGroupSiteGetByPath](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPath?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypath)
 

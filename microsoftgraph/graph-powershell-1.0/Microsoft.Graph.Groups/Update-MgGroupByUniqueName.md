@@ -11,6 +11,9 @@ schema: 2.0.0
 Add a member to a security or Microsoft 365 group through the members navigation property.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25840,6 +25843,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[Update-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename)
 

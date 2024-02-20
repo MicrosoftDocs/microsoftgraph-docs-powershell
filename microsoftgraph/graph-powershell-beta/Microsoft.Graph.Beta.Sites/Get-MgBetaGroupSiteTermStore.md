@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Read the properties and relationships of a store object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -239,6 +242,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstore)
 

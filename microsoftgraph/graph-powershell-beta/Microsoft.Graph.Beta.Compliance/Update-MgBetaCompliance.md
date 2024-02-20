@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15582,6 +15585,7 @@ Read-only.
       - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance)
 

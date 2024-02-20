@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Get content for the navigation property versions from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -230,6 +233,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootversioncontent)
 

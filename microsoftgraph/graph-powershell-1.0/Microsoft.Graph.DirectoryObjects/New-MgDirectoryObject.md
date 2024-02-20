@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to directoryObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/New-MgBetaDirectoryObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -209,6 +212,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/New-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -244,6 +247,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Status <String>]`: longRunningOperationStatus
 
 ## RELATED LINKS
+[New-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingoperation)
 

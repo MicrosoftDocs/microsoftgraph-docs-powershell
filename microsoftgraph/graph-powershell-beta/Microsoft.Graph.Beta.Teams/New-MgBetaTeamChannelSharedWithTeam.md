@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sharedWithTeams for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -15290,6 +15293,7 @@ It is the URL you get when you right-click a team in the Microsoft Teams client 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[New-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelsharedwithteam)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupDriveRootPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -236,6 +239,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupDriveRootPermanent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriverootpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriverootpermanent)
 

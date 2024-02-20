@@ -11,6 +11,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Create a new OneNote notebook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -842,6 +845,7 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebook)
 

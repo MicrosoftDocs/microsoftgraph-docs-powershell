@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to itemActivityStats for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteAnalyticItemActivityStat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -15420,6 +15423,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteanalyticitemactivitystat)
 

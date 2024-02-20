@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -41856,6 +41859,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive)
 

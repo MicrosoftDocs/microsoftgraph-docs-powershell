@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Recover passcode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementManagedDevicePasscode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recover (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Restore-MgDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementManagedDevicePasscode?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementmanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementmanageddevicepasscode)
 

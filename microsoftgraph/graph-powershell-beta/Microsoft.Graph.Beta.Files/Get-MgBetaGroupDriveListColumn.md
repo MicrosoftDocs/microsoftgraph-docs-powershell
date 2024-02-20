@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -355,6 +358,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcolumn)
 

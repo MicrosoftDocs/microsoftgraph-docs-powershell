@@ -11,6 +11,9 @@ ms.prod: files
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -356,6 +359,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Restore-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem)
 

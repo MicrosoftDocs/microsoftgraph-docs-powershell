@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Delete contactFolder other than the default contactFolder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -221,6 +224,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder)
 

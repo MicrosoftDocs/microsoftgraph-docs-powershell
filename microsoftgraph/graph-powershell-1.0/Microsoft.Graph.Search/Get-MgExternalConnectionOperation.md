@@ -11,6 +11,9 @@ ms.prod: search
 ## SYNOPSIS
 Read the properties and relationships of a connectionOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -319,6 +322,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+[Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation)
 
