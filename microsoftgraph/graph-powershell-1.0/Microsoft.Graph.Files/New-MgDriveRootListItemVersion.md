@@ -17,8 +17,9 @@ Create new navigation property to versions for drives
 
 ### CreateExpanded (Default)
 ```
-New-MgDriveRootListItemVersion -DriveId <String> [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+New-MgDriveRootListItemVersion -DriveId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,21 +27,24 @@ New-MgDriveRootListItemVersion -DriveId <String> [-AdditionalProperties <Hashtab
 ### Create
 ```
 New-MgDriveRootListItemVersion -DriveId <String> -BodyParameter <IMicrosoftGraphListItemVersion>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDriveRootListItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Fields <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDriveRootListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgDriveRootListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphListItemVersion>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -219,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -261,7 +280,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

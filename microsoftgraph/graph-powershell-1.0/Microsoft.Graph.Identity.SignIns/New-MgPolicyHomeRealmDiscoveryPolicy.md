@@ -18,7 +18,7 @@ Create a new homeRealmDiscoveryPolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyHomeRealmDiscoveryPolicy [-AdditionalProperties <Hashtable>]
+New-MgPolicyHomeRealmDiscoveryPolicy [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Definition <String[]>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsOrganizationDefault]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,8 +26,8 @@ New-MgPolicyHomeRealmDiscoveryPolicy [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -212,6 +212,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -253,7 +268,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

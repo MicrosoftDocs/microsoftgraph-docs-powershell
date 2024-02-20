@@ -19,32 +19,34 @@ Update the properties of a deviceComplianceUserStatus object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyUserStatus -DeviceCompliancePolicyId <String>
- -DeviceComplianceUserStatusId <String> [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>]
- [-Id <String>] [-LastReportedDateTime <DateTime>] [-Status <String>] [-UserDisplayName <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -DeviceComplianceUserStatusId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DevicesCount <Int32>] [-Id <String>] [-LastReportedDateTime <DateTime>] [-Status <String>]
+ [-UserDisplayName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyUserStatus -DeviceCompliancePolicyId <String>
  -DeviceComplianceUserStatusId <String> -BodyParameter <IMicrosoftGraphDeviceComplianceUserStatus>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>] [-LastReportedDateTime <DateTime>]
- [-Status <String>] [-UserDisplayName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>]
+ [-LastReportedDateTime <DateTime>] [-Status <String>] [-UserDisplayName <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceComplianceUserStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceUserStatus> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 complianceStatus
 
@@ -292,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

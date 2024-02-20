@@ -19,23 +19,23 @@ Change writable properties on a messageRule object and save the changes.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
- [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
- [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
- [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Actions <IMicrosoftGraphMessageRuleActions>]
+ [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphMessageRulePredicates>]
+ [-DisplayName <String>] [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>]
+ [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMessageRule> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMessageRule> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity>
+Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
  [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
@@ -46,7 +46,8 @@ Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessageRule>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -310,6 +311,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sequence
 Indicates the order in which the rule is executed, among other rules.
 
@@ -382,7 +398,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

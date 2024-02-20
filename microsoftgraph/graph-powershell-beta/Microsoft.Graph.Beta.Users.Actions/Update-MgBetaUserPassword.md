@@ -19,32 +19,34 @@ Any user can update their password without belonging to any administrator role.
 
 ### ChangeExpanded (Default)
 ```
-Update-MgBetaUserPassword -UserId <String> [-AdditionalProperties <Hashtable>] [-CurrentPassword <String>]
- [-NewPassword <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaUserPassword -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CurrentPassword <String>] [-NewPassword <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Change
 ```
 Update-MgBetaUserPassword -UserId <String>
  -BodyParameter <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ChangeViaIdentityExpanded
 ```
-Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-CurrentPassword <String>] [-NewPassword <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CurrentPassword <String>] [-NewPassword <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
 ```
 Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -192,6 +194,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -249,7 +266,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

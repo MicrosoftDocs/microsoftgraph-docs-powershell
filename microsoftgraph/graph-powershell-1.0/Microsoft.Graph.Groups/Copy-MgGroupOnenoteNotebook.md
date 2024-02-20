@@ -18,32 +18,34 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 
 ### CopyExpanded (Default)
 ```
-Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId1 <String>] [-NotebookFolder <String>] [-RenameAs <String>] [-SiteCollectionId <String>]
- [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-NotebookFolder <String>] [-RenameAs <String>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgGroupOnenoteNotebook [-GroupId <String>] -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-NotebookFolder <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NotebookFolder <String>]
+ [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String>
  -BodyParameter <IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgGroupOnenoteNotebook -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteCollectionId
 .
 
@@ -292,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

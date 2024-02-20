@@ -15,7 +15,8 @@ Update the navigation property taskFolders in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-Id <String>] [-IsDefaultFolder]
+ -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChangeKey <String>]
+ [-Id <String>] [-IsDefaultFolder]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-ParentGroupKey <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -26,14 +27,14 @@ Update-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskFolderId <String> -Outlo
 ### Update
 ```
 Update-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ChangeKey <String>] [-Id <String>] [-IsDefaultFolder]
+Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-Id <String>] [-IsDefaultFolder]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-ParentGroupKey <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -44,7 +45,7 @@ Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-Addi
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -254,6 +255,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the task folder.
 Read-only.
@@ -347,7 +363,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTaskFolder
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

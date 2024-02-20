@@ -18,10 +18,10 @@ Update the navigation property eligibilityScheduleRequests in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
- -PrivilegedAccessGroupEligibilityScheduleRequestId <String> [-AccessId <String>] [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-ApprovalId <String>] [-CompletedDateTime <DateTime>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-CustomData <String>]
- [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-IsValidationOnly]
+ -PrivilegedAccessGroupEligibilityScheduleRequestId <String> [-ResponseHeadersVariable <String>]
+ [-AccessId <String>] [-Action <String>] [-AdditionalProperties <Hashtable>] [-ApprovalId <String>]
+ [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-CustomData <String>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-IsValidationOnly]
  [-Justification <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule>] [-TargetScheduleId <String>]
@@ -33,15 +33,16 @@ Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
  -PrivilegedAccessGroupEligibilityScheduleRequestId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
- -InputObject <IIdentityGovernanceIdentity> [-AccessId <String>] [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-ApprovalId <String>] [-CompletedDateTime <DateTime>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-AccessId <String>]
+ [-Action <String>] [-AdditionalProperties <Hashtable>] [-ApprovalId <String>] [-CompletedDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-CustomData <String>]
  [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-IsValidationOnly]
  [-Justification <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
@@ -55,8 +56,9 @@ Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -374,6 +376,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScheduleInfo
 requestSchedule
 To construct, see NOTES section for SCHEDULEINFO properties and create a hash table.
@@ -498,7 +515,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

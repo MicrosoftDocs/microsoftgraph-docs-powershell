@@ -15,7 +15,7 @@ Create new navigation property to assignments for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -WindowsQualityUpdateProfileId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,14 +23,14 @@ New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -WindowsQualityU
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -WindowsQualityUpdateProfileId <String>
- -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfileAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfileAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +38,8 @@ New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -InputObject <ID
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfileAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfileAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -140,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Target
 Base type for assignment targets.
 To construct, see NOTES section for TARGET properties and create a hash table.
@@ -213,7 +228,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsQualityUpdateProfileAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

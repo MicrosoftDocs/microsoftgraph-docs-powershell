@@ -14,20 +14,20 @@ Create new navigation property to deviceHealthStatuses for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus [-AdditionalProperties <Hashtable>]
- [-BlueScreenCount <Int32>] [-BootTotalDurationInSeconds <Double>] [-DeviceId <String>] [-DeviceMake <String>]
- [-DeviceModel <String>] [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>]
- [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-PrimaryDiskType <String>] [-RestartCount <Int32>]
- [-StartupPerformanceScore <Double>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-TopProcesses <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BlueScreenCount <Int32>] [-BootTotalDurationInSeconds <Double>]
+ [-DeviceId <String>] [-DeviceMake <String>] [-DeviceModel <String>] [-DeviceName <String>]
+ [-HealthStatus <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>]
+ [-PrimaryDiskType <String>] [-RestartCount <Int32>] [-StartupPerformanceScore <Double>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TopProcesses <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus
- -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsDeviceHealthStatus> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -262,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RestartCount
 .
 
@@ -378,7 +393,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceHealthStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

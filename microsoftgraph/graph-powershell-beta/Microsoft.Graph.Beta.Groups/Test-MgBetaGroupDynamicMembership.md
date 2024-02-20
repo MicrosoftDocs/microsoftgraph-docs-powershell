@@ -16,29 +16,32 @@ You can complete this operation in the following ways:
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgBetaGroupDynamicMembership -GroupId <String> [-AdditionalProperties <Hashtable>] [-MemberId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaGroupDynamicMembership -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-MemberId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaGroupDynamicMembership -GroupId <String>
  -BodyParameter <IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
-Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-MemberId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-MemberId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
 Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -167,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -209,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

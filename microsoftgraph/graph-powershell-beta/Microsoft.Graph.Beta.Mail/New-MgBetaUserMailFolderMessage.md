@@ -18,11 +18,11 @@ Use this API to create a new Message in a mailfolder.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserMailFolderMessage -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
- [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
- [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
+New-MgBetaUserMailFolderMessage -MailFolderId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-BccRecipients <IMicrosoftGraphRecipient[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Categories <String[]>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>]
+ [-ConversationId <String>] [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
  [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
  [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
@@ -41,16 +41,17 @@ New-MgBetaUserMailFolderMessage -MailFolderId <String> -UserId <String> [-Additi
 ### Create
 ```
 New-MgBetaUserMailFolderMessage -MailFolderId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessage>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
- [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
- [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
+New-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-BccRecipients <IMicrosoftGraphRecipient[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Categories <String[]>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>]
+ [-ConversationId <String>] [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
  [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
  [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
@@ -69,7 +70,8 @@ New-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-AdditionalPropert
 ### CreateViaIdentity
 ```
 New-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessage>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -670,6 +672,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sender
 recipient
 To construct, see NOTES section for SENDER properties and create a hash table.
@@ -867,7 +884,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

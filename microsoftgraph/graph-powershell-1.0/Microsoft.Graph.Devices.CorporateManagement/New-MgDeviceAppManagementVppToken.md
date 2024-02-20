@@ -18,18 +18,18 @@ Create a new vppToken object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementVppToken [-AdditionalProperties <Hashtable>] [-AppleId <String>]
- [-AutomaticallyUpdateApps] [-CountryOrRegion <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>]
- [-OrganizationName <String>] [-State <VppTokenState>] [-Token <String>]
+New-MgDeviceAppManagementVppToken [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AppleId <String>] [-AutomaticallyUpdateApps] [-CountryOrRegion <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
+ [-LastSyncStatus <VppTokenSyncStatus>] [-OrganizationName <String>] [-State <VppTokenState>] [-Token <String>]
  [-VppTokenAccountType <VppTokenAccountType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -237,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 Possible states associated with an Apple Volume Purchase Program token.
 
@@ -323,7 +338,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVppToken
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

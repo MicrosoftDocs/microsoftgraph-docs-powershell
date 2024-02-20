@@ -18,7 +18,7 @@ Create a new ediscoverySearch object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
+New-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
  [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
@@ -33,13 +33,13 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
 ### Create
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
+New-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
  [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
@@ -54,8 +54,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 ### CreateViaIdentity
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -403,6 +403,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -445,7 +460,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

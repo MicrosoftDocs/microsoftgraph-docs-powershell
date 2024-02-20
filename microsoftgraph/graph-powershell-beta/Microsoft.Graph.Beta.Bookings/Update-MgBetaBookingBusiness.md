@@ -17,8 +17,9 @@ Update entity in bookingBusinesses
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaBookingBusiness -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+Update-MgBetaBookingBusiness -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-Appointments <IMicrosoftGraphBookingAppointment[]>]
  [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
  [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
@@ -32,8 +33,9 @@ Update-MgBetaBookingBusiness -BookingBusinessId <String> [-AdditionalProperties 
 
 ### UpdateExpanded1
 ```
-Update-MgBetaBookingBusiness -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+Update-MgBetaBookingBusiness -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-Appointments <IMicrosoftGraphBookingAppointment[]>]
  [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
  [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
@@ -48,19 +50,22 @@ Update-MgBetaBookingBusiness -BookingBusinessId <String> [-AdditionalProperties 
 ### Update1
 ```
 Update-MgBetaBookingBusiness -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingBusiness>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBookingBusiness -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingBusiness>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-Appointments <IMicrosoftGraphBookingAppointment[]>]
  [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
  [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
@@ -74,8 +79,9 @@ Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-AdditionalProper
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-Appointments <IMicrosoftGraphBookingAppointment[]>]
  [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
  [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
@@ -90,13 +96,15 @@ Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-AdditionalProper
 ### UpdateViaIdentity1
 ```
 Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphBookingBusiness>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphBookingBusiness>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -470,6 +478,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingPolicy
 This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
 To construct, see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
@@ -580,7 +603,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingBusiness
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

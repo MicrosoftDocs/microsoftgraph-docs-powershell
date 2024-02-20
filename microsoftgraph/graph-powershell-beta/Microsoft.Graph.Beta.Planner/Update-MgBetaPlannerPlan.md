@@ -18,10 +18,10 @@ Update the properties of a plannerPlan object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
- [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-Buckets <IMicrosoftGraphPlannerBucket[]>]
- [-Container <IMicrosoftGraphPlannerPlanContainer>] [-Contexts <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+Update-MgBetaPlannerPlan -PlannerPlanId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
+ [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
+ [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
@@ -32,15 +32,16 @@ Update-MgBetaPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtab
 ### Update
 ```
 Update-MgBetaPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-Buckets <IMicrosoftGraphPlannerBucket[]>]
- [-Container <IMicrosoftGraphPlannerPlanContainer>] [-Contexts <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
+ [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
+ [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
@@ -51,7 +52,8 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -348,6 +350,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedWithContainers
 List of containers the plan is shared with.
 To construct, see NOTES section for SHAREDWITHCONTAINERS properties and create a hash table.
@@ -440,7 +457,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

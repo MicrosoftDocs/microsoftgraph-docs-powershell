@@ -15,7 +15,8 @@ Update the navigation property groupPolicyCategories in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementGroupPolicyCategory -GroupPolicyCategoryId <String>
- [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>]
  [-IngestionSource <IngestionSource>] [-IsRoot] [-LastModifiedDateTime <DateTime>]
@@ -26,14 +27,15 @@ Update-MgBetaDeviceManagementGroupPolicyCategory -GroupPolicyCategoryId <String>
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyCategory -GroupPolicyCategoryId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyCategory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyCategory> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>]
  [-IngestionSource <IngestionSource>] [-IsRoot] [-LastModifiedDateTime <DateTime>]
@@ -44,8 +46,8 @@ Update-MgBetaDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagement
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyCategory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyCategory> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -287,6 +289,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -329,7 +346,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

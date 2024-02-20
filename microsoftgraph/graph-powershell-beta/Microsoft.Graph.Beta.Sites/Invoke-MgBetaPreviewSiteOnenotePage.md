@@ -17,14 +17,15 @@ Invoke function preview
 
 ### Preview (Default)
 ```
-Invoke-MgBetaPreviewSiteOnenotePage -OnenotePageId <String> -SiteId <String> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Invoke-MgBetaPreviewSiteOnenotePage -OnenotePageId <String> -SiteId <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
-Invoke-MgBetaPreviewSiteOnenotePage -InputObject <ISitesIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Invoke-MgBetaPreviewSiteOnenotePage -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -93,6 +94,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -118,7 +134,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenotePagePreview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

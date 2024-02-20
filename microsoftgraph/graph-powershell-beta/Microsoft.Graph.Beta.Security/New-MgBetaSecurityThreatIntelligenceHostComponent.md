@@ -17,16 +17,18 @@ Create new navigation property to hostComponents for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatIntelligenceHostComponent [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Name <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceHostComponent [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-FirstSeenDateTime <DateTime>]
+ [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceHostComponent -BodyParameter <IMicrosoftGraphSecurityHostComponent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -191,6 +193,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Version
 The component version running on the artifact, for example, v8.5.
 This shouldn't be assumed to be strictly numerical.
@@ -248,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostComponent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

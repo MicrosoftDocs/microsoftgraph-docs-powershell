@@ -16,31 +16,33 @@ Create a request to export the personal data for an inboundSharedUserProfile.
 ### ExportExpanded (Default)
 ```
 Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId <String>
- [-AdditionalProperties <Hashtable>] [-StorageLocation <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-StorageLocation <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Export
 ```
 Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId <String>
  -BodyParameter <IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
 ```
 Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-StorageLocation <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-StorageLocation <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
 ```
 Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StorageLocation
 .
 
@@ -215,7 +232,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

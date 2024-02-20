@@ -17,16 +17,17 @@ Update the navigation property subjectRightsRequests in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecuritySubjectRightsRequest -SubjectRightsRequestId <String> [-AdditionalProperties <Hashtable>]
- [-Approvers <IMicrosoftGraphUser[]>] [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>]
- [-Collaborators <IMicrosoftGraphUser[]>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>]
- [-Description <String>] [-DisplayName <String>] [-ExternalId <String>]
- [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>] [-Id <String>] [-IncludeAllVersions]
- [-IncludeAuthoredContent] [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>]
- [-InternalDueDateTime <DateTime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-MailboxLocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>]
- [-PauseAfterEstimate] [-Regulations <String[]>] [-SiteLocations <Hashtable>]
+Update-MgSecuritySubjectRightsRequest -SubjectRightsRequestId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Approvers <IMicrosoftGraphUser[]>]
+ [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>] [-Collaborators <IMicrosoftGraphUser[]>]
+ [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>]
+ [-Id <String>] [-IncludeAllVersions] [-IncludeAuthoredContent]
+ [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>] [-InternalDueDateTime <DateTime>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-MailboxLocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>] [-PauseAfterEstimate]
+ [-Regulations <String[]>] [-SiteLocations <Hashtable>]
  [-Stages <IMicrosoftGraphSubjectRightsRequestStageDetail[]>] [-Status <String>] [-Team <IMicrosoftGraphTeam>]
  [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -35,22 +36,23 @@ Update-MgSecuritySubjectRightsRequest -SubjectRightsRequestId <String> [-Additio
 ### Update
 ```
 Update-MgSecuritySubjectRightsRequest -SubjectRightsRequestId <String>
- -BodyParameter <IMicrosoftGraphSubjectRightsRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSubjectRightsRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-Approvers <IMicrosoftGraphUser[]>] [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>]
- [-Collaborators <IMicrosoftGraphUser[]>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>]
- [-Description <String>] [-DisplayName <String>] [-ExternalId <String>]
- [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>] [-Id <String>] [-IncludeAllVersions]
- [-IncludeAuthoredContent] [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>]
- [-InternalDueDateTime <DateTime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-MailboxLocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>]
- [-PauseAfterEstimate] [-Regulations <String[]>] [-SiteLocations <Hashtable>]
+Update-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Approvers <IMicrosoftGraphUser[]>]
+ [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>] [-Collaborators <IMicrosoftGraphUser[]>]
+ [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>]
+ [-Id <String>] [-IncludeAllVersions] [-IncludeAuthoredContent]
+ [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>] [-InternalDueDateTime <DateTime>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-MailboxLocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>] [-PauseAfterEstimate]
+ [-Regulations <String[]>] [-SiteLocations <Hashtable>]
  [-Stages <IMicrosoftGraphSubjectRightsRequestStageDetail[]>] [-Status <String>] [-Team <IMicrosoftGraphTeam>]
  [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -59,8 +61,8 @@ Update-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-Additio
 ### UpdateViaIdentity
 ```
 Update-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSubjectRightsRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSubjectRightsRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -533,6 +535,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteLocations
 subjectRightsRequestSiteLocation
 
@@ -667,7 +684,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubjectRightsRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

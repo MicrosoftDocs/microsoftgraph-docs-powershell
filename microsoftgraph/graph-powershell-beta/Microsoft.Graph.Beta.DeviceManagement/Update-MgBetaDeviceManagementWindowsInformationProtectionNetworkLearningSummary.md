@@ -18,33 +18,35 @@ Update the navigation property windowsInformationProtectionNetworkLearningSummar
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary
- -WindowsInformationProtectionNetworkLearningSummaryId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceCount <Int32>] [-Id <String>] [-Url <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -WindowsInformationProtectionNetworkLearningSummaryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>] [-Id <String>] [-Url <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary
  -WindowsInformationProtectionNetworkLearningSummaryId <String>
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>]
- [-Id <String>] [-Url <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>] [-Id <String>] [-Url <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -160,6 +162,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Url
 Website url
 
@@ -232,7 +249,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,33 +15,36 @@ Create new navigation property to steps for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep -AppConsentRequestId <String>
- -UserConsentRequestId <String> [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>]
- [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
- [-ReviewedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserConsentRequestId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignedToMe] [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
+ [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep -AppConsentRequestId <String>
- -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApprovalStep> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApprovalStep>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-AssignedToMe]
- [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
- [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>] [-Status <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>] [-Id <String>]
+ [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
+ [-ReviewedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApprovalStep>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -204,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewedBy
 identity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
@@ -328,7 +346,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

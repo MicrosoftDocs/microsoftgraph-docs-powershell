@@ -15,7 +15,8 @@ Update the navigation property iosLobAppProvisioningConfigurations in deviceAppM
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
- -IosLobAppProvisioningConfigurationId <String> [-AdditionalProperties <Hashtable>]
+ -IosLobAppProvisioningConfigurationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>]
  [-DisplayName <String>] [-ExpirationDateTime <DateTime>]
@@ -30,14 +31,15 @@ Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
  -IosLobAppProvisioningConfigurationId <String>
- -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>]
  [-DisplayName <String>] [-ExpirationDateTime <DateTime>]
@@ -52,8 +54,8 @@ Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
  -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -323,6 +325,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this iOS LOB app provisioning configuration entity.
 
@@ -411,7 +428,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosLobAppProvisioningConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -20,8 +20,8 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 ### ParseExpanded (Default)
 ```
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
- -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Expression <String>]
- [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
+ -SynchronizationJobId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Expression <String>] [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,13 +31,14 @@ Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <Stri
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
  -SynchronizationJobId <String>
  -BodyParameter <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
 ```
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Expression <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,7 +48,8 @@ Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IAppli
 ```
 Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -166,6 +168,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SynchronizationJobId
 The unique identifier of synchronizationJob
 
@@ -255,7 +272,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,9 +15,9 @@ Invoke action createServerLogCollectionRequest
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
- -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <DateTime>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-StartDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -25,15 +25,16 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionR
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
  -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String>
  -BodyParameter <IPaths11Xfdy7DevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphCreateserverlogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-StartDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -41,7 +42,8 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionR
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths11Xfdy7DevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphCreateserverlogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -171,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 .
 
@@ -228,7 +245,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

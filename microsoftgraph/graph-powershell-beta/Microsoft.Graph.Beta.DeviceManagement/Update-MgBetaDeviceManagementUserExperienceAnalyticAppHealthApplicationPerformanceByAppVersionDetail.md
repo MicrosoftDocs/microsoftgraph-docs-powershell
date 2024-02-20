@@ -19,10 +19,10 @@ Update the navigation property userExperienceAnalyticsAppHealthApplicationPerfor
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
  -UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>
- [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>] [-AppName <String>]
- [-AppPublisher <String>] [-AppVersion <String>] [-DeviceCountWithCrashes <Int32>] [-Id <String>]
- [-IsLatestUsedVersion] [-IsMostUsedVersion] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>]
+ [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>] [-AppVersion <String>]
+ [-DeviceCountWithCrashes <Int32>] [-Id <String>] [-IsLatestUsedVersion] [-IsMostUsedVersion]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,16 +30,18 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerforman
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
  -UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>]
- [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>] [-AppVersion <String>]
- [-DeviceCountWithCrashes <Int32>] [-Id <String>] [-IsLatestUsedVersion] [-IsMostUsedVersion]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>] [-AppName <String>]
+ [-AppPublisher <String>] [-AppVersion <String>] [-DeviceCountWithCrashes <Int32>] [-Id <String>]
+ [-IsLatestUsedVersion] [-IsMostUsedVersion] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -47,7 +49,8 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerforman
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -280,6 +283,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId
 The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -337,7 +355,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

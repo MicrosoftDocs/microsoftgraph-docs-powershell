@@ -17,22 +17,7 @@ Create new navigation property to sessions for communications
 
 ### CreateExpanded (Default)
 ```
-New-MgCommunicationCallRecordSession -CallRecordId <String> [-AdditionalProperties <Hashtable>]
- [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
- [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
- [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgCommunicationCallRecordSession -CallRecordId <String> -BodyParameter <IMicrosoftGraphCallRecordsSession>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+New-MgCommunicationCallRecordSession -CallRecordId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
  [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
  [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest] [-Modalities <String[]>]
@@ -40,11 +25,28 @@ New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgCommunicationCallRecordSession -CallRecordId <String> -BodyParameter <IMicrosoftGraphCallRecordsSession>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
+ [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
+ [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCallRecordsSession> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -258,6 +260,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Segments
 The list of segments involved in the session.
 Read-only.
@@ -335,7 +352,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

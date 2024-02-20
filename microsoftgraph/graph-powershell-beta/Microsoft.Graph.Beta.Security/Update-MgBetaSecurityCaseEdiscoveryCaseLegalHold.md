@@ -15,9 +15,10 @@ Update the navigation property legalHolds in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String> -EdiscoveryHoldPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
- [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Errors <String[]>] [-Id <String>] [-IsEnabled]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,16 +27,17 @@ Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String> -Edi
 ### Update
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String> -EdiscoveryHoldPolicyId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
- [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Errors <String[]>] [-Id <String>] [-IsEnabled]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,8 +46,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -315,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data sources that represent SharePoint sites.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -404,7 +421,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryHoldPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

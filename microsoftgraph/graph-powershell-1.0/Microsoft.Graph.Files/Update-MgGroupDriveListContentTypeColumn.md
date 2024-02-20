@@ -19,8 +19,8 @@ Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[co
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupDriveListContentTypeColumn -ColumnDefinitionId <String> -ContentTypeId <String> -DriveId <String>
- -GroupId <String> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
- [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
+ -GroupId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
  [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>] [-Currency <IMicrosoftGraphCurrencyColumn>]
  [-DateTime <IMicrosoftGraphDateTimeColumn>] [-DefaultValue <IMicrosoftGraphDefaultColumnValue>]
  [-Description <String>] [-DisplayName <String>] [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
@@ -37,17 +37,18 @@ Update-MgGroupDriveListContentTypeColumn -ColumnDefinitionId <String> -ContentTy
 ### Update
 ```
 Update-MgGroupDriveListContentTypeColumn -ColumnDefinitionId <String> -ContentTypeId <String> -DriveId <String>
- -GroupId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -GroupId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
- [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>] [-Currency <IMicrosoftGraphCurrencyColumn>]
- [-DateTime <IMicrosoftGraphDateTimeColumn>] [-DefaultValue <IMicrosoftGraphDefaultColumnValue>]
- [-Description <String>] [-DisplayName <String>] [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
+Update-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>]
+ [-Choice <IMicrosoftGraphChoiceColumn>] [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>]
+ [-Currency <IMicrosoftGraphCurrencyColumn>] [-DateTime <IMicrosoftGraphDateTimeColumn>]
+ [-DefaultValue <IMicrosoftGraphDefaultColumnValue>] [-Description <String>] [-DisplayName <String>]
+ [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
@@ -61,8 +62,8 @@ Update-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-Additio
 ### UpdateViaIdentity
 ```
 Update-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphColumnDefinition> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphColumnDefinition> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -613,6 +614,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SourceColumn
 columnDefinition
 To construct, see NOTES section for SOURCECOLUMN properties and create a hash table.
@@ -765,7 +781,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

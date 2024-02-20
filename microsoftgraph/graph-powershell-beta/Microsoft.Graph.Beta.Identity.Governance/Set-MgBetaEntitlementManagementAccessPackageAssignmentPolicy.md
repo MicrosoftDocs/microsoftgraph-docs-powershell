@@ -15,9 +15,10 @@ Update the navigation property accessPackageAssignmentPolicies in identityGovern
 ### SetExpanded (Default)
 ```
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
- [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
- [-AccessPackageId <String>] [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>]
- [-AdditionalProperties <Hashtable>] [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>] [-AccessPackageId <String>]
+ [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>] [-AdditionalProperties <Hashtable>]
+ [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>]
  [-CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
@@ -31,16 +32,17 @@ Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssig
 ### Set
 ```
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
- [-AccessPackageId <String>] [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>]
- [-AdditionalProperties <Hashtable>] [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>] [-AccessPackageId <String>]
+ [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>] [-AdditionalProperties <Hashtable>]
+ [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>]
  [-CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
@@ -54,8 +56,8 @@ Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIden
 ### SetViaIdentity
 ```
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -561,6 +563,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -VerifiableCredentialSettings
 verifiableCredentialSettings
 To construct, see NOTES section for VERIFIABLECREDENTIALSETTINGS properties and create a hash table.
@@ -619,7 +636,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

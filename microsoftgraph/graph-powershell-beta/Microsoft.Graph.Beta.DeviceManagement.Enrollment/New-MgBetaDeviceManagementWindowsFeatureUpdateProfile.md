@@ -14,10 +14,10 @@ Create new navigation property to windowsFeatureUpdateProfiles for deviceManagem
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
- [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
- [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
+New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]
+ [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
+ [-DisplayName <String>] [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
  [-InstallLatestWindows10OnWindows11IneligibleDevice] [-LastModifiedDateTime <DateTime>]
  [-RoleScopeTagIds <String[]>] [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,8 +26,8 @@ New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-AdditionalProperties <Ha
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsFeatureUpdateProfile
- -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Feature Update entity.
 
@@ -321,7 +336,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

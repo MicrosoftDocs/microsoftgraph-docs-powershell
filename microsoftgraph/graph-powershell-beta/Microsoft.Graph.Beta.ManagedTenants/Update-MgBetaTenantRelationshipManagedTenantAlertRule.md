@@ -15,8 +15,8 @@ Update the navigation property managedTenantAlertRules in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlertRule -ManagedTenantAlertRuleId <String>
- [-AdditionalProperties <Hashtable>] [-AlertDisplayName <String>] [-AlertTtl <Int32>]
- [-Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert[]>] [-CreatedByUserId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AlertDisplayName <String>]
+ [-AlertTtl <Int32>] [-Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert[]>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-LastRunDateTime <DateTime>]
  [-NotificationFinalDestinations <String>]
@@ -29,15 +29,15 @@ Update-MgBetaTenantRelationshipManagedTenantAlertRule -ManagedTenantAlertRuleId 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlertRule -ManagedTenantAlertRuleId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRule> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlertRule -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-AlertDisplayName <String>] [-AlertTtl <Int32>]
- [-Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert[]>] [-CreatedByUserId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AlertDisplayName <String>]
+ [-AlertTtl <Int32>] [-Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert[]>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-LastRunDateTime <DateTime>]
  [-NotificationFinalDestinations <String>]
@@ -50,8 +50,8 @@ Update-MgBetaTenantRelationshipManagedTenantAlertRule -InputObject <IManagedTena
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlertRule -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRule> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -333,6 +333,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RuleDefinition
 managedTenantAlertRuleDefinition
 To construct, see NOTES section for RULEDEFINITION properties and create a hash table.
@@ -438,7 +453,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

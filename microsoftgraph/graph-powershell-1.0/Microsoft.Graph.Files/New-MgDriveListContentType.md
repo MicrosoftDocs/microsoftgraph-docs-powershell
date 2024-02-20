@@ -17,8 +17,8 @@ Create new navigation property to contentTypes for drives
 
 ### CreateExpanded (Default)
 ```
-New-MgDriveListContentType -DriveId <String> [-AdditionalProperties <Hashtable>]
- [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
+New-MgDriveListContentType -DriveId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
  [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
  [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
  [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet>]
@@ -31,13 +31,14 @@ New-MgDriveListContentType -DriveId <String> [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgDriveListContentType -DriveId <String> -BodyParameter <IMicrosoftGraphContentType>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDriveListContentType -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
+New-MgDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
  [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
  [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
  [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet>]
@@ -50,7 +51,8 @@ New-MgDriveListContentType -InputObject <IFilesIdentity> [-AdditionalProperties 
 ### CreateViaIdentity
 ```
 New-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -448,6 +450,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sealed
 If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -506,7 +523,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

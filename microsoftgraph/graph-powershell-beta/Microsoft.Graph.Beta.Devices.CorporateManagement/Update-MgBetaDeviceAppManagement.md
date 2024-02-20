@@ -17,7 +17,7 @@ Update deviceAppManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceAppManagement [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AndroidManagedAppProtections <IMicrosoftGraphAndroidManagedAppProtection[]>]
  [-DefaultManagedAppProtections <IMicrosoftGraphDefaultManagedAppProtection[]>]
  [-DeviceAppManagementTasks <IMicrosoftGraphDeviceAppManagementTask[]>]
@@ -51,8 +51,9 @@ Update-MgBetaDeviceAppManagement [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -473,6 +474,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SymantecCodeSigningCertificate
 symantecCodeSigningCertificate
 To construct, see NOTES section for SYMANTECCODESIGNINGCERTIFICATE properties and create a hash table.
@@ -658,7 +674,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

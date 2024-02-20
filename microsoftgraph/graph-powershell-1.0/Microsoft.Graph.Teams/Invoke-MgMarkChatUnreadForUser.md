@@ -18,32 +18,34 @@ Mark a chat as unread for a user.
 
 ### MarkExpanded (Default)
 ```
-Invoke-MgMarkChatUnreadForUser -ChatId <String> [-AdditionalProperties <Hashtable>]
- [-LastMessageReadDateTime <DateTime>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgMarkChatUnreadForUser -ChatId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-LastMessageReadDateTime <DateTime>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Mark
 ```
 Invoke-MgMarkChatUnreadForUser -ChatId <String>
  -BodyParameter <IPathsMra0GcChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentityExpanded
 ```
-Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-LastMessageReadDateTime <DateTime>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-LastMessageReadDateTime <DateTime>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
 Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsMra0GcChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -176,6 +178,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -User
 teamworkUserIdentity
 To construct, see NOTES section for USER properties and create a hash table.
@@ -234,7 +251,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

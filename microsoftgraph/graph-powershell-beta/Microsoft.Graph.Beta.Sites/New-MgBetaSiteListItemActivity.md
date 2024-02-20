@@ -15,32 +15,34 @@ Create new navigation property to activities for sites
 ### CreateExpanded (Default)
 ```
 New-MgBetaSiteListItemActivity -ListId <String> -ListItemId <String> -SiteId <String>
- [-Action <IMicrosoftGraphItemActionSet>] [-Actor <IMicrosoftGraphIdentitySet>]
- [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>]
- [-ListItem <IMicrosoftGraphListItem>] [-Times <IMicrosoftGraphItemActivityTimeSet>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaSiteListItemActivity -ListId <String> -ListItemId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphItemActivityOld> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaSiteListItemActivity -InputObject <ISitesIdentity> [-Action <IMicrosoftGraphItemActionSet>]
+ [-ResponseHeadersVariable <String>] [-Action <IMicrosoftGraphItemActionSet>]
  [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
  [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-ListItem <IMicrosoftGraphListItem>]
  [-Times <IMicrosoftGraphItemActivityTimeSet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaSiteListItemActivity -ListId <String> -ListItemId <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphItemActivityOld> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaSiteListItemActivity -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-Action <IMicrosoftGraphItemActionSet>] [-Actor <IMicrosoftGraphIdentitySet>]
+ [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>]
+ [-ListItem <IMicrosoftGraphListItem>] [-Times <IMicrosoftGraphItemActivityTimeSet>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaSiteListItemActivity -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphItemActivityOld>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -308,7 +325,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityOld
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

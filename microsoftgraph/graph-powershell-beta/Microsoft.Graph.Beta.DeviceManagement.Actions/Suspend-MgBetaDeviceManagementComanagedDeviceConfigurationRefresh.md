@@ -15,24 +15,25 @@ Initiates a command to pause config refresh for the device.
 ### PauseExpanded (Default)
 ```
 Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Pause
 ```
 Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh -ManagedDeviceId <String>
  -BodyParameter <IPaths1C770VqDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphPauseconfigurationrefreshPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PauseViaIdentityExpanded
 ```
 Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-PauseTimePeriodInMinutes <Int32>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-PauseTimePeriodInMinutes <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PauseViaIdentity
@@ -40,8 +41,8 @@ Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh
 Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1C770VqDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphPauseconfigurationrefreshPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -171,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -213,7 +229,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

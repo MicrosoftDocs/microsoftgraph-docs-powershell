@@ -15,14 +15,14 @@ Invoke action reprocess
 ### Reprocess (Default)
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-ResponseHeadersVariable <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment>] [-AdditionalProperties <Hashtable>]
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
@@ -37,14 +37,14 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageA
 ### Update
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-ResponseHeadersVariable <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment>] [-AdditionalProperties <Hashtable>]
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
@@ -59,15 +59,15 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <I
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprocessViaIdentity
 ```
 Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -424,6 +424,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 requestSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -500,7 +515,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

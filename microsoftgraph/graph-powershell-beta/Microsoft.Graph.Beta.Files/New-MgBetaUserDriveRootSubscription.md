@@ -17,10 +17,10 @@ Create new navigation property to subscriptions for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserDriveRootSubscription -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+New-MgBetaUserDriveRootSubscription -DriveId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
  [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,16 +29,16 @@ New-MgBetaUserDriveRootSubscription -DriveId <String> -UserId <String> [-Additio
 ### Create
 ```
 New-MgBetaUserDriveRootSubscription -DriveId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSubscription> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserDriveRootSubscription -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+New-MgBetaUserDriveRootSubscription -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
  [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,7 +47,8 @@ New-MgBetaUserDriveRootSubscription -InputObject <IFilesIdentity> [-AdditionalPr
 ### CreateViaIdentity
 ```
 New-MgBetaUserDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -437,6 +438,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -494,7 +510,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscription
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

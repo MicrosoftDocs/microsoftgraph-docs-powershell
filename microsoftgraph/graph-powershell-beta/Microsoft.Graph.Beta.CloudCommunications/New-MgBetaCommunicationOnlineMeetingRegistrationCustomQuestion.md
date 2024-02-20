@@ -16,31 +16,31 @@ Create a custom registration question associated with a meetingRegistration obje
 ### CreateExpanded (Default)
 ```
 New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -OnlineMeetingId <String>
- [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>]
+ [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>]
+ [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -262,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

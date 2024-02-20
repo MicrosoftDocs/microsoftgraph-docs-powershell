@@ -17,18 +17,18 @@ Update the navigation property applePushNotificationCertificate in deviceManagem
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementApplePushNotificationCertificate [-AdditionalProperties <Hashtable>]
- [-AppleIdentifier <String>] [-Certificate <String>] [-CertificateUploadFailureReason <String>]
- [-CertificateUploadStatus <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-TopicIdentifier <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementApplePushNotificationCertificate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>] [-Certificate <String>]
+ [-CertificateUploadFailureReason <String>] [-CertificateUploadStatus <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-TopicIdentifier <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementApplePushNotificationCertificate
- -BodyParameter <IMicrosoftGraphApplePushNotificationCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApplePushNotificationCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TopicIdentifier
 Topic Id.
 
@@ -259,7 +274,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

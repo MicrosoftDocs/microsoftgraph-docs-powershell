@@ -15,7 +15,7 @@ Invoke action windowsPrivacyAccessControls
 ### AccessExpanded1 (Default)
 ```
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -DeviceConfigurationId <String>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -25,14 +25,15 @@ Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -Dev
 ```
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -DeviceConfigurationId <String>
  -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AccessViaIdentityExpanded1
 ```
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -43,8 +44,8 @@ Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
 Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -159,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WindowsPrivacyAccessControls
 .
 To construct, see NOTES section for WINDOWSPRIVACYACCESSCONTROLS properties and create a hash table.
@@ -217,7 +233,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

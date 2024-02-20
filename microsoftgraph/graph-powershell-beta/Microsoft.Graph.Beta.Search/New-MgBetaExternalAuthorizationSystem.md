@@ -14,8 +14,8 @@ Create new navigation property to authorizationSystems for external
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaExternalAuthorizationSystem [-AdditionalProperties <Hashtable>] [-AuthorizationSystemId <String>]
- [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
+New-MgBetaExternalAuthorizationSystem [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthorizationSystemId <String>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
  [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,7 +23,8 @@ New-MgBetaExternalAuthorizationSystem [-AdditionalProperties <Hashtable>] [-Auth
 ### Create
 ```
 New-MgBetaExternalAuthorizationSystem -BodyParameter <IMicrosoftGraphAuthorizationSystem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -173,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -214,7 +230,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

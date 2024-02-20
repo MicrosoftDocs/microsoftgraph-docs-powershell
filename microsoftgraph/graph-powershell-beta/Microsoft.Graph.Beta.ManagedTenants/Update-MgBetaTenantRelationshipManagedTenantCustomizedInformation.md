@@ -16,31 +16,33 @@ Update the properties of a tenantCustomizedInformation object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
- [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
+ [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
+ [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -202,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantCustomizedInformationId
 The unique identifier of tenantCustomizedInformation
 
@@ -292,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

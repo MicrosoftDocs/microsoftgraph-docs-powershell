@@ -18,27 +18,7 @@ Update the navigation property userExperienceAnalyticsDeviceStartupHistory in de
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
- -UserExperienceAnalyticsDeviceStartupHistoryId <String> [-AdditionalProperties <Hashtable>]
- [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>] [-DeviceId <String>]
- [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>]
- [-Id <String>] [-IsFeatureUpdate] [-IsFirstLogin] [-OperatingSystemVersion <String>]
- [-ResponsiveDesktopTimeInMS <Int32>]
- [-RestartCategory <UserExperienceAnalyticsOperatingSystemRestartCategory>] [-RestartFaultBucket <String>]
- [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>] [-TotalLoginTimeInMS <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
- -UserExperienceAnalyticsDeviceStartupHistoryId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <IDeviceManagementIdentity>
+ -UserExperienceAnalyticsDeviceStartupHistoryId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>]
  [-DeviceId <String>] [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>]
  [-GroupPolicyLoginTimeInMS <Int32>] [-Id <String>] [-IsFeatureUpdate] [-IsFirstLogin]
@@ -48,11 +28,33 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+ -UserExperienceAnalyticsDeviceStartupHistoryId <String>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CoreBootTimeInMS <Int32>]
+ [-CoreLoginTimeInMS <Int32>] [-DeviceId <String>] [-FeatureUpdateBootTimeInMS <Int32>]
+ [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>] [-Id <String>] [-IsFeatureUpdate]
+ [-IsFirstLogin] [-OperatingSystemVersion <String>] [-ResponsiveDesktopTimeInMS <Int32>]
+ [-RestartCategory <UserExperienceAnalyticsOperatingSystemRestartCategory>] [-RestartFaultBucket <String>]
+ [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>] [-TotalLoginTimeInMS <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -308,6 +310,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponsiveDesktopTimeInMS
 The time for desktop to become responsive during login process in milliseconds.
 Supports: $select, $OrderBy.
@@ -487,7 +504,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

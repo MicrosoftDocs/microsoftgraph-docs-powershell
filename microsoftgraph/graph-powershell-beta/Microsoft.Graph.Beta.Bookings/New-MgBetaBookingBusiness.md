@@ -17,8 +17,8 @@ Add new entity to bookingBusinesses
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaBookingBusiness [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+New-MgBetaBookingBusiness [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
  [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
  [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
@@ -32,20 +32,20 @@ New-MgBetaBookingBusiness [-AdditionalProperties <Hashtable>] [-Address <IMicros
 
 ### Create1
 ```
-New-MgBetaBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
 ```
-New-MgBetaBookingBusiness [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+New-MgBetaBookingBusiness [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
  [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
  [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
@@ -402,6 +402,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingPolicy
 This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
 To construct, see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
@@ -511,7 +526,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingBusiness
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

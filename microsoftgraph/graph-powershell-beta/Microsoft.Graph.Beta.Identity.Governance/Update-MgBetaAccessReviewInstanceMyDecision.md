@@ -15,35 +15,37 @@ Update the navigation property myDecisions in accessReviews
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAccessReviewInstanceMyDecision -AccessReviewDecisionId <String> -AccessReviewId <String>
- -AccessReviewId1 <String> [-AccessRecommendation <String>] [-AccessReviewId2 <String>]
- [-AdditionalProperties <Hashtable>] [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>]
- [-ApplyResult <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
- [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AccessReviewId1 <String> [-ResponseHeadersVariable <String>] [-AccessRecommendation <String>]
+ [-AccessReviewId2 <String>] [-AdditionalProperties <Hashtable>] [-AppliedBy <IMicrosoftGraphUserIdentity>]
+ [-AppliedDateTime <DateTime>] [-ApplyResult <String>] [-Id <String>] [-Justification <String>]
+ [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAccessReviewInstanceMyDecision -AccessReviewDecisionId <String> -AccessReviewId <String>
- -AccessReviewId1 <String> -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AccessReviewId1 <String> -BodyParameter <IMicrosoftGraphAccessReviewDecision>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAccessReviewInstanceMyDecision [-AccessReviewId <String>]
- -InputObject <IIdentityGovernanceIdentity> [-AccessRecommendation <String>]
- [-AdditionalProperties <Hashtable>] [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>]
- [-ApplyResult <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
- [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AccessRecommendation <String>] [-AdditionalProperties <Hashtable>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
+ [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
+ [-ReviewedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaAccessReviewInstanceMyDecision -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -292,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewedBy
 userIdentity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
@@ -380,7 +397,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

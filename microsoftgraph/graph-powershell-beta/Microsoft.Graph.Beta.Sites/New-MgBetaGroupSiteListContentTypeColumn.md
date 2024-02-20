@@ -19,8 +19,8 @@ Add a column to a \[content type\]\[contentType\] in a site or list by specifyin
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupSiteListContentTypeColumn -ContentTypeId <String> -GroupId <String> -ListId <String>
- -SiteId <String> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
- [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
+ -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
  [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>] [-Currency <IMicrosoftGraphCurrencyColumn>]
  [-DateTime <IMicrosoftGraphDateTimeColumn>] [-DefaultValue <IMicrosoftGraphDefaultColumnValue>]
  [-Description <String>] [-DisplayName <String>] [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
@@ -37,17 +37,18 @@ New-MgBetaGroupSiteListContentTypeColumn -ContentTypeId <String> -GroupId <Strin
 ### Create
 ```
 New-MgBetaGroupSiteListContentTypeColumn -ContentTypeId <String> -GroupId <String> -ListId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SiteId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
- [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>] [-Currency <IMicrosoftGraphCurrencyColumn>]
- [-DateTime <IMicrosoftGraphDateTimeColumn>] [-DefaultValue <IMicrosoftGraphDefaultColumnValue>]
- [-Description <String>] [-DisplayName <String>] [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
+New-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>]
+ [-Choice <IMicrosoftGraphChoiceColumn>] [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>]
+ [-Currency <IMicrosoftGraphCurrencyColumn>] [-DateTime <IMicrosoftGraphDateTimeColumn>]
+ [-DefaultValue <IMicrosoftGraphDefaultColumnValue>] [-Description <String>] [-DisplayName <String>]
+ [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
@@ -61,8 +62,8 @@ New-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-Additio
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphColumnDefinition> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphColumnDefinition> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -598,6 +599,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -765,7 +781,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphColumnDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

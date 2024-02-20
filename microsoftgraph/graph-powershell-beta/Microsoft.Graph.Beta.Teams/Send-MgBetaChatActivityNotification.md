@@ -18,36 +18,38 @@ For more information, see sending Teams activity notifications.
 
 ### SendExpanded (Default)
 ```
-Send-MgBetaChatActivityNotification -ChatId <String> [-ActivityType <String>]
- [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Send-MgBetaChatActivityNotification -ChatId <String> [-ResponseHeadersVariable <String>]
+ [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
+ [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
+ [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaChatActivityNotification -ChatId <String>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
-Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
- [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-Recipient <Hashtable>] [-TeamsAppId <String>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivityType <String>] [-AdditionalProperties <Hashtable>] [-ChainId <Int64>]
+ [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>] [-TeamsAppId <String>]
+ [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -387,6 +389,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppId
 .
 
@@ -476,7 +493,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

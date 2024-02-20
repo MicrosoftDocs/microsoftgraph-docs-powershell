@@ -18,8 +18,9 @@ Update the navigation property deviceManagementTroubleshootingEvents in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -DeviceManagementTroubleshootingEventId <String>
- -UserId <String> [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>] [-Id <String>]
+ -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]
+ [-AdditionalProperties <Hashtable>] [-CorrelationId <String>] [-EventDateTime <DateTime>]
+ [-EventName <String>] [-Id <String>]
  [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +28,17 @@ Update-MgBetaUserDeviceManagementTroubleshootingEvent -DeviceManagementTroublesh
 ### Update
 ```
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -DeviceManagementTroubleshootingEventId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]
+ [-AdditionalProperties <Hashtable>] [-CorrelationId <String>] [-EventDateTime <DateTime>]
+ [-EventName <String>] [-Id <String>]
  [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +46,8 @@ Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorp
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -222,6 +225,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TroubleshootingErrorDetails
 Object containing detailed information about the error and its remediation.
 To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
@@ -295,7 +313,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

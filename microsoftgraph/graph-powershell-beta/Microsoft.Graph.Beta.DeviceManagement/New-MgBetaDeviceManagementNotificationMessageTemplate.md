@@ -17,9 +17,10 @@ Create new navigation property to notificationMessageTemplates for deviceManagem
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementNotificationMessageTemplate [-AdditionalProperties <Hashtable>]
- [-BrandingOptions <NotificationTemplateBrandingOptions>] [-DefaultLocale <String>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+New-MgBetaDeviceManagementNotificationMessageTemplate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BrandingOptions <NotificationTemplateBrandingOptions>]
+ [-DefaultLocale <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>]
  [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,8 +28,8 @@ New-MgBetaDeviceManagementNotificationMessageTemplate [-AdditionalProperties <Ha
 ### Create
 ```
 New-MgBetaDeviceManagementNotificationMessageTemplate
- -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -207,6 +208,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -263,7 +279,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

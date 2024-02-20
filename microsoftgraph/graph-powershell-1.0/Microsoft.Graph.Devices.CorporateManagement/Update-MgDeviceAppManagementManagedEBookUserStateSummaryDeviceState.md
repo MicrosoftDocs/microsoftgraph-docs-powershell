@@ -18,35 +18,37 @@ Update the navigation property deviceStates in deviceAppManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState -DeviceInstallStateId <String>
- -ManagedEBookId <String> -UserInstallStateSummaryId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-DeviceName <String>] [-ErrorCode <String>] [-Id <String>]
- [-InstallState <InstallState>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>] [-OSVersion <String>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -ManagedEBookId <String> -UserInstallStateSummaryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-DeviceName <String>] [-ErrorCode <String>]
+ [-Id <String>] [-InstallState <InstallState>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
+ [-OSVersion <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState -DeviceInstallStateId <String>
  -ManagedEBookId <String> -UserInstallStateSummaryId <String>
- -BodyParameter <IMicrosoftGraphDeviceInstallState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceInstallState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
- [-DeviceName <String>] [-ErrorCode <String>] [-Id <String>] [-InstallState <InstallState>]
- [-LastSyncDateTime <DateTime>] [-OSDescription <String>] [-OSVersion <String>] [-UserName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-DeviceName <String>] [-ErrorCode <String>]
+ [-Id <String>] [-InstallState <InstallState>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
+ [-OSVersion <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState
  -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphDeviceInstallState>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -282,6 +284,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserInstallStateSummaryId
 The unique identifier of userInstallStateSummary
 
@@ -354,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceInstallState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

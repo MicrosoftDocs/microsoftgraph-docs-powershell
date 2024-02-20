@@ -15,7 +15,7 @@ Update the navigation property roleAssignmentScheduleInstances in roleManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplicationId <String>
- -UnifiedRoleAssignmentScheduleInstanceId <String>
+ -UnifiedRoleAssignmentScheduleInstanceId <String> [-ResponseHeadersVariable <String>]
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>] [-AdditionalProperties <Hashtable>]
  [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-AssignmentType <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
@@ -30,14 +30,14 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacAppl
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplicationId <String>
  -UnifiedRoleAssignmentScheduleInstanceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
- -InputObject <IIdentityGovernanceIdentity>
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>] [-AdditionalProperties <Hashtable>]
  [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-AssignmentType <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
@@ -52,8 +52,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -335,6 +335,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleAssignmentOriginId
 The identifier of the role assignment in Azure AD.
 
@@ -468,7 +483,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

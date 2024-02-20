@@ -14,9 +14,9 @@ Update the navigation property analyzedEmails in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String> [-AdditionalProperties <Hashtable>]
- [-AlertIds <String[]>] [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>]
- [-AttachmentsCount <Int32>]
+Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
+ [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>] [-AttachmentsCount <Int32>]
  [-AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]
  [-BulkComplaintLevel <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
  [-Directionality <String>] [-DistributionList <String>] [-EmailClusterId <String>]
@@ -35,14 +35,14 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String> [-Addi
 ### Update
 ```
 Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String>
- -BodyParameter <IMicrosoftGraphSecurityAnalyzedEmail> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityAnalyzedEmail> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
  [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>] [-AttachmentsCount <Int32>]
  [-AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]
  [-BulkComplaintLevel <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
@@ -62,8 +62,8 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityAnalyzedEmail> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityAnalyzedEmail> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -514,6 +514,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReturnPath
 .
 
@@ -678,7 +693,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAnalyzedEmail
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,31 +15,33 @@ Create new navigation property to deviceStates for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementIntentDeviceState -DeviceManagementIntentId <String>
- [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceId <String>] [-Id <String>]
- [-LastReportedDateTime <DateTime>] [-State <String>] [-UserName <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>]
+ [-DeviceId <String>] [-Id <String>] [-LastReportedDateTime <DateTime>] [-State <String>] [-UserName <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementIntentDeviceState -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementIntentDeviceState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceId <String>] [-Id <String>]
- [-LastReportedDateTime <DateTime>] [-State <String>] [-UserName <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>]
+ [-DeviceId <String>] [-Id <String>] [-LastReportedDateTime <DateTime>] [-State <String>] [-UserName <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementIntentDeviceState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 complianceStatus
 
@@ -287,7 +304,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -20,9 +20,9 @@ To update any other workflow properties, see workflow: createNewVersion.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String> [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-CreatedBy <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedBy <IMicrosoftGraphUser>]
+ [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-ExecutionConditions <Hashtable>] [-ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]
  [-Id <String>] [-IsEnabled] [-IsSchedulingEnabled] [-LastModifiedBy <IMicrosoftGraphUser>]
  [-LastModifiedDateTime <DateTime>] [-NextScheduleRunDateTime <DateTime>]
@@ -37,19 +37,19 @@ Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String> [-AdditionalPr
 ### Update
 ```
 Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String>
- -BodyParameter <IMicrosoftGraphIdentityGovernanceWorkflow> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceWorkflow> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedBy <IMicrosoftGraphUser>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-ExecutionConditions <Hashtable>] [-ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]
- [-Id <String>] [-IsEnabled] [-IsSchedulingEnabled] [-LastModifiedBy <IMicrosoftGraphUser>]
- [-LastModifiedDateTime <DateTime>] [-NextScheduleRunDateTime <DateTime>]
- [-Runs <IMicrosoftGraphIdentityGovernanceRun[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-CreatedBy <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-ExecutionConditions <Hashtable>]
+ [-ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>] [-Id <String>] [-IsEnabled]
+ [-IsSchedulingEnabled] [-LastModifiedBy <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
+ [-NextScheduleRunDateTime <DateTime>] [-Runs <IMicrosoftGraphIdentityGovernanceRun[]>]
  [-TaskReports <IMicrosoftGraphIdentityGovernanceTaskReport[]>]
  [-Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]
  [-UserProcessingResults <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>] [-Version <Int32>]
@@ -60,8 +60,8 @@ Update-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceId
 ### UpdateViaIdentity
 ```
 Update-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphIdentityGovernanceWorkflow> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceWorkflow> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -367,6 +367,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Runs
 Workflow runs.
 To construct, see NOTES section for RUNS properties and create a hash table.
@@ -520,7 +535,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceWorkflow
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

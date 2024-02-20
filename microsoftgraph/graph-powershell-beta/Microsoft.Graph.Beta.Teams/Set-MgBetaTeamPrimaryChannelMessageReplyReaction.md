@@ -18,8 +18,9 @@ Invoke action setReaction
 ### SetExpanded (Default)
 ```
 Set-MgBetaTeamPrimaryChannelMessageReplyReaction -ChatMessageId <String> -ChatMessageId1 <String>
- -TeamId <String> [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -TeamId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
@@ -27,23 +28,24 @@ Set-MgBetaTeamPrimaryChannelMessageReplyReaction -ChatMessageId <String> -ChatMe
 Set-MgBetaTeamPrimaryChannelMessageReplyReaction -ChatMessageId <String> -ChatMessageId1 <String>
  -TeamId <String>
  -BodyParameter <IPathsStydqmTeamsTeamIdPrimarychannelMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaTeamPrimaryChannelMessageReplyReaction -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaTeamPrimaryChannelMessageReplyReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsStydqmTeamsTeamIdPrimarychannelMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -188,6 +190,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamId
 The unique identifier of team
 
@@ -245,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

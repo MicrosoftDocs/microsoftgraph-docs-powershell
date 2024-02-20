@@ -16,34 +16,36 @@ Create new navigation property to updateStateSummaries for deviceManagement
 ```
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
- [-ProductKey <String>] [-State <MacOSSoftwareUpdateState>] [-UpdateCategory <MacOSSoftwareUpdateCategory>]
- [-UpdateVersion <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-LastUpdatedDateTime <DateTime>] [-ProductKey <String>] [-State <MacOSSoftwareUpdateState>]
+ [-UpdateCategory <MacOSSoftwareUpdateCategory>] [-UpdateVersion <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-ProductKey <String>] [-State <MacOSSoftwareUpdateState>]
- [-UpdateCategory <MacOSSoftwareUpdateCategory>] [-UpdateVersion <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-ProductKey <String>] [-State <MacOSSoftwareUpdateState>] [-UpdateCategory <MacOSSoftwareUpdateCategory>]
+ [-UpdateVersion <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -219,6 +221,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 MacOS Software Update State
 
@@ -306,7 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

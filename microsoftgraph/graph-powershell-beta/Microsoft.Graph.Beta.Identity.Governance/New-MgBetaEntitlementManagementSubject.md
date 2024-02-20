@@ -14,18 +14,20 @@ Create new navigation property to subjects for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaEntitlementManagementSubject [-AdditionalProperties <Hashtable>] [-AltSecId <String>]
- [-CleanupScheduledDateTime <DateTime>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]
- [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-ObjectId <String>] [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>]
- [-SubjectLifecycle <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEntitlementManagementSubject [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AltSecId <String>] [-CleanupScheduledDateTime <DateTime>]
+ [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
+ [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
+ [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
+ [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubjectLifecycle
 accessPackageSubjectLifecycle
 
@@ -320,7 +337,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

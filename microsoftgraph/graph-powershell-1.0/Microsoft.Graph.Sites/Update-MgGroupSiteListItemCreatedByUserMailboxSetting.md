@@ -18,10 +18,10 @@ Update property mailboxSettings value.
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupSiteListItemCreatedByUserMailboxSetting -GroupId <String> -ListId <String> -ListItemId <String>
- -SiteId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
- [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
- [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
- [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+ -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
+ [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
+ [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -29,14 +29,14 @@ Update-MgGroupSiteListItemCreatedByUserMailboxSetting -GroupId <String> -ListId 
 ### Update
 ```
 Update-MgGroupSiteListItemCreatedByUserMailboxSetting -GroupId <String> -ListId <String> -ListItemId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SiteId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgGroupSiteListItemCreatedByUserMailboxSetting -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
@@ -47,8 +47,8 @@ Update-MgGroupSiteListItemCreatedByUserMailboxSetting -InputObject <ISitesIdenti
 ### UpdateViaIdentity
 ```
 Update-MgGroupSiteListItemCreatedByUserMailboxSetting -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -255,6 +255,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -373,7 +388,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

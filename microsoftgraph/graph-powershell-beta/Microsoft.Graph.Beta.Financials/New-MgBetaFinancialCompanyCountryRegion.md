@@ -14,31 +14,32 @@ Create new navigation property to countriesRegions for financials
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaFinancialCompanyCountryRegion -CompanyId <String> [-AdditionalProperties <Hashtable>]
- [-AddressFormat <String>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyCountryRegion -CompanyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressFormat <String>] [-Code <String>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaFinancialCompanyCountryRegion -CompanyId <String> -BodyParameter <IMicrosoftGraphCountryRegion>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaFinancialCompanyCountryRegion -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-AddressFormat <String>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyCountryRegion -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressFormat <String>] [-Code <String>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyCountryRegion -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCountryRegion> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCountryRegion> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -213,6 +214,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -255,7 +271,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCountryRegion
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

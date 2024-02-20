@@ -15,31 +15,31 @@ Update the navigation property summary in privilegedApproval
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrivilegedApprovalRoleInfoSummary -PrivilegedApprovalId <String>
- [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>] [-Id <String>] [-ManagedCount <Int32>]
- [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>]
+ [-Id <String>] [-ManagedCount <Int32>] [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedApprovalRoleInfoSummary -PrivilegedApprovalId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrivilegedApprovalRoleInfoSummary -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>] [-Id <String>] [-ManagedCount <Int32>]
- [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>]
+ [-Id <String>] [-ManagedCount <Int32>] [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedApprovalRoleInfoSummary -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 roleSummaryStatus
 
@@ -272,7 +287,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

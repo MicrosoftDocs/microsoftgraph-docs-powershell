@@ -15,8 +15,8 @@ Create a new emailThreatSubmission object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatSubmissionEmailThreat [-AdditionalProperties <Hashtable>]
- [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
+New-MgBetaSecurityThreatSubmissionEmailThreat [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
  [-AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>] [-Category <String>]
  [-ClientSource <String>] [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InternetMessageId <String>] [-OriginalCategory <String>]
@@ -30,7 +30,8 @@ New-MgBetaSecurityThreatSubmissionEmailThreat [-AdditionalProperties <Hashtable>
 ### Create
 ```
 New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -303,6 +304,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Result
 submissionResult
 To construct, see NOTES section for RESULT properties and create a hash table.
@@ -468,7 +484,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

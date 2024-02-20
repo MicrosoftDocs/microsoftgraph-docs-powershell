@@ -15,24 +15,25 @@ Update the navigation property conditionalAccessPolicyCoverages in tenantRelatio
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
- -ConditionalAccessPolicyCoverageId <String> [-AdditionalProperties <Hashtable>]
- [-ConditionalAccessPolicyState <String>] [-Id <String>] [-LatestPolicyModifiedDateTime <DateTime>]
- [-RequiresDeviceCompliance] [-TenantDisplayName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ConditionalAccessPolicyCoverageId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ConditionalAccessPolicyState <String>] [-Id <String>]
+ [-LatestPolicyModifiedDateTime <DateTime>] [-RequiresDeviceCompliance] [-TenantDisplayName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
  -ConditionalAccessPolicyCoverageId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ConditionalAccessPolicyState <String>] [-Id <String>] [-LatestPolicyModifiedDateTime <DateTime>]
  [-RequiresDeviceCompliance] [-TenantDisplayName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,8 +43,9 @@ Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 ```
 Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
  -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -211,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 The display name for the managed tenant.
 Required.
@@ -270,7 +287,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

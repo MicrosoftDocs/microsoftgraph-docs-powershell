@@ -15,11 +15,11 @@ Create new navigation property to managementTemplateCollectionTenantSummaries fo
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- [-AdditionalProperties <Hashtable>] [-CompleteStepsCount <Int32>] [-CompleteUsersCount <Int32>]
- [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-DismissedStepsCount <Int32>]
- [-ExcludedUsersCount <Int32>] [-ExcludedUsersDistinctCount <Int32>] [-Id <String>]
- [-IncompleteStepsCount <Int32>] [-IncompleteUsersCount <Int32>] [-IneligibleStepsCount <Int32>] [-IsComplete]
- [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompleteStepsCount <Int32>]
+ [-CompleteUsersCount <Int32>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
+ [-DismissedStepsCount <Int32>] [-ExcludedUsersCount <Int32>] [-ExcludedUsersDistinctCount <Int32>]
+ [-Id <String>] [-IncompleteStepsCount <Int32>] [-IncompleteUsersCount <Int32>] [-IneligibleStepsCount <Int32>]
+ [-IsComplete] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>] [-TenantId <String>]
  [-UnlicensedUsersCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -30,7 +30,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSumma
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -370,6 +371,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantId
 .
 
@@ -441,7 +457,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

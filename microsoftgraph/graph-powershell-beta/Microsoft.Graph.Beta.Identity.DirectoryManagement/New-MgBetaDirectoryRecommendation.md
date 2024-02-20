@@ -14,10 +14,10 @@ Create new navigation property to recommendations for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDirectoryRecommendation [-ActionSteps <IMicrosoftGraphActionStep[]>]
- [-AdditionalProperties <Hashtable>] [-Benefits <String>] [-Category <String>] [-CreatedDateTime <DateTime>]
- [-CurrentScore <Double>] [-DisplayName <String>] [-FeatureAreas <String[]>] [-Id <String>]
- [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
+New-MgBetaDirectoryRecommendation [-ResponseHeadersVariable <String>]
+ [-ActionSteps <IMicrosoftGraphActionStep[]>] [-AdditionalProperties <Hashtable>] [-Benefits <String>]
+ [-Category <String>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>] [-DisplayName <String>]
+ [-FeatureAreas <String[]>] [-Id <String>] [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
@@ -27,8 +27,8 @@ New-MgBetaDirectoryRecommendation [-ActionSteps <IMicrosoftGraphActionStep[]>]
 
 ### Create
 ```
-New-MgBetaDirectoryRecommendation -BodyParameter <Hashtable> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryRecommendation -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -422,6 +422,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 recommendationStatus
 
@@ -478,7 +493,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

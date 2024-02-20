@@ -17,7 +17,7 @@ Create new navigation property to mobileApps for deviceAppManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementMobileApp [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceAppManagementMobileApp [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
  [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>] [-Description <String>] [-Developer <String>]
  [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsAssigned] [-IsFeatured]
@@ -31,8 +31,9 @@ New-MgBetaDeviceAppManagementMobileApp [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -394,6 +395,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of scope tag ids for this mobile app.
 
@@ -495,7 +511,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

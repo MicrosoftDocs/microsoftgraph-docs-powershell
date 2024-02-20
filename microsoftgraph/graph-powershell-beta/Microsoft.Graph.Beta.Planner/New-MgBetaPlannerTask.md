@@ -18,8 +18,9 @@ Create a new plannerTask.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPlannerTask [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>]
- [-AppliedCategories <Hashtable>] [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
+New-MgBetaPlannerTask [-ResponseHeadersVariable <String>] [-ActiveChecklistItemCount <Int32>]
+ [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
+ [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
  [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
  [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
@@ -37,8 +38,8 @@ New-MgBetaPlannerTask [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties
 
 ### Create
 ```
-New-MgBetaPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -614,6 +615,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SpecifiedCompletionRequirements
 plannerTaskCompletionRequirements
 
@@ -702,7 +718,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,8 +18,8 @@ Create a new permission object on a site.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupSitePermission -GroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
+New-MgBetaGroupSitePermission -GroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
  [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
@@ -31,13 +31,14 @@ New-MgBetaGroupSitePermission -GroupId <String> -SiteId <String> [-AdditionalPro
 ### Create
 ```
 New-MgBetaGroupSitePermission -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphPermission>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
+New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
  [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
@@ -49,7 +50,8 @@ New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-AdditionalProperti
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphPermission>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -319,6 +321,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Roles
 The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
@@ -409,7 +426,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

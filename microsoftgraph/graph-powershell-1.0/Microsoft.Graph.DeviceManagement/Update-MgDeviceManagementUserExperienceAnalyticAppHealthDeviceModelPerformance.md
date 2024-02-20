@@ -18,11 +18,11 @@ Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerfor
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
- -UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String> [-ActiveDeviceCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
- [-ModelAppHealthScore <Double>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String> [-ResponseHeadersVariable <String>]
+ [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>] [-DeviceManufacturer <String>]
+ [-DeviceModel <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-MeanTimeToFailureInMinutes <Int32>] [-ModelAppHealthScore <Double>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,16 +30,18 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
  -UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
- -InputObject <IDeviceManagementIdentity> [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>]
- [-DeviceManufacturer <String>] [-DeviceModel <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
- [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-ModelAppHealthScore <Double>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>] [-ActiveDeviceCount <Int32>]
+ [-AdditionalProperties <Hashtable>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
+ [-ModelAppHealthScore <Double>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -47,7 +49,8 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -254,6 +257,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsAppHealthDeviceModelPerformanceId
 The unique identifier of userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -311,7 +329,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,34 +15,35 @@ Update the navigation property appLogCollectionRequests in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest -AppLogCollectionRequestId <String>
- -MobileAppTroubleshootingEventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>]
- [-Status <AppLogUploadState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -MobileAppTroubleshootingEventId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>]
+ [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest -AppLogCollectionRequestId <String>
  -MobileAppTroubleshootingEventId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>]
- [-Status <AppLogUploadState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>]
+ [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
  -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -218,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 AppLogUploadStatus
 
@@ -290,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

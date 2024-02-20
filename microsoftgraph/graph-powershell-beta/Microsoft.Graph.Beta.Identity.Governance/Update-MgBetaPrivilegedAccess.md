@@ -14,8 +14,9 @@ Update entity in privilegedAccess
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrivilegedAccess -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphGovernanceResource[]>]
+Update-MgBetaPrivilegedAccess -PrivilegedAccessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-Resources <IMicrosoftGraphGovernanceResource[]>]
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
@@ -26,13 +27,15 @@ Update-MgBetaPrivilegedAccess -PrivilegedAccessId <String> [-AdditionalPropertie
 ### Update
 ```
 Update-MgBetaPrivilegedAccess -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphPrivilegedAccess>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphGovernanceResource[]>]
+Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-Resources <IMicrosoftGraphGovernanceResource[]>]
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
@@ -43,8 +46,8 @@ Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-Addit
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -191,6 +194,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleAssignmentRequests
 A collection of role assignment requests for the provider.
 To construct, see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
@@ -297,7 +315,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

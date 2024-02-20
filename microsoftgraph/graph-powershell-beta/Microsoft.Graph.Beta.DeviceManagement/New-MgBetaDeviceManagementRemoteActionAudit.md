@@ -14,17 +14,19 @@ Create new navigation property to remoteActionAudits for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementRemoteActionAudit [-Action <RemoteAction>] [-ActionState <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
- [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementRemoteActionAudit [-ResponseHeadersVariable <String>] [-Action <RemoteAction>]
+ [-ActionState <String>] [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>]
+ [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
+ [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
+ [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteActionAudit>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -229,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserName
 \[deprecated\] Please use InitiatedByUserPrincipalName instead.
 
@@ -285,7 +302,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

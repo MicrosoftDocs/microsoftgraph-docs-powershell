@@ -17,7 +17,8 @@ Update the navigation property managedDevices in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
  [-ChassisType <ChassisType>] [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
  [-CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]
@@ -50,14 +51,14 @@ Update-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String> [-Additiona
 ### Update
 ```
 Update-MgBetaDeviceManagementManagedDevice -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphManagedDevice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
  [-ChassisType <ChassisType>] [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
  [-CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]
@@ -90,8 +91,8 @@ Update-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdenti
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDevice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -747,6 +748,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tag IDs for this Device instance.
 
@@ -867,7 +883,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

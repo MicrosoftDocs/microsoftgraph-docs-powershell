@@ -14,31 +14,34 @@ Invoke action selfActivate
 
 ### SelfExpanded (Default)
 ```
-Invoke-MgBetaSelfPrivilegedRoleActivate -PrivilegedRoleId <String> [-AdditionalProperties <Hashtable>]
- [-Duration <String>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSelfPrivilegedRoleActivate -PrivilegedRoleId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Duration <String>] [-Reason <String>] [-TicketNumber <String>]
+ [-TicketSystem <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Self
 ```
 Invoke-MgBetaSelfPrivilegedRoleActivate -PrivilegedRoleId <String>
  -BodyParameter <IPathsFneytmPrivilegedrolesPrivilegedroleIdMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SelfViaIdentityExpanded
 ```
 Invoke-MgBetaSelfPrivilegedRoleActivate -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Duration <String>] [-Reason <String>] [-TicketNumber <String>]
- [-TicketSystem <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Duration <String>]
+ [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SelfViaIdentity
 ```
 Invoke-MgBetaSelfPrivilegedRoleActivate -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsFneytmPrivilegedrolesPrivilegedroleIdMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -183,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TicketNumber
 .
 
@@ -255,7 +273,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

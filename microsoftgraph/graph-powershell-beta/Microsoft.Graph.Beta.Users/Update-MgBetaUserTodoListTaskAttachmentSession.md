@@ -18,30 +18,32 @@ Update the navigation property attachmentSessions in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -TodoTaskListId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-NextExpectedRanges <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
  -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-NextExpectedRanges <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphAttachmentSession> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAttachmentSession> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -204,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TodoTaskId
 The unique identifier of todoTask
 
@@ -291,7 +308,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentSession
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

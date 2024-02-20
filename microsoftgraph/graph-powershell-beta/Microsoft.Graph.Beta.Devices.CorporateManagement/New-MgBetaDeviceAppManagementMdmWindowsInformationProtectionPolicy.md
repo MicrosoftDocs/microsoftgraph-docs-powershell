@@ -17,9 +17,9 @@ Create new navigation property to mdmWindowsInformationProtectionPolicies for de
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-AzureRightsManagementServicesAllowed]
- [-CreatedDateTime <DateTime>]
+New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]
+ [-AzureRightsManagementServicesAllowed] [-CreatedDateTime <DateTime>]
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
@@ -46,7 +46,8 @@ New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy [-AdditionalP
 ### Create
 ```
 New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy -BodyParameter <Hashtable>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -548,6 +549,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RevokeOnUnenrollDisabled
 This policy controls whether to revoke the WIP keys when a device unenrolls from the management service.
 If set to 1 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment.
@@ -668,7 +684,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

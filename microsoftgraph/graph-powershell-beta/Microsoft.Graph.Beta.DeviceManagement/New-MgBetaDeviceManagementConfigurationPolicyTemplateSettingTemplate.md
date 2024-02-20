@@ -15,7 +15,8 @@ Create new navigation property to settingTemplates for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
- -DeviceManagementConfigurationPolicyTemplateId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ -DeviceManagementConfigurationPolicyTemplateId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
  [-SettingInstanceTemplate <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,14 +26,15 @@ New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
 ```
 New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
  -DeviceManagementConfigurationPolicyTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
  [-SettingInstanceTemplate <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,8 +43,9 @@ New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObjec
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,6 +161,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingDefinitions
 List of related Setting Definitions
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
@@ -232,7 +250,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

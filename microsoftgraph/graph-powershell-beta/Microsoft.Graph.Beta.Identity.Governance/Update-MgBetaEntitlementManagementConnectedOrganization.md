@@ -18,37 +18,37 @@ Update a connectedOrganization object to change one or more of its properties.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-Id <String>] [-IdentitySources <IMicrosoftGraphIdentitySource[]>]
- [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>]
- [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
+ [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId <String>
- -BodyParameter <IMicrosoftGraphConnectedOrganization> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnectedOrganization> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-Id <String>] [-IdentitySources <IMicrosoftGraphIdentitySource[]>]
- [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>]
- [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
+ [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphConnectedOrganization> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnectedOrganization> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -331,6 +331,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 connectedOrganizationState
 
@@ -388,7 +403,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

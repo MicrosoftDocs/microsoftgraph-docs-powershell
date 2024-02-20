@@ -15,7 +15,7 @@ Create new navigation property to assignments for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementIntuneBrandingProfileAssignment -IntuneBrandingProfileId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,14 +23,15 @@ New-MgBetaDeviceManagementIntuneBrandingProfileAssignment -IntuneBrandingProfile
 ### Create
 ```
 New-MgBetaDeviceManagementIntuneBrandingProfileAssignment -IntuneBrandingProfileId <String>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfileAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfileAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementIntuneBrandingProfileAssignment
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,8 +40,8 @@ New-MgBetaDeviceManagementIntuneBrandingProfileAssignment
 ```
 New-MgBetaDeviceManagementIntuneBrandingProfileAssignment
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfileAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfileAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -156,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Target
 Base type for assignment targets.
 To construct, see NOTES section for TARGET properties and create a hash table.
@@ -214,7 +230,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfileAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,7 +15,8 @@ Invoke action removeLanguageFiles
 ### RemoveExpanded (Default)
 ```
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
- -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>]
+ -GroupPolicyUploadedDefinitionFileId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -26,14 +27,15 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -GroupPolicyUploadedDefinitionFileId <String>
  -BodyParameter <IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
 ```
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -44,8 +46,8 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -176,6 +178,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -218,7 +235,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

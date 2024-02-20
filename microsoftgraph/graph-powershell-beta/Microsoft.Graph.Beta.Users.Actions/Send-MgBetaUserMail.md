@@ -22,32 +22,33 @@ To learn more about the steps involved in the backend before a mail is delivered
 
 ### SendExpanded (Default)
 ```
-Send-MgBetaUserMail -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <IMicrosoftGraphMessage>]
- [-SaveToSentItems] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Send-MgBetaUserMail -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaUserMail -UserId <String>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
-Send-MgBetaUserMail -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Send-MgBetaUserMail -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgBetaUserMail -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -299,6 +300,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SaveToSentItems
 .
 
@@ -371,7 +387,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

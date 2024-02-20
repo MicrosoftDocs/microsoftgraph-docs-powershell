@@ -15,11 +15,11 @@ Create a new accessPackageCatalog object.
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementCatalog [-AccessPackages <IMicrosoftGraphAccessPackage[]>]
- [-AdditionalProperties <Hashtable>] [-CatalogType <String>] [-CreatedDateTime <DateTime>]
- [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedDateTime <DateTime>]
- [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
+New-MgEntitlementManagementCatalog [-ResponseHeadersVariable <String>]
+ [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>] [-CatalogType <String>]
+ [-CreatedDateTime <DateTime>] [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible]
+ [-ModifiedDateTime <DateTime>] [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
  [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-State <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -28,7 +28,8 @@ New-MgEntitlementManagementCatalog [-AccessPackages <IMicrosoftGraphAccessPackag
 ### Create
 ```
 New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +313,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 accessPackageCatalogState
 
@@ -368,7 +384,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

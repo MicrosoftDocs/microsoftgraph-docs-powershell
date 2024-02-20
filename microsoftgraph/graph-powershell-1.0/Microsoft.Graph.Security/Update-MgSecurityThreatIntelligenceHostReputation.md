@@ -17,32 +17,32 @@ Update the navigation property reputation in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatIntelligenceHostReputation -HostId <String> [-AdditionalProperties <Hashtable>]
- [-Classification <String>] [-Id <String>] [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>]
- [-Score <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgSecurityThreatIntelligenceHostReputation -HostId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
+Update-MgSecurityThreatIntelligenceHostReputation -HostId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>]
  [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>] [-Score <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgSecurityThreatIntelligenceHostReputation -HostId <String>
+ -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Classification <String>]
+ [-Id <String>] [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>] [-Score <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -173,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rules
 A collection of rules that have been used to calculate the classification and score.
 To construct, see NOTES section for RULES properties and create a hash table.
@@ -247,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

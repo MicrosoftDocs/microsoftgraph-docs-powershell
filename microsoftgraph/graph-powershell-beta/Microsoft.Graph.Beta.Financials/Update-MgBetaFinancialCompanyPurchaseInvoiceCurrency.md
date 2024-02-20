@@ -15,31 +15,33 @@ Update the navigation property currency in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceCurrency -CompanyId <String> -PurchaseInvoiceId <String>
- [-AdditionalProperties <Hashtable>] [-AmountDecimalPlaces <String>] [-AmountRoundingPrecision <Decimal>]
- [-Code <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Symbol <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AmountDecimalPlaces <String>]
+ [-AmountRoundingPrecision <Decimal>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Symbol <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceCurrency -CompanyId <String> -PurchaseInvoiceId <String>
- -BodyParameter <IMicrosoftGraphCurrency> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCurrency> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceCurrency -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-AmountDecimalPlaces <String>] [-AmountRoundingPrecision <Decimal>]
- [-Code <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Symbol <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AmountDecimalPlaces <String>]
+ [-AmountRoundingPrecision <Decimal>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Symbol <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceCurrency -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCurrency> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCurrency> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -244,6 +246,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Symbol
 .
 
@@ -301,7 +318,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCurrency
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

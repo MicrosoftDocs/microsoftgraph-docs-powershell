@@ -18,9 +18,9 @@ Create a new windowsInformationProtectionPolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementWindowsInformationProtectionPolicy [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-AzureRightsManagementServicesAllowed]
- [-CreatedDateTime <DateTime>]
+New-MgDeviceAppManagementWindowsInformationProtectionPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]
+ [-AzureRightsManagementServicesAllowed] [-CreatedDateTime <DateTime>]
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-DaysWithoutContactBeforeUnenroll <Int32>] [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
@@ -52,8 +52,8 @@ New-MgDeviceAppManagementWindowsInformationProtectionPolicy [-AdditionalProperti
 ### Create
 ```
 New-MgDeviceAppManagementWindowsInformationProtectionPolicy
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -722,6 +722,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RevokeOnMdmHandoffDisabled
 New property in RS2, pending documentation
 
@@ -857,7 +872,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

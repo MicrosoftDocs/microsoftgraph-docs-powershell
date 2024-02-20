@@ -15,31 +15,33 @@ Invoke action deprovision
 ### DeprovisionExpanded (Default)
 ```
 Invoke-MgBetaDeprovisionUserManagedDevice -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-DeprovisionReason <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeprovisionReason <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Deprovision
 ```
 Invoke-MgBetaDeprovisionUserManagedDevice -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeprovisionViaIdentityExpanded
 ```
 Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DeprovisionReason <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeprovisionReason <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeprovisionViaIdentity
 ```
 Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -169,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -226,7 +243,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

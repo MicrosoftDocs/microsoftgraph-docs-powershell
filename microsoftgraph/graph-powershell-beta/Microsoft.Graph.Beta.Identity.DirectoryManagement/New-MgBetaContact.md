@@ -17,10 +17,10 @@ Add new entity to contacts
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaContact [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalOfficeAddress[]>]
- [-CompanyName <String>] [-DeletedDateTime <DateTime>] [-Department <String>]
- [-DirectReports <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-GivenName <String>]
- [-Id <String>] [-JobTitle <String>] [-Mail <String>] [-MailNickname <String>]
+New-MgBetaContact [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Addresses <IMicrosoftGraphPhysicalOfficeAddress[]>] [-CompanyName <String>] [-DeletedDateTime <DateTime>]
+ [-Department <String>] [-DirectReports <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
+ [-GivenName <String>] [-Id <String>] [-JobTitle <String>] [-Mail <String>] [-MailNickname <String>]
  [-Manager <IMicrosoftGraphDirectoryObject>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-OnPremisesLastSyncDateTime <DateTime>]
  [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnabled]
@@ -33,8 +33,8 @@ New-MgBetaContact [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGra
 
 ### Create
 ```
-New-MgBetaContact -BodyParameter <IMicrosoftGraphOrgContact> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaContact -BodyParameter <IMicrosoftGraphOrgContact> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -407,6 +407,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServiceProvisioningErrors
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
@@ -514,7 +529,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrgContact
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

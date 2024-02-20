@@ -15,16 +15,17 @@ Create new navigation property to resourceRoles for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageResourceRequestId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded2
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageResourceRequestId <String>
- -AccessPackageResourceId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ -AccessPackageResourceId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,8 +33,8 @@ New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageReso
 ### CreateExpanded1
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageResourceRequestId <String>
- -AccessPackageResourceRoleId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ -AccessPackageResourceRoleId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,66 +43,71 @@ New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageReso
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageResourceRequestId <String>
  -AccessPackageResourceId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageResourceRequestId <String>
  -AccessPackageResourceRoleId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -AccessPackageResourceRequestId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded2
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity2
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -324,6 +330,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -366,7 +387,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

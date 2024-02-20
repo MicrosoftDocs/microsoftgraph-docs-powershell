@@ -15,6 +15,25 @@ Update the navigation property items in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String> -SiteId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-DeletedFromLocation <String>] [-Description <String>] [-ETag <String>]
+ [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-Size <Int64>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphRecycleBinItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>]
  [-DeletedFromLocation <String>] [-Description <String>] [-ETag <String>] [-Id <String>]
@@ -24,29 +43,11 @@ Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaGroupSiteRecycleBinItem -GroupId <String> -RecycleBinItemId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphRecycleBinItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DeletedFromLocation <String>] [-Description <String>] [-ETag <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Size <Int64>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphRecycleBinItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRecycleBinItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -368,6 +369,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -456,7 +472,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecycleBinItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

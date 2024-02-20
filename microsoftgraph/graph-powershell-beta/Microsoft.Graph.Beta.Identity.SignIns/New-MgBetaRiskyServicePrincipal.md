@@ -17,17 +17,19 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaRiskyServicePrincipal [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AppId <String>]
- [-DisplayName <String>] [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>]
- [-IsEnabled] [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>]
- [-RiskLevel <String>] [-RiskState <String>] [-ServicePrincipalType <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRiskyServicePrincipal [-ResponseHeadersVariable <String>] [-AccountEnabled]
+ [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
+ [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>] [-IsEnabled] [-IsProcessing]
+ [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
+ [-ServicePrincipalType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -216,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskDetail
 riskDetail
 
@@ -336,7 +353,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,31 +18,32 @@ Invoke action validatePermission
 ### ValidateExpanded (Default)
 ```
 Test-MgBetaUserDriveItemPermission -DriveId <String> -DriveItemId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ChallengeToken <String>] [-Password <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChallengeToken <String>]
+ [-Password <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaUserDriveItemPermission -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPathsBhdbzfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
 ```
-Test-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ChallengeToken <String>] [-Password <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChallengeToken <String>] [-Password <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
 Test-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBhdbzfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -202,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -259,7 +275,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

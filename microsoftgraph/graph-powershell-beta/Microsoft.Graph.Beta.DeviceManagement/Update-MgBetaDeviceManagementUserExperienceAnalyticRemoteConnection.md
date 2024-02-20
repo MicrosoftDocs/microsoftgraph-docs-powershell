@@ -15,25 +15,7 @@ Update the navigation property userExperienceAnalyticsRemoteConnection in device
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
- -UserExperienceAnalyticsRemoteConnectionId <String> [-AdditionalProperties <Hashtable>]
- [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
- [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
- [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
- [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
- -UserExperienceAnalyticsRemoteConnectionId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <IDeviceManagementIdentity>
+ -UserExperienceAnalyticsRemoteConnectionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>]
  [-CloudPcSignInTime <Double>] [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>]
  [-DeviceId <String>] [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
@@ -41,11 +23,30 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
+ -UserExperienceAnalyticsRemoteConnectionId <String>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CloudPcFailurePercentage <Double>]
+ [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>] [-CoreBootTime <Double>]
+ [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>] [-DeviceName <String>] [-Id <String>]
+ [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>] [-UserPrincipalName <String>]
+ [-VirtualNetwork <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -318,6 +319,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsRemoteConnectionId
 The unique identifier of userExperienceAnalyticsRemoteConnection
 
@@ -405,7 +421,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

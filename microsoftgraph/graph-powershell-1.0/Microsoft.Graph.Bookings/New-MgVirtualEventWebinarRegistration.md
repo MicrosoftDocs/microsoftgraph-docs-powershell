@@ -17,9 +17,9 @@ Create new navigation property to registrations for solutions
 
 ### CreateExpanded (Default)
 ```
-New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId <String> [-AdditionalProperties <Hashtable>]
- [-CancelationDateTime <DateTime>] [-Email <String>] [-FirstName <String>] [-Id <String>] [-LastName <String>]
- [-RegistrationDateTime <DateTime>]
+New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CancelationDateTime <DateTime>] [-Email <String>] [-FirstName <String>]
+ [-Id <String>] [-LastName <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>] [-Status <String>]
  [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -28,15 +28,15 @@ New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId <String> [-Addition
 ### Create
 ```
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-CancelationDateTime <DateTime>] [-Email <String>] [-FirstName <String>] [-Id <String>] [-LastName <String>]
- [-RegistrationDateTime <DateTime>]
+New-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CancelationDateTime <DateTime>] [-Email <String>] [-FirstName <String>]
+ [-Id <String>] [-LastName <String>] [-RegistrationDateTime <DateTime>]
  [-RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>] [-Status <String>]
  [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -45,8 +45,8 @@ New-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Additio
 ### CreateViaIdentity
 ```
 New-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventRegistration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -243,6 +243,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 virtualEventAttendeeRegistrationStatus
 
@@ -331,7 +346,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

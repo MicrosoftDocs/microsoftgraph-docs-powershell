@@ -17,23 +17,7 @@ Update the navigation property auditEvents in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>]
- [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
- [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
- [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> [-ResponseHeadersVariable <String>]
  [-Activity <String>] [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>]
  [-ActivityResult <String>] [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>]
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>]
@@ -41,11 +25,29 @@ Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministr
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+ [-ResponseHeadersVariable <String>] [-Activity <String>] [-ActivityDateTime <DateTime>]
+ [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
+ [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
+ [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphAuditEvent> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -328,6 +330,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -370,7 +387,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

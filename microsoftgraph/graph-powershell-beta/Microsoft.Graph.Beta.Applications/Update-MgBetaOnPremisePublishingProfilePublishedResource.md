@@ -16,7 +16,7 @@ Update the properties of published resource  publishedResource object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId <String>
- -PublishedResourceId <String> [-AdditionalProperties <Hashtable>]
+ -PublishedResourceId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-DisplayName <String>] [-Id <String>]
  [-PublishingType <String>] [-ResourceName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,22 +25,24 @@ Update-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingPr
 ### Update
 ```
 Update-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId <String>
- -PublishedResourceId <String> -BodyParameter <IMicrosoftGraphPublishedResource> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PublishedResourceId <String> -BodyParameter <IMicrosoftGraphPublishedResource>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
- [-DisplayName <String>] [-Id <String>] [-PublishingType <String>] [-ResourceName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-DisplayName <String>] [-Id <String>]
+ [-PublishingType <String>] [-ResourceName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphPublishedResource> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphPublishedResource> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -238,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -280,7 +297,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublishedResource
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

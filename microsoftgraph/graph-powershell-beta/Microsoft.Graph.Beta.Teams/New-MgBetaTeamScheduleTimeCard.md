@@ -14,36 +14,38 @@ Create a timeCard instance in a schedule.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTeamScheduleTimeCard -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-Breaks <IMicrosoftGraphTimeCardBreak[]>] [-ClockInEvent <IMicrosoftGraphTimeCardEvent>]
- [-ClockOutEvent <IMicrosoftGraphTimeCardEvent>] [-ConfirmedBy <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-Notes <IMicrosoftGraphItemBody>] [-OriginalEntry <IMicrosoftGraphTimeCardEntry>] [-State <String>]
- [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTeamScheduleTimeCard -TeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Breaks <IMicrosoftGraphTimeCardBreak[]>]
+ [-ClockInEvent <IMicrosoftGraphTimeCardEvent>] [-ClockOutEvent <IMicrosoftGraphTimeCardEvent>]
+ [-ConfirmedBy <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Notes <IMicrosoftGraphItemBody>]
+ [-OriginalEntry <IMicrosoftGraphTimeCardEntry>] [-State <String>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTeamScheduleTimeCard -TeamId <String> -BodyParameter <IMicrosoftGraphTimeCard>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Breaks <IMicrosoftGraphTimeCardBreak[]>] [-ClockInEvent <IMicrosoftGraphTimeCardEvent>]
- [-ClockOutEvent <IMicrosoftGraphTimeCardEvent>] [-ConfirmedBy <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-Notes <IMicrosoftGraphItemBody>] [-OriginalEntry <IMicrosoftGraphTimeCardEntry>] [-State <String>]
- [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Breaks <IMicrosoftGraphTimeCardBreak[]>]
+ [-ClockInEvent <IMicrosoftGraphTimeCardEvent>] [-ClockOutEvent <IMicrosoftGraphTimeCardEvent>]
+ [-ConfirmedBy <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Notes <IMicrosoftGraphItemBody>]
+ [-OriginalEntry <IMicrosoftGraphTimeCardEntry>] [-State <String>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeCard>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +314,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 timeCardState
 
@@ -399,7 +416,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

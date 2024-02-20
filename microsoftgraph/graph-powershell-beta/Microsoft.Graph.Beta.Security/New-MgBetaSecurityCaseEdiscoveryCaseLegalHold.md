@@ -15,25 +15,7 @@ Create a new ediscoveryHoldPolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
- [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Errors <String[]>] [-Id <String>] [-IsEnabled]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
- [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
+New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
  [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
@@ -42,11 +24,30 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String>
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Errors <String[]>] [-Id <String>] [-IsEnabled]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
+ [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryHoldPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -329,6 +330,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data sources that represent SharePoint sites.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -418,7 +434,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryHoldPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

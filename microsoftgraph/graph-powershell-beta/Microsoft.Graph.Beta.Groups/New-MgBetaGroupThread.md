@@ -20,7 +20,7 @@ Note: You can also start a new thread in an existing conversation.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupThread -GroupId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupThread -GroupId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments] [-Id <String>] [-IsLocked]
  [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
@@ -30,22 +30,24 @@ New-MgBetaGroupThread -GroupId <String> [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaGroupThread -GroupId <String> -BodyParameter <IMicrosoftGraphConversationThread>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupThread -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments] [-Id <String>] [-IsLocked]
- [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
+New-MgBetaGroupThread -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments]
+ [-Id <String>] [-IsLocked] [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>]
+ [-Preview <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversationThread>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +297,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Topic
 The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
@@ -387,7 +404,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationThread
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

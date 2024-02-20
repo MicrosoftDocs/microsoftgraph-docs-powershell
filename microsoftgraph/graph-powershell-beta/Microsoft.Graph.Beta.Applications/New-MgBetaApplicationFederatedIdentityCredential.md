@@ -20,32 +20,32 @@ Maximum of 20 objects can be added to an application.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaApplicationFederatedIdentityCredential -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-Audiences <String[]>] [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name <String>]
- [-Subject <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaApplicationFederatedIdentityCredential -ApplicationId <String>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
+New-MgBetaApplicationFederatedIdentityCredential -ApplicationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
  [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaApplicationFederatedIdentityCredential -ApplicationId <String>
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Audiences <String[]>]
+ [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name <String>] [-Subject <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -262,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Subject
 Required.
 The identifier of the external software workload within the external identity provider.
@@ -325,7 +340,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

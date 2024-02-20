@@ -18,7 +18,8 @@ Update the navigation property analytics in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserDriveItemAnalytic -DriveId <String> -DriveItemId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,14 +27,14 @@ Update-MgBetaUserDriveItemAnalytic -DriveId <String> -DriveItemId <String> -User
 ### Update
 ```
 Update-MgBetaUserDriveItemAnalytic -DriveId <String> -DriveItemId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphItemAnalytics> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemAnalytics> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserDriveItemAnalytic -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgBetaUserDriveItemAnalytic -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,7 +42,8 @@ Update-MgBetaUserDriveItemAnalytic -InputObject <IFilesIdentity> [-AdditionalPro
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDriveItemAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphItemAnalytics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -277,7 +294,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAnalytics
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

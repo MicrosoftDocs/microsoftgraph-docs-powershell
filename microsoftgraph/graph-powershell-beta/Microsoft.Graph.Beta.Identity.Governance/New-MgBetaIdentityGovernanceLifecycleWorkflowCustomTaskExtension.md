@@ -17,8 +17,8 @@ Create a new customTaskExtension object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>]
+New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-CallbackConfiguration <IMicrosoftGraphCustomExtensionCallbackConfiguration>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
@@ -30,8 +30,8 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension [-AdditionalPro
 ### Create
 ```
 New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
- -BodyParameter <IMicrosoftGraphIdentityGovernanceCustomTaskExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceCustomTaskExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -307,6 +307,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -348,7 +363,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceCustomTaskExtension
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

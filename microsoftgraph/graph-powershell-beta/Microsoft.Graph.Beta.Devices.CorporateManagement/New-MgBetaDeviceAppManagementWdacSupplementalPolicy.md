@@ -14,7 +14,8 @@ Create new navigation property to wdacSupplementalPolicies for deviceAppManageme
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementWdacSupplementalPolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceAppManagementWdacSupplementalPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
  [-ContentFileName <String>] [-ContentInputFile <String>] [-CreationDateTime <DateTime>]
  [-DeploySummary <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>]
@@ -28,8 +29,9 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicy [-AdditionalProperties <Hash
 ### Create
 ```
 New-MgBetaDeviceAppManagementWdacSupplementalPolicy
- -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -252,6 +254,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
 
@@ -323,7 +340,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

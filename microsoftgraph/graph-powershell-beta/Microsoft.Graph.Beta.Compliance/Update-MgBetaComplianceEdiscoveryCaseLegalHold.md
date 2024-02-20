@@ -16,9 +16,10 @@ Update the properties of a legalHold object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId <String> -LegalHoldId <String>
- [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
- [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Errors <String[]>] [-Id <String>] [-IsEnabled]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphEdiscoveryUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphEdiscoveryUserSource[]>] [-Headers <IDictionary>]
@@ -28,16 +29,17 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId <String> -LegalHoldId <St
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId <String> -LegalHoldId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryLegalHold> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryLegalHold> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
- [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Errors <String[]>] [-Id <String>] [-IsEnabled]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphEdiscoveryUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphEdiscoveryUserSource[]>] [-Headers <IDictionary>]
@@ -47,8 +49,8 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryLegalHold> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryLegalHold> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -333,6 +335,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data source entity for SharePoint sites associated with the legal hold.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -439,7 +456,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryLegalHold
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

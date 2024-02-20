@@ -18,18 +18,19 @@ Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPe
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
- [-AdditionalProperties <Hashtable>] [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>]
- [-CloudProvisioningScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-ModelDeviceCount <Int32>] [-WindowsScore <Double>]
- [-WorkFromAnywhereScore <Double>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CloudIdentityScore <Double>]
+ [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
+ [-ModelDeviceCount <Int32>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -241,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WindowsScore
 The window score of the device model.
 Valid values 0 to 100.
@@ -322,7 +338,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

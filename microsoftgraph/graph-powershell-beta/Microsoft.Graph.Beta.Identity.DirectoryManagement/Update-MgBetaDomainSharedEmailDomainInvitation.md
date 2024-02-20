@@ -15,31 +15,31 @@ Update the navigation property sharedEmailDomainInvitations in domains
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDomainSharedEmailDomainInvitation -DomainId <String> -SharedEmailDomainInvitationId <String>
- [-AdditionalProperties <Hashtable>] [-ExpiryTime <DateTime>] [-Id <String>] [-InvitationDomain <String>]
- [-InvitationStatus <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpiryTime <DateTime>]
+ [-Id <String>] [-InvitationDomain <String>] [-InvitationStatus <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDomainSharedEmailDomainInvitation -DomainId <String> -SharedEmailDomainInvitationId <String>
- -BodyParameter <IMicrosoftGraphSharedEmailDomainInvitation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedEmailDomainInvitation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ExpiryTime <DateTime>] [-Id <String>] [-InvitationDomain <String>]
- [-InvitationStatus <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpiryTime <DateTime>]
+ [-Id <String>] [-InvitationDomain <String>] [-InvitationStatus <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphSharedEmailDomainInvitation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedEmailDomainInvitation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedEmailDomainInvitationId
 The unique identifier of sharedEmailDomainInvitation
 
@@ -257,7 +272,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedEmailDomainInvitation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

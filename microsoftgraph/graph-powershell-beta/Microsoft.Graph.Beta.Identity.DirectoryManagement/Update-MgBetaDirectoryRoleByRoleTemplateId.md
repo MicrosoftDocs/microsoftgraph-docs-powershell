@@ -17,34 +17,35 @@ Update entity in directoryRoles by roleTemplateId
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDirectoryRoleByRoleTemplateId -RoleTemplateId <String> [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-RoleTemplateId1 <String>]
- [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Headers <IDictionary>]
+Update-MgBetaDirectoryRoleByRoleTemplateId -RoleTemplateId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-RoleTemplateId1 <String>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDirectoryRoleByRoleTemplateId [-RoleTemplateId <String>]
- -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectoryRoleByRoleTemplateId -RoleTemplateId <String>
- -BodyParameter <IMicrosoftGraphDirectoryRole> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDirectoryRole> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphDirectoryRole> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDirectoryRole> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -215,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleTemplateId
 Alternate key of directoryRole
 
@@ -320,7 +336,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

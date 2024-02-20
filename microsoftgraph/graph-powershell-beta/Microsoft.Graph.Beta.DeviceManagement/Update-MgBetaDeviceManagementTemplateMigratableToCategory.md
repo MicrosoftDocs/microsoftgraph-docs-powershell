@@ -16,8 +16,8 @@ Update the navigation property categories in deviceManagement
 ```
 Update-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String> -DeviceManagementTemplateSettingCategoryId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
- [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-HasRequiredSetting] [-Id <String>] [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,15 +26,15 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTempl
 ```
 Update-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String> -DeviceManagementTemplateSettingCategoryId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
- [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-HasRequiredSetting] [-Id <String>] [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +42,8 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceM
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingDefinitions
 The setting definitions this category contains
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
@@ -293,7 +308,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

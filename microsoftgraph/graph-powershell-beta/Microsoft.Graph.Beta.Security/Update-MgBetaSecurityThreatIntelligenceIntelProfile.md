@@ -18,7 +18,7 @@ Update the navigation property intelProfiles in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityThreatIntelligenceIntelProfile -IntelligenceProfileId <String>
- [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
  [-CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
@@ -30,14 +30,14 @@ Update-MgBetaSecurityThreatIntelligenceIntelProfile -IntelligenceProfileId <Stri
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceIntelProfile -IntelligenceProfileId <String>
- -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
  [-CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
@@ -49,8 +49,8 @@ Update-MgBetaSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdent
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -261,6 +261,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Summary
 formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
@@ -365,7 +380,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

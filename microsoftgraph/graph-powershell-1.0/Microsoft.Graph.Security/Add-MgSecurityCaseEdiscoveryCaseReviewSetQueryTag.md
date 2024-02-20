@@ -19,7 +19,7 @@ For details, see Tag documents in a review set in eDiscovery.
 ### ApplyExpanded (Default)
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- -EdiscoveryReviewSetQueryId <String> [-AdditionalProperties <Hashtable>]
+ -EdiscoveryReviewSetQueryId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
  [-TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,14 +30,15 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId <String> -Ed
 Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  -EdiscoveryReviewSetQueryId <String>
  -BodyParameter <IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentityExpanded
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
  [-TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,8 +47,8 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentit
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -209,6 +210,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TagsToAdd
 .
 To construct, see NOTES section for TAGSTOADD properties and create a hash table.
@@ -283,7 +299,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

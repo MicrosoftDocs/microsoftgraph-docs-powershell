@@ -19,30 +19,32 @@ Only teachers can update these settings.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEducationClassAssignmentSetting -EducationClassId <String> [-AdditionalProperties <Hashtable>]
- [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>] [-Id <String>] [-SubmissionAnimationDisabled]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEducationClassAssignmentSetting -EducationClassId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
+ [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationClassAssignmentSetting -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>] [-Id <String>] [-SubmissionAnimationDisabled]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
+ [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -223,6 +225,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubmissionAnimationDisabled
 Indicates whether to show the turn-in celebration animation.
 If true, indicates to skip the animation.
@@ -282,7 +299,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

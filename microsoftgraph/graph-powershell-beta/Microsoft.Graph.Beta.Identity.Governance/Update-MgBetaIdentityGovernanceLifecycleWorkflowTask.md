@@ -18,9 +18,9 @@ Update the navigation property tasks in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -TaskId <String> -WorkflowId <String>
- [-AdditionalProperties <Hashtable>] [-Arguments <IMicrosoftGraphKeyValuePair[]>] [-Category <String>]
- [-ContinueOnError] [-Description <String>] [-DisplayName <String>] [-ExecutionSequence <Int32>] [-Id <String>]
- [-IsEnabled] [-TaskDefinitionId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Arguments <IMicrosoftGraphKeyValuePair[]>] [-Category <String>] [-ContinueOnError] [-Description <String>]
+ [-DisplayName <String>] [-ExecutionSequence <Int32>] [-Id <String>] [-IsEnabled] [-TaskDefinitionId <String>]
  [-TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,16 +28,16 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -TaskId <String> -WorkflowI
 ### Update
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -TaskId <String> -WorkflowId <String>
- -BodyParameter <IMicrosoftGraphIdentityGovernanceTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Arguments <IMicrosoftGraphKeyValuePair[]>] [-Category <String>]
- [-ContinueOnError] [-Description <String>] [-DisplayName <String>] [-ExecutionSequence <Int32>] [-Id <String>]
- [-IsEnabled] [-TaskDefinitionId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Arguments <IMicrosoftGraphKeyValuePair[]>] [-Category <String>] [-ContinueOnError] [-Description <String>]
+ [-DisplayName <String>] [-ExecutionSequence <Int32>] [-Id <String>] [-IsEnabled] [-TaskDefinitionId <String>]
  [-TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,8 +45,8 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGove
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphIdentityGovernanceTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -259,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaskDefinitionId
 A unique template identifier for the task.
 For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see supported tasks.
@@ -364,7 +379,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

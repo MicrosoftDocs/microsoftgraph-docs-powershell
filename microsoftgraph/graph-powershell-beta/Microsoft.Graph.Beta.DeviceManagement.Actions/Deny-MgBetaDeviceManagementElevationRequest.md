@@ -15,27 +15,29 @@ Invoke action deny
 ### DenyExpanded (Default)
 ```
 Deny-MgBetaDeviceManagementElevationRequest -PrivilegeManagementElevationRequestId <String>
- [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Deny
 ```
 Deny-MgBetaDeviceManagementElevationRequest -PrivilegeManagementElevationRequestId <String>
  -Body <IPaths1Sy0ZovDevicemanagementElevationrequestsPrivilegemanagementelevationrequestIdMicrosoftGraphDenyPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DenyViaIdentityExpanded
 ```
 Deny-MgBetaDeviceManagementElevationRequest -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DenyViaIdentity
 ```
 Deny-MgBetaDeviceManagementElevationRequest -InputObject <IDeviceManagementActionsIdentity>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1Sy0ZovDevicemanagementElevationrequestsPrivilegemanagementelevationrequestIdMicrosoftGraphDenyPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -153,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewerJustification
 .
 
@@ -210,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegeManagementElevationRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

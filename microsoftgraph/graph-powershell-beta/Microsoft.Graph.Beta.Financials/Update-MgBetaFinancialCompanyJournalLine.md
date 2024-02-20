@@ -15,16 +15,42 @@ Update the navigation property journalLines in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
- [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
- [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
- [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>]
+ [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
+ [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
+ [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
 ```
 Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> -JournalId <String>
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>]
+ [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
+ [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
+ [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> -JournalId <String>
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String>
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
  [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
  [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
  [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
@@ -32,52 +58,28 @@ Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <Str
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
-```
-Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> -JournalId <String>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
+ [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
+ [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphJournalLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -403,6 +405,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -445,7 +462,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphJournalLine
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

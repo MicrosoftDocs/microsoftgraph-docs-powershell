@@ -15,31 +15,32 @@ Update the navigation property dispositionReviewStages in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
- -RetentionLabelId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
- [-ReviewersEmailAddresses <String[]>] [-StageNumber <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -RetentionLabelId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Name <String>] [-ReviewersEmailAddresses <String[]>] [-StageNumber <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
  -RetentionLabelId <String> -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-ReviewersEmailAddresses <String[]>]
- [-StageNumber <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
+ [-ReviewersEmailAddresses <String[]>] [-StageNumber <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -170,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabelId
 The unique identifier of retentionLabel
 
@@ -257,7 +273,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

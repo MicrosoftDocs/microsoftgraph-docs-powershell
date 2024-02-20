@@ -17,12 +17,12 @@ Update the navigation property events in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
- [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
+Update-MgGroupEvent -EventId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-HasAttachments] [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
  [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
  [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
  [-Locations <IMicrosoftGraphLocation[]>]
@@ -41,17 +41,18 @@ Update-MgGroupEvent -EventId <String> -GroupId <String> [-AdditionalProperties <
 ### Update
 ```
 Update-MgGroupEvent -EventId <String> -GroupId <String> -BodyParameter <IMicrosoftGraphEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
- [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
+Update-MgGroupEvent -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-HasAttachments] [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
  [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
  [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
  [-Locations <IMicrosoftGraphLocation[]>]
@@ -70,7 +71,8 @@ Update-MgGroupEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Has
 ### UpdateViaIdentity
 ```
 Update-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -760,6 +762,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseRequested
 .
 
@@ -972,7 +989,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

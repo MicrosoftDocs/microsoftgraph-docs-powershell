@@ -19,38 +19,7 @@ Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.Yo
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
- [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
- [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
- [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
- [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
- [-Image <IMicrosoftGraphImage>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
- [-ListItem <IMicrosoftGraphListItem>] [-Location <IMicrosoftGraphGeoCoordinates>]
- [-Malware <IMicrosoftGraphMalware>] [-Media <IMicrosoftGraphMedia>] [-Name <String>]
- [-Package <IMicrosoftGraphPackage>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-PendingOperations <IMicrosoftGraphPendingOperations>] [-Permissions <IMicrosoftGraphPermission[]>]
- [-Photo <IMicrosoftGraphPhoto>] [-Publication <IMicrosoftGraphPublicationFacet>]
- [-RemoteItem <IMicrosoftGraphRemoteItem>] [-RetentionLabel <IMicrosoftGraphItemRetentionLabel>]
- [-Root <Hashtable>] [-SearchResult <IMicrosoftGraphSearchResult>] [-Shared <IMicrosoftGraphShared>]
- [-SharepointIds <IMicrosoftGraphSharepointIds>] [-Size <Int64>] [-Source <IMicrosoftGraphDriveItemSource>]
- [-SpecialFolder <IMicrosoftGraphSpecialFolder>] [-Subscriptions <IMicrosoftGraphSubscription[]>]
- [-Thumbnails <IMicrosoftGraphThumbnailSet[]>] [-Versions <IMicrosoftGraphDriveItemVersion[]>]
- [-Video <IMicrosoftGraphVideo>] [-WebDavUrl <String>] [-WebUrl <String>] [-Workbook <IMicrosoftGraphWorkbook>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphDriveItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
+ [-ResponseHeadersVariable <String>] [-Activities <IMicrosoftGraphItemActivityOld[]>]
  [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
  [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
  [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
@@ -73,10 +42,43 @@ Update-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-Activities <IMicrosof
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphDriveItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
+ [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
+ [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
+ [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
+ [-Image <IMicrosoftGraphImage>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
+ [-ListItem <IMicrosoftGraphListItem>] [-Location <IMicrosoftGraphGeoCoordinates>]
+ [-Malware <IMicrosoftGraphMalware>] [-Media <IMicrosoftGraphMedia>] [-Name <String>]
+ [-Package <IMicrosoftGraphPackage>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-PendingOperations <IMicrosoftGraphPendingOperations>] [-Permissions <IMicrosoftGraphPermission[]>]
+ [-Photo <IMicrosoftGraphPhoto>] [-Publication <IMicrosoftGraphPublicationFacet>]
+ [-RemoteItem <IMicrosoftGraphRemoteItem>] [-RetentionLabel <IMicrosoftGraphItemRetentionLabel>]
+ [-Root <Hashtable>] [-SearchResult <IMicrosoftGraphSearchResult>] [-Shared <IMicrosoftGraphShared>]
+ [-SharepointIds <IMicrosoftGraphSharepointIds>] [-Size <Int64>] [-Source <IMicrosoftGraphDriveItemSource>]
+ [-SpecialFolder <IMicrosoftGraphSpecialFolder>] [-Subscriptions <IMicrosoftGraphSubscription[]>]
+ [-Thumbnails <IMicrosoftGraphThumbnailSet[]>] [-Versions <IMicrosoftGraphDriveItemVersion[]>]
+ [-Video <IMicrosoftGraphVideo>] [-WebDavUrl <String>] [-WebUrl <String>] [-Workbook <IMicrosoftGraphWorkbook>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -727,6 +729,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabel
 itemRetentionLabel
 To construct, see NOTES section for RETENTIONLABEL properties and create a hash table.
@@ -1029,7 +1046,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

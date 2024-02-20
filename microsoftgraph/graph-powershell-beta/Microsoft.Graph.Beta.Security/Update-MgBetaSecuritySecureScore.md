@@ -17,34 +17,38 @@ Update the navigation property secureScores in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecuritySecureScore -SecureScoreId <String> [-ActiveUserCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>]
- [-AzureTenantId <String>] [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>]
- [-CurrentScore <Double>] [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>]
- [-MaxScore <Double>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
+Update-MgBetaSecuritySecureScore -SecureScoreId <String> [-ResponseHeadersVariable <String>]
+ [-ActiveUserCount <Int32>] [-AdditionalProperties <Hashtable>]
+ [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>] [-AzureTenantId <String>]
+ [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>]
+ [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>] [-MaxScore <Double>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecuritySecureScore -SecureScoreId <String> -BodyParameter <IMicrosoftGraphSecureScore>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-ActiveUserCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>]
- [-AzureTenantId <String>] [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>]
- [-CurrentScore <Double>] [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>]
- [-MaxScore <Double>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
+Update-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-ActiveUserCount <Int32>] [-AdditionalProperties <Hashtable>]
+ [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>] [-AzureTenantId <String>]
+ [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>]
+ [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>] [-MaxScore <Double>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecureScore>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -282,6 +286,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecureScoreId
 The unique identifier of secureScore
 
@@ -355,7 +374,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScore
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -20,7 +20,7 @@ The table in the Permissions section lists the resources that support open exten
 
 ### CreateExpanded (Default)
 ```
-New-MgUserMessage -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgUserMessage -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
  [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
@@ -40,17 +40,17 @@ New-MgUserMessage -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgUserMessage -UserId <String> -BodyParameter <IMicrosoftGraphMessage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserMessage -UserId <String> -BodyParameter <IMicrosoftGraphMessage> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserMessage -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
- [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
- [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
+New-MgUserMessage -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-BccRecipients <IMicrosoftGraphRecipient[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Categories <String[]>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>]
+ [-ConversationId <String>] [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
  [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
  [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
@@ -66,8 +66,9 @@ New-MgUserMessage -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable
 
 ### CreateViaIdentity
 ```
-New-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessage>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -662,6 +663,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sender
 recipient
 To construct, see NOTES section for SENDER properties and create a hash table.
@@ -829,7 +845,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

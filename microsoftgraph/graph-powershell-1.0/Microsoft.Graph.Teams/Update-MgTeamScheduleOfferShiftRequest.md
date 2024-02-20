@@ -18,7 +18,7 @@ Update the navigation property offerShiftRequests in teams
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamScheduleOfferShiftRequest -OfferShiftRequestId <String> -TeamId <String>
- [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
  [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -28,23 +28,24 @@ Update-MgTeamScheduleOfferShiftRequest -OfferShiftRequestId <String> -TeamId <St
 ### Update
 ```
 Update-MgTeamScheduleOfferShiftRequest -OfferShiftRequestId <String> -TeamId <String>
- -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientUserId <String>]
- [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
+ [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
+ [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -237,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SenderMessage
 .
 
@@ -339,7 +355,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

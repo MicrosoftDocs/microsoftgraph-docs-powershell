@@ -22,27 +22,28 @@ See subscription for maximum length of a subscription for each resource type.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSubscription -SubscriptionId <String> [-AdditionalProperties <Hashtable>] [-ApplicationId <String>]
- [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>] [-EncryptionCertificate <String>]
- [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
- [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>]
- [-NotificationQueryOptions <String>] [-NotificationUrl <String>] [-NotificationUrlAppId <String>]
- [-Resource <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgSubscription -SubscriptionId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+ [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
+ [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSubscription -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSubscription -InputObject <IChangeNotificationsIdentity> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+Update-MgSubscription -InputObject <IChangeNotificationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
  [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -51,7 +52,8 @@ Update-MgSubscription -InputObject <IChangeNotificationsIdentity> [-AdditionalPr
 ### UpdateViaIdentity
 ```
 Update-MgSubscription -InputObject <IChangeNotificationsIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -429,6 +431,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubscriptionId
 The unique identifier of subscription
 
@@ -486,7 +503,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

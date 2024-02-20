@@ -15,7 +15,7 @@ Update an existing accessPackageCatalog object to change one or more of its prop
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEntitlementManagementCatalog -AccessPackageCatalogId <String>
+Update-MgEntitlementManagementCatalog -AccessPackageCatalogId <String> [-ResponseHeadersVariable <String>]
  [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>] [-CatalogType <String>]
  [-CreatedDateTime <DateTime>] [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible]
@@ -28,17 +28,18 @@ Update-MgEntitlementManagementCatalog -AccessPackageCatalogId <String>
 ### Update
 ```
 Update-MgEntitlementManagementCatalog -AccessPackageCatalogId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>] [-CatalogType <String>]
- [-CreatedDateTime <DateTime>] [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible]
- [-ModifiedDateTime <DateTime>] [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-ResponseHeadersVariable <String>] [-AccessPackages <IMicrosoftGraphAccessPackage[]>]
+ [-AdditionalProperties <Hashtable>] [-CatalogType <String>] [-CreatedDateTime <DateTime>]
+ [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedDateTime <DateTime>]
+ [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
  [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-State <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,8 +48,8 @@ Update-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -360,6 +361,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 accessPackageCatalogState
 
@@ -417,7 +433,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

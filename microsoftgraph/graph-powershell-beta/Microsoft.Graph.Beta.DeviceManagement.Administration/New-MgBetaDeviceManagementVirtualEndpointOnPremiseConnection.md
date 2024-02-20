@@ -15,10 +15,10 @@ Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection [-AdDomainName <String>]
- [-AdDomainPassword <String>] [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>]
- [-AlternateResourceUrl <String>] [-ConnectionType <String>] [-DisplayName <String>]
- [-HealthCheckStatus <String>]
+New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection [-ResponseHeadersVariable <String>]
+ [-AdDomainName <String>] [-AdDomainPassword <String>] [-AdDomainUsername <String>]
+ [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>] [-ConnectionType <String>]
+ [-DisplayName <String>] [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-ScopeIds <String[]>]
@@ -30,8 +30,8 @@ New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection [-AdDomainName <Str
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
- -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -328,6 +328,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeIds
 .
 
@@ -478,7 +493,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOnPremisesConnection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

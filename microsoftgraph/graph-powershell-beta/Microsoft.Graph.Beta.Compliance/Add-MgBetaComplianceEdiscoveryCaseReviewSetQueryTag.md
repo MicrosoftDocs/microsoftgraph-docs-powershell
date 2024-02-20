@@ -15,9 +15,10 @@ Apply tags to documents that match the specified reviewSetQuery.
 ### ApplyExpanded (Default)
 ```
 Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
- -ReviewSetQueryId <String> [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
- [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ReviewSetQueryId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>] [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Apply
@@ -25,24 +26,25 @@ Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetI
 Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
  -ReviewSetQueryId <String>
  -BodyParameter <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentityExpanded
 ```
 Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
- [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>] [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
  -BodyParameter <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -173,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewSetId
 The unique identifier of reviewSet
 
@@ -277,7 +294,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

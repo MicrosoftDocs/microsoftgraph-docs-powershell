@@ -15,7 +15,8 @@ Update the navigation property informationProtection in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
@@ -27,14 +28,14 @@ Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
 ### Update
 ```
 Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphInformationProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInformationProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Bitlocker <IMicrosoftGraphBitlocker>]
+Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
@@ -46,8 +47,8 @@ Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-Addi
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphInformationProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInformationProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -211,6 +212,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SensitivityLabels
 .
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
@@ -316,7 +332,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

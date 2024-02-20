@@ -18,10 +18,11 @@ Create a new externalConnection object.
 
 ### CreateExpanded (Default)
 ```
-New-MgExternalConnection [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]
- [-ConnectorId <String>] [-Description <String>] [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>]
- [-Id <String>] [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
+New-MgExternalConnection [-ResponseHeadersVariable <String>]
+ [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>] [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
+ [-Description <String>] [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
+ [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
  [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Headers <IDictionary>]
@@ -31,7 +32,8 @@ New-MgExternalConnection [-ActivitySettings <IMicrosoftGraphExternalConnectorsAc
 ### Create
 ```
 New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -267,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schema
 schema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
@@ -355,7 +372,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

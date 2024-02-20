@@ -14,18 +14,19 @@ Create new navigation property to managedTenantApiNotifications for tenantRelati
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantApiNotification [-AdditionalProperties <Hashtable>]
- [-Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-IsAcknowledged] [-LastActionByUserId <String>]
- [-LastActionDateTime <DateTime>] [-Message <String>] [-Title <String>] [-UserId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantApiNotification [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsAcknowledged]
+ [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Message <String>] [-Title <String>]
+ [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantApiNotification
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantApiNotification> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantApiNotification> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -216,6 +217,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Title
 .
 
@@ -287,7 +303,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantApiNotification
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

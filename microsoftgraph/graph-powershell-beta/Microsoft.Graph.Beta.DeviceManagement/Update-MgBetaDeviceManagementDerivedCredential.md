@@ -15,8 +15,8 @@ Update the navigation property derivedCredentials in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDerivedCredential -DeviceManagementDerivedCredentialSettingsId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HelpUrl <String>] [-Id <String>]
- [-Issuer <DeviceManagementDerivedCredentialIssuer>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-HelpUrl <String>] [-Id <String>] [-Issuer <DeviceManagementDerivedCredentialIssuer>]
  [-NotificationType <DeviceManagementDerivedCredentialNotificationType>] [-RenewalThresholdPercentage <Int32>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,15 +24,15 @@ Update-MgBetaDeviceManagementDerivedCredential -DeviceManagementDerivedCredentia
 ### Update
 ```
 Update-MgBetaDeviceManagementDerivedCredential -DeviceManagementDerivedCredentialSettingsId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementDerivedCredentialSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementDerivedCredentialSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HelpUrl <String>] [-Id <String>]
- [-Issuer <DeviceManagementDerivedCredentialIssuer>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-HelpUrl <String>] [-Id <String>] [-Issuer <DeviceManagementDerivedCredentialIssuer>]
  [-NotificationType <DeviceManagementDerivedCredentialNotificationType>] [-RenewalThresholdPercentage <Int32>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,8 +40,8 @@ Update-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementId
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementDerivedCredentialSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementDerivedCredentialSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -232,6 +232,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -274,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementDerivedCredentialSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

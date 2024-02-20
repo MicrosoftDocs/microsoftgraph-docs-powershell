@@ -18,11 +18,12 @@ Update the navigation property replies in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserChatMessageReply -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
- [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId1 <String>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>]
- [-From <Hashtable>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>]
- [-Importance <String>] [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
+ -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId1 <String>] [-CreatedDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
+ [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
+ [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
  [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
@@ -34,11 +35,12 @@ Update-MgBetaUserChatMessageReply -ChatId <String> -ChatMessageId <String> -Chat
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserChatMessageReply [-ChatId <String>] -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
- [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>]
- [-From <Hashtable>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>]
- [-Importance <String>] [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-CreatedDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
+ [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
+ [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
  [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
@@ -50,14 +52,15 @@ Update-MgBetaUserChatMessageReply [-ChatId <String>] -InputObject <ITeamsIdentit
 ### Update
 ```
 Update-MgBetaUserChatMessageReply -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphChatMessage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> -BodyParameter <IMicrosoftGraphChatMessage> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -565,6 +568,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Subject
 The subject of the chat message, in plaintext.
 
@@ -669,7 +687,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

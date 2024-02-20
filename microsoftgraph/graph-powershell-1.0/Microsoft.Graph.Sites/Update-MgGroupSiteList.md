@@ -17,11 +17,12 @@ Update the navigation property lists in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupSiteList -GroupId <String> -ListId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
- [-Id <String>] [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgGroupSiteList -GroupId <String> -ListId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
+ [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
@@ -32,16 +33,18 @@ Update-MgGroupSiteList -GroupId <String> -ListId <String> -SiteId <String> [-Add
 ### Update
 ```
 Update-MgGroupSiteList -GroupId <String> -ListId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphList>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupSiteList -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
- [-Id <String>] [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgGroupSiteList -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
+ [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
@@ -52,7 +55,8 @@ Update-MgGroupSiteList -InputObject <ISitesIdentity> [-AdditionalProperties <Has
 ### UpdateViaIdentity
 ```
 Update-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -454,6 +458,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharepointIds
 sharepointIds
 To construct, see NOTES section for SHAREPOINTIDS properties and create a hash table.
@@ -574,7 +593,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

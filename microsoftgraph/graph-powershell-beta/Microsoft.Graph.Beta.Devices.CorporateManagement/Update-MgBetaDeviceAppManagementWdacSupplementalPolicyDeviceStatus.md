@@ -16,7 +16,8 @@ Update the navigation property deviceStatuses in deviceAppManagement
 ```
 Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  -WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>
- -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-AdditionalProperties <Hashtable>]
+ -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]
@@ -30,13 +31,15 @@ Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  -WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>
  -WindowsDefenderApplicationControlSupplementalPolicyId <String>
  -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]
@@ -49,7 +52,8 @@ Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
 Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -271,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserName
 The name of the user of this device.
 
@@ -373,7 +392,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

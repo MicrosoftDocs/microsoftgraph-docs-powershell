@@ -18,12 +18,13 @@ Create a new user.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaEducationUser [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
- [-Assignments <IMicrosoftGraphEducationAssignment[]>] [-BusinessPhones <String[]>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>]
- [-DisplayName <String>] [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-GivenName <String>]
- [-Id <String>] [-Mail <String>] [-MailNickname <String>] [-MailingAddress <IMicrosoftGraphPhysicalAddress>]
+New-MgBetaEducationUser [-ResponseHeadersVariable <String>] [-AccountEnabled]
+ [-AdditionalProperties <Hashtable>] [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]
+ [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Assignments <IMicrosoftGraphEducationAssignment[]>]
+ [-BusinessPhones <String[]>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>] [-DisplayName <String>]
+ [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-GivenName <String>] [-Id <String>]
+ [-Mail <String>] [-MailNickname <String>] [-MailingAddress <IMicrosoftGraphPhysicalAddress>]
  [-MiddleName <String>] [-MobilePhone <String>] [-OfficeLocation <String>]
  [-OnPremisesInfo <IMicrosoftGraphEducationOnPremisesInfo>] [-PasswordPolicies <String>]
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-PreferredLanguage <String>] [-PrimaryRole <String>]
@@ -38,8 +39,8 @@ New-MgBetaEducationUser [-AccountEnabled] [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -639,6 +640,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rubrics
 When set, the grading rubric attached to the assignment.
 To construct, see NOTES section for RUBRICS properties and create a hash table.
@@ -859,7 +875,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationUser
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

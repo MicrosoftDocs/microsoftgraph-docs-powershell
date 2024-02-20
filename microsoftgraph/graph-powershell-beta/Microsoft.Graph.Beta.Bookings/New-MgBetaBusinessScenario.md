@@ -15,8 +15,8 @@ Create a new businessScenario object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaBusinessScenario [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+New-MgBetaBusinessScenario [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-OwnerAppIds <String[]>]
  [-Planner <IMicrosoftGraphBusinessScenarioPlanner>] [-UniqueName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,8 +24,8 @@ New-MgBetaBusinessScenario [-AdditionalProperties <Hashtable>] [-CreatedBy <IMic
 
 ### Create
 ```
-New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -225,6 +225,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UniqueName
 Unique name of the scenario.
 To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario.
@@ -283,7 +298,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenario
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

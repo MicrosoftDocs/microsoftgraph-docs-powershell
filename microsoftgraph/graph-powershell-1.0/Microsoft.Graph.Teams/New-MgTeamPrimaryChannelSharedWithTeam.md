@@ -17,32 +17,32 @@ Create new navigation property to sharedWithTeams for teams
 
 ### CreateExpanded (Default)
 ```
-New-MgTeamPrimaryChannelSharedWithTeam -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
- [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgTeamPrimaryChannelSharedWithTeam -TeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedMembers <IMicrosoftGraphConversationMember[]>]
+ [-DisplayName <String>] [-Id <String>] [-IsHostTeam] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTeamPrimaryChannelSharedWithTeam -TeamId <String>
- -BodyParameter <IMicrosoftGraphSharedWithChannelTeamInfo> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedWithChannelTeamInfo> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
- [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedMembers <IMicrosoftGraphConversationMember[]>]
+ [-DisplayName <String>] [-Id <String>] [-IsHostTeam] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphSharedWithChannelTeamInfo> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedWithChannelTeamInfo> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -202,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Team
 team
 To construct, see NOTES section for TEAM properties and create a hash table.
@@ -290,7 +305,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

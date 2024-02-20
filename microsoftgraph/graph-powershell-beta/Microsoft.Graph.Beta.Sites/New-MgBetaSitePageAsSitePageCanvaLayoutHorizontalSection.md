@@ -15,30 +15,30 @@ Create new navigation property to horizontalSections for sites
 ### CreateExpanded (Default)
 ```
 New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -BaseSitePageId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <String>]
- [-Id <String>] [-Layout <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <String>] [-Id <String>] [-Layout <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -BaseSitePageId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphHorizontalSection> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphHorizontalSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <String>]
- [-Id <String>] [-Layout <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <String>] [-Id <String>] [-Layout <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphHorizontalSection> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphHorizontalSection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -201,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -258,7 +273,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

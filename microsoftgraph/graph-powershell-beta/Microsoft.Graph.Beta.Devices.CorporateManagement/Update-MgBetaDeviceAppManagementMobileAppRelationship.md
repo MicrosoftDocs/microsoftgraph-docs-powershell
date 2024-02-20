@@ -15,33 +15,33 @@ Update the navigation property relationships in deviceAppManagement
 ### UpdateExpanded1 (Default)
 ```
 Update-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -MobileAppRelationshipId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetDisplayName <String>]
- [-TargetDisplayVersion <String>] [-TargetId <String>] [-TargetPublisher <String>]
- [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-TargetDisplayName <String>] [-TargetDisplayVersion <String>] [-TargetId <String>]
+ [-TargetPublisher <String>] [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -MobileAppRelationshipId <String>
- -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetDisplayName <String>]
- [-TargetDisplayVersion <String>] [-TargetId <String>] [-TargetPublisher <String>]
- [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-TargetDisplayName <String>] [-TargetDisplayVersion <String>] [-TargetId <String>]
+ [-TargetPublisher <String>] [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -172,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetDisplayName
 The target mobile app's display name.
 
@@ -289,7 +304,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppRelationship
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

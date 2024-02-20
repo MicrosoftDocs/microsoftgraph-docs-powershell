@@ -17,9 +17,10 @@ Update the navigation property retentionEvents in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityTriggerRetentionEvent -RetentionEventId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
+Update-MgSecurityTriggerRetentionEvent -RetentionEventId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>]
+ [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
  [-EventQueries <IMicrosoftGraphSecurityEventQuery[]>]
  [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
@@ -30,15 +31,16 @@ Update-MgSecurityTriggerRetentionEvent -RetentionEventId <String> [-AdditionalPr
 ### Update
 ```
 Update-MgSecurityTriggerRetentionEvent -RetentionEventId <String>
- -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
+Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>]
+ [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
  [-EventQueries <IMicrosoftGraphSecurityEventQuery[]>]
  [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
@@ -49,8 +51,8 @@ Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-Additi
 ### UpdateViaIdentity
 ```
 Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -321,6 +323,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionEventId
 The unique identifier of retentionEvent
 
@@ -394,7 +411,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

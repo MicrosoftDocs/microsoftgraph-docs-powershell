@@ -16,9 +16,9 @@ Create an Outlook task folder under a specified outlookTaskGroup.
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskGroupId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-Id <String>] [-IsDefaultFolder]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
- [-ParentGroupKey <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-Id <String>]
+ [-IsDefaultFolder] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-Name <String>] [-ParentGroupKey <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Tasks <IMicrosoftGraphOutlookTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,14 +27,14 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskGroupId <String> -UserId <S
 ### Create
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolder -OutlookTaskGroupId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ChangeKey <String>] [-Id <String>] [-IsDefaultFolder]
+New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-Id <String>] [-IsDefaultFolder]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-ParentGroupKey <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -45,7 +45,7 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-Additio
 ### CreateViaIdentity
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphOutlookTaskFolder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -256,6 +256,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the task folder.
 Read-only.
@@ -349,7 +364,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTaskFolder
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

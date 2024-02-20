@@ -14,16 +14,16 @@ Invoke action refresh
 
 ### RefreshExpanded (Default)
 ```
-Update-MgBetaIdentityGovernanceRoleManagementAlert [-AdditionalProperties <Hashtable>] [-ScopeId <String>]
- [-ScopeType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityGovernanceRoleManagementAlert [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>]
- [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ScopeId <String>]
+ [-ScopeType <String>] [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
  [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
  [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
  [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
@@ -33,22 +33,22 @@ Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId
 ### Update
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Refresh
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>]
- [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ScopeId <String>]
+ [-ScopeType <String>] [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
  [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
  [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
  [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
@@ -58,20 +58,20 @@ Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovern
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RefreshViaIdentity
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Refresh1
 ```
-Update-MgBetaIdentityGovernanceRoleManagementAlert
+Update-MgBetaIdentityGovernanceRoleManagementAlert [-ResponseHeadersVariable <String>]
  -Body <IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -333,6 +333,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeId
 .
 
@@ -422,7 +437,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

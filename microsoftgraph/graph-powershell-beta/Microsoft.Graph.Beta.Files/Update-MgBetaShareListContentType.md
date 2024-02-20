@@ -18,27 +18,28 @@ Update the navigation property contentTypes in shares
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaShareListContentType -ContentTypeId <String> -SharedDriveItemId <String>
- [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
- [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
- [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet>]
- [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
- [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
- [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>]
+ [-Base <IMicrosoftGraphContentType>] [-BaseTypes <IMicrosoftGraphContentType[]>]
+ [-ColumnLinks <IMicrosoftGraphColumnLink[]>] [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-Description <String>]
+ [-DocumentSet <IMicrosoftGraphDocumentSet>] [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>]
+ [-Group <String>] [-Hidden] [-Id <String>] [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn]
+ [-Name <String>] [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges]
+ [-ReadOnly] [-Sealed] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaShareListContentType -ContentTypeId <String> -SharedDriveItemId <String>
- -BodyParameter <IMicrosoftGraphContentType> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContentType> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaShareListContentType -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
+Update-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
  [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
  [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
  [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet>]
@@ -51,7 +52,8 @@ Update-MgBetaShareListContentType -InputObject <IFilesIdentity> [-AdditionalProp
 ### UpdateViaIdentity
 ```
 Update-MgBetaShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -449,6 +451,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sealed
 If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -522,7 +539,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,7 +15,8 @@ Update the navigation property companyInformation in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyInformation -CompanyId <String> -CompanyInformationId <String>
- [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-CurrencyCode <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPostalAddressType>] [-CurrencyCode <String>]
  [-CurrentFiscalYearStartDate <DateTime>] [-DisplayName <String>] [-Email <String>] [-FaxNumber <String>]
  [-Id <String>] [-Industry <String>] [-LastModifiedDateTime <DateTime>] [-PhoneNumber <String>]
  [-PictureInputFile <String>] [-TaxRegistrationNumber <String>] [-Website <String>] [-Headers <IDictionary>]
@@ -25,14 +26,14 @@ Update-MgBetaFinancialCompanyInformation -CompanyId <String> -CompanyInformation
 ### Update
 ```
 Update-MgBetaFinancialCompanyInformation -CompanyId <String> -CompanyInformationId <String>
- -BodyParameter <IMicrosoftGraphCompanyInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCompanyInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaFinancialCompanyInformation -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-CurrencyCode <String>]
+Update-MgBetaFinancialCompanyInformation -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-CurrencyCode <String>]
  [-CurrentFiscalYearStartDate <DateTime>] [-DisplayName <String>] [-Email <String>] [-FaxNumber <String>]
  [-Id <String>] [-Industry <String>] [-LastModifiedDateTime <DateTime>] [-PhoneNumber <String>]
  [-PictureInputFile <String>] [-TaxRegistrationNumber <String>] [-Website <String>] [-Headers <IDictionary>]
@@ -42,8 +43,8 @@ Update-MgBetaFinancialCompanyInformation -InputObject <IFinancialsIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyInformation -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCompanyInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCompanyInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -324,6 +325,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaxRegistrationNumber
 .
 
@@ -396,7 +412,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanyInformation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

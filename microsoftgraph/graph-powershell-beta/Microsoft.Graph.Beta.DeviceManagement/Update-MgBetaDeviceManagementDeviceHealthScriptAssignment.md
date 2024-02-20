@@ -15,8 +15,8 @@ Update the navigation property assignments in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -DeviceHealthScriptAssignmentId <String>
- -DeviceHealthScriptId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-RunRemediationScript]
- [-RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]
+ -DeviceHealthScriptId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-RunRemediationScript] [-RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,13 +25,14 @@ Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -DeviceHealthScriptAss
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -DeviceHealthScriptAssignmentId <String>
  -DeviceHealthScriptId <String> -BodyParameter <IMicrosoftGraphDeviceHealthScriptAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-RunRemediationScript]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-RunRemediationScript]
  [-RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -40,8 +41,8 @@ Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -InputObject <IDeviceM
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -172,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RunRemediationScript
 Determine whether we want to run detection script only or run both detection script and remediation script
 
@@ -261,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

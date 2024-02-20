@@ -14,7 +14,7 @@ Add new entity to privilegedRoles
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrivilegedRole [-AdditionalProperties <Hashtable>]
+New-MgBetaPrivilegedRole [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>] [-Id <String>] [-Name <String>]
  [-Settings <IMicrosoftGraphPrivilegedRoleSettings>] [-Summary <IMicrosoftGraphPrivilegedRoleSummary>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,8 +22,8 @@ New-MgBetaPrivilegedRole [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -139,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Settings
 privilegedRoleSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
@@ -212,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRole
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

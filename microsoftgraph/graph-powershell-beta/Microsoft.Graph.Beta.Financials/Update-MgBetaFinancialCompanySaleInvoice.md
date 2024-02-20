@@ -15,6 +15,33 @@ Update the navigation property salesInvoices in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>]
+ [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
+ [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
+ [-CustomerName <String>] [-CustomerNumber <String>] [-CustomerPurchaseOrderReference <String>]
+ [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>] [-Email <String>]
+ [-ExternalDocumentNumber <String>] [-Id <String>] [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>]
+ [-Number <String>] [-OrderId <String>] [-OrderNumber <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
+ [-PaymentTermsId <String>] [-PhoneNumber <String>] [-PricesIncludeTax]
+ [-SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>] [-Salesperson <String>]
+ [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>] [-ShipToName <String>]
+ [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>]
+ [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
+ [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <String>
+ -BodyParameter <IMicrosoftGraphSalesInvoice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaFinancialCompanySaleInvoice -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
  [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
  [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
@@ -32,37 +59,11 @@ Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <St
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <String>
- -BodyParameter <IMicrosoftGraphSalesInvoice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaFinancialCompanySaleInvoice -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-BillToCustomerId <String>] [-BillToCustomerNumber <String>] [-BillToName <String>]
- [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
- [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
- [-CustomerName <String>] [-CustomerNumber <String>] [-CustomerPurchaseOrderReference <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>] [-Email <String>]
- [-ExternalDocumentNumber <String>] [-Id <String>] [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>]
- [-Number <String>] [-OrderId <String>] [-OrderNumber <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
- [-PaymentTermsId <String>] [-PhoneNumber <String>] [-PricesIncludeTax]
- [-SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>] [-Salesperson <String>]
- [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>] [-ShipToName <String>]
- [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>]
- [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
- [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleInvoice -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesInvoice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesInvoice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -571,6 +572,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesInvoiceId
 The unique identifier of salesInvoice
 
@@ -812,7 +828,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesInvoice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

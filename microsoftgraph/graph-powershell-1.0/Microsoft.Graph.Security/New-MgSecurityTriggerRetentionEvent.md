@@ -18,7 +18,7 @@ Create a new retentionEvent object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityTriggerRetentionEvent [-AdditionalProperties <Hashtable>]
+New-MgSecurityTriggerRetentionEvent [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
  [-EventQueries <IMicrosoftGraphSecurityEventQuery[]>]
@@ -31,7 +31,8 @@ New-MgSecurityTriggerRetentionEvent [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityRetentionEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -289,6 +290,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionEventType
 retentionEventType
 To construct, see NOTES section for RETENTIONEVENTTYPE properties and create a hash table.
@@ -346,7 +362,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

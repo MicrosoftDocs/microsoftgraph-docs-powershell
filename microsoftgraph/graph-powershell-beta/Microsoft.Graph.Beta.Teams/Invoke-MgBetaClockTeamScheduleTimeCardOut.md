@@ -15,29 +15,32 @@ Clock out to end an open timeCard.
 ### ClockExpanded (Default)
 ```
 Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId <String> -TimeCardId <String>
- [-AdditionalProperties <Hashtable>] [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AtApprovedLocation]
+ [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Clock
 ```
 Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId <String> -TimeCardId <String>
  -BodyParameter <IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentityExpanded
 ```
-Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
 Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -169,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamId
 The unique identifier of team
 
@@ -241,7 +259,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

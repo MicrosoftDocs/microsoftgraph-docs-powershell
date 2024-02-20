@@ -21,7 +21,7 @@ To do so, use the Update allowed combinations action.
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-ModifiedDateTime <DateTime>] [-PolicyType <String>] [-RequirementsSatisfied <String>]
@@ -31,14 +31,14 @@ Update-MgPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <Str
 ### Update
 ```
 Update-MgPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <String>
- -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-ModifiedDateTime <DateTime>] [-PolicyType <String>] [-RequirementsSatisfied <String>]
@@ -48,8 +48,8 @@ Update-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdenti
 ### UpdateViaIdentity
 ```
 Update-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -292,6 +292,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -334,7 +349,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

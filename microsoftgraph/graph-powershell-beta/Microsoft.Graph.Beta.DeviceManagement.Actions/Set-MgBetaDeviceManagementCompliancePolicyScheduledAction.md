@@ -15,7 +15,7 @@ Invoke action setScheduledActions
 ### SetExpanded (Default)
 ```
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,13 +24,14 @@ Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompl
 ```
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,7 +40,8 @@ Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceM
 ```
 Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -139,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScheduledActions
 .
 To construct, see NOTES section for SCHEDULEDACTIONS properties and create a hash table.
@@ -197,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

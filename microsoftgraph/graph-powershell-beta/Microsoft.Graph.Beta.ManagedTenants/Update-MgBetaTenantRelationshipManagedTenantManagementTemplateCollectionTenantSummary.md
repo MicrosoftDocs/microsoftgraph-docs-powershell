@@ -15,7 +15,31 @@ Update the navigation property managementTemplateCollectionTenantSummaries in te
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- -ManagementTemplateCollectionTenantSummaryId <String> [-AdditionalProperties <Hashtable>]
+ -ManagementTemplateCollectionTenantSummaryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompleteStepsCount <Int32>] [-CompleteUsersCount <Int32>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-DismissedStepsCount <Int32>]
+ [-ExcludedUsersCount <Int32>] [-ExcludedUsersDistinctCount <Int32>] [-Id <String>]
+ [-IncompleteStepsCount <Int32>] [-IncompleteUsersCount <Int32>] [-IneligibleStepsCount <Int32>] [-IsComplete]
+ [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
+ [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
+ [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>] [-TenantId <String>]
+ [-UnlicensedUsersCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
+ -ManagementTemplateCollectionTenantSummaryId <String>
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CompleteStepsCount <Int32>] [-CompleteUsersCount <Int32>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-DismissedStepsCount <Int32>] [-ExcludedUsersCount <Int32>]
  [-ExcludedUsersDistinctCount <Int32>] [-Id <String>] [-IncompleteStepsCount <Int32>]
@@ -26,34 +50,13 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- -ManagementTemplateCollectionTenantSummaryId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-CompleteStepsCount <Int32>]
- [-CompleteUsersCount <Int32>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
- [-DismissedStepsCount <Int32>] [-ExcludedUsersCount <Int32>] [-ExcludedUsersDistinctCount <Int32>]
- [-Id <String>] [-IncompleteStepsCount <Int32>] [-IncompleteUsersCount <Int32>] [-IneligibleStepsCount <Int32>]
- [-IsComplete] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
- [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
- [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>] [-TenantId <String>]
- [-UnlicensedUsersCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
  -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -424,6 +427,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantId
 .
 
@@ -496,7 +514,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

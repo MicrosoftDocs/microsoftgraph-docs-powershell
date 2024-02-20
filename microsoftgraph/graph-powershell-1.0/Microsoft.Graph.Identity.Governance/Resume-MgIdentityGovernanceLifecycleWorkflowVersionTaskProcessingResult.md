@@ -21,9 +21,10 @@ For more information, see: Lifecycle Workflows extensibility approach.
 ```
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowId <String> -WorkflowVersionNumber <Int32>
- [-AdditionalProperties <Hashtable>] [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]
- [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>] [-Type <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Resume
@@ -31,17 +32,17 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId 
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowId <String> -WorkflowVersionNumber <Int32>
  -BodyParameter <IPaths4QmbagIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdVersionsWorkflowversionVersionnumberTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentityExpanded
 ```
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>] [-Type <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]
+ [-Source <String>] [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity
@@ -49,8 +50,8 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
 Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths4QmbagIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdVersionsWorkflowversionVersionnumberTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -160,6 +161,21 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -300,7 +316,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

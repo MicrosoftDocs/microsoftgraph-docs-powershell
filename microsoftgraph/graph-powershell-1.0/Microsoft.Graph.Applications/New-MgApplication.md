@@ -18,8 +18,8 @@ Create a new application object.
 
 ### CreateExpanded (Default)
 ```
-New-MgApplication [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>]
- [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
+New-MgApplication [-ResponseHeadersVariable <String>] [-AddIns <IMicrosoftGraphAddIn[]>]
+ [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-ApplicationTemplateId <String>] [-Certification <IMicrosoftGraphCertification>]
  [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
@@ -49,8 +49,8 @@ New-MgApplication [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Has
 
 ### Create
 ```
-New-MgApplication -BodyParameter <IMicrosoftGraphApplication> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplication -BodyParameter <IMicrosoftGraphApplication> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -732,6 +732,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SamlMetadataUrl
 The URL where the service exposes SAML metadata for federation.
 This property is valid only for single-tenant applications.
@@ -989,7 +1004,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

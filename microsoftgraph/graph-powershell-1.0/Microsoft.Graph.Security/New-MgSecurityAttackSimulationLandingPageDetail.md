@@ -17,30 +17,31 @@ Create new navigation property to details for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationLandingPageDetail -LandingPageId <String> [-AdditionalProperties <Hashtable>]
- [-Content <String>] [-Id <String>] [-IsDefaultLangauge] [-Language <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationLandingPageDetail -LandingPageId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>] [-IsDefaultLangauge]
+ [-Language <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityAttackSimulationLandingPageDetail -LandingPageId <String>
- -BodyParameter <IMicrosoftGraphLandingPageDetail> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphLandingPageDetail> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>] [-IsDefaultLangauge]
- [-Language <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>]
+ [-IsDefaultLangauge] [-Language <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphLandingPageDetail> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphLandingPageDetail> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -202,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -244,7 +260,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLandingPageDetail
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

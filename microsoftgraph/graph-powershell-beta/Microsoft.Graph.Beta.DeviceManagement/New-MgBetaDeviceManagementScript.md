@@ -14,7 +14,7 @@ Create new navigation property to deviceManagementScripts for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementScript [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementScript [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>] [-Description <String>]
  [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>] [-DisplayName <String>]
  [-EnforceSignatureCheck] [-FileName <String>]
@@ -28,7 +28,8 @@ New-MgBetaDeviceManagementScript [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaDeviceManagementScript -BodyParameter <IMicrosoftGraphDeviceManagementScript>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -222,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tag IDs for this PowerShellScript instance.
 
@@ -355,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScript
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

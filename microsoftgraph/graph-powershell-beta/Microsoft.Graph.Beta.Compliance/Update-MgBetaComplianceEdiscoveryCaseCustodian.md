@@ -16,10 +16,10 @@ Update the properties of a custodian object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-ApplyHoldToSources]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
- [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-ApplyHoldToSources] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>]
+ [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+ [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphEdiscoveryUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphEdiscoveryUserSource[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -28,17 +28,17 @@ Update-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <St
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-ApplyHoldToSources]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
- [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-ApplyHoldToSources] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>]
+ [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+ [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphEdiscoveryUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphEdiscoveryUserSource[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,8 +47,8 @@ Update-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -329,6 +329,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data source entity for SharePoint sites associated with the custodian.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -435,7 +450,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCustodian
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

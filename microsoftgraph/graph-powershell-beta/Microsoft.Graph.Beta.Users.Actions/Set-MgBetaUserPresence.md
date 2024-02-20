@@ -18,33 +18,34 @@ Set the availability and activity status in a presence session of an application
 
 ### SetExpanded (Default)
 ```
-Set-MgBetaUserPresence -UserId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-SessionId <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaUserPresence -UserId <String> [-ResponseHeadersVariable <String>] [-Activity <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>]
+ [-SessionId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaUserPresence -UserId <String>
  -BodyParameter <IPaths1XdpsmjUsersUserIdPresenceMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>]
- [-SessionId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
+ [-ExpirationDuration <TimeSpan>] [-SessionId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1XdpsmjUsersUserIdPresenceMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -207,6 +208,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SessionId
 .
 
@@ -279,7 +295,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

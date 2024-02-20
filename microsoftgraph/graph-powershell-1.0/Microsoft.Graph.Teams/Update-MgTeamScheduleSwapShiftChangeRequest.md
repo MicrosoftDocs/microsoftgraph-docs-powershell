@@ -18,7 +18,7 @@ Update the navigation property swapShiftsChangeRequests in teams
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamScheduleSwapShiftChangeRequest -SwapShiftsChangeRequestId <String> -TeamId <String>
- [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
  [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
@@ -28,24 +28,25 @@ Update-MgTeamScheduleSwapShiftChangeRequest -SwapShiftsChangeRequestId <String> 
 ### Update
 ```
 Update-MgTeamScheduleSwapShiftChangeRequest -SwapShiftsChangeRequestId <String> -TeamId <String>
- -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientShiftId <String>]
- [-RecipientUserId <String>] [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
+ [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
+ [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -237,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SenderMessage
 .
 
@@ -354,7 +370,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSwapShiftsChangeRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

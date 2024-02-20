@@ -22,31 +22,31 @@ If a user is enabled by policy to use SMS to sign in and the mobile number is ch
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>]
- [-SmsSignInState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>]
+ [-PhoneType <String>] [-SmsSignInState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>]
- [-SmsSignInState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>]
+ [-PhoneType <String>] [-SmsSignInState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -219,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SmsSignInState
 authenticationMethodSignInState
 
@@ -291,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

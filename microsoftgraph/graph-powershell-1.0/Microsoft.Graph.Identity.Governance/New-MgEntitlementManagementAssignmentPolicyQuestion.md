@@ -15,31 +15,33 @@ Create new navigation property to questions for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementAssignmentPolicyQuestion -AccessPackageAssignmentPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable] [-IsRequired]
- [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>] [-Text <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable]
+ [-IsRequired] [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>]
+ [-Text <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAssignmentPolicyQuestion -AccessPackageAssignmentPolicyId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable] [-IsRequired]
- [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>] [-Text <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable]
+ [-IsRequired] [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>]
+ [-Text <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -201,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sequence
 Relative position of this question when displaying a list of questions to the requestor.
 
@@ -273,7 +290,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageQuestion
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

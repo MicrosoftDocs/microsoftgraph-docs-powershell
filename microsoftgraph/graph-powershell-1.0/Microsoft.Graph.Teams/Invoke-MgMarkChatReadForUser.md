@@ -18,32 +18,32 @@ Mark a chat as read for a user.
 
 ### MarkExpanded (Default)
 ```
-Invoke-MgMarkChatReadForUser -ChatId <String> [-AdditionalProperties <Hashtable>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgMarkChatReadForUser -ChatId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Mark
 ```
 Invoke-MgMarkChatReadForUser -ChatId <String>
  -BodyParameter <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentityExpanded
 ```
-Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
 Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -161,6 +161,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -User
 teamworkUserIdentity
 To construct, see NOTES section for USER properties and create a hash table.
@@ -219,7 +234,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

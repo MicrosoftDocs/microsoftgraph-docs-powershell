@@ -16,31 +16,33 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 ### RestoreExpanded (Default)
 ```
 Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Restore
 ```
 Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String>
  -BodyParameter <IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentityExpanded
 ```
 Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
 Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -173,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -215,7 +232,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

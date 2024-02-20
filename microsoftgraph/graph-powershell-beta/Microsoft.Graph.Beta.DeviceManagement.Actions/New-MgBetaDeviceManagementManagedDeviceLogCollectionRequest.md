@@ -15,29 +15,33 @@ Invoke action createDeviceLogCollectionRequest
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -ManagedDeviceId <String>
  -BodyParameter <IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -137,6 +141,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TemplateType
 Windows Log Collection request entity.
 To construct, see NOTES section for TEMPLATETYPE properties and create a hash table.
@@ -195,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

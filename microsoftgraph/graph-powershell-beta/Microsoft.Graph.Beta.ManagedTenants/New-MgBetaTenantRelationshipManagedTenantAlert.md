@@ -14,8 +14,8 @@ Create new navigation property to managedTenantAlerts for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantAlert [-AdditionalProperties <Hashtable>]
- [-AlertData <IMicrosoftGraphManagedTenantsAlertData>]
+New-MgBetaTenantRelationshipManagedTenantAlert [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlertData <IMicrosoftGraphManagedTenantsAlertData>]
  [-AlertDataReferenceStrings <IMicrosoftGraphManagedTenantsAlertDataReferenceString[]>]
  [-AlertLogs <IMicrosoftGraphManagedTenantsManagedTenantAlertLog[]>]
  [-AlertRule <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>] [-AlertRuleDisplayName <String>]
@@ -31,7 +31,8 @@ New-MgBetaTenantRelationshipManagedTenantAlert [-AdditionalProperties <Hashtable
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAlert -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -347,6 +348,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 alertSeverity
 
@@ -448,7 +464,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlert
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

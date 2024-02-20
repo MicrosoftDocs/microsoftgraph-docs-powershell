@@ -14,33 +14,34 @@ Update the navigation property partnerInformation in organization
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaOrganizationPartnerInformation -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-CommerceUrl <String>] [-CompanyName <String>] [-CompanyType <String>] [-HelpUrl <String>]
- [-PartnerTenantId <String>] [-SupportEmails <String[]>] [-SupportTelephones <String[]>] [-SupportUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaOrganizationPartnerInformation -OrganizationId <String>
- -BodyParameter <IMicrosoftGraphPartnerInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryManagementIdentity>
+Update-MgBetaOrganizationPartnerInformation -OrganizationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CommerceUrl <String>] [-CompanyName <String>] [-CompanyType <String>]
  [-HelpUrl <String>] [-PartnerTenantId <String>] [-SupportEmails <String[]>] [-SupportTelephones <String[]>]
  [-SupportUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaOrganizationPartnerInformation -OrganizationId <String>
+ -BodyParameter <IMicrosoftGraphPartnerInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CommerceUrl <String>]
+ [-CompanyName <String>] [-CompanyType <String>] [-HelpUrl <String>] [-PartnerTenantId <String>]
+ [-SupportEmails <String[]>] [-SupportTelephones <String[]>] [-SupportUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphPartnerInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPartnerInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -215,6 +216,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SupportEmails
 .
 
@@ -302,7 +318,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPartnerInformation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

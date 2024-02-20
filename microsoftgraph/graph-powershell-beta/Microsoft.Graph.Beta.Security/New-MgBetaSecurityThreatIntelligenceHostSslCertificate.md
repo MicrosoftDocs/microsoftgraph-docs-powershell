@@ -17,9 +17,9 @@ Create new navigation property to hostSslCertificates for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatIntelligenceHostSslCertificate [-AdditionalProperties <Hashtable>]
- [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
+New-MgBetaSecurityThreatIntelligenceHostSslCertificate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>]
+ [-Id <String>] [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
  [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,8 +27,8 @@ New-MgBetaSecurityThreatIntelligenceHostSslCertificate [-AdditionalProperties <H
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceHostSslCertificate
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -179,6 +179,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificate
 sslCertificate
 To construct, see NOTES section for SSLCERTIFICATE properties and create a hash table.
@@ -236,7 +251,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

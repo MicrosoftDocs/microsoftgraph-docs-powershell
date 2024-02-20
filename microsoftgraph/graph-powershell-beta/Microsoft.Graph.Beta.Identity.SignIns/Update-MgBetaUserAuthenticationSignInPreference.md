@@ -14,30 +14,31 @@ Update property signInPreferences value.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserAuthenticationSignInPreference -UserId <String> [-AdditionalProperties <Hashtable>]
- [-IsSystemPreferredAuthenticationMethodEnabled] [-UserPreferredMethodForSecondaryAuthentication <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserAuthenticationSignInPreference -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-IsSystemPreferredAuthenticationMethodEnabled]
+ [-UserPreferredMethodForSecondaryAuthentication <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserAuthenticationSignInPreference -UserId <String>
- -BodyParameter <IMicrosoftGraphSignInPreferences> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphSignInPreferences> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-IsSystemPreferredAuthenticationMethodEnabled]
- [-UserPreferredMethodForSecondaryAuthentication <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-IsSystemPreferredAuthenticationMethodEnabled] [-UserPreferredMethodForSecondaryAuthentication <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphSignInPreferences> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphSignInPreferences> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -138,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -210,7 +226,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSignInPreferences
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

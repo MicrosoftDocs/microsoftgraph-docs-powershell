@@ -18,12 +18,13 @@ Create a new servicePrincipal object.
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipal [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>]
- [-AlternativeNames <String[]>] [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
- [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
- [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
- [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
- [-ApplicationTemplateId <String>] [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+New-MgServicePrincipal [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
+ [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
+ [-AppDisplayName <String>] [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
+ [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
+ [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
@@ -52,8 +53,8 @@ New-MgServicePrincipal [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>] [-Ad
 
 ### Create
 ```
-New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -868,6 +869,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SamlSingleSignOnSettings
 samlSingleSignOnSettings
 To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
@@ -1099,7 +1115,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

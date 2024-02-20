@@ -17,8 +17,8 @@ Update the navigation property analytics in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupDriveRootAnalytic -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgGroupDriveRootAnalytic -DriveId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,14 +26,14 @@ Update-MgGroupDriveRootAnalytic -DriveId <String> -GroupId <String> [-Additional
 ### Update
 ```
 Update-MgGroupDriveRootAnalytic -DriveId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphItemAnalytics> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemAnalytics> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,7 +41,8 @@ Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-AdditionalProper
 ### UpdateViaIdentity
 ```
 Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphItemAnalytics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,6 +221,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -262,7 +278,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAnalytics
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

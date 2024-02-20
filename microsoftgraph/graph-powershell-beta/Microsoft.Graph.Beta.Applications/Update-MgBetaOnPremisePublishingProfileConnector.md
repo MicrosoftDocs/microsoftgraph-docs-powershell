@@ -15,31 +15,31 @@ Update the navigation property connectors in onPremisesPublishingProfiles
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaOnPremisePublishingProfileConnector -ConnectorId <String> -OnPremisesPublishingProfileId <String>
- [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>] [-MachineName <String>]
- [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>]
+ [-MachineName <String>] [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaOnPremisePublishingProfileConnector -ConnectorId <String> -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphConnector> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnector> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>] [-MachineName <String>]
- [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>]
+ [-MachineName <String>] [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphConnector> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnector> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -218,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 connectorStatus
 
@@ -290,7 +305,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

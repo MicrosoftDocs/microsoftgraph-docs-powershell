@@ -15,7 +15,8 @@ Invoke action assign
 ### AssignExpanded (Default)
 ```
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
- -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-AdditionalProperties <Hashtable>]
+ -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-WdacPolicyAssignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -26,14 +27,14 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
  -WindowsDefenderApplicationControlSupplementalPolicyId <String>
  -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
 ```
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-WdacPolicyAssignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -43,8 +44,8 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorpor
 ```
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -144,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WdacPolicyAssignments
 .
 To construct, see NOTES section for WDACPOLICYASSIGNMENTS properties and create a hash table.
@@ -217,7 +233,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

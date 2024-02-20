@@ -19,7 +19,8 @@ Update the properties of a targetedManagedAppConfiguration object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>]
  [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CustomSettings <IMicrosoftGraphKeyValuePair[]>] [-DeployedAppCount <Int32>]
  [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>] [-Description <String>]
@@ -30,14 +31,15 @@ Update-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppC
 ### Update
 ```
 Update-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId <String>
- -BodyParameter <IMicrosoftGraphTargetedManagedAppConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTargetedManagedAppConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>]
  [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CustomSettings <IMicrosoftGraphKeyValuePair[]>] [-DeployedAppCount <Int32>]
  [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>] [-Description <String>]
@@ -48,8 +50,8 @@ Update-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevic
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphTargetedManagedAppConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTargetedManagedAppConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -304,6 +306,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetedManagedAppConfigurationId
 The unique identifier of targetedManagedAppConfiguration
 
@@ -376,7 +393,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

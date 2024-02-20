@@ -15,9 +15,9 @@ Update the properties of an itemAddress object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserProfileAddress -ItemAddressId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
+Update-MgBetaUserProfileAddress -ItemAddressId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphGeoCoordinates>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Source <IMicrosoftGraphPersonDataSources>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -27,15 +27,15 @@ Update-MgBetaUserProfileAddress -ItemAddressId <String> -UserId <String> [-Addit
 ### Update
 ```
 Update-MgBetaUserProfileAddress -ItemAddressId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphItemAddress> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemAddress> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
+Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphGeoCoordinates>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Source <IMicrosoftGraphPersonDataSources>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -45,7 +45,8 @@ Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-AdditionalPrope
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemAddress>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -332,6 +333,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
@@ -405,7 +421,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAddress
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

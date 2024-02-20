@@ -18,8 +18,8 @@ Get the availability information of staff members of a Microsoft Bookings calend
 
 ### GetExpanded (Default)
 ```
-Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-StaffIds <String[]>]
+Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-StaffIds <String[]>]
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,13 +28,14 @@ Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String> [-Additio
 ```
 Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <String>
  -BodyParameter <IPaths1U5Iok1SolutionsBookingbusinessesBookingbusinessIdMicrosoftGraphGetstaffavailabilityPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-StaffIds <String[]>]
+Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-StaffIds <String[]>]
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,7 +44,8 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity> [-Ad
 ```
 Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths1U5Iok1SolutionsBookingbusinessesBookingbusinessIdMicrosoftGraphGetstaffavailabilityPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -189,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StaffIds
 .
 
@@ -262,7 +279,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphStaffAvailabilityItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -19,33 +19,33 @@ It is performed on an accessPackageAssignmentRequest object whose requestStatus 
 ### ResumeExpanded (Default)
 ```
 Resume-MgBetaEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-AdditionalProperties <Hashtable>] [-Data <Hashtable>] [-Source <String>] [-Type <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Data <Hashtable>] [-Source <String>]
+ [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Resume
 ```
 Resume-MgBetaEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
  -BodyParameter <IPathsQsyd4AIdentitygovernanceEntitlementmanagementAssignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentityExpanded
 ```
 Resume-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Data <Hashtable>] [-Source <String>] [-Type <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Data <Hashtable>] [-Source <String>]
+ [-Type <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity
 ```
 Resume-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsQsyd4AIdentitygovernanceEntitlementmanagementAssignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -176,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 .
 
@@ -248,7 +263,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

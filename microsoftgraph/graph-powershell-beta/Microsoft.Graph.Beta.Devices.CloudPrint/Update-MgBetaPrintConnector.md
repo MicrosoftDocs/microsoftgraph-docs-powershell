@@ -18,33 +18,36 @@ Update the properties of a printConnector object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrintConnector -PrintConnectorId <String> [-AdditionalProperties <Hashtable>]
- [-AppVersion <String>] [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>]
- [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
- [-Name <String>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintConnector -PrintConnectorId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppVersion <String>] [-DeviceHealth <IMicrosoftGraphDeviceHealth>]
+ [-DisplayName <String>] [-FullyQualifiedDomainName <String>] [-Id <String>]
+ [-Location <IMicrosoftGraphPrinterLocation>] [-Name <String>] [-OperatingSystem <String>]
+ [-RegisteredDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrintConnector -PrintConnectorId <String> -BodyParameter <IMicrosoftGraphPrintConnector>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-AppVersion <String>] [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>]
- [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
- [-Name <String>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppVersion <String>] [-DeviceHealth <IMicrosoftGraphDeviceHealth>]
+ [-DisplayName <String>] [-FullyQualifiedDomainName <String>] [-Id <String>]
+ [-Location <IMicrosoftGraphPrinterLocation>] [-Name <String>] [-OperatingSystem <String>]
+ [-RegisteredDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintConnector> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintConnector> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -285,6 +288,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -327,7 +345,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,8 +17,8 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary [-AdditionalProperties <Hashtable>]
- [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
+New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
  [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>] [-ErrorDeviceCount <Int32>]
  [-Id <String>] [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>]
  [-PlatformType <PolicyPlatformType>] [-RemediatedDeviceCount <Int32>] [-Setting <String>]
@@ -29,8 +29,8 @@ New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary [-Additional
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -236,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Setting
 The setting class name and property name.
 
@@ -322,7 +337,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

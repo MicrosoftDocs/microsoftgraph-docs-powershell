@@ -17,27 +17,7 @@ Update the navigation property mobileApps in deviceAppManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
- [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>] [-Description <String>] [-Developer <String>]
- [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsAssigned] [-IsFeatured]
- [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
- [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
- [-PublishingState <MobileAppPublishingState>] [-Relationships <IMicrosoftGraphMobileAppRelationship[]>]
- [-RoleScopeTagIds <String[]>] [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>]
- [-UploadState <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileApp>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
+Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphMobileAppAssignment[]>]
  [-Categories <IMicrosoftGraphMobileAppCategory[]>] [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>]
  [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
@@ -49,11 +29,33 @@ Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagem
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileApp>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
+ [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>] [-Description <String>] [-Developer <String>]
+ [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsAssigned] [-IsFeatured]
+ [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
+ [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
+ [-PublishingState <MobileAppPublishingState>] [-Relationships <IMicrosoftGraphMobileAppRelationship[]>]
+ [-RoleScopeTagIds <String[]>] [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>]
+ [-UploadState <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileApp> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileApp> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -446,6 +448,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of scope tag ids for this mobile app.
 
@@ -548,7 +565,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

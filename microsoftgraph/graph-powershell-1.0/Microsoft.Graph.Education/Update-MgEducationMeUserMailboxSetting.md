@@ -17,18 +17,19 @@ Update property mailboxSettings value.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEducationMeUserMailboxSetting [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
- [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
- [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
- [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+Update-MgEducationMeUserMailboxSetting [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
+ [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
+ [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgEducationMeUserMailboxSetting -BodyParameter <IMicrosoftGraphMailboxSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEducationMeUserMailboxSetting -BodyParameter <IMicrosoftGraphMailboxSettings>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -174,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TimeFormat
 The time format for the user's mailbox.
 
@@ -276,7 +292,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

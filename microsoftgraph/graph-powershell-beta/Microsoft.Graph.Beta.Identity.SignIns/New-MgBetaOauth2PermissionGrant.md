@@ -19,16 +19,17 @@ A delegated permission grant authorizes a client service principal (representing
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaOauth2PermissionGrant [-AdditionalProperties <Hashtable>] [-ClientId <String>]
- [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>] [-ResourceId <String>]
- [-Scope <String>] [-StartTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaOauth2PermissionGrant [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ClientId <String>] [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -228,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Scope
 A space-separated list of the claim values for delegated permissions that should be included in access tokens for the resource application (the API).
 For example, openid User.Read GroupMember.Read.All.
@@ -303,7 +319,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

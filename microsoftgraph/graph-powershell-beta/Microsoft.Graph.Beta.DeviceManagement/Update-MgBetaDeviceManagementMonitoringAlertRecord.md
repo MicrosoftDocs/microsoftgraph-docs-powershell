@@ -14,23 +14,7 @@ Update the navigation property alertRecords in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String> [-AdditionalProperties <Hashtable>]
- [-AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>] [-AlertRuleId <String>]
- [-AlertRuleTemplate <String>] [-DetectedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-LastUpdatedDateTime <DateTime>] [-ResolvedDateTime <DateTime>] [-Severity <String>] [-Status <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>]
  [-AlertRuleId <String>] [-AlertRuleTemplate <String>] [-DetectedDateTime <DateTime>] [-DisplayName <String>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-ResolvedDateTime <DateTime>] [-Severity <String>]
@@ -38,11 +22,28 @@ Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManageme
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementMonitoringAlertRecord -AlertRecordId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>] [-AlertRuleId <String>]
+ [-AlertRuleTemplate <String>] [-DetectedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-LastUpdatedDateTime <DateTime>] [-ResolvedDateTime <DateTime>] [-Severity <String>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAlertRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -270,6 +271,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 ruleSeverityType
 
@@ -342,7 +358,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRecord
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

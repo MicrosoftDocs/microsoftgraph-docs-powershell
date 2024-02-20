@@ -15,7 +15,7 @@ Update the properties of a deviceManagement object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
+Update-MgDeviceManagement [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ApplePushNotificationCertificate <IMicrosoftGraphApplePushNotificationCertificate>]
  [-AuditEvents <IMicrosoftGraphAuditEvent[]>]
  [-ComplianceManagementPartners <IMicrosoftGraphComplianceManagementPartner[]>]
@@ -82,8 +82,8 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -608,6 +608,21 @@ To construct, see NOTES section for RESOURCEOPERATIONS properties and create a h
 Type: IMicrosoftGraphResourceOperation[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -1263,7 +1278,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

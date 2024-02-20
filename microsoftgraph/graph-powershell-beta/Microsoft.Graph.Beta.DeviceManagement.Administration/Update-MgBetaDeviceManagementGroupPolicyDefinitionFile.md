@@ -15,35 +15,35 @@ Update the navigation property groupPolicyDefinitionFiles in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionFile -GroupPolicyDefinitionFileId <String>
- [-AdditionalProperties <Hashtable>] [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]
- [-Description <String>] [-DisplayName <String>] [-FileName <String>] [-Id <String>]
- [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>] [-PolicyType <GroupPolicyType>]
- [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-Description <String>] [-DisplayName <String>]
+ [-FileName <String>] [-Id <String>] [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>]
+ [-PolicyType <GroupPolicyType>] [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionFile -GroupPolicyDefinitionFileId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]
- [-Description <String>] [-DisplayName <String>] [-FileName <String>] [-Id <String>]
- [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>] [-PolicyType <GroupPolicyType>]
- [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-Description <String>] [-DisplayName <String>]
+ [-FileName <String>] [-Id <String>] [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>]
+ [-PolicyType <GroupPolicyType>] [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -269,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Revision
 The revision version associated with the file.
 
@@ -356,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

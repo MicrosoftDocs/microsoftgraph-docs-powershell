@@ -17,34 +17,34 @@ Update the navigation property manifests in reports
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaReportPartnerBillingManifest -ManifestId <String> [-AdditionalProperties <Hashtable>]
- [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>] [-CreatedDateTime <DateTime>]
- [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>] [-PartnerTenantId <String>]
- [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaReportPartnerBillingManifest -ManifestId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>]
+ [-CreatedDateTime <DateTime>] [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>]
+ [-PartnerTenantId <String>] [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaReportPartnerBillingManifest -ManifestId <String>
- -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-AdditionalProperties <Hashtable>]
- [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>] [-CreatedDateTime <DateTime>]
- [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>] [-PartnerTenantId <String>]
- [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BlobCount <Int32>] [-Blobs <IMicrosoftGraphPartnersBillingBlob[]>]
+ [-CreatedDateTime <DateTime>] [-DataFormat <String>] [-ETag <String>] [-Id <String>] [-PartitionType <String>]
+ [-PartnerTenantId <String>] [-RootDirectory <String>] [-SasToken <String>] [-SchemaVersion <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity>
- -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPartnersBillingManifest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RootDirectory
 The root directory that contains all the files.
 
@@ -361,7 +376,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPartnersBillingManifest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

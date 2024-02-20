@@ -18,9 +18,10 @@ Create new navigation property to children for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserDriveRootChild -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
- [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+New-MgUserDriveRootChild -DriveId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
+ [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
+ [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
  [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
@@ -43,14 +44,16 @@ New-MgUserDriveRootChild -DriveId <String> -UserId <String> [-AdditionalProperti
 ### Create
 ```
 New-MgUserDriveRootChild -DriveId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDriveItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserDriveRootChild -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
- [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+New-MgUserDriveRootChild -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
+ [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
+ [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
  [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
@@ -73,7 +76,8 @@ New-MgUserDriveRootChild -InputObject <IFilesIdentity> [-AdditionalProperties <H
 ### CreateViaIdentity
 ```
 New-MgUserDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -678,6 +682,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabel
 itemRetentionLabel
 To construct, see NOTES section for RETENTIONLABEL properties and create a hash table.
@@ -964,7 +983,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

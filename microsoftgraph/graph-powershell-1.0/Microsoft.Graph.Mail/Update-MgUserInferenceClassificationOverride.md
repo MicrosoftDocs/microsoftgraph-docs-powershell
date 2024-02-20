@@ -22,7 +22,7 @@ If an override exists for a sender and the sender changes his/her SMTP address, 
 ### UpdateExpanded (Default)
 ```
 Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ClassifyAs <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClassifyAs <String>] [-Id <String>]
  [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,22 +30,23 @@ Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId 
 ### Update
 ```
 Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClassifyAs <String>] [-Id <String>]
+ [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SenderEmailAddress
 emailAddress
 To construct, see NOTES section for SENDEREMAILADDRESS properties and create a hash table.
@@ -273,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,7 +15,8 @@ Update the navigation property resourceNamespaces in roleManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -RbacApplicationId <String>
- -UnifiedRbacResourceNamespaceId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
+ -UnifiedRbacResourceNamespaceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
  [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,13 +25,14 @@ Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -RbacApplicationId <St
 ```
 Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -RbacApplicationId <String>
  -UnifiedRbacResourceNamespaceId <String> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
  [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +40,8 @@ Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentit
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -189,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnifiedRbacResourceNamespaceId
 The unique identifier of unifiedRbacResourceNamespace
 
@@ -246,7 +263,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

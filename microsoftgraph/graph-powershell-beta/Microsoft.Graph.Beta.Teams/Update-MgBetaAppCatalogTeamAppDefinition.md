@@ -20,7 +20,7 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAppCatalogTeamAppDefinition -TeamsAppDefinitionId <String> -TeamsAppId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
  [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-AzureAdAppId <String>] [-Bot <Hashtable>]
  [-ColorIcon <IMicrosoftGraphTeamsAppIcon>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition[]>] [-Description <String>]
@@ -33,14 +33,14 @@ Update-MgBetaAppCatalogTeamAppDefinition -TeamsAppDefinitionId <String> -TeamsAp
 ### Update
 ```
 Update-MgBetaAppCatalogTeamAppDefinition -TeamsAppDefinitionId <String> -TeamsAppId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>]
  [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-AzureAdAppId <String>] [-Bot <Hashtable>]
  [-ColorIcon <IMicrosoftGraphTeamsAppIcon>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition[]>] [-Description <String>]
@@ -53,8 +53,8 @@ Update-MgBetaAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <IT
 ### UpdateViaIdentity
 ```
 Update-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -344,6 +344,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Shortdescription
 .
 
@@ -473,7 +488,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

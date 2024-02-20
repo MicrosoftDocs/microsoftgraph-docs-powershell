@@ -17,33 +17,34 @@ Update the navigation property hostComponents in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatIntelligenceHostComponent -HostComponentId <String> [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Name <String>] [-Version <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgSecurityThreatIntelligenceHostComponent -HostComponentId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostComponent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity>
+Update-MgSecurityThreatIntelligenceHostComponent -HostComponentId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-FirstSeenDateTime <DateTime>]
  [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
  [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgSecurityThreatIntelligenceHostComponent -HostComponentId <String>
+ -BodyParameter <IMicrosoftGraphSecurityHostComponent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
+ [-LastSeenDateTime <DateTime>] [-Name <String>] [-Version <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostComponent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostComponent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -239,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Version
 The component version running on the artifact, for example, v8.5.
 This shouldn't be assumed to be strictly numerical.
@@ -297,7 +313,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostComponent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,27 +15,29 @@ Get content for the navigation property picture from financials
 ### Get (Default)
 ```
 Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent -CompanyId <String> -PictureId <String>
- -SalesOrderLineId <String> -OutFile <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -SalesOrderLineId <String> -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent -CompanyId <String> -PictureId <String>
- -SalesOrderLineId <String> -SalesOrderId <String> -OutFile <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -SalesOrderLineId <String> -SalesOrderId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent -InputObject <IFinancialsIdentity> -OutFile <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent -InputObject <IFinancialsIdentity> -OutFile <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -149,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesOrderId
 The unique identifier of salesOrder
 
@@ -189,7 +206,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

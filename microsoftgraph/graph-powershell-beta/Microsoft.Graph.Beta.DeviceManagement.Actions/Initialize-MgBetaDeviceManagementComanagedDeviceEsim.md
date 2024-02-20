@@ -15,31 +15,33 @@ Activate eSIM on the device.
 ### ActivateExpanded (Default)
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Activate
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
  -BodyParameter <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentityExpanded
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
 Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -169,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -211,7 +228,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

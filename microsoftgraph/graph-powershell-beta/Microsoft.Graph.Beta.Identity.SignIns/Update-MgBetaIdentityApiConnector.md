@@ -18,30 +18,32 @@ Update the properties of an identityApiConnector object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaIdentityApiConnector -IdentityApiConnectorId <String> [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityApiConnector -IdentityApiConnectorId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>]
+ [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId <String>
- -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>] [-DisplayName <String>]
+ [-Id <String>] [-TargetUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -232,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetUrl
 The URL of the API endpoint to call.
 
@@ -289,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

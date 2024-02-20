@@ -22,9 +22,9 @@ For information about retention labels from an administrator's perspective, see 
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserDriveRootRetentionLabel -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
- [-LabelAppliedDateTime <DateTime>] [-Name <String>]
+Update-MgUserDriveRootRetentionLabel -DriveId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
+ [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
  [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,15 +32,15 @@ Update-MgUserDriveRootRetentionLabel -DriveId <String> -UserId <String> [-Additi
 ### Update
 ```
 Update-MgUserDriveRootRetentionLabel -DriveId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserDriveRootRetentionLabel -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-IsLabelAppliedExplicitly] [-LabelAppliedBy <IMicrosoftGraphIdentitySet>]
- [-LabelAppliedDateTime <DateTime>] [-Name <String>]
+Update-MgUserDriveRootRetentionLabel -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsLabelAppliedExplicitly]
+ [-LabelAppliedBy <IMicrosoftGraphIdentitySet>] [-LabelAppliedDateTime <DateTime>] [-Name <String>]
  [-RetentionSettings <IMicrosoftGraphRetentionLabelSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,8 +48,8 @@ Update-MgUserDriveRootRetentionLabel -InputObject <IFilesIdentity> [-AdditionalP
 ### UpdateViaIdentity
 ```
 Update-MgUserDriveRootRetentionLabel -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemRetentionLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -236,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionSettings
 retentionLabelSettings
 To construct, see NOTES section for RETENTIONSETTINGS properties and create a hash table.
@@ -309,7 +324,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemRetentionLabel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,8 +15,9 @@ Set the review status of multiple Cloud PC devices with a single request that in
 
 ### BulkExpanded (Default)
 ```
-Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Headers <IDictionary>]
+Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>]
+ [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +25,8 @@ Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus [-Additiona
 ```
 Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
  -BodyParameter <IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -131,6 +133,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewStatus
 cloudPcReviewStatus
 To construct, see NOTES section for REVIEWSTATUS properties and create a hash table.
@@ -188,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

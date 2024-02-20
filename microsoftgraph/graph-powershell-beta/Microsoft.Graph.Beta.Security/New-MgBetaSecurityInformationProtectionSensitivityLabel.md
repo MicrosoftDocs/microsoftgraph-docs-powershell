@@ -14,18 +14,18 @@ Create new navigation property to sensitivityLabels for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityInformationProtectionSensitivityLabel [-AdditionalProperties <Hashtable>] [-Color <String>]
- [-ContentFormats <String[]>] [-Description <String>] [-HasProtection] [-Id <String>] [-IsActive]
- [-IsAppliable] [-Name <String>] [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>]
- [-Tooltip <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityInformationProtectionSensitivityLabel [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Color <String>] [-ContentFormats <String[]>] [-Description <String>]
+ [-HasProtection] [-Id <String>] [-IsActive] [-IsAppliable] [-Name <String>]
+ [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityInformationProtectionSensitivityLabel
- -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -233,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sensitivity
 The sensitivity value of the label, where lower is less sensitive.
 
@@ -304,7 +319,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

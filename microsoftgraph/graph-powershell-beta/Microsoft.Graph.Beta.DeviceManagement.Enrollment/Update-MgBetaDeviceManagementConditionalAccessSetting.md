@@ -17,16 +17,17 @@ Update the navigation property conditionalAccessSettings in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementConditionalAccessSetting [-AdditionalProperties <Hashtable>] [-Enabled]
- [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementConditionalAccessSetting [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Enabled] [-ExcludedGroups <String[]>] [-Id <String>]
+ [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementConditionalAccessSetting
- -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -173,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -214,7 +230,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

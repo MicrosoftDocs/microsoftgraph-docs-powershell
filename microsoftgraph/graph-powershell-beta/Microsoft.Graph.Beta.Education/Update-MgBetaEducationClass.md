@@ -18,8 +18,8 @@ Update the properties of a class.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaEducationClass -EducationClassId <String> [-AdditionalProperties <Hashtable>]
- [-AssignmentCategories <IMicrosoftGraphEducationCategory[]>]
+Update-MgBetaEducationClass -EducationClassId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignmentCategories <IMicrosoftGraphEducationCategory[]>]
  [-AssignmentDefaults <IMicrosoftGraphEducationAssignmentDefaults>]
  [-AssignmentSettings <IMicrosoftGraphEducationAssignmentSettings>]
  [-Assignments <IMicrosoftGraphEducationAssignment[]>] [-ClassCode <String>]
@@ -35,13 +35,14 @@ Update-MgBetaEducationClass -EducationClassId <String> [-AdditionalProperties <H
 ### Update
 ```
 Update-MgBetaEducationClass -EducationClassId <String> -BodyParameter <IMicrosoftGraphEducationClass>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaEducationClass -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignmentCategories <IMicrosoftGraphEducationCategory[]>]
+Update-MgBetaEducationClass -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignmentCategories <IMicrosoftGraphEducationCategory[]>]
  [-AssignmentDefaults <IMicrosoftGraphEducationAssignmentDefaults>]
  [-AssignmentSettings <IMicrosoftGraphEducationAssignmentSettings>]
  [-Assignments <IMicrosoftGraphEducationAssignment[]>] [-ClassCode <String>]
@@ -57,7 +58,8 @@ Update-MgBetaEducationClass -InputObject <IEducationIdentity> [-AdditionalProper
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClass -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationClass>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -477,6 +479,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schools
 All schools that this class is associated with.
 Nullable.
@@ -569,7 +586,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationClass
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

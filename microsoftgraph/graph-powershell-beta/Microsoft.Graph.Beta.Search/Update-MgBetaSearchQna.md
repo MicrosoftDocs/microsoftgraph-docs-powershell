@@ -15,7 +15,7 @@ Update the properties of a qna object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSearchQna -QnaId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSearchQna -QnaId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
@@ -27,16 +27,17 @@ Update-MgBetaSearchQna -QnaId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgBetaSearchQna -QnaId <String> -BodyParameter <IMicrosoftGraphSearchQna> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSearchQna -QnaId <String> -BodyParameter <IMicrosoftGraphSearchQna>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSearchQna -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
- [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
+Update-MgBetaSearchQna -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
+ [-AvailabilityStartDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-GroupIds <String[]>]
+ [-Id <String>] [-IsSuggested] [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-State <String>]
  [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-Headers <IDictionary>]
@@ -46,7 +47,8 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> [-AdditionalProperties <Ha
 ### UpdateViaIdentity
 ```
 Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchQna>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -340,6 +342,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 answerState
 
@@ -431,7 +448,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,9 +14,9 @@ Create a new scheduledPermissionsRequest object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Justification <String>]
- [-Notes <String>] [-RequestedPermissions <IMicrosoftGraphPermissionsDefinition>]
+New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-ResponseHeadersVariable <String>]
+ [-Action <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-Justification <String>] [-Notes <String>] [-RequestedPermissions <IMicrosoftGraphPermissionsDefinition>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-StatusDetail <String>]
  [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,8 +25,8 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-Act
 ### Create
 ```
 New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
- -BodyParameter <IMicrosoftGraphScheduledPermissionsRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphScheduledPermissionsRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -187,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScheduleInfo
 requestSchedule
 To construct, see NOTES section for SCHEDULEINFO properties and create a hash table.
@@ -275,7 +290,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScheduledPermissionsRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

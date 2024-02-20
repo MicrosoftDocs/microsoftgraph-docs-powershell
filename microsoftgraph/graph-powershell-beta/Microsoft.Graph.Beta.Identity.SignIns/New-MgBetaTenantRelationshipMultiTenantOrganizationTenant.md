@@ -18,18 +18,19 @@ A tenant can be part of only one multitenant organization.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipMultiTenantOrganizationTenant [-AddedByTenantId <String>]
- [-AddedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-JoinedDateTime <DateTime>] [-Role <String>] [-State <String>]
- [-TenantId <String>] [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipMultiTenantOrganizationTenant [-ResponseHeadersVariable <String>]
+ [-AddedByTenantId <String>] [-AddedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-JoinedDateTime <DateTime>]
+ [-Role <String>] [-State <String>] [-TenantId <String>]
+ [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
- -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -199,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Role
 multiTenantOrganizationMemberRole
 
@@ -303,7 +319,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationMember
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

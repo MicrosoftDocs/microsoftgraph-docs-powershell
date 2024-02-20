@@ -15,6 +15,7 @@ Update the navigation property managementTemplateSteps in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -ManagementTemplateStepId <String>
+ [-ResponseHeadersVariable <String>]
  [-AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -28,13 +29,14 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -ManagementTe
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -ManagementTemplateStepId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -InputObject <IManagedTenantsIdentity>
+ [-ResponseHeadersVariable <String>]
  [-AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -48,8 +50,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -InputObject 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -349,6 +351,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserImpact
 .
 
@@ -422,7 +439,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

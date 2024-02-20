@@ -14,10 +14,10 @@ Create new navigation property to groupPolicyConfigurations for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementGroupPolicyConfiguration [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
- [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+New-MgBetaDeviceManagementGroupPolicyConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>]
+ [-CreatedDateTime <DateTime>] [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyConfigurationIngestionType <GroupPolicyConfigurationIngestionType>] [-RoleScopeTagIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,7 +25,8 @@ New-MgBetaDeviceManagementGroupPolicyConfiguration [-AdditionalProperties <Hasht
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyConfiguration -BodyParameter <IMicrosoftGraphGroupPolicyConfiguration>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -217,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 The list of scope tags for the configuration.
 
@@ -273,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

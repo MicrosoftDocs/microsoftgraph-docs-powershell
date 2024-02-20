@@ -15,8 +15,8 @@ Update the navigation property customerPayments in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyCustomerPayment -CompanyId <String> -CustomerPaymentId <String>
- [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-AppliesToInvoiceId <String>]
- [-AppliesToInvoiceNumber <String>] [-Comment <String>] [-ContactId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
+ [-AppliesToInvoiceId <String>] [-AppliesToInvoiceNumber <String>] [-Comment <String>] [-ContactId <String>]
  [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerNumber <String>]
  [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
  [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
@@ -27,15 +27,15 @@ Update-MgBetaFinancialCompanyCustomerPayment -CompanyId <String> -CustomerPaymen
 ### Update
 ```
 Update-MgBetaFinancialCompanyCustomerPayment -CompanyId <String> -CustomerPaymentId <String>
- -BodyParameter <IMicrosoftGraphCustomerPayment> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomerPayment> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-AppliesToInvoiceId <String>]
- [-AppliesToInvoiceNumber <String>] [-Comment <String>] [-ContactId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
+ [-AppliesToInvoiceId <String>] [-AppliesToInvoiceNumber <String>] [-Comment <String>] [-ContactId <String>]
  [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerNumber <String>]
  [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
  [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
@@ -46,8 +46,8 @@ Update-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCustomerPayment> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomerPayment> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -403,6 +403,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -445,7 +460,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPayment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

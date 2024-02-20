@@ -17,32 +17,7 @@ Update the navigation property onlineMeetings in communications
 
 ### UpdateExpanded (Default)
 ```
-Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowTeamworkReactions] [-AllowedPresenters <String>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
- [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinWebUrl <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
- [-Recordings <IMicrosoftGraphCallRecording[]>] [-ShareMeetingChatHistoryDefault <String>]
- [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
- [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
+Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
  [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowTeamworkReactions]
  [-AllowedPresenters <String>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
@@ -59,11 +34,38 @@ Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
+ [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowTeamworkReactions] [-AllowedPresenters <String>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
+ [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinWebUrl <String>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
+ [-Recordings <IMicrosoftGraphCallRecording[]>] [-ShareMeetingChatHistoryDefault <String>]
+ [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
+ [-VideoTeleconferenceId <String>] [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnlineMeeting> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -537,6 +539,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShareMeetingChatHistoryDefault
 meetingChatHistoryDefaultMode
 
@@ -673,7 +690,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -22,7 +22,8 @@ You must be the owner of the application.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaApplicationSynchronizationJobSchema -ApplicationId <String> -SynchronizationJobId <String>
- [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,14 +31,15 @@ Update-MgBetaApplicationSynchronizationJobSchema -ApplicationId <String> -Synchr
 ### Update
 ```
 Update-MgBetaApplicationSynchronizationJobSchema -ApplicationId <String> -SynchronizationJobId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,8 +47,8 @@ Update-MgBetaApplicationSynchronizationJobSchema -InputObject <IApplicationsIden
 ### UpdateViaIdentity
 ```
 Update-MgBetaApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -184,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SynchronizationJobId
 The unique identifier of synchronizationJob
 
@@ -272,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

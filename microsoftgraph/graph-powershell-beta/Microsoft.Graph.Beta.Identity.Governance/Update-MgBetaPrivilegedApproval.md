@@ -14,36 +14,36 @@ Update entity in privilegedApproval
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrivilegedApproval -PrivilegedApprovalId <String> [-AdditionalProperties <Hashtable>]
- [-ApprovalDuration <TimeSpan>] [-ApprovalState <String>] [-ApprovalType <String>] [-ApproverReason <String>]
- [-EndDateTime <DateTime>] [-Id <String>] [-Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>]
- [-RequestorReason <String>] [-RoleId <String>] [-RoleInfo <IMicrosoftGraphPrivilegedRole>]
- [-StartDateTime <DateTime>] [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedApproval -PrivilegedApprovalId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApprovalDuration <TimeSpan>] [-ApprovalState <String>]
+ [-ApprovalType <String>] [-ApproverReason <String>] [-EndDateTime <DateTime>] [-Id <String>]
+ [-Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>] [-RequestorReason <String>] [-RoleId <String>]
+ [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-StartDateTime <DateTime>] [-UserId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedApproval -PrivilegedApprovalId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPrivilegedApproval -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-ApprovalDuration <TimeSpan>] [-ApprovalState <String>] [-ApprovalType <String>] [-ApproverReason <String>]
- [-EndDateTime <DateTime>] [-Id <String>] [-Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>]
- [-RequestorReason <String>] [-RoleId <String>] [-RoleInfo <IMicrosoftGraphPrivilegedRole>]
- [-StartDateTime <DateTime>] [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedApproval -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApprovalDuration <TimeSpan>] [-ApprovalState <String>]
+ [-ApprovalType <String>] [-ApproverReason <String>] [-EndDateTime <DateTime>] [-Id <String>]
+ [-Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>] [-RequestorReason <String>] [-RoleId <String>]
+ [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-StartDateTime <DateTime>] [-UserId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedApproval -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -278,6 +278,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleId
 .
 
@@ -381,7 +396,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

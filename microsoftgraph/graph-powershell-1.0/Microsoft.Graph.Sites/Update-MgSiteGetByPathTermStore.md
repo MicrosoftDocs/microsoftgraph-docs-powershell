@@ -17,59 +17,63 @@ Update the properties of a store object.
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgSiteGetByPathTermStore -Path <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>] [-Id <String>]
- [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
+Update-MgSiteGetByPathTermStore -Path <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>]
+ [-Id <String>] [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
 ```
 Update-MgSiteGetByPathTermStore -Path <String> -Path1 <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>]
- [-Id <String>] [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>]
+ [-Groups <IMicrosoftGraphTermStoreGroup[]>] [-Id <String>] [-LanguageTags <String[]>]
+ [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgSiteGetByPathTermStore -Path <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStore>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSiteGetByPathTermStore -Path <String> -Path1 <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphTermStore> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStore> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>] [-Id <String>]
- [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
+Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>]
+ [-Id <String>] [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>] [-Id <String>]
- [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
+Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>]
+ [-Id <String>] [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStore>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStore>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -246,6 +250,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sets
 Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
@@ -320,7 +339,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStore
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

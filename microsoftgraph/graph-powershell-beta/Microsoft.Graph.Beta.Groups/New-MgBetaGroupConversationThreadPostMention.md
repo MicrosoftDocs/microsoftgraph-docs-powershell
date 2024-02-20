@@ -15,34 +15,34 @@ Create new navigation property to mentions for groups
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
- -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>] [-Application <String>]
- [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>]
- [-DeepLink <String>] [-Id <String>] [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>]
- [-ServerCreatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
- -GroupId <String> -PostId <String> -BodyParameter <IMicrosoftGraphMention> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaGroupConversationThreadPostMention -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ -GroupId <String> -PostId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
  [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
  [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
+ -GroupId <String> -PostId <String> -BodyParameter <IMicrosoftGraphMention> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupConversationThreadPostMention -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Application <String>] [-ClientReference <String>]
+ [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>]
+ [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaGroupConversationThreadPostMention -InputObject <IGroupsIdentity>
- -BodyParameter <IMicrosoftGraphMention> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMention> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -318,6 +318,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServerCreatedDateTime
 The date and time that the mention is created on the server.
 Optional.
@@ -377,7 +392,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,31 +17,35 @@ As example when applying the require multifactor authentication for admins manag
 ### ApplyExpanded (Default)
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -ManagementActionId <String>
- [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>] [-IncludeAllUsers] [-IncludeGroups <String[]>]
- [-ManagementTemplateId <String>] [-TenantGroupId <String>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>]
+ [-IncludeAllUsers] [-IncludeGroups <String[]>] [-ManagementTemplateId <String>] [-TenantGroupId <String>]
+ [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Apply
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -ManagementActionId <String>
  -BodyParameter <IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentityExpanded
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>] [-IncludeAllUsers] [-IncludeGroups <String[]>]
- [-ManagementTemplateId <String>] [-TenantGroupId <String>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>]
+ [-IncludeAllUsers] [-IncludeGroups <String[]>] [-ManagementTemplateId <String>] [-TenantGroupId <String>]
+ [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantGroupId
 .
 
@@ -275,7 +294,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

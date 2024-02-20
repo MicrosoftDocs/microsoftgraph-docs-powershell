@@ -17,10 +17,10 @@ Create a new privilegedAccessGroupEligibilityScheduleRequest object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest [-AccessId <String>]
- [-Action <String>] [-AdditionalProperties <Hashtable>] [-ApprovalId <String>] [-CompletedDateTime <DateTime>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-CustomData <String>]
- [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-IsValidationOnly]
+New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest [-ResponseHeadersVariable <String>]
+ [-AccessId <String>] [-Action <String>] [-AdditionalProperties <Hashtable>] [-ApprovalId <String>]
+ [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-CustomData <String>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-IsValidationOnly]
  [-Justification <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule>] [-TargetScheduleId <String>]
@@ -31,8 +31,9 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest [-Ac
 ### Create
 ```
 New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -319,6 +320,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScheduleInfo
 requestSchedule
 To construct, see NOTES section for SCHEDULEINFO properties and create a hash table.
@@ -442,7 +458,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,7 +14,8 @@ Update the navigation property advancedThreatProtectionOnboardingStateSummary in
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
  [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-NotAssignedDeviceCount <Int32>]
@@ -25,8 +26,9 @@ Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-Ad
 ### Update
 ```
 Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
- -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -232,6 +234,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnknownDeviceCount
 Number of unknown devices
 
@@ -288,7 +305,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

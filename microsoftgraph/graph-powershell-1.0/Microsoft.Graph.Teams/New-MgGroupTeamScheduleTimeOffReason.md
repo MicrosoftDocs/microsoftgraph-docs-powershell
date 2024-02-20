@@ -18,8 +18,8 @@ Create a new timeOffReason.
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupTeamScheduleTimeOffReason -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
+New-MgGroupTeamScheduleTimeOffReason -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,13 +27,14 @@ New-MgGroupTeamScheduleTimeOffReason -GroupId <String> [-AdditionalProperties <H
 ### Create
 ```
 New-MgGroupTeamScheduleTimeOffReason -GroupId <String> -BodyParameter <IMicrosoftGraphTimeOffReason>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
+New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,8 +42,8 @@ New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-AdditionalP
 ### CreateViaIdentity
 ```
 New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTimeOffReason> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTimeOffReason> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -226,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -268,7 +284,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,8 +14,8 @@ Create new navigation property to windowsManagedAppProtections for deviceAppMana
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-AdditionalProperties <Hashtable>]
- [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
+New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
@@ -36,8 +36,8 @@ New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-AdditionalProperties 
 ### Create
 ```
 New-MgBetaDeviceAppManagementWindowsManagedAppProtection
- -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -563,6 +563,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -634,7 +649,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

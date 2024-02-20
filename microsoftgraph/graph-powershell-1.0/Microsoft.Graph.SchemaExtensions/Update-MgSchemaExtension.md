@@ -26,8 +26,8 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSchemaExtension -SchemaExtensionId <String> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-Id <String>] [-Owner <String>]
+Update-MgSchemaExtension -SchemaExtensionId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,13 +35,14 @@ Update-MgSchemaExtension -SchemaExtensionId <String> [-AdditionalProperties <Has
 ### Update
 ```
 Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-Id <String>] [-Owner <String>]
+Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,8 +50,8 @@ Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-AdditionalPr
 ### UpdateViaIdentity
 ```
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity>
- -BodyParameter <IMicrosoftGraphSchemaExtension> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSchemaExtension> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -248,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchemaExtensionId
 The unique identifier of schemaExtension
 
@@ -340,7 +356,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

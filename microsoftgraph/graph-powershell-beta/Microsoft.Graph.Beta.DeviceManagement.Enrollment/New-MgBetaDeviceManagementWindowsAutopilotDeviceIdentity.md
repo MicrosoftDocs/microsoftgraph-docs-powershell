@@ -17,9 +17,9 @@ Create new navigation property to windowsAutopilotDeviceIdentities for deviceMan
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity [-AdditionalProperties <Hashtable>]
- [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>] [-AzureAdDeviceId <String>]
- [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
+New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>]
+ [-AzureAdDeviceId <String>] [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
  [-DeploymentProfileAssignedDateTime <DateTime>]
  [-DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus>]
  [-DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus>]
@@ -38,8 +38,8 @@ New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity [-AdditionalProperties 
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -471,6 +471,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 Serial number of the Windows autopilot device.
 
@@ -587,7 +602,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

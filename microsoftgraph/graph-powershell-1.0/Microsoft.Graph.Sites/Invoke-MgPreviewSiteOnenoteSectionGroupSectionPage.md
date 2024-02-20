@@ -18,14 +18,15 @@ Invoke function preview
 ### Preview (Default)
 ```
 Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage -OnenotePageId <String> -OnenoteSectionId <String>
- -SectionGroupId <String> -SiteId <String> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ -SectionGroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
-Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage -InputObject <ISitesIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage -InputObject <ISitesIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SectionGroupId
 The unique identifier of sectionGroup
 
@@ -149,7 +165,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePagePreview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

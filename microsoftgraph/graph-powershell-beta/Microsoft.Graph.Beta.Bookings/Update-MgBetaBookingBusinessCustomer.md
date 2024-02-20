@@ -19,63 +19,65 @@ Update the properties of a bookingCustomer object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
- [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
- [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
 ```
 Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
+ -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
+ -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
-```
-Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
- -BodyParameter <IMicrosoftGraphBookingCustomer> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
- -BodyParameter <IMicrosoftGraphBookingCustomer> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
+ [-LastUpdatedDateTime <DateTime>] [-Phones <IMicrosoftGraphPhone[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingCustomer> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingCustomer> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingCustomer> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,6 +316,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -356,7 +373,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomer
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

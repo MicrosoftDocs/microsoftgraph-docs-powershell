@@ -17,7 +17,7 @@ Update the navigation property whoisRecords in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId <String>
+Update-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId <String> [-ResponseHeadersVariable <String>]
  [-Abuse <IMicrosoftGraphSecurityWhoisContact>] [-AdditionalProperties <Hashtable>]
  [-Admin <IMicrosoftGraphSecurityWhoisContact>] [-Billing <IMicrosoftGraphSecurityWhoisContact>]
  [-DomainStatus <String>] [-ExpirationDateTime <DateTime>] [-FirstSeenDateTime <DateTime>]
@@ -34,22 +34,22 @@ Update-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId <String>
 ### Update
 ```
 Update-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId <String>
- -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
- [-Abuse <IMicrosoftGraphSecurityWhoisContact>] [-AdditionalProperties <Hashtable>]
- [-Admin <IMicrosoftGraphSecurityWhoisContact>] [-Billing <IMicrosoftGraphSecurityWhoisContact>]
- [-DomainStatus <String>] [-ExpirationDateTime <DateTime>] [-FirstSeenDateTime <DateTime>]
- [-History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-LastUpdateDateTime <DateTime>]
- [-Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>] [-Noc <IMicrosoftGraphSecurityWhoisContact>]
- [-RawWhoisText <String>] [-Registrant <IMicrosoftGraphSecurityWhoisContact>]
- [-Registrar <IMicrosoftGraphSecurityWhoisContact>] [-RegistrationDateTime <DateTime>]
- [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
+ [-ResponseHeadersVariable <String>] [-Abuse <IMicrosoftGraphSecurityWhoisContact>]
+ [-AdditionalProperties <Hashtable>] [-Admin <IMicrosoftGraphSecurityWhoisContact>]
+ [-Billing <IMicrosoftGraphSecurityWhoisContact>] [-DomainStatus <String>] [-ExpirationDateTime <DateTime>]
+ [-FirstSeenDateTime <DateTime>] [-History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]
+ [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-LastUpdateDateTime <DateTime>] [-Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]
+ [-Noc <IMicrosoftGraphSecurityWhoisContact>] [-RawWhoisText <String>]
+ [-Registrant <IMicrosoftGraphSecurityWhoisContact>] [-Registrar <IMicrosoftGraphSecurityWhoisContact>]
+ [-RegistrationDateTime <DateTime>] [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
  [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -57,8 +57,8 @@ Update-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -418,6 +418,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Technical
 whoisContact
 To construct, see NOTES section for TECHNICAL properties and create a hash table.
@@ -522,7 +537,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityWhoisRecord
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

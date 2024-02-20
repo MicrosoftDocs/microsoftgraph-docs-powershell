@@ -17,30 +17,32 @@ Update the ref of navigation property postFederationSignup in identity
 
 ### SetExpanded (Default)
 ```
-Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String>
+ [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String>
- -BodyParameter <IReferenceUpdate> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IReferenceUpdate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
- -OdataId <String> [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -OdataId <String> [-AdditionalProperties <Hashtable>]
+ [-OdataType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IReferenceUpdate> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IReferenceUpdate> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -228,7 +245,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

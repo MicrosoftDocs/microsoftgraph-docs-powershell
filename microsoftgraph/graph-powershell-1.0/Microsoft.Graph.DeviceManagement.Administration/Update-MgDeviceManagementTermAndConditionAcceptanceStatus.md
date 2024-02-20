@@ -19,24 +19,26 @@ Update the properties of a termsAndConditionsAcceptanceStatus object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsAcceptanceStatusId <String>
- -TermsAndConditionsId <String> [-AcceptedDateTime <DateTime>] [-AcceptedVersion <Int32>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>]
- [-UserDisplayName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -TermsAndConditionsId <String> [-ResponseHeadersVariable <String>] [-AcceptedDateTime <DateTime>]
+ [-AcceptedVersion <Int32>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>] [-UserDisplayName <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsAcceptanceStatusId <String>
  -TermsAndConditionsId <String> -BodyParameter <IMicrosoftGraphTermsAndConditionsAcceptanceStatus>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementTermAndConditionAcceptanceStatus
- -InputObject <IDeviceManagementAdministrationIdentity> [-AcceptedDateTime <DateTime>]
- [-AcceptedVersion <Int32>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AcceptedDateTime <DateTime>] [-AcceptedVersion <Int32>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>] [-UserDisplayName <String>]
  [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -46,8 +48,8 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 ```
 Update-MgDeviceManagementTermAndConditionAcceptanceStatus
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphTermsAndConditionsAcceptanceStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermsAndConditionsAcceptanceStatus> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -179,6 +181,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TermsAndConditions
 A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
@@ -299,7 +316,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsAcceptanceStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,10 +15,10 @@ Update the properties of a case object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaComplianceEdiscoveryCase -CaseId <String> [-AdditionalProperties <Hashtable>]
- [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
- [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgBetaComplianceEdiscoveryCase -CaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-Custodians <IMicrosoftGraphEdiscoveryCustodian[]>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-LegalHolds <IMicrosoftGraphEdiscoveryLegalHold[]>]
  [-NoncustodialDataSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphEdiscoveryCaseOperation[]>] [-ReviewSets <IMicrosoftGraphEdiscoveryReviewSet[]>]
@@ -31,15 +31,16 @@ Update-MgBetaComplianceEdiscoveryCase -CaseId <String> [-AdditionalProperties <H
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCase -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoveryCase>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
- [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
- [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-Custodians <IMicrosoftGraphEdiscoveryCustodian[]>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-LegalHolds <IMicrosoftGraphEdiscoveryLegalHold[]>]
  [-NoncustodialDataSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphEdiscoveryCaseOperation[]>] [-ReviewSets <IMicrosoftGraphEdiscoveryReviewSet[]>]
@@ -52,8 +53,8 @@ Update-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-Addit
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCase> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCase> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -382,6 +383,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewSets
 Returns a list of reviewSet objects in the case.
 Read-only.
@@ -505,7 +521,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCase
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

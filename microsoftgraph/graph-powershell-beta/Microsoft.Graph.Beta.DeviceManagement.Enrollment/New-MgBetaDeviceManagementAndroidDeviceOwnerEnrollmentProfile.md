@@ -14,9 +14,10 @@ Create new navigation property to androidDeviceOwnerEnrollmentProfiles for devic
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile [-AccountId <String>]
- [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile [-ResponseHeadersVariable <String>]
+ [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
+ [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -28,8 +29,8 @@ New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile [-AccountId <Strin
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
- -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -475,7 +491,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

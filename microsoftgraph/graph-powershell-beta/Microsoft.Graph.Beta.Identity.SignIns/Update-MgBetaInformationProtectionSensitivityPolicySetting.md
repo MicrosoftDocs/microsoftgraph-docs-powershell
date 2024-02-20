@@ -14,17 +14,17 @@ Update the navigation property sensitivityPolicySettings in informationProtectio
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaInformationProtectionSensitivityPolicySetting [-AdditionalProperties <Hashtable>]
- [-ApplicableTo <String>] [-DowngradeSensitivityRequiresJustification] [-HelpWebUrl <String>] [-Id <String>]
- [-IsMandatory] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaInformationProtectionSensitivityPolicySetting [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-DowngradeSensitivityRequiresJustification]
+ [-HelpWebUrl <String>] [-Id <String>] [-IsMandatory] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaInformationProtectionSensitivityPolicySetting
- -BodyParameter <IMicrosoftGraphSensitivityPolicySettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSensitivityPolicySettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -169,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -210,7 +225,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

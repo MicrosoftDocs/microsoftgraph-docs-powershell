@@ -14,18 +14,18 @@ Create new navigation property to enterpriseCodeSigningCertificates for deviceAp
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-Issuer <String>]
- [-IssuerName <String>] [-Status <String>] [-Subject <String>] [-SubjectName <String>]
- [-UploadDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-Issuer <String>] [-IssuerName <String>] [-Status <String>] [-Subject <String>]
+ [-SubjectName <String>] [-UploadDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate
- -BodyParameter <IMicrosoftGraphEnterpriseCodeSigningCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEnterpriseCodeSigningCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -182,6 +182,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 certificateStatus
 
@@ -294,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnterpriseCodeSigningCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

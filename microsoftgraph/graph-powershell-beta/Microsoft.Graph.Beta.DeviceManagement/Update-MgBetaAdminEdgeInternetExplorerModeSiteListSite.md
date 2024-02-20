@@ -19,7 +19,7 @@ Update the properties of a browserSite object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteId <String> -BrowserSiteListId <String>
- [-AdditionalProperties <Hashtable>] [-AllowRedirect] [-Comment <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowRedirect] [-Comment <String>]
  [-CompatibilityMode <BrowserSiteCompatibilityMode>] [-CreatedDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-History <IMicrosoftGraphBrowserSiteHistory[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
@@ -31,14 +31,14 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteId <String> -
 ### Update
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteId <String> -BrowserSiteListId <String>
- -BodyParameter <IMicrosoftGraphBrowserSite> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBrowserSite> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowRedirect] [-Comment <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowRedirect] [-Comment <String>]
  [-CompatibilityMode <BrowserSiteCompatibilityMode>] [-CreatedDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-History <IMicrosoftGraphBrowserSiteHistory[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
@@ -50,8 +50,8 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ### UpdateViaIdentity
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphBrowserSite> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBrowserSite> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -323,6 +323,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 browserSiteStatus
 
@@ -410,7 +425,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSite
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

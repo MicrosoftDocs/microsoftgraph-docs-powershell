@@ -20,33 +20,36 @@ Call Start job to start synchronization.
 
 ### CreateExpanded (Default)
 ```
-New-MgApplicationSynchronizationJob -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-BulkUpload <Hashtable>] [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Status <IMicrosoftGraphSynchronizationStatus>]
- [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationSynchronizationJob -ApplicationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BulkUpload <Hashtable>] [-Id <String>]
+ [-Schedule <IMicrosoftGraphSynchronizationSchedule>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Status <IMicrosoftGraphSynchronizationStatus>] [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]
+ [-TemplateId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgApplicationSynchronizationJob -ApplicationId <String> -BodyParameter <IMicrosoftGraphSynchronizationJob>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-BulkUpload <Hashtable>] [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Status <IMicrosoftGraphSynchronizationStatus>]
- [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BulkUpload <Hashtable>] [-Id <String>]
+ [-Schedule <IMicrosoftGraphSynchronizationSchedule>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Status <IMicrosoftGraphSynchronizationStatus>] [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]
+ [-TemplateId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationJob> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationJob> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -182,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 synchronizationSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -304,7 +322,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationJob
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

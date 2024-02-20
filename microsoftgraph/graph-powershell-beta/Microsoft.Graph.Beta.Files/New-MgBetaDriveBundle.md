@@ -18,10 +18,10 @@ Create new navigation property to bundles for drives
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDriveBundle -DriveId <String> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
- [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
- [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+New-MgBetaDriveBundle -DriveId <String> [-ResponseHeadersVariable <String>]
+ [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
+ [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
+ [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
  [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
@@ -43,16 +43,17 @@ New-MgBetaDriveBundle -DriveId <String> [-Activities <IMicrosoftGraphItemActivit
 
 ### Create
 ```
-New-MgBetaDriveBundle -DriveId <String> -BodyParameter <IMicrosoftGraphDriveItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDriveBundle -DriveId <String> -BodyParameter <IMicrosoftGraphDriveItem>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaDriveBundle -InputObject <IFilesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
- [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
- [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+New-MgBetaDriveBundle -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
+ [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
+ [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
  [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
@@ -75,7 +76,8 @@ New-MgBetaDriveBundle -InputObject <IFilesIdentity> [-Activities <IMicrosoftGrap
 ### CreateViaIdentity
 ```
 New-MgBetaDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -711,6 +713,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabel
 itemRetentionLabel
 To construct, see NOTES section for RETENTIONLABEL properties and create a hash table.
@@ -998,7 +1015,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

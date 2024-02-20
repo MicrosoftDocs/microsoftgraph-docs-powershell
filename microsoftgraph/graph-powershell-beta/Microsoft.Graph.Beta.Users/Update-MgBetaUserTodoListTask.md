@@ -19,9 +19,9 @@ Update the properties of a todoTask object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserTodoListTask -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]
- [-Attachments <IMicrosoftGraphAttachmentBase[]>] [-Body <IMicrosoftGraphItemBody>]
- [-BodyLastModifiedDateTime <DateTime>] [-Categories <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AttachmentSessions <IMicrosoftGraphAttachmentSession[]>] [-Attachments <IMicrosoftGraphAttachmentBase[]>]
+ [-Body <IMicrosoftGraphItemBody>] [-BodyLastModifiedDateTime <DateTime>] [-Categories <String[]>]
  [-ChecklistItems <IMicrosoftGraphChecklistItem[]>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>]
  [-CreatedDateTime <DateTime>] [-DueDateTime <IMicrosoftGraphDateTimeZone>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments] [-Id <String>] [-Importance <String>]
@@ -34,15 +34,16 @@ Update-MgBetaUserTodoListTask -TodoTaskId <String> -TodoTaskListId <String> -Use
 ### Update
 ```
 Update-MgBetaUserTodoListTask -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphTodoTask> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTodoTask> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserTodoListTask -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-AttachmentSessions <IMicrosoftGraphAttachmentSession[]>] [-Attachments <IMicrosoftGraphAttachmentBase[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyLastModifiedDateTime <DateTime>] [-Categories <String[]>]
+Update-MgBetaUserTodoListTask -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]
+ [-Attachments <IMicrosoftGraphAttachmentBase[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-BodyLastModifiedDateTime <DateTime>] [-Categories <String[]>]
  [-ChecklistItems <IMicrosoftGraphChecklistItem[]>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>]
  [-CreatedDateTime <DateTime>] [-DueDateTime <IMicrosoftGraphDateTimeZone>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments] [-Id <String>] [-Importance <String>]
@@ -55,7 +56,8 @@ Update-MgBetaUserTodoListTask -InputObject <IUsersIdentity> [-AdditionalProperti
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTodoTask>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -459,6 +461,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 dateTimeTimeZone
 To construct, see NOTES section for STARTDATETIME properties and create a hash table.
@@ -592,7 +609,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTodoTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

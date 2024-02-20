@@ -14,36 +14,38 @@ Update the navigation property securityActions in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityAction -SecurityActionId <String> [-ActionReason <String>]
- [-AdditionalProperties <Hashtable>] [-AppId <String>] [-AzureTenantId <String>] [-ClientContext <String>]
- [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-ErrorInfo <IMicrosoftGraphResultInfo>]
- [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>] [-Parameters <IMicrosoftGraphKeyValuePair[]>]
- [-States <IMicrosoftGraphSecurityActionState[]>] [-Status <String>] [-User <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAction -SecurityActionId <String> [-ResponseHeadersVariable <String>]
+ [-ActionReason <String>] [-AdditionalProperties <Hashtable>] [-AppId <String>] [-AzureTenantId <String>]
+ [-ClientContext <String>] [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
+ [-ErrorInfo <IMicrosoftGraphResultInfo>] [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
+ [-Parameters <IMicrosoftGraphKeyValuePair[]>] [-States <IMicrosoftGraphSecurityActionState[]>]
+ [-Status <String>] [-User <String>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAction -SecurityActionId <String> -BodyParameter <IMicrosoftGraphSecurityAction>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ActionReason <String>]
- [-AdditionalProperties <Hashtable>] [-AppId <String>] [-AzureTenantId <String>] [-ClientContext <String>]
- [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-ErrorInfo <IMicrosoftGraphResultInfo>]
- [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>] [-Parameters <IMicrosoftGraphKeyValuePair[]>]
- [-States <IMicrosoftGraphSecurityActionState[]>] [-Status <String>] [-User <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-ActionReason <String>] [-AdditionalProperties <Hashtable>] [-AppId <String>] [-AzureTenantId <String>]
+ [-ClientContext <String>] [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
+ [-ErrorInfo <IMicrosoftGraphResultInfo>] [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
+ [-Parameters <IMicrosoftGraphKeyValuePair[]>] [-States <IMicrosoftGraphSecurityActionState[]>]
+ [-Status <String>] [-User <String>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityAction>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -305,6 +307,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityActionId
 The unique identifier of securityAction
 
@@ -425,7 +442,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

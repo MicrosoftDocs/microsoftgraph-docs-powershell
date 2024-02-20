@@ -19,9 +19,10 @@ If you intend a new folder to be hidden, you must set the isHidden property to t
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserMailFolder -UserId <String> [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>]
- [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>] [-Id <String>] [-IsHidden]
- [-MessageRules <IMicrosoftGraphMessageRule[]>] [-Messages <IMicrosoftGraphMessage[]>]
+New-MgBetaUserMailFolder -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>]
+ [-DisplayName <String>] [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
+ [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>]
@@ -31,15 +32,16 @@ New-MgBetaUserMailFolder -UserId <String> [-AdditionalProperties <Hashtable>] [-
 
 ### Create
 ```
-New-MgBetaUserMailFolder -UserId <String> -BodyParameter <IMicrosoftGraphMailFolder> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserMailFolder -UserId <String> -BodyParameter <IMicrosoftGraphMailFolder>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserMailFolder -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>]
- [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
+New-MgBetaUserMailFolder -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>]
+ [-DisplayName <String>] [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
  [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -51,7 +53,8 @@ New-MgBetaUserMailFolder -InputObject <IMailIdentity> [-AdditionalProperties <Ha
 ### CreateViaIdentity
 ```
 New-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -303,6 +306,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
@@ -442,7 +460,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailFolder
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

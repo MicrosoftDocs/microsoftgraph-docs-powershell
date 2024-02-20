@@ -14,12 +14,13 @@ Create new navigation property to fileSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityFileSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
- [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CertificateThumbprint <String>]
- [-Extensions <String[]>] [-FileType <String>] [-FirstSeenDateTime <DateTime>]
- [-Hashes <IMicrosoftGraphFileHash[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
- [-MalwareStates <IMicrosoftGraphMalwareState[]>] [-Names <String[]>] [-RiskScore <String>] [-Size <Int64>]
- [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+New-MgBetaSecurityFileSecurityProfile [-ResponseHeadersVariable <String>] [-ActivityGroupNames <String[]>]
+ [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
+ [-CertificateThumbprint <String>] [-Extensions <String[]>] [-FileType <String>]
+ [-FirstSeenDateTime <DateTime>] [-Hashes <IMicrosoftGraphFileHash[]>] [-Id <String>]
+ [-LastSeenDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>] [-Names <String[]>]
+ [-RiskScore <String>] [-Size <Int64>] [-Tags <String[]>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
  [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,7 +28,8 @@ New-MgBetaSecurityFileSecurityProfile [-ActivityGroupNames <String[]>] [-Additio
 ### Create
 ```
 New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurityProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -279,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -397,7 +414,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFileSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

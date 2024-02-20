@@ -17,8 +17,8 @@ Update the navigation property analytics in drives
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDriveRootAnalytic -DriveId <String> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgBetaDriveRootAnalytic -DriveId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,13 +26,14 @@ Update-MgBetaDriveRootAnalytic -DriveId <String> [-AdditionalProperties <Hashtab
 ### Update
 ```
 Update-MgBetaDriveRootAnalytic -DriveId <String> -BodyParameter <IMicrosoftGraphItemAnalytics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,7 +41,8 @@ Update-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> [-AdditionalPropert
 ### UpdateViaIdentity
 ```
 Update-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphItemAnalytics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -204,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -246,7 +263,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAnalytics
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

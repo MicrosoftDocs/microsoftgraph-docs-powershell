@@ -17,30 +17,7 @@ Update the navigation property team in groups
 
 ### SetExpanded (Default)
 ```
-Set-MgGroupTeam -GroupId <String> [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel[]>]
- [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-FunSettings <IMicrosoftGraphTeamFunSettings>]
- [-Group <IMicrosoftGraphGroup>] [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
- [-IncomingChannels <IMicrosoftGraphChannel[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
- [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
- [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>]
- [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
- [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
- [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Set
-```
-Set-MgGroupTeam -GroupId <String> -BodyParameter <IMicrosoftGraphTeam> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgGroupTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Set-MgGroupTeam -GroupId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllChannels <IMicrosoftGraphChannel[]>] [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-FunSettings <IMicrosoftGraphTeamFunSettings>] [-Group <IMicrosoftGraphGroup>]
@@ -56,10 +33,35 @@ Set-MgGroupTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Set
+```
+Set-MgGroupTeam -GroupId <String> -BodyParameter <IMicrosoftGraphTeam> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgGroupTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel[]>]
+ [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-FunSettings <IMicrosoftGraphTeamFunSettings>]
+ [-Group <IMicrosoftGraphGroup>] [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
+ [-IncomingChannels <IMicrosoftGraphChannel[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
+ [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
+ [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>]
+ [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
+ [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
+ [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
+ [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### SetViaIdentity
 ```
-Set-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -492,6 +494,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 schedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -659,7 +676,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

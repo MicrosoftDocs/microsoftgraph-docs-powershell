@@ -19,32 +19,32 @@ Only teachers can update these settings.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEducationClassAssignmentDefault -EducationClassId <String> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>]
- [-NotificationChannelUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgEducationClassAssignmentDefault -EducationClassId <String> [-ResponseHeadersVariable <String>]
+ [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
+ [-DueTime <String>] [-Id <String>] [-NotificationChannelUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationClassAssignmentDefault -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>]
- [-NotificationChannelUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
+ [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
+ [-DueTime <String>] [-Id <String>] [-NotificationChannelUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -244,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -286,7 +301,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentDefaults
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

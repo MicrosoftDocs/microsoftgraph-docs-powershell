@@ -17,20 +17,21 @@ Create new navigation property to vppTokens for deviceAppManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementVppToken [-AdditionalProperties <Hashtable>] [-AppleId <String>]
- [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <String>]
- [-DataSharingConsentGranted] [-DisplayName <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>]
- [-LocationName <String>] [-OrganizationName <String>] [-RoleScopeTagIds <String[]>] [-State <VppTokenState>]
- [-Token <String>] [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]
- [-VppTokenAccountType <VppTokenAccountType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementVppToken [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AppleId <String>] [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm]
+ [-CountryOrRegion <String>] [-DataSharingConsentGranted] [-DisplayName <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>] [-LocationName <String>]
+ [-OrganizationName <String>] [-RoleScopeTagIds <String[]>] [-State <VppTokenState>] [-Token <String>]
+ [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>] [-VppTokenAccountType <VppTokenAccountType>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -298,6 +299,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 Role Scope Tags IDs assigned to this entity.
 
@@ -415,7 +431,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

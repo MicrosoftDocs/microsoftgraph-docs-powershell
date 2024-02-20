@@ -18,8 +18,9 @@ Update an editable secureScoreControlProfiles property within any integrated sol
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String> [-ActionType <String>]
- [-ActionUrl <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
+Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String>
+ [-ResponseHeadersVariable <String>] [-ActionType <String>] [-ActionUrl <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
  [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
  [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
@@ -32,14 +33,15 @@ Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <Str
 ### Update
 ```
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String>
- -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-ActionType <String>]
- [-ActionUrl <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
+Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-ActionType <String>] [-ActionUrl <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
  [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
  [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
@@ -52,8 +54,8 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -402,6 +404,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecureScoreControlProfileId
 The unique identifier of secureScoreControlProfile
 
@@ -550,7 +567,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,8 +15,9 @@ Update the navigation property deviceHealthScripts in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDeviceHealthScript -DeviceHealthScriptId <String>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>]
- [-Description <String>] [-DetectionScriptContentInputFile <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>] [-Description <String>]
+ [-DetectionScriptContentInputFile <String>]
  [-DetectionScriptParameters <IMicrosoftGraphDeviceHealthScriptParameter[]>]
  [-DeviceHealthScriptType <DeviceHealthScriptType>]
  [-DeviceRunStates <IMicrosoftGraphDeviceHealthScriptDeviceState[]>] [-DisplayName <String>]
@@ -31,15 +32,16 @@ Update-MgBetaDeviceManagementDeviceHealthScript -DeviceHealthScriptId <String>
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceHealthScript -DeviceHealthScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceHealthScript> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScript> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>]
- [-Description <String>] [-DetectionScriptContentInputFile <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>] [-Description <String>]
+ [-DetectionScriptContentInputFile <String>]
  [-DetectionScriptParameters <IMicrosoftGraphDeviceHealthScriptParameter[]>]
  [-DeviceHealthScriptType <DeviceHealthScriptType>]
  [-DeviceRunStates <IMicrosoftGraphDeviceHealthScriptDeviceState[]>] [-DisplayName <String>]
@@ -54,8 +56,8 @@ Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementI
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScript> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScript> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -371,6 +373,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tag IDs for the device health script
 
@@ -489,7 +506,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScript
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,26 +15,26 @@ Update the properties of an administrativeUnit object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaAdministrativeUnit -AdministrativeUnitId <String> [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMemberManagementRestricted]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]
- [-Visibility <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaAdministrativeUnit -AdministrativeUnitId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
+ [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAdministrativeUnit -AdministrativeUnitId <String>
- -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
  [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,8 +43,8 @@ Update-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdenti
 ### UpdateViaIdentity
 ```
 Update-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -266,6 +266,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopedRoleMembers
 Scoped-role members of this administrative unit.
 To construct, see NOTES section for SCOPEDROLEMEMBERS properties and create a hash table.
@@ -342,7 +357,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

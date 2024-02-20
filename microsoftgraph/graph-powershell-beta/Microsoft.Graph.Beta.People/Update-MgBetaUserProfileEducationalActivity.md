@@ -16,6 +16,25 @@ Update the properties of an educationalActivity object within a user's profile.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
+ [-CompletionMonthYear <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-EndMonthYear <DateTime>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
+ [-Institution <IMicrosoftGraphInstitutionData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-Program <IMicrosoftGraphEducationalActivityDetail>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-StartMonthYear <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphEducationalActivity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CompletionMonthYear <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-EndMonthYear <DateTime>]
  [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-Institution <IMicrosoftGraphInstitutionData>]
@@ -25,30 +44,11 @@ Update-MgBetaUserProfileEducationalActivity -EducationalActivityId <String> -Use
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphEducationalActivity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-CompletionMonthYear <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-EndMonthYear <DateTime>] [-Id <String>]
- [-Inference <IMicrosoftGraphInferenceData>] [-Institution <IMicrosoftGraphInstitutionData>] [-IsSearchable]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Program <IMicrosoftGraphEducationalActivityDetail>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-StartMonthYear <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphEducationalActivity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationalActivity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -360,6 +360,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
@@ -448,7 +463,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

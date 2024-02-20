@@ -14,18 +14,18 @@ Update the navigation property salesQuotes in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaFinancialCompanySaleQuote -CompanyId <String> -SalesQuoteId <String> [-AcceptedDate <DateTime>]
- [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
- [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
- [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
- [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerName <String>]
- [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DocumentDate <DateTime>] [-DueDate <DateTime>]
- [-Email <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Number <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>]
- [-PhoneNumber <String>] [-SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>] [-Salesperson <String>]
- [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-SentDate <DateTime>] [-ShipToContact <String>]
- [-ShipToName <String>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>]
- [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
+Update-MgBetaFinancialCompanySaleQuote -CompanyId <String> -SalesQuoteId <String>
+ [-ResponseHeadersVariable <String>] [-AcceptedDate <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-BillToCustomerId <String>] [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
+ [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
+ [-CustomerName <String>] [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DocumentDate <DateTime>]
+ [-DueDate <DateTime>] [-Email <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Number <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
+ [-PaymentTermsId <String>] [-PhoneNumber <String>] [-SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>]
+ [-Salesperson <String>] [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-SentDate <DateTime>]
+ [-ShipToContact <String>] [-ShipToName <String>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
+ [-ShipmentMethodId <String>] [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
  [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
  [-ValidUntilDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -34,24 +34,24 @@ Update-MgBetaFinancialCompanySaleQuote -CompanyId <String> -SalesQuoteId <String
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleQuote -CompanyId <String> -SalesQuoteId <String>
- -BodyParameter <IMicrosoftGraphSalesQuote> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesQuote> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-AcceptedDate <DateTime>]
- [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
- [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
- [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
- [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerName <String>]
- [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DocumentDate <DateTime>] [-DueDate <DateTime>]
- [-Email <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Number <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>]
- [-PhoneNumber <String>] [-SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>] [-Salesperson <String>]
- [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-SentDate <DateTime>] [-ShipToContact <String>]
- [-ShipToName <String>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>]
- [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
+Update-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AcceptedDate <DateTime>] [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>]
+ [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
+ [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
+ [-CustomerName <String>] [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DocumentDate <DateTime>]
+ [-DueDate <DateTime>] [-Email <String>] [-ExternalDocumentNumber <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Number <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
+ [-PaymentTermsId <String>] [-PhoneNumber <String>] [-SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>]
+ [-Salesperson <String>] [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-SentDate <DateTime>]
+ [-ShipToContact <String>] [-ShipToName <String>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
+ [-ShipmentMethodId <String>] [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
  [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
  [-ValidUntilDate <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -60,8 +60,8 @@ Update-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-Acce
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesQuote> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesQuote> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -510,6 +510,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Salesperson
 .
 
@@ -781,7 +796,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesQuote
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

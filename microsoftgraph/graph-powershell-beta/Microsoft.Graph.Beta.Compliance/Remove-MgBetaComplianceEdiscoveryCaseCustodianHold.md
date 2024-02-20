@@ -14,14 +14,14 @@ Invoke action removeHold
 
 ### RemoveExpanded (Default)
 ```
-Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Remove1
 ```
-Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String>
+Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsKujstgComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryRemoveholdPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -30,20 +30,22 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String>
 ### Remove
 ```
 Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> -CustodianId <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
 ```
 Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity1
 ```
 Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsKujstgComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryRemoveholdPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -51,8 +53,9 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIden
 
 ### RemoveViaIdentity
 ```
-Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity> [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -197,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -239,7 +257,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

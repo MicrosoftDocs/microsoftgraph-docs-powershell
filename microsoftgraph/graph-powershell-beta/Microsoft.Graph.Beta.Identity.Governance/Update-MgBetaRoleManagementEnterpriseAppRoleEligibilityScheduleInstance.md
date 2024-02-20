@@ -15,8 +15,8 @@ Update the navigation property roleEligibilityScheduleInstances in roleManagemen
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApplicationId <String>
- -UnifiedRoleEligibilityScheduleInstanceId <String> [-AdditionalProperties <Hashtable>]
- [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
+ -UnifiedRoleEligibilityScheduleInstanceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
@@ -28,15 +28,15 @@ Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApp
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApplicationId <String>
  -UnifiedRoleEligibilityScheduleInstanceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
@@ -48,8 +48,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -297,6 +297,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleDefinition
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
@@ -415,7 +430,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

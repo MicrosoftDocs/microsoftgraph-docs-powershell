@@ -18,7 +18,7 @@ Create a new plannerBucket object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPlannerBucket [-AdditionalProperties <Hashtable>]
+New-MgBetaPlannerBucket [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-CreationSource <IMicrosoftGraphPlannerBucketCreation>]
  [-Id <String>] [-IsArchived] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -27,8 +27,8 @@ New-MgBetaPlannerBucket [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -228,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tasks
 Read-only.
 Nullable.
@@ -287,7 +302,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucket
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

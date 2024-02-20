@@ -18,10 +18,10 @@ Update the navigation property userExperienceAnalyticsDeviceStartupProcessPerfor
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- -UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int64>] [-ProcessName <String>]
- [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int64>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int64>]
+ [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int64>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,16 +29,17 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
  -UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>]
- [-Id <String>] [-MedianImpactInMS <Int64>] [-ProcessName <String>] [-ProductName <String>]
- [-Publisher <String>] [-TotalImpactInMS <Int64>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int64>]
+ [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int64>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -46,7 +47,8 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TotalImpactInMS
 The total impact of startup process on device boot time in milliseconds.
 Supports: $filter, $select, $OrderBy.
@@ -309,7 +326,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

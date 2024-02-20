@@ -19,31 +19,31 @@ Update the properties of a custom identityUserFlowAttribute object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId <String>
- [-AdditionalProperties <Hashtable>] [-DataType <String>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-UserFlowAttributeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DataType <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-UserFlowAttributeType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId <String>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-DataType <String>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-UserFlowAttributeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DataType <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-UserFlowAttributeType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -225,6 +225,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserFlowAttributeType
 identityUserFlowAttributeType
 
@@ -282,7 +297,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

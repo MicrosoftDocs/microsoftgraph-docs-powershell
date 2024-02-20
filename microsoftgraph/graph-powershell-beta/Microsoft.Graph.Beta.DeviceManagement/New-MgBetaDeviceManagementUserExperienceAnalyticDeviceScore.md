@@ -17,10 +17,10 @@ Create new navigation property to userExperienceAnalyticsDeviceScores for device
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
- [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>] [-DeviceName <String>]
- [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-MeanResourceSpikeTimeScore <Double>] [-Model <String>]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>]
+ [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-Manufacturer <String>] [-MeanResourceSpikeTimeScore <Double>] [-Model <String>]
  [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,8 +28,8 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperti
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -261,6 +261,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartupPerformanceScore
 Indicates a weighted average of boot score and logon score used for measuring startup performance.
 Valid values range from 0-100.
@@ -342,7 +357,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

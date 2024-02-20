@@ -14,32 +14,33 @@ Issues a wipe operation on an app registration with specified aad device Id.
 
 ### WipeExpanded (Default)
 ```
-Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AzureAdDeviceId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -UserId <String>
  -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentityExpanded
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### WipeViaIdentity
 ```
 Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -211,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

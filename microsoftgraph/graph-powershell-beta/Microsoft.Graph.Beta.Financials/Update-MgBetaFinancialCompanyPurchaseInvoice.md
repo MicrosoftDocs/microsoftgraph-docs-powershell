@@ -15,12 +15,12 @@ Update the navigation property purchaseInvoices in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoice -CompanyId <String> -PurchaseInvoiceId <String>
- [-AdditionalProperties <Hashtable>] [-BuyFromAddress <IMicrosoftGraphPostalAddressType>]
- [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>] [-Id <String>]
- [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
- [-PayToAddress <IMicrosoftGraphPostalAddressType>] [-PayToContact <String>] [-PayToName <String>]
- [-PayToVendorId <String>] [-PayToVendorNumber <String>] [-PricesIncludeTax]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-BuyFromAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
+ [-CurrencyCode <String>] [-CurrencyId <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax]
+ [-DueDate <DateTime>] [-Id <String>] [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>]
+ [-Number <String>] [-PayToAddress <IMicrosoftGraphPostalAddressType>] [-PayToContact <String>]
+ [-PayToName <String>] [-PayToVendorId <String>] [-PayToVendorNumber <String>] [-PricesIncludeTax]
  [-PurchaseInvoiceLines <IMicrosoftGraphPurchaseInvoiceLine[]>]
  [-ShipToAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>] [-ShipToName <String>]
  [-Status <String>] [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>]
@@ -32,19 +32,19 @@ Update-MgBetaFinancialCompanyPurchaseInvoice -CompanyId <String> -PurchaseInvoic
 ### Update
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoice -CompanyId <String> -PurchaseInvoiceId <String>
- -BodyParameter <IMicrosoftGraphPurchaseInvoice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPurchaseInvoice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoice -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-BuyFromAddress <IMicrosoftGraphPostalAddressType>]
- [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>] [-Id <String>]
- [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
- [-PayToAddress <IMicrosoftGraphPostalAddressType>] [-PayToContact <String>] [-PayToName <String>]
- [-PayToVendorId <String>] [-PayToVendorNumber <String>] [-PricesIncludeTax]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-BuyFromAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
+ [-CurrencyCode <String>] [-CurrencyId <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax]
+ [-DueDate <DateTime>] [-Id <String>] [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>]
+ [-Number <String>] [-PayToAddress <IMicrosoftGraphPostalAddressType>] [-PayToContact <String>]
+ [-PayToName <String>] [-PayToVendorId <String>] [-PayToVendorNumber <String>] [-PricesIncludeTax]
  [-PurchaseInvoiceLines <IMicrosoftGraphPurchaseInvoiceLine[]>]
  [-ShipToAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>] [-ShipToName <String>]
  [-Status <String>] [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>]
@@ -56,8 +56,8 @@ Update-MgBetaFinancialCompanyPurchaseInvoice -InputObject <IFinancialsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoice -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPurchaseInvoice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPurchaseInvoice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -446,6 +446,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShipToAddress
 postalAddressType
 To construct, see NOTES section for SHIPTOADDRESS properties and create a hash table.
@@ -670,7 +685,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPurchaseInvoice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

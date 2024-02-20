@@ -17,8 +17,8 @@ Update the navigation property synchronization in applications
 
 ### SetExpanded (Default)
 ```
-Set-MgBetaApplicationSynchronization -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
+Set-MgBetaApplicationSynchronization -ApplicationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
  [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,13 +27,14 @@ Set-MgBetaApplicationSynchronization -ApplicationId <String> [-AdditionalPropert
 ### Set
 ```
 Set-MgBetaApplicationSynchronization -ApplicationId <String> -BodyParameter <IMicrosoftGraphSynchronization>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
+Set-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
  [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,8 +43,8 @@ Set-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [-Addi
 ### SetViaIdentity
 ```
 Set-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronization> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronization> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -175,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Secrets
 Represents a collection of credentials to access provisioned cloud applications.
 To construct, see NOTES section for SECRETS properties and create a hash table.
@@ -249,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

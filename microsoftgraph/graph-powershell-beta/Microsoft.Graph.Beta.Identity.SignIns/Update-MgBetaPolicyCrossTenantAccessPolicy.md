@@ -18,10 +18,11 @@ Update the properties of a cross-tenant access policy.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>]
- [-AllowedCloudEndpoints <String[]>] [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>]
- [-Definition <String[]>] [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>]
+Update-MgBetaPolicyCrossTenantAccessPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedCloudEndpoints <String[]>]
+ [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>] [-Definition <String[]>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>]
  [-Templates <IMicrosoftGraphPolicyTemplate>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -29,7 +30,8 @@ Update-MgBetaPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Templates
 policyTemplate
 To construct, see NOTES section for TEMPLATES properties and create a hash table.
@@ -306,7 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

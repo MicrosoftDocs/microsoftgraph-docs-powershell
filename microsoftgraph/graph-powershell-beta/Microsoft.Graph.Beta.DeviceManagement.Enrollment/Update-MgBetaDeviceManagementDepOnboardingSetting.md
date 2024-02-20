@@ -15,8 +15,8 @@ Update the navigation property depOnboardingSettings in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <String>
- [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>] [-DataSharingConsentGranted]
- [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>]
+ [-DataSharingConsentGranted] [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
  [-DefaultMacOSEnrollmentProfile <IMicrosoftGraphDepMacOSEnrollmentProfile>]
  [-EnrollmentProfiles <IMicrosoftGraphEnrollmentProfile[]>] [-Id <String>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
@@ -30,15 +30,15 @@ Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <Strin
 ### Update
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrollmentIdentity>
- [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>] [-DataSharingConsentGranted]
- [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>]
+ [-DataSharingConsentGranted] [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
  [-DefaultMacOSEnrollmentProfile <IMicrosoftGraphDepMacOSEnrollmentProfile>]
  [-EnrollmentProfiles <IMicrosoftGraphEnrollmentProfile[]>] [-Id <String>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
@@ -52,8 +52,8 @@ Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagemen
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -326,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -458,7 +473,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

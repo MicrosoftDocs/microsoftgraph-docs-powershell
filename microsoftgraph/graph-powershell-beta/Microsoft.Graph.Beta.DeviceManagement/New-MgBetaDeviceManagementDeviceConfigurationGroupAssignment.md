@@ -15,31 +15,33 @@ Create new navigation property to groupAssignments for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment -DeviceConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]
- [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>] [-ExcludeGroup] [-Id <String>]
+ [-TargetGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]
- [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>] [-ExcludeGroup] [-Id <String>]
+ [-TargetGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -187,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetGroupId
 The Id of the AAD group we are targeting the device configuration to.
 
@@ -244,7 +261,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationGroupAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

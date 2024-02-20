@@ -17,10 +17,10 @@ Update the navigation property subscriptions in drives
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDriveListSubscription -DriveId <String> -SubscriptionId <String> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+Update-MgDriveListSubscription -DriveId <String> -SubscriptionId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
  [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,16 +29,16 @@ Update-MgDriveListSubscription -DriveId <String> -SubscriptionId <String> [-Addi
 ### Update
 ```
 Update-MgDriveListSubscription -DriveId <String> -SubscriptionId <String>
- -BodyParameter <IMicrosoftGraphSubscription> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDriveListSubscription -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+Update-MgDriveListSubscription -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
  [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,7 +47,8 @@ Update-MgDriveListSubscription -InputObject <IFilesIdentity> [-AdditionalPropert
 ### UpdateViaIdentity
 ```
 Update-MgDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -419,6 +420,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubscriptionId
 The unique identifier of subscription
 
@@ -476,7 +492,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

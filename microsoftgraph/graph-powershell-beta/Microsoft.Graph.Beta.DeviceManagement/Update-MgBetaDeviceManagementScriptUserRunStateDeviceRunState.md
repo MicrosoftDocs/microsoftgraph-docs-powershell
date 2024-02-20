@@ -16,34 +16,34 @@ Update the navigation property deviceRunStates in deviceManagement
 ```
 Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -DeviceManagementScriptDeviceStateId <String>
  -DeviceManagementScriptId <String> -DeviceManagementScriptUserStateId <String>
- [-AdditionalProperties <Hashtable>] [-ErrorCode <Int32>] [-ErrorDescription <String>] [-Id <String>]
- [-LastStateUpdateDateTime <DateTime>] [-ManagedDevice <IMicrosoftGraphManagedDevice>]
- [-ResultMessage <String>] [-RunState <RunState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ErrorCode <Int32>]
+ [-ErrorDescription <String>] [-Id <String>] [-LastStateUpdateDateTime <DateTime>]
+ [-ManagedDevice <IMicrosoftGraphManagedDevice>] [-ResultMessage <String>] [-RunState <RunState>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -DeviceManagementScriptDeviceStateId <String>
  -DeviceManagementScriptId <String> -DeviceManagementScriptUserStateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementScriptDeviceState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementScriptDeviceState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ErrorCode <Int32>] [-ErrorDescription <String>] [-Id <String>]
- [-LastStateUpdateDateTime <DateTime>] [-ManagedDevice <IMicrosoftGraphManagedDevice>]
- [-ResultMessage <String>] [-RunState <RunState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ErrorCode <Int32>]
+ [-ErrorDescription <String>] [-Id <String>] [-LastStateUpdateDateTime <DateTime>]
+ [-ManagedDevice <IMicrosoftGraphManagedDevice>] [-ResultMessage <String>] [-RunState <RunState>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementScriptDeviceState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementScriptDeviceState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -250,6 +250,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResultMessage
 Details of execution output.
 
@@ -322,7 +337,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptDeviceState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

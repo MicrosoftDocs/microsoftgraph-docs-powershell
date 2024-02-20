@@ -17,9 +17,9 @@ Create new navigation property to historyItems for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserActivityHistoryItem -UserActivityId <String> -UserId <String> [-ActiveDurationSeconds <Int32>]
- [-Activity <IMicrosoftGraphUserActivity>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastActiveDateTime <DateTime>]
+New-MgUserActivityHistoryItem -UserActivityId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-ActiveDurationSeconds <Int32>] [-Activity <IMicrosoftGraphUserActivity>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastActiveDateTime <DateTime>]
  [-LastModifiedDateTime <DateTime>] [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,24 +27,25 @@ New-MgUserActivityHistoryItem -UserActivityId <String> -UserId <String> [-Active
 ### Create
 ```
 New-MgUserActivityHistoryItem -UserActivityId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-ActiveDurationSeconds <Int32>]
- [-Activity <IMicrosoftGraphUserActivity>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastActiveDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
+ [-ResponseHeadersVariable <String>] [-ActiveDurationSeconds <Int32>] [-Activity <IMicrosoftGraphUserActivity>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-LastActiveDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
+ [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -243,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartedDateTime
 Required.
 UTC DateTime when the historyItem (activity session) was started.
@@ -364,7 +380,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

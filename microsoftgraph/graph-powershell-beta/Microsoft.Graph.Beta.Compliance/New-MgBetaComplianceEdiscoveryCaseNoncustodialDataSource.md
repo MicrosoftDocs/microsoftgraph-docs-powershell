@@ -15,23 +15,7 @@ Create a new noncustodialDataSource object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> [-AdditionalProperties <Hashtable>]
- [-ApplyHoldToSource] [-CreatedDateTime <DateTime>] [-DataSource <IMicrosoftGraphEdiscoveryDataSource>]
- [-DisplayName <String>] [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>]
- [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource] [-CreatedDateTime <DateTime>]
  [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
  [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
@@ -39,11 +23,28 @@ New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String>
+ -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource]
+ [-CreatedDateTime <DateTime>] [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>]
+ [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+ [-ReleasedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +313,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 dataSourceContainerStatus
 
@@ -369,7 +385,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

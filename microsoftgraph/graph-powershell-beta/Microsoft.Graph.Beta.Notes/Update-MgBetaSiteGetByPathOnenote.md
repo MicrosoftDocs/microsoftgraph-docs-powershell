@@ -17,16 +17,7 @@ Update the navigation property onenote in sites
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgBetaSiteGetByPathOnenote -Path <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>] [-Operations <IMicrosoftGraphOnenoteOperation[]>]
- [-Pages <IMicrosoftGraphOnenotePage[]>] [-Resources <IMicrosoftGraphOnenoteResource[]>]
- [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-Sections <IMicrosoftGraphOnenoteSection[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateExpanded
-```
-Update-MgBetaSiteGetByPathOnenote -Path <String> -Path1 <String> -SiteId <String>
+Update-MgBetaSiteGetByPathOnenote -Path <String> -SiteId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>]
  [-Operations <IMicrosoftGraphOnenoteOperation[]>] [-Pages <IMicrosoftGraphOnenotePage[]>]
  [-Resources <IMicrosoftGraphOnenoteResource[]>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
@@ -34,47 +25,62 @@ Update-MgBetaSiteGetByPathOnenote -Path <String> -Path1 <String> -SiteId <String
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateExpanded
+```
+Update-MgBetaSiteGetByPathOnenote -Path <String> -Path1 <String> -SiteId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Notebooks <IMicrosoftGraphNotebook[]>] [-Operations <IMicrosoftGraphOnenoteOperation[]>]
+ [-Pages <IMicrosoftGraphOnenotePage[]>] [-Resources <IMicrosoftGraphOnenoteResource[]>]
+ [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-Sections <IMicrosoftGraphOnenoteSection[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update1
 ```
 Update-MgBetaSiteGetByPathOnenote -Path <String> -SiteId <String> -BodyParameter <IMicrosoftGraphOnenote>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSiteGetByPathOnenote -Path <String> -Path1 <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphOnenote> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnenote> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>] [-Operations <IMicrosoftGraphOnenoteOperation[]>]
- [-Pages <IMicrosoftGraphOnenotePage[]>] [-Resources <IMicrosoftGraphOnenoteResource[]>]
- [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-Sections <IMicrosoftGraphOnenoteSection[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>]
+ [-Operations <IMicrosoftGraphOnenoteOperation[]>] [-Pages <IMicrosoftGraphOnenotePage[]>]
+ [-Resources <IMicrosoftGraphOnenoteResource[]>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
+ [-Sections <IMicrosoftGraphOnenoteSection[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>] [-Operations <IMicrosoftGraphOnenoteOperation[]>]
- [-Pages <IMicrosoftGraphOnenotePage[]>] [-Resources <IMicrosoftGraphOnenoteResource[]>]
- [-SectionGroups <IMicrosoftGraphSectionGroup[]>] [-Sections <IMicrosoftGraphOnenoteSection[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Notebooks <IMicrosoftGraphNotebook[]>]
+ [-Operations <IMicrosoftGraphOnenoteOperation[]>] [-Pages <IMicrosoftGraphOnenotePage[]>]
+ [-Resources <IMicrosoftGraphOnenoteResource[]>] [-SectionGroups <IMicrosoftGraphSectionGroup[]>]
+ [-Sections <IMicrosoftGraphOnenoteSection[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenote>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenote>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -279,6 +285,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SectionGroups
 The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
@@ -372,7 +393,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenote
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

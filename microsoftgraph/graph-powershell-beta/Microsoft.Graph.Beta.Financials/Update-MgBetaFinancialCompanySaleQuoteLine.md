@@ -15,20 +15,7 @@ Update the navigation property salesQuoteLines in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
- [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
- [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String>
- -SalesQuoteId <String> [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
  [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
  [-DocumentId <String>] [-Id <String>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>]
@@ -38,58 +25,72 @@ Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateExpanded1
+```
+Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String>
+ -SalesQuoteId <String> [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>]
+ [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>]
+ [-AmountIncludingTax <Decimal>] [-Description <String>] [-DiscountAmount <Decimal>]
+ [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>] [-Id <String>]
+ [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
+ [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
+ [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### Update1
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String>
- -SalesQuoteId <String> -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SalesQuoteId <String> -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <String> -SalesQuoteLineId <String>
- -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
- [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
- [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-Id <String>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>]
+ [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
+ [-Sequence <Int32>] [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>]
+ [-UnitOfMeasureId <String>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
- [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
- [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-Id <String>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>]
+ [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
+ [-Sequence <Int32>] [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>]
+ [-UnitOfMeasureId <String>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -447,6 +448,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesQuoteId
 The unique identifier of salesQuote
 
@@ -609,7 +625,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesQuoteLine
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

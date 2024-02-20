@@ -18,30 +18,32 @@ Use this API to create a new CalendarGroup.
 
 ### CreateExpanded (Default)
 ```
-New-MgUserCalendarGroup -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>] [-ClassId <String>] [-Id <String>]
- [-Name <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserCalendarGroup -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>]
+ [-ClassId <String>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserCalendarGroup -UserId <String> -BodyParameter <IMicrosoftGraphCalendarGroup> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserCalendarGroup -UserId <String> -BodyParameter <IMicrosoftGraphCalendarGroup>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>] [-ClassId <String>] [-Id <String>]
- [-Name <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>]
+ [-ClassId <String>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendarGroup>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -231,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -288,7 +305,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,8 +15,8 @@ Update the navigation property appleUserInitiatedEnrollmentProfiles in deviceMan
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
- -AppleUserInitiatedEnrollmentProfileId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
+ -AppleUserInitiatedEnrollmentProfileId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
  [-AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]
  [-CreatedDateTime <DateTime>] [-DefaultEnrollmentType <AppleUserInitiatedEnrollmentType>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
@@ -28,15 +28,15 @@ Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
 ```
 Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
  -AppleUserInitiatedEnrollmentProfileId <String>
- -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
- -InputObject <IDeviceManagementEnrollmentIdentity> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
  [-AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]
  [-CreatedDateTime <DateTime>] [-DefaultEnrollmentType <AppleUserInitiatedEnrollmentType>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
@@ -48,8 +48,8 @@ Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
 ```
 Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -303,6 +303,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -345,7 +360,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

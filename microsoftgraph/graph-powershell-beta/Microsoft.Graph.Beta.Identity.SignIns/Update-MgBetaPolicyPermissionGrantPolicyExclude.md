@@ -18,7 +18,26 @@ Update the navigation property excludes in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
- -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly]
+ -PermissionGrantPolicyId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
+ [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
+ [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
+ [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
+ -PermissionGrantPolicyId <String> -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly]
  [-ClientApplicationIds <String[]>] [-ClientApplicationPublisherIds <String[]>]
  [-ClientApplicationTenantIds <String[]>] [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>]
  [-PermissionClassification <String>] [-PermissionType <String>] [-Permissions <String[]>]
@@ -26,28 +45,11 @@ Update-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
- -PermissionGrantPolicyId <String> -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
- [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
- [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
- [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -337,6 +339,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -379,7 +396,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

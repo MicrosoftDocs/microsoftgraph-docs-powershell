@@ -22,8 +22,8 @@ In scenarios like test environments where the input parameters and calendar data
 
 ### FindExpanded (Default)
 ```
-Find-MgBetaUserMeetingTime -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
+Find-MgBetaUserMeetingTime -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
  [-LocationConstraint <IMicrosoftGraphLocationConstraint>] [-MaxCandidates <Int32>]
  [-MeetingDuration <TimeSpan>] [-MinimumAttendeePercentage <Double>] [-ReturnSuggestionReasons]
  [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Headers <IDictionary>]
@@ -34,13 +34,14 @@ Find-MgBetaUserMeetingTime -UserId <String> [-AdditionalProperties <Hashtable>]
 ```
 Find-MgBetaUserMeetingTime -UserId <String>
  -BodyParameter <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### FindViaIdentityExpanded
 ```
-Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
+Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
  [-LocationConstraint <IMicrosoftGraphLocationConstraint>] [-MaxCandidates <Int32>]
  [-MeetingDuration <TimeSpan>] [-MinimumAttendeePercentage <Double>] [-ReturnSuggestionReasons]
  [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Headers <IDictionary>]
@@ -51,7 +52,8 @@ Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity> [-AdditionalProp
 ```
 Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -285,6 +287,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReturnSuggestionReasons
 .
 
@@ -373,7 +390,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingTimeSuggestionsResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,8 +15,8 @@ Create a new businessScenarioTask object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId <String> [-ActiveChecklistItemCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
+New-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId <String> [-ResponseHeadersVariable <String>]
+ [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
  [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
  [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
@@ -38,14 +38,14 @@ New-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId <String> [-ActiveCheck
 ### Create
 ```
 New-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphBusinessScenarioTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBusinessScenarioTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ActiveChecklistItemCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
+New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
  [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
  [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
@@ -67,8 +67,8 @@ New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ActiveC
 ### CreateViaIdentity
 ```
 New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBusinessScenarioTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBusinessScenarioTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -666,6 +666,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SpecifiedCompletionRequirements
 plannerTaskCompletionRequirements
 
@@ -771,7 +786,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

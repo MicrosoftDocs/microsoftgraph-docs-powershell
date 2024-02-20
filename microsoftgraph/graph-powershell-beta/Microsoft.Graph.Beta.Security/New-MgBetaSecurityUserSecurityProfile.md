@@ -14,10 +14,10 @@ Create new navigation property to userSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityUserSecurityProfile [-Accounts <IMicrosoftGraphUserAccount[]>]
- [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
+New-MgBetaSecurityUserSecurityProfile [-ResponseHeadersVariable <String>]
+ [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
+ [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,7 +25,8 @@ New-MgBetaSecurityUserSecurityProfile [-Accounts <IMicrosoftGraphUserAccount[]>]
 ### Create
 ```
 New-MgBetaSecurityUserSecurityProfile -BodyParameter <IMicrosoftGraphUserSecurityProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -201,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -303,7 +319,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

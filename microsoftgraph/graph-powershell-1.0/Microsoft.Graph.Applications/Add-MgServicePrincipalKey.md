@@ -19,32 +19,34 @@ Update servicePrincipal can be used to perform an update instead.
 
 ### AddExpanded (Default)
 ```
-Add-MgServicePrincipalKey -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
- [-KeyCredential <IMicrosoftGraphKeyCredential>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
- [-Proof <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Add-MgServicePrincipalKey -ServicePrincipalId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-KeyCredential <IMicrosoftGraphKeyCredential>]
+ [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-Proof <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgServicePrincipalKey -ServicePrincipalId <String>
  -BodyParameter <IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
-Add-MgServicePrincipalKey -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-KeyCredential <IMicrosoftGraphKeyCredential>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
- [-Proof <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Add-MgServicePrincipalKey -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-KeyCredential <IMicrosoftGraphKeyCredential>]
+ [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-Proof <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgServicePrincipalKey -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -229,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalId
 The unique identifier of servicePrincipal
 
@@ -286,7 +303,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

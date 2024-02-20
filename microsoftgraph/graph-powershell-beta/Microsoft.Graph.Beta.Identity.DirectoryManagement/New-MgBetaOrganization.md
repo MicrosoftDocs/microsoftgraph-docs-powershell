@@ -17,8 +17,9 @@ Add new entity to organization
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaOrganization [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
- [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
+New-MgBetaOrganization [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Branding <IMicrosoftGraphOrganizationalBranding>]
+ [-BusinessPhones <String[]>]
  [-CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>]
  [-CertificateConnectorSetting <IMicrosoftGraphCertificateConnectorSetting>] [-City <String>]
  [-Country <String>] [-CountryLetterCode <String>] [-CreatedDateTime <DateTime>]
@@ -38,8 +39,8 @@ New-MgBetaOrganization [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMic
 
 ### Create
 ```
-New-MgBetaOrganization -BodyParameter <IMicrosoftGraphOrganization> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaOrganization -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -540,6 +541,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityComplianceNotificationMails
 Not nullable.
 
@@ -689,7 +705,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

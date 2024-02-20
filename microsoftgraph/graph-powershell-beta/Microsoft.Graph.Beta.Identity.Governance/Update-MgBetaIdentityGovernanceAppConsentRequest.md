@@ -18,8 +18,9 @@ Update the navigation property appConsentRequests in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
- [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>]
- [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
+ [-AppId <String>] [-ConsentType <String>] [-Id <String>]
+ [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +28,16 @@ Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
- -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>]
- [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
+ [-AppId <String>] [-ConsentType <String>] [-Id <String>]
+ [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,7 +45,7 @@ Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernan
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -231,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserConsentRequests
 A list of pending user consent requests.
 Supports $filter (eq).
@@ -290,7 +307,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

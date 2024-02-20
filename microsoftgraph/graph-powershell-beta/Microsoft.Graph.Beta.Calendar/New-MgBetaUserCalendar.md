@@ -18,7 +18,7 @@ Create a new calendar for a user.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserCalendar -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserCalendar -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllowedOnlineMeetingProviders <String[]>] [-CalendarGroupId <String>]
  [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
  [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>] [-Color <String>]
@@ -32,14 +32,15 @@ New-MgBetaUserCalendar -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaUserCalendar -UserId <String> -BodyParameter <IMicrosoftGraphCalendar> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserCalendar -UserId <String> -BodyParameter <IMicrosoftGraphCalendar>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserCalendar -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedOnlineMeetingProviders <String[]>] [-CalendarGroupId <String>]
+New-MgBetaUserCalendar -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedOnlineMeetingProviders <String[]>] [-CalendarGroupId <String>]
  [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
  [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>] [-Color <String>]
  [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>] [-HexColor <String>]
@@ -53,7 +54,8 @@ New-MgBetaUserCalendar -InputObject <ICalendarIdentity> [-AdditionalProperties <
 ### CreateViaIdentity
 ```
 New-MgBetaUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -506,6 +508,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the calendar.
 Read-only.
@@ -581,7 +598,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendar
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

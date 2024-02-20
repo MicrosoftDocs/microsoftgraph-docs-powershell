@@ -14,19 +14,21 @@ Create new navigation property to credentialUserRegistrationsSummaries for tenan
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-MfaAndSsprCapableUserCount <Int32>]
- [-MfaConditionalAccessPolicyState <String>] [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>]
- [-SecurityDefaultsEnabled] [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>]
- [-TenantDisplayName <String>] [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
+ [-MfaAndSsprCapableUserCount <Int32>] [-MfaConditionalAccessPolicyState <String>]
+ [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>] [-SecurityDefaultsEnabled]
+ [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>] [-TenantDisplayName <String>]
+ [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
- -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -196,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityDefaultsEnabled
 A flag indicating whether Identity Security Defaults is enabled.
 Optional.
@@ -354,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

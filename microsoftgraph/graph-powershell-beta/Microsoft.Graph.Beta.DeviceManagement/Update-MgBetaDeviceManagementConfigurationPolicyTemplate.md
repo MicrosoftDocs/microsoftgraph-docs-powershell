@@ -15,9 +15,10 @@ Update the navigation property configurationPolicyTemplates in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplate
- -DeviceManagementConfigurationPolicyTemplateId <String> [-AdditionalProperties <Hashtable>]
- [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>] [-DisplayName <String>]
- [-DisplayVersion <String>] [-Id <String>] [-LifecycleState <DeviceManagementTemplateLifecycleState>]
+ -DeviceManagementConfigurationPolicyTemplateId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>]
+ [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
+ [-LifecycleState <DeviceManagementTemplateLifecycleState>]
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
@@ -29,15 +30,16 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplate
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplate
  -DeviceManagementConfigurationPolicyTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>]
- [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings]
+ [-BaseId <String>] [-Description <String>] [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
  [-LifecycleState <DeviceManagementTemplateLifecycleState>]
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
@@ -49,8 +51,9 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceMa
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -271,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingTemplates
 Setting templates
 To construct, see NOTES section for SETTINGTEMPLATES properties and create a hash table.
@@ -359,7 +377,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

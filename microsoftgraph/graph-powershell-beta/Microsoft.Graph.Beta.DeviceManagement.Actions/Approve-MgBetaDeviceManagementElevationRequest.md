@@ -15,29 +15,31 @@ Invoke action approve
 ### ApproveExpanded (Default)
 ```
 Approve-MgBetaDeviceManagementElevationRequest -PrivilegeManagementElevationRequestId <String>
- [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Approve
 ```
 Approve-MgBetaDeviceManagementElevationRequest -PrivilegeManagementElevationRequestId <String>
  -BodyParameter <IPaths1J8Aa7PDevicemanagementElevationrequestsPrivilegemanagementelevationrequestIdMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ApproveViaIdentityExpanded
 ```
 Approve-MgBetaDeviceManagementElevationRequest -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReviewerJustification <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApproveViaIdentity
 ```
 Approve-MgBetaDeviceManagementElevationRequest -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1J8Aa7PDevicemanagementElevationrequestsPrivilegemanagementelevationrequestIdMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -137,6 +139,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewerJustification
 .
 
@@ -194,7 +211,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegeManagementElevationRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

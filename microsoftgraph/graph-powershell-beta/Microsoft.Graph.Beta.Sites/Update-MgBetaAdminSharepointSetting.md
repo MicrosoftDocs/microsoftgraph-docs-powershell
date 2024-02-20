@@ -18,7 +18,7 @@ Update one or more tenant-level settings for SharePoint and OneDrive.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaAdminSharepointSetting [-AdditionalProperties <Hashtable>]
+Update-MgBetaAdminSharepointSetting [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllowedDomainGuidsForSyncApp <String[]>] [-AvailableManagedPathsForSiteCreation <String[]>]
  [-DeletedUserPersonalSiteRetentionPeriodInDays <Int32>] [-ExcludedFileExtensionsForSyncApp <String[]>]
  [-Id <String>] [-IdleSessionSignOut <IMicrosoftGraphIdleSessionSignOut>] [-ImageTaggingOption <String>]
@@ -36,8 +36,9 @@ Update-MgBetaAdminSharepointSetting [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgBetaAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSettings>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -458,6 +459,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharingAllowedDomainList
 Collection of email domains that are allowed for sharing outside the organization.
 
@@ -607,7 +623,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharepointSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

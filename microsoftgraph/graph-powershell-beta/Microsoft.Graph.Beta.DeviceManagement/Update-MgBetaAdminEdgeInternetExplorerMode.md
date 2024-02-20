@@ -17,15 +17,16 @@ Update the navigation property internetExplorerMode in admin
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaAdminEdgeInternetExplorerMode [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-SiteLists <IMicrosoftGraphBrowserSiteList[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAdminEdgeInternetExplorerMode [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-SiteLists <IMicrosoftGraphBrowserSiteList[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAdminEdgeInternetExplorerMode -BodyParameter <IMicrosoftGraphInternetExplorerMode>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,6 +111,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteLists
 A collection of site lists to support Internet Explorer mode.
 To construct, see NOTES section for SITELISTS properties and create a hash table.
@@ -167,7 +183,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternetExplorerMode
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

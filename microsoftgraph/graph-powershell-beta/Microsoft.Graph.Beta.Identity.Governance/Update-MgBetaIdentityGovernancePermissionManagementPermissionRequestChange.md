@@ -15,8 +15,8 @@ Update the navigation property permissionsRequestChanges in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -PermissionsRequestChangeId <String>
- [-ActiveOccurrenceStatus <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ModificationDateTime <DateTime>] [-PermissionsRequestId <String>] [-StatusDetail <String>]
+ [-ResponseHeadersVariable <String>] [-ActiveOccurrenceStatus <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-ModificationDateTime <DateTime>] [-PermissionsRequestId <String>] [-StatusDetail <String>]
  [-TicketId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -24,24 +24,26 @@ Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -Perm
 ### Update
 ```
 Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -PermissionsRequestChangeId <String>
- -BodyParameter <IMicrosoftGraphPermissionsRequestChange> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPermissionsRequestChange> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
- -InputObject <IIdentityGovernanceIdentity> [-ActiveOccurrenceStatus <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-ModificationDateTime <DateTime>]
- [-PermissionsRequestId <String>] [-StatusDetail <String>] [-TicketId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-ActiveOccurrenceStatus <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ModificationDateTime <DateTime>] [-PermissionsRequestId <String>] [-StatusDetail <String>]
+ [-TicketId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphPermissionsRequestChange>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -202,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StatusDetail
 statusDetail
 
@@ -274,7 +291,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsRequestChange
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -19,12 +19,13 @@ You can create up to 50 workflows in a tenant.
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceLifecycleWorkflow [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-CreatedBy <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-ExecutionConditions <Hashtable>]
- [-ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>] [-Id <String>] [-IsEnabled]
- [-IsSchedulingEnabled] [-LastModifiedBy <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
- [-NextScheduleRunDateTime <DateTime>] [-Runs <IMicrosoftGraphIdentityGovernanceRun[]>]
+New-MgIdentityGovernanceLifecycleWorkflow [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedBy <IMicrosoftGraphUser>]
+ [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-ExecutionConditions <Hashtable>] [-ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]
+ [-Id <String>] [-IsEnabled] [-IsSchedulingEnabled] [-LastModifiedBy <IMicrosoftGraphUser>]
+ [-LastModifiedDateTime <DateTime>] [-NextScheduleRunDateTime <DateTime>]
+ [-Runs <IMicrosoftGraphIdentityGovernanceRun[]>]
  [-TaskReports <IMicrosoftGraphIdentityGovernanceTaskReport[]>]
  [-Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]
  [-UserProcessingResults <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>] [-Version <Int32>]
@@ -35,7 +36,8 @@ New-MgIdentityGovernanceLifecycleWorkflow [-AdditionalProperties <Hashtable>] [-
 ### Create
 ```
 New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter <IMicrosoftGraphIdentityGovernanceWorkflow>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -324,6 +326,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Runs
 Workflow runs.
 To construct, see NOTES section for RUNS properties and create a hash table.
@@ -461,7 +478,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceWorkflow
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

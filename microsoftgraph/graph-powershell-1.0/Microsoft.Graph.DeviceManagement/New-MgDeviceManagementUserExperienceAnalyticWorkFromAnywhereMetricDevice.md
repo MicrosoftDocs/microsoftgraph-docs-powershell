@@ -18,13 +18,14 @@ Create new navigation property to metricDevices for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
- -UserExperienceAnalyticsWorkFromAnywhereMetricId <String> [-AdditionalProperties <Hashtable>]
- [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>]
- [-AzureAdRegistered] [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>]
- [-CloudProvisioningScore <Double>] [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-IsCloudManagedGatewayEnabled]
- [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>]
- [-OSVersion <String>] [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ -UserExperienceAnalyticsWorkFromAnywhereMetricId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned] [-AutoPilotRegistered]
+ [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>] [-AzureAdRegistered] [-CloudIdentityScore <Double>]
+ [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>] [-CompliancePolicySetToIntune]
+ [-DeviceId <String>] [-DeviceName <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>] [-Manufacturer <String>]
+ [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
+ [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
  [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
  [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
  [-UpgradeEligibility <OperatingSystemUpgradeEligibility>] [-WindowsScore <Double>]
@@ -36,20 +37,22 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 ```
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -UserExperienceAnalyticsWorkFromAnywhereMetricId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned]
- [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>] [-AzureAdRegistered]
- [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
- [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-IsCloudManagedGatewayEnabled]
- [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>]
- [-OSVersion <String>] [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned] [-AutoPilotRegistered]
+ [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>] [-AzureAdRegistered] [-CloudIdentityScore <Double>]
+ [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>] [-CompliancePolicySetToIntune]
+ [-DeviceId <String>] [-DeviceName <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>] [-Manufacturer <String>]
+ [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
+ [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
  [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
  [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
  [-UpgradeEligibility <OperatingSystemUpgradeEligibility>] [-WindowsScore <Double>]
@@ -61,8 +64,9 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 ```
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -624,6 +628,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecureBootCheckFailed
 When TRUE, indicates secure boot hardware check failed for device to upgrade to the latest version of windows.
 When FALSE, indicates the check succeeded.
@@ -825,7 +844,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

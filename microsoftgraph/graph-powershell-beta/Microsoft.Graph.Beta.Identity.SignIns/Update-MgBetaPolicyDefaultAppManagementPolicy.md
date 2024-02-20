@@ -18,9 +18,9 @@ Update the properties of a tenantAppManagementPolicy object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
- [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
+Update-MgBetaPolicyDefaultAppManagementPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
  [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,8 @@ Update-MgBetaPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>
 ### Update
 ```
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +250,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalRestrictions
 appManagementConfiguration
 To construct, see NOTES section for SERVICEPRINCIPALRESTRICTIONS properties and create a hash table.
@@ -306,7 +322,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

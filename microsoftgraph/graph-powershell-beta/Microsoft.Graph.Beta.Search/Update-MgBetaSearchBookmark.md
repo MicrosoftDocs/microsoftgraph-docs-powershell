@@ -15,9 +15,10 @@ Update the properties of a bookmark object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSearchBookmark -BookmarkId <String> [-AdditionalProperties <Hashtable>]
- [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Categories <String[]>]
- [-Description <String>] [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
+Update-MgBetaSearchBookmark -BookmarkId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
+ [-AvailabilityStartDateTime <DateTime>] [-Categories <String[]>] [-Description <String>]
+ [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-PowerAppIds <String[]>] [-State <String>]
@@ -28,14 +29,16 @@ Update-MgBetaSearchBookmark -BookmarkId <String> [-AdditionalProperties <Hashtab
 ### Update
 ```
 Update-MgBetaSearchBookmark -BookmarkId <String> -BodyParameter <IMicrosoftGraphSearchBookmark>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Categories <String[]>]
- [-Description <String>] [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
+Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
+ [-AvailabilityStartDateTime <DateTime>] [-Categories <String[]>] [-Description <String>]
+ [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-PowerAppIds <String[]>] [-State <String>]
@@ -46,7 +49,8 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-AdditionalPropertie
 ### UpdateViaIdentity
 ```
 Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchBookmark>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -384,6 +388,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 answerState
 
@@ -475,7 +494,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchBookmark
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

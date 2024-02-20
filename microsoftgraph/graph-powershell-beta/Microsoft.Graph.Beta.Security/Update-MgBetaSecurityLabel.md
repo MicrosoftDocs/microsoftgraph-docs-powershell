@@ -14,7 +14,7 @@ Update the navigation property labels in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityLabel [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityLabel [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Authorities <IMicrosoftGraphSecurityAuthorityTemplate[]>]
  [-Categories <IMicrosoftGraphSecurityCategoryTemplate[]>]
  [-Citations <IMicrosoftGraphSecurityCitationTemplate[]>]
@@ -26,8 +26,9 @@ Update-MgBetaSecurityLabel [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -192,6 +193,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabels
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 To construct, see NOTES section for RETENTIONLABELS properties and create a hash table.
@@ -249,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

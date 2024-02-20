@@ -17,32 +17,32 @@ Update the navigation property lastMessagePreview in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserChatLastMessagePreview -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>] [-EventDetail <Hashtable>] [-From <Hashtable>]
- [-Id <String>] [-IsDeleted] [-MessageType <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserChatLastMessagePreview -ChatId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>]
+ [-EventDetail <Hashtable>] [-From <Hashtable>] [-Id <String>] [-IsDeleted] [-MessageType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserChatLastMessagePreview -ChatId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphChatMessageInfo> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChatMessageInfo> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>] [-EventDetail <Hashtable>] [-From <Hashtable>]
- [-Id <String>] [-IsDeleted] [-MessageType <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>]
+ [-EventDetail <Hashtable>] [-From <Hashtable>] [-Id <String>] [-IsDeleted] [-MessageType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphChatMessageInfo> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChatMessageInfo> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -306,7 +321,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageInfo
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

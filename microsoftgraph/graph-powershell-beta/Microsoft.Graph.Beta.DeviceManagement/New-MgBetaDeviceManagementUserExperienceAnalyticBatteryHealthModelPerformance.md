@@ -14,10 +14,11 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerfo
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance [-ActiveDevices <Int32>]
- [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
- [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
- [-Manufacturer <String>] [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
+New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+ [-ResponseHeadersVariable <String>] [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
+ [-AverageBatteryAgeInDays <Int32>] [-AverageEstimatedRuntimeInMinutes <Int32>]
+ [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-Manufacturer <String>]
+ [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
  [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-Model <String>]
  [-ModelBatteryHealthScore <Int32>] [-ModelHealthStatus <UserExperienceAnalyticsHealthState>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,8 +27,9 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance [-
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -309,6 +311,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -350,7 +367,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

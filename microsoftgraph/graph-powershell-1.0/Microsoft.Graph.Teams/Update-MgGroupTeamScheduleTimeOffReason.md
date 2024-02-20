@@ -20,22 +20,22 @@ If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupTeamScheduleTimeOffReason -GroupId <String> -TimeOffReasonId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-IconType <String>] [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupTeamScheduleTimeOffReason -GroupId <String> -TimeOffReasonId <String>
- -BodyParameter <IMicrosoftGraphTimeOffReason> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTimeOffReason> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
+Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +43,8 @@ Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Addition
 ### UpdateViaIdentity
 ```
 Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTimeOffReason> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTimeOffReason> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -227,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TimeOffReasonId
 The unique identifier of timeOffReason
 
@@ -284,7 +299,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

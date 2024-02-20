@@ -19,30 +19,34 @@ You can also enable and disable specific plans associated with a subscription.
 
 ### AssignExpanded (Default)
 ```
-Set-MgUserLicense -UserId <String> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
- [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserLicense -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AddLicenses <IMicrosoftGraphAssignedLicense[]>] [-AdditionalProperties <Hashtable>]
+ [-RemoveLicenses <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgUserLicense -UserId <String>
  -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
 ```
-Set-MgUserLicense -InputObject <IUsersActionsIdentity> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
- [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserLicense -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AddLicenses <IMicrosoftGraphAssignedLicense[]>] [-AdditionalProperties <Hashtable>]
+ [-RemoveLicenses <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgUserLicense -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -288,6 +292,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -345,7 +364,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

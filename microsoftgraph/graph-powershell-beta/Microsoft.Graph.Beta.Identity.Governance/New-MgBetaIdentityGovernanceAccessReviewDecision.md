@@ -14,9 +14,9 @@ Create new navigation property to decisions for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernanceAccessReviewDecision [-AccessReviewId <String>] [-AdditionalProperties <Hashtable>]
- [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
- [-Decision <String>] [-Id <String>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
+New-MgBetaIdentityGovernanceAccessReviewDecision [-ResponseHeadersVariable <String>] [-AccessReviewId <String>]
+ [-AdditionalProperties <Hashtable>] [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>]
+ [-ApplyResult <String>] [-Decision <String>] [-Id <String>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
  [-Instance <IMicrosoftGraphAccessReviewInstance>] [-Justification <String>]
  [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
  [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
@@ -29,8 +29,8 @@ New-MgBetaIdentityGovernanceAccessReviewDecision [-AccessReviewId <String>] [-Ad
 ### Create
 ```
 New-MgBetaIdentityGovernanceAccessReviewDecision
- -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -354,6 +354,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewedBy
 userIdentity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
@@ -443,7 +458,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewInstanceDecisionItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

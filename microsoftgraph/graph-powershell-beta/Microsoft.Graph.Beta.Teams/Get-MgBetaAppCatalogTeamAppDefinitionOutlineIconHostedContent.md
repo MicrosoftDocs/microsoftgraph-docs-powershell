@@ -16,28 +16,29 @@ Retrieve the hosted content in an app's icon.
 ### Get (Default)
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
- -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
- -TeamsAppId <String> -OutFile <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -TeamsAppId <String> [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
+ [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppDefinitionId
 The unique identifier of teamsAppDefinition
 
@@ -195,7 +211,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

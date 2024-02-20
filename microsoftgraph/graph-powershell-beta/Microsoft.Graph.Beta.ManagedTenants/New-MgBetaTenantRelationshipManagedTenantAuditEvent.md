@@ -14,18 +14,19 @@ Create new navigation property to auditEvents for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantAuditEvent [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-ActivityId <String>] [-AdditionalProperties <Hashtable>] [-Category <String>] [-HttpVerb <String>]
- [-IPAddress <String>] [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>]
- [-InitiatedByUserId <String>] [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>]
- [-TenantNames <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantAuditEvent [-ResponseHeadersVariable <String>] [-Activity <String>]
+ [-ActivityDateTime <DateTime>] [-ActivityId <String>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-HttpVerb <String>] [-IPAddress <String>] [-Id <String>] [-InitiatedByAppId <String>]
+ [-InitiatedByUpn <String>] [-InitiatedByUserId <String>] [-RequestBody <String>] [-RequestUrl <String>]
+ [-TenantIds <String>] [-TenantNames <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -297,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantIds
 The collection of Microsoft Entra tenant identifiers for the managed tenants that were affected by a change, and is formatted as a list of comma-separated values.
 Required.
@@ -372,7 +388,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

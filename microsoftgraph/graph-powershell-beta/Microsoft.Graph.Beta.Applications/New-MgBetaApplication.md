@@ -18,9 +18,10 @@ Create a new application object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaApplication [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>]
- [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
+New-MgBetaApplication [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
  [-Certification <IMicrosoftGraphCertification>] [-ConnectorGroup <IMicrosoftGraphConnectorGroup>]
  [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
  [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
@@ -50,8 +51,8 @@ New-MgBetaApplication [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraph
 
 ### Create
 ```
-New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -735,6 +736,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SamlMetadataUrl
 The URL where the service exposes SAML metadata for federation.
 This property is valid only for single-tenant applications.
@@ -1011,7 +1027,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

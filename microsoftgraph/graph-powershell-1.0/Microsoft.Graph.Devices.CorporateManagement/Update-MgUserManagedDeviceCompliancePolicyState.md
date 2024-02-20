@@ -18,8 +18,9 @@ Update the navigation property deviceCompliancePolicyStates in users
 ### UpdateExpanded (Default)
 ```
 Update-MgUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <String>
- -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ -ManagedDeviceId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-Version <Int32>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,13 +29,14 @@ Update-MgUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <
 ```
 Update-MgUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <String>
  -ManagedDeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-Version <Int32>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,8 +45,8 @@ Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateM
 ### UpdateViaIdentity
 ```
 Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingCount
 Count of how many setting a policy holds
 
@@ -323,7 +340,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

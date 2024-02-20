@@ -16,34 +16,36 @@ Update the navigation property deviceSettingStateSummaries in deviceManagement
 ```
 Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
  -DeviceManagementIntentDeviceSettingStateSummaryId <String> -DeviceManagementIntentId <String>
- [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>] [-ConflictCount <Int32>] [-ErrorCount <Int32>]
- [-Id <String>] [-NonCompliantCount <Int32>] [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>]
- [-SettingName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>]
+ [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-Id <String>] [-NonCompliantCount <Int32>]
+ [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>] [-SettingName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
  -DeviceManagementIntentDeviceSettingStateSummaryId <String> -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>] [-ConflictCount <Int32>] [-ErrorCount <Int32>]
- [-Id <String>] [-NonCompliantCount <Int32>] [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>]
- [-SettingName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>]
+ [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-Id <String>] [-NonCompliantCount <Int32>]
+ [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>] [-SettingName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -264,6 +266,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingName
 Name of a setting
 
@@ -321,7 +338,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

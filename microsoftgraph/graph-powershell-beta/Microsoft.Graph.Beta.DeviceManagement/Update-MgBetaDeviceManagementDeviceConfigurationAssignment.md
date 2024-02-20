@@ -18,8 +18,8 @@ Update the navigation property assignments in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationAssignmentId <String>
- -DeviceConfigurationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <DeviceConfigAssignmentIntent>] [-Source <DeviceAndAppManagementAssignmentSource>]
+ -DeviceConfigurationId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Intent <DeviceConfigAssignmentIntent>] [-Source <DeviceAndAppManagementAssignmentSource>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,14 +28,15 @@ Update-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationA
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationAssignmentId <String>
  -DeviceConfigurationId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <DeviceConfigAssignmentIntent>]
- [-Source <DeviceAndAppManagementAssignmentSource>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <DeviceConfigAssignmentIntent>] [-Source <DeviceAndAppManagementAssignmentSource>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +44,8 @@ Update-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDevice
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -190,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 Represents source of assignment.
 
@@ -263,7 +279,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

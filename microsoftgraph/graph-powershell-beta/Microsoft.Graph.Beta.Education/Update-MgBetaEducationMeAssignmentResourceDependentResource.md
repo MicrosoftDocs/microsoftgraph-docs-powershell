@@ -16,32 +16,34 @@ Update the navigation property dependentResources in education
 ```
 Update-MgBetaEducationMeAssignmentResourceDependentResource -EducationAssignmentId <String>
  -EducationAssignmentResourceId <String> -EducationAssignmentResourceId1 <String>
- [-AdditionalProperties <Hashtable>] [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>] [-DistributeForStudentWork]
+ [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationMeAssignmentResourceDependentResource -EducationAssignmentId <String>
  -EducationAssignmentResourceId <String> -EducationAssignmentResourceId1 <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEducationMeAssignmentResourceDependentResource -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DependentResources <IMicrosoftGraphEducationAssignmentResource[]>] [-DistributeForStudentWork]
+ [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationMeAssignmentResourceDependentResource -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -277,7 +294,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

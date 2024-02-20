@@ -20,32 +20,33 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 
 ### ActivateExpanded (Default)
 ```
-Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String> [-AdditionalProperties <Hashtable>]
- [-Subjects <IMicrosoftGraphUser[]>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Activate
 ```
 Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String>
  -BodyParameter <IPathsAc0U9KIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentityExpanded
 ```
 Initialize-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
 Initialize-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsAc0U9KIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -148,6 +149,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Subjects
 .
 To construct, see NOTES section for SUBJECTS properties and create a hash table.
@@ -221,7 +237,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -16,8 +16,9 @@ Invoke action reorder
 ```
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
  -DeviceManagementConfigurationPolicyId <String> -DeviceManagementReusablePolicySettingId <String>
- [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Reorder
@@ -25,22 +26,22 @@ Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfiguratio
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
  -DeviceManagementConfigurationPolicyId <String> -DeviceManagementReusablePolicySettingId <String>
  -Body <IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReorderViaIdentityExpanded
 ```
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReorderViaIdentity
 ```
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
- -InputObject <IDeviceManagementActionsIdentity>
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -204,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -246,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

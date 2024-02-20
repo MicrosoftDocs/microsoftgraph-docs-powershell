@@ -15,8 +15,9 @@ Create new navigation property to definitionValues for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -GroupPolicyConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-ConfigurationType <GroupPolicyConfigurationType>]
- [-CreatedDateTime <DateTime>] [-Definition <IMicrosoftGraphGroupPolicyDefinition>] [-Enabled] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ConfigurationType <GroupPolicyConfigurationType>] [-CreatedDateTime <DateTime>]
+ [-Definition <IMicrosoftGraphGroupPolicyDefinition>] [-Enabled] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,15 +25,16 @@ New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -GroupPolicyCo
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -GroupPolicyConfigurationId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionValue> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionValue> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ConfigurationType <GroupPolicyConfigurationType>]
- [-CreatedDateTime <DateTime>] [-Definition <IMicrosoftGraphGroupPolicyDefinition>] [-Enabled] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ConfigurationType <GroupPolicyConfigurationType>] [-CreatedDateTime <DateTime>]
+ [-Definition <IMicrosoftGraphGroupPolicyDefinition>] [-Enabled] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,8 +42,8 @@ New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionValue> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionValue> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -291,7 +308,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionValue
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

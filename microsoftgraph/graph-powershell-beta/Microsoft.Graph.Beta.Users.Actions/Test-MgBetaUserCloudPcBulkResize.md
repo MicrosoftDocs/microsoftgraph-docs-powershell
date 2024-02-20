@@ -15,30 +15,32 @@ Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 ### ValidateExpanded (Default)
 ```
-Test-MgBetaUserCloudPcBulkResize -UserId <String> [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>]
- [-TargetServicePlanId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Test-MgBetaUserCloudPcBulkResize -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>] [-TargetServicePlanId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaUserCloudPcBulkResize -UserId <String>
  -BodyParameter <IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
 ```
-Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>] [-TargetServicePlanId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
 Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,6 +143,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetServicePlanId
 .
 
@@ -213,7 +230,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcResizeValidationResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

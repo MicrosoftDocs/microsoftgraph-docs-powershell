@@ -17,8 +17,8 @@ Update the navigation property managedDevices in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ComplianceState <ComplianceState>]
+Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
  [-DeviceCategory <IMicrosoftGraphDeviceCategory>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
@@ -38,14 +38,14 @@ Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-Addition
 ### Update
 ```
 Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphManagedDevice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <ComplianceState>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
  [-DeviceCategory <IMicrosoftGraphDeviceCategory>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
@@ -65,8 +65,8 @@ Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDevice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -436,6 +436,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -525,7 +540,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

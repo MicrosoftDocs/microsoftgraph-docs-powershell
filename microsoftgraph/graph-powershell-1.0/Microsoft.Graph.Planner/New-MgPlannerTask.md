@@ -18,8 +18,8 @@ Create a new plannerTask.
 
 ### CreateExpanded (Default)
 ```
-New-MgPlannerTask [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>]
- [-AppliedCategories <Hashtable>]
+New-MgPlannerTask [-ResponseHeadersVariable <String>] [-ActiveChecklistItemCount <Int32>]
+ [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
  [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
  [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
@@ -34,8 +34,8 @@ New-MgPlannerTask [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Ha
 
 ### Create
 ```
-New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -518,6 +518,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 Date and time at which the task starts.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -591,7 +606,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

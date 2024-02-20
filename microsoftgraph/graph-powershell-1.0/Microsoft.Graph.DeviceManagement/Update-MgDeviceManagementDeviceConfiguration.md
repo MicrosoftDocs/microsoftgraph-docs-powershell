@@ -19,9 +19,9 @@ Update the properties of a androidGeneralDeviceConfiguration object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
  [-DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]
  [-DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]
@@ -32,16 +32,16 @@ Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
 ### Update
 ```
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
  [-DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]
  [-DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]
@@ -52,8 +52,8 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -293,6 +293,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserStatuses
 Device configuration installation status by user.
 To construct, see NOTES section for USERSTATUSES properties and create a hash table.
@@ -382,7 +397,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

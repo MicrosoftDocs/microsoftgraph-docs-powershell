@@ -18,18 +18,18 @@ Create a new auditEvent object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementAuditEvent [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
- [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementAuditEvent [-ResponseHeadersVariable <String>] [-Activity <String>]
+ [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
+ [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
+ [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
+ [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -281,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -322,7 +337,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

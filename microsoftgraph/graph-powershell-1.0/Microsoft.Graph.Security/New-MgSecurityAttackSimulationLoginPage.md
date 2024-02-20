@@ -17,17 +17,19 @@ Create new navigation property to loginPages for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationLoginPage [-AdditionalProperties <Hashtable>] [-Content <String>]
- [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-Source <String>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationLoginPage [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Content <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-Language <String>]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-Source <String>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLoginPage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLoginPage>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -238,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 simulationContentSource
 
@@ -309,7 +326,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLoginPage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

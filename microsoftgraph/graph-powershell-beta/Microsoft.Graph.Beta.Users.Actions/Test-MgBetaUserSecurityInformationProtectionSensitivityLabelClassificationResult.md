@@ -18,7 +18,8 @@ The API returns an informationProtectionAction that contains one of more of the 
 ### EvaluateExpanded (Default)
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]
  [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,13 +28,14 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult -UserId <String>
  -BodyParameter <IPaths12Nib3JUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult
- -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]
  [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,7 +46,8 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult
  -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths12Nib3JUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -164,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -221,7 +239,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

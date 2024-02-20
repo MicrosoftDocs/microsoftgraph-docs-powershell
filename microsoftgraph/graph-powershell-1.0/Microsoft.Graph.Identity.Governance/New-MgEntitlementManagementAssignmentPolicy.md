@@ -16,8 +16,9 @@ The request will include a reference to the accessPackage that will contain this
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementAssignmentPolicy [-AccessPackage <IMicrosoftGraphAccessPackage>]
- [-AdditionalProperties <Hashtable>] [-AllowedTargetScope <String>]
+New-MgEntitlementManagementAssignmentPolicy [-ResponseHeadersVariable <String>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
+ [-AllowedTargetScope <String>]
  [-AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>] [-Description <String>]
@@ -33,7 +34,8 @@ New-MgEntitlementManagementAssignmentPolicy [-AccessPackage <IMicrosoftGraphAcce
 ### Create
 ```
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -634,6 +636,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewSettings
 accessPackageAssignmentReviewSettings
 To construct, see NOTES section for REVIEWSETTINGS properties and create a hash table.
@@ -706,7 +723,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

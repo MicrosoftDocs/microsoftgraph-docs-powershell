@@ -17,13 +17,14 @@ Update the navigation property sites in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupSite -GroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-Drives <IMicrosoftGraphDrive[]>] [-ETag <String>]
- [-Error <IMicrosoftGraphPublicError>] [-ExternalColumns <IMicrosoftGraphColumnDefinition[]>] [-Id <String>]
- [-IsPersonalSite] [-Items <IMicrosoftGraphBaseItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgGroupSite -GroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>]
+ [-Drives <IMicrosoftGraphDrive[]>] [-ETag <String>] [-Error <IMicrosoftGraphPublicError>]
+ [-ExternalColumns <IMicrosoftGraphColumnDefinition[]>] [-Id <String>] [-IsPersonalSite]
+ [-Items <IMicrosoftGraphBaseItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-Lists <IMicrosoftGraphList[]>] [-Name <String>] [-Onenote <IMicrosoftGraphOnenote>]
  [-Operations <IMicrosoftGraphRichLongRunningOperation[]>] [-ParentReference <IMicrosoftGraphItemReference>]
@@ -37,18 +38,20 @@ Update-MgGroupSite -GroupId <String> -SiteId <String> [-AdditionalProperties <Ha
 ### Update
 ```
 Update-MgGroupSite -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphSite>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupSite -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-Drives <IMicrosoftGraphDrive[]>] [-ETag <String>]
- [-Error <IMicrosoftGraphPublicError>] [-ExternalColumns <IMicrosoftGraphColumnDefinition[]>] [-Id <String>]
- [-IsPersonalSite] [-Items <IMicrosoftGraphBaseItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgGroupSite -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>]
+ [-Drives <IMicrosoftGraphDrive[]>] [-ETag <String>] [-Error <IMicrosoftGraphPublicError>]
+ [-ExternalColumns <IMicrosoftGraphColumnDefinition[]>] [-Id <String>] [-IsPersonalSite]
+ [-Items <IMicrosoftGraphBaseItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-Lists <IMicrosoftGraphList[]>] [-Name <String>] [-Onenote <IMicrosoftGraphOnenote>]
  [-Operations <IMicrosoftGraphRichLongRunningOperation[]>] [-ParentReference <IMicrosoftGraphItemReference>]
@@ -61,8 +64,9 @@ Update-MgGroupSite -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtab
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSite> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSite>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -564,6 +568,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Root
 root
 
@@ -732,7 +751,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

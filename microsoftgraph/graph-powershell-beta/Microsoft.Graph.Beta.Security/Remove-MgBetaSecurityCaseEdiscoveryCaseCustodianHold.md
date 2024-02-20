@@ -20,13 +20,15 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 ### RemoveExpanded (Default)
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Remove1
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1P15Ma7SecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -35,20 +37,22 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String>
 ### Remove
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity1
 ```
 Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1P15Ma7SecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -56,8 +60,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIden
 
 ### RemoveViaIdentity
 ```
-Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity> [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -213,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -255,7 +275,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

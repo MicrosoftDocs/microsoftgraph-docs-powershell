@@ -14,9 +14,9 @@ Create new navigation property to managedDeviceComplianceTrends for tenantRelati
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-AdditionalProperties <Hashtable>]
- [-CompliantDeviceCount <Int32>] [-ConfigManagerDeviceCount <Int32>] [-CountDateTime <String>]
- [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodDeviceCount <Int32>]
+New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConfigManagerDeviceCount <Int32>]
+ [-CountDateTime <String>] [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodDeviceCount <Int32>]
  [-NoncompliantDeviceCount <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
  [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -25,8 +25,8 @@ New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-Addition
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -213,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 The display name for the managed tenant.
 Optional.
@@ -305,7 +320,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

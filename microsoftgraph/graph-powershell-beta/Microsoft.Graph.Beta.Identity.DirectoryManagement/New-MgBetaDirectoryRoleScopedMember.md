@@ -17,31 +17,32 @@ Create new navigation property to scopedMembers for directoryRoles
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDirectoryRoleScopedMember -DirectoryRoleId <String> [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnitId <String>] [-Id <String>] [-RoleId <String>] [-RoleMemberInfo <IMicrosoftGraphIdentity>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaDirectoryRoleScopedMember -DirectoryRoleId <String>
- -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIdentity>
+New-MgBetaDirectoryRoleScopedMember -DirectoryRoleId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId <String>] [-Id <String>] [-RoleId <String>]
  [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaDirectoryRoleScopedMember -DirectoryRoleId <String>
+ -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId <String>]
+ [-Id <String>] [-RoleId <String>] [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -174,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleId
 Unique identifier for the directory role that the member is in.
 
@@ -247,7 +263,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

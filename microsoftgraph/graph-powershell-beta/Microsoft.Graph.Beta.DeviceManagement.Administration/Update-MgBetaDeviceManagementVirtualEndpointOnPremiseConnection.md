@@ -16,9 +16,9 @@ Update the properties of a cloudPcOnPremisesConnection object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId <String>
- [-AdDomainName <String>] [-AdDomainPassword <String>] [-AdDomainUsername <String>]
- [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>] [-ConnectionType <String>]
- [-DisplayName <String>] [-HealthCheckStatus <String>]
+ [-ResponseHeadersVariable <String>] [-AdDomainName <String>] [-AdDomainPassword <String>]
+ [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>]
+ [-ConnectionType <String>] [-DisplayName <String>] [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-ScopeIds <String[]>]
@@ -30,16 +30,17 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremis
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId <String>
- -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdDomainName <String>] [-AdDomainPassword <String>]
- [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>]
- [-ConnectionType <String>] [-DisplayName <String>] [-HealthCheckStatus <String>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdDomainName <String>] [-AdDomainPassword <String>] [-AdDomainUsername <String>]
+ [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>] [-ConnectionType <String>]
+ [-DisplayName <String>] [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-ScopeIds <String[]>]
@@ -52,8 +53,8 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ```
 Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -381,6 +382,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeIds
 .
 
@@ -532,7 +548,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOnPremisesConnection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,11 +18,12 @@ Use this API to create a new calendar in a calendar group for a user.
 
 ### CreateExpanded (Default)
 ```
-New-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowedOnlineMeetingProviders <String[]>] [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]
- [-CalendarView <IMicrosoftGraphEvent[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
- [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>]
- [-HexColor <String>] [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsTallyingResponses]
+New-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedOnlineMeetingProviders <String[]>]
+ [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
+ [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>] [-Color <String>]
+ [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>] [-HexColor <String>]
+ [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsTallyingResponses]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-Owner <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Headers <IDictionary>]
@@ -32,17 +33,18 @@ New-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-Add
 ### Create
 ```
 New-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphCalendar> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCalendar> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserCalendarGroupCalendar -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedOnlineMeetingProviders <String[]>] [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]
- [-CalendarView <IMicrosoftGraphEvent[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
- [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>]
- [-HexColor <String>] [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsTallyingResponses]
+New-MgUserCalendarGroupCalendar -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedOnlineMeetingProviders <String[]>]
+ [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
+ [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>] [-Color <String>]
+ [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>] [-HexColor <String>]
+ [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsTallyingResponses]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-Owner <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Headers <IDictionary>]
@@ -52,7 +54,8 @@ New-MgUserCalendarGroupCalendar -InputObject <ICalendarIdentity> [-AdditionalPro
 ### CreateViaIdentity
 ```
 New-MgUserCalendarGroupCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -465,6 +468,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the calendar.
 Read-only.
@@ -540,7 +558,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

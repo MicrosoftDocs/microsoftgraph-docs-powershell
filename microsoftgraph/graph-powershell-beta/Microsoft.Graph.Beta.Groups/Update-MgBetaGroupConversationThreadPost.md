@@ -15,7 +15,7 @@ Update the navigation property posts in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
- -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>]
+ -GroupId <String> -PostId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
  [-ChangeKey <String>] [-ConversationId1 <String>] [-ConversationThreadId1 <String>]
  [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>] [-From <IMicrosoftGraphRecipient>]
@@ -31,7 +31,7 @@ Update-MgBetaGroupConversationThreadPost -ConversationId <String> -ConversationT
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupConversationThreadPost [-ConversationId <String>] [-ConversationThreadId <String>]
- -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
  [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
  [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
@@ -46,14 +46,15 @@ Update-MgBetaGroupConversationThreadPost [-ConversationId <String>] [-Conversati
 ### Update
 ```
 Update-MgBetaGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
- -GroupId <String> -PostId <String> -BodyParameter <IMicrosoftGraphPost> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -GroupId <String> -PostId <String> -BodyParameter <IMicrosoftGraphPost> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -516,6 +517,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sender
 recipient
 To construct, see NOTES section for SENDER properties and create a hash table.
@@ -592,7 +608,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPost
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

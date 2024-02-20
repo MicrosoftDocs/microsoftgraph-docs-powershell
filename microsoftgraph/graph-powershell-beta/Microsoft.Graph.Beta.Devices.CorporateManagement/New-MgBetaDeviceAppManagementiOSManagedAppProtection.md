@@ -17,8 +17,8 @@ Create new navigation property to iosManagedAppProtections for deviceAppManageme
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementiOSManagedAppProtection [-AdditionalProperties <Hashtable>]
- [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+New-MgBetaDeviceAppManagementiOSManagedAppProtection [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
@@ -63,7 +63,8 @@ New-MgBetaDeviceAppManagementiOSManagedAppProtection [-AdditionalProperties <Has
 ### Create
 ```
 New-MgBetaDeviceAppManagementiOSManagedAppProtection -BodyParameter <IMicrosoftGraphIosManagedAppProtection>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -1223,6 +1224,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -1354,7 +1370,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,9 +14,10 @@ Update the navigation property configuration in teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]
+Update-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]
  [-HardwareConfiguration <IMicrosoftGraphTeamworkHardwareConfiguration>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-MicrophoneConfiguration <IMicrosoftGraphTeamworkMicrophoneConfiguration>]
@@ -30,15 +31,16 @@ Update-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId <String> [-Additional
 ### Update
 ```
 Update-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId <String>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]
+Update-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]
  [-HardwareConfiguration <IMicrosoftGraphTeamworkHardwareConfiguration>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-MicrophoneConfiguration <IMicrosoftGraphTeamworkMicrophoneConfiguration>]
@@ -52,8 +54,8 @@ Update-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-Additio
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -280,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SoftwareVersions
 teamworkDeviceSoftwareVersions
 To construct, see NOTES section for SOFTWAREVERSIONS properties and create a hash table.
@@ -401,7 +418,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

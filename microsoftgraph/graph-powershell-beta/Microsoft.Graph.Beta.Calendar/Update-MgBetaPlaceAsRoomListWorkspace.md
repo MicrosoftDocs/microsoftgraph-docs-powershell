@@ -15,23 +15,7 @@ Update the navigation property workspaces in places
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -WorkspaceId <String>
- [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>]
- [-Capacity <Int32>] [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>]
- [-FloorNumber <Int32>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
- [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -WorkspaceId <String>
- -BodyParameter <IMicrosoftGraphWorkspace> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
  [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
@@ -39,11 +23,28 @@ Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-Additio
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -WorkspaceId <String>
+ -BodyParameter <IMicrosoftGraphWorkspace> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>]
+ [-Capacity <Int32>] [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>]
+ [-FloorNumber <Int32>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
+ [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity>
- -BodyParameter <IMicrosoftGraphWorkspace> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWorkspace> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -341,6 +342,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tags
 Specifies other features of the workspace; for example, the type of view or furniture type.
 
@@ -413,7 +429,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkspace
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

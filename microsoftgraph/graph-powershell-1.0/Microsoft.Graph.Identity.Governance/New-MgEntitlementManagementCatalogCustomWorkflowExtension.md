@@ -17,7 +17,8 @@ You must explicitly provide an @odata.type property that indicates whether the o
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId <String>
- [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,14 +27,15 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogI
 ### Create
 ```
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId <String>
- -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,8 +44,8 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ### CreateViaIdentity
 ```
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -239,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -281,7 +298,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,7 @@ Create a new b2xIdentityUserFlow object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityB2XUserFlow [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityB2XUserFlow [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration>] [-Id <String>]
  [-IdentityProviders <IMicrosoftGraphIdentityProvider[]>]
  [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
@@ -30,8 +30,9 @@ New-MgBetaIdentityB2XUserFlow [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -169,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserAttributeAssignments
 The user attribute assignments included in the user flow.
 To construct, see NOTES section for USERATTRIBUTEASSIGNMENTS properties and create a hash table.
@@ -272,7 +288,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

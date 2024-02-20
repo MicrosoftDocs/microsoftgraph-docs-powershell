@@ -17,34 +17,34 @@ Invoke action assignSensitivityLabel
 
 ### AssignExpanded (Default)
 ```
-Set-MgGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String>
  -BodyParameter <IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
 ```
-Set-MgGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
+ [-SensitivityLabelId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -204,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SensitivityLabelId
 .
 
@@ -261,7 +276,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

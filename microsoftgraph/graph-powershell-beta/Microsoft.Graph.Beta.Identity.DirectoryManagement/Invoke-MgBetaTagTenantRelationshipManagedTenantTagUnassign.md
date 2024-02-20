@@ -15,27 +15,29 @@ Un-assigns the tenant tag from the specified managed tenants.
 ### TagExpanded (Default)
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -TenantTagId <String>
- [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Tag
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -TenantTagId <String>
  -Body <IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### TagViaIdentityExpanded
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TagViaIdentity
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -138,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantIds
 .
 
@@ -210,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantTag
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,37 +18,39 @@ Create new navigation property to itemActivityStats for users
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserDriveRootAnalyticItemActivityStat -DriveId <String> -UserId <String>
- [-Access <IMicrosoftGraphItemActionStat>] [-Activities <IMicrosoftGraphItemActivity[]>]
- [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
- [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
- [-Id <String>] [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending]
- [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Access <IMicrosoftGraphItemActionStat>]
+ [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
+ [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
+ [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
+ [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserDriveRootAnalyticItemActivityStat -DriveId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
- [-Access <IMicrosoftGraphItemActionStat>] [-Activities <IMicrosoftGraphItemActivity[]>]
- [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
- [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
- [-Id <String>] [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending]
- [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Access <IMicrosoftGraphItemActionStat>]
+ [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
+ [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
+ [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
+ [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -307,6 +309,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 When the interval starts.
 Read-only.
@@ -380,7 +397,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityStat
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

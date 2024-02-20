@@ -18,7 +18,7 @@ Create a new device.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+New-MgBetaDevice [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
  [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId <String>] [-DeviceMetadata <String>]
@@ -39,8 +39,8 @@ New-MgBetaDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -837,6 +837,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 Device is online or offline.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
@@ -962,7 +977,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

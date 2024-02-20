@@ -17,12 +17,12 @@ Update the navigation property list in drives
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDriveList -DriveId <String> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
- [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgBetaDriveList -DriveId <String> [-ResponseHeadersVariable <String>]
+ [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
+ [-Id <String>] [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
@@ -32,18 +32,19 @@ Update-MgBetaDriveList -DriveId <String> [-Activities <IMicrosoftGraphItemActivi
 
 ### Update
 ```
-Update-MgBetaDriveList -DriveId <String> -BodyParameter <IMicrosoftGraphList> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDriveList -DriveId <String> -BodyParameter <IMicrosoftGraphList>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaDriveList -InputObject <IFilesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
- [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgBetaDriveList -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
+ [-Id <String>] [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
@@ -54,7 +55,8 @@ Update-MgBetaDriveList -InputObject <IFilesIdentity> [-Activities <IMicrosoftGra
 ### UpdateViaIdentity
 ```
 Update-MgBetaDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphList>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -456,6 +458,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharepointIds
 sharepointIds
 To construct, see NOTES section for SHAREPOINTIDS properties and create a hash table.
@@ -561,7 +578,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphList
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

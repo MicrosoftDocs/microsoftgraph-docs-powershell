@@ -15,33 +15,35 @@ Update the navigation property userExperienceAnalyticsDevicesWithoutCloudIdentit
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
- -UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String> [-AdditionalProperties <Hashtable>]
- [-AzureAdDeviceId <String>] [-DeviceName <String>] [-Id <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>] [-DeviceName <String>] [-Id <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
  -UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>]
- [-DeviceName <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureAdDeviceId <String>] [-DeviceName <String>] [-Id <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -172,6 +174,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsDeviceWithoutCloudIdentityId
 The unique identifier of userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -229,7 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

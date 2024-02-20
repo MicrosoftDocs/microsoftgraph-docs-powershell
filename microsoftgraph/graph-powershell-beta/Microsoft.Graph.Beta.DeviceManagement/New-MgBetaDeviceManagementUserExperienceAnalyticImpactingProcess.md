@@ -14,17 +14,17 @@ Create new navigation property to userExperienceAnalyticsImpactingProcess for de
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-Description <String>] [-DeviceId <String>] [-Id <String>] [-ImpactValue <Double>]
- [-ProcessName <String>] [-Publisher <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-Description <String>] [-DeviceId <String>]
+ [-Id <String>] [-ImpactValue <Double>] [-ProcessName <String>] [-Publisher <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsImpactingProcess> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsImpactingProcess> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -241,7 +256,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsImpactingProcess
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

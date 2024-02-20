@@ -18,10 +18,10 @@ Create a school.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaEducationSchool [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>] [-Classes <IMicrosoftGraphEducationClass[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>]
- [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
+New-MgBetaEducationSchool [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>]
+ [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>] [-Id <String>]
  [-LowestGrade <String>] [-Phone <String>] [-PrincipalEmail <String>] [-PrincipalName <String>]
  [-SchoolNumber <String>] [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>]
@@ -30,8 +30,8 @@ New-MgBetaEducationSchool [-AdditionalProperties <Hashtable>] [-Address <IMicros
 
 ### Create
 ```
-New-MgBetaEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -400,6 +400,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchoolNumber
 School Number.
 
@@ -473,7 +488,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSchool
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

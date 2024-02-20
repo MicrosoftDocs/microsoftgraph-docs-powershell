@@ -15,7 +15,7 @@ Update the navigation property resourceAccessProfiles in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementResourceAccessProfile -DeviceManagementResourceAccessProfileBaseId <String>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]
  [-CreationDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>]
@@ -25,14 +25,14 @@ Update-MgBetaDeviceManagementResourceAccessProfile -DeviceManagementResourceAcce
 ### Update
 ```
 Update-MgBetaDeviceManagementResourceAccessProfile -DeviceManagementResourceAccessProfileBaseId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementResourceAccessProfile -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]
  [-CreationDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>]
@@ -42,8 +42,8 @@ Update-MgBetaDeviceManagementResourceAccessProfile -InputObject <IDeviceManageme
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementResourceAccessProfile -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 Scope Tags
 
@@ -307,7 +322,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

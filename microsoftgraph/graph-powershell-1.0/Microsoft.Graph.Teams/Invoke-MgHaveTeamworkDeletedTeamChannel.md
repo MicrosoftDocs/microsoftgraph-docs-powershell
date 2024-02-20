@@ -18,15 +18,15 @@ Invoke function doesUserHaveAccess
 ### Have (Default)
 ```
 Invoke-MgHaveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamId <String> [-TenantId <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### HaveViaIdentity
 ```
 Invoke-MgHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-UserPrincipalName <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,6 +110,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantId
 Usage: tenantId='@tenantId'
 
@@ -165,7 +180,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

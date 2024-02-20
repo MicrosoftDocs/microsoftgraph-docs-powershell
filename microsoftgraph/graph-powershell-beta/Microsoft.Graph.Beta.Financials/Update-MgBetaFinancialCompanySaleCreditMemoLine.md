@@ -15,41 +15,43 @@ Update the navigation property salesCreditMemoLines in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleCreditMemoLine -CompanyId <String> -SalesCreditMemoLineId <String>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>]
- [-LineType <String>] [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>]
- [-Quantity <Decimal>] [-Sequence <Int32>] [-ShipmentDate <DateTime>] [-TaxCode <String>]
- [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>] [-UnitPrice <Decimal>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-Item <IMicrosoftGraphItem>]
+ [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>]
+ [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>] [-ShipmentDate <DateTime>]
+ [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleCreditMemoLine -CompanyId <String> -SalesCreditMemoLineId <String>
- -BodyParameter <IMicrosoftGraphSalesCreditMemoLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesCreditMemoLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanySaleCreditMemoLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>]
- [-LineType <String>] [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>]
- [-Quantity <Decimal>] [-Sequence <Int32>] [-ShipmentDate <DateTime>] [-TaxCode <String>]
- [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>] [-UnitPrice <Decimal>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-Item <IMicrosoftGraphItem>]
+ [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>]
+ [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>] [-ShipmentDate <DateTime>]
+ [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleCreditMemoLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesCreditMemoLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesCreditMemoLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -422,6 +424,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesCreditMemoLineId
 The unique identifier of salesCreditMemoLine
 
@@ -584,7 +601,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesCreditMemoLine
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -19,7 +19,8 @@ Use this API to create a new calendar in a calendar group for a user.
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedOnlineMeetingProviders <String[]>] [-CalendarGroupId1 <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedOnlineMeetingProviders <String[]>] [-CalendarGroupId1 <String>]
  [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
  [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>] [-Color <String>]
  [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>] [-HexColor <String>]
@@ -33,13 +34,13 @@ New-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String>
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserCalendarGroupCalendar [-CalendarGroupId <String>] -InputObject <ICalendarIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedOnlineMeetingProviders <String[]>]
- [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
- [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>] [-Color <String>]
- [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>] [-HexColor <String>]
- [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsShared] [-IsSharedWithMe] [-IsTallyingResponses]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
- [-Owner <IMicrosoftGraphEmailAddress>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedOnlineMeetingProviders <String[]>] [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]
+ [-CalendarView <IMicrosoftGraphEvent[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
+ [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>]
+ [-HexColor <String>] [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsShared] [-IsSharedWithMe]
+ [-IsTallyingResponses] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-Name <String>] [-Owner <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,14 +48,15 @@ New-MgBetaUserCalendarGroupCalendar [-CalendarGroupId <String>] -InputObject <IC
 ### Create
 ```
 New-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphCalendar> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCalendar> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserCalendarGroupCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -534,6 +536,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the calendar.
 Read-only.
@@ -609,7 +626,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendar
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

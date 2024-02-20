@@ -19,7 +19,7 @@ You will need to register the calling bot and go through the list of permissions
 
 ### CreateExpanded (Default)
 ```
-New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
+New-MgCommunicationCall [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <String>]
  [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]
@@ -35,8 +35,8 @@ New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -831,6 +831,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResultInfo
 resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
@@ -998,7 +1013,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

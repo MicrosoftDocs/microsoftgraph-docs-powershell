@@ -19,10 +19,10 @@ This operation is used to assign a user to an access package, update the assignm
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage>]
- [-AdditionalProperties <Hashtable>] [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>]
+New-MgEntitlementManagementAssignmentRequest [-ResponseHeadersVariable <String>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>] [-Id <String>]
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
@@ -32,7 +32,8 @@ New-MgEntitlementManagementAssignmentRequest [-AccessPackage <IMicrosoftGraphAcc
 ### Create
 ```
 New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -388,6 +389,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 entitlementManagementSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -476,7 +492,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

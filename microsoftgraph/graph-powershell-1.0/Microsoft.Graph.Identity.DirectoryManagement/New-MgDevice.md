@@ -18,7 +18,7 @@ Create and register a new device in the organization.
 
 ### CreateExpanded (Default)
 ```
-New-MgDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+New-MgDevice [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
  [-DeviceId <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
@@ -34,8 +34,8 @@ New-MgDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -617,6 +617,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SystemLabels
 List of labels applied to the device by the system.
 Supports $filter (/$count eq 0, /$count ne 0).
@@ -710,7 +725,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

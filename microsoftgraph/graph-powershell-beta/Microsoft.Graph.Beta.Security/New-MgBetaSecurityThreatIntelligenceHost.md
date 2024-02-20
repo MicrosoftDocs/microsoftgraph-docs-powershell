@@ -17,11 +17,11 @@ Create new navigation property to hosts for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatIntelligenceHost [-AdditionalProperties <Hashtable>]
- [-ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>] [-Components <IMicrosoftGraphSecurityHostComponent[]>]
- [-Cookies <IMicrosoftGraphSecurityHostCookie[]>] [-FirstSeenDateTime <DateTime>]
- [-HostPairs <IMicrosoftGraphSecurityHostPair[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
- [-ParentHostPairs <IMicrosoftGraphSecurityHostPair[]>]
+New-MgBetaSecurityThreatIntelligenceHost [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]
+ [-Components <IMicrosoftGraphSecurityHostComponent[]>] [-Cookies <IMicrosoftGraphSecurityHostCookie[]>]
+ [-FirstSeenDateTime <DateTime>] [-HostPairs <IMicrosoftGraphSecurityHostPair[]>] [-Id <String>]
+ [-LastSeenDateTime <DateTime>] [-ParentHostPairs <IMicrosoftGraphSecurityHostPair[]>]
  [-PassiveDns <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>] [-Ports <IMicrosoftGraphSecurityHostPort[]>]
  [-Reputation <IMicrosoftGraphSecurityHostReputation>]
@@ -33,8 +33,9 @@ New-MgBetaSecurityThreatIntelligenceHost [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -297,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificates
 The hostSslCertificates that are associated with this host.
 To construct, see NOTES section for SSLCERTIFICATES properties and create a hash table.
@@ -402,7 +418,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

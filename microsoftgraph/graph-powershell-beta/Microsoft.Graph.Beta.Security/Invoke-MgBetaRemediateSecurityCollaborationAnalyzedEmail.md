@@ -14,18 +14,19 @@ Invoke action remediate
 
 ### RemediateExpanded (Default)
 ```
-Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail [-Action <String>] [-AdditionalProperties <Hashtable>]
- [-AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>] [-ApproverUpn <String>] [-Description <String>]
- [-DisplayName <String>] [-RemediateSendersCopy] [-Severity <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail [-ResponseHeadersVariable <String>] [-Action <String>]
+ [-AdditionalProperties <Hashtable>] [-AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>]
+ [-ApproverUpn <String>] [-Description <String>] [-DisplayName <String>] [-RemediateSendersCopy]
+ [-Severity <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Remediate
 ```
 Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
  -Body <IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +201,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 remediationSeverity
 
@@ -256,7 +272,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

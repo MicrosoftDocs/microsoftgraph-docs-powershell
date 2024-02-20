@@ -18,8 +18,8 @@ Update the navigation property activities in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -GroupId <String> -ItemActivityId <String>
- -ItemActivityStatId <String> -SiteId <String> [-Access <Hashtable>] [-ActivityDateTime <DateTime>]
- [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
+ -ItemActivityStatId <String> -SiteId <String> [-ResponseHeadersVariable <String>] [-Access <Hashtable>]
+ [-ActivityDateTime <DateTime>] [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
  [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,13 +28,15 @@ Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -GroupId <String> -ItemAc
 ```
 Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -GroupId <String> -ItemActivityId <String>
  -ItemActivityStatId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphItemActivity>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-Access <Hashtable>]
- [-ActivityDateTime <DateTime>] [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
+Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
+ [-ResponseHeadersVariable <String>] [-Access <Hashtable>] [-ActivityDateTime <DateTime>]
+ [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
  [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +44,8 @@ Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdent
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivity> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -251,6 +253,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -308,7 +325,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

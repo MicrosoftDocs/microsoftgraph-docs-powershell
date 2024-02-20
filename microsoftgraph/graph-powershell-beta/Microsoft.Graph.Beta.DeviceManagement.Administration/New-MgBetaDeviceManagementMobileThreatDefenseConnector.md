@@ -17,10 +17,11 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
- [-AllowPartnerToCollectIosApplicationMetadata] [-AllowPartnerToCollectIosPersonalApplicationMetadata]
- [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled]
- [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
+New-MgBetaDeviceManagementMobileThreatDefenseConnector [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowPartnerToCollectIosApplicationMetadata]
+ [-AllowPartnerToCollectIosPersonalApplicationMetadata] [-AndroidDeviceBlockedOnMissingPartnerData]
+ [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled] [-Id <String>]
+ [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
  [-LastHeartbeatDateTime <DateTime>] [-MacDeviceBlockedOnMissingPartnerData] [-MacEnabled]
  [-MicrosoftDefenderForEndpointAttachEnabled] [-PartnerState <MobileThreatPartnerTenantState>]
  [-PartnerUnresponsivenessThresholdInDays <Int32>] [-PartnerUnsupportedOSVersionBlocked]
@@ -31,8 +32,8 @@ New-MgBetaDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <H
 ### Create
 ```
 New-MgBetaDeviceManagementMobileThreatDefenseConnector
- -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -354,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WindowsDeviceBlockedOnMissingPartnerData
 When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows.
 When FALSE, inidicates that Intune may make a device compliant without receiving data from the Mobile Threat Defense partner for Windows.
@@ -446,7 +462,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

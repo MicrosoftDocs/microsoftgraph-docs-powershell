@@ -14,16 +14,18 @@ Create new navigation property to cartToClassAssociations for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementCartToClassAssociation [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
+New-MgBetaDeviceManagementCartToClassAssociation [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementCartToClassAssociation -BodyParameter <IMicrosoftGraphCartToClassAssociation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -198,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Version
 Version of the CartToClassAssociation.
 
@@ -254,7 +271,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

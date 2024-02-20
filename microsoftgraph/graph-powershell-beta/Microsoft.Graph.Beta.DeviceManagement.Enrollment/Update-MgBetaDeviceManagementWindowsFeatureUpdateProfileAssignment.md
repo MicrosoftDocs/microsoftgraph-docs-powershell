@@ -16,7 +16,7 @@ Update the navigation property assignments in deviceManagement
 ```
 Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
  -WindowsFeatureUpdateProfileAssignmentId <String> -WindowsFeatureUpdateProfileId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,14 +25,15 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
 ```
 Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
  -WindowsFeatureUpdateProfileAssignmentId <String> -WindowsFeatureUpdateProfileId <String>
- -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
- -InputObject <IDeviceManagementEnrollmentIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,8 +42,8 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
 ```
 Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -143,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Target
 Base type for assignment targets.
 To construct, see NOTES section for TARGET properties and create a hash table.
@@ -231,7 +247,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfileAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

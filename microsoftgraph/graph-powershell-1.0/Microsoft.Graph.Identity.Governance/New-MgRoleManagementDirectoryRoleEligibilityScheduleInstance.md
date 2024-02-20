@@ -17,8 +17,8 @@ Create new navigation property to roleEligibilityScheduleInstances for roleManag
 
 ### CreateExpanded (Default)
 ```
-New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance [-AdditionalProperties <Hashtable>]
- [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
+New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
@@ -29,8 +29,8 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance [-AdditionalPropert
 ### Create
 ```
 New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleDefinition
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
@@ -352,7 +367,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

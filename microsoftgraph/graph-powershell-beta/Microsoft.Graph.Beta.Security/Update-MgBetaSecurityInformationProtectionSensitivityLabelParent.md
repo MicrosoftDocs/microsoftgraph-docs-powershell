@@ -15,33 +15,35 @@ Update the navigation property parent in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String>
- [-AdditionalProperties <Hashtable>] [-Color <String>] [-ContentFormats <String[]>] [-Description <String>]
- [-HasProtection] [-Id <String>] [-IsActive] [-IsAppliable] [-Name <String>]
- [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Color <String>]
+ [-ContentFormats <String[]>] [-Description <String>] [-HasProtection] [-Id <String>] [-IsActive]
+ [-IsAppliable] [-Name <String>] [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>]
+ [-Tooltip <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String>
- -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Color <String>] [-ContentFormats <String[]>] [-Description <String>]
- [-HasProtection] [-Id <String>] [-IsActive] [-IsAppliable] [-Name <String>]
- [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Color <String>]
+ [-ContentFormats <String[]>] [-Description <String>] [-HasProtection] [-Id <String>] [-IsActive]
+ [-IsAppliable] [-Name <String>] [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>]
+ [-Tooltip <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -265,6 +267,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sensitivity
 The sensitivity value of the label, where lower is less sensitive.
 
@@ -352,7 +369,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

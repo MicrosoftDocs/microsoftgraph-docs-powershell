@@ -14,37 +14,37 @@ Update the navigation property ipSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityIPSecurityProfile -IPSecurityProfileId <String> [-ActivityGroupNames <String[]>]
- [-AdditionalProperties <Hashtable>] [-Address <String>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-CountHits <Int32>] [-CountHosts <Int32>] [-FirstSeenDateTime <DateTime>]
- [-IPCategories <IMicrosoftGraphIPCategory[]>] [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>]
- [-Id <String>] [-LastSeenDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityIPSecurityProfile -IPSecurityProfileId <String> [-ResponseHeadersVariable <String>]
+ [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>] [-Address <String>]
+ [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CountHits <Int32>] [-CountHosts <Int32>]
+ [-FirstSeenDateTime <DateTime>] [-IPCategories <IMicrosoftGraphIPCategory[]>]
+ [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-RiskScore <String>] [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityIPSecurityProfile -IPSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-ActivityGroupNames <String[]>]
- [-AdditionalProperties <Hashtable>] [-Address <String>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-CountHits <Int32>] [-CountHosts <Int32>] [-FirstSeenDateTime <DateTime>]
- [-IPCategories <IMicrosoftGraphIPCategory[]>] [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>]
- [-Id <String>] [-LastSeenDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>] [-Address <String>]
+ [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CountHits <Int32>] [-CountHosts <Int32>]
+ [-FirstSeenDateTime <DateTime>] [-IPCategories <IMicrosoftGraphIPCategory[]>]
+ [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-RiskScore <String>] [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -313,6 +313,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -401,7 +416,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIPSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

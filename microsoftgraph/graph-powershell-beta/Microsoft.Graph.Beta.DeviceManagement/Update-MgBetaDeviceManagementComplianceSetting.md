@@ -15,7 +15,7 @@ Update the navigation property complianceSettings in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSettingDefinitionId <String>
- [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -30,14 +30,15 @@ Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSet
 ### Update
 ```
 Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSettingDefinitionId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity> [-AccessTypes <String>]
- [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -52,8 +53,9 @@ Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementId
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -370,6 +372,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RootDefinitionId
 Root setting definition id if the setting is a child setting.
 
@@ -487,7 +504,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

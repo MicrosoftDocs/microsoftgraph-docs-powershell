@@ -14,40 +14,40 @@ Update the navigation property hostSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String> [-AdditionalProperties <Hashtable>]
- [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
- [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
- [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
- [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
- [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
+Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
+ [-FirstSeenDateTime <DateTime>] [-Fqdn <String>] [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered]
+ [-IsHybridAzureDomainJoined] [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>]
+ [-NetBiosName <String>] [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>]
+ [-OSVersion <String>] [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>]
+ [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
- [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
- [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
- [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
- [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
+Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
+ [-FirstSeenDateTime <DateTime>] [-Fqdn <String>] [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered]
+ [-IsHybridAzureDomainJoined] [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>]
+ [-NetBiosName <String>] [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>]
+ [-OSVersion <String>] [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>]
+ [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -390,6 +390,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -478,7 +493,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,9 +14,9 @@ Create new navigation property to managementActions for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantManagementAction [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-ReferenceTemplateId <String>] [-ReferenceTemplateVersion <Int32>]
+New-MgBetaTenantRelationshipManagedTenantManagementAction [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-ReferenceTemplateId <String>] [-ReferenceTemplateVersion <Int32>]
  [-WorkloadActions <IMicrosoftGraphManagedTenantsWorkloadAction[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,8 +24,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementAction [-AdditionalProperties
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementAction
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementAction> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementAction> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -191,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WorkloadActions
 The collection of workload actions associated with the management action.
 Required.
@@ -250,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

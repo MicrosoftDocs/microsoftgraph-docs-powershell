@@ -14,18 +14,18 @@ Update the navigation property deviceConfigurationUserStateSummaries in deviceMa
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary [-AdditionalProperties <Hashtable>]
- [-CompliantUserCount <Int32>] [-ConflictUserCount <Int32>] [-ErrorUserCount <Int32>] [-Id <String>]
- [-NonCompliantUserCount <Int32>] [-NotApplicableUserCount <Int32>] [-RemediatedUserCount <Int32>]
- [-UnknownUserCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompliantUserCount <Int32>] [-ConflictUserCount <Int32>]
+ [-ErrorUserCount <Int32>] [-Id <String>] [-NonCompliantUserCount <Int32>] [-NotApplicableUserCount <Int32>]
+ [-RemediatedUserCount <Int32>] [-UnknownUserCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary
- -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +200,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnknownUserCount
 Number of unknown users
 
@@ -256,7 +271,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationUserStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

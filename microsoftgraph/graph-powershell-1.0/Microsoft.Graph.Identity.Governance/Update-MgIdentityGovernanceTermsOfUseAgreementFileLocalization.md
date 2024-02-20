@@ -18,33 +18,35 @@ Update the navigation property localizations in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -AgreementFileLocalizationId <String>
- -AgreementId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>]
- [-IsDefault] [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AgreementId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>]
+ [-FileName <String>] [-Id <String>] [-IsDefault] [-IsMajorVersion] [-Language <String>]
+ [-Versions <IMicrosoftGraphAgreementFileVersion[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -AgreementFileLocalizationId <String>
- -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreementFileLocalization>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>] [-IsDefault]
- [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>]
+ [-IsDefault] [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -292,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Versions
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
@@ -351,7 +368,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

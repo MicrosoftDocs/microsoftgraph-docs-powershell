@@ -16,25 +16,26 @@ Update the properties of an userAccountInformation object in a user's profile.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserProfileAccount -UserAccountInformationId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AgeGroup <String>] [-AllowedAudiences <String>] [-CountryCode <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AgeGroup <String>]
+ [-AllowedAudiences <String>] [-CountryCode <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserProfileAccount -UserAccountInformationId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphUserAccountInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserAccountInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-AgeGroup <String>] [-AllowedAudiences <String>] [-CountryCode <String>]
+Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AgeGroup <String>] [-AllowedAudiences <String>] [-CountryCode <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
@@ -45,8 +46,8 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-AdditionalPrope
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphUserAccountInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserAccountInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -318,6 +319,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
@@ -421,7 +437,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserAccountInformation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

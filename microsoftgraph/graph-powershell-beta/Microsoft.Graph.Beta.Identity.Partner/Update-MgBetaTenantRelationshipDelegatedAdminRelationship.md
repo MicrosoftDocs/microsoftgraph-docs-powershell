@@ -21,7 +21,7 @@ However, you can update the autoExtendDuration property when the relationship is
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelationshipId <String>
- [-AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]
+ [-ResponseHeadersVariable <String>] [-AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]
  [-AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>] [-ActivatedDateTime <DateTime>]
  [-AdditionalProperties <Hashtable>] [-AutoExtendDuration <TimeSpan>] [-CreatedDateTime <DateTime>]
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
@@ -34,14 +34,14 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelatio
 ### Update
 ```
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelationshipId <String>
- -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPartnerIdentity>
- [-AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]
+ [-ResponseHeadersVariable <String>] [-AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]
  [-AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>] [-ActivatedDateTime <DateTime>]
  [-AdditionalProperties <Hashtable>] [-AutoExtendDuration <TimeSpan>] [-CreatedDateTime <DateTime>]
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
@@ -54,8 +54,8 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPartnerIdentity>
- -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -373,6 +373,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 delegatedAdminRelationshipStatus
 
@@ -430,7 +445,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationship
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

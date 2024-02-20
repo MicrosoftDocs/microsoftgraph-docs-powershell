@@ -15,37 +15,39 @@ Update the navigation property deviceAppPerformances in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -DeviceAppPerformanceId <String>
- [-AdditionalProperties <Hashtable>] [-AppFriendlyName <String>] [-AppName <String>] [-AppPublisher <String>]
- [-AppVersion <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>] [-IsLatestUsedVersion <Int32>]
- [-IsMostUsedVersion <Int32>] [-LastUpdatedDateTime <DateTime>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-TotalAppCrashCount <Int32>] [-TotalAppFreezeCount <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppFriendlyName <String>]
+ [-AppName <String>] [-AppPublisher <String>] [-AppVersion <String>] [-DeviceId <String>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>] [-HealthStatus <String>]
+ [-Id <String>] [-IsLatestUsedVersion <Int32>] [-IsMostUsedVersion <Int32>] [-LastUpdatedDateTime <DateTime>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TotalAppCrashCount <Int32>]
+ [-TotalAppFreezeCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -DeviceAppPerformanceId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsDeviceAppPerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsDeviceAppPerformance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-AppFriendlyName <String>] [-AppName <String>] [-AppPublisher <String>]
- [-AppVersion <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-DeviceName <String>] [-HealthStatus <String>] [-Id <String>] [-IsLatestUsedVersion <Int32>]
- [-IsMostUsedVersion <Int32>] [-LastUpdatedDateTime <DateTime>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-TotalAppCrashCount <Int32>] [-TotalAppFreezeCount <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppFriendlyName <String>]
+ [-AppName <String>] [-AppPublisher <String>] [-AppVersion <String>] [-DeviceId <String>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>] [-HealthStatus <String>]
+ [-Id <String>] [-IsLatestUsedVersion <Int32>] [-IsMostUsedVersion <Int32>] [-LastUpdatedDateTime <DateTime>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TotalAppCrashCount <Int32>]
+ [-TotalAppFreezeCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsDeviceAppPerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsDeviceAppPerformance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -341,6 +343,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 .
 
@@ -443,7 +460,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceAppPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

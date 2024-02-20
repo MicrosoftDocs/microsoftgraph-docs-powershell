@@ -17,10 +17,11 @@ Update property mailboxSettings value.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgShareListCreatedByUserMailboxSetting -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
- [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
- [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+Update-MgShareListCreatedByUserMailboxSetting -SharedDriveItemId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
+ [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
+ [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,16 +29,17 @@ Update-MgShareListCreatedByUserMailboxSetting -SharedDriveItemId <String> [-Addi
 ### Update
 ```
 Update-MgShareListCreatedByUserMailboxSetting -SharedDriveItemId <String>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgShareListCreatedByUserMailboxSetting -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
- [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
- [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+Update-MgShareListCreatedByUserMailboxSetting -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
+ [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
+ [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,8 +47,8 @@ Update-MgShareListCreatedByUserMailboxSetting -InputObject <IFilesIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgShareListCreatedByUserMailboxSetting -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -208,6 +210,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedDriveItemId
 The unique identifier of sharedDriveItem
 
@@ -326,7 +343,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

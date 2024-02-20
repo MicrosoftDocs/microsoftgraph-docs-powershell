@@ -14,7 +14,8 @@ Update the navigation property permissionsManagement in identityGovernance
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaIdentityGovernancePermissionManagement [-AdditionalProperties <Hashtable>] [-Id <String>]
+Update-MgBetaIdentityGovernancePermissionManagement [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PermissionsRequestChanges <IMicrosoftGraphPermissionsRequestChange[]>]
  [-ScheduledPermissionsApprovals <IMicrosoftGraphApproval[]>]
  [-ScheduledPermissionsRequests <IMicrosoftGraphScheduledPermissionsRequest[]>] [-Headers <IDictionary>]
@@ -24,7 +25,8 @@ Update-MgBetaIdentityGovernancePermissionManagement [-AdditionalProperties <Hash
 ### Update
 ```
 Update-MgBetaIdentityGovernancePermissionManagement -BodyParameter <IMicrosoftGraphPermissionsManagement>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -125,6 +127,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScheduledPermissionsApprovals
 .
 To construct, see NOTES section for SCHEDULEDPERMISSIONSAPPROVALS properties and create a hash table.
@@ -199,7 +216,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsManagement
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

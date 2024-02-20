@@ -14,33 +14,34 @@ Create new navigation property to items for deviceAppManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementPolicySetItem -PolicySetId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-ErrorCode <ErrorCode>]
- [-GuidedDeploymentTags <String[]>] [-Id <String>] [-ItemType <String>] [-LastModifiedDateTime <DateTime>]
- [-PayloadId <String>] [-Status <PolicySetStatus>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaDeviceAppManagementPolicySetItem -PolicySetId <String> -BodyParameter <IMicrosoftGraphPolicySetItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaDeviceAppManagementPolicySetItem -InputObject <IDevicesCorporateManagementIdentity>
+New-MgBetaDeviceAppManagementPolicySetItem -PolicySetId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-ErrorCode <ErrorCode>] [-GuidedDeploymentTags <String[]>] [-Id <String>] [-ItemType <String>]
  [-LastModifiedDateTime <DateTime>] [-PayloadId <String>] [-Status <PolicySetStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaDeviceAppManagementPolicySetItem -PolicySetId <String> -BodyParameter <IMicrosoftGraphPolicySetItem>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDeviceAppManagementPolicySetItem -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-ErrorCode <ErrorCode>] [-GuidedDeploymentTags <String[]>] [-Id <String>]
+ [-ItemType <String>] [-LastModifiedDateTime <DateTime>] [-PayloadId <String>] [-Status <PolicySetStatus>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceAppManagementPolicySetItem -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphPolicySetItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPolicySetItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -261,6 +262,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 The enum to specify the status of PolicySet.
 
@@ -318,7 +334,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySetItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

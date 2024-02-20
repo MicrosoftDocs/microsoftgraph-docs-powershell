@@ -18,8 +18,8 @@ Update the navigation property tasks in planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ActiveChecklistItemCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
+Update-MgPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ResponseHeadersVariable <String>]
+ [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
  [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
  [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
@@ -35,13 +35,14 @@ Update-MgPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ActiveChecklist
 ### Update
 ```
 Update-MgPlannerTask -PlannerTaskId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerTask>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-ActiveChecklistItemCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
+Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-ResponseHeadersVariable <String>]
+ [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
  [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
  [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
@@ -57,8 +58,8 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-ActiveC
 ### UpdateViaIdentity
 ```
 Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTask> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -589,6 +590,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 Date and time at which the task starts.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -663,7 +679,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

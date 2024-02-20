@@ -17,8 +17,8 @@ Update the navigation property analytics in sites
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,7 +26,8 @@ Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String> [-AdditionalP
 ### UpdateExpanded1
 ```
 Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String> -Path1 <String>
- [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,29 +35,29 @@ Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String> -Path1 <Strin
 ### Update1
 ```
 Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String> -Path1 <String>
- -BodyParameter <IMicrosoftGraphItemAnalytics> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemAnalytics> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSiteGetByPathAnalytic -Path <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphItemAnalytics> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemAnalytics> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
+Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTime <IMicrosoftGraphItemActivityStat>] [-Id <String>]
  [-ItemActivityStats <IMicrosoftGraphItemActivityStat[]>] [-LastSevenDays <IMicrosoftGraphItemActivityStat>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -64,13 +65,15 @@ Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-AdditionalPro
 ### UpdateViaIdentity1
 ```
 Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphItemAnalytics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphItemAnalytics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +252,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -306,7 +324,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAnalytics
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

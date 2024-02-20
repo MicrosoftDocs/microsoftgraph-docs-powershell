@@ -17,19 +17,20 @@ Create new navigation property to hostPorts for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatIntelligenceHostPort [-AdditionalProperties <Hashtable>]
- [-Banners <IMicrosoftGraphSecurityHostPortBanner[]>] [-FirstSeenDateTime <DateTime>]
- [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastScanDateTime <DateTime>]
- [-LastSeenDateTime <DateTime>] [-MostRecentSslCertificate <IMicrosoftGraphSecuritySslCertificate>]
- [-Port <Int32>] [-Protocol <String>] [-Services <IMicrosoftGraphSecurityHostPortComponent[]>]
- [-Status <String>] [-TimesObserved <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceHostPort [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Banners <IMicrosoftGraphSecurityHostPortBanner[]>]
+ [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
+ [-LastScanDateTime <DateTime>] [-LastSeenDateTime <DateTime>]
+ [-MostRecentSslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Port <Int32>] [-Protocol <String>]
+ [-Services <IMicrosoftGraphSecurityHostPortComponent[]>] [-Status <String>] [-TimesObserved <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceHostPort -BodyParameter <IMicrosoftGraphSecurityHostPort>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -243,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Services
 The hostPortComponents retrieved from scanning the port.
 To construct, see NOTES section for SERVICES properties and create a hash table.
@@ -330,7 +346,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostPort
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

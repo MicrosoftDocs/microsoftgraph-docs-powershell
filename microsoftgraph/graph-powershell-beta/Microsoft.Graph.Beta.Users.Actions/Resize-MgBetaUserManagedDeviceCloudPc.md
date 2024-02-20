@@ -16,31 +16,32 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 ### ResizeExpanded (Default)
 ```
 Resize-MgBetaUserManagedDeviceCloudPc -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-TargetServicePlanId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-TargetServicePlanId <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Resize
 ```
 Resize-MgBetaUserManagedDeviceCloudPc -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1Bsz0SuUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResizeViaIdentityExpanded
 ```
-Resize-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-TargetServicePlanId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Resize-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TargetServicePlanId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResizeViaIdentity
 ```
 Resize-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Bsz0SuUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,6 +159,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetServicePlanId
 .
 
@@ -230,7 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

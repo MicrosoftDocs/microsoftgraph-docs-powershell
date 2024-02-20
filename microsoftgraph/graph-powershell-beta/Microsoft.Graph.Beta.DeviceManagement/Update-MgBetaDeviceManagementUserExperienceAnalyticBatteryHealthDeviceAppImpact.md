@@ -15,35 +15,37 @@ Update the navigation property userExperienceAnalyticsBatteryHealthDeviceAppImpa
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
- -UserExperienceAnalyticsBatteryHealthDeviceAppImpactId <String> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>] [-BatteryUsagePercentage <Double>]
- [-DeviceId <String>] [-Id <String>] [-IsForegroundApp] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserExperienceAnalyticsBatteryHealthDeviceAppImpactId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
+ [-BatteryUsagePercentage <Double>] [-DeviceId <String>] [-Id <String>] [-IsForegroundApp]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
  -UserExperienceAnalyticsBatteryHealthDeviceAppImpactId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
- [-AppName <String>] [-AppPublisher <String>] [-BatteryUsagePercentage <Double>] [-DeviceId <String>]
- [-Id <String>] [-IsForegroundApp] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
+ [-BatteryUsagePercentage <Double>] [-DeviceId <String>] [-Id <String>] [-IsForegroundApp]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -239,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsBatteryHealthDeviceAppImpactId
 The unique identifier of userExperienceAnalyticsBatteryHealthDeviceAppImpact
 
@@ -296,7 +313,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

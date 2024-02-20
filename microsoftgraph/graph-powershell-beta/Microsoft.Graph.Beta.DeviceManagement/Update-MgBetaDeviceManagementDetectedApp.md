@@ -17,8 +17,8 @@ Update the navigation property detectedApps in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementDetectedApp -DetectedAppId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceCount <Int32>] [-DisplayName <String>] [-Id <String>]
+Update-MgBetaDeviceManagementDetectedApp -DetectedAppId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>] [-DisplayName <String>] [-Id <String>]
  [-ManagedDevices <IMicrosoftGraphManagedDevice[]>] [-Platform <DetectedAppPlatformType>] [-Publisher <String>]
  [-SizeInByte <Int64>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,23 +27,24 @@ Update-MgBetaDeviceManagementDetectedApp -DetectedAppId <String> [-AdditionalPro
 ### Update
 ```
 Update-MgBetaDeviceManagementDetectedApp -DetectedAppId <String> -BodyParameter <IMicrosoftGraphDetectedApp>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>] [-DisplayName <String>] [-Id <String>]
- [-ManagedDevices <IMicrosoftGraphManagedDevice[]>] [-Platform <DetectedAppPlatformType>] [-Publisher <String>]
- [-SizeInByte <Int64>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>]
+ [-DisplayName <String>] [-Id <String>] [-ManagedDevices <IMicrosoftGraphManagedDevice[]>]
+ [-Platform <DetectedAppPlatformType>] [-Publisher <String>] [-SizeInByte <Int64>] [-Version <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDetectedApp> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDetectedApp> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -241,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SizeInByte
 Discovered application size in bytes.
 Read-only
@@ -315,7 +331,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDetectedApp
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

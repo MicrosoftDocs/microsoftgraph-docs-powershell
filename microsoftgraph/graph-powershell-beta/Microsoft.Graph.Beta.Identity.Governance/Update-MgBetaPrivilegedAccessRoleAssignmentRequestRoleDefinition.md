@@ -15,24 +15,25 @@ Update the navigation property roleDefinition in privilegedAccess
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -GovernanceRoleAssignmentRequestId <String>
- -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-ExternalId <String>] [-Id <String>] [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
- [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PrivilegedAccessId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-Resource <IMicrosoftGraphGovernanceResource>]
+ [-ResourceId <String>] [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -GovernanceRoleAssignmentRequestId <String>
- -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>]
- [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-ExternalId <String>] [-Id <String>] [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,8 +41,8 @@ Update-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -InputObject <I
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -234,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleSetting
 governanceRoleSetting
 To construct, see NOTES section for ROLESETTING properties and create a hash table.
@@ -307,7 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

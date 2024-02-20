@@ -18,7 +18,8 @@ Create a new deviceManagementPartner object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+New-MgDeviceManagementPartner [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>]
  [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
  [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
@@ -29,8 +30,9 @@ New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName 
 
 ### Create
 ```
-New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -206,6 +208,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleTenantAppId
 Partner Single tenant App id
 
@@ -292,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

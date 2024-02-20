@@ -18,8 +18,8 @@ Create a new chat object.
 
 ### CreateExpanded (Default)
 ```
-New-MgChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+New-MgChat [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChatType <String>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
@@ -31,8 +31,8 @@ New-MgChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-CreatedDat
 
 ### Create
 ```
-New-MgChat -BodyParameter <IMicrosoftGraphChat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgChat -BodyParameter <IMicrosoftGraphChat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -457,6 +457,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tabs
 A collection of all the tabs in the chat.
 Nullable.
@@ -580,7 +595,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

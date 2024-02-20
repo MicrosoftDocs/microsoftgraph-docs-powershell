@@ -17,18 +17,20 @@ Create new navigation property to simulationAutomations for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationAutomation [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-LastRunDateTime <DateTime>] [-NextRunDateTime <DateTime>]
- [-Runs <IMicrosoftGraphSimulationAutomationRun[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationAutomation [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
+ [-LastRunDateTime <DateTime>] [-NextRunDateTime <DateTime>] [-Runs <IMicrosoftGraphSimulationAutomationRun[]>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityAttackSimulationAutomation -BodyParameter <IMicrosoftGraphSimulationAutomation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -236,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Runs
 A collection of simulation automation runs.
 To construct, see NOTES section for RUNS properties and create a hash table.
@@ -308,7 +325,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

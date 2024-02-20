@@ -15,25 +15,7 @@ Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceMan
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
- -UserExperienceAnalyticsAnomalyDeviceId <String> [-AdditionalProperties <Hashtable>] [-AnomalyId <String>]
- [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>] [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>]
- [-CorrelationGroupId <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-DeviceName <String>] [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>] [-OSName <String>]
- [-OSVersion <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
- -UserExperienceAnalyticsAnomalyDeviceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
+ -UserExperienceAnalyticsAnomalyDeviceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
  [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-CorrelationGroupId <String>] [-DeviceId <String>]
  [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
@@ -41,11 +23,30 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <I
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
+ -UserExperienceAnalyticsAnomalyDeviceId <String>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AnomalyId <String>]
+ [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>] [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>]
+ [-CorrelationGroupId <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
+ [-DeviceName <String>] [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>] [-OSName <String>]
+ [-OSVersion <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +313,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsAnomalyDeviceId
 The unique identifier of userExperienceAnalyticsAnomalyDevice
 
@@ -369,7 +385,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

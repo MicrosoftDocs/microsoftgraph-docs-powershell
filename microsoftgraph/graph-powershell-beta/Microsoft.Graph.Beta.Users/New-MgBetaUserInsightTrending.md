@@ -14,9 +14,9 @@ Create new navigation property to trending for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserInsightTrending -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Resource <IMicrosoftGraphEntity>]
- [-ResourceReference <IMicrosoftGraphResourceReference>]
+New-MgBetaUserInsightTrending -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,14 +24,15 @@ New-MgBetaUserInsightTrending -UserId <String> [-AdditionalProperties <Hashtable
 ### Create
 ```
 New-MgBetaUserInsightTrending -UserId <String> -BodyParameter <IMicrosoftGraphTrending>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Resource <IMicrosoftGraphEntity>]
- [-ResourceReference <IMicrosoftGraphResourceReference>]
+New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,7 +40,8 @@ New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-AdditionalProperti
 ### CreateViaIdentity
 ```
 New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTrending>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -277,7 +294,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrending
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

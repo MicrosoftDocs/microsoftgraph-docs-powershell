@@ -16,10 +16,11 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaRoleManagementCloudPcRoleAssignment [-AdditionalProperties <Hashtable>] [-AppScopeIds <String[]>]
- [-AppScopes <IMicrosoftGraphAppScope[]>] [-Condition <String>] [-Description <String>]
- [-DirectoryScopeIds <String[]>] [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
- [-Id <String>] [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
+New-MgBetaRoleManagementCloudPcRoleAssignment [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppScopeIds <String[]>] [-AppScopes <IMicrosoftGraphAppScope[]>]
+ [-Condition <String>] [-Description <String>] [-DirectoryScopeIds <String[]>]
+ [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-Id <String>]
+ [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,7 +28,8 @@ New-MgBetaRoleManagementCloudPcRoleAssignment [-AdditionalProperties <Hashtable>
 ### Create
 ```
 New-MgBetaRoleManagementCloudPcRoleAssignment -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -271,6 +273,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleDefinition
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
@@ -343,7 +360,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentMultiple
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

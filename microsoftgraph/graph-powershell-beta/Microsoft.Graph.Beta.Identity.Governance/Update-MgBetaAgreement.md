@@ -17,8 +17,9 @@ Update entity in agreements
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaAgreement -AgreementId <String> [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>]
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
+Update-MgBetaAgreement -AgreementId <String> [-ResponseHeadersVariable <String>]
+ [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
  [-Files <IMicrosoftGraphAgreementFileLocalization[]>] [-Id <String>] [-IsPerDeviceAcceptanceRequired]
  [-IsViewingBeforeAcceptanceRequired] [-TermsExpiration <IMicrosoftGraphTermsExpiration>]
  [-UserReacceptRequiredFrequency <TimeSpan>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -27,13 +28,14 @@ Update-MgBetaAgreement -AgreementId <String> [-Acceptances <IMicrosoftGraphAgree
 
 ### Update
 ```
-Update-MgBetaAgreement -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreement> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAgreement -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreement>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity>
+Update-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
  [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>] [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
  [-Files <IMicrosoftGraphAgreementFileLocalization[]>] [-Id <String>] [-IsPerDeviceAcceptanceRequired]
@@ -45,7 +47,8 @@ Update-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAgreement>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -262,6 +265,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TermsExpiration
 termsExpiration
 To construct, see NOTES section for TERMSEXPIRATION properties and create a hash table.
@@ -336,7 +354,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreement
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

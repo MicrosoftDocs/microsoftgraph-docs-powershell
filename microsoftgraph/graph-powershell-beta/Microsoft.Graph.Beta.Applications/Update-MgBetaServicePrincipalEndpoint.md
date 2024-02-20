@@ -18,31 +18,32 @@ Update the navigation property endpoints in servicePrincipals
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaServicePrincipalEndpoint -EndpointId <String> -ServicePrincipalId <String>
- [-AdditionalProperties <Hashtable>] [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
- [-ProviderId <String>] [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Capability <String>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>] [-ProviderName <String>]
+ [-ProviderResourceId <String>] [-Uri <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalEndpoint -EndpointId <String> -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphEndpoint> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEndpoint> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
- [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
+ [-ProviderId <String>] [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphEndpoint> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEndpoint> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -241,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalId
 The unique identifier of servicePrincipal
 
@@ -315,7 +331,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndpoint
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

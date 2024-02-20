@@ -15,9 +15,9 @@ Invoke action importResourceActions
 ### ImportExpanded (Default)
 ```
 Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
- -UnifiedRbacResourceNamespaceId <String> [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UnifiedRbacResourceNamespaceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Format <String>] [-OverwriteResourceNamespace] [-Value <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Import
@@ -25,15 +25,16 @@ Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
 Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IPathsJozeshRolemanagementEntitlementmanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentityExpanded
 ```
 Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Format <String>] [-OverwriteResourceNamespace] [-Value <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
@@ -41,7 +42,8 @@ Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
 Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsJozeshRolemanagementEntitlementmanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -156,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnifiedRbacResourceNamespaceId
 The unique identifier of unifiedRbacResourceNamespace
 
@@ -228,7 +245,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

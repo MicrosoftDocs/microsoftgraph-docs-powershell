@@ -15,9 +15,10 @@ Update the properties of an alertRule object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String> [-AdditionalProperties <Hashtable>]
- [-AlertRuleTemplate <String>] [-Conditions <IMicrosoftGraphDeviceManagementRuleCondition[]>]
- [-Description <String>] [-DisplayName <String>] [-Enabled] [-Id <String>] [-IsSystemRule]
+Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
+ [-Conditions <IMicrosoftGraphDeviceManagementRuleCondition[]>] [-Description <String>] [-DisplayName <String>]
+ [-Enabled] [-Id <String>] [-IsSystemRule]
  [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
  [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,14 +27,14 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String> [-Additio
 ### Update
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
  [-Conditions <IMicrosoftGraphDeviceManagementRuleCondition[]>] [-Description <String>] [-DisplayName <String>]
  [-Enabled] [-Id <String>] [-IsSystemRule]
  [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
@@ -44,8 +45,8 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -275,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 ruleSeverityType
 
@@ -348,7 +364,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

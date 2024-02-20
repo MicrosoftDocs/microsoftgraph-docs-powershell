@@ -16,7 +16,7 @@ Update the details of a meetingRegistration object assciated with an onlineMeeti
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaCommunicationOnlineMeetingRegistration -OnlineMeetingId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedRegistrant <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedRegistrant <String>]
  [-CustomQuestions <IMicrosoftGraphMeetingRegistrationQuestion[]>] [-Description <String>]
  [-EndDateTime <DateTime>] [-Id <String>] [-Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]
  [-RegistrationPageViewCount <Int32>] [-RegistrationPageWebUrl <String>]
@@ -27,14 +27,14 @@ Update-MgBetaCommunicationOnlineMeetingRegistration -OnlineMeetingId <String>
 ### Update
 ```
 Update-MgBetaCommunicationOnlineMeetingRegistration -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphMeetingRegistration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedRegistrant <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowedRegistrant <String>]
  [-CustomQuestions <IMicrosoftGraphMeetingRegistrationQuestion[]>] [-Description <String>]
  [-EndDateTime <DateTime>] [-Id <String>] [-Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]
  [-RegistrationPageViewCount <Int32>] [-RegistrationPageWebUrl <String>]
@@ -45,8 +45,8 @@ Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ### UpdateViaIdentity
 ```
 Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingRegistration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Speakers
 The meeting speaker's information.
 To construct, see NOTES section for SPEAKERS properties and create a hash table.
@@ -362,7 +377,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

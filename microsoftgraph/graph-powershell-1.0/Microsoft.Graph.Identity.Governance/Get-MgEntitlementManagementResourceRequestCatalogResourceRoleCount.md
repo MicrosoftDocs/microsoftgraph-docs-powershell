@@ -15,43 +15,44 @@ Get the number of the resource
 ### Get (Default)
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
- [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get2
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
- -AccessPackageResourceId <String> [-Filter <String>] [-Search <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -AccessPackageResourceId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
- -AccessPackageResourceRoleId <String> [-Filter <String>] [-Search <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -AccessPackageResourceRoleId <String> [-Filter <String>] [-Search <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
- [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
- [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
- [-Filter <String>] [-Search <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -165,6 +166,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -189,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.Int32
 ## NOTES
 COMPLEX PARAMETER PROPERTIES

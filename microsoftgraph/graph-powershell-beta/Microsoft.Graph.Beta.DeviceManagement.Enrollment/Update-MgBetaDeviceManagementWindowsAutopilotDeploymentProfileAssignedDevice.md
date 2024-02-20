@@ -16,8 +16,9 @@ Update the navigation property assignedDevices in deviceManagement
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  -WindowsAutopilotDeploymentProfileId <String> -WindowsAutopilotDeviceIdentityId <String>
- [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>]
- [-AzureAdDeviceId <String>] [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>]
+ [-AzureActiveDirectoryDeviceId <String>] [-AzureAdDeviceId <String>]
+ [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
  [-DeploymentProfileAssignedDateTime <DateTime>]
  [-DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus>]
  [-DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus>]
@@ -37,16 +38,16 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  -WindowsAutopilotDeploymentProfileId <String> -WindowsAutopilotDeviceIdentityId <String>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
- -InputObject <IDeviceManagementEnrollmentIdentity> [-AdditionalProperties <Hashtable>]
- [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>] [-AzureAdDeviceId <String>]
- [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>]
+ [-AzureAdDeviceId <String>] [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
  [-DeploymentProfileAssignedDateTime <DateTime>]
  [-DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus>]
  [-DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus>]
@@ -66,8 +67,8 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -515,6 +516,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 Serial number of the Windows autopilot device.
 
@@ -662,7 +678,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

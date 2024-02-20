@@ -17,7 +17,8 @@ Create new navigation property to deviceManagementPartners for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+New-MgBetaDeviceManagementPartner [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>]
  [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
  [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
@@ -29,7 +30,8 @@ New-MgBetaDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayN
 ### Create
 ```
 New-MgBetaDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleTenantAppId
 Partner Single tenant App id
 
@@ -291,7 +308,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

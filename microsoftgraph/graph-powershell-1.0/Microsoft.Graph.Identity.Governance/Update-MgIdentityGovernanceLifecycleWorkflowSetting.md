@@ -18,16 +18,18 @@ Update the properties of a lifecycleManagementSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityGovernanceLifecycleWorkflowSetting [-AdditionalProperties <Hashtable>]
- [-EmailSettings <IMicrosoftGraphEmailSettings>] [-Id <String>] [-WorkflowScheduleIntervalInHours <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgIdentityGovernanceLifecycleWorkflowSetting [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EmailSettings <IMicrosoftGraphEmailSettings>] [-Id <String>]
+ [-WorkflowScheduleIntervalInHours <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityGovernanceLifecycleWorkflowSetting
- -BodyParameter <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -131,6 +133,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WorkflowScheduleIntervalInHours
 The interval in hours at which all workflows running in the tenant should be scheduled for execution.
 This interval has a minimum value of 1 and a maximum value of 24.
@@ -189,7 +206,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

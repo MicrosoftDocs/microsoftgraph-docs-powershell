@@ -18,24 +18,7 @@ Create new navigation property to pages for groups
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupSiteOnenoteNotebookSectionPage -GroupId <String> -NotebookId <String> -OnenoteSectionId <String>
- -SiteId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentUrl <String>]
- [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>] [-Order <Int32>]
- [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>] [-Self <String>]
- [-Title <String>] [-UserTags <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaGroupSiteOnenoteNotebookSectionPage -GroupId <String> -NotebookId <String> -OnenoteSectionId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphOnenotePage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>]
  [-Order <Int32>] [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>]
@@ -43,11 +26,29 @@ New-MgBetaGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [-Ad
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaGroupSiteOnenoteNotebookSectionPage -GroupId <String> -NotebookId <String> -OnenoteSectionId <String>
+ -SiteId <String> -BodyParameter <IMicrosoftGraphOnenotePage> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentUrl <String>]
+ [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>] [-Order <Int32>]
+ [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>] [-Self <String>]
+ [-Title <String>] [-UserTags <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphOnenotePage> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnenotePage> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -353,6 +354,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Self
 .
 
@@ -455,7 +471,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenotePage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

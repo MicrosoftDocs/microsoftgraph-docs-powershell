@@ -18,11 +18,11 @@ Update the navigation property userExperienceAnalyticsAppHealthApplicationPerfor
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
- -UserExperienceAnalyticsAppHealthApplicationPerformanceId <String> [-ActiveDeviceCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>]
- [-AppHangCount <Int32>] [-AppHealthScore <Double>] [-AppName <String>] [-AppPublisher <String>]
- [-AppUsageDuration <Int32>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserExperienceAnalyticsAppHealthApplicationPerformanceId <String> [-ResponseHeadersVariable <String>]
+ [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>]
+ [-AppDisplayName <String>] [-AppHangCount <Int32>] [-AppHealthScore <Double>] [-AppName <String>]
+ [-AppPublisher <String>] [-AppUsageDuration <Int32>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,17 +30,18 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
  -UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
- -InputObject <IDeviceManagementIdentity> [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>]
- [-AppCrashCount <Int32>] [-AppDisplayName <String>] [-AppHangCount <Int32>] [-AppHealthScore <Double>]
- [-AppName <String>] [-AppPublisher <String>] [-AppUsageDuration <Int32>] [-Id <String>]
- [-MeanTimeToFailureInMinutes <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>] [-ActiveDeviceCount <Int32>]
+ [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>]
+ [-AppHangCount <Int32>] [-AppHealthScore <Double>] [-AppName <String>] [-AppPublisher <String>]
+ [-AppUsageDuration <Int32>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -48,7 +49,8 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -315,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsAppHealthApplicationPerformanceId
 The unique identifier of userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -372,7 +389,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -20,7 +20,7 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 
 ### CreateExpanded (Default)
 ```
-New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
+New-MgAppCatalogTeamApp [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
  [-ExternalId <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -28,8 +28,8 @@ New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -204,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -245,7 +260,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

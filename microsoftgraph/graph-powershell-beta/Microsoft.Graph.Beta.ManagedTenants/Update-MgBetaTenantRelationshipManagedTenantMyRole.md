@@ -14,31 +14,32 @@ Update the navigation property myRoles in tenantRelationships
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTenantRelationshipManagedTenantMyRole -MyRoleTenantId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaTenantRelationshipManagedTenantMyRole -MyRoleTenantId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsMyRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenantsIdentity>
+Update-MgBetaTenantRelationshipManagedTenantMyRole -MyRoleTenantId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>]
  [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaTenantRelationshipManagedTenantMyRole -MyRoleTenantId <String>
+ -BodyParameter <IMicrosoftGraphManagedTenantsMyRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenantsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsMyRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsMyRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantId
 The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
@@ -213,7 +229,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsMyRole
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

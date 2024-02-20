@@ -17,25 +17,7 @@ Update the navigation property vppTokens in deviceAppManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceAppManagementVppToken -VppTokenId <String> [-AdditionalProperties <Hashtable>]
- [-AppleId <String>] [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm]
- [-CountryOrRegion <String>] [-DataSharingConsentGranted] [-DisplayName <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>] [-LocationName <String>]
- [-OrganizationName <String>] [-RoleScopeTagIds <String[]>] [-State <VppTokenState>] [-Token <String>]
- [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>] [-VppTokenAccountType <VppTokenAccountType>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceAppManagementVppToken -VppTokenId <String> -BodyParameter <IMicrosoftGraphVppToken>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdentity>
+Update-MgBetaDeviceAppManagementVppToken -VppTokenId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-AutomaticallyUpdateApps]
  [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <String>] [-DataSharingConsentGranted]
  [-DisplayName <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
@@ -45,11 +27,31 @@ Update-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManageme
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceAppManagementVppToken -VppTokenId <String> -BodyParameter <IMicrosoftGraphVppToken>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppleId <String>]
+ [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <String>]
+ [-DataSharingConsentGranted] [-DisplayName <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>]
+ [-LocationName <String>] [-OrganizationName <String>] [-RoleScopeTagIds <String[]>] [-State <VppTokenState>]
+ [-Token <String>] [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]
+ [-VppTokenAccountType <VppTokenAccountType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphVppToken> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVppToken> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -333,6 +335,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 Role Scope Tags IDs assigned to this entity.
 
@@ -466,7 +483,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

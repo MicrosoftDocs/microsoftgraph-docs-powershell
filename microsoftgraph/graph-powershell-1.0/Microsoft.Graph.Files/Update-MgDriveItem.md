@@ -18,9 +18,10 @@ Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.Yo
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
- [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+Update-MgDriveItem -DriveId <String> -DriveItemId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
+ [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
+ [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
  [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
@@ -43,14 +44,16 @@ Update-MgDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalPropertie
 ### Update
 ```
 Update-MgDriveItem -DriveId <String> -DriveItemId <String> -BodyParameter <IMicrosoftGraphDriveItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics>] [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>]
- [-CTag <String>] [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
+Update-MgDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics>]
+ [-Audio <IMicrosoftGraphAudio>] [-Bundle <IMicrosoftGraphBundle>] [-CTag <String>]
+ [-Children <IMicrosoftGraphDriveItem[]>] [-ContentInputFile <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Deleted <IMicrosoftGraphDeleted>] [-Description <String>] [-ETag <String>] [-File <IMicrosoftGraphFile>]
  [-FileSystemInfo <IMicrosoftGraphFileSystemInfo>] [-Folder <IMicrosoftGraphFolder>] [-Id <String>]
@@ -73,7 +76,8 @@ Update-MgDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtab
 ### UpdateViaIdentity
 ```
 Update-MgDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -713,6 +717,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabel
 itemRetentionLabel
 To construct, see NOTES section for RETENTIONLABEL properties and create a hash table.
@@ -984,7 +1003,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,36 +14,36 @@ Create new navigation property to definitions for teamwork
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId <String> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-Categories <String[]>] [-Description <String>] [-DisplayName <String>]
- [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>] [-PublisherName <String>]
- [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Audience <String>] [-Categories <String[]>] [-Description <String>]
+ [-DisplayName <String>] [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>]
+ [-PublisherName <String>] [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId <String>
- -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-Categories <String[]>] [-Description <String>] [-DisplayName <String>]
- [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>] [-PublisherName <String>]
- [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Audience <String>] [-Categories <String[]>] [-Description <String>]
+ [-DisplayName <String>] [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>]
+ [-PublisherName <String>] [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +295,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShortDescription
 A short-description of the team template as it will appear to the users in Microsoft Teams.
 
@@ -383,7 +398,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamTemplateDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

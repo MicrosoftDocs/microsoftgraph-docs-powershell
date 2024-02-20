@@ -14,24 +14,25 @@ Create new navigation property to cloudPcsOverview for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantCloudPcOverview [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
- [-NumberOfCloudPcConnectionStatusPassed <Int32>] [-NumberOfCloudPcConnectionStatusPending <Int32>]
- [-NumberOfCloudPcConnectionStatusRunning <Int32>] [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>]
- [-NumberOfCloudPcStatusDeprovisioning <Int32>] [-NumberOfCloudPcStatusFailed <Int32>]
- [-NumberOfCloudPcStatusInGracePeriod <Int32>] [-NumberOfCloudPcStatusNotProvisioned <Int32>]
- [-NumberOfCloudPcStatusProvisioned <Int32>] [-NumberOfCloudPcStatusProvisioning <Int32>]
- [-NumberOfCloudPcStatusUnknown <Int32>] [-NumberOfCloudPcStatusUpgrading <Int32>]
- [-TenantDisplayName <String>] [-TenantId <String>] [-TotalBusinessLicenses <Int32>]
- [-TotalCloudPcConnectionStatus <Int32>] [-TotalCloudPcStatus <Int32>] [-TotalEnterpriseLicenses <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantCloudPcOverview [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
+ [-NumberOfCloudPcConnectionStatusFailed <Int32>] [-NumberOfCloudPcConnectionStatusPassed <Int32>]
+ [-NumberOfCloudPcConnectionStatusPending <Int32>] [-NumberOfCloudPcConnectionStatusRunning <Int32>]
+ [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>] [-NumberOfCloudPcStatusDeprovisioning <Int32>]
+ [-NumberOfCloudPcStatusFailed <Int32>] [-NumberOfCloudPcStatusInGracePeriod <Int32>]
+ [-NumberOfCloudPcStatusNotProvisioned <Int32>] [-NumberOfCloudPcStatusProvisioned <Int32>]
+ [-NumberOfCloudPcStatusProvisioning <Int32>] [-NumberOfCloudPcStatusUnknown <Int32>]
+ [-NumberOfCloudPcStatusUpgrading <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
+ [-TotalBusinessLicenses <Int32>] [-TotalCloudPcConnectionStatus <Int32>] [-TotalCloudPcStatus <Int32>]
+ [-TotalEnterpriseLicenses <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcOverview
- -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcOverview> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcOverview> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -354,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 The display name for the managed tenant.
 Optional.
@@ -495,7 +511,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCloudPcOverview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

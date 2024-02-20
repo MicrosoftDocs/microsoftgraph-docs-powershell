@@ -17,26 +17,7 @@ Update the navigation property managedEBooks in deviceAppManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceAppManagementManagedEBook -ManagedEBookId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-Categories <IMicrosoftGraphManagedEBookCategory[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>]
- [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>]
- [-InstallSummary <IMicrosoftGraphEBookInstallSummary>] [-LargeCover <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>]
- [-Publisher <String>] [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceAppManagementManagedEBook -ManagedEBookId <String>
- -BodyParameter <IMicrosoftGraphManagedEBook> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
+Update-MgBetaDeviceAppManagementManagedEBook -ManagedEBookId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>]
  [-Categories <IMicrosoftGraphManagedEBookCategory[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>] [-Id <String>]
@@ -47,11 +28,31 @@ Update-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateMana
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceAppManagementManagedEBook -ManagedEBookId <String>
+ -BodyParameter <IMicrosoftGraphManagedEBook> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-Categories <IMicrosoftGraphManagedEBookCategory[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>]
+ [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>]
+ [-InstallSummary <IMicrosoftGraphEBookInstallSummary>] [-LargeCover <IMicrosoftGraphMimeContent>]
+ [-LastModifiedDateTime <DateTime>] [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>]
+ [-Publisher <String>] [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedEBook> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedEBook> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -367,6 +368,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserStateSummary
 The list of installation states for this eBook.
 To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
@@ -425,7 +441,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedEBook
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

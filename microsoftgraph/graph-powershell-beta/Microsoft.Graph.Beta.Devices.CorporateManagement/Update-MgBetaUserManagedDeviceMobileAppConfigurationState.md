@@ -15,8 +15,9 @@ Update the navigation property managedDeviceMobileAppConfigurationStates in user
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String>
- -ManagedDeviceMobileAppConfigurationStateId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ -ManagedDeviceMobileAppConfigurationStateId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
  [-UserId1 <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,15 +27,16 @@ Update-MgBetaUserManagedDeviceMobileAppConfigurationState -ManagedDeviceId <Stri
 ```
 Update-MgBetaUserManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String>
  -ManagedDeviceMobileAppConfigurationStateId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserManagedDeviceMobileAppConfigurationState [-UserId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
  [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,8 +45,8 @@ Update-MgBetaUserManagedDeviceMobileAppConfigurationState [-UserId <String>]
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -197,6 +199,21 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -365,7 +382,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,9 +14,9 @@ Update the navigation property used in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserInsightUsed -UsedInsightId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LastUsed <IMicrosoftGraphUsageDetails>] [-Resource <IMicrosoftGraphEntity>]
- [-ResourceReference <IMicrosoftGraphResourceReference>]
+Update-MgBetaUserInsightUsed -UsedInsightId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastUsed <IMicrosoftGraphUsageDetails>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,15 +24,15 @@ Update-MgBetaUserInsightUsed -UsedInsightId <String> -UserId <String> [-Addition
 ### Update
 ```
 Update-MgBetaUserInsightUsed -UsedInsightId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphUsedInsight> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUsedInsight> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastUsed <IMicrosoftGraphUsageDetails>] [-Resource <IMicrosoftGraphEntity>]
- [-ResourceReference <IMicrosoftGraphResourceReference>]
+Update-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastUsed <IMicrosoftGraphUsageDetails>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,7 +40,8 @@ Update-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-AdditionalPropertie
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUsedInsight>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UsedInsightId
 The unique identifier of usedInsight
 
@@ -277,7 +293,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsedInsight
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

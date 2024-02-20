@@ -20,8 +20,8 @@ This API specifically updates an app published to your organization's app catalo
 
 ### CreateExpanded (Default)
 ```
-New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> [-AdditionalProperties <Hashtable>]
- [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-Bot <Hashtable>]
+New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-Bot <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PublishingState <String>] [-ShortDescription <String>]
  [-TeamsAppId1 <String>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -31,7 +31,8 @@ New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> [-AdditionalProperties <H
 ### CreateViaIdentityExpanded
 ```
 New-MgAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-Bot <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Authorization <IMicrosoftGraphTeamsAppAuthorization>] [-Bot <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PublishingState <String>] [-ShortDescription <String>]
  [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -41,14 +42,15 @@ New-MgAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <ITeamsIde
 ### Create
 ```
 New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamsAppDefinition>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -288,6 +290,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShortDescription
 Short description of the application.
 
@@ -402,7 +419,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

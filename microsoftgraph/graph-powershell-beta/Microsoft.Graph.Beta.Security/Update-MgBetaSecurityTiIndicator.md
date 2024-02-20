@@ -15,35 +15,7 @@ Update the properties of a tiIndicator object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityTiIndicator -TiIndicatorId <String> [-Action <String>] [-ActivityGroupNames <String[]>]
- [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
- [-Confidence <Int32>] [-Description <String>] [-DiamondModel <String>] [-DomainName <String>]
- [-EmailEncoding <String>] [-EmailLanguage <String>] [-EmailRecipient <String>] [-EmailSenderAddress <String>]
- [-EmailSenderName <String>] [-EmailSourceDomain <String>] [-EmailSourceIPAddress <String>]
- [-EmailSubject <String>] [-EmailXMailer <String>] [-ExpirationDateTime <DateTime>] [-ExternalId <String>]
- [-FileCompileDateTime <DateTime>] [-FileCreatedDateTime <DateTime>] [-FileHashType <String>]
- [-FileHashValue <String>] [-FileMutexName <String>] [-FileName <String>] [-FilePacker <String>]
- [-FilePath <String>] [-FileSize <Int64>] [-FileType <String>] [-Id <String>] [-IngestedDateTime <DateTime>]
- [-IsActive] [-KillChain <String[]>] [-KnownFalsePositives <String>] [-LastReportedDateTime <DateTime>]
- [-MalwareFamilyNames <String[]>] [-NetworkCidrBlock <String>] [-NetworkDestinationAsn <Int64>]
- [-NetworkDestinationCidrBlock <String>] [-NetworkDestinationIPv4 <String>] [-NetworkDestinationIPv6 <String>]
- [-NetworkDestinationPort <Int32>] [-NetworkIPv4 <String>] [-NetworkIPv6 <String>] [-NetworkPort <Int32>]
- [-NetworkProtocol <Int32>] [-NetworkSourceAsn <Int64>] [-NetworkSourceCidrBlock <String>]
- [-NetworkSourceIPv4 <String>] [-NetworkSourceIPv6 <String>] [-NetworkSourcePort <Int32>] [-PassiveOnly]
- [-Severity <Int32>] [-Tags <String[]>] [-TargetProduct <String>] [-ThreatType <String>] [-TlpLevel <String>]
- [-Url <String>] [-UserAgent <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityTiIndicator -TiIndicatorId <String> -BodyParameter <IMicrosoftGraphTiIndicator>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-Action <String>]
+Update-MgBetaSecurityTiIndicator -TiIndicatorId <String> [-ResponseHeadersVariable <String>] [-Action <String>]
  [-ActivityGroupNames <String[]>] [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
  [-AzureTenantId <String>] [-Confidence <Int32>] [-Description <String>] [-DiamondModel <String>]
  [-DomainName <String>] [-EmailEncoding <String>] [-EmailLanguage <String>] [-EmailRecipient <String>]
@@ -64,10 +36,41 @@ Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-Action <Stri
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaSecurityTiIndicator -TiIndicatorId <String> -BodyParameter <IMicrosoftGraphTiIndicator>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-Action <String>] [-ActivityGroupNames <String[]>] [-AdditionalInformation <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>] [-Confidence <Int32>] [-Description <String>]
+ [-DiamondModel <String>] [-DomainName <String>] [-EmailEncoding <String>] [-EmailLanguage <String>]
+ [-EmailRecipient <String>] [-EmailSenderAddress <String>] [-EmailSenderName <String>]
+ [-EmailSourceDomain <String>] [-EmailSourceIPAddress <String>] [-EmailSubject <String>]
+ [-EmailXMailer <String>] [-ExpirationDateTime <DateTime>] [-ExternalId <String>]
+ [-FileCompileDateTime <DateTime>] [-FileCreatedDateTime <DateTime>] [-FileHashType <String>]
+ [-FileHashValue <String>] [-FileMutexName <String>] [-FileName <String>] [-FilePacker <String>]
+ [-FilePath <String>] [-FileSize <Int64>] [-FileType <String>] [-Id <String>] [-IngestedDateTime <DateTime>]
+ [-IsActive] [-KillChain <String[]>] [-KnownFalsePositives <String>] [-LastReportedDateTime <DateTime>]
+ [-MalwareFamilyNames <String[]>] [-NetworkCidrBlock <String>] [-NetworkDestinationAsn <Int64>]
+ [-NetworkDestinationCidrBlock <String>] [-NetworkDestinationIPv4 <String>] [-NetworkDestinationIPv6 <String>]
+ [-NetworkDestinationPort <Int32>] [-NetworkIPv4 <String>] [-NetworkIPv6 <String>] [-NetworkPort <Int32>]
+ [-NetworkProtocol <Int32>] [-NetworkSourceAsn <Int64>] [-NetworkSourceCidrBlock <String>]
+ [-NetworkSourceIPv4 <String>] [-NetworkSourceIPv6 <String>] [-NetworkSourcePort <Int32>] [-PassiveOnly]
+ [-Severity <Int32>] [-Tags <String[]>] [-TargetProduct <String>] [-ThreatType <String>] [-TlpLevel <String>]
+ [-Url <String>] [-UserAgent <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphTiIndicator>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -981,6 +984,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 An integer representing the severity of the malicious behavior identified by the data within the indicator.
 Acceptable values are 0 - 5 where 5 is the most severe and zero isn't severe at all.
@@ -1149,7 +1167,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTiIndicator
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

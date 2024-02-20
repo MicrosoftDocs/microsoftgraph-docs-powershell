@@ -17,8 +17,9 @@ This API adds the sender to the list of blocked senders and moves the message to
 ### MarkExpanded (Default)
 ```
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -MailFolderId <String> -MailFolderId1 <String>
- -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-MoveToJunk]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MessageId <String> -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-MoveToJunk] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Mark
@@ -26,13 +27,14 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -MailFolderId <String> -
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String>
  -BodyParameter <IPaths1Dpim3GUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentityExpanded
 ```
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-MoveToJunk] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-MoveToJunk] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +42,8 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -InputObject <IUsersActi
 ```
 Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Dpim3GUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -189,6 +192,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -246,7 +264,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

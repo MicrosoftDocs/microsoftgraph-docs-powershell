@@ -19,8 +19,8 @@ Update the properties of a browserSharedCookie object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSharedCookieId <String>
- -BrowserSiteListId <String> [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
+ -BrowserSiteListId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
  [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>] [-HostOnly] [-HostOrDomain <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Path <String>]
  [-SourceEnvironment <BrowserSharedCookieSourceEnvironment>] [-Status <BrowserSharedCookieStatus>]
@@ -30,17 +30,18 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSharedCoo
 ### Update
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSharedCookieId <String>
- -BrowserSiteListId <String> -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BrowserSiteListId <String> -BodyParameter <IMicrosoftGraphBrowserSharedCookie>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>]
- [-HostOnly] [-HostOrDomain <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Path <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Comment <String>]
+ [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
+ [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>] [-HostOnly] [-HostOrDomain <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Path <String>]
  [-SourceEnvironment <BrowserSharedCookieSourceEnvironment>] [-Status <BrowserSharedCookieStatus>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,8 +49,8 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 ### UpdateViaIdentity
 ```
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -335,6 +336,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SourceEnvironment
 browserSharedCookieSourceEnvironment
 
@@ -407,7 +423,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSharedCookie
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

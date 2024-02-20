@@ -18,7 +18,8 @@ Update the default configuration of a cross-tenant access policy.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyCrossTenantAccessPolicyDefault [-AdditionalProperties <Hashtable>]
+Update-MgPolicyCrossTenantAccessPolicyDefault [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
@@ -31,8 +32,9 @@ Update-MgPolicyCrossTenantAccessPolicyDefault [-AdditionalProperties <Hashtable>
 ### Update
 ```
 Update-MgPolicyCrossTenantAccessPolicyDefault
- -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -268,6 +270,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -309,7 +326,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

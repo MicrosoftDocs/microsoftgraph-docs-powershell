@@ -14,8 +14,8 @@ Create new navigation property to intuneBrandingProfiles for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementIntuneBrandingProfile [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
+New-MgBetaDeviceManagementIntuneBrandingProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
  [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
@@ -34,7 +34,8 @@ New-MgBetaDeviceManagementIntuneBrandingProfile [-AdditionalProperties <Hashtabl
 ### Create
 ```
 New-MgBetaDeviceManagementIntuneBrandingProfile -BodyParameter <IMicrosoftGraphIntuneBrandingProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -499,6 +500,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of scope tags assigned to the branding profile
 
@@ -677,7 +693,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,22 +18,24 @@ Create new navigation property to activities for groups
 ### CreateExpanded (Default)
 ```
 New-MgGroupSiteAnalyticItemActivityStatActivity -GroupId <String> -ItemActivityStatId <String> -SiteId <String>
- [-Access <Hashtable>] [-ActivityDateTime <DateTime>] [-Actor <IMicrosoftGraphIdentitySet>]
- [-AdditionalProperties <Hashtable>] [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Access <Hashtable>] [-ActivityDateTime <DateTime>]
+ [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
+ [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgGroupSiteAnalyticItemActivityStatActivity -GroupId <String> -ItemActivityStatId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphItemActivity> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-Access <Hashtable>]
- [-ActivityDateTime <DateTime>] [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
+New-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
+ [-ResponseHeadersVariable <String>] [-Access <Hashtable>] [-ActivityDateTime <DateTime>]
+ [-Actor <IMicrosoftGraphIdentitySet>] [-AdditionalProperties <Hashtable>]
  [-DriveItem <IMicrosoftGraphDriveItem>] [-Id <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,8 +43,8 @@ New-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-
 ### CreateViaIdentity
 ```
 New-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivity> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -236,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -293,7 +310,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

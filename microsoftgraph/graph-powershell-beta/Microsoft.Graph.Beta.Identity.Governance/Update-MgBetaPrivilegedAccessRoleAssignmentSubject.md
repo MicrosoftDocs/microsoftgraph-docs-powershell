@@ -15,30 +15,31 @@ Update the navigation property subject in privilegedAccess
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -GovernanceRoleAssignmentId <String>
- -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Email <String>]
- [-Id <String>] [-PrincipalName <String>] [-Type <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PrivilegedAccessId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Email <String>] [-Id <String>] [-PrincipalName <String>] [-Type <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -GovernanceRoleAssignmentId <String>
- -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphGovernanceSubject> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphGovernanceSubject>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-PrincipalName <String>] [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-Email <String>] [-Id <String>] [-PrincipalName <String>] [-Type <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceSubject> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphGovernanceSubject> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -217,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Type
 The type of the subject.
 The value can be User, Group, and ServicePrincipal.
@@ -275,7 +291,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceSubject
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

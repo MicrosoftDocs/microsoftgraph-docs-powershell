@@ -16,6 +16,7 @@ Update the properties of a sourceCollection object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId <String> -SourceCollectionId <String>
+ [-ResponseHeadersVariable <String>]
  [-AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphEdiscoveryDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
@@ -30,13 +31,14 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId <String> -SourceCo
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId <String> -SourceCollectionId <String>
- -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity>
+ [-ResponseHeadersVariable <String>]
  [-AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphEdiscoveryDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
@@ -51,8 +53,8 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -387,6 +389,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SourceCollectionId
 The unique identifier of sourceCollection
 
@@ -444,7 +461,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

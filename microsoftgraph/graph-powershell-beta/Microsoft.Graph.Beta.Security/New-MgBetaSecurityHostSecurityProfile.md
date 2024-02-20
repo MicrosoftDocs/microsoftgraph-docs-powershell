@@ -14,10 +14,10 @@ Create new navigation property to hostSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityHostSecurityProfile [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>] [-Id <String>] [-IsAzureAdJoined]
- [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined] [-LastSeenDateTime <DateTime>]
- [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
+New-MgBetaSecurityHostSecurityProfile [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
+ [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
+ [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
  [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
  [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
@@ -27,7 +27,8 @@ New-MgBetaSecurityHostSecurityProfile [-AdditionalProperties <Hashtable>] [-Azur
 ### Create
 ```
 New-MgBetaSecurityHostSecurityProfile -BodyParameter <IMicrosoftGraphHostSecurityProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -339,6 +340,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -426,7 +442,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

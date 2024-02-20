@@ -17,20 +17,20 @@ After making this request, the caller should create a programControl, to link th
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaAccessReview [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
- [-CreatedBy <IMicrosoftGraphUserIdentity>] [-Decisions <IMicrosoftGraphAccessReviewDecision[]>]
- [-Description <String>] [-DisplayName <String>] [-EndDateTime <DateTime>] [-Id <String>]
- [-Instances <IMicrosoftGraphAccessReview[]>] [-MyDecisions <IMicrosoftGraphAccessReviewDecision[]>]
- [-ReviewedEntity <IMicrosoftGraphIdentity>] [-ReviewerType <String>]
- [-Reviewers <IMicrosoftGraphAccessReviewReviewer[]>] [-Settings <IMicrosoftGraphAccessReviewSettings>]
- [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaAccessReview [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-BusinessFlowTemplateId <String>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
+ [-Decisions <IMicrosoftGraphAccessReviewDecision[]>] [-Description <String>] [-DisplayName <String>]
+ [-EndDateTime <DateTime>] [-Id <String>] [-Instances <IMicrosoftGraphAccessReview[]>]
+ [-MyDecisions <IMicrosoftGraphAccessReviewDecision[]>] [-ReviewedEntity <IMicrosoftGraphIdentity>]
+ [-ReviewerType <String>] [-Reviewers <IMicrosoftGraphAccessReviewReviewer[]>]
+ [-Settings <IMicrosoftGraphAccessReviewSettings>] [-StartDateTime <DateTime>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaAccessReview -BodyParameter <IMicrosoftGraphAccessReview> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaAccessReview -BodyParameter <IMicrosoftGraphAccessReview> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +295,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewedEntity
 identity
 To construct, see NOTES section for REVIEWEDENTITY properties and create a hash table.
@@ -433,7 +448,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,8 +18,8 @@ Update the navigation property passiveDnsRecords in security
 ### UpdateExpanded (Default)
 ```
 Update-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
- [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-CollectedDateTime <DateTime>]
- [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>]
+ [-CollectedDateTime <DateTime>] [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
  [-ParentHost <IMicrosoftGraphSecurityHost>] [-RecordType <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +27,15 @@ Update-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
 ### Update
 ```
 Update-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
- -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-CollectedDateTime <DateTime>]
- [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>]
+ [-CollectedDateTime <DateTime>] [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
  [-ParentHost <IMicrosoftGraphSecurityHost>] [-RecordType <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +43,8 @@ Update-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdent
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -257,6 +257,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -299,7 +314,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

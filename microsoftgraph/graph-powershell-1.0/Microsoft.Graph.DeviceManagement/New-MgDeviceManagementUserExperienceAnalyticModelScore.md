@@ -17,18 +17,19 @@ Create new navigation property to userExperienceAnalyticsModelScores for deviceM
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticModelScore [-AdditionalProperties <Hashtable>]
- [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>] [-EndpointAnalyticsScore <Double>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelDeviceCount <Int64>] [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementUserExperienceAnalyticModelScore [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>]
+ [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-Manufacturer <String>] [-Model <String>] [-ModelDeviceCount <Int64>] [-StartupPerformanceScore <Double>]
+ [-WorkFromAnywhereScore <Double>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticModelScore
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -241,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartupPerformanceScore
 Indicates a weighted average of boot score and logon score used for measuring startup performance.
 Valid values range from 0-100.
@@ -322,7 +338,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,7 @@ Update the navigation property itemActivityStats in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String> -GroupId <String>
- -ItemActivityStatId <String> [-Access <IMicrosoftGraphItemActionStat>]
+ -ItemActivityStatId <String> [-ResponseHeadersVariable <String>] [-Access <IMicrosoftGraphItemActionStat>]
  [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
  [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
@@ -30,26 +30,28 @@ Update-MgGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <
 ### Update
 ```
 Update-MgGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String> -GroupId <String>
- -ItemActivityStatId <String> -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ItemActivityStatId <String> -BodyParameter <IMicrosoftGraphItemActivityStat>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
- [-Access <IMicrosoftGraphItemActionStat>] [-Activities <IMicrosoftGraphItemActivity[]>]
- [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
- [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
- [-Id <String>] [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending]
- [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Access <IMicrosoftGraphItemActionStat>]
+ [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
+ [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
+ [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
+ [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -353,6 +355,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 When the interval starts.
 Read-only.
@@ -411,7 +428,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,31 +15,33 @@ Update the navigation property profileStatus in education
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEducationSynchronizationProfileStatus -EducationSynchronizationProfileId <String>
- [-AdditionalProperties <Hashtable>] [-ErrorCount <Int64>] [-Id <String>] [-LastActivityDateTime <DateTime>]
- [-LastSynchronizationDateTime <DateTime>] [-Status <String>] [-StatusMessage <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ErrorCount <Int64>] [-Id <String>]
+ [-LastActivityDateTime <DateTime>] [-LastSynchronizationDateTime <DateTime>] [-Status <String>]
+ [-StatusMessage <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationSynchronizationProfileStatus -EducationSynchronizationProfileId <String>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationProfileStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationProfileStatus> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-ErrorCount <Int64>] [-Id <String>] [-LastActivityDateTime <DateTime>]
- [-LastSynchronizationDateTime <DateTime>] [-Status <String>] [-StatusMessage <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ErrorCount <Int64>] [-Id <String>]
+ [-LastActivityDateTime <DateTime>] [-LastSynchronizationDateTime <DateTime>] [-Status <String>]
+ [-StatusMessage <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationProfileStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationProfileStatus> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 educationSynchronizationStatus
 
@@ -272,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfileStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

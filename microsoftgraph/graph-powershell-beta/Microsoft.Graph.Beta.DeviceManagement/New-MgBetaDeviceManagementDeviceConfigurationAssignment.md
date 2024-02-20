@@ -18,8 +18,8 @@ Create new navigation property to assignments for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <DeviceConfigAssignmentIntent>]
- [-Source <DeviceAndAppManagementAssignmentSource>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <DeviceConfigAssignmentIntent>] [-Source <DeviceAndAppManagementAssignmentSource>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +27,15 @@ New-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId <
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <DeviceConfigAssignmentIntent>]
- [-Source <DeviceAndAppManagementAssignmentSource>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <DeviceConfigAssignmentIntent>] [-Source <DeviceAndAppManagementAssignmentSource>]
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +43,8 @@ New-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceMan
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -175,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 Represents source of assignment.
 
@@ -248,7 +263,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

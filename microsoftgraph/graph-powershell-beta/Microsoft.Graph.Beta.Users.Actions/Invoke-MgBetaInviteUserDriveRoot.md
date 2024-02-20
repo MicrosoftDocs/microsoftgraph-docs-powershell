@@ -18,8 +18,8 @@ Sends a sharing invitation for a DriveItem.A sharing invitation provides permiss
 
 ### InviteExpanded (Default)
 ```
-Invoke-MgBetaInviteUserDriveRoot -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
+Invoke-MgBetaInviteUserDriveRoot -DriveId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
  [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -29,13 +29,14 @@ Invoke-MgBetaInviteUserDriveRoot -DriveId <String> -UserId <String> [-Additional
 ```
 Invoke-MgBetaInviteUserDriveRoot -DriveId <String> -UserId <String>
  -BodyParameter <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### InviteViaIdentityExpanded
 ```
-Invoke-MgBetaInviteUserDriveRoot -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
+Invoke-MgBetaInviteUserDriveRoot -InputObject <IUsersActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
  [-Roles <String[]>] [-SendInvitation] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -45,7 +46,8 @@ Invoke-MgBetaInviteUserDriveRoot -InputObject <IUsersActionsIdentity> [-Addition
 ```
 Invoke-MgBetaInviteUserDriveRoot -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -224,6 +226,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetainInheritedPermissions
 .
 
@@ -326,7 +343,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

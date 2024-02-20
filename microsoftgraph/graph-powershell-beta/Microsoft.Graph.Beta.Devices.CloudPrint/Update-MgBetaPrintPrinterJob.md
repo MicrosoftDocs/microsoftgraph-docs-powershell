@@ -17,8 +17,8 @@ Update the navigation property jobs in print
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-AcknowledgedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
+Update-MgBetaPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-ResponseHeadersVariable <String>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
  [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
@@ -29,13 +29,14 @@ Update-MgBetaPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-Acknowle
 ### Update
 ```
 Update-MgBetaPrintPrinterJob -PrintJobId <String> -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintJob>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-AcknowledgedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
+Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
  [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
@@ -46,7 +47,8 @@ Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-Acknowl
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintJob>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -346,6 +348,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 printJobStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
@@ -420,7 +437,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJob
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

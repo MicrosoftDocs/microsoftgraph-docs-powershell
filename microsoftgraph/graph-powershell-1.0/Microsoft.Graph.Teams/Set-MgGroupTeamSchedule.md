@@ -17,7 +17,8 @@ Update the navigation property schedule in groups
 
 ### SetExpanded (Default)
 ```
-Set-MgGroupTeamSchedule -GroupId <String> [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
+Set-MgGroupTeamSchedule -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
  [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
@@ -31,14 +32,16 @@ Set-MgGroupTeamSchedule -GroupId <String> [-AdditionalProperties <Hashtable>] [-
 
 ### Set
 ```
-Set-MgGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Enabled]
- [-Id <String>] [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
+Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
+ [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
  [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
@@ -52,7 +55,8 @@ Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Ha
 ### SetViaIdentity
 ```
 Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -277,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingGroups
 The logical grouping of users in the schedule (usually by role).
 To construct, see NOTES section for SCHEDULINGGROUPS properties and create a hash table.
@@ -491,7 +510,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

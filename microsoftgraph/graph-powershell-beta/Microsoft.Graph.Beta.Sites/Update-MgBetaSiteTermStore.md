@@ -17,30 +17,32 @@ Update the navigation property termStore in sites
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSiteTermStore -SiteId <String> [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>]
- [-Groups <IMicrosoftGraphTermStoreGroup[]>] [-Id <String>] [-LanguageTags <String[]>]
- [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSiteTermStore -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>]
+ [-Id <String>] [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSiteTermStore -SiteId <String> -BodyParameter <IMicrosoftGraphTermStore> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSiteTermStore -SiteId <String> -BodyParameter <IMicrosoftGraphTermStore>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>] [-Id <String>]
- [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
+Update-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup[]>]
+ [-Id <String>] [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStore>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -204,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sets
 Collection of all sets available in the term store.
 To construct, see NOTES section for SETS properties and create a hash table.
@@ -277,7 +294,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermStore
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

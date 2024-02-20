@@ -14,7 +14,7 @@ Update the navigation property exchangeOnPremisesPolicies in deviceManagement
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgBetaDeviceManagementExchangeOnPremisePolicy
+Update-MgBetaDeviceManagementExchangeOnPremisePolicy [-ResponseHeadersVariable <String>]
  [-AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>] [-AdditionalProperties <Hashtable>]
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
  [-DefaultAccessLevel <DeviceManagementExchangeAccessLevel>] [-Id <String>]
@@ -26,7 +26,8 @@ Update-MgBetaDeviceManagementExchangeOnPremisePolicy
 ### UpdateExpanded
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicy -DeviceManagementExchangeOnPremisesPolicyId <String>
- [-AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>]
+ [-AdditionalProperties <Hashtable>]
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
  [-DefaultAccessLevel <DeviceManagementExchangeAccessLevel>] [-Id <String>]
  [-KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]
@@ -37,14 +38,15 @@ Update-MgBetaDeviceManagementExchangeOnPremisePolicy -DeviceManagementExchangeOn
 ### Update
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicy -DeviceManagementExchangeOnPremisesPolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicy -InputObject <IDeviceManagementAdministrationIdentity>
- [-AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>]
+ [-AdditionalProperties <Hashtable>]
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
  [-DefaultAccessLevel <DeviceManagementExchangeAccessLevel>] [-Id <String>]
  [-KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]
@@ -55,15 +57,15 @@ Update-MgBetaDeviceManagementExchangeOnPremisePolicy -InputObject <IDeviceManage
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicy -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicy
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -259,6 +261,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -301,7 +318,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

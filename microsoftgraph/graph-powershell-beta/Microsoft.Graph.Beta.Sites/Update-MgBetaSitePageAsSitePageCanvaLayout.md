@@ -15,7 +15,8 @@ Update the navigation property canvasLayout in sites
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSitePageAsSitePageCanvaLayout -BaseSitePageId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-HorizontalSections <IMicrosoftGraphHorizontalSection[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-HorizontalSections <IMicrosoftGraphHorizontalSection[]>] [-Id <String>]
  [-VerticalSection <IMicrosoftGraphVerticalSection>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,14 +24,14 @@ Update-MgBetaSitePageAsSitePageCanvaLayout -BaseSitePageId <String> -SiteId <Str
 ### Update
 ```
 Update-MgBetaSitePageAsSitePageCanvaLayout -BaseSitePageId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphCanvasLayout> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCanvasLayout> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-HorizontalSections <IMicrosoftGraphHorizontalSection[]>] [-Id <String>]
+Update-MgBetaSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-HorizontalSections <IMicrosoftGraphHorizontalSection[]>] [-Id <String>]
  [-VerticalSection <IMicrosoftGraphVerticalSection>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +39,8 @@ Update-MgBetaSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-Addit
 ### UpdateViaIdentity
 ```
 Update-MgBetaSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphCanvasLayout> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCanvasLayout> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -171,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -244,7 +260,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCanvasLayout
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

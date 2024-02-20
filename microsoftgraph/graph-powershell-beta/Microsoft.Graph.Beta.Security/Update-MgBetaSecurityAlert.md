@@ -19,37 +19,7 @@ This method updates any solution that has a record of the referenced alert ID.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityAlert -AlertId <String> [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
- [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-Category <String>] [-ClosedDateTime <DateTime>]
- [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>] [-Confidence <Int32>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>] [-EventDateTime <DateTime>]
- [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
- [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
- [-Id <String>] [-IncidentIds <String[]>]
- [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>]
- [-MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]
- [-NetworkConnections <IMicrosoftGraphNetworkConnection[]>] [-Processes <IMicrosoftGraphProcess[]>]
- [-RecommendedActions <String[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
- [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <String>] [-SourceMaterials <String[]>]
- [-Status <String>] [-Tags <String[]>] [-Title <String>] [-Triggers <IMicrosoftGraphAlertTrigger[]>]
- [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
- [-UserStates <IMicrosoftGraphUserSecurityState[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName <String>]
+Update-MgBetaSecurityAlert -AlertId <String> [-ResponseHeadersVariable <String>] [-ActivityGroupName <String>]
  [-AdditionalProperties <Hashtable>] [-AlertDetections <IMicrosoftGraphAlertDetection[]>]
  [-AssignedTo <String>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-Category <String>]
  [-ClosedDateTime <DateTime>] [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>]
@@ -71,10 +41,43 @@ Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName 
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
+ [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
+ [-AzureTenantId <String>] [-Category <String>] [-ClosedDateTime <DateTime>]
+ [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>] [-Confidence <Int32>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>] [-EventDateTime <DateTime>]
+ [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
+ [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
+ [-Id <String>] [-IncidentIds <String[]>]
+ [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
+ [-LastModifiedDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>]
+ [-MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]
+ [-NetworkConnections <IMicrosoftGraphNetworkConnection[]>] [-Processes <IMicrosoftGraphProcess[]>]
+ [-RecommendedActions <String[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
+ [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <String>] [-SourceMaterials <String[]>]
+ [-Status <String>] [-Tags <String[]>] [-Title <String>] [-Triggers <IMicrosoftGraphAlertTrigger[]>]
+ [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
+ [-UserStates <IMicrosoftGraphUserSecurityState[]>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -694,6 +697,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityResources
 Resources related to current alert.
 For example, for some alerts this can have the Azure Resource value.
@@ -911,7 +929,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

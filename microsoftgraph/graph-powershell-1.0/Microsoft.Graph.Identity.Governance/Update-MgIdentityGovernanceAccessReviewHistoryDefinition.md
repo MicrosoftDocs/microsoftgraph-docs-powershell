@@ -18,10 +18,10 @@ Update the navigation property historyDefinitions in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>]
- [-Decisions <String[]>] [-DisplayName <String>] [-Id <String>]
- [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>] [-ReviewHistoryPeriodEndDateTime <DateTime>]
- [-ReviewHistoryPeriodStartDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>] [-Decisions <String[]>]
+ [-DisplayName <String>] [-Id <String>] [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>]
+ [-ReviewHistoryPeriodEndDateTime <DateTime>] [-ReviewHistoryPeriodStartDateTime <DateTime>]
  [-ScheduleSettings <IMicrosoftGraphAccessReviewHistoryScheduleSettings>]
  [-Scopes <IMicrosoftGraphAccessReviewScope[]>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,17 +30,17 @@ Update-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDef
 ### Update
 ```
 Update-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>]
- [-Decisions <String[]>] [-DisplayName <String>] [-Id <String>]
- [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>] [-ReviewHistoryPeriodEndDateTime <DateTime>]
- [-ReviewHistoryPeriodStartDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>] [-Decisions <String[]>]
+ [-DisplayName <String>] [-Id <String>] [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>]
+ [-ReviewHistoryPeriodEndDateTime <DateTime>] [-ReviewHistoryPeriodStartDateTime <DateTime>]
  [-ScheduleSettings <IMicrosoftGraphAccessReviewHistoryScheduleSettings>]
  [-Scopes <IMicrosoftGraphAccessReviewScope[]>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -49,8 +49,8 @@ Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentity
 ### UpdateViaIdentity
 ```
 Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -248,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewHistoryPeriodEndDateTime
 A timestamp.
 Reviews ending on or before this date will be included in the fetched history data.
@@ -372,7 +387,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,7 @@ Update the navigation property accessPackageResourceRoleScopes in identityGovern
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
- -AccessPackageResourceRoleScopeId <String>
+ -AccessPackageResourceRoleScopeId <String> [-ResponseHeadersVariable <String>]
  [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
  [-AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-ModifiedBy <String>]
@@ -30,13 +30,14 @@ Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageI
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
  -AccessPackageResourceRoleScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
+ [-ResponseHeadersVariable <String>] [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
  [-AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-ModifiedBy <String>]
  [-ModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -46,8 +47,8 @@ Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <I
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -272,6 +273,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -314,7 +330,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

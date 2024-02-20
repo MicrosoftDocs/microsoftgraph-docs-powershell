@@ -16,7 +16,8 @@ Update the properties of an existing customAccessPackageWorkflowExtension object
 ```
 Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
  -AccessPackageCatalogId <String> -CustomAccessPackageWorkflowExtensionId <String>
- [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -27,15 +28,15 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
 ```
 Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
  -AccessPackageCatalogId <String> -CustomAccessPackageWorkflowExtensionId <String>
- -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -46,8 +47,8 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
 ```
 Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -288,6 +289,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -330,7 +346,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAccessPackageWorkflowExtension
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

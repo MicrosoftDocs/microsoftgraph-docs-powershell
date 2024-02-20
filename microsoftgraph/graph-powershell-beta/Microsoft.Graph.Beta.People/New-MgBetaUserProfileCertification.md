@@ -15,39 +15,42 @@ Create a new personCertification object in a user's profile.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserProfileCertification -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-CertificationId <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-EndDate <DateTime>]
- [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-IssuedDate <DateTime>]
- [-IssuingAuthority <String>] [-IssuingCompany <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>] [-StartDate <DateTime>]
- [-ThumbnailUrl <String>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileCertification -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CertificationId <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-EndDate <DateTime>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
+ [-IsSearchable] [-IssuedDate <DateTime>] [-IssuingAuthority <String>] [-IssuingCompany <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-StartDate <DateTime>] [-ThumbnailUrl <String>]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserProfileCertification -UserId <String> -BodyParameter <IMicrosoftGraphPersonCertification>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-CertificationId <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-EndDate <DateTime>]
- [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-IssuedDate <DateTime>]
- [-IssuingAuthority <String>] [-IssuingCompany <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>] [-StartDate <DateTime>]
- [-ThumbnailUrl <String>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CertificationId <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-EndDate <DateTime>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
+ [-IsSearchable] [-IssuedDate <DateTime>] [-IssuingAuthority <String>] [-IssuingCompany <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-StartDate <DateTime>] [-ThumbnailUrl <String>]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphPersonCertification> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPersonCertification> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -381,6 +384,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
@@ -499,7 +517,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonCertification
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,8 +15,8 @@ Update the navigation property userExperienceAnalyticsBatteryHealthDevicePerform
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
- -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String> [-AdditionalProperties <Hashtable>]
- [-BatteryAgeInDays <Int32>]
+ -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
  [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
  [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceBatteryTags <String[]>]
  [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
@@ -29,14 +29,16 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanc
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
  [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
  [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceBatteryTags <String[]>]
  [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
@@ -49,8 +51,9 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanc
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -359,6 +362,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsBatteryHealthDevicePerformanceId
 The unique identifier of userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -416,7 +434,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

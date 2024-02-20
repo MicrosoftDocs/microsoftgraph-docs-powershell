@@ -18,31 +18,31 @@ Update the navigation property operations in communications
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaCommunicationCallOperation -CallId <String> -CommsOperationId <String>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Id <String>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
+ [-Id <String>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaCommunicationCallOperation -CallId <String> -CommsOperationId <String>
- -BodyParameter <IMicrosoftGraphCommsOperation> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCommsOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Id <String>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
+ [-Id <String>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCommsOperation> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCommsOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -189,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResultInfo
 resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
@@ -262,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommsOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

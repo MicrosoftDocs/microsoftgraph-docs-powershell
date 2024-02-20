@@ -18,9 +18,9 @@ Create a new connectedOrganization object.
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
+New-MgEntitlementManagementConnectedOrganization [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
  [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
  [-ModifiedDateTime <DateTime>] [-State <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,7 +29,8 @@ New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtab
 ### Create
 ```
 New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -256,6 +257,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 connectedOrganizationState
 
@@ -312,7 +328,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

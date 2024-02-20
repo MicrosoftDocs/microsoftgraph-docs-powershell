@@ -14,11 +14,11 @@ Create new navigation property to employees for financials
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaFinancialCompanyEmployee -CompanyId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-BirthDate <DateTime>] [-DisplayName <String>]
- [-Email <String>] [-EmploymentDate <DateTime>] [-GivenName <String>] [-Id <String>] [-JobTitle <String>]
- [-LastModifiedDateTime <DateTime>] [-MiddleName <String>] [-MobilePhone <String>] [-Number <String>]
- [-PersonalEmail <String>] [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
+New-MgBetaFinancialCompanyEmployee -CompanyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-BirthDate <DateTime>]
+ [-DisplayName <String>] [-Email <String>] [-EmploymentDate <DateTime>] [-GivenName <String>] [-Id <String>]
+ [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-MiddleName <String>] [-MobilePhone <String>]
+ [-Number <String>] [-PersonalEmail <String>] [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-StatisticsGroupCode <String>] [-Status <String>] [-Surname <String>] [-TerminationDate <DateTime>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,16 +26,17 @@ New-MgBetaFinancialCompanyEmployee -CompanyId <String> [-AdditionalProperties <H
 ### Create
 ```
 New-MgBetaFinancialCompanyEmployee -CompanyId <String> -BodyParameter <IMicrosoftGraphEmployee>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaFinancialCompanyEmployee -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-BirthDate <DateTime>] [-DisplayName <String>]
- [-Email <String>] [-EmploymentDate <DateTime>] [-GivenName <String>] [-Id <String>] [-JobTitle <String>]
- [-LastModifiedDateTime <DateTime>] [-MiddleName <String>] [-MobilePhone <String>] [-Number <String>]
- [-PersonalEmail <String>] [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
+New-MgBetaFinancialCompanyEmployee -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-BirthDate <DateTime>]
+ [-DisplayName <String>] [-Email <String>] [-EmploymentDate <DateTime>] [-GivenName <String>] [-Id <String>]
+ [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-MiddleName <String>] [-MobilePhone <String>]
+ [-Number <String>] [-PersonalEmail <String>] [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-StatisticsGroupCode <String>] [-Status <String>] [-Surname <String>] [-TerminationDate <DateTime>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,7 +44,8 @@ New-MgBetaFinancialCompanyEmployee -InputObject <IFinancialsIdentity> [-Addition
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyEmployee -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphEmployee>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -370,6 +372,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StatisticsGroupCode
 .
 
@@ -472,7 +489,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmployee
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

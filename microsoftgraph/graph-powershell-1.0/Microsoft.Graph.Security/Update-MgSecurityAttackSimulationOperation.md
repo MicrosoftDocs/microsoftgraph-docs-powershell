@@ -18,8 +18,8 @@ Update the navigation property operations in security
 ### UpdateExpanded (Default)
 ```
 Update-MgSecurityAttackSimulationOperation -AttackSimulationOperationId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
  [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,23 +27,24 @@ Update-MgSecurityAttackSimulationOperation -AttackSimulationOperationId <String>
 ### Update
 ```
 Update-MgSecurityAttackSimulationOperation -AttackSimulationOperationId <String>
- -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>]
- [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
+ [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -223,6 +224,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 longRunningOperationStatus
 
@@ -325,7 +341,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

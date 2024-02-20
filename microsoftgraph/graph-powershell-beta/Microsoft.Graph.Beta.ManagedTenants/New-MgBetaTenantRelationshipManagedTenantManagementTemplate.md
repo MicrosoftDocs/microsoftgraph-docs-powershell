@@ -14,10 +14,11 @@ Create new navigation property to managementTemplates for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantManagementTemplate [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-InformationLinks <IMicrosoftGraphActionUrl[]>]
- [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
+New-MgBetaTenantRelationshipManagedTenantManagementTemplate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <String>]
+ [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]
  [-ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]
  [-Parameters <IMicrosoftGraphManagedTenantsTemplateParameter[]>] [-Priority <Int32>] [-Provider <String>]
@@ -28,8 +29,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplate [-AdditionalProperti
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplate
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -319,6 +320,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserImpact
 .
 
@@ -408,7 +424,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,22 +17,24 @@ Update the navigation property presence in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserPresence -UserId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-Id <String>] [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
+Update-MgBetaUserPresence -UserId <String> [-ResponseHeadersVariable <String>] [-Activity <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
+ [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
  [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserPresence -UserId <String> -BodyParameter <IMicrosoftGraphPresence> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserPresence -UserId <String> -BodyParameter <IMicrosoftGraphPresence>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
+Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
  [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
  [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,7 +43,8 @@ Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-Activity
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphPresence>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -226,6 +229,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StatusMessage
 presenceStatusMessage
 To construct, see NOTES section for STATUSMESSAGE properties and create a hash table.
@@ -299,7 +317,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresence
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

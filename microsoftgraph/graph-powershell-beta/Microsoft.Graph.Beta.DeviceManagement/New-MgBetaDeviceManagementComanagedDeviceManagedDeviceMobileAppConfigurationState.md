@@ -15,7 +15,7 @@ Create new navigation property to managedDeviceMobileAppConfigurationStates for 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
  [-UserId <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
@@ -25,15 +25,16 @@ New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStat
 ### Create
 ```
 New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
  [-UserId <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,8 +44,8 @@ New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStat
 ```
 New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -190,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingCount
 Count of how many setting a policy holds
 
@@ -323,7 +339,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,7 +14,7 @@ Update the navigation property activity in teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTeamworkDeviceActivity -TeamworkDeviceId <String>
+Update-MgBetaTeamworkDeviceActivity -TeamworkDeviceId <String> [-ResponseHeadersVariable <String>]
  [-ActivePeripherals <IMicrosoftGraphTeamworkActivePeripherals>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
@@ -24,13 +24,13 @@ Update-MgBetaTeamworkDeviceActivity -TeamworkDeviceId <String>
 ### Update
 ```
 Update-MgBetaTeamworkDeviceActivity -TeamworkDeviceId <String>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceActivity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceActivity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity>
+Update-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-ActivePeripherals <IMicrosoftGraphTeamworkActivePeripherals>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
@@ -40,8 +40,8 @@ Update-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceActivity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceActivity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamworkDeviceId
 The unique identifier of teamworkDevice
 
@@ -277,7 +292,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceActivity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

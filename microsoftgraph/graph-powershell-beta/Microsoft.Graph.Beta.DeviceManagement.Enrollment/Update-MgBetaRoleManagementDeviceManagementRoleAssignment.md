@@ -17,10 +17,10 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId <String>
- [-AdditionalProperties <Hashtable>] [-AppScopeIds <String[]>] [-AppScopes <IMicrosoftGraphAppScope[]>]
- [-Condition <String>] [-Description <String>] [-DirectoryScopeIds <String[]>]
- [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-Id <String>]
- [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppScopeIds <String[]>]
+ [-AppScopes <IMicrosoftGraphAppScope[]>] [-Condition <String>] [-Description <String>]
+ [-DirectoryScopeIds <String[]>] [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
+ [-Id <String>] [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,17 +28,17 @@ Update-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignment
 ### Update
 ```
 Update-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceManagementEnrollmentIdentity>
- [-AdditionalProperties <Hashtable>] [-AppScopeIds <String[]>] [-AppScopes <IMicrosoftGraphAppScope[]>]
- [-Condition <String>] [-Description <String>] [-DirectoryScopeIds <String[]>]
- [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-Id <String>]
- [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppScopeIds <String[]>]
+ [-AppScopes <IMicrosoftGraphAppScope[]>] [-Condition <String>] [-Description <String>]
+ [-DirectoryScopeIds <String[]>] [-DirectoryScopes <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
+ [-Id <String>] [-PrincipalIds <String[]>] [-Principals <IMicrosoftGraphDirectoryObject[]>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,8 +46,8 @@ Update-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceM
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentMultiple> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -307,6 +307,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleDefinition
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
@@ -395,7 +410,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentMultiple
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

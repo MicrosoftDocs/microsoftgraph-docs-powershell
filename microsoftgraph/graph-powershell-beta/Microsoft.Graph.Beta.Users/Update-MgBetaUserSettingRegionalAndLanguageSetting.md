@@ -15,25 +15,7 @@ Update some or all of the properties of a regionalAndLanguageSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AuthoringLanguages <IMicrosoftGraphLocaleInfo[]>] [-DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>]
- [-DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>] [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
- [-DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>] [-Id <String>]
- [-RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]
- [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String>
- -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AuthoringLanguages <IMicrosoftGraphLocaleInfo[]>]
  [-DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>] [-DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>]
  [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
@@ -43,11 +25,30 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String>
+ -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthoringLanguages <IMicrosoftGraphLocaleInfo[]>] [-DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>]
+ [-DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>] [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
+ [-DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>] [-Id <String>]
+ [-RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]
+ [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -271,6 +272,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TranslationPreferences
 translationPreferences
 To construct, see NOTES section for TRANSLATIONPREFERENCES properties and create a hash table.
@@ -344,7 +360,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

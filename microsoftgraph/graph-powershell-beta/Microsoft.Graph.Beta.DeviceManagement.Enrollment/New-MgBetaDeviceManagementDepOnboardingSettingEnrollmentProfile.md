@@ -15,8 +15,8 @@ Create new navigation property to enrollmentProfiles for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile -DepOnboardingSettingId <String>
- [-AdditionalProperties <Hashtable>] [-ConfigurationEndpointUrl <String>] [-Description <String>]
- [-DisplayName <String>] [-EnableAuthenticationViaCompanyPortal] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConfigurationEndpointUrl <String>]
+ [-Description <String>] [-DisplayName <String>] [-EnableAuthenticationViaCompanyPortal] [-Id <String>]
  [-RequireCompanyPortalOnSetupAssistantEnrolledDevices] [-RequiresUserAuthentication] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,25 +24,26 @@ New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile -DepOnboardingSe
 ### Create
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphEnrollmentProfile> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphEnrollmentProfile> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile
- -InputObject <IDeviceManagementEnrollmentIdentity> [-AdditionalProperties <Hashtable>]
- [-ConfigurationEndpointUrl <String>] [-Description <String>] [-DisplayName <String>]
- [-EnableAuthenticationViaCompanyPortal] [-Id <String>] [-RequireCompanyPortalOnSetupAssistantEnrolledDevices]
- [-RequiresUserAuthentication] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ConfigurationEndpointUrl <String>] [-Description <String>]
+ [-DisplayName <String>] [-EnableAuthenticationViaCompanyPortal] [-Id <String>]
+ [-RequireCompanyPortalOnSetupAssistantEnrolledDevices] [-RequiresUserAuthentication] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphEnrollmentProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +250,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -291,7 +307,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

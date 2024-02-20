@@ -19,10 +19,10 @@ Not yet documented
 ### TargetExpanded (Default)
 ```
 Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
- -TargetedManagedAppConfigurationId <String> [-AdditionalProperties <Hashtable>]
- [-AppGroupType <TargetedManagedAppGroupType>] [-Apps <IMicrosoftGraphManagedMobileApp[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -TargetedManagedAppConfigurationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppGroupType <TargetedManagedAppGroupType>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target
@@ -30,17 +30,17 @@ Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
  -TargetedManagedAppConfigurationId <String>
  -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentityExpanded
 ```
 Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-AppGroupType <TargetedManagedAppGroupType>] [-Apps <IMicrosoftGraphManagedMobileApp[]>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppGroupType <TargetedManagedAppGroupType>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity
@@ -48,8 +48,8 @@ Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -180,6 +180,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetedManagedAppConfigurationId
 The unique identifier of targetedManagedAppConfiguration
 
@@ -237,7 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

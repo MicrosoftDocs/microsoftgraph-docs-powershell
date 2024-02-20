@@ -17,24 +17,7 @@ Update the navigation property issues in admin
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaServiceAnnouncementIssue -ServiceHealthIssueId <String> [-AdditionalProperties <Hashtable>]
- [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>]
- [-Feature <String>] [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
- [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
- [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaServiceAnnouncementIssue -ServiceHealthIssueId <String>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+Update-MgBetaServiceAnnouncementIssue -ServiceHealthIssueId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
  [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
  [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
@@ -43,11 +26,29 @@ Update-MgBetaServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementI
  [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaServiceAnnouncementIssue -ServiceHealthIssueId <String>
+ -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Classification <String>]
+ [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>] [-Feature <String>]
+ [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
+ [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
+ [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -301,6 +302,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Service
 Indicates the service affected by the issue.
 
@@ -418,7 +434,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

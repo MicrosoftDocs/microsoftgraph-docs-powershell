@@ -18,7 +18,8 @@ Create new navigation property to instances for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId <String>
- [-AdditionalProperties <Hashtable>] [-ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]
  [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
  [-Definition <IMicrosoftGraphAccessReviewScheduleDefinition>] [-EndDateTime <DateTime>]
  [-Errors <IMicrosoftGraphAccessReviewError[]>]
@@ -31,14 +32,15 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewSchedule
 ### Create
 ```
 New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]
  [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
  [-Definition <IMicrosoftGraphAccessReviewScheduleDefinition>] [-EndDateTime <DateTime>]
  [-Errors <IMicrosoftGraphAccessReviewError[]>]
@@ -51,8 +53,8 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdenti
 ### CreateViaIdentity
 ```
 New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Reviewers
 This collection of access review scopes is used to define who the reviewers are.
 Supports $select.
@@ -405,7 +422,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

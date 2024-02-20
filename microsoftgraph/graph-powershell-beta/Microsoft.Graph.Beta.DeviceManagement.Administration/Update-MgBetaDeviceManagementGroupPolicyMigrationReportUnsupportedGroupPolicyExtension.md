@@ -16,34 +16,34 @@ Update the navigation property unsupportedGroupPolicyExtensions in deviceManagem
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> -UnsupportedGroupPolicyExtensionId <String>
- [-AdditionalProperties <Hashtable>] [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>]
- [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExtensionType <String>]
+ [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> -UnsupportedGroupPolicyExtensionId <String>
- -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>]
- [-SettingScope <GroupPolicySettingScope>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>]
+ [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -204,6 +204,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingScope
 Scope of the group policy setting.
 
@@ -276,7 +291,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

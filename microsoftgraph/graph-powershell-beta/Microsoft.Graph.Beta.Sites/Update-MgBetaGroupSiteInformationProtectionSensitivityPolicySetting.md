@@ -15,31 +15,31 @@ Update the navigation property sensitivityPolicySettings in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -GroupId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-DowngradeSensitivityRequiresJustification]
- [-HelpWebUrl <String>] [-Id <String>] [-IsMandatory] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>]
+ [-DowngradeSensitivityRequiresJustification] [-HelpWebUrl <String>] [-Id <String>] [-IsMandatory]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -GroupId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphSensitivityPolicySettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSensitivityPolicySettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-DowngradeSensitivityRequiresJustification]
- [-HelpWebUrl <String>] [-Id <String>] [-IsMandatory] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>]
+ [-DowngradeSensitivityRequiresJustification] [-HelpWebUrl <String>] [-Id <String>] [-IsMandatory]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphSensitivityPolicySettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSensitivityPolicySettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -215,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -272,7 +287,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,31 +18,33 @@ Update the navigation property languages in identity
 ### UpdateExpanded (Default)
 ```
 Update-MgIdentityB2XUserFlowLanguage -B2XIdentityUserFlowId <String> -UserFlowLanguageConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]
- [-DisplayName <String>] [-Id <String>] [-IsEnabled] [-OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
+ [-OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityB2XUserFlowLanguage -B2XIdentityUserFlowId <String> -UserFlowLanguageConfigurationId <String>
- -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]
- [-DisplayName <String>] [-Id <String>] [-IsEnabled] [-OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
+ [-OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -223,6 +225,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserFlowLanguageConfigurationId
 The unique identifier of userFlowLanguageConfiguration
 
@@ -280,7 +297,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

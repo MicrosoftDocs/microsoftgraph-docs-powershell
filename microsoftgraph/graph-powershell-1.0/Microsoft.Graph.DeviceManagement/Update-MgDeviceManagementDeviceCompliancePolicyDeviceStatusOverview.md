@@ -19,33 +19,33 @@ Update the properties of a deviceComplianceDeviceOverview object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -DeviceCompliancePolicyId <String>
- [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>] [-ErrorCount <Int32>]
- [-FailedCount <Int32>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-NotApplicableCount <Int32>]
- [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>]
+ [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>] [-LastUpdateDateTime <DateTime>]
+ [-NotApplicableCount <Int32>] [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -DeviceCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceOverview> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceOverview> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>] [-ErrorCount <Int32>]
- [-FailedCount <Int32>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-NotApplicableCount <Int32>]
- [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>]
+ [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>] [-LastUpdateDateTime <DateTime>]
+ [-NotApplicableCount <Int32>] [-PendingCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceOverview> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceOverview> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -251,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SuccessCount
 Number of succeeded devices
 
@@ -308,7 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceOverview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

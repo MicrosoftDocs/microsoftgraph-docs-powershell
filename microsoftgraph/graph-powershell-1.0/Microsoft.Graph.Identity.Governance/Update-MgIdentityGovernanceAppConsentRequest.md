@@ -17,8 +17,8 @@ Update the navigation property appConsentRequests in identityGovernance
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId <String> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-AppId <String>] [-Id <String>]
+Update-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-Id <String>]
  [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,15 +27,15 @@ Update-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId <String> [-Add
 ### Update
 ```
 Update-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
- -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-Id <String>]
- [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
+ [-AppId <String>] [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceId
 ### UpdateViaIdentity
 ```
 Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -211,6 +211,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserConsentRequests
 A list of pending user consent requests.
 Supports $filter (eq).
@@ -270,7 +285,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppConsentRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

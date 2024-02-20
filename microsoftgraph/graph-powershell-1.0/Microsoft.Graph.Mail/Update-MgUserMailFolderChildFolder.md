@@ -18,9 +18,9 @@ Update the navigation property childFolders in users
 ### UpdateExpanded (Default)
 ```
 Update-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>]
- [-DisplayName <String>] [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
- [-Messages <IMicrosoftGraphMessage[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>]
+ [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>] [-Id <String>] [-IsHidden]
+ [-MessageRules <IMicrosoftGraphMessageRule[]>] [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-Headers <IDictionary>]
@@ -30,15 +30,15 @@ Update-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String
 ### Update
 ```
 Update-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMailFolder> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailFolder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>]
- [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
+Update-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>]
+ [-DisplayName <String>] [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
  [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -49,7 +49,8 @@ Update-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-AdditionalProp
 ### UpdateViaIdentity
 ```
 Update-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -308,6 +309,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
@@ -413,7 +429,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

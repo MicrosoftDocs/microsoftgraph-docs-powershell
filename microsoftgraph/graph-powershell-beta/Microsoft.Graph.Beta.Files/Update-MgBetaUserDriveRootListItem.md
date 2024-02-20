@@ -17,7 +17,7 @@ Update the navigation property listItem in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserDriveRootListItem -DriveId <String> -UserId <String>
+Update-MgBetaUserDriveRootListItem -DriveId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
  [-Analytics <IMicrosoftGraphItemAnalytics>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
@@ -33,12 +33,13 @@ Update-MgBetaUserDriveRootListItem -DriveId <String> -UserId <String>
 ### Update
 ```
 Update-MgBetaUserDriveRootListItem -DriveId <String> -UserId <String> -BodyParameter <IMicrosoftGraphListItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity>
+Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
  [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
  [-Analytics <IMicrosoftGraphItemAnalytics>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
@@ -54,7 +55,8 @@ Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphListItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -440,6 +442,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharepointIds
 sharepointIds
 To construct, see NOTES section for SHAREPOINTIDS properties and create a hash table.
@@ -545,7 +562,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

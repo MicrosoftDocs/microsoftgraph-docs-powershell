@@ -15,8 +15,9 @@ Create new navigation property to stages for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -AccessReviewInstanceDecisionItemId <String>
- [-AdditionalProperties <Hashtable>] [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
- [-EndDateTime <DateTime>] [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>] [-EndDateTime <DateTime>]
+ [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-StartDateTime <DateTime>] [-Status <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,15 +25,16 @@ New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -AccessReviewInsta
 ### Create
 ```
 New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -AccessReviewInstanceDecisionItemId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewStage> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAccessReviewStage> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
- [-EndDateTime <DateTime>] [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>] [-EndDateTime <DateTime>]
+ [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-StartDateTime <DateTime>] [-Status <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,7 +42,7 @@ New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 ### CreateViaIdentity
 ```
 New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewStage> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAccessReviewStage> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -210,6 +212,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Reviewers
 This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
@@ -306,7 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewStage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

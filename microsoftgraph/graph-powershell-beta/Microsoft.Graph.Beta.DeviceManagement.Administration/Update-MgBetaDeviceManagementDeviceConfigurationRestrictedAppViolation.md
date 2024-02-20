@@ -15,26 +15,26 @@ Update the navigation property deviceConfigurationRestrictedAppsViolations in de
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation -RestrictedAppsViolationId <String>
- [-AdditionalProperties <Hashtable>] [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>]
- [-DeviceName <String>] [-Id <String>] [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
- [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
- [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceConfigurationId <String>]
+ [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>] [-ManagedDeviceId <String>]
+ [-PlatformType <PolicyPlatformType>] [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>]
+ [-RestrictedAppsState <RestrictedAppsState>] [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation -RestrictedAppsViolationId <String>
- -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
- [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>]
+ [-DeviceName <String>] [-Id <String>] [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
  [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
  [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,7 +44,8 @@ Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
  -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphRestrictedAppsViolation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,6 +221,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RestrictedApps
 List of violated restricted apps
 To construct, see NOTES section for RESTRICTEDAPPS properties and create a hash table.
@@ -338,7 +354,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

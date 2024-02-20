@@ -14,7 +14,7 @@ Update the navigation property userSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityUserSecurityProfile -UserSecurityProfileId <String>
+Update-MgBetaSecurityUserSecurityProfile -UserSecurityProfileId <String> [-ResponseHeadersVariable <String>]
  [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
  [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
@@ -25,13 +25,13 @@ Update-MgBetaSecurityUserSecurityProfile -UserSecurityProfileId <String>
 ### Update
 ```
 Update-MgBetaSecurityUserSecurityProfile -UserSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
  [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
  [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
@@ -42,8 +42,8 @@ Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -353,7 +368,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

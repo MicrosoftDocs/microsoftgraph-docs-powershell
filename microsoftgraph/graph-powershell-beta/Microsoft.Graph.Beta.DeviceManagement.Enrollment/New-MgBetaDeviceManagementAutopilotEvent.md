@@ -14,7 +14,7 @@ Create new navigation property to autopilotEvents for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
+New-MgBetaDeviceManagementAutopilotEvent [-ResponseHeadersVariable <String>] [-AccountSetupDuration <TimeSpan>]
  [-AccountSetupStatus <WindowsAutopilotDeploymentState>] [-AdditionalProperties <Hashtable>]
  [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
  [-DeploymentState <WindowsAutopilotDeploymentState>] [-DeploymentTotalDuration <TimeSpan>]
@@ -34,7 +34,8 @@ New-MgBetaDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -435,6 +436,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetedAppCount
 Count of applications targeted.
 
@@ -566,7 +582,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,7 +14,7 @@ Create new navigation property to templates for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementTemplate [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementTemplate [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
  [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <PolicyPlatformType>]
@@ -27,7 +27,8 @@ New-MgBetaDeviceManagementTemplate [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaDeviceManagementTemplate -BodyParameter <IMicrosoftGraphDeviceManagementTemplate>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -235,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Settings
 Collection of all settings this template has
 To construct, see NOTES section for SETTINGS properties and create a hash table.
@@ -337,7 +353,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

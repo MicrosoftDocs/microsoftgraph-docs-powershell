@@ -14,8 +14,8 @@ Create new navigation property to settingDefinitions for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementSettingDefinition [-AdditionalProperties <Hashtable>]
- [-Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]
+New-MgBetaDeviceManagementSettingDefinition [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]
  [-Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>] [-Description <String>]
  [-DisplayName <String>] [-DocumentationUrl <String>] [-HeaderSubtitle <String>] [-HeaderTitle <String>]
  [-Id <String>] [-IsTopLevel] [-Keywords <String[]>] [-PlaceholderText <String>]
@@ -26,7 +26,8 @@ New-MgBetaDeviceManagementSettingDefinition [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDeviceManagementSettingDefinition>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -262,6 +263,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ValueType
 deviceManangementIntentValueType
 
@@ -318,7 +334,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,9 +18,10 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupTeamScheduleShift -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
- [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
+New-MgBetaGroupTeamScheduleShift -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-IsStagedForDeletion]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
  [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,14 +30,16 @@ New-MgBetaGroupTeamScheduleShift -GroupId <String> [-AdditionalProperties <Hasht
 ### Create
 ```
 New-MgBetaGroupTeamScheduleShift -GroupId <String> -BodyParameter <IMicrosoftGraphShift>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
- [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
+New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-IsStagedForDeletion]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SchedulingGroupInfo <IMicrosoftGraphSchedulingGroupInfo>] [-SharedShift <IMicrosoftGraphShiftItem>]
  [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +48,8 @@ New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalPrope
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -227,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchedulingGroupId
 ID of the scheduling group the shift is part of.
 Required.
@@ -365,7 +384,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShift
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

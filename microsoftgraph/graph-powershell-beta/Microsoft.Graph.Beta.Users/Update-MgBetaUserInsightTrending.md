@@ -14,9 +14,9 @@ Update the navigation property trending in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserInsightTrending -TrendingId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Resource <IMicrosoftGraphEntity>]
- [-ResourceReference <IMicrosoftGraphResourceReference>]
+Update-MgBetaUserInsightTrending -TrendingId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,14 +24,15 @@ Update-MgBetaUserInsightTrending -TrendingId <String> -UserId <String> [-Additio
 ### Update
 ```
 Update-MgBetaUserInsightTrending -TrendingId <String> -UserId <String> -BodyParameter <IMicrosoftGraphTrending>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Resource <IMicrosoftGraphEntity>]
- [-ResourceReference <IMicrosoftGraphResourceReference>]
+Update-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,7 +40,8 @@ Update-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-AdditionalPrope
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTrending>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TrendingId
 The unique identifier of trending
 
@@ -292,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrending
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

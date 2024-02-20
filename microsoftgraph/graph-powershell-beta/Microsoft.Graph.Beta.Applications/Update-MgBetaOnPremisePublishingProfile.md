@@ -15,9 +15,9 @@ Update entity in onPremisesPublishingProfiles
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId <String>
- [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
- [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>]
- [-Connectors <IMicrosoftGraphConnector[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-Agents <IMicrosoftGraphOnPremisesAgent[]>]
+ [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>] [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <String>]
  [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,16 +26,16 @@ Update-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId <String>
 ### Update
 ```
 Update-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
- [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>]
- [-Connectors <IMicrosoftGraphConnector[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-Agents <IMicrosoftGraphOnPremisesAgent[]>]
+ [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>] [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <String>]
  [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,8 +44,8 @@ Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -297,6 +297,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -339,7 +354,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesPublishingProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

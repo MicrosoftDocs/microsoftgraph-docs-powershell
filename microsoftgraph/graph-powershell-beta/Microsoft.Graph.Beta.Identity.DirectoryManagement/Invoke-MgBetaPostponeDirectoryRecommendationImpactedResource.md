@@ -17,8 +17,9 @@ On the specified date and time, Microsoft Entra ID will automatically mark the s
 ### PostponeExpanded (Default)
 ```
 Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource -ImpactedResourceId <String>
- -RecommendationId <String> [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -RecommendationId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-PostponeUntilDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Postpone
@@ -26,15 +27,16 @@ Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource -ImpactedResourceId
 Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource -ImpactedResourceId <String>
  -RecommendationId <String>
  -BodyParameter <IPaths19T941XDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### PostponeViaIdentityExpanded
 ```
 Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource
- -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-PostponeUntilDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PostponeViaIdentity
@@ -42,7 +44,8 @@ Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource
 Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource
  -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths19T941XDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -176,6 +179,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -218,7 +236,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

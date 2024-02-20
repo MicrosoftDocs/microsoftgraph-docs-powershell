@@ -15,11 +15,12 @@ Use this API to create a new personName object in a user's profile.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserProfileName -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-First <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-Initials <String>]
- [-IsSearchable] [-LanguageTag <String>] [-Last <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Maiden <String>] [-Middle <String>] [-Nickname <String>]
+New-MgBetaUserProfileName -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-First <String>] [-Id <String>]
+ [-Inference <IMicrosoftGraphInferenceData>] [-Initials <String>] [-IsSearchable] [-LanguageTag <String>]
+ [-Last <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Maiden <String>] [-Middle <String>] [-Nickname <String>]
  [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>] [-Source <IMicrosoftGraphPersonDataSources>]
  [-Suffix <String>] [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -27,26 +28,29 @@ New-MgBetaUserProfileName -UserId <String> [-AdditionalProperties <Hashtable>] [
 
 ### Create
 ```
-New-MgBetaUserProfileName -UserId <String> -BodyParameter <IMicrosoftGraphPersonName> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileName -UserId <String> -BodyParameter <IMicrosoftGraphPersonName>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-First <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
- [-Initials <String>] [-IsSearchable] [-LanguageTag <String>] [-Last <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Maiden <String>]
- [-Middle <String>] [-Nickname <String>] [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-First <String>] [-Id <String>]
+ [-Inference <IMicrosoftGraphInferenceData>] [-Initials <String>] [-IsSearchable] [-LanguageTag <String>]
+ [-Last <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Maiden <String>] [-Middle <String>] [-Nickname <String>]
+ [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-Suffix <String>] [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPersonName>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -397,6 +401,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
@@ -515,7 +534,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonName
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

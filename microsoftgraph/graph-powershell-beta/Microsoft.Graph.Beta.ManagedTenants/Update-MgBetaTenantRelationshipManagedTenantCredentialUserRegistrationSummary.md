@@ -15,27 +15,29 @@ Update the navigation property credentialUserRegistrationsSummaries in tenantRel
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
- -CredentialUserRegistrationsSummaryId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-MfaAndSsprCapableUserCount <Int32>]
- [-MfaConditionalAccessPolicyState <String>] [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>]
- [-SecurityDefaultsEnabled] [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>]
- [-TenantDisplayName <String>] [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -CredentialUserRegistrationsSummaryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
+ [-MfaAndSsprCapableUserCount <Int32>] [-MfaConditionalAccessPolicyState <String>]
+ [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>] [-SecurityDefaultsEnabled]
+ [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>] [-TenantDisplayName <String>]
+ [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
  -CredentialUserRegistrationsSummaryId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-MfaAndSsprCapableUserCount <Int32>]
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-MfaAndSsprCapableUserCount <Int32>]
  [-MfaConditionalAccessPolicyState <String>] [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>]
  [-SecurityDefaultsEnabled] [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>]
  [-TenantDisplayName <String>] [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>]
@@ -46,8 +48,9 @@ Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ```
 Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
  -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -248,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityDefaultsEnabled
 A flag indicating whether Identity Security Defaults is enabled.
 Optional.
@@ -407,7 +425,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

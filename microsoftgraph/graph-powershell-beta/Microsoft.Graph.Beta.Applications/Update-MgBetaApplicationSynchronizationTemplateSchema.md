@@ -18,7 +18,7 @@ Update the navigation property schema in applications
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaApplicationSynchronizationTemplateSchema -ApplicationId <String>
- -SynchronizationTemplateId <String> [-AdditionalProperties <Hashtable>]
+ -SynchronizationTemplateId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -28,13 +28,15 @@ Update-MgBetaApplicationSynchronizationTemplateSchema -ApplicationId <String>
 ```
 Update-MgBetaApplicationSynchronizationTemplateSchema -ApplicationId <String>
  -SynchronizationTemplateId <String> -BodyParameter <IMicrosoftGraphSynchronizationSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +44,8 @@ Update-MgBetaApplicationSynchronizationTemplateSchema -InputObject <IApplication
 ### UpdateViaIdentity
 ```
 Update-MgBetaApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -175,6 +177,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SynchronizationRules
 A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
 To construct, see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
@@ -263,7 +280,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

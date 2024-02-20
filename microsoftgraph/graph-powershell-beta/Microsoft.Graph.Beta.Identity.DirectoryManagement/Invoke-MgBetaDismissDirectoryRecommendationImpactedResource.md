@@ -16,8 +16,9 @@ Dismiss an impactedResources object and update its status to dismissed.
 ### DismissExpanded (Default)
 ```
 Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -ImpactedResourceId <String>
- -RecommendationId <String> [-AdditionalProperties <Hashtable>] [-DismissReason <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -RecommendationId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DismissReason <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Dismiss
@@ -25,21 +26,23 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -ImpactedResourceId 
 Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -ImpactedResourceId <String>
  -RecommendationId <String>
  -BodyParameter <IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DismissViaIdentityExpanded
 ```
 Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DismissReason <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DismissViaIdentity
 ```
 Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -172,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -214,7 +232,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

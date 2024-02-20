@@ -17,8 +17,9 @@ Update the navigation property webinars in solutions
 
 ### UpdateExpanded (Default)
 ```
-Update-MgVirtualEventWebinar -VirtualEventWebinarId <String> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+Update-MgVirtualEventWebinar -VirtualEventWebinarId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Audience <String>]
+ [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
@@ -30,14 +31,15 @@ Update-MgVirtualEventWebinar -VirtualEventWebinarId <String> [-AdditionalPropert
 ### Update
 ```
 Update-MgVirtualEventWebinar -VirtualEventWebinarId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Audience <String>]
+ [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
@@ -49,8 +51,8 @@ Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-AdditionalProper
 ### UpdateViaIdentity
 ```
 Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -261,6 +263,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sessions
 Sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
@@ -365,7 +382,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

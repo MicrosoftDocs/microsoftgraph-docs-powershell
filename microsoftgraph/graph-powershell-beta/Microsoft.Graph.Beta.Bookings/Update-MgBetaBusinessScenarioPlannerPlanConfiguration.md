@@ -16,7 +16,8 @@ Update the properties of a plannerPlanConfiguration object for a businessScenari
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
- [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultLanguage <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-Headers <IDictionary>]
@@ -26,14 +27,15 @@ Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <Strin
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentity>
- [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultLanguage <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-Headers <IDictionary>]
@@ -43,8 +45,8 @@ Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIde
 ### UpdateViaIdentity
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -276,6 +278,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -318,7 +335,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

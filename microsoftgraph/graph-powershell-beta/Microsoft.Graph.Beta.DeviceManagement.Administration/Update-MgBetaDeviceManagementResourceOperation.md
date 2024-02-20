@@ -17,30 +17,31 @@ Update the navigation property resourceOperations in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementResourceOperation -ResourceOperationId <String> [-ActionName <String>]
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>] [-ResourceName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementResourceOperation -ResourceOperationId <String>
+ [-ResponseHeadersVariable <String>] [-ActionName <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-Id <String>] [-ResourceName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementResourceOperation -ResourceOperationId <String>
- -BodyParameter <IMicrosoftGraphResourceOperation> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphResourceOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministrationIdentity>
- [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
- [-ResourceName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-ActionName <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-Id <String>] [-ResourceName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphResourceOperation> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphResourceOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -204,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -246,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

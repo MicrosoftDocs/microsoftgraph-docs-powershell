@@ -15,15 +15,17 @@ Update multiple alerts in one request instead of multiple requests.
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgBetaSecurityAlertMultiple [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphAlert[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAlertMultiple [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Value <IMicrosoftGraphAlert[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaSecurityAlertMultiple
  -BodyParameter <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -129,6 +131,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Value
 .
 To construct, see NOTES section for VALUE properties and create a hash table.
@@ -186,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

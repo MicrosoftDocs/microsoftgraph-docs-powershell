@@ -15,9 +15,9 @@ Update the navigation property managementTemplateStepTenantSummaries in tenantRe
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
- -ManagementTemplateStepTenantSummaryId <String> [-AdditionalProperties <Hashtable>]
- [-AssignedTenantsCount <Int32>] [-CompliantTenantsCount <Int32>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-DismissedTenantsCount <Int32>] [-Id <String>]
+ -ManagementTemplateStepTenantSummaryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTenantsCount <Int32>] [-CompliantTenantsCount <Int32>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-DismissedTenantsCount <Int32>] [-Id <String>]
  [-IneligibleTenantsCount <Int32>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-ManagementTemplateDisplayName <String>] [-ManagementTemplateId <String>]
@@ -30,17 +30,18 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  -ManagementTemplateStepTenantSummaryId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-AssignedTenantsCount <Int32>]
- [-CompliantTenantsCount <Int32>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
- [-DismissedTenantsCount <Int32>] [-Id <String>] [-IneligibleTenantsCount <Int32>]
- [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignedTenantsCount <Int32>] [-CompliantTenantsCount <Int32>] [-CreatedByUserId <String>]
+ [-CreatedDateTime <DateTime>] [-DismissedTenantsCount <Int32>] [-Id <String>]
+ [-IneligibleTenantsCount <Int32>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-ManagementTemplateDisplayName <String>] [-ManagementTemplateId <String>]
  [-ManagementTemplateStepDisplayName <String>] [-ManagementTemplateStepId <String>]
@@ -52,8 +53,9 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -394,6 +396,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -436,7 +453,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

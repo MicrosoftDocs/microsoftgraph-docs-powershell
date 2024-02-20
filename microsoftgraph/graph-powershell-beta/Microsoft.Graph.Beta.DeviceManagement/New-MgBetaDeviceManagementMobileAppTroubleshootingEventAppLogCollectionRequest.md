@@ -18,31 +18,35 @@ Create new navigation property to appLogCollectionRequests for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
- -MobileAppTroubleshootingEventId <String> [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
- [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MobileAppTroubleshootingEventId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>]
+ [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -MobileAppTroubleshootingEventId <String> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
- [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>]
+ [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 AppLogUploadStatus
 
@@ -260,7 +279,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

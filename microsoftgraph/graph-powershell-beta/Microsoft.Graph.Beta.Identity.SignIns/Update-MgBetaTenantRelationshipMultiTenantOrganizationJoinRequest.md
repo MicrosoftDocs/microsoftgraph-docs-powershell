@@ -18,17 +18,17 @@ Furthermore, to allow for asynchronous processing, you must wait up to 4 hours b
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-AddedByTenantId <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-MemberState <String>] [-Role <String>]
- [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]
+Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-ResponseHeadersVariable <String>]
+ [-AddedByTenantId <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-MemberState <String>]
+ [-Role <String>] [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
- -BodyParameter <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -151,6 +151,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Role
 multiTenantOrganizationMemberRole
 
@@ -223,7 +238,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

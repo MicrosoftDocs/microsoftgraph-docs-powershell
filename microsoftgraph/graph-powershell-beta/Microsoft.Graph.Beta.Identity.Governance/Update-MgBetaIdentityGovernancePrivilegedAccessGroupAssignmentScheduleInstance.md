@@ -18,8 +18,8 @@ Update the navigation property assignmentScheduleInstances in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
- -PrivilegedAccessGroupAssignmentScheduleInstanceId <String> [-AccessId <String>]
- [-ActivatedUsing <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance>]
+ -PrivilegedAccessGroupAssignmentScheduleInstanceId <String> [-ResponseHeadersVariable <String>]
+ [-AccessId <String>] [-ActivatedUsing <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance>]
  [-AdditionalProperties <Hashtable>] [-AssignmentScheduleId <String>] [-AssignmentType <String>]
  [-EndDateTime <DateTime>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>]
  [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
@@ -31,14 +31,15 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
  -PrivilegedAccessGroupAssignmentScheduleInstanceId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
- -InputObject <IIdentityGovernanceIdentity> [-AccessId <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-AccessId <String>]
  [-ActivatedUsing <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance>]
  [-AdditionalProperties <Hashtable>] [-AssignmentScheduleId <String>] [-AssignmentType <String>]
  [-EndDateTime <DateTime>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>]
@@ -51,8 +52,9 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -327,6 +329,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 When this instance starts, and is required.
 
@@ -384,7 +401,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

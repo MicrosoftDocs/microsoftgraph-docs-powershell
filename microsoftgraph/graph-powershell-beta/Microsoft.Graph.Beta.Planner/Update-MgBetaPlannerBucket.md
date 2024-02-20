@@ -18,34 +18,35 @@ Update the navigation property buckets in planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPlannerBucket -PlannerBucketId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
- [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-CreationSource <IMicrosoftGraphPlannerBucketCreation>]
- [-Id <String>] [-IsArchived] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaPlannerBucket -PlannerBucketId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerBucket> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
+Update-MgBetaPlannerBucket -PlannerBucketId <String> -IfMatch <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
  [-CreationSource <IMicrosoftGraphPlannerBucketCreation>] [-Id <String>] [-IsArchived] [-Name <String>]
  [-OrderHint <String>] [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaPlannerBucket -PlannerBucketId <String> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-CreationSource <IMicrosoftGraphPlannerBucketCreation>]
+ [-Id <String>] [-IsArchived] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerBucket> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -290,6 +291,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tasks
 Read-only.
 Nullable.
@@ -350,7 +366,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucket
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

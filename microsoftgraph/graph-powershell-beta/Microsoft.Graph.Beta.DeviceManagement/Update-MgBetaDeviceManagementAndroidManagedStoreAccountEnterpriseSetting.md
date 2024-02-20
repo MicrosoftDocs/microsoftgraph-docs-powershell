@@ -14,8 +14,8 @@ Update the navigation property androidManagedStoreAccountEnterpriseSettings in d
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-AdditionalProperties <Hashtable>]
- [-AndroidDeviceOwnerFullyManagedEnrollmentEnabled] [-BindStatus <String>]
+Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AndroidDeviceOwnerFullyManagedEnrollmentEnabled] [-BindStatus <String>]
  [-CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>] [-DeviceOwnerManagementEnabled]
  [-EnrollmentTarget <String>] [-Id <String>] [-LastAppSyncDateTime <DateTime>] [-LastAppSyncStatus <String>]
  [-LastModifiedDateTime <DateTime>] [-ManagedGooglePlayInitialScopeTagIds <String[]>]
@@ -26,8 +26,9 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-Addit
 ### Update
 ```
 Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -278,6 +279,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetGroupIds
 Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
@@ -334,7 +350,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

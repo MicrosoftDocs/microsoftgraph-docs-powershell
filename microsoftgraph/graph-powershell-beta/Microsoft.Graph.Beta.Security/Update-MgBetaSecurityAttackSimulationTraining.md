@@ -17,24 +17,7 @@ Update the navigation property trainings in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityAttackSimulationTraining -TrainingId <String> [-AdditionalProperties <Hashtable>]
- [-AvailabilityStatus <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
- [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
- [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityAttackSimulationTraining -TrainingId <String> -BodyParameter <IMicrosoftGraphTraining>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityAttackSimulationTraining -TrainingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AvailabilityStatus <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-DurationInMinutes <Int32>]
  [-HasEvaluation] [-Id <String>] [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>]
@@ -43,11 +26,30 @@ Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaSecurityAttackSimulationTraining -TrainingId <String> -BodyParameter <IMicrosoftGraphTraining>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AvailabilityStatus <String>]
+ [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
+ [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+ [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
+ [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphTraining> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTraining> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -305,6 +307,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 simulationContentSource
 
@@ -422,7 +439,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTraining
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,30 +17,30 @@ Update media content for the navigation property photo in users
 
 ### Set (Default)
 ```
-Set-MgUserPhotoContent -UserId <String> [-Data <Stream>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Set1
-```
-Set-MgUserPhotoContent -UserId <String> -ProfilePhotoId <String> [-Data <Stream>] -InFile <String>
+Set-MgUserPhotoContent -UserId <String> [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String>
  [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
+### Set1
+```
+Set-MgUserPhotoContent -UserId <String> -ProfilePhotoId <String> [-Data <Stream>]
+ [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### SetViaIdentity1
 ```
-Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-ResponseHeadersVariable <String>]
+ -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-ResponseHeadersVariable <String>]
+ -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -171,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -229,7 +244,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

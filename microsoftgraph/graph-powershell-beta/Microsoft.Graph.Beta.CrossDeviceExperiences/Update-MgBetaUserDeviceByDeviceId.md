@@ -14,12 +14,13 @@ Update the navigation property devices in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserDeviceByDeviceId -DeviceId <String> -UserId <String> [-AccountEnabled]
- [-AdditionalProperties <Hashtable>] [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
- [-ApproximateLastSignInDateTime <DateTime>] [-Commands <IMicrosoftGraphCommand[]>]
- [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
- [-DeviceId1 <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
- [-DisplayName <String>] [-DomainName <String>] [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
+Update-MgBetaUserDeviceByDeviceId -DeviceId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+ [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
+ [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId1 <String>] [-DeviceMetadata <String>]
+ [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-DomainName <String>]
+ [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
  [-ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Hostnames <String[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
  [-IsManagementRestricted] [-IsRooted] [-Kind <String>] [-ManagementType <String>] [-Manufacturer <String>]
@@ -36,7 +37,7 @@ Update-MgBetaUserDeviceByDeviceId -DeviceId <String> -UserId <String> [-AccountE
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserDeviceByDeviceId [-DeviceId <String>] -InputObject <ICrossDeviceExperiencesIdentity>
- [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
  [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceMetadata <String>]
@@ -58,14 +59,15 @@ Update-MgBetaUserDeviceByDeviceId [-DeviceId <String>] -InputObject <ICrossDevic
 ### Update
 ```
 Update-MgBetaUserDeviceByDeviceId -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDevice>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDeviceByDeviceId -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -874,6 +876,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 Device is online or offline.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
@@ -1015,7 +1032,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

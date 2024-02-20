@@ -14,34 +14,34 @@ Create new navigation property to operations for compliance
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaComplianceEdiscoveryCaseOperation -CaseId <String> [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-PercentProgress <Int32>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseOperation -CaseId <String> [-ResponseHeadersVariable <String>]
+ [-Action <String>] [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-PercentProgress <Int32>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaComplianceEdiscoveryCaseOperation -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [-Action <String>]
- [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-PercentProgress <Int32>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
+ [-ResponseHeadersVariable <String>] [-Action <String>] [-AdditionalProperties <Hashtable>]
+ [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-PercentProgress <Int32>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -233,6 +233,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResultInfo
 resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
@@ -306,7 +321,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

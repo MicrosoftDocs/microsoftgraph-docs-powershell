@@ -17,7 +17,8 @@ Update the navigation property userExperienceAnalyticsOverview in deviceManageme
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementUserExperienceAnalyticOverview [-AdditionalProperties <Hashtable>] [-Id <String>]
+Update-MgBetaDeviceManagementUserExperienceAnalyticOverview [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,8 +26,8 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticOverview [-AdditionalProperti
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticOverview
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsOverview> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsOverview> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -128,6 +129,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -169,7 +185,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsOverview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

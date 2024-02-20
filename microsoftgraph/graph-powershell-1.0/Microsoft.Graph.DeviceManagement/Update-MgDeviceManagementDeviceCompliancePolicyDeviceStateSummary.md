@@ -18,18 +18,19 @@ Update the properties of a deviceCompliancePolicyDeviceStateSummary object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-AdditionalProperties <Hashtable>]
- [-CompliantDeviceCount <Int32>] [-ConfigManagerCount <Int32>] [-ConflictDeviceCount <Int32>]
- [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodCount <Int32>] [-NonCompliantDeviceCount <Int32>]
- [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConfigManagerCount <Int32>]
+ [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodCount <Int32>]
+ [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>]
+ [-UnknownDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -234,6 +235,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnknownDeviceCount
 Number of unknown devices
 
@@ -290,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

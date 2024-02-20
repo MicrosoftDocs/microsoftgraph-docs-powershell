@@ -21,16 +21,17 @@ To access and assign members to other directory roles, you must first activate i
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryRole [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
- [-RoleTemplateId <String>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Headers <IDictionary>]
+New-MgDirectoryRole [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-Members <IMicrosoftGraphDirectoryObject[]>] [-RoleTemplateId <String>]
+ [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryRole -BodyParameter <IMicrosoftGraphDirectoryRole> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDirectoryRole -BodyParameter <IMicrosoftGraphDirectoryRole> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -208,6 +209,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleTemplateId
 The id of the directoryRoleTemplate that this role is based on.
 The property must be specified when activating a directory role in a tenant with a POST operation.
@@ -285,7 +301,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,11 +15,12 @@ Update the navigation property autopilotEvents in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAutopilotEvent -DeviceManagementAutopilotEventId <String>
- [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <WindowsAutopilotDeploymentState>]
- [-AdditionalProperties <Hashtable>] [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>]
- [-DeploymentStartDateTime <DateTime>] [-DeploymentState <WindowsAutopilotDeploymentState>]
- [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>]
- [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
+ [-ResponseHeadersVariable <String>] [-AccountSetupDuration <TimeSpan>]
+ [-AccountSetupStatus <WindowsAutopilotDeploymentState>] [-AdditionalProperties <Hashtable>]
+ [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
+ [-DeploymentState <WindowsAutopilotDeploymentState>] [-DeploymentTotalDuration <TimeSpan>]
+ [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>]
+ [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
  [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
  [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
  [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
@@ -34,18 +35,19 @@ Update-MgBetaDeviceManagementAutopilotEvent -DeviceManagementAutopilotEventId <S
 ### Update
 ```
 Update-MgBetaDeviceManagementAutopilotEvent -DeviceManagementAutopilotEventId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrollmentIdentity>
- [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <WindowsAutopilotDeploymentState>]
- [-AdditionalProperties <Hashtable>] [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>]
- [-DeploymentStartDateTime <DateTime>] [-DeploymentState <WindowsAutopilotDeploymentState>]
- [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>]
- [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
+ [-ResponseHeadersVariable <String>] [-AccountSetupDuration <TimeSpan>]
+ [-AccountSetupStatus <WindowsAutopilotDeploymentState>] [-AdditionalProperties <Hashtable>]
+ [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
+ [-DeploymentState <WindowsAutopilotDeploymentState>] [-DeploymentTotalDuration <TimeSpan>]
+ [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>]
+ [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
  [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
  [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
  [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
@@ -60,8 +62,8 @@ Update-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrol
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -493,6 +495,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetedAppCount
 Count of applications targeted.
 
@@ -625,7 +642,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

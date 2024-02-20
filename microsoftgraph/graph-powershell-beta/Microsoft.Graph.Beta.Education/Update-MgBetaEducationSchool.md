@@ -18,10 +18,11 @@ Update the properties of a school object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaEducationSchool -EducationSchoolId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
- [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
+Update-MgBetaEducationSchool -EducationSchoolId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>] [-Id <String>]
  [-LowestGrade <String>] [-Phone <String>] [-PrincipalEmail <String>] [-PrincipalName <String>]
  [-SchoolNumber <String>] [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>]
@@ -31,15 +32,17 @@ Update-MgBetaEducationSchool -EducationSchoolId <String> [-AdditionalProperties 
 ### Update
 ```
 Update-MgBetaEducationSchool -EducationSchoolId <String> -BodyParameter <IMicrosoftGraphEducationSchool>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaEducationSchool -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
- [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
+Update-MgBetaEducationSchool -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>] [-Id <String>]
  [-LowestGrade <String>] [-Phone <String>] [-PrincipalEmail <String>] [-PrincipalName <String>]
  [-SchoolNumber <String>] [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>]
@@ -49,7 +52,8 @@ Update-MgBetaEducationSchool -InputObject <IEducationIdentity> [-AdditionalPrope
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationSchool -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationSchool>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -431,6 +435,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchoolNumber
 School Number.
 
@@ -505,7 +524,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSchool
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,31 +18,32 @@ Update the properties of calendargroup object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserCalendarGroup -CalendarGroupId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>] [-ClassId <String>] [-Id <String>]
- [-Name <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgUserCalendarGroup -CalendarGroupId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>]
+ [-ClassId <String>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserCalendarGroup -CalendarGroupId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphCalendarGroup> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCalendarGroup> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>] [-ClassId <String>] [-Id <String>]
- [-Name <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Calendars <IMicrosoftGraphCalendar[]>] [-ChangeKey <String>]
+ [-ClassId <String>] [-Id <String>] [-Name <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendarGroup>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -247,6 +248,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -304,7 +320,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

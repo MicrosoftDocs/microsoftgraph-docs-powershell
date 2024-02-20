@@ -15,32 +15,34 @@ Update the navigation property questions in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgEntitlementManagementAssignmentPolicyQuestion -AccessPackageAssignmentPolicyId <String>
- -AccessPackageQuestionId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable]
- [-IsRequired] [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>]
- [-Text <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -AccessPackageQuestionId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-IsAnswerEditable] [-IsRequired]
+ [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>] [-Text <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementAssignmentPolicyQuestion -AccessPackageAssignmentPolicyId <String>
  -AccessPackageQuestionId <String> -BodyParameter <IMicrosoftGraphAccessPackageQuestion>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable] [-IsRequired]
- [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>] [-Text <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable]
+ [-IsRequired] [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>]
+ [-Text <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -217,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sequence
 Relative position of this question when displaying a list of questions to the requestor.
 
@@ -289,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageQuestion
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

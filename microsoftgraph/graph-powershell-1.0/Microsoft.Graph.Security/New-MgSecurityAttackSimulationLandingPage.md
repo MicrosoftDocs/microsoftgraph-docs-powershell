@@ -17,9 +17,9 @@ Create new navigation property to landingPages for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationLandingPage [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-Details <IMicrosoftGraphLandingPageDetail[]>] [-DisplayName <String>] [-Id <String>]
+New-MgSecurityAttackSimulationLandingPage [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-Details <IMicrosoftGraphLandingPageDetail[]>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
  [-Source <String>] [-Status <String>] [-SupportedLocales <String[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,8 +27,9 @@ New-MgSecurityAttackSimulationLandingPage [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgSecurityAttackSimulationLandingPage -BodyParameter <IMicrosoftGraphLandingPage> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationLandingPage -BodyParameter <IMicrosoftGraphLandingPage>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -240,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 simulationContentSource
 
@@ -326,7 +342,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLandingPage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

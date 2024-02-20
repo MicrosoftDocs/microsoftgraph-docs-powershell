@@ -22,8 +22,8 @@ Note: To create a team, first create a group then add a team to it, see create t
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroup [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>] [-AccessType <String>]
- [-AdditionalProperties <Hashtable>] [-AllowExternalSenders]
+New-MgBetaGroup [-ResponseHeadersVariable <String>] [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]
+ [-AccessType <String>] [-AdditionalProperties <Hashtable>] [-AllowExternalSenders]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AssignedLabels <IMicrosoftGraphAssignedLabel[]>]
  [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AutoSubscribeNewMembers]
  [-Calendar <IMicrosoftGraphCalendar>] [-CalendarView <IMicrosoftGraphEvent[]>] [-Classification <String>]
@@ -61,8 +61,8 @@ New-MgBetaGroup [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>] [-AccessTy
 
 ### Create
 ```
-New-MgBetaGroup -BodyParameter <IMicrosoftGraphGroup> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroup -BodyParameter <IMicrosoftGraphGroup> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -1324,6 +1324,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityEnabled
 Specifies whether the group is a security group.
 Required.Returned by default.
@@ -1637,7 +1652,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

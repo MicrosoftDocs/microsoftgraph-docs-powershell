@@ -17,9 +17,9 @@ Update entity in invitations
 
 ### UpdateExpanded (Default)
 ```
-Update-MgInvitation -InvitationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InviteRedeemUrl <String>] [-InviteRedirectUrl <String>] [-InvitedUser <IMicrosoftGraphUser>]
- [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
+Update-MgInvitation -InvitationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-InviteRedeemUrl <String>] [-InviteRedirectUrl <String>]
+ [-InvitedUser <IMicrosoftGraphUser>] [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
  [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>] [-InvitedUserType <String>]
  [-ResetRedemption] [-SendInvitationMessage] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,15 +27,16 @@ Update-MgInvitation -InvitationId <String> [-AdditionalProperties <Hashtable>] [
 
 ### Update
 ```
-Update-MgInvitation -InvitationId <String> -BodyParameter <IMicrosoftGraphInvitation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgInvitation -InvitationId <String> -BodyParameter <IMicrosoftGraphInvitation>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgInvitation -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InviteRedeemUrl <String>] [-InviteRedirectUrl <String>] [-InvitedUser <IMicrosoftGraphUser>]
- [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
+Update-MgInvitation -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-InviteRedeemUrl <String>] [-InviteRedirectUrl <String>]
+ [-InvitedUser <IMicrosoftGraphUser>] [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
  [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>] [-InvitedUserType <String>]
  [-ResetRedemption] [-SendInvitationMessage] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,7 +45,8 @@ Update-MgInvitation -InputObject <IIdentitySignInsIdentity> [-AdditionalProperti
 ### UpdateViaIdentity
 ```
 Update-MgInvitation -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphInvitation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -291,6 +293,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SendInvitationMessage
 Indicates whether an email should be sent to the user being invited.
 The default is false.
@@ -365,7 +382,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

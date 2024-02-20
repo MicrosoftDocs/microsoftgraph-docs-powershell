@@ -18,25 +18,7 @@ Update the navigation property itemActivityStats in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String>
- -ItemActivityStatId <String> -UserId <String> [-Access <IMicrosoftGraphItemActionStat>]
- [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
- [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
- [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
- [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
- [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaUserDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String>
- -ItemActivityStatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphItemActivityStat>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
+ -ItemActivityStatId <String> -UserId <String> [-ResponseHeadersVariable <String>]
  [-Access <IMicrosoftGraphItemActionStat>] [-Activities <IMicrosoftGraphItemActivity[]>]
  [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
  [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
@@ -45,11 +27,31 @@ Update-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaUserDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String>
+ -ItemActivityStatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphItemActivityStat>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
+ [-ResponseHeadersVariable <String>] [-Access <IMicrosoftGraphItemActionStat>]
+ [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
+ [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
+ [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
+ [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -338,6 +340,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 When the interval starts.
 Read-only.
@@ -411,7 +428,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityStat
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

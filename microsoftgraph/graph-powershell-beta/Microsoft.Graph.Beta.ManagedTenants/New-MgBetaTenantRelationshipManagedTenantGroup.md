@@ -14,8 +14,8 @@ Create new navigation property to tenantGroups for tenantRelationships
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantGroup [-AdditionalProperties <Hashtable>] [-AllTenantsIncluded]
- [-DisplayName <String>] [-Id <String>]
+New-MgBetaTenantRelationshipManagedTenantGroup [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTenantsIncluded] [-DisplayName <String>] [-Id <String>]
  [-ManagementActions <IMicrosoftGraphManagedTenantsManagementActionInfo[]>]
  [-ManagementIntents <IMicrosoftGraphManagedTenantsManagementIntentInfo[]>] [-TenantIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,7 +24,8 @@ New-MgBetaTenantRelationshipManagedTenantGroup [-AdditionalProperties <Hashtable
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantGroup -BodyParameter <IMicrosoftGraphManagedTenantsTenantGroup>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -179,6 +180,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantIds
 The collection of managed tenant identifiers include in the tenant group.
 Optional.
@@ -237,7 +253,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

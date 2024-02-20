@@ -18,8 +18,9 @@ Invoke action unsetReaction
 ### UnsetExpanded (Default)
 ```
 Clear-MgBetaUserChatMessageReplyReaction -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Unset
@@ -27,23 +28,24 @@ Clear-MgBetaUserChatMessageReplyReaction -ChatId <String> -ChatMessageId <String
 Clear-MgBetaUserChatMessageReplyReaction -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
  -UserId <String>
  -BodyParameter <IPathsH9Jox8UsersUserIdChatsChatIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnsetViaIdentityExpanded
 ```
 Clear-MgBetaUserChatMessageReplyReaction -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UnsetViaIdentity
 ```
 Clear-MgBetaUserChatMessageReplyReaction -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsH9Jox8UsersUserIdChatsChatIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -260,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

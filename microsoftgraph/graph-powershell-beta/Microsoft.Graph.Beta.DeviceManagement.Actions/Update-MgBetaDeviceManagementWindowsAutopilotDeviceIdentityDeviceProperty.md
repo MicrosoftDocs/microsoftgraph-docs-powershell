@@ -18,10 +18,11 @@ Updates properties on Autopilot devices.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
- -WindowsAutopilotDeviceIdentityId <String> [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>]
- [-DeviceAccountPassword <String>] [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>]
- [-DisplayName <String>] [-GroupTag <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -WindowsAutopilotDeviceIdentityId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-DeviceAccountPassword <String>]
+ [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>] [-DisplayName <String>] [-GroupTag <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,18 +30,18 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
  -WindowsAutopilotDeviceIdentityId <String>
  -BodyParameter <IPaths17Vu19LDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-AddressableUserName <String>] [-DeviceAccountPassword <String>] [-DeviceAccountUpn <String>]
- [-DeviceFriendlyName <String>] [-DisplayName <String>] [-GroupTag <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-DeviceAccountPassword <String>]
+ [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>] [-DisplayName <String>] [-GroupTag <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -48,8 +49,8 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths17Vu19LDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -239,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserPrincipalName
 .
 
@@ -311,7 +327,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
