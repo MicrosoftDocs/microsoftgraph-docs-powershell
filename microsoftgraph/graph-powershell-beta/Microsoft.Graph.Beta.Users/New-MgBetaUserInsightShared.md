@@ -14,9 +14,10 @@ Create new navigation property to shared for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserInsightShared -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
- [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
+New-MgBetaUserInsightShared -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>]
+ [-LastSharedMethod <IMicrosoftGraphEntity>] [-Resource <IMicrosoftGraphEntity>]
+ [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
  [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,14 +26,16 @@ New-MgBetaUserInsightShared -UserId <String> [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaUserInsightShared -UserId <String> -BodyParameter <IMicrosoftGraphSharedInsight>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
- [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
+New-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>]
+ [-LastSharedMethod <IMicrosoftGraphEntity>] [-Resource <IMicrosoftGraphEntity>]
+ [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
  [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,7 +44,8 @@ New-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalProperties
 ### CreateViaIdentity
 ```
 New-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphSharedInsight>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -222,6 +226,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharingHistory
 .
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
@@ -295,7 +314,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

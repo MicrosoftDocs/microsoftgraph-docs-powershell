@@ -15,35 +15,35 @@ Update the navigation property androidForWorkEnrollmentProfiles in deviceManagem
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -AndroidForWorkEnrollmentProfileId <String>
- [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>]
- [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
+ [-QrCodeImage <IMicrosoftGraphMimeContent>] [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -AndroidForWorkEnrollmentProfileId <String>
- -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDeviceManagementEnrollmentIdentity>
- [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>]
- [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
+ [-QrCodeImage <IMicrosoftGraphMimeContent>] [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -280,6 +280,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TokenExpirationDateTime
 Date time the most recently created token will expire.
 
@@ -352,7 +367,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

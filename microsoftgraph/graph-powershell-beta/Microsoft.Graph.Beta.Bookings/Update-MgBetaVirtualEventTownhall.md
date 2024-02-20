@@ -14,8 +14,9 @@ Update the navigation property townhalls in solutions
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <String> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Audience <String>]
+ [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-InvitedAttendees <IMicrosoftGraphCommunicationsUserIdentity[]>] [-IsInviteOnly]
@@ -27,14 +28,15 @@ Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <String> [-AdditionalP
 ### Update
 ```
 Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Audience <String>]
+ [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-InvitedAttendees <IMicrosoftGraphCommunicationsUserIdentity[]>] [-IsInviteOnly]
@@ -46,8 +48,8 @@ Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity> [-AdditionalP
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -289,6 +291,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sessions
 Sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
@@ -393,7 +410,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventTownhall
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

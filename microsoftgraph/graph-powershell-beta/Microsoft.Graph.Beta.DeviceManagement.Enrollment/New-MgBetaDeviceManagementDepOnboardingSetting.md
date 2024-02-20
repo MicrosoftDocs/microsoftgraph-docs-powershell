@@ -14,8 +14,9 @@ Create new navigation property to depOnboardingSettings for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementDepOnboardingSetting [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>]
- [-DataSharingConsentGranted] [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
+New-MgBetaDeviceManagementDepOnboardingSetting [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>] [-DataSharingConsentGranted]
+ [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
  [-DefaultMacOSEnrollmentProfile <IMicrosoftGraphDepMacOSEnrollmentProfile>]
  [-EnrollmentProfiles <IMicrosoftGraphEnrollmentProfile[]>] [-Id <String>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
@@ -29,7 +30,8 @@ New-MgBetaDeviceManagementDepOnboardingSetting [-AdditionalProperties <Hashtable
 ### Create
 ```
 New-MgBetaDeviceManagementDepOnboardingSetting -BodyParameter <IMicrosoftGraphDepOnboardingSetting>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -271,6 +273,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -402,7 +419,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

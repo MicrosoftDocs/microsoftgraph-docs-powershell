@@ -16,10 +16,11 @@ Update the navigation property decisions in identityGovernance
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceDecisionItemId1 <String>
- [-AccessReviewId <String>] [-AdditionalProperties <Hashtable>] [-AppliedBy <IMicrosoftGraphUserIdentity>]
- [-AppliedDateTime <DateTime>] [-ApplyResult <String>] [-Decision <String>] [-Id <String>]
- [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Instance <IMicrosoftGraphAccessReviewInstance>]
- [-Justification <String>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
+ [-ResponseHeadersVariable <String>] [-AccessReviewId <String>] [-AdditionalProperties <Hashtable>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
+ [-Decision <String>] [-Id <String>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
+ [-Instance <IMicrosoftGraphAccessReviewInstance>] [-Justification <String>]
+ [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
  [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
  [-Recommendation <String>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
  [-ResourceLink <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
@@ -31,17 +32,18 @@ Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceDecisionItemId1 <String>
- -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <IIdentityGovernanceIdentity>
- [-AccessReviewId <String>] [-AdditionalProperties <Hashtable>] [-AppliedBy <IMicrosoftGraphUserIdentity>]
- [-AppliedDateTime <DateTime>] [-ApplyResult <String>] [-Decision <String>] [-Id <String>]
- [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Instance <IMicrosoftGraphAccessReviewInstance>]
- [-Justification <String>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
+ [-ResponseHeadersVariable <String>] [-AccessReviewId <String>] [-AdditionalProperties <Hashtable>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
+ [-Decision <String>] [-Id <String>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
+ [-Instance <IMicrosoftGraphAccessReviewInstance>] [-Justification <String>]
+ [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
  [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
  [-Recommendation <String>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
  [-ResourceLink <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
@@ -52,8 +54,8 @@ Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewInstanceDecisionItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -423,6 +425,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewedBy
 userIdentity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
@@ -513,7 +530,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewInstanceDecisionItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

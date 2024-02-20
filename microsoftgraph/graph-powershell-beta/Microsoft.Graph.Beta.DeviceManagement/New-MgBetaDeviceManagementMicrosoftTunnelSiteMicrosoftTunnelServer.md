@@ -15,8 +15,8 @@ Create new navigation property to microsoftTunnelServers for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -MicrosoftTunnelSiteId <String>
- [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>] [-DisplayName <String>] [-Id <String>]
- [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
  [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,15 +24,15 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -MicrosoftTun
 ### Create
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -MicrosoftTunnelSiteId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>] [-DisplayName <String>] [-Id <String>]
- [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
  [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,8 +40,8 @@ New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServerImageDigest
 The digest of the current server image running on this server
 
@@ -275,7 +290,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServer
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

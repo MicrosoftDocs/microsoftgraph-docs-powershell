@@ -14,7 +14,8 @@ Create new navigation property to resourceAccessProfiles for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementResourceAccessProfile [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementResourceAccessProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]
  [-CreationDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Headers <IDictionary>]
@@ -24,8 +25,8 @@ New-MgBetaDeviceManagementResourceAccessProfile [-AdditionalProperties <Hashtabl
 ### Create
 ```
 New-MgBetaDeviceManagementResourceAccessProfile
- -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 Scope Tags
 
@@ -257,7 +273,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

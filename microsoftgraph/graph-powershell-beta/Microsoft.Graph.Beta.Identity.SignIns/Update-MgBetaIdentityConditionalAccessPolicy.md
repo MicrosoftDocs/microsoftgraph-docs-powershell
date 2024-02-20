@@ -19,8 +19,9 @@ Update the properties of a conditionalAccessPolicy object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,15 +30,16 @@ Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
 ### Update
 ```
 Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -46,8 +48,8 @@ Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdent
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -280,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SessionControls
 conditionalAccessSessionControls
 To construct, see NOTES section for SESSIONCONTROLS properties and create a hash table.
@@ -353,7 +370,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

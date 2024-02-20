@@ -17,25 +17,7 @@ Update the navigation property riskDetections in identityProtection
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaRiskDetection -RiskDetectionId <String> [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>] [-CorrelationId <String>]
- [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-IPAddress <String>] [-Id <String>]
- [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>] [-MitreTechniqueId <String>]
- [-RequestId <String>] [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>]
- [-RiskState <String>] [-RiskType <String>] [-Source <String>] [-TokenIssuerType <String>]
- [-UserDisplayName <String>] [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaRiskDetection -RiskDetectionId <String> -BodyParameter <IMicrosoftGraphRiskDetection>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-Activity <String>]
+Update-MgBetaRiskDetection -RiskDetectionId <String> [-ResponseHeadersVariable <String>] [-Activity <String>]
  [-ActivityDateTime <DateTime>] [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>]
  [-CorrelationId <String>] [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-IPAddress <String>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>]
@@ -45,11 +27,31 @@ Update-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-Activity <S
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaRiskDetection -RiskDetectionId <String> -BodyParameter <IMicrosoftGraphRiskDetection>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
+ [-Activity <String>] [-ActivityDateTime <DateTime>] [-AdditionalInfo <String>]
+ [-AdditionalProperties <Hashtable>] [-CorrelationId <String>] [-DetectedDateTime <DateTime>]
+ [-DetectionTimingType <String>] [-IPAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-Location <IMicrosoftGraphSignInLocation>] [-MitreTechniqueId <String>] [-RequestId <String>]
+ [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>]
+ [-RiskType <String>] [-Source <String>] [-TokenIssuerType <String>] [-UserDisplayName <String>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphRiskDetection> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskDetection> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -322,6 +324,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskDetail
 riskDetail
 
@@ -534,7 +551,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskDetection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

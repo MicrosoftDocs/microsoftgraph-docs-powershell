@@ -15,8 +15,9 @@ Create new navigation property to migratableTo for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <String>
- [-AdditionalProperties <Hashtable>] [-Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
  [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <PolicyPlatformType>]
  [-PublishedDateTime <DateTime>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-TemplateSubtype <DeviceManagementTemplateSubtype>] [-TemplateType <DeviceManagementTemplateType>]
@@ -27,15 +28,16 @@ New-MgBetaDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <Stri
 ### Create
 ```
 New-MgBetaDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
  [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <PolicyPlatformType>]
  [-PublishedDateTime <DateTime>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-TemplateSubtype <DeviceManagementTemplateSubtype>] [-TemplateType <DeviceManagementTemplateType>]
@@ -46,8 +48,8 @@ New-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementId
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -286,6 +288,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Settings
 Collection of all settings this template has
 To construct, see NOTES section for SETTINGS properties and create a hash table.
@@ -389,7 +406,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

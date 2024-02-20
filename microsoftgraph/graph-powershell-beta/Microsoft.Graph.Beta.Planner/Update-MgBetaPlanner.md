@@ -17,16 +17,16 @@ Update planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPlanner [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket[]>]
- [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Rosters <IMicrosoftGraphPlannerRoster[]>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPlanner [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
+ [-Rosters <IMicrosoftGraphPlannerRoster[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPlanner -BodyParameter <IMicrosoftGraphPlanner> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPlanner -BodyParameter <IMicrosoftGraphPlanner> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -147,6 +147,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rosters
 Read-only.
 Nullable.
@@ -224,7 +239,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlanner
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

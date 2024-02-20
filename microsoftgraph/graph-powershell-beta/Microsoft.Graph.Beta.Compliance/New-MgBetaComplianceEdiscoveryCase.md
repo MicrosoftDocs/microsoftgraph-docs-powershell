@@ -15,8 +15,8 @@ Create a new case object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaComplianceEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>]
- [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
+New-MgBetaComplianceEdiscoveryCase [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
  [-Custodians <IMicrosoftGraphEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
  [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-LegalHolds <IMicrosoftGraphEdiscoveryLegalHold[]>]
@@ -30,8 +30,9 @@ New-MgBetaComplianceEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedB
 
 ### Create
 ```
-New-MgBetaComplianceEdiscoveryCase -BodyParameter <IMicrosoftGraphEdiscoveryCase> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCase -BodyParameter <IMicrosoftGraphEdiscoveryCase>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -327,6 +328,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewSets
 Returns a list of reviewSet objects in the case.
 Read-only.
@@ -449,7 +465,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCase
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

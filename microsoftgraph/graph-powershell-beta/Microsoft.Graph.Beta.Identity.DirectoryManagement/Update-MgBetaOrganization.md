@@ -20,9 +20,9 @@ The ID is also known as the tenantId of the organization.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaOrganization -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Branding <IMicrosoftGraphOrganizationalBranding>]
- [-BusinessPhones <String[]>]
+Update-MgBetaOrganization -OrganizationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
+ [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
  [-CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>]
  [-CertificateConnectorSetting <IMicrosoftGraphCertificateConnectorSetting>] [-City <String>]
  [-Country <String>] [-CountryLetterCode <String>] [-CreatedDateTime <DateTime>]
@@ -43,14 +43,16 @@ Update-MgBetaOrganization -OrganizationId <String> [-AdditionalProperties <Hasht
 ### Update
 ```
 Update-MgBetaOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
- [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Branding <IMicrosoftGraphOrganizationalBranding>]
+ [-BusinessPhones <String[]>]
  [-CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>]
  [-CertificateConnectorSetting <IMicrosoftGraphCertificateConnectorSetting>] [-City <String>]
  [-Country <String>] [-CountryLetterCode <String>] [-CreatedDateTime <DateTime>]
@@ -71,8 +73,8 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganization> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -639,6 +641,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityComplianceNotificationMails
 Not nullable.
 
@@ -789,7 +806,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

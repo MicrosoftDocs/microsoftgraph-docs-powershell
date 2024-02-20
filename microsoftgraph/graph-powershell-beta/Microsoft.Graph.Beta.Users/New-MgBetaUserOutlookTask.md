@@ -18,9 +18,10 @@ You can use the Prefer: outlook.timezone header to have all the date-related pro
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserOutlookTask -UserId <String> [-AdditionalProperties <Hashtable>] [-AssignedTo <String>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
- [-ChangeKey <String>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>] [-CreatedDateTime <DateTime>]
+New-MgBetaUserOutlookTask -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CompletedDateTime <IMicrosoftGraphDateTimeZone>] [-CreatedDateTime <DateTime>]
  [-DueDateTime <IMicrosoftGraphDateTimeZone>] [-HasAttachments] [-Id <String>] [-Importance <String>]
  [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Owner <String>]
@@ -33,17 +34,19 @@ New-MgBetaUserOutlookTask -UserId <String> [-AdditionalProperties <Hashtable>] [
 
 ### Create
 ```
-New-MgBetaUserOutlookTask -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTask -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>]
- [-CreatedDateTime <DateTime>] [-DueDateTime <IMicrosoftGraphDateTimeZone>] [-HasAttachments] [-Id <String>]
- [-Importance <String>] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
+New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CompletedDateTime <IMicrosoftGraphDateTimeZone>] [-CreatedDateTime <DateTime>]
+ [-DueDateTime <IMicrosoftGraphDateTimeZone>] [-HasAttachments] [-Id <String>] [-Importance <String>]
+ [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Owner <String>]
  [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
@@ -55,7 +58,8 @@ New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-AdditionalProperties <
 ### CreateViaIdentity
 ```
 New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTask>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -452,6 +456,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sensitivity
 sensitivity
 
@@ -588,7 +607,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

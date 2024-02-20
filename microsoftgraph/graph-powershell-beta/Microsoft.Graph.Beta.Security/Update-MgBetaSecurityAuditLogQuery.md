@@ -14,38 +14,38 @@ Update the navigation property queries in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityAuditLogQuery -AuditLogQueryId <String> [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnitIdFilters <String[]>] [-DisplayName <String>] [-FilterEndDateTime <DateTime>]
- [-FilterStartDateTime <DateTime>] [-IPAddressFilters <String[]>] [-Id <String>] [-KeywordFilter <String>]
- [-ObjectIdFilters <String[]>] [-OperationFilters <String[]>] [-RecordTypeFilters <String[]>]
- [-Records <IMicrosoftGraphSecurityAuditLogRecord[]>] [-ServiceFilters <String[]>] [-Status <String>]
- [-UserPrincipalNameFilters <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAuditLogQuery -AuditLogQueryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdministrativeUnitIdFilters <String[]>] [-DisplayName <String>]
+ [-FilterEndDateTime <DateTime>] [-FilterStartDateTime <DateTime>] [-IPAddressFilters <String[]>]
+ [-Id <String>] [-KeywordFilter <String>] [-ObjectIdFilters <String[]>] [-OperationFilters <String[]>]
+ [-RecordTypeFilters <String[]>] [-Records <IMicrosoftGraphSecurityAuditLogRecord[]>]
+ [-ServiceFilters <String[]>] [-Status <String>] [-UserPrincipalNameFilters <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAuditLogQuery -AuditLogQueryId <String>
- -BodyParameter <IMicrosoftGraphSecurityAuditLogQuery> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityAuditLogQuery> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityAuditLogQuery -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnitIdFilters <String[]>] [-DisplayName <String>] [-FilterEndDateTime <DateTime>]
- [-FilterStartDateTime <DateTime>] [-IPAddressFilters <String[]>] [-Id <String>] [-KeywordFilter <String>]
- [-ObjectIdFilters <String[]>] [-OperationFilters <String[]>] [-RecordTypeFilters <String[]>]
- [-Records <IMicrosoftGraphSecurityAuditLogRecord[]>] [-ServiceFilters <String[]>] [-Status <String>]
- [-UserPrincipalNameFilters <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAuditLogQuery -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdministrativeUnitIdFilters <String[]>] [-DisplayName <String>]
+ [-FilterEndDateTime <DateTime>] [-FilterStartDateTime <DateTime>] [-IPAddressFilters <String[]>]
+ [-Id <String>] [-KeywordFilter <String>] [-ObjectIdFilters <String[]>] [-OperationFilters <String[]>]
+ [-RecordTypeFilters <String[]>] [-Records <IMicrosoftGraphSecurityAuditLogRecord[]>]
+ [-ServiceFilters <String[]>] [-Status <String>] [-UserPrincipalNameFilters <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAuditLogQuery -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityAuditLogQuery> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityAuditLogQuery> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,6 +314,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServiceFilters
 .
 
@@ -401,7 +416,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditLogQuery
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

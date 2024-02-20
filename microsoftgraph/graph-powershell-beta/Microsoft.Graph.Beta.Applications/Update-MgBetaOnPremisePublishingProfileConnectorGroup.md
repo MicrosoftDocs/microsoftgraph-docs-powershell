@@ -16,33 +16,35 @@ Update the properties of a connectorGroup object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <String>
- -OnPremisesPublishingProfileId <String> [-AdditionalProperties <Hashtable>]
- [-Applications <IMicrosoftGraphApplication[]>] [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault]
- [-Members <IMicrosoftGraphConnector[]>] [-Name <String>] [-Region <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <String>
- -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphConnectorGroup>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
+ -OnPremisesPublishingProfileId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Applications <IMicrosoftGraphApplication[]>]
  [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault] [-Members <IMicrosoftGraphConnector[]>]
  [-Name <String>] [-Region <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <String>
+ -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphConnectorGroup>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Applications <IMicrosoftGraphApplication[]>] [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault]
+ [-Members <IMicrosoftGraphConnector[]>] [-Name <String>] [-Region <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphConnectorGroup> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnectorGroup> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -283,6 +285,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -325,7 +342,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

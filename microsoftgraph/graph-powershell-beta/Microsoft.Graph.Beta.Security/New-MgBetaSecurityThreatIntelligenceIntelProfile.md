@@ -17,7 +17,8 @@ Create new navigation property to intelProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
+New-MgBetaSecurityThreatIntelligenceIntelProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
  [-CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
@@ -29,7 +30,8 @@ New-MgBetaSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtab
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -209,6 +211,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Summary
 formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
@@ -312,7 +329,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

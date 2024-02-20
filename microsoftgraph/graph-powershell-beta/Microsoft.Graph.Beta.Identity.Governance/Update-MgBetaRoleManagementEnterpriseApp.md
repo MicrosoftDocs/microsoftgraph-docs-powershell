@@ -14,8 +14,9 @@ Update the navigation property enterpriseApps in roleManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaRoleManagementEnterpriseApp -RbacApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
+Update-MgBetaRoleManagementEnterpriseApp -RbacApplicationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
  [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]
@@ -32,14 +33,14 @@ Update-MgBetaRoleManagementEnterpriseApp -RbacApplicationId <String> [-Additiona
 ### Update
 ```
 Update-MgBetaRoleManagementEnterpriseApp -RbacApplicationId <String>
- -BodyParameter <IMicrosoftGraphRbacApplication> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRbacApplication> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
@@ -57,8 +58,8 @@ Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdenti
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphRbacApplication> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRbacApplication> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -182,6 +183,21 @@ To construct, see NOTES section for RESOURCENAMESPACES properties and create a h
 Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -392,7 +408,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

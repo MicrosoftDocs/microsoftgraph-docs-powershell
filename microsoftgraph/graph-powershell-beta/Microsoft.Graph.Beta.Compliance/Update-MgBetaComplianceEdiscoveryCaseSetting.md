@@ -15,8 +15,8 @@ Update the properties of a an eDiscovery caseSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
+Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,14 +25,15 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProper
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,8 +42,8 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -245,6 +246,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TopicModeling
 topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
@@ -303,7 +319,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -24,7 +24,8 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 
 ### CreateExpanded (Default)
 ```
-New-MgDomain [-AdditionalProperties <Hashtable>] [-AuthenticationType <String>] [-AvailabilityStatus <String>]
+New-MgDomain [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AuthenticationType <String>] [-AvailabilityStatus <String>]
  [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]
  [-FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>] [-Id <String>] [-IsAdminManaged]
  [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-Manufacturer <String>] [-Model <String>]
@@ -36,8 +37,8 @@ New-MgDomain [-AdditionalProperties <Hashtable>] [-AuthenticationType <String>] 
 
 ### Create
 ```
-New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -366,6 +367,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServiceConfigurationRecords
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
@@ -477,7 +493,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

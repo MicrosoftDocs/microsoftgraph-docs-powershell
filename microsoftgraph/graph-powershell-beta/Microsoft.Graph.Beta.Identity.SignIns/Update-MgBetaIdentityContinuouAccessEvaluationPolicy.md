@@ -15,17 +15,17 @@ Update the properties of a continuousAccessEvaluationPolicy object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaIdentityContinuouAccessEvaluationPolicy [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Groups <String[]>] [-Id <String>] [-IsEnabled] [-Migrate]
- [-Users <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaIdentityContinuouAccessEvaluationPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Groups <String[]>]
+ [-Id <String>] [-IsEnabled] [-Migrate] [-Users <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy
- -BodyParameter <IMicrosoftGraphContinuousAccessEvaluationPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContinuousAccessEvaluationPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Users
 The collection of user identifiers in scope for evaluation.
 All users are in scope when the collection is empty.
@@ -261,7 +276,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

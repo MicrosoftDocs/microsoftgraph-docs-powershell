@@ -18,9 +18,10 @@ Create a new plannerPlan.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPlannerPlan [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]
- [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
- [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+New-MgBetaPlannerPlan [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>] [-Buckets <IMicrosoftGraphPlannerBucket[]>]
+ [-Container <IMicrosoftGraphPlannerPlanContainer>] [-Contexts <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-IsArchived] [-Owner <String>]
  [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>]
@@ -30,8 +31,8 @@ New-MgBetaPlannerPlan [-AdditionalProperties <Hashtable>] [-ArchivalInfo <IMicro
 
 ### Create
 ```
-New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -300,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedWithContainers
 List of containers the plan is shared with.
 To construct, see NOTES section for SHAREDWITHCONTAINERS properties and create a hash table.
@@ -391,7 +407,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

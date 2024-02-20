@@ -19,17 +19,18 @@ You will need to register the calling bot and go through the list of permissions
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
- [-AnsweredBy <IMicrosoftGraphParticipantInfo>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]
- [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
- [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>] [-Direction <String>] [-Id <String>]
- [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig>]
- [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingCapability <IMicrosoftGraphMeetingCapability>]
- [-MeetingInfo <IMicrosoftGraphMeetingInfo>] [-MyParticipantId <String>]
- [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant[]>]
- [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-RingingTimeoutInSeconds <Int32>]
- [-RoutingPolicies <String[]>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>] [-Subject <String>]
+New-MgBetaCommunicationCall [-ResponseHeadersVariable <String>] [-ActiveModalities <String[]>]
+ [-AdditionalProperties <Hashtable>] [-AnsweredBy <IMicrosoftGraphParticipantInfo>]
+ [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <String>]
+ [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]
+ [-Direction <String>] [-Id <String>] [-IncomingContext <IMicrosoftGraphIncomingContext>]
+ [-MediaConfig <IMicrosoftGraphMediaConfig>] [-MediaState <IMicrosoftGraphCallMediaState>]
+ [-MeetingCapability <IMicrosoftGraphMeetingCapability>] [-MeetingInfo <IMicrosoftGraphMeetingInfo>]
+ [-MyParticipantId <String>] [-Operations <IMicrosoftGraphCommsOperation[]>]
+ [-Participants <IMicrosoftGraphParticipant[]>] [-RequestedModalities <String[]>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-RingingTimeoutInSeconds <Int32>] [-RoutingPolicies <String[]>]
+ [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>] [-Subject <String>]
  [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>] [-TerminationReason <String>]
  [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,8 +38,8 @@ New-MgBetaCommunicationCall [-ActiveModalities <String[]>] [-AdditionalPropertie
 
 ### Create
 ```
-New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -982,6 +983,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResultInfo
 resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
@@ -1193,7 +1209,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCall
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,7 @@ Create new navigation property to resourceActions for roleManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
- [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
@@ -29,14 +29,14 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacRes
 ### Create
 ```
 New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <IIdentityGovernanceIdentity>
- [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
@@ -47,8 +47,8 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 ### CreateViaIdentity
 ```
 New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +295,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnifiedRbacResourceNamespaceId
 The unique identifier of unifiedRbacResourceNamespace
 
@@ -352,7 +367,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

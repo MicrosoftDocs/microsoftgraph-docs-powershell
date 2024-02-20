@@ -14,8 +14,8 @@ Create new navigation property to shiftsRoleDefinitions for teams
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTeamScheduleShiftRoleDefinition -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>]
+New-MgBetaTeamScheduleShiftRoleDefinition -TeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,13 +23,14 @@ New-MgBetaTeamScheduleShiftRoleDefinition -TeamId <String> [-AdditionalPropertie
 ### Create
 ```
 New-MgBetaTeamScheduleShiftRoleDefinition -TeamId <String> -BodyParameter <IMicrosoftGraphShiftsRoleDefinition>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>]
+New-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -37,8 +38,8 @@ New-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-Additi
 ### CreateViaIdentity
 ```
 New-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphShiftsRoleDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphShiftsRoleDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -169,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShiftsRolePermissions
 .
 To construct, see NOTES section for SHIFTSROLEPERMISSIONS properties and create a hash table.
@@ -242,7 +258,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShiftsRoleDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

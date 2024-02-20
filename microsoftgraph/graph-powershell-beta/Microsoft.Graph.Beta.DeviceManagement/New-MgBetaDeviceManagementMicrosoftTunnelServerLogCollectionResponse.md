@@ -14,9 +14,9 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-AdditionalProperties <Hashtable>]
- [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>] [-RequestDateTime <DateTime>]
- [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
+New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>]
+ [-RequestDateTime <DateTime>] [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
  [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,8 +24,8 @@ New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-Additiona
 ### Create
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServerId
 ID of the server the log collection is requested upon
 
@@ -256,7 +271,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

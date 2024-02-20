@@ -15,9 +15,9 @@ Update the navigation property settings in privilegedRoleAssignmentRequests
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -PrivilegedRoleAssignmentRequestId <String>
- [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation] [-ApproverIds <String[]>]
- [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin]
- [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation]
+ [-ApproverIds <String[]>] [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable]
+ [-LastGlobalAdmin] [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
  [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,16 +25,16 @@ Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -PrivilegedRoleAssig
 ### Update
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -PrivilegedRoleAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation] [-ApproverIds <String[]>]
- [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin]
- [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation]
+ [-ApproverIds <String[]>] [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable]
+ [-LastGlobalAdmin] [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
  [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +42,8 @@ Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdent
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -294,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TicketingInfoOnElevation
 .
 
@@ -351,7 +366,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

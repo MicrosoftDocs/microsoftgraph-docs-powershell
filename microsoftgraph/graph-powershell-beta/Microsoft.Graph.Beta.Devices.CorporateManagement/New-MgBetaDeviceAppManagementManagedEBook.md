@@ -17,20 +17,22 @@ Create new navigation property to managedEBooks for deviceAppManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementManagedEBook [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-Categories <IMicrosoftGraphManagedEBookCategory[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>]
- [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>]
- [-InstallSummary <IMicrosoftGraphEBookInstallSummary>] [-LargeCover <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>]
- [-Publisher <String>] [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Headers <IDictionary>]
+New-MgBetaDeviceAppManagementManagedEBook [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>]
+ [-Categories <IMicrosoftGraphManagedEBookCategory[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>] [-Id <String>]
+ [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphEBookInstallSummary>]
+ [-LargeCover <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
+ [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>] [-Publisher <String>]
+ [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBook> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBook>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -315,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserStateSummary
 The list of installation states for this eBook.
 To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
@@ -372,7 +389,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedEBook
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

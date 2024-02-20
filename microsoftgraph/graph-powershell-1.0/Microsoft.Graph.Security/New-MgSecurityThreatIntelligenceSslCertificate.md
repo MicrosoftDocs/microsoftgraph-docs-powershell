@@ -17,18 +17,20 @@ Create new navigation property to sslCertificates for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatIntelligenceSslCertificate [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-Fingerprint <String>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-IssueDateTime <DateTime>] [-Issuer <IMicrosoftGraphSecuritySslCertificateEntity>]
- [-LastSeenDateTime <DateTime>] [-RelatedHosts <IMicrosoftGraphSecurityHost[]>] [-SerialNumber <String>]
- [-Sha1 <String>] [-Subject <IMicrosoftGraphSecuritySslCertificateEntity>] [-Headers <IDictionary>]
+New-MgSecurityThreatIntelligenceSslCertificate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Fingerprint <String>]
+ [-FirstSeenDateTime <DateTime>] [-Id <String>] [-IssueDateTime <DateTime>]
+ [-Issuer <IMicrosoftGraphSecuritySslCertificateEntity>] [-LastSeenDateTime <DateTime>]
+ [-RelatedHosts <IMicrosoftGraphSecurityHost[]>] [-SerialNumber <String>] [-Sha1 <String>]
+ [-Subject <IMicrosoftGraphSecuritySslCertificateEntity>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityThreatIntelligenceSslCertificate -BodyParameter <IMicrosoftGraphSecuritySslCertificate>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -228,6 +230,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 The serial number associated with an SSL certificate.
 
@@ -316,7 +333,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

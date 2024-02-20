@@ -17,24 +17,7 @@ Create new navigation property to activities for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserActivity -UserId <String> [-ActivationUrl <String>] [-ActivitySourceHost <String>]
- [-AdditionalProperties <Hashtable>] [-AppActivityId <String>] [-AppDisplayName <String>]
- [-ContentInfo <Hashtable>] [-ContentUrl <String>] [-CreatedDateTime <DateTime>]
- [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
- [-HistoryItems <IMicrosoftGraphActivityHistoryItem[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Status <String>] [-UserTimezone <String>] [-VisualElements <IMicrosoftGraphVisualInfo>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgUserActivity -UserId <String> -BodyParameter <IMicrosoftGraphUserActivity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ActivationUrl <String>]
+New-MgUserActivity -UserId <String> [-ResponseHeadersVariable <String>] [-ActivationUrl <String>]
  [-ActivitySourceHost <String>] [-AdditionalProperties <Hashtable>] [-AppActivityId <String>]
  [-AppDisplayName <String>] [-ContentInfo <Hashtable>] [-ContentUrl <String>] [-CreatedDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
@@ -43,10 +26,29 @@ New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ActivationUr
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgUserActivity -UserId <String> -BodyParameter <IMicrosoftGraphUserActivity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivationUrl <String>] [-ActivitySourceHost <String>] [-AdditionalProperties <Hashtable>]
+ [-AppActivityId <String>] [-AppDisplayName <String>] [-ContentInfo <Hashtable>] [-ContentUrl <String>]
+ [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
+ [-HistoryItems <IMicrosoftGraphActivityHistoryItem[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Status <String>] [-UserTimezone <String>] [-VisualElements <IMicrosoftGraphVisualInfo>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphUserActivity>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -330,6 +332,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 status
 
@@ -434,7 +451,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserActivity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

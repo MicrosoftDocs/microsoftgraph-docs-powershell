@@ -15,35 +15,36 @@ Update the navigation property dashboardCards in appCatalogs
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -TeamsAppDashboardCardDefinitionId <String>
- -TeamsAppDefinitionId <String> -TeamsAppId <String> [-AdditionalProperties <Hashtable>]
- [-ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>] [-DefaultSize <String>]
- [-Description <String>] [-DisplayName <String>] [-Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]
- [-Id <String>] [-PickerGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -TeamsAppDashboardCardDefinitionId <String>
- -TeamsAppDefinitionId <String> -TeamsAppId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
+ -TeamsAppDefinitionId <String> -TeamsAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>]
  [-DefaultSize <String>] [-Description <String>] [-DisplayName <String>]
  [-Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>] [-Id <String>] [-PickerGroupId <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -TeamsAppDashboardCardDefinitionId <String>
+ -TeamsAppDefinitionId <String> -TeamsAppId <String>
+ -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>] [-DefaultSize <String>]
+ [-Description <String>] [-DisplayName <String>] [-Icon <IMicrosoftGraphTeamsAppDashboardCardIcon>]
+ [-Id <String>] [-PickerGroupId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppDashboardCardDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -236,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppDashboardCardDefinitionId
 The unique identifier of teamsAppDashboardCardDefinition
 
@@ -323,7 +339,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppDashboardCardDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

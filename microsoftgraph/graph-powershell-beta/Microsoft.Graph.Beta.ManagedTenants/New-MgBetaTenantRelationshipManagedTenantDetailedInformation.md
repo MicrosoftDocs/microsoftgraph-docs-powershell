@@ -14,18 +14,18 @@ Create new navigation property to tenantsDetailedInformation for tenantRelations
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantDetailedInformation [-AdditionalProperties <Hashtable>]
- [-City <String>] [-CountryCode <String>] [-CountryName <String>] [-DefaultDomainName <String>]
- [-DisplayName <String>] [-Id <String>] [-IndustryName <String>] [-Region <String>] [-SegmentName <String>]
- [-TenantId <String>] [-VerticalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantDetailedInformation [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-City <String>] [-CountryCode <String>] [-CountryName <String>]
+ [-DefaultDomainName <String>] [-DisplayName <String>] [-Id <String>] [-IndustryName <String>]
+ [-Region <String>] [-SegmentName <String>] [-TenantId <String>] [-VerticalName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDetailedInformation
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -227,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SegmentName
 The business segment associated with the managed tenant.
 Optional.
@@ -317,7 +332,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantDetailedInformation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

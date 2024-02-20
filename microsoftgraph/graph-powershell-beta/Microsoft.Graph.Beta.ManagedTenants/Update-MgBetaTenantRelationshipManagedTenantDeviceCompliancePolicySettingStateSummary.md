@@ -15,12 +15,13 @@ Update the navigation property deviceCompliancePolicySettingStateSummaries in te
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
- -DeviceCompliancePolicySettingStateSummaryId <String> [-AdditionalProperties <Hashtable>]
- [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-FailedDeviceCount <Int32>] [-Id <String>]
- [-IntuneAccountId <String>] [-IntuneSettingId <String>] [-LastRefreshedDateTime <DateTime>]
- [-NotApplicableDeviceCount <Int32>] [-PendingDeviceCount <Int32>] [-PolicyType <String>]
- [-SettingName <String>] [-SucceededDeviceCount <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -DeviceCompliancePolicySettingStateSummaryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>]
+ [-FailedDeviceCount <Int32>] [-Id <String>] [-IntuneAccountId <String>] [-IntuneSettingId <String>]
+ [-LastRefreshedDateTime <DateTime>] [-NotApplicableDeviceCount <Int32>] [-PendingDeviceCount <Int32>]
+ [-PolicyType <String>] [-SettingName <String>] [-SucceededDeviceCount <Int32>] [-TenantDisplayName <String>]
+ [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -28,18 +29,19 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSu
 Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
  -DeviceCompliancePolicySettingStateSummaryId <String>
  -BodyParameter <IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-ConflictDeviceCount <Int32>]
- [-ErrorDeviceCount <Int32>] [-FailedDeviceCount <Int32>] [-Id <String>] [-IntuneAccountId <String>]
- [-IntuneSettingId <String>] [-LastRefreshedDateTime <DateTime>] [-NotApplicableDeviceCount <Int32>]
- [-PendingDeviceCount <Int32>] [-PolicyType <String>] [-SettingName <String>] [-SucceededDeviceCount <Int32>]
- [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-FailedDeviceCount <Int32>] [-Id <String>]
+ [-IntuneAccountId <String>] [-IntuneSettingId <String>] [-LastRefreshedDateTime <DateTime>]
+ [-NotApplicableDeviceCount <Int32>] [-PendingDeviceCount <Int32>] [-PolicyType <String>]
+ [-SettingName <String>] [-SucceededDeviceCount <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -47,7 +49,8 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSu
 Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
  -InputObject <IManagedTenantsIdentity>
  -BodyParameter <IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -316,6 +319,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingName
 The name for the setting within the device compliance policy.
 Optional.
@@ -426,7 +444,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

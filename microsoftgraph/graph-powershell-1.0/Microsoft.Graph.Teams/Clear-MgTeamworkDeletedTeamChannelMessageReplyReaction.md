@@ -18,9 +18,9 @@ Invoke action unsetReaction
 ### UnsetExpanded (Default)
 ```
 Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction -ChannelId <String> -ChatMessageId <String>
- -ChatMessageId1 <String> -DeletedTeamId <String> [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -ChatMessageId1 <String> -DeletedTeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Unset
@@ -28,23 +28,24 @@ Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction -ChannelId <String> -Chat
 Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction -ChannelId <String> -ChatMessageId <String>
  -ChatMessageId1 <String> -DeletedTeamId <String>
  -BodyParameter <IPathsQ7Z6PzTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnsetViaIdentityExpanded
 ```
 Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-ReactionType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ReactionType <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UnsetViaIdentity
 ```
 Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsQ7Z6PzTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMessagesChatmessageIdRepliesChatmessageId1MicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -219,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -261,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

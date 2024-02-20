@@ -17,8 +17,8 @@ Create new navigation property to managedAppRegistrations for deviceAppManagemen
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementManagedAppRegistration [-AdditionalProperties <Hashtable>]
- [-AppIdentifier <Hashtable>] [-ApplicationVersion <String>]
+New-MgBetaDeviceAppManagementManagedAppRegistration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AppIdentifier <Hashtable>] [-ApplicationVersion <String>]
  [-AppliedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-AzureAdDeviceId <String>]
  [-CreatedDateTime <DateTime>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
  [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
@@ -32,7 +32,8 @@ New-MgBetaDeviceAppManagementManagedAppRegistration [-AdditionalProperties <Hash
 ### Create
 ```
 New-MgBetaDeviceAppManagementManagedAppRegistration -BodyParameter <IMicrosoftGraphManagedAppRegistration>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -380,6 +381,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The user Id to who this app registration belongs.
 
@@ -451,7 +467,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppRegistration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

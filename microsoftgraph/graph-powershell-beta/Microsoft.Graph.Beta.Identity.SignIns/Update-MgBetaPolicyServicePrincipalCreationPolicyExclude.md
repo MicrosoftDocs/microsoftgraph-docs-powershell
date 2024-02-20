@@ -15,34 +15,35 @@ Update the navigation property excludes in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationConditionSetId <String>
- -ServicePrincipalCreationPolicyId <String> [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>]
- [-ApplicationPublisherIds <String[]>] [-ApplicationTenantIds <String[]>]
- [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly] [-Id <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationConditionSetId <String>
- -ServicePrincipalCreationPolicyId <String>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
+ -ServicePrincipalCreationPolicyId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>] [-ApplicationPublisherIds <String[]>]
  [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly]
  [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationConditionSetId <String>
+ -ServicePrincipalCreationPolicyId <String>
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>]
+ [-ApplicationPublisherIds <String[]>] [-ApplicationTenantIds <String[]>]
+ [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -218,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalCreationConditionSetId
 The unique identifier of servicePrincipalCreationConditionSet
 
@@ -290,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

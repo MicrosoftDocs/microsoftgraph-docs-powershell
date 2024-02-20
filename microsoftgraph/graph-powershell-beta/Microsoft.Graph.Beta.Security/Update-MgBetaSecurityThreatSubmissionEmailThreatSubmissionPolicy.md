@@ -15,39 +15,39 @@ Update the navigation property emailThreatSubmissionPolicies in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-CustomizedNotificationSenderEmailAddress <String>]
- [-CustomizedReportRecipientEmailAddress <String>] [-Id <String>] [-IsAlwaysReportEnabledForUsers]
- [-IsAskMeEnabledForUsers] [-IsCustomizedMessageEnabled] [-IsCustomizedMessageEnabledForPhishing]
- [-IsCustomizedNotificationSenderEnabled] [-IsNeverReportEnabledForUsers] [-IsOrganizationBrandingEnabled]
- [-IsReportFromQuarantineEnabled] [-IsReportToCustomizedEmailAddressEnabled] [-IsReportToMicrosoftEnabled]
- [-IsReviewEmailNotificationEnabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CustomizedNotificationSenderEmailAddress <String>] [-CustomizedReportRecipientEmailAddress <String>]
+ [-Id <String>] [-IsAlwaysReportEnabledForUsers] [-IsAskMeEnabledForUsers] [-IsCustomizedMessageEnabled]
+ [-IsCustomizedMessageEnabledForPhishing] [-IsCustomizedNotificationSenderEnabled]
+ [-IsNeverReportEnabledForUsers] [-IsOrganizationBrandingEnabled] [-IsReportFromQuarantineEnabled]
+ [-IsReportToCustomizedEmailAddressEnabled] [-IsReportToMicrosoftEnabled] [-IsReviewEmailNotificationEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId <String>
- -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-CustomizedNotificationSenderEmailAddress <String>]
- [-CustomizedReportRecipientEmailAddress <String>] [-Id <String>] [-IsAlwaysReportEnabledForUsers]
- [-IsAskMeEnabledForUsers] [-IsCustomizedMessageEnabled] [-IsCustomizedMessageEnabledForPhishing]
- [-IsCustomizedNotificationSenderEnabled] [-IsNeverReportEnabledForUsers] [-IsOrganizationBrandingEnabled]
- [-IsReportFromQuarantineEnabled] [-IsReportToCustomizedEmailAddressEnabled] [-IsReportToMicrosoftEnabled]
- [-IsReviewEmailNotificationEnabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CustomizedNotificationSenderEmailAddress <String>] [-CustomizedReportRecipientEmailAddress <String>]
+ [-Id <String>] [-IsAlwaysReportEnabledForUsers] [-IsAskMeEnabledForUsers] [-IsCustomizedMessageEnabled]
+ [-IsCustomizedMessageEnabledForPhishing] [-IsCustomizedNotificationSenderEnabled]
+ [-IsNeverReportEnabledForUsers] [-IsOrganizationBrandingEnabled] [-IsReportFromQuarantineEnabled]
+ [-IsReportToCustomizedEmailAddressEnabled] [-IsReportToMicrosoftEnabled] [-IsReviewEmailNotificationEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -396,6 +396,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -438,7 +453,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

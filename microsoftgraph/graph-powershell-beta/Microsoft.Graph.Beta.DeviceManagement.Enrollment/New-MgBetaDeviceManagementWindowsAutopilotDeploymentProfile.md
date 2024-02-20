@@ -14,8 +14,8 @@ Create new navigation property to windowsAutopilotDeploymentProfiles for deviceM
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile [-AdditionalProperties <Hashtable>]
- [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
+New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
  [-Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <WindowsAutopilotDeviceType>]
  [-DisplayName <String>] [-EnableWhiteGlove]
@@ -29,8 +29,8 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile [-AdditionalProperti
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -331,6 +331,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 Scope tags for the profile.
 
@@ -387,7 +402,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

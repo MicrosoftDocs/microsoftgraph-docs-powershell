@@ -14,8 +14,8 @@ Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceM
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-DefaultLanguageCode <String>]
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-DefaultLanguageCode <String>]
  [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-Description <String>] [-DisplayName <String>]
  [-FileName <String>] [-GroupPolicyOperations <IMicrosoftGraphGroupPolicyOperation[]>]
  [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-Id <String>]
@@ -28,8 +28,8 @@ New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile [-AdditionalProperti
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile
- -BodyParameter <IMicrosoftGraphGroupPolicyUploadedDefinitionFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyUploadedDefinitionFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -286,6 +286,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Revision
 The revision version associated with the file.
 
@@ -402,7 +417,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

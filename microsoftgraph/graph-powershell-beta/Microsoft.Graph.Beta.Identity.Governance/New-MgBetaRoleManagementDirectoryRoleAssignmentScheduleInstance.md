@@ -17,7 +17,7 @@ Create new navigation property to roleAssignmentScheduleInstances for roleManage
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance
+New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance [-ResponseHeadersVariable <String>]
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>] [-AdditionalProperties <Hashtable>]
  [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-AssignmentType <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
@@ -31,8 +31,8 @@ New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance
 ### Create
 ```
 New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -283,6 +283,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleAssignmentOriginId
 The identifier of the role assignment in Azure AD.
 
@@ -400,7 +415,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

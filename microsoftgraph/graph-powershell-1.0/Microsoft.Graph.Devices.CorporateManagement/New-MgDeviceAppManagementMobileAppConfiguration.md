@@ -18,7 +18,8 @@ Create a new iosMobileAppConfiguration object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementMobileAppConfiguration [-AdditionalProperties <Hashtable>]
+New-MgDeviceAppManagementMobileAppConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>]
  [-DeviceStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>]
@@ -32,8 +33,8 @@ New-MgDeviceAppManagementMobileAppConfiguration [-AdditionalProperties <Hashtabl
 ### Create
 ```
 New-MgDeviceAppManagementMobileAppConfiguration
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -226,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetedMobileApps
 the associated app.
 
@@ -329,7 +345,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

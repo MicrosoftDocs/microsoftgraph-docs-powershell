@@ -18,9 +18,10 @@ Create a new editionUpgradeConfiguration object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDeviceConfiguration [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
+New-MgDeviceManagementDeviceConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
  [-DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]
  [-DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]
@@ -31,7 +32,8 @@ New-MgDeviceManagementDeviceConfiguration [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceConfiguration>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -240,6 +242,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserStatuses
 Device configuration installation status by user.
 To construct, see NOTES section for USERSTATUSES properties and create a hash table.
@@ -328,7 +345,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

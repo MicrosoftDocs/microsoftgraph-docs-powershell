@@ -18,7 +18,7 @@ Update the navigation property operations in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupSiteOnenoteOperation -GroupId <String> -OnenoteOperationId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphOnenoteOperationError>] [-Id <String>] [-LastActionDateTime <DateTime>]
  [-PercentComplete <String>] [-ResourceId <String>] [-ResourceLocation <String>] [-Status <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,24 +27,24 @@ Update-MgGroupSiteOnenoteOperation -GroupId <String> -OnenoteOperationId <String
 ### Update
 ```
 Update-MgGroupSiteOnenoteOperation -GroupId <String> -OnenoteOperationId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphOnenoteOperation> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnenoteOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupSiteOnenoteOperation -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOnenoteOperationError>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-PercentComplete <String>] [-ResourceId <String>]
- [-ResourceLocation <String>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupSiteOnenoteOperation -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-Error <IMicrosoftGraphOnenoteOperationError>] [-Id <String>] [-LastActionDateTime <DateTime>]
+ [-PercentComplete <String>] [-ResourceId <String>] [-ResourceLocation <String>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupSiteOnenoteOperation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphOnenoteOperation> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnenoteOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -267,6 +267,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -339,7 +354,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

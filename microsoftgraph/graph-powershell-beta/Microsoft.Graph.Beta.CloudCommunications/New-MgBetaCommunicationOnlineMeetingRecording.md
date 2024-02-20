@@ -17,9 +17,9 @@ Create new navigation property to recordings for communications
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
- [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
+New-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
  [-RecordingContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +27,16 @@ New-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-Additi
 ### Create
 ```
 New-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphCallRecording> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCallRecording> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
+ [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
  [-RecordingContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +44,8 @@ New-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 ### CreateViaIdentity
 ```
 New-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCallRecording> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCallRecording> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -258,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -300,7 +316,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRecording
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

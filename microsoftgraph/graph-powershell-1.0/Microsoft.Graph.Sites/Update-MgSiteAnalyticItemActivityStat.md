@@ -18,24 +18,7 @@ Update the navigation property itemActivityStats in sites
 ### UpdateExpanded (Default)
 ```
 Update-MgSiteAnalyticItemActivityStat -ItemActivityStatId <String> -SiteId <String>
- [-Access <IMicrosoftGraphItemActionStat>] [-Activities <IMicrosoftGraphItemActivity[]>]
- [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
- [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
- [-Id <String>] [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending]
- [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgSiteAnalyticItemActivityStat -ItemActivityStatId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-Access <IMicrosoftGraphItemActionStat>]
+ [-ResponseHeadersVariable <String>] [-Access <IMicrosoftGraphItemActionStat>]
  [-Activities <IMicrosoftGraphItemActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
  [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
@@ -44,11 +27,29 @@ Update-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-Access <IM
  [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgSiteAnalyticItemActivityStat -ItemActivityStatId <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-Access <IMicrosoftGraphItemActionStat>] [-Activities <IMicrosoftGraphItemActivity[]>]
+ [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
+ [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
+ [-Id <String>] [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending]
+ [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -307,6 +308,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -380,7 +396,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

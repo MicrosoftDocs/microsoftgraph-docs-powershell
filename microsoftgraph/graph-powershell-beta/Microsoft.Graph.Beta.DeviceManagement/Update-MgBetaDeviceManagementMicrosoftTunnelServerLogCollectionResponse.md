@@ -15,9 +15,9 @@ Update the navigation property microsoftTunnelServerLogCollectionResponses in de
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
- -MicrosoftTunnelServerLogCollectionResponseId <String> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>] [-RequestDateTime <DateTime>]
- [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
+ -MicrosoftTunnelServerLogCollectionResponseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>]
+ [-RequestDateTime <DateTime>] [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
  [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,25 +26,26 @@ Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
  -MicrosoftTunnelServerLogCollectionResponseId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-ExpiryDateTime <DateTime>] [-Id <String>] [-RequestDateTime <DateTime>] [-ServerId <String>]
- [-SizeInBytes <Int64>] [-StartDateTime <DateTime>] [-Status <MicrosoftTunnelLogCollectionStatus>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>]
+ [-RequestDateTime <DateTime>] [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
+ [-Status <MicrosoftTunnelLogCollectionStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServerId
 ID of the server the log collection is requested upon
 
@@ -307,7 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

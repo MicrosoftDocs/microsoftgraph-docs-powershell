@@ -18,7 +18,7 @@ Create a new printerShare for the specified printer.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
+New-MgBetaPrintShare [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
  [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
  [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
@@ -30,8 +30,8 @@ New-MgBetaPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
 
 ### Create
 ```
-New-MgBetaPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -356,6 +356,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 printerStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
@@ -429,7 +444,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrinterShare
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

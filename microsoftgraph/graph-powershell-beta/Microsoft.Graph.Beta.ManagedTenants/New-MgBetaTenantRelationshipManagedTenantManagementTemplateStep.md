@@ -14,7 +14,7 @@ Create new navigation property to managementTemplateSteps for tenantRelationship
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
+New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep [-ResponseHeadersVariable <String>]
  [-AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]
  [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -28,8 +28,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStep> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -298,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserImpact
 .
 
@@ -370,7 +385,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

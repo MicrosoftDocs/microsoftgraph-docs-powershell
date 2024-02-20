@@ -17,36 +17,7 @@ Update the navigation property onlineMeetings in communications
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
- [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
- [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
- [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
- [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
- [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
+Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
  [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
  [-AllowTranscription] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
@@ -67,11 +38,42 @@ Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdenti
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
+ [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowedPresenters <String>]
+ [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
+ [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl <String>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
+ [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
+ [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
+ [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
+ [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnlineMeeting> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -732,6 +734,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShareMeetingChatHistoryDefault
 meetingChatHistoryDefaultMode
 
@@ -868,7 +885,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,10 +18,11 @@ Update the properties of an educationSchool object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEducationSchool -EducationSchoolId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
- [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
+Update-MgEducationSchool -EducationSchoolId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>] [-Id <String>]
  [-LowestGrade <String>] [-Phone <String>] [-PrincipalEmail <String>] [-PrincipalName <String>]
  [-SchoolNumber <String>] [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>]
@@ -31,15 +32,17 @@ Update-MgEducationSchool -EducationSchoolId <String> [-AdditionalProperties <Has
 ### Update
 ```
 Update-MgEducationSchool -EducationSchoolId <String> -BodyParameter <IMicrosoftGraphEducationSchool>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgEducationSchool -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
- [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
+Update-MgEducationSchool -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+ [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
  [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>] [-Id <String>]
  [-LowestGrade <String>] [-Phone <String>] [-PrincipalEmail <String>] [-PrincipalName <String>]
  [-SchoolNumber <String>] [-Users <IMicrosoftGraphEducationUser[]>] [-Headers <IDictionary>]
@@ -49,7 +52,8 @@ Update-MgEducationSchool -InputObject <IEducationIdentity> [-AdditionalPropertie
 ### UpdateViaIdentity
 ```
 Update-MgEducationSchool -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationSchool>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -431,6 +435,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchoolNumber
 School Number.
 
@@ -505,7 +524,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSchool
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

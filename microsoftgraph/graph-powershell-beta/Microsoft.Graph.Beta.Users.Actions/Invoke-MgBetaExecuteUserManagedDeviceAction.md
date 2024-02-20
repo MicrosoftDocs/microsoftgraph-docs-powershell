@@ -14,10 +14,10 @@ Invoke action executeAction
 
 ### ExecuteExpanded (Default)
 ```
-Invoke-MgBetaExecuteUserManagedDeviceAction -UserId <String> [-ActionName <ManagedDeviceRemoteAction>]
- [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
- [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
- [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+Invoke-MgBetaExecuteUserManagedDeviceAction -UserId <String> [-ResponseHeadersVariable <String>]
+ [-ActionName <ManagedDeviceRemoteAction>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
+ [-DeprovisionReason <String>] [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData]
+ [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
  [-PersistEsimDataPlan] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -26,15 +26,17 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -UserId <String> [-ActionName <Manag
 ```
 Invoke-MgBetaExecuteUserManagedDeviceAction -UserId <String>
  -BodyParameter <IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentityExpanded
 ```
 Invoke-MgBetaExecuteUserManagedDeviceAction -InputObject <IUsersActionsIdentity>
- [-ActionName <ManagedDeviceRemoteAction>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
- [-DeprovisionReason <String>] [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData]
- [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+ [-ResponseHeadersVariable <String>] [-ActionName <ManagedDeviceRemoteAction>]
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
+ [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
+ [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
  [-PersistEsimDataPlan] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -43,7 +45,8 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -InputObject <IUsersActionsIdentity>
 ```
 Invoke-MgBetaExecuteUserManagedDeviceAction -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -293,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -350,7 +368,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBulkManagedDeviceActionResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

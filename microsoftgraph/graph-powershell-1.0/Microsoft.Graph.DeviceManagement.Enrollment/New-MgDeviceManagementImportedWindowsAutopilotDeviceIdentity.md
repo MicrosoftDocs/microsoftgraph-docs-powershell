@@ -18,18 +18,18 @@ Create a new importedWindowsAutopilotDeviceIdentity object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity [-AdditionalProperties <Hashtable>]
- [-AssignedUserPrincipalName <String>] [-GroupTag <String>] [-HardwareIdentifierInputFile <String>]
- [-Id <String>] [-ImportId <String>] [-ProductKey <String>] [-SerialNumber <String>]
- [-State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedUserPrincipalName <String>] [-GroupTag <String>]
+ [-HardwareIdentifierInputFile <String>] [-Id <String>] [-ImportId <String>] [-ProductKey <String>]
+ [-SerialNumber <String>] [-State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
- -BodyParameter <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -189,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 Serial number of the Windows autopilot device.
 
@@ -261,7 +276,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

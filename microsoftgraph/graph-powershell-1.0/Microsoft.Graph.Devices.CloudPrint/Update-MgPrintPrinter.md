@@ -18,10 +18,11 @@ Update the properties of a printer object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
- [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
+Update-MgPrintPrinter -PrinterId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+ [-Connectors <IMicrosoftGraphPrintConnector[]>] [-Defaults <IMicrosoftGraphPrinterDefaults>]
+ [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>] [-IsAcceptingJobs] [-IsShared]
+ [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare[]>]
  [-Status <IMicrosoftGraphPrinterStatus>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>]
@@ -30,16 +31,18 @@ Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
- [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
+Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+ [-Connectors <IMicrosoftGraphPrintConnector[]>] [-Defaults <IMicrosoftGraphPrinterDefaults>]
+ [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>] [-IsAcceptingJobs] [-IsShared]
+ [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare[]>]
  [-Status <IMicrosoftGraphPrinterStatus>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>]
@@ -49,7 +52,8 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProp
 ### UpdateViaIdentity
 ```
 Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinter>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -372,6 +376,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Shares
 The list of printerShares that are associated with the printer.
 Currently, only one printerShare can be associated with the printer.
@@ -465,7 +484,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -19,11 +19,11 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 
 ### CreateExpanded1 (Default)
 ```
-New-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
+New-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-CancelledOccurrences <String[]>] [-Categories <String[]>]
+ [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
  [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
@@ -43,16 +43,17 @@ New-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-AdditionalPr
 ### Create1
 ```
 New-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgBetaUserCalendarEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
+New-MgBetaUserCalendarEvent -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-CancelledOccurrences <String[]>] [-Categories <String[]>]
+ [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
  [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
@@ -72,7 +73,8 @@ New-MgBetaUserCalendarEvent -InputObject <ICalendarIdentity> [-AdditionalPropert
 ### CreateViaIdentity1
 ```
 New-MgBetaUserCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -860,6 +862,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseRequested
 .
 
@@ -1102,7 +1119,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

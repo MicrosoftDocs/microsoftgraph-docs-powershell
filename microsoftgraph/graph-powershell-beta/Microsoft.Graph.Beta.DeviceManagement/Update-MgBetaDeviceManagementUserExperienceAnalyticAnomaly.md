@@ -15,7 +15,8 @@ Update the navigation property userExperienceAnalyticsAnomaly in deviceManagemen
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -UserExperienceAnalyticsAnomalyId <String>
- [-AdditionalProperties <Hashtable>] [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
  [-AnomalyLatestOccurrenceDateTime <DateTime>] [-AnomalyName <String>]
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
@@ -27,14 +28,15 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -UserExperienceAnalyt
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -UserExperienceAnalyticsAnomalyId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
  [-AnomalyLatestOccurrenceDateTime <DateTime>] [-AnomalyName <String>]
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
@@ -46,8 +48,8 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDevice
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -315,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 Indicates the severity of the anomaly.
 Eg: anomaly severity can be high, medium, low, informational or other.
@@ -404,7 +421,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

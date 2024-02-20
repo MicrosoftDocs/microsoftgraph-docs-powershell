@@ -14,27 +14,7 @@ Update the navigation property deviceManagementScripts in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementScript -DeviceManagementScriptId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>] [-Description <String>]
- [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>] [-DisplayName <String>]
- [-EnforceSignatureCheck] [-FileName <String>]
- [-GroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-Id <String>]
- [-RoleScopeTagIds <String[]>] [-RunAs32Bit] [-RunAsAccount <RunAsAccountType>]
- [-RunSummary <IMicrosoftGraphDeviceManagementScriptRunSummary>] [-ScriptContentInputFile <String>]
- [-UserRunStates <IMicrosoftGraphDeviceManagementScriptUserState[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementScript -DeviceManagementScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementScript> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementScript -DeviceManagementScriptId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
  [-Description <String>] [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>]
  [-DisplayName <String>] [-EnforceSignatureCheck] [-FileName <String>]
@@ -45,11 +25,32 @@ Update-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementScript -DeviceManagementScriptId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementScript> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>] [-Description <String>]
+ [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>] [-DisplayName <String>]
+ [-EnforceSignatureCheck] [-FileName <String>]
+ [-GroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-Id <String>]
+ [-RoleScopeTagIds <String[]>] [-RunAs32Bit] [-RunAsAccount <RunAsAccountType>]
+ [-RunSummary <IMicrosoftGraphDeviceManagementScriptRunSummary>] [-ScriptContentInputFile <String>]
+ [-UserRunStates <IMicrosoftGraphDeviceManagementScriptUserState[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementScript> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementScript> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tag IDs for this PowerShellScript instance.
 
@@ -408,7 +424,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScript
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

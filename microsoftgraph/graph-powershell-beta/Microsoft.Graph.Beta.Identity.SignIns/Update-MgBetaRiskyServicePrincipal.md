@@ -17,8 +17,8 @@ Update the navigation property riskyServicePrincipals in identityProtection
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaRiskyServicePrincipal -RiskyServicePrincipalId <String> [-AccountEnabled]
- [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
+Update-MgBetaRiskyServicePrincipal -RiskyServicePrincipalId <String> [-ResponseHeadersVariable <String>]
+ [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
  [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>] [-IsEnabled] [-IsProcessing]
  [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
  [-ServicePrincipalType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -28,14 +28,14 @@ Update-MgBetaRiskyServicePrincipal -RiskyServicePrincipalId <String> [-AccountEn
 ### Update
 ```
 Update-MgBetaRiskyServicePrincipal -RiskyServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-AccountEnabled]
- [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
+Update-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
+ [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
  [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>] [-IsEnabled] [-IsProcessing]
  [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
  [-ServicePrincipalType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -45,8 +45,8 @@ Update-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-Acc
 ### UpdateViaIdentity
 ```
 Update-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -238,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskDetail
 riskDetail
 
@@ -374,7 +389,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

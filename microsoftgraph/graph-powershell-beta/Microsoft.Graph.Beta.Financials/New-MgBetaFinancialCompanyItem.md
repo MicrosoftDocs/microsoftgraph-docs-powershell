@@ -14,10 +14,10 @@ Create new navigation property to items for financials
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaFinancialCompanyItem -CompanyId <String> [-AdditionalProperties <Hashtable>]
- [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>]
- [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>]
- [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+New-MgBetaFinancialCompanyItem -CompanyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
+ [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
+ [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
  [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,15 +26,16 @@ New-MgBetaFinancialCompanyItem -CompanyId <String> [-AdditionalProperties <Hasht
 ### Create
 ```
 New-MgBetaFinancialCompanyItem -CompanyId <String> -BodyParameter <IMicrosoftGraphItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>]
- [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>]
- [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+New-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
+ [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
+ [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
  [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,7 +44,8 @@ New-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-AdditionalPr
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -340,6 +342,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaxGroupCode
 .
 
@@ -457,7 +474,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

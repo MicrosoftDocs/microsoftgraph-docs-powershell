@@ -19,30 +19,34 @@ If the specified timeOff object doesn't exist, this method returns 404 Not found
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupTeamScheduleTimeOff -GroupId <String> -TimeOffId <String> [-AdditionalProperties <Hashtable>]
- [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupTeamScheduleTimeOff -GroupId <String> -TimeOffId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
+ [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupTeamScheduleTimeOff -GroupId <String> -TimeOffId <String> -BodyParameter <IMicrosoftGraphTimeOff>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
+ [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -194,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedTimeOff
 timeOffItem
 To construct, see NOTES section for SHAREDTIMEOFF properties and create a hash table.
@@ -283,7 +302,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,7 +15,8 @@ Update the navigation property previousVersionDefinition in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition -GroupPolicyDefinitionId <String>
- [-AdditionalProperties <Hashtable>] [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>]
  [-ClassType <GroupPolicyDefinitionClassType>] [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-DisplayName <String>] [-ExplainText <String>] [-GroupPolicyCategoryId <String>] [-HasRelatedDefinitions]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MinDeviceCspVersion <String>]
@@ -29,15 +30,15 @@ Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition -Grou
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition -GroupPolicyDefinitionId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>]
  [-ClassType <GroupPolicyDefinitionClassType>] [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-DisplayName <String>] [-ExplainText <String>] [-GroupPolicyCategoryId <String>] [-HasRelatedDefinitions]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MinDeviceCspVersion <String>]
@@ -52,7 +53,8 @@ Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition
  -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyDefinition>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -401,6 +403,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SupportedOn
 Localized string used to specify what operating system or application version is affected by the policy.
 
@@ -473,7 +490,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

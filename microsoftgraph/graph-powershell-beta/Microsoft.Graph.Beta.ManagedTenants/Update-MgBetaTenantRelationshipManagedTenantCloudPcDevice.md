@@ -15,35 +15,37 @@ Update the navigation property cloudPcDevices in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice -CloudPcDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-CloudPcStatus <String>] [-DeviceSpecification <String>]
- [-DisplayName <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-ManagedDeviceId <String>]
- [-ManagedDeviceName <String>] [-ProvisioningPolicyId <String>] [-ServicePlanName <String>]
- [-ServicePlanType <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CloudPcStatus <String>]
+ [-DeviceSpecification <String>] [-DisplayName <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
+ [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-ProvisioningPolicyId <String>]
+ [-ServicePlanName <String>] [-ServicePlanType <String>] [-TenantDisplayName <String>] [-TenantId <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice -CloudPcDeviceId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-CloudPcStatus <String>] [-DeviceSpecification <String>]
- [-DisplayName <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-ManagedDeviceId <String>]
- [-ManagedDeviceName <String>] [-ProvisioningPolicyId <String>] [-ServicePlanName <String>]
- [-ServicePlanType <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CloudPcStatus <String>]
+ [-DeviceSpecification <String>] [-DisplayName <String>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
+ [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-ProvisioningPolicyId <String>]
+ [-ServicePlanName <String>] [-ServicePlanType <String>] [-TenantDisplayName <String>] [-TenantId <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCloudPcDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -279,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePlanName
 The service plan name of the cloud PC device.
 Required.
@@ -406,7 +423,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCloudPcDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

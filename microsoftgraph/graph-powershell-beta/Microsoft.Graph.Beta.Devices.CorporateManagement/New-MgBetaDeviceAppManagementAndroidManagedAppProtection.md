@@ -17,9 +17,9 @@ Create new navigation property to androidManagedAppProtections for deviceAppMana
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementAndroidManagedAppProtection [-AdditionalProperties <Hashtable>]
- [-AllowedAndroidDeviceManufacturers <String>] [-AllowedAndroidDeviceModels <String[]>]
- [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+New-MgBetaDeviceAppManagementAndroidManagedAppProtection [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedAndroidDeviceManufacturers <String>]
+ [-AllowedAndroidDeviceModels <String[]>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
@@ -82,8 +82,8 @@ New-MgBetaDeviceAppManagementAndroidManagedAppProtection [-AdditionalProperties 
 ### Create
 ```
 New-MgBetaDeviceAppManagementAndroidManagedAppProtection
- -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -1590,6 +1590,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -1751,7 +1766,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,40 +14,44 @@ Create new navigation property to customers for financials
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaFinancialCompanyCustomer -CompanyId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-Blocked <String>] [-Currency <IMicrosoftGraphCurrency>]
- [-CurrencyCode <String>] [-CurrencyId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Number <String>] [-PaymentMethod <IMicrosoftGraphPaymentMethod>]
- [-PaymentMethodId <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>]
- [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
- [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>]
- [-TaxAreaId <String>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyCustomer -CompanyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-Blocked <String>]
+ [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>] [-DisplayName <String>]
+ [-Email <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+ [-PaymentMethod <IMicrosoftGraphPaymentMethod>] [-PaymentMethodId <String>]
+ [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
+ [-Picture <IMicrosoftGraphPicture[]>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
+ [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>] [-TaxAreaId <String>] [-TaxLiable]
+ [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaFinancialCompanyCustomer -CompanyId <String> -BodyParameter <IMicrosoftGraphCustomer>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaFinancialCompanyCustomer -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-Blocked <String>] [-Currency <IMicrosoftGraphCurrency>]
- [-CurrencyCode <String>] [-CurrencyId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Number <String>] [-PaymentMethod <IMicrosoftGraphPaymentMethod>]
- [-PaymentMethodId <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>]
- [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
- [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>]
- [-TaxAreaId <String>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaFinancialCompanyCustomer -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-Blocked <String>]
+ [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>] [-DisplayName <String>]
+ [-Email <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+ [-PaymentMethod <IMicrosoftGraphPaymentMethod>] [-PaymentMethodId <String>]
+ [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
+ [-Picture <IMicrosoftGraphPicture[]>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
+ [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>] [-TaxAreaId <String>] [-TaxLiable]
+ [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyCustomer -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphCustomer>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -392,6 +396,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShipmentMethod
 shipmentMethod
 To construct, see NOTES section for SHIPMENTMETHOD properties and create a hash table.
@@ -555,7 +574,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomer
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,35 +18,36 @@ If the specified timeOff doesn't exist, this method returns 404 Not found.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaGroupTeamScheduleTimeOff -GroupId <String> -TimeOffId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
- [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>]
- [-UserInfo <IMicrosoftGraphShiftsUserInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupTeamScheduleTimeOff -GroupId <String> -TimeOffId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>] [-IsStagedForDeletion]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
+ [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupTeamScheduleTimeOff -GroupId <String> -TimeOffId <String>
- -BodyParameter <IMicrosoftGraphTimeOff> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTimeOff> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
- [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>]
- [-UserInfo <IMicrosoftGraphShiftsUserInfo>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>] [-IsStagedForDeletion]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
+ [-TeamInfo <IMicrosoftGraphShiftsTeamInfo>] [-UserId <String>] [-UserInfo <IMicrosoftGraphShiftsUserInfo>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -226,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedTimeOff
 timeOffItem
 To construct, see NOTES section for SHAREDTIMEOFF properties and create a hash table.
@@ -347,7 +363,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOff
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

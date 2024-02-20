@@ -15,10 +15,10 @@ Create a new securityAction object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityAction [-ActionReason <String>] [-AdditionalProperties <Hashtable>] [-AppId <String>]
- [-AzureTenantId <String>] [-ClientContext <String>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-ErrorInfo <IMicrosoftGraphResultInfo>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-Name <String>] [-Parameters <IMicrosoftGraphKeyValuePair[]>]
+New-MgBetaSecurityAction [-ResponseHeadersVariable <String>] [-ActionReason <String>]
+ [-AdditionalProperties <Hashtable>] [-AppId <String>] [-AzureTenantId <String>] [-ClientContext <String>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-ErrorInfo <IMicrosoftGraphResultInfo>]
+ [-Id <String>] [-LastActionDateTime <DateTime>] [-Name <String>] [-Parameters <IMicrosoftGraphKeyValuePair[]>]
  [-States <IMicrosoftGraphSecurityActionState[]>] [-Status <String>] [-User <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,8 +26,8 @@ New-MgBetaSecurityAction [-ActionReason <String>] [-AdditionalProperties <Hashta
 
 ### Create
 ```
-New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -299,6 +299,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -States
 Collection of securityActionState to keep the history of an action.
 To construct, see NOTES section for STATES properties and create a hash table.
@@ -403,7 +418,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

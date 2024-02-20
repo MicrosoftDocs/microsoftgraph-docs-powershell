@@ -15,8 +15,8 @@ Create new navigation property to resourceScopes for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,18 +24,18 @@ New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
 ### CreateExpanded2
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
+ -AccessPackageResourceScopeId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>]
+ [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
+ -AccessPackageResourceId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>]
+ [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,28 +43,30 @@ New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded2
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -72,8 +74,8 @@ New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanc
 ### CreateViaIdentityExpanded1
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -81,8 +83,8 @@ New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanc
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -90,22 +92,22 @@ New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanc
 ### CreateViaIdentity2
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -342,6 +344,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -384,7 +401,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

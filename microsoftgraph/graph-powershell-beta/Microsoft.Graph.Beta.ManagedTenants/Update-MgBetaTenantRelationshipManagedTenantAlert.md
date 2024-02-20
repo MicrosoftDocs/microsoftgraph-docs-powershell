@@ -15,7 +15,8 @@ Update the navigation property managedTenantAlerts in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlert -ManagedTenantAlertId <String>
- [-AdditionalProperties <Hashtable>] [-AlertData <IMicrosoftGraphManagedTenantsAlertData>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AlertData <IMicrosoftGraphManagedTenantsAlertData>]
  [-AlertDataReferenceStrings <IMicrosoftGraphManagedTenantsAlertDataReferenceString[]>]
  [-AlertLogs <IMicrosoftGraphManagedTenantsManagedTenantAlertLog[]>]
  [-AlertRule <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>] [-AlertRuleDisplayName <String>]
@@ -31,14 +32,15 @@ Update-MgBetaTenantRelationshipManagedTenantAlert -ManagedTenantAlertId <String>
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlert -ManagedTenantAlertId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlert -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-AlertData <IMicrosoftGraphManagedTenantsAlertData>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AlertData <IMicrosoftGraphManagedTenantsAlertData>]
  [-AlertDataReferenceStrings <IMicrosoftGraphManagedTenantsAlertDataReferenceString[]>]
  [-AlertLogs <IMicrosoftGraphManagedTenantsManagedTenantAlertLog[]>]
  [-AlertRule <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>] [-AlertRuleDisplayName <String>]
@@ -54,8 +56,8 @@ Update-MgBetaTenantRelationshipManagedTenantAlert -InputObject <IManagedTenantsI
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlert -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlert> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -402,6 +404,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 alertSeverity
 
@@ -504,7 +521,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlert
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

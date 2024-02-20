@@ -14,10 +14,10 @@ Create new navigation property to vendors for financials
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaFinancialCompanyVendor -CompanyId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-Balance <Decimal>] [-Blocked <String>]
- [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>] [-DisplayName <String>]
- [-Email <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+New-MgBetaFinancialCompanyVendor -CompanyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-Balance <Decimal>]
+ [-Blocked <String>] [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
+ [-DisplayName <String>] [-Email <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-PaymentMethod <IMicrosoftGraphPaymentMethod>] [-PaymentMethodId <String>]
  [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Website <String>]
@@ -27,15 +27,16 @@ New-MgBetaFinancialCompanyVendor -CompanyId <String> [-AdditionalProperties <Has
 ### Create
 ```
 New-MgBetaFinancialCompanyVendor -CompanyId <String> -BodyParameter <IMicrosoftGraphVendor>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPostalAddressType>] [-Balance <Decimal>] [-Blocked <String>]
- [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>] [-DisplayName <String>]
- [-Email <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-Balance <Decimal>]
+ [-Blocked <String>] [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
+ [-DisplayName <String>] [-Email <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-PaymentMethod <IMicrosoftGraphPaymentMethod>] [-PaymentMethodId <String>]
  [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Website <String>]
@@ -45,7 +46,8 @@ New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> [-Additional
 ### CreateViaIdentity
 ```
 New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphVendor>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -405,6 +407,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaxLiable
 .
 
@@ -492,7 +509,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVendor
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,8 +18,8 @@ Update the properties of an application object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaApplicationByUniqueName -UniqueName <String> [-AdditionalProperties <Hashtable>]
- [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
+Update-MgBetaApplicationByUniqueName -UniqueName <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
  [-Certification <IMicrosoftGraphCertification>] [-ConnectorGroup <IMicrosoftGraphConnectorGroup>]
@@ -52,9 +52,9 @@ Update-MgBetaApplicationByUniqueName -UniqueName <String> [-AdditionalProperties
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaApplicationByUniqueName [-UniqueName <String>] -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
- [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
- [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>]
+ [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
+ [-AppRoles <IMicrosoftGraphAppRole[]>] [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
  [-Certification <IMicrosoftGraphCertification>] [-ConnectorGroup <IMicrosoftGraphConnectorGroup>]
  [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
  [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
@@ -85,14 +85,15 @@ Update-MgBetaApplicationByUniqueName [-UniqueName <String>] -InputObject <IAppli
 ### Update
 ```
 Update-MgBetaApplicationByUniqueName -UniqueName <String> -BodyParameter <IMicrosoftGraphApplication>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphApplication> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApplication> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -776,6 +777,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SamlMetadataUrl
 The URL where the service exposes SAML metadata for federation.
 This property is valid only for single-tenant applications.
@@ -1080,7 +1096,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

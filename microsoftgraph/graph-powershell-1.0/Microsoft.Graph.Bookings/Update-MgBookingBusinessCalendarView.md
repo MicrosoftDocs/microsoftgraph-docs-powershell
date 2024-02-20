@@ -18,6 +18,28 @@ Update the navigation property calendarView in solutions
 ### UpdateExpanded (Default)
 ```
 Update-MgBookingBusinessCalendarView -BookingAppointmentId <String> -BookingBusinessId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
+ [-AnonymousJoinWebUrl <String>] [-CustomerTimeZone <String>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
+ [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
+ [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
+ [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBookingBusinessCalendarView -BookingAppointmentId <String> -BookingBusinessId <String>
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
  [-CustomerTimeZone <String>] [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]
  [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -29,32 +51,11 @@ Update-MgBookingBusinessCalendarView -BookingAppointmentId <String> -BookingBusi
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBookingBusinessCalendarView -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
- [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
- [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
- [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
- [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -406,6 +407,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SelfServiceAppointmentId
 An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
 Only supported for appointment if maxAttendeeCount is 1.
@@ -574,7 +590,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

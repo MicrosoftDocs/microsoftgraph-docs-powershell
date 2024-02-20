@@ -17,11 +17,11 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupHistory fo
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory [-AdditionalProperties <Hashtable>]
- [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>] [-DeviceId <String>]
- [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>]
- [-Id <String>] [-IsFeatureUpdate] [-IsFirstLogin] [-OperatingSystemVersion <String>]
- [-ResponsiveDesktopTimeInMS <Int32>]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>]
+ [-DeviceId <String>] [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>]
+ [-GroupPolicyLoginTimeInMS <Int32>] [-Id <String>] [-IsFeatureUpdate] [-IsFirstLogin]
+ [-OperatingSystemVersion <String>] [-ResponsiveDesktopTimeInMS <Int32>]
  [-RestartCategory <UserExperienceAnalyticsOperatingSystemRestartCategory>] [-RestartFaultBucket <String>]
  [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>] [-TotalLoginTimeInMS <Int32>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,8 +30,9 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory [-Additiona
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -271,6 +272,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponsiveDesktopTimeInMS
 The time for desktop to become responsive during login process in milliseconds.
 Supports: $select, $OrderBy.
@@ -434,7 +450,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

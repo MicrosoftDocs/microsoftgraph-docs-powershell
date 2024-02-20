@@ -20,9 +20,9 @@ Assignments start in the Draft state, which means that students will not see the
 
 ### CreateExpanded (Default)
 ```
-New-MgEducationClassAssignment -EducationClassId <String> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions]
- [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
+New-MgEducationClassAssignment -EducationClassId <String> [-ResponseHeadersVariable <String>]
+ [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <String>]
@@ -36,14 +36,15 @@ New-MgEducationClassAssignment -EducationClassId <String> [-AddToCalendarAction 
 ### Create
 ```
 New-MgEducationClassAssignment -EducationClassId <String> -BodyParameter <IMicrosoftGraphEducationAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions]
- [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
+New-MgEducationClassAssignment -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>]
+ [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <String>]
@@ -57,8 +58,8 @@ New-MgEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCalendar
 ### CreateViaIdentity
 ```
 New-MgEducationClassAssignment -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -500,6 +501,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rubric
 educationRubric
 To construct, see NOTES section for RUBRIC properties and create a hash table.
@@ -591,7 +607,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,25 +15,7 @@ Update the navigation property microsoftTunnelConfiguration in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration -MicrosoftTunnelSiteId <String>
- [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
- [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
- [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
- [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
- [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration -MicrosoftTunnelSiteId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>] [-DefaultDomainSuffix <String>] [-Description <String>]
  [-DisableUdpConnections] [-DisplayName <String>] [-DnsServers <String[]>] [-Id <String>]
  [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>]
@@ -42,11 +24,31 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration -MicrosoftTunnelSiteId <String>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
+ [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
+ [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
+ [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
+ [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -299,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance
 
@@ -433,7 +450,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,33 +15,35 @@ Update the navigation property alertDefinitions in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -UnifiedRoleManagementAlertDefinitionId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-HowToPrevent <String>]
- [-Id <String>] [-IsConfigurable] [-IsRemediatable] [-MitigationSteps <String>] [-ScopeId <String>]
- [-ScopeType <String>] [-SecurityImpact <String>] [-SeverityLevel <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-HowToPrevent <String>] [-Id <String>] [-IsConfigurable] [-IsRemediatable]
+ [-MitigationSteps <String>] [-ScopeId <String>] [-ScopeType <String>] [-SecurityImpact <String>]
+ [-SeverityLevel <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -UnifiedRoleManagementAlertDefinitionId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-HowToPrevent <String>]
- [-Id <String>] [-IsConfigurable] [-IsRemediatable] [-MitigationSteps <String>] [-ScopeId <String>]
- [-ScopeType <String>] [-SecurityImpact <String>] [-SeverityLevel <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-HowToPrevent <String>] [-Id <String>] [-IsConfigurable] [-IsRemediatable]
+ [-MitigationSteps <String>] [-ScopeId <String>] [-ScopeType <String>] [-SecurityImpact <String>]
+ [-SeverityLevel <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -234,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeId
 The identifier of the scope where the alert is related.
 / is the only supported one for the tenant.
@@ -355,7 +372,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

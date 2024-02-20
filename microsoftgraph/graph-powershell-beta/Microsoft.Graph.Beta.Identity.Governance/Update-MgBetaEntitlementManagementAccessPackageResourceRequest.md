@@ -15,35 +15,37 @@ Update the navigation property accessPackageResourceRequests in identityGovernan
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRequest -AccessPackageResourceRequestId <String>
- [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>] [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-ExecuteImmediately] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-IsValidationOnly] [-Justification <String>] [-RequestState <String>] [-RequestStatus <String>]
- [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>]
+ [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-ExecuteImmediately]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
+ [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRequest -AccessPackageResourceRequestId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>] [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-ExecuteImmediately] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-IsValidationOnly] [-Justification <String>] [-RequestState <String>] [-RequestStatus <String>]
- [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>]
+ [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-ExecuteImmediately]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
+ [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,6 +316,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -356,7 +373,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

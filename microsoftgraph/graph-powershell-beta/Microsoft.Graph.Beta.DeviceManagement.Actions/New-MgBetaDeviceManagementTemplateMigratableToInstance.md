@@ -15,8 +15,8 @@ Invoke action createInstance
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementTemplateMigratableToInstance -DeviceManagementTemplateId <String>
- -DeviceManagementTemplateId1 <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-RoleScopeTagIds <String[]>]
+ -DeviceManagementTemplateId1 <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>] [-RoleScopeTagIds <String[]>]
  [-SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,22 +26,25 @@ New-MgBetaDeviceManagementTemplateMigratableToInstance -DeviceManagementTemplate
 New-MgBetaDeviceManagementTemplateMigratableToInstance -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String>
  -BodyParameter <IPathsPamc92DevicemanagementTemplatesDevicemanagementtemplateIdMigratabletoDevicemanagementtemplateId1MicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementTemplateMigratableToInstance -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
- [-RoleScopeTagIds <String[]>] [-SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-RoleScopeTagIds <String[]>]
+ [-SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementTemplateMigratableToInstance -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsPamc92DevicemanagementTemplatesDevicemanagementtemplateIdMigratabletoDevicemanagementtemplateId1MicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 .
 
@@ -259,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

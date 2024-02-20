@@ -18,34 +18,34 @@ Create a new deviceInstallState object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-DeviceName <String>] [-ErrorCode <String>] [-Id <String>]
- [-InstallState <InstallState>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>] [-OSVersion <String>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId <String>
- -BodyParameter <IMicrosoftGraphDeviceInstallState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporateManagementIdentity>
+New-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-DeviceName <String>] [-ErrorCode <String>]
  [-Id <String>] [-InstallState <InstallState>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId <String>
+ -BodyParameter <IMicrosoftGraphDeviceInstallState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
+ [-DeviceName <String>] [-ErrorCode <String>] [-Id <String>] [-InstallState <InstallState>]
+ [-LastSyncDateTime <DateTime>] [-OSDescription <String>] [-OSVersion <String>] [-UserName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceInstallState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceInstallState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -266,6 +266,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserName
 Device User Name.
 
@@ -323,7 +338,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceInstallState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

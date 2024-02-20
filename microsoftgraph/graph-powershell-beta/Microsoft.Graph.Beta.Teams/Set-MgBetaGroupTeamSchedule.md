@@ -17,8 +17,9 @@ Update the navigation property schedule in groups
 
 ### SetExpanded (Default)
 ```
-Set-MgBetaGroupTeamSchedule -GroupId <String> [-ActivitiesIncludedWhenCopyingShiftsEnabled]
- [-AdditionalProperties <Hashtable>] [-DayNotes <IMicrosoftGraphDayNote[]>] [-Enabled] [-Id <String>]
+Set-MgBetaGroupTeamSchedule -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-ActivitiesIncludedWhenCopyingShiftsEnabled] [-AdditionalProperties <Hashtable>]
+ [-DayNotes <IMicrosoftGraphDayNote[]>] [-Enabled] [-Id <String>]
  [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
@@ -34,14 +35,16 @@ Set-MgBetaGroupTeamSchedule -GroupId <String> [-ActivitiesIncludedWhenCopyingShi
 
 ### Set
 ```
-Set-MgBetaGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-ActivitiesIncludedWhenCopyingShiftsEnabled]
- [-AdditionalProperties <Hashtable>] [-DayNotes <IMicrosoftGraphDayNote[]>] [-Enabled] [-Id <String>]
+Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivitiesIncludedWhenCopyingShiftsEnabled] [-AdditionalProperties <Hashtable>]
+ [-DayNotes <IMicrosoftGraphDayNote[]>] [-Enabled] [-Id <String>]
  [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
@@ -58,7 +61,8 @@ Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-ActivitiesIncludedWh
 ### SetViaIdentity
 ```
 Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -306,6 +310,21 @@ operationStatus
 Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -591,7 +610,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

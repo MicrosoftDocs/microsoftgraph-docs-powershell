@@ -15,16 +15,16 @@ Update profilePhoto for the navigation property presenters in solutions
 ### Set (Default)
 ```
 Set-MgBetaVirtualEventSessionPresenterProfilePhoto -VirtualEventId <String> -VirtualEventPresenterId <String>
- -VirtualEventSessionId <String> [-Data <Stream>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -VirtualEventSessionId <String> [-Data <Stream>] [-ResponseHeadersVariable <String>] -InFile <String>
+ [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaVirtualEventSessionPresenterProfilePhoto -InputObject <IBookingsIdentity> [-Data <Stream>]
- -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -140,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -VirtualEventId
 The unique identifier of virtualEvent
 
@@ -228,7 +243,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

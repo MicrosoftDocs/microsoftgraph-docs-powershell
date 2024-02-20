@@ -15,7 +15,7 @@ Create new navigation property to defaultUserRoleOverrides for policies
 ### CreateExpanded (Default)
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
  [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,14 +23,14 @@ New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyI
 ### Create
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyId <String>
- -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
  [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +38,8 @@ New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdenti
 ### CreateViaIdentity
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -170,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RolePermissions
 .
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
@@ -228,7 +243,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultUserRoleOverride
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

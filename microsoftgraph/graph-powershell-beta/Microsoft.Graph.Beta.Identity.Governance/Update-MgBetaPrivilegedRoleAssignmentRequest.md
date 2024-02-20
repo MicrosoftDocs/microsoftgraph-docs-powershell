@@ -15,8 +15,8 @@ Update entity in privilegedRoleAssignmentRequests
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId <String>
- [-AdditionalProperties <Hashtable>] [-AssignmentState <String>] [-Duration <String>] [-Id <String>]
- [-Reason <String>] [-RequestedDateTime <DateTime>] [-RoleId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignmentState <String>]
+ [-Duration <String>] [-Id <String>] [-Reason <String>] [-RequestedDateTime <DateTime>] [-RoleId <String>]
  [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-Schedule <IMicrosoftGraphGovernanceSchedule>] [-Status <String>]
  [-TicketNumber <String>] [-TicketSystem <String>] [-Type <String>] [-UserId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,15 +25,15 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId 
 ### Update
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignmentState <String>] [-Duration <String>] [-Id <String>]
- [-Reason <String>] [-RequestedDateTime <DateTime>] [-RoleId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignmentState <String>]
+ [-Duration <String>] [-Id <String>] [-Reason <String>] [-RequestedDateTime <DateTime>] [-RoleId <String>]
  [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-Schedule <IMicrosoftGraphGovernanceSchedule>] [-Status <String>]
  [-TicketNumber <String>] [-TicketSystem <String>] [-Type <String>] [-UserId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,8 +42,8 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceId
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -219,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleId
 .
 
@@ -383,7 +398,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

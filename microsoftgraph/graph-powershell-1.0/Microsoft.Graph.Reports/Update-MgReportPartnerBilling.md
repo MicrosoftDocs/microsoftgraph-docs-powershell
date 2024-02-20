@@ -17,16 +17,17 @@ Update the navigation property billing in reports
 
 ### UpdateExpanded (Default)
 ```
-Update-MgReportPartnerBilling [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Manifests <IMicrosoftGraphPartnersBillingManifest[]>]
+Update-MgReportPartnerBilling [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Manifests <IMicrosoftGraphPartnersBillingManifest[]>]
  [-Operations <IMicrosoftGraphPartnersBillingOperation[]>] [-Usage <IMicrosoftGraphPartnersBillingAzureUsage>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgReportPartnerBilling -BodyParameter <IMicrosoftGraphPartnersBilling> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgReportPartnerBilling -BodyParameter <IMicrosoftGraphPartnersBilling>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -143,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Usage
 azureUsage
 To construct, see NOTES section for USAGE properties and create a hash table.
@@ -200,7 +216,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPartnersBilling
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

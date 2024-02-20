@@ -18,8 +18,8 @@ Update the properties of a termsAndConditions object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId <String> [-AcceptanceStatement <String>]
- [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
+Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId <String> [-ResponseHeadersVariable <String>]
+ [-AcceptanceStatement <String>] [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]
  [-BodyText <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Title <String>] [-Version <Int32>]
@@ -29,14 +29,15 @@ Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId <String> [-Accep
 ### Update
 ```
 Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId <String>
- -BodyParameter <IMicrosoftGraphTermsAndConditions> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermsAndConditions> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdministrationIdentity>
- [-AcceptanceStatement <String>] [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
+ [-ResponseHeadersVariable <String>] [-AcceptanceStatement <String>]
+ [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]
  [-BodyText <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Title <String>] [-Version <Int32>]
@@ -46,8 +47,8 @@ Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdminis
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphTermsAndConditions> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermsAndConditions> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TermsAndConditionsId
 The unique identifier of termsAndConditions
 
@@ -363,7 +379,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

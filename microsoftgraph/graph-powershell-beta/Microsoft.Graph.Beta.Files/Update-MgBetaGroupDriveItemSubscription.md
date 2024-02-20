@@ -18,25 +18,7 @@ Update the navigation property subscriptions in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupDriveItemSubscription -DriveId <String> -DriveItemId <String> -GroupId <String>
- -SubscriptionId <String> [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>]
- [-ClientState <String>] [-CreatorId <String>] [-EncryptionCertificate <String>]
- [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
- [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>]
- [-NotificationQueryOptions <String>] [-NotificationUrl <String>] [-NotificationUrlAppId <String>]
- [-Resource <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaGroupDriveItemSubscription -DriveId <String> -DriveItemId <String> -GroupId <String>
- -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaGroupDriveItemSubscription -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ -SubscriptionId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
  [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
@@ -45,11 +27,29 @@ Update-MgBetaGroupDriveItemSubscription -InputObject <IFilesIdentity> [-Addition
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaGroupDriveItemSubscription -DriveId <String> -DriveItemId <String> -GroupId <String>
+ -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaGroupDriveItemSubscription -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
+ [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
+ [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
+ [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupDriveItemSubscription -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphSubscription> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -469,6 +469,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubscriptionId
 The unique identifier of subscription
 
@@ -526,7 +541,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscription
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

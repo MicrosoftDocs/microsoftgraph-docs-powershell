@@ -15,25 +15,26 @@ Update the navigation property jobs in print
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
- [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
- [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
- [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-CompletedDateTime <DateTime>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
+ [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable]
+ [-RedirectedFrom <String>] [-RedirectedTo <String>] [-Status <IMicrosoftGraphPrintJobStatus>]
+ [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrintPrinterShareJob -PrintJobId <String> -PrinterShareId <String>
- -BodyParameter <IMicrosoftGraphPrintJob> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintJob> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-AcknowledgedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
+Update-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
  [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
@@ -44,8 +45,8 @@ Update-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Ac
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintJob> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintJob> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -345,6 +346,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 printJobStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
@@ -419,7 +435,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJob
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,8 +14,8 @@ Create new navigation property to enterpriseApps for roleManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaRoleManagementEnterpriseApp [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
+New-MgBetaRoleManagementEnterpriseApp [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
  [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]
@@ -31,8 +31,9 @@ New-MgBetaRoleManagementEnterpriseApp [-AdditionalProperties <Hashtable>] [-Id <
 
 ### Create
 ```
-New-MgBetaRoleManagementEnterpriseApp -BodyParameter <IMicrosoftGraphRbacApplication> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRoleManagementEnterpriseApp -BodyParameter <IMicrosoftGraphRbacApplication>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -125,6 +126,21 @@ To construct, see NOTES section for RESOURCENAMESPACES properties and create a h
 Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -334,7 +350,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

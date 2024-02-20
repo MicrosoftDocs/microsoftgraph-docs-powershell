@@ -15,24 +15,25 @@ Update the navigation property microsoftTunnelServers in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -MicrosoftTunnelServerId <String>
- -MicrosoftTunnelSiteId <String> [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>]
- [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
- [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MicrosoftTunnelSiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AgentImageDigest <String>] [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>]
+ [-ServerImageDigest <String>] [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -MicrosoftTunnelServerId <String>
- -MicrosoftTunnelSiteId <String> -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MicrosoftTunnelSiteId <String> -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>] [-DisplayName <String>] [-Id <String>]
- [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
  [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,8 +41,8 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObje
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServer> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -218,6 +219,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServerImageDigest
 The digest of the current server image running on this server
 
@@ -290,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServer
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,20 +17,22 @@ Create new navigation property to payloads for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationPayload [-AdditionalProperties <Hashtable>] [-Brand <String>]
- [-Complexity <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-Detail <IMicrosoftGraphPayloadDetail>] [-DisplayName <String>] [-Id <String>]
- [-Industry <String>] [-IsAutomated] [-IsControversial] [-IsCurrentEvent] [-Language <String>]
- [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>]
- [-Platform <String>] [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>]
- [-Status <String>] [-Technique <String>] [-Theme <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationPayload [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Brand <String>] [-Complexity <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-Detail <IMicrosoftGraphPayloadDetail>]
+ [-DisplayName <String>] [-Id <String>] [-Industry <String>] [-IsAutomated] [-IsControversial]
+ [-IsCurrentEvent] [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+ [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>] [-Platform <String>]
+ [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>] [-Status <String>]
+ [-Technique <String>] [-Theme <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAttackSimulationPayload -BodyParameter <IMicrosoftGraphPayload> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationPayload -BodyParameter <IMicrosoftGraphPayload>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -379,6 +381,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SimulationAttackType
 simulationAttackType
 
@@ -495,7 +512,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPayload
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

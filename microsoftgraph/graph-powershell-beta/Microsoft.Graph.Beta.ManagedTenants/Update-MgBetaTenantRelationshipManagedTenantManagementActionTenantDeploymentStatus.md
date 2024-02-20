@@ -15,7 +15,8 @@ Update the navigation property managementActionTenantDeploymentStatuses in tenan
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
- -ManagementActionTenantDeploymentStatusId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ -ManagementActionTenantDeploymentStatusId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Statuses <IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus[]>] [-TenantGroupId <String>]
  [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -25,25 +26,27 @@ Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStat
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
  -ManagementActionTenantDeploymentStatusId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Statuses <IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus[]>] [-TenantGroupId <String>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Statuses <IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus[]>]
+ [-TenantGroupId <String>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
  -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -159,6 +162,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Statuses
 The collection of deployment status for each instance of a management action.
 Optional.
@@ -252,7 +270,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -16,30 +16,31 @@ Update the navigation property groupPolicySettingMappings in deviceManagement
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -GroupPolicyMigrationReportId <String> -GroupPolicySettingMappingId <String>
- [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>]
- [-Id <String>] [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
- [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
- [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
- [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
- [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
- [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>]
+ [-ChildIdList <String[]>] [-Id <String>] [-IntuneSettingDefinitionId <String>]
+ [-IntuneSettingUriList <String[]>] [-IsMdmSupported] [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>]
+ [-MdmSettingUri <String>] [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>]
+ [-SettingCategory <String>] [-SettingDisplayName <String>] [-SettingDisplayValue <String>]
+ [-SettingDisplayValueType <String>] [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>]
+ [-SettingType <GroupPolicySettingType>] [-SettingValue <String>] [-SettingValueDisplayUnits <String>]
+ [-SettingValueType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -GroupPolicyMigrationReportId <String> -GroupPolicySettingMappingId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>] [-Id <String>]
- [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>]
+ [-Id <String>] [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
  [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
  [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
  [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
@@ -52,8 +53,8 @@ Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 ```
 Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -334,6 +335,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingCategory
 The category the group policy setting is in.
 
@@ -526,7 +542,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

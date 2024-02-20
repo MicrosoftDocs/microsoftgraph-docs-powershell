@@ -15,39 +15,41 @@ Update the navigation property comanagementEligibleDevices in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
- [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
- [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
- [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
- [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
- [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ClientRegistrationStatus <DeviceRegistrationState>] [-DeviceName <String>] [-DeviceType <DeviceType>]
+ [-EntitySource <Int32>] [-Id <String>] [-ManagementAgents <ManagementAgentType>]
+ [-ManagementState <ManagementState>] [-Manufacturer <String>] [-MdmStatus <String>] [-Model <String>]
+ [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <OwnerType>] [-ReferenceId <String>]
+ [-SerialNumber <String>] [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
- -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
- [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
- [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
- [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
- [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
- [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ClientRegistrationStatus <DeviceRegistrationState>] [-DeviceName <String>] [-DeviceType <DeviceType>]
+ [-EntitySource <Int32>] [-Id <String>] [-ManagementAgents <ManagementAgentType>]
+ [-ManagementState <ManagementState>] [-Manufacturer <String>] [-MdmStatus <String>] [-Model <String>]
+ [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <OwnerType>] [-ReferenceId <String>]
+ [-SerialNumber <String>] [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>]
+ [-UserId <String>] [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -358,6 +360,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 SerialNumber
 
@@ -490,7 +507,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

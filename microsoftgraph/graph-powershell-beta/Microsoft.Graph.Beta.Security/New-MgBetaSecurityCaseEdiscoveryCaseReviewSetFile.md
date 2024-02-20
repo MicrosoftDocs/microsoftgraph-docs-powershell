@@ -15,7 +15,7 @@ Create new navigation property to files for security
 ### CreateExpanded (Default)
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian>] [-DateTime <DateTime>] [-Extension <String>]
  [-ExtractedTextContentInputFile <String>] [-Id <String>] [-MediaType <String>] [-Name <String>]
  [-OtherProperties <Hashtable>] [-ProcessingStatus <String>] [-SenderOrAuthors <String[]>] [-Size <Int64>]
@@ -26,14 +26,14 @@ New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -Ed
 ### Create
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian>] [-DateTime <DateTime>] [-Extension <String>]
  [-ExtractedTextContentInputFile <String>] [-Id <String>] [-MediaType <String>] [-Name <String>]
  [-OtherProperties <Hashtable>] [-ProcessingStatus <String>] [-SenderOrAuthors <String[]>] [-Size <Int64>]
@@ -44,8 +44,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentit
 ### CreateViaIdentity
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +312,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SenderOrAuthors
 .
 
@@ -430,7 +445,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryFile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

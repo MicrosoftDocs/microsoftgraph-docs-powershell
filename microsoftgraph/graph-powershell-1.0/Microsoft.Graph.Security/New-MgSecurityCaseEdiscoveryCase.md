@@ -18,8 +18,8 @@ Create a new ediscoveryCase object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityCaseEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>]
- [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
+New-MgSecurityCaseEdiscoveryCase [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
  [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
  [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>]
@@ -35,7 +35,8 @@ New-MgSecurityCaseEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedBy 
 ### Create
 ```
 New-MgSecurityCaseEdiscoveryCase -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewSets
 Returns a list of eDiscoveryReviewSet objects in the case.
 To construct, see NOTES section for REVIEWSETS properties and create a hash table.
@@ -434,7 +450,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,20 +14,20 @@ Create new navigation property to microsoftTunnelConfigurations for deviceManage
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementMicrosoftTunnelConfiguration [-AdditionalProperties <Hashtable>]
- [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>] [-DefaultDomainSuffix <String>] [-Description <String>]
- [-DisableUdpConnections] [-DisplayName <String>] [-DnsServers <String[]>] [-Id <String>]
- [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>]
- [-RouteExcludes <String[]>] [-RouteIncludes <String[]>] [-RoutesExclude <String[]>]
- [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
+New-MgBetaDeviceManagementMicrosoftTunnelConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
+ [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
+ [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
+ [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
+ [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelConfiguration
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -249,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance
 
@@ -382,7 +397,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

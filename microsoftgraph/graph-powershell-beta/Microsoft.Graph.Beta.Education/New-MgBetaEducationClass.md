@@ -22,7 +22,7 @@ Microsoft Teams provides a user interface for teachers to create teams for their
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaEducationClass [-AdditionalProperties <Hashtable>]
+New-MgBetaEducationClass [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssignmentCategories <IMicrosoftGraphEducationCategory[]>]
  [-AssignmentDefaults <IMicrosoftGraphEducationAssignmentDefaults>]
  [-AssignmentSettings <IMicrosoftGraphEducationAssignmentSettings>]
@@ -38,8 +38,8 @@ New-MgBetaEducationClass [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgBetaEducationClass -BodyParameter <IMicrosoftGraphEducationClass> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationClass -BodyParameter <IMicrosoftGraphEducationClass> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -446,6 +446,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schools
 All schools that this class is associated with.
 Nullable.
@@ -537,7 +552,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationClass
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

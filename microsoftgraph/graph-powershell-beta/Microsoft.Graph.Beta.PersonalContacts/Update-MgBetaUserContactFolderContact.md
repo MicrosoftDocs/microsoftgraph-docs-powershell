@@ -18,14 +18,15 @@ Update the navigation property contacts in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserContactFolderContact -ContactFolderId <String> -ContactId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>]
- [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>]
- [-Department <String>] [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
- [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
- [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
- [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssistantName <String>]
+ [-Birthday <DateTime>] [-Categories <String[]>] [-ChangeKey <String>] [-Children <String[]>]
+ [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
+ [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>] [-Gender <String>] [-Generation <String>]
+ [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>] [-Initials <String>] [-IsFavorite]
+ [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>] [-MiddleName <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-NickName <String>]
+ [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
  [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
@@ -37,21 +38,22 @@ Update-MgBetaUserContactFolderContact -ContactFolderId <String> -ContactId <Stri
 ### Update
 ```
 Update-MgBetaUserContactFolderContact -ContactFolderId <String> -ContactId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
- [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>]
- [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>]
- [-Department <String>] [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
- [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
- [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
- [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssistantName <String>]
+ [-Birthday <DateTime>] [-Categories <String[]>] [-ChangeKey <String>] [-Children <String[]>]
+ [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
+ [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>] [-Gender <String>] [-Generation <String>]
+ [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>] [-Initials <String>] [-IsFavorite]
+ [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>] [-MiddleName <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-NickName <String>]
+ [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
  [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
@@ -63,8 +65,8 @@ Update-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -692,6 +694,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the contact.
 Read-only.
@@ -888,7 +905,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

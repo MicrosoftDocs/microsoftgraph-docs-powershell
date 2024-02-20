@@ -20,34 +20,34 @@ This is opposed to transfering the call directly.
 
 ### TransferExpanded (Default)
 ```
-Move-MgCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
- [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>] [-Transferee <IMicrosoftGraphParticipantInfo>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Move-MgCommunicationCall -CallId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]
+ [-Transferee <IMicrosoftGraphParticipantInfo>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Transfer
 ```
 Move-MgCommunicationCall -CallId <String>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TransferViaIdentityExpanded
 ```
-Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>] [-Transferee <IMicrosoftGraphParticipantInfo>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]
+ [-Transferee <IMicrosoftGraphParticipantInfo>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TransferViaIdentity
 ```
 Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -306,6 +306,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Transferee
 participantInfo
 To construct, see NOTES section for TRANSFEREE properties and create a hash table.
@@ -380,7 +395,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

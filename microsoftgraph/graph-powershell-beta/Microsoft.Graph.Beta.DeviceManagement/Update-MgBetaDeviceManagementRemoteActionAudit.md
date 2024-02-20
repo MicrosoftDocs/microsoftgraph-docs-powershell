@@ -14,35 +14,35 @@ Update the navigation property remoteActionAudits in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String> [-Action <RemoteAction>]
- [-ActionState <String>] [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>]
- [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
+ [-ResponseHeadersVariable <String>] [-Action <RemoteAction>] [-ActionState <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
+ [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
- -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdentity>
- [-Action <RemoteAction>] [-ActionState <String>] [-AdditionalProperties <Hashtable>]
- [-DeviceDisplayName <String>] [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Action <RemoteAction>] [-ActionState <String>]
+ [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
+ [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -279,6 +279,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserName
 \[deprecated\] Please use InitiatedByUserPrincipalName instead.
 
@@ -336,7 +351,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

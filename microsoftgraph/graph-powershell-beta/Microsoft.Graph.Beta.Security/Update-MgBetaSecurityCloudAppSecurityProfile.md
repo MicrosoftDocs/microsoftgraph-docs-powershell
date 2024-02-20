@@ -15,11 +15,11 @@ Update the navigation property cloudAppSecurityProfiles in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityCloudAppSecurityProfile -CloudAppSecurityProfileId <String>
- [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
- [-CreatedDateTime <DateTime>] [-DeploymentPackageUrl <String>] [-DestinationServiceName <String>]
- [-Id <String>] [-IsSigned] [-LastModifiedDateTime <DateTime>] [-Manifest <String>] [-Name <String>]
- [-PermissionsRequired <String>] [-Platform <String>] [-PolicyName <String>] [-Publisher <String>]
- [-RiskScore <String>] [-Tags <String[]>] [-Type <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
+ [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DeploymentPackageUrl <String>]
+ [-DestinationServiceName <String>] [-Id <String>] [-IsSigned] [-LastModifiedDateTime <DateTime>]
+ [-Manifest <String>] [-Name <String>] [-PermissionsRequired <String>] [-Platform <String>]
+ [-PolicyName <String>] [-Publisher <String>] [-RiskScore <String>] [-Tags <String[]>] [-Type <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,18 +27,18 @@ Update-MgBetaSecurityCloudAppSecurityProfile -CloudAppSecurityProfileId <String>
 ### Update
 ```
 Update-MgBetaSecurityCloudAppSecurityProfile -CloudAppSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphCloudAppSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudAppSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
- [-CreatedDateTime <DateTime>] [-DeploymentPackageUrl <String>] [-DestinationServiceName <String>]
- [-Id <String>] [-IsSigned] [-LastModifiedDateTime <DateTime>] [-Manifest <String>] [-Name <String>]
- [-PermissionsRequired <String>] [-Platform <String>] [-PolicyName <String>] [-Publisher <String>]
- [-RiskScore <String>] [-Tags <String[]>] [-Type <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
+ [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DeploymentPackageUrl <String>]
+ [-DestinationServiceName <String>] [-Id <String>] [-IsSigned] [-LastModifiedDateTime <DateTime>]
+ [-Manifest <String>] [-Name <String>] [-PermissionsRequired <String>] [-Platform <String>]
+ [-PolicyName <String>] [-Publisher <String>] [-RiskScore <String>] [-Tags <String[]>] [-Type <String>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,8 +46,8 @@ Update-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphCloudAppSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudAppSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -358,6 +358,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -461,7 +476,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudAppSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

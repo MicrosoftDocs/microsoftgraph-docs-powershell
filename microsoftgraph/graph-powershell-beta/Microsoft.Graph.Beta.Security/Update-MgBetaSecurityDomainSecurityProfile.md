@@ -14,38 +14,40 @@ Update the navigation property domainSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityDomainSecurityProfile -DomainSecurityProfileId <String> [-ActivityGroupNames <String[]>]
- [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
- [-CountHits <Int32>] [-CountInOrg <Int32>] [-DomainCategories <IMicrosoftGraphReputationCategory[]>]
- [-DomainRegisteredDateTime <DateTime>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Name <String>] [-Registrant <IMicrosoftGraphDomainRegistrant>]
- [-RiskScore <String>] [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityDomainSecurityProfile -DomainSecurityProfileId <String>
+ [-ResponseHeadersVariable <String>] [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
+ [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CountHits <Int32>] [-CountInOrg <Int32>]
+ [-DomainCategories <IMicrosoftGraphReputationCategory[]>] [-DomainRegisteredDateTime <DateTime>]
+ [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
+ [-Registrant <IMicrosoftGraphDomainRegistrant>] [-RiskScore <String>] [-Tags <String[]>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityDomainSecurityProfile -DomainSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity> [-ActivityGroupNames <String[]>]
- [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
- [-CountHits <Int32>] [-CountInOrg <Int32>] [-DomainCategories <IMicrosoftGraphReputationCategory[]>]
- [-DomainRegisteredDateTime <DateTime>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Name <String>] [-Registrant <IMicrosoftGraphDomainRegistrant>]
- [-RiskScore <String>] [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
+ [-AzureTenantId <String>] [-CountHits <Int32>] [-CountInOrg <Int32>]
+ [-DomainCategories <IMicrosoftGraphReputationCategory[]>] [-DomainRegisteredDateTime <DateTime>]
+ [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
+ [-Registrant <IMicrosoftGraphDomainRegistrant>] [-RiskScore <String>] [-Tags <String[]>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -328,6 +330,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -416,7 +433,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

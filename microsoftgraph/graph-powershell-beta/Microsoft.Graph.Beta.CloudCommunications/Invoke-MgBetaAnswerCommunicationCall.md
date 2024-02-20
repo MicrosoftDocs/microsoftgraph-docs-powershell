@@ -23,35 +23,36 @@ The current timeout value is 15 seconds for regular scenarios, and 5 seconds for
 
 ### AnswerExpanded (Default)
 ```
-Invoke-MgBetaAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]>]
- [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
- [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Answer
-```
-Invoke-MgBetaAnswerCommunicationCall -CallId <String>
- -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### AnswerViaIdentityExpanded
-```
-Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+Invoke-MgBetaAnswerCommunicationCall -CallId <String> [-ResponseHeadersVariable <String>]
  [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>]
  [-CallbackUri <String>] [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### Answer
+```
+Invoke-MgBetaAnswerCommunicationCall -CallId <String>
+ -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AnswerViaIdentityExpanded
+```
+Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>]
+ [-CallOptions <Hashtable>] [-CallbackUri <String>] [-MediaConfig <IMicrosoftGraphMediaConfig>]
+ [-ParticipantCapacity <Int32>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### AnswerViaIdentity
 ```
 Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -301,6 +302,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -343,7 +359,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

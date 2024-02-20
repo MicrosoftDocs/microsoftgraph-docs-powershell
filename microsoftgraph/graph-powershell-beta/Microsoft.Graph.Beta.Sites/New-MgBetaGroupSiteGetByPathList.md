@@ -18,11 +18,12 @@ Create a new \[list\]\[\] in a \[site\]\[\].
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <String>
- [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
- [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
- [-Id <String>] [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-ResponseHeadersVariable <String>] [-Activities <IMicrosoftGraphItemActivityOld[]>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
+ [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
@@ -33,6 +34,36 @@ New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <Strin
 ### CreateExpanded1
 ```
 New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
+ [-ResponseHeadersVariable <String>] [-Activities <IMicrosoftGraphItemActivityOld[]>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
+ [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
+ [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
+ [-Subscriptions <IMicrosoftGraphSubscription[]>] [-System <Hashtable>] [-WebUrl <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
+ -BodyParameter <IMicrosoftGraphList> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphList> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
  [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
  [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
@@ -45,43 +76,14 @@ New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <Strin
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
-```
-New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
- -BodyParameter <IMicrosoftGraphList> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphList> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
- [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
- [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
- [-Subscriptions <IMicrosoftGraphSubscription[]>] [-System <Hashtable>] [-WebUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
- [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>] [-Id <String>]
- [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-Activities <IMicrosoftGraphItemActivityOld[]>] [-AdditionalProperties <Hashtable>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
+ [-Id <String>] [-Items <IMicrosoftGraphListItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-List <IMicrosoftGraphListInfo>] [-Name <String>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
@@ -92,13 +94,15 @@ New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> [-Activities <IMi
 ### CreateViaIdentity1
 ```
 New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -530,6 +534,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharepointIds
 sharepointIds
 To construct, see NOTES section for SHAREPOINTIDS properties and create a hash table.
@@ -650,7 +669,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphList
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

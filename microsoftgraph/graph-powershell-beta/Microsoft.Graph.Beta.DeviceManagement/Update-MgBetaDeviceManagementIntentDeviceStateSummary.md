@@ -15,31 +15,33 @@ Update the navigation property deviceStateSummary in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementIntentDeviceStateSummary -DeviceManagementIntentId <String>
- [-AdditionalProperties <Hashtable>] [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-FailedCount <Int32>]
- [-Id <String>] [-NotApplicableCount <Int32>] [-NotApplicablePlatformCount <Int32>] [-SuccessCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConflictCount <Int32>]
+ [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>] [-NotApplicableCount <Int32>]
+ [-NotApplicablePlatformCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementIntentDeviceStateSummary -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementIntentDeviceStateSummary -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ConflictCount <Int32>] [-ErrorCount <Int32>] [-FailedCount <Int32>]
- [-Id <String>] [-NotApplicableCount <Int32>] [-NotApplicablePlatformCount <Int32>] [-SuccessCount <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ConflictCount <Int32>]
+ [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>] [-NotApplicableCount <Int32>]
+ [-NotApplicablePlatformCount <Int32>] [-SuccessCount <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementIntentDeviceStateSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -230,6 +232,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SuccessCount
 Number of succeeded devices
 
@@ -287,7 +304,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceStateSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

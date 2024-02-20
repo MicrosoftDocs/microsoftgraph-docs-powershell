@@ -18,35 +18,37 @@ Update the navigation property logCollectionRequests in users
 ### UpdateExpanded (Default)
 ```
 Update-MgUserManagedDeviceLogCollectionResponse -DeviceLogCollectionResponseId <String>
- -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>]
- [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId1 <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ManagedDeviceId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ExpirationDateTimeUtc <DateTime>]
+ [-Id <String>] [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId1 <String>]
+ [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>] [-SizeInKb <Double>]
+ [-Status <AppLogUploadState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserManagedDeviceLogCollectionResponse -DeviceLogCollectionResponseId <String>
  -ManagedDeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserManagedDeviceLogCollectionResponse [-ManagedDeviceId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-EnrolledByUser <String>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ExpirationDateTimeUtc <DateTime>]
+ [-Id <String>] [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>]
+ [-RequestedDateTimeUtc <DateTime>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -279,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SizeInKb
 The size of the logs in KB.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
@@ -367,7 +384,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

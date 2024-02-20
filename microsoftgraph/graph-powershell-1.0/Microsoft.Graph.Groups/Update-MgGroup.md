@@ -18,12 +18,12 @@ The following table shows the types of members that can be added to either secur
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroup -GroupId <String> [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]
- [-AdditionalProperties <Hashtable>] [-AllowExternalSenders]
- [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AssignedLabels <IMicrosoftGraphAssignedLabel[]>]
- [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AutoSubscribeNewMembers]
- [-Calendar <IMicrosoftGraphCalendar>] [-CalendarView <IMicrosoftGraphEvent[]>] [-Classification <String>]
- [-Conversations <IMicrosoftGraphConversation[]>] [-CreatedDateTime <DateTime>]
+Update-MgGroup -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>] [-AdditionalProperties <Hashtable>]
+ [-AllowExternalSenders] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AssignedLabels <IMicrosoftGraphAssignedLabel[]>] [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]
+ [-AutoSubscribeNewMembers] [-Calendar <IMicrosoftGraphCalendar>] [-CalendarView <IMicrosoftGraphEvent[]>]
+ [-Classification <String>] [-Conversations <IMicrosoftGraphConversation[]>] [-CreatedDateTime <DateTime>]
  [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-Drives <IMicrosoftGraphDrive[]>]
  [-Events <IMicrosoftGraphEvent[]>] [-ExpirationDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
@@ -52,18 +52,18 @@ Update-MgGroup -GroupId <String> [-AcceptedSenders <IMicrosoftGraphDirectoryObje
 
 ### Update
 ```
-Update-MgGroup -GroupId <String> -BodyParameter <IMicrosoftGraphGroup> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroup -GroupId <String> -BodyParameter <IMicrosoftGraphGroup> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroup -InputObject <IGroupsIdentity> [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]
- [-AdditionalProperties <Hashtable>] [-AllowExternalSenders]
- [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AssignedLabels <IMicrosoftGraphAssignedLabel[]>]
- [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AutoSubscribeNewMembers]
- [-Calendar <IMicrosoftGraphCalendar>] [-CalendarView <IMicrosoftGraphEvent[]>] [-Classification <String>]
- [-Conversations <IMicrosoftGraphConversation[]>] [-CreatedDateTime <DateTime>]
+Update-MgGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
+ [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>] [-AdditionalProperties <Hashtable>]
+ [-AllowExternalSenders] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AssignedLabels <IMicrosoftGraphAssignedLabel[]>] [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]
+ [-AutoSubscribeNewMembers] [-Calendar <IMicrosoftGraphCalendar>] [-CalendarView <IMicrosoftGraphEvent[]>]
+ [-Classification <String>] [-Conversations <IMicrosoftGraphConversation[]>] [-CreatedDateTime <DateTime>]
  [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-Drives <IMicrosoftGraphDrive[]>]
  [-Events <IMicrosoftGraphEvent[]>] [-ExpirationDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
@@ -92,8 +92,9 @@ Update-MgGroup -InputObject <IGroupsIdentity> [-AcceptedSenders <IMicrosoftGraph
 
 ### UpdateViaIdentity
 ```
-Update-MgGroup -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphGroup> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroup -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphGroup>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -1208,6 +1209,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityEnabled
 Specifies whether the group is a security group.
 Required.
@@ -1475,7 +1491,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

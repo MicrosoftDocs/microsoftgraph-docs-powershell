@@ -15,6 +15,32 @@ Update the navigation property sessions in solutions
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaVirtualEventTownhallSession -VirtualEventSessionId <String> -VirtualEventTownhallId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
+ [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowedPresenters <String>]
+ [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Id <String>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
+ [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-RecordAutomatically]
+ [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>] [-ShareMeetingChatHistoryDefault <String>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-VideoTeleconferenceId <String>]
+ [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaVirtualEventTownhallSession -VirtualEventSessionId <String> -VirtualEventTownhallId <String>
+ -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
  [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
  [-AllowTranscription] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
@@ -31,37 +57,11 @@ Update-MgBetaVirtualEventTownhallSession -VirtualEventSessionId <String> -Virtua
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaVirtualEventTownhallSession -VirtualEventSessionId <String> -VirtualEventTownhallId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventSession> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-RecordAutomatically]
- [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>] [-ShareMeetingChatHistoryDefault <String>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-VideoTeleconferenceId <String>]
- [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventSession> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -521,6 +521,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShareMeetingChatHistoryDefault
 meetingChatHistoryDefaultMode
 
@@ -671,7 +686,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventSession
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

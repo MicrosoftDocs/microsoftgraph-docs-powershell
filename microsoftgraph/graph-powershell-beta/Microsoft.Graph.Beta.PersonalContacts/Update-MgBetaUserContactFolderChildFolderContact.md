@@ -18,7 +18,35 @@ Update the navigation property contacts in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserContactFolderChildFolderContact -ContactFolderId <String> -ContactFolderId1 <String>
- -ContactId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-AssistantName <String>]
+ -ContactId <String> -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>]
+ [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
+ [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
+ [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
+ [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
+ [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
+ [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
+ [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaUserContactFolderChildFolderContact -ContactFolderId <String> -ContactFolderId1 <String>
+ -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssistantName <String>]
  [-Birthday <DateTime>] [-Categories <String[]>] [-ChangeKey <String>] [-Children <String[]>]
  [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
  [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>] [-Extensions <IMicrosoftGraphExtension[]>]
@@ -35,37 +63,11 @@ Update-MgBetaUserContactFolderChildFolderContact -ContactFolderId <String> -Cont
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaUserContactFolderChildFolderContact -ContactFolderId <String> -ContactFolderId1 <String>
- -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentity>
- [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>]
- [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>]
- [-Department <String>] [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
- [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
- [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
- [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
- [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
- [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
- [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -708,6 +710,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the contact.
 Read-only.
@@ -904,7 +921,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

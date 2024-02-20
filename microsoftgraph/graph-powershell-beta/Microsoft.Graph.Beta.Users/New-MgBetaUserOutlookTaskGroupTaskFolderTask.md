@@ -17,29 +17,7 @@ The POST method always ignores the time portion of startDateTime and dueDateTime
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-AssignedTo <String>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
- [-ChangeKey <String>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>] [-CreatedDateTime <DateTime>]
- [-DueDateTime <IMicrosoftGraphDateTimeZone>] [-HasAttachments] [-Id <String>] [-Importance <String>]
- [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Owner <String>]
- [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
- [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssignedTo <String>] [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
  [-Categories <String[]>] [-ChangeKey <String>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>]
  [-CreatedDateTime <DateTime>] [-DueDateTime <IMicrosoftGraphDateTimeZone>] [-HasAttachments] [-Id <String>]
@@ -52,11 +30,34 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity> [-Add
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskGroupId <String>
+ -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CompletedDateTime <IMicrosoftGraphDateTimeZone>] [-CreatedDateTime <DateTime>]
+ [-DueDateTime <IMicrosoftGraphDateTimeZone>] [-HasAttachments] [-Id <String>] [-Importance <String>]
+ [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Owner <String>]
+ [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
+ [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphOutlookTask> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOutlookTask> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -460,6 +461,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sensitivity
 sensitivity
 
@@ -596,7 +612,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

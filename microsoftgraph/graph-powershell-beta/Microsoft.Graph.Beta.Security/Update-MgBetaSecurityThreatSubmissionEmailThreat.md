@@ -15,7 +15,8 @@ Update the navigation property emailThreats in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <String>
- [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
  [-AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>] [-Category <String>]
  [-ClientSource <String>] [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InternetMessageId <String>] [-OriginalCategory <String>]
@@ -29,14 +30,15 @@ Update-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <Strin
 ### Update
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <String>
- -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
  [-AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>] [-Category <String>]
  [-ClientSource <String>] [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InternetMessageId <String>] [-OriginalCategory <String>]
@@ -50,8 +52,8 @@ Update-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -337,6 +339,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Result
 submissionResult
 To construct, see NOTES section for RESULT properties and create a hash table.
@@ -503,7 +520,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

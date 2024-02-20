@@ -18,25 +18,27 @@ Update property mailboxSettings value.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting -WorkflowId <String>
- -WorkflowVersionNumber <Int32> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
- [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
- [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
- [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -WorkflowVersionNumber <Int32> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
+ [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
+ [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+ [-UserPurposeV2 <String>] [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting -WorkflowId <String>
- -WorkflowVersionNumber <Int32> -BodyParameter <IMicrosoftGraphMailboxSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -WorkflowVersionNumber <Int32> -BodyParameter <IMicrosoftGraphMailboxSettings>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
@@ -48,7 +50,8 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSett
 ```
 Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphMailboxSettings>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -211,6 +214,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TimeFormat
 The time format for the user's mailbox.
 
@@ -359,7 +377,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

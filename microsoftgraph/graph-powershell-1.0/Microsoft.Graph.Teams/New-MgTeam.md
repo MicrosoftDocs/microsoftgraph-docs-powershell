@@ -18,10 +18,11 @@ Create a new team.
 
 ### CreateExpanded (Default)
 ```
-New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel[]>]
- [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-FunSettings <IMicrosoftGraphTeamFunSettings>]
- [-Group <IMicrosoftGraphGroup>] [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
+New-MgTeam [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllChannels <IMicrosoftGraphChannel[]>] [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-FunSettings <IMicrosoftGraphTeamFunSettings>] [-Group <IMicrosoftGraphGroup>]
+ [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
  [-IncomingChannels <IMicrosoftGraphChannel[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
@@ -35,8 +36,8 @@ New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphCha
 
 ### Create
 ```
-New-MgTeam -BodyParameter <IMicrosoftGraphTeam> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgTeam -BodyParameter <IMicrosoftGraphTeam> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -687,6 +688,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 schedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -853,7 +869,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

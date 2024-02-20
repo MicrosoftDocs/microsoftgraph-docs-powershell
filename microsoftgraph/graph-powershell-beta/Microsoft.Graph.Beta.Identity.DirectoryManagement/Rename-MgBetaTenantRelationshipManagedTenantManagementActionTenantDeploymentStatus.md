@@ -15,16 +15,18 @@ Invoke action changeDeploymentStatus
 ### ChangeExpanded (Default)
 ```
 Rename-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
- [-AdditionalProperties <Hashtable>] [-ManagementActionId <String>] [-ManagementTemplateId <String>]
- [-ManagementTemplateVersion <Int32>] [-Status <String>] [-TenantGroupId <String>] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ManagementActionId <String>]
+ [-ManagementTemplateId <String>] [-ManagementTemplateVersion <Int32>] [-Status <String>]
+ [-TenantGroupId <String>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Change
 ```
 Rename-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
  -BodyParameter <IPathsNmcreiTenantrelationshipsManagedtenantsManagementactiontenantdeploymentstatusesMicrosoftGraphManagedtenantsChangedeploymentstatusPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -138,6 +140,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 .
 
@@ -224,7 +241,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,7 +17,7 @@ Update directory
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDirectory [-AdditionalProperties <Hashtable>]
+Update-MgBetaDirectory [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>] [-AttributeSets <IMicrosoftGraphAttributeSet[]>]
  [-CertificateAuthorities <IMicrosoftGraphCertificateAuthorityPath>]
  [-CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]
@@ -37,8 +37,8 @@ Update-MgBetaDirectory [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -334,6 +334,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedEmailDomains
 .
 To construct, see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
@@ -407,7 +422,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

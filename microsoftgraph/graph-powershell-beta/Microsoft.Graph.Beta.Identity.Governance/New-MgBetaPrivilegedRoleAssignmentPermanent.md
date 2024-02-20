@@ -15,29 +15,33 @@ Invoke action makePermanent
 ### MakeExpanded (Default)
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId <String>
- [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Reason <String>]
+ [-TicketNumber <String>] [-TicketSystem <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Make
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId <String>
  -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### MakeViaIdentityExpanded
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Reason <String>]
+ [-TicketNumber <String>] [-TicketSystem <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MakeViaIdentity
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -166,6 +170,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TicketNumber
 .
 
@@ -238,7 +257,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

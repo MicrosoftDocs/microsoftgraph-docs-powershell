@@ -15,10 +15,10 @@ Update the navigation property managedDeviceEncryptionStates in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementManagedDeviceEncryptionState -ManagedDeviceEncryptionStateId <String>
- [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>]
- [-DeviceType <DeviceTypes>] [-EncryptionPolicySettingState <String>]
- [-EncryptionReadinessState <EncryptionReadinessState>] [-EncryptionState <EncryptionState>]
- [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>] [-DeviceType <DeviceTypes>]
+ [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <EncryptionReadinessState>]
+ [-EncryptionState <EncryptionState>] [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
  [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -27,17 +27,17 @@ Update-MgBetaDeviceManagementManagedDeviceEncryptionState -ManagedDeviceEncrypti
 ### Update
 ```
 Update-MgBetaDeviceManagementManagedDeviceEncryptionState -ManagedDeviceEncryptionStateId <String>
- -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>]
- [-DeviceType <DeviceTypes>] [-EncryptionPolicySettingState <String>]
- [-EncryptionReadinessState <EncryptionReadinessState>] [-EncryptionState <EncryptionState>]
- [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>] [-DeviceType <DeviceTypes>]
+ [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <EncryptionReadinessState>]
+ [-EncryptionState <EncryptionState>] [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
  [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -46,8 +46,8 @@ Update-MgBetaDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceM
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -299,6 +299,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TpmSpecificationVersion
 Device TPM Version
 
@@ -371,7 +386,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

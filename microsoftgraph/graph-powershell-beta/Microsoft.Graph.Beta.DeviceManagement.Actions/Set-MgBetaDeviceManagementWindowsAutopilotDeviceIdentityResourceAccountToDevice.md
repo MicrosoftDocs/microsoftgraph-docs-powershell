@@ -15,9 +15,10 @@ Assigns resource account to Autopilot devices.
 ### AssignExpanded (Default)
 ```
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
- -WindowsAutopilotDeviceIdentityId <String> [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>]
- [-ResourceAccountName <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -WindowsAutopilotDeviceIdentityId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-ResourceAccountName <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign
@@ -25,17 +26,17 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
  -WindowsAutopilotDeviceIdentityId <String>
  -BodyParameter <IPaths1G076VfDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignresourceaccounttodevicePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
 ```
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-AddressableUserName <String>] [-ResourceAccountName <String>] [-UserPrincipalName <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-ResourceAccountName <String>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
@@ -43,8 +44,8 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
 Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1G076VfDevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignresourceaccounttodevicePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -174,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserPrincipalName
 .
 
@@ -246,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

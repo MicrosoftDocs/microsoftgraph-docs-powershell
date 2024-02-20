@@ -15,9 +15,9 @@ Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroup
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
- [-AdditionalProperties <Hashtable>] [-AnomalyCorrelationGroupCount <Int32>] [-AnomalyId <String>]
- [-CorrelationGroupAnomalousDeviceCount <Int32>] [-CorrelationGroupAtRiskDeviceCount <Int32>]
- [-CorrelationGroupDeviceCount <Int32>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AnomalyCorrelationGroupCount <Int32>] [-AnomalyId <String>] [-CorrelationGroupAnomalousDeviceCount <Int32>]
+ [-CorrelationGroupAtRiskDeviceCount <Int32>] [-CorrelationGroupDeviceCount <Int32>]
  [-CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>]
  [-CorrelationGroupId <String>]
  [-CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence>]
@@ -29,7 +29,8 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -259,6 +260,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TotalDeviceCount
 Indicates the total number of devices in the tenant.
 Valid values -2147483648 to 2147483647
@@ -316,7 +332,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

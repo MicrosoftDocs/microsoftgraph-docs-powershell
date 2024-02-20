@@ -18,7 +18,7 @@ Create a new termsAndConditions object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementTermAndCondition [-AcceptanceStatement <String>]
+New-MgDeviceManagementTermAndCondition [-ResponseHeadersVariable <String>] [-AcceptanceStatement <String>]
  [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]
  [-BodyText <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
@@ -29,7 +29,8 @@ New-MgDeviceManagementTermAndCondition [-AcceptanceStatement <String>]
 ### Create
 ```
 New-MgDeviceManagementTermAndCondition -BodyParameter <IMicrosoftGraphTermsAndConditions>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -240,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Title
 Administrator-supplied title of the terms and conditions.
 This is shown to the user on prompts to accept the T&C policy.
@@ -313,7 +329,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

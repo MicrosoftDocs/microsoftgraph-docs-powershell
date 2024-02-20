@@ -14,9 +14,10 @@ Update the navigation property shared in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
- [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
+Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>]
+ [-LastSharedMethod <IMicrosoftGraphEntity>] [-Resource <IMicrosoftGraphEntity>]
+ [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
  [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,15 +26,16 @@ Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String> [-Addi
 ### Update
 ```
 Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSharedInsight> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedInsight> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
- [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
+Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>]
+ [-LastSharedMethod <IMicrosoftGraphEntity>] [-Resource <IMicrosoftGraphEntity>]
+ [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
  [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,7 +44,8 @@ Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalPropert
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphSharedInsight>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -223,6 +226,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedInsightId
 The unique identifier of sharedInsight
 
@@ -311,7 +329,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

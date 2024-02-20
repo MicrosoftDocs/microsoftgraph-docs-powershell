@@ -15,7 +15,8 @@ Update the navigation property windowsManagedAppProtections in deviceAppManageme
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppProtectionId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
@@ -36,14 +37,15 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppPr
 ### Update
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
@@ -64,8 +66,8 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevic
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -607,6 +609,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -694,7 +711,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

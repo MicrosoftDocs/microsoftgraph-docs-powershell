@@ -17,13 +17,13 @@ Update entity in servicePrincipals
 
 ### UpdateExpanded (Default)
 ```
-Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
- [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
- [-AppDisplayName <String>] [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
- [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
- [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+Update-MgServicePrincipal -ServicePrincipalId <String> [-ResponseHeadersVariable <String>] [-AccountEnabled]
+ [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
+ [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
+ [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
+ [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-ApplicationTemplateId <String>] [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
@@ -53,14 +53,15 @@ Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIn
 ### Update
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
- [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
- [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
+Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>]
+ [-AlternativeNames <String[]>] [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
  [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
@@ -94,7 +95,8 @@ Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
 ### UpdateViaIdentity
 ```
 Update-MgServicePrincipal -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -918,6 +920,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SamlSingleSignOnSettings
 samlSingleSignOnSettings
 To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
@@ -1165,7 +1182,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

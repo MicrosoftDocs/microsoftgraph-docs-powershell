@@ -15,30 +15,32 @@ Create new navigation property to columns for groups
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -BaseSitePageId <String> -GroupId <String>
- -HorizontalSectionId <String> -SiteId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Webparts <IMicrosoftGraphWebPart[]>] [-Width <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -HorizontalSectionId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Webparts <IMicrosoftGraphWebPart[]>] [-Width <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -BaseSitePageId <String> -GroupId <String>
  -HorizontalSectionId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphHorizontalSectionColumn>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Webparts <IMicrosoftGraphWebPart[]>] [-Width <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Webparts <IMicrosoftGraphWebPart[]>] [-Width <Int32>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphHorizontalSectionColumn> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphHorizontalSectionColumn> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -184,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -275,7 +292,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSectionColumn
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

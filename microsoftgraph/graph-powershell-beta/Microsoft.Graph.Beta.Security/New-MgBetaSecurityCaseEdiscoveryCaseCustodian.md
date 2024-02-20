@@ -18,10 +18,11 @@ Create a new ediscoveryCustodian object.After the custodian object is created, y
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> [-AcknowledgedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>]
- [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
+New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
+ [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
+ [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,15 +31,15 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> [-Ackno
 ### Create
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
@@ -49,8 +50,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
 ### CreateViaIdentity
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -306,6 +307,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data source entity for SharePoint sites associated with the custodian.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -412,7 +428,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,8 @@ Create a new managedDevice object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementManagedDevice [-AdditionalProperties <Hashtable>] [-ComplianceState <ComplianceState>]
+New-MgDeviceManagementManagedDevice [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
  [-DeviceCategory <IMicrosoftGraphDeviceCategory>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
@@ -37,8 +38,9 @@ New-MgDeviceManagementManagedDevice [-AdditionalProperties <Hashtable>] [-Compli
 
 ### Create
 ```
-New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -377,6 +379,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Users
 The primary users associated with the managed device.
 To construct, see NOTES section for USERS properties and create a hash table.
@@ -450,7 +467,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

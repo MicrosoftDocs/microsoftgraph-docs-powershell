@@ -15,18 +15,20 @@ Create a new urlThreatSubmission object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityThreatSubmissionUrlThreat [-AdditionalProperties <Hashtable>]
- [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>] [-Category <String>] [-ClientSource <String>]
- [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-Result <IMicrosoftGraphSecuritySubmissionResult>]
- [-Source <String>] [-Status <String>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatSubmissionUrlThreat [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
+ [-Category <String>] [-ClientSource <String>] [-ContentType <String>]
+ [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>] [-TenantId <String>]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -221,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Result
 submissionResult
 To construct, see NOTES section for RESULT properties and create a hash table.
@@ -340,7 +357,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

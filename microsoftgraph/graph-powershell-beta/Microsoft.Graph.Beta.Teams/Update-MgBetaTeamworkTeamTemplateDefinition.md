@@ -15,6 +15,24 @@ Update the navigation property definitions in teamwork
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -TeamTemplateId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Audience <String>]
+ [-Categories <String[]>] [-Description <String>] [-DisplayName <String>] [-IconUrl <String>] [-Id <String>]
+ [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-ParentTemplateId <String>] [-PublisherName <String>] [-ShortDescription <String>]
+ [-TeamDefinition <IMicrosoftGraphTeam>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -TeamTemplateId <String>
+ -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Audience <String>] [-Categories <String[]>] [-Description <String>]
  [-DisplayName <String>] [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>]
@@ -22,28 +40,11 @@ Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -TeamTemplateId <String>
- -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Audience <String>] [-Categories <String[]>] [-Description <String>] [-DisplayName <String>]
- [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>] [-PublisherName <String>]
- [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamTemplateDefinition> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShortDescription
 A short-description of the team template as it will appear to the users in Microsoft Teams.
 
@@ -398,7 +414,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamTemplateDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

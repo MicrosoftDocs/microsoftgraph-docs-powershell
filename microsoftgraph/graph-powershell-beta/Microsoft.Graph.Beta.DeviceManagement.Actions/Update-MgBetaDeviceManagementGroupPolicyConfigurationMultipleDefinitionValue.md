@@ -15,10 +15,10 @@ Invoke action updateDefinitionValues
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
- -GroupPolicyConfigurationId <String> [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
- [-AdditionalProperties <Hashtable>] [-DeletedIds <String[]>]
- [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -GroupPolicyConfigurationId <String> [-ResponseHeadersVariable <String>]
+ [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-AdditionalProperties <Hashtable>]
+ [-DeletedIds <String[]>] [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -26,17 +26,17 @@ Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
 Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
  -GroupPolicyConfigurationId <String>
  -BodyParameter <IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
- -InputObject <IDeviceManagementActionsIdentity> [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
- [-AdditionalProperties <Hashtable>] [-DeletedIds <String[]>]
- [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-AdditionalProperties <Hashtable>]
+ [-DeletedIds <String[]>] [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -44,8 +44,8 @@ Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
 Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -191,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Updated
 .
 To construct, see NOTES section for UPDATED properties and create a hash table.
@@ -249,7 +264,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

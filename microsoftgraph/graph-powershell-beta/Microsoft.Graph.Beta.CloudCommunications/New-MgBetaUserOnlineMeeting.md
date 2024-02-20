@@ -18,18 +18,18 @@ Create an online meeting on behalf of a user.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
- [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording]
- [-AllowTeamworkReactions] [-AllowTranscription] [-AllowedPresenters <String>]
- [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
- [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
- [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+New-MgBetaUserOnlineMeeting -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
+ [-AllowTranscription] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
+ [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
+ [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
+ [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
+ [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
+ [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
@@ -42,15 +42,16 @@ New-MgBetaUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaUserOnlineMeeting -UserId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
+ [-AllowTranscription] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
@@ -71,8 +72,8 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Additi
 ### CreateViaIdentity
 ```
 New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnlineMeeting> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -759,6 +760,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShareMeetingChatHistoryDefault
 meetingChatHistoryDefaultMode
 
@@ -910,7 +926,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

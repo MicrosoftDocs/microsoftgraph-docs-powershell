@@ -15,9 +15,10 @@ Invoke action getHealthMetricTimeSeries
 ### GetExpanded (Default)
 ```
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries
- -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <DateTime>] [-MetricName <String>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-MetricName <String>]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -25,15 +26,17 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTi
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries
  -MicrosoftTunnelServerId <String> -MicrosoftTunnelSiteId <String>
  -BodyParameter <IPathsV1Rk0UDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-MetricName <String>] [-StartDateTime <DateTime>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-MetricName <String>]
+ [-StartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -41,7 +44,8 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTi
 Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsV1Rk0UDevicemanagementMicrosofttunnelsitesMicrosofttunnelsiteIdMicrosofttunnelserversMicrosofttunnelserverIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,6 +190,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 .
 
@@ -243,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMetricTimeSeriesDataPoint
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

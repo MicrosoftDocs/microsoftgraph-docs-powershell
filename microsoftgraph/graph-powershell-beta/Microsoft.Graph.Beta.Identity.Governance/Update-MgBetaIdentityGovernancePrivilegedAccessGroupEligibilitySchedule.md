@@ -18,10 +18,10 @@ Update the navigation property eligibilitySchedules in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
- -PrivilegedAccessGroupEligibilityScheduleId <String> [-AccessId <String>] [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-CreatedUsing <String>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>]
- [-Id <String>] [-MemberType <String>] [-ModifiedDateTime <DateTime>]
- [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
+ -PrivilegedAccessGroupEligibilityScheduleId <String> [-ResponseHeadersVariable <String>] [-AccessId <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-CreatedUsing <String>]
+ [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-MemberType <String>]
+ [-ModifiedDateTime <DateTime>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,17 +30,17 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
  -PrivilegedAccessGroupEligibilityScheduleId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
- -InputObject <IIdentityGovernanceIdentity> [-AccessId <String>] [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-CreatedUsing <String>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>]
- [-Id <String>] [-MemberType <String>] [-ModifiedDateTime <DateTime>]
- [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-AccessId <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-CreatedUsing <String>]
+ [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>] [-MemberType <String>]
+ [-ModifiedDateTime <DateTime>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,8 +49,8 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 ```
 Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -310,6 +310,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScheduleInfo
 requestSchedule
 To construct, see NOTES section for SCHEDULEINFO properties and create a hash table.
@@ -386,7 +401,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,9 +15,9 @@ Invoke action createToken
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
- -AndroidDeviceOwnerEnrollmentProfileId <String> [-AdditionalProperties <Hashtable>]
- [-TokenValidityInSeconds <Int32>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AndroidDeviceOwnerEnrollmentProfileId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TokenValidityInSeconds <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -25,16 +25,16 @@ New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
 New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
  -AndroidDeviceOwnerEnrollmentProfileId <String>
  -BodyParameter <IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-TokenValidityInSeconds <Int32>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TokenValidityInSeconds <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -42,8 +42,8 @@ New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
 New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TokenValidityInSeconds
 .
 
@@ -215,7 +230,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

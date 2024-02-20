@@ -14,18 +14,19 @@ Add new entity to privilegedOperationEvents
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrivilegedOperationEvent [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
- [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReferenceKey <String>]
- [-ReferenceSystem <String>] [-RequestType <String>] [-RequestorId <String>] [-RequestorName <String>]
- [-RoleId <String>] [-RoleName <String>] [-TenantId <String>] [-UserId <String>] [-UserMail <String>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaPrivilegedOperationEvent [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>]
+ [-AdditionalProperties <Hashtable>] [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestType <String>]
+ [-RequestorId <String>] [-RequestorName <String>] [-RoleId <String>] [-RoleName <String>] [-TenantId <String>]
+ [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPrivilegedOperationEvent -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -230,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleId
 .
 
@@ -361,7 +377,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedOperationEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

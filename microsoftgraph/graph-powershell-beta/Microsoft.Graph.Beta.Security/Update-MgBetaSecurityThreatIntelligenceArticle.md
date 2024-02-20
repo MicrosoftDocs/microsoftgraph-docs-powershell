@@ -17,24 +17,7 @@ Update the navigation property articles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityThreatIntelligenceArticle -ArticleId <String> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphSecurityFormattedContent>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-ImageUrl <String>] [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured]
- [-LastUpdatedDateTime <DateTime>] [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>]
- [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityThreatIntelligenceArticle -ArticleId <String>
- -BodyParameter <IMicrosoftGraphSecurityArticle> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityThreatIntelligenceArticle -ArticleId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Body <IMicrosoftGraphSecurityFormattedContent>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-ImageUrl <String>]
  [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured] [-LastUpdatedDateTime <DateTime>]
@@ -42,11 +25,29 @@ Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaSecurityThreatIntelligenceArticle -ArticleId <String>
+ -BodyParameter <IMicrosoftGraphSecurityArticle> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Body <IMicrosoftGraphSecurityFormattedContent>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-ImageUrl <String>] [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured]
+ [-LastUpdatedDateTime <DateTime>] [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>]
+ [-Title <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityArticle> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityArticle> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -258,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Summary
 formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
@@ -346,7 +362,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticle
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,19 +14,20 @@ Create new navigation property to domainSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityDomainSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
- [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CountHits <Int32>] [-CountInOrg <Int32>]
- [-DomainCategories <IMicrosoftGraphReputationCategory[]>] [-DomainRegisteredDateTime <DateTime>]
- [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
- [-Registrant <IMicrosoftGraphDomainRegistrant>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityDomainSecurityProfile [-ResponseHeadersVariable <String>] [-ActivityGroupNames <String[]>]
+ [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>]
+ [-CountHits <Int32>] [-CountInOrg <Int32>] [-DomainCategories <IMicrosoftGraphReputationCategory[]>]
+ [-DomainRegisteredDateTime <DateTime>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
+ [-LastSeenDateTime <DateTime>] [-Name <String>] [-Registrant <IMicrosoftGraphDomainRegistrant>]
+ [-RiskScore <String>] [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSecurityProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -278,6 +279,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskScore
 .
 
@@ -365,7 +381,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,11 +17,11 @@ Create new navigation property to calendarView for bookingBusinesses
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>]
- [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>] [-CustomerId <String>]
- [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>] [-CustomerNotes <String>]
- [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
+ [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
+ [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
  [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -36,11 +36,11 @@ New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String> [-AdditionalIn
 
 ### CreateExpanded1
 ```
-New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>]
- [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>] [-CustomerId <String>]
- [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>] [-CustomerNotes <String>]
- [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
+ [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
+ [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
  [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -56,24 +56,24 @@ New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String> [-AdditionalIn
 ### Create1
 ```
 New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaBookingBusinessCalendarView -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>]
- [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>] [-CustomerId <String>]
- [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>] [-CustomerNotes <String>]
- [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
+ [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
+ [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
  [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -88,11 +88,11 @@ New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-Additio
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>]
- [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>] [-CustomerId <String>]
- [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>] [-CustomerNotes <String>]
- [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
+ [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
+ [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
  [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -108,15 +108,15 @@ New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-Additio
 ### CreateViaIdentity1
 ```
 New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -685,6 +685,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SelfServiceAppointmentId
 An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
 
@@ -852,7 +867,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

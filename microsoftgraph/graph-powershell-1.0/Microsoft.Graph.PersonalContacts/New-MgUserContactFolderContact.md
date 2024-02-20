@@ -18,12 +18,13 @@ Add a contact to the root Contacts folder or to the contacts endpoint of another
 
 ### CreateExpanded (Default)
 ```
-New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AssistantName <String>] [-Birthday <DateTime>] [-BusinessAddress <IMicrosoftGraphPhysicalAddress>]
- [-BusinessHomePage <String>] [-BusinessPhones <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>]
- [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Generation <String>] [-GivenName <String>]
+New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>]
+ [-BusinessAddress <IMicrosoftGraphPhysicalAddress>] [-BusinessHomePage <String>] [-BusinessPhones <String[]>]
+ [-Categories <String[]>] [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>]
+ [-CreatedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
+ [-EmailAddresses <IMicrosoftGraphEmailAddress[]>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-FileAs <String>] [-Generation <String>] [-GivenName <String>]
  [-HomeAddress <IMicrosoftGraphPhysicalAddress>] [-HomePhones <String[]>] [-Id <String>]
  [-ImAddresses <String[]>] [-Initials <String>] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>]
  [-Manager <String>] [-MiddleName <String>] [-MobilePhone <String>]
@@ -39,18 +40,19 @@ New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String> [-Addi
 ### Create
 ```
 New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContact> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssistantName <String>] [-Birthday <DateTime>] [-BusinessAddress <IMicrosoftGraphPhysicalAddress>]
- [-BusinessHomePage <String>] [-BusinessPhones <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>]
- [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Generation <String>] [-GivenName <String>]
+New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>]
+ [-BusinessAddress <IMicrosoftGraphPhysicalAddress>] [-BusinessHomePage <String>] [-BusinessPhones <String[]>]
+ [-Categories <String[]>] [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>]
+ [-CreatedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
+ [-EmailAddresses <IMicrosoftGraphEmailAddress[]>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-FileAs <String>] [-Generation <String>] [-GivenName <String>]
  [-HomeAddress <IMicrosoftGraphPhysicalAddress>] [-HomePhones <String[]>] [-Id <String>]
  [-ImAddresses <String[]>] [-Initials <String>] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>]
  [-Manager <String>] [-MiddleName <String>] [-MobilePhone <String>]
@@ -66,7 +68,8 @@ New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-Additi
 ### CreateViaIdentity
 ```
 New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -739,6 +742,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the contact.
 Read-only.
@@ -904,7 +922,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

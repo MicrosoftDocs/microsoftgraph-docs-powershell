@@ -14,8 +14,8 @@ Create new navigation property to userExperienceAnalyticsAnomalyDevice for devic
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice [-AdditionalProperties <Hashtable>]
- [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
  [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-CorrelationGroupId <String>] [-DeviceId <String>]
  [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
  [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
@@ -25,8 +25,8 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice [-AdditionalProper
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -277,6 +277,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -318,7 +333,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

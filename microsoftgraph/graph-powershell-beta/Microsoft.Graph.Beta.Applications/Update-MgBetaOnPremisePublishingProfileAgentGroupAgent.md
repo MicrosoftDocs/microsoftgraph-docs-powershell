@@ -15,34 +15,35 @@ Update the navigation property agents in onPremisesPublishingProfiles
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
- -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> [-AdditionalProperties <Hashtable>]
- [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-ExternalIP <String>] [-Id <String>]
- [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
- -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
+ -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
  [-ExternalIP <String>] [-Id <String>] [-MachineName <String>] [-Status <String>]
  [-SupportedPublishingTypes <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
+ -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
+ -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-ExternalIP <String>] [-Id <String>]
+ [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -238,6 +239,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 agentStatus
 
@@ -310,7 +326,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

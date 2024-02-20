@@ -18,8 +18,9 @@ Update the navigation property transcripts in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
+ [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
  [-MetadataContentInputFile <String>] [-TranscriptContentUrl <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +28,16 @@ Update-MgBetaUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeeti
 ### Update
 ```
 Update-MgBetaUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphCallTranscript> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
+ [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
  [-MetadataContentInputFile <String>] [-TranscriptContentUrl <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +45,8 @@ Update-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdent
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCallTranscript> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -273,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TranscriptContentUrl
 The URL which can be used to access the content of the transcript.
 Read-only.
@@ -346,7 +363,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscript
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

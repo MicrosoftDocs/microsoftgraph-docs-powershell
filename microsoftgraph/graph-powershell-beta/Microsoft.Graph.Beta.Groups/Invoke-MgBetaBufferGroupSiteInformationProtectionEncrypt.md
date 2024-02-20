@@ -15,27 +15,31 @@ Invoke action encryptBuffer
 ### BufferExpanded (Default)
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt -GroupId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>] [-LabelId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>]
+ [-LabelId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Buffer
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt -GroupId <String> -SiteId <String>
  -Body <IPaths1G9H29GGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### BufferViaIdentityExpanded
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>] [-LabelId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>]
+ [-LabelId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### BufferViaIdentity
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionEncrypt -InputObject <IGroupsIdentity>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1G9H29GGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -183,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -240,7 +259,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBufferEncryptionResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

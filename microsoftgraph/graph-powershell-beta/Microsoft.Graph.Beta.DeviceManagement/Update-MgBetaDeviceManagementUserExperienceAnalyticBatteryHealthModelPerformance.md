@@ -15,8 +15,8 @@ Update the navigation property userExperienceAnalyticsBatteryHealthModelPerforma
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
- -UserExperienceAnalyticsBatteryHealthModelPerformanceId <String> [-ActiveDevices <Int32>]
- [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
+ -UserExperienceAnalyticsBatteryHealthModelPerformanceId <String> [-ResponseHeadersVariable <String>]
+ [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
  [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
  [-Manufacturer <String>] [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
  [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-Model <String>]
@@ -28,17 +28,18 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
  -UserExperienceAnalyticsBatteryHealthModelPerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
- -InputObject <IDeviceManagementIdentity> [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
- [-AverageBatteryAgeInDays <Int32>] [-AverageEstimatedRuntimeInMinutes <Int32>]
- [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-Manufacturer <String>]
- [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>] [-ActiveDevices <Int32>]
+ [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
+ [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
+ [-Manufacturer <String>] [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
  [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-Model <String>]
  [-ModelBatteryHealthScore <Int32>] [-ModelHealthStatus <UserExperienceAnalyticsHealthState>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,8 +49,9 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -347,6 +349,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsBatteryHealthModelPerformanceId
 The unique identifier of userExperienceAnalyticsBatteryHealthModelPerformance
 
@@ -404,7 +421,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

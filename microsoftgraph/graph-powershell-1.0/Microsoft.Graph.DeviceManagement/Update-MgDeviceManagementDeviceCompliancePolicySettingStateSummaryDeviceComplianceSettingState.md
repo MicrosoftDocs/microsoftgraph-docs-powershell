@@ -20,9 +20,10 @@ Update the properties of a deviceComplianceSettingState object.
 ```
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
  -DeviceCompliancePolicySettingStateSummaryId <String> -DeviceComplianceSettingStateId <String>
- [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>]
- [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-Setting <String>] [-SettingName <String>]
- [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>] [-DeviceModel <String>]
+ [-DeviceName <String>] [-Id <String>] [-Setting <String>] [-SettingName <String>] [-State <String>]
+ [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,17 +31,17 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplian
 ```
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
  -DeviceCompliancePolicySettingStateSummaryId <String> -DeviceComplianceSettingStateId <String>
- -BodyParameter <IMicrosoftGraphDeviceComplianceSettingState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceSettingState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>] [-DeviceModel <String>]
- [-DeviceName <String>] [-Id <String>] [-Setting <String>] [-SettingName <String>] [-State <String>]
- [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>]
+ [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-Setting <String>] [-SettingName <String>]
+ [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +49,8 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplian
 ```
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphDeviceComplianceSettingState>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -239,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Setting
 The setting class name and property name.
 
@@ -386,7 +403,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceSettingState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,8 +18,8 @@ Update the navigation property sslCertificates in security
 ### UpdateExpanded (Default)
 ```
 Update-MgSecurityThreatIntelligenceSslCertificate -SslCertificateId <String>
- [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Fingerprint <String>]
- [-FirstSeenDateTime <DateTime>] [-Id <String>] [-IssueDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
+ [-Fingerprint <String>] [-FirstSeenDateTime <DateTime>] [-Id <String>] [-IssueDateTime <DateTime>]
  [-Issuer <IMicrosoftGraphSecuritySslCertificateEntity>] [-LastSeenDateTime <DateTime>]
  [-RelatedHosts <IMicrosoftGraphSecurityHost[]>] [-SerialNumber <String>] [-Sha1 <String>]
  [-Subject <IMicrosoftGraphSecuritySslCertificateEntity>] [-Headers <IDictionary>]
@@ -29,15 +29,15 @@ Update-MgSecurityThreatIntelligenceSslCertificate -SslCertificateId <String>
 ### Update
 ```
 Update-MgSecurityThreatIntelligenceSslCertificate -SslCertificateId <String>
- -BodyParameter <IMicrosoftGraphSecuritySslCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySslCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Fingerprint <String>]
- [-FirstSeenDateTime <DateTime>] [-Id <String>] [-IssueDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
+ [-Fingerprint <String>] [-FirstSeenDateTime <DateTime>] [-Id <String>] [-IssueDateTime <DateTime>]
  [-Issuer <IMicrosoftGraphSecuritySslCertificateEntity>] [-LastSeenDateTime <DateTime>]
  [-RelatedHosts <IMicrosoftGraphSecurityHost[]>] [-SerialNumber <String>] [-Sha1 <String>]
  [-Subject <IMicrosoftGraphSecuritySslCertificateEntity>] [-Headers <IDictionary>]
@@ -47,8 +47,8 @@ Update-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentit
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecuritySslCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySslCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -264,6 +264,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 The serial number associated with an SSL certificate.
 
@@ -368,7 +383,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

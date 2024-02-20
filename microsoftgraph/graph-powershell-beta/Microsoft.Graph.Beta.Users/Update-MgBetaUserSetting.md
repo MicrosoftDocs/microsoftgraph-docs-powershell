@@ -17,8 +17,8 @@ Update the navigation property settings in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserSetting -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]
+Update-MgBetaUserSetting -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
@@ -28,14 +28,15 @@ Update-MgBetaUserSetting -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgBetaUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSettings>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]
+Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
@@ -46,7 +47,8 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-AdditionalProperties <H
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUserSettings>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -228,6 +230,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShiftPreferences
 shiftPreferences
 To construct, see NOTES section for SHIFTPREFERENCES properties and create a hash table.
@@ -301,7 +318,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,30 +14,34 @@ Create new navigation property to dayNotes for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupTeamScheduleDayNote -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DayNoteDate <DateTime>] [-DraftDayNote <IMicrosoftGraphItemBody>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedDayNote <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamScheduleDayNote -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DayNoteDate <DateTime>]
+ [-DraftDayNote <IMicrosoftGraphItemBody>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-SharedDayNote <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamScheduleDayNote -GroupId <String> -BodyParameter <IMicrosoftGraphDayNote>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DayNoteDate <DateTime>] [-DraftDayNote <IMicrosoftGraphItemBody>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedDayNote <IMicrosoftGraphItemBody>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DayNoteDate <DateTime>]
+ [-DraftDayNote <IMicrosoftGraphItemBody>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-SharedDayNote <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphDayNote>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -216,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedDayNote
 itemBody
 To construct, see NOTES section for SHAREDDAYNOTE properties and create a hash table.
@@ -274,7 +293,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDayNote
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

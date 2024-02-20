@@ -14,8 +14,8 @@ Update the navigation property subjects in identityGovernance
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaEntitlementManagementSubjectByObjectId -ObjectId <String> [-AdditionalProperties <Hashtable>]
- [-AltSecId <String>] [-CleanupScheduledDateTime <DateTime>]
+Update-MgBetaEntitlementManagementSubjectByObjectId -ObjectId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AltSecId <String>] [-CleanupScheduledDateTime <DateTime>]
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId1 <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
@@ -26,26 +26,26 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -ObjectId <String> [-Additio
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementSubjectByObjectId [-ObjectId <String>]
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-AltSecId <String>]
- [-CleanupScheduledDateTime <DateTime>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]
- [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
- [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AltSecId <String>] [-CleanupScheduledDateTime <DateTime>]
+ [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
+ [-DisplayName <String>] [-Email <String>] [-Id <String>] [-OnPremisesSecurityIdentifier <String>]
+ [-PrincipalName <String>] [-SubjectLifecycle <String>] [-Type <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementSubjectByObjectId -ObjectId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +312,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubjectLifecycle
 accessPackageSubjectLifecycle
 
@@ -384,7 +399,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

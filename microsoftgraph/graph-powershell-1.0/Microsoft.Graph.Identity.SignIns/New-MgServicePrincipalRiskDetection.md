@@ -17,20 +17,21 @@ Create new navigation property to servicePrincipalRiskDetections for identityPro
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipalRiskDetection [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>] [-AppId <String>] [-CorrelationId <String>]
- [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-IPAddress <String>] [-Id <String>]
- [-KeyIds <String[]>] [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>]
- [-RequestId <String>] [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>]
- [-RiskState <String>] [-ServicePrincipalDisplayName <String>] [-ServicePrincipalId <String>]
- [-Source <String>] [-TokenIssuerType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalRiskDetection [-ResponseHeadersVariable <String>] [-Activity <String>]
+ [-ActivityDateTime <DateTime>] [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>]
+ [-AppId <String>] [-CorrelationId <String>] [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>]
+ [-IPAddress <String>] [-Id <String>] [-KeyIds <String[]>] [-LastUpdatedDateTime <DateTime>]
+ [-Location <IMicrosoftGraphSignInLocation>] [-RequestId <String>] [-RiskDetail <String>]
+ [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>] [-ServicePrincipalDisplayName <String>]
+ [-ServicePrincipalId <String>] [-Source <String>] [-TokenIssuerType <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrincipalRiskDetection>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -304,6 +305,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RiskDetail
 riskDetail
 
@@ -468,7 +484,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

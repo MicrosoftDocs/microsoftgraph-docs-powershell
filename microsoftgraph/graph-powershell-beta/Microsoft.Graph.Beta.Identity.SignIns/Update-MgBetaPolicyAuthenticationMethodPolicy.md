@@ -18,7 +18,8 @@ Update the properties of an authenticationMethodsPolicy object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>]
+Update-MgBetaPolicyAuthenticationMethodPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyMigrationState <String>] [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
@@ -31,7 +32,8 @@ Update-MgBetaPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>
 ### Update
 ```
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -297,6 +299,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SystemCredentialPreferences
 systemCredentialPreferences
 To construct, see NOTES section for SYSTEMCREDENTIALPREFERENCES properties and create a hash table.
@@ -354,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

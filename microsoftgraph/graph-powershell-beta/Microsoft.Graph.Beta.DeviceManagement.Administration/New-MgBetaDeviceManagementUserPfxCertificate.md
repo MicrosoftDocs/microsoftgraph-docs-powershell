@@ -14,18 +14,20 @@ Create new navigation property to userPfxCertificates for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserPfxCertificate [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-EncryptedPfxBlobInputFile <String>] [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>]
- [-LastModifiedDateTime <DateTime>] [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>]
- [-StartDateTime <DateTime>] [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+New-MgBetaDeviceManagementUserPfxCertificate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-EncryptedPfxBlobInputFile <String>]
+ [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
+ [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>] [-LastModifiedDateTime <DateTime>]
+ [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>] [-StartDateTime <DateTime>]
+ [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserPfxCertificate -BodyParameter <IMicrosoftGraphUserPfxCertificate>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -245,6 +247,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 Certificate's validity start date/time.
 
@@ -331,7 +348,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

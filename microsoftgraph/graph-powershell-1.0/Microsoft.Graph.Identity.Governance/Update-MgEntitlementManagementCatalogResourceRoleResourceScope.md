@@ -16,8 +16,8 @@ Update the navigation property scopes in identityGovernance
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,8 +26,8 @@ Update-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCat
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String> -AccessPackageResourceId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -36,23 +36,23 @@ Update-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCat
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String> -AccessPackageResourceId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -60,8 +60,8 @@ Update-MgEntitlementManagementCatalogResourceRoleResourceScope -InputObject <IId
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -69,15 +69,15 @@ Update-MgEntitlementManagementCatalogResourceRoleResourceScope -InputObject <IId
 ### UpdateViaIdentity1
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementCatalogResourceRoleResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -329,6 +329,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -371,7 +386,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

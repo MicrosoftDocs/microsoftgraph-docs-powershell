@@ -15,8 +15,8 @@ Update the navigation property resourceActions in roleManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
- -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String> [-ActionVerb <String>]
- [-AdditionalProperties <Hashtable>]
+ -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String>
+ [-ResponseHeadersVariable <String>] [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
@@ -28,14 +28,15 @@ Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ```
 Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
- -InputObject <IDeviceManagementEnrollmentIdentity> [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>] [-ActionVerb <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
@@ -47,7 +48,8 @@ Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ```
 Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
  -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -294,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UnifiedRbacResourceActionId
 The unique identifier of unifiedRbacResourceAction
 
@@ -366,7 +383,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

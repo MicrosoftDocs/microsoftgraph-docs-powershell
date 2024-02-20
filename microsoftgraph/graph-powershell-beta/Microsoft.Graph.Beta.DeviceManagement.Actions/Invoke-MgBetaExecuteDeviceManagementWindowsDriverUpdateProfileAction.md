@@ -15,24 +15,26 @@ Invoke action executeAction
 ### ExecuteExpanded (Default)
 ```
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
- [-ActionName <DriverApprovalAction>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
- [-DriverIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-ActionName <DriverApprovalAction>] [-AdditionalProperties <Hashtable>]
+ [-DeploymentDate <DateTime>] [-DriverIds <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Execute
 ```
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
  -BodyParameter <IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentityExpanded
 ```
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
- -InputObject <IDeviceManagementActionsIdentity> [-ActionName <DriverApprovalAction>]
- [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>] [-DriverIds <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-ActionName <DriverApprovalAction>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
+ [-DriverIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
@@ -40,7 +42,8 @@ Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -170,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WindowsDriverUpdateProfileId
 The unique identifier of windowsDriverUpdateProfile
 
@@ -227,7 +245,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBulkDriverActionResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -16,7 +16,8 @@ Update the navigation property presentationValues in deviceManagement
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
  -GroupPolicyConfigurationId <String> -GroupPolicyDefinitionValueId <String>
- -GroupPolicyPresentationValueId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ -GroupPolicyPresentationValueId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Presentation <IMicrosoftGraphGroupPolicyPresentation>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -27,13 +28,15 @@ Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentation
 Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
  -GroupPolicyConfigurationId <String> -GroupPolicyDefinitionValueId <String>
  -GroupPolicyPresentationValueId <String> -BodyParameter <IMicrosoftGraphGroupPolicyPresentationValue>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Presentation <IMicrosoftGraphGroupPolicyPresentation>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,7 +46,8 @@ Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentation
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyPresentationValue>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -251,6 +255,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -293,7 +312,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentationValue
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

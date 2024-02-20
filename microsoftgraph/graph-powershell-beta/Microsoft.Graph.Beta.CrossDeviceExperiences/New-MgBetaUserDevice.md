@@ -14,34 +14,7 @@ Create new navigation property to devices for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserDevice -UserId <String> [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
- [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId <String>] [-DeviceMetadata <String>]
- [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-DomainName <String>]
- [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
- [-ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Hostnames <String[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
- [-IsManagementRestricted] [-IsRooted] [-Kind <String>] [-ManagementType <String>] [-Manufacturer <String>]
- [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>] [-Name <String>]
- [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
- [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-Platform <String>]
- [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
- [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
- [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaUserDevice -UserId <String> -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-AccountEnabled]
+New-MgBetaUserDevice -UserId <String> [-ResponseHeadersVariable <String>] [-AccountEnabled]
  [-AdditionalProperties <Hashtable>] [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
  [-ApproximateLastSignInDateTime <DateTime>] [-Commands <IMicrosoftGraphCommand[]>]
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
@@ -60,10 +33,40 @@ New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-AccountEna
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaUserDevice -UserId <String> -BodyParameter <IMicrosoftGraphDevice>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ResponseHeadersVariable <String>]
+ [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+ [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
+ [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId <String>] [-DeviceMetadata <String>]
+ [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-DomainName <String>]
+ [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
+ [-ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-Hostnames <String[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
+ [-IsManagementRestricted] [-IsRooted] [-Kind <String>] [-ManagementType <String>] [-Manufacturer <String>]
+ [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>] [-Name <String>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
+ [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-Platform <String>]
+ [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
+ [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
+ [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -845,6 +848,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 Device is online or offline.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
@@ -986,7 +1004,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

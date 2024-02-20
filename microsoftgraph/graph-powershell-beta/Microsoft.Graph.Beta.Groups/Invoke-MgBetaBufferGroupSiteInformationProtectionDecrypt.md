@@ -15,7 +15,7 @@ Invoke action decryptBuffer
 ### BufferExpanded (Default)
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -GroupId <String> -SiteId <String> -OutFile <String>
- [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
  [-PublishingLicenseInputFile <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,14 +24,14 @@ Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -GroupId <String> -Site
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -GroupId <String> -SiteId <String> -OutFile <String>
  -Body <IPaths1LikttpGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BufferViaIdentityExpanded
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -InputObject <IGroupsIdentity> -OutFile <String>
- [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
  [-PublishingLicenseInputFile <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,6 +39,7 @@ Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -InputObject <IGroupsId
 ### BufferViaIdentity
 ```
 Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -InputObject <IGroupsIdentity> -OutFile <String>
+ [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1LikttpGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -217,6 +218,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 The unique identifier of site
 
@@ -274,7 +290,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

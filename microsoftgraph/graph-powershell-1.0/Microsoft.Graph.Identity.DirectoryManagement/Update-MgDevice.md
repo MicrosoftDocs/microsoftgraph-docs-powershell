@@ -19,26 +19,10 @@ Only certain properties of a device can be updated through approved Mobile Devic
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDevice -DeviceId <String> [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
- [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
- [-DeviceId1 <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
- [-DisplayName <String>] [-EnrollmentProfileName <String>] [-Extensions <IMicrosoftGraphExtension[]>]
- [-Id <String>] [-IsCompliant] [-IsManaged] [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
- [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>]
- [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
- [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>]
- [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagementIdentity> [-AccountEnabled]
+Update-MgDevice -DeviceId <String> [-ResponseHeadersVariable <String>] [-AccountEnabled]
  [-AdditionalProperties <Hashtable>] [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
  [-ApproximateLastSignInDateTime <DateTime>] [-ComplianceExpirationDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceMetadata <String>]
+ [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId1 <String>] [-DeviceMetadata <String>]
  [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-EnrollmentProfileName <String>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant] [-IsManaged] [-MdmAppId <String>]
  [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-OnPremisesLastSyncDateTime <DateTime>]
@@ -50,16 +34,34 @@ Update-MgDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagementI
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateViaIdentityExpanded
+```
+Update-MgDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+ [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
+ [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
+ [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>]
+ [-EnrollmentProfileName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant]
+ [-IsManaged] [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
+ [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>]
+ [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
+ [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>]
+ [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update
 ```
-Update-MgDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -689,6 +691,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SystemLabels
 List of labels applied to the device by the system.
 Supports $filter (/$count eq 0, /$count ne 0).
@@ -783,7 +800,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

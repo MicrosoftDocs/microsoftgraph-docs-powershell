@@ -18,9 +18,10 @@ Update the navigation property endUserNotifications in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotification -EndUserNotificationId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
  [-NotificationType <String>] [-Source <String>] [-Status <String>] [-SupportedLocales <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,16 +29,17 @@ Update-MgBetaSecurityAttackSimulationEndUserNotification -EndUserNotificationId 
 ### Update
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotification -EndUserNotificationId <String>
- -BodyParameter <IMicrosoftGraphEndUserNotification> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEndUserNotification> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
  [-NotificationType <String>] [-Source <String>] [-Status <String>] [-SupportedLocales <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,8 +47,8 @@ Update-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurity
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphEndUserNotification> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEndUserNotification> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -289,6 +291,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 simulationContentSource
 
@@ -376,7 +393,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotification
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

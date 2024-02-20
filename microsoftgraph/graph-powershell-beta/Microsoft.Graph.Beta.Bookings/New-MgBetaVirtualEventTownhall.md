@@ -14,8 +14,8 @@ Create new navigation property to townhalls for solutions
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaVirtualEventTownhall [-AdditionalProperties <Hashtable>] [-Audience <String>]
- [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+New-MgBetaVirtualEventTownhall [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Audience <String>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-InvitedAttendees <IMicrosoftGraphCommunicationsUserIdentity[]>] [-IsInviteOnly]
@@ -26,8 +26,9 @@ New-MgBetaVirtualEventTownhall [-AdditionalProperties <Hashtable>] [-Audience <S
 
 ### Create
 ```
-New-MgBetaVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownhall>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -253,6 +254,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sessions
 Sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
@@ -341,7 +357,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventTownhall
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

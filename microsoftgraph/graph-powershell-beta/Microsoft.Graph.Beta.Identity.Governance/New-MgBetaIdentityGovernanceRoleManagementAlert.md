@@ -14,7 +14,8 @@ Create new navigation property to alerts for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernanceRoleManagementAlert [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityGovernanceRoleManagementAlert [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
  [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
  [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
@@ -26,7 +27,8 @@ New-MgBetaIdentityGovernanceRoleManagementAlert [-AdditionalProperties <Hashtabl
 ### Create
 ```
 New-MgBetaIdentityGovernanceRoleManagementAlert -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -238,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeId
 The identifier of the scope where the alert is related.
 / is the only supported one for the tenant.
@@ -312,7 +329,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

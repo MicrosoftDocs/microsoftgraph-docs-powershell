@@ -19,9 +19,9 @@ Update the properties of a mdmWindowsInformationProtectionPolicy object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
- -MdmWindowsInformationProtectionPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-AzureRightsManagementServicesAllowed]
- [-CreatedDateTime <DateTime>]
+ -MdmWindowsInformationProtectionPolicyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]
+ [-AzureRightsManagementServicesAllowed] [-CreatedDateTime <DateTime>]
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
@@ -48,16 +48,17 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 ### Update
 ```
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
- -MdmWindowsInformationProtectionPolicyId <String> -BodyParameter <Hashtable> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MdmWindowsInformationProtectionPolicyId <String> -BodyParameter <Hashtable>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-AzureRightsManagementServicesAllowed]
- [-CreatedDateTime <DateTime>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]
+ [-AzureRightsManagementServicesAllowed] [-CreatedDateTime <DateTime>]
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
@@ -84,8 +85,9 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -618,6 +620,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RevokeOnUnenrollDisabled
 This policy controls whether to revoke the WIP keys when a device unenrolls from the management service.
 If set to 1 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment.
@@ -724,7 +741,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

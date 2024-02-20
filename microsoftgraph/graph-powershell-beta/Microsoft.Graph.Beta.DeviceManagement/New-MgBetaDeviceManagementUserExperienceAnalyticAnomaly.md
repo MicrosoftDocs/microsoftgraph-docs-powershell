@@ -14,8 +14,8 @@ Create new navigation property to userExperienceAnalyticsAnomaly for deviceManag
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <Hashtable>]
- [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
  [-AnomalyLatestOccurrenceDateTime <DateTime>] [-AnomalyName <String>]
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
@@ -27,8 +27,8 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -280,6 +280,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 Indicates the severity of the anomaly.
 Eg: anomaly severity can be high, medium, low, informational or other.
@@ -353,7 +368,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

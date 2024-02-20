@@ -15,29 +15,33 @@ Rejects the requested instance of an operationApprovalRequest.
 ### RejectExpanded (Default)
 ```
 Invoke-MgBetaRejectDeviceManagementOperationApprovalRequest -OperationApprovalRequestId <String>
- [-AdditionalProperties <Hashtable>] [-ApprovalSource <OperationApprovalSource>] [-Justification <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ApprovalSource <OperationApprovalSource>] [-Justification <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Reject
 ```
 Invoke-MgBetaRejectDeviceManagementOperationApprovalRequest -OperationApprovalRequestId <String>
  -BodyParameter <IPaths1W8Sd70DevicemanagementOperationapprovalrequestsOperationapprovalrequestIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RejectViaIdentityExpanded
 ```
 Invoke-MgBetaRejectDeviceManagementOperationApprovalRequest -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ApprovalSource <OperationApprovalSource>] [-Justification <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ApprovalSource <OperationApprovalSource>] [-Justification <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RejectViaIdentity
 ```
 Invoke-MgBetaRejectDeviceManagementOperationApprovalRequest -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1W8Sd70DevicemanagementOperationapprovalrequestsOperationapprovalrequestIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -167,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -208,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES

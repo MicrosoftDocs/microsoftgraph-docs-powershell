@@ -18,35 +18,37 @@ Create new navigation property to files for deviceAppManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile -MobileAppContentId <String>
- -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
- [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
- [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
- [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile -MobileAppContentId <String>
- -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileAppContentFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ -MobileAppId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AzureStorageUri <String>] [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-IsCommitted] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>]
  [-SizeEncrypted <Int64>] [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileAppContentFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
+ [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
+ [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
+ [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContentFile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -267,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Size
 The size of the file prior to encryption.
 
@@ -354,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppContentFile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

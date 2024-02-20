@@ -14,8 +14,8 @@ Update the navigation property settings in organization
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaOrganizationSetting -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-ContactInsights <IMicrosoftGraphInsightsSettings>] [-Id <String>]
+Update-MgBetaOrganizationSetting -OrganizationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ContactInsights <IMicrosoftGraphInsightsSettings>] [-Id <String>]
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>] [-Headers <IDictionary>]
@@ -25,13 +25,15 @@ Update-MgBetaOrganizationSetting -OrganizationId <String> [-AdditionalProperties
 ### Update
 ```
 Update-MgBetaOrganizationSetting -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganizationSettings>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContactInsights <IMicrosoftGraphInsightsSettings>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ContactInsights <IMicrosoftGraphInsightsSettings>] [-Id <String>]
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>] [-Headers <IDictionary>]
@@ -41,8 +43,8 @@ Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
 ### UpdateViaIdentity
 ```
 Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganizationSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOrganizationSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -222,6 +224,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -264,7 +281,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

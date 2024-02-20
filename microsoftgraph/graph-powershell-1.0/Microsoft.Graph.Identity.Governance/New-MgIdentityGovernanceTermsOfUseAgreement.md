@@ -18,8 +18,9 @@ Create a new agreement object.
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceTermsOfUseAgreement [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>]
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
+New-MgIdentityGovernanceTermsOfUseAgreement [-ResponseHeadersVariable <String>]
+ [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
  [-Files <IMicrosoftGraphAgreementFileLocalization[]>] [-Id <String>] [-IsPerDeviceAcceptanceRequired]
  [-IsViewingBeforeAcceptanceRequired] [-TermsExpiration <IMicrosoftGraphTermsExpiration>]
  [-UserReacceptRequiredFrequency <TimeSpan>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -28,8 +29,9 @@ New-MgIdentityGovernanceTermsOfUseAgreement [-Acceptances <IMicrosoftGraphAgreem
 
 ### Create
 ```
-New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgreement> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgreement>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -219,6 +221,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TermsExpiration
 termsExpiration
 To construct, see NOTES section for TERMSEXPIRATION properties and create a hash table.
@@ -293,7 +310,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

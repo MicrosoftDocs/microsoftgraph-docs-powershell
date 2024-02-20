@@ -17,7 +17,8 @@ Update the navigation property entitlementManagement in roleManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaRoleManagementEntitlementManagement [-AdditionalProperties <Hashtable>] [-Id <String>]
+Update-MgBetaRoleManagementEntitlementManagement [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
@@ -35,7 +36,8 @@ Update-MgBetaRoleManagementEntitlementManagement [-AdditionalProperties <Hashtab
 ### Update
 ```
 Update-MgBetaRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbacApplication>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -128,6 +130,21 @@ To construct, see NOTES section for RESOURCENAMESPACES properties and create a h
 Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
 Parameter Sets: UpdateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
 
 Required: False
 Position: Named
@@ -337,7 +354,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

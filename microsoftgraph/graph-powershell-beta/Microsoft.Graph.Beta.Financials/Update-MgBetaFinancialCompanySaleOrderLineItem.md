@@ -15,19 +15,8 @@ Update the navigation property item in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
- [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
- [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
- [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
- [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgBetaFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- -SalesOrderId <String> [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked]
- [-DisplayName <String>] [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>]
+ [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>]
  [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
  [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
@@ -35,54 +24,68 @@ Update-MgBetaFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLi
  [<CommonParameters>]
 ```
 
+### UpdateExpanded1
+```
+Update-MgBetaFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
+ -SalesOrderId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>]
+ [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>]
+ [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+ [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
+ [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update1
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- -SalesOrderId <String> -BodyParameter <IMicrosoftGraphItem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SalesOrderId <String> -BodyParameter <IMicrosoftGraphItem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- -BodyParameter <IMicrosoftGraphItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
- [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
- [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
- [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
- [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>]
+ [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>]
+ [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
+ [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
+ [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
- [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
- [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
- [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
- [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>]
+ [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>]
+ [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
+ [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
+ [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
+ [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphItem> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItem> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -379,6 +382,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesOrderId
 The unique identifier of salesOrder
 
@@ -526,7 +544,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

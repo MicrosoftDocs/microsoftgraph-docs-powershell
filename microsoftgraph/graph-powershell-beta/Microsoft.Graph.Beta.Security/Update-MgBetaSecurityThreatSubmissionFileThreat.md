@@ -15,37 +15,37 @@ Update the navigation property fileThreats in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityThreatSubmissionFileThreat -FileThreatSubmissionId <String>
- [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
- [-Category <String>] [-ClientSource <String>] [-ContentType <String>]
- [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>] [-CreatedDateTime <DateTime>]
- [-FileName <String>] [-Id <String>] [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>]
- [-Status <String>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>] [-Category <String>] [-ClientSource <String>]
+ [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
+ [-CreatedDateTime <DateTime>] [-FileName <String>] [-Id <String>]
+ [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>] [-TenantId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatSubmissionFileThreat -FileThreatSubmissionId <String>
- -BodyParameter <IMicrosoftGraphSecurityFileThreatSubmission> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityFileThreatSubmission> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
- [-Category <String>] [-ClientSource <String>] [-ContentType <String>]
- [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>] [-CreatedDateTime <DateTime>]
- [-FileName <String>] [-Id <String>] [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>]
- [-Status <String>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>] [-Category <String>] [-ClientSource <String>]
+ [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
+ [-CreatedDateTime <DateTime>] [-FileName <String>] [-Id <String>]
+ [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>] [-TenantId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityFileThreatSubmission> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityFileThreatSubmission> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -269,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Result
 submissionResult
 To construct, see NOTES section for RESULT properties and create a hash table.
@@ -374,7 +389,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

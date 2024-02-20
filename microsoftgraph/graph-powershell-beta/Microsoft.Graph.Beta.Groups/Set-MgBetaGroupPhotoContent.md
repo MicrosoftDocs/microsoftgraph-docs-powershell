@@ -17,30 +17,30 @@ Update media content for the navigation property photo in groups
 
 ### Set (Default)
 ```
-Set-MgBetaGroupPhotoContent -GroupId <String> [-Data <Stream>] -InFile <String> [-ContentType <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -GroupId <String> [-Data <Stream>] [-ResponseHeadersVariable <String>]
+ -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set1
 ```
-Set-MgBetaGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> [-Data <Stream>] -InFile <String>
- [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> [-Data <Stream>]
+ [-ResponseHeadersVariable <String>] -InFile <String> [-ContentType <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
-Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] -InFile <String>
- [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] [-ResponseHeadersVariable <String>]
+ -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] -InFile <String>
- [-ContentType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] [-ResponseHeadersVariable <String>]
+ -InFile <String> [-ContentType <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -229,7 +244,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

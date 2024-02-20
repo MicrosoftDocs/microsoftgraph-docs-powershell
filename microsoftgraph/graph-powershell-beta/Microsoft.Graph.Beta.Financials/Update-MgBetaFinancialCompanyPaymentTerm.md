@@ -15,8 +15,8 @@ Update the navigation property paymentTerms in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyPaymentTerm -CompanyId <String> -PaymentTermId <String>
- [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos] [-Code <String>]
- [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos]
+ [-Code <String>] [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,24 +24,24 @@ Update-MgBetaFinancialCompanyPaymentTerm -CompanyId <String> -PaymentTermId <Str
 ### Update
 ```
 Update-MgBetaFinancialCompanyPaymentTerm -CompanyId <String> -PaymentTermId <String>
- -BodyParameter <IMicrosoftGraphPaymentTerm> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPaymentTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaFinancialCompanyPaymentTerm -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-CalculateDiscountOnCreditMemos] [-Code <String>] [-DiscountDateCalculation <String>]
- [-DiscountPercent <Decimal>] [-DisplayName <String>] [-DueDateCalculation <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyPaymentTerm -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos] [-Code <String>]
+ [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
+ [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyPaymentTerm -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPaymentTerm> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPaymentTerm> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -276,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -318,7 +333,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPaymentTerm
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

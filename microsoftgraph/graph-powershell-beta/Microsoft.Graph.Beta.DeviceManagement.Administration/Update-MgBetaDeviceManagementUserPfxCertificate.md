@@ -15,37 +15,37 @@ Update the navigation property userPfxCertificates in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserPfxCertificate -UserPfxCertificateId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-EncryptedPfxBlobInputFile <String>]
- [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>] [-LastModifiedDateTime <DateTime>]
- [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>] [-StartDateTime <DateTime>]
- [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-EncryptedPfxBlobInputFile <String>] [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>]
+ [-LastModifiedDateTime <DateTime>] [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>]
+ [-StartDateTime <DateTime>] [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserPfxCertificate -UserPfxCertificateId <String>
- -BodyParameter <IMicrosoftGraphUserPfxCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserPfxCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserPfxCertificate -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-EncryptedPfxBlobInputFile <String>]
- [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>] [-LastModifiedDateTime <DateTime>]
- [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>] [-StartDateTime <DateTime>]
- [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-EncryptedPfxBlobInputFile <String>] [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>]
+ [-LastModifiedDateTime <DateTime>] [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>]
+ [-StartDateTime <DateTime>] [-Thumbprint <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserPfxCertificate -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphUserPfxCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserPfxCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -281,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 Certificate's validity start date/time.
 
@@ -383,7 +398,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,30 +18,31 @@ Update the properties of a resourceOperation object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementResourceOperation -ResourceOperationId <String> [-ActionName <String>]
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>] [-ResourceName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementResourceOperation -ResourceOperationId <String> [-ResponseHeadersVariable <String>]
+ [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
+ [-ResourceName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementResourceOperation -ResourceOperationId <String>
- -BodyParameter <IMicrosoftGraphResourceOperation> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphResourceOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministrationIdentity>
- [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
- [-ResourceName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-ActionName <String>] [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-Id <String>] [-ResourceName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphResourceOperation> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphResourceOperation> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -205,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -247,7 +263,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

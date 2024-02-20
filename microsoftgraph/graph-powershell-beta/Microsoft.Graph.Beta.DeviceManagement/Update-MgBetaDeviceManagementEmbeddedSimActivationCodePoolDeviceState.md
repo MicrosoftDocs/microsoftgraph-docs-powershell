@@ -15,9 +15,9 @@ Update the navigation property deviceStates in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedSimActivationCodePoolId <String>
- -EmbeddedSimDeviceStateId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-ModifiedDateTime <DateTime>]
- [-State <EmbeddedSimDeviceStateValue>] [-StateDetails <String>]
+ -EmbeddedSimDeviceStateId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>]
+ [-ModifiedDateTime <DateTime>] [-State <EmbeddedSimDeviceStateValue>] [-StateDetails <String>]
  [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,23 +26,25 @@ Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedS
 ```
 Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedSimActivationCodePoolId <String>
  -EmbeddedSimDeviceStateId <String> -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DeviceName <String>] [-Id <String>]
- [-LastSyncDateTime <DateTime>] [-ModifiedDateTime <DateTime>] [-State <EmbeddedSimDeviceStateValue>]
- [-StateDetails <String>] [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-ModifiedDateTime <DateTime>]
+ [-State <EmbeddedSimDeviceStateValue>] [-StateDetails <String>]
+ [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -237,6 +239,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 Describes the various states for an embedded SIM activation code.
 
@@ -340,7 +357,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimDeviceState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

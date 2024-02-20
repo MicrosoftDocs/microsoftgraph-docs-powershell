@@ -17,16 +17,17 @@ Create new navigation property to hostTrackers for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatIntelligenceHostTracker [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>]
- [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-Kind <String>] [-LastSeenDateTime <DateTime>]
- [-Value <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgSecurityThreatIntelligenceHostTracker [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>]
+ [-Id <String>] [-Kind <String>] [-LastSeenDateTime <DateTime>] [-Value <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityThreatIntelligenceHostTracker -BodyParameter <IMicrosoftGraphSecurityHostTracker>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -177,6 +178,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Value
 The identification value for the hostTracker.
 
@@ -233,7 +249,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostTracker
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

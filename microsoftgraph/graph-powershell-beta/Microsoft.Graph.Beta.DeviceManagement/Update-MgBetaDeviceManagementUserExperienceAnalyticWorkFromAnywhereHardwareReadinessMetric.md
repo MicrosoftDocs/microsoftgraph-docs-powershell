@@ -18,20 +18,21 @@ Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareRe
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-OSCheckFailedPercentage <Double>]
- [-Processor64BitCheckFailedPercentage <Double>] [-ProcessorCoreCountCheckFailedPercentage <Double>]
- [-ProcessorFamilyCheckFailedPercentage <Double>] [-ProcessorSpeedCheckFailedPercentage <Double>]
- [-RamCheckFailedPercentage <Double>] [-SecureBootCheckFailedPercentage <Double>]
- [-StorageCheckFailedPercentage <Double>] [-TotalDeviceCount <Int32>] [-TpmCheckFailedPercentage <Double>]
- [-UpgradeEligibleDeviceCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-OSCheckFailedPercentage <Double>] [-Processor64BitCheckFailedPercentage <Double>]
+ [-ProcessorCoreCountCheckFailedPercentage <Double>] [-ProcessorFamilyCheckFailedPercentage <Double>]
+ [-ProcessorSpeedCheckFailedPercentage <Double>] [-RamCheckFailedPercentage <Double>]
+ [-SecureBootCheckFailedPercentage <Double>] [-StorageCheckFailedPercentage <Double>]
+ [-TotalDeviceCount <Int32>] [-TpmCheckFailedPercentage <Double>] [-UpgradeEligibleDeviceCount <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -230,6 +231,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecureBootCheckFailedPercentage
 The percentage of devices for which secure boot hardware check has failed.
 Valid values 0 to 100.
@@ -366,7 +382,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

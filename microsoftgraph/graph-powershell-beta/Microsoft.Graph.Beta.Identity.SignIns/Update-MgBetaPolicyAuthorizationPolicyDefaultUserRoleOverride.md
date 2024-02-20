@@ -15,22 +15,23 @@ Update the navigation property defaultUserRoleOverrides in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyId <String>
- -DefaultUserRoleOverrideId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
- [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -DefaultUserRoleOverrideId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-IsDefault] [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyId <String>
  -DefaultUserRoleOverrideId <String> -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
  [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +39,8 @@ Update-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIde
 ### UpdateViaIdentity
 ```
 Update-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -185,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RolePermissions
 .
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
@@ -243,7 +259,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultUserRoleOverride
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

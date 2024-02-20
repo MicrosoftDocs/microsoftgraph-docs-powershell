@@ -15,9 +15,10 @@ Update the properties of an inboundFlow object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String> [-AdditionalProperties <Hashtable>]
- [-DataConnector <IMicrosoftGraphIndustryDataConnector>] [-DataDomain <String>] [-DisplayName <String>]
- [-EffectiveDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
+Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DataConnector <IMicrosoftGraphIndustryDataConnector>]
+ [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,15 +26,16 @@ Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String> [-Additiona
 ### Update
 ```
 Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String>
- -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-DataConnector <IMicrosoftGraphIndustryDataConnector>] [-DataDomain <String>] [-DisplayName <String>]
- [-EffectiveDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
+Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DataConnector <IMicrosoftGraphIndustryDataConnector>]
+ [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,8 +43,8 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -257,6 +259,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Year
 yearTimePeriodDefinition
 To construct, see NOTES section for YEAR properties and create a hash table.
@@ -315,7 +332,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataInboundFlow
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

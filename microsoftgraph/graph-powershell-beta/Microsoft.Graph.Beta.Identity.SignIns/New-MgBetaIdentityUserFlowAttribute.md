@@ -18,15 +18,17 @@ Create a new custom identityUserFlowAttribute object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityUserFlowAttribute [-AdditionalProperties <Hashtable>] [-DataType <String>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-UserFlowAttributeType <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityUserFlowAttribute [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DataType <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-UserFlowAttributeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -179,6 +181,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserFlowAttributeType
 identityUserFlowAttributeType
 
@@ -235,7 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

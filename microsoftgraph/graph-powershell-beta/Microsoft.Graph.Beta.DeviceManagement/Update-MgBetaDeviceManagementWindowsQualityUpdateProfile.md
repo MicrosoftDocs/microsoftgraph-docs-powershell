@@ -15,37 +15,37 @@ Update the navigation property windowsQualityUpdateProfiles in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -WindowsQualityUpdateProfileId <String>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsQualityUpdateProfileAssignment[]>]
- [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
- [-DisplayName <String>] [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>]
- [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphWindowsQualityUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
+ [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>] [-RoleScopeTagIds <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -WindowsQualityUpdateProfileId <String>
- -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsQualityUpdateProfileAssignment[]>]
- [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
- [-DisplayName <String>] [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>]
- [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphWindowsQualityUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
+ [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>] [-RoleScopeTagIds <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -268,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Quality Update entity.
 
@@ -340,7 +355,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsQualityUpdateProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

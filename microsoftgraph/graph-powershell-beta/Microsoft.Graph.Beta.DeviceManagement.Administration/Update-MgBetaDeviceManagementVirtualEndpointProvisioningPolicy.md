@@ -16,7 +16,7 @@ Update the properties of a cloudPcProvisioningPolicy object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>]
  [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>] [-CloudPcGroupDisplayName <String>]
  [-CloudPcNamingTemplate <String>] [-Description <String>] [-DisplayName <String>]
  [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
@@ -32,17 +32,18 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvision
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
- -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-AlternateResourceUrl <String>] [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>]
- [-CloudPcGroupDisplayName <String>] [-CloudPcNamingTemplate <String>] [-Description <String>]
- [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>]
+ [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>] [-CloudPcGroupDisplayName <String>]
+ [-CloudPcNamingTemplate <String>] [-Description <String>] [-DisplayName <String>]
+ [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
  [-DomainJoinConfigurations <IMicrosoftGraphCloudPcDomainJoinConfiguration[]>] [-EnableSingleSignOn]
  [-GracePeriodInHours <Int32>] [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>]
  [-ImageType <String>] [-LocalAdminEnabled] [-ManagedBy <String>]
@@ -56,8 +57,8 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ```
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -493,6 +494,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeIds
 .
 
@@ -582,7 +598,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcProvisioningPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

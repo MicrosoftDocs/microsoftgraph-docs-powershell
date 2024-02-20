@@ -14,10 +14,10 @@ Update the navigation property items in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaFinancialCompanyItem -CompanyId <String> -ItemId <String> [-AdditionalProperties <Hashtable>]
- [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>]
- [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>]
- [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+Update-MgBetaFinancialCompanyItem -CompanyId <String> -ItemId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
+ [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
+ [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
  [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,15 +26,16 @@ Update-MgBetaFinancialCompanyItem -CompanyId <String> -ItemId <String> [-Additio
 ### Update
 ```
 Update-MgBetaFinancialCompanyItem -CompanyId <String> -ItemId <String> -BodyParameter <IMicrosoftGraphItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>] [-Gtin <String>] [-Id <String>]
- [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>]
- [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+Update-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
+ [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
+ [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
  [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,7 +44,8 @@ Update-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-Additiona
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphItem>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -355,6 +357,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaxGroupCode
 .
 
@@ -472,7 +489,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

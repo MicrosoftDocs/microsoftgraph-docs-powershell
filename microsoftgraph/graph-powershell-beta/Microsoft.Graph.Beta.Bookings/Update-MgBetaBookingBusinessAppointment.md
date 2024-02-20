@@ -19,10 +19,10 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
- [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
- [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
- [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
+ [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>]
+ [-CustomerEmailAddress <String>] [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>]
+ [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
  [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -38,6 +38,39 @@ Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingB
 ### UpdateExpanded1
 ```
 Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
+ [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>]
+ [-CustomerEmailAddress <String>] [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>]
+ [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
+ [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
+ [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>]
+ [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
+ [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
+ [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
  [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
  [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
@@ -54,46 +87,13 @@ Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingB
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
-```
-Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>]
- [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>] [-CustomerId <String>]
- [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>] [-CustomerNotes <String>]
- [-CustomerPhone <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>]
- [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
- [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
- [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
- [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>]
- [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>] [-CustomerId <String>]
- [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>] [-CustomerNotes <String>]
- [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
+ [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
+ [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
  [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
@@ -109,15 +109,15 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-Addit
 ### UpdateViaIdentity1
 ```
 Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -731,6 +731,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SelfServiceAppointmentId
 An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
 
@@ -898,7 +913,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

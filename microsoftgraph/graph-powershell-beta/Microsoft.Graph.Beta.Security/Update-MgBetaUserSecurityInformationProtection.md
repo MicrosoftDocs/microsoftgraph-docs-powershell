@@ -14,8 +14,9 @@ Update the navigation property informationProtection in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserSecurityInformationProtection -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
+Update-MgBetaUserSecurityInformationProtection -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
  [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,14 +24,14 @@ Update-MgBetaUserSecurityInformationProtection -UserId <String> [-AdditionalProp
 ### Update
 ```
 Update-MgBetaUserSecurityInformationProtection -UserId <String>
- -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]
  [-SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,8 +40,8 @@ Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -157,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SensitivityLabels
 Read the Microsoft Purview Information Protection labels for the user or organization.
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
@@ -230,7 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

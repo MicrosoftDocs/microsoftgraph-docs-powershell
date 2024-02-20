@@ -15,7 +15,8 @@ Update the navigation property intuneBrandingProfiles in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
  [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
@@ -34,14 +35,15 @@ Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <Str
 ### Update
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
  [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
@@ -60,8 +62,8 @@ Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManageme
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -557,6 +559,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of scope tags assigned to the branding profile
 
@@ -736,7 +753,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,29 +15,33 @@ Approves the requested instance of an operationApprovalRequest.
 ### ApproveExpanded (Default)
 ```
 Approve-MgBetaDeviceManagementOperationApprovalRequest -OperationApprovalRequestId <String>
- [-AdditionalProperties <Hashtable>] [-ApprovalSource <OperationApprovalSource>] [-Justification <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ApprovalSource <OperationApprovalSource>] [-Justification <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Approve
 ```
 Approve-MgBetaDeviceManagementOperationApprovalRequest -OperationApprovalRequestId <String>
  -BodyParameter <IPathsH4Lu0LDevicemanagementOperationapprovalrequestsOperationapprovalrequestIdMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ApproveViaIdentityExpanded
 ```
 Approve-MgBetaDeviceManagementOperationApprovalRequest -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ApprovalSource <OperationApprovalSource>] [-Justification <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ApprovalSource <OperationApprovalSource>] [-Justification <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApproveViaIdentity
 ```
 Approve-MgBetaDeviceManagementOperationApprovalRequest -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsH4Lu0LDevicemanagementOperationapprovalrequestsOperationapprovalrequestIdMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -167,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -208,7 +227,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Collections.Hashtable
 ### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES

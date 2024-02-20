@@ -15,6 +15,31 @@ Update the navigation property salesOrders in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleOrder -CompanyId <String> -SalesOrderId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>]
+ [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
+ [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
+ [-CustomerName <String>] [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax]
+ [-Email <String>] [-ExternalDocumentNumber <String>] [-FullyShipped] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Number <String>] [-OrderDate <DateTime>] [-PartialShipping]
+ [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
+ [-PricesIncludeTax] [-RequestedDeliveryDate <DateTime>] [-SalesOrderLines <IMicrosoftGraphSalesOrderLine[]>]
+ [-Salesperson <String>] [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>]
+ [-ShipToName <String>] [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
+ [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaFinancialCompanySaleOrder -CompanyId <String> -SalesOrderId <String>
+ -BodyParameter <IMicrosoftGraphSalesOrder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaFinancialCompanySaleOrder -InputObject <IFinancialsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
  [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
  [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
@@ -30,35 +55,11 @@ Update-MgBetaFinancialCompanySaleOrder -CompanyId <String> -SalesOrderId <String
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaFinancialCompanySaleOrder -CompanyId <String> -SalesOrderId <String>
- -BodyParameter <IMicrosoftGraphSalesOrder> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaFinancialCompanySaleOrder -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-BillToCustomerId <String>] [-BillToCustomerNumber <String>] [-BillToName <String>]
- [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
- [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
- [-CustomerName <String>] [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax]
- [-Email <String>] [-ExternalDocumentNumber <String>] [-FullyShipped] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Number <String>] [-OrderDate <DateTime>] [-PartialShipping]
- [-PaymentTerm <IMicrosoftGraphPaymentTerm>] [-PaymentTermsId <String>] [-PhoneNumber <String>]
- [-PricesIncludeTax] [-RequestedDeliveryDate <DateTime>] [-SalesOrderLines <IMicrosoftGraphSalesOrderLine[]>]
- [-Salesperson <String>] [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>]
- [-ShipToName <String>] [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
- [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleOrder -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesOrder> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesOrder> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -552,6 +553,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesOrderId
 The unique identifier of salesOrder
 
@@ -762,7 +778,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesOrder
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

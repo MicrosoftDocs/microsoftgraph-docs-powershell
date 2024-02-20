@@ -18,8 +18,9 @@ Update the navigation property hostSslCertificates in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String>
- [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>]
- [-Id <String>] [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>]
+ [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
  [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,15 +28,16 @@ Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId 
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>]
- [-Id <String>] [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-FirstSeenDateTime <DateTime>]
+ [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
  [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,8 +45,8 @@ Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurit
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -226,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificate
 sslCertificate
 To construct, see NOTES section for SSLCERTIFICATE properties and create a hash table.
@@ -284,7 +301,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

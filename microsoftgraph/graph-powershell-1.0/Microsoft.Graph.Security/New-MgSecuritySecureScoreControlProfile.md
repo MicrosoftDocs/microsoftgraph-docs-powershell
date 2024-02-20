@@ -17,8 +17,8 @@ Create new navigation property to secureScoreControlProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecuritySecureScoreControlProfile [-ActionType <String>] [-ActionUrl <String>]
- [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
+New-MgSecuritySecureScoreControlProfile [-ResponseHeadersVariable <String>] [-ActionType <String>]
+ [-ActionUrl <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
  [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
  [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
@@ -31,7 +31,8 @@ New-MgSecuritySecureScoreControlProfile [-ActionType <String>] [-ActionUrl <Stri
 ### Create
 ```
 New-MgSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureScoreControlProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -316,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Service
 Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).
 
@@ -448,7 +464,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

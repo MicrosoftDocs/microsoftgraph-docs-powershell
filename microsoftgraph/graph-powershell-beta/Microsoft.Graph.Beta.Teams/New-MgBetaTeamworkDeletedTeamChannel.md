@@ -17,11 +17,12 @@ Create new navigation property to channels for teamwork
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTeamworkDeletedTeamChannel -DeletedTeamId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsArchived] [-IsFavoriteByDefault]
- [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
- [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
+New-MgBetaTeamworkDeletedTeamChannel -DeletedTeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>]
+ [-IsArchived] [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>]
+ [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage[]>]
+ [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,16 +31,18 @@ New-MgBetaTeamworkDeletedTeamChannel -DeletedTeamId <String> [-AdditionalPropert
 ### Create
 ```
 New-MgBetaTeamworkDeletedTeamChannel -DeletedTeamId <String> -BodyParameter <IMicrosoftGraphChannel>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsArchived] [-IsFavoriteByDefault]
- [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
- [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
+New-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>]
+ [-IsArchived] [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>]
+ [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage[]>]
+ [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +51,8 @@ New-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-AdditionalP
 ### CreateViaIdentity
 ```
 New-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -340,6 +344,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedWithTeams
 A collection of teams with which a channel is shared.
 To construct, see NOTES section for SHAREDWITHTEAMS properties and create a hash table.
@@ -464,7 +483,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChannel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

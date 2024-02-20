@@ -15,31 +15,33 @@ Invoke action migrateToTemplate
 ### MigrateExpanded (Default)
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
- [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>]
+ [-PreserveCustomValues] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Migrate
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MigrateViaIdentityExpanded
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>]
+ [-PreserveCustomValues] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### MigrateViaIdentity
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -184,6 +186,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -226,7 +243,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

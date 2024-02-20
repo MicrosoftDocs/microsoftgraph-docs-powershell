@@ -18,8 +18,8 @@ Update the navigation property custodians in security
 ### UpdateExpanded (Default)
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
@@ -30,15 +30,15 @@ Update-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> -Ediscov
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
@@ -49,8 +49,8 @@ Update-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -301,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data source entity for SharePoint sites associated with the custodian.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -407,7 +422,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

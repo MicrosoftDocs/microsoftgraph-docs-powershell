@@ -15,35 +15,37 @@ Update the navigation property assignmentFilters in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAssignmentFilter -DeviceAndAppManagementAssignmentFilterId <String>
- [-AdditionalProperties <Hashtable>] [-AssignmentFilterManagementType <AssignmentFilterManagementType>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Payloads <IMicrosoftGraphPayloadByFilter[]>]
- [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignmentFilterManagementType <AssignmentFilterManagementType>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Payloads <IMicrosoftGraphPayloadByFilter[]>] [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>]
+ [-Rule <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementAssignmentFilter -DeviceAndAppManagementAssignmentFilterId <String>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignmentFilterManagementType <AssignmentFilterManagementType>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Payloads <IMicrosoftGraphPayloadByFilter[]>]
- [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignmentFilterManagementType <AssignmentFilterManagementType>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Payloads <IMicrosoftGraphPayloadByFilter[]>] [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>]
+ [-Rule <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -270,6 +272,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTags
 Indicates role scope tags assigned for the assignment filter.
 
@@ -342,7 +359,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

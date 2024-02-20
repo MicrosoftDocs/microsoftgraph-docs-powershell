@@ -15,7 +15,7 @@ Update the navigation property roleAssignmentScheduleRequests in roleManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest -RbacApplicationId <String>
- -UnifiedRoleAssignmentScheduleRequestId <String> [-Action <String>]
+ -UnifiedRoleAssignmentScheduleRequestId <String> [-ResponseHeadersVariable <String>] [-Action <String>]
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>] [-AdditionalProperties <Hashtable>]
  [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
@@ -32,14 +32,14 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest -RbacAppli
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest -RbacApplicationId <String>
  -UnifiedRoleAssignmentScheduleRequestId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest
- -InputObject <IIdentityGovernanceIdentity> [-Action <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-Action <String>]
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>] [-AdditionalProperties <Hashtable>]
  [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
@@ -56,8 +56,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -420,6 +420,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleDefinition
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
@@ -591,7 +606,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

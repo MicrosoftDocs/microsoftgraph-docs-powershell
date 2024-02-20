@@ -20,9 +20,9 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 ```
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
  -AccessReviewInstanceId <String> -AccessReviewScheduleDefinitionId <String>
- [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Decision <String>]
+ [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Batch
@@ -30,16 +30,17 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
  -AccessReviewInstanceId <String> -AccessReviewScheduleDefinitionId <String>
  -BodyParameter <IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BatchViaIdentityExpanded
 ```
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Decision <String>]
- [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### BatchViaIdentity
@@ -47,8 +48,8 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -260,6 +261,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -302,7 +318,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

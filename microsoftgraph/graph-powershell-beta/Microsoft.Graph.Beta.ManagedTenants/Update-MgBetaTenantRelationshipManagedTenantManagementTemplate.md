@@ -15,9 +15,9 @@ Update the navigation property managementTemplates in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -ManagementTemplateId <String>
- [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <String>]
  [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]
  [-ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]
@@ -29,16 +29,16 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -ManagementTempla
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -ManagementTemplateId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-Category <String>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-InformationLinks <IMicrosoftGraphActionUrl[]>] [-LastActionByUserId <String>]
  [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollections <IMicrosoftGraphManagedTenantsManagementTemplateCollection[]>]
  [-ManagementTemplateSteps <IMicrosoftGraphManagedTenantsManagementTemplateStep[]>]
@@ -50,8 +50,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IMa
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplate> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -372,6 +372,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserImpact
 .
 
@@ -462,7 +477,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

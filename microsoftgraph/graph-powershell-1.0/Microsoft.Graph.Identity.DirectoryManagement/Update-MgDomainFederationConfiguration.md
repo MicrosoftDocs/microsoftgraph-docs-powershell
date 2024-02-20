@@ -19,11 +19,11 @@ Update the properties of an internalDomainFederation object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
- [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
- [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
- [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
- [-SignOutUri <String>] [-SigningCertificate <String>]
+ [-ResponseHeadersVariable <String>] [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>] [-Id <String>]
+ [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
+ [-NextSigningCertificate <String>] [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>]
+ [-PromptLoginBehavior <String>] [-SignOutUri <String>] [-SigningCertificate <String>]
  [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,18 +31,18 @@ Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederat
 ### Update
 ```
 Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
- [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
- [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
- [-SignOutUri <String>] [-SigningCertificate <String>]
+ [-ResponseHeadersVariable <String>] [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>] [-Id <String>]
+ [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
+ [-NextSigningCertificate <String>] [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>]
+ [-PromptLoginBehavior <String>] [-SignOutUri <String>] [-SigningCertificate <String>]
  [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -50,8 +50,8 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ### UpdateViaIdentity
 ```
 Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -349,6 +349,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SigningCertificate
 Current certificate used to sign tokens passed to the Microsoft identity platform.
 The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.
@@ -442,7 +457,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

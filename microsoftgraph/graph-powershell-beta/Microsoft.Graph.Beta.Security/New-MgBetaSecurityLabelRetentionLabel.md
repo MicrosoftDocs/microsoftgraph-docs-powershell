@@ -16,22 +16,23 @@ To create a disposition review stage, include the actionAfterRetentionPeriod pro
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityLabelRetentionLabel [-ActionAfterRetentionPeriod <String>]
- [-AdditionalProperties <Hashtable>] [-BehaviorDuringRetentionPeriod <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultRecordBehavior <String>]
- [-DescriptionForAdmins <String>] [-DescriptionForUsers <String>]
- [-Descriptors <IMicrosoftGraphSecurityFilePlanDescriptor>] [-DisplayName <String>]
- [-DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>] [-Id <String>] [-IsInUse]
- [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-RetentionDuration <Hashtable>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-RetentionTrigger <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityLabelRetentionLabel [-ResponseHeadersVariable <String>]
+ [-ActionAfterRetentionPeriod <String>] [-AdditionalProperties <Hashtable>]
+ [-BehaviorDuringRetentionPeriod <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-DefaultRecordBehavior <String>] [-DescriptionForAdmins <String>]
+ [-DescriptionForUsers <String>] [-Descriptors <IMicrosoftGraphSecurityFilePlanDescriptor>]
+ [-DisplayName <String>] [-DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>]
+ [-Id <String>] [-IsInUse] [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-RetentionDuration <Hashtable>]
+ [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-RetentionTrigger <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetentionLabel>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -363,6 +364,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionDuration
 retentionDuration
 
@@ -450,7 +466,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

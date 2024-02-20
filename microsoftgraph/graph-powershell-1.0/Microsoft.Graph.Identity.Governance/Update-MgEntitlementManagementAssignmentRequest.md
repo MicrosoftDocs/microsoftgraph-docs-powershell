@@ -22,16 +22,17 @@ For requests completed more than 14 days, you will need to ask the users to canc
 ### Reprocess (Default)
 ```
 Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
 ```
 Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
- [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-AdditionalProperties <Hashtable>] [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+ [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>] [-Id <String>]
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
@@ -41,16 +42,17 @@ Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ### Update
 ```
 Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
- [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-AdditionalProperties <Hashtable>] [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+ [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>] [-Id <String>]
  [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
  [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
@@ -60,15 +62,15 @@ Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanc
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprocessViaIdentity
 ```
 Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -336,6 +338,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 entitlementManagementSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -426,7 +443,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

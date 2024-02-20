@@ -17,7 +17,7 @@ Update the navigation property me in education
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEducationMe [-AccountEnabled] [-AdditionalProperties <Hashtable>]
+Update-MgEducationMe [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
  [-Assignments <IMicrosoftGraphEducationAssignment[]>] [-BusinessPhones <String[]>]
  [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>]
@@ -37,8 +37,8 @@ Update-MgEducationMe [-AccountEnabled] [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgEducationMe -BodyParameter <IMicrosoftGraphEducationUser> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEducationMe -BodyParameter <IMicrosoftGraphEducationUser> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -561,6 +561,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rubrics
 When set, the grading rubric attached to the assignment.
 To construct, see NOTES section for RUBRICS properties and create a hash table.
@@ -788,7 +803,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationUser
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

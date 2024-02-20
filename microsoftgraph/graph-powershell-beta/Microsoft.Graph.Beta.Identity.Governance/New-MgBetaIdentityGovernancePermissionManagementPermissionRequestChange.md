@@ -14,17 +14,18 @@ Create new navigation property to permissionsRequestChanges for identityGovernan
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange [-ActiveOccurrenceStatus <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-ModificationDateTime <DateTime>]
- [-PermissionsRequestId <String>] [-StatusDetail <String>] [-TicketId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange [-ResponseHeadersVariable <String>]
+ [-ActiveOccurrenceStatus <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ModificationDateTime <DateTime>] [-PermissionsRequestId <String>] [-StatusDetail <String>]
+ [-TicketId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
- -BodyParameter <IMicrosoftGraphPermissionsRequestChange> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPermissionsRequestChange> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -154,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StatusDetail
 statusDetail
 
@@ -225,7 +241,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsRequestChange
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

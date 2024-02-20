@@ -18,32 +18,34 @@ Update the navigation property details in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail -EndUserNotificationDetailId <String>
- -EndUserNotificationId <String> [-AdditionalProperties <Hashtable>] [-EmailContent <String>] [-Id <String>]
- [-IsDefaultLangauge] [-Language <String>] [-Locale <String>] [-SentFrom <IMicrosoftGraphEmailIdentity>]
- [-Subject <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -EndUserNotificationId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-EmailContent <String>] [-Id <String>] [-IsDefaultLangauge] [-Language <String>] [-Locale <String>]
+ [-SentFrom <IMicrosoftGraphEmailIdentity>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail -EndUserNotificationDetailId <String>
  -EndUserNotificationId <String> -BodyParameter <IMicrosoftGraphEndUserNotificationDetail>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-EmailContent <String>] [-Id <String>] [-IsDefaultLangauge]
- [-Language <String>] [-Locale <String>] [-SentFrom <IMicrosoftGraphEmailIdentity>] [-Subject <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-EmailContent <String>]
+ [-Id <String>] [-IsDefaultLangauge] [-Language <String>] [-Locale <String>]
+ [-SentFrom <IMicrosoftGraphEmailIdentity>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphEndUserNotificationDetail> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEndUserNotificationDetail> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -234,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SentFrom
 emailIdentity
 To construct, see NOTES section for SENTFROM properties and create a hash table.
@@ -307,7 +324,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotificationDetail
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

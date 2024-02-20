@@ -20,9 +20,10 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ### CopyExpanded (Default)
 ```
 Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup -NotebookId <String> -OnenoteSectionId <String>
- -SectionGroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>] [-GroupId <String>]
- [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SectionGroupId <String> -SiteId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-RenameAs <String>]
+ [-SiteCollectionId <String>] [-SiteId1 <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -30,14 +31,15 @@ Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup -NotebookId <Str
 Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup -NotebookId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -SiteId <String>
  -BodyParameter <IPaths1Rvjs90SitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup [-SiteId <String>]
- -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>]
- [-RenameAs <String>] [-SiteCollectionId <String>] [-Headers <IDictionary>]
+ -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-GroupId <String>] [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +47,8 @@ Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup [-SiteId <String
 ```
 Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1Rvjs90SitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -209,6 +212,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SectionGroupId
 The unique identifier of sectionGroup
 
@@ -323,7 +341,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

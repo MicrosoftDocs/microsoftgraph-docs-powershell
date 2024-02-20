@@ -21,24 +21,7 @@ If you're creating a private channel, you can add a maximum of 200 members.
 
 ### CreateExpanded (Default)
 ```
-New-MgTeamChannel -TeamId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem>]
- [-Id <String>] [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>]
- [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage[]>]
- [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
- [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgTeamChannel -TeamId <String> -BodyParameter <IMicrosoftGraphChannel> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgTeamChannel -TeamId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
  [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
@@ -48,10 +31,29 @@ New-MgTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtabl
  [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgTeamChannel -TeamId <String> -BodyParameter <IMicrosoftGraphChannel> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>]
+ [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
+ [-Messages <IMicrosoftGraphChatMessage[]>] [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>]
+ [-Summary <IMicrosoftGraphChannelSummary>] [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>]
+ [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -417,6 +419,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SharedWithTeams
 A collection of teams with which a channel is shared.
 To construct, see NOTES section for SHAREDWITHTEAMS properties and create a hash table.
@@ -556,7 +573,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

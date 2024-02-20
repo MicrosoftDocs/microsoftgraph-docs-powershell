@@ -18,23 +18,25 @@ Create a new version of the workflow object.
 ### CreateExpanded (Default)
 ```
 New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion -WorkflowId <String>
- [-AdditionalProperties <Hashtable>] [-Workflow <IMicrosoftGraphIdentityGovernanceWorkflow>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Workflow <IMicrosoftGraphIdentityGovernanceWorkflow>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion -WorkflowId <String>
  -BodyParameter <IPaths2T18JtIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCreatenewversionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-Workflow <IMicrosoftGraphIdentityGovernanceWorkflow>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Workflow <IMicrosoftGraphIdentityGovernanceWorkflow>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -42,7 +44,8 @@ New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
 New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths2T18JtIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCreatenewversionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -127,6 +130,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Workflow
 workflow
 To construct, see NOTES section for WORKFLOW properties and create a hash table.
@@ -200,7 +218,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceWorkflow
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

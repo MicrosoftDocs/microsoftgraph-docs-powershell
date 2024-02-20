@@ -19,7 +19,8 @@ Update the properties of a iosManagedAppProtection object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
@@ -42,14 +43,15 @@ Update-MgDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <
 ### Update
 ```
 Update-MgDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
@@ -72,8 +74,8 @@ Update-MgDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorpor
 ### UpdateViaIdentity
 ```
 Update-MgDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -763,6 +765,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SaveAsBlocked
 Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
 
@@ -850,7 +867,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

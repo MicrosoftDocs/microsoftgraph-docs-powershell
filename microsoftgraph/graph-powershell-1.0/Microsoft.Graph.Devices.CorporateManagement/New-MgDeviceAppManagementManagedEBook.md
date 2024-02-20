@@ -18,7 +18,7 @@ Create a new iosVppEBook object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementManagedEBook [-AdditionalProperties <Hashtable>]
+New-MgDeviceAppManagementManagedEBook [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>] [-Id <String>]
  [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphEBookInstallSummary>]
@@ -30,8 +30,9 @@ New-MgDeviceAppManagementManagedEBook [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBook> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBook>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -300,6 +301,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserStateSummary
 The list of installation states for this eBook.
 To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
@@ -357,7 +373,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

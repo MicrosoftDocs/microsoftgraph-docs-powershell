@@ -17,44 +17,9 @@ Update entity in servicePrincipals by appId
 
 ### UpdateExpanded (Default)
 ```
-Update-MgServicePrincipalByAppId -AppId <String> [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
- [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
- [-AppDisplayName <String>] [-AppId1 <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
- [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
- [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
- [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
- [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
- [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
- [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
- [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
- [-Oauth2PermissionScopes <IMicrosoftGraphPermissionScope[]>]
- [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
- [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>] [-PreferredSingleSignOnMode <String>]
- [-PreferredTokenSigningKeyThumbprint <String>]
- [-RemoteDesktopSecurityConfiguration <IMicrosoftGraphRemoteDesktopSecurityConfiguration>]
- [-ReplyUrls <String[]>]
- [-ResourceSpecificApplicationPermissions <IMicrosoftGraphResourceSpecificPermission[]>]
- [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
- [-ServicePrincipalType <String>] [-SignInAudience <String>]
- [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
- [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
- [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgServicePrincipalByAppId [-AppId <String>] -InputObject <IApplicationsIdentity> [-AccountEnabled]
+Update-MgServicePrincipalByAppId -AppId <String> [-ResponseHeadersVariable <String>] [-AccountEnabled]
  [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
- [-AppDescription <String>] [-AppDisplayName <String>]
+ [-AppDescription <String>] [-AppDisplayName <String>] [-AppId1 <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
  [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
@@ -85,17 +50,54 @@ Update-MgServicePrincipalByAppId [-AppId <String>] -InputObject <IApplicationsId
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateViaIdentityExpanded
+```
+Update-MgServicePrincipalByAppId [-AppId <String>] -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
+ [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
+ [-AppDisplayName <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
+ [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
+ [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+ [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
+ [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
+ [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
+ [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
+ [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
+ [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
+ [-Oauth2PermissionScopes <IMicrosoftGraphPermissionScope[]>]
+ [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
+ [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>] [-PreferredSingleSignOnMode <String>]
+ [-PreferredTokenSigningKeyThumbprint <String>]
+ [-RemoteDesktopSecurityConfiguration <IMicrosoftGraphRemoteDesktopSecurityConfiguration>]
+ [-ReplyUrls <String[]>]
+ [-ResourceSpecificApplicationPermissions <IMicrosoftGraphResourceSpecificPermission[]>]
+ [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
+ [-ServicePrincipalType <String>] [-SignInAudience <String>]
+ [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
+ [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
+ [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update
 ```
 Update-MgServicePrincipalByAppId -AppId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipal> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServicePrincipal> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -932,6 +934,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SamlSingleSignOnSettings
 samlSingleSignOnSettings
 To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
@@ -1164,7 +1181,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

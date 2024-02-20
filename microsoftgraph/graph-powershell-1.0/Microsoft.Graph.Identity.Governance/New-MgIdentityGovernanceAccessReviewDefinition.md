@@ -18,7 +18,7 @@ Create a new accessReviewScheduleDefinition object.
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceAccessReviewDefinition
+New-MgIdentityGovernanceAccessReviewDefinition [-ResponseHeadersVariable <String>]
  [-AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>]
  [-DescriptionForAdmins <String>] [-DescriptionForReviewers <String>] [-DisplayName <String>]
@@ -33,7 +33,8 @@ New-MgIdentityGovernanceAccessReviewDefinition
 ### Create
 ```
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -548,6 +549,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Reviewers
 This collection of access review scopes is used to define who are the reviewers.
 The reviewers property is only updatable if individual users are assigned as reviewers.
@@ -679,7 +695,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

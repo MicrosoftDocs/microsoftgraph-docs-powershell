@@ -29,8 +29,8 @@ If you're organizing an event that involves a meeting location: Additionally, if
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserEvent -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
+New-MgBetaUserEvent -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
  [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
  [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
  [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
@@ -52,17 +52,17 @@ New-MgBetaUserEvent -UserId <String> [-AdditionalProperties <Hashtable>] [-Allow
 
 ### Create
 ```
-New-MgBetaUserEvent -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserEvent -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
+New-MgBetaUserEvent -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-CancelledOccurrences <String[]>] [-Categories <String[]>]
+ [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
  [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
@@ -82,7 +82,8 @@ New-MgBetaUserEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Has
 ### CreateViaIdentity
 ```
 New-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -975,6 +976,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseRequested
 .
 
@@ -1217,7 +1233,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

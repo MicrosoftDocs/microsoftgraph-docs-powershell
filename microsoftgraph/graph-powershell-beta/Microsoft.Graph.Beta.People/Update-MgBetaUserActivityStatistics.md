@@ -14,32 +14,32 @@ Update the navigation property activityStatistics in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserActivityStatistics -ActivityStatisticsId <String> -UserId <String> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Duration <TimeSpan>] [-EndDate <DateTime>] [-Id <String>]
- [-StartDate <DateTime>] [-TimeZoneUsed <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserActivityStatistics -ActivityStatisticsId <String> -UserId <String>
+ [-ResponseHeadersVariable <String>] [-Activity <String>] [-AdditionalProperties <Hashtable>]
+ [-Duration <TimeSpan>] [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-TimeZoneUsed <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserActivityStatistics -ActivityStatisticsId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphActivityStatistics> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityStatistics> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Duration <TimeSpan>] [-EndDate <DateTime>] [-Id <String>]
- [-StartDate <DateTime>] [-TimeZoneUsed <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Duration <TimeSpan>] [-EndDate <DateTime>]
+ [-Id <String>] [-StartDate <DateTime>] [-TimeZoneUsed <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphActivityStatistics> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityStatistics> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -202,6 +202,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDate
 Date when the activity started, expressed in ISO 8601 format for calendar dates.
 For example, the property value could be '2019-07-04' that follows the YYYY-MM-DD format.
@@ -291,7 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActivityStatistics
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

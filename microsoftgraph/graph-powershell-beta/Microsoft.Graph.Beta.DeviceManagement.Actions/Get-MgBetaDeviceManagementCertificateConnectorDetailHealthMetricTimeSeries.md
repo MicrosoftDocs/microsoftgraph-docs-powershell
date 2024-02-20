@@ -15,9 +15,9 @@ Invoke action getHealthMetricTimeSeries
 ### GetExpanded (Default)
 ```
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
- -CertificateConnectorDetailsId <String> [-AdditionalProperties <Hashtable>]
- [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -CertificateConnectorDetailsId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
@@ -25,15 +25,16 @@ Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
  -CertificateConnectorDetailsId <String>
  -BodyParameter <IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -41,7 +42,8 @@ Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -141,6 +143,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TimeSeries
 Parameter passed to GetHealthMetricTimeSeries when requesting snapshot time series.
 To construct, see NOTES section for TIMESERIES properties and create a hash table.
@@ -199,7 +216,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateConnectorHealthMetricValue
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

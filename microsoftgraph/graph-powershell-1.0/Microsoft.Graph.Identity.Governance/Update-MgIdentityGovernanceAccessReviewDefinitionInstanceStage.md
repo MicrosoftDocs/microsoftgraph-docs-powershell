@@ -22,9 +22,9 @@ To update an accessReviewStage, its status must be NotStarted, Initializing, or 
 ### UpdateExpanded (Default)
 ```
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewInstanceId <String>
- -AccessReviewScheduleDefinitionId <String> -AccessReviewStageId <String> [-AdditionalProperties <Hashtable>]
- [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>] [-EndDateTime <DateTime>]
- [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
+ -AccessReviewScheduleDefinitionId <String> -AccessReviewStageId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
+ [-EndDateTime <DateTime>] [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-StartDateTime <DateTime>] [-Status <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -33,15 +33,16 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewInst
 ```
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewInstanceId <String>
  -AccessReviewScheduleDefinitionId <String> -AccessReviewStageId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewStage> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAccessReviewStage> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
- [-EndDateTime <DateTime>] [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>] [-EndDateTime <DateTime>]
+ [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <String>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-StartDateTime <DateTime>] [-Status <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,7 +50,7 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IId
 ### UpdateViaIdentity
 ```
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewStage> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphAccessReviewStage> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -286,6 +287,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Reviewers
 This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
@@ -379,7 +395,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewStage
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

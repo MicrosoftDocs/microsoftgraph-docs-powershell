@@ -14,8 +14,8 @@ Create new navigation property to androidManagedStoreAppConfigurationSchemas for
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema [-AdditionalProperties <Hashtable>]
- [-ExampleJsonInputFile <String>] [-Id <String>]
+New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
  [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
  [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,8 +24,8 @@ New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema [-Additional
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -142,6 +142,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchemaItems
 Collection of items each representing a named configuration option in the schema.
 It only contains the root-level configuration.
@@ -200,7 +215,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

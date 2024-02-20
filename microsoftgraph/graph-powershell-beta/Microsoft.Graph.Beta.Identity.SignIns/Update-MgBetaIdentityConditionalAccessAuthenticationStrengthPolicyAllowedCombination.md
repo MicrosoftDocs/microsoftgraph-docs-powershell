@@ -17,8 +17,9 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 ### UpdateExpanded1 (Default)
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
- -AuthenticationStrengthPolicyId <String> [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AuthenticationStrengthPolicyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -26,14 +27,16 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombina
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
  -AuthenticationStrengthPolicyId <String>
  -BodyParameter <IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
- -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -41,7 +44,8 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombina
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
  -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -160,6 +164,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -202,7 +221,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUpdateAllowedCombinationsResult
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

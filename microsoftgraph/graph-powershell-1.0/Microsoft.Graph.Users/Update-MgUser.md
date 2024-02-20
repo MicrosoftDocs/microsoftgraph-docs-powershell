@@ -18,7 +18,7 @@ Update the properties of a user object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUser -UserId <String> [-AboutMe <String>] [-AccountEnabled]
+Update-MgUser -UserId <String> [-ResponseHeadersVariable <String>] [-AboutMe <String>] [-AccountEnabled]
  [-Activities <IMicrosoftGraphUserActivity[]>] [-AdditionalProperties <Hashtable>] [-AgeGroup <String>]
  [-AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
@@ -81,15 +81,15 @@ Update-MgUser -UserId <String> [-AboutMe <String>] [-AccountEnabled]
 
 ### Update
 ```
-Update-MgUser -UserId <String> -BodyParameter <IMicrosoftGraphUser> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUser -UserId <String> -BodyParameter <IMicrosoftGraphUser> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUser -InputObject <IUsersIdentity> [-AboutMe <String>] [-AccountEnabled]
- [-Activities <IMicrosoftGraphUserActivity[]>] [-AdditionalProperties <Hashtable>] [-AgeGroup <String>]
- [-AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]
+Update-MgUser -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>] [-AboutMe <String>]
+ [-AccountEnabled] [-Activities <IMicrosoftGraphUserActivity[]>] [-AdditionalProperties <Hashtable>]
+ [-AgeGroup <String>] [-AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
  [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
  [-Authentication <IMicrosoftGraphAuthentication>] [-AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]
@@ -150,8 +150,9 @@ Update-MgUser -InputObject <IUsersIdentity> [-AboutMe <String>] [-AccountEnabled
 
 ### UpdateViaIdentity
 ```
-Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -2161,6 +2162,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Responsibilities
 A list for the user to enumerate their responsibilities.
 Returned only on $select.
@@ -2553,7 +2569,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

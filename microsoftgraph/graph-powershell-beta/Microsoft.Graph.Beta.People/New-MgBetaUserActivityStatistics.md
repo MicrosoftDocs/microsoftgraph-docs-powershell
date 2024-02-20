@@ -14,30 +14,32 @@ Create new navigation property to activityStatistics for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserActivityStatistics -UserId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Duration <TimeSpan>] [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-TimeZoneUsed <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaUserActivityStatistics -UserId <String> -BodyParameter <IMicrosoftGraphActivityStatistics>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-Activity <String>]
+New-MgBetaUserActivityStatistics -UserId <String> [-ResponseHeadersVariable <String>] [-Activity <String>]
  [-AdditionalProperties <Hashtable>] [-Duration <TimeSpan>] [-EndDate <DateTime>] [-Id <String>]
  [-StartDate <DateTime>] [-TimeZoneUsed <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaUserActivityStatistics -UserId <String> -BodyParameter <IMicrosoftGraphActivityStatistics>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Duration <TimeSpan>] [-EndDate <DateTime>]
+ [-Id <String>] [-StartDate <DateTime>] [-TimeZoneUsed <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphActivityStatistics> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityStatistics> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -185,6 +187,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDate
 Date when the activity started, expressed in ISO 8601 format for calendar dates.
 For example, the property value could be '2019-07-04' that follows the YYYY-MM-DD format.
@@ -274,7 +291,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActivityStatistics
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

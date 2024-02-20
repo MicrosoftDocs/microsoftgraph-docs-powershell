@@ -16,33 +16,33 @@ Update the properties of a mobilityManagementPolicy object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-ComplianceUrl <String>] [-Description <String>]
- [-DiscoveryUrl <String>] [-DisplayName <String>] [-Id <String>] [-IncludedGroups <IMicrosoftGraphGroup[]>]
- [-IsValid] [-TermsOfUseUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppliesTo <String>]
+ [-ComplianceUrl <String>] [-Description <String>] [-DiscoveryUrl <String>] [-DisplayName <String>]
+ [-Id <String>] [-IncludedGroups <IMicrosoftGraphGroup[]>] [-IsValid] [-TermsOfUseUrl <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId <String>
- -BodyParameter <IMicrosoftGraphMobilityManagementPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobilityManagementPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-ComplianceUrl <String>] [-Description <String>]
- [-DiscoveryUrl <String>] [-DisplayName <String>] [-Id <String>] [-IncludedGroups <IMicrosoftGraphGroup[]>]
- [-IsValid] [-TermsOfUseUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppliesTo <String>]
+ [-ComplianceUrl <String>] [-Description <String>] [-DiscoveryUrl <String>] [-DisplayName <String>]
+ [-Id <String>] [-IncludedGroups <IMicrosoftGraphGroup[]>] [-IsValid] [-TermsOfUseUrl <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphMobilityManagementPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobilityManagementPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -296,6 +296,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TermsOfUseUrl
 Terms of Use URL of the mobility management application.
 
@@ -353,7 +368,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobilityManagementPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

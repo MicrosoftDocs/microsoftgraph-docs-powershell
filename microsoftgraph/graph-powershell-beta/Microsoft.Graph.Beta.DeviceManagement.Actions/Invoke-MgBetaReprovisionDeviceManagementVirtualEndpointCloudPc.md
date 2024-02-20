@@ -16,31 +16,33 @@ Reprovision a specific Cloud PC.
 ### ReprovisionExpanded (Default)
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
- [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-OSVersion <String>]
+ [-UserAccountType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Reprovision
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
  -BodyParameter <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprovisionViaIdentityExpanded
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-OSVersion <String>]
+ [-UserAccountType <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprovisionViaIdentity
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserAccountType
 cloudPcUserAccountType
 
@@ -243,7 +260,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

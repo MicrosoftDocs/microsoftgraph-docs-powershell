@@ -15,9 +15,10 @@ Update the navigation property groupPolicyConfigurations in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfiguration -GroupPolicyConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>]
- [-CreatedDateTime <DateTime>] [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyConfigurationIngestionType <GroupPolicyConfigurationIngestionType>] [-RoleScopeTagIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,16 +26,17 @@ Update-MgBetaDeviceManagementGroupPolicyConfiguration -GroupPolicyConfigurationI
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfiguration -GroupPolicyConfigurationId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfiguration -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>]
- [-CreatedDateTime <DateTime>] [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyConfigurationIngestionType <GroupPolicyConfigurationIngestionType>] [-RoleScopeTagIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +44,8 @@ Update-MgBetaDeviceManagementGroupPolicyConfiguration -InputObject <IDeviceManag
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementGroupPolicyConfiguration -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -266,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 The list of scope tags for the configuration.
 
@@ -323,7 +340,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

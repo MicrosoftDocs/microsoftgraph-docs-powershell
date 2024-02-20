@@ -15,41 +15,41 @@ Create new navigation property to deviceHealthScriptStates for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>]
- [-DeviceId <String>] [-DeviceName <String>] [-ExpectedStateUpdateDateTime <DateTime>] [-Id <String>]
- [-LastStateUpdateDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-OSVersion <String>]
- [-PolicyId <String>] [-PolicyName <String>] [-PostRemediationDetectionScriptError <String>]
- [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
- [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
- [-RemediationState <RemediationState>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>]
+ [-DetectionState <RunState>] [-DeviceId <String>] [-DeviceName <String>]
+ [-ExpectedStateUpdateDateTime <DateTime>] [-Id <String>] [-LastStateUpdateDateTime <DateTime>]
+ [-LastSyncDateTime <DateTime>] [-OSVersion <String>] [-PolicyId <String>] [-PolicyName <String>]
+ [-PostRemediationDetectionScriptError <String>] [-PostRemediationDetectionScriptOutput <String>]
+ [-PreRemediationDetectionScriptError <String>] [-PreRemediationDetectionScriptOutput <String>]
+ [-RemediationScriptError <String>] [-RemediationState <RemediationState>] [-UserName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>]
- [-DeviceId <String>] [-DeviceName <String>] [-ExpectedStateUpdateDateTime <DateTime>] [-Id <String>]
- [-LastStateUpdateDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-OSVersion <String>]
- [-PolicyId <String>] [-PolicyName <String>] [-PostRemediationDetectionScriptError <String>]
- [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
- [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
- [-RemediationState <RemediationState>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>]
+ [-DetectionState <RunState>] [-DeviceId <String>] [-DeviceName <String>]
+ [-ExpectedStateUpdateDateTime <DateTime>] [-Id <String>] [-LastStateUpdateDateTime <DateTime>]
+ [-LastSyncDateTime <DateTime>] [-OSVersion <String>] [-PolicyId <String>] [-PolicyName <String>]
+ [-PostRemediationDetectionScriptError <String>] [-PostRemediationDetectionScriptOutput <String>]
+ [-PreRemediationDetectionScriptError <String>] [-PreRemediationDetectionScriptOutput <String>]
+ [-RemediationScriptError <String>] [-RemediationState <RemediationState>] [-UserName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -404,6 +404,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserName
 Name of the user whom ran the device health script
 
@@ -461,7 +476,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

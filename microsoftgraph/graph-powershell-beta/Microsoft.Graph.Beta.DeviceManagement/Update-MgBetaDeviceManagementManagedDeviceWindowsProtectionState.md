@@ -18,7 +18,7 @@ Update the navigation property windowsProtectionState in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
  [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <WindowsDeviceHealthState>]
  [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
  [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
@@ -32,14 +32,14 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceI
 ### Update
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
  [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <WindowsDeviceHealthState>]
  [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
  [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
@@ -53,8 +53,8 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <I
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -448,6 +448,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SignatureUpdateOverdue
 When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date.
 Defaults to setting on client device.
@@ -537,7 +552,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

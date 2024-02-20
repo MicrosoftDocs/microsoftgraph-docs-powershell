@@ -17,10 +17,10 @@ Create new navigation property to sessions for solutions
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaVirtualEventSession -VirtualEventId <String> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
+New-MgBetaVirtualEventSession -VirtualEventId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
+ [-AllowTranscription] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
@@ -37,15 +37,16 @@ New-MgBetaVirtualEventSession -VirtualEventId <String> [-AdditionalProperties <H
 ### Create
 ```
 New-MgBetaVirtualEventSession -VirtualEventId <String> -BodyParameter <IMicrosoftGraphVirtualEventSession>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaVirtualEventSession -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
+New-MgBetaVirtualEventSession -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
+ [-AllowTranscription] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
@@ -62,8 +63,8 @@ New-MgBetaVirtualEventSession -InputObject <IBookingsIdentity> [-AdditionalPrope
 ### CreateViaIdentity
 ```
 New-MgBetaVirtualEventSession -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventSession> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -523,6 +524,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShareMeetingChatHistoryDefault
 meetingChatHistoryDefaultMode
 
@@ -658,7 +674,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventSession
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

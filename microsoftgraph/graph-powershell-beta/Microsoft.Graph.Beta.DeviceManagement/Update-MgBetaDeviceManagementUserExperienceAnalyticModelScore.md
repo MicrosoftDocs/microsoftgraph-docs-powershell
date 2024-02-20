@@ -18,9 +18,10 @@ Update the navigation property userExperienceAnalyticsModelScores in deviceManag
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore -UserExperienceAnalyticsModelScoresId <String>
- [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>]
- [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-MeanResourceSpikeTimeScore <Double>] [-Model <String>] [-ModelDeviceCount <Int64>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>]
+ [-BatteryHealthScore <Double>] [-EndpointAnalyticsScore <Double>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-MeanResourceSpikeTimeScore <Double>] [-Model <String>] [-ModelDeviceCount <Int64>]
  [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,16 +29,17 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore -UserExperienceAna
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore -UserExperienceAnalyticsModelScoresId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>]
- [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-MeanResourceSpikeTimeScore <Double>] [-Model <String>] [-ModelDeviceCount <Int64>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>]
+ [-BatteryHealthScore <Double>] [-EndpointAnalyticsScore <Double>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-MeanResourceSpikeTimeScore <Double>] [-Model <String>] [-ModelDeviceCount <Int64>]
  [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,8 +47,8 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDev
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +297,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartupPerformanceScore
 Indicates a weighted average of boot score and logon score used for measuring startup performance.
 Valid values range from 0-100.
@@ -392,7 +409,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

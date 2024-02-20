@@ -18,8 +18,9 @@ Update the navigation property androidManagedAppProtections in deviceAppManageme
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedAndroidDeviceManufacturers <String>]
- [-AllowedAndroidDeviceModels <String[]>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedAndroidDeviceManufacturers <String>] [-AllowedAndroidDeviceModels <String[]>]
+ [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
@@ -82,15 +83,16 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppPr
 ### Update
 ```
 Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedAndroidDeviceManufacturers <String>]
- [-AllowedAndroidDeviceModels <String[]>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AllowedAndroidDeviceManufacturers <String>] [-AllowedAndroidDeviceModels <String[]>]
+ [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
@@ -153,8 +155,8 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevic
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -1692,6 +1694,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -1854,7 +1871,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

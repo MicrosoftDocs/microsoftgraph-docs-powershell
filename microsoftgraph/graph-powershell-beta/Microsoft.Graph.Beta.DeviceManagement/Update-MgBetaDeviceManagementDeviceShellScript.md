@@ -15,10 +15,10 @@ Update the navigation property deviceShellScripts in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementDeviceShellScript -DeviceShellScriptId <String>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
- [-BlockExecutionNotifications] [-Description <String>]
- [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>] [-DisplayName <String>]
- [-ExecutionFrequency <TimeSpan>] [-FileName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>] [-BlockExecutionNotifications]
+ [-Description <String>] [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>]
+ [-DisplayName <String>] [-ExecutionFrequency <TimeSpan>] [-FileName <String>]
  [-GroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-Id <String>]
  [-RetryCount <Int32>] [-RoleScopeTagIds <String[]>] [-RunAsAccount <RunAsAccountType>]
  [-RunSummary <IMicrosoftGraphDeviceManagementScriptRunSummary>] [-ScriptContentInputFile <String>]
@@ -29,17 +29,17 @@ Update-MgBetaDeviceManagementDeviceShellScript -DeviceShellScriptId <String>
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceShellScript -DeviceShellScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceShellScript> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphDeviceShellScript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
- [-BlockExecutionNotifications] [-Description <String>]
- [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>] [-DisplayName <String>]
- [-ExecutionFrequency <TimeSpan>] [-FileName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>] [-BlockExecutionNotifications]
+ [-Description <String>] [-DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>]
+ [-DisplayName <String>] [-ExecutionFrequency <TimeSpan>] [-FileName <String>]
  [-GroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-Id <String>]
  [-RetryCount <Int32>] [-RoleScopeTagIds <String[]>] [-RunAsAccount <RunAsAccountType>]
  [-RunSummary <IMicrosoftGraphDeviceManagementScriptRunSummary>] [-ScriptContentInputFile <String>]
@@ -50,7 +50,7 @@ Update-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementId
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceShellScript> [-Headers <IDictionary>]
+ -BodyParameter <IMicrosoftGraphDeviceShellScript> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -292,6 +292,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetryCount
 Number of times for the script to be retried if it fails
 
@@ -426,7 +441,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceShellScript
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

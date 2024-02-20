@@ -15,33 +15,37 @@ Create new navigation property to groupPolicyOperations for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
- -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OperationStatus <GroupPolicyOperationStatus>]
- [-OperationType <GroupPolicyOperationType>] [-StatusDetails <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -GroupPolicyUploadedDefinitionFileId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-OperationStatus <GroupPolicyOperationStatus>] [-OperationType <GroupPolicyOperationType>]
+ [-StatusDetails <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -GroupPolicyUploadedDefinitionFileId <String> -BodyParameter <IMicrosoftGraphGroupPolicyOperation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OperationStatus <GroupPolicyOperationStatus>]
- [-OperationType <GroupPolicyOperationType>] [-StatusDetails <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-OperationStatus <GroupPolicyOperationStatus>] [-OperationType <GroupPolicyOperationType>]
+ [-StatusDetails <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyOperation>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -202,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StatusDetails
 The group policy operation status detail.
 
@@ -259,7 +278,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

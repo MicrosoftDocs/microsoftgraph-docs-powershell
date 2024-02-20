@@ -14,8 +14,9 @@ Update the navigation property devices in teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTeamworkDevice -TeamworkDeviceId <String> [-Activity <IMicrosoftGraphTeamworkDeviceActivity>]
- [-ActivityState <String>] [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
+Update-MgBetaTeamworkDevice -TeamworkDeviceId <String> [-ResponseHeadersVariable <String>]
+ [-Activity <IMicrosoftGraphTeamworkDeviceActivity>] [-ActivityState <String>]
+ [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
  [-Configuration <IMicrosoftGraphTeamworkDeviceConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity>] [-DeviceType <String>]
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
@@ -27,13 +28,15 @@ Update-MgBetaTeamworkDevice -TeamworkDeviceId <String> [-Activity <IMicrosoftGra
 ### Update
 ```
 Update-MgBetaTeamworkDevice -TeamworkDeviceId <String> -BodyParameter <IMicrosoftGraphTeamworkDevice>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-Activity <IMicrosoftGraphTeamworkDeviceActivity>]
- [-ActivityState <String>] [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
+Update-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-Activity <IMicrosoftGraphTeamworkDeviceActivity>] [-ActivityState <String>]
+ [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
  [-Configuration <IMicrosoftGraphTeamworkDeviceConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity>] [-DeviceType <String>]
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
@@ -45,7 +48,8 @@ Update-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-Activity <IMicrosoft
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamworkDevice>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -379,6 +383,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamworkDeviceId
 The unique identifier of teamworkDevice
 
@@ -436,7 +455,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDevice
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

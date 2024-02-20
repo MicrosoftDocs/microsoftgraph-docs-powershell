@@ -14,9 +14,10 @@ Update the navigation property health in teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-Connection <IMicrosoftGraphTeamworkConnection>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-HardwareHealth <IMicrosoftGraphTeamworkHardwareHealth>] [-Id <String>]
+Update-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Connection <IMicrosoftGraphTeamworkConnection>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-HardwareHealth <IMicrosoftGraphTeamworkHardwareHealth>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LoginStatus <IMicrosoftGraphTeamworkLoginStatus>]
  [-PeripheralsHealth <IMicrosoftGraphTeamworkPeripheralsHealth>]
@@ -27,15 +28,16 @@ Update-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String> [-AdditionalPropert
 ### Update
 ```
 Update-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Connection <IMicrosoftGraphTeamworkConnection>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-HardwareHealth <IMicrosoftGraphTeamworkHardwareHealth>] [-Id <String>]
+Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Connection <IMicrosoftGraphTeamworkConnection>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-HardwareHealth <IMicrosoftGraphTeamworkHardwareHealth>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LoginStatus <IMicrosoftGraphTeamworkLoginStatus>]
  [-PeripheralsHealth <IMicrosoftGraphTeamworkPeripheralsHealth>]
@@ -46,8 +48,8 @@ Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-AdditionalProp
 ### UpdateViaIdentity
 ```
 Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SoftwareUpdateHealth
 teamworkSoftwareUpdateHealth
 To construct, see NOTES section for SOFTWAREUPDATEHEALTH properties and create a hash table.
@@ -347,7 +364,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,8 @@ Update the navigation property userExperienceAnalyticsBaselines in deviceManagem
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBaseline -UserExperienceAnalyticsBaselineId <String>
- [-AdditionalProperties <Hashtable>] [-AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-BatteryHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-BestPracticesMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-CreatedDateTime <DateTime>]
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
@@ -31,14 +32,15 @@ Update-MgDeviceManagementUserExperienceAnalyticBaseline -UserExperienceAnalytics
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBaseline -UserExperienceAnalyticsBaselineId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-BatteryHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-BestPracticesMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-CreatedDateTime <DateTime>]
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
@@ -51,8 +53,8 @@ Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceMan
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -300,6 +302,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsBaselineId
 The unique identifier of userExperienceAnalyticsBaseline
 
@@ -373,7 +390,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

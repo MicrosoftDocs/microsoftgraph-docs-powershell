@@ -15,8 +15,9 @@ Update the navigation property salesCreditMemos in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleCreditMemo -CompanyId <String> -SalesCreditMemoId <String>
- [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
- [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-CreditMemoDate <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>]
+ [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-CreditMemoDate <DateTime>]
  [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
  [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerName <String>]
  [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>]
@@ -32,15 +33,16 @@ Update-MgBetaFinancialCompanySaleCreditMemo -CompanyId <String> -SalesCreditMemo
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleCreditMemo -CompanyId <String> -SalesCreditMemoId <String>
- -BodyParameter <IMicrosoftGraphSalesCreditMemo> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesCreditMemo> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanySaleCreditMemo -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
- [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-CreditMemoDate <DateTime>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>]
+ [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-CreditMemoDate <DateTime>]
  [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
  [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerName <String>]
  [-CustomerNumber <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>]
@@ -56,8 +58,8 @@ Update-MgBetaFinancialCompanySaleCreditMemo -InputObject <IFinancialsIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleCreditMemo -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesCreditMemo> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesCreditMemo> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -551,6 +553,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesCreditMemoId
 The unique identifier of salesCreditMemo
 
@@ -715,7 +732,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesCreditMemo
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

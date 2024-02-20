@@ -15,43 +15,45 @@ Update the navigation property windowsProtectionStates in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -WindowsProtectionStateId <String>
- [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>] [-AttentionRequired] [-DeviceDeleted]
- [-DevicePropertyRefreshDateTime <DateTime>] [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired]
- [-Id <String>] [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
- [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
- [-LastRefreshedDateTime <DateTime>] [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled]
- [-ManagedDeviceHealthState <String>] [-ManagedDeviceId <String>] [-ManagedDeviceName <String>]
- [-NetworkInspectionSystemEnabled] [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired]
- [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
+ [-AttentionRequired] [-DeviceDeleted] [-DevicePropertyRefreshDateTime <DateTime>] [-EngineVersion <String>]
+ [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-LastFullScanDateTime <DateTime>]
+ [-LastFullScanSignatureVersion <String>] [-LastQuickScanDateTime <DateTime>]
+ [-LastQuickScanSignatureVersion <String>] [-LastRefreshedDateTime <DateTime>]
+ [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-ManagedDeviceHealthState <String>]
+ [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-NetworkInspectionSystemEnabled]
+ [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue]
+ [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -WindowsProtectionStateId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>] [-AttentionRequired] [-DeviceDeleted]
- [-DevicePropertyRefreshDateTime <DateTime>] [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired]
- [-Id <String>] [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
- [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
- [-LastRefreshedDateTime <DateTime>] [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled]
- [-ManagedDeviceHealthState <String>] [-ManagedDeviceId <String>] [-ManagedDeviceName <String>]
- [-NetworkInspectionSystemEnabled] [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired]
- [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
+ [-AttentionRequired] [-DeviceDeleted] [-DevicePropertyRefreshDateTime <DateTime>] [-EngineVersion <String>]
+ [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-LastFullScanDateTime <DateTime>]
+ [-LastFullScanSignatureVersion <String>] [-LastQuickScanDateTime <DateTime>]
+ [-LastQuickScanSignatureVersion <String>] [-LastRefreshedDateTime <DateTime>]
+ [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-ManagedDeviceHealthState <String>]
+ [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-NetworkInspectionSystemEnabled]
+ [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue]
+ [-SignatureVersion <String>] [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsWindowsProtectionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -509,6 +511,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SignatureUpdateOverdue
 A flag indicating whether an signature update is overdue.
 Optional.
@@ -634,7 +651,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsWindowsProtectionState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

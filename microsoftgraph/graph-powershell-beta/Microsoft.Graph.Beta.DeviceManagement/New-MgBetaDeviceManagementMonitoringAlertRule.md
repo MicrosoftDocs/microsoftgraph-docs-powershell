@@ -15,7 +15,8 @@ Create an alertRule object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementMonitoringAlertRule [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
+New-MgBetaDeviceManagementMonitoringAlertRule [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
  [-Conditions <IMicrosoftGraphDeviceManagementRuleCondition[]>] [-Description <String>] [-DisplayName <String>]
  [-Enabled] [-Id <String>] [-IsSystemRule]
  [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
@@ -26,7 +27,8 @@ New-MgBetaDeviceManagementMonitoringAlertRule [-AdditionalProperties <Hashtable>
 ### Create
 ```
 New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -225,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Severity
 ruleSeverityType
 
@@ -297,7 +314,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

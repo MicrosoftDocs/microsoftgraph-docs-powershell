@@ -14,17 +14,17 @@ Create new navigation property to deviceConfigurationConflictSummary for deviceM
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementDeviceConfigurationConflictSummary [-AdditionalProperties <Hashtable>]
- [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>] [-ContributingSettings <String[]>]
- [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementDeviceConfigurationConflictSummary [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>]
+ [-ContributingSettings <String[]>] [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationConflictSummary
- -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -196,7 +211,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

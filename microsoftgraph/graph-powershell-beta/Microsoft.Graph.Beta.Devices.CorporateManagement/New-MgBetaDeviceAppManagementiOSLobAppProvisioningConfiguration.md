@@ -14,7 +14,8 @@ Create new navigation property to iosLobAppProvisioningConfigurations for device
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>]
  [-DisplayName <String>] [-ExpirationDateTime <DateTime>]
@@ -28,8 +29,8 @@ New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration [-AdditionalProp
 ### Create
 ```
 New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
- -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIosLobAppProvisioningConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -268,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this iOS LOB app provisioning configuration entity.
 
@@ -355,7 +371,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosLobAppProvisioningConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

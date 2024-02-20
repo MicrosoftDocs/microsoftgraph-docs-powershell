@@ -18,11 +18,11 @@ Update the properties of an ediscoveryCase object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
- [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
- [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>]
+Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>]
+ [-Description <String>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialDataSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphSecurityCaseOperation[]>]
  [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet[]>]
@@ -35,17 +35,17 @@ Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-AdditionalPrope
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
- [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>]
+Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>]
+ [-Description <String>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialDataSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphSecurityCaseOperation[]>]
  [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet[]>]
@@ -58,8 +58,8 @@ Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Additiona
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -368,6 +368,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewSets
 Returns a list of eDiscoveryReviewSet objects in the case.
 To construct, see NOTES section for REVIEWSETS properties and create a hash table.
@@ -489,7 +504,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,24 +18,7 @@ Create new navigation property to files for deviceAppManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile -MobileAppContentId <String>
- -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
- [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
- [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>]
- [-SizeEncrypted <Int64>] [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile -MobileAppContentId <String>
- -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileAppContentFile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ -MobileAppId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AzureStorageUri <String>] [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-IsCommitted] [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <String>]
  [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>] [-SizeEncryptedInBytes <Int64>]
@@ -43,11 +26,30 @@ New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileAppContentFile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
+ [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
+ [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>]
+ [-SizeEncrypted <Int64>] [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContentFile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -311,6 +313,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Size
 The size of the file prior to encryption.
 To be deprecated, please use sizeInBytes property instead.
@@ -430,7 +447,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContentFile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

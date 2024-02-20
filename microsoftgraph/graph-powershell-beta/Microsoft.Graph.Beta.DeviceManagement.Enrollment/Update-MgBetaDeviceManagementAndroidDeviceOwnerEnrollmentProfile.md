@@ -15,9 +15,9 @@ Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceMan
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
- -AndroidDeviceOwnerEnrollmentProfileId <String> [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ -AndroidDeviceOwnerEnrollmentProfileId <String> [-ResponseHeadersVariable <String>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -30,16 +30,16 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
  -AndroidDeviceOwnerEnrollmentProfileId <String>
- -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
- -InputObject <IDeviceManagementEnrollmentIdentity> [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -52,8 +52,8 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 ```
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -369,6 +369,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleScopeTagIds
 List of Scope Tags for this Entity instance.
 
@@ -531,7 +546,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

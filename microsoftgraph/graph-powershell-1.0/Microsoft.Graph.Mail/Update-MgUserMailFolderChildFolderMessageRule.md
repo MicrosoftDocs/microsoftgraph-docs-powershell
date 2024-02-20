@@ -19,23 +19,25 @@ Change writable properties on a messageRule object and save the changes.
 ### UpdateExpanded (Default)
 ```
 Update-MgUserMailFolderChildFolderMessageRule -MailFolderId <String> -MailFolderId1 <String>
- -MessageRuleId <String> -UserId <String> [-Actions <IMicrosoftGraphMessageRuleActions>]
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphMessageRulePredicates>]
- [-DisplayName <String>] [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>]
- [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MessageRuleId <String> -UserId <String> [-ResponseHeadersVariable <String>]
+ [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
+ [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
+ [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
+ [-Sequence <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserMailFolderChildFolderMessageRule -MailFolderId <String> -MailFolderId1 <String>
- -MessageRuleId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessageRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -MessageRuleId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessageRule>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
+Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-ResponseHeadersVariable <String>]
  [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
  [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
@@ -46,8 +48,8 @@ Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphMessageRule> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMessageRule> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -305,6 +307,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sequence
 Indicates the order in which the rule is executed, among other rules.
 
@@ -377,7 +394,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,8 +17,8 @@ Update the navigation property settingDefinitions in deviceManagement
 Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -DeviceManagementConfigurationPolicyTemplateId <String>
  -DeviceManagementConfigurationSettingDefinitionId <String>
- -DeviceManagementConfigurationSettingTemplateId <String> [-AccessTypes <String>]
- [-AdditionalProperties <Hashtable>]
+ -DeviceManagementConfigurationSettingTemplateId <String> [-ResponseHeadersVariable <String>]
+ [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -36,14 +36,16 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -DeviceManagementConfigurationPolicyTemplateId <String>
  -DeviceManagementConfigurationSettingDefinitionId <String>
  -DeviceManagementConfigurationSettingTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
- -InputObject <IDeviceManagementIdentity> [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>] [-AccessTypes <String>]
+ [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -59,8 +61,9 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
 ```
 Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -407,6 +410,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RootDefinitionId
 Root setting definition id if the setting is a child setting.
 
@@ -524,7 +542,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

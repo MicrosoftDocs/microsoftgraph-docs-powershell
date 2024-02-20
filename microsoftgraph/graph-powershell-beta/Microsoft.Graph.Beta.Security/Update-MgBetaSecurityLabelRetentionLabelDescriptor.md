@@ -15,8 +15,8 @@ Update the navigation property descriptors in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityLabelRetentionLabelDescriptor -RetentionLabelId <String>
- [-AdditionalProperties <Hashtable>] [-Authority <Hashtable>] [-AuthorityTemplate <Hashtable>]
- [-Category <IMicrosoftGraphSecurityAppliedCategory>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Authority <Hashtable>]
+ [-AuthorityTemplate <Hashtable>] [-Category <IMicrosoftGraphSecurityAppliedCategory>]
  [-CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>] [-Citation <IMicrosoftGraphSecurityCitation>]
  [-CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>] [-Department <Hashtable>]
  [-DepartmentTemplate <Hashtable>] [-FilePlanReference <Hashtable>] [-FilePlanReferenceTemplate <Hashtable>]
@@ -27,15 +27,15 @@ Update-MgBetaSecurityLabelRetentionLabelDescriptor -RetentionLabelId <String>
 ### Update
 ```
 Update-MgBetaSecurityLabelRetentionLabelDescriptor -RetentionLabelId <String>
- -BodyParameter <IMicrosoftGraphSecurityFilePlanDescriptor> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityFilePlanDescriptor> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Authority <Hashtable>] [-AuthorityTemplate <Hashtable>]
- [-Category <IMicrosoftGraphSecurityAppliedCategory>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Authority <Hashtable>]
+ [-AuthorityTemplate <Hashtable>] [-Category <IMicrosoftGraphSecurityAppliedCategory>]
  [-CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>] [-Citation <IMicrosoftGraphSecurityCitation>]
  [-CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>] [-Department <Hashtable>]
  [-DepartmentTemplate <Hashtable>] [-FilePlanReference <Hashtable>] [-FilePlanReferenceTemplate <Hashtable>]
@@ -46,8 +46,8 @@ Update-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdenti
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityFilePlanDescriptor> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityFilePlanDescriptor> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -302,6 +302,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetentionLabelId
 The unique identifier of retentionLabel
 
@@ -359,7 +374,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFilePlanDescriptor
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

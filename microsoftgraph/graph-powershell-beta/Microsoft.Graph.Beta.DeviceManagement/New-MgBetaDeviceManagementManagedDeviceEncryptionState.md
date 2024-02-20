@@ -14,10 +14,11 @@ Create new navigation property to managedDeviceEncryptionStates for deviceManage
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementManagedDeviceEncryptionState [-AdditionalProperties <Hashtable>]
- [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>] [-DeviceType <DeviceTypes>]
- [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <EncryptionReadinessState>]
- [-EncryptionState <EncryptionState>] [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
+New-MgBetaDeviceManagementManagedDeviceEncryptionState [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>]
+ [-DeviceType <DeviceTypes>] [-EncryptionPolicySettingState <String>]
+ [-EncryptionReadinessState <EncryptionReadinessState>] [-EncryptionState <EncryptionState>]
+ [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
  [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -26,8 +27,8 @@ New-MgBetaDeviceManagementManagedDeviceEncryptionState [-AdditionalProperties <H
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDeviceEncryptionState
- -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -248,6 +249,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TpmSpecificationVersion
 Device TPM Version
 
@@ -319,7 +335,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

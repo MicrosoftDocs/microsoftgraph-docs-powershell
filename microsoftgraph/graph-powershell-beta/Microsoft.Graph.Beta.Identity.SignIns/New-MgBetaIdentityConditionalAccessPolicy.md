@@ -18,9 +18,9 @@ Create a new conditionalAccessPolicy.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
- [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>]
+New-MgBetaIdentityConditionalAccessPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,7 +29,8 @@ New-MgBetaIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -461,6 +462,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SessionControls
 conditionalAccessSessionControls
 To construct, see NOTES section for SESSIONCONTROLS properties and create a hash table.
@@ -533,7 +549,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

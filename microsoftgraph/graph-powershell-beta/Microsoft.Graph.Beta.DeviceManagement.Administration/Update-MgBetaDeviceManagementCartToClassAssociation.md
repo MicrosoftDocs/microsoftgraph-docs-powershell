@@ -15,33 +15,33 @@ Update the navigation property cartToClassAssociations in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementCartToClassAssociation -CartToClassAssociationId <String>
- [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementCartToClassAssociation -CartToClassAssociationId <String>
- -BodyParameter <IMicrosoftGraphCartToClassAssociation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCartToClassAssociation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ClassroomIds <String[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceCartIds <String[]>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCartToClassAssociation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCartToClassAssociation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -247,6 +247,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Version
 Version of the CartToClassAssociation.
 
@@ -304,7 +319,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

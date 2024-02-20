@@ -14,7 +14,8 @@ Update the navigation property monthly in reports
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaReportUserInsightMonthly [-ActiveUsers <IMicrosoftGraphActiveUsersMetric[]>]
+Update-MgBetaReportUserInsightMonthly [-ResponseHeadersVariable <String>]
+ [-ActiveUsers <IMicrosoftGraphActiveUsersMetric[]>]
  [-ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric[]>] [-AdditionalProperties <Hashtable>]
  [-Authentications <IMicrosoftGraphAuthenticationsMetric[]>] [-Id <String>]
  [-InactiveUsers <IMicrosoftGraphMonthlyInactiveUsersMetric[]>]
@@ -27,7 +28,8 @@ Update-MgBetaReportUserInsightMonthly [-ActiveUsers <IMicrosoftGraphActiveUsersM
 ### Update
 ```
 Update-MgBetaReportUserInsightMonthly -BodyParameter <IMicrosoftGraphMonthlyUserInsightMetricsRoot>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -224,6 +226,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SignUps
 Total sign-ups on apps registered in the tenant for a specified period.
 To construct, see NOTES section for SIGNUPS properties and create a hash table.
@@ -297,7 +314,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMonthlyUserInsightMetricsRoot
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

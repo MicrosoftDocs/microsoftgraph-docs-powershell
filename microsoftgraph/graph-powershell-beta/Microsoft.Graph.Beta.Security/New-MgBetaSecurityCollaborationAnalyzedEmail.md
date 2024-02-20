@@ -14,7 +14,8 @@ Create new navigation property to analyzedEmails for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityCollaborationAnalyzedEmail [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
+New-MgBetaSecurityCollaborationAnalyzedEmail [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
  [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>] [-AttachmentsCount <Int32>]
  [-AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]
  [-BulkComplaintLevel <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
@@ -34,7 +35,8 @@ New-MgBetaSecurityCollaborationAnalyzedEmail [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaSecurityCollaborationAnalyzedEmail -BodyParameter <IMicrosoftGraphSecurityAnalyzedEmail>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -454,6 +456,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReturnPath
 .
 
@@ -617,7 +634,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAnalyzedEmail
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

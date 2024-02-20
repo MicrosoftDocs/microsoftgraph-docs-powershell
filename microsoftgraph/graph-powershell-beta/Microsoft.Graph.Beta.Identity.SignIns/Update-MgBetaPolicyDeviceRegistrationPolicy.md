@@ -16,8 +16,8 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPolicyDeviceRegistrationPolicy [-AdditionalProperties <Hashtable>]
- [-AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]
+Update-MgBetaPolicyDeviceRegistrationPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]
  [-AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LocalAdminPassword <IMicrosoftGraphLocalAdminPasswordSettings>]
  [-MultiFactorAuthConfiguration <String>] [-UserDeviceQuota <Int32>] [-Headers <IDictionary>]
@@ -27,7 +27,8 @@ Update-MgBetaPolicyDeviceRegistrationPolicy [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDeviceRegistrationPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -213,6 +214,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserDeviceQuota
 Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations.
 The default value is set to 50.
@@ -271,7 +287,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

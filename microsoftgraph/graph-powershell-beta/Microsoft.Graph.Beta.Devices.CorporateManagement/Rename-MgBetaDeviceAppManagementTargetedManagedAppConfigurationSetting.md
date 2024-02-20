@@ -15,9 +15,10 @@ Invoke action changeSettings
 ### ChangeExpanded (Default)
 ```
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
- -TargetedManagedAppConfigurationId <String> [-AdditionalProperties <Hashtable>]
- [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -TargetedManagedAppConfigurationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Change
@@ -25,16 +26,17 @@ Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -TargetedManagedAppConfigurationId <String>
  -BodyParameter <IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ChangeViaIdentityExpanded
 ```
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
@@ -42,8 +44,8 @@ Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -143,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Settings
 .
 To construct, see NOTES section for SETTINGS properties and create a hash table.
@@ -216,7 +233,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

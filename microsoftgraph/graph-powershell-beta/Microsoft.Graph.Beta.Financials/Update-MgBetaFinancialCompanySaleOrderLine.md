@@ -15,22 +15,7 @@ Update the navigation property salesOrderLines in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>]
- [-InvoicedQuantity <Decimal>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>]
- [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
- [-Sequence <Int32>] [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>]
- [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>]
- [-UnitPrice <Decimal>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
- -SalesOrderId <String> [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
  [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
  [-DocumentId <String>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>]
@@ -42,27 +27,42 @@ Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId
  [<CommonParameters>]
 ```
 
+### UpdateExpanded1
+```
+Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
+ -SalesOrderId <String> [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>]
+ [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>]
+ [-AmountIncludingTax <Decimal>] [-Description <String>] [-DiscountAmount <Decimal>]
+ [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>] [-Id <String>]
+ [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>] [-InvoicedQuantity <Decimal>]
+ [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
+ [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
+ [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>] [-TaxCode <String>]
+ [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitOfMeasureId <String>] [-UnitPrice <Decimal>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update1
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
- -SalesOrderId <String> -BodyParameter <IMicrosoftGraphSalesOrderLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SalesOrderId <String> -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -CompanyId <String> -SalesOrderLineId <String>
- -BodyParameter <IMicrosoftGraphSalesOrderLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>]
  [-InvoicedQuantity <Decimal>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>]
  [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
  [-Sequence <Int32>] [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>]
@@ -74,10 +74,10 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>] [-InvoiceQuantity <Decimal>]
  [-InvoicedQuantity <Decimal>] [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>]
  [-NetAmount <Decimal>] [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>]
  [-Sequence <Int32>] [-ShipQuantity <Decimal>] [-ShipmentDate <DateTime>] [-ShippedQuantity <Decimal>]
@@ -89,15 +89,15 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesOrderLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesOrderLine> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesOrderLine> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -500,6 +500,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SalesOrderId
 The unique identifier of salesOrder
 
@@ -707,7 +722,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesOrderLine
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

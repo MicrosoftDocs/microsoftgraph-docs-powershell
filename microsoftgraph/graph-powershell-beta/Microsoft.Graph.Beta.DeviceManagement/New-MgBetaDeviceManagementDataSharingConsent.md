@@ -14,16 +14,17 @@ Create new navigation property to dataSharingConsents for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementDataSharingConsent [-AdditionalProperties <Hashtable>] [-GrantDateTime <DateTime>]
- [-Granted] [-GrantedByUpn <String>] [-GrantedByUserId <String>] [-Id <String>] [-ServiceDisplayName <String>]
- [-TermsUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceManagementDataSharingConsent [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-GrantDateTime <DateTime>] [-Granted] [-GrantedByUpn <String>]
+ [-GrantedByUserId <String>] [-Id <String>] [-ServiceDisplayName <String>] [-TermsUrl <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -168,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServiceDisplayName
 The display name of the service work flow
 
@@ -239,7 +255,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataSharingConsent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

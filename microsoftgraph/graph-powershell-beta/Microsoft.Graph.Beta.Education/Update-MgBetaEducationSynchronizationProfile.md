@@ -15,9 +15,10 @@ Update the navigation property synchronizationProfiles in education
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String>
- [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>] [-DisplayName <String>]
- [-Errors <IMicrosoftGraphEducationSynchronizationError[]>] [-ExpirationDate <DateTime>]
- [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>]
+ [-DisplayName <String>] [-Errors <IMicrosoftGraphEducationSynchronizationError[]>]
+ [-ExpirationDate <DateTime>] [-HandleSpecialCharacterConstraint] [-Id <String>]
+ [-IdentitySynchronizationConfiguration <Hashtable>]
  [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
  [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,16 +27,17 @@ Update-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId 
 ### Update
 ```
 Update-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>] [-DisplayName <String>]
- [-Errors <IMicrosoftGraphEducationSynchronizationError[]>] [-ExpirationDate <DateTime>]
- [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>]
+ [-DisplayName <String>] [-Errors <IMicrosoftGraphEducationSynchronizationError[]>]
+ [-ExpirationDate <DateTime>] [-HandleSpecialCharacterConstraint] [-Id <String>]
+ [-IdentitySynchronizationConfiguration <Hashtable>]
  [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
  [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,8 +46,8 @@ Update-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -287,6 +289,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 educationSynchronizationProfileState
 
@@ -344,7 +361,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,9 +14,10 @@ Create new navigation property to configurationPolicyTemplates for deviceManagem
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementConfigurationPolicyTemplate [-AdditionalProperties <Hashtable>]
- [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>] [-DisplayName <String>]
- [-DisplayVersion <String>] [-Id <String>] [-LifecycleState <DeviceManagementTemplateLifecycleState>]
+New-MgBetaDeviceManagementConfigurationPolicyTemplate [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>]
+ [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
+ [-LifecycleState <DeviceManagementTemplateLifecycleState>]
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
@@ -27,8 +28,9 @@ New-MgBetaDeviceManagementConfigurationPolicyTemplate [-AdditionalProperties <Ha
 ### Create
 ```
 New-MgBetaDeviceManagementConfigurationPolicyTemplate
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -218,6 +220,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SettingTemplates
 Setting templates
 To construct, see NOTES section for SETTINGTEMPLATES properties and create a hash table.
@@ -305,7 +322,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

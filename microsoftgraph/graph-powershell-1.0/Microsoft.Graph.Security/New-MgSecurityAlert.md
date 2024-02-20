@@ -17,12 +17,12 @@ Create new navigation property to alerts for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
- [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-Category <String>] [-ClosedDateTime <DateTime>]
- [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>] [-Confidence <Int32>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>] [-EventDateTime <DateTime>]
- [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
+New-MgSecurityAlert [-ResponseHeadersVariable <String>] [-ActivityGroupName <String>]
+ [-AdditionalProperties <Hashtable>] [-AlertDetections <IMicrosoftGraphAlertDetection[]>]
+ [-AssignedTo <String>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-Category <String>]
+ [-ClosedDateTime <DateTime>] [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>]
+ [-Confidence <Int32>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>]
+ [-EventDateTime <DateTime>] [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
  [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
  [-Id <String>] [-IncidentIds <String[]>]
  [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
@@ -41,8 +41,8 @@ New-MgSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashta
 
 ### Create
 ```
-New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -571,6 +571,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityResources
 Resources related to current alert.
 For example, for some alerts this can have the Azure Resource value.
@@ -787,7 +802,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -20,12 +20,13 @@ For example, if a physical printer device breaks, an administrator can register 
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPrintShare -PrinterShareId <String> [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
- [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>]
- [-Model <String>] [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus>]
+Update-MgPrintShare -PrinterShareId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup[]>]
+ [-AllowedUsers <IMicrosoftGraphUser[]>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+ [-CreatedDateTime <DateTime>] [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>]
+ [-Id <String>] [-IsAcceptingJobs] [-Jobs <IMicrosoftGraphPrintJob[]>]
+ [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
+ [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus>]
  [-ViewPoint <IMicrosoftGraphPrinterShareViewpoint>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -33,17 +34,19 @@ Update-MgPrintShare -PrinterShareId <String> [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgPrintShare -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrinterShare>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>]
- [-Model <String>] [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus>]
+Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup[]>]
+ [-AllowedUsers <IMicrosoftGraphUser[]>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+ [-CreatedDateTime <DateTime>] [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>]
+ [-Id <String>] [-IsAcceptingJobs] [-Jobs <IMicrosoftGraphPrintJob[]>]
+ [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
+ [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus>]
  [-ViewPoint <IMicrosoftGraphPrinterShareViewpoint>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -51,7 +54,8 @@ Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProper
 ### UpdateViaIdentity
 ```
 Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinterShare>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -395,6 +399,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 printerStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
@@ -469,7 +488,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -17,7 +17,7 @@ Create new navigation property to hosts for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatIntelligenceHost [-AdditionalProperties <Hashtable>]
+New-MgSecurityThreatIntelligenceHost [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>] [-Components <IMicrosoftGraphSecurityHostComponent[]>]
  [-Cookies <IMicrosoftGraphSecurityHostCookie[]>] [-FirstSeenDateTime <DateTime>]
  [-HostPairs <IMicrosoftGraphSecurityHostPair[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
@@ -33,8 +33,9 @@ New-MgSecurityThreatIntelligenceHost [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -297,6 +298,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificates
 The hostSslCertificates that are associated with this host.
 To construct, see NOTES section for SSLCERTIFICATES properties and create a hash table.
@@ -402,7 +418,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

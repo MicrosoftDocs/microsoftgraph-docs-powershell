@@ -15,28 +15,7 @@ Update the navigation property userExperienceAnalyticsResourcePerformance in dev
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
- -UserExperienceAnalyticsResourcePerformanceId <String> [-AdditionalProperties <Hashtable>]
- [-AverageSpikeTimeScore <Int32>] [-CpuClockSpeedInMHz <Double>] [-CpuDisplayName <String>]
- [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>]
- [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>]
- [-DiskType <DiskType>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-MachineType <UserExperienceAnalyticsMachineType>] [-Manufacturer <String>] [-Model <String>]
- [-RamSpikeTimePercentage <Double>] [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>]
- [-TotalProcessorCoreCount <Int32>] [-TotalRamInMb <Double>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
- -UserExperienceAnalyticsResourcePerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance -InputObject <IDeviceManagementIdentity>
+ -UserExperienceAnalyticsResourcePerformanceId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AverageSpikeTimeScore <Int32>] [-CpuClockSpeedInMHz <Double>]
  [-CpuDisplayName <String>] [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>]
  [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>]
@@ -48,11 +27,33 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance -InputObj
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
+ -UserExperienceAnalyticsResourcePerformanceId <String>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance -InputObject <IDeviceManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AverageSpikeTimeScore <Int32>]
+ [-CpuClockSpeedInMHz <Double>] [-CpuDisplayName <String>] [-CpuSpikeTimePercentage <Double>]
+ [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
+ [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-DiskType <DiskType>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-MachineType <UserExperienceAnalyticsMachineType>] [-Manufacturer <String>] [-Model <String>]
+ [-RamSpikeTimePercentage <Double>] [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>]
+ [-TotalProcessorCoreCount <Int32>] [-TotalRamInMb <Double>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -433,6 +434,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TotalProcessorCoreCount
 The count of cores of the processor of device.
 Valid values 0 to 512
@@ -522,7 +538,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

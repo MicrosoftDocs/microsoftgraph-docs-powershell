@@ -15,7 +15,27 @@ Update the navigation property roleAssignments in roleManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -RbacApplicationId <String>
- -UnifiedRoleAssignmentId <String> [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>]
+ -UnifiedRoleAssignmentId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-Condition <String>]
+ [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-Id <String>]
+ [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>] [-PrincipalOrganizationId <String>]
+ [-ResourceScope <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]
+ [-RoleDefinitionId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -RbacApplicationId <String>
+ -UnifiedRoleAssignmentId <String> -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGovernanceIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>]
  [-AppScopeId <String>] [-Condition <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>]
  [-DirectoryScopeId <String>] [-Id <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-PrincipalOrganizationId <String>] [-ResourceScope <String>]
@@ -23,29 +43,11 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -RbacApplicationId <Strin
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -RbacApplicationId <String>
- -UnifiedRoleAssignmentId <String> -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
- [-Condition <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>]
- [-Id <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
- [-PrincipalOrganizationId <String>] [-ResourceScope <String>]
- [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentity
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,6 +314,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleDefinition
 unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
@@ -402,7 +419,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

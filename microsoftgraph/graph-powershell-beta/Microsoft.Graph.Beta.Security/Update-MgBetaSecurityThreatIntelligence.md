@@ -17,7 +17,7 @@ Update the navigation property threatIntelligence in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityThreatIntelligence [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityThreatIntelligence [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]
  [-Articles <IMicrosoftGraphSecurityArticle[]>] [-HostComponents <IMicrosoftGraphSecurityHostComponent[]>]
  [-HostCookies <IMicrosoftGraphSecurityHostCookie[]>] [-HostPairs <IMicrosoftGraphSecurityHostPair[]>]
@@ -37,7 +37,8 @@ Update-MgBetaSecurityThreatIntelligence [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SslCertificates
 Retrieve details about sslCertificate objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for SSLCERTIFICATES properties and create a hash table.
@@ -435,7 +451,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

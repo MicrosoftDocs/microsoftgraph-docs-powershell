@@ -14,8 +14,8 @@ Update the navigation property tenantGroups in tenantRelationships
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaTenantRelationshipManagedTenantGroup -TenantGroupId <String> [-AdditionalProperties <Hashtable>]
- [-AllTenantsIncluded] [-DisplayName <String>] [-Id <String>]
+Update-MgBetaTenantRelationshipManagedTenantGroup -TenantGroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AllTenantsIncluded] [-DisplayName <String>] [-Id <String>]
  [-ManagementActions <IMicrosoftGraphManagedTenantsManagementActionInfo[]>]
  [-ManagementIntents <IMicrosoftGraphManagedTenantsManagementIntentInfo[]>] [-TenantIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,14 +24,15 @@ Update-MgBetaTenantRelationshipManagedTenantGroup -TenantGroupId <String> [-Addi
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantGroup -TenantGroupId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantGroup> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantGroup> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-AllTenantsIncluded] [-DisplayName <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllTenantsIncluded]
+ [-DisplayName <String>] [-Id <String>]
  [-ManagementActions <IMicrosoftGraphManagedTenantsManagementActionInfo[]>]
  [-ManagementIntents <IMicrosoftGraphManagedTenantsManagementIntentInfo[]>] [-TenantIds <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -40,8 +41,8 @@ Update-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsI
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantGroup> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantGroup> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -212,6 +213,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantGroupId
 The unique identifier of tenantGroup
 
@@ -286,7 +302,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,10 +15,11 @@ Create a new cloudPcProvisioningPolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy [-AdditionalProperties <Hashtable>]
- [-AlternateResourceUrl <String>] [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>]
- [-CloudPcGroupDisplayName <String>] [-CloudPcNamingTemplate <String>] [-Description <String>]
- [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
+New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AlternateResourceUrl <String>]
+ [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>] [-CloudPcGroupDisplayName <String>]
+ [-CloudPcNamingTemplate <String>] [-Description <String>] [-DisplayName <String>]
+ [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
  [-DomainJoinConfigurations <IMicrosoftGraphCloudPcDomainJoinConfiguration[]>] [-EnableSingleSignOn]
  [-GracePeriodInHours <Int32>] [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>]
  [-ImageType <String>] [-LocalAdminEnabled] [-ManagedBy <String>]
@@ -31,8 +32,8 @@ New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy [-AdditionalProperti
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
- -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -442,6 +443,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ScopeIds
 .
 
@@ -530,7 +546,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcProvisioningPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

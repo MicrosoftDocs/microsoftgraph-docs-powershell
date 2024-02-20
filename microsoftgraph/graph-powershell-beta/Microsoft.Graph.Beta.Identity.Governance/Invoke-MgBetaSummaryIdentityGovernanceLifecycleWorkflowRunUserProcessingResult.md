@@ -18,15 +18,15 @@ Invoke function summary
 ### Summary (Default)
 ```
 Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -EndDateTime <DateTime>
- -RunId <String> -StartDateTime <DateTime> -WorkflowId <String> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -RunId <String> -StartDateTime <DateTime> -WorkflowId <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### SummaryViaIdentity
 ```
 Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
- -InputObject <IIdentityGovernanceIdentity> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -95,6 +95,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RunId
 The unique identifier of run
 
@@ -150,7 +165,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceUserSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

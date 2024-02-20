@@ -17,7 +17,7 @@ Update the navigation property teamwork in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserTeamwork -UserId <String> [-AdditionalProperties <Hashtable>]
+Update-MgUserTeamwork -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AssociatedTeams <IMicrosoftGraphAssociatedTeamInfo[]>] [-Id <String>]
  [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,14 +25,15 @@ Update-MgUserTeamwork -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgUserTeamwork -UserId <String> -BodyParameter <IMicrosoftGraphUserTeamwork> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserTeamwork -UserId <String> -BodyParameter <IMicrosoftGraphUserTeamwork>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserTeamwork -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssociatedTeams <IMicrosoftGraphAssociatedTeamInfo[]>] [-Id <String>]
+Update-MgUserTeamwork -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssociatedTeams <IMicrosoftGraphAssociatedTeamInfo[]>] [-Id <String>]
  [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -40,7 +41,8 @@ Update-MgUserTeamwork -InputObject <ITeamsIdentity> [-AdditionalProperties <Hash
 ### UpdateViaIdentity
 ```
 Update-MgUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphUserTeamwork>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -173,6 +175,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -230,7 +247,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserTeamwork
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

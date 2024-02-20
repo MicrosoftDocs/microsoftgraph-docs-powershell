@@ -14,19 +14,20 @@ Create new navigation property to managedDeviceCompliances for tenantRelationshi
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance [-AdditionalProperties <Hashtable>]
- [-ComplianceStatus <String>] [-DeviceType <String>] [-Id <String>] [-InGracePeriodUntilDateTime <DateTime>]
- [-LastRefreshedDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-ManagedDeviceId <String>]
- [-ManagedDeviceName <String>] [-Manufacturer <String>] [-Model <String>] [-OSDescription <String>]
- [-OSVersion <String>] [-OwnerType <String>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-DeviceType <String>] [-Id <String>]
+ [-InGracePeriodUntilDateTime <DateTime>] [-LastRefreshedDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
+ [-ManagedDeviceId <String>] [-ManagedDeviceName <String>] [-Manufacturer <String>] [-Model <String>]
+ [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <String>] [-TenantDisplayName <String>]
+ [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceCompliance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceCompliance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -319,6 +320,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 The display name for the managed tenant.
 Optional.
@@ -394,7 +410,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedDeviceCompliance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

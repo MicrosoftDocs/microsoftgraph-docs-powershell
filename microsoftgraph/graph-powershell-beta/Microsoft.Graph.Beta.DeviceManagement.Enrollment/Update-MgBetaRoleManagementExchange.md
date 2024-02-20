@@ -14,7 +14,7 @@ Update the navigation property exchange in roleManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaRoleManagementExchange [-AdditionalProperties <Hashtable>]
+Update-MgBetaRoleManagementExchange [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CustomAppScopes <IMicrosoftGraphCustomAppScope[]>] [-Id <String>]
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
@@ -26,7 +26,8 @@ Update-MgBetaRoleManagementExchange [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgBetaRoleManagementExchange -BodyParameter <IMicrosoftGraphUnifiedRbacApplication>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -143,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleAssignments
 Resource to grant access to users or groups.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
@@ -232,7 +248,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacApplication
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

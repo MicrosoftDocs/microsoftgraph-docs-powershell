@@ -18,16 +18,16 @@ Create a new subjectRightsRequest object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrivacySubjectRightsRequest [-AdditionalProperties <Hashtable>] [-Approvers <IMicrosoftGraphUser[]>]
- [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>] [-Collaborators <IMicrosoftGraphUser[]>]
- [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>] [-Description <String>]
- [-DisplayName <String>] [-ExternalId <String>] [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>]
- [-Id <String>] [-IncludeAllVersions] [-IncludeAuthoredContent]
- [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>] [-InternalDueDateTime <DateTime>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-MailboxLocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>] [-PauseAfterEstimate]
- [-Regulations <String[]>] [-SiteLocations <Hashtable>]
+New-MgBetaPrivacySubjectRightsRequest [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Approvers <IMicrosoftGraphUser[]>] [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>]
+ [-Collaborators <IMicrosoftGraphUser[]>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <DateTime>] [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>]
+ [-Description <String>] [-DisplayName <String>] [-ExternalId <String>]
+ [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>] [-Id <String>] [-IncludeAllVersions]
+ [-IncludeAuthoredContent] [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>]
+ [-InternalDueDateTime <DateTime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-MailboxLocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>]
+ [-PauseAfterEstimate] [-Regulations <String[]>] [-SiteLocations <Hashtable>]
  [-Stages <IMicrosoftGraphSubjectRightsRequestStageDetail[]>] [-Status <String>] [-Team <IMicrosoftGraphTeam>]
  [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,8 @@ New-MgBetaPrivacySubjectRightsRequest [-AdditionalProperties <Hashtable>] [-Appr
 ### Create
 ```
 New-MgBetaPrivacySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRightsRequest>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -495,6 +496,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteLocations
 subjectRightsRequestSiteLocation
 
@@ -613,7 +629,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubjectRightsRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

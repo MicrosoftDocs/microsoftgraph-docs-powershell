@@ -18,8 +18,8 @@ Update the navigation property buckets in planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlannerBucket -PlannerBucketId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
+Update-MgPlannerBucket -PlannerBucketId <String> -IfMatch <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,14 +27,14 @@ Update-MgPlannerBucket -PlannerBucketId <String> -IfMatch <String> [-AdditionalP
 ### Update
 ```
 Update-MgPlannerBucket -PlannerBucketId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerBucket> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
+Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-OrderHint <String>] [-PlanId <String>]
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +42,8 @@ Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String> [-Addit
 ### UpdateViaIdentity
 ```
 Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerBucket> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -241,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Tasks
 Read-only.
 Nullable.
@@ -301,7 +316,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

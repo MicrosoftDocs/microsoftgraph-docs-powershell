@@ -24,13 +24,14 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicros
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentRequest
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded
 ```
-New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage>]
+New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ResponseHeadersVariable <String>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment>] [-AdditionalProperties <Hashtable>]
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
@@ -430,6 +431,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: Create, CreateExpanded
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 requestSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -549,7 +565,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

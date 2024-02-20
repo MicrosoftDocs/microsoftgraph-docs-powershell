@@ -14,7 +14,7 @@ Update the navigation property conditionalAccess in identity
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityConditionalAccess [-AdditionalProperties <Hashtable>]
+Update-MgIdentityConditionalAccess [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AuthenticationContextClassReferences <IMicrosoftGraphAuthenticationContextClassReference[]>]
  [-AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthRoot>] [-Id <String>]
  [-NamedLocations <IMicrosoftGraphNamedLocation[]>] [-Policies <IMicrosoftGraphConditionalAccessPolicy[]>]
@@ -25,7 +25,8 @@ Update-MgIdentityConditionalAccess [-AdditionalProperties <Hashtable>]
 ### Update
 ```
 Update-MgIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAccessRoot>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -180,6 +181,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Templates
 Read-only.
 Nullable.
@@ -239,7 +255,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

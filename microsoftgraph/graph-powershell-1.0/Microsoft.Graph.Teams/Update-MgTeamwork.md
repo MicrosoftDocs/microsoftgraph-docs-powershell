@@ -17,16 +17,17 @@ Update teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>]
- [-Id <String>] [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
+Update-MgTeamwork [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>] [-Id <String>]
+ [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
  [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -127,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsAppSettings
 teamsAppSettings
 To construct, see NOTES section for TEAMSAPPSETTINGS properties and create a hash table.
@@ -200,7 +216,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

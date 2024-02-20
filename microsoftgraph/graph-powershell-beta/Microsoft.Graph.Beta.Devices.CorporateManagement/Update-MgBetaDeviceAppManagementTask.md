@@ -14,24 +14,7 @@ Update the navigation property deviceAppManagementTasks in deviceAppManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceAppManagementTask -DeviceAppManagementTaskId <String> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-Category <DeviceAppManagementTaskCategory>] [-CreatedDateTime <DateTime>]
- [-Creator <String>] [-CreatorNotes <String>] [-Description <String>] [-DisplayName <String>]
- [-DueDateTime <DateTime>] [-Id <String>] [-Priority <DeviceAppManagementTaskPriority>]
- [-Status <DeviceAppManagementTaskStatus>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDeviceAppManagementTask -DeviceAppManagementTaskId <String>
- -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceAppManagementTask -InputObject <IDevicesCorporateManagementIdentity>
+Update-MgBetaDeviceAppManagementTask -DeviceAppManagementTaskId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Category <DeviceAppManagementTaskCategory>]
  [-CreatedDateTime <DateTime>] [-Creator <String>] [-CreatorNotes <String>] [-Description <String>]
  [-DisplayName <String>] [-DueDateTime <DateTime>] [-Id <String>] [-Priority <DeviceAppManagementTaskPriority>]
@@ -39,11 +22,28 @@ Update-MgBetaDeviceAppManagementTask -InputObject <IDevicesCorporateManagementId
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDeviceAppManagementTask -DeviceAppManagementTaskId <String>
+ -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceAppManagementTask -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AssignedTo <String>]
+ [-Category <DeviceAppManagementTaskCategory>] [-CreatedDateTime <DateTime>] [-Creator <String>]
+ [-CreatorNotes <String>] [-Description <String>] [-DisplayName <String>] [-DueDateTime <DateTime>]
+ [-Id <String>] [-Priority <DeviceAppManagementTaskPriority>] [-Status <DeviceAppManagementTaskStatus>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceAppManagementTask -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -294,6 +294,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 Device app management task status.
 
@@ -351,7 +366,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

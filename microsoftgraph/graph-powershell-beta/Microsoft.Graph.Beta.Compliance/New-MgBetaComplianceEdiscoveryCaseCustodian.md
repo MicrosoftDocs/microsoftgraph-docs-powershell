@@ -16,9 +16,9 @@ After the custodian object is created, you will need to create the custodian's u
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> [-AcknowledgedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-ApplyHoldToSources] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
+New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> [-ResponseHeadersVariable <String>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-ApplyHoldToSources]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
  [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphEdiscoveryUnifiedGroupSource[]>]
@@ -29,17 +29,17 @@ New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> [-AcknowledgedDateT
 ### Create
 ```
 New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity>
- [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-ApplyHoldToSources]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
- [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
+ [-ResponseHeadersVariable <String>] [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-ApplyHoldToSources] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>]
+ [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+ [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphEdiscoverySiteSource[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphEdiscoveryUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphEdiscoveryUserSource[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,8 +48,8 @@ New-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity>
 ### CreateViaIdentity
 ```
 New-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCustodian> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -317,6 +317,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteSources
 Data source entity for SharePoint sites associated with the custodian.
 To construct, see NOTES section for SITESOURCES properties and create a hash table.
@@ -423,7 +438,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCustodian
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

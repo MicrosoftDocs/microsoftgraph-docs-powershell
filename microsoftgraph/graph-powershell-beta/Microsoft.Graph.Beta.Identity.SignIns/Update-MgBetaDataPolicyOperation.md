@@ -17,32 +17,32 @@ Update entity in dataPolicyOperations
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDataPolicyOperation -DataPolicyOperationId <String> [-AdditionalProperties <Hashtable>]
- [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>] [-Status <String>]
- [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDataPolicyOperation -DataPolicyOperationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>]
+ [-Status <String>] [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDataPolicyOperation -DataPolicyOperationId <String>
- -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>] [-Status <String>]
- [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>]
+ [-Status <String>] [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -203,6 +203,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 dataPolicyOperationStatus
 
@@ -306,7 +321,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataPolicyOperation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

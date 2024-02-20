@@ -15,37 +15,37 @@ Update the navigation property aggregatedPolicyCompliances in tenantRelationship
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -AggregatedPolicyComplianceId <String>
- [-AdditionalProperties <Hashtable>] [-CompliancePolicyId <String>] [-CompliancePolicyName <String>]
- [-CompliancePolicyPlatform <String>] [-CompliancePolicyType <String>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-NumberOfCompliantDevices <Int64>] [-NumberOfErrorDevices <Int64>]
- [-NumberOfNonCompliantDevices <Int64>] [-PolicyModifiedDateTime <DateTime>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompliancePolicyId <String>]
+ [-CompliancePolicyName <String>] [-CompliancePolicyPlatform <String>] [-CompliancePolicyType <String>]
+ [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-NumberOfCompliantDevices <Int64>]
+ [-NumberOfErrorDevices <Int64>] [-NumberOfNonCompliantDevices <Int64>] [-PolicyModifiedDateTime <DateTime>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -AggregatedPolicyComplianceId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsAggregatedPolicyCompliance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsAggregatedPolicyCompliance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObject <IManagedTenantsIdentity>
- [-AdditionalProperties <Hashtable>] [-CompliancePolicyId <String>] [-CompliancePolicyName <String>]
- [-CompliancePolicyPlatform <String>] [-CompliancePolicyType <String>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-NumberOfCompliantDevices <Int64>] [-NumberOfErrorDevices <Int64>]
- [-NumberOfNonCompliantDevices <Int64>] [-PolicyModifiedDateTime <DateTime>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompliancePolicyId <String>]
+ [-CompliancePolicyName <String>] [-CompliancePolicyPlatform <String>] [-CompliancePolicyType <String>]
+ [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-NumberOfCompliantDevices <Int64>]
+ [-NumberOfErrorDevices <Int64>] [-NumberOfNonCompliantDevices <Int64>] [-PolicyModifiedDateTime <DateTime>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsAggregatedPolicyCompliance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsAggregatedPolicyCompliance> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -315,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantDisplayName
 The display name for the managed tenant.
 Optional.
@@ -391,7 +406,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAggregatedPolicyCompliance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

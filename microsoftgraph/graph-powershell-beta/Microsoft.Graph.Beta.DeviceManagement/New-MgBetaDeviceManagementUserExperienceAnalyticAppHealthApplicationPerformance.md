@@ -17,18 +17,20 @@ Create new navigation property to userExperienceAnalyticsAppHealthApplicationPer
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance [-ActiveDeviceCount <Int32>]
- [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>]
- [-AppHangCount <Int32>] [-AppHealthScore <Double>] [-AppName <String>] [-AppPublisher <String>]
- [-AppUsageDuration <Int32>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
+ [-ResponseHeadersVariable <String>] [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>]
+ [-AppCrashCount <Int32>] [-AppDisplayName <String>] [-AppHangCount <Int32>] [-AppHealthScore <Double>]
+ [-AppName <String>] [-AppPublisher <String>] [-AppUsageDuration <Int32>] [-Id <String>]
+ [-MeanTimeToFailureInMinutes <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -279,6 +281,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -320,7 +337,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

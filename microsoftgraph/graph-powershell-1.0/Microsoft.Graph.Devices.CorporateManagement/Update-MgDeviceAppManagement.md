@@ -18,7 +18,7 @@ Update the properties of a deviceAppManagement object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceAppManagement [-AdditionalProperties <Hashtable>]
+Update-MgDeviceAppManagement [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AndroidManagedAppProtections <IMicrosoftGraphAndroidManagedAppProtection[]>]
  [-DefaultManagedAppProtections <IMicrosoftGraphDefaultManagedAppProtection[]>] [-Id <String>]
  [-IosManagedAppProtections <IMicrosoftGraphIosManagedAppProtection[]>]
@@ -40,8 +40,9 @@ Update-MgDeviceAppManagement [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -366,6 +367,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TargetedManagedAppConfigurations
 Targeted managed app configurations.
 To construct, see NOTES section for TARGETEDMANAGEDAPPCONFIGURATIONS properties and create a hash table.
@@ -455,7 +471,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

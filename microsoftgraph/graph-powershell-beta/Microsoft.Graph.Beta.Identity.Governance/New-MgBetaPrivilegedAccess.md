@@ -14,8 +14,8 @@ Add new entity to privilegedAccess
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrivilegedAccess [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphGovernanceResource[]>]
+New-MgBetaPrivilegedAccess [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphGovernanceResource[]>]
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
@@ -25,8 +25,8 @@ New-MgBetaPrivilegedAccess [-AdditionalProperties <Hashtable>] [-DisplayName <St
 
 ### Create
 ```
-New-MgBetaPrivilegedAccess -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPrivilegedAccess -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -142,6 +142,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleAssignmentRequests
 A collection of role assignment requests for the provider.
 To construct, see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
@@ -247,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

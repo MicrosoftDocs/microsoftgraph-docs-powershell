@@ -14,24 +14,7 @@ Update the navigation property subscriptions in directory
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDirectorySubscription -CompanySubscriptionId <String> [-AdditionalProperties <Hashtable>]
- [-CommerceSubscriptionId <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial]
- [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>] [-OwnerId <String>]
- [-OwnerTenantId <String>] [-OwnerType <String>] [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]
- [-SkuId <String>] [-SkuPartNumber <String>] [-Status <String>] [-TotalLicenses <Int32>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaDirectorySubscription -CompanySubscriptionId <String>
- -BodyParameter <IMicrosoftGraphCompanySubscription> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
+Update-MgBetaDirectorySubscription -CompanySubscriptionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CommerceSubscriptionId <String>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>]
  [-OwnerId <String>] [-OwnerTenantId <String>] [-OwnerType <String>]
@@ -40,11 +23,29 @@ Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaDirectorySubscription -CompanySubscriptionId <String>
+ -BodyParameter <IMicrosoftGraphCompanySubscription> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CommerceSubscriptionId <String>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>]
+ [-OcpSubscriptionId <String>] [-OwnerId <String>] [-OwnerTenantId <String>] [-OwnerType <String>]
+ [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
+ [-Status <String>] [-TotalLicenses <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphCompanySubscription> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCompanySubscription> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -285,6 +286,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServiceStatus
 The provisioning status of each service that's included in this subscription.
 To construct, see NOTES section for SERVICESTATUS properties and create a hash table.
@@ -404,7 +420,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanySubscription
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

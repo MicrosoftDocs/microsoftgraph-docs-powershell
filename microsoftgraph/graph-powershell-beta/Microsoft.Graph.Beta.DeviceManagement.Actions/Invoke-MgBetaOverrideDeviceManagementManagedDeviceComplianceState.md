@@ -15,26 +15,27 @@ Invoke action overrideComplianceState
 ### OverrideExpanded (Default)
 ```
 Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
- [-RemediationUrl <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ComplianceState <AdministratorConfiguredDeviceComplianceState>] [-RemediationUrl <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Override
 ```
 Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState -ManagedDeviceId <String>
  -BodyParameter <IPaths1209QsrDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### OverrideViaIdentityExpanded
 ```
 Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ComplianceState <AdministratorConfiguredDeviceComplianceState>] [-RemediationUrl <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
+ [-RemediationUrl <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### OverrideViaIdentity
@@ -42,8 +43,8 @@ Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState
 Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1209QsrDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -188,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -230,7 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

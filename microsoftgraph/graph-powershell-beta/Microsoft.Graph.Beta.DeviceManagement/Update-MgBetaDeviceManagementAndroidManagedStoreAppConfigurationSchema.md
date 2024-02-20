@@ -15,8 +15,8 @@ Update the navigation property androidManagedStoreAppConfigurationSchemas in dev
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
- -AndroidManagedStoreAppConfigurationSchemaId <String> [-AdditionalProperties <Hashtable>]
- [-ExampleJsonInputFile <String>] [-Id <String>]
+ -AndroidManagedStoreAppConfigurationSchemaId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
  [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
  [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,15 +26,15 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
 ```
 Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
  -AndroidManagedStoreAppConfigurationSchemaId <String>
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
- [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>]
+ [-Id <String>] [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
  [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +42,8 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObj
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -191,6 +191,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SchemaItems
 Collection of items each representing a named configuration option in the schema.
 It only contains the root-level configuration.
@@ -250,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

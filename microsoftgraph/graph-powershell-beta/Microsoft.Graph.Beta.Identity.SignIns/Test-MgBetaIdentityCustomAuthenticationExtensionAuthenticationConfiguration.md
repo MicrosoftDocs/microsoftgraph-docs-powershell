@@ -15,28 +15,29 @@ An API to check validity of the endpoint and and authentication configuration fo
 
 ### ValidateExpanded (Default)
 ```
-Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>] [-EndpointConfiguration <Hashtable>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
+ [-EndpointConfiguration <Hashtable>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
- -CustomAuthenticationExtensionId <String> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -CustomAuthenticationExtensionId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
 Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
- -InputObject <IIdentitySignInsIdentity> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate1
 ```
-Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
+Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1Pa4Ae0IdentityCustomauthenticationextensionsMicrosoftGraphValidateauthenticationconfigurationPostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -171,6 +172,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -213,7 +229,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationConfigurationValidation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

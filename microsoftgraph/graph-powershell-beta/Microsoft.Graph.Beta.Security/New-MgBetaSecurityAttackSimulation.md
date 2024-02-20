@@ -18,8 +18,8 @@ Create an attack simulation campaign for a tenant.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
- [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
+New-MgBetaSecurityAttackSimulation [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AttackTechnique <String>] [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>]
  [-EndUserNotificationSetting <IMicrosoftGraphEndUserNotificationSetting>]
@@ -35,8 +35,9 @@ New-MgBetaSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackT
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -513,6 +514,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 simulationStatus
 
@@ -585,7 +601,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

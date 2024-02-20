@@ -14,10 +14,10 @@ Create new navigation property to synchronizationProfiles for education
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaEducationSynchronizationProfile [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>]
- [-DisplayName <String>] [-Errors <IMicrosoftGraphEducationSynchronizationError[]>]
- [-ExpirationDate <DateTime>] [-HandleSpecialCharacterConstraint] [-Id <String>]
- [-IdentitySynchronizationConfiguration <Hashtable>]
+New-MgBetaEducationSynchronizationProfile [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>] [-DisplayName <String>]
+ [-Errors <IMicrosoftGraphEducationSynchronizationError[]>] [-ExpirationDate <DateTime>]
+ [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
  [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
  [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -26,7 +26,8 @@ New-MgBetaEducationSynchronizationProfile [-AdditionalProperties <Hashtable>] [-
 ### Create
 ```
 New-MgBetaEducationSynchronizationProfile -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -237,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 educationSynchronizationProfileState
 
@@ -293,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

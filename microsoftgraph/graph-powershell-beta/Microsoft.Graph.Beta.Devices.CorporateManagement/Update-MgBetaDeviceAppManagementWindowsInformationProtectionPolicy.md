@@ -18,9 +18,9 @@ Update the navigation property windowsInformationProtectionPolicies in deviceApp
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
- -WindowsInformationProtectionPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-AzureRightsManagementServicesAllowed]
- [-CreatedDateTime <DateTime>]
+ -WindowsInformationProtectionPolicyId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]
+ [-AzureRightsManagementServicesAllowed] [-CreatedDateTime <DateTime>]
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-DaysWithoutContactBeforeUnenroll <Int32>] [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
@@ -54,16 +54,16 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
 ```
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
  -WindowsInformationProtectionPolicyId <String>
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-AzureRightsManagementServicesAllowed]
- [-CreatedDateTime <DateTime>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]
+ [-AzureRightsManagementServicesAllowed] [-CreatedDateTime <DateTime>]
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-DaysWithoutContactBeforeUnenroll <Int32>] [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
@@ -97,8 +97,8 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
 ```
 Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
  -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionPolicy> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionPolicy> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -783,6 +783,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RevokeOnMdmHandoffDisabled
 New property in RS2, pending documentation
 
@@ -949,7 +964,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

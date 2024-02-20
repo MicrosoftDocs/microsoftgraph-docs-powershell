@@ -14,32 +14,32 @@ Update the navigation property authorizationSystems in external
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-AdditionalProperties <Hashtable>]
- [-AuthorizationSystemId1 <String>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
- [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AuthorizationSystemId1 <String>] [-AuthorizationSystemName <String>]
+ [-AuthorizationSystemType <String>] [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaExternalAuthorizationSystem [-AuthorizationSystemId <String>] -InputObject <ISearchIdentity>
- [-AdditionalProperties <Hashtable>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
- [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AuthorizationSystemName <String>]
+ [-AuthorizationSystemType <String>] [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String>
- -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -232,6 +232,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -274,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

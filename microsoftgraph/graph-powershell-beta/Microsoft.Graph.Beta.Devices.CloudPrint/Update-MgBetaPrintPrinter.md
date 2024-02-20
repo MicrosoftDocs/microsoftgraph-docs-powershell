@@ -18,10 +18,11 @@ Update the properties of a printer object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrintPrinter -PrinterId <String> [-AcceptingJobs] [-AdditionalProperties <Hashtable>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
- [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
+Update-MgBetaPrintPrinter -PrinterId <String> [-ResponseHeadersVariable <String>] [-AcceptingJobs]
+ [-AdditionalProperties <Hashtable>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+ [-Connectors <IMicrosoftGraphPrintConnector[]>] [-Defaults <IMicrosoftGraphPrinterDefaults>]
+ [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>] [-IsAcceptingJobs] [-IsShared]
+ [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>] [-Name <String>]
  [-RegisteredDateTime <DateTime>] [-Share <IMicrosoftGraphPrinterShare>]
  [-Shares <IMicrosoftGraphPrinterShare[]>] [-Status <IMicrosoftGraphPrinterStatus>]
@@ -31,14 +32,15 @@ Update-MgBetaPrintPrinter -PrinterId <String> [-AcceptingJobs] [-AdditionalPrope
 
 ### Update
 ```
-Update-MgBetaPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AcceptingJobs]
- [-AdditionalProperties <Hashtable>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
+ [-AcceptingJobs] [-AdditionalProperties <Hashtable>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
  [-Connectors <IMicrosoftGraphPrintConnector[]>] [-Defaults <IMicrosoftGraphPrinterDefaults>]
  [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>] [-IsAcceptingJobs] [-IsShared]
  [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
@@ -52,7 +54,8 @@ Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AcceptingJ
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinter>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -405,6 +408,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Share
 printerShare
 To construct, see NOTES section for SHARE properties and create a hash table.
@@ -514,7 +532,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrinter
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

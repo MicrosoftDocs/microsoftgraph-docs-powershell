@@ -15,9 +15,10 @@ Create new navigation property to deployments for tenantRelationships
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
- -ManagementTemplateStepVersionId <String> [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>] [-Id <String>]
- [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Status <String>]
+ -ManagementTemplateStepVersionId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
+ [-Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>] [-Id <String>] [-LastActionByUserId <String>]
+ [-LastActionDateTime <DateTime>] [-Status <String>]
  [-TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>] [-TenantId <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -26,16 +27,18 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
  -ManagementTemplateStepVersionId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
- -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>] [-Id <String>]
- [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Status <String>]
+ -InputObject <IManagedTenantsIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
+ [-Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>] [-Id <String>] [-LastActionByUserId <String>]
+ [-LastActionDateTime <DateTime>] [-Status <String>]
  [-TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>] [-TenantId <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,8 +47,9 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
  -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -237,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 managementTemplateDeploymentStatus
 
@@ -325,7 +344,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

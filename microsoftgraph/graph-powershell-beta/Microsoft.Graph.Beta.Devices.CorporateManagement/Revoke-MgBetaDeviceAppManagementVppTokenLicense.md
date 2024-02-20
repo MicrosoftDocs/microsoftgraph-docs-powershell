@@ -14,33 +14,34 @@ Revoke licenses associated with a specific appleVolumePurchaseProgramToken
 
 ### RevokeExpanded (Default)
 ```
-Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String> [-AdditionalProperties <Hashtable>]
- [-NotifyManagedDevices] [-RevokeUntrackedLicenses] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices] [-RevokeUntrackedLicenses]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Revoke
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String>
  -BodyParameter <IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentityExpanded
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices] [-RevokeUntrackedLicenses]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices]
+ [-RevokeUntrackedLicenses] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema>
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,6 +156,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RevokeUntrackedLicenses
 .
 
@@ -227,7 +243,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

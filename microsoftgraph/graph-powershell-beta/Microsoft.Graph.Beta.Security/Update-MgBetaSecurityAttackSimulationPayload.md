@@ -17,26 +17,7 @@ Update the navigation property payloads in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityAttackSimulationPayload -PayloadId <String> [-AdditionalProperties <Hashtable>]
- [-Brand <String>] [-Complexity <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-Detail <IMicrosoftGraphPayloadDetail>]
- [-DisplayName <String>] [-Id <String>] [-Industry <String>] [-IsAutomated] [-IsControversial]
- [-IsCurrentEvent] [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>] [-Platform <String>]
- [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>] [-Status <String>]
- [-Technique <String>] [-Theme <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityAttackSimulationPayload -PayloadId <String> -BodyParameter <IMicrosoftGraphPayload>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityAttackSimulationPayload -PayloadId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Brand <String>] [-Complexity <String>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Detail <IMicrosoftGraphPayloadDetail>] [-DisplayName <String>] [-Id <String>] [-Industry <String>]
@@ -47,11 +28,31 @@ Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaSecurityAttackSimulationPayload -PayloadId <String> -BodyParameter <IMicrosoftGraphPayload>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Brand <String>]
+ [-Complexity <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-Detail <IMicrosoftGraphPayloadDetail>] [-DisplayName <String>] [-Id <String>]
+ [-Industry <String>] [-IsAutomated] [-IsControversial] [-IsCurrentEvent] [-Language <String>]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>]
+ [-Platform <String>] [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>]
+ [-Status <String>] [-Technique <String>] [-Theme <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphPayload> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPayload> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -431,6 +432,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SimulationAttackType
 simulationAttackType
 
@@ -548,7 +564,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,35 +15,35 @@ Update the navigation property resourceEnvironments in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgEntitlementManagementResourceEnvironment -AccessPackageResourceEnvironmentId <String>
- [-AdditionalProperties <Hashtable>] [-ConnectionInfo <IMicrosoftGraphConnectionInfo>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsDefaultEnvironment] [-ModifiedDateTime <DateTime>] [-OriginId <String>] [-OriginSystem <String>]
- [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ConnectionInfo <IMicrosoftGraphConnectionInfo>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsDefaultEnvironment] [-ModifiedDateTime <DateTime>]
+ [-OriginId <String>] [-OriginSystem <String>] [-Resources <IMicrosoftGraphAccessPackageResource[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementResourceEnvironment -AccessPackageResourceEnvironmentId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceEnvironment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceEnvironment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ConnectionInfo <IMicrosoftGraphConnectionInfo>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsDefaultEnvironment] [-ModifiedDateTime <DateTime>] [-OriginId <String>] [-OriginSystem <String>]
- [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ConnectionInfo <IMicrosoftGraphConnectionInfo>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsDefaultEnvironment] [-ModifiedDateTime <DateTime>]
+ [-OriginId <String>] [-OriginSystem <String>] [-Resources <IMicrosoftGraphAccessPackageResource[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceEnvironment> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceEnvironment> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -303,6 +303,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -345,7 +360,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceEnvironment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

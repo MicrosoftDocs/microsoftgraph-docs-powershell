@@ -14,9 +14,10 @@ Create new navigation property to deviceConfigurationsAllManagedDeviceCertificat
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-AdditionalProperties <Hashtable>]
- [-CertificateExpirationDateTime <DateTime>] [-CertificateExtendedKeyUsages <String>]
- [-CertificateIssuanceDateTime <DateTime>] [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
+New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CertificateExpirationDateTime <DateTime>]
+ [-CertificateExtendedKeyUsages <String>] [-CertificateIssuanceDateTime <DateTime>]
+ [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
  [-CertificateRevokeStatus <CertificateRevocationStatus>]
  [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
  [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
@@ -27,8 +28,8 @@ New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-Add
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
- -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -278,6 +279,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserPrincipalName
 User principal name
 
@@ -334,7 +350,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

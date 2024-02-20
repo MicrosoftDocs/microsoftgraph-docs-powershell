@@ -15,7 +15,7 @@ Update the navigation property instances in accessReviews
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAccessReviewInstance -AccessReviewId <String> -AccessReviewId1 <String>
- [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
  [-CreatedBy <IMicrosoftGraphUserIdentity>] [-Decisions <IMicrosoftGraphAccessReviewDecision[]>]
  [-Description <String>] [-DisplayName <String>] [-EndDateTime <DateTime>] [-Id <String>]
  [-Instances <IMicrosoftGraphAccessReview[]>] [-MyDecisions <IMicrosoftGraphAccessReviewDecision[]>]
@@ -28,14 +28,14 @@ Update-MgBetaAccessReviewInstance -AccessReviewId <String> -AccessReviewId1 <Str
 ### Update
 ```
 Update-MgBetaAccessReviewInstance -AccessReviewId <String> -AccessReviewId1 <String>
- -BodyParameter <IMicrosoftGraphAccessReview> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReview> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
  [-CreatedBy <IMicrosoftGraphUserIdentity>] [-Decisions <IMicrosoftGraphAccessReviewDecision[]>]
  [-Description <String>] [-DisplayName <String>] [-EndDateTime <DateTime>] [-Id <String>]
  [-Instances <IMicrosoftGraphAccessReview[]>] [-MyDecisions <IMicrosoftGraphAccessReviewDecision[]>]
@@ -48,8 +48,8 @@ Update-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReview> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReview> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -309,6 +309,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReviewedEntity
 identity
 To construct, see NOTES section for REVIEWEDENTITY properties and create a hash table.
@@ -448,7 +463,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReview
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

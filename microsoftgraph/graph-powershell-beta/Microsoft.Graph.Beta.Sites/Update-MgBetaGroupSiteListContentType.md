@@ -18,28 +18,28 @@ Update the navigation property contentTypes in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupSiteListContentType -ContentTypeId <String> -GroupId <String> -ListId <String>
- -SiteId <String> [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>]
- [-Base <IMicrosoftGraphContentType>] [-BaseTypes <IMicrosoftGraphContentType[]>]
- [-ColumnLinks <IMicrosoftGraphColumnLink[]>] [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>]
- [-Columns <IMicrosoftGraphColumnDefinition[]>] [-Description <String>]
- [-DocumentSet <IMicrosoftGraphDocumentSet>] [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>]
- [-Group <String>] [-Hidden] [-Id <String>] [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn]
- [-Name <String>] [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges]
- [-ReadOnly] [-Sealed] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -SiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
+ [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
+ [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet>]
+ [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
+ [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
+ [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupSiteListContentType -ContentTypeId <String> -GroupId <String> -ListId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphContentType> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SiteId <String> -BodyParameter <IMicrosoftGraphContentType> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
+Update-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
  [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
  [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
  [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet>]
@@ -52,7 +52,8 @@ Update-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-Additional
 ### UpdateViaIdentity
 ```
 Update-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphContentType>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -480,6 +481,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sealed
 If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -553,7 +569,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

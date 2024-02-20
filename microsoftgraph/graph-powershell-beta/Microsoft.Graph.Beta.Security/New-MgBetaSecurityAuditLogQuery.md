@@ -14,10 +14,10 @@ Create new navigation property to queries for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityAuditLogQuery [-AdditionalProperties <Hashtable>] [-AdministrativeUnitIdFilters <String[]>]
- [-DisplayName <String>] [-FilterEndDateTime <DateTime>] [-FilterStartDateTime <DateTime>]
- [-IPAddressFilters <String[]>] [-Id <String>] [-KeywordFilter <String>] [-ObjectIdFilters <String[]>]
- [-OperationFilters <String[]>] [-RecordTypeFilters <String[]>]
+New-MgBetaSecurityAuditLogQuery [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdministrativeUnitIdFilters <String[]>] [-DisplayName <String>] [-FilterEndDateTime <DateTime>]
+ [-FilterStartDateTime <DateTime>] [-IPAddressFilters <String[]>] [-Id <String>] [-KeywordFilter <String>]
+ [-ObjectIdFilters <String[]>] [-OperationFilters <String[]>] [-RecordTypeFilters <String[]>]
  [-Records <IMicrosoftGraphSecurityAuditLogRecord[]>] [-ServiceFilters <String[]>] [-Status <String>]
  [-UserPrincipalNameFilters <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -25,8 +25,9 @@ New-MgBetaSecurityAuditLogQuery [-AdditionalProperties <Hashtable>] [-Administra
 
 ### Create
 ```
-New-MgBetaSecurityAuditLogQuery -BodyParameter <IMicrosoftGraphSecurityAuditLogQuery> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityAuditLogQuery -BodyParameter <IMicrosoftGraphSecurityAuditLogQuery>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -264,6 +265,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServiceFilters
 .
 
@@ -350,7 +366,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditLogQuery
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

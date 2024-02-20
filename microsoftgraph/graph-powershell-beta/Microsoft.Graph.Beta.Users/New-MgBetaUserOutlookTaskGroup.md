@@ -15,30 +15,32 @@ Create an Outlook task group in the user's mailbox.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserOutlookTaskGroup -UserId <String> [-AdditionalProperties <Hashtable>] [-ChangeKey <String>]
- [-GroupKey <String>] [-Id <String>] [-IsDefaultGroup] [-Name <String>]
- [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskGroup -UserId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-GroupKey <String>] [-Id <String>]
+ [-IsDefaultGroup] [-Name <String>] [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserOutlookTaskGroup -UserId <String> -BodyParameter <IMicrosoftGraphOutlookTaskGroup>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ChangeKey <String>] [-GroupKey <String>] [-Id <String>] [-IsDefaultGroup] [-Name <String>]
- [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ChangeKey <String>] [-GroupKey <String>] [-Id <String>]
+ [-IsDefaultGroup] [-Name <String>] [-TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTaskGroup>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -215,6 +217,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TaskFolders
 The collection of task folders in the task group.
 Read-only.
@@ -290,7 +307,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTaskGroup
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

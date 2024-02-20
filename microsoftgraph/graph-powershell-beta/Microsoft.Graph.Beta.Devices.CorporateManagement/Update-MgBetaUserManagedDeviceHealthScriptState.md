@@ -15,8 +15,8 @@ Update the navigation property deviceHealthScriptStates in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserManagedDeviceHealthScriptState -DeviceId <String> -Id <String> -ManagedDeviceId <String>
- -PolicyId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>]
- [-DetectionState <RunState>] [-DeviceId1 <String>] [-DeviceName <String>]
+ -PolicyId <String> -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>] [-DeviceId1 <String>] [-DeviceName <String>]
  [-ExpectedStateUpdateDateTime <DateTime>] [-Id1 <String>] [-LastStateUpdateDateTime <DateTime>]
  [-LastSyncDateTime <DateTime>] [-OSVersion <String>] [-PolicyId1 <String>] [-PolicyName <String>]
  [-PostRemediationDetectionScriptError <String>] [-PostRemediationDetectionScriptOutput <String>]
@@ -28,28 +28,29 @@ Update-MgBetaUserManagedDeviceHealthScriptState -DeviceId <String> -Id <String> 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserManagedDeviceHealthScriptState [-DeviceId <String>] [-Id <String>] [-PolicyId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>] [-DeviceName <String>]
- [-ExpectedStateUpdateDateTime <DateTime>] [-LastStateUpdateDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
- [-OSVersion <String>] [-PolicyName <String>] [-PostRemediationDetectionScriptError <String>]
- [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
- [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
- [-RemediationState <RemediationState>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>]
+ [-DeviceName <String>] [-ExpectedStateUpdateDateTime <DateTime>] [-LastStateUpdateDateTime <DateTime>]
+ [-LastSyncDateTime <DateTime>] [-OSVersion <String>] [-PolicyName <String>]
+ [-PostRemediationDetectionScriptError <String>] [-PostRemediationDetectionScriptOutput <String>]
+ [-PreRemediationDetectionScriptError <String>] [-PreRemediationDetectionScriptOutput <String>]
+ [-RemediationScriptError <String>] [-RemediationState <RemediationState>] [-UserName <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserManagedDeviceHealthScriptState -DeviceId <String> -Id <String> -ManagedDeviceId <String>
  -PolicyId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserManagedDeviceHealthScriptState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -485,6 +486,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -557,7 +573,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

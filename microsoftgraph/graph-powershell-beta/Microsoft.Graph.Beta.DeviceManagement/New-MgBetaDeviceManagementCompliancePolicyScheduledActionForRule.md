@@ -15,7 +15,7 @@ Create new navigation property to scheduledActionsForRule for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCompliancePolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
  [-ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -23,14 +23,15 @@ New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManageme
 ### Create
 ```
 New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
  [-ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +39,9 @@ New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <I
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -155,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RuleName
 Name of the rule which this scheduled action applies to.
 
@@ -229,7 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

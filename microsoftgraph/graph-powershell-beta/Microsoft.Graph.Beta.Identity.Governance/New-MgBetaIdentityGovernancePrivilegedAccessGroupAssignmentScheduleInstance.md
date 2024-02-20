@@ -17,8 +17,8 @@ Create new navigation property to assignmentScheduleInstances for identityGovern
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance [-AccessId <String>]
- [-ActivatedUsing <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance>]
+New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance [-ResponseHeadersVariable <String>]
+ [-AccessId <String>] [-ActivatedUsing <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance>]
  [-AdditionalProperties <Hashtable>] [-AssignmentScheduleId <String>] [-AssignmentType <String>]
  [-EndDateTime <DateTime>] [-Group <IMicrosoftGraphGroup>] [-GroupId <String>] [-Id <String>]
  [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
@@ -29,8 +29,9 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance [-Ac
 ### Create
 ```
 New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
- -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -274,6 +275,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 When this instance starts, and is required.
 
@@ -330,7 +346,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

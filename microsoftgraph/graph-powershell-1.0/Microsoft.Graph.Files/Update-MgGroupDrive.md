@@ -17,11 +17,11 @@ Update the navigation property drives in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupDrive -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Bundles <IMicrosoftGraphDriveItem[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DriveType <String>] [-ETag <String>] [-Following <IMicrosoftGraphDriveItem[]>] [-Id <String>]
- [-Items <IMicrosoftGraphDriveItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgGroupDrive -DriveId <String> -GroupId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Bundles <IMicrosoftGraphDriveItem[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DriveType <String>] [-ETag <String>] [-Following <IMicrosoftGraphDriveItem[]>]
+ [-Id <String>] [-Items <IMicrosoftGraphDriveItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphList>]
  [-Name <String>] [-Owner <IMicrosoftGraphIdentitySet>] [-ParentReference <IMicrosoftGraphItemReference>]
  [-Quota <IMicrosoftGraphQuota>] [-Root <IMicrosoftGraphDriveItem>]
@@ -33,16 +33,17 @@ Update-MgGroupDrive -DriveId <String> -GroupId <String> [-AdditionalProperties <
 ### Update
 ```
 Update-MgGroupDrive -DriveId <String> -GroupId <String> -BodyParameter <IMicrosoftGraphDrive>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupDrive -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Bundles <IMicrosoftGraphDriveItem[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DriveType <String>] [-ETag <String>] [-Following <IMicrosoftGraphDriveItem[]>] [-Id <String>]
- [-Items <IMicrosoftGraphDriveItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+Update-MgGroupDrive -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Bundles <IMicrosoftGraphDriveItem[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DriveType <String>] [-ETag <String>] [-Following <IMicrosoftGraphDriveItem[]>]
+ [-Id <String>] [-Items <IMicrosoftGraphDriveItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphList>]
  [-Name <String>] [-Owner <IMicrosoftGraphIdentitySet>] [-ParentReference <IMicrosoftGraphItemReference>]
  [-Quota <IMicrosoftGraphQuota>] [-Root <IMicrosoftGraphDriveItem>]
@@ -54,7 +55,8 @@ Update-MgGroupDrive -InputObject <IFilesIdentity> [-AdditionalProperties <Hashta
 ### UpdateViaIdentity
 ```
 Update-MgGroupDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDrive>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -464,6 +466,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Root
 driveItem
 To construct, see NOTES section for ROOT properties and create a hash table.
@@ -587,7 +604,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

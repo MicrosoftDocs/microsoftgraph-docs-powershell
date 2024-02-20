@@ -20,9 +20,9 @@ The ID is also known as the tenantId of the organization.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgOrganization -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Branding <IMicrosoftGraphOrganizationalBranding>]
- [-BusinessPhones <String[]>]
+Update-MgOrganization -OrganizationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
+ [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
  [-CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>] [-City <String>]
  [-Country <String>] [-CountryLetterCode <String>] [-CreatedDateTime <DateTime>]
  [-DefaultUsageLocation <String>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
@@ -39,14 +39,15 @@ Update-MgOrganization -OrganizationId <String> [-AdditionalProperties <Hashtable
 ### Update
 ```
 Update-MgOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Branding <IMicrosoftGraphOrganizationalBranding>]
- [-BusinessPhones <String[]>]
+Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
+ [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
  [-CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>] [-City <String>]
  [-Country <String>] [-CountryLetterCode <String>] [-CreatedDateTime <DateTime>]
  [-DefaultUsageLocation <String>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
@@ -63,8 +64,8 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Addi
 ### UpdateViaIdentity
 ```
 Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganization> [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -540,6 +541,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SecurityComplianceNotificationMails
 Not nullable.
 
@@ -692,7 +708,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

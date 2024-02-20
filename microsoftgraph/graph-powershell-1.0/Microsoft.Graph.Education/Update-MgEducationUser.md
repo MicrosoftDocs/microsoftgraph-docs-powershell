@@ -18,12 +18,13 @@ Update the properties of an educationUser object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgEducationUser -EducationUserId <String> [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
- [-Assignments <IMicrosoftGraphEducationAssignment[]>] [-BusinessPhones <String[]>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>]
- [-DisplayName <String>] [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-GivenName <String>]
- [-Id <String>] [-Mail <String>] [-MailNickname <String>] [-MailingAddress <IMicrosoftGraphPhysicalAddress>]
+Update-MgEducationUser -EducationUserId <String> [-ResponseHeadersVariable <String>] [-AccountEnabled]
+ [-AdditionalProperties <Hashtable>] [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]
+ [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Assignments <IMicrosoftGraphEducationAssignment[]>]
+ [-BusinessPhones <String[]>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>] [-DisplayName <String>]
+ [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-GivenName <String>] [-Id <String>]
+ [-Mail <String>] [-MailNickname <String>] [-MailingAddress <IMicrosoftGraphPhysicalAddress>]
  [-MiddleName <String>] [-MobilePhone <String>] [-OfficeLocation <String>]
  [-OnPremisesInfo <IMicrosoftGraphEducationOnPremisesInfo>] [-PasswordPolicies <String>]
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-PreferredLanguage <String>] [-PrimaryRole <String>]
@@ -39,17 +40,19 @@ Update-MgEducationUser -EducationUserId <String> [-AccountEnabled] [-AdditionalP
 ### Update
 ```
 Update-MgEducationUser -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationUser>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgEducationUser -InputObject <IEducationIdentity> [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
- [-Assignments <IMicrosoftGraphEducationAssignment[]>] [-BusinessPhones <String[]>]
- [-Classes <IMicrosoftGraphEducationClass[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>]
- [-DisplayName <String>] [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-GivenName <String>]
- [-Id <String>] [-Mail <String>] [-MailNickname <String>] [-MailingAddress <IMicrosoftGraphPhysicalAddress>]
+Update-MgEducationUser -InputObject <IEducationIdentity> [-ResponseHeadersVariable <String>] [-AccountEnabled]
+ [-AdditionalProperties <Hashtable>] [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]
+ [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>] [-Assignments <IMicrosoftGraphEducationAssignment[]>]
+ [-BusinessPhones <String[]>] [-Classes <IMicrosoftGraphEducationClass[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Department <String>] [-DisplayName <String>]
+ [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-GivenName <String>] [-Id <String>]
+ [-Mail <String>] [-MailNickname <String>] [-MailingAddress <IMicrosoftGraphPhysicalAddress>]
  [-MiddleName <String>] [-MobilePhone <String>] [-OfficeLocation <String>]
  [-OnPremisesInfo <IMicrosoftGraphEducationOnPremisesInfo>] [-PasswordPolicies <String>]
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-PreferredLanguage <String>] [-PrimaryRole <String>]
@@ -65,7 +68,8 @@ Update-MgEducationUser -InputObject <IEducationIdentity> [-AccountEnabled] [-Add
 ### UpdateViaIdentity
 ```
 Update-MgEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMicrosoftGraphEducationUser>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -642,6 +646,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rubrics
 When set, the grading rubric attached to the assignment.
 To construct, see NOTES section for RUBRICS properties and create a hash table.
@@ -870,7 +889,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationUser
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -14,36 +14,36 @@ Create new navigation property to records for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String> [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnits <String[]>] [-AuditData <Hashtable>] [-AuditLogRecordType <String>] [-ClientIP <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-ObjectId <String>] [-Operation <String>]
- [-OrganizationId <String>] [-Service <String>] [-UserId <String>] [-UserPrincipalName <String>]
- [-UserType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdministrativeUnits <String[]>] [-AuditData <Hashtable>]
+ [-AuditLogRecordType <String>] [-ClientIP <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-ObjectId <String>] [-Operation <String>] [-OrganizationId <String>] [-Service <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <String>
- -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnits <String[]>] [-AuditData <Hashtable>] [-AuditLogRecordType <String>] [-ClientIP <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-ObjectId <String>] [-Operation <String>]
- [-OrganizationId <String>] [-Service <String>] [-UserId <String>] [-UserPrincipalName <String>]
- [-UserType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AdministrativeUnits <String[]>] [-AuditData <Hashtable>]
+ [-AuditLogRecordType <String>] [-ClientIP <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-ObjectId <String>] [-Operation <String>] [-OrganizationId <String>] [-Service <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -282,6 +282,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Service
 The Microsoft 365 service where the activity occurred.
 
@@ -387,7 +402,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditLogRecord
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

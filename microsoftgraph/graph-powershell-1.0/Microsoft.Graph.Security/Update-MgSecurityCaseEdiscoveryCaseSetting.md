@@ -18,8 +18,8 @@ Update the properties of an ediscoveryCaseSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -28,14 +28,14 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-Addition
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
  [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -44,8 +44,8 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -222,6 +222,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TopicModeling
 topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
@@ -280,7 +295,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCaseSettings
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

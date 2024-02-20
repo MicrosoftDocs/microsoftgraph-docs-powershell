@@ -18,35 +18,37 @@ Update the navigation property logCollectionRequests in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -DeviceLogCollectionResponseId <String>
- -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ErrorCode <Int64>]
- [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId1 <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ManagedDeviceId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-EnrolledByUser <String>] [-ErrorCode <Int64>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
+ [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId1 <String>] [-ReceivedDateTimeUtc <DateTime>]
+ [-RequestedDateTimeUtc <DateTime>] [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -DeviceLogCollectionResponseId <String>
- -ManagedDeviceId <String> -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -ManagedDeviceId <String> -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementManagedDeviceLogCollectionRequest [-ManagedDeviceId <String>]
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>]
- [-ErrorCode <Int64>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ErrorCode <Int64>]
+ [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>] [-Size <Double>] [-SizeInKb <Double>]
+ [-Status <AppLogUploadState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -295,6 +297,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Size
 The size of the logs.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
@@ -384,7 +401,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -15,7 +15,7 @@ Update the navigation property presenters in solutions
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaVirtualEventTownhallPresenter -VirtualEventPresenterId <String> -VirtualEventTownhallId <String>
- [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>]
  [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
  [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-ProfilePhotoInputFile <String>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Headers <IDictionary>]
@@ -25,14 +25,15 @@ Update-MgBetaVirtualEventTownhallPresenter -VirtualEventPresenterId <String> -Vi
 ### Update
 ```
 Update-MgBetaVirtualEventTownhallPresenter -VirtualEventPresenterId <String> -VirtualEventTownhallId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Email <String>] [-Id <String>] [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
+Update-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>]
+ [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
  [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-ProfilePhotoInputFile <String>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,8 +42,8 @@ Update-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sessions
 .
 To construct, see NOTES section for SESSIONS properties and create a hash table.
@@ -293,7 +309,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

@@ -18,7 +18,7 @@ Update the properties of an externalConnection.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaExternalConnection -ExternalConnectionId <String>
+Update-MgBetaExternalConnection -ExternalConnectionId <String> [-ResponseHeadersVariable <String>]
  [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>] [-AdditionalProperties <Hashtable>]
  [-ComplianceSettings <IMicrosoftGraphExternalConnectorsComplianceSettings>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
@@ -35,13 +35,13 @@ Update-MgBetaExternalConnection -ExternalConnectionId <String>
 ### Update
 ```
 Update-MgBetaExternalConnection -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
+Update-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ResponseHeadersVariable <String>]
  [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>] [-AdditionalProperties <Hashtable>]
  [-ComplianceSettings <IMicrosoftGraphExternalConnectorsComplianceSettings>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
@@ -58,8 +58,8 @@ Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -389,6 +389,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schema
 schema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
@@ -478,7 +493,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

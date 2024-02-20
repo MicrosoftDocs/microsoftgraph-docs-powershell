@@ -14,8 +14,9 @@ Create new navigation property to assignments for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementAssignment [-AccessPackage <IMicrosoftGraphAccessPackage>]
- [-AdditionalProperties <Hashtable>] [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy>]
+New-MgEntitlementManagementAssignment [-ResponseHeadersVariable <String>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
+ [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy>]
  [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
  [-ExpiredDateTime <DateTime>] [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject>] [-Headers <IDictionary>]
@@ -25,7 +26,8 @@ New-MgEntitlementManagementAssignment [-AccessPackage <IMicrosoftGraphAccessPack
 ### Create
 ```
 New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPackageAssignment>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -188,6 +190,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Schedule
 entitlementManagementSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
@@ -293,7 +310,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

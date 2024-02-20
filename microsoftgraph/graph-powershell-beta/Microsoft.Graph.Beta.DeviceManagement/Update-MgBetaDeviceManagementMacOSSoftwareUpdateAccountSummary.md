@@ -15,9 +15,10 @@ Update the navigation property macOSSoftwareUpdateAccountSummaries in deviceMana
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary -MacOSSoftwareUpdateAccountSummaryId <String>
- [-AdditionalProperties <Hashtable>] [-CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>]
- [-DeviceId <String>] [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>]
- [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>] [-DeviceId <String>]
+ [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>]
+ [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
  [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,16 +26,17 @@ Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary -MacOSSoftwareUpd
 ### Update
 ```
 Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary -MacOSSoftwareUpdateAccountSummaryId <String>
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>]
- [-DeviceId <String>] [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>]
- [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>] [-DeviceId <String>]
+ [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>]
+ [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
  [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,8 +44,8 @@ Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary -InputObject <IDe
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -265,6 +267,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SuccessfulUpdateCount
 Number of successful updates on the device.
 
@@ -367,7 +384,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

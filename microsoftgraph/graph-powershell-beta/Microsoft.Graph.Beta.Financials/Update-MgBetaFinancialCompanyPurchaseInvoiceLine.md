@@ -15,20 +15,7 @@ Update the navigation property purchaseInvoiceLines in financials
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <String> -PurchaseInvoiceLineId <String>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
- [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
- [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
- [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitCost <Decimal>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <String> -PurchaseInvoiceLineId <String>
- -PurchaseInvoiceId <String> [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
  [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
  [-DocumentId <String>] [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
@@ -38,27 +25,42 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <String> -PurchaseIn
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateExpanded1
+```
+Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <String> -PurchaseInvoiceLineId <String>
+ -PurchaseInvoiceId <String> [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>]
+ [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>]
+ [-AmountIncludingTax <Decimal>] [-Description <String>] [-DiscountAmount <Decimal>]
+ [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
+ [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
+ [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
+ [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
+ [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitCost <Decimal>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update1
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <String> -PurchaseInvoiceLineId <String>
- -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <String> -PurchaseInvoiceLineId <String>
- -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
  [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
  [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
  [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitCost <Decimal>]
@@ -68,10 +70,10 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AdditionalProperties <Hashtable>]
- [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>] [-Description <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>] [-DocumentId <String>]
- [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
+ [-ResponseHeadersVariable <String>] [-Account <IMicrosoftGraphAccount>] [-AccountId <String>]
+ [-AdditionalProperties <Hashtable>] [-AmountExcludingTax <Decimal>] [-AmountIncludingTax <Decimal>]
+ [-Description <String>] [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DiscountPercent <Decimal>]
+ [-DocumentId <String>] [-ExpectedReceiptDate <DateTime>] [-Id <String>] [-InvoiceDiscountAllocation <Decimal>]
  [-Item <IMicrosoftGraphItem>] [-ItemId <String>] [-LineType <String>] [-NetAmount <Decimal>]
  [-NetAmountIncludingTax <Decimal>] [-NetTaxAmount <Decimal>] [-Quantity <Decimal>] [-Sequence <Int32>]
  [-TaxCode <String>] [-TaxPercent <Decimal>] [-TotalTaxAmount <Decimal>] [-UnitCost <Decimal>]
@@ -81,15 +83,15 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
 ### UpdateViaIdentity1
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -507,6 +509,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sequence
 .
 
@@ -624,7 +641,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPurchaseInvoiceLine
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

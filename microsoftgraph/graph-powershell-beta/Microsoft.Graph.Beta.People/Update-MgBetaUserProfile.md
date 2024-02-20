@@ -14,10 +14,10 @@ Update the navigation property profile in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserProfile -UserId <String> [-Account <IMicrosoftGraphUserAccountInformation[]>]
- [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphItemAddress[]>]
- [-Anniversaries <IMicrosoftGraphPersonAnnualEvent[]>] [-Awards <IMicrosoftGraphPersonAward[]>]
- [-Certifications <IMicrosoftGraphPersonCertification[]>]
+Update-MgBetaUserProfile -UserId <String> [-ResponseHeadersVariable <String>]
+ [-Account <IMicrosoftGraphUserAccountInformation[]>] [-AdditionalProperties <Hashtable>]
+ [-Addresses <IMicrosoftGraphItemAddress[]>] [-Anniversaries <IMicrosoftGraphPersonAnnualEvent[]>]
+ [-Awards <IMicrosoftGraphPersonAward[]>] [-Certifications <IMicrosoftGraphPersonCertification[]>]
  [-EducationalActivities <IMicrosoftGraphEducationalActivity[]>] [-Emails <IMicrosoftGraphItemEmail[]>]
  [-Id <String>] [-Interests <IMicrosoftGraphPersonInterest[]>]
  [-Languages <IMicrosoftGraphLanguageProficiency[]>] [-Names <IMicrosoftGraphPersonName[]>]
@@ -31,16 +31,17 @@ Update-MgBetaUserProfile -UserId <String> [-Account <IMicrosoftGraphUserAccountI
 
 ### Update
 ```
-Update-MgBetaUserProfile -UserId <String> -BodyParameter <IMicrosoftGraphProfile> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserProfile -UserId <String> -BodyParameter <IMicrosoftGraphProfile>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserProfile -InputObject <IPeopleIdentity> [-Account <IMicrosoftGraphUserAccountInformation[]>]
- [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphItemAddress[]>]
- [-Anniversaries <IMicrosoftGraphPersonAnnualEvent[]>] [-Awards <IMicrosoftGraphPersonAward[]>]
- [-Certifications <IMicrosoftGraphPersonCertification[]>]
+Update-MgBetaUserProfile -InputObject <IPeopleIdentity> [-ResponseHeadersVariable <String>]
+ [-Account <IMicrosoftGraphUserAccountInformation[]>] [-AdditionalProperties <Hashtable>]
+ [-Addresses <IMicrosoftGraphItemAddress[]>] [-Anniversaries <IMicrosoftGraphPersonAnnualEvent[]>]
+ [-Awards <IMicrosoftGraphPersonAward[]>] [-Certifications <IMicrosoftGraphPersonCertification[]>]
  [-EducationalActivities <IMicrosoftGraphEducationalActivity[]>] [-Emails <IMicrosoftGraphItemEmail[]>]
  [-Id <String>] [-Interests <IMicrosoftGraphPersonInterest[]>]
  [-Languages <IMicrosoftGraphLanguageProficiency[]>] [-Names <IMicrosoftGraphPersonName[]>]
@@ -55,7 +56,8 @@ Update-MgBetaUserProfile -InputObject <IPeopleIdentity> [-Account <IMicrosoftGra
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphProfile>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -412,6 +414,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Skills
 Represents detailed information about skills associated with a user in various services.
 To construct, see NOTES section for SKILLS properties and create a hash table.
@@ -517,7 +534,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfile
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

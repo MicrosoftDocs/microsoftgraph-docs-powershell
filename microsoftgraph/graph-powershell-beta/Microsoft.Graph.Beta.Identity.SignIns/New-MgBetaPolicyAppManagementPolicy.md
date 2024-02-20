@@ -18,7 +18,7 @@ Create an appManagementPolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPolicyAppManagementPolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaPolicyAppManagementPolicy [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsEnabled]
  [-Restrictions <IMicrosoftGraphAppManagementConfiguration>] [-Headers <IDictionary>]
@@ -28,7 +28,8 @@ New-MgBetaPolicyAppManagementPolicy [-AdditionalProperties <Hashtable>]
 ### Create
 ```
 New-MgBetaPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPolicy>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -195,6 +196,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Restrictions
 appManagementConfiguration
 To construct, see NOTES section for RESTRICTIONS properties and create a hash table.
@@ -252,7 +268,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

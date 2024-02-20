@@ -14,24 +14,7 @@ Update entity in privilegedOperationEvents
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrivilegedOperationEvent -PrivilegedOperationEventId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestType <String>]
- [-RequestorId <String>] [-RequestorName <String>] [-RoleId <String>] [-RoleName <String>] [-TenantId <String>]
- [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaPrivilegedOperationEvent -PrivilegedOperationEventId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
+Update-MgBetaPrivilegedOperationEvent -PrivilegedOperationEventId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-CreationDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>]
  [-RequestType <String>] [-RequestorId <String>] [-RequestorName <String>] [-RoleId <String>]
@@ -39,11 +22,29 @@ Update-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Update
+```
+Update-MgBetaPrivilegedOperationEvent -PrivilegedOperationEventId <String>
+ -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
+ [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReferenceKey <String>]
+ [-ReferenceSystem <String>] [-RequestType <String>] [-RequestorId <String>] [-RequestorName <String>]
+ [-RoleId <String>] [-RoleName <String>] [-TenantId <String>] [-UserId <String>] [-UserMail <String>]
+ [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -279,6 +280,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RoleId
 .
 
@@ -411,7 +427,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedOperationEvent
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

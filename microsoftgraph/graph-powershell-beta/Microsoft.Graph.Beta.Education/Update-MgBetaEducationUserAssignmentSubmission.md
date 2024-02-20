@@ -18,10 +18,11 @@ Update the navigation property submissions in education
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEducationUserAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
- -EducationUserId <String> [-AdditionalProperties <Hashtable>] [-ExcusedBy <IMicrosoftGraphIdentitySet>]
- [-Id <String>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-ReassignedBy <IMicrosoftGraphIdentitySet>]
- [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
+ -EducationUserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ExcusedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>]
+ [-ReassignedBy <IMicrosoftGraphIdentitySet>] [-Recipient <Hashtable>]
+ [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ReturnedBy <IMicrosoftGraphIdentitySet>]
+ [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,17 +31,19 @@ Update-MgBetaEducationUserAssignmentSubmission -EducationAssignmentId <String> -
 ### Update
 ```
 Update-MgBetaEducationUserAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
- -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationSubmission> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationSubmission>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-ExcusedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
- [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-ReassignedBy <IMicrosoftGraphIdentitySet>]
- [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ExcusedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>]
+ [-ReassignedBy <IMicrosoftGraphIdentitySet>] [-Recipient <Hashtable>]
+ [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ReturnedBy <IMicrosoftGraphIdentitySet>]
+ [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -49,8 +52,8 @@ Update-MgBetaEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSubmission> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSubmission> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -275,6 +278,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReturnedBy
 identitySet
 To construct, see NOTES section for RETURNEDBY properties and create a hash table.
@@ -396,7 +414,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

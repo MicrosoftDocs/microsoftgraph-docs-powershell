@@ -20,31 +20,31 @@ Use this configuration to enable or disable the Microsoft Entra ID Remote Deskto
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsRemoteDesktopProtocolEnabled]
- [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-IsRemoteDesktopProtocolEnabled] [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphRemoteDesktopSecurityConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRemoteDesktopSecurityConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsRemoteDesktopProtocolEnabled]
- [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-IsRemoteDesktopProtocolEnabled] [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphRemoteDesktopSecurityConfiguration> [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRemoteDesktopSecurityConfiguration> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -164,6 +164,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ServicePrincipalId
 The unique identifier of servicePrincipal
 
@@ -237,7 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteDesktopSecurityConfiguration
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

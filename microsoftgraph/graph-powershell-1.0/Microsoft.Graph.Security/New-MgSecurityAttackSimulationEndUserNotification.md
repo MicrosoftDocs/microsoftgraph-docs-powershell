@@ -17,10 +17,10 @@ Create new navigation property to endUserNotifications for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationEndUserNotification [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
+New-MgSecurityAttackSimulationEndUserNotification [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
  [-NotificationType <String>] [-Source <String>] [-Status <String>] [-SupportedLocales <String[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,8 @@ New-MgSecurityAttackSimulationEndUserNotification [-AdditionalProperties <Hashta
 ### Create
 ```
 New-MgSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoftGraphEndUserNotification>
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -240,6 +241,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Source
 simulationContentSource
 
@@ -326,7 +342,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndUserNotification
-### System.Collections.Hashtable
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
