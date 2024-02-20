@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport
@@ -202,37 +202,40 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCloudPcReports\>: cloudPcReports
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCloudPcReports>`: cloudPcReports
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExportJobs \<IMicrosoftGraphCloudPcExportJob\[\]\>\]: The export jobs created for downloading reports.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ExportJobs <IMicrosoftGraphCloudPcExportJob- `[]`>]`: The export jobs created for downloading reports.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ExpirationDateTime \<DateTime?\>\]: The date and time when the export job expires.
-    \[ExportJobStatus \<String\>\]: cloudPcExportJobStatus
-    \[ExportUrl \<String\>\]: The storage account URL of the exported report.
+    - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
+    - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
+    - `[ExportUrl <String>]`: The storage account URL of the exported report.
 It can be used to download the file.
-    \[Filter \<String\>\]: The filter applied on the report.
-    \[Format \<String\>\]: The format of the exported report.
-    \[ReportName \<String\>\]: cloudPcReportName
-    \[RequestDateTime \<DateTime?\>\]: The date and time when the export job was requested.
-    \[Select \<String\[\]\>\]: The selected columns of the report.
+    - `[Filter <String>]`: The filter applied on the report.
+    - `[Format <String>]`: The format of the exported report.
+    - `[ReportName <String>]`: cloudPcReportName
+    - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
+    - `[Select <String- `[]`>]`: The selected columns of the report.
 
-EXPORTJOBS \<IMicrosoftGraphCloudPcExportJob\[\]\>: The export jobs created for downloading reports.
-  \[Id \<String\>\]: The unique identifier for an entity.
+EXPORTJOBS <IMicrosoftGraphCloudPcExportJob- `[]`>: The export jobs created for downloading reports.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExpirationDateTime \<DateTime?\>\]: The date and time when the export job expires.
-  \[ExportJobStatus \<String\>\]: cloudPcExportJobStatus
-  \[ExportUrl \<String\>\]: The storage account URL of the exported report.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
+  - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
+  - `[ExportUrl <String>]`: The storage account URL of the exported report.
 It can be used to download the file.
-  \[Filter \<String\>\]: The filter applied on the report.
-  \[Format \<String\>\]: The format of the exported report.
-  \[ReportName \<String\>\]: cloudPcReportName
-  \[RequestDateTime \<DateTime?\>\]: The date and time when the export job was requested.
-  \[Select \<String\[\]\>\]: The selected columns of the report.
+  - `[Filter <String>]`: The filter applied on the report.
+  - `[Format <String>]`: The format of the exported report.
+  - `[ReportName <String>]`: cloudPcReportName
+  - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
+  - `[Select <String- `[]`>]`: The selected columns of the report.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport)
+
+
+
 

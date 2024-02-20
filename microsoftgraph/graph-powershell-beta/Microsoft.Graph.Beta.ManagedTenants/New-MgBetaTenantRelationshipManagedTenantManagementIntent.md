@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementintent
@@ -239,41 +239,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagementIntent\>: managementIntent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementIntent>`: managementIntent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The display name for the management intent.
+  - `[DisplayName <String>]`: The display name for the management intent.
 Optional.
 Read-only.
-  \[IsGlobal \<Boolean?\>\]: A flag indicating whether the management intent is global.
+  - `[IsGlobal <Boolean?>]`: A flag indicating whether the management intent is global.
 Required.
 Read-only.
-  \[ManagementTemplates \<IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo\[\]\>\]: The collection of management templates associated with the management intent.
+  - `[ManagementTemplates <IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>]`: The collection of management templates associated with the management intent.
 Optional.
 Read-only.
-    \[Category \<String\>\]: managementCategory
-    \[DisplayName \<String\>\]: The display name for the management template.
+    - `[Category <String>]`: managementCategory
+    - `[DisplayName <String>]`: The display name for the management template.
 Required.
 Read-only.
-    \[ManagementTemplateId \<String\>\]: The unique identifier for the management template.
+    - `[ManagementTemplateId <String>]`: The unique identifier for the management template.
 Required.
 Read-only.
-    \[Version \<Int32?\>\]: 
+    - `[Version <Int32?>]`: 
 
-MANAGEMENTTEMPLATES \<IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo\[\]\>: The collection of management templates associated with the management intent.
+MANAGEMENTTEMPLATES <IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>: The collection of management templates associated with the management intent.
 Optional.
 Read-only.
-  \[Category \<String\>\]: managementCategory
-  \[DisplayName \<String\>\]: The display name for the management template.
+  - `[Category <String>]`: managementCategory
+  - `[DisplayName <String>]`: The display name for the management template.
 Required.
 Read-only.
-  \[ManagementTemplateId \<String\>\]: The unique identifier for the management template.
+  - `[ManagementTemplateId <String>]`: The unique identifier for the management template.
 Required.
 Read-only.
-  \[Version \<Int32?\>\]:
+  - `[Version <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementintent)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy
@@ -366,108 +366,111 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHENTICATIONMETHODCONFIGURATIONS \<IMicrosoftGraphAuthenticationMethodConfiguration\[\]\>: Represents the settings for each authentication method.
+AUTHENTICATIONMETHODCONFIGURATIONS <IMicrosoftGraphAuthenticationMethodConfiguration- `[]`>: Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Groups of users that are excluded from a policy.
-    \[Id \<String\>\]: The object identifier of a Microsoft Entra group.
-    \[TargetType \<String\>\]: authenticationMethodTargetType
-  \[State \<String\>\]: authenticationMethodState
+  - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Groups of users that are excluded from a policy.
+    - `[Id <String>]`: The object identifier of a Microsoft Entra group.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[State <String>]`: authenticationMethodState
 
-BODYPARAMETER \<IMicrosoftGraphAuthenticationMethodsPolicy\>: authenticationMethodsPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodsPolicy>`: authenticationMethodsPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthenticationMethodConfigurations \<IMicrosoftGraphAuthenticationMethodConfiguration\[\]\>\]: Represents the settings for each authentication method.
+  - `[AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration- `[]`>]`: Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Groups of users that are excluded from a policy.
-      \[Id \<String\>\]: The object identifier of a Microsoft Entra group.
-      \[TargetType \<String\>\]: authenticationMethodTargetType
-    \[State \<String\>\]: authenticationMethodState
-  \[Description \<String\>\]: A description of the policy.
-  \[DisplayName \<String\>\]: The name of the policy.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time of the last update to the policy.
-  \[PolicyMigrationState \<String\>\]: authenticationMethodsPolicyMigrationState
-  \[PolicyVersion \<String\>\]: The version of the policy in use.
-  \[ReconfirmationInDays \<Int32?\>\]: Days before the user will be asked to reconfirm their method.
-  \[RegistrationEnforcement \<IMicrosoftGraphRegistrationEnforcement\>\]: registrationEnforcement
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AuthenticationMethodsRegistrationCampaign \<IMicrosoftGraphAuthenticationMethodsRegistrationCampaign\>\]: authenticationMethodsRegistrationCampaign
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[EnforceRegistrationAfterAllowedSnoozes \<Boolean?\>\]: Specifies whether a user is required to perform registration after snoozing 3 times.
+    - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Groups of users that are excluded from a policy.
+      - `[Id <String>]`: The object identifier of a Microsoft Entra group.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+    - `[State <String>]`: authenticationMethodState
+  - `[Description <String>]`: A description of the policy.
+  - `[DisplayName <String>]`: The name of the policy.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time of the last update to the policy.
+  - `[PolicyMigrationState <String>]`: authenticationMethodsPolicyMigrationState
+  - `[PolicyVersion <String>]`: The version of the policy in use.
+  - `[ReconfirmationInDays <Int32?>]`: Days before the user will be asked to reconfirm their method.
+  - `[RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>]`: registrationEnforcement
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AuthenticationMethodsRegistrationCampaign <IMicrosoftGraphAuthenticationMethodsRegistrationCampaign>]`: authenticationMethodsRegistrationCampaign
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EnforceRegistrationAfterAllowedSnoozes <Boolean?>]`: Specifies whether a user is required to perform registration after snoozing 3 times.
 If true, the user is required to register after 3 snoozes.
 If false, the user can snooze indefinitely.
 The default value is true.
-      \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Users and groups of users that are excluded from being prompted to set up the authentication method.
-      \[IncludeTargets \<IMicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget\[\]\>\]: Users and groups of users that are prompted to set up the authentication method.
-        \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
-        \[TargetType \<String\>\]: authenticationMethodTargetType
-        \[TargetedAuthenticationMethod \<String\>\]: The authentication method that the user is prompted to register.
+      - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Users and groups of users that are excluded from being prompted to set up the authentication method.
+      - `[IncludeTargets <IMicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget- `[]`>]`: Users and groups of users that are prompted to set up the authentication method.
+        - `[Id <String>]`: The object identifier of a Microsoft Entra user or group.
+        - `[TargetType <String>]`: authenticationMethodTargetType
+        - `[TargetedAuthenticationMethod <String>]`: The authentication method that the user is prompted to register.
 The value must be microsoftAuthenticator.
-      \[SnoozeDurationInDays \<Int32?\>\]: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
+      - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
 Minimum 0 days.
 Maximum: 14 days.
 If the value is 0 - The user is prompted during every MFA attempt.
-      \[State \<String\>\]: advancedConfigState
-  \[ReportSuspiciousActivitySettings \<IMicrosoftGraphReportSuspiciousActivitySettings\>\]: reportSuspiciousActivitySettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IncludeTarget \<IMicrosoftGraphIncludeTarget\>\]: includeTarget
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The ID of the entity targeted.
-      \[TargetType \<String\>\]: authenticationMethodTargetType
-    \[State \<String\>\]: advancedConfigState
-    \[VoiceReportingCode \<Int32?\>\]: Specifies the number the user enters on their phone to report the MFA prompt as suspicious.
-  \[SystemCredentialPreferences \<IMicrosoftGraphSystemCredentialPreferences\>\]: systemCredentialPreferences
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Users and groups excluded from the preferred authentication method experience of the system.
-    \[IncludeTargets \<IMicrosoftGraphIncludeTarget\[\]\>\]: Users and groups included in the preferred authentication method experience of the system.
-    \[State \<String\>\]: advancedConfigState
+      - `[State <String>]`: advancedConfigState
+  - `[ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]`: reportSuspiciousActivitySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The ID of the entity targeted.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+    - `[State <String>]`: advancedConfigState
+    - `[VoiceReportingCode <Int32?>]`: Specifies the number the user enters on their phone to report the MFA prompt as suspicious.
+  - `[SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>]`: systemCredentialPreferences
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Users and groups excluded from the preferred authentication method experience of the system.
+    - `[IncludeTargets <IMicrosoftGraphIncludeTarget- `[]`>]`: Users and groups included in the preferred authentication method experience of the system.
+    - `[State <String>]`: advancedConfigState
 
-REGISTRATIONENFORCEMENT \<IMicrosoftGraphRegistrationEnforcement\>: registrationEnforcement
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AuthenticationMethodsRegistrationCampaign \<IMicrosoftGraphAuthenticationMethodsRegistrationCampaign\>\]: authenticationMethodsRegistrationCampaign
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[EnforceRegistrationAfterAllowedSnoozes \<Boolean?\>\]: Specifies whether a user is required to perform registration after snoozing 3 times.
+REGISTRATIONENFORCEMENT `<IMicrosoftGraphRegistrationEnforcement>`: registrationEnforcement
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AuthenticationMethodsRegistrationCampaign <IMicrosoftGraphAuthenticationMethodsRegistrationCampaign>]`: authenticationMethodsRegistrationCampaign
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EnforceRegistrationAfterAllowedSnoozes <Boolean?>]`: Specifies whether a user is required to perform registration after snoozing 3 times.
 If true, the user is required to register after 3 snoozes.
 If false, the user can snooze indefinitely.
 The default value is true.
-    \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Users and groups of users that are excluded from being prompted to set up the authentication method.
-      \[Id \<String\>\]: The object identifier of a Microsoft Entra group.
-      \[TargetType \<String\>\]: authenticationMethodTargetType
-    \[IncludeTargets \<IMicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget\[\]\>\]: Users and groups of users that are prompted to set up the authentication method.
-      \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
-      \[TargetType \<String\>\]: authenticationMethodTargetType
-      \[TargetedAuthenticationMethod \<String\>\]: The authentication method that the user is prompted to register.
+    - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Users and groups of users that are excluded from being prompted to set up the authentication method.
+      - `[Id <String>]`: The object identifier of a Microsoft Entra group.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+    - `[IncludeTargets <IMicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget- `[]`>]`: Users and groups of users that are prompted to set up the authentication method.
+      - `[Id <String>]`: The object identifier of a Microsoft Entra user or group.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+      - `[TargetedAuthenticationMethod <String>]`: The authentication method that the user is prompted to register.
 The value must be microsoftAuthenticator.
-    \[SnoozeDurationInDays \<Int32?\>\]: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
+    - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
 Minimum 0 days.
 Maximum: 14 days.
 If the value is 0 - The user is prompted during every MFA attempt.
-    \[State \<String\>\]: advancedConfigState
+    - `[State <String>]`: advancedConfigState
 
-REPORTSUSPICIOUSACTIVITYSETTINGS \<IMicrosoftGraphReportSuspiciousActivitySettings\>: reportSuspiciousActivitySettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IncludeTarget \<IMicrosoftGraphIncludeTarget\>\]: includeTarget
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The ID of the entity targeted.
-    \[TargetType \<String\>\]: authenticationMethodTargetType
-  \[State \<String\>\]: advancedConfigState
-  \[VoiceReportingCode \<Int32?\>\]: Specifies the number the user enters on their phone to report the MFA prompt as suspicious.
+REPORTSUSPICIOUSACTIVITYSETTINGS `<IMicrosoftGraphReportSuspiciousActivitySettings>`: reportSuspiciousActivitySettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The ID of the entity targeted.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[State <String>]`: advancedConfigState
+  - `[VoiceReportingCode <Int32?>]`: Specifies the number the user enters on their phone to report the MFA prompt as suspicious.
 
-SYSTEMCREDENTIALPREFERENCES \<IMicrosoftGraphSystemCredentialPreferences\>: systemCredentialPreferences
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Users and groups excluded from the preferred authentication method experience of the system.
-    \[Id \<String\>\]: The object identifier of a Microsoft Entra group.
-    \[TargetType \<String\>\]: authenticationMethodTargetType
-  \[IncludeTargets \<IMicrosoftGraphIncludeTarget\[\]\>\]: Users and groups included in the preferred authentication method experience of the system.
-    \[Id \<String\>\]: The ID of the entity targeted.
-    \[TargetType \<String\>\]: authenticationMethodTargetType
-  \[State \<String\>\]: advancedConfigState
+SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: systemCredentialPreferences
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Users and groups excluded from the preferred authentication method experience of the system.
+    - `[Id <String>]`: The object identifier of a Microsoft Entra group.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[IncludeTargets <IMicrosoftGraphIncludeTarget- `[]`>]`: Users and groups included in the preferred authentication method experience of the system.
+    - `[Id <String>]`: The ID of the entity targeted.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
+
+
+
 
