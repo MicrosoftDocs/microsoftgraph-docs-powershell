@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgBetaUserSettingItemInsight
@@ -28,6 +29,9 @@ Get-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-get-permissions.md)]
 
 ## EXAMPLES
 

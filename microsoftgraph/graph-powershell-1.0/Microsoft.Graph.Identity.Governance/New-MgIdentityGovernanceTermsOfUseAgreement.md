@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceTermsOfUseAgreement
@@ -32,6 +33,9 @@ New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgree
 
 ## DESCRIPTION
 Create a new agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termsofusecontainer-post-agreements-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoreset
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgSiteTermStoreSet
@@ -42,6 +43,9 @@ Remove-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>] [-Re
 
 ## DESCRIPTION
 Delete a set object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-delete-permissions.md)]
 
 ## EXAMPLES
 

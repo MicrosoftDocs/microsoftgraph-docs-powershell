@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # New-MgUserInferenceClassificationOverride
@@ -48,6 +49,9 @@ New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 Create an override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
 Note
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
 
 ## EXAMPLES
 

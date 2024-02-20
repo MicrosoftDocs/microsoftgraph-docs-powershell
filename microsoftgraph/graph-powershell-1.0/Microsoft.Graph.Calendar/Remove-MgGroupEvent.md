@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupevent
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Remove-MgGroupEvent
@@ -28,6 +29,9 @@ Remove-MgGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Respo
 
 ## DESCRIPTION
 Delete an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-event-permissions.md)]
 
 ## EXAMPLES
 

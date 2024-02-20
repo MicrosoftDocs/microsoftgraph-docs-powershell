@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression
@@ -51,6 +52,9 @@ Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -Input
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileemail
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileEmail
@@ -28,6 +29,9 @@ Remove-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete an itemEmail object from a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itememail-delete-permissions.md)]
 
 ## EXAMPLES
 

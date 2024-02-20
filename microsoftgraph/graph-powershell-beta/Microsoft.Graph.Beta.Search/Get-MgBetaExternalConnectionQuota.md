@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Get-MgBetaExternalConnectionQuota
@@ -28,6 +29,9 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectionQuota object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-connectionquota-get-permissions.md)]
 
 ## EXAMPLES
 

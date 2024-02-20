@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserMessage
@@ -68,6 +69,9 @@ Update-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Update the properties of an eventMessage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-update-permissions.md)]
 
 ## EXAMPLES
 

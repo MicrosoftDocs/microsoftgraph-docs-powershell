@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Remove-MgBetaPlannerRosterMember
@@ -28,6 +29,9 @@ Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete a plannerRosterMember object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerrostermember-delete-permissions.md)]
 
 ## EXAMPLES
 

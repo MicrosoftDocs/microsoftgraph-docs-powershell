@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserEvent
@@ -97,6 +98,9 @@ If the server accepts a meeting for the resource, it creates an event for the me
 If the meeting is rescheduled, the server automatically updates the event in the resource's calendar.
 Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
 If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-events-permissions.md)]
 
 ## EXAMPLES
 

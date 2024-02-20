@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgBetaDriveListItem
@@ -58,6 +59,9 @@ New-MgBetaDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-create-permissions.md)]
 
 ## EXAMPLES
 

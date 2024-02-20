@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycase
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCase
@@ -62,6 +63,9 @@ Update-MgBetaSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoveryCase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecontent
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgUserOnenotePageContent
@@ -28,6 +29,9 @@ Get-MgUserOnenotePageContent -InputObject <INotesIdentity> -OutFile <String>
 
 ## DESCRIPTION
 The page's HTML content.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-pages-permissions.md)]
 
 ## EXAMPLES
 

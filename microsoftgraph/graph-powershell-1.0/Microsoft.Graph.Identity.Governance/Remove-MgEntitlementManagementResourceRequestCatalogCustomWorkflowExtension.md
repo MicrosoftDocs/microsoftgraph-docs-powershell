@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementresourcerequestcatalogcustomworkflowextension
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Remove-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
@@ -34,6 +35,9 @@ Remove-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentworkflowextension-delete-permissions.md)]
 
 ## EXAMPLES
 

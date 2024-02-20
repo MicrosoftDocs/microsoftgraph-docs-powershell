@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuser
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgEducationUser
@@ -40,6 +41,9 @@ New-MgEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-ResponseHead
 
 ## DESCRIPTION
 Create a new educationUser object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-permissions.md)]
 
 ## EXAMPLES
 

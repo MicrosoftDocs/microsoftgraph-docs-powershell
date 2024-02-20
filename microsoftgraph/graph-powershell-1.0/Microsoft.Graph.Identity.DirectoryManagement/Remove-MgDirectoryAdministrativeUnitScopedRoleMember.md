@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Remove-MgDirectoryAdministrativeUnitScopedRoleMember
@@ -29,6 +30,9 @@ Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 
 ## DESCRIPTION
 Remove a Microsoft Entra role assignment with administrative unit scope.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 

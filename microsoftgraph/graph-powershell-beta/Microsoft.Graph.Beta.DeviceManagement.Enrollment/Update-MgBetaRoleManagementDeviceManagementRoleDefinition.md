@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroledefinition
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgBetaRoleManagementDeviceManagementRoleDefinition
@@ -56,6 +57,9 @@ Update the properties of a unifiedRoleDefinition object for an RBAC provider.
 You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-update-permissions.md)]
 
 ## EXAMPLES
 

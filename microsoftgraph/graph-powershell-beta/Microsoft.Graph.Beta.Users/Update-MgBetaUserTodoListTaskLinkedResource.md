@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserTodoListTaskLinkedResource
@@ -46,6 +47,9 @@ Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties of a linkedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-update-permissions.md)]
 
 ## EXAMPLES
 

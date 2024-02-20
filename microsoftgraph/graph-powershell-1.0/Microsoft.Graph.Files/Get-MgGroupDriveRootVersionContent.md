@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootversioncontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveRootVersionContent
@@ -28,6 +29,9 @@ Get-MgGroupDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <Strin
 
 ## DESCRIPTION
 The content stream for this version of the item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-versions-permissions.md)]
 
 ## EXAMPLES
 

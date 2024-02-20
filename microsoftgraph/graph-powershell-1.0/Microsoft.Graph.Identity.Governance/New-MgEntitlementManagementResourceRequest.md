@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequest
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgEntitlementManagementResourceRequest
@@ -32,6 +33,9 @@ New-MgEntitlementManagementResourceRequest -BodyParameter <IMicrosoftGraphAccess
 ## DESCRIPTION
 Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
 A resource must be included in an access package catalog before a role of that resource can be added to an access package.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-resourcerequests-permissions.md)]
 
 ## EXAMPLES
 

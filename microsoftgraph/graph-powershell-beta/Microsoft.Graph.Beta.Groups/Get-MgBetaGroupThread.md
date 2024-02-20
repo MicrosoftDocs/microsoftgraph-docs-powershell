@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupThread
@@ -36,6 +37,9 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Re
 ## DESCRIPTION
 Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-get-permissions.md)]
 
 ## EXAMPLES
 

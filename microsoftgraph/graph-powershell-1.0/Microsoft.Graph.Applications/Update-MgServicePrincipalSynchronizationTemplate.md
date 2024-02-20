@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplate
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Update-MgServicePrincipalSynchronizationTemplate
@@ -48,6 +49,9 @@ Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
 
 ## EXAMPLES
 

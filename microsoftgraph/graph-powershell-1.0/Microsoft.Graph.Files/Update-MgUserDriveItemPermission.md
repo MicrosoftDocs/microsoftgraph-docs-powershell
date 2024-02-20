@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitempermission
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Update-MgUserDriveItemPermission
@@ -55,6 +56,9 @@ Update-MgUserDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-update-permissions.md)]
 
 ## EXAMPLES
 

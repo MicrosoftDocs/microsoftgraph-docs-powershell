@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserMailFolder
@@ -54,6 +55,9 @@ New-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Use this API to create a new mail folder in the root folder of the user's mailbox.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-mailfolders-permissions.md)]
 
 ## EXAMPLES
 

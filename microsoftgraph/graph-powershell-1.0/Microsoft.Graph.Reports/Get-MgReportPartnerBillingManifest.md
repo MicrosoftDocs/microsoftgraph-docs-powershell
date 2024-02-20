@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest
 schema: 2.0.0
+ms.prod: reports
 ---
 
 # Get-MgReportPartnerBillingManifest
@@ -36,6 +37,9 @@ Get-MgReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-manifest-get-permissions.md)]
 
 ## EXAMPLES
 

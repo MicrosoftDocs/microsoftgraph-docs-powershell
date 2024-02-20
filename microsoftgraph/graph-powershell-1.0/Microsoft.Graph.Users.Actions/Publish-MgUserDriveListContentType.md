@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/publish-mguserdrivelistcontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Publish-MgUserDriveListContentType
@@ -28,6 +29,9 @@ Publish-MgUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Respon
 
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in the content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 

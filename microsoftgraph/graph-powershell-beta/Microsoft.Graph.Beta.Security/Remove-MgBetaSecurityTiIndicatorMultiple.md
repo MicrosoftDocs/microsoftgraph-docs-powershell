@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Remove-MgBetaSecurityTiIndicatorMultiple
@@ -29,6 +30,9 @@ Remove-MgBetaSecurityTiIndicatorMultiple
 
 ## DESCRIPTION
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-deletetiindicators-permissions.md)]
 
 ## EXAMPLES
 

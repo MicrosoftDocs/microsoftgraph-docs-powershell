@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration
@@ -48,6 +49,9 @@ Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 ## DESCRIPTION
 Update the properties of an authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be updated as they're the only type of authenticationCombinationConfiguration that may be created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcombinationconfiguration-update-permissions.md)]
 
 ## EXAMPLES
 

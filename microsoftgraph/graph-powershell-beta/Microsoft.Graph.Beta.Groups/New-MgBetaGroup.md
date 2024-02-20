@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgBetaGroup
@@ -67,6 +68,9 @@ You can create one of the following groups: This operation returns by default on
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 Note: To create a team, first create a group then add a team to it, see create team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-groups-permissions.md)]
 
 ## EXAMPLES
 

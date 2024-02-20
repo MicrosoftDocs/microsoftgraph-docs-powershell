@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyclaimmappingpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaPolicyClaimMappingPolicy
@@ -46,6 +47,9 @@ Update-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> -B
 
 ## DESCRIPTION
 Update the properties of a claimsMappingPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

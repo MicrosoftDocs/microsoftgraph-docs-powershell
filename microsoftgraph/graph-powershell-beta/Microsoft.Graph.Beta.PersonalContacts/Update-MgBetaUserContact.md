@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserContact
@@ -66,6 +67,9 @@ Update-MgBetaUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the properties of contact object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-update-permissions.md)]
 
 ## EXAMPLES
 

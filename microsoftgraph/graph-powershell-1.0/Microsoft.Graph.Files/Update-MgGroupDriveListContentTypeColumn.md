@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Update-MgGroupDriveListContentTypeColumn
@@ -64,6 +65,9 @@ Update-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-update-permissions.md)]
 
 ## EXAMPLES
 

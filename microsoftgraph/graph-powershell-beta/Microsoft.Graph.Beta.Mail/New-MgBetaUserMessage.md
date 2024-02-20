@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserMessage
@@ -82,6 +83,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single action, or create a draft to forward, to reply or to reply-all to an existing message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-messages-permissions.md)]
 
 ## EXAMPLES
 

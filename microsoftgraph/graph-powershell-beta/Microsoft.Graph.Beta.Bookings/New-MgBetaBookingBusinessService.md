@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessService
@@ -98,6 +99,9 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-services-permissions.md)]
 
 ## EXAMPLES
 

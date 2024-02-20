@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Remove-MgCommunicationCall
@@ -30,6 +31,9 @@ Remove-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-delete-permissions.md)]
 
 ## EXAMPLES
 

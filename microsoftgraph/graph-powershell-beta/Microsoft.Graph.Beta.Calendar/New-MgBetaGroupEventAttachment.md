@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventattachment
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaGroupEventAttachment
@@ -48,6 +49,9 @@ New-MgBetaGroupEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-post-attachments-permissions.md)]
 
 ## EXAMPLES
 

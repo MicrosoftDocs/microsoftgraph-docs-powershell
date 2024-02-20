@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannelemail
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Remove-MgTeamPrimaryChannelEmail
@@ -29,6 +30,9 @@ Remove-MgTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-removeemail-permissions.md)]
 
 ## EXAMPLES
 

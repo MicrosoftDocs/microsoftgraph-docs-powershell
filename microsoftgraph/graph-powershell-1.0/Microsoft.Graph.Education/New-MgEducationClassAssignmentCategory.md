@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgEducationClassAssignmentCategory
@@ -72,6 +73,9 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-category-permissions.md)]
 
 ## EXAMPLES
 

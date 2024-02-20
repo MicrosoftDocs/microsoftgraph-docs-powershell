@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Get-MgExternalConnectionOperation
@@ -36,6 +37,9 @@ Get-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Read the properties and relationships of a connectionOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-connectionoperation-get-permissions.md)]
 
 ## EXAMPLES
 

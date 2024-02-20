@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobschema
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationSynchronizationJobSchema
@@ -28,6 +29,9 @@ Get-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity> [
 
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-get-permissions.md)]
 
 ## EXAMPLES
 

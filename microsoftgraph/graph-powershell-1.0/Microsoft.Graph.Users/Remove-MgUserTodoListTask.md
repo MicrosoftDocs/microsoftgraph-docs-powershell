@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserTodoListTask
@@ -28,6 +29,9 @@ Remove-MgUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <String>] [-Re
 
 ## DESCRIPTION
 Deletes a todoTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-delete-permissions.md)]
 
 ## EXAMPLES
 

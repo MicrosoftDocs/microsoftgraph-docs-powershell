@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgUserEvent
@@ -30,6 +31,9 @@ Remove-MgUserEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Removes the specified event from the containing calendar.
 If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-delete-permissions.md)]
 
 ## EXAMPLES
 

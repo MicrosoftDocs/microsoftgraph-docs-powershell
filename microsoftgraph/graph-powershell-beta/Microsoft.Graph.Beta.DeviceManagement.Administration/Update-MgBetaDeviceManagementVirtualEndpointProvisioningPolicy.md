@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
@@ -62,6 +63,9 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Update the properties of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

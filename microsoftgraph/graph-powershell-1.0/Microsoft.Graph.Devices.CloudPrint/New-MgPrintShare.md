@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # New-MgPrintShare
@@ -32,6 +33,9 @@ New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-ResponseHeadersV
 
 ## DESCRIPTION
 Create a new printerShare for the specified printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-post-shares-permissions.md)]
 
 ## EXAMPLES
 

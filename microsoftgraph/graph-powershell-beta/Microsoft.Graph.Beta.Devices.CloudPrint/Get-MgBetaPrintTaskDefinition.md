@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprinttaskdefinition
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Get-MgBetaPrintTaskDefinition
@@ -52,6 +53,9 @@ Get-MgBetaPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-Expand
 ## DESCRIPTION
 Get details about a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtaskdefinition-get-permissions.md)]
 
 ## EXAMPLES
 

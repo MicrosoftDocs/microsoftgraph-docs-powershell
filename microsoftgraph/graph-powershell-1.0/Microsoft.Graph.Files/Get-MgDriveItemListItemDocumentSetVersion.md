@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgDriveItemListItemDocumentSetVersion
@@ -36,6 +37,9 @@ Get-MgDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Expand
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-get-permissions.md)]
 
 ## EXAMPLES
 

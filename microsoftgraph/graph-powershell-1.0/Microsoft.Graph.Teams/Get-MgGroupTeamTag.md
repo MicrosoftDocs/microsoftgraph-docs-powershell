@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtag
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamTag
@@ -36,6 +37,9 @@ Get-MgGroupTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Read the properties and relationships of a tag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-get-permissions.md)]
 
 ## EXAMPLES
 

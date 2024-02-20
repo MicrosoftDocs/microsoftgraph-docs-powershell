@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalOwnerByRef
@@ -29,6 +30,9 @@ The owners are a set of non-admin users or servicePrincipals who are allowed to 
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-owners-permissions.md)]
 
 ## EXAMPLES
 

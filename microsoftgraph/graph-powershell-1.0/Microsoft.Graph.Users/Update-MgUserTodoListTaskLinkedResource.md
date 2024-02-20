@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttasklinkedresource
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserTodoListTaskLinkedResource
@@ -46,6 +47,9 @@ Update-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties of a linkedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-update-permissions.md)]
 
 ## EXAMPLES
 

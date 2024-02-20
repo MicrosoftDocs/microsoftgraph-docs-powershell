@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalAppRoleAssignment
@@ -32,6 +33,9 @@ Remove-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdenti
 Deletes an appRoleAssignment that a service principal has been granted.
 App roles that are assigned to service principals are also known as application permissions.
 Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

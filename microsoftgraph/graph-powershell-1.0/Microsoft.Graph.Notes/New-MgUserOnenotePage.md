@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotepage
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgUserOnenotePage
@@ -55,6 +56,9 @@ Create a new OneNote page in the default section of the default notebook.
 To create a page in a different section in the default notebook, you can use the sectionName query parameter.
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-pages-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgEducationClassMemberByRef
@@ -42,6 +43,9 @@ New-MgEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParameter
 
 ## DESCRIPTION
 Add an educationUser member to an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-members-permissions.md)]
 
 ## EXAMPLES
 

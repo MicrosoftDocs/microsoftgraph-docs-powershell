@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserMessage
@@ -72,6 +73,9 @@ Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of an eventMessage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-update-permissions.md)]
 
 ## EXAMPLES
 
