@@ -56,16 +56,6 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

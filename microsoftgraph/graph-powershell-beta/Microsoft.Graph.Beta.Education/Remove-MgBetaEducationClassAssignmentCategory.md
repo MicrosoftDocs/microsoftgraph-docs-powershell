@@ -39,13 +39,17 @@ Only teachers can perform this operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentCategory Cmdlet.
+
 
 ## PARAMETERS
 

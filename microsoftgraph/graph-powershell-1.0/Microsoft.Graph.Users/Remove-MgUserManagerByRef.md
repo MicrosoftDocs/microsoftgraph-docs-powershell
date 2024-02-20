@@ -37,11 +37,13 @@ Remove a user's manager.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-manager-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Remove the manager of a user
 
-### EXAMPLE 1
-```
+```powershell
 Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
+
+This command removes the manager of the specified user.
 
 ## PARAMETERS
 

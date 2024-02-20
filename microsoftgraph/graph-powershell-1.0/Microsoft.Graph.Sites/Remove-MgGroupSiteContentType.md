@@ -38,16 +38,6 @@ Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId

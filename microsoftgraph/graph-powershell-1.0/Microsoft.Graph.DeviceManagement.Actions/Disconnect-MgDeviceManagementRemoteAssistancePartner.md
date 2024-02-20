@@ -34,13 +34,17 @@ Disconnect-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManage
 A request to remove the active TeamViewer connector
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 Disconnect-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId
+
+```
+This example shows how to use the Disconnect-MgDeviceManagementRemoteAssistancePartner Cmdlet.
+
 
 ## PARAMETERS
 

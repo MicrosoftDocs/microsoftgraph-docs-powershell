@@ -55,17 +55,21 @@ Update the properties of an allowedValue object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/allowedvalue-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	isActive = "false"
 }
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -AllowedValueId $allowedValueId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+
 
 ## PARAMETERS
 

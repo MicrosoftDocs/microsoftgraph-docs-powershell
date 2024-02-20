@@ -53,11 +53,11 @@ Update the navigation property assignedToTaskBoardFormat in planner
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	orderHintsByAssignee = @{
@@ -65,7 +65,12 @@ $params = @{
 	}
 }
 
-Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Update-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

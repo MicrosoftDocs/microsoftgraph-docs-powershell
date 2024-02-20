@@ -47,13 +47,17 @@ For descriptions of each of the endpoints, see printUsageByPrinter.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printusagebyprinter-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportDailyPrintUsageByPrinter
+
+```
+This example shows how to use the Get-MgBetaReportDailyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

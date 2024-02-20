@@ -45,13 +45,17 @@ Retrieve a conversationMember from a chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatMember -ChatId $chatId
+
+```
+This example shows how to use the Get-MgChatMember Cmdlet.
+
 
 ## PARAMETERS
 

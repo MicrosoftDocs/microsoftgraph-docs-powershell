@@ -45,13 +45,17 @@ Read the properties of an identityApiConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityApiConnector
+
+```
+This example shows how to use the Get-MgBetaIdentityApiConnector Cmdlet.
+
 
 ## PARAMETERS
 

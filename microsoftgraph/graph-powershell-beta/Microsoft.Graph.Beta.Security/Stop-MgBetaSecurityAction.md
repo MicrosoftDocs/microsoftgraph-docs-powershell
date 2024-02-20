@@ -34,12 +34,13 @@ Cancel a security operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-cancelsecurityaction-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Stop-MgBetaSecurityAction Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Stop-MgBetaSecurityAction -SecurityActionId $securityActionId
 ```
+This example shows how to use the Stop-MgBetaSecurityAction Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

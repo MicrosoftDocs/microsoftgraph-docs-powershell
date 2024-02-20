@@ -57,11 +57,10 @@ If an organizer adds an attachment to a meeting event, the organizer can subsequ
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-post-attachments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
@@ -71,11 +70,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachment Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
@@ -88,11 +91,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachment Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.referenceAttachment"
@@ -105,6 +112,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

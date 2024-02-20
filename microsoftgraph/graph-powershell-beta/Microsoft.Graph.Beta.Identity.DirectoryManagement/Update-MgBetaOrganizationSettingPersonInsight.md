@@ -53,9 +53,8 @@ To learn more about customizing insights privacy for your organization, see:-  C
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/insightssettings-update-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaOrganizationSettingPersonInsight Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	IsEnabledInOrganization = $true
@@ -63,6 +62,8 @@ $params = @{
 }
 Update-MgBetaOrganizationSettingPersonInsight -OrganizationId $organizationId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaOrganizationSettingPersonInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

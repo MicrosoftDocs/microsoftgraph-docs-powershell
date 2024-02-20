@@ -41,11 +41,10 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-identityproviders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a specific <strong>social identity provider</strong> (Azure AD and Azure AD B2C)
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -56,11 +55,15 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create a specific <strong>OpenID Connect identity provider</strong> (only for Azure AD B2C)
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openIdConnectIdentityProvider"
@@ -75,11 +78,15 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Retrieves Apple identity provider (only for Azure AD B2C)
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
@@ -91,6 +98,11 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -37,13 +37,18 @@ Delete a plannerPlan object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
-Remove-MgPlannerPlan -PlannerPlanId $plannerPlanId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Remove-MgPlannerPlan -PlannerPlanId $plannerPlanId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Remove-MgPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

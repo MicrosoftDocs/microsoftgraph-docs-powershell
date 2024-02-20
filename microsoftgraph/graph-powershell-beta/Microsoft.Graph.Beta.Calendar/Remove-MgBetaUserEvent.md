@@ -39,14 +39,18 @@ If the event is a meeting, deleting the event on the organizer's calendar sends 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserEvent -UserId $userId -EventId $eventId
+```
+This example shows how to use the Remove-MgBetaUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

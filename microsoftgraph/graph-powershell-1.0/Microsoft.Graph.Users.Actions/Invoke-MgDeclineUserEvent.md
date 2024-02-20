@@ -59,9 +59,8 @@ For more information on how to propose a time, and how to receive and accept a n
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-decline-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgDeclineUserEvent Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Comment = "I won't be able to make this week. How about next week?"
@@ -80,6 +79,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgDeclineUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

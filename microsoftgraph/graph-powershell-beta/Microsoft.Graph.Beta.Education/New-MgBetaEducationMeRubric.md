@@ -38,11 +38,11 @@ Create a new educationRubric object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-post-rubrics-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Example Credit Rubric"
@@ -111,6 +111,10 @@ $params = @{
 }
 
 New-MgBetaEducationMeRubric -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

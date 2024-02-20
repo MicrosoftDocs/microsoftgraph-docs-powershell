@@ -77,11 +77,11 @@ Update the navigation property tasks in planner
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	assignments = @{
@@ -100,12 +100,17 @@ $params = @{
 				type = "daily"
 				interval = 3
 			}
-			patternStartDateTime = \[System.DateTime\]::Parse("2022-02-22T02:10:33Z")
+			patternStartDateTime = [System.DateTime]::Parse("2022-02-22T02:10:33Z")
 		}
 	}
 }
 
-Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Update-MgBetaPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

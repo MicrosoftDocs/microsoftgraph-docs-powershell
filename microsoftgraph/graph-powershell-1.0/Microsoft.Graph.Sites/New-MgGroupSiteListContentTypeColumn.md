@@ -74,16 +74,6 @@ Add a column to a \[content type\]\[contentType\] in a site, or a list with a re
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,13 +45,17 @@ Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
-Get-MgSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)"
+Get-MgSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" 
+
+```
+This example shows how to use the Get-MgSiteListItem Cmdlet.
+
 
 ## PARAMETERS
 

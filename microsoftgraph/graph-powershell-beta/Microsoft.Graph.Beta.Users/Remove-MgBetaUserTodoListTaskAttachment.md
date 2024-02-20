@@ -38,14 +38,18 @@ Delete a taskFileAttachment object from a todoTask resource.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/taskfileattachment-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -AttachmentBaseId $attachmentBaseId
+```
+This example shows how to use the Remove-MgBetaUserTodoListTaskAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

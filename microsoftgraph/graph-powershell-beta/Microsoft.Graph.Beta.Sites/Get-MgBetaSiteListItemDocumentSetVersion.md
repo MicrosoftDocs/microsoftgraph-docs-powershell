@@ -45,13 +45,17 @@ Read the properties and relationships of a documentSetVersion object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId
+
+```
+This example shows how to use the Get-MgBetaSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 

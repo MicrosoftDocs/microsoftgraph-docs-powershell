@@ -57,11 +57,10 @@ If an organizer adds an attachment to a meeting event, the organizer can subsequ
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-post-attachments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
@@ -71,11 +70,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the New-MgUserEventAttachment Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
@@ -88,6 +91,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the New-MgUserEventAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

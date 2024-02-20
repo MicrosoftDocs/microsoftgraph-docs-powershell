@@ -63,11 +63,10 @@ Note: You can also start a new conversation by first creating a thread.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-post-threads-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	topic = "Take your wellness days and rest"
@@ -82,6 +81,11 @@ $params = @{
 }
 
 New-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
+```
+This example shows how to use the New-MgGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
