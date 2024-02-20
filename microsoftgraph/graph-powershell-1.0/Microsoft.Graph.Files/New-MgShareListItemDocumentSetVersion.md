@@ -94,22 +94,6 @@ Create a new version of a document set item in a list.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -552,6 +536,7 @@ Read-only.
 [New-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion)
+
 
 
 

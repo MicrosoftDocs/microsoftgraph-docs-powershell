@@ -45,18 +45,6 @@ Update-MgBetaUserSecurity -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property security in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +378,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurity)
+
 
 
 

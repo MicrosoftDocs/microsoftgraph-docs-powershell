@@ -82,22 +82,6 @@ Update-MgGroupDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property root in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29422,6 +29406,7 @@ Read-only.
 [Update-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveroot)
+
 
 
 

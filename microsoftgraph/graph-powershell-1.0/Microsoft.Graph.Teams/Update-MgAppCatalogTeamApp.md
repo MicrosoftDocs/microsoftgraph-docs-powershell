@@ -48,22 +48,6 @@ Update-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property teamsApps in appCatalogs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -407,6 +391,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Update-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamapp)
+
 
 
 

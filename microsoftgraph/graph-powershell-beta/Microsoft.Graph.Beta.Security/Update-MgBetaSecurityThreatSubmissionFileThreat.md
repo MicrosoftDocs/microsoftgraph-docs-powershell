@@ -51,22 +51,6 @@ Update-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property fileThreats in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -560,6 +544,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat)
+
 
 
 

@@ -36,22 +36,6 @@ Get-MgDeviceManagementReportDeviceManagementIntentSettingReport -OutFile <String
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,6 +342,7 @@ BODYPARAMETER `<IPathsTbh0H2DevicemanagementReportsMicrosoftGraphGetdevicemanage
 [Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport)
+
 
 
 

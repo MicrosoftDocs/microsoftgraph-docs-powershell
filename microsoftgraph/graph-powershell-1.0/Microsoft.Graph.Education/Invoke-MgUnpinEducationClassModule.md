@@ -31,18 +31,6 @@ Invoke-MgUnpinEducationClassModule -InputObject <IEducationIdentity> [-ResponseH
 ## DESCRIPTION
 Invoke action unpin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -202,6 +190,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Invoke-MgBetaUnpinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnpinEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule)
+
 
 
 

@@ -39,22 +39,6 @@ New-MgGroupOwner -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Hea
 ## DESCRIPTION
 Add an owner to an Office 365 group or security group through the owners navigation property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BodyParameter
@@ -243,6 +227,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupowner](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupowner)
+
 
 
 

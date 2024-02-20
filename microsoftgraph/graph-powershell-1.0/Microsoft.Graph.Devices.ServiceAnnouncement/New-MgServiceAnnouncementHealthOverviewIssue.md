@@ -54,22 +54,6 @@ New-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnoun
 ## DESCRIPTION
 Create new navigation property to issues for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -507,6 +491,7 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical po
 [New-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverviewissue](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverviewissue)
+
 
 
 

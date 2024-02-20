@@ -38,22 +38,6 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -210,6 +194,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Get-MgBetaGroupOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource)
+
 
 
 

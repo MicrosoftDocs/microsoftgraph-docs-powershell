@@ -34,18 +34,6 @@ Remove-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceMana
 ## DESCRIPTION
 Deletes a deviceConfigurationUserStatus.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -276,6 +264,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationuserstatus)
+
 
 
 

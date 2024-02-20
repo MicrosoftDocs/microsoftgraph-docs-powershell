@@ -32,18 +32,6 @@ Remove-MgBetaDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Delete entity from directoryRoles by roleTemplateId
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -250,6 +238,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Remove-MgDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRoleByRoleTemplateId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolebyroletemplateid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolebyroletemplateid)
+
 
 
 

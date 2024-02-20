@@ -54,18 +54,6 @@ Update-MgGroupDriveRootListItemCreatedByUserMailboxSetting -InputObject <IFilesI
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -472,6 +460,7 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 [Update-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitemcreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitemcreatedbyusermailboxsetting)
+
 
 
 

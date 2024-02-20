@@ -31,22 +31,6 @@ Get-MgBetaReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getOneDriveUsageFileCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -221,6 +205,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgReportOneDriveUsageFileCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOneDriveUsageFileCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportonedriveusagefilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportonedriveusagefilecount)
+
 
 
 

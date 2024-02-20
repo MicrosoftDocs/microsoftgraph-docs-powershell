@@ -34,18 +34,6 @@ Get-MgBetaSiteGetByPathExternalColumn -Path <String> -SiteId <String> -Path1 <St
 ## DESCRIPTION
 The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,6 +292,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathExternalColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathexternalcolumn)
+
 
 
 

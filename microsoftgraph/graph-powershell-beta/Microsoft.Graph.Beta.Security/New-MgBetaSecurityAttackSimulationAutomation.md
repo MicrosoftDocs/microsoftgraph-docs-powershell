@@ -36,22 +36,6 @@ New-MgBetaSecurityAttackSimulationAutomation -BodyParameter <IMicrosoftGraphSimu
 ## DESCRIPTION
 Create new navigation property to simulationAutomations for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +390,7 @@ Read-only.
 [New-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationautomation)
+
 
 
 

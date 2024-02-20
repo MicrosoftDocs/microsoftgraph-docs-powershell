@@ -60,18 +60,6 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -640,6 +628,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicestartuphistory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicestartuphistory)
+
 
 
 

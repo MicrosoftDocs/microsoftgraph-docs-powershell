@@ -50,22 +50,6 @@ New-MgDriveListOperation -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to operations for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -457,6 +441,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [New-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistoperation)
+
 
 
 

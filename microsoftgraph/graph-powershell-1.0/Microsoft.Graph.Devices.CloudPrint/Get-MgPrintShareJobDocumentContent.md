@@ -32,18 +32,6 @@ Get-MgPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> -Ou
 ## DESCRIPTION
 Get media content for the navigation property documents from print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -217,6 +205,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejobdocumentcontent)
+
 
 
 

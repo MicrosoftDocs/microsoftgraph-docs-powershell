@@ -67,22 +67,6 @@ Update-MgBetaTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Update the navigation property replies in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1130,6 +1114,7 @@ Link to the message in Microsoft Teams.
 [Update-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelmessagereply)
+
 
 
 

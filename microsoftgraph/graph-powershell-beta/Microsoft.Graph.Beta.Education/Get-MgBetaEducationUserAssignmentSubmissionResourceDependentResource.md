@@ -40,18 +40,6 @@ Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResource -InputObjec
 ## DESCRIPTION
 Get dependentResources from education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -379,6 +367,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionresourcedependentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionresourcedependentresource)
+
 
 
 

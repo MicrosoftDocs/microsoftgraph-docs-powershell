@@ -49,18 +49,6 @@ New-MgDeviceAppManagementiOSManagedAppProtection -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new iosManagedAppProtection object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -917,6 +905,7 @@ Read-only.
 [New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)
+
 
 
 

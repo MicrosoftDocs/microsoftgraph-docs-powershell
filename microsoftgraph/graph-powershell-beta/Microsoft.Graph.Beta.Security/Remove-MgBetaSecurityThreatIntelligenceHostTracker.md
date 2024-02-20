@@ -32,18 +32,6 @@ Remove-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete navigation property hostTrackers for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -284,6 +272,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehosttracker](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehosttracker)
+
 
 
 

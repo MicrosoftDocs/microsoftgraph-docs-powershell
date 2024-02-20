@@ -49,22 +49,6 @@ Clear-MgBetaTeamPrimaryChannelMessageReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +302,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Clear-MgTeamPrimaryChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamPrimaryChannelMessageReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamprimarychannelmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamprimarychannelmessagereaction)
+
 
 
 

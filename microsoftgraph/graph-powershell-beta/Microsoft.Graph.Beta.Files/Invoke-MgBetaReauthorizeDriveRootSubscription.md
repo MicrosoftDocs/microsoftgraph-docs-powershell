@@ -33,22 +33,6 @@ Invoke-MgBetaReauthorizeDriveRootSubscription -InputObject <IFilesIdentity> [-Re
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -234,6 +218,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Invoke-MgReauthorizeDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeDriveRootSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedriverootsubscription)
+
 
 
 

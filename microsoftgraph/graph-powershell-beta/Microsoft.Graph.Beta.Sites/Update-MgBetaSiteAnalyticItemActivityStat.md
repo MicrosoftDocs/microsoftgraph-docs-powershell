@@ -55,18 +55,6 @@ Update-MgBetaSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15426,6 +15414,7 @@ Read-only.
 [Update-MgSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalyticitemactivitystat)
+
 
 
 

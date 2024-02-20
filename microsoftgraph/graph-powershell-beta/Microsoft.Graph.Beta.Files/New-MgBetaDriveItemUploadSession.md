@@ -48,22 +48,6 @@ New-MgBetaDriveItemUploadSession -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,6 +300,7 @@ Read-write.
 [New-MgDriveItemUploadSession](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemuploadsession)
+
 
 
 

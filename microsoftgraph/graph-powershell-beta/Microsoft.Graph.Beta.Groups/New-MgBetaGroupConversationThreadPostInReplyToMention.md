@@ -49,22 +49,6 @@ New-MgBetaGroupConversationThreadPostInReplyToMention -InputObject <IGroupsIdent
 ## DESCRIPTION
 Create new navigation property to mentions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -502,6 +486,7 @@ MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytomention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytomention)
+
 
 
 

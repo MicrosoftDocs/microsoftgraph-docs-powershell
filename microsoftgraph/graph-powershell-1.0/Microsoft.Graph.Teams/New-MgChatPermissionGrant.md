@@ -48,18 +48,6 @@ New-MgChatPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -386,6 +374,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [New-MgBetaChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpermissiongrant)
+
 
 
 

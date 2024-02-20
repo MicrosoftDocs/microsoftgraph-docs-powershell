@@ -36,22 +36,6 @@ Delete calendarPermission.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendarpermission-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CalendarPermissionId
@@ -239,6 +223,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Remove-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermission)
+
 
 
 

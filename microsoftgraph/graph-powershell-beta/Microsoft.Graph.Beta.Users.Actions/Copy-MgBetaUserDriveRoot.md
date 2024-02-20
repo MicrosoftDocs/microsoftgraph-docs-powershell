@@ -52,22 +52,6 @@ Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including an
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,6 +363,7 @@ For OneDrive, this property is not populated.
 [Copy-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot)
+
 
 
 

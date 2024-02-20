@@ -52,22 +52,6 @@ Set-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementAct
 ## DESCRIPTION
 Invoke action assign
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -527,6 +511,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceconfiguration)
+
 
 
 

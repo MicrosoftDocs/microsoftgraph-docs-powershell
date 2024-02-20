@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <
 ## DESCRIPTION
 Device Configuration devices status overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -318,6 +302,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationdevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationdevicestatusoverview)
+
 
 
 

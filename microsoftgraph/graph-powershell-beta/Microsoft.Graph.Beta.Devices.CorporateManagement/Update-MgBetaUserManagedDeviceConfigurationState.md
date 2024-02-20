@@ -53,22 +53,6 @@ Update-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -526,6 +510,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
 [Update-MgUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceConfigurationState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddeviceconfigurationstate)
+
 
 
 

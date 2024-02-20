@@ -62,22 +62,6 @@ Update-MgShareList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property list in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24065,6 +24049,7 @@ See the possible resource path values for each supported resource.
 [Update-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist)
+
 
 
 

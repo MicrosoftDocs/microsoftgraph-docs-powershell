@@ -31,22 +31,6 @@ Test-MgBetaDeviceManagementAssignmentFilter
 ## DESCRIPTION
 Invoke action validateFilter
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -239,6 +223,7 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementassignmentfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementassignmentfilter)
+
 
 
 

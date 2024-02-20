@@ -46,22 +46,6 @@ New-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Create new navigation property to extensions for organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -285,6 +269,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [New-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationextension)
+
 
 
 

@@ -49,22 +49,6 @@ New-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -InputObject <IDevice
 ## DESCRIPTION
 Create new navigation property to deviceRunStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15410,6 +15394,7 @@ Defaults to setting on client device.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementscriptuserrunstatedevicerunstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementscriptuserrunstatedevicerunstate)
+
 
 
 

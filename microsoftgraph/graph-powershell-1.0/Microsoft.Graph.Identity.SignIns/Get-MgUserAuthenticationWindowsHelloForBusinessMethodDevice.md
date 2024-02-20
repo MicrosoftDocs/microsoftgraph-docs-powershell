@@ -39,18 +39,6 @@ Supports $expand.
 When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify ?$expand.
 For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -251,6 +239,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethodDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowshelloforbusinessmethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowshelloforbusinessmethoddevice)
+
 
 
 

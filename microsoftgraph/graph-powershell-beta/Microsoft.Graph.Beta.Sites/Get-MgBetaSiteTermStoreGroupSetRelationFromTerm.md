@@ -36,18 +36,6 @@ The from \[term\] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the \[set\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -275,6 +263,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteTermStoreGroupSetRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetRelationFromTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetrelationfromterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetrelationfromterm)
+
 
 
 

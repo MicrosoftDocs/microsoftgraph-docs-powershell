@@ -61,22 +61,6 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance -InputObjec
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsDevicePerformance in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -733,6 +717,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticdeviceperformance)
+
 
 
 

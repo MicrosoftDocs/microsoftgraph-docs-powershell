@@ -50,18 +50,6 @@ Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIde
 ## DESCRIPTION
 Update the navigation property schema in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -600,6 +588,7 @@ Must match one of the directory definitions in synchronizationSchema.
 [Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplateschema)
+
 
 
 

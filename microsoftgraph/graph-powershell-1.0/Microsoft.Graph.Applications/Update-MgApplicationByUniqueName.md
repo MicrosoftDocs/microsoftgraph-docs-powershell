@@ -99,18 +99,6 @@ Update the properties of an application object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddIns
@@ -2422,6 +2410,7 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
 [Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename)
+
 
 
 

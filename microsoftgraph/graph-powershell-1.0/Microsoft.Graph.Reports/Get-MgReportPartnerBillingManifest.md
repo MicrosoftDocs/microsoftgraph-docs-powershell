@@ -44,18 +44,6 @@ Read the properties and relationships of a manifest object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-manifest-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,6 +317,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest)
+
 
 
 

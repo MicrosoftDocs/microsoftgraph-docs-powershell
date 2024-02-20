@@ -42,22 +42,6 @@ Get-MgBetaGroupSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -436,6 +420,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgGroupSiteTermStoreGroupSetTermRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetTermRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsettermrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsettermrelation)
+
 
 
 

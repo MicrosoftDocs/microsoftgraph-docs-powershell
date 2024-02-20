@@ -32,18 +32,6 @@ Get-MgGroupSiteAnalyticItemActivityStatActivityCount -InputObject <ISitesIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -243,6 +231,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaGroupSiteAnalyticItemActivityStatActivityCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalyticItemActivityStatActivityCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalyticitemactivitystatactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalyticitemactivitystatactivitycount)
+
 
 
 

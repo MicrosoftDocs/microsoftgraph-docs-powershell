@@ -32,18 +32,6 @@ Remove-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property operations for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -227,6 +215,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Remove-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingoperation)
+
 
 
 

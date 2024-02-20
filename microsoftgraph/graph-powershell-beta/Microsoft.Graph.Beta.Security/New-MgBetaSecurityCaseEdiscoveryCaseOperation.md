@@ -50,22 +50,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -475,6 +459,7 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 [New-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaseoperation)
+
 
 
 

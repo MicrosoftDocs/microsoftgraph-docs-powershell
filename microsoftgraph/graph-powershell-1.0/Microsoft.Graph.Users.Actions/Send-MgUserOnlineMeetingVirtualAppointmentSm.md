@@ -50,18 +50,6 @@ Send-MgUserOnlineMeetingVirtualAppointmentSm -InputObject <IUsersActionsIdentity
 ## DESCRIPTION
 Invoke action sendVirtualAppointmentSms
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,6 +315,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentsm)
+
 
 
 

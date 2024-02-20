@@ -53,22 +53,6 @@ If no IDs are specified, the decisions will apply to every accessReviewInstanceD
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-recordalldecisions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -369,6 +353,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision)
+
 
 
 

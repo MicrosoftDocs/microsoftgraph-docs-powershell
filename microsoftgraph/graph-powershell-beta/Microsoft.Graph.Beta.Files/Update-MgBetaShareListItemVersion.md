@@ -82,22 +82,6 @@ Update-MgBetaShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property versions in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -455,6 +439,7 @@ Read-only.
 [Update-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemversion)
+
 
 
 

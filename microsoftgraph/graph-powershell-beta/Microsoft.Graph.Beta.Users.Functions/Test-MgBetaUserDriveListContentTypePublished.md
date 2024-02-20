@@ -32,22 +32,6 @@ Test-MgBetaUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdenti
 ## DESCRIPTION
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -216,6 +200,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished)
+
 
 
 

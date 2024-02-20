@@ -36,22 +36,6 @@ Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile 
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,6 +342,7 @@ BODYPARAMETER `<IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanag
 [Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentpersettingcontributingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentpersettingcontributingprofile)
+
 
 
 

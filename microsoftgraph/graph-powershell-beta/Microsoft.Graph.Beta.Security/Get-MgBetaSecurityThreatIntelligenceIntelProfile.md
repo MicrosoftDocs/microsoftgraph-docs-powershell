@@ -44,18 +44,6 @@ Read the properties and relationships of a intelligenceProfile object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofile-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -386,6 +374,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofile)
+
 
 
 

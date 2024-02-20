@@ -24,18 +24,6 @@ Get-MgBetaSecurityTriggerRetentionEventCount [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -128,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSecurityTriggerRetentionEventCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventcount)
+
 
 
 

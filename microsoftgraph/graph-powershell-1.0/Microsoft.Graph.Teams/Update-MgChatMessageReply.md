@@ -63,22 +63,6 @@ Update-MgChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property replies in chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1071,6 +1055,7 @@ Link to the message in Microsoft Teams.
 [Update-MgBetaChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereply)
+
 
 
 

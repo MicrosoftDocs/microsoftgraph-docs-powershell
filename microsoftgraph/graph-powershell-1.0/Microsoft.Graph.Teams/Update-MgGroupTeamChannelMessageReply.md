@@ -63,22 +63,6 @@ Update-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property replies in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1074,6 +1058,7 @@ Link to the message in Microsoft Teams.
 [Update-MgBetaGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessagereply)
+
 
 
 

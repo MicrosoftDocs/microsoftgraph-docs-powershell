@@ -48,18 +48,6 @@ Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -224,6 +212,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereportattendancerecordcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereportattendancerecordcount)
+
 
 
 

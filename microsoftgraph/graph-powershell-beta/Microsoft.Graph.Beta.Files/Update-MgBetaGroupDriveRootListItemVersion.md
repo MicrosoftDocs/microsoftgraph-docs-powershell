@@ -50,22 +50,6 @@ Update-MgBetaGroupDriveRootListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -423,6 +407,7 @@ Read-only.
 [Update-MgGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootlistitemversion)
+
 
 
 

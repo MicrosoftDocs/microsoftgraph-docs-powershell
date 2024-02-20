@@ -56,22 +56,6 @@ New-MgDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to permissions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -671,6 +655,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootpermission)
+
 
 
 

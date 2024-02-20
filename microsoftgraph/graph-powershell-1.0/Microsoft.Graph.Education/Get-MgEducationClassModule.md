@@ -40,18 +40,6 @@ Get-MgEducationClassModule -InputObject <IEducationIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get modules from education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -331,6 +319,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Get-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule)
+
 
 
 

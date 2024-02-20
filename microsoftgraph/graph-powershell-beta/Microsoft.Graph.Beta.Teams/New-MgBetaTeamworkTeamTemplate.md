@@ -28,22 +28,6 @@ New-MgBetaTeamworkTeamTemplate -BodyParameter <IMicrosoftGraphTeamTemplate> [-Re
 ## DESCRIPTION
 Create new navigation property to teamTemplates for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15120,6 +15104,7 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkteamtemplate)
+
 
 
 

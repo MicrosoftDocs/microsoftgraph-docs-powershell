@@ -83,18 +83,6 @@ New-MgBetaSiteGetByPathOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -544,6 +532,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteGetByPathOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathoperation)
+
 
 
 

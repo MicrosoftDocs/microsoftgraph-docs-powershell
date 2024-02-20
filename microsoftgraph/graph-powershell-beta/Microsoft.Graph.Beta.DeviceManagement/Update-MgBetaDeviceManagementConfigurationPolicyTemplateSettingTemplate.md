@@ -55,22 +55,6 @@ Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
 ## DESCRIPTION
 Update the navigation property settingTemplates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -523,6 +507,7 @@ SETTINGINSTANCETEMPLATE `<IMicrosoftGraphDeviceManagementConfigurationSettingIns
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate)
+
 
 
 

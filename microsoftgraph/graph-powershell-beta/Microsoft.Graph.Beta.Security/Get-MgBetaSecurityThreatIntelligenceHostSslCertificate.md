@@ -80,18 +80,6 @@ Get the properties and relationships of a hostSslCertificate object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostsslcertificate-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -438,6 +426,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificate)
+
 
 
 

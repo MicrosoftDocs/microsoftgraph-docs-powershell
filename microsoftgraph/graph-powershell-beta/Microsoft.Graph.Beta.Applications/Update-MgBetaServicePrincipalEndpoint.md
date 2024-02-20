@@ -49,22 +49,6 @@ Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property endpoints in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -411,6 +395,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Update-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalendpoint)
+
 
 
 

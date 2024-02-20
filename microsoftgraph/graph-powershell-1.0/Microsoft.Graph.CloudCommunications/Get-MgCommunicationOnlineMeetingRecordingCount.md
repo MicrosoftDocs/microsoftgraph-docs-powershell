@@ -32,18 +32,6 @@ Get-MgCommunicationOnlineMeetingRecordingCount -InputObject <ICloudCommunication
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -188,6 +176,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [Get-MgBetaCommunicationOnlineMeetingRecordingCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingRecordingCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecordingcount](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecordingcount)
+
 
 
 

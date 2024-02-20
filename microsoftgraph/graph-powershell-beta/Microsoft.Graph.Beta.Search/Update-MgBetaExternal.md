@@ -34,22 +34,6 @@ Update-MgBetaExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal>
 ## DESCRIPTION
 Update external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -799,6 +783,7 @@ Maximum supported length is 100 characters.
 [Update-MgExternal](/powershell/module/Microsoft.Graph.Search/Update-MgExternal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
+
 
 
 

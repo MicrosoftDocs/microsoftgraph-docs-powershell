@@ -40,18 +40,6 @@ Get-MgGroupOwnerAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -371,6 +359,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgBetaGroupOwnerAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasgroup)
+
 
 
 

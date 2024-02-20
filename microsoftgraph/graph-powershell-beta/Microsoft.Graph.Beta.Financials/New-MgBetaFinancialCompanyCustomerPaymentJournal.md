@@ -48,22 +48,6 @@ New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Create new navigation property to customerPaymentJournals for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -573,6 +557,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal)
+
 
 
 

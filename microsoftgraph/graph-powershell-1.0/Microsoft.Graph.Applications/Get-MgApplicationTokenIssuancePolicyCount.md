@@ -32,18 +32,6 @@ Get-MgApplicationTokenIssuancePolicyCount -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -197,6 +185,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgBetaApplicationTokenIssuancePolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenIssuancePolicyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicycount)
+
 
 
 

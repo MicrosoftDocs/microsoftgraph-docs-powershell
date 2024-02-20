@@ -48,18 +48,6 @@ Set-MgApplicationSynchronizationSecret -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update property secrets value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -272,6 +260,7 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
 [Set-MgBetaApplicationSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationSecret?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret)
+
 
 
 

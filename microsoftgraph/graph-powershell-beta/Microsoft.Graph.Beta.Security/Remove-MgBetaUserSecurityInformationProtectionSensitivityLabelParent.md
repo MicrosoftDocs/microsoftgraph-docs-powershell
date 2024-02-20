@@ -29,18 +29,6 @@ Remove-MgBetaUserSecurityInformationProtectionSensitivityLabelParent -InputObjec
 ## DESCRIPTION
 Delete navigation property parent for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -295,6 +283,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotectionsensitivitylabelparent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotectionsensitivitylabelparent)
+
 
 
 
