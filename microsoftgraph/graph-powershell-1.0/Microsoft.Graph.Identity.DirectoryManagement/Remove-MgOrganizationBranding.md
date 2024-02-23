@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbranding
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgOrganizationBranding
@@ -30,6 +31,9 @@ Remove-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-delete-permissions.md)]
 
 ## EXAMPLES
 

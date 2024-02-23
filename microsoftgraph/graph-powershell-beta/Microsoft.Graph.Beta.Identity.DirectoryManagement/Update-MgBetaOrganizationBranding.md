@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaOrganizationBranding
@@ -69,6 +70,9 @@ Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-update-permissions.md)]
 
 ## EXAMPLES
 

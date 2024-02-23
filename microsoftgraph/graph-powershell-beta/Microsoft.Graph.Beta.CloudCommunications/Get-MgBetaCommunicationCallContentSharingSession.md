@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallContentSharingSession
@@ -36,6 +37,9 @@ Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicati
 
 ## DESCRIPTION
 Retrieve the properties of a contentSharingSession object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentsharingsession-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitemchild
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgBetaUserDriveItemChild
@@ -79,6 +80,9 @@ New-MgBetaUserDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Create new navigation property to children for users
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-additem-permissions.md)]
 
 ## EXAMPLES
 

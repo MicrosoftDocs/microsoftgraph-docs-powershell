@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationMethod
@@ -36,6 +37,9 @@ Get-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> [-Exp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an authenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 

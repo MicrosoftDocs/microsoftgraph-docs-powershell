@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemfield
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Update-MgBetaShareListItemField
@@ -70,6 +71,9 @@ Update-MgBetaShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecord
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligencePassiveDnsRecord
@@ -36,6 +37,9 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of a passiveDnsRecord object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-passivednsrecord-get-permissions.md)]
 
 ## EXAMPLES
 

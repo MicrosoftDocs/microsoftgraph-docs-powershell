@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Join-MgBetaDriveListContentTypeWithHubSite
@@ -46,6 +47,9 @@ Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Associate a \[content type\]\[contentType\] with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## EXAMPLES
 

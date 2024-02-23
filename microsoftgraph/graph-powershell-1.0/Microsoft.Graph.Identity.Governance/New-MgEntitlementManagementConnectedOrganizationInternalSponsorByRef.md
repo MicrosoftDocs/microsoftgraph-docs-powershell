@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganizationinternalsponsorbyref
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
@@ -46,6 +47,9 @@ New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -InputObjec
 ## DESCRIPTION
 Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-post-internalsponsors-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgPolicyAdminConsentRequestPolicy
@@ -20,6 +21,9 @@ Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <S
 
 ## DESCRIPTION
 Read the properties and relationships of an adminConsentRequestPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

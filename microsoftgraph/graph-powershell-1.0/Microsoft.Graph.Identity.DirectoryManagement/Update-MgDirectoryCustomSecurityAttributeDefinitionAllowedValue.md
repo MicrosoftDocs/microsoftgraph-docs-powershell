@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
@@ -46,6 +47,9 @@ Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Update the properties of an allowedValue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/allowedvalue-update-permissions.md)]
 
 ## EXAMPLES
 

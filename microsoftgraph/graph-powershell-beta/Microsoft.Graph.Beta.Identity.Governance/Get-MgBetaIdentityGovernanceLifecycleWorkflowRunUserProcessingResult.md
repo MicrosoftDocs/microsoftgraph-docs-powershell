@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowrunuserprocessingresult
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
@@ -37,6 +38,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -InputObjec
 
 ## DESCRIPTION
 Get the user processing result of a user processing result of a run.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-userprocessingresult-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserOutlookMasterCategory
@@ -28,6 +29,9 @@ Remove-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete the specified outlookCategory object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-delete-permissions.md)]
 
 ## EXAMPLES
 

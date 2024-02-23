@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryonpremisesynchronization
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryOnPremiseSynchronization
@@ -36,6 +37,9 @@ Get-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]
 
 ## EXAMPLES
 

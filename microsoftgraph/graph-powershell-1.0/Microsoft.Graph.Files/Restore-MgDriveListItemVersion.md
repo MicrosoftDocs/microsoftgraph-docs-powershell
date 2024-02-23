@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdrivelistitemversion
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Restore-MgDriveListItemVersion
@@ -30,6 +31,9 @@ Restore-MgDriveListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgBetaSecurityThreatSubmissionEmailThreat
@@ -35,6 +36,9 @@ New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSec
 
 ## DESCRIPTION
 Create a new emailThreatSubmission object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmission-post-emailthreats-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveactivity
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgBetaGroupDriveActivity
@@ -21,6 +22,9 @@ Get-MgBetaGroupDriveActivity -DriveId <String> -GroupId <String> [-ExpandPropert
 
 ## DESCRIPTION
 List the recent activities that took place on an item or under a hierarchy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activities-list-permissions.md)]
 
 ## EXAMPLES
 

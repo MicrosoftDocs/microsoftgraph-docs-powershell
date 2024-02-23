@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskchecklistitem
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserTodoListTaskChecklistItem
@@ -29,6 +30,9 @@ Remove-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete a checklistItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-delete-permissions.md)]
 
 ## EXAMPLES
 

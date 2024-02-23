@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserTodoListTask
@@ -28,6 +29,9 @@ Remove-MgBetaUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Deletes a todoTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-delete-permissions.md)]
 
 ## EXAMPLES
 

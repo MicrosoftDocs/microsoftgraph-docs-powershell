@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodiansitesource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource
@@ -46,6 +47,9 @@ New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplianceI
 
 ## DESCRIPTION
 Create a new custodian siteSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-post-sitesources-permissions.md)]
 
 ## EXAMPLES
 

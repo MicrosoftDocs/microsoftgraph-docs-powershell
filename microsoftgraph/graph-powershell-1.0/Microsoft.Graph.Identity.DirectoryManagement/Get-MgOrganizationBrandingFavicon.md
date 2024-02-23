@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingfavicon
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingFavicon
@@ -28,6 +29,9 @@ Get-MgOrganizationBrandingFavicon -InputObject <IIdentityDirectoryManagementIden
 
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
 
 ## EXAMPLES
 

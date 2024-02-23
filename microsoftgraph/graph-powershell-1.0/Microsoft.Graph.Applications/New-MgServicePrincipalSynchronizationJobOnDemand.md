@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgServicePrincipalSynchronizationJobOnDemand
@@ -48,6 +49,9 @@ New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIden
 ## DESCRIPTION
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
 
 ## EXAMPLES
 

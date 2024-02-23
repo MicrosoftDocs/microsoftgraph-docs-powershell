@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarview
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaGroupCalendarView
@@ -25,6 +26,9 @@ Get-MgBetaGroupCalendarView -GroupId <String> -EndDateTime <String> -StartDateTi
 The calendar view for the calendar.
 Navigation property.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-list-calendarview-permissions.md)]
 
 ## EXAMPLES
 

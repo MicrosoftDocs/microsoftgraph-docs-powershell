@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgEducationClassAssignmentSubmissionOutcome
@@ -48,6 +49,9 @@ Update-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ## DESCRIPTION
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationoutcome-update-permissions.md)]
 
 ## EXAMPLES
 

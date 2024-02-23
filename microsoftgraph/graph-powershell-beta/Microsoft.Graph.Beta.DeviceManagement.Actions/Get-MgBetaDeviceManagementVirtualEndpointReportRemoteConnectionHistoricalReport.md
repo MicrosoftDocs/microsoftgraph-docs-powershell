@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportremoteconnectionhistoricalreport
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport
@@ -35,6 +36,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport 
 Get the remote connection history records of a Cloud PC during a given period.
 This report contains data such as signInDateTime, signOutDateTime, usageInHour, remoteSignInTimeInSec and roundTripTimeInMsP50, and so on.
 This data is aggregated hourly for a specified time period, such as the last seven days.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getremoteconnectionhistoricalreports-permissions.md)]
 
 ## EXAMPLES
 

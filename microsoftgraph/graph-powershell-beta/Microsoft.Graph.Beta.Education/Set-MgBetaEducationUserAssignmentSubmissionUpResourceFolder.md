@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentsubmissionupresourcefolder
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder
@@ -34,6 +35,9 @@ Trigger the creation of the SharePoint resource folder where all file-based reso
 Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
+ms.prod: business-scenarios
 ---
 
 # Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
@@ -29,6 +30,9 @@ Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 
 ## DESCRIPTION
 Delete a plannerPlanConfigurationLocalization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-delete-localizations-permissions.md)]
 
 ## EXAMPLES
 

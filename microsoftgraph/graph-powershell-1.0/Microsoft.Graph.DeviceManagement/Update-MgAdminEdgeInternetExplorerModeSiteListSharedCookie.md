@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
+ms.prod: browser-management
 ---
 
 # Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -51,6 +52,9 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 
 ## DESCRIPTION
 Update the properties of a browserSharedCookie object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersharedcookie-update-permissions.md)]
 
 ## EXAMPLES
 

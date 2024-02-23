@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchattab
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Update-MgUserChatTab
@@ -46,6 +47,9 @@ Update-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-patch-tabs-permissions.md)]
 
 ## EXAMPLES
 

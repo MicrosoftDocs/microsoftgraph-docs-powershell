@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfoldertask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookTaskGroupTaskFolderTask
@@ -62,6 +63,9 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-post-tasks-permissions.md)]
 
 ## EXAMPLES
 

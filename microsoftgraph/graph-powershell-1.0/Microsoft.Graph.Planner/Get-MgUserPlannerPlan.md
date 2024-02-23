@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgUserPlannerPlan
@@ -21,6 +22,9 @@ Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 
 ## DESCRIPTION
 Retrieve a list of plannerplan objects shared with a user object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-plans-permissions.md)]
 
 ## EXAMPLES
 

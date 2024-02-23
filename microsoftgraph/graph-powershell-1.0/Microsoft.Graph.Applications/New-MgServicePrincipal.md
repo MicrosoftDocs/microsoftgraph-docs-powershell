@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipal
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgServicePrincipal
@@ -55,6 +56,9 @@ New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-Respon
 
 ## DESCRIPTION
 Create a new servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
 
 ## EXAMPLES
 

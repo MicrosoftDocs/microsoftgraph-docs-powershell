@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggerretentionevent
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Remove-MgSecurityTriggerRetentionEvent
@@ -28,6 +29,9 @@ Remove-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete a retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-delete-permissions.md)]
 
 ## EXAMPLES
 

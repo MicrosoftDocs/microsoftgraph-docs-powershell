@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttasklinkedresource
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserTodoListTaskLinkedResource
@@ -29,6 +30,9 @@ Remove-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMa
 
 ## DESCRIPTION
 Deletes a linkedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationjobschemaexpression
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression
@@ -51,6 +52,9 @@ Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <I
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
 
 ## EXAMPLES
 

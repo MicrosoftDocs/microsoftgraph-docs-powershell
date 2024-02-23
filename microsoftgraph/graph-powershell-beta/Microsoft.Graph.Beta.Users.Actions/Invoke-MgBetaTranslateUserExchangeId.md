@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatranslateuserexchangeid
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaTranslateUserExchangeId
@@ -44,6 +45,9 @@ Invoke-MgBetaTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Translate identifiers of Outlook-related resources between formats.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-translateexchangeids-permissions.md)]
 
 ## EXAMPLES
 

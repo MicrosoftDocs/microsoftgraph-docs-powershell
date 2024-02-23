@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementMonitoringAlertRule
@@ -50,6 +51,9 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Update the properties of an alertRule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-update-permissions.md)]
 
 ## EXAMPLES
 

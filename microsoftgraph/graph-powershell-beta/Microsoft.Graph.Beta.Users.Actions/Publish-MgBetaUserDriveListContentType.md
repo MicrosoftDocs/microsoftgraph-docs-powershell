@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Publish-MgBetaUserDriveListContentType
@@ -28,6 +29,9 @@ Publish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Re
 
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 

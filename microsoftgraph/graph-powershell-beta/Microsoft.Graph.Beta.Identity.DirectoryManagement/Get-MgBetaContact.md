@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaContact
@@ -36,6 +37,9 @@ Get-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Get the properties and relationships of an organizational contact object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaRoleManagementDirectoryResourceNamespace
@@ -36,6 +37,9 @@ Get-MgBetaRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGovern
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-get-permissions.md)]
 
 ## EXAMPLES
 
