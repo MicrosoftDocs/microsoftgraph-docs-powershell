@@ -29,18 +29,6 @@ Get-MgBetaVirtualEventPresenterProfilePhoto -InputObject <IBookingsIdentity> -Ou
 ## DESCRIPTION
 Get profilePhoto for the navigation property presenters from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -207,6 +195,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventpresenterprofilephoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventpresenterprofilephoto)
+
 
 
 

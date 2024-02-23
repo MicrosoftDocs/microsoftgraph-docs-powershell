@@ -22,18 +22,6 @@ Request-MgBetaPrivilegedApprovalMy [-Count] [-ExpandProperty <String[]>] [-Filte
 ## DESCRIPTION
 Invoke function myRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -215,6 +203,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/request-mgbetaprivilegedapprovalmy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/request-mgbetaprivilegedapprovalmy)
+
 
 
 

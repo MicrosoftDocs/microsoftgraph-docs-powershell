@@ -86,18 +86,6 @@ Create new navigation property to children for groups
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-additem-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -54323,6 +54311,7 @@ Read-only.
 [New-MgGroupDriveRootChild](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootchild)
+
 
 
 

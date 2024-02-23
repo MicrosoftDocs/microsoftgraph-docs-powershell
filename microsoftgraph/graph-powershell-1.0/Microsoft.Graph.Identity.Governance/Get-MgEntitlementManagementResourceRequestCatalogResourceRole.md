@@ -86,18 +86,6 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <IIde
 ## DESCRIPTION
 Get resourceRoles from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceId
@@ -461,6 +449,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogresourcerole)
+
 
 
 

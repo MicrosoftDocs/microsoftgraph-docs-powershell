@@ -32,18 +32,6 @@ Remove-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirec
 ## DESCRIPTION
 Delete navigation property customSecurityAttributeDefinitions for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CustomSecurityAttributeDefinitionId
@@ -229,6 +217,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Remove-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorycustomsecurityattributedefinition)
+
 
 
 

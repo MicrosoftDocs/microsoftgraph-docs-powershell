@@ -32,22 +32,6 @@ Set-MgUserDriveSpecialContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -282,6 +266,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgBetaUserDriveSpecialContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveSpecialContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdrivespecialcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdrivespecialcontent)
+
 
 
 

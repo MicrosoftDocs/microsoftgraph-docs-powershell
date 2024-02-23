@@ -32,18 +32,6 @@ Remove-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdent
 ## DESCRIPTION
 Delete navigation property passiveDnsRecords for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +245,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencepassivednsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencepassivednsrecord)
+
 
 
 

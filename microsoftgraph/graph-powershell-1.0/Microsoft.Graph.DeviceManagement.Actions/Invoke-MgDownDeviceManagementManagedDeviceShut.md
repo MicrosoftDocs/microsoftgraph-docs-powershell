@@ -33,22 +33,6 @@ Invoke-MgDownDeviceManagementManagedDeviceShut -InputObject <IDeviceManagementAc
 ## DESCRIPTION
 Shut down device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -207,6 +191,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut)
+
 
 
 

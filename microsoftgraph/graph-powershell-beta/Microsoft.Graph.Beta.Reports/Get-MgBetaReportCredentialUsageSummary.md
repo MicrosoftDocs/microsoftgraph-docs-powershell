@@ -31,22 +31,6 @@ Get-MgBetaReportCredentialUsageSummary -InputObject <IReportsIdentity> [-Count] 
 ## DESCRIPTION
 Invoke function getCredentialUsageSummary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -310,6 +294,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialusagesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialusagesummary)
+
 
 
 

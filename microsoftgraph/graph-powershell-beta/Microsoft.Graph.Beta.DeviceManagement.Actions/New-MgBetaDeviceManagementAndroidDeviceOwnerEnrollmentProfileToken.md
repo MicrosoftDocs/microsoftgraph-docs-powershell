@@ -49,22 +49,6 @@ New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
 ## DESCRIPTION
 Invoke action createToken
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -314,6 +298,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementandroiddeviceownerenrollmentprofiletoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementandroiddeviceownerenrollmentprofiletoken)
+
 
 
 

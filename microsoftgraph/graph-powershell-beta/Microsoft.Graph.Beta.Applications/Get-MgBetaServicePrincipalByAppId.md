@@ -36,18 +36,6 @@ Retrieve the properties and relationships of a servicePrincipal object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -209,6 +197,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid)
+
 
 
 

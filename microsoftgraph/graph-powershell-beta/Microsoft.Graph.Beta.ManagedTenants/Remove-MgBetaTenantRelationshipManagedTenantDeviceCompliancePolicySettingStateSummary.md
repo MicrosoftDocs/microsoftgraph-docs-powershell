@@ -31,22 +31,6 @@ Remove-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSu
 ## DESCRIPTION
 Delete navigation property deviceCompliancePolicySettingStateSummaries for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceCompliancePolicySettingStateSummaryId
@@ -245,6 +229,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary)
+
 
 
 

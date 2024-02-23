@@ -54,18 +54,6 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContent
 ## DESCRIPTION
 Commits a file of a given app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,6 +349,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphwindowsmobilemsicontentversionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphwindowsmobilemsicontentversionfile)
+
 
 
 

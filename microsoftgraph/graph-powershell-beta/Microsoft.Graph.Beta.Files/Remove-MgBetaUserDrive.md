@@ -32,22 +32,6 @@ Remove-MgBetaUserDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property drives for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -248,6 +232,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrive)
+
 
 
 

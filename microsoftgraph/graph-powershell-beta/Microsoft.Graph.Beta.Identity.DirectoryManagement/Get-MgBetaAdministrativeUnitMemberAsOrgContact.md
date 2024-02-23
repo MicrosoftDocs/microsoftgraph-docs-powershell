@@ -39,18 +39,6 @@ Get-MgBetaAdministrativeUnitMemberAsOrgContact -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -377,6 +365,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmemberasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmemberasorgcontact)
+
 
 
 

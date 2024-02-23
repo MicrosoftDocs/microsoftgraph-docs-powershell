@@ -38,18 +38,6 @@ An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getinaccessiblecloudpcreports-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +327,7 @@ BODYPARAMETER `<IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportinaccessiblecloudpcreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportinaccessiblecloudpcreport)
+
 
 
 

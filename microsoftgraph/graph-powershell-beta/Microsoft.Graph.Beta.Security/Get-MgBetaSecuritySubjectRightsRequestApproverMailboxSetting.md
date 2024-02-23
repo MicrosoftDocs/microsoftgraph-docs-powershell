@@ -38,18 +38,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -274,6 +262,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecuritySubjectRightsRequestApproverMailboxSetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestApproverMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprovermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprovermailboxsetting)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaGroupSiteOnenoteSectionGroupSectionCount -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -256,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgGroupSiteOnenoteSectionGroupSectionCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupSectionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupsectioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupsectioncount)
+
 
 
 

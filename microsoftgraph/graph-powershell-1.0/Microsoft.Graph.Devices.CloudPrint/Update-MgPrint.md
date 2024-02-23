@@ -34,22 +34,6 @@ Update-MgPrint -BodyParameter <IMicrosoftGraphPrint> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Update print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14153,6 +14137,7 @@ Read-only.
 [Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint)
+
 
 
 

@@ -20,18 +20,6 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Reports that relate to tenant-level Microsoft Entra SLA attainment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -123,6 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla)
+
 
 
 

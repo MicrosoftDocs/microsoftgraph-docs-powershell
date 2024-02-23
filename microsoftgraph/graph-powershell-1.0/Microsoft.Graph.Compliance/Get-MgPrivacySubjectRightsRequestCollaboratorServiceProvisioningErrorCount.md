@@ -32,18 +32,6 @@ Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount -Inpu
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -192,6 +180,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 [Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaboratorserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaboratorserviceprovisioningerrorcount)
+
 
 
 

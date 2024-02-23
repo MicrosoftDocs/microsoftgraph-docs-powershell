@@ -32,18 +32,6 @@ Get-MgGroupEventExtensionCount -InputObject <ICalendarIdentity> [-Filter <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -185,6 +173,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Get-MgBetaGroupEventExtensionCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextensioncount)
+
 
 
 

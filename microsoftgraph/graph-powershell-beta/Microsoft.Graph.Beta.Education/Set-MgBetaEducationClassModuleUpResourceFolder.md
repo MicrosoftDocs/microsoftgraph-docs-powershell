@@ -40,18 +40,6 @@ The teacher determines what resources to upload to the SharePoint folder for the
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -215,6 +203,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Set-MgEducationClassModuleUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationClassModuleUpResourceFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder)
+
 
 
 

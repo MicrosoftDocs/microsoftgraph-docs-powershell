@@ -64,18 +64,6 @@ Set-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the navigation property definitions in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -1406,6 +1394,7 @@ Required.
 [Set-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition)
+
 
 
 

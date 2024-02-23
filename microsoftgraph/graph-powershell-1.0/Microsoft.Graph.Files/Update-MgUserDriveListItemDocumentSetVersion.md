@@ -55,22 +55,6 @@ Update-MgUserDriveListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property documentSetVersions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -543,6 +527,7 @@ Read-only.
 [Update-MgBetaUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemdocumentsetversion)
+
 
 
 

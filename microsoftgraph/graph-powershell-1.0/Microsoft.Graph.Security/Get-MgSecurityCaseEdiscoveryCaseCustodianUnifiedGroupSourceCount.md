@@ -32,18 +32,6 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -241,6 +229,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianunifiedgroupsourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianunifiedgroupsourcecount)
+
 
 
 

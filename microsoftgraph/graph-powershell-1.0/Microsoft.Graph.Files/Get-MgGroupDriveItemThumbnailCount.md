@@ -32,18 +32,6 @@ Get-MgGroupDriveItemThumbnailCount -InputObject <IFilesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -228,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaGroupDriveItemThumbnailCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemThumbnailCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemthumbnailcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemthumbnailcount)
+
 
 
 

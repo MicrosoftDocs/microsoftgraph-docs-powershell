@@ -40,18 +40,6 @@ The teacher determines the resources to upload in the feedback resources folder 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-setupfeedbackresourcesfolder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -196,6 +184,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentupfeedbackresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentupfeedbackresourcefolder)
+
 
 
 

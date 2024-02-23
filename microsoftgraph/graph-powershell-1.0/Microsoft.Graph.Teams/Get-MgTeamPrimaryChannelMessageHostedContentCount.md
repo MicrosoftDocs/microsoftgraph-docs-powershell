@@ -32,18 +32,6 @@ Get-MgTeamPrimaryChannelMessageHostedContentCount -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -221,6 +209,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaTeamPrimaryChannelMessageHostedContentCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMessageHostedContentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmessagehostedcontentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmessagehostedcontentcount)
+
 
 
 

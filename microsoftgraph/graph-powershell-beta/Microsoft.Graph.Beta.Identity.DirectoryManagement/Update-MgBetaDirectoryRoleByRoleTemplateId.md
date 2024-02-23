@@ -51,18 +51,6 @@ Update-MgBetaDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Update entity in directoryRoles by roleTemplateId
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -470,6 +458,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleByRoleTemplateId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrolebyroletemplateid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrolebyroletemplateid)
+
 
 
 

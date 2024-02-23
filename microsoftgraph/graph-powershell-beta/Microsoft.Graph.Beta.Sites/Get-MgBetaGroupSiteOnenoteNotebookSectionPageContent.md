@@ -33,18 +33,6 @@ Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent -InputObject <ISitesIdentit
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -287,6 +275,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectionpagecontent)
+
 
 
 

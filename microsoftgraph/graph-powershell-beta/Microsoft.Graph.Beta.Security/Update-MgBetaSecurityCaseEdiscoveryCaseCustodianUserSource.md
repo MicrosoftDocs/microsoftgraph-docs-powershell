@@ -52,22 +52,6 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property userSources in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -498,6 +482,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianusersource)
+
 
 
 

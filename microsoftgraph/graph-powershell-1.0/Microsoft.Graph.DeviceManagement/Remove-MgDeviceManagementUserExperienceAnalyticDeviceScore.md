@@ -32,18 +32,6 @@ Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsDeviceScores for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -259,6 +247,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticdevicescore](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticdevicescore)
+
 
 
 

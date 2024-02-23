@@ -61,18 +61,6 @@ Use the publish action to change the module status.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -462,6 +450,7 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule)
+
 
 
 

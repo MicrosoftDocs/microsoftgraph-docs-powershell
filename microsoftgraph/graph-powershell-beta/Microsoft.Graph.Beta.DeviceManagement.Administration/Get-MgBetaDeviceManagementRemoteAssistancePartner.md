@@ -40,22 +40,6 @@ Get-MgBetaDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagemen
 ## DESCRIPTION
 The remote assist partners.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +348,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [Get-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementremoteassistancepartner)
+
 
 
 

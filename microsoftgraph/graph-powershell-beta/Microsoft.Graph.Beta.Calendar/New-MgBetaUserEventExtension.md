@@ -51,22 +51,6 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,6 +257,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [New-MgUserEventExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventextension)
+
 
 
 

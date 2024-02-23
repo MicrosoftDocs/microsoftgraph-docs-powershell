@@ -40,18 +40,6 @@ After that time, they are permanently deleted.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -236,6 +224,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Remove-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationByAppId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyappid)
+
 
 
 

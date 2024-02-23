@@ -32,18 +32,6 @@ Get-MgBetaGroupMemberCountAsApplication -InputObject <IGroupsIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -236,6 +224,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgGroupMemberCountAsApplication](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberCountAsApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmembercountasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmembercountasapplication)
+
 
 
 

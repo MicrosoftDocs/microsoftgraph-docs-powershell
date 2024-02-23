@@ -106,22 +106,6 @@ Update-MgBetaShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property listItem in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -45562,6 +45546,7 @@ Read-only.
 [Update-MgShareListItem](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitem)
+
 
 
 

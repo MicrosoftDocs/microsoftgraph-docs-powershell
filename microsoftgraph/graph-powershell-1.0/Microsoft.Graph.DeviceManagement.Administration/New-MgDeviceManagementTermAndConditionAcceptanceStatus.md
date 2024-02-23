@@ -51,18 +51,6 @@ New-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 ## DESCRIPTION
 Create a new termsAndConditionsAcceptanceStatus object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedDateTime
@@ -404,6 +392,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus)
+
 
 
 

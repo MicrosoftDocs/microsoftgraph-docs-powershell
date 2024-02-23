@@ -36,18 +36,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDire
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -278,6 +266,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleeligibilityscheduleinstancedirectoryscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleeligibilityscheduleinstancedirectoryscope)
+
 
 
 

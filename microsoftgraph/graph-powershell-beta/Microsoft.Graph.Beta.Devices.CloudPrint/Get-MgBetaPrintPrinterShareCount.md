@@ -38,18 +38,6 @@ Get-MgBetaPrintPrinterShareCount -InputObject <IDevicesCloudPrintIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -193,6 +181,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgPrintPrinterShareCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharecount)
+
 
 
 

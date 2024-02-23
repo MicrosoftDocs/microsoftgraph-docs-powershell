@@ -33,18 +33,6 @@ Remove-MgBetaGroupDriveItemListItemDocumentSetVersionField -InputObject <IFilesI
 ## DESCRIPTION
 Delete navigation property fields for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -275,6 +263,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemlistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemlistitemdocumentsetversionfield)
+
 
 
 

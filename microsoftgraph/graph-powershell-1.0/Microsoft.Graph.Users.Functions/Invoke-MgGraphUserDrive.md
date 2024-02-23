@@ -34,22 +34,6 @@ Invoke-MgGraphUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Expand
 ## DESCRIPTION
 Invoke function sharedWithMe
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -311,6 +295,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mggraphuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mggraphuserdrive)
+
 
 
 

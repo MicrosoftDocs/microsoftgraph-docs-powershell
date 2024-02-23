@@ -33,18 +33,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
 The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -274,6 +262,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertconfigurationalertdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertconfigurationalertdefinition)
+
 
 
 

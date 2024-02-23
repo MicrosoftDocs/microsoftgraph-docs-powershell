@@ -32,18 +32,6 @@ Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningErrorCount -InputObject 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgGroupDriveRootCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootcreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootcreatedbyuserserviceprovisioningerrorcount)
+
 
 
 

@@ -43,22 +43,6 @@ You can use the Prefer: outlook.timezone header to have all the date-related pro
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-complete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -260,6 +244,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask)
+
 
 
 

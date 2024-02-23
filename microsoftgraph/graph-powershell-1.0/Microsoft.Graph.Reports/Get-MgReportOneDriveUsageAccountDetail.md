@@ -44,22 +44,6 @@ Get-MgReportOneDriveUsageAccountDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getOneDriveUsageAccountDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -227,6 +211,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountdetail)
+
 
 
 

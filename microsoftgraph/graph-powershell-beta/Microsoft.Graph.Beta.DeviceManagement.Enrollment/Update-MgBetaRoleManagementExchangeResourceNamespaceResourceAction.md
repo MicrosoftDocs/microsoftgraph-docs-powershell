@@ -55,18 +55,6 @@ Update-MgBetaRoleManagementExchangeResourceNamespaceResourceAction
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionVerb
@@ -496,6 +484,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangeresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangeresourcenamespaceresourceaction)
+
 
 
 

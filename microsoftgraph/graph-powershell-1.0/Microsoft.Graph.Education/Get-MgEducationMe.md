@@ -23,22 +23,6 @@ Get-MgEducationMe [-ExpandProperty <String[]>] [-Property <String[]>] [-Response
 ## DESCRIPTION
 Get me from education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -131,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMe?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationme)
+
 
 
 

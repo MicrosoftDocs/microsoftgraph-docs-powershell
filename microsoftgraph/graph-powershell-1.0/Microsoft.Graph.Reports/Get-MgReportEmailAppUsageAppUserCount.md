@@ -31,22 +31,6 @@ Get-MgReportEmailAppUsageAppUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getEmailAppUsageAppsUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -199,6 +183,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportEmailAppUsageAppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageAppUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount)
+
 
 
 

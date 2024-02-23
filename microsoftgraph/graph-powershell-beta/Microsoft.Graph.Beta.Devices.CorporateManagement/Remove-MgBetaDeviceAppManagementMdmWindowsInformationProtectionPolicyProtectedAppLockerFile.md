@@ -34,18 +34,6 @@ Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAp
 ## DESCRIPTION
 Delete navigation property protectedAppLockerFiles for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -290,6 +278,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyprotectedapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyprotectedapplockerfile)
+
 
 
 

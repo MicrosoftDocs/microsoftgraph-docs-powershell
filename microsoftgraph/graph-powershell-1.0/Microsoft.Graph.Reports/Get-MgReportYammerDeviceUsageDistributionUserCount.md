@@ -32,22 +32,6 @@ Get-MgReportYammerDeviceUsageDistributionUserCount -InputObject <IReportsIdentit
 ## DESCRIPTION
 Invoke function getYammerDeviceUsageDistributionUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportYammerDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusagedistributionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusagedistributionusercount)
+
 
 
 

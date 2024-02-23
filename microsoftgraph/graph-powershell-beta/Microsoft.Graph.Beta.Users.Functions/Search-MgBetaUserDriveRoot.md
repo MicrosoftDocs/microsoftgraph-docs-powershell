@@ -34,22 +34,6 @@ Search-MgBetaUserDriveRoot -InputObject <IUsersFunctionsIdentity> [-Count] [-Exp
 ## DESCRIPTION
 Invoke function search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -338,6 +322,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [Search-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveroot)
+
 
 
 

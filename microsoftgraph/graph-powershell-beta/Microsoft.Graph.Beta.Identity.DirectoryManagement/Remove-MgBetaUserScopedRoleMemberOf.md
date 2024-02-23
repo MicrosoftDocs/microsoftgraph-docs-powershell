@@ -32,22 +32,6 @@ Remove-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Delete navigation property scopedRoleMemberOf for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -269,6 +253,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Remove-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetauserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetauserscopedrolememberof)
+
 
 
 

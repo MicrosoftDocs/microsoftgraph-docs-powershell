@@ -47,22 +47,6 @@ Update-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,6 +301,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Update-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttypecolumnlink)
+
 
 
 

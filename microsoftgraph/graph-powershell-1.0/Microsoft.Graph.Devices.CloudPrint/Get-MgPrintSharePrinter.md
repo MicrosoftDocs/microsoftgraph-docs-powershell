@@ -32,22 +32,6 @@ Get-MgPrintSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 ## DESCRIPTION
 The printer that this printer share is related to.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -191,6 +175,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgBetaPrintSharePrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintSharePrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter)
+
 
 
 

@@ -46,22 +46,6 @@ Update-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hasht
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,6 +262,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Update-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMessageExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessageextension)
+
 
 
 

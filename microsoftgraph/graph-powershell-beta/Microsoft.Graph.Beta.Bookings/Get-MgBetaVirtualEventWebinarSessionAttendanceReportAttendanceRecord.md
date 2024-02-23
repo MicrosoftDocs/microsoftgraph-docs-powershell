@@ -44,18 +44,6 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord -InputObjec
 List of attendance records of an attendance report.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -374,6 +362,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionattendancereportattendancerecord)
+
 
 
 

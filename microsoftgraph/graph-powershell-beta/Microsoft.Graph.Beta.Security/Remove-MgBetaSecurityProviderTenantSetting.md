@@ -29,22 +29,6 @@ Remove-MgBetaSecurityProviderTenantSetting -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property providerTenantSettings for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -284,6 +268,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityprovidertenantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityprovidertenantsetting)
+
 
 
 

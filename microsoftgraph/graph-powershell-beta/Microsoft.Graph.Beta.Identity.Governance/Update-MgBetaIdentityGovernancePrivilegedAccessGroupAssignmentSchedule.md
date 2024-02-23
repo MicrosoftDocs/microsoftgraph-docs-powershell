@@ -58,18 +58,6 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule
 ## DESCRIPTION
 Update the navigation property assignmentSchedules in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -23091,6 +23079,7 @@ In PIM, when the  eligible or active assignment becomes active.
 [Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedule)
+
 
 
 

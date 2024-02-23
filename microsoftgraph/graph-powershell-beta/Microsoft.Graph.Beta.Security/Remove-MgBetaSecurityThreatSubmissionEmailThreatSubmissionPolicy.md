@@ -29,22 +29,6 @@ Remove-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <I
 ## DESCRIPTION
 Delete navigation property emailThreatSubmissionPolicies for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EmailThreatSubmissionPolicyId
@@ -284,6 +268,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy)
+
 
 
 

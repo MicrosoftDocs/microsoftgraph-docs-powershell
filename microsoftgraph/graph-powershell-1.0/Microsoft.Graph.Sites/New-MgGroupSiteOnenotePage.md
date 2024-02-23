@@ -64,18 +64,6 @@ If you're targeting other notebooks, you can create pages in a specified section
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-pages-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -926,6 +914,7 @@ Read-only.
 [New-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage)
+
 
 
 

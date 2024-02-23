@@ -46,18 +46,6 @@ Remove-MgBetaShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Delete navigation property fields for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -273,6 +261,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemdocumentsetversionfield)
+
 
 
 
