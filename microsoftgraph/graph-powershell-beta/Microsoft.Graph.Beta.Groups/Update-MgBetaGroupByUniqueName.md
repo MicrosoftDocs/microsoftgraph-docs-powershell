@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a group object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupByUniqueName](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -40700,6 +40703,7 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
+[Update-MgGroupByUniqueName](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupByUniqueName?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename)
 

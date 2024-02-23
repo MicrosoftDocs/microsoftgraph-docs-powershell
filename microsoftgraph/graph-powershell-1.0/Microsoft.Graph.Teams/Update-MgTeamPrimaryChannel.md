@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property primaryChannel in teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14442,6 +14445,7 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
+[Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannel)
 

@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -215,6 +218,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcontent)
 

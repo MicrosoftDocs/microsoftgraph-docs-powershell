@@ -12,6 +12,9 @@ ms.prod: education
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentrubric)
 

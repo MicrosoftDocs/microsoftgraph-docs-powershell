@@ -11,6 +11,9 @@ schema: 2.0.0
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -285,6 +288,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyuserserviceprovisioningerror)
 

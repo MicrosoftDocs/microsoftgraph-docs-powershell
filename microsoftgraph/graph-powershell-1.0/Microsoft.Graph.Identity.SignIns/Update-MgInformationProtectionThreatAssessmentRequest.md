@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property threatAssessmentRequests in informationProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -473,6 +476,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+[Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionthreatassessmentrequest)
 

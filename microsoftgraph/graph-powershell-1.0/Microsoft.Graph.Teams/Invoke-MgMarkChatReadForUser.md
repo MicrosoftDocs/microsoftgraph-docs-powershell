@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Mark a chat as read for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkChatReadForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaMarkChatReadForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)
@@ -302,6 +305,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Invoke-MgBetaMarkChatReadForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaMarkChatReadForUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatreadforuser)
 

@@ -13,6 +13,9 @@ The most relevant people to the user.
 The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration, and business relationships.
 A person aggregates information from mail, contacts, and social networks.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -321,6 +324,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson)
 

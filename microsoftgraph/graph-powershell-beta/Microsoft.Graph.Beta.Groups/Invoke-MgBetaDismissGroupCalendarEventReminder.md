@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Dismiss (Default)
@@ -247,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder)
 

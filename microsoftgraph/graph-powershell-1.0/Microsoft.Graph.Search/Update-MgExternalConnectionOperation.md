@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -325,6 +328,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+[Update-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation)
 

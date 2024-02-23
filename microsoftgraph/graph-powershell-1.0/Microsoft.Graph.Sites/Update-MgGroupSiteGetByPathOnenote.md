@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property onenote in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteGetByPathOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -1207,6 +1210,7 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteGetByPathOnenote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathonenote)
 

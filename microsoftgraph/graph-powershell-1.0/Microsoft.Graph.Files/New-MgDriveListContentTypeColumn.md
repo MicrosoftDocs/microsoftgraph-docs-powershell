@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1268,6 +1271,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttypecolumn)
 

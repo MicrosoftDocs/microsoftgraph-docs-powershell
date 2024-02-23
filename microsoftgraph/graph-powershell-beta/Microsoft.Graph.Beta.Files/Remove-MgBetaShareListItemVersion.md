@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property versions for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -271,6 +274,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemversion)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Children terms of set in term \[store\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -435,6 +438,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetchild)
 

@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Delete the specified messageRule object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule)
 

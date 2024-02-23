@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property activities in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -646,6 +649,7 @@ Longer text description of the user's unique activity (example: document name, f
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
 ## RELATED LINKS
+[Update-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity)
 

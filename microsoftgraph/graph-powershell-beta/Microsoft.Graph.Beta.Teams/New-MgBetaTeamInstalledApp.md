@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Install an app to the specified team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -571,6 +574,7 @@ Read-only.
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
+[New-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp)
 

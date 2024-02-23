@@ -13,6 +13,9 @@ Create a linkedResource object to associate a specified task with an item in a p
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a todoTask.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -368,6 +371,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttasklinkedresource)
 

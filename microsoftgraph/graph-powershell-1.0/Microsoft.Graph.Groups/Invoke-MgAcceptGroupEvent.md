@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Accept the specified event in a user calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)
@@ -326,6 +329,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaAcceptGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent)
 

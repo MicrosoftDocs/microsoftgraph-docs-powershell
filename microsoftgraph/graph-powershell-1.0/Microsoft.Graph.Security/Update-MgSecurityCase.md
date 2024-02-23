@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property cases in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9764,6 +9767,7 @@ Read-only.
     - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[Update-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase)
 

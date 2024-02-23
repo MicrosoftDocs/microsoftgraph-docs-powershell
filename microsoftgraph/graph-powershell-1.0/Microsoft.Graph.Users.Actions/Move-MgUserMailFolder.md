@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Move a mailfolder and its contents to another mailfolder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)
@@ -285,6 +288,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder)
 

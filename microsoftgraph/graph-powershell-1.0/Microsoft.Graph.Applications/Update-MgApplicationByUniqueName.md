@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Update the properties of an application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -2416,6 +2419,7 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
   - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
+[Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename)
 

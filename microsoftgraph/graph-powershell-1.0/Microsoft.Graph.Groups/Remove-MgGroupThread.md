@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete conversationThread.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -248,6 +251,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread)
 

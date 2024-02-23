@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getReportFilters
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportFilter](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportFilter?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -351,6 +354,7 @@ BODYPARAMETER `<IPaths1J4Do9UDevicemanagementReportsMicrosoftGraphGetreportfilte
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportFilter](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportFilter?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportfilter)
 

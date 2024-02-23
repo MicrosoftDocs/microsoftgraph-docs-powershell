@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Create a new application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -2309,6 +2312,7 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
   - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
+[New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication)
 

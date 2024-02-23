@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to contacts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -673,6 +676,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact)
 

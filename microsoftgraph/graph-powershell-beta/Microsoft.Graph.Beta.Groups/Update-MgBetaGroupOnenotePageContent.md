@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action onenotePatchContent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupOnenotePageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### PatchExpanded (Default)
@@ -333,6 +336,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent)
 

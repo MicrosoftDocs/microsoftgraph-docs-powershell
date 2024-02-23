@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1296,6 +1299,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn)
 

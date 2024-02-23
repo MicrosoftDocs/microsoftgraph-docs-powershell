@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -245,6 +248,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemversioncontent)
 

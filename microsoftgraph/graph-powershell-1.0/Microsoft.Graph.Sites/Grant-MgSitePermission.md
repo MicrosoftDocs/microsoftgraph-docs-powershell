@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -321,6 +324,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/grant-mgsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/grant-mgsitepermission)
 

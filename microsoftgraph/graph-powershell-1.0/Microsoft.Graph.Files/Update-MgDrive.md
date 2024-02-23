@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -41994,6 +41997,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive)
 

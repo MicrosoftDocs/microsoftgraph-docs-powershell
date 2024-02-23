@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Disable lost mode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Disable (Default)
@@ -194,6 +197,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disable-mgdevicemanagementmanageddevicelostmode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disable-mgdevicemanagementmanageddevicelostmode)
 

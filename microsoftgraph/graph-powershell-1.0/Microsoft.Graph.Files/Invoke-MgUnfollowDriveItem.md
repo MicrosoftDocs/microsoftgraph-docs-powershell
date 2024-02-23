@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -231,6 +234,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem)
 

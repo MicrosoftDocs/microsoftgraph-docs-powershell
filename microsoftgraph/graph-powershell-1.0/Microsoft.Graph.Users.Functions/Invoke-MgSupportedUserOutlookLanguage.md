@@ -12,6 +12,9 @@ Get the list of locales and languages that are supported for the user, as config
 When setting up an Outlook client, the user selects the preferred language from this supported list.
 You can subsequently get the preferred language bygetting the user's mailbox settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Supported (Default)
@@ -240,6 +243,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage)
 

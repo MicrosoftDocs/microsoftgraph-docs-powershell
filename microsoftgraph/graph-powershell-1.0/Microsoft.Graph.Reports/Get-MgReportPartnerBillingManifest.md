@@ -11,6 +11,9 @@ ms.prod: reports
 ## SYNOPSIS
 Read the properties and relationships of a manifest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -323,6 +326,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest)
 

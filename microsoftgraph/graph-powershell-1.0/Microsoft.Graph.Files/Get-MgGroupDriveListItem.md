@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -359,6 +362,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitem)
 
