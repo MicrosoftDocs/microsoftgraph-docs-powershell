@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition
@@ -414,100 +414,103 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALLOWEDVALUES \<IMicrosoftGraphAllowedValue\[\]\>: Values that are predefined for this custom security attribute.
+ALLOWEDVALUES <IMicrosoftGraphAllowedValue- `[]`>: Values that are predefined for this custom security attribute.
 This navigation property is not returned by default and must be specified in an $expand query.
 For example, /directory/customSecurityAttributeDefinitions$expand=allowedValues.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsActive \<Boolean?\>\]: Indicates whether the predefined value is active or deactivated.
+  - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated.
 If set to false, this predefined value can't be assigned to any more supported directory objects.
 
-BODYPARAMETER \<IMicrosoftGraphCustomSecurityAttributeDefinition\>: customSecurityAttributeDefinition
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllowedValues \<IMicrosoftGraphAllowedValue\[\]\>\]: Values that are predefined for this custom security attribute.
+  - `[AllowedValues <IMicrosoftGraphAllowedValue- `[]`>]`: Values that are predefined for this custom security attribute.
 This navigation property is not returned by default and must be specified in an $expand query.
 For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[IsActive \<Boolean?\>\]: Indicates whether the predefined value is active or deactivated.
+    - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated.
 If set to false, this predefined value can't be assigned to any more supported directory objects.
-  \[AttributeSet \<String\>\]: Name of the attribute set.
+  - `[AttributeSet <String>]`: Name of the attribute set.
 Case insensitive.
-  \[Description \<String\>\]: Description of the custom security attribute.
+  - `[Description <String>]`: Description of the custom security attribute.
 Can be up to 128 characters long and include Unicode characters.
 Can be changed later.
-  \[IsCollection \<Boolean?\>\]: Indicates whether multiple values can be assigned to the custom security attribute.
+  - `[IsCollection <Boolean?>]`: Indicates whether multiple values can be assigned to the custom security attribute.
 Cannot be changed later.
 If type is set to Boolean, isCollection cannot be set to true.
-  \[IsSearchable \<Boolean?\>\]: Indicates whether custom security attribute values are indexed for searching on objects that are assigned attribute values.
+  - `[IsSearchable <Boolean?>]`: Indicates whether custom security attribute values are indexed for searching on objects that are assigned attribute values.
 Cannot be changed later.
-  \[Name \<String\>\]: Name of the custom security attribute.
+  - `[Name <String>]`: Name of the custom security attribute.
 Must be unique within an attribute set.
 Can be up to 32 characters long and include Unicode characters.
 Cannot contain spaces or special characters.
 Cannot be changed later.
 Case insensitive.
-  \[Status \<String\>\]: Specifies whether the custom security attribute is active or deactivated.
+  - `[Status <String>]`: Specifies whether the custom security attribute is active or deactivated.
 Acceptable values are: Available and Deprecated.
 Can be changed later.
-  \[Type \<String\>\]: Data type for the custom security attribute values.
+  - `[Type <String>]`: Data type for the custom security attribute values.
 Supported types are: Boolean, Integer, and String.
 Cannot be changed later.
-  \[UsePreDefinedValuesOnly \<Boolean?\>\]: Indicates whether only predefined values can be assigned to the custom security attribute.
+  - `[UsePreDefinedValuesOnly <Boolean?>]`: Indicates whether only predefined values can be assigned to the custom security attribute.
 If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
-  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
-  \[CommandId \<String\>\]: The unique identifier of command
-  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
-  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
-  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
-  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RecommendationId \<String\>\]: The unique identifier of recommendation
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
-  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[UsageRightId \<String\>\]: The unique identifier of usageRight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
+  - `[CommandId <String>]`: The unique identifier of command
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[UsageRightId <String>]`: The unique identifier of usageRight
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
+
+
+
 

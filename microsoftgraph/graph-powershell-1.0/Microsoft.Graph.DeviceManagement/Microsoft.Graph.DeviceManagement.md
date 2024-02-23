@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.DeviceManagement
 Module Guid: 4131557d-8635-4903-9cfd-d59ddef4a597
 Download Help Link: {{ Update Download Link }}
@@ -1006,4 +1006,5 @@ Locale: en-US
 
 ### [Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 {{ Fill in the Description }}
+
 

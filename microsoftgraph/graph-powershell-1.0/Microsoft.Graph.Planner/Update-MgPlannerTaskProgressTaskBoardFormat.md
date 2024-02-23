@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat
@@ -260,21 +260,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat\>: plannerProgressTaskBoardTaskFormat
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[OrderHint \<String\>\]: Hint value used to order the task on the progress view of the task board.
+  - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
-INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
-  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
-  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat)
+
+
+
 
