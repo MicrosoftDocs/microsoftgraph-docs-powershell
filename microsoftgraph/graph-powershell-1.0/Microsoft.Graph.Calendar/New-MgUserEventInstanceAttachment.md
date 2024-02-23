@@ -1,20 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserEventInstanceAttachment
 
 ## SYNOPSIS
-Use this API to add an attachment to an existing event.
-This operation limits the size of the attachment you can add to under 3 MB.
-If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## SYNTAX
 
@@ -49,12 +44,24 @@ New-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Use this API to add an attachment to an existing event.
-This operation limits the size of the attachment you can add to under 3 MB.
-If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-post-attachments-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -335,36 +342,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAttachment\>: attachment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContentType <String>]`: The MIME type.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[ContentType \<String\>\]: The MIME type.
+  \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
+  \[LastModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
-  - `[Size <Int32?>]`: The length of the attachment in bytes.
+  \[Name \<String\>\]: The attachment's file name.
+  \[Size \<Int32?\>\]: The length of the attachment in bytes.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment)
-
-
-
-
 

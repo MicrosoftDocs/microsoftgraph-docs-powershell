@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolememberbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgBetaDirectoryRoleMemberByRef
@@ -13,9 +12,6 @@ Create a new directory role member.
 You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleMemberByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,21 +50,16 @@ You can use both the object ID and template ID of the directoryRole with this AP
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-post-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Add a member to a directory role
 
-```powershell
+### EXAMPLE 1
+```
 $DirObject = @{
   "@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/3d939dc2-d0a0-4d4d-b3f4-6bb75ce6ff6e"
   }
-
-New-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948' -BodyParameter $DirObject
 ```
 
-The first command sets the value for the directory object variable $DirObject. The second command assigns the defined directory object the directory role defined by the DirectoryRoleId
+New-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948' -BodyParameter $DirObject
 
 ## PARAMETERS
 
@@ -258,63 +249,59 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+BODYPARAMETER \<IReferenceCreate\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  OdataId \<String\>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
-  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
+  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
+  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RecommendationId \<String\>\]: The unique identifier of recommendation
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
+  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolememberbyref)
-
-
-
 

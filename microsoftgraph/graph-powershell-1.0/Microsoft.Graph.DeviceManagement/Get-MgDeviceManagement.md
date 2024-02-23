@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagement
 
 ## SYNOPSIS
 Read properties and relationships of the deviceManagement object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,17 +21,13 @@ Get-MgDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 Read properties and relationships of the deviceManagement object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement
+```
 
 Get-MgDeviceManagement
-
-```
-This example shows how to use the Get-MgDeviceManagement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -126,10 +118,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement)
-
-
-
 

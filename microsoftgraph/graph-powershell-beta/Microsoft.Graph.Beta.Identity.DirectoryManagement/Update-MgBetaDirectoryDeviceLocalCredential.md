@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorydevicelocalcredential
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property deviceLocalCredentials in directory
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ Update-MgBetaDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Update the navigation property deviceLocalCredentials in directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -284,82 +293,77 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceLocalCredentialInfo>`: deviceLocalCredentialInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceLocalCredentialInfo\>: deviceLocalCredentialInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Credentials <IMicrosoftGraphDeviceLocalCredential- `[]`>]`: The credentials of the device's local administrator account backed up to Azure Active Directory.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Credentials \<IMicrosoftGraphDeviceLocalCredential\[\]\>\]: The credentials of the device's local administrator account backed up to Azure Active Directory.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
-    - `[AccountSid <String>]`: The SID of the local admin account for which LAPS is enabled.
-    - `[BackupDateTime <DateTime?>]`: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
-    - `[PasswordBase64 <String>]`: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
-  - `[DeviceName <String>]`: Display name of the device that the local credentials are associated with.
-  - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Microsoft Entra ID.
-  - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
+    \[AccountName \<String\>\]: The name of the local admin account for which LAPS is enabled.
+    \[AccountSid \<String\>\]: The SID of the local admin account for which LAPS is enabled.
+    \[BackupDateTime \<DateTime?\>\]: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
+    \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
+  \[DeviceName \<String\>\]: Display name of the device that the local credentials are associated with.
+  \[LastBackupDateTime \<DateTime?\>\]: When the local administrator account credential was backed up to Microsoft Entra ID.
+  \[RefreshDateTime \<DateTime?\>\]: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
 
-CREDENTIALS <IMicrosoftGraphDeviceLocalCredential- `[]`>: The credentials of the device's local administrator account backed up to Azure Active Directory.
-  - `[Id <String>]`: The unique identifier for an entity.
+CREDENTIALS \<IMicrosoftGraphDeviceLocalCredential\[\]\>: The credentials of the device's local administrator account backed up to Azure Active Directory.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
-  - `[AccountSid <String>]`: The SID of the local admin account for which LAPS is enabled.
-  - `[BackupDateTime <DateTime?>]`: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
-  - `[PasswordBase64 <String>]`: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
+  \[AccountName \<String\>\]: The name of the local admin account for which LAPS is enabled.
+  \[AccountSid \<String\>\]: The SID of the local admin account for which LAPS is enabled.
+  \[BackupDateTime \<DateTime?\>\]: When the local adminstrator account credential for the device object was backed up to Microsoft Entra ID.
+  \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
-  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
+  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
+  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RecommendationId \<String\>\]: The unique identifier of recommendation
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
+  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorydevicelocalcredential)
-
-
-
-
 

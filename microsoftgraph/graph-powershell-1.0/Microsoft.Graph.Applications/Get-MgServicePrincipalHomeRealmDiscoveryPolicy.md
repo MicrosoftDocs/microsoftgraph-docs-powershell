@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalhomerealmdiscoverypolicy
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgServicePrincipalHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,17 +23,13 @@ Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> [-Ex
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgServicePrincipalHomeRealmDiscoveryPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -264,10 +256,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalhomerealmdiscoverypolicy)
-
-
-
 

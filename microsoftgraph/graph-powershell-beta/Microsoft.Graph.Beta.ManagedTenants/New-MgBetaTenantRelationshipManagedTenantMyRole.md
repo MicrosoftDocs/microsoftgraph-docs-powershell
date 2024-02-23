@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole
@@ -29,6 +29,22 @@ New-MgBetaTenantRelationshipManagedTenantMyRole -BodyParameter <IMicrosoftGraphM
 
 ## DESCRIPTION
 Create new navigation property to myRoles for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -188,30 +204,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphManagedTenantsRoleAssignment- `[]`>: A collection of role assignments for the managed tenant.
-  - `[AssignmentType <String>]`: delegatedPrivilegeStatus
-  - `[Roles <IMicrosoftGraphManagedTenantsRoleDefinition- `[]`>]`: The collection of roles assigned.
-    - `[Description <String>]`: The description for the role.
-    - `[DisplayName <String>]`: The display name for the role assignment.
-    - `[TemplateId <String>]`: The unique identifier for the template.
+ASSIGNMENTS \<IMicrosoftGraphManagedTenantsRoleAssignment\[\]\>: A collection of role assignments for the managed tenant.
+  \[AssignmentType \<String\>\]: delegatedPrivilegeStatus
+  \[Roles \<IMicrosoftGraphManagedTenantsRoleDefinition\[\]\>\]: The collection of roles assigned.
+    \[Description \<String\>\]: The description for the role.
+    \[DisplayName \<String\>\]: The display name for the role assignment.
+    \[TemplateId \<String\>\]: The unique identifier for the template.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsMyRole>`: myRole
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Assignments <IMicrosoftGraphManagedTenantsRoleAssignment- `[]`>]`: A collection of role assignments for the managed tenant.
-    - `[AssignmentType <String>]`: delegatedPrivilegeStatus
-    - `[Roles <IMicrosoftGraphManagedTenantsRoleDefinition- `[]`>]`: The collection of roles assigned.
-      - `[Description <String>]`: The description for the role.
-      - `[DisplayName <String>]`: The display name for the role assignment.
-      - `[TemplateId <String>]`: The unique identifier for the template.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsMyRole\>: myRole
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Assignments \<IMicrosoftGraphManagedTenantsRoleAssignment\[\]\>\]: A collection of role assignments for the managed tenant.
+    \[AssignmentType \<String\>\]: delegatedPrivilegeStatus
+    \[Roles \<IMicrosoftGraphManagedTenantsRoleDefinition\[\]\>\]: The collection of roles assigned.
+      \[Description \<String\>\]: The description for the role.
+      \[DisplayName \<String\>\]: The display name for the role assignment.
+      \[TemplateId \<String\>\]: The unique identifier for the template.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole)
-
-
-
-
 

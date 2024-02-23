@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
-ms.prod: partner-customer-administration
 ---
 
 # Remove-MgBetaTenantRelationshipDelegatedAdminRelationship
@@ -11,9 +10,6 @@ ms.prod: partner-customer-administration
 ## SYNOPSIS
 Delete a delegatedAdminRelationship object.
 A relationship can only be deleted if it's in the 'created' status.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,8 +31,17 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
 Delete a delegatedAdminRelationship object.
 A relationship can only be deleted if it's in the 'created' status.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -193,20 +198,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
-  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
-  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
-  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
-  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
-  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
-  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
+  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
+  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
+  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
+  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
+  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
+  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Remove-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationship)
-
-
-
-
 

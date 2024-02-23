@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserMessage
 
 ## SYNOPSIS
-Delete eventMessage.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
+Delete a message in the specified user's mailbox, or delete a relationship of the message.
 
 ## SYNTAX
 
@@ -31,24 +27,17 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Response
 ```
 
 ## DESCRIPTION
-Delete eventMessage.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-delete-permissions.md)]
+Delete a message in the specified user's mailbox, or delete a relationship of the message.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserMessage -UserId $userId -MessageId $messageId
-```
-This example shows how to use the Remove-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -220,21 +209,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage)
-
-
-
 

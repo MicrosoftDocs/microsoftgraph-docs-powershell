@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactcount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactCount](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Get-MgBetaUserContactFolderContactCount -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -156,19 +165,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserContactFolderContactCount](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactcount)
-
-
-
-
 

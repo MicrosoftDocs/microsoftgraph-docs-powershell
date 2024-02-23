@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgPlannerPlanDetail
 
 ## SYNOPSIS
 Update the navigation property details in planner
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,15 +45,12 @@ Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property details in planner
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplandetails-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	sharedWith = @{
@@ -70,12 +63,7 @@ $params = @{
 	}
 }
 
-Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgPlannerPlanDetail Cmdlet.
-
+Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -296,80 +284,76 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPlannerPlanDetails\>: plannerPlanDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]`: plannerCategoryDescriptions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Category1 <String>]`: The label associated with Category 1
-    - `[Category10 <String>]`: The label associated with Category 10
-    - `[Category11 <String>]`: The label associated with Category 11
-    - `[Category12 <String>]`: The label associated with Category 12
-    - `[Category13 <String>]`: The label associated with Category 13
-    - `[Category14 <String>]`: The label associated with Category 14
-    - `[Category15 <String>]`: The label associated with Category 15
-    - `[Category16 <String>]`: The label associated with Category 16
-    - `[Category17 <String>]`: The label associated with Category 17
-    - `[Category18 <String>]`: The label associated with Category 18
-    - `[Category19 <String>]`: The label associated with Category 19
-    - `[Category2 <String>]`: The label associated with Category 2
-    - `[Category20 <String>]`: The label associated with Category 20
-    - `[Category21 <String>]`: The label associated with Category 21
-    - `[Category22 <String>]`: The label associated with Category 22
-    - `[Category23 <String>]`: The label associated with Category 23
-    - `[Category24 <String>]`: The label associated with Category 24
-    - `[Category25 <String>]`: The label associated with Category 25
-    - `[Category3 <String>]`: The label associated with Category 3
-    - `[Category4 <String>]`: The label associated with Category 4
-    - `[Category5 <String>]`: The label associated with Category 5
-    - `[Category6 <String>]`: The label associated with Category 6
-    - `[Category7 <String>]`: The label associated with Category 7
-    - `[Category8 <String>]`: The label associated with Category 8
-    - `[Category9 <String>]`: The label associated with Category 9
-  - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[CategoryDescriptions \<IMicrosoftGraphPlannerCategoryDescriptions\>\]: plannerCategoryDescriptions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Category1 \<String\>\]: The label associated with Category 1
+    \[Category10 \<String\>\]: The label associated with Category 10
+    \[Category11 \<String\>\]: The label associated with Category 11
+    \[Category12 \<String\>\]: The label associated with Category 12
+    \[Category13 \<String\>\]: The label associated with Category 13
+    \[Category14 \<String\>\]: The label associated with Category 14
+    \[Category15 \<String\>\]: The label associated with Category 15
+    \[Category16 \<String\>\]: The label associated with Category 16
+    \[Category17 \<String\>\]: The label associated with Category 17
+    \[Category18 \<String\>\]: The label associated with Category 18
+    \[Category19 \<String\>\]: The label associated with Category 19
+    \[Category2 \<String\>\]: The label associated with Category 2
+    \[Category20 \<String\>\]: The label associated with Category 20
+    \[Category21 \<String\>\]: The label associated with Category 21
+    \[Category22 \<String\>\]: The label associated with Category 22
+    \[Category23 \<String\>\]: The label associated with Category 23
+    \[Category24 \<String\>\]: The label associated with Category 24
+    \[Category25 \<String\>\]: The label associated with Category 25
+    \[Category3 \<String\>\]: The label associated with Category 3
+    \[Category4 \<String\>\]: The label associated with Category 4
+    \[Category5 \<String\>\]: The label associated with Category 5
+    \[Category6 \<String\>\]: The label associated with Category 6
+    \[Category7 \<String\>\]: The label associated with Category 7
+    \[Category8 \<String\>\]: The label associated with Category 8
+    \[Category9 \<String\>\]: The label associated with Category 9
+  \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Category1 <String>]`: The label associated with Category 1
-  - `[Category10 <String>]`: The label associated with Category 10
-  - `[Category11 <String>]`: The label associated with Category 11
-  - `[Category12 <String>]`: The label associated with Category 12
-  - `[Category13 <String>]`: The label associated with Category 13
-  - `[Category14 <String>]`: The label associated with Category 14
-  - `[Category15 <String>]`: The label associated with Category 15
-  - `[Category16 <String>]`: The label associated with Category 16
-  - `[Category17 <String>]`: The label associated with Category 17
-  - `[Category18 <String>]`: The label associated with Category 18
-  - `[Category19 <String>]`: The label associated with Category 19
-  - `[Category2 <String>]`: The label associated with Category 2
-  - `[Category20 <String>]`: The label associated with Category 20
-  - `[Category21 <String>]`: The label associated with Category 21
-  - `[Category22 <String>]`: The label associated with Category 22
-  - `[Category23 <String>]`: The label associated with Category 23
-  - `[Category24 <String>]`: The label associated with Category 24
-  - `[Category25 <String>]`: The label associated with Category 25
-  - `[Category3 <String>]`: The label associated with Category 3
-  - `[Category4 <String>]`: The label associated with Category 4
-  - `[Category5 <String>]`: The label associated with Category 5
-  - `[Category6 <String>]`: The label associated with Category 6
-  - `[Category7 <String>]`: The label associated with Category 7
-  - `[Category8 <String>]`: The label associated with Category 8
-  - `[Category9 <String>]`: The label associated with Category 9
+CATEGORYDESCRIPTIONS \<IMicrosoftGraphPlannerCategoryDescriptions\>: plannerCategoryDescriptions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Category1 \<String\>\]: The label associated with Category 1
+  \[Category10 \<String\>\]: The label associated with Category 10
+  \[Category11 \<String\>\]: The label associated with Category 11
+  \[Category12 \<String\>\]: The label associated with Category 12
+  \[Category13 \<String\>\]: The label associated with Category 13
+  \[Category14 \<String\>\]: The label associated with Category 14
+  \[Category15 \<String\>\]: The label associated with Category 15
+  \[Category16 \<String\>\]: The label associated with Category 16
+  \[Category17 \<String\>\]: The label associated with Category 17
+  \[Category18 \<String\>\]: The label associated with Category 18
+  \[Category19 \<String\>\]: The label associated with Category 19
+  \[Category2 \<String\>\]: The label associated with Category 2
+  \[Category20 \<String\>\]: The label associated with Category 20
+  \[Category21 \<String\>\]: The label associated with Category 21
+  \[Category22 \<String\>\]: The label associated with Category 22
+  \[Category23 \<String\>\]: The label associated with Category 23
+  \[Category24 \<String\>\]: The label associated with Category 24
+  \[Category25 \<String\>\]: The label associated with Category 25
+  \[Category3 \<String\>\]: The label associated with Category 3
+  \[Category4 \<String\>\]: The label associated with Category 4
+  \[Category5 \<String\>\]: The label associated with Category 5
+  \[Category6 \<String\>\]: The label associated with Category 6
+  \[Category7 \<String\>\]: The label associated with Category 7
+  \[Category8 \<String\>\]: The label associated with Category 8
+  \[Category9 \<String\>\]: The label associated with Category 9
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplandetail)
-
-
-
 

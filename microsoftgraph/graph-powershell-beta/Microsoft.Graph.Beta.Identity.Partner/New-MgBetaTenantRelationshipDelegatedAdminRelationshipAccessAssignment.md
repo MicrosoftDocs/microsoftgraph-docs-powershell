@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
-ms.prod: partner-customer-administration
 ---
 
 # New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## SYNOPSIS
 Create a new delegatedAdminAccessAssignment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,8 +47,17 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 ## DESCRIPTION
 Create a new delegatedAdminAccessAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-accessassignments-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -306,52 +311,47 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSCONTAINER `<IMicrosoftGraphDelegatedAdminAccessContainer>`: delegatedAdminAccessContainer
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group).
+ACCESSCONTAINER \<IMicrosoftGraphDelegatedAdminAccessContainer\>: delegatedAdminAccessContainer
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AccessContainerId \<String\>\]: The identifier of the access container (for example, a security group).
 For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
-  - `[AccessContainerType <String>]`: delegatedAdminAccessContainerType
+  \[AccessContainerType \<String\>\]: delegatedAdminAccessContainerType
 
-ACCESSDETAILS `<IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UnifiedRoles <IMicrosoftGraphUnifiedRole- `[]`>]`: The directory roles that the Microsoft partner is assigned in the customer tenant.
-    - `[RoleDefinitionId <String>]`: The unified role definition ID of the directory role.
+ACCESSDETAILS \<IMicrosoftGraphDelegatedAdminAccessDetails\>: delegatedAdminAccessDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[UnifiedRoles \<IMicrosoftGraphUnifiedRole\[\]\>\]: The directory roles that the Microsoft partner is assigned in the customer tenant.
+    \[RoleDefinitionId \<String\>\]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedAdminAccessAssignment>`: delegatedAdminAccessAssignment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDelegatedAdminAccessAssignment\>: delegatedAdminAccessAssignment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccessContainer <IMicrosoftGraphDelegatedAdminAccessContainer>]`: delegatedAdminAccessContainer
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group).
+  \[AccessContainer \<IMicrosoftGraphDelegatedAdminAccessContainer\>\]: delegatedAdminAccessContainer
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AccessContainerId \<String\>\]: The identifier of the access container (for example, a security group).
 For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
-    - `[AccessContainerType <String>]`: delegatedAdminAccessContainerType
-  - `[AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>]`: delegatedAdminAccessDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[UnifiedRoles <IMicrosoftGraphUnifiedRole- `[]`>]`: The directory roles that the Microsoft partner is assigned in the customer tenant.
-      - `[RoleDefinitionId <String>]`: The unified role definition ID of the directory role.
+    \[AccessContainerType \<String\>\]: delegatedAdminAccessContainerType
+  \[AccessDetails \<IMicrosoftGraphDelegatedAdminAccessDetails\>\]: delegatedAdminAccessDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[UnifiedRoles \<IMicrosoftGraphUnifiedRole\[\]\>\]: The directory roles that the Microsoft partner is assigned in the customer tenant.
+      \[RoleDefinitionId \<String\>\]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
-  - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the access assignment was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the access assignment was created.
 Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 and in UTC time when this access assignment was last modified.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 and in UTC time when this access assignment was last modified.
 Read-only.
-  - `[Status <String>]`: delegatedAdminAccessAssignmentStatus
+  \[Status \<String\>\]: delegatedAdminAccessAssignmentStatus
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
-  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
-  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
-  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
-  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
-  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
-  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
+  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
+  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
+  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
+  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
+  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
+  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
-
-
-
-
 

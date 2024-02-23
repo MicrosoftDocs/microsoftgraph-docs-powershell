@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgGroupCalendarSchedule
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,10 +47,17 @@ Get-MgGroupCalendarSchedule -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -275,73 +278,69 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AvailabilityViewInterval <Int32?>]`: 
-  - `[EndTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+BODYPARAMETER \<IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AvailabilityViewInterval \<Int32?\>\]: 
+  \[EndTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[Schedules <String- `[]`>]`: 
-  - `[StartTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  \[Schedules \<String\[\]\>\]: 
+  \[StartTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-ENDTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+ENDTIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: The unique identifier of list
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[User <String>]`: Usage: User='{User}'
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
+  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: The unique identifier of list
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[User \<String\>\]: Usage: User='{User}'
 
-STARTTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+STARTTIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule)
-
-
-
 

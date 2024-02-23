@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportshareduselicenseusagereport
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport
@@ -33,8 +32,17 @@ Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -OutF
 ## DESCRIPTION
 Get a usage report on shared-use licenses, such as servicePlanId, licenseCount, and claimedLicenseCount, for real-time, 7 days, or 28 days trend.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getshareduselicenseusagereport-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -311,22 +319,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[ReportName <String>]`: cloudPcReportName
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[ReportName \<String\>\]: cloudPcReportName
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportshareduselicenseusagereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportshareduselicenseusagereport)
-
-
-
-
 

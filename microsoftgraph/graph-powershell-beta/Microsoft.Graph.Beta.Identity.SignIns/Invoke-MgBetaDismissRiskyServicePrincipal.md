@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgBetaDismissRiskyServicePrincipal
@@ -12,9 +11,6 @@ ms.prod: identity-and-sign-in
 Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,12 +34,10 @@ Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-dismiss-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ServicePrincipalIds = @(
@@ -52,8 +46,6 @@ $params = @{
 }
 Invoke-MgBetaDismissRiskyServicePrincipal -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -210,15 +202,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ServicePrincipalIds <String- `[]`>]`:
+BODYPARAMETER \<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ServicePrincipalIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
-
-
-
 

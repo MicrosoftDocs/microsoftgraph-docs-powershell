@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,13 +22,12 @@ Get-MgUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Stri
 Invoke function delta
 
 ## EXAMPLES
-### Example 1: Using the Get-MgUserDelta Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Functions
 Get-MgUserDelta
 ```
-This example shows how to use the Get-MgUserDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -243,10 +239,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
-
-
-
 

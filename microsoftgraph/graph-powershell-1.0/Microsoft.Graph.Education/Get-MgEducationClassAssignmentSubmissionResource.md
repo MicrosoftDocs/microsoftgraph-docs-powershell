@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentSubmissionResource
@@ -13,9 +12,6 @@ Retrieve the properties of a specific resource associated with a submission.
 Only teachers, students, and applications with application permissions can perform this operation.
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,76 +45,49 @@ Only teachers, students, and applications with application permissions can perfo
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmissionresource-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get an educationWordResource
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 2
 ```
-This example will get an educationwordresource
-
-### Example 2: Get an educationFileResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 3
 ```
-This example will get an educationfileresource
-
-### Example 3: Get an educationExcelResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 4
 ```
-This example will get an educationexcelresource
-
-### Example 4: Get an educationPowerPointResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 5
 ```
-This example will get an educationpowerpointresource
-
-### Example 5: Get an educationLinkResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
+### EXAMPLE 6
 ```
-This example will get an educationlinkresource
-
-### Example 6: Get an educationMediaResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
-
-```
-This example will get an educationmediaresource
-
 
 ## PARAMETERS
 
@@ -410,26 +379,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource)
-
-
-
 

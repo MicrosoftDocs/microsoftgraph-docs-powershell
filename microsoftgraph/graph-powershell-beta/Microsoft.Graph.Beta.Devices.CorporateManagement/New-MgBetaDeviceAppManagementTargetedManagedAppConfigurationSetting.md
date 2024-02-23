@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting
@@ -48,6 +48,18 @@ New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 
 ## DESCRIPTION
 Create new navigation property to settings for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -255,172 +267,168 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSetting>`: Setting instance within policy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementConfigurationSetting\>: Setting instance within policy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition- `[]`>]`: List of related Setting Definitions.
+  \[SettingDefinitions \<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[\]\>\]: List of related Setting Definitions.
 This property is read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
-    - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Description <String>]`: description of the setting
-      - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
-      - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
-      - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
-    - `[BaseUri <String>]`: Base CSP Path
-    - `[CategoryId <String>]`: Specify category in which the setting is under.
+    \[AccessTypes \<String\>\]: deviceManagementConfigurationSettingAccessTypes
+    \[Applicability \<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability\>\]: deviceManagementConfigurationSettingApplicability
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Description \<String\>\]: description of the setting
+      \[DeviceMode \<DeviceManagementConfigurationDeviceMode?\>\]: Describes applicability for the mode the device is in
+      \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
+      \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
+    \[BaseUri \<String\>\]: Base CSP Path
+    \[CategoryId \<String\>\]: Specify category in which the setting is under.
 Support $filters.
-    - `[Description <String>]`: Description of the setting.
-    - `[DisplayName <String>]`: Name of the setting.
+    \[Description \<String\>\]: Description of the setting.
+    \[DisplayName \<String\>\]: Name of the setting.
 For example: Allow Toast.
-    - `[HelpText <String>]`: Help text of the setting.
+    \[HelpText \<String\>\]: Help text of the setting.
 Give more details of the setting.
-    - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
-    - `[Keywords <String- `[]`>]`: Tokens which to search settings on
-    - `[Name <String>]`: Name of the item
-    - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
-      - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device.
+    \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at.
+    \[Keywords \<String\[\]\>\]: Tokens which to search settings on
+    \[Name \<String\>\]: Name of the item
+    \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[MaxDeviceOccurrence \<Int32?\>\]: Maximum times setting can be set on device.
+      \[MinDeviceOccurrence \<Int32?\>\]: Minimum times setting can be set on device.
 A MinDeviceOccurrence of 0 means setting is optional
-    - `[OffsetUri <String>]`: Offset CSP Path from Base
-    - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
-      - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
-    - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
-    - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
-    - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
-    - `[Version <String>]`: Item Version
-    - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
-  - `[SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>]`: Setting instance within policy
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[SettingDefinitionId <String>]`: Setting Definition Id
-    - `[SettingInstanceTemplateReference <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference>]`: Setting instance template reference information
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[SettingInstanceTemplateId <String>]`: Setting instance template id
+    \[OffsetUri \<String\>\]: Offset CSP Path from Base
+    \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
+      \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
+Applicable for reusable setting
+    \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
+    \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
+    \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
+    \[Version \<String\>\]: Item Version
+    \[Visibility \<DeviceManagementConfigurationSettingVisibility?\>\]: Supported setting types
+  \[SettingInstance \<IMicrosoftGraphDeviceManagementConfigurationSettingInstance\>\]: Setting instance within policy
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[SettingDefinitionId \<String\>\]: Setting Definition Id
+    \[SettingInstanceTemplateReference \<IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference\>\]: Setting instance template reference information
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[SettingInstanceTemplateId \<String\>\]: Setting instance template id
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: The unique identifier of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: The unique identifier of managedEBookCategory
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
-  - `[PolicySetId <String>]`: The unique identifier of policySet
-  - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AssignmentFilterEvaluationStatusDetailsId \<String\>\]: The unique identifier of assignmentFilterEvaluationStatusDetails
+  \[BundleId \<String\>\]: Usage: bundleId='{bundleId}'
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceAppManagementTaskId \<String\>\]: The unique identifier of deviceAppManagementTask
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementConfigurationSettingDefinitionId \<String\>\]: The unique identifier of deviceManagementConfigurationSettingDefinition
+  \[DeviceManagementConfigurationSettingId \<String\>\]: The unique identifier of deviceManagementConfigurationSetting
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnterpriseCodeSigningCertificateId \<String\>\]: The unique identifier of enterpriseCodeSigningCertificate
+  \[Id \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[IosLobAppProvisioningConfigurationAssignmentId \<String\>\]: The unique identifier of iosLobAppProvisioningConfigurationAssignment
+  \[IosLobAppProvisioningConfigurationId \<String\>\]: The unique identifier of iosLobAppProvisioningConfiguration
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[IosVppAppAssignedLicenseId \<String\>\]: The unique identifier of iosVppAppAssignedLicense
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationStateId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationState
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookCategoryId \<String\>\]: The unique identifier of managedEBookCategory
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppIntentAndStateId \<String\>\]: The unique identifier of mobileAppIntentAndState
+  \[MobileAppProvisioningConfigGroupAssignmentId \<String\>\]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[PolicyId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[PolicySetAssignmentId \<String\>\]: The unique identifier of policySetAssignment
+  \[PolicySetId \<String\>\]: The unique identifier of policySet
+  \[PolicySetItemId \<String\>\]: The unique identifier of policySetItem
+  \[SecurityBaselineSettingStateId \<String\>\]: The unique identifier of securityBaselineSettingState
+  \[SecurityBaselineStateId \<String\>\]: The unique identifier of securityBaselineState
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  \[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  \[WindowsDefenderApplicationControlSupplementalPolicyId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionDeviceRegistrationId \<String\>\]: The unique identifier of windowsInformationProtectionDeviceRegistration
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+  \[WindowsInformationProtectionWipeActionId \<String\>\]: The unique identifier of windowsInformationProtectionWipeAction
+  \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition- `[]`>: List of related Setting Definitions.
+SETTINGDEFINITIONS \<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[\]\>: List of related Setting Definitions.
 This property is read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
-  - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: description of the setting
-    - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
-    - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
-    - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
-  - `[BaseUri <String>]`: Base CSP Path
-  - `[CategoryId <String>]`: Specify category in which the setting is under.
+  \[AccessTypes \<String\>\]: deviceManagementConfigurationSettingAccessTypes
+  \[Applicability \<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability\>\]: deviceManagementConfigurationSettingApplicability
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Description \<String\>\]: description of the setting
+    \[DeviceMode \<DeviceManagementConfigurationDeviceMode?\>\]: Describes applicability for the mode the device is in
+    \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
+    \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
+  \[BaseUri \<String\>\]: Base CSP Path
+  \[CategoryId \<String\>\]: Specify category in which the setting is under.
 Support $filters.
-  - `[Description <String>]`: Description of the setting.
-  - `[DisplayName <String>]`: Name of the setting.
+  \[Description \<String\>\]: Description of the setting.
+  \[DisplayName \<String\>\]: Name of the setting.
 For example: Allow Toast.
-  - `[HelpText <String>]`: Help text of the setting.
+  \[HelpText \<String\>\]: Help text of the setting.
 Give more details of the setting.
-  - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
-  - `[Keywords <String- `[]`>]`: Tokens which to search settings on
-  - `[Name <String>]`: Name of the item
-  - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
-    - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device.
+  \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at.
+  \[Keywords \<String\[\]\>\]: Tokens which to search settings on
+  \[Name \<String\>\]: Name of the item
+  \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[MaxDeviceOccurrence \<Int32?\>\]: Maximum times setting can be set on device.
+    \[MinDeviceOccurrence \<Int32?\>\]: Minimum times setting can be set on device.
 A MinDeviceOccurrence of 0 means setting is optional
-  - `[OffsetUri <String>]`: Offset CSP Path from Base
-  - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
-    - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
-  - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
-  - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
-  - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
-  - `[Version <String>]`: Item Version
-  - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
+  \[OffsetUri \<String\>\]: Offset CSP Path from Base
+  \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
+    \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
+Applicable for reusable setting
+  \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
+  \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
+  \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
+  \[Version \<String\>\]: Item Version
+  \[Visibility \<DeviceManagementConfigurationSettingVisibility?\>\]: Supported setting types
 
-SETTINGINSTANCE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`: Setting instance within policy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SettingDefinitionId <String>]`: Setting Definition Id
-  - `[SettingInstanceTemplateReference <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference>]`: Setting instance template reference information
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[SettingInstanceTemplateId <String>]`: Setting instance template id
+SETTINGINSTANCE \<IMicrosoftGraphDeviceManagementConfigurationSettingInstance\>: Setting instance within policy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[SettingDefinitionId \<String\>\]: Setting Definition Id
+  \[SettingInstanceTemplateReference \<IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference\>\]: Setting instance template reference information
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[SettingInstanceTemplateId \<String\>\]: Setting instance template id
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)
-
-
-
-
 

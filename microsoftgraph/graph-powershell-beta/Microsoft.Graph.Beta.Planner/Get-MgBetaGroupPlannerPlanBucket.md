@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplanbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaGroupPlannerPlanBucket
 
 ## SYNOPSIS
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,10 +22,17 @@ Get-MgBetaGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-Exp
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-list-buckets-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,10 +274,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplanbucket)
-
-
-
 

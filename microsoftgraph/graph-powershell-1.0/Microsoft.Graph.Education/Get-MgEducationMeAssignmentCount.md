@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Get-MgEducationMeAssignmentCount [-Filter <String>] [-Search <String>] [-Respons
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,11 +121,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcount)
-
-
-
-
 

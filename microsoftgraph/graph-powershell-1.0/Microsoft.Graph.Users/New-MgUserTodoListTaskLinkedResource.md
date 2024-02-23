@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserTodoListTaskLinkedResource
@@ -12,9 +11,6 @@ ms.prod: outlook
 Create a linkedResource object to associate a specified task with an item in a partner application.
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a task.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,14 +49,12 @@ Create a linkedResource object to associate a specified task with an item in a p
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a task.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-linkedresources-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	webUrl = "https://microsoft.com"
@@ -71,11 +65,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
-```
-This example shows how to use the New-MgUserTodoListTaskLinkedResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -340,35 +329,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphLinkedResource>`: linkedResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphLinkedResource\>: linkedResource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicationName <String>]`: The app name of the source that sends the linkedResource.
-  - `[DisplayName <String>]`: The title of the linkedResource.
-  - `[ExternalId <String>]`: ID of the object that is associated with this task on the third-party/partner system.
-  - `[WebUrl <String>]`: Deep link to the linkedResource.
+  \[ApplicationName \<String\>\]: The app name of the source that sends the linkedResource.
+  \[DisplayName \<String\>\]: The title of the linkedResource.
+  \[ExternalId \<String\>\]: ID of the object that is associated with this task on the third-party/partner system.
+  \[WebUrl \<String\>\]: Deep link to the linkedResource.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource)
-
-
-
 

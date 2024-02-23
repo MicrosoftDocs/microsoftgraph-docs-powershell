@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresencebyuserid
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationPresenceByUserId
 
 ## SYNOPSIS
 Get the presence information for multiple users.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,15 +30,12 @@ Get-MgBetaCommunicationPresenceByUserId
 ## DESCRIPTION
 Get the presence information for multiple users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	ids = @(
@@ -52,10 +45,6 @@ $params = @{
 }
 
 Get-MgBetaCommunicationPresenceByUserId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgBetaCommunicationPresenceByUserId Cmdlet.
-
 
 ## PARAMETERS
 
@@ -197,15 +186,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`:
+BODYPARAMETER \<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresencebyuserid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresencebyuserid)
-
-
-
 

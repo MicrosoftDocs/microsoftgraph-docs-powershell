@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttasklinkedresource
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
 Deletes a linkedResource object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,22 +30,15 @@ Remove-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMa
 ## DESCRIPTION
 Deletes a linkedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId
-```
-This example shows how to use the Remove-MgBetaUserTodoListTaskLinkedResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -251,36 +240,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of servicePrincipal
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[NotificationId \<String\>\]: The unique identifier of notification
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttasklinkedresource)
-
-
-
 

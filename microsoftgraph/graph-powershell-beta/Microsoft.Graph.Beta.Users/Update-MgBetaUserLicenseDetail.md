@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property licenseDetails in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Update-MgUserLicenseDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgBetaUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property licenseDetails in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -287,65 +300,60 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphLicenseDetails>`: licenseDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphLicenseDetails\>: licenseDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
+  \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans assigned with the license.
 Read-only, Not nullable
-    - `[AppliesTo <String>]`: The object the service plan can be assigned to.
+    \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
+    \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-    - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
+    \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
+    \[ServicePlanName \<String\>\]: The name of the service plan.
+  \[SkuId \<String\>\]: Unique identifier (GUID) for the service SKU.
 Equal to the skuId property on the related SubscribedSku object.
 Read-only
-  - `[SkuPartNumber <String>]`: Unique SKU display name.
+  \[SkuPartNumber \<String\>\]: Unique SKU display name.
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of servicePrincipal
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[NotificationId \<String\>\]: The unique identifier of notification
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
 
-SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans assigned with the license.
+SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans assigned with the license.
 Read-only, Not nullable
-  - `[AppliesTo <String>]`: The object the service plan can be assigned to.
+  \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
+  \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-  - `[ServicePlanName <String>]`: The name of the service plan.
+  \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
+  \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
-[Update-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Update-MgUserLicenseDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail)
-
-
-
-
 

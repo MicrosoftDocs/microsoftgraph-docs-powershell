@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthoverviewmetricvalue
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to metricValues for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +29,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 
 ## DESCRIPTION
 Create new navigation property to metricValues for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -205,20 +218,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsMetric>`: The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsMetric\>: The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Unit <String>]`: The unit of the user experience analytics metric.
+  \[Unit \<String\>\]: The unit of the user experience analytics metric.
 Examples: none, percentage, count, seconds, score.
-  - `[Value <Double?>]`: The value of the user experience analytics metric.
+  \[Value \<Double?\>\]: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthoverviewmetricvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthoverviewmetricvalue)
-
-
-
-
 

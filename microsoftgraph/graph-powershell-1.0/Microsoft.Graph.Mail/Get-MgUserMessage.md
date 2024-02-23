@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserMessage
@@ -12,9 +11,6 @@ ms.prod: outlook
 The messages in a mailbox or folder.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,58 +41,39 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a specific message
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get Internet message headers
-
-```powershell
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId -Property "internetMessageHeaders"
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get message body in text format
-
-```powershell
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId -Property "subject,body,bodyPreview,uniqueBody"
+
+### EXAMPLE 4
 ```
-This example shows how to use the Get-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Get MIME content
-
-```powershell
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageContent -UserId $userId -MessageId $messageId -OutFile $outFileId
-```
-This example shows how to use the Get-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -373,21 +350,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage)
-
-
-
 

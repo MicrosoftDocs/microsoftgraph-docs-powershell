@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteSectionPage
 
 ## SYNOPSIS
 Retrieve a list of page objects from the specified section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,10 +22,17 @@ Get-MgGroupOnenoteSectionPage -GroupId <String> -OnenoteSectionId <String> [-Exp
 ## DESCRIPTION
 Retrieve a list of page objects from the specified section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,10 +274,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpage)
-
-
-
 

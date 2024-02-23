@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagementReportHistoricalReport
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportHistoricalReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportHistoricalReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +31,32 @@ Get-MgDeviceManagementReportHistoricalReport -OutFile <String>
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+```
+
+$params = @{
+	name = "Name value"
+	select = @(
+		"Select value"
+	)
+	search = "Search value"
+	groupBy = @(
+		"Group By value"
+	)
+	orderBy = @(
+		"Order By value"
+	)
+	skip = 4
+	top = 3
+	filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportHistoricalReport -BodyParameter $params
 
 ## PARAMETERS
 
@@ -311,23 +333,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[Name <String>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[Name \<String\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementReportHistoricalReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportHistoricalReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport)
-
-
-
-
 

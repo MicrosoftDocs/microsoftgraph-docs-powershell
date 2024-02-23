@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment
@@ -23,13 +23,12 @@ Invoke-MgBetaMyPrivilegedRoleAssignment [-Count] [-ExpandProperty <String[]>] [-
 Invoke function my
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaMyPrivilegedRoleAssignment
 ```
-This example shows how to use the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -212,7 +211,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment)
-
-
-
 

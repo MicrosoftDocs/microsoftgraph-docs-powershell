@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 Module Guid: a629509a-ebee-475b-aa2d-5201c47a425c
 Download Help Link: {{ Update Download Link }}
@@ -214,5 +214,4 @@ Locale: en-US
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
 {{ Fill in the Description }}
-
 

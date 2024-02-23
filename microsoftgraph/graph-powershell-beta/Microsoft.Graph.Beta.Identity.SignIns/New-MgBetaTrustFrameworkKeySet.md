@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaTrustFrameworkKeySet
@@ -34,12 +33,10 @@ Create a new trustFrameworkKeySet.
 The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-post-keysets-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "keyset1"
@@ -68,18 +65,15 @@ $params = @{
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "keyset1"
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -238,68 +232,65 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTrustFrameworkKeySet>`: trustFrameworkKeySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphTrustFrameworkKeySet\>: trustFrameworkKeySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Keys <IMicrosoftGraphTrustFrameworkKey- `[]`>]`: A collection of the keys.
-    - `[D <String>]`: RSA Key - private exponent.
+  \[Keys \<IMicrosoftGraphTrustFrameworkKey\[\]\>\]: A collection of the keys.
+    \[D \<String\>\]: RSA Key - private exponent.
 Field can't be read back.
-    - `[Dp <String>]`: RSA Key - first exponent.
+    \[Dp \<String\>\]: RSA Key - first exponent.
 Field can't be read back.
-    - `[Dq <String>]`: RSA Key - second exponent.
+    \[Dq \<String\>\]: RSA Key - second exponent.
 Field can't be read back.
-    - `[E <String>]`: RSA Key - public exponent
-    - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
-    - `[K <String>]`: Symmetric Key for oct key type.
+    \[E \<String\>\]: RSA Key - public exponent
+    \[Exp \<Int64?\>\]: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+    \[K \<String\>\]: Symmetric Key for oct key type.
 Field can't be read back.
-    - `[Kid <String>]`: The unique identifier for the key.
-    - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are rsa, oct.
-    - `[N <String>]`: RSA Key - modulus
-    - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
-    - `[P <String>]`: RSA Key - first prime.
+    \[Kid \<String\>\]: The unique identifier for the key.
+    \[Kty \<String\>\]: The kty (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are rsa, oct.
+    \[N \<String\>\]: RSA Key - modulus
+    \[Nbf \<Int64?\>\]: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+    \[P \<String\>\]: RSA Key - first prime.
 Field can't be read back.
-    - `[Q <String>]`: RSA Key - second prime.
+    \[Q \<String\>\]: RSA Key - second prime.
 Field can't be read back.
-    - `[Qi <String>]`: RSA Key - Coefficient.
+    \[Qi \<String\>\]: RSA Key - Coefficient.
 Field can't be read back.
-    - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key. 
+    \[Use \<String\>\]: The use (public key use) parameter identifies the intended use of the public key. 
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
 Possible values are: sig (signature), enc (encryption)
-    - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
-    - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate RFC 5280.
+    \[X5C \<String\[\]\>\]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
+    \[X5T \<String\>\]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate RFC 5280.
 
-KEYS <IMicrosoftGraphTrustFrameworkKey- `[]`>: A collection of the keys.
-  - `[D <String>]`: RSA Key - private exponent.
+KEYS \<IMicrosoftGraphTrustFrameworkKey\[\]\>: A collection of the keys.
+  \[D \<String\>\]: RSA Key - private exponent.
 Field can't be read back.
-  - `[Dp <String>]`: RSA Key - first exponent.
+  \[Dp \<String\>\]: RSA Key - first exponent.
 Field can't be read back.
-  - `[Dq <String>]`: RSA Key - second exponent.
+  \[Dq \<String\>\]: RSA Key - second exponent.
 Field can't be read back.
-  - `[E <String>]`: RSA Key - public exponent
-  - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
-  - `[K <String>]`: Symmetric Key for oct key type.
+  \[E \<String\>\]: RSA Key - public exponent
+  \[Exp \<Int64?\>\]: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+  \[K \<String\>\]: Symmetric Key for oct key type.
 Field can't be read back.
-  - `[Kid <String>]`: The unique identifier for the key.
-  - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are rsa, oct.
-  - `[N <String>]`: RSA Key - modulus
-  - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
-  - `[P <String>]`: RSA Key - first prime.
+  \[Kid \<String\>\]: The unique identifier for the key.
+  \[Kty \<String\>\]: The kty (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are rsa, oct.
+  \[N \<String\>\]: RSA Key - modulus
+  \[Nbf \<Int64?\>\]: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+  \[P \<String\>\]: RSA Key - first prime.
 Field can't be read back.
-  - `[Q <String>]`: RSA Key - second prime.
+  \[Q \<String\>\]: RSA Key - second prime.
 Field can't be read back.
-  - `[Qi <String>]`: RSA Key - Coefficient.
+  \[Qi \<String\>\]: RSA Key - Coefficient.
 Field can't be read back.
-  - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key. 
+  \[Use \<String\>\]: The use (public key use) parameter identifies the intended use of the public key. 
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
 Possible values are: sig (signature), enc (encryption)
-  - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
-  - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate RFC 5280.
+  \[X5C \<String\[\]\>\]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
+  \[X5T \<String\>\]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate RFC 5280.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset)
-
-
-
 

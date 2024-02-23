@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectoryroleproperty
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Test-MgBetaDirectoryRoleProperty
@@ -12,15 +11,12 @@ ms.prod: directory-management
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: 1.
-Validate the prefix and suffix naming policy2.
-Validate the custom banned words policy3.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDirectoryRoleProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgDirectoryRoleProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,17 +40,24 @@ Test-MgBetaDirectoryRoleProperty
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: 1.
-Validate the prefix and suffix naming policy2.
-Validate the custom banned words policy3.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-validateproperties-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -256,18 +259,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1I0TqyfDirectoryrolesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[EntityType <String>]`: 
-  - `[MailNickname <String>]`: 
-  - `[OnBehalfOfUserId <String>]`:
+BODYPARAMETER \<IPaths1I0TqyfDirectoryrolesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[EntityType \<String\>\]: 
+  \[MailNickname \<String\>\]: 
+  \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
-[Test-MgDirectoryRoleProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgDirectoryRoleProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectoryroleproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectoryroleproperty)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to services for print
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +29,16 @@ New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-ResponseHeader
 Create new navigation property to services for print
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -192,31 +199,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrintService\>: printService
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint- `[]`>]`: Endpoints that can be used to access the service.
+  \[Endpoints \<IMicrosoftGraphPrintServiceEndpoint\[\]\>\]: Endpoints that can be used to access the service.
 Read-only.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: A human-readable display name for the endpoint.
-    - `[Uri <String>]`: The URI that can be used to access the service.
+    \[DisplayName \<String\>\]: A human-readable display name for the endpoint.
+    \[Uri \<String\>\]: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint- `[]`>: Endpoints that can be used to access the service.
+ENDPOINTS \<IMicrosoftGraphPrintServiceEndpoint\[\]\>: Endpoints that can be used to access the service.
 Read-only.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: A human-readable display name for the endpoint.
-  - `[Uri <String>]`: The URI that can be used to access the service.
+  \[DisplayName \<String\>\]: A human-readable display name for the endpoint.
+  \[Uri \<String\>\]: The URI that can be used to access the service.
 
 ## RELATED LINKS
-[New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice)
-
-
-
 

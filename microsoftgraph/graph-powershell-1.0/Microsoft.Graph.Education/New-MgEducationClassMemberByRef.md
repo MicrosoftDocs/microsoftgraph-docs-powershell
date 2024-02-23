@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassMemberByRef
 
 ## SYNOPSIS
 Add an educationUser member to an educationClass.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,25 +43,18 @@ New-MgEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParameter
 ## DESCRIPTION
 Add an educationUser member to an educationClass.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-members-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/users/13015"
 }
 
 New-MgEducationClassMemberByRef -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassMemberByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -255,31 +244,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+BODYPARAMETER \<IReferenceCreate\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  OdataId \<String\>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref)
-
-
-
 

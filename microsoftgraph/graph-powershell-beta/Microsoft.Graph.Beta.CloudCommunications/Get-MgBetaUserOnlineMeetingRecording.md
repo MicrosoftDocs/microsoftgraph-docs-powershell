@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingRecording
 
 ## SYNOPSIS
 Get recording for the navigation property onlineMeetings from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,18 +51,14 @@ Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Get recording for the navigation property onlineMeetings from users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnlineMeetingRecording Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingRecording Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -374,32 +366,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording)
-
-
-
 
