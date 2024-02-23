@@ -37,12 +37,13 @@ All connectors and applications must be removed from the connector group before 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-delete-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Remove-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
 ```
+This example shows how to use the Remove-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

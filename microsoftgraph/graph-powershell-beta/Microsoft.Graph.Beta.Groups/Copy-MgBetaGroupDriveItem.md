@@ -55,16 +55,6 @@ Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including an
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

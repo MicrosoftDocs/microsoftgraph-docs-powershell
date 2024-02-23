@@ -47,14 +47,18 @@ There are two scenarios where an app can get a contact in another user's contact
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserContact -UserId $userId
+
+```
+This example shows how to use the Get-MgUserContact Cmdlet.
+
 
 ## PARAMETERS
 

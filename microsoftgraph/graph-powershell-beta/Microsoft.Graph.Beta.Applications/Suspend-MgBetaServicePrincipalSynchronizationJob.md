@@ -39,12 +39,13 @@ All the progress, including job state, is persisted, and the job continues from 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-pause-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Suspend-MgBetaServicePrincipalSynchronizationJob Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Suspend-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
+This example shows how to use the Suspend-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

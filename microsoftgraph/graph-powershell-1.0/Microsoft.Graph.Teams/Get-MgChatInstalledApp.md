@@ -42,20 +42,28 @@ Get-MgChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 Get an app installed in a chat.
 
 ## EXAMPLES
+### Example 1 : Get the app installed in the specified chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Teams
-```
+This example will### example 1 : get the app installed in the specified chat
 
-Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id"
+### Example 2: Get the set of resource-specific permissions consented for the app installed in the specified chat
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id" 
+
+```
+This example will get the set of resource-specific permissions consented for the app installed in the specified chat
+
 
 ## PARAMETERS
 

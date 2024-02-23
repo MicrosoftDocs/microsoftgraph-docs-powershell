@@ -61,11 +61,11 @@ Create a new section group in the specified notebook.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sectiongroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 $params = @{
 	displayName = "Section group name"
@@ -73,6 +73,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserOnenoteNotebookSectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

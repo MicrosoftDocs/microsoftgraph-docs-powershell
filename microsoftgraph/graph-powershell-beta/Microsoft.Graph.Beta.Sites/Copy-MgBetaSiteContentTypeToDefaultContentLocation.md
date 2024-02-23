@@ -57,11 +57,11 @@ The file can then be added as a default file or template via a POST operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	sourceFile = @{
@@ -74,6 +74,10 @@ $params = @{
 }
 
 Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgBetaSiteContentTypeToDefaultContentLocation Cmdlet.
+
 
 ## PARAMETERS
 

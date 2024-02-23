@@ -26,14 +26,18 @@ Get-MgBetaUserJoinedTeam -UserId <String> [-ExpandProperty <String[]>] [-Filter 
 Get the teams in Microsoft Teams that the user is a direct member of.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserJoinedTeam -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserJoinedTeam Cmdlet.
+
 
 ## PARAMETERS
 

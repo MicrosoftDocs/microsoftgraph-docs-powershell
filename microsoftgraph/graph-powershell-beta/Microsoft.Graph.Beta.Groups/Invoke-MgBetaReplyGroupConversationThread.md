@@ -57,18 +57,16 @@ You can specify both the parent conversation and thread in the request, or, you 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-reply-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Include a file attachment
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	Post = @{
 		Body = @{
 			ContentType = "text"
-			Content = "Which quarter does that file cover?
-See my attachment."
+			Content = "Which quarter does that file cover? See my attachment."
 		}
 		Attachments = @(
 			@{
@@ -81,11 +79,15 @@ See my attachment."
 }
 
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Include an item attachment
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	Post = @{
@@ -107,11 +109,15 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Include a reference attachment
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	Post = @{
@@ -133,6 +139,11 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

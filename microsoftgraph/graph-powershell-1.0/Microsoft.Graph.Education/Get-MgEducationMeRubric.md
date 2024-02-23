@@ -47,13 +47,17 @@ Only teachers and students can perform this operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationrubric-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationMeRubric
+
+```
+This example shows how to use the Get-MgEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

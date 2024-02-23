@@ -55,18 +55,16 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Include a file attachment
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
 		Body = @{
 			ContentType = "text"
-			Content = "Which quarter does that file cover?
-See my attachment."
+			Content = "Which quarter does that file cover? See my attachment."
 		}
 		Attachments = @(
 			@{
@@ -79,11 +77,15 @@ See my attachment."
 }
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Include an item attachment
+
+```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -105,11 +107,15 @@ $params = @{
 }
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Include a reference attachment
+
+```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -131,6 +137,11 @@ $params = @{
 }
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

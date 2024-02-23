@@ -38,16 +38,6 @@ A custom icon (favicon) to replace a default Microsoft product favicon on a Micr
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers

@@ -37,12 +37,13 @@ Delete the specified audioRoutingGroup.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-delete-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Remove-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Remove-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId
 ```
+This example shows how to use the Remove-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

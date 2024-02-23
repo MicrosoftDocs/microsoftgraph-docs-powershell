@@ -45,13 +45,17 @@ To recover the data, you can recreate the schema extension definition with the s
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 Remove-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
+
+```
+This example shows how to use the Remove-MgBetaSchemaExtension Cmdlet.
+
 
 ## PARAMETERS
 

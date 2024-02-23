@@ -33,13 +33,17 @@ Make sure you do not specify the same user or group in the accepted senders and 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-acceptedsenders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupAcceptedSender -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupAcceptedSender Cmdlet.
+
 
 ## PARAMETERS
 
