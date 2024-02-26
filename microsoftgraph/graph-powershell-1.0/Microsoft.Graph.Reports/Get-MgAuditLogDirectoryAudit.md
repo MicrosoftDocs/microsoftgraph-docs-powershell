@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogdirectoryaudit
 schema: 2.0.0
-ms.subservice: entra-id-reports
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgAuditLogDirectoryAudit
