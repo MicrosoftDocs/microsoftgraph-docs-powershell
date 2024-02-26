@@ -1014,7 +1014,7 @@ Not nullable.
     - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
     - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
     - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-    - `[Name <String>]`: The domain name; for example, contoso.onmicrosoft.com.
+    - `[Name <String>]`: The domain name; for example, contoso.com\`.
     - `[Type <String>]`: For example, Managed.
 
 BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
@@ -1270,7 +1270,7 @@ Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-  - `[Name <String>]`: The domain name; for example, contoso.onmicrosoft.com.
+  - `[Name <String>]`: The domain name; for example, contoso.com\`.
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS

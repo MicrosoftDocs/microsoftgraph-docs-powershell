@@ -36,6 +36,37 @@ Get-MgDeviceManagementReportPolicyNonComplianceMetadata -OutFile <String>
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	name = "Name value"
+	select = @(
+		"Select value"
+	)
+	search = "Search value"
+	groupBy = @(
+		"Group By value"
+	)
+	orderBy = @(
+		"Order By value"
+	)
+	skip = 4
+	top = 3
+	sessionId = "Session Id value"
+	filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportPolicyNonComplianceMetadata -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportPolicyNonComplianceMetadata Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,7 +373,6 @@ BODYPARAMETER `<IPaths108Pcs6DevicemanagementReportsMicrosoftGraphGetpolicynonco
 [Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportpolicynoncompliancemetadata](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportpolicynoncompliancemetadata)
-
 
 
 

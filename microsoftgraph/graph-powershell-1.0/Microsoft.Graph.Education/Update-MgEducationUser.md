@@ -391,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mail
-The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+The SMTP address for the user, for example, jeff@contoso.com.
 Read-Only.
 Supports $filter.
 
@@ -923,14 +923,14 @@ If this property isn't specified during create, it defaults to true.
   - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
   - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
+  - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: Unique identifier for the category.
   - `[ClassId <String>]`: Class to which this assignment belongs.
-  - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+  - `[CloseDateTime <DateTime?>]`: Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -946,7 +946,7 @@ For example, if a user changes their display name, the API might show the new va
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: Name of the assignment.
-  - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
+  - `[DueDateTime <DateTime?>]`: Date when the students assignment is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -962,12 +962,12 @@ Read-only.
     - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[ModuleUrl <String>]`: 
+  - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
   - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
-  - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
+  - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1002,7 +1002,7 @@ Read-only.
       - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
   - `[Status <String>]`: educationAssignmentStatus
-  - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade. 
+  - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1061,14 +1061,14 @@ If this property isn't specified during create, it defaults to true.
     - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
     - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
+    - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: Unique identifier for the category.
     - `[ClassId <String>]`: Class to which this assignment belongs.
-    - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+    - `[CloseDateTime <DateTime?>]`: Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1084,7 +1084,7 @@ For example, if a user changes their display name, the API might show the new va
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Name of the assignment.
-    - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
+    - `[DueDateTime <DateTime?>]`: Date when the students assignment is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -1100,12 +1100,12 @@ Read-only.
       - `[Content <String>]`: 
       - `[ContentType <String>]`: bodyType
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ModuleUrl <String>]`: 
+    - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
     - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
-    - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
+    - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -1140,7 +1140,7 @@ Read-only.
         - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
     - `[Status <String>]`: educationAssignmentStatus
-    - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade. 
+    - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -1207,7 +1207,7 @@ Nullable.
     - `[ExternalId <String>]`: ID of the class from the syncing system.
     - `[ExternalName <String>]`: Name of the class in the syncing system.
     - `[ExternalSource <String>]`: educationExternalSource
-    - `[ExternalSourceDetail <String>]`: The name of the external source this resources was generated from.
+    - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
     - `[Grade <String>]`: Grade level of the class.
     - `[Group <IMicrosoftGraphGroup>]`: group
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2020,19 +2020,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
                 - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-                - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+                - `[ContentUrl <String>]`: The URL for the content of the attachment.
                 - `[Id <String>]`: Read-only.
-Unique id of the attachment.
-                - `[Name <String>]`: Name of the attachment.
+The unique id of the attachment.
+                - `[Name <String>]`: The name of the attachment.
                 - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-                - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+                - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3693,6 +3692,7 @@ Nullable.
             - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
               - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -3721,20 +3721,24 @@ We recommend using the native employeeHireDate property to set and update hire d
           - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
 It may contain multiple items with the same signInType value.
-Returned only on $select.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-            - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+Returned only on $select. 
+Supports $filter (eq) with limitations.
+            - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
             - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
+64 character limit.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
-64 character limit.Supports $filter.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
             - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
-Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
+Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
@@ -4145,7 +4149,7 @@ Read-only
             - `[SkuPartNumber <String>]`: Unique SKU display name.
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
-          - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+          - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
@@ -5622,7 +5626,7 @@ Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -5770,15 +5774,18 @@ Nullable.
     - `[MailNickname <String>]`: Mail name for sending email to all members, if this is enabled.
     - `[Members <IMicrosoftGraphEducationUser- `[]`>]`: All users in the class.
 Nullable.
-    - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: 
+    - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: All modules in the class.
+Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[IsPinned <Boolean?>]`: 
+      - `[Description <String>]`: Description of the module.
+      - `[DisplayName <String>]`: Name of the module.
+      - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: 
+      - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -5844,7 +5851,7 @@ Supports $filter and $orderby.
   - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
   - `[GivenName <String>]`: The given name (first name) of the user.
 Supports $filter.
-  - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+  - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Read-Only.
 Supports $filter.
   - `[MailNickname <String>]`: The mail alias for the user.
@@ -5957,11 +5964,11 @@ If this property isn't specified during create, it defaults to true.
     - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
     - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
+    - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
     - `[ClassId <String>]`: Class to which this assignment belongs.
-    - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+    - `[CloseDateTime <DateTime?>]`: Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -5977,7 +5984,7 @@ For example, if a user changes their display name, the API might show the new va
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Name of the assignment.
-    - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
+    - `[DueDateTime <DateTime?>]`: Date when the students assignment is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -5988,12 +5995,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Content <String>]`: 
       - `[ContentType <String>]`: bodyType
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ModuleUrl <String>]`: 
+    - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
     - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
-    - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
+    - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -6028,7 +6035,7 @@ Read-only.
         - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
     - `[Status <String>]`: educationAssignmentStatus
-    - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade. 
+    - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -6067,7 +6074,7 @@ Read-only.
   - `[ExternalId <String>]`: ID of the class from the syncing system.
   - `[ExternalName <String>]`: Name of the class in the syncing system.
   - `[ExternalSource <String>]`: educationExternalSource
-  - `[ExternalSourceDetail <String>]`: The name of the external source this resources was generated from.
+  - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
   - `[Grade <String>]`: Grade level of the class.
   - `[Group <IMicrosoftGraphGroup>]`: group
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6891,19 +6898,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
               - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-              - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+              - `[ContentUrl <String>]`: The URL for the content of the attachment.
               - `[Id <String>]`: Read-only.
-Unique id of the attachment.
-              - `[Name <String>]`: Name of the attachment.
+The unique id of the attachment.
+              - `[Name <String>]`: The name of the attachment.
               - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-              - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+              - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8564,6 +8570,7 @@ Nullable.
           - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
             - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -8592,20 +8599,24 @@ We recommend using the native employeeHireDate property to set and update hire d
         - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
 It may contain multiple items with the same signInType value.
-Returned only on $select.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-          - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+Returned only on $select. 
+Supports $filter (eq) with limitations.
+          - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
+64 character limit.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
-64 character limit.Supports $filter.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
-Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
+Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
         - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
@@ -9016,7 +9027,7 @@ Read-only
           - `[SkuPartNumber <String>]`: Unique SKU display name.
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
-        - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+        - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
@@ -10493,7 +10504,7 @@ Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[State <String>]`: 
-    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -10667,7 +10678,7 @@ Supports $filter and $orderby.
     - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
     - `[GivenName <String>]`: The given name (first name) of the user.
 Supports $filter.
-    - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+    - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Read-Only.
 Supports $filter.
     - `[MailNickname <String>]`: The mail alias for the user.
@@ -10777,15 +10788,18 @@ The verified domains for the tenant can be accessed from the verifiedDomains pro
 Supports $filter and $orderby.
     - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
-  - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: 
+  - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: All modules in the class.
+Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[IsPinned <Boolean?>]`: 
+    - `[Description <String>]`: Description of the module.
+    - `[DisplayName <String>]`: Name of the module.
+    - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: 
+    - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -11007,11 +11021,11 @@ If this property isn't specified during create, it defaults to true.
       - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
       - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
+      - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
       - `[ClassId <String>]`: Class to which this assignment belongs.
-      - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+      - `[CloseDateTime <DateTime?>]`: Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -11022,7 +11036,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[DisplayName <String>]`: Name of the assignment.
-      - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
+      - `[DueDateTime <DateTime?>]`: Date when the students assignment is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -11033,12 +11047,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Content <String>]`: 
         - `[ContentType <String>]`: bodyType
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[ModuleUrl <String>]`: 
+      - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
       - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
-      - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
+      - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -11073,7 +11087,7 @@ Read-only.
           - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
       - `[Status <String>]`: educationAssignmentStatus
-      - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade. 
+      - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -11112,7 +11126,7 @@ Read-only.
     - `[ExternalId <String>]`: ID of the class from the syncing system.
     - `[ExternalName <String>]`: Name of the class in the syncing system.
     - `[ExternalSource <String>]`: educationExternalSource
-    - `[ExternalSourceDetail <String>]`: The name of the external source this resources was generated from.
+    - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
     - `[Grade <String>]`: Grade level of the class.
     - `[Group <IMicrosoftGraphGroup>]`: group
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11923,19 +11937,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
                 - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-                - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+                - `[ContentUrl <String>]`: The URL for the content of the attachment.
                 - `[Id <String>]`: Read-only.
-Unique id of the attachment.
-                - `[Name <String>]`: Name of the attachment.
+The unique id of the attachment.
+                - `[Name <String>]`: The name of the attachment.
                 - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-                - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+                - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13596,6 +13609,7 @@ Nullable.
             - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
               - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -13624,20 +13638,24 @@ We recommend using the native employeeHireDate property to set and update hire d
           - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
 It may contain multiple items with the same signInType value.
-Returned only on $select.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-            - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+Returned only on $select. 
+Supports $filter (eq) with limitations.
+            - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
             - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
+64 character limit.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
-64 character limit.Supports $filter.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
             - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
-Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
+Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
@@ -14048,7 +14066,7 @@ Read-only
             - `[SkuPartNumber <String>]`: Unique SKU display name.
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
-          - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+          - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
@@ -15520,7 +15538,7 @@ Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -15694,7 +15712,7 @@ Supports $filter and $orderby.
       - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
       - `[GivenName <String>]`: The given name (first name) of the user.
 Supports $filter.
-      - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+      - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Read-Only.
 Supports $filter.
       - `[MailNickname <String>]`: The mail alias for the user.
@@ -15764,15 +15782,18 @@ The verified domains for the tenant can be accessed from the verifiedDomains pro
 Supports $filter and $orderby.
       - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
-    - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: 
+    - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: All modules in the class.
+Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[IsPinned <Boolean?>]`: 
+      - `[Description <String>]`: Description of the module.
+      - `[DisplayName <String>]`: Name of the module.
+      - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: 
+      - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -15850,11 +15871,11 @@ If this property isn't specified during create, it defaults to true.
     - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
     - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
+    - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
     - `[ClassId <String>]`: Class to which this assignment belongs.
-    - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+    - `[CloseDateTime <DateTime?>]`: Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -15870,7 +15891,7 @@ For example, if a user changes their display name, the API might show the new va
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Name of the assignment.
-    - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
+    - `[DueDateTime <DateTime?>]`: Date when the students assignment is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -15881,12 +15902,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Content <String>]`: 
       - `[ContentType <String>]`: bodyType
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ModuleUrl <String>]`: 
+    - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
     - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
-    - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
+    - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -15921,7 +15942,7 @@ Read-only.
         - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
     - `[Status <String>]`: educationAssignmentStatus
-    - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade. 
+    - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -15960,7 +15981,7 @@ Read-only.
   - `[ExternalId <String>]`: ID of the class from the syncing system.
   - `[ExternalName <String>]`: Name of the class in the syncing system.
   - `[ExternalSource <String>]`: educationExternalSource
-  - `[ExternalSourceDetail <String>]`: The name of the external source this resources was generated from.
+  - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
   - `[Grade <String>]`: Grade level of the class.
   - `[Group <IMicrosoftGraphGroup>]`: group
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16784,19 +16805,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
               - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-              - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+              - `[ContentUrl <String>]`: The URL for the content of the attachment.
               - `[Id <String>]`: Read-only.
-Unique id of the attachment.
-              - `[Name <String>]`: Name of the attachment.
+The unique id of the attachment.
+              - `[Name <String>]`: The name of the attachment.
               - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-              - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+              - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18457,6 +18477,7 @@ Nullable.
           - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
             - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -18485,20 +18506,24 @@ We recommend using the native employeeHireDate property to set and update hire d
         - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
 It may contain multiple items with the same signInType value.
-Returned only on $select.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-          - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+Returned only on $select. 
+Supports $filter (eq) with limitations.
+          - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
+64 character limit.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
-64 character limit.Supports $filter.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
-Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
+Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
         - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
@@ -18909,7 +18934,7 @@ Read-only
           - `[SkuPartNumber <String>]`: Unique SKU display name.
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
-        - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+        - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
@@ -20386,7 +20411,7 @@ Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[State <String>]`: 
-    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -20560,7 +20585,7 @@ Supports $filter and $orderby.
     - `[ExternalSourceDetail <String>]`: The name of the external source this resource was generated from.
     - `[GivenName <String>]`: The given name (first name) of the user.
 Supports $filter.
-    - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+    - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Read-Only.
 Supports $filter.
     - `[MailNickname <String>]`: The mail alias for the user.
@@ -20670,15 +20695,18 @@ The verified domains for the tenant can be accessed from the verifiedDomains pro
 Supports $filter and $orderby.
     - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
-  - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: 
+  - `[Modules <IMicrosoftGraphEducationModule- `[]`>]`: All modules in the class.
+Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[IsPinned <Boolean?>]`: 
+    - `[Description <String>]`: Description of the module.
+    - `[DisplayName <String>]`: Name of the module.
+    - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: 
+    - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -21405,19 +21433,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-        - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+        - `[ContentUrl <String>]`: The URL for the content of the attachment.
         - `[Id <String>]`: Read-only.
-Unique id of the attachment.
-        - `[Name <String>]`: Name of the attachment.
+The unique id of the attachment.
+        - `[Name <String>]`: The name of the attachment.
         - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-        - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+        - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
       - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23134,6 +23161,7 @@ Nullable.
     - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
       - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -23162,20 +23190,24 @@ We recommend using the native employeeHireDate property to set and update hire d
   - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
 It may contain multiple items with the same signInType value.
-Returned only on $select.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-    - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+Returned only on $select. 
+Supports $filter (eq) with limitations.
+    - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
+64 character limit.
 The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or .
-64 character limit.Supports $filter.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
-Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
+Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
   - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
@@ -23517,7 +23549,7 @@ Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -24065,7 +24097,7 @@ Read-only
     - `[SkuPartNumber <String>]`: Unique SKU display name.
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
-  - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
+  - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.

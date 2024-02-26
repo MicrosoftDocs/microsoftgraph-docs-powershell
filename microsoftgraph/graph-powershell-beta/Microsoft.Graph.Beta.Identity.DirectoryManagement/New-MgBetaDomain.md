@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsInitial
-true if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com).
+true if this is the initial domain created by Microsoft Online Services (contoso.com).
 There is only one initial domain per company.
 Not nullable
 
@@ -528,7 +528,7 @@ Not nullable
   - `[IsDefault <Boolean?>]`: true if this is the default domain that is used for user creation.
 There is only one default domain per company.
 Not nullable
-  - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com).
+  - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (contoso.com).
 There is only one initial domain per company.
 Not nullable
   - `[IsRoot <Boolean?>]`: true if the domain is a verified root domain.

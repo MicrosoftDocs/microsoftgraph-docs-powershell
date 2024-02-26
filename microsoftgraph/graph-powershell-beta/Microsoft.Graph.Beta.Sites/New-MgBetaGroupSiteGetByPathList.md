@@ -2005,8 +2005,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
           - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-          - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+          - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
           - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -2016,7 +2016,7 @@ Nullable.
 Default is false.
           - `[Importance <String>]`: importance
           - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -2305,19 +2305,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
             - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-            - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+            - `[ContentUrl <String>]`: The URL for the content of the attachment.
             - `[Id <String>]`: Read-only.
-Unique id of the attachment.
+The unique id of the attachment.
             - `[Name <String>]`: Name of the attachment.
             - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-            - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+            - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3756,6 +3755,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
           - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -3780,20 +3780,24 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
       - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account.
-It may contain multiple items with the same signInType value.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-        - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+It may contain multiple items with the same signInType value. 
+Supports $filter (eq) with limitations.
+        - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
         - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
-The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
 64 character limit.
+The combination of issuer and issuerAssignedId must be unique within the organization.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
         - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -4121,7 +4125,7 @@ Supported only on the Get group API (GET /groups/{ID}).
         - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[State <String>]`: 
-        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -9423,8 +9427,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-        - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+        - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -9434,7 +9438,7 @@ Nullable.
 Default is false.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -9723,19 +9727,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-          - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+          - `[ContentUrl <String>]`: The URL for the content of the attachment.
           - `[Id <String>]`: Read-only.
-Unique id of the attachment.
+The unique id of the attachment.
           - `[Name <String>]`: Name of the attachment.
           - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-          - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+          - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11841,6 +11844,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
         - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -11865,20 +11869,24 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account.
-It may contain multiple items with the same signInType value.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-      - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+It may contain multiple items with the same signInType value. 
+Supports $filter (eq) with limitations.
+      - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
-The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
 64 character limit.
+The combination of issuer and issuerAssignedId must be unique within the organization.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -12206,7 +12214,7 @@ Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -17282,8 +17290,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
       - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-      - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+      - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
       - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -17293,7 +17301,7 @@ Nullable.
 Default is false.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -17582,19 +17590,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-        - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+        - `[ContentUrl <String>]`: The URL for the content of the attachment.
         - `[Id <String>]`: Read-only.
-Unique id of the attachment.
+The unique id of the attachment.
         - `[Name <String>]`: Name of the attachment.
         - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-        - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+        - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
       - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19735,6 +19742,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
       - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -19759,20 +19767,24 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
   - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account.
-It may contain multiple items with the same signInType value.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-    - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+It may contain multiple items with the same signInType value. 
+Supports $filter (eq) with limitations.
+    - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
-The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
 64 character limit.
+The combination of issuer and issuerAssignedId must be unique within the organization.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
   - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -20100,7 +20112,7 @@ Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[State <String>]`: 
-    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -24742,8 +24754,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-        - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+        - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -24753,7 +24765,7 @@ Nullable.
 Default is false.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -25042,19 +25054,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-          - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+          - `[ContentUrl <String>]`: The URL for the content of the attachment.
           - `[Id <String>]`: Read-only.
-Unique id of the attachment.
+The unique id of the attachment.
           - `[Name <String>]`: Name of the attachment.
           - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-          - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+          - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -27138,6 +27149,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
         - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -27162,20 +27174,24 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account.
-It may contain multiple items with the same signInType value.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-      - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+It may contain multiple items with the same signInType value. 
+Supports $filter (eq) with limitations.
+      - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
-The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
 64 character limit.
+The combination of issuer and issuerAssignedId must be unique within the organization.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -27503,7 +27519,7 @@ Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -32251,8 +32267,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-        - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+        - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -32262,7 +32278,7 @@ Nullable.
 Default is false.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -32551,19 +32567,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-          - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+          - `[ContentUrl <String>]`: The URL for the content of the attachment.
           - `[Id <String>]`: Read-only.
-Unique id of the attachment.
+The unique id of the attachment.
           - `[Name <String>]`: Name of the attachment.
           - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-          - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+          - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -34650,6 +34665,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
         - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -34674,20 +34690,24 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account.
-It may contain multiple items with the same signInType value.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-      - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+It may contain multiple items with the same signInType value. 
+Supports $filter (eq) with limitations.
+      - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
-The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
 64 character limit.
+The combination of issuer and issuerAssignedId must be unique within the organization.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
       - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -35015,7 +35035,7 @@ Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -39717,8 +39737,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
       - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-      - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+      - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
       - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -39728,7 +39748,7 @@ Nullable.
 Default is false.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -40017,19 +40037,18 @@ If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment.
 It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
-        - `[ContentUrl <String>]`: URL for the content of the attachment.
-Supported protocols: http, https, file and data.
+        - `[ContentUrl <String>]`: The URL for the content of the attachment.
         - `[Id <String>]`: Read-only.
-Unique id of the attachment.
+The unique id of the attachment.
         - `[Name <String>]`: Name of the attachment.
         - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
-The property is specifically used to attribute a Teams message card to the specified app.
-        - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
+The property is used to attribute a Teams message card to the specified app.
+        - `[ThumbnailUrl <String>]`: The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
-When the user clicks the image, the channel would open the document.
+When the user selects the image, the channel would open the document.
       - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -42170,6 +42189,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[SiteCollection <IMicrosoftGraphSiteCollection>]`: siteCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DataLocationCode <String>]`: The geographic region code for where this site collection resides.
+Only present for multi-geo tenants.
 Read-only.
       - `[Hostname <String>]`: The hostname for the site collection.
 Read-only.
@@ -42194,20 +42214,24 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
   - `[Identities <IMicrosoftGraphObjectIdentity- `[]`>]`: Represents the identities that can be used to sign in to this user account.
 An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account.
-It may contain multiple items with the same signInType value.
-Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
-    - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
+It may contain multiple items with the same signInType value. 
+Supports $filter (eq) with limitations.
+    - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
+For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
-The combination of issuer and issuerAssignedId must be unique within the organization.
-Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter.
 64 character limit.
+The combination of issuer and issuerAssignedId must be unique within the organization.
+Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress (or a custom string that starts with emailAddress like emailAddress1), issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with an alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or _  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
     - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName.
-federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer.
-Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object.
-The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
+federated represents a unique identifier for a user from an issuer that can be in any format chosen by the issuer.
+Setting or updating a userPrincipalName identity updates the value of the userPrincipalName property on the user object.
+The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, are performed when setting or updating a userPrincipalName identity.
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
-This property can also be set to any custom string.
+This property can also be set to any custom string. 
+For more information about filtering behavior for this property, see Filtering on the identities property of a user.
   - `[ImAddresses <String- `[]`>]`: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -42535,7 +42559,7 @@ Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[State <String>]`: 
-    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'.
+    - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.com'.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).

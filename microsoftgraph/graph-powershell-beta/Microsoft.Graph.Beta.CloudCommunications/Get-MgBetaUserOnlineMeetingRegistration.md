@@ -9,7 +9,7 @@ ms.prod: cloud-communications
 # Get-MgBetaUserOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## SYNTAX
 
@@ -28,10 +28,10 @@ Get-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalmeetingregistration-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistration Cmdlet

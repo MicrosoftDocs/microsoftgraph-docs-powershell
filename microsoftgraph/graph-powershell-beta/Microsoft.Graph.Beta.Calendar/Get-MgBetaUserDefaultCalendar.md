@@ -10,7 +10,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The calendar can be one for a user,or the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar:
 
 > [!NOTE]
@@ -33,7 +33,7 @@ Get-MgBetaUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <Strin
 
 ## DESCRIPTION
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The calendar can be one for a user,or the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES

@@ -36,6 +36,37 @@ Get-MgDeviceManagementReportDeviceManagementIntentSettingReport -OutFile <String
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	name = "Name value"
+	select = @(
+		"Select value"
+	)
+	search = "Search value"
+	groupBy = @(
+		"Group By value"
+	)
+	orderBy = @(
+		"Order By value"
+	)
+	skip = 4
+	top = 3
+	sessionId = "Session Id value"
+	filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportDeviceManagementIntentSettingReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportDeviceManagementIntentSettingReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,7 +373,6 @@ BODYPARAMETER `<IPathsTbh0H2DevicemanagementReportsMicrosoftGraphGetdevicemanage
 [Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport)
-
 
 
 

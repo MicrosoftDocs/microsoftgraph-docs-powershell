@@ -249,8 +249,8 @@ Accept wildcard characters: False
 ```
 
 ### -CancelledOccurrences
-Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
 
 ```yaml
 Type: String[]
@@ -469,7 +469,7 @@ Accept wildcard characters: False
 
 ### -Instances
 The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -1237,8 +1237,8 @@ Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String>]`: A property value.
-  - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+  - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -1250,7 +1250,7 @@ Read-only.
 Default is false.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -1432,8 +1432,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[BodyPreview <String>]`: The preview of the message associated with the event.
 It is in text format.
     - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-    - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+    - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
     - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -1445,7 +1445,7 @@ Read-only.
 Default is false.
     - `[Importance <String>]`: importance
     - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -1728,8 +1728,8 @@ Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String>]`: A property value.
-  - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+  - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -1741,7 +1741,7 @@ Read-only.
 Default is false.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -1870,7 +1870,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 INSTANCES <IMicrosoftGraphEvent- `[]`>: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -1994,8 +1994,8 @@ Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String>]`: A property value.
-  - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
+  - `[CancelledOccurrences <String- `[]`>]`: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
+Instances in a recurring series that are canceled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[ExceptionOccurrences <IMicrosoftGraphEvent- `[]`>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -2007,7 +2007,7 @@ Read-only.
 Default is false.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.

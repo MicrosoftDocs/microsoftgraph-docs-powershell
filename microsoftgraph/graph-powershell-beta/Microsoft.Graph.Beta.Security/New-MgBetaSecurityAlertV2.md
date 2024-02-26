@@ -543,7 +543,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemTags
-.
+The system tags associated with the alert
 
 ```yaml
 Type: String[]
@@ -710,7 +710,7 @@ Values are free-form.
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
-  - `[SystemTags <String- `[]`>]`: 
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert
   - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.

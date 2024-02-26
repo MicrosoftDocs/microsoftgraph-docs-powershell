@@ -9,7 +9,7 @@ ms.prod: intune
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new windowsAppX object.
+Create a new managedAndroidStoreApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new windowsAppX object.
+Create a new managedAndroidStoreApp object.
 
 ## PARAMETERS
 

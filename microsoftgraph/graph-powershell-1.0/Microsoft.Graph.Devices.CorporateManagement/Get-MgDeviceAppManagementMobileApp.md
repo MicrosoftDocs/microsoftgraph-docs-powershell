@@ -9,7 +9,7 @@ ms.prod: intune
 # Get-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Read properties and relationships of the windowsMobileMSI object.
+Read properties and relationships of the macOSMicrosoftEdgeApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsMobileMSI object.
+Read properties and relationships of the macOSMicrosoftEdgeApp object.
 
 ## PARAMETERS
 

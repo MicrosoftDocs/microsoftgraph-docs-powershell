@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Remove-MgEducationClassModuleResource
 
 ## SYNOPSIS
-Delete navigation property resources for education
+Delete a specific educationModuleResource attached to a module.
+Only teachers in the class can remove a resource.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
@@ -31,7 +33,11 @@ Remove-MgEducationClassModuleResource -InputObject <IEducationIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property resources for education
+Delete a specific educationModuleResource attached to a module.
+Only teachers in the class can remove a resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-delete-permissions.md)]
 
 ## PARAMETERS
 

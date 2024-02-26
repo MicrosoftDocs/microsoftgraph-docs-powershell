@@ -54,6 +54,24 @@ Create a new userSource object associated with an eDiscovery custodian.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-post-usersources-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	email = "admin@contoso.com"
+	includedSources = "mailbox, site"
+}
+
+New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -440,7 +458,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource)
-
 
 
 

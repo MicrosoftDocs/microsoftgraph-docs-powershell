@@ -56,6 +56,24 @@ Update the properties of an ediscoveryReviewTag object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewtag-update-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "My tag API 2"
+	description = "Use Graph API to create tags (updated)"
+}
+
+Update-MgBetaSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewTagId $ediscoveryReviewTagId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseTag Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -514,7 +532,6 @@ Read-only.
 [Update-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag)
-
 
 
 

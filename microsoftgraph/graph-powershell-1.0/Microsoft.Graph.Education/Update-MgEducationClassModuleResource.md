@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgEducationClassModuleResource
 
 ## SYNOPSIS
-Update the navigation property resources in education
+Update a resource in a module.
+Only teachers can perform this operation.
+The only one property that can be updated is displayName, for all resource types.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
@@ -46,7 +49,12 @@ Update-MgEducationClassModuleResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property resources in education
+Update a resource in a module.
+Only teachers can perform this operation.
+The only one property that can be updated is displayName, for all resource types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-update-permissions.md)]
 
 ## PARAMETERS
 

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgEducationClassModuleResource
 
 ## SYNOPSIS
-Create new navigation property to resources for education
+Create a resource in a module.
+Only teachers can perform this operation.
+You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
@@ -45,7 +48,12 @@ New-MgEducationClassModuleResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to resources for education
+Create a resource in a module.
+Only teachers can perform this operation.
+You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-post-resources-permissions.md)]
 
 ## PARAMETERS
 

@@ -9,7 +9,7 @@ ms.prod: industry-data-etl
 # Remove-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Delete an inboundFileFlow object.
+Delete an inboundFlow object.
 
 ## SYNTAX
 
@@ -28,10 +28,10 @@ Remove-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete an inboundFileFlow object.
+Delete an inboundFlow object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-delete-permissions.md)]
 
 ## PARAMETERS
 

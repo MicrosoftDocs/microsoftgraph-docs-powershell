@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgEducationClassModule
 
 ## SYNOPSIS
-Create new navigation property to modules for education
+Create a new module in a class.
+Only teachers in a class can create a module.
+Modules start in the draft state, which means that students can't see the modules until publication.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModule?view=graph-powershell-beta)
@@ -48,7 +51,12 @@ New-MgEducationClassModule -InputObject <IEducationIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to modules for education
+Create a new module in a class.
+Only teachers in a class can create a module.
+Modules start in the draft state, which means that students can't see the modules until publication.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-module-permissions.md)]
 
 ## PARAMETERS
 
@@ -100,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description of the module.
 
 ```yaml
 Type: String
@@ -115,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Name of the module.
 
 ```yaml
 Type: String
@@ -192,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsPinned
-.
+Indicates whether the module is pinned or not.
 
 ```yaml
 Type: SwitchParameter
@@ -238,7 +246,9 @@ Accept wildcard characters: False
 ```
 
 ### -Resources
-.
+Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
@@ -345,11 +355,13 @@ For example, if a user changes their display name, the API might show the new va
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsPinned <Boolean?>]`: 
+  - `[Description <String>]`: Description of the module.
+  - `[DisplayName <String>]`: Name of the module.
+  - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: 
+  - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -396,7 +408,9 @@ For example, if a user changes their display name, the API might show the new va
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES <IMicrosoftGraphEducationModuleResource- `[]`>: .
+RESOURCES <IMicrosoftGraphEducationModuleResource- `[]`>: Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource

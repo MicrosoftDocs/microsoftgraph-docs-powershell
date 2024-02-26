@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+A rich text string describing the incident
 
 ```yaml
 Type: String
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemTags
-.
+The system tags associated with the incident
 
 ```yaml
 Type: String[]
@@ -604,7 +604,7 @@ Free editable text.
   - `[Comments <IMicrosoftGraphSecurityAlertComment- `[]`>]`: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[CreatedDateTime <DateTime?>]`: Time when the incident was first created.
   - `[CustomTags <String- `[]`>]`: Array of custom tags associated with an incident.
-  - `[Description <String>]`: 
+  - `[Description <String>]`: A rich text string describing the incident
   - `[Determination <String>]`: alertDetermination
   - `[DisplayName <String>]`: The incident name.
   - `[IncidentWebUrl <String>]`: The URL for the incident page in the Microsoft 365 Defender portal.
@@ -614,7 +614,7 @@ Free editable text.
 In such a case, the status property is redirected.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
-  - `[SystemTags <String- `[]`>]`: 
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the incident
   - `[TenantId <String>]`: The Microsoft Entra tenant in which the alert was created.
 
 COMMENTS <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.

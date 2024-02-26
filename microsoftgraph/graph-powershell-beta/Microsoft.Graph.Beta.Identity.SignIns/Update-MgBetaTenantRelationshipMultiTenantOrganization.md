@@ -9,10 +9,7 @@ ms.prod: identity-and-sign-in
 # Update-MgBetaTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
-Create a new multi-tenant organization.
-By default, the creator tenant becomes an owner tenant upon successful creation.
-Only owner tenants can manage a multi-tenant organization.
-To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
+Update the properties of a multi-tenant organization.
 
 ## SYNTAX
 
@@ -34,13 +31,10 @@ Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create a new multi-tenant organization.
-By default, the creator tenant becomes an owner tenant upon successful creation.
-Only owner tenants can manage a multi-tenant organization.
-To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
+Update the properties of a multi-tenant organization.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantrelationship-put-multitenantorganization-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-update-permissions.md)]
 
 ## PARAMETERS
 

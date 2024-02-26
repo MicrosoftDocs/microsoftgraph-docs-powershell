@@ -9,7 +9,7 @@ ms.prod: intune
 # Get-MgDeviceAppManagementManagedAppRegistration
 
 ## SYNOPSIS
-Read properties and relationships of the androidManagedAppRegistration object.
+Read properties and relationships of the managedAppRegistration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the androidManagedAppRegistration object.
+Read properties and relationships of the managedAppRegistration object.
 
 ## PARAMETERS
 

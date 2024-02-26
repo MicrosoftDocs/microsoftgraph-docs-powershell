@@ -1217,6 +1217,9 @@ Locale: en-US
 ### [Remove-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](Remove-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaDirectoryDeletedItem](Remove-MgBetaDirectoryDeletedItem.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaDirectoryDeviceLocalCredential](Remove-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
