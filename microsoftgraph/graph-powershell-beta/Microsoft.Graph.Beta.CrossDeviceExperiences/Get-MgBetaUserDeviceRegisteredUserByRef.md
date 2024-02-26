@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregistereduserbyref
 schema: 2.0.0
-ms.prod: directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaUserDeviceRegisteredUserByRef

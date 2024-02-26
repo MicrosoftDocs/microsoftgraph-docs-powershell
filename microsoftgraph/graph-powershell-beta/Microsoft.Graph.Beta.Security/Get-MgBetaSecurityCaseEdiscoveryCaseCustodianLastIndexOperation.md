@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianlastindexoperation
 schema: 2.0.0
-ms.prod: ediscovery
+ms.subservice: non-product-specific-ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation

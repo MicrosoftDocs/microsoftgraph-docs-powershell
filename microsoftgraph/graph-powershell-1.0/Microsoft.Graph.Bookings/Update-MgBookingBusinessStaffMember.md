@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember
 schema: 2.0.0
-ms.prod: bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Update-MgBookingBusinessStaffMember

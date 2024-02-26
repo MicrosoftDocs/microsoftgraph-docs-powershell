@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject
 schema: 2.0.0
-ms.prod: directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgDirectoryObject

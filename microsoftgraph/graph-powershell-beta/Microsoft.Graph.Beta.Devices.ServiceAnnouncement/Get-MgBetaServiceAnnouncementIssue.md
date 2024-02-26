@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue
 schema: 2.0.0
-ms.prod: service-communications
+ms.subservice: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementIssue

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
+ms.subservice: non-product-specific-extensions
 ---
 
 # Get-MgBetaApplicationExtensionProperty

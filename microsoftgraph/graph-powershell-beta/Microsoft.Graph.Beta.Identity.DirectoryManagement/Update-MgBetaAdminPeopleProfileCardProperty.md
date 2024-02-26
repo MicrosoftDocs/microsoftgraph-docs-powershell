@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
-ms.prod: people
+ms.subservice: non-product-specific-people
 ---
 
 # Update-MgBetaAdminPeopleProfileCardProperty

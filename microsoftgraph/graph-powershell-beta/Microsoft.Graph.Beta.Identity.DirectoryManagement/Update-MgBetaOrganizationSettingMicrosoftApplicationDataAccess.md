@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingmicrosoftapplicationdataaccess
 schema: 2.0.0
-ms.prod: insights
+ms.subservice: insights
 ---
 
 # Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess

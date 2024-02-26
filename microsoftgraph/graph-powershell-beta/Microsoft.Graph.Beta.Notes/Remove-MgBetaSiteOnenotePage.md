@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotepage
 schema: 2.0.0
-ms.prod: onenote
+ms.subservice: onenote
 ---
 
 # Remove-MgBetaSiteOnenotePage

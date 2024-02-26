@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgUnfollowDriveItem

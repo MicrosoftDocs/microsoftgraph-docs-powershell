@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageextension
 schema: 2.0.0
-ms.prod: extensions
+ms.subservice: non-product-specific-extensions
 ---
 
 # New-MgUserMailFolderChildFolderMessageExtension

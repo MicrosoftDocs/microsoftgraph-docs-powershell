@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent
 schema: 2.0.0
-ms.prod: groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupEvent

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan
 schema: 2.0.0
-ms.prod: planner
+ms.subservice: planner
 ---
 
 # Get-MgPlannerPlan

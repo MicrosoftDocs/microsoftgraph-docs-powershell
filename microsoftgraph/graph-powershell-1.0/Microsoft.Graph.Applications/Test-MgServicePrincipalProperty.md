@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty
 schema: 2.0.0
-ms.prod: directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Test-MgServicePrincipalProperty

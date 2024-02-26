@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroledefinition
 schema: 2.0.0
-ms.prod: directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaRoleManagementCloudPcRoleDefinition

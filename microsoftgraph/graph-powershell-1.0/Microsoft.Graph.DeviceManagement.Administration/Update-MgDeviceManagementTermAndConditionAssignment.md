@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionassignment
 schema: 2.0.0
-ms.prod: intune
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementTermAndConditionAssignment

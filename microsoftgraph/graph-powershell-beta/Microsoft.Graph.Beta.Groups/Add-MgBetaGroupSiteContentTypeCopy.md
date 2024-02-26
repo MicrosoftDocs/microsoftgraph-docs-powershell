@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopy
 schema: 2.0.0
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaGroupSiteContentTypeCopy

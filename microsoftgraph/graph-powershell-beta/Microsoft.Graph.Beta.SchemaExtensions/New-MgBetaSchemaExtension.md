@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension
 schema: 2.0.0
-ms.prod: extensions
+ms.subservice: non-product-specific-extensions
 ---
 
 # New-MgBetaSchemaExtension

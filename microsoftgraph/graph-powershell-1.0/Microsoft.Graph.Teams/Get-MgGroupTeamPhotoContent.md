@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphotocontent
 schema: 2.0.0
-ms.prod: people
+ms.subservice: non-product-specific-people
 ---
 
 # Get-MgGroupTeamPhotoContent

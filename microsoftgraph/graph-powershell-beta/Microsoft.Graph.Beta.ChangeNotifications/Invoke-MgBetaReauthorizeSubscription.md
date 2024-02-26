@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription
 schema: 2.0.0
-ms.prod: change-notifications
+ms.subservice: non-product-specific-change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeSubscription

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
-ms.prod: browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Update-MgAdminEdgeInternetExplorerModeSiteListSite

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection
 schema: 2.0.0
-ms.prod: search
+ms.subservice: search
 ---
 
 # Update-MgBetaExternalConnection

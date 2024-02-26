@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording
 schema: 2.0.0
-ms.prod: microsoft-teams
+ms.subservice: teams
 ---
 
 # Get-MgUserOnlineMeetingRecording

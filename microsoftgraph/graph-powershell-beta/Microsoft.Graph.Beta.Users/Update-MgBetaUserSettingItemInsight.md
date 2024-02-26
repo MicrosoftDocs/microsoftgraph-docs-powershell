@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight
 schema: 2.0.0
-ms.prod: insights
+ms.subservice: insights
 ---
 
 # Update-MgBetaUserSettingItemInsight

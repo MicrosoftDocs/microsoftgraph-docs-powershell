@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandinglocalizationheaderlogo
 schema: 2.0.0
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaOrganizationBrandingLocalizationHeaderLogo

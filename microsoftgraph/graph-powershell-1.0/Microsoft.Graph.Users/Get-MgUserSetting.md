@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
 schema: 2.0.0
-ms.prod: users
+ms.subservice: non-product-specific-users
 ---
 
 # Get-MgUserSetting

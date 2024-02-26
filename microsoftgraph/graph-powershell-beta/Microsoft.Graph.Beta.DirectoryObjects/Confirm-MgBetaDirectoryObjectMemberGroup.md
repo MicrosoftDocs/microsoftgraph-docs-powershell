@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmembergroup
 schema: 2.0.0
-ms.prod: directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgBetaDirectoryObjectMemberGroup

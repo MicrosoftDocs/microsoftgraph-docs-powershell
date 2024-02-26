@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileposition
 schema: 2.0.0
-ms.prod: people
+ms.subservice: non-product-specific-people
 ---
 
 # Get-MgBetaUserProfilePosition

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote
 schema: 2.0.0
-ms.prod: compliance
+ms.subservice: non-product-specific-compliance
 ---
 
 # New-MgSecuritySubjectRightsRequestNote

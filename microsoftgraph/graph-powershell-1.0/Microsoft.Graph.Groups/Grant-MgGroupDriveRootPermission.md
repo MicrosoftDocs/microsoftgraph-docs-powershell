@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission
 schema: 2.0.0
-ms.prod: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Grant-MgGroupDriveRootPermission

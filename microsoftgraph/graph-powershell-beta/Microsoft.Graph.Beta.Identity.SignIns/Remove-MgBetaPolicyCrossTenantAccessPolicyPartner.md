@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartner
 schema: 2.0.0
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaPolicyCrossTenantAccessPolicyPartner

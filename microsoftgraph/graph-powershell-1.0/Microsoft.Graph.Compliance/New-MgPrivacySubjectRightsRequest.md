@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequest
 schema: 2.0.0
-ms.prod: compliance
+ms.subservice: non-product-specific-compliance
 ---
 
 # New-MgPrivacySubjectRightsRequest
