@@ -45,20 +45,28 @@ Read the properties and relationships of a conditionalAccessTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesstemplate-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the properties a template by ID
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will get the properties a template by id
 
-Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId -Property "details"
+### Example 2: Select details of a template
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId -Property "details" 
+
+```
+This example will select details of a template
+
 
 ## PARAMETERS
 

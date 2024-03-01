@@ -37,13 +37,17 @@ Get the contact's manager
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaContactManager -OrgContactId $orgContactId
+
+```
+This example shows how to use the Get-MgBetaContactManager Cmdlet.
+
 
 ## PARAMETERS
 

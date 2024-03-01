@@ -57,11 +57,10 @@ Change writable properties on a messageRule object and save the changes.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 $params = @{
 	displayName = "Important from partner"
@@ -72,6 +71,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserMailFolderMessageRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -67,13 +67,17 @@ Read the properties and relationships of a set object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
+
+```
+This example shows how to use the Get-MgSiteTermStoreSet Cmdlet.
+
 
 ## PARAMETERS
 

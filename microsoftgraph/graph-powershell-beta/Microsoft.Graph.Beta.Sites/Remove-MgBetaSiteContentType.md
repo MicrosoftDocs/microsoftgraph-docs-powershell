@@ -37,13 +37,17 @@ Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+
+```
+This example shows how to use the Remove-MgBetaSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

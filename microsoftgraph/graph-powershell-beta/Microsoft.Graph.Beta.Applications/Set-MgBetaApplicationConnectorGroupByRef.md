@@ -49,15 +49,21 @@ Assign a connectorGroup to an application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-applications-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
+	"@odata.id" = "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
+
 Set-MgBetaApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
+
 ```
+This example shows how to use the Set-MgBetaApplicationConnectorGroupByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,13 +45,17 @@ A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Restore-MgBetaDirectoryDeletedItem Cmdlet.
+
 
 ## PARAMETERS
 

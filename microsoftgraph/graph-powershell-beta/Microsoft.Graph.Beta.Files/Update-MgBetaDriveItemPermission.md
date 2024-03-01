@@ -63,11 +63,10 @@ Only the roles property can be modified this way.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	roles = @(
@@ -76,6 +75,11 @@ $params = @{
 }
 
 Update-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaDriveItemPermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

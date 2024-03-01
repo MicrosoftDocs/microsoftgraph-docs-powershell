@@ -52,9 +52,8 @@ Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	OutputName = "2020-12-06 Contoso investigation export"
@@ -64,6 +63,8 @@ $params = @{
 }
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
 ```
+This example shows how to use the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

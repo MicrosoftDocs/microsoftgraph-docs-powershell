@@ -44,20 +44,28 @@ Retrieve the properties and relationships of a printer object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a printer
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintPrinter -PrinterId $printerId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Devices.CloudPrint
-```
+This example will get a printer
 
-Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
+### Example 2: Get a printer and its capabilities
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities" 
+
+```
+This example will get a printer and its capabilities
+
 
 ## PARAMETERS
 

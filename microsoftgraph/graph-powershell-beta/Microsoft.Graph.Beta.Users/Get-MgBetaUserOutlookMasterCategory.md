@@ -44,14 +44,18 @@ Get the properties and relationships of the specified outlookCategory object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookMasterCategory -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserOutlookMasterCategory Cmdlet.
+
 
 ## PARAMETERS
 

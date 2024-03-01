@@ -30,13 +30,17 @@ Retrieve a list of users at a school.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-users-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationSchoolUser -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgBetaEducationSchoolUser Cmdlet.
+
 
 ## PARAMETERS
 

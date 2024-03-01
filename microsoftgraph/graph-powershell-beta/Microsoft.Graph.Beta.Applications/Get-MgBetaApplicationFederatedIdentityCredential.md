@@ -46,13 +46,17 @@ Read the properties and relationships of a federatedIdentityCredential object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgBetaApplicationFederatedIdentityCredential Cmdlet.
+
 
 ## PARAMETERS
 

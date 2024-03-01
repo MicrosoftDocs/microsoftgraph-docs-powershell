@@ -42,11 +42,11 @@ Create a new plannerPlan.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-plans-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	container = @{
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgBetaPlannerPlan -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

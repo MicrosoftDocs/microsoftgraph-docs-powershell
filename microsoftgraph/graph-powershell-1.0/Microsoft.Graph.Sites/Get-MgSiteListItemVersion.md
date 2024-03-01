@@ -45,13 +45,17 @@ Retrieve the metadata for a specific version of a ListItem.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId
+
+```
+This example shows how to use the Get-MgSiteListItemVersion Cmdlet.
+
 
 ## PARAMETERS
 

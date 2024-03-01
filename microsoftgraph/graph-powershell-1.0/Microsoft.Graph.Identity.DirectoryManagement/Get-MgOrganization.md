@@ -46,13 +46,17 @@ Since the organization resource supports extensions, you can also use the GET op
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgOrganization
+
+```
+This example shows how to use the Get-MgOrganization Cmdlet.
+
 
 ## PARAMETERS
 

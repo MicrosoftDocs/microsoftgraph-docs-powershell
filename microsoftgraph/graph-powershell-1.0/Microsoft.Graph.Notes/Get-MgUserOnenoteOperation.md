@@ -45,14 +45,18 @@ If the status is failed, the error and @api.diagnostics properties provide error
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenoteoperation-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteOperation -UserId $userId -OnenoteOperationId $onenoteOperationId
+
+```
+This example shows how to use the Get-MgUserOnenoteOperation Cmdlet.
+
 
 ## PARAMETERS
 

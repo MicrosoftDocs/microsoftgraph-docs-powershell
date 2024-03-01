@@ -66,11 +66,10 @@ Update access decisions, known as accessReviewInstanceDecisionItems, for which t
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstancedecisionitem-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update a decision on an accessReviewInstance
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	decision = "Approve"
@@ -78,11 +77,15 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
+```
+This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Update a decision on an stage in a multi-stage access review
+
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	decision = "Approve"
@@ -90,6 +93,11 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
+```
+This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -30,14 +30,18 @@ Retrieve a list of page objects from the specified section.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionPage -UserId $userId -OnenoteSectionId $onenoteSectionId
+
+```
+This example shows how to use the Get-MgUserOnenoteSectionPage Cmdlet.
+
 
 ## PARAMETERS
 

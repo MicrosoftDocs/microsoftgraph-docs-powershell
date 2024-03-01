@@ -47,20 +47,28 @@ For details, see the examples section.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-reassign-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request without optional Prefer header
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-### EXAMPLE 2
 ```
+This example will request without optional prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example will request with prefer header
+
 
 ## PARAMETERS
 

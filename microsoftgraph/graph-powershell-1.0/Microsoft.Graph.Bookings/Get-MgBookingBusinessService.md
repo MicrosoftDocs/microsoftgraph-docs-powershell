@@ -45,13 +45,17 @@ Get the properties and relationships of a bookingService object in the specified
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingservice-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusinessService -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Get-MgBookingBusinessService Cmdlet.
+
 
 ## PARAMETERS
 

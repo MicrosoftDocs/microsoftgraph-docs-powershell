@@ -74,16 +74,6 @@ Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[co
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

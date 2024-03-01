@@ -55,11 +55,10 @@ Future messages from that SMTP address will be consistently classifiedas specifi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 $params = @{
 	classifyAs = "focused"
@@ -71,6 +70,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserInferenceClassificationOverride Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

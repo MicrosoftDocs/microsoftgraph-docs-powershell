@@ -29,13 +29,17 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyAdminConsentRequestPolicy
+
+```
+This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
+
 
 ## PARAMETERS
 

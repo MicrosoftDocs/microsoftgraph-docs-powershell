@@ -40,11 +40,11 @@ Some common uses for this function are to:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	ids = @(
@@ -61,6 +61,10 @@ $params = @{
 }
 
 Get-MgBetaDirectoryObjectById -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDirectoryObjectById Cmdlet.
+
 
 ## PARAMETERS
 

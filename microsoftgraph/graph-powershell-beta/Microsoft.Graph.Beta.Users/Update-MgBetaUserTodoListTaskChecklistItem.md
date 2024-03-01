@@ -55,11 +55,10 @@ Update the properties of a checklistItem object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 $params = @{
 	displayName = "buy cake"
@@ -67,6 +66,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserTodoListTaskChecklistItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -37,14 +37,18 @@ The calendar can be one for a user,or the default calendar of a Microsoft 365 gr
 There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultCalendar -UserId $userId
+```
+This example shows how to use the Get-MgBetaUserDefaultCalendar Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

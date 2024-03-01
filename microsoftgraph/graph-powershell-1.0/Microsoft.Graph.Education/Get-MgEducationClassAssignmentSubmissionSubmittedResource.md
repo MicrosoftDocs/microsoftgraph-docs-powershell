@@ -53,13 +53,17 @@ Teachers can leave notes in some resources.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmittedsubmissionresource-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentSubmissionSubmittedResource Cmdlet.
+
 
 ## PARAMETERS
 
