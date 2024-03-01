@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveItem
@@ -36,6 +37,9 @@ Get-MgUserDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-get-permissions.md)]
 
 ## EXAMPLES
 

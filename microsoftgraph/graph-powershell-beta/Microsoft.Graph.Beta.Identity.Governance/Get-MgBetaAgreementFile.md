@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfile
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaAgreementFile
@@ -38,6 +39,9 @@ Get-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-get-permissions.md)]
 
 ## EXAMPLES
 

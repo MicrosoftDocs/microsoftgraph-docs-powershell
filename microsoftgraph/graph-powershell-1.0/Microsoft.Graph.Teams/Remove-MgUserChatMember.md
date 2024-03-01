@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Remove-MgUserChatMember
@@ -28,6 +29,9 @@ Remove-MgUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 
 ## DESCRIPTION
 Remove a conversationMember from a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-members-permissions.md)]
 
 ## EXAMPLES
 

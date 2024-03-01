@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserTodoList
@@ -44,6 +45,9 @@ Update-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the properties of a todoTaskList object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgBetaUserPlannerTask
@@ -21,6 +22,9 @@ Get-MgBetaUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter
 
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-tasks-permissions.md)]
 
 ## EXAMPLES
 

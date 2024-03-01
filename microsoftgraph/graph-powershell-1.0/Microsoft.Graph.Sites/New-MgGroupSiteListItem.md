@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgGroupSiteListItem
@@ -56,6 +57,9 @@ New-MgGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
 
 ## EXAMPLES
 

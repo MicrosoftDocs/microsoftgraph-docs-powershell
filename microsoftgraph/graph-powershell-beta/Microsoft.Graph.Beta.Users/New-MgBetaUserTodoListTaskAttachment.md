@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachment
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserTodoListTaskAttachment
@@ -48,6 +49,9 @@ New-MgBetaUserTodoListTaskAttachment -InputObject <IUsersIdentity>
 Add a new taskFileAttachment object to a todoTask.
 This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-attachments-permissions.md)]
 
 ## EXAMPLES
 

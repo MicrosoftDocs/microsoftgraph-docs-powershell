@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
@@ -49,6 +50,9 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 ## DESCRIPTION
 Update the properties of an authenticationCombinationConfiguration object.
 The properties can be for one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcombinationconfiguration-update-permissions.md)]
 
 ## EXAMPLES
 

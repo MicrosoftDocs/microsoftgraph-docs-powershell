@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectionpage
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgGroupSiteOnenoteSectionPage
@@ -50,6 +51,9 @@ New-MgGroupSiteOnenoteSectionPage -InputObject <ISitesIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Create a new page in the specified section.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-post-pages-permissions.md)]
 
 ## EXAMPLES
 

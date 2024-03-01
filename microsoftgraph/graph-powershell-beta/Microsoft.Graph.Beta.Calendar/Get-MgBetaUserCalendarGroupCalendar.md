@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserCalendarGroupCalendar
@@ -21,6 +22,9 @@ Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [
 
 ## DESCRIPTION
 Retrieve a list of calendars belonging to a calendar group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-list-calendars-permissions.md)]
 
 ## EXAMPLES
 

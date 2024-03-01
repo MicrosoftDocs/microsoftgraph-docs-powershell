@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenario
 schema: 2.0.0
+ms.prod: business-scenarios
 ---
 
 # Remove-MgBetaBusinessScenario
@@ -30,6 +31,9 @@ Remove-MgBetaBusinessScenario -InputObject <IBookingsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-delete-permissions.md)]
 
 ## EXAMPLES
 

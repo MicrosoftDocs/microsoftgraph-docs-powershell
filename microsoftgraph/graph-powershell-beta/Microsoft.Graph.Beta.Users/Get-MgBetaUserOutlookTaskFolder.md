@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserOutlookTaskFolder
@@ -35,6 +36,9 @@ Get-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-Property <String
 
 ## DESCRIPTION
 Get the properties and relationships of the specified Outlook task folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-get-permissions.md)]
 
 ## EXAMPLES
 

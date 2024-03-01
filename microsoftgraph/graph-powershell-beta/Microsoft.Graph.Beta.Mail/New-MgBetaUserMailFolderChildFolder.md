@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserMailFolderChildFolder
@@ -56,6 +57,9 @@ New-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter 
 ## DESCRIPTION
 Use this API to create a new child mailFolder.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-childfolders-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicy
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaPolicyMobileDeviceManagementPolicy
@@ -36,6 +37,9 @@ Get-MgBetaPolicyMobileDeviceManagementPolicy -InputObject <IIdentitySignInsIdent
 
 ## DESCRIPTION
 Read the properties and relationships of a mobilityManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-get-permissions.md)]
 
 ## EXAMPLES
 

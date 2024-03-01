@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermailfoldermessageasnotjunk
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk
@@ -46,6 +47,9 @@ Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Mark a message as not junk.
 This API removes the sender from the list of blocked senders and moves the message to the Inbox folder, when moveToInbox is true.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-markasnotjunk-permissions.md)]
 
 ## EXAMPLES
 

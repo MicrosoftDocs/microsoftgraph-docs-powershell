@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgSiteListItem
@@ -28,6 +29,9 @@ Remove-MgSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-Respon
 
 ## DESCRIPTION
 Removes an item from a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delete-permissions.md)]
 
 ## EXAMPLES
 

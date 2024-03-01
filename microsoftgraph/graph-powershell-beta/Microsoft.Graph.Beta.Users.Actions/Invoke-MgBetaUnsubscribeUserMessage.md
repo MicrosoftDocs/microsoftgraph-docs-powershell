@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaUnsubscribeUserMessage
@@ -44,6 +45,9 @@ Setting that header would also set the unsubscribeEnabled property of the messag
 If the unsubscribeEnabled property of a message is true, you can use the unsubscribe action to unsubscribe the user from similar future messages as managed by the message sender.
 A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-unsubscribe-permissions.md)]
 
 ## EXAMPLES
 

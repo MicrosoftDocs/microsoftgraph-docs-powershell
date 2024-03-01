@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationclassmodule
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Publish-MgBetaEducationClassModule
@@ -33,6 +34,9 @@ Change the state of an educationModule from its original draft status to the pub
 Only teachers in the class can perform this operation.
 When a module is in draft status, students won't see the module.
 When you call this API, the module appears in the student's class work list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-publish-permissions.md)]
 
 ## EXAMPLES
 

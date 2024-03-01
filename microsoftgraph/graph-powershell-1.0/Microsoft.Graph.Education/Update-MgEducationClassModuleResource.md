@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgEducationClassModuleResource
@@ -48,6 +49,9 @@ Update-MgEducationClassModuleResource -InputObject <IEducationIdentity>
 Update a resource in a module.
 Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-update-permissions.md)]
 
 ## EXAMPLES
 

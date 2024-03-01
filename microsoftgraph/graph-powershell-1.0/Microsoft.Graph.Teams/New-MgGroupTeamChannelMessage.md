@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessage
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamChannelMessage
@@ -58,6 +59,9 @@ New-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
 
 ## EXAMPLES
 

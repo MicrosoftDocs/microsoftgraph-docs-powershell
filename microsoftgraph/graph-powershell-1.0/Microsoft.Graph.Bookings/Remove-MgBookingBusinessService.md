@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Remove-MgBookingBusinessService
@@ -28,6 +29,9 @@ Remove-MgBookingBusinessService -InputObject <IBookingsIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete a bookingService object in the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingservice-delete-permissions.md)]
 
 ## EXAMPLES
 

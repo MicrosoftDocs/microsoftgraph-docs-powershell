@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassModuleResource
@@ -39,6 +40,9 @@ Get-MgEducationClassModuleResource -InputObject <IEducationIdentity> [-ExpandPro
 ## DESCRIPTION
 Get the properties of a resource associated with a module.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-get-permissions.md)]
 
 ## EXAMPLES
 

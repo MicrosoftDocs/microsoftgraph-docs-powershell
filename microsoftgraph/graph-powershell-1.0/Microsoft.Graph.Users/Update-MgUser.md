@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Update-MgUser
@@ -157,6 +158,9 @@ Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
 Update the properties of a user object.
 Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
 Compare member and guest default permissions to see properties they can manage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
 
 ## EXAMPLES
 

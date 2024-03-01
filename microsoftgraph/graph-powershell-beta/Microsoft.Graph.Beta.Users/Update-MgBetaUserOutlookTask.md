@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserOutlookTask
@@ -68,6 +69,9 @@ The completedDateTime property can be set by the complete action, or explicitly 
 If you use PATCH to set completedDateTime, make sure you set status to completed as well.
 By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserContact
@@ -28,6 +29,9 @@ Remove-MgBetaUserContact -InputObject <IPersonalContactsIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete contact.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-delete-permissions.md)]
 
 ## EXAMPLES
 

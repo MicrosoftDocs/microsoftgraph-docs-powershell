@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicypartneridentitysynchronization
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
@@ -29,6 +30,9 @@ Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObjec
 
 ## DESCRIPTION
 Delete the user synchronization policy for a partner-specific configuration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantidentitysyncpolicypartner-delete-permissions.md)]
 
 ## EXAMPLES
 

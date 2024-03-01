@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserTodoList
@@ -44,6 +45,9 @@ New-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new lists object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todo-post-lists-permissions.md)]
 
 ## EXAMPLES
 

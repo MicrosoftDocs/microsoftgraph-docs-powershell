@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareprovisionusercloudpc
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaReprovisionUserCloudPc
@@ -44,6 +45,9 @@ Invoke-MgBetaReprovisionUserCloudPc -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Reprovision a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]
 
 ## EXAMPLES
 

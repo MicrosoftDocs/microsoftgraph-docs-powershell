@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserTodoListTask
@@ -58,6 +59,9 @@ Update-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the properties of a todoTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-update-permissions.md)]
 
 ## EXAMPLES
 

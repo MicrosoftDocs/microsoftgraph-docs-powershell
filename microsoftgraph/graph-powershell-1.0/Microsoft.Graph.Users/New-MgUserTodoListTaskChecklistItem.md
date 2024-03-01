@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserTodoListTaskChecklistItem
@@ -44,6 +45,9 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 
 ## DESCRIPTION
 Create a new checklistItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-checklistitems-permissions.md)]
 
 ## EXAMPLES
 

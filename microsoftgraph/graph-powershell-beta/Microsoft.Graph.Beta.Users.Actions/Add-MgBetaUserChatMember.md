@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Add-MgBetaUserChatMember
@@ -46,6 +47,9 @@ Add-MgBetaUserChatMember -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationmembers-add-permissions.md)]
 
 ## EXAMPLES
 

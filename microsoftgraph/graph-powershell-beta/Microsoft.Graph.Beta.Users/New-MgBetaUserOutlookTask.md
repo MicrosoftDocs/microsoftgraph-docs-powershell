@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookTask
@@ -66,6 +67,9 @@ Create an Outlook task in the default task group (My Tasks) and default task fol
 The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-tasks-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Set-MgBetaEducationClassModuleUpResourceFolder
@@ -32,6 +33,9 @@ Set-MgBetaEducationClassModuleUpResourceFolder -InputObject <IEducationIdentity>
 Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
 
 ## EXAMPLES
 

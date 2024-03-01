@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupsectionpagecontent
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent
@@ -29,6 +30,9 @@ Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent -InputObject <ISite
 
 ## DESCRIPTION
 The page's HTML content.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
 
 ## EXAMPLES
 

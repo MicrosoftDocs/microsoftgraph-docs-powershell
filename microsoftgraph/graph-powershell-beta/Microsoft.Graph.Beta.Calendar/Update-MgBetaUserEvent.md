@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetauserevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserEvent
@@ -74,6 +75,9 @@ Update-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of the event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-update-permissions.md)]
 
 ## EXAMPLES
 

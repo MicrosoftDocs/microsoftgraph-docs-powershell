@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupDriveListItemDocumentSetVersion
@@ -37,6 +38,9 @@ Get-MgBetaGroupDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-E
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
 
 ## EXAMPLES
 

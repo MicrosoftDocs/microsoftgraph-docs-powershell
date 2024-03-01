@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
@@ -38,6 +39,9 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentscheduleinstance-get-permissions.md)]
 
 ## EXAMPLES
 

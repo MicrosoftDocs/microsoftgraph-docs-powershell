@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshareallowedgroupbyref
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # New-MgPrintShareAllowedGroupByRef
@@ -42,6 +43,9 @@ New-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Bod
 
 ## DESCRIPTION
 Grant the specified group access to submit print jobs to the associated printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedgroups-permissions.md)]
 
 ## EXAMPLES
 

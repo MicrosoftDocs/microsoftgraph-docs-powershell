@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # New-MgBetaUserOnlineMeeting
@@ -74,6 +75,9 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Create an online meeting on behalf of a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-onlinemeetings-permissions.md)]
 
 ## EXAMPLES
 

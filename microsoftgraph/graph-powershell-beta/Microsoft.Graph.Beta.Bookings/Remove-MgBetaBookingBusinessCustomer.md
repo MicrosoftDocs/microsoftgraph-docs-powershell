@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Remove-MgBetaBookingBusinessCustomer
@@ -42,6 +43,9 @@ Remove-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete the specified bookingCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-delete-permissions.md)]
 
 ## EXAMPLES
 

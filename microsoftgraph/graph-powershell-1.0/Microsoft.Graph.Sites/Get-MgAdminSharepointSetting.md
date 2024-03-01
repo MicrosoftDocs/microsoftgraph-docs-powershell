@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgAdminSharepointSetting
@@ -20,6 +21,9 @@ Get-MgAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharepointsettings-get-permissions.md)]
 
 ## EXAMPLES
 
