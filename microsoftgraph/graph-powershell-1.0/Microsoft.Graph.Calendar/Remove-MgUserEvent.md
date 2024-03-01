@@ -12,6 +12,9 @@ ms.prod: outlook
 Removes the specified event from the containing calendar.
 If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent)
 

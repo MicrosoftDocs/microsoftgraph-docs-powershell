@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -466,6 +469,7 @@ WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistlastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistlastmodifiedbyusermailboxsetting)
 

@@ -15,6 +15,9 @@ Subscriptions expire after a length of time that varies by resource type.
 In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
 See subscription for maximum length of a subscription for each resource type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Update-MgSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -593,6 +596,7 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
+[Update-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Update-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/update-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/update-mgbetasubscription)
 

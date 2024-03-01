@@ -11,6 +11,9 @@ schema: 2.0.0
 Returns a list of activities performed on the item.
 Write-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -336,6 +339,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+[Get-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivity)
 

@@ -13,6 +13,9 @@ Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -238,6 +241,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationByUniqueName?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename)
 

@@ -11,6 +11,9 @@ ms.prod: people
 ## SYNOPSIS
 Get media content for the navigation property photo from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -206,6 +209,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhotoContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent)
 

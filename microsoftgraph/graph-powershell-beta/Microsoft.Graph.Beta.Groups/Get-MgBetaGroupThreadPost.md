@@ -13,6 +13,9 @@ Get the properties and relationships of a post in a specified thread.
 You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -376,6 +379,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost)
 

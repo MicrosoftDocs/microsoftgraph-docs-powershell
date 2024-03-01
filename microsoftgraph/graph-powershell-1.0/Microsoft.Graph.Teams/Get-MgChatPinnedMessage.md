@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the pinned messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -365,6 +368,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpinnedmessage)
 

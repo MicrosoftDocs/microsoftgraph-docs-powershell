@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The host for this hostSslCertificate.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -247,6 +250,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificatehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificatehost)
 

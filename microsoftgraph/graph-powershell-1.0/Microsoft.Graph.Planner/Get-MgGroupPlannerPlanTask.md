@@ -11,6 +11,9 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -278,6 +281,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask)
 

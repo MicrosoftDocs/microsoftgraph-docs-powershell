@@ -11,6 +11,9 @@ ms.prod: bookings
 ## SYNOPSIS
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
@@ -293,6 +296,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview)
 

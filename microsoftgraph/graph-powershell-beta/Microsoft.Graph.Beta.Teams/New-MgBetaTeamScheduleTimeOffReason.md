@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new timeOffReason.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOffReason?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -420,6 +423,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason)
 

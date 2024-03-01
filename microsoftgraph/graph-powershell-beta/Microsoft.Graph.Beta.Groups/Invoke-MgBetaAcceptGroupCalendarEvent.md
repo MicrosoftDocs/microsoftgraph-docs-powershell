@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Accept the specified event in a user calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)
@@ -335,6 +338,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgAcceptGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupcalendarevent)
 

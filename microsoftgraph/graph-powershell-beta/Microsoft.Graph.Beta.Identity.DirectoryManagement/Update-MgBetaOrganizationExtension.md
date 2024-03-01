@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property extensions in organization
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -294,6 +297,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationextension)
 

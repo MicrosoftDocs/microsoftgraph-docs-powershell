@@ -11,6 +11,9 @@ ms.prod: planner
 ## SYNOPSIS
 Update the navigation property tasks in planner
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1149,6 +1152,7 @@ Required.
 A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
+[Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
 

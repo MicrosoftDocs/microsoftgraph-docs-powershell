@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Deletes a linkedResource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -270,6 +273,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttasklinkedresource)
 

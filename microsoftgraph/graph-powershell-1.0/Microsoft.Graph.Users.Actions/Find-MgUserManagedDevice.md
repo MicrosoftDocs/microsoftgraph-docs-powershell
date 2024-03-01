@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Locate a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Locate (Default)
@@ -234,6 +237,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Find-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice)
 

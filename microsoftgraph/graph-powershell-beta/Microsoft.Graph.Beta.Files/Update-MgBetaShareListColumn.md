@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property columns in shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Update-MgShareListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1264,6 +1267,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[Update-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Update-MgShareListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcolumn)
 

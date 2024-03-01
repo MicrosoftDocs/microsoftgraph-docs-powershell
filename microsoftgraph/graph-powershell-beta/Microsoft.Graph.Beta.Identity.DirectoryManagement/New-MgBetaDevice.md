@@ -11,6 +11,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Create a new device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1245,6 +1248,7 @@ Read-only.
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+[New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice)
 

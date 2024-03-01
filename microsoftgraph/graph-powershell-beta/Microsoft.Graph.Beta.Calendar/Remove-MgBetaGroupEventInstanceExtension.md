@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property extensions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventInstanceExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -261,6 +264,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+[Remove-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventInstanceExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventinstanceextension)
 

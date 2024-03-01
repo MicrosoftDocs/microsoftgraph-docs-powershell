@@ -11,6 +11,9 @@ schema: 2.0.0
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -297,6 +300,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationcustomcss](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationcustomcss)
 

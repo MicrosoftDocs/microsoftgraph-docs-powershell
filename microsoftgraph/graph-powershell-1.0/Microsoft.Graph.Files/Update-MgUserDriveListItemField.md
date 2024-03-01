@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Update the properties on a \[listItem\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -292,6 +295,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemfield)
 

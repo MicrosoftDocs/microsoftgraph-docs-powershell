@@ -12,6 +12,9 @@ ms.prod: education
 Get the properties of a resource associated with a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -347,6 +350,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource)
 

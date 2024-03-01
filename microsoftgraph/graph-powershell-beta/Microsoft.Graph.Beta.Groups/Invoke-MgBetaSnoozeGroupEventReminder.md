@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SnoozeExpanded (Default)
@@ -334,6 +337,7 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
+[Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder)
 

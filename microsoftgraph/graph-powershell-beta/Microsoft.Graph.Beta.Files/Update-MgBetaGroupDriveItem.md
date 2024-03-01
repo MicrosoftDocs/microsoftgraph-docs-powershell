@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests are ignored.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -54337,6 +54340,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitem)
 

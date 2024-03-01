@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Analytics about the view activities that took place in this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -264,6 +267,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathanalytic)
 

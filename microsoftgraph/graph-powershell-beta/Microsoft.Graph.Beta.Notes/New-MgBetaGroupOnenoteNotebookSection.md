@@ -11,6 +11,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Create a new section in the specified notebook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -931,6 +934,7 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
+[New-MgGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksection)
 

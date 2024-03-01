@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Removes a password from an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -285,6 +288,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword)
 

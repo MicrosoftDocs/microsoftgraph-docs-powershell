@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Create a new application object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -3388,6 +3391,7 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
+[New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Used to address any item contained in this site.
 This collection cannot be enumerated.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -385,6 +388,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteitem)
 
